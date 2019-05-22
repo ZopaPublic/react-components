@@ -88,6 +88,9 @@ jobs:
       - run:
           name: Build website
           command: yarn build
+      - add_ssh_keys:
+          fingerprints:
+            - "d3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e"
       - run: 
           name: Deploy website
           command: yarn deploy-web
@@ -106,6 +109,9 @@ workflows:
             branches:
               only: master
       - deploy-web:
+          requires:
+            - test_node_8
+            - test_node_10
           filters:
             branches:
               only: master
