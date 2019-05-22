@@ -59,7 +59,7 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
   },
 });
 
-const footerText = (homepageUrl) => `
+const footerText = homepageUrl => `
 <sub>Generated with [React Styleguidist](${homepageUrl}) for [Zopa's react-components](https://github.com/zopaUK/react-components). \
 No permission is granted to use the trade names, trademarks, service marks, or product names of Zopa, except as required
 for reasonable and customary use in describing the origin of this library and reproducing the content of the notice in
@@ -74,9 +74,7 @@ export function StyleGuideRenderer({ classes, title, version, homepageUrl, child
       <main className={classes.content}>
         {children}
         <footer className={classes.footer}>
-          <Markdown
-            text={footerText`}
-          />
+          <Markdown text={footerText} />
         </footer>
       </main>
       {hasSidebar && (
