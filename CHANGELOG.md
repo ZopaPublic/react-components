@@ -1,3 +1,12 @@
+# 1.0.0 (2019-05-22)
+
+
+### Bug Fixes
+
+* **styleguide:** fix again ([6632157](https://github.com/zopaUK/react-components/commit/6632157))
+* **styleguide:** fix typo ([e4e6e17](https://github.com/zopaUK/react-components/commit/e4e6e17))
+* **types:** fix React.forwardRef types ([4749671](https://github.com/zopaUK/react-components/commit/4749671))
+
 # PRIVATE REPOSITORY CHANGELOG 👇
 
 _The changelog below corresponds to the changes we did before open sourcing this project._  
