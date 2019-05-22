@@ -5,11 +5,7 @@ This project aims to have all the common styled react components as a library/do
 - Install it from the repository:
 
   ```bash
-  # NPM
-  npm install --save 'zopa-react-components'
-
-  # Yarn
-  yarn add 'zopa-react-components'
+  yarn add '@zopauk/react-components'
   ```
 
 - ⚠️ **In order to use this UI you must import the `<GlobalStyles />` component and use it in the root of your project.**
