@@ -1,5 +1,6 @@
 # Docs: https://circleci.com/docs/2.0/language-javascript/ 
 version: 2
+
 jobs:
   test_node_8:
     docker:
@@ -18,7 +19,9 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: yarn test --watchAll=false
+      - run:
+          name: Run tests
+          command: yarn test --watchAll=false
 
   test_node_10:
     docker:
@@ -37,7 +40,9 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: yarn test --watchAll=false
+      - run: 
+          name: Run tests
+          command: yarn test --watchAll=false
 
   release:
     docker:
@@ -56,9 +61,12 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      # Run optional required steps before releasing
-      - run: yarn compile
-      - run: yarn release
+      - run:
+          name: Compile the code
+          command: yarn compile
+      - run:
+          name: Release
+          command: yarn release
 
   deploy-web:
     docker:
@@ -77,8 +85,12 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: yarn build
-      - run: yarn deploy-web
+      - run:
+          name: Build website
+          command: yarn build
+      - run: 
+          name: Deploy website
+          command: yarn deploy-web
 
 workflows:
   version: 2
@@ -90,6 +102,10 @@ workflows:
           requires:
             - test_node_8
             - test_node_10
+          filters:
+            branches:
+              only: master
       - deploy-web:
-          requires:
-            - release
+          filters:
+            branches:
+              only: master
