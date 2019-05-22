@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "dist/index.js",
@@ -116,5 +116,8 @@
   "bugs": {
     "url": "https://github.com/zopaUK/react-components/issues"
   },
-  "homepage": "https://github.com/zopaUK/react-components#readme"
+  "homepage": "https://github.com/zopaUK/react-components#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
