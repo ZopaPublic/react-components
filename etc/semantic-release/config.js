@@ -1,5 +1,4 @@
 module.exports = {
-  ci: false, // skip Continuous Integration environment verifications. This allows for making releases from a local machine
   dryRun: false,
   plugins: [
     '@semantic-release/commit-analyzer',
@@ -14,8 +13,6 @@ module.exports = {
           { path: 'dist/index.js', label: 'CJS distribution' },
           { path: 'dist/index.module.js', label: 'ES6 distribution' },
         ],
-        githubUrl: 'https://github.com/',
-        githubApiPathPrefix: '/api/v3',
       },
     ],
   ],
