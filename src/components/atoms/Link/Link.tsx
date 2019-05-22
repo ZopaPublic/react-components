@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
 
@@ -38,7 +38,7 @@ const TargetIcon = (props: ITargetIconProps) => {
   );
 };
 
-const Link: React.FunctionComponent<ILinkProps> = React.forwardRef((props, ref) => {
+const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
   const { children, ...rest } = props;
   return (
     <SLink ref={ref} {...rest}>

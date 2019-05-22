@@ -52,7 +52,7 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
   open?: boolean;
 }
 
-const NavbarLink: React.FunctionComponent<INavbarLinkProps> = React.forwardRef(
+const NavbarLink = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
   ({ active = false, children, open = false, withChevron = false, color = colors.primary.blue500, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} color={color} ref={ref} {...rest}>
       {children}
