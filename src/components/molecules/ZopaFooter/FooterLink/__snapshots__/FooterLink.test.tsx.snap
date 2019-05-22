@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FooterLink /> renders the component with a small size 1`] = `
+.c0 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 11px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c0:hover {
+  color: #6F748B;
+}
+
+<a
+  class="c0"
+/>
+`;
+
+exports[`<FooterLink /> renders the component with default props 1`] = `
+.c0 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c0:hover {
+  color: #6F748B;
+}
+
+<a
+  class="c0"
+/>
+`;

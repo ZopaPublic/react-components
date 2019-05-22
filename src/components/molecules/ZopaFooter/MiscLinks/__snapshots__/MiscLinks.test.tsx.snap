@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MiscLinks /> renders the component 1`] = `
+.c1 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-left: -16px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c3 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 11px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c3:hover {
+  color: #6F748B;
+}
+
+.c2 {
+  margin-bottom: 16px;
+}
+
+@media (min-width:0px) {
+  .c1 {
+    display: block;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+<div
+  class="c0"
+  cols="12"
+>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com"
+      >
+        Homepage
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com"
+      >
+        Sitemap
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com/privace-policy"
+      >
+        Privacy policy
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com/principles"
+      >
+        Principles
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com/cookie-policy"
+      >
+        Cookie policy
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com/conflicts-policy"
+      >
+        Conflicts policy
+      </a>
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://zopa.com/website-terms"
+      >
+        Website terms
+      </a>
+    </div>
+  </div>
+</div>
+`;

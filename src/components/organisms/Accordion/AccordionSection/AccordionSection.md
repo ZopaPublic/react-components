@@ -1,0 +1,1 @@
+This is a Accordion subcomponent and it is meant to be used along with other components such as `AccordionHeader` and `useAccordion` hook. It is a simple block element that passes down the ref to its content; this, in turn allows the section to be collapsible. Please refer to the `Accordion` documentation to see a working example.

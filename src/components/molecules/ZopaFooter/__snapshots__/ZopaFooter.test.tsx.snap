@@ -1,0 +1,734 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
+.c1 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c4 {
+  background-color: #282F52;
+  height: 1px;
+}
+
+.c2 {
+  padding: 18px 0;
+}
+
+.c3 {
+  color: #6F748B;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.c0 {
+  background-color: #1C2139;
+  padding: 40px 0;
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    max-width: 1140px;
+  }
+}
+
+<div
+  class="c0"
+  id="zopa-footer"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3"
+      >
+        Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
+London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
+and entered on the Financial Services Register under firm registration number 718925.
+      </p>
+    </div>
+    <div
+      class="c4"
+    />
+    <div
+      class="c2"
+    >
+      <p
+        class="c3"
+      >
+        © Zopa Limited 2018 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
+Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
+and we are registered with the Office of the Information Commissioner (No. Z8797078).
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ZopaFooter /> renders the component with default props 1`] = `
+.c1 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c10 {
+  background-color: #282F52;
+  height: 1px;
+}
+
+.c4 {
+  padding: 18px 0;
+}
+
+.c11 {
+  color: #6F748B;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c9 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: px;
+  padding-left: px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-left: -16px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c8 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c8:hover {
+  color: #6F748B;
+}
+
+.c14 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 11px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c14:hover {
+  color: #6F748B;
+}
+
+.c5 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c7 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.c13 {
+  margin-bottom: 16px;
+}
+
+.c0 {
+  background-color: #1C2139;
+  padding: 40px 0;
+}
+
+@media (min-width:576px) {
+  .c1 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c1 {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:0px) {
+  .c3 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c3 {
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    display: block;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+    max-width: 33.33333333333333%;
+  }
+}
+
+@media (min-width:992px) {
+  .c3 {
+    display: block;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width:0px) {
+  .c9 {
+    display: block;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c9 {
+    display: none;
+  }
+}
+
+@media (min-width:0px) {
+  .c12 {
+    display: block;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+<div
+  class="c0"
+  id="zopa-footer"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      cols="12"
+    >
+      <div
+        class="c3"
+        cols="12"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            About Zopa
+          </div>
+          <ul
+            class="c6"
+          >
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/about"
+              >
+                About Zopa
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/about/how-zopa-works"
+              >
+                How Zopa works
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/about/join-us"
+              >
+                Join us
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/about/press"
+              >
+                Press office
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/contact"
+              >
+                Contact Zopa
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c3"
+        cols="12"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            Zopa Loans
+          </div>
+          <ul
+            class="c6"
+          >
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/loans/debt-consolidation"
+              >
+                Debt consolidation
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/loans/home-improvement"
+              >
+                Home improvements
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/loans/car-finance"
+              >
+                Car finance
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/loans/faq"
+              >
+                FAQs for loans
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+      <div
+        class="c3"
+        cols="12"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            Invest your money
+          </div>
+          <ul
+            class="c6"
+          >
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/lending"
+              >
+                Invest at Zopa
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/lending/risk-management"
+              >
+                Risk management
+              </a>
+            </li>
+            <li
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://zopa.com/lending/faq"
+              >
+                FAQs for investing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c4"
+    >
+      <p
+        class="c11"
+      >
+        Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
+London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
+and entered on the Financial Services Register under firm registration number 718925.
+      </p>
+    </div>
+    <div
+      class="c10"
+    />
+    <div
+      class="c4"
+    >
+      <p
+        class="c11"
+      >
+        © Zopa Limited 2018 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
+Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
+and we are registered with the Office of the Information Commissioner (No. Z8797078).
+      </p>
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c2"
+        cols="12"
+      >
+        <div
+          class="c12"
+          cols="12"
+        >
+          <a
+            aria-label="twitter"
+            class="c8"
+            href="https://twitter.com/zopa"
+          >
+            <svg
+              fill="currentColor"
+              height="30px"
+              role="img"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="30px"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <a
+            aria-label="facebook"
+            class="c8"
+            href="https://facebook.com/zopa"
+          >
+            <svg
+              fill="currentColor"
+              height="30px"
+              role="img"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="30px"
+            >
+              <path
+                d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    />
+    <div
+      class="c4"
+    >
+      <div
+        class="c2"
+        cols="12"
+      >
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com"
+            >
+              Homepage
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com"
+            >
+              Sitemap
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com/privace-policy"
+            >
+              Privacy policy
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com/principles"
+            >
+              Principles
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com/cookie-policy"
+            >
+              Cookie policy
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com/conflicts-policy"
+            >
+              Conflicts policy
+            </a>
+          </div>
+        </div>
+        <div
+          class="c12"
+          cols="12"
+        >
+          <div
+            class="c13"
+          >
+            <a
+              class="c14"
+              href="https://zopa.com/website-terms"
+            >
+              Website terms
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

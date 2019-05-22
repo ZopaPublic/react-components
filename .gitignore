@@ -1,0 +1,12 @@
+# NPM #
+node_modules
+
+# Used to test the build process
+styleguide/*
+!styleguide/styles/
+!styleguide/components
+
+dist
+coverage
+
+yarn-error.log

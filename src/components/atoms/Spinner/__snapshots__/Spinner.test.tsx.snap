@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> renders the component 1`] = `
+.c0 {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  border-top-color: #A1EBE3;
+  -webkit-animation: iVXCSc 1.2s linear infinite;
+  animation: iVXCSc 1.2s linear infinite;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Spinner /> renders the component with props 1`] = `
+.c0 {
+  width: 38px;
+  height: 38px;
+  margin: 8px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  border-top-color: #A1EBE3;
+  -webkit-animation: iVXCSc 1.2s linear infinite;
+  animation: iVXCSc 1.2s linear infinite;
+}
+
+<div
+  class="c0"
+/>
+`;

@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Links /> renders the component 1`] = `
+.c1 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 16px;
+  padding-left: 16px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: px;
+  padding-left: px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-left: -16px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.c6:hover {
+  color: #6F748B;
+}
+
+.c8 {
+  background-color: #282F52;
+  height: 1px;
+}
+
+.c2 {
+  padding: 18px 0;
+}
+
+.c3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.c5 {
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+@media (min-width:0px) {
+  .c1 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c1 {
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+    max-width: 33.33333333333333%;
+  }
+}
+
+@media (min-width:992px) {
+  .c1 {
+    display: block;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width:0px) {
+  .c7 {
+    display: block;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c7 {
+    display: none;
+  }
+}
+
+<div
+  class="c0"
+  cols="12"
+>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        About Zopa
+      </div>
+      <ul
+        class="c4"
+      >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about"
+          >
+            About Zopa
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/how-zopa-works"
+          >
+            How Zopa works
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/join-us"
+          >
+            Join us
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/press"
+          >
+            Press office
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/contact"
+          >
+            Contact Zopa
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8"
+      />
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        Zopa Loans
+      </div>
+      <ul
+        class="c4"
+      >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/debt-consolidation"
+          >
+            Debt consolidation
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/home-improvement"
+          >
+            Home improvements
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/car-finance"
+          >
+            Car finance
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/faq"
+          >
+            FAQs for loans
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8"
+      />
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        Invest your money
+      </div>
+      <ul
+        class="c4"
+      >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/lending"
+          >
+            Invest at Zopa
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/lending/risk-management"
+          >
+            Risk management
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/lending/faq"
+          >
+            FAQs for investing
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8"
+      />
+    </div>
+  </div>
+</div>
+`;

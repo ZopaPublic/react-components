@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
+.c4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  color: #1C2139;
+  display: block;
+}
+
+.c1 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C2139;
+  font-weight: 400;
+  position: relative;
+}
+
+.c3:before {
+  content: '';
+  background-color: #EDEDF0;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  border: 2px #D6D7DE solid;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c3:hover:before {
+  border: 2px solid #D6D7DE;
+}
+
+.c2 {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c2:hover + label:before,
+.c2:focus + label:before {
+  border: 2px #9C94FC solid;
+}
+
+.c2:checked + label {
+  font-weight: 600;
+}
+
+.c2:checked + label:before {
+  content: '';
+  background-color: #4033D5;
+  border: 2px #4033D5 solid;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+}
+
+.c2:checked + label:after {
+  content: '';
+  background-color: #fff;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  -webkit-animation: ciAMHu 120ms ease-in-out;
+  animation: ciAMHu 120ms ease-in-out;
+  left: 8px;
+  top: 8px;
+  position: absolute;
+}
+
+.c2:disabled + label {
+  color: #6F748B;
+}
+
+.c2:disabled + label:before {
+  border-color: #D6D7DE;
+  background-color: #EDEDF0;
+}
+
+.c2:disabled + label:hover {
+  cursor: not-allowed;
+}
+
+<div
+  class="c0 c1"
+>
+  <input
+    class="c2"
+    id="radio-id-1"
+    name="test1"
+    type="radio"
+    value="1"
+  />
+  <label
+    class="c3 c4"
+    for="radio-id-1"
+  >
+    hello
+  </label>
+</div>
+`;

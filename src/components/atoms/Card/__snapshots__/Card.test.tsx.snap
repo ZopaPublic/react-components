@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card type="button"/> renders the component with props 1`] = `
+.c0 {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 1000px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="button"
+>
+  Click me!
+</div>
+`;
+
+exports[`<Card type="button"/> renders the component with props 2`] = `
+.c0 {
+  background-color: #def;
+  border-color: #abc;
+  border-radius: 1000px;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  display="inline-block"
+  type="button"
+>
+  Click me too
+</div>
+`;
+
+exports[`<Card type="card"/> renders default card type with explicit card type 1`] = `
+.c0 {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="card"
+>
+  <div>
+    Content
+  </div>
+</div>
+`;
+
+exports[`<Card type="card"/> renders default card type with implicit card type with no a11y violations 1`] = `
+.c0 {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="card"
+>
+  <div>
+    Content
+  </div>
+</div>
+`;
+
+exports[`<Card type="card"/> renders the card type with multiple props 1`] = `
+.c0 {
+  background-color: #def;
+  border-color: #abc;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="card"
+>
+  <div>
+    Content
+  </div>
+</div>
+`;
+
+exports[`<Card type="linkCard"/> renders default linkCard 1`] = `
+.c0 {
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="linkCard"
+/>
+`;
+
+exports[`<Card type="linkCard"/> renders the component with props 1`] = `
+.c0 {
+  background-color: #def;
+  border-color: #abc;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  padding: 2em;
+}
+
+@media (max-width:720px) {
+  .c0 {
+    border-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+<div
+  class="c0"
+  type="linkCard"
+>
+  <div>
+    Content
+  </div>
+</div>
+`;

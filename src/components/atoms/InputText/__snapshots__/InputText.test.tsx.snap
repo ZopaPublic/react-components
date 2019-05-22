@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputText /> renders the component disabled 1`] = `
+.c0 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c0:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c0:disabled {
+  background-color: #F8F8F9;
+}
+
+<input
+  class="c0"
+  disabled=""
+  name="name"
+/>
+`;
+
+exports[`<InputText /> renders the component with error 1`] = `
+.c0 {
+  border: 2px solid #F52D2D;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c0:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c0:disabled {
+  background-color: #F8F8F9;
+}
+
+<input
+  class="c0"
+  name="name"
+/>
+`;
+
+exports[`<InputText /> renders the component with focus 1`] = `
+.c0 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c0:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c0:disabled {
+  background-color: #F8F8F9;
+}
+
+<input
+  class="c0"
+  name="name"
+/>
+`;
+
+exports[`<InputText /> renders the component with isValid set as true 1`] = `
+.c0 {
+  border: 2px solid #00A45A;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c0:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c0:disabled {
+  background-color: #F8F8F9;
+}
+
+<input
+  class="c0"
+  name="name"
+/>
+`;
+
+exports[`<InputText /> renders the component with the required props 1`] = `
+.c0 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c0:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c0:disabled {
+  background-color: #F8F8F9;
+}
+
+<input
+  class="c0"
+  name="name"
+/>
+`;

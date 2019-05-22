@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorMessage /> renders the component with props with no a11y violations 1`] = `
+.c0 {
+  font-weight: 600;
+  width: 100%;
+  font-size: 14px;
+  color: #F52D2D;
+  display: block;
+}
+
+.c0:before {
+  content: '';
+  background: url(red-warning.svg) no-repeat;
+  width: 28px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+<span
+  class="c0"
+  role="alert"
+>
+  Ops error !
+</span>
+`;

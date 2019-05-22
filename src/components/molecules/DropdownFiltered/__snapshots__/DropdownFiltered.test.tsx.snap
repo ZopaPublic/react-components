@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y violations 1`] = `
+.c1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  color: #1C2139;
+  display: block;
+}
+
+.c4 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c4:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c4:disabled {
+  background-color: #F8F8F9;
+}
+
+.c6 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c3 {
+  margin-bottom: 0;
+  -webkit-transition: border 0s;
+  transition: border 0s;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c5 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 12px;
+  cursor: pointer;
+}
+
+<div
+  class="c0"
+>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
+    role="combobox"
+  >
+    <label
+      class="c1"
+      for="text-id-test"
+      id="downshift-0-label"
+    >
+      Label
+    </label>
+    <div
+      class="c2"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-labelledby="downshift-0-label"
+        autocomplete="off"
+        class="c3 c4"
+        id="text-id-test"
+        name="test"
+        value=""
+      />
+      <svg
+        aria-label="open.menu"
+        class="c5 c6"
+        direction="down"
+        height="24px"
+        viewBox="0 0 416 416"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
+          fill="#4B3CFA"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
+.c3 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c3:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c3:disabled {
+  background-color: #F8F8F9;
+}
+
+.c5 {
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c2 {
+  margin-bottom: 0;
+  -webkit-transition: border 0s;
+  transition: border 0s;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c4 {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 12px;
+  cursor: pointer;
+}
+
+<div
+  class="c0"
+>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    role="combobox"
+  >
+    <div
+      class="c1"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-labelledby="downshift-1-label"
+        autocomplete="off"
+        class="c2 c3"
+        id="text-id-test"
+        name="test"
+        value="orange"
+      />
+      <svg
+        aria-label="open.menu"
+        class="c4 c5"
+        direction="down"
+        height="24px"
+        viewBox="0 0 416 416"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
+          fill="#4B3CFA"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

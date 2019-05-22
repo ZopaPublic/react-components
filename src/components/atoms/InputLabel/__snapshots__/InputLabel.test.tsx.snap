@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputLabel /> renders the component with props 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  color: #1C2139;
+  display: block;
+}
+
+<label
+  class="c0"
+  for="username"
+>
+  Username:
+</label>
+`;

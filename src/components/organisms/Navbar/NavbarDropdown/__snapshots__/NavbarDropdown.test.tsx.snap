@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar.Dropdown /> should render component 1`] = `
+.c2 {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px rgba(214,215,222,0.75),0 2px 4px 0 rgba(0,0,0,0.06);
+  padding: 16px;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.c2:after {
+  z-index: 1;
+  content: '';
+  top: 1px;
+  right: 16px;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  -ms-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
+  background-color: inherit;
+  box-shadow: -1px 1px 0 0 #E2E3E7;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  position: absolute;
+  right: 0;
+  -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+  -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+  transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+
+<div
+  class="c0"
+>
+  <button
+    aria-expanded="false"
+    aria-haspopup="true"
+    role="menuitem"
+    tabindex="0"
+  >
+    opener
+  </button>
+  <div
+    class="c1"
+  >
+    <ul
+      aria-label="test"
+      class="c2"
+      role="menu"
+    >
+      <li
+        role="none"
+      >
+        <a
+          href="#"
+          role="menuitem"
+          tabindex="-1"
+        >
+          one
+        </a>
+      </li>
+      <li
+        role="none"
+      >
+        <a
+          href="#"
+          role="menuitem"
+          tabindex="-1"
+        >
+          two
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

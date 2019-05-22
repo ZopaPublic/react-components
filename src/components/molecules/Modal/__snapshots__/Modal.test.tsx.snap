@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> render the opened Modal 1`] = `
+<div
+  class="zopa-modal zopa-modal--after-open"
+  role="dialog"
+  tabindex="-1"
+>
+  text
+</div>
+`;

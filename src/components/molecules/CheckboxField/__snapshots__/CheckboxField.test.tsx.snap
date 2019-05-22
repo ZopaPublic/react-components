@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
+.c3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  color: #1C2139;
+  display: block;
+}
+
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c1:checked + label {
+  font-weight: 600;
+}
+
+.c1:checked + label:before {
+  content: '';
+  background-color: #4033D5;
+}
+
+.c1:checked + label:after {
+  content: '';
+  background-size: contain;
+  background-image: url(white-check-mark.svg);
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
+}
+
+.c1:focus + label:before {
+  border: 2px #B7B1FD solid;
+}
+
+.c2 {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1C2139;
+  position: relative;
+}
+
+.c2:before {
+  content: '';
+  background-color: #EDEDF0;
+  border-radius: 6px;
+  height: 24px;
+  width: 24px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 8px;
+  border: 2px #fff solid;
+  display: block;
+}
+
+.c2:after {
+  content: '';
+  background-size: contain;
+  background: transparent none no-repeat center;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:hover:before {
+  border: 2px #B7B1FD solid;
+}
+
+<div
+  class="c0"
+>
+  <input
+    class="c1"
+    id="checkbox-id-test1"
+    name="test1"
+    type="checkbox"
+  />
+  <label
+    class="c2 c3"
+    for="checkbox-id-test1"
+  >
+    hello
+  </label>
+</div>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Legal /> renders the component 1`] = `
+.c0 {
+  padding: 18px 0;
+}
+
+.c1 {
+  color: #6F748B;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
+London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
+and entered on the Financial Services Register under firm registration number 718925.
+  </p>
+</div>
+`;
