@@ -74,7 +74,7 @@ export function StyleGuideRenderer({ classes, title, version, homepageUrl, child
       <main className={classes.content}>
         {children}
         <footer className={classes.footer}>
-          <Markdown text={footerText} />
+          <Markdown text={footerText(homepageUrl)} />
         </footer>
       </main>
       {hasSidebar && (
