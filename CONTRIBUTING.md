@@ -24,7 +24,7 @@ Helping people with issues or writing docs are definitely the best ways to get s
 
 ### Tracking progress
 
-For this repo we are using the [Frontend Jira board](https://jira.globalservices.aws.ad.zopa.com/secure/RapidBoard.jspa?rapidView=213). A ticket must be attached in the description of any pull request.
+For this repo we are using the Frontend Jira board (hosted internally in Zopa). A ticket must be attached in the description of any pull request.
 
 ### Adding new components (only available for Zopians)
 
