@@ -1,50 +1,65 @@
 # Docs: https://circleci.com/docs/2.0/language-javascript/ 
 version: 2
-
-executors:
-  default-executor:
-    docker:
-      - image: circleci/node:10
-
-install_with_cache: &install_with_cache
-  - restore_cache:
-      name: Restore Yarn Package Cache
-      keys:
-        - yarn-packages-{{ checksum "yarn.lock" }}
-  - run:
-      name: Install Dependencies
-      command: yarn install --frozen-lockfile
-  - save_cache:
-      name: Save Yarn Package Cache
-      key: yarn-packages-{{ checksum "yarn.lock" }}
-      paths:
-        - ~/.cache/yarn
-
 jobs:
   test_node_8:
     docker:
       - image: circleci/node:8
     steps:
       - checkout
-      <<: *install_with_cache
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run:
           name: Run tests
           command: yarn test --watchAll=false
 
   test_node_10:
-    executor: default-executor
+    docker:
+      - image: circleci/node:10
     steps:
       - checkout
-      <<: *install_with_cache
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run: 
           name: Run tests
           command: yarn test --watchAll=false
 
   release:
-    executor: default-executor
+    docker:
+      - image: circleci/node:10
     steps:
       - checkout
-      <<: *install_with_cache
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run:
           name: Compile the code
           command: yarn compile
@@ -53,10 +68,22 @@ jobs:
           command: yarn release
 
   deploy-web:
-    executor: default-executor
+    docker:
+      - image: circleci/node:10
     steps:
       - checkout
-      <<: *install_with_cache
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
       - run:
           name: Build website
           command: yarn build
