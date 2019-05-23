@@ -1,7 +1,6 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from 'react-testing-library';
-import { neutral as neutralColors, primary as primaryColors } from '../../../constants/colors';
 import Badge from './Badge';
 
 describe('<Badge />', () => {

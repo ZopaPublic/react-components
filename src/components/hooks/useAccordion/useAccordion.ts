@@ -3,7 +3,7 @@ import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
 import { mod } from '../../../helpers/utils';
 
 const useAccordion = () => {
-  const headersRefs = useRef<Array<React.RefObject<HTMLButtonElement>['current']>>([]).current;
+  const headersRefs = useRef<React.RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
     if (node === null) {
@@ -13,7 +13,7 @@ const useAccordion = () => {
     }
   };
 
-  const sectionsRefs = useRef<Array<React.RefObject<HTMLDivElement>['current']>>([]).current;
+  const sectionsRefs = useRef<React.RefObject<HTMLDivElement>['current'][]>([]).current;
 
   const getSectionRef = (index: number) => (node: HTMLDivElement) => {
     if (node === null) {
@@ -22,6 +22,10 @@ const useAccordion = () => {
       sectionsRefs[index] = node;
     }
   };
+
+  const [activeSections, updateActiveSections] = useState<number[]>([]);
+
+  const isActiveSection = (index: number) => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
     const sectionRef = sectionsRefs[index];
@@ -34,8 +38,6 @@ const useAccordion = () => {
     }
     return { ...baseStyle, height: `${sectionRef.clientHeight}px` };
   };
-
-  const [activeSections, updateActiveSections] = useState<number[]>([]);
 
   const toggleAccordionSection = (index: number) =>
     updateActiveSections(prevSections =>
@@ -52,20 +54,6 @@ const useAccordion = () => {
   const getOnFocus = (index: number) => () => updateCursorPosition(index);
 
   const getLinkingId = (id: string) => `${id}-tab`;
-
-  const isActiveSection = (index: number) => activeSections.includes(index);
-
-  const getHeaderProps = (id: string, index: number) => ({
-    'aria-controls': getLinkingId(id),
-    'aria-disabled': isActiveSection(index),
-    'aria-expanded': isActiveSection(index),
-    id,
-    key: id,
-    onClick: getOnClick(index),
-    onFocus: getOnFocus(index),
-    onKeyDown,
-    ref: getHeaderRef(index),
-  });
 
   const focusOnHeader = (nextCursorPosition: number) => {
     const headerRef = headersRefs[nextCursorPosition];
@@ -88,6 +76,18 @@ const useAccordion = () => {
       focusOnHeader(nextCursorPosition);
     }
   };
+
+  const getHeaderProps = (id: string, index: number) => ({
+    'aria-controls': getLinkingId(id),
+    'aria-disabled': isActiveSection(index),
+    'aria-expanded': isActiveSection(index),
+    id,
+    key: id,
+    onClick: getOnClick(index),
+    onFocus: getOnFocus(index),
+    onKeyDown,
+    ref: getHeaderRef(index),
+  });
 
   const getSectionProps = (id: string, index: number) => ({
     'aria-hidden': !isActiveSection(index),

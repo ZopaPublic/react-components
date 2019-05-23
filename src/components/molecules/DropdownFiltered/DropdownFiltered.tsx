@@ -135,7 +135,6 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
       openMenu,
       closeMenu,
       selectedItem,
-      toggleMenu,
     } = options;
 
     const { errorMessage, items = [], label, optionsListMaxHeight, inputProps, labelProps, isValid } = this.props;

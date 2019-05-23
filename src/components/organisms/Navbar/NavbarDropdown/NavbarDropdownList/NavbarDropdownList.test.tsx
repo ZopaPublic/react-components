@@ -1,4 +1,3 @@
-import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from 'react-testing-library';
 import NavbarDropdownList from './NavbarDropdownList';

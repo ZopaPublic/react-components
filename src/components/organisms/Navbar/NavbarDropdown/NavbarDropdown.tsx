@@ -96,7 +96,7 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
   private readonly dropdownRef = React.createRef<HTMLDivElement>();
   private readonly dropdownListRef = React.createRef<HTMLUListElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
-  private readonly itemsRefs: Array<React.RefObject<HTMLLIElement>> = [];
+  private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
   public constructor(props: INavbarDropdownProps) {
     super(props);

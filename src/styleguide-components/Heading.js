@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'clsx';
 import Styled from 'rsg-components/Styled';
 
-const styles = ({ color, fontFamily, fontSize }) => ({
+const styles = ({ color, fontSize }) => ({
   heading: {
     margin: '1em 0',
     color: color.base,

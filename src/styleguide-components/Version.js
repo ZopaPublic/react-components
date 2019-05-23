@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Styled from 'rsg-components/Styled';
 
-const styles = ({ color, fontFamily, fontSize }) => ({
+const styles = ({ fontFamily, fontSize }) => ({
   version: {
     color: '#FFB428',
     margin: [[5, 0, 0, 0]],

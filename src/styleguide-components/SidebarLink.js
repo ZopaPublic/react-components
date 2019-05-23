@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import cx from 'clsx';
 import Styled from 'rsg-components/Styled';
 
-const styles = ({ color }) => ({
+const styles = () => ({
   link: {
     '&, &:link, &:visited': {
       fontSize: 'inherit',
