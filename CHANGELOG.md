@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/zopaUK/react-components/compare/v1.0.0...v1.0.1) (2019-05-23)
+
+
+### Bug Fixes
+
+* **website:** fix types forwardRefs and function ([0de84a2](https://github.com/zopaUK/react-components/commit/0de84a2))
+* **website:** fix types forwardRefs and function ([#5](https://github.com/zopaUK/react-components/issues/5)) ([0c08daa](https://github.com/zopaUK/react-components/commit/0c08daa))
+
 # 1.0.0 (2019-05-22)
 
 
