@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
-import { statusColors } from '../../../constants/colors';
+import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
-
-export const getBorderColorByStatus = ({ hasError, isValid }: IInput) =>
-  hasError ? statusColors.error : isValid ? statusColors.valid : colors.neutral.neutral75;
 
 const Input = styled.input<IInput>`
   border: 2px solid ${getBorderColorByStatus};

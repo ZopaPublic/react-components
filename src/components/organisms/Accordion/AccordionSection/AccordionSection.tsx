@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const AccordionSection = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+const AccordionSection: FC = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ children, ...rest }, ref) => (
     <div {...rest}>
       <div ref={ref}>{children}</div>
