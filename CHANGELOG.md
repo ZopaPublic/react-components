@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/zopaUK/react-components/compare/v1.0.1...v1.0.2) (2019-05-23)
+
+
+### Bug Fixes
+
+* **code style:** replace tslint for eslint ([94eb140](https://github.com/zopaUK/react-components/commit/94eb140))
+* **code style:** replace tslint for eslint ([#6](https://github.com/zopaUK/react-components/issues/6)) ([9fcf962](https://github.com/zopaUK/react-components/commit/9fcf962))
+
 ## [1.0.1](https://github.com/zopaUK/react-components/compare/v1.0.0...v1.0.1) (2019-05-23)
 
 
