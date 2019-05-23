@@ -1,4 +1,4 @@
-# Docs: https://circleci.com/docs/2.0/language-javascript/ 
+# Docs: https://circleci.com/docs/2.0/language-javascript/
 version: 2
 jobs:
   test_node_8:
@@ -20,7 +20,7 @@ jobs:
             - ~/.cache/yarn
       - run:
           name: Run tests
-          command: yarn test --watchAll=false
+          command: yarn test --watchAll=false --runInBand
 
   test_node_10:
     docker:
@@ -39,9 +39,16 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-      - run: 
+      - run:
+          name: Run linter
+          command: yarn lint --format junit -o reports/junit/js-lint-results.xml
+      - run:
           name: Run tests
-          command: yarn test --watchAll=false
+          command: yarn test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit   
 
   release:
     docker:
@@ -91,7 +98,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "d3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e"
-      - run: 
+      - run:
           name: Deploy website
           command: yarn deploy-web
 
