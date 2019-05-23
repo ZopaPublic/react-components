@@ -22,7 +22,7 @@
     "lint": "tslint -c ./etc/tslint/config.json 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "typecheck": "tsc --noEmit",
-    "deploy-web": "gh-pages -d styleguide -u \"Zopa Ltd. <frontend-opensource@zopa.com>\"",
+    "deploy-web": "gh-pages -d styleguide -u \"Zopa Ltd. <frontend-opensource@zopa.com>\" -m \"[ci skip] - circleci\"",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
@@ -119,5 +119,8 @@
   "homepage": "https://github.com/zopaUK/react-components#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
   }
 }
