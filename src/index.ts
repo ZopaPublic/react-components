@@ -3,6 +3,10 @@
  */
 
 // Atoms
+// Constants (colors, fonts, ...)
+import * as colors from './constants/colors';
+import * as fonts from './constants/fonts';
+
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Button } from './components/atoms/Button/Button';
@@ -58,10 +62,6 @@ export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
 // Hooks
 export { default as useAccordion } from './components/hooks/useAccordion/useAccordion';
-
-// Constants (colors, fonts, ...)
-import * as colors from './constants/colors';
-import * as fonts from './constants/fonts';
 
 export { colors, fonts };
 export { default as Fonts } from './components/styles/Fonts';

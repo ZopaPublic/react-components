@@ -55,7 +55,7 @@ describe('<Dropdown />', () => {
     ${true}      | ${statusColors.error}
   `(
     'renders the border with the "$expectBorderColor" color if the hasError is "$hasError"',
-    ({ hasError, isTouched, expectBorderColor }) => {
+    ({ hasError, expectBorderColor }) => {
       const { container } = render(
         <Dropdown hasError={hasError}>
           <Option value="first">First value</Option>

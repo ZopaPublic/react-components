@@ -18,19 +18,6 @@ export interface IFlexColProps {
 
 export interface IFlexCol extends React.HTMLAttributes<HTMLDivElement>, IFlexColProps {}
 
-const getWidth = (breakpoint, colWidth, cols) => {
-  if (colWidth === 'hidden') {
-    return genHidden(breakpoint);
-  }
-  if (colWidth === 'auto') {
-    return genAutoWidth(breakpoint);
-  }
-  if (colWidth === 'fill') {
-    return genFillWidth(breakpoint);
-  }
-  return genRelativeWidth(breakpoint, colWidth, cols);
-};
-
 const genHidden = breakpoint => css`
   @media (min-width: ${grid.breakpoints[breakpoint]}px) {
     display: none;
@@ -62,6 +49,19 @@ const genRelativeWidth = (breakpoint, colWidth, cols) => css`
     max-width: ${(colWidth / cols) * 100}%;
   }
 `;
+
+const getWidth = (breakpoint, colWidth, cols) => {
+  if (colWidth === 'hidden') {
+    return genHidden(breakpoint);
+  }
+  if (colWidth === 'auto') {
+    return genAutoWidth(breakpoint);
+  }
+  if (colWidth === 'fill') {
+    return genFillWidth(breakpoint);
+  }
+  return genRelativeWidth(breakpoint, colWidth, cols);
+};
 
 const defaultProps: Partial<IFlexCol> = {
   align: 'flex-start',

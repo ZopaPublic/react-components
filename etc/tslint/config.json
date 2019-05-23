@@ -1,9 +1,0 @@
-{
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "rules": {
-    "jsx-wrap-multiline": false,
-    "jsx-no-multiline-js": false,
-    "jsx-no-lambda": false,
-    "jsx-boolean-value": ["never"]
-  }
-}

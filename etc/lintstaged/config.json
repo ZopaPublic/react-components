@@ -1,11 +1,4 @@
 {
-  "*.{ts,tsx}": [
-    "tslint -c ./etc/tslint/config.json --fix",
-    "prettier  -l --config etc/prettier/prettierrc.json --ignore-path etc/prettier/prettierignore --write",
-    "git add"
-  ],
-  "*.{js,jsx,json,less,css,md}": [
-    "prettier  -l --config etc/prettier/prettierrc.json --ignore-path etc/prettier/prettierignore --write",
-    "git add"
-  ]
+  "*.{ts,tsx}": ["eslint --fix", "git add"],
+  "*.{js,jsx,json,less,css,md}": ["prettier --write", "git add"]
 }
