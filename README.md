@@ -17,7 +17,7 @@ This repo contains 2 things at the same time:
   which provides a development environment, a style guide website,
   interactive playground and other cool tools.
 
-Check it out in [Github Pages](https://github.com/pages/zopaUK/react-components/)
+Check it out in [Github Pages](https://zopauk.github.io/react-components/)
 
 ### Documentation
 
