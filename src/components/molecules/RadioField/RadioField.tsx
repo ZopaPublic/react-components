@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import * as colors from '../../../constants/colors';
+import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
-import { getBorderColorByStatus } from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField, IInputStatus } from '../../types';
 

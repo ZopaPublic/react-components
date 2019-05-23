@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
@@ -52,7 +52,7 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
   open?: boolean;
 }
 
-const NavbarLink = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
+const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
   ({ active = false, children, open = false, withChevron = false, color = colors.primary.blue500, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} color={color} ref={ref} {...rest}>
       {children}

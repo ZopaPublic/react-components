@@ -38,7 +38,7 @@ const TargetIcon = (props: ITargetIconProps) => {
   );
 };
 
-const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
+const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
   const { children, ...rest } = props;
   return (
     <SLink ref={ref} {...rest}>
