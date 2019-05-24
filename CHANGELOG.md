@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/zopaUK/react-components/compare/v1.0.2...v1.1.0) (2019-05-24)
+
+
+### Features
+
+* **fonts:** enable text font-family swap ([0d3a58f](https://github.com/zopaUK/react-components/commit/0d3a58f))
+
 ## [1.0.2](https://github.com/zopaUK/react-components/compare/v1.0.1...v1.0.2) (2019-05-23)
 
 
