@@ -1,9 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
 
-const InputText = styled.input<IInput>`
+const Input = styled.input<IInput>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 0 10px;
@@ -26,5 +27,9 @@ const InputText = styled.input<IInput>`
     background-color: ${colors.neutral.neutral10};
   }
 `;
+
+const InputText = (props: IInput) => {
+  return <Input {...props} />;
+};
 
 export default InputText;
