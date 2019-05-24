@@ -1,5 +1,7 @@
 # Docs: https://circleci.com/docs/2.0/language-javascript/
 version: 2
+orbs:
+  codecov: codecov/codecov@1.0.4
 jobs:
   test_node_8:
     docker:
@@ -45,6 +47,8 @@ jobs:
       - run:
           name: Run tests
           command: yarn test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
+      - codecov/upload:
+          file: coverage/*.json
       - store_test_results:
           path: reports/junit
       - store_artifacts:
