@@ -24,7 +24,7 @@ const Fonts = createGlobalStyle`
   }
 
   /* Open Sans */
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 `;
 
 export default Fonts;
