@@ -10,7 +10,33 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   display: block;
 }
 
-.c5 {
+.c4 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c4:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c4:disabled {
+  background-color: #F8F8F9;
+}
+
+.c6 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -25,39 +51,16 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3 {
-  border: 2px solid #D6D7DE;
-  border-radius: 4px;
-  padding: 0 10px;
-  font-size: 20px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  margin: 4px 0;
   margin-bottom: 0;
   -webkit-transition: border 0s;
   transition: border 0s;
-}
-
-.c3:focus {
-  outline-width: 0;
-  border: 2px solid #4B3CFA;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #6F748B;
-}
-
-.c3:disabled {
-  background-color: #F8F8F9;
 }
 
 .c2 {
   position: relative;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   margin: auto;
   top: 0;
@@ -89,14 +92,14 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         aria-autocomplete="list"
         aria-labelledby="downshift-0-label"
         autocomplete="off"
-        class="c3"
+        class="c3 c4"
         id="text-id-test"
         name="test"
         value=""
       />
       <svg
         aria-label="open.menu"
-        class="c4 c5"
+        class="c5 c6"
         direction="down"
         height="24px"
         viewBox="0 0 416 416"
@@ -114,7 +117,33 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 `;
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
-.c4 {
+.c3 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c3:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c3:disabled {
+  background-color: #F8F8F9;
+}
+
+.c5 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -129,39 +158,16 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2 {
-  border: 2px solid #D6D7DE;
-  border-radius: 4px;
-  padding: 0 10px;
-  font-size: 20px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  margin: 4px 0;
   margin-bottom: 0;
   -webkit-transition: border 0s;
   transition: border 0s;
-}
-
-.c2:focus {
-  outline-width: 0;
-  border: 2px solid #4B3CFA;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c2::-webkit-input-placeholder {
-  color: #6F748B;
-}
-
-.c2:disabled {
-  background-color: #F8F8F9;
 }
 
 .c1 {
   position: relative;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   margin: auto;
   top: 0;
@@ -186,14 +192,14 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         aria-autocomplete="list"
         aria-labelledby="downshift-1-label"
         autocomplete="off"
-        class="c2"
+        class="c2 c3"
         id="text-id-test"
         name="test"
         value="orange"
       />
       <svg
         aria-label="open.menu"
-        class="c3 c4"
+        class="c4 c5"
         direction="down"
         height="24px"
         viewBox="0 0 416 416"
