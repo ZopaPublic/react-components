@@ -9,7 +9,7 @@ shown as code examples but are not exported as a single component itself to avoi
 To use the components in your project simply import the desired component to your project as follows:
 
 ```js static
-import { Button } from 'zopa-react-components';
+import { Button } from '@zopauk/react-components';
 ```
 
 For complex components (organisms, templates, pages, ...) we can just click on "show code" and copy/paste the code to our project.

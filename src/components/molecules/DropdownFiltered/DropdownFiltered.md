@@ -33,6 +33,8 @@ Under the hood:
 Basic example:
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered
@@ -50,6 +52,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 #### With default value
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered
@@ -68,6 +72,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 #### Long list and a optionsListMaxHeight
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [
   { alpha2: 'GB', value: 'British' },
   { alpha2: 'AO', value: 'Angolan' },
@@ -138,6 +144,8 @@ const items = [
 #### With errorMessage
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered
@@ -156,6 +164,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 #### isValid
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered
@@ -174,6 +184,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 #### disabled
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered
@@ -193,6 +205,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 #### size is "short"
 
 ```jsx
+import { DropdownFiltered } from '@zopauk/react-components';
+
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
 
 <DropdownFiltered

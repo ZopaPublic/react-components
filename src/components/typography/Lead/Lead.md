@@ -1,7 +1,11 @@
 ```js
-<Lead>Lead</Lead>
+import { Lead } from '@zopauk/react-components';
+
+<Lead>Lead</Lead>;
 ```
 
 ```js
-<Lead style={{ textAlign: 'center', color: 'salmon' }}>Lead</Lead>
+import { Lead } from '@zopauk/react-components';
+
+<Lead style={{ textAlign: 'center', color: 'salmon' }}>Lead</Lead>;
 ```

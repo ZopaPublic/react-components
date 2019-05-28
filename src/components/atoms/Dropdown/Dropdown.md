@@ -6,22 +6,22 @@ It consists of 2 components:
 - `<Option />`: which extends from html `<option>` element
 
 ```jsx
-import { Option } from './Dropdown';
+import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown name="I ❤️ dropdowns" defaultValue="third">
-  <Option value="first">First value</Option>
-  <Option value="second">Second value</Option>
-  <Option value="third">Third value</Option>
-  <Option value="fourth">This value is really quite long</Option>
+  <DropdownOption value="first">First value</DropdownOption>
+  <DropdownOption value="second">Second value</DropdownOption>
+  <DropdownOption value="third">Third value</DropdownOption>
+  <DropdownOption value="fourth">This value is really quite long</DropdownOption>
 </Dropdown>;
 ```
 
 #### hasError
 
 ```jsx
-import { Option } from './Dropdown';
+import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown hasError={true}>
-  <Option value="first">First value</Option>
+  <DropdownOption value="first">First value</DropdownOption>
 </Dropdown>;
 ```

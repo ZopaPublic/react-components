@@ -3,8 +3,7 @@ The `FlexCol` component is meant to be used a child component of `FlexRow` as it
 Standard grid:
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer gutter={0}>
   <FlexRow>
@@ -24,8 +23,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Content based grid (collapsing on mobile)
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow>
@@ -42,8 +40,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Flexbox responsive layouts:
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow justify="space-between">
@@ -60,8 +57,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Layout with a column hidden on small screen:
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow justify="space-between">
@@ -78,8 +74,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Grid aligned vertically:
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow align="center">
@@ -96,8 +91,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Each column with different vertical alignment
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow>
@@ -120,8 +114,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Grid with custom gutter (48px):
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow gutter={48}>
@@ -141,8 +134,7 @@ import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
 Grid with custom number of column (5):
 
 ```jsx
-import FlexContainer from 'zopa-react-components/components/layout/FlexContainer/FlexContainer';
-import FlexRow from 'zopa-react-components/components/layout/FlexRow/FlexRow';
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
   <FlexRow cols={5}>

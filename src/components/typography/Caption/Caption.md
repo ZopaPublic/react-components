@@ -1,7 +1,11 @@
 ```js
-<Caption>Caption</Caption>
+import { Caption } from '@zopauk/react-components';
+
+<Caption>Caption</Caption>;
 ```
 
 ```js
-<Caption style={{ textAlign: 'center', color: 'salmon' }}>Caption</Caption>
+import { Caption } from '@zopauk/react-components';
+
+<Caption style={{ textAlign: 'center', color: 'salmon' }}>Caption</Caption>;
 ```

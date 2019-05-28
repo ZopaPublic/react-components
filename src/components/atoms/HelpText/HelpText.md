@@ -2,4 +2,8 @@ Additional information for input Components. This component is meant to be used 
 
 For a more complex component check `TextField`.
 
-    <HelpText>Additional information</HelpText>
+```jsx
+import { HelpText } from '@zopauk/react-components';
+
+<HelpText>Additional information</HelpText>;
+```

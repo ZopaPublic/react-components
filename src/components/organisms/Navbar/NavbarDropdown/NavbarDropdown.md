@@ -3,7 +3,7 @@ This is a flexible Navbar subcomponent meant to be used with other components su
 Basic example:
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
-import Navbar from 'zopa-react-components/components/organisms/Navbar/Navbar';
+import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Dropdown
   id="basic-example-id"
@@ -27,9 +27,7 @@ import Navbar from 'zopa-react-components/components/organisms/Navbar/Navbar';
 Example with custom components:
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
-import Link from 'zopa-react-components/components/atoms/Link/Link';
-import Hamburger from 'zopa-react-components/components/icons/Hamburger/Hamburger';
-import Navbar from 'zopa-react-components/components/organisms/Navbar/Navbar';
+import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
 
 <Navbar.Dropdown
   id="custom-example-id"
@@ -38,7 +36,7 @@ import Navbar from 'zopa-react-components/components/organisms/Navbar/Navbar';
   renderOpener={({ open, getOpenerProps }) => (
     <div style={{ padding: 8 }}>
       <Link href="#" {...getOpenerProps()}>
-        <Hamburger size="30px" activeColor="#fff" inactiveColor="#fff" />
+        <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
       </Link>
     </div>
   )}

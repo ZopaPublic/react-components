@@ -151,7 +151,7 @@ module.exports = {
     colors: path.resolve(__dirname, './src/constants/colors'),
   },
   moduleAliases: {
-    'zopa-react-components': path.resolve(__dirname, 'src'),
+    '@zopauk/react-components': path.resolve(__dirname, 'src'),
   },
   printServerInstructions,
   ribbon: {

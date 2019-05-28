@@ -5,7 +5,7 @@ In the library we have access to the color constants as follows:
 ### Usage
 
 ```js static
-import { colors } from 'zopa-react-components';
+import { colors } from '@zopauk/react-components';
 
 const whiteColor = colors.base.white; // #fff
 ```

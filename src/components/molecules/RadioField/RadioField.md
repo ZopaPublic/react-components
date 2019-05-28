@@ -1,81 +1,84 @@
-RadioField is a single radio button element.
+`<RadioField />` is a single radio field element.
 
-The error message is not shown because it's mean to be shown in a group of radio buttons.
+Its error message is meant to be shown in a group of them.
 
-It's build with 3 html elements:
+It's composed of three HTML elements:
 
-- `input`: Input radio component. It is hidden for styling purposes. The label component is the one in charge of this styling.
-- `label`: Text to show next to the radio button. It's attached to the input and not build as an standalone component because
-  it uses `after` and `before` to style the circle of the radio button.
-- `div`: Container
+- `input`: input radio component, hidden for styling purposes\_
+- `label`: text to show next to the radio field. It uses CSS `::after` and `::before` to draw the actual circles of the radio field
+- `div`: container to wrap the two previous elements.
 
-`inputProps.value` must be set so it's used to automatically set:
+`value` must be provided so that it internally sets:
 
-- `htmlFor` in the `InputLabel` component.
-- `id` in `InputRadio` for automation test purposes.
+- `htmlFor` prop on the `<InputLabel />` component.
+- `id` prop on `<InputRadio />` so that is easily to query (.i.e automated tests).
 
-#### Default
+#### default
 
 ```jsx
-<RadioField label="Option 1" inputProps={{ value: 'radio1', name: 'radio1' }} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField label="option" inputProps={{ value: 'option', name: 'option' }} />;
 ```
 
-#### hasError
+#### with error
 
 ```jsx
-<RadioField hasError={true} label="Option 2" inputProps={{ value: 'radio2', name: 'radio2' }} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField hasError={true} label="option" inputProps={{ value: 'radio2', name: 'radio2' }} />;
 ```
 
-#### isValid
+#### valid
 
 ```jsx
-<RadioField isValid={true} label="Option 2" inputProps={{ value: 'radio3', name: 'radio2' }} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField isValid={true} label="option" inputProps={{ value: 'radio3', name: 'radio3' }} />;
 ```
 
-#### defaultChecked
+#### pre-selected
 
 ```jsx
-  <RadioField label="Option 3" inputProps={{value: 'radio3', name: 'radio4', defaultChecked: true}} />
-  <RadioField label="Option 4" inputProps={{value: 'radio4', name: 'radio4'}} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField label="I'm checked by default" inputProps={{ value: 'radio4', name: 'radio4', defaultChecked: true }} />;
 ```
 
-#### Disabled + defaultChecked
+#### disabled and pre-selected
 
 ```jsx
-  <RadioField label="Option 5" inputProps={{value: 'radio5', name: 'radio5', disabled: true, defaultChecked: true }}/>
-  <RadioField label="Option 6" inputProps={{value: 'radio6', name: 'radio5', disabled: true}} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField
+  label="I'm disabled and checked"
+  inputProps={{ value: 'radio5', name: 'radio5', disabled: true, defaultChecked: true }}
+/>;
 ```
 
-#### Disabled + defaultChecked + isValid
+#### disabled, valid and pre-selected
 
 ```jsx
-  <RadioField label="Option 5" isValid={true} inputProps={{value: 'radio5', name: 'radio6', disabled: true, defaultChecked: true }}/>
-  <RadioField label="Option 6" isValid={true} inputProps={{value: 'radio6', name: 'radio6', disabled: true}} />
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField
+  label="I'm disabled, valid and checked"
+  isValid={true}
+  inputProps={{ value: 'radio6', name: 'radio6', disabled: true, defaultChecked: true }}
+/>;
 ```
 
-## Long list
+#### multiple choices
 
 ```jsx
-<div style={{ margin: '24px 0px', maxHeight: '150px', overflow: 'auto' }}>
-  <RadioField label="Option 1" inputProps={{ value: 'radio 1', name: 'radio7' }} />
-  <RadioField label="Option 2" inputProps={{ value: 'radio 2', name: 'radio7' }} />
-  <RadioField label="Option 3" inputProps={{ value: 'radio 3', name: 'radio7' }} />
-  <RadioField label="Option 4" inputProps={{ value: 'radio 4', name: 'radio7' }} />
-  <RadioField label="Option 5" inputProps={{ value: 'radio 5', name: 'radio7' }} />
-  <RadioField label="Option 6" inputProps={{ value: 'radio 6', name: 'radio7' }} />
-  <RadioField label="Option 7" inputProps={{ value: 'radio 7', name: 'radio7' }} />
-  <RadioField label="Option 8" inputProps={{ value: 'radio 8', name: 'radio7' }} />
-  <RadioField label="Option 9" inputProps={{ value: 'radio 9', name: 'radio7' }} />
-  <RadioField label="Option 10" inputProps={{ value: 'radio 10', name: 'radio7' }} />
-  <RadioField label="Option 11" inputProps={{ value: 'radio 11', name: 'radio7' }} />
-  <RadioField label="Option 12" inputProps={{ value: 'radio 12', name: 'radio7' }} />
-  <RadioField label="Option 13" inputProps={{ value: 'radio 13', name: 'radio7' }} />
-  <RadioField label="Option 14" inputProps={{ value: 'radio 14', name: 'radio7' }} />
-  <RadioField label="Option 15" inputProps={{ value: 'radio 15', name: 'radio7' }} />
-  <RadioField label="Option 16" inputProps={{ value: 'radio 16', name: 'radio7' }} />
-  <RadioField label="Option 17" inputProps={{ value: 'radio 17', name: 'radio7' }} />
-  <RadioField label="Option 18" inputProps={{ value: 'radio 18', name: 'radio7' }} />
-  <RadioField label="Option 20" inputProps={{ value: 'radio 20', name: 'radio7' }} />
-  <RadioField label="Option 21" inputProps={{ value: 'radio 21', name: 'radio7' }} />
-</div>
+import { RadioField } from '@zopauk/react-components';
+
+<>
+  <RadioField label="Apple 🍏" inputProps={{ value: 'apple', name: 'apple-choice' }} />
+  <RadioField label="Avocado 🥑" inputProps={{ value: 'avocado', name: 'avocado-choice' }} />
+  <RadioField label="Chilly 🌶" inputProps={{ value: 'chilly', name: 'chilly-choice' }} />
+  <RadioField label="Sweet Potato 🍠" inputProps={{ value: 'potato', name: 'potato-choice' }} />
+  <RadioField label="Kiwi 🥝" inputProps={{ value: 'kiwi', name: 'kiwi-choice' }} />
+  <RadioField label="Watermelon 🍉" inputProps={{ value: 'watermelon', name: 'watermelon-choice' }} />
+</>;
 ```

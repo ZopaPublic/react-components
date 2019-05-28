@@ -2,4 +2,8 @@ Error message for input Components. This component is meant to be used with an i
 
 For a more complex component check `TextField`.
 
-    <ErrorMessage>Oops ! There has been an error !</ErrorMessage>
+```jsx
+import { ErrorMessage } from '@zopauk/react-components';
+
+<ErrorMessage>Oops ! There has been an error !</ErrorMessage>;
+```
