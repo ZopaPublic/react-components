@@ -10,15 +10,16 @@ exports[`Text renders the component custom props 1`] = `
   line-height: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
+  font-size: 16px;
   color: #111;
 }
 
-<span
+<p
   class="c0"
   color="#111"
 >
   Text
-</span>
+</p>
 `;
 
 exports[`Text renders the component default props 1`] = `
@@ -31,6 +32,7 @@ exports[`Text renders the component default props 1`] = `
   line-height: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
+  font-size: 16px;
   color: #1C2139;
 }
 

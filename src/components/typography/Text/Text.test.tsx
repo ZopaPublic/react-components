@@ -1,7 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from 'react-testing-library';
-import Text from './Text';
+import Text, { ITextProps } from './Text';
 
 describe('Text', () => {
   it('renders the component with no a11y violations', async () => {
@@ -16,10 +16,10 @@ describe('Text', () => {
   });
 
   it('renders the component custom props', () => {
-    const props = {
+    const props: ITextProps = {
       color: '#111',
       fw: 'bold',
-      tag: 'p',
+      as: 'p',
     };
     const { container } = render(<Text {...props}>Text</Text>);
     expect(container.firstChild).toMatchSnapshot();

@@ -61,7 +61,7 @@ export interface ITextProps extends React.HTMLAttributes<HTMLSpanElement | HTMLP
   as?: TTextTag;
 }
 
-const Text = ({ fw = 'normal', size = 'n', color = colors.neutral.neutral900, as = 'span', ...rest }) => (
+const Text = ({ fw = 'normal', size = 'm', color = colors.neutral.neutral900, as = 'span', ...rest }: ITextProps) => (
   <StyledSpan fw={fw} size={size} color={color} as={as} {...rest} />
 );
 
