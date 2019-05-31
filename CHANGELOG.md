@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/zopaUK/react-components/compare/v1.1.0...v1.1.1) (2019-05-31)
+
+
+### Bug Fixes
+
+* **text:** fix types and default size value ([#27](https://github.com/zopaUK/react-components/issues/27)) ([2a981cf](https://github.com/zopaUK/react-components/commit/2a981cf)), closes [#23](https://github.com/zopaUK/react-components/issues/23)
+
 # [1.1.0](https://github.com/zopaUK/react-components/compare/v1.0.2...v1.1.0) (2019-05-24)
 
 
