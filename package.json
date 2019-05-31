@@ -17,7 +17,7 @@
     "compile:clean": "rm -rf ./dist; mkdir ./dist",
     "compile:types": "tsc --p ./tsconfig.types.json",
     "test": "react-scripts test",
-    "format": "prettier -l --config ./etc/prettier/prettierrc.json --ignore-path ./etc/prettier/prettierignore --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
+    "format": "prettier -l --ignore-path ./prettierignore --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
     "format:fix": "yarn format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
