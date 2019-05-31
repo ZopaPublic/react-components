@@ -139,6 +139,7 @@ module.exports = {
     LogoRenderer: path.resolve(__dirname, './src/styleguide-components/Logo'),
     PathlineRenderer: path.resolve(__dirname, './src/styleguide-components/Pathline'),
     StyleGuideRenderer: path.resolve(__dirname, './src/styleguide-components/StyleGuide'),
+    TableRenderer: path.resolve(__dirname, './src/styleguide-components/Table'),
     VersionRenderer: path.resolve(__dirname, './src/styleguide-components/Version'),
   },
   // Used to convert type definitions to documentation. More info: https://github.com/styleguidist/react-docgen-typescript
