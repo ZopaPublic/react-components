@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/zopaUK/react-components/compare/v1.1.1...v1.1.2) (2019-06-03)
+
+
+### Bug Fixes
+
+* **styleguide:** fix column space of props & methods ([#28](https://github.com/zopaUK/react-components/issues/28)) ([f006ff0](https://github.com/zopaUK/react-components/commit/f006ff0))
+
 ## [1.1.1](https://github.com/zopaUK/react-components/compare/v1.1.0...v1.1.1) (2019-05-31)
 
 
