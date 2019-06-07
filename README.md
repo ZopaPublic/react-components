@@ -13,7 +13,7 @@ This repo contains 2 things at the same time:
 
 - The typescript library for the react components
 
-- A website for to show and try the components managed with [React-styleguidist](https://react-styleguidist.js.org)
+- A website to show and try the components managed with [React-styleguidist](https://react-styleguidist.js.org)
   which provides a development environment, a style guide website,
   interactive playground and other cool tools.
 
