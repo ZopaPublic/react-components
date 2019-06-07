@@ -1,12 +1,12 @@
 Styled AlertBox component
 
 ```js
-import Link from 'zopa-react-components/components/atoms/Link/Link';
+import { AlertBox, Link } from '@zopauk/react-components';
 
-<AlertBox style={{ width: '650px' }}>
-  <p>
-    Your data protection rights have changed, giving you extra control and visibility over your data.
+<AlertBox>
+  <div>
+    <p>Your data protection rights have changed, giving you extra control and visibility over your data.</p>
     <Link href="#">Tell me more in plain English</Link>
-  </p>
+  </div>
 </AlertBox>;
 ```

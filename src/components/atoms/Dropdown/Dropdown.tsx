@@ -15,7 +15,8 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export interface IOption extends React.OptionHTMLAttributes<HTMLOptionElement> {}
 
-const SSelect = styled.select<IDropdownProps>`
+const Option: React.FunctionComponent<IOption> = styled.option``;
+const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdownProps>`
   appearance: none;
 
   background: ${colors.base.white} url(${chevronDown}) no-repeat calc(100% - 13px) center;
@@ -35,12 +36,5 @@ const SSelect = styled.select<IDropdownProps>`
   }
 `;
 
-const Dropdown: React.FunctionComponent<IDropdownProps> = props => {
-  return <SSelect {...props} />;
-};
-
 export default Dropdown;
-
-export const Option: React.FunctionComponent<IOption> = props => {
-  return <option {...props} />;
-};
+export { Option };

@@ -11,26 +11,15 @@ All the props are being passed down to `react-modal` so if you want to customize
 - Note that in order to make `<Modal />` to close when the user clicks on the overlay, you'll need to do so in a handler supplied to the `onRequestClose` prop. See [`react-modal` documentation](http://reactcommunity.org/react-modal/examples/on_request_close.html) for more background about this.
 
 ```jsx
-import Button from 'zopa-react-components/components/atoms/Button/Button';
+import { Modal, Button } from '@zopauk/react-components';
 
-// set it to the root element
+// Sets where there should be inserted within the DOM
 Modal.setAppElement('#rsg-root');
 
-// root component
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Modal.Styles />
-        <ModalDemo />
-      </div>
-    );
-  }
-}
-
-const ModalDemo = () => {
+function ModalDemo() {
   const [isOpen, update] = React.useState(false);
   const toggleModal = () => update(prevState => !prevState);
+
   return (
     <>
       <Button onClick={toggleModal} styling="link">
@@ -45,7 +34,10 @@ const ModalDemo = () => {
       </Modal>
     </>
   );
-};
+}
 
-<App />;
+<>
+  <Modal.Styles />
+  <ModalDemo />
+</>;
 ```

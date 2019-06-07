@@ -1,7 +1,12 @@
 This component is a wrapper around the svg code for Facebook's icon.
 
 ```jsx
-<Facebook size="24px" />
-<Facebook size="36px" />
-<Facebook size="48px" />
+import { Fragment } from 'react';
+import { Facebook as FacebookIcon } from '@zopauk/react-components';
+
+<Fragment>
+  <FacebookIcon size="24px" />
+  <FacebookIcon size="36px" />
+  <FacebookIcon size="48px" />
+</Fragment>;
 ```

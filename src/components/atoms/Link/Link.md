@@ -15,7 +15,7 @@ Creates a hyperlink to other web pages, files, locations within the same page, e
 Component with `target="_blank"`:
 
 ```js
-import Lead from 'zopa-react-components/components/typography/Lead/Lead';
+import { Lead, Link } from '@zopauk/react-components';
 
 <Lead>
   Lead component text with
@@ -28,7 +28,7 @@ import Lead from 'zopa-react-components/components/typography/Lead/Lead';
 Component without `target="_blank"` (notice that the square disappeared!)
 
 ```js
-import Lead from 'zopa-react-components/components/typography/Lead/Lead';
+import { Lead, Link } from '@zopauk/react-components';
 
 <Lead>
   Lead component text with

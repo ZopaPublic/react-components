@@ -1,9 +1,7 @@
 Basic example:
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)" } } }
-import Link from 'zopa-react-components/components/atoms/Link/Link';
-import Hamburger from 'zopa-react-components/components/icons/Hamburger/Hamburger';
-import Profile from 'zopa-react-components/components/icons/Profile/Profile';
+import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-components';
 
 <Navbar.Layout
   backgroundColor="#00B9A7"
@@ -15,7 +13,7 @@ import Profile from 'zopa-react-components/components/icons/Profile/Profile';
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" open={open} {...getOpenerProps()}>
-            <Hamburger size="30px" activeColor="#fff" inactiveColor="#fff" />
+            <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
           </Navbar.Link>
         </div>
       )}
@@ -35,7 +33,7 @@ import Profile from 'zopa-react-components/components/icons/Profile/Profile';
         return (
           <div style={{ padding: 8 }}>
             <Navbar.Link color="#fff" href="#" open={open} {...getOpenerProps()}>
-              <Profile activeColor="#fff" inactiveColor="#fff" />
+              <ProfileIcon activeColor="#fff" inactiveColor="#fff" />
             </Navbar.Link>
           </div>
         );
@@ -53,9 +51,7 @@ import Profile from 'zopa-react-components/components/icons/Profile/Profile';
 Responsive Navbar example:
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)" } } }
-import Hamburger from 'zopa-react-components/components/icons/Hamburger/Hamburger';
-import Link from 'zopa-react-components/components/atoms/Link/Link';
-import FlexCol from 'zopa-react-components/components/layout/FlexCol/FlexCol';
+import { Navbar, Link, HamburgerIcon, FlexCol } from '@zopauk/react-components';
 
 class ResponsiveNavbar extends React.Component {
   constructor(props) {
@@ -75,7 +71,7 @@ class ResponsiveNavbar extends React.Component {
             renderOpener={({ open, getOpenerProps }) => (
               <div style={{ padding: 8 }}>
                 <Navbar.Link color="#fff" href="#" open={open} {...getOpenerProps()}>
-                  <Hamburger size="30px" activeColor="#fff" inactiveColor="#fff" />
+                  <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
                 </Navbar.Link>
               </div>
             )}

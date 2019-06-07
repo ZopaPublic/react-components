@@ -1,5 +1,7 @@
 An Alert icon
 
 ```js
-<Alert size="24px" fillColor="rebeccaPurple" />
+import { Alert as AlertIcon } from '@zopauk/react-components';
+
+<AlertIcon size="24px" fillColor="rebeccaPurple" />;
 ```

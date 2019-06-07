@@ -1,3 +1,5 @@
-The `FlexRow` component is usually used as a child of `FlexContainer`s.
-However, in case of nested grids it can also be a child of a `FlexCol` or any div element.
-`FlexCol`s should be his direct children.
+`<FlexRow />` is meant to be a child of `<FlexContainer />`.
+
+If your goal is to make a nested layout, then it can also be a child of a `<FlexCol />` or any JSX element.
+
+**Be mindful** that `<FlexCol />` should be his direct child.

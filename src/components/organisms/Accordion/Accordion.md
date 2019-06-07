@@ -1,10 +1,10 @@
-Accordion doesn't render anything, it's just a namespace for `Accordion.Header` and `Accordion.Section` components. In order to create an accordion example,
-you should use these components along with `useAccordion` hook. It is done this way to allow for greater flexibility. See the example below for more details.
+Accordion doesn't render anything: it's just a namespace for `<Accordion.Header />` and `<Accordion.Section />` components.
 
-Basic example:
+In order to create an accordion, you should use these components along with the `useAccordion` hook.
+See the example below for more details.
 
 ```js
-import useAccordion from 'zopa-react-components/components/hooks/useAccordion/useAccordion';
+import { useAccordion } from '@zopauk/react-components';
 
 const AccordionExample = () => {
   const { getHeaderProps, getSectionProps, isActiveSection } = useAccordion();
@@ -25,6 +25,7 @@ const AccordionExample = () => {
       section: 'section three',
     },
   ];
+
   return (
     <div aria-label="accordion example">
       {items.map(({ id, header, section }, index) => (

@@ -11,7 +11,7 @@ This project aims to have all the common styled react components as a library/do
 - ⚠️ **In order to use this UI you must import the `<GlobalStyles />` component and use it in the root of your project.**
 
   ```js static
-  import { GlobalStyles } from 'zopa-react-components';
+  import { GlobalStyles } from '@zopauk/react-components';
 
   // root component
   const App = () => (
@@ -25,7 +25,7 @@ This project aims to have all the common styled react components as a library/do
 - **Fonts** (_optional_): This is not added in the default module because there are better ways to do it in terms of performance.
 
   ```js static
-  import { Fonts } from 'zopa-react-components';
+  import { Fonts } from '@zopauk/react-components';
 
   // root component
   const App = () => (

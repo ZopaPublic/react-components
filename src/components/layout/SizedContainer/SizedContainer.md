@@ -1,37 +1,41 @@
-Component that basically adds max-width to components. This component is meant to be used other components such as input.
-
-For a more complex component check `TextField`.
-
-_The dashed border is only shown for example purposes_
+Use `<SiedContainer />` to set a `max-width` around its children:
 
 #### Short size
 
 ```jsx
+import { SizedContainer } from '@zopauk/react-components';
+
 <SizedContainer size="short">
-  <div style={{ border: '2px dashed navy', height: '100%' }}>This is a container</div>
-</SizedContainer>
+  <div style={{ backgroundColor: 'tomato', height: '100%' }}>This is a container</div>
+</SizedContainer>;
 ```
 
 #### Medium size
 
 ```jsx
+import { SizedContainer } from '@zopauk/react-components';
+
 <SizedContainer size="medium">
-  <div style={{ border: '2px dashed navy', height: '100%' }}>This is a container</div>
-</SizedContainer>
+  <div style={{ backgroundColor: 'tomato', height: '100%' }}>This is a container</div>
+</SizedContainer>;
 ```
 
 #### Long size
 
 ```jsx
+import { SizedContainer } from '@zopauk/react-components';
+
 <SizedContainer size="long">
-  <div style={{ border: '2px dashed navy', height: '100%' }}>This is a container</div>
-</SizedContainer>
+  <div style={{ backgroundColor: 'tomato', height: '100%' }}>This is a container</div>
+</SizedContainer>;
 ```
 
 #### FullLength size
 
 ```jsx
+import { SizedContainer } from '@zopauk/react-components';
+
 <SizedContainer size="fullLength">
-  <div style={{ border: '2px dashed navy', height: '100%' }}>This is a container</div>
-</SizedContainer>
+  <div style={{ backgroundColor: 'tomato', height: '100%' }}>This is a container</div>
+</SizedContainer>;
 ```
