@@ -1,6 +1,6 @@
 import { axe } from 'jest-axe';
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import Links from './Links';
 
 describe('<Links />', () => {

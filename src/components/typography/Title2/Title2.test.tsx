@@ -1,6 +1,6 @@
 import { axe } from 'jest-axe';
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render } from '@testing-library/react';
 import Title2 from './Title2';
 
 describe('<Title2 />', () => {
