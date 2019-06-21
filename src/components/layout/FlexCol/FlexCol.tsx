@@ -2,10 +2,13 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import grid from '../../../constants/grid';
 
-export type TAlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch';
+export type TAlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'auto';
 export type TColWidth = number | 'fill' | 'auto' | 'hidden';
 
 export interface IFlexColProps {
+  /**
+   * @default auto
+   */
   align?: TAlignSelf;
   cols?: number;
   gutter?: number;
@@ -64,16 +67,16 @@ const getWidth = (breakpoint, colWidth, cols) => {
 };
 
 const defaultProps: Partial<IFlexCol> = {
-  align: 'flex-start',
+  align: 'auto',
 };
 
 const StyledFlexCol = styled.div<IFlexCol>`
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: ${props => props.gutter}px;
-  padding-left: ${props => props.gutter}px;
-  align-self: ${props => props.align};
+  padding-right: ${({ gutter }) => gutter}px;
+  padding-left: ${({ gutter }) => gutter}px;
+  align-self: ${({ align }) => align};
   ${props =>
     Object.keys(grid.breakpoints)
       .sort((a, b) => grid.breakpoints[a] - grid.breakpoints[b])

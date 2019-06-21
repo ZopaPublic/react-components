@@ -23,9 +23,9 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   min-height: 1px;
   padding-right: 16px;
   padding-left: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c5 {
@@ -34,9 +34,9 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   min-height: 1px;
   padding-right: 16px;
   padding-left: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c2 {
