@@ -35,11 +35,15 @@ export interface IColorsProps {
    * Object with the colors for testing purposes.
    * The key must be the name of the color and the value the color itself as in css. (e.g: { red: '#ff0000' }).
    * @default defaultColors of Zopa
+   * @ignore
    */
   colors?: {
     [colorName: string]: string;
   };
-  /** section of the default colors */
+  /**
+   * section of the default colors
+   * @ignore
+   */
   defaultSection: 'base' | 'primary' | 'extended' | 'neutral' | 'alert';
 }
 

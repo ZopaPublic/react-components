@@ -14,20 +14,30 @@ You can modify the Colors component with a js object of colors. See props & meth
 
 ### Base Colors
 
-    <Colors defaultSection='base' />
+```js noeditor
+<Colors defaultSection="base" />
+```
 
 ### Primary Colors
 
-    <Colors defaultSection='primary' />
+```js noeditor
+<Colors defaultSection="primary" />
+```
 
 ### Extended Colors
 
-    <Colors defaultSection='extended' />
+```js noeditor
+<Colors defaultSection="extended" />
+```
 
 ### Neutral Colors
 
-    <Colors defaultSection='neutral' />
+```js noeditor
+<Colors defaultSection="neutral" />
+```
 
 ### Alert Colors
 
-    <Colors defaultSection='alert' />
+```js noeditor
+<Colors defaultSection="alert" />
+```
