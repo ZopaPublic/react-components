@@ -7,9 +7,9 @@ exports[`<MiscLinks /> renders the component 1`] = `
   min-height: 1px;
   padding-right: 16px;
   padding-left: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c0 {

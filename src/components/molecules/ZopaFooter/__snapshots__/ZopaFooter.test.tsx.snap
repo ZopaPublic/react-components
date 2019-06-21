@@ -123,9 +123,9 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   min-height: 1px;
   padding-right: 16px;
   padding-left: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c9 {
@@ -134,9 +134,9 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   min-height: 1px;
   padding-right: px;
   padding-left: px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c12 {
@@ -145,9 +145,9 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   min-height: 1px;
   padding-right: 16px;
   padding-left: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
 }
 
 .c2 {
