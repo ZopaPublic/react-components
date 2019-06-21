@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/zopaUK/react-components/compare/v1.1.2...v1.1.3) (2019-06-21)
+
+
+### Bug Fixes
+
+* **flexcol:** change align default prop ([#39](https://github.com/zopaUK/react-components/issues/39)) ([a3b5b68](https://github.com/zopaUK/react-components/commit/a3b5b68))
+
 ## [1.1.2](https://github.com/zopaUK/react-components/compare/v1.1.1...v1.1.2) (2019-06-03)
 
 
