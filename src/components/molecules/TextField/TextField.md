@@ -1,4 +1,4 @@
-`<TextField /> is a wrapper composed of four different components:
+`<TextField />` is a wrapper composed of four different components:
 
 - `<SizedContainer />` ... ( _container with `size` prop_ )
 - `<InputText />` ... ( _native input text_ )
