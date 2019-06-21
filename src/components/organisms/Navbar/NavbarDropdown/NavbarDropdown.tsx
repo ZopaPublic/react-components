@@ -47,7 +47,7 @@ export interface IOpenerProps {
   tabIndex: number;
 }
 
-export type IItem = any;
+export type IItem = React.ReactNode;
 
 export type TGetOpenerProps = () => IOpenerProps;
 
