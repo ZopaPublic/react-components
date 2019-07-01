@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/zopaUK/react-components/compare/v1.1.3...v1.2.0) (2019-07-01)
+
+
+### Features
+
+* **textinput:** forward ref ([cce239b](https://github.com/zopaUK/react-components/commit/cce239b))
+
 ## [1.1.3](https://github.com/zopaUK/react-components/compare/v1.1.2...v1.1.3) (2019-06-21)
 
 
