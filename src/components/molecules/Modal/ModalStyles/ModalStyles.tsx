@@ -2,14 +2,22 @@ import { createGlobalStyle } from 'styled-components';
 
 import * as colors from '../../../../constants/colors';
 
-const ModalStyles = createGlobalStyle`
+export interface IModalStylesProps {
+  /**
+   * The CSS `z-index` value to be applied on the rendered modal.
+   * @default 2
+   */
+  zIndex?: number;
+}
+
+const ModalStyles = createGlobalStyle<IModalStylesProps>`
   .zopa-modal-body--open {
     overflow: hidden;
   }
 
   .zopa-modal-portal {
     position: relative;
-    z-index: 2;
+    z-index: ${({ zIndex = 2 }) => zIndex};
   }
 
   .zopa-modal-overlay {
