@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
@@ -28,8 +28,8 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = (props: IInput) => {
-  return <Input {...props} />;
-};
+const InputText = forwardRef((props: IInput, ref) => {
+  return <Input {...props} ref={ref} />;
+});
 
 export default InputText;
