@@ -2,22 +2,25 @@ import React from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 
-class Modal extends React.Component<ReactModal.Props> {
+class Modal extends React.PureComponent<ReactModal.Props> {
   public static Styles = ModalStyles;
   public static setAppElement = ReactModal.setAppElement;
 
   public render() {
     const { children, ...rest } = this.props;
+
     const classNames = {
       afterOpen: 'zopa-modal--after-open',
       base: 'zopa-modal',
       beforeClose: 'zopa-modal--before-close',
     };
+
     const overlayClassNames = {
       afterOpen: 'zopa-modal-overlay--after-open',
       base: 'zopa-modal-overlay',
       beforeClose: 'zopa-modal-overlay--before-close',
     };
+
     return (
       <ReactModal
         bodyOpenClassName="zopa-modal-body--open"
