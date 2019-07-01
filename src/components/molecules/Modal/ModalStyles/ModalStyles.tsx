@@ -7,7 +7,7 @@ interface IModalStylesPrsop {
    * The CSS `z-index` value to be applied on the rendered modal.
    * @default 2
    */
-  layer?: number;
+  zIndex?: number;
 }
 
 const ModalStyles = createGlobalStyle<IModalStylesPrsop>`
@@ -17,7 +17,7 @@ const ModalStyles = createGlobalStyle<IModalStylesPrsop>`
 
   .zopa-modal-portal {
     position: relative;
-    z-index: ${({ layer = 2 }) => layer};
+    z-index: ${({ zIndex = 2 }) => zIndex};
   }
 
   .zopa-modal-overlay {

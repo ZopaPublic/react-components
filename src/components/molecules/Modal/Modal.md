@@ -6,7 +6,7 @@ All the props are being passed down to `react-modal` so if you want to customize
 
 **Notes ⚠️**:
 
-- You can control the CSS `z-index` value applied on the rendered modal through the `layer` prop on `<Modal.Styles />` ( 👀 example below )
+- You can control the CSS `z-index` value applied on the rendered modal through the `zIndex` prop on `<Modal.Styles />` ( 👀 example below )
 
 - In order to use it, you have to call `Modal.setAppElement('#rootElementId')` in the root component. You'll also need to include `<Modal.Styles>` component (preferably in the top level component) that contains the global styles from the modal.
 
@@ -39,7 +39,7 @@ function ModalDemo() {
 }
 
 <>
-  <Modal.Styles layer={100} />
+  <Modal.Styles zIndex={100} />
   <ModalDemo />
 </>;
 ```
