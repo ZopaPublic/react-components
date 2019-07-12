@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/zopaUK/react-components/compare/v1.2.0...v1.2.1) (2019-07-12)
+
+
+### Bug Fixes
+
+* **accordion:** add support for different header sizes ([b391f55](https://github.com/zopaUK/react-components/commit/b391f55))
+* **accordion:** make textSize prop optional ([502426b](https://github.com/zopaUK/react-components/commit/502426b))
+
 # [1.2.0](https://github.com/zopaUK/react-components/compare/v1.1.3...v1.2.0) (2019-07-01)
 
 
