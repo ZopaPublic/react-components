@@ -6,7 +6,7 @@ import Arrow from '../../../icons/Arrow/Arrow';
 
 type TTextSize = 'lead' | 'regular';
 interface ITitleStyleProps {
-  textSize: TTextSize;
+  textSize?: TTextSize;
 }
 
 const sizes = {
