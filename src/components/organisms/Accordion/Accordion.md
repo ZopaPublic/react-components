@@ -11,26 +11,28 @@ const AccordionExample = () => {
   const items = [
     {
       id: 'one',
-      header: 'header one',
+      header: 'header one - default (lead)',
       section: 'section one',
     },
     {
       id: 'two',
-      header: 'header two',
+      header: 'header two - lead',
       section: 'section two',
+      size: 'lead',
     },
     {
       id: 'three',
-      header: 'header three',
+      header: 'header three - regular',
       section: 'section three',
+      size: 'regular',
     },
   ];
 
   return (
     <div aria-label="accordion example">
-      {items.map(({ id, header, section }, index) => (
+      {items.map(({ id, header, section, size }, index) => (
         <div key={id}>
-          <Accordion.Header isOpen={isActiveSection(index)} {...getHeaderProps(id, index)}>
+          <Accordion.Header isOpen={isActiveSection(index)} {...getHeaderProps(id, index)} textSize={size}>
             {header}
           </Accordion.Header>
           <Accordion.Section {...getSectionProps(id, index)}>{section}</Accordion.Section>
