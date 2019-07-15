@@ -314,6 +314,73 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 </div>
 `;
 
+exports[`<TextField /> renders the component with prefix 1`] = `
+.c2 {
+  border: 2px solid #D6D7DE;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 48px;
+  font-weight: 600;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.c2:focus {
+  outline-width: 0;
+  border: 2px solid #4B3CFA;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #6F748B;
+}
+
+.c2:disabled {
+  background-color: #F8F8F9;
+}
+
+.c0 {
+  max-width: 148px;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1::before {
+  content: '£';
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  font-size: 20px;
+  color: #6F748B;
+}
+
+.c1 input {
+  padding-left: 24px;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="c1"
+    prefix="£"
+  >
+    <input
+      aria-label="test1"
+      class="c2"
+      id="text-id-test1"
+      name="test1"
+      type="text"
+    />
+  </span>
+</div>
+`;
+
 exports[`<TextField /> renders the component with size 1`] = `
 .c1 {
   border: 2px solid #D6D7DE;

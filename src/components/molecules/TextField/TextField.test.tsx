@@ -44,4 +44,9 @@ describe('<TextField />', () => {
     );
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('renders the component with prefix', () => {
+    const { container } = render(<TextField inputProps={{ name: 'test1' }} size="short" prefix={'£'} />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
