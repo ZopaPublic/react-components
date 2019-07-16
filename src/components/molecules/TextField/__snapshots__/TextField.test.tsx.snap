@@ -348,13 +348,23 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 
 .c1 {
   position: relative;
+  display: block;
 }
 
 .c1::before {
   content: '£';
   position: absolute;
-  top: -4px;
   left: 10px;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 20px;
   color: #6F748B;
 }
