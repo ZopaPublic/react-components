@@ -48,12 +48,16 @@ interface IPrefixProps extends HTMLSpanElement {
 
 const Prefix = styled.span<IPrefixProps>`
   position: relative;
+  display: block;
   
   &::before {
     content: '${({ prefix }: IPrefixProps) => prefix}';
     position: absolute;
-    top: -4px;
     left: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
     font-size: 20px;
     color: ${colors.neutral.neutral400};
   }
