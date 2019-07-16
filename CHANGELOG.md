@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/zopaUK/react-components/compare/v1.2.1...v1.2.2) (2019-07-16)
+
+
+### Bug Fixes
+
+* **text field:** make styling more flexible ([f000f54](https://github.com/zopaUK/react-components/commit/f000f54))
+* **text field:** update snapshot ([ab9d641](https://github.com/zopaUK/react-components/commit/ab9d641))
+* **text input:** add support for prefixes ([cd3b236](https://github.com/zopaUK/react-components/commit/cd3b236))
+
 ## [1.2.1](https://github.com/zopaUK/react-components/compare/v1.2.0...v1.2.1) (2019-07-12)
 
 
