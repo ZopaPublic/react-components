@@ -42,9 +42,14 @@ exports[`Alert button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #F52D2D,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #F52D2D,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -106,9 +111,14 @@ exports[`Compact button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -170,9 +180,14 @@ exports[`Disabled button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -236,9 +251,14 @@ exports[`Full width button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -300,9 +320,14 @@ exports[`Large button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -365,9 +390,14 @@ exports[`Left icon button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -558,9 +588,14 @@ exports[`Primary button renders the component with props with no a11y violations
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -621,9 +656,14 @@ exports[`Primary contrast button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #fff,inset 0 0 0 4px #293272;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #fff,inset 0 0 0 4px #293272;
 }
 
 .c0:disabled {
@@ -686,9 +726,14 @@ exports[`Right icon button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -755,9 +800,14 @@ exports[`Secondary button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 4px #4B3CFA;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 4px #4B3CFA;
 }
 
 .c0:disabled {
@@ -818,6 +868,12 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   opacity: 0.8;
   background-color: #fff;
   box-shadow: none;
+}
+
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 4px #fff;
+  outline: none;
 }
 
 .c0:active:enabled {
@@ -883,9 +939,14 @@ exports[`Small button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #4B3CFA,inset 0 0 0 4px #fff;
 }
 
 .c0:disabled {
@@ -947,9 +1008,14 @@ exports[`Warning button renders the component with props 1`] = `
   box-shadow: none;
 }
 
+.c0:active:enabled,
+.c0:focus:enabled {
+  box-shadow: inset 0 0 0 2px #FFDE25,inset 0 0 0 4px #383108;
+  outline: none;
+}
+
 .c0:active:enabled {
   opacity: 0.4;
-  box-shadow: inset 0 0 0 2px #FFDE25,inset 0 0 0 4px #383108;
 }
 
 .c0:disabled {
