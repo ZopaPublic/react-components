@@ -65,3 +65,11 @@ import { TextField } from '@zopauk/react-components';
   inputProps={{ name: 'text6' }}
 />;
 ```
+
+#### with prefix
+
+```jsx
+import { TextField } from '@zopauk/react-components';
+
+<TextField label="Label" size="short" inputProps={{ name: 'text7' }} prefix={'£'} />;
+```

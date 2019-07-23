@@ -65,6 +65,7 @@ const boxShadows: Partial<TButtonStylingMapping> = {
 const activeBoxShadows: Partial<TButtonStylingMapping> = {
   alert: `${smallInset} ${statusColors.error}, ${largeInset} ${colors.base.white}`,
   contrastPrimary: `${smallInset} ${colors.base.white}, ${largeInset} ${colors.extended.navy700}`,
+  contrastSecondary: `${largeInset} ${colors.base.white}`,
   primary: `${smallInset} ${colors.extended.blue500}, ${largeInset} ${colors.base.white}`,
   secondary: `${largeInset} ${colors.primary.blue500}`,
   warning: `${smallInset} ${colors.alert.alerty500}, ${largeInset} ${colors.alert.alerty900}`,
@@ -125,9 +126,14 @@ const SButton = styled.button<IButtonProps>`
     box-shadow: none;
   }
 
+  &:active:enabled,
+  &:focus:enabled {
+    box-shadow: ${({ styling }) => styling && activeBoxShadows[styling]};
+    ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
+  }
+
   &:active:enabled {
     opacity: 0.4;
-    box-shadow: ${({ styling }) => styling && activeBoxShadows[styling]};
   }
 
   &:disabled {
