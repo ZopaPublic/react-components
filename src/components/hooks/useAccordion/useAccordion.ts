@@ -1,6 +1,11 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, Dispatch, SetStateAction } from 'react';
 import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
 import { mod } from '../../../helpers/utils';
+
+type TActiveSections = number[];
+
+let activeSections: TActiveSections;
+let updateActiveSections: Dispatch<SetStateAction<TActiveSections>>;
 
 const useAccordion = () => {
   const headersRefs = useRef<React.RefObject<HTMLButtonElement>['current'][]>([]).current;
@@ -23,7 +28,7 @@ const useAccordion = () => {
     }
   };
 
-  const [activeSections, updateActiveSections] = useState<number[]>([]);
+  [activeSections, updateActiveSections] = useState<TActiveSections>([]);
 
   const isActiveSection = (index: number) => activeSections.includes(index);
 

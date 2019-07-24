@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from 'react-testing-library';
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import Navbar from '../Navbar';
 
 describe('<Navbar.Dropdown />', () => {
@@ -34,8 +34,8 @@ describe('<Navbar.Dropdown />', () => {
 
   ['Enter', ' ', 'ArrowUp', 'ArrowDown'].forEach(key => {
     it(`should open the dropdown on ${key} press`, () => {
-      const { getByRole } = renderComponent();
-      const opener = getByRole('menuitem');
+      const { getAllByRole } = renderComponent();
+      const [opener] = getAllByRole('menuitem');
       expect(opener.getAttribute('aria-expanded')).toEqual('false');
       fireEvent.focus(opener);
       fireEvent.keyDown(opener, { key });
@@ -44,8 +44,8 @@ describe('<Navbar.Dropdown />', () => {
   });
 
   it(`should navigate through items with arrow up/down keys`, () => {
-    const { getByRole, getByText } = renderComponent();
-    const opener = getByRole('menuitem');
+    const { getAllByRole, getByText } = renderComponent();
+    const [opener] = getAllByRole('menuitem');
     const itemOne = getByText('one');
     const itemTwo = getByText('two');
     fireEvent.focus(opener);
@@ -59,8 +59,8 @@ describe('<Navbar.Dropdown />', () => {
   });
 
   it(`should close the dropdown when focused on an element outside of dropdown`, () => {
-    const { getByRole, getByText } = renderComponent();
-    const opener = getByRole('menuitem');
+    const { getAllByRole, getByText } = renderComponent();
+    const [opener] = getAllByRole('menuitem');
     const otherElement = getByText('button');
     fireEvent.focus(opener);
     fireEvent.keyDown(opener, { key: ' ' });
