@@ -12,6 +12,10 @@ export interface ITextFieldProps extends IField {
   prefix?: string;
 }
 
+const TextFieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
+
 const TextField = (props: IField) => {
   const { label, errorMessage, isValid, inputProps, size, helpText, prefix, ...rest } = props;
   const { name } = inputProps;
@@ -33,12 +37,14 @@ const TextField = (props: IField) => {
     />
   );
   return (
-    <SizedContainer size={size} {...rest}>
+    <>
       {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
       {helpText && <HelpText>{helpText}</HelpText>}
-      {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}
-      {errorMessage && <ErrorMessage data-automation={`ZA.error-${name}`}>{errorMessage}</ErrorMessage>}
-    </SizedContainer>
+      <SizedContainer size={size} {...rest}>
+        {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}
+      </SizedContainer>
+      {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
+    </>
   );
 };
 

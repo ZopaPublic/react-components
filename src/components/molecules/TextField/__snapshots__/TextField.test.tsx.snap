@@ -46,23 +46,6 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 `;
 
 exports[`<TextField /> renders the component with error 1`] = `
-.c2 {
-  font-weight: 600;
-  width: 100%;
-  font-size: 14px;
-  color: #F52D2D;
-  display: block;
-}
-
-.c2:before {
-  content: '';
-  background: url(red-warning.svg) no-repeat;
-  width: 28px;
-  height: 16px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .c1 {
   border: 2px solid #F52D2D;
   border-radius: 4px;
@@ -104,43 +87,11 @@ exports[`<TextField /> renders the component with error 1`] = `
     name="test1"
     type="text"
   />
-  <span
-    class="c2"
-    data-automation="ZA.error-test1"
-    role="alert"
-  >
-    Ops !
-  </span>
 </div>
 `;
 
 exports[`<TextField /> renders the component with error and label and size 1`] = `
-.c4 {
-  font-weight: 600;
-  width: 100%;
-  font-size: 14px;
-  color: #F52D2D;
-  display: block;
-}
-
-.c4:before {
-  content: '';
-  background: url(red-warning.svg) no-repeat;
-  width: 28px;
-  height: 16px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.c2 {
-  color: #484E6C;
-  line-height: 24px;
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.c1 {
+.c0 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -149,69 +100,16 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   display: block;
 }
 
-.c3 {
-  border: 2px solid #F52D2D;
-  border-radius: 4px;
-  padding: 0 10px;
-  font-size: 20px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  margin: 4px 0;
-}
-
-.c3:focus {
-  outline-width: 0;
-  border: 2px solid #4B3CFA;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #6F748B;
-}
-
-.c3:disabled {
-  background-color: #F8F8F9;
-}
-
-.c0 {
-  max-width: 336px;
-  width: 100%;
-}
-
-<div
+<label
   class="c0"
+  for="text-id-test1"
 >
-  <label
-    class="c1"
-    for="text-id-test1"
-  >
-    yes!
-  </label>
-  <span
-    class="c2"
-  >
-    Additional info
-  </span>
-  <input
-    class="c3"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
-  <span
-    class="c4"
-    data-automation="ZA.error-test1"
-    role="alert"
-  >
-    Ops !
-  </span>
-</div>
+  yes!
+</label>
 `;
 
 exports[`<TextField /> renders the component with label 1`] = `
-.c1 {
+.c0 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -220,53 +118,12 @@ exports[`<TextField /> renders the component with label 1`] = `
   display: block;
 }
 
-.c2 {
-  border: 2px solid #D6D7DE;
-  border-radius: 4px;
-  padding: 0 10px;
-  font-size: 20px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  margin: 4px 0;
-}
-
-.c2:focus {
-  outline-width: 0;
-  border: 2px solid #4B3CFA;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c2::-webkit-input-placeholder {
-  color: #6F748B;
-}
-
-.c2:disabled {
-  background-color: #F8F8F9;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
-}
-
-<div
+<label
   class="c0"
+  for="text-id-test1"
 >
-  <label
-    class="c1"
-    for="text-id-test1"
-  >
-    Username
-  </label>
-  <input
-    class="c2"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
-</div>
+  Username
+</label>
 `;
 
 exports[`<TextField /> renders the component with no a11y violations 1`] = `
