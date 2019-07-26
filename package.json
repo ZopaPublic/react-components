@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "dist/index.js",

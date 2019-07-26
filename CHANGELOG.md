@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/zopaUK/react-components/compare/v1.2.3...v1.2.4) (2019-07-26)
+
+
+### Bug Fixes
+
+* **textfield:** decouple size layout ([cc4ed7e](https://github.com/zopaUK/react-components/commit/cc4ed7e))
+
 ## [1.2.3](https://github.com/zopaUK/react-components/compare/v1.2.2...v1.2.3) (2019-07-18)
 
 
