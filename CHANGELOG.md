@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/zopaUK/react-components/compare/v1.2.4...v1.2.5) (2019-07-29)
+
+
+### Bug Fixes
+
+* **core-js:** point to the right version ([2e84272](https://github.com/zopaUK/react-components/commit/2e84272))
+
 ## [1.2.4](https://github.com/zopaUK/react-components/compare/v1.2.3...v1.2.4) (2019-07-26)
 
 
