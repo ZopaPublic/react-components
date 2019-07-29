@@ -45,7 +45,7 @@ export default {
           {
             useBuiltIns: 'usage',
             targets,
-            corejs: 2,
+            corejs: 3,
           },
         ],
       ],
