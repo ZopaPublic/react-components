@@ -8,14 +8,16 @@ All the props are being passed down to `react-modal` so if you want to customize
 
 - You can control the CSS `z-index` value applied on the rendered modal through the `zIndex` prop on `<Modal.Styles />` ( 👀 example below )
 
-- In order to use it, you have to call `Modal.setAppElement('#rootElementId')` in the root component. You'll also need to include `<Modal.Styles>` component (preferably in the top level component) that contains the global styles from the modal.
+- For the accessibility reasons, you should call `Modal.setAppElement('#rootElementId')` in the root component before any of the modals are open.
+
+- You'll also need to include `<Modal.Styles>` component (preferably in the top level component) that contains the global styles of the modal.
 
 - Note that in order to make `<Modal />` to close when the user clicks on the overlay, you'll need to do so in a handler supplied to the `onRequestClose` prop. See [`react-modal` documentation](http://reactcommunity.org/react-modal/examples/on_request_close.html) for more background about this.
 
 ```jsx
 import { Modal, Button } from '@zopauk/react-components';
 
-// Sets where there should be inserted within the DOM
+// Call Modal.setAppElement ONCE in the top level level component and pass it a query selector indentifiying the root of your app.
 Modal.setAppElement('#rsg-root');
 
 function ModalDemo() {
