@@ -1,5 +1,4 @@
 'use strict';
-
 const { version } = require('./package');
 const path = require('path');
 const kleur = require('kleur');
@@ -145,6 +144,7 @@ module.exports = {
   // Used to convert type definitions to documentation. More info: https://github.com/styleguidist/react-docgen-typescript
   propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', {
     propFilter: prop => prop.parent && !prop.parent.fileName.includes('@types/react'),
+    componentNameResolver: (exp, source) => path.parse(source.fileName).name,
   }).parse,
   // Modules available for examples
   context: {
