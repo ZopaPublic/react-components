@@ -1,4 +1,4 @@
-import { HTMLAttributes, InputHTMLAttributes } from 'react';
+import { InputHTMLAttributes } from 'react';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -18,14 +18,14 @@ export interface IInputStatus {
   hasError?: boolean;
 }
 
-export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement> {
+export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement | HTMLSelectElement> {
   /**
    * Attribute used for testing porpuses
    */
   'data-automation'?: string;
 }
 
-export interface IField extends HTMLAttributes<HTMLDivElement> {
+export interface IField {
   /**
    * The text to be shown on the label. If this is not set it doesn't render the label.
    */

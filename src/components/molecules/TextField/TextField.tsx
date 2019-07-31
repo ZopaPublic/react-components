@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import HelpText from '../../atoms/HelpText/HelpText';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
@@ -8,7 +8,7 @@ import { IField } from '../../types';
 import styled from 'styled-components';
 import { colors } from '../../..';
 
-export interface ITextFieldProps extends IField {
+export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement> {
   prefix?: string;
 }
 
@@ -16,12 +16,14 @@ const TextFieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const TextField = (props: IField) => {
-  const { label, errorMessage, isValid, inputProps, size, helpText, prefix, ...rest } = props;
+const TextField = (props: ITextFieldProps) => {
+  const { label, errorMessage, isValid, inputProps, size, helpText, prefix } = props;
   const { name } = inputProps;
+
   if (!name) {
     throw Error('Name must be set in inputProps. Check the docs.');
   }
+
   if (prefix && prefix.length > 1) {
     throw Error('Prefixes can only have one character');
   }
@@ -36,13 +38,12 @@ const TextField = (props: IField) => {
       {...inputProps}
     />
   );
+
   return (
     <>
       {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
       {helpText && <HelpText>{helpText}</HelpText>}
-      <SizedContainer size={size} {...rest}>
-        {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}
-      </SizedContainer>
+      <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
     </>
   );
