@@ -37,14 +37,14 @@ const TextField = (props: IField) => {
     />
   );
   return (
-    <>
+    <div {...rest}>
       {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
       {helpText && <HelpText>{helpText}</HelpText>}
       <SizedContainer size={size} {...rest}>
         {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}
       </SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
-    </>
+    </div>
   );
 };
 
@@ -55,7 +55,7 @@ interface IPrefixProps extends HTMLSpanElement {
 const Prefix = styled.span<IPrefixProps>`
   position: relative;
   display: block;
-  
+
   &::before {
     content: '${({ prefix }: IPrefixProps) => prefix}';
     position: absolute;
@@ -67,7 +67,7 @@ const Prefix = styled.span<IPrefixProps>`
     font-size: 20px;
     color: ${colors.neutral.neutral400};
   }
-  
+
   input {
     padding-left: 24px;
   }
