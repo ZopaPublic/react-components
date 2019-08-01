@@ -1,4 +1,4 @@
-# React components
+# React components `2.0`
 
 <img src="./etc/images/turtle.gif" />
 
@@ -65,6 +65,6 @@ the [license](./LICENSE).
 
 ## Fonts
 
-Zopa makes use of the Alverata and Open Sans fonts in its sites and applications. If you want to make use of the fonts outside of Zopa, you will need to license these direct from the available licensors. 
+Zopa makes use of the Alverata and Open Sans fonts in its sites and applications. If you want to make use of the fonts outside of Zopa, you will need to license these direct from the available licensors.
 
 Alverata is available through a [variety](https://www.myfonts.com/fonts/type-together/alverata/) [of](https://fonts.adobe.com/fonts/alverata) [sources](https://www.type-together.com/alverata-font), and Open Sans is available through [Google Fonts](https://fonts.google.com/).
