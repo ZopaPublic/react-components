@@ -4,7 +4,7 @@ Allowed directions are: `down` | `up` | `left` | `right` | `number` | `string`
 
 ```jsx
 import { Fragment } from 'react';
-import { Arrow as ArrowIcon } from '@zopauk/react-components';
+import { ArrowIcon } from '@zopauk/react-components';
 
 <Fragment>
   <ArrowIcon color="blue" direction="down" />

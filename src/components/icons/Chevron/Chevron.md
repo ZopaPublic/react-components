@@ -4,7 +4,7 @@ Allowed directions are 'down' | 'up' | 'left' | 'right' | number | string
 
 ```jsx
 import { Fragment } from 'react';
-import { Chevron as ChevronIcon } from '@zopauk/react-components';
+import { ChevronIcon } from '@zopauk/react-components';
 
 <Fragment>
   <ChevronIcon color="blue" direction="down" />
