@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/zopaUK/react-components/compare/v1.2.5...v1.3.0) (2019-08-02)
+
+
+### Features
+
+* **dropdownfield:** new molecule ([0d49023](https://github.com/zopaUK/react-components/commit/0d49023))
+
 ## [1.2.5](https://github.com/zopaUK/react-components/compare/v1.2.4...v1.2.5) (2019-07-29)
 
 
