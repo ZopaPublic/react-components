@@ -46,18 +46,3 @@ describe('<Card type="linkCard"/>', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
-describe('<Card type="button"/>', () => {
-  it('renders the component with props', () => {
-    const { container } = render(<Card type="button">Click me!</Card>);
-    expect(container.firstChild).toMatchSnapshot();
-  });
-  it('renders the component with props', () => {
-    const { container } = render(
-      <Card type="button" display="inline-block" borderColor="#abc" backgroundColor="#def">
-        Click me too
-      </Card>,
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
-});
