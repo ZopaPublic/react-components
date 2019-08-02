@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import InputLabel from './InputLabel';
+import Label from './Label';
 
-describe('<InputLabel />', () => {
+describe('<Label />', () => {
   it('renders the component with props', () => {
-    const { container } = render(<InputLabel htmlFor="username">Username:</InputLabel>);
+    const { container } = render(<Label htmlFor="username">Username:</Label>);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

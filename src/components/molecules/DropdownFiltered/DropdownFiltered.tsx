@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import * as colors from '../../../constants/colors';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import Label from '../../atoms/Label/Label';
 import InputText from '../../atoms/InputText/InputText';
 import Chevron from '../../icons/Chevron/Chevron';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -152,9 +152,9 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
     return (
       <div>
         {label && (
-          <InputLabel {...getLabelProps({ ...labelProps })} htmlFor={`text-id-${name}`}>
+          <Label {...getLabelProps({ ...labelProps })} htmlFor={`text-id-${name}`}>
             {label}
-          </InputLabel>
+          </Label>
         )}
         <SearchInputWrapper>
           <SearchInput

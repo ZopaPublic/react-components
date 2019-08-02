@@ -1,7 +1,7 @@
 import React from 'react';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import HelpText from '../../atoms/HelpText/HelpText';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import Label from '../../atoms/Label/Label';
 import InputText from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
@@ -38,7 +38,7 @@ const TextField = (props: IField) => {
   );
   return (
     <>
-      {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
+      {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
       {helpText && <HelpText>{helpText}</HelpText>}
       <SizedContainer size={size} {...rest}>
         {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}

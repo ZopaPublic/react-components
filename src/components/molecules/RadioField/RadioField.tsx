@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import * as colors from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import InputLabel from '../../atoms/Label/Label';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField, IInputStatus } from '../../types';
 
@@ -19,7 +19,7 @@ const FieldContainer = styled(SizedContainer)`
   position: relative;
 `;
 
-const Label = styled(InputLabel)<IInputStatus>`
+const SLabel = styled(InputLabel)<IInputStatus>`
   display: flex;
   font-size: 16px;
   line-height: 24px;
@@ -113,9 +113,9 @@ const RadioField: FunctionComponent<IRadioField> = ({
   return (
     <FieldContainer {...rest}>
       <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} type="radio" {...inputProps} />
-      <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
+      <SLabel htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
         {label}
-      </Label>
+      </SLabel>
     </FieldContainer>
   );
 };
