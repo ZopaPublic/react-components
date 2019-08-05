@@ -1,6 +1,6 @@
 The design team has agreed on three types of cards depending on the context.
 
-#### card type (_default_)
+#### card type ( default )
 
 A standard or default card, which we'll assume if the type property has been omitted or set explicitly to card. As of this writing, cards of this type are non-interactable and have a border radius of 4px.
 
@@ -27,32 +27,4 @@ import { Card, Header3 } from '@zopauk/react-components';
     <p>Find out how you can benefit the most from our new rates.</p>
   </Card>
 </div>;
-```
-
-#### button type
-
-Same as above, but meant to appear as a button with minimal content. Has semicircular borders on horizontal axis.
-
-A card is entirely white (`colors.base.white`) by default.
-
-```jsx
-<div>
-  <div data-comment="Button 1" style={{ marginBottom: '20px' }}>
-    <Card type="button" backgroundColor={colors.primary.teal600}>
-      I look like a button
-    </Card>
-  </div>
-
-  <div data-comment="Button 2" style={{ marginBottom: '20px' }}>
-    <Card type="button" backgroundColor={colors.primary.teal600}>
-      <div style={{ textAlign: 'center' }}>Mix and match for desired effects</div>
-    </Card>
-  </div>
-
-  <div data-comment="Button 3">
-    <Card type="button" backgroundColor={colors.primary.teal600} display="inline-block">
-      Inline button example
-    </Card>
-  </div>
-</div>
 ```

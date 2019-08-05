@@ -24,10 +24,9 @@ export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
   display?: string;
 }
 
-export type TCardTypes = 'card' | 'linkCard' | 'button';
+export type TCardTypes = 'card' | 'linkCard';
 
 const borderRadius: { [index in TCardTypes]: string } = {
-  button: '1000px',
   card: '4px',
   linkCard: '8px',
 };
