@@ -265,9 +265,9 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6"
-            href="https://zopa.com/loans/car-finance"
+            href="https://zopa.com/loans/car-loans"
           >
-            Car finance
+            Car loans
           </a>
         </li>
         <li

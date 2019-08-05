@@ -17,7 +17,7 @@ const content = {
 London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
 and entered on the Financial Services Register under firm registration number 718925.`,
 
-  rightsReserved: `© Zopa Limited 2018 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
+  rightsReserved: `© Zopa Limited ${new Date().getFullYear()} All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
 Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
 and we are registered with the Office of the Information Commissioner (No. Z8797078).`,
 };
