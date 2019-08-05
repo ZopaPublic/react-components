@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownField /> renders the component with props with no a11y violations 1`] = `
+.c1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  color: #1C2139;
+  display: block;
+}
+
+.c0 {
+  margin-bottom: 5px;
+}
+
+<label
+  class="c0 c1"
+  for="text-id-dropdown-field-default"
+>
+  Your cool dropdown ❤
+</label>
+`;

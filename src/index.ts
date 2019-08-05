@@ -30,6 +30,7 @@ export { default as Help } from './components/molecules/Help/Help';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as RadioField } from './components/molecules/RadioField/RadioField';
 export { default as TextField } from './components/molecules/TextField/TextField';
+export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
 
 // Organisms
 export { default as Navbar } from './components/organisms/Navbar/Navbar';
