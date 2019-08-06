@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/zopaUK/react-components/compare/v1.3.0...v1.3.1) (2019-08-06)
+
+
+### Bug Fixes
+
+* **footer:** fix car loans link and copyright year ([f821aa7](https://github.com/zopaUK/react-components/commit/f821aa7))
+* **footer:** mock date on tests ([a151a9d](https://github.com/zopaUK/react-components/commit/a151a9d))
+
 # [1.3.0](https://github.com/zopaUK/react-components/compare/v1.2.5...v1.3.0) (2019-08-02)
 
 
