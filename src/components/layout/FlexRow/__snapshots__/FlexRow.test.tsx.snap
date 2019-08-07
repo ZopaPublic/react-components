@@ -9,6 +9,9 @@ exports[`<FlexRow /> renders a FlexRow component 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-right: -16px;
   margin-left: -16px;
   -webkit-box-pack: start;
@@ -24,5 +27,6 @@ exports[`<FlexRow /> renders a FlexRow component 1`] = `
 <div
   class="c0"
   cols="12"
+  direction="row"
 />
 `;
