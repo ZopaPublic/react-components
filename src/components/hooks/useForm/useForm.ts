@@ -1,28 +1,20 @@
 import { useState, useCallback, useMemo } from 'react';
 
-interface TDictionary<T> {
-  [key: string]: T;
-}
-
 type TValue = any;
 
-type TValues = TDictionary<TValue>;
-
-type TValidate = (values: TValues) => TDictionary<string>;
-
-type TOnSubmit = (values: TValues) => void;
+type TValues = Record<string, TValue>;
 
 interface TUseFormProps {
   initialValues: TValues;
-  validate: TValidate;
-  onSubmit: TOnSubmit;
-  submitting: boolean;
+  onSubmit: (values: TValues) => void;
+  validate?: (values: TValues) => Record<keyof TValues, string | undefined>;
+  submitting?: boolean;
 }
 
 const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUseFormProps) => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
-  const [touched, updateTouched] = useState<TDictionary<boolean>>({});
+  const [touched, updateTouched] = useState<Record<string, boolean>>({});
 
   const runValidation = useCallback(
     formValues => {
@@ -37,7 +29,7 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
 
   const getFieldProps = useCallback(
     name => ({
-      submitting,
+      disabled: submitting,
       error: errors[name],
       touched: !!touched[name],
       value: values[name],
@@ -63,18 +55,11 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
     [invalid, onSubmit, values],
   );
 
-  const resetForm = useCallback(() => {
-    updateValues(initialValues);
-    updateErrors({});
-    updateTouched({});
-  }, [initialValues]);
-
   return {
     getFieldProps,
     invalid,
     submitting,
     handleSubmit,
-    resetForm,
   };
 };
 

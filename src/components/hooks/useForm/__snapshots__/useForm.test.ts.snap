@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useForm getFieldProps should return the correct object 1`] = `
+Object {
+  "disabled": false,
+  "error": undefined,
+  "onBlur": [Function],
+  "onChange": [Function],
+  "touched": false,
+  "value": "name",
+}
+`;
+
+exports[`useForm getFieldProps should return the correct object 2`] = `
+Object {
+  "disabled": false,
+  "error": undefined,
+  "onBlur": [Function],
+  "onChange": [Function],
+  "touched": false,
+  "value": "lastName",
+}
+`;
+
+exports[`useForm should return the correct object 1`] = `
+Object {
+  "getFieldProps": [Function],
+  "handleSubmit": [Function],
+  "invalid": false,
+  "submitting": false,
+}
+`;
