@@ -71,6 +71,23 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
+Layout with a column order swapped on small screen:
+
+```jsx
+import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow direction="row-reverse">
+    <FlexCol xs={12} m={6}>
+      <div style={{ backgroundColor: '#73E1D6' }}>second column</div>
+    </FlexCol>
+    <FlexCol xs={12} m={6}>
+      <div style={{ backgroundColor: '#73E1D6' }}>first column</div>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
 Grid aligned vertically:
 
 ```jsx
