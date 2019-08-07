@@ -2,12 +2,14 @@ import { useState, useCallback, useMemo } from 'react';
 
 type TValue = any;
 
-type TValues = Record<string, TValue>;
+export type TValues = Record<string, TValue>;
 
-interface TUseFormProps {
+export type TErrors = Record<string, string | undefined>;
+
+export interface TUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
-  validate?: (values: TValues) => Record<keyof TValues, string | undefined>;
+  validate?: (values: TValues) => TErrors;
   submitting?: boolean;
 }
 

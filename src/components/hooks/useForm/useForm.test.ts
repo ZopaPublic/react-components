@@ -1,10 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useForm from './useForm';
-
-interface TTestForm {
-  name: string;
-  lastName: string;
-}
+import useForm, { TValues, TErrors } from './useForm';
 
 const initialValues = {
   name: 'name',
@@ -12,8 +7,8 @@ const initialValues = {
 };
 const errorMessage = 'required';
 const onSubmit = jest.fn();
-const validate = (values: TTestForm) => {
-  const errors: Partial<TTestForm> = {};
+const validate = (values: TValues) => {
+  const errors: TErrors = {};
   if (values.name === '') {
     errors.name = errorMessage;
   }
