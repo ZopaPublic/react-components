@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/zopaUK/react-components/compare/v1.3.1...v1.4.0) (2019-08-07)
+
+
+### Features
+
+* **flexrow:** add direction prop to allow for column swapping ([6449bb4](https://github.com/zopaUK/react-components/commit/6449bb4))
+
 ## [1.3.1](https://github.com/zopaUK/react-components/compare/v1.3.0...v1.3.1) (2019-08-06)
 
 
