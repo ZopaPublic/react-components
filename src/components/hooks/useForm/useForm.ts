@@ -10,10 +10,9 @@ export interface TUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
   validate?: (values: TValues) => TErrors;
-  submitting?: boolean;
 }
 
-const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUseFormProps) => {
+const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps) => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
@@ -31,7 +30,6 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
 
   const getFieldProps = useCallback(
     name => ({
-      disabled: submitting,
       error: errors[name],
       touched: !!touched[name],
       value: values[name],
@@ -44,7 +42,7 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
         updateTouched({ ...touched, [name]: true });
       },
     }),
-    [errors, runValidation, submitting, touched, values],
+    [errors, runValidation, touched, values],
   );
 
   const handleSubmit = useCallback(
@@ -60,7 +58,6 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
   return {
     getFieldProps,
     invalid,
-    submitting,
     handleSubmit,
   };
 };

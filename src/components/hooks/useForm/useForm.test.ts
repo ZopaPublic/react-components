@@ -31,7 +31,7 @@ describe('useForm', () => {
         validate,
       }),
     );
-    ['getFieldProps', 'invalid', 'submitting', 'handleSubmit'].forEach(property => {
+    ['getFieldProps', 'invalid', 'handleSubmit'].forEach(property => {
       expect(result.current).toHaveProperty(property);
     });
   });
@@ -70,32 +70,6 @@ describe('useForm', () => {
         }),
       );
       expect(result.current.invalid).toEqual(true);
-    });
-  });
-
-  describe('submitting form flag', () => {
-    it('should be false by default', () => {
-      const { result } = renderHook(() =>
-        useForm({
-          initialValues,
-          onSubmit,
-          validate,
-        }),
-      );
-      expect(result.current.submitting).toEqual(false);
-    });
-
-    it('should be the same as the submitting argument', () => {
-      const submitting = true;
-      const { result } = renderHook(() =>
-        useForm({
-          initialValues,
-          onSubmit,
-          validate,
-          submitting,
-        }),
-      );
-      expect(result.current.submitting).toEqual(submitting);
     });
   });
 
@@ -144,7 +118,7 @@ describe('useForm', () => {
           validate,
         }),
       );
-      ['error', 'disabled', 'touched', 'value', 'onChange', 'onBlur'].forEach(property => {
+      ['error', 'touched', 'value', 'onChange', 'onBlur'].forEach(property => {
         expect(result.current.getFieldProps('name')).toHaveProperty(property);
         expect(result.current.getFieldProps('lastName')).toHaveProperty(property);
       });
