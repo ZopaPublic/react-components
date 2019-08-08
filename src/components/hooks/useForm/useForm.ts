@@ -50,7 +50,7 @@ const useForm = ({ initialValues, validate, onSubmit, submitting = false }: TUse
   const handleSubmit = useCallback(
     e => {
       e.preventDefault();
-      if (!invalid && onSubmit) {
+      if (!invalid) {
         onSubmit(values);
       }
     },
