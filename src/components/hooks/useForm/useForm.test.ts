@@ -34,7 +34,6 @@ describe('useForm', () => {
     ['getFieldProps', 'invalid', 'submitting', 'handleSubmit'].forEach(property => {
       expect(result.current).toHaveProperty(property);
     });
-    expect(result.current).toMatchSnapshot();
   });
 
   describe('invalid form flag', () => {
@@ -149,8 +148,6 @@ describe('useForm', () => {
         expect(result.current.getFieldProps('name')).toHaveProperty(property);
         expect(result.current.getFieldProps('lastName')).toHaveProperty(property);
       });
-      expect(result.current.getFieldProps('name')).toMatchSnapshot();
-      expect(result.current.getFieldProps('lastName')).toMatchSnapshot();
     });
   });
 
