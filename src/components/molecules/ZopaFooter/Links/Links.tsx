@@ -74,8 +74,8 @@ const linkGroups = [
         label: 'Home improvements',
       },
       {
-        href: 'https://zopa.com/loans/car-finance',
-        label: 'Car finance',
+        href: 'https://zopa.com/loans/car-loans',
+        label: 'Car loans',
       },
       {
         href: 'https://zopa.com/loans/faq',

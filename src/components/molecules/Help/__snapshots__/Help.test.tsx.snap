@@ -47,6 +47,9 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-right: -16px;
   margin-left: -16px;
   -webkit-box-pack: start;
@@ -146,6 +149,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
     <div
       class="c2"
       cols="12"
+      direction="row"
     >
       <div
         class="c3"
@@ -161,6 +165,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
     <div
       class="c2"
       cols="12"
+      direction="row"
     >
       <div
         class="c5"

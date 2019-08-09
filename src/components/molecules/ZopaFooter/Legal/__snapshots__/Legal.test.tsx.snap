@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Legal /> renders the component 1`] = `
+.c2 {
+  background-color: #282F52;
+  height: 1px;
+}
+
 .c0 {
   padding: 18px 0;
 }
@@ -12,15 +17,31 @@ exports[`<Legal /> renders the component 1`] = `
   margin: 0;
 }
 
-<div
-  class="c0"
->
-  <p
-    class="c1"
+<div>
+  <div
+    class="c0"
   >
-    Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
-London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
-and entered on the Financial Services Register under firm registration number 718925.
-  </p>
+    <p
+      class="c1"
+    >
+      Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
+    London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
+    and entered on the Financial Services Register under firm registration number 718925.
+    </p>
+  </div>
+  <div
+    class="c2"
+  />
+  <div
+    class="c0"
+  >
+    <p
+      class="c1"
+    >
+      © Zopa Limited 2016 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
+    Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
+    and we are registered with the Office of the Information Commissioner (No. Z8797078).
+    </p>
+  </div>
 </div>
 `;
