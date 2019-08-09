@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/zopaUK/react-components/compare/v1.4.0...v1.5.0) (2019-08-09)
+
+
+### Features
+
+* **useform:** create first version of the form hook ([ae479e6](https://github.com/zopaUK/react-components/commit/ae479e6))
+* **useform:** set it up ([ab1e60a](https://github.com/zopaUK/react-components/commit/ab1e60a))
+
 # [1.4.0](https://github.com/zopaUK/react-components/compare/v1.3.1...v1.4.0) (2019-08-07)
 
 
