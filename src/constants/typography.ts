@@ -18,7 +18,7 @@ const typography = {
   },
   weights: {
     regular: 400,
-    semiBold: 600,
+    semibold: 600,
     bold: 700,
   },
   lineHeight: 1.6,
