@@ -1,3 +1,0 @@
-Typography components: headers, titles, paragraphs, ...
-
-These components extends from a native html element. For example `Header1` extends from `React.HTMLAttributes<HTMLHeadingElement>`.
