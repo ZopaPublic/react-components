@@ -50,7 +50,7 @@ const MiscLinks = () => (
     {miscLinksData.map(({ label, href }, index) => (
       <FlexCol xs="auto" key={`footer-misc-links-${index}`}>
         <MiscLinkWrapper>
-          <FooterLink size="small" href={href}>
+          <FooterLink href={href} size={3}>
             {label}
           </FooterLink>
         </MiscLinkWrapper>

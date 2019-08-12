@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
 import * as colors from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -21,7 +22,7 @@ const FieldContainer = styled(SizedContainer)`
 
 const Label = styled(InputLabel)<IInputStatus>`
   display: flex;
-  font-size: 16px;
+  font-size: ${typography.sizes.text[1]};
   line-height: 24px;
   color: ${colors.neutral.neutral900};
   font-weight: 400;

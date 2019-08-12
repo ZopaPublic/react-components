@@ -3,16 +3,7 @@ import styled from 'styled-components';
 
 import * as colors from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
-
-type TTextSize = 'lead' | 'regular';
-interface ITitleStyleProps {
-  textSize?: TTextSize;
-}
-
-const sizes = {
-  regular: '16px',
-  lead: '20px',
-};
+import Text, { ITextProps } from '../../../atoms/Text/Text';
 
 const StyledButton = styled.button`
   appearance: none;
@@ -23,19 +14,18 @@ const StyledButton = styled.button`
   padding: 0 4px;
 `;
 
-const TitleContainer = styled.span`
+const TitleContainer = styled.div`
   display: flex;
   align-items: center;
-  color: ${colors.primary.blue500};
+
   svg {
     flex-shrink: 0;
   }
 `;
 
-const Title = styled.span<ITitleStyleProps>`
+const Title = styled(Text)`
   color: ${colors.primary.blue500};
-  padding-left: 12px;
-  font-size: ${({ textSize }) => sizes[textSize]};
+  padding-left: 8px;
   font-weight: 600;
   line-height: 1.5;
   text-align: left;
@@ -44,18 +34,30 @@ const Title = styled.span<ITitleStyleProps>`
 export interface IAccordionHeader {
   /** determines the position of the chevron icon */
   isOpen: boolean;
-  textSize?: TTextSize;
+  textSize: ITextProps['size'];
 }
 
 const AccordionHeader: FunctionComponent<IAccordionHeader> = React.forwardRef<HTMLButtonElement, IAccordionHeader>(
-  ({ children, isOpen, textSize = 'lead', ...rest }, ref) => (
-    <StyledButton ref={ref} {...rest}>
-      <TitleContainer>
-        <Arrow direction={isOpen ? 'down' : 'right'} />
-        <Title textSize={textSize}>{children}</Title>
-      </TitleContainer>
-    </StyledButton>
-  ),
+  ({ children, isOpen, textSize = 2, ...rest }, ref) => {
+    const mapTextToArrowSize = {
+      1: '14px',
+      2: '10px',
+      3: '8px',
+    };
+
+    return (
+      <StyledButton ref={ref} {...rest}>
+        <TitleContainer>
+          <Arrow
+            direction={isOpen ? 'down' : 'right'}
+            width={mapTextToArrowSize[textSize]}
+            height={mapTextToArrowSize[textSize]}
+          />
+          <Title size={textSize}>{children}</Title>
+        </TitleContainer>
+      </StyledButton>
+    );
+  },
 );
 
 export default AccordionHeader;

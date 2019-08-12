@@ -5,11 +5,14 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   border: 2px solid #00A45A;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c1:focus {
@@ -50,11 +53,14 @@ exports[`<TextField /> renders the component with error 1`] = `
   border: 2px solid #F52D2D;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c1:focus {
@@ -92,17 +98,13 @@ exports[`<TextField /> renders the component with error 1`] = `
 
 exports[`<TextField /> renders the component with error and label and size 1`] = `
 .c0 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
   display: block;
 }
 
 <label
   class="c0"
   for="text-id-test1"
+  size="1"
 >
   yes!
 </label>
@@ -110,17 +112,13 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
 
 exports[`<TextField /> renders the component with label 1`] = `
 .c0 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
   display: block;
 }
 
 <label
   class="c0"
   for="text-id-test1"
+  size="1"
 >
   Username
 </label>
@@ -131,11 +129,14 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c1:focus {
@@ -176,11 +177,14 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2:focus {
@@ -222,7 +226,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 16px;
   color: #6F748B;
 }
 
@@ -253,11 +257,14 @@ exports[`<TextField /> renders the component with size 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c1:focus {

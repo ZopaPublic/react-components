@@ -3,7 +3,13 @@
 ```jsx
 import { DropdownField } from '@zopauk/react-components';
 
-<DropdownField label="Your cool dropdown ❤" errorMessage="You need to choose something!" size="short" name="foo">
+<DropdownField
+  label="Your cool dropdown ❤"
+  errorMessage="You need to choose something!"
+  size="short"
+  name="foo"
+  helpText="Some contextual help"
+>
   <option value="first">First value</option>
   <option value="second">Second value</option>
   <option value="third">Third value</option>

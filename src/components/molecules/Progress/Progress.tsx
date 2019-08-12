@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
-import { openSans } from '../../../constants/fonts';
+import { typography } from '../../../constants/typography';
 
 export interface IProgressionStyleProps {
   width?: string;
@@ -32,8 +32,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
     position: absolute;
     top: 8px;
     right: 0;
-    font-family: ${openSans};
-    font-size: 12px;
+    font-size: ${typography.sizes.text[3]};
     line-height: 16px;
     font-weight: 600;
     color: ${colors.neutral.neutral300};

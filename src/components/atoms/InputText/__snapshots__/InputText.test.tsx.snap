@@ -5,11 +5,14 @@ exports[`<InputText /> renders the component disabled 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -39,11 +42,14 @@ exports[`<InputText /> renders the component with error 1`] = `
   border: 2px solid #F52D2D;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -72,11 +78,14 @@ exports[`<InputText /> renders the component with focus 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -105,11 +114,14 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   border: 2px solid #00A45A;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -138,11 +150,14 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {

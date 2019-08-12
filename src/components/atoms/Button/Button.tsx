@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
 import { statusColors } from '../../../constants/colors';
-import { openSans } from '../../../constants/fonts';
+import { typography } from '../../../constants/typography';
 
 export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   contrastColor?: string;
@@ -102,10 +102,10 @@ const SButton = styled.button<IButtonProps>`
   align-items: center;
   width: ${props => props.fullWidth && '100%'};
   padding: ${({ sizing }) => sizing && paddings[sizing]};
-  font-family: ${openSans};
+  font-family: ${typography.primary};
   font-size: ${({ sizing }) => sizing && fontSizes[sizing]};
   line-height: ${({ sizing }) => (sizing === 'large' ? '30px' : '24px')};
-  font-weight: 500;
+  font-family: ${typography.weights.semibold};
   cursor: pointer;
   border: none;
   border-radius: 48px;

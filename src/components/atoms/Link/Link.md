@@ -15,25 +15,25 @@ Creates a hyperlink to other web pages, files, locations within the same page, e
 Component with `target="_blank"`:
 
 ```js
-import { Lead, Link } from '@zopauk/react-components';
+import { Text, Link } from '@zopauk/react-components';
 
-<Lead>
-  Lead component text with
+<Text size={1} as="p">
+  A big paragraph with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
-    a Link component
-  </Link>
-</Lead>;
+    a link
+  </Link>!
+</Text>;
 ```
 
 Component without `target="_blank"` (notice that the square disappeared!)
 
 ```js
-import { Lead, Link } from '@zopauk/react-components';
+import { Text, Link } from '@zopauk/react-components';
 
-<Lead>
-  Lead component text with
+<Text size={1} as="p">
+  A big paragraph with
   <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
-    a Link component
+    a link
   </Link>!
-</Lead>;
+</Text>;
 ```

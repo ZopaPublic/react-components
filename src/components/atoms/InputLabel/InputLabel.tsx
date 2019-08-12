@@ -1,18 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import Text from '../Text/Text';
 
 export interface IInputLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
 
-const Label = styled.label`
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: ${colors.neutral.neutral900};
+const StyledLabel = styled(Text)`
   display: block;
 `;
 
-const InputLabel = (props: IInputLabelProps) => <Label {...props} />;
+const InputLabel = (props: IInputLabelProps) => <StyledLabel weight="bold" as="label" size={1} {...props} />;
 
 export default InputLabel;

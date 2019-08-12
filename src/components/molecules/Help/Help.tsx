@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from '../../atoms/Link/Link';
+import Text from '../../atoms/Text/Text';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
-import Caption from '../../typography/Caption/Caption';
-import Header3 from '../../typography/Header3/Header3';
-import Lead from '../../typography/Lead/Lead';
 
 const HelpWrap = styled.div`
   background: white;
@@ -31,28 +29,32 @@ const Help: React.FunctionComponent<IHelpProps> = ({ email }) => (
     <HelpContent>
       <FlexRow gutter={16}>
         <FlexCol xs={12}>
-          <Header3>We're here to help</Header3>
+          <h3>We're here to help</h3>
         </FlexCol>
       </FlexRow>
       <FlexRow gutter={16}>
         <FlexCol xs={12} l={6}>
-          <Lead>
+          <Text size={1}>
             <Link href={`mailto:${email}`}>{email}</Link>
-          </Lead>
-          <Lead>
+          </Text>
+          <Text size={1}>
             <Link href="tel:020 7580 6060">020 7580 6060 </Link>
             for loans
-          </Lead>
-          <Lead>
+          </Text>
+          <Text size={1}>
             <Link href="tel:020 7291 8331">020 7291 8331 </Link>
             for investments
-          </Lead>
+          </Text>
         </FlexCol>
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
-            <Lead>Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)</Lead>
+            <Text size={1} as="p">
+              Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
+            </Text>
           </OpeningHoursWrapper>
-          <Caption>We can't take applications over the phone. UK residents only. Calls may be monitored.</Caption>
+          <Text size={3} as="p">
+            We can't take applications over the phone. UK residents only. Calls may be monitored.
+          </Text>
         </FlexCol>
       </FlexRow>
     </HelpContent>

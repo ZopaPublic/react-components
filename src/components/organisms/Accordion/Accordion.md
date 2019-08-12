@@ -13,18 +13,19 @@ const AccordionExample = () => {
       id: 'one',
       header: 'header one - default (lead)',
       section: 'section one',
+      size: 1,
     },
     {
       id: 'two',
       header: 'header two - lead',
       section: 'section two',
-      size: 'lead',
+      size: 2,
     },
     {
       id: 'three',
       header: 'header three - regular',
       section: 'section three',
-      size: 'regular',
+      size: 3,
     },
   ];
 

@@ -48,6 +48,8 @@ const Label = styled(InputLabel)`
   line-height: 24px;
   color: ${colors.neutral.neutral900};
   position: relative;
+  user-select: none;
+
   &:before {
     content: '';
     background-color: ${colors.neutral.neutral25};

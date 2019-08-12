@@ -7,12 +7,18 @@ import FooterLink from '../FooterLink/FooterLink';
 import Separator from '../Separator/Separator';
 import Wrapper from '../Wrapper/Wrapper';
 
-const StyledHeading = styled.div`
-  font-size: 18px;
+export interface ILinkData {
+  label: string;
+  href: string;
+}
+
+export interface ILinkGroups {
+  heading: string;
+  links: ILinkData[];
+}
+
+const StyledHeading = styled.h3`
   color: ${colors.base.white};
-  font-weight: 600;
-  line-height: 24px;
-  margin-bottom: 16px;
 `;
 
 const StyledList = styled.ul`
@@ -25,16 +31,6 @@ const StyledListItem = styled.li`
   margin: 0 0 8px 0;
   padding: 0;
 `;
-
-export interface ILinkData {
-  label: string;
-  href: string;
-}
-
-export interface ILinkGroups {
-  heading: string;
-  links: ILinkData[];
-}
 
 const linkGroups = [
   {

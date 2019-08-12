@@ -5,22 +5,26 @@ Basic example:
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
 import { Navbar } from '@zopauk/react-components';
 
-<Navbar.Dropdown
-  id="basic-example-id"
-  ariaLabel="test"
-  items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
-  renderOpener={({ open, getOpenerProps }) => (
-    <div style={{ padding: 8 }}>
-      <a href="#" {...getOpenerProps()}>
-        opener
-      </a>
-    </div>
-  )}
-  renderItem={({ item: { label, href }, getItemProps }) => (
-    <a href={href} {...getItemProps()}>
-      {label}
-    </a>
-  )}
+<Navbar.Layout
+  left={
+    <Navbar.Dropdown
+      id="basic-example-id"
+      ariaLabel="test"
+      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
+      renderOpener={({ open, getOpenerProps }) => (
+        <div style={{ padding: 8 }}>
+          <Navbar.Link href="#" {...getOpenerProps()}>
+            opener
+          </Navbar.Link>
+        </div>
+      )}
+      renderItem={({ item: { label, href }, getItemProps }) => (
+        <Navbar.Link href={href} {...getItemProps()}>
+          {label}
+        </Navbar.Link>
+      )}
+    />
+  }
 />;
 ```
 
@@ -29,21 +33,26 @@ Example with custom components:
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
 import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
 
-<Navbar.Dropdown
-  id="custom-example-id"
-  ariaLabel="test"
-  items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
-  renderOpener={({ open, getOpenerProps }) => (
-    <div style={{ padding: 8 }}>
-      <Link href="#" {...getOpenerProps()}>
-        <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
-      </Link>
-    </div>
-  )}
-  renderItem={({ item: { label, href }, getItemProps }) => (
-    <Link href={href} {...getItemProps()}>
-      {label}
-    </Link>
-  )}
+<Navbar.Layout
+  backgroundColor="#00B9A7"
+  left={
+    <Navbar.Dropdown
+      id="custom-example-id"
+      ariaLabel="test"
+      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
+      renderOpener={({ open, getOpenerProps }) => (
+        <div style={{ padding: 8 }}>
+          <Navbar.Link href="#" {...getOpenerProps()}>
+            <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
+          </Navbar.Link>
+        </div>
+      )}
+      renderItem={({ item: { label, href }, getItemProps }) => (
+        <Link href={href} {...getItemProps()}>
+          {label}
+        </Link>
+      )}
+    />
+  }
 />;
 ```
