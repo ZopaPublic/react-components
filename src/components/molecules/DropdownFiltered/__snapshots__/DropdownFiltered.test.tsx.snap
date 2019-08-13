@@ -1,42 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y violations 1`] = `
-.c1 {
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c1 {
   display: block;
 }
 
-.c4 {
+.c5 {
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c4:focus {
+.c5:focus {
   outline-width: 0;
   border: 2px solid #4B3CFA;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c4::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #6F748B;
 }
 
-.c4:disabled {
+.c5:disabled {
   background-color: #F8F8F9;
 }
 
-.c6 {
+.c7 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -50,20 +60,20 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 0;
-  -webkit-transition: border 0s;
-  transition: border 0s;
 }
 
-.c2 {
+.c3 {
   position: relative;
 }
 
-.c5 {
+.c6 {
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;
@@ -79,27 +89,27 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
     role="combobox"
   >
     <label
-      class="c1"
+      class="c1 c2"
       for="text-id-test"
       id="downshift-0-label"
     >
       Label
     </label>
     <div
-      class="c2"
+      class="c3"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-0-label"
         autocomplete="off"
-        class="c3 c4"
+        class="c4 c5"
         id="text-id-test"
         name="test"
         value=""
       />
       <svg
         aria-label="open.menu"
-        class="c5 c6"
+        class="c6 c7"
         direction="down"
         height="24px"
         viewBox="0 0 416 416"
@@ -121,11 +131,14 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3:focus {
@@ -159,8 +172,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2 {
   margin-bottom: 0;
-  -webkit-transition: border 0s;
-  transition: border 0s;
 }
 
 .c1 {
@@ -169,8 +180,10 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c4 {
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;

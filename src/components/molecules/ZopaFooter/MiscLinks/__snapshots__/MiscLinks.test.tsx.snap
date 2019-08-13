@@ -35,15 +35,30 @@ exports[`<MiscLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c3 {
-  font-weight: 600;
-  line-height: 1.4;
+.c4 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c4:hover {
+  opacity: 0.88;
+}
+
+.c4:active {
+  opacity: 0.72;
+}
+
+.c3 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c3:hover {
@@ -78,7 +93,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com"
       >
         Homepage
@@ -93,7 +108,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com"
       >
         Sitemap
@@ -108,7 +123,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com/privace-policy"
       >
         Privacy policy
@@ -123,7 +138,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com/principles"
       >
         Principles
@@ -138,7 +153,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com/cookie-policy"
       >
         Cookie policy
@@ -153,7 +168,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com/conflicts-policy"
       >
         Conflicts policy
@@ -168,7 +183,7 @@ exports[`<MiscLinks /> renders the component 1`] = `
       class="c2"
     >
       <a
-        class="c3"
+        class="c3 c4"
         href="https://zopa.com/website-terms"
       >
         Website terms

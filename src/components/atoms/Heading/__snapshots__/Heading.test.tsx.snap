@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
+.c0 {
+  font-size: 48px;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+}
+
+<h1
+  class="c0"
+>
+  Text
+</h1>
+`;
+
+exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
+.c0 {
+  font-size: 28px;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+}
+
+<h2
+  class="c0"
+>
+  Text
+</h2>
+`;
+
+exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
+.c0 {
+  font-size: 24px;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+}
+
+<h3
+  class="c0"
+>
+  Text
+</h3>
+`;
+
+exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
+.c0 {
+  font-size: 20px;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+}
+
+<h4
+  class="c0"
+>
+  Text
+</h4>
+`;
+
+exports[`<Heading /> renders without  a11y violations 1`] = `
+.c0 {
+  font-size: 48px;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Text
+  </h1>
+</div>
+`;

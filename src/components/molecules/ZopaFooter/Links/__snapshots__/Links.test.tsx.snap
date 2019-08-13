@@ -12,7 +12,7 @@ exports[`<Links /> renders the component 1`] = `
   align-self: auto;
 }
 
-.c7 {
+.c8 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -46,22 +46,37 @@ exports[`<Links /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c6 {
-  font-weight: 600;
-  line-height: 1.4;
+.c7 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c7:hover {
+  opacity: 0.88;
+}
+
+.c7:active {
+  opacity: 0.72;
+}
+
+.c6 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c6:hover {
   color: #6F748B;
 }
 
-.c8 {
+.c9 {
   background-color: #282F52;
   height: 1px;
 }
@@ -71,11 +86,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c3 {
-  font-size: 18px;
   color: #fff;
-  font-weight: 600;
-  line-height: 24px;
-  margin-bottom: 16px;
 }
 
 .c4 {
@@ -130,7 +141,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 @media (min-width:0px) {
-  .c7 {
+  .c8 {
     display: block;
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
@@ -144,7 +155,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c7 {
+  .c8 {
     display: none;
   }
 }
@@ -161,11 +172,11 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <div
+      <h3
         class="c3"
       >
         About Zopa
-      </div>
+      </h3>
       <ul
         class="c4"
       >
@@ -173,7 +184,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/about"
           >
             About Zopa
@@ -183,7 +194,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/about/how-zopa-works"
           >
             How Zopa works
@@ -193,7 +204,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/about/join-us"
           >
             Join us
@@ -203,7 +214,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/about/press"
           >
             Press office
@@ -213,7 +224,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/contact"
           >
             Contact Zopa
@@ -222,10 +233,10 @@ exports[`<Links /> renders the component 1`] = `
       </ul>
     </div>
     <div
-      class="c7"
+      class="c8"
     >
       <div
-        class="c8"
+        class="c9"
       />
     </div>
   </div>
@@ -236,11 +247,11 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <div
+      <h3
         class="c3"
       >
         Zopa Loans
-      </div>
+      </h3>
       <ul
         class="c4"
       >
@@ -248,7 +259,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/loans/debt-consolidation"
           >
             Debt consolidation
@@ -258,7 +269,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/loans/home-improvement"
           >
             Home improvements
@@ -268,7 +279,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/loans/car-loans"
           >
             Car loans
@@ -278,7 +289,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/loans/faq"
           >
             FAQs for loans
@@ -287,10 +298,10 @@ exports[`<Links /> renders the component 1`] = `
       </ul>
     </div>
     <div
-      class="c7"
+      class="c8"
     >
       <div
-        class="c8"
+        class="c9"
       />
     </div>
   </div>
@@ -301,11 +312,11 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <div
+      <h3
         class="c3"
       >
         Invest your money
-      </div>
+      </h3>
       <ul
         class="c4"
       >
@@ -313,7 +324,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/lending"
           >
             Invest at Zopa
@@ -323,7 +334,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/lending/risk-management"
           >
             Risk management
@@ -333,7 +344,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6"
+            class="c6 c7"
             href="https://zopa.com/lending/faq"
           >
             FAQs for investing
@@ -342,10 +353,10 @@ exports[`<Links /> renders the component 1`] = `
       </ul>
     </div>
     <div
-      class="c7"
+      class="c8"
     >
       <div
-        class="c8"
+        class="c9"
       />
     </div>
   </div>

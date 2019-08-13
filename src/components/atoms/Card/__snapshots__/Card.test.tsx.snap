@@ -96,6 +96,11 @@ exports[`<Card type="linkCard"/> renders default linkCard 1`] = `
   border-width: 2px;
   display: block;
   padding: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width:720px) {
@@ -121,6 +126,11 @@ exports[`<Card type="linkCard"/> renders the component with props 1`] = `
   border-width: 2px;
   display: block;
   padding: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media (max-width:720px) {

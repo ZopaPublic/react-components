@@ -7,7 +7,6 @@ exports[`<AlertBox /> renders the component with no a11y violations 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 16px;
-  line-height: 24px;
   border: 1px solid #E2E3E7;
   border-radius: 8px;
   box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.1);

@@ -1,13 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navbar.Link /> should render component with default props 1`] = `
-.c0 {
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
+  color: #4B3CFA;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -16,7 +32,6 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
   color: #4B3CFA;
 }
 
@@ -26,13 +41,13 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1"
   color="#4B3CFA"
 />
 `;
 
 exports[`<Navbar.Link /> should render component with specific props 1`] = `
-.c2 {
+.c3 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -41,13 +56,29 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   transform: rotate(0deg);
 }
 
-.c0 {
+.c1 {
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-weight: bold;
+  color: #4B3CFA;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -56,7 +87,6 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: default;
   color: #4B3CFA;
 }
 
@@ -65,7 +95,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   opacity: 1;
 }
 
-.c1 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -84,15 +114,15 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1"
   color="#4B3CFA"
 >
   <span
-    class="c1"
+    class="c2"
     open=""
   >
     <svg
-      class="c2"
+      class="c3"
       direction="down"
       height="18px"
       viewBox="0 0 416 416"

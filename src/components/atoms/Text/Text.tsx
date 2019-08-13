@@ -41,7 +41,6 @@ const Text = styled.span<ITextProps>`
   font-family: ${typography.primary};
   font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
   font-size: ${({ size = 'medium' }) => {
-    console.log(size);
     return typography.sizes.text[size];
   }};
 `;
