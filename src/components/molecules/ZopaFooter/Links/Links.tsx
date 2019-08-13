@@ -5,6 +5,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FooterLink from '../FooterLink/FooterLink';
 import Separator from '../Separator/Separator';
+import Heading from '../../../atoms/Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
 
 export interface ILinkData {
@@ -17,7 +18,7 @@ export interface ILinkGroups {
   links: ILinkData[];
 }
 
-const StyledHeading = styled.h3`
+const StyledHeading = styled(Heading)`
   color: ${colors.base.white};
 `;
 

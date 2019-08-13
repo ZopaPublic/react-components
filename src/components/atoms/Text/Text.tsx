@@ -18,7 +18,7 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagra
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    * @default span
    */
-  as?: 'span' | 'p';
+  as?: 'span' | 'p' | 'label';
   /**
    * Whether to add some margin below the rendered text or not. Use it to give meaningful white-space.
    * @default false
@@ -29,8 +29,6 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagra
 const Text = styled.span<ITextProps>`
   margin: 0;
   letter-spacing: 0;
-
-  color: black;
 
   ${({ mb = false }) =>
     mb &&

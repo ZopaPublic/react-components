@@ -22,6 +22,7 @@ export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMe
 export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
 export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
+export { default as Heading } from './components/atoms/Heading/Heading';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
