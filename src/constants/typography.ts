@@ -5,9 +5,9 @@ const typography = {
   primary: `"Open Sans",${systemFontStack}`,
   sizes: {
     text: {
-      1: '16px',
-      2: '14px',
-      3: '12px',
+      large: '16px',
+      medium: '14px',
+      small: '12px',
     },
     heading: {
       h1: '48px',

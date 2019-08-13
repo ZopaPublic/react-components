@@ -26,9 +26,6 @@ const TitleContainer = styled.div`
 const Title = styled(Text)`
   color: ${colors.primary.blue500};
   padding-left: 8px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
 `;
 
 export interface IAccordionHeader {
@@ -38,11 +35,11 @@ export interface IAccordionHeader {
 }
 
 const AccordionHeader: FunctionComponent<IAccordionHeader> = React.forwardRef<HTMLButtonElement, IAccordionHeader>(
-  ({ children, isOpen, textSize = 2, ...rest }, ref) => {
+  ({ children, isOpen, textSize = 'medium', ...rest }, ref) => {
     const mapTextToArrowSize = {
-      1: '14px',
-      2: '10px',
-      3: '8px',
+      large: '14px',
+      medium: '10px',
+      small: '8px',
     };
 
     return (
@@ -53,7 +50,9 @@ const AccordionHeader: FunctionComponent<IAccordionHeader> = React.forwardRef<HT
             width={mapTextToArrowSize[textSize]}
             height={mapTextToArrowSize[textSize]}
           />
-          <Title size={textSize}>{children}</Title>
+          <Title weight="bold" size={textSize}>
+            {children}
+          </Title>
         </TitleContainer>
       </StyledButton>
     );

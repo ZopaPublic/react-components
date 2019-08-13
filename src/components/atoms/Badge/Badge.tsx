@@ -61,7 +61,6 @@ function Badge({ children, styling, ...rest }: IBadgeProps) {
 }
 
 Badge.defaultProps = {
-  size: 2,
   styling: 'default',
 };
 

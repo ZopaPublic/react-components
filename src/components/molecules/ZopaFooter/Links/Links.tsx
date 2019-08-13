@@ -104,7 +104,7 @@ const Links = () => (
     {linkGroups.map(({ heading, links }, index) => (
       <FlexCol xs={12} s={6} m={4} l={3} key={`footer-links-${index}`}>
         <Wrapper>
-          <StyledHeading>{heading}</StyledHeading>
+          <StyledHeading as="h3">{heading}</StyledHeading>
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>

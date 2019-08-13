@@ -17,7 +17,7 @@ Component with `target="_blank"`:
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
-<Text size={1} as="p">
+<Text size="large" as="p">
   A big paragraph with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
@@ -30,7 +30,7 @@ Component without `target="_blank"` (notice that the square disappeared!)
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
-<Text size={1} as="p">
+<Text size="large" as="p">
   A big paragraph with
   <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link

@@ -22,10 +22,10 @@ describe('<Text />', () => {
   });
 
   it.each`
-    size | pixels
-    ${1} | ${'16px'}
-    ${2} | ${'14px (default)'}
-    ${3} | ${'12px'}
+    size        | pixels
+    ${'large'}  | ${'16px'}
+    ${'medium'} | ${'14px (default)'}
+    ${'small'}  | ${'12px'}
   `('can render at different sizes:  $size – $pixels', ({ size }) => {
     const { container } = render(<Text size={size}>Text</Text>);
     expect(container.firstChild).toMatchSnapshot();

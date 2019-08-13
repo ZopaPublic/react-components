@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { statusColors } from '../../../constants/colors';
 import warningIcon from '../../../content/images/red-warning.svg';
-import Text, { ITextProps } from '../Text/Text';
+import Text from '../Text/Text';
 
-const SErrorMessage = styled<ITextProps>(Text)`
+const SErrorMessage = styled(Text)`
   width: 100%;
   color: ${statusColors.error};
   display: block;
@@ -19,6 +19,8 @@ const SErrorMessage = styled<ITextProps>(Text)`
   }
 `;
 
-const ErrorMessage = (props: ITextProps) => <SErrorMessage role="alert" weight="bold" {...props} />;
+const ErrorMessage = (props: HTMLAttributes<HTMLSpanElement>) => (
+  <SErrorMessage {...props} role="alert" weight="semibold" size="medium" />
+);
 
 export default ErrorMessage;

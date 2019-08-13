@@ -30,7 +30,7 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text mb>I have `margin-botto` below ⤵️</Text>
+  <Text mb>I have `margin-bottom` below ⤵️</Text>
   <Text>I'm pushed further down 🙄</Text>
 </Fragment>;
 ```
@@ -42,13 +42,11 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text size={1} mb>
+  <Text size="large" mb>
     Size 1 ( 16px )
   </Text>
-  <Text size={2} mb>
-    Size 2 ( 14px, default )
-  </Text>
-  <Text size={3}>Size 3 ( 12px )</Text>
+  <Text mb>Size 2 ( 14px, default )</Text>
+  <Text size="small">Size 3 ( 12px )</Text>
 </Fragment>;
 ```
 

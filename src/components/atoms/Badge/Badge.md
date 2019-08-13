@@ -36,6 +36,6 @@ import { css } from 'styled-components';
 import { Badge, SizedContainer } from '@zopauk/react-components';
 
 <Fragment>
-  <Badge size={3}>Compact</Badge> ... <Badge>Default</Badge> ... <Badge size={1}>Large</Badge>
+  <Badge size="small">Compact</Badge> ... <Badge>Default</Badge> ... <Badge size="large">Large</Badge>
 </Fragment>;
 ```

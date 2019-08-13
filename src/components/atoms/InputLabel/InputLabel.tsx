@@ -8,6 +8,8 @@ const StyledLabel = styled(Text)`
   display: block;
 `;
 
-const InputLabel = (props: IInputLabelProps) => <StyledLabel weight="bold" as="label" size={1} {...props} />;
+const InputLabel = (props: IInputLabelProps) => (
+  <StyledLabel {...props} weight="semibold" forwardedAs="label" size="large" />
+);
 
 export default InputLabel;

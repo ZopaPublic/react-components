@@ -11,7 +11,7 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagra
   weight?: keyof typeof typography.weights;
   /**
    * The size you want to render your text at, currently only `12px` | `14px` | `16px` supported.
-   * @default 14px
+   * @default 'medium'
    */
   size?: keyof typeof typography.sizes.text;
   /**
@@ -40,7 +40,10 @@ const Text = styled.span<ITextProps>`
   line-height: ${typography.lineHeight};
   font-family: ${typography.primary};
   font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
-  font-size: ${({ size = 2 }) => typography.sizes.text[size]};
+  font-size: ${({ size = 'medium' }) => {
+    console.log(size);
+    return typography.sizes.text[size];
+  }};
 `;
 
 const TextWrap: React.FunctionComponent<ITextProps> = props => <Text {...props} />;

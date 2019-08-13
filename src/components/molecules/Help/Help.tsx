@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from '../../atoms/Link/Link';
 import Text from '../../atoms/Text/Text';
+import Heading from '../../atoms/Heading/Heading';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 
@@ -29,30 +30,30 @@ const Help: React.FunctionComponent<IHelpProps> = ({ email }) => (
     <HelpContent>
       <FlexRow gutter={16}>
         <FlexCol xs={12}>
-          <h3>We're here to help</h3>
+          <Heading as="h3">We're here to help</Heading>
         </FlexCol>
       </FlexRow>
       <FlexRow gutter={16}>
         <FlexCol xs={12} l={6}>
-          <Text size={1}>
+          <Text size="large">
             <Link href={`mailto:${email}`}>{email}</Link>
           </Text>
-          <Text size={1}>
+          <Text size="large">
             <Link href="tel:020 7580 6060">020 7580 6060 </Link>
             for loans
           </Text>
-          <Text size={1}>
+          <Text size="large">
             <Link href="tel:020 7291 8331">020 7291 8331 </Link>
             for investments
           </Text>
         </FlexCol>
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
-            <Text size={1} as="p">
+            <Text size="large" as="p">
               Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
             </Text>
           </OpeningHoursWrapper>
-          <Text size={3} as="p">
+          <Text size="small" as="p">
             We can't take applications over the phone. UK residents only. Calls may be monitored.
           </Text>
         </FlexCol>
