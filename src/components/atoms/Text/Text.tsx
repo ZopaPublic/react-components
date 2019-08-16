@@ -37,7 +37,7 @@ const Text = styled.span<ITextProps>`
     margin-bottom:   24px
   `};
 
-  line-height: ${typography.lineHeight};
+  line-height: ${typography.lineHeights.text};
   font-family: ${typography.primary};
   font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
   font-size: ${({ size = 'medium' }) => {

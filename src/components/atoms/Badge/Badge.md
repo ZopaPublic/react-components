@@ -4,7 +4,7 @@ There's four different styles available:
 
 ```js
 import { Fragment } from 'react';
-import { Badge, SizedContainer } from '@zopauk/react-components';
+import { Badge } from '@zopauk/react-components';
 
 <Fragment>
   <div>
@@ -33,7 +33,7 @@ For sizing, you can supply the same `"size"` prop as for [`<Text />`](#/Componen
 ```js
 import { Fragment } from 'react';
 import { css } from 'styled-components';
-import { Badge, SizedContainer } from '@zopauk/react-components';
+import { Badge } from '@zopauk/react-components';
 
 <Fragment>
   <Badge size="small">Compact</Badge> ... <Badge>Default</Badge> ... <Badge size="large">Large</Badge>

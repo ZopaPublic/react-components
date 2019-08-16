@@ -1,4 +1,4 @@
-⚠️ 💯 Guidelines 💯 ⚠️
+### Guidelines ⚠️ 💯
 
 1. Whenever you want to render text on any UI at Zopa, use the `<Text />` component
 2. Its size, weight, white-space and semantics can be customised according to context
@@ -7,7 +7,7 @@
 
 ### Examples
 
-#### HTML Tags
+#### Variations
 
 ```jsx
 import { Fragment } from 'react';

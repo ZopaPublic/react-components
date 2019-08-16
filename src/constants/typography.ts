@@ -21,7 +21,10 @@ const typography = {
     semibold: 600,
     bold: 700,
   },
-  lineHeight: 1.6,
+  lineHeights: {
+    text: 1.6,
+    heading: 1.2,
+  },
 };
 
 export { typography };

@@ -8,12 +8,24 @@ const {
 } = typography;
 
 interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   */
   as: 'h1' | 'h2' | 'h3' | 'h4';
+  /**
+   * Whether to add some margin below the rendered heading or not. Applied by default.
+   * @default false
+   */
+  mb?: boolean;
 }
 
 const StyledHeading = styled(Text)<IStyledHeadingProps>`
-  font-size: ${({ as = 'h3' }) => headingSizes[as]};
+  font-size: ${({ as }) => headingSizes[as]};
+  line-height: ${typography.lineHeights.heading};
   letter-spacing: -0.5px;
+  margin: 0;
+
+  ${({ mb = true }) => mb && 'margin-bottom: 24px'};
 `;
 
 const Heading: FC<IStyledHeadingProps> = props => <StyledHeading {...props} />;
