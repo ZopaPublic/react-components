@@ -40,6 +40,14 @@ const SCard = styled.div<ICardProps>`
   display: ${(props: ICardProps) => props.display || 'block'};
   padding: 2em;
 
+  ${({ type }) =>
+    type === 'linkCard'
+      ? `
+    cursor: pointer;
+    user-select: none;
+  `
+      : undefined}
+
   ${maxMedia.tablet`
     border-radius: 0;
     padding-left: 1em;

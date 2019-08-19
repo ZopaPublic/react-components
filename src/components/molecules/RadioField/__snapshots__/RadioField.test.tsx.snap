@@ -1,12 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
-.c4 {
+.c5 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c4 {
   display: block;
 }
 
@@ -24,7 +31,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   line-height: 24px;
   color: #1C2139;
   font-weight: 400;
@@ -119,7 +125,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     value="1"
   />
   <label
-    class="c3 c4"
+    class="c3 c4 c5"
     for="radio-id-1"
   >
     hello

@@ -94,12 +94,6 @@ module.exports = {
           ignore: '**/*.test.{js,jsx,ts,tsx}',
         },
         {
-          name: 'Typography',
-          content: 'src/components/typography/README.md',
-          components: 'src/components/typography/*/*.{js,jsx,ts,tsx}',
-          ignore: '**/*.test.{js,jsx,ts,tsx}',
-        },
-        {
           name: 'Layout',
           content: 'src/components/layout/README.md',
           components: 'src/components/layout/*/*.{js,jsx,ts,tsx}',

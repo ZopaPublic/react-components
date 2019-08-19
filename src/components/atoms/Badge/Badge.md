@@ -7,10 +7,24 @@ import { Fragment } from 'react';
 import { Badge } from '@zopauk/react-components';
 
 <Fragment>
-  <Badge>Default</Badge>
-  <Badge styling="waiting">Pending</Badge>
-  <Badge styling="confirmed">Approved</Badge>
-  <Badge styling="invalid">Invalid</Badge>
+  <div>
+    <Badge mb>Default</Badge>
+  </div>
+  <div>
+    <Badge styling="waiting" mb>
+      Pending
+    </Badge>
+  </div>
+  <div>
+    <Badge styling="confirmed" mb>
+      Approved
+    </Badge>
+  </div>
+  <div>
+    <Badge styling="invalid" mb>
+      Invalid
+    </Badge>
+  </div>
 </Fragment>;
 ```
 
@@ -18,12 +32,10 @@ For sizing, you can supply the same `"size"` prop as for [`<Text />`](#/Componen
 
 ```js
 import { Fragment } from 'react';
+import { css } from 'styled-components';
 import { Badge } from '@zopauk/react-components';
 
 <Fragment>
-  <Badge size="xs">Compact</Badge>
-  <Badge>Default</Badge>
-  <Badge size="m">Medium</Badge>
-  <Badge size="l">Large</Badge>
+  <Badge size="small">Compact</Badge> ... <Badge>Default</Badge> ... <Badge size="large">Large</Badge>
 </Fragment>;
 ```

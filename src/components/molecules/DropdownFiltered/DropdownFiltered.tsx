@@ -2,6 +2,7 @@ import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift'
 import React from 'react';
 import styled, { css } from 'styled-components';
 import * as colors from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import InputText from '../../atoms/InputText/InputText';
@@ -42,11 +43,7 @@ export interface IDropdownFilteredProps
 }
 
 const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
-  // TODO: Temporary hack. InputText margin has been added. We should think how to achieve the same behaviour without margin
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
-
-  transition: border 0s;
-
   ${({ isOpen }) =>
     isOpen &&
     css`
@@ -55,8 +52,8 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
       border-color: ${colors.primary.blue500};
       border-bottom: 0;
 
-      // Hack to simulate a border in the bottom in the input as :after
-      // pseudo-elements doesn't work with inputs
+      /* Hack to simulate a border in the bottom in the input as :after
+         pseudo-elements doesn't work with inputs */
       background: linear-gradient(${colors.neutral.neutral75}, ${colors.neutral.neutral75});
       background-size: 95% 1px;
       background-position: bottom center;
@@ -70,7 +67,7 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
 const Option = styled.div<IOption>`
   cursor: pointer;
   padding: 8px;
-  font-size: 20px;
+  font-size: ${typography.sizes.text[1]};
   font-weight: 600;
   line-height: 32px;
   color: ${colors.neutral.neutral400}
@@ -101,8 +98,8 @@ const SearchInputWrapper = styled.div`
 
 const SearchArrow = styled(Chevron)`
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;

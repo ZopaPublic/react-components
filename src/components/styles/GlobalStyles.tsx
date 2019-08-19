@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import { alverata, openSans } from '../../constants/fonts';
+import { typography } from '../../constants/typography';
 
 // Universal box sizing with Inheritance. More info: https://css-tricks.com/box-sizing/#article-header-id-6
 const boxSizing = css`
@@ -17,15 +17,8 @@ const boxSizing = css`
 const defaultFont = css`
   html,
   body {
-    font-family: ${openSans};
-    font-size: 14px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: ${alverata};
+    font-family: ${typography.primary};
+    font-size: ${typography.sizes.text[2]};
   }
 `;
 

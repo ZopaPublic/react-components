@@ -5,7 +5,13 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #4B3CFA;
 }
 
@@ -30,7 +36,13 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #4B3CFA;
 }
 

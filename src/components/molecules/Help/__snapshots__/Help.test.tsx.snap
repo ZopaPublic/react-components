@@ -1,11 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Help /> renders the default Help component with no a11y violations 1`] = `
+.c6 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c9 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .c7 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #4B3CFA;
 }
 
@@ -15,6 +45,17 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 
 .c7:active {
   opacity: 0.72;
+}
+
+.c4 {
+  font-size: 24px;
+  line-height: 1.2;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .c3 {
@@ -60,39 +101,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c9 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
-
-.c4 {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: Alverata,"Arial Black",Verdana,sans-serif;
-}
-
-.c6 {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 .c0 {
@@ -171,7 +179,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         class="c5"
         cols="12"
       >
-        <p
+        <span
           class="c6"
         >
           <a
@@ -180,8 +188,8 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           >
             savings@zopa.com
           </a>
-        </p>
-        <p
+        </span>
+        <span
           class="c6"
         >
           <a
@@ -191,8 +199,8 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
             020 7580 6060 
           </a>
           for loans
-        </p>
-        <p
+        </span>
+        <span
           class="c6"
         >
           <a
@@ -202,7 +210,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
             020 7291 8331 
           </a>
           for investments
-        </p>
+        </span>
       </div>
       <div
         class="c5"

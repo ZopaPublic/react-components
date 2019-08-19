@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../constants/colors';
-import { openSans } from '../../../constants/fonts';
+import { typography } from '../../../constants/typography';
+import Text from '../../atoms/Text/Text';
 
 export interface IProgressionStyleProps {
   width?: string;
@@ -30,10 +31,9 @@ const SProgression = styled.div<IProgressionStyleProps>`
 
   > span {
     position: absolute;
-    top: 8px;
+    top: 10px;
     right: 0;
-    font-family: ${openSans};
-    font-size: 12px;
+    font-size: ${typography.sizes.text[3]};
     line-height: 16px;
     font-weight: 600;
     color: ${colors.neutral.neutral300};
@@ -43,9 +43,9 @@ const SProgression = styled.div<IProgressionStyleProps>`
 const Progress: React.FunctionComponent<IProgressProps> = ({ totalSteps, currentStep, style }) => (
   <SProgressBar style={style}>
     <SProgression width={`${(100 / totalSteps) * currentStep}%`}>
-      <span>
+      <Text size="small">
         Step {currentStep} of {totalSteps}
-      </span>
+      </Text>
     </SProgression>
   </SProgressBar>
 );

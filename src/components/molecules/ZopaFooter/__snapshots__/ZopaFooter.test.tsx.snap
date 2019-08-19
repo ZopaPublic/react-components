@@ -21,7 +21,6 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
 
 .c3 {
   color: #6F748B;
-  font-size: 11px;
   line-height: 1.5;
   margin: 0;
 }
@@ -101,7 +100,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   margin-right: auto;
 }
 
-.c10 {
+.c11 {
   background-color: #282F52;
   height: 1px;
 }
@@ -110,9 +109,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 18px 0;
 }
 
-.c11 {
+.c12 {
   color: #6F748B;
-  font-size: 11px;
   line-height: 1.5;
   margin: 0;
 }
@@ -128,7 +126,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   align-self: auto;
 }
 
-.c9 {
+.c10 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -139,7 +137,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   align-self: auto;
 }
 
-.c12 {
+.c13 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -173,42 +171,38 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   align-items: flex-start;
 }
 
-.c8 {
-  font-weight: 600;
-  line-height: 1.4;
+.c9 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c9:hover {
+  opacity: 0.88;
+}
+
+.c9:active {
+  opacity: 0.72;
+}
+
+.c8 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c8:hover {
   color: #6F748B;
 }
 
-.c14 {
-  font-weight: 600;
-  line-height: 1.4;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 11px;
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-
-.c14:hover {
-  color: #6F748B;
-}
-
 .c5 {
-  font-size: 18px;
   color: #fff;
-  font-weight: 600;
-  line-height: 24px;
-  margin-bottom: 16px;
 }
 
 .c6 {
@@ -222,7 +216,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 0;
 }
 
-.c13 {
+.c14 {
   margin-bottom: 16px;
 }
 
@@ -296,7 +290,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 @media (min-width:0px) {
-  .c9 {
+  .c10 {
     display: block;
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
@@ -310,13 +304,13 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 @media (min-width:576px) {
-  .c9 {
+  .c10 {
     display: none;
   }
 }
 
 @media (min-width:0px) {
-  .c12 {
+  .c13 {
     display: block;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -345,11 +339,11 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         <div
           class="c4"
         >
-          <div
+          <h3
             class="c5"
           >
             About Zopa
-          </div>
+          </h3>
           <ul
             class="c6"
           >
@@ -357,7 +351,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/about"
               >
                 About Zopa
@@ -367,7 +361,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/about/how-zopa-works"
               >
                 How Zopa works
@@ -377,7 +371,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/about/join-us"
               >
                 Join us
@@ -387,7 +381,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/about/press"
               >
                 Press office
@@ -397,7 +391,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/contact"
               >
                 Contact Zopa
@@ -406,10 +400,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </ul>
         </div>
         <div
-          class="c9"
+          class="c10"
         >
           <div
-            class="c10"
+            class="c11"
           />
         </div>
       </div>
@@ -420,11 +414,11 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         <div
           class="c4"
         >
-          <div
+          <h3
             class="c5"
           >
             Zopa Loans
-          </div>
+          </h3>
           <ul
             class="c6"
           >
@@ -432,7 +426,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/loans/debt-consolidation"
               >
                 Debt consolidation
@@ -442,7 +436,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/loans/home-improvement"
               >
                 Home improvements
@@ -452,7 +446,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/loans/car-loans"
               >
                 Car loans
@@ -462,7 +456,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/loans/faq"
               >
                 FAQs for loans
@@ -471,10 +465,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </ul>
         </div>
         <div
-          class="c9"
+          class="c10"
         >
           <div
-            class="c10"
+            class="c11"
           />
         </div>
       </div>
@@ -485,11 +479,11 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         <div
           class="c4"
         >
-          <div
+          <h3
             class="c5"
           >
             Invest your money
-          </div>
+          </h3>
           <ul
             class="c6"
           >
@@ -497,7 +491,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/lending"
               >
                 Invest at Zopa
@@ -507,7 +501,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/lending/risk-management"
               >
                 Risk management
@@ -517,7 +511,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               class="c7"
             >
               <a
-                class="c8"
+                class="c8 c9"
                 href="https://zopa.com/lending/faq"
               >
                 FAQs for investing
@@ -526,10 +520,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </ul>
         </div>
         <div
-          class="c9"
+          class="c10"
         >
           <div
-            class="c10"
+            class="c11"
           />
         </div>
       </div>
@@ -538,7 +532,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       class="c4"
     >
       <p
-        class="c11"
+        class="c12"
       >
         Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
     London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
@@ -546,13 +540,13 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       </p>
     </div>
     <div
-      class="c10"
+      class="c11"
     />
     <div
       class="c4"
     >
       <p
-        class="c11"
+        class="c12"
       >
         © Zopa Limited 2025 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
     Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
@@ -568,12 +562,12 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         direction="row"
       >
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <a
             aria-label="twitter"
-            class="c8"
+            class="c8 c9"
             href="https://twitter.com/zopa"
           >
             <svg
@@ -592,12 +586,12 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </a>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <a
             aria-label="facebook"
-            class="c8"
+            class="c8 c9"
             href="https://facebook.com/zopa"
           >
             <svg
@@ -618,7 +612,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="c11"
     />
     <div
       class="c4"
@@ -629,14 +623,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         direction="row"
       >
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com"
             >
               Homepage
@@ -644,14 +638,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com"
             >
               Sitemap
@@ -659,14 +653,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com/privace-policy"
             >
               Privacy policy
@@ -674,14 +668,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com/principles"
             >
               Principles
@@ -689,14 +683,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com/cookie-policy"
             >
               Cookie policy
@@ -704,14 +698,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com/conflicts-policy"
             >
               Conflicts policy
@@ -719,14 +713,14 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           </div>
         </div>
         <div
-          class="c12"
+          class="c13"
           cols="12"
         >
           <div
-            class="c13"
+            class="c14"
           >
             <a
-              class="c14"
+              class="c8 c9"
               href="https://zopa.com/website-terms"
             >
               Website terms

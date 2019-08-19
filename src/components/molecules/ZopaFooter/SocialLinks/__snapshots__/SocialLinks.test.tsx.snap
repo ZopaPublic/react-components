@@ -35,15 +35,30 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c2 {
-  font-weight: 600;
-  line-height: 1.4;
+.c3 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c3:hover {
+  opacity: 0.88;
+}
+
+.c3:active {
+  opacity: 0.72;
+}
+
+.c2 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c2:hover {
@@ -72,7 +87,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   >
     <a
       aria-label="twitter"
-      class="c2"
+      class="c2 c3"
       href="https://twitter.com/zopa"
     >
       <svg
@@ -96,7 +111,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   >
     <a
       aria-label="facebook"
-      class="c2"
+      class="c2 c3"
       href="https://facebook.com/zopa"
     >
       <svg

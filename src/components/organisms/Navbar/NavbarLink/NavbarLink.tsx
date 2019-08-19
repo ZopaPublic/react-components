@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import * as colors from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
+import Link from '../../../atoms/Link/Link';
 
 export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   active: boolean;
@@ -9,14 +10,11 @@ export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLA
   withChevron: boolean;
 }
 
-const StyledNavbarLink = styled.a<IStyledNavbarLinkProps>`
-  appearance: none;
-  text-decoration: none;
-  font-weight: bold;
+const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
   display: inline-flex;
   align-items: center;
-  cursor: ${({ active }) => (active ? 'default' : 'pointer')};
   color: ${({ color }) => color};
+
   &:active,
   &:hover {
     opacity: ${({ active }) => (active ? 1 : 0.88)};

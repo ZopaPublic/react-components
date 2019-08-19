@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import * as colors from '../../../../constants/colors';
+import { typography } from '../../../../constants/typography';
 import Separator from '../Separator/Separator';
 import Wrapper from '../Wrapper/Wrapper';
 
 const StyledParagraph = styled.p`
   color: ${colors.neutral.neutral400};
-  font-size: 11px;
+  font-size: ${typography.sizes.text[3]};
   line-height: 1.5;
   margin: 0;
 `;

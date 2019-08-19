@@ -55,7 +55,7 @@ const SocialLinks = () => (
     {socialLinksData.map(({ component: Component, label, href }, index) => (
       <FlexCol xs="auto" key={`footer-social-link-${index}`}>
         <FooterLink href={href} aria-label={label}>
-          <Component size="30px" />
+          <Component />
         </FooterLink>
       </FlexCol>
     ))}

@@ -16,18 +16,19 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 export interface IOption extends React.OptionHTMLAttributes<HTMLOptionElement> {}
 
 const Option: React.FunctionComponent<IOption> = styled.option``;
+
 const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdownProps>`
   appearance: none;
 
-  background: ${colors.base.white} url(${chevronDown}) no-repeat calc(100% - 13px) center;
+  background: url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
 
   border: 2px solid ${({ hasError }) => (hasError ? statusColors.error : DEFAULT_COLOR)};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-size: 20px;
   height: 46px;
   min-width: 100px;
+  user-select: none;
 
   &:focus {
     outline-width: 0;

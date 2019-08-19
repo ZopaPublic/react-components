@@ -5,14 +5,21 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FooterLink from '../FooterLink/FooterLink';
 import Separator from '../Separator/Separator';
+import Heading from '../../../atoms/Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
 
-const StyledHeading = styled.div`
-  font-size: 18px;
+export interface ILinkData {
+  label: string;
+  href: string;
+}
+
+export interface ILinkGroups {
+  heading: string;
+  links: ILinkData[];
+}
+
+const StyledHeading = styled(Heading)`
   color: ${colors.base.white};
-  font-weight: 600;
-  line-height: 24px;
-  margin-bottom: 16px;
 `;
 
 const StyledList = styled.ul`
@@ -25,16 +32,6 @@ const StyledListItem = styled.li`
   margin: 0 0 8px 0;
   padding: 0;
 `;
-
-export interface ILinkData {
-  label: string;
-  href: string;
-}
-
-export interface ILinkGroups {
-  heading: string;
-  links: ILinkData[];
-}
 
 const linkGroups = [
   {
@@ -107,7 +104,7 @@ const Links = () => (
     {linkGroups.map(({ heading, links }, index) => (
       <FlexCol xs={12} s={6} m={4} l={3} key={`footer-links-${index}`}>
         <Wrapper>
-          <StyledHeading>{heading}</StyledHeading>
+          <StyledHeading as="h3">{heading}</StyledHeading>
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>

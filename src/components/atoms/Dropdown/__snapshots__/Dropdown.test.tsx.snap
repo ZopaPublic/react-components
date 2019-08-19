@@ -5,14 +5,17 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background: url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-size: 20px;
   height: 46px;
   min-width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -39,14 +42,17 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background: url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-size: 20px;
   height: 46px;
   min-width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -79,14 +85,17 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background: url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-size: 20px;
   height: 46px;
   min-width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {
@@ -120,14 +129,17 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background: url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
   border: 2px solid #D6D7DE;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-size: 20px;
   height: 46px;
   min-width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0:focus {

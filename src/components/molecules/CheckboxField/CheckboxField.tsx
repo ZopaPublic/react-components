@@ -5,6 +5,7 @@ import checkMark from '../../../content/images/white-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
+import { typography } from '../../../constants/typography';
 import { IField, IInput } from '../../types';
 
 const zoomOut = keyframes`
@@ -21,8 +22,10 @@ const Input = styled.input<IInput>`
   opacity: 0;
   z-index: -1;
   position: absolute;
+
   &:checked + label {
-    font-weight: 600;
+    font-weight: ${typography.weights.semibold};
+
     &:before {
       content: '';
       background-color: ${colors.extended.blue600};
@@ -44,10 +47,11 @@ const Input = styled.input<IInput>`
 const Label = styled(InputLabel)`
   width: auto;
   display: flex;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: ${typography.weights.regular};
   color: ${colors.neutral.neutral900};
   position: relative;
+  user-select: none;
+
   &:before {
     content: '';
     background-color: ${colors.neutral.neutral25};

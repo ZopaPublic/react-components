@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { alert as alertColors, neutral as neutralColors } from '../../../constants/colors';
 import CheckMark from '../../icons/CheckMark/CheckMark';
-import Text from '../../typography/Text/Text';
+import Text from '../Text/Text';
 
 type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type IBgColors = { [S in TStyling]: string };
@@ -40,7 +40,6 @@ const StyledBadge = styled(Text)<IStyledBadgeProps>`
   color: ${({ styling }) => styling && fontColors[styling]};
   background-color: ${({ styling }) => styling && backgroundColors[styling]};
   display: inline-block;
-  line-height: 1.4;
   padding: 3px 8px;
   white-space: nowrap;
   vertical-align: baseline;
@@ -62,7 +61,6 @@ function Badge({ children, styling, ...rest }: IBadgeProps) {
 }
 
 Badge.defaultProps = {
-  size: 's',
   styling: 'default',
 };
 

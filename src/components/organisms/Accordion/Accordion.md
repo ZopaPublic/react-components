@@ -4,7 +4,7 @@ In order to create an accordion, you should use these components along with the 
 See the example below for more details.
 
 ```js
-import { useAccordion } from '@zopauk/react-components';
+import { useAccordion, Text } from '@zopauk/react-components';
 
 const AccordionExample = () => {
   const { getHeaderProps, getSectionProps, isActiveSection } = useAccordion();
@@ -13,18 +13,19 @@ const AccordionExample = () => {
       id: 'one',
       header: 'header one - default (lead)',
       section: 'section one',
+      size: 'large',
     },
     {
       id: 'two',
       header: 'header two - lead',
       section: 'section two',
-      size: 'lead',
+      size: undefined,
     },
     {
       id: 'three',
       header: 'header three - regular',
       section: 'section three',
-      size: 'regular',
+      size: 'small',
     },
   ];
 
@@ -35,7 +36,9 @@ const AccordionExample = () => {
           <Accordion.Header isOpen={isActiveSection(index)} {...getHeaderProps(id, index)} textSize={size}>
             {header}
           </Accordion.Header>
-          <Accordion.Section {...getSectionProps(id, index)}>{section}</Accordion.Section>
+          <Accordion.Section {...getSectionProps(id, index)}>
+            <Text size={size}>{section}</Text>
+          </Accordion.Section>
         </div>
       ))}
     </div>

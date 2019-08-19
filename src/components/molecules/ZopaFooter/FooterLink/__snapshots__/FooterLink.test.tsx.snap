@@ -1,15 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FooterLink /> renders the component with a small size 1`] = `
-.c0 {
-  font-weight: 600;
-  line-height: 1.4;
+.c1 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c0:hover {
@@ -17,20 +32,35 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1"
 />
 `;
 
 exports[`<FooterLink /> renders the component with default props 1`] = `
-.c0 {
-  font-weight: 600;
-  line-height: 1.4;
+.c1 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4B3CFA;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
 }
 
 .c0:hover {
@@ -38,6 +68,6 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1"
 />
 `;
