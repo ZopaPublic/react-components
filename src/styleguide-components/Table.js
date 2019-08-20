@@ -9,9 +9,6 @@ export const styles = ({ space, color, fontFamily, fontSize }) => ({
     marginBottom: space[4],
     tableLayout: 'auto',
   },
-  tableHead: {
-    borderBottom: [[1, color.border, 'solid']],
-  },
   cellHeading: {
     color: color.base,
     paddingRight: space[1],
@@ -19,8 +16,12 @@ export const styles = ({ space, color, fontFamily, fontSize }) => ({
     textAlign: 'left',
     fontFamily: fontFamily.base,
     fontWeight: 'bold',
-    fontSize: fontSize.small,
+    fontSize: '14px',
     whiteSpace: 'nowrap',
+    textTransform: 'unset',
+    backgroundColor: '#efefef',
+    border: '1px solid #efefef',
+    padding: 10,
   },
   cell: {
     color: color.base,
@@ -30,6 +31,8 @@ export const styles = ({ space, color, fontFamily, fontSize }) => ({
     verticalAlign: 'top',
     fontFamily: fontFamily.base,
     fontSize: fontSize.small,
+    border: '1px solid #efefef',
+    padding: 10,
     '&:last-child': {
       isolate: false,
       paddingRight: 0,

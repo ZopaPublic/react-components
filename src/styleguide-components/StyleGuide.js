@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { createGlobalStyle } from 'styled-components';
 import Logo from 'rsg-components/Logo';
 import Markdown from 'rsg-components/Markdown';
 import Styled from 'rsg-components/Styled';
@@ -9,6 +10,13 @@ import Version from 'rsg-components/Version';
 
 import GlobalStyles from '../components/styles/GlobalStyles';
 import Fonts from '../components/styles/Fonts';
+
+const GlobalStyleGuideStyles = createGlobalStyle`
+  /* System Fonts as used by GitHub */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+`;
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
@@ -70,6 +78,7 @@ export function StyleGuideRenderer({ classes, title, version, homepageUrl, child
   return (
     <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
       <GlobalStyles />
+      <GlobalStyleGuideStyles />
       <Fonts />
       <main className={classes.content}>
         {children}

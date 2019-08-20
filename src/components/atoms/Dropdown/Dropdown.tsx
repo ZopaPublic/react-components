@@ -20,7 +20,7 @@ const Option: React.FunctionComponent<IOption> = styled.option``;
 const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdownProps>`
   appearance: none;
 
-  background: url(${chevronDown}) no-repeat calc(100% - 13px) center;
+  background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
 
   border: 2px solid ${({ hasError }) => (hasError ? statusColors.error : DEFAULT_COLOR)};

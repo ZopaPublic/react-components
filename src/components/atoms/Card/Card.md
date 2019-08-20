@@ -4,7 +4,7 @@ The design team has agreed on two variations of cards depending on the context:
 
 A standard or default card, which we'll assume if the type property has been omitted or set explicitly to card. As of this writing, cards of this type are non-interactable and have a border radius of 4px.
 
-```js { "props": { "style": { "backgroundColor": "#141E64" } } }
+```js { "props": { "style": { "backgroundColor": "#141E64", "border": "none"  } } }
 import { Card, Text } from '@zopauk/react-components';
 
 <Card type="card">
@@ -18,7 +18,7 @@ A card that is meant to be clickable and respond to user interactions (hover eff
 
 Cards of type `"linkCard"` are meant to be used to build components that interact with user actions.
 
-```js { "props": { "style": { "backgroundColor": "#141E64" } } }
+```js { "props": { "style": { "backgroundColor": "#141E64",  "border": "none" } } }
 import { Card, Text, Heading } from '@zopauk/react-components';
 
 <Card type="linkCard" onClick={() => alert("You're a winner!")}>

@@ -1,6 +1,6 @@
 Basic example:
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)" } } }
+```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-components';
 
 <Navbar.Layout
@@ -50,7 +50,7 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-componen
 
 Responsive Navbar example:
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)" } } }
+```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, FlexCol } from '@zopauk/react-components';
 
 class ResponsiveNavbar extends React.Component {

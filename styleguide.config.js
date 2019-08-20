@@ -52,7 +52,7 @@ module.exports = {
       ignore: 'src/content/**/*constants.{js,jsx,ts,tsx}',
     },
     {
-      sectionDepth: 1,
+      sectionDepth: 2,
       name: 'Components',
       content: 'src/components/README.md',
       components: 'src/components/*/*.{js,jsx,ts,tsx}',
@@ -109,9 +109,10 @@ module.exports = {
     maxWidth: '100%',
     color: {
       sidebarBackground: '#1C2139',
+      codeBackground: '#F5F5F5',
     },
     fontFamily: {
-      base: '"Open Sans", sans-serif',
+      monospace: 'Monaco, Menlo, Courier, monospace',
     },
     fontSize: {
       base: 14,
@@ -123,6 +124,32 @@ module.exports = {
       h4: 18,
       h5: 16,
       h6: 16,
+    },
+  },
+  styles: {
+    TableOfContents: {
+      input: {
+        backgroundColor: '#80808000',
+        color: 'white',
+        borderColor: '#595959',
+      },
+    },
+    StyleGuide: {
+      logo: {
+        borderBottom: 'none',
+      },
+    },
+    Playground: {
+      preview: {
+        border: '2px #ededed solid',
+      },
+    },
+    TabButton: {
+      button: {
+        color: '#afafaf',
+        textTransform: 'unset',
+        border: 'none !important',
+      },
     },
   },
   // Override Styleguidist components

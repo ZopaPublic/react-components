@@ -2,7 +2,7 @@ This is a flexible Navbar subcomponent meant to be used with other components su
 
 Basic example:
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef"} } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Layout
@@ -30,7 +30,7 @@ import { Navbar } from '@zopauk/react-components';
 
 Example with custom components:
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
 
 <Navbar.Layout

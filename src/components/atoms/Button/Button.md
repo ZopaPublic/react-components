@@ -111,9 +111,9 @@ import { Button } from '@zopauk/react-components';
 Can be used with arrows, among other icons.
 
 ```jsx
-import { Alert, Button } from '@zopauk/react-components';
+import { AlertIcon, Button } from '@zopauk/react-components';
 
-<Button rightIcon={<Alert fillColor="#fff" />}>Learn more</Button>;
+<Button rightIcon={<AlertIcon fillColor="#fff" />}>Learn more</Button>;
 ```
 
 ### Left icon
@@ -121,9 +121,9 @@ import { Alert, Button } from '@zopauk/react-components';
 For when the icon conveys the meaning faster than text.
 
 ```jsx
-import { Alert, Button } from '@zopauk/react-components';
+import { AlertIcon, Button } from '@zopauk/react-components';
 
-<Button leftIcon={<Alert fillColor="#fff" />}>Smash now</Button>;
+<Button leftIcon={<AlertIcon fillColor="#fff" />}>Smash now</Button>;
 ```
 
 ### Full width
@@ -140,7 +140,7 @@ import { Button } from '@zopauk/react-components';
 
 Note that the text colour is the same as the background (always!)
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
 <Button styling="contrastPrimary" contrastColor={colors.primary.navy800}>
@@ -152,7 +152,7 @@ import { Button, colors } from '@zopauk/react-components';
 
 The border should be the colour's shade in 50 or close to that.
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
 <Button styling="contrastSecondary" contrastColor={colors.extended.blue25}>
@@ -164,7 +164,7 @@ import { Button, colors } from '@zopauk/react-components';
 
 See above.
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button } from '@zopauk/react-components';
 
 <Button styling="contrastLink">Link smash</Button>;
