@@ -1,5 +1,7 @@
-This is a subcomponent of `<Accordion />` and it is meant to be used along with other components such as `<Accordion.Header />` and the `useAccordion` hook.
+### Summary
 
-It is a simple block element that passes down the ref to its childs. This forwarding allows the section to be collapsible.
+<Accordion.Section /> is a simple block element that passes down its `ref` to its children.
+In this way, we can allow the section to be collapsible.
 
-Please refer to the `<Accordion />` documentation to see a working example.
+- It's meant to be used along `<Accordion.Section>` and `useAccordion`.
+- [`<Accordion />`](/#/Components/Organisms/Accordion) examples for how they're all meant to play together.

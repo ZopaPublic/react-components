@@ -1,7 +1,10 @@
-Accordion doesn't render anything: it's just a namespace for `<Accordion.Header />` and `<Accordion.Section />` components.
+### Summary
 
-In order to create an accordion, you should use these components along with the `useAccordion` hook.
-See the example below for more details.
+`<Accordion />` doesn't render anything: it's just a namespace for `<Accordion.Header />` and `<Accordion.Section />`.
+
+In order to create an accordion, you will need to use these two components along with the `useAccordion` hook.
+
+### Example
 
 ```js
 import { useAccordion, Text } from '@zopauk/react-components';

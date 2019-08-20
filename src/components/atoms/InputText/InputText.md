@@ -1,6 +1,12 @@
-Input native component. Simple component for input text, for more complex approach see `TextField` component``
+### Summary
 
-#### Default state
+Use `<TextInput />` to render a native HTML `<input />`.
+
+For a richer input see [`<TextField />`](/#/Components/Molecules/TextField).
+
+### Example
+
+- Default
 
 ```jsx
 import { InputText } from '@zopauk/react-components';
@@ -8,7 +14,7 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="default" defaultValue="example of input" />;
 ```
 
-#### IsValid
+- Valid state
 
 ```jsx
 import { InputText } from '@zopauk/react-components';
@@ -16,7 +22,7 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="isValid" isValid={true} />;
 ```
 
-#### hasError
+- With error
 
 ```jsx
 import { InputText } from '@zopauk/react-components';
@@ -24,7 +30,7 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="error" hasError={true} />;
 ```
 
-#### Disabled
+- Disabled
 
 ```jsx
 import { InputText } from '@zopauk/react-components';

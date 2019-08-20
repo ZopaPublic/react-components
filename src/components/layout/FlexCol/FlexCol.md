@@ -1,6 +1,10 @@
-The `FlexCol` component is meant to be used a child component of `FlexRow` as its padding is offset by `FlexRow`'s negative horizontal margins.
+### Summary
 
-Standard grid:
+`<FlexCol />` is meant to be used a child component of `<FlexRow />` ... its padding is offset by `<FlexRow />` _negative_ horizontal margin.
+
+### Examples
+
+- Standard layout
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -20,7 +24,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Content based grid (collapsing on mobile)
+- Content based layout ( _collapsing on mobile_ )
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -37,7 +41,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Flexbox responsive layouts:
+- Responsive layout
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -54,7 +58,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Layout with a column hidden on small screen:
+- Layout with a column hidden on small screens
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -71,7 +75,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Layout with a column order swapped on small screen:
+- Layout with column order swapped on small screens
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -88,7 +92,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Grid aligned vertically:
+- Layout aligned vertically
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -105,7 +109,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Each column with different vertical alignment
+- Each column with different vertical alignment
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -128,7 +132,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Grid with custom gutter (48px):
+- Layout with custom gutter ( `48px` )
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
@@ -148,7 +152,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 </FlexContainer>;
 ```
 
-Grid with custom number of column (5):
+- Layout with custom number of columns ( `5` )
 
 ```jsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';

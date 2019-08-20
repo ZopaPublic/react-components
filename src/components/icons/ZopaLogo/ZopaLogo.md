@@ -1,4 +1,8 @@
-This component is a wrapper around the svg code for Zopa's logo.
+### Summary
+
+Use it to render Zopa's logo as an SVG.
+
+### Example
 
 ```jsx
 import { ZopaIcon } from '@zopauk/react-components';

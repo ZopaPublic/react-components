@@ -1,6 +1,8 @@
-Error message for input Components. This component is meant to be used with an input.
+### Summary
 
-For a more complex component check `TextField`.
+Use `<ErrorMessage />` to render an error message, usually next to a form input.
+
+### Example
 
 ```jsx
 import { ErrorMessage } from '@zopauk/react-components';

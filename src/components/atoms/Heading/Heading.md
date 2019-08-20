@@ -1,4 +1,4 @@
-### Guidelines ⚠️ 💯
+### Summary
 
 1. Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component
 2. Supply an `as` prop to specify which level to render: "h1" | "h2" | "h3" | "h4"
@@ -8,7 +8,7 @@
 
 ### Examples
 
-#### Variations
+- Variations
 
 ```jsx
 import { Fragment } from 'react';
@@ -22,7 +22,7 @@ import { Heading } from '@zopauk/react-components';
 </Fragment>;
 ```
 
-#### White-space
+- With white-space
 
 ```jsx
 import { Fragment } from 'react';

@@ -1,4 +1,4 @@
-### Guidelines ⚠️ 💯
+### Summary
 
 1. Whenever you want to render text on any UI at Zopa, use the `<Text />` component
 2. Its size, weight, white-space and semantics can be customised according to context
@@ -7,7 +7,7 @@
 
 ### Examples
 
-#### Variations
+- Variations
 
 ```jsx
 import { Fragment } from 'react';
@@ -23,7 +23,7 @@ import { Text } from '@zopauk/react-components';
 </Fragment>;
 ```
 
-#### White-space
+- With white-space
 
 ```jsx
 import { Fragment } from 'react';
@@ -35,7 +35,7 @@ import { Text } from '@zopauk/react-components';
 </Fragment>;
 ```
 
-#### Sizes
+- Sizes
 
 ```jsx
 import { Fragment } from 'react';
@@ -50,7 +50,7 @@ import { Text } from '@zopauk/react-components';
 </Fragment>;
 ```
 
-#### Weights
+- Weights
 
 ```jsx
 import { Fragment } from 'react';

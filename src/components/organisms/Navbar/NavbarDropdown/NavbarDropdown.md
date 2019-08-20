@@ -1,6 +1,17 @@
-This is a flexible Navbar subcomponent meant to be used with other components such as Navbar.Link and Navbar.Layout. However, it can be used with other atoms and molecules as well (e.g Link). It handles the visibility state and all the related accessibility attributes internally and passes them down through render props: renderOpener and renderItem. Also, it handles the positioning of the dropdown list for you. It's aligned to the right by default; however, if there's not enough room for the dropdown, it gets aligned to the left.
+### Summary
 
-Basic example:
+The purpose of `<Navbar.Dropdown />` is to handle the visibility state of a dropdwon within the main navigation bar.
+
+It also handles all the accessibility attributes internally and passes them down through render props:`renderOpener` and `renderItem`.
+
+The dropdown will be aligned to the right by default; however, if there's not enough room for the dropdown, it align to the left instead.
+
+- It's meant to be used at least along `<Navbar.Layout>`
+- The dropdown contents are up to you but we highly recommend to use `<Navbar.Link />` for brand consistency
+
+### Examples
+
+- Standard usage
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef"} } }
 import { Navbar } from '@zopauk/react-components';
@@ -28,7 +39,7 @@ import { Navbar } from '@zopauk/react-components';
 />;
 ```
 
-Example with custom components:
+- With custom components
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';

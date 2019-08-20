@@ -1,6 +1,12 @@
+### Summary
+
 Use the `<Badge />` component to label elements in the user interface.
 
-There's four different styles available:
+There's four variations available and accepts the same sizes as [`<Text />`](#/Components/Atoms/Text).
+
+### Examples
+
+- Variations
 
 ```js
 import { Fragment } from 'react';
@@ -28,7 +34,7 @@ import { Badge } from '@zopauk/react-components';
 </Fragment>;
 ```
 
-For sizing, you can supply the same `"size"` prop as for [`<Text />`](#/Components?id=text)
+- Sizes
 
 ```js
 import { Fragment } from 'react';

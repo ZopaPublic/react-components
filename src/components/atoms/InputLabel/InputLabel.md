@@ -1,6 +1,8 @@
-Label for input Components. This component is meant to be used with an input.
+### Summary
 
-For a more complex component check `TextField`.
+Use `<InputLabel />` to render a native HTML `<label />`.
+
+### Example
 
 ```jsx
 import { InputLabel } from '@zopauk/react-components';

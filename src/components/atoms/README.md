@@ -1,9 +1,21 @@
-Atoms are simple components.
+Atoms are usually made with only one single HTML element.
 
-Usually made with only one html element.
+- [`<AlertBox />`](/#/Components/Atoms/AlertBox) 
+- [`<Badge />`](/#/Components/Atoms/Badge) 
+- [`<Button />`](/#/Components/Atoms/Button) 
+- [`<Card />`](/#/Components/Atoms/Card) 
+- [`<Doprdown />`](/#/Components/Atoms/Doprdown) 
+- [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage) 
+- [`<Heading />`](/#/Components/Atoms/Heading) 
+- [`<InputLabel />`](/#/Components/Atoms/InputLabel) 
+- [`<InputText />`](/#/Components/Atoms/InputText) 
+- [`<Link />`](/#/Components/Atoms/Link) 
+- [`<SidekickCard />`](/#/Components/Atoms/SidekickCard) 
+- [`<Spinner />`](/#/Components/Atoms/Spinner) 
+- [`<Text />`](/#/Components/Atoms/Text) 
 
-Atoms are extendable. That means the atom should be able to be used as a parameter in the function `extend()` of `styled-components`.
+### Tips
 
-These components can be used in molecules (more complex components than atoms).
-
-Every atom component must extend of it's native html element. For example the `Button` component extends from `React.ButtonHTMLAttributes<HTMLButtonElement>`.
+- You can create [molecules](/#/Components/Molecules) out of atoms
+- Every atom component must extend its native HTML element
+  - for example the `Button` component extends from `React.ButtonHTMLAttributes<HTMLButtonElement>`.

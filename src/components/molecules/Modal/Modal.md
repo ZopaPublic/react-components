@@ -1,18 +1,20 @@
-Modal is a flexible dialog prompt.
+### Summary
 
-It is just a simple wrapper around [`react-modal`](http://reactcommunity.org/react-modal/) with some default styling.
+`<Modal />` is a flexible dialog prompt wrapping [`react-modal`](http://reactcommunity.org/react-modal/) with some basic styles.
 
-All the props are being passed down to `react-modal` so if you want to customize it, please refer to its documentation.
+Props are passed down to `react-modal` so if you want to customize it, please refer to its documentation.
 
-**Notes ⚠️**:
+#### Requisites ⚠️
 
-- You can control the CSS `z-index` value applied on the rendered modal through the `zIndex` prop on `<Modal.Styles />` ( 👀 example below )
+- For the accessibility, call `Modal.setAppElement('#rootElementId')` in the root component before any of the modals are open.
+- Include `<Modal.Styles>` component (preferably in a top-most level component)
 
-- For the accessibility reasons, you should call `Modal.setAppElement('#rootElementId')` in the root component before any of the modals are open.
+#### Tips 💬
 
-- You'll also need to include `<Modal.Styles>` component (preferably in the top level component) that contains the global styles of the modal.
+- Control the CSS `z-index` value applied to the modal through the `zIndex` prop on `<Modal.Styles />`
+- Supply `onRequestClose` to close the modal when the user clicks on its overlay ( see [`react-modal` docs](http://reactcommunity.org/react-modal/examples/on_request_close.html) )
 
-- Note that in order to make `<Modal />` to close when the user clicks on the overlay, you'll need to do so in a handler supplied to the `onRequestClose` prop. See [`react-modal` documentation](http://reactcommunity.org/react-modal/examples/on_request_close.html) for more background about this.
+### Example
 
 ```jsx
 import { Modal, Button, Heading } from '@zopauk/react-components';
