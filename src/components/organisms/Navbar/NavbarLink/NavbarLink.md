@@ -3,7 +3,7 @@ It is the same as Link component except for two extra props: active and withChev
 
 Default Navbar.Link component
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff">Navbar.Link</Navbar.Link>;
@@ -11,7 +11,7 @@ import { Navbar } from '@zopauk/react-components';
 
 Active Navbar.Link component
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" active>
@@ -21,7 +21,7 @@ import { Navbar } from '@zopauk/react-components';
 
 Navbar.Link withChevron down
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" withChevron open={false}>
@@ -31,7 +31,7 @@ import { Navbar } from '@zopauk/react-components';
 
 Navbar.Link withChevron up
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7" } } }
+```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" withChevron open>

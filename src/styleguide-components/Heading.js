@@ -7,8 +7,7 @@ const styles = ({ color, fontSize }) => ({
   heading: {
     margin: '1em 0',
     color: color.base,
-    fontFamily: 'Alverata',
-    fontWeight: 'normal',
+    fontWeight: 900,
   },
   heading1: {
     fontSize: fontSize.h1,

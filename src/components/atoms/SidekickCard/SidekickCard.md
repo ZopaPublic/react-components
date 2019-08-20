@@ -10,7 +10,7 @@ There are 3 types of SidekickCards:
 
 For success messages. It shows a green left border and a green check mark.
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard } from '@zopauk/react-components';
 
 <SidekickCard type="triumph">
@@ -23,7 +23,7 @@ import { SidekickCard } from '@zopauk/react-components';
 
 For verification messages. It shows a green left border and a green squiggly circle check mark.
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard } from '@zopauk/react-components';
 
 <SidekickCard type="verified">
@@ -36,7 +36,7 @@ import { SidekickCard } from '@zopauk/react-components';
 
 For alert/warning messages. It shows a yellow left border and a yellow warning icon.
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64" } } }
+```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard } from '@zopauk/react-components';
 
 <SidekickCard type="alert">
