@@ -109,7 +109,7 @@ module.exports = {
     maxWidth: '100%',
     color: {
       sidebarBackground: '#1C2139',
-      codeBackground: '#F5F5F5',
+      codeBackground: '#F5F5F5;',
     },
     fontFamily: {
       monospace: 'Monaco, Menlo, Courier, monospace',
@@ -149,6 +149,11 @@ module.exports = {
         color: '#afafaf',
         textTransform: 'unset',
         border: 'none !important',
+      },
+    },
+    Editor: {
+      root: {
+        lineHeight: 1.5,
       },
     },
   },
