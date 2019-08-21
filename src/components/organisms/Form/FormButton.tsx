@@ -3,9 +3,9 @@ import Button, { IButtonProps } from '../../atoms/Button/Button';
 
 import useFormContext from './useFormContext';
 
-const SubmitButton: FC<IButtonProps> = props => {
+const FormButton: FC<IButtonProps> = props => {
   const { invalid, handleSubmit } = useFormContext();
   return <Button type="submit" disabled={invalid} onClick={handleSubmit} {...props} />;
 };
 
-export default SubmitButton;
+export default FormButton;
