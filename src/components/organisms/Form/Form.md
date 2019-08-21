@@ -1,9 +1,11 @@
 ```js
-import { Form } from '@zopauk/react-components';
+import { Form, Text } from '@zopauk/react-components';
 
 const initialValues = {
   firstName: '',
   lastName: '',
+  terms: false,
+  type: '',
 };
 const onSubmit = values => {
   alert(JSON.stringify(values));
@@ -19,6 +21,9 @@ const validate = values => {
   if (!values.terms) {
     errors.terms = 'You need to accept terms and conditions';
   }
+  if (!values.type) {
+    errors.terms = 'You need to pick one';
+  }
   return errors;
 };
 
@@ -26,7 +31,11 @@ const FormExample = () => (
   <Form.Provider initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form.TextField label="First name" name="firstName" />
     <Form.TextField label="Last name" name="lastName" />
-    <Form.CheckboxField label="Terms and conditions" name="terms" />
+    <Text fw="bold">Type</Text>
+    <Form.RadioField label="Investor" name="type" value="investor" />
+    <Form.RadioField label="Borrower" name="type" value="borrower" />
+    <Text fw="bold">Terms and conditions</Text>
+    <Form.CheckboxField label="I accept" name="terms" />
     <Form.Button>Submit</Form.Button>
   </Form.Provider>
 );
