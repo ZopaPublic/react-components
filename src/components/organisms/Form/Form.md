@@ -21,11 +21,9 @@ const validate = values => {
 
 const FormExample = () => (
   <Form.Provider initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
-    <Form.Form>
-      <Form.TextField label="First name:" name="firstName" />
-      <Form.TextField label="Last name:" name="lastName" />
-      <Form.Button>Submit</Form.Button>
-    </Form.Form>
+    <Form.TextField label="First name:" name="firstName" />
+    <Form.TextField label="Last name:" name="lastName" />
+    <Form.Button>Submit</Form.Button>
   </Form.Provider>
 );
 

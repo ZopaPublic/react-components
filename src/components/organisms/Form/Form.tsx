@@ -1,10 +1,16 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React from 'react';
 
-import useFormContext from './useFormContext';
+import Provider from './FormProvider/FormProvider';
+import FormButton from './FormButton/FormButton';
+import FormTextField from './FormTextField/FormTextField';
 
-const Form: FC<HTMLAttributes<HTMLFormElement>> = props => {
-  const { handleSubmit } = useFormContext();
-  return <form onSubmit={handleSubmit} {...props} />;
-};
+class Form extends React.Component {
+  public static Provider = Provider;
+  public static Button = FormButton;
+  public static TextField = FormTextField;
+  public render() {
+    return null;
+  }
+}
 
 export default Form;

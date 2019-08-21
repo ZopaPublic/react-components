@@ -73,7 +73,7 @@ module.exports = {
           name: 'Organisms',
           content: 'src/components/organisms/README.md',
           components: 'src/components/organisms/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/{Navbar,Accordion}/**', '**/*.test.{js,jsx,ts,tsx}'],
+          ignore: ['**/{Navbar,Accordion,Form}/**', '**/*.test.{js,jsx,ts,tsx}'],
           sections: [
             {
               name: 'Navbar',
@@ -83,6 +83,11 @@ module.exports = {
             {
               name: 'Accordion',
               components: 'src/components/organisms/Accordion/**/*.{js,jsx,ts,tsx}',
+              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+            },
+            {
+              name: 'Form',
+              components: 'src/components/organisms/Form/**/*.tsx',
               ignore: ['**/*.test.{js,jsx,ts,tsx}'],
             },
           ],
