@@ -47,8 +47,8 @@ const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps): TUseForm
       error: errors[name],
       touched: !!touched[name],
       value: values[name],
-      onChange(e) {
-        const newValues = { ...values, [name]: e.target.value };
+      onChange(value) {
+        const newValues = { ...values, [name]: value };
         updateValues(newValues);
         runValidation(newValues);
       },

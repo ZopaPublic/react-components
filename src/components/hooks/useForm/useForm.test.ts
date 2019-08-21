@@ -140,7 +140,7 @@ describe('useForm', () => {
       });
 
       act(() => {
-        result.current.getFieldProps('name').onChange({ target: { value: 'test' } });
+        result.current.getFieldProps('name').onChange('test');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: 'test',
@@ -148,7 +148,7 @@ describe('useForm', () => {
       });
 
       act(() => {
-        result.current.getFieldProps('name').onChange({ target: { value: '' } });
+        result.current.getFieldProps('name').onChange('');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: '',
