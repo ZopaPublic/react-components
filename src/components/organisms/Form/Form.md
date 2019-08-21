@@ -4,6 +4,7 @@ import { Form, Text } from '@zopauk/react-components';
 const initialValues = {
   firstName: '',
   lastName: '',
+  nationality: '',
   terms: false,
   type: '',
 };
@@ -31,6 +32,10 @@ const FormExample = () => (
   <Form.Provider initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form.TextField label="First name" name="firstName" />
     <Form.TextField label="Last name" name="lastName" />
+    <Form.DropdownField label="Nationality" name="nationality">
+      <option value="spain">Spain</option>
+      <option value="uk">UK</option>
+    </Form.DropdownField>
     <Text fw="bold">Type</Text>
     <Form.RadioField label="Investor" name="type" value="investor" />
     <Form.RadioField label="Borrower" name="type" value="borrower" />

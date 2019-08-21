@@ -7,7 +7,7 @@ import Dropdown from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
 
-interface IDropdownFieldProps
+export interface IDropdownFieldProps
   extends Omit<IField, 'isValid' | 'inputProps'>,
     Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
   /**
