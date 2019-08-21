@@ -1,4 +1,8 @@
-`<DropdownField />` has exactly the same behaviour as `<TextField />`, the only difference being that it renders a `<Dropdown />` instead of `<InputText />`.
+### Summary
+
+`<DropdownField />` has exactly the same behaviour as [`<TextField />`](/#/Components/Molecules/TextField), the only difference being that it renders with `<Dropdown />` instead of `<InputText />`.
+
+### Example
 
 ```jsx
 import { DropdownField } from '@zopauk/react-components';

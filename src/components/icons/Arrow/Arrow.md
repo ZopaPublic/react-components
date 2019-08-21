@@ -1,6 +1,8 @@
-This component is a wrapper around the svg code for Arrow's icon.
+### Summary
 
-Allowed directions are: `down` | `up` | `left` | `right` | `number` | `string`
+Use it to render an arrow icon. You can specify the direction of the arrow through the `direction` prop.
+
+### Example
 
 ```jsx
 import { Fragment } from 'react';

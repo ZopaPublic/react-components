@@ -1,6 +1,8 @@
-This component is a wrapper around the svg code for Chevron's icon.
+### Summary
 
-Allowed directions are 'down' | 'up' | 'left' | 'right' | number | string
+Use it to render a chevron icon. You can specify the direction of the chevron through the `direction` prop.
+
+### Example
 
 ```jsx
 import { Fragment } from 'react';

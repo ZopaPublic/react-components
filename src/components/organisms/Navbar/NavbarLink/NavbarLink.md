@@ -1,7 +1,12 @@
-This is a Navbar subcomponent meant to be used with other components such as Navbar.Layout and Navbar.Dropdown.
-It is the same as Link component except for two extra props: active and withChevron.
+### Summary
 
-Default Navbar.Link component
+`<Navbar.Link />` is a wrap aroudn our [`<Link />`](/#/Components/Atoms/Link) atom, decorated with tow extra props: `active` and `withChevron`.
+
+It's meant to be used with other `<Navbar />` components like `<Navbar.Layout>`
+
+### Examples
+
+- Default
 
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
@@ -9,7 +14,7 @@ import { Navbar } from '@zopauk/react-components';
 <Navbar.Link color="#fff">Navbar.Link</Navbar.Link>;
 ```
 
-Active Navbar.Link component
+- Active
 
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
@@ -19,7 +24,7 @@ import { Navbar } from '@zopauk/react-components';
 </Navbar.Link>;
 ```
 
-Navbar.Link withChevron down
+- With chevron icon pointing down
 
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
@@ -29,7 +34,7 @@ import { Navbar } from '@zopauk/react-components';
 </Navbar.Link>;
 ```
 
-Navbar.Link withChevron up
+- With chevron icon pointing up
 
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';

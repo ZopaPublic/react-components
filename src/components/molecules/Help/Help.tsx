@@ -35,10 +35,10 @@ const Help: React.FunctionComponent<IHelpProps> = ({ email }) => (
       </FlexRow>
       <FlexRow gutter={16}>
         <FlexCol xs={12} l={6}>
-          <Text size="large">
+          <Text size="large" mb>
             <Link href={`mailto:${email}`}>{email}</Link>
           </Text>
-          <Text size="large">
+          <Text size="large" mb>
             <Link href="tel:020 7580 6060">020 7580 6060 </Link>
             for loans
           </Text>

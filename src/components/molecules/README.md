@@ -1,6 +1,11 @@
-Molecules are wrappers of multiple simple components.
+Molecules are a collection of **atoms** to build customised pieces of UI at Zopa.
 
-It’s only extendable with styled-component the top parent component. Other extensions will have his own prop (e.j.: inputProps).
-See `TextField` for a working example.
-
-Molecules are reusable in organisms (components more complex than molecules).
+- [`<CheckboxField />`](/#/Components/Molecules/CheckboxField)
+- [`<DropdownField />`](/#/Components/Molecules/DropdownField)
+- [`<DropdownFiltered />`](/#/Components/Molecules/DropdownFiltered)
+- [`<Help />`](/#/Components/Molecules/Help)
+- [`<Modal />`](/#/Components/Molecules/Modal)
+- [`<Progress />`](/#/Components/Molecules/Progress)
+- [`<RadioField />`](/#/Components/Molecules/RadioField)
+- [`<TextField />`](/#/Components/Molecules/TextField)
+- [`<ZopaFooter />`](/#/Components/Molecules/ZopaFooter)

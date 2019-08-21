@@ -1,14 +1,12 @@
-These Action Cards can be used in isolation or paired with Hero Action Cards to create urgency around certain
-events.
+### Summary
 
-They Give customers feedback for their actions, such as giving the all-clear when something goes right,
-alerting them when something goes wrong, or telling them something has changed.
+These Action Cards can be used to create urgency around certain events.
 
-There are 3 types of SidekickCards:
+They come in three variations.
 
-#### triumph type
+### Examples
 
-For success messages. It shows a green left border and a green check mark.
+- Triumph
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text } from '@zopauk/react-components';
@@ -19,9 +17,7 @@ import { SidekickCard, Text } from '@zopauk/react-components';
 </SidekickCard>;
 ```
 
-#### verified type
-
-For verification messages. It shows a green left border and a green squiggly circle check mark.
+- Verified
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text } from '@zopauk/react-components';
@@ -32,9 +28,7 @@ import { SidekickCard, Text } from '@zopauk/react-components';
 </SidekickCard>;
 ```
 
-#### alert type
-
-For alert/warning messages. It shows a yellow left border and a yellow warning icon.
+- Alert
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text } from '@zopauk/react-components';

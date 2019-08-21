@@ -21,6 +21,7 @@ interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 
 const StyledHeading = styled(Text)<IStyledHeadingProps>`
   font-size: ${({ as }) => headingSizes[as]};
+  font-family: ${typography.primary};
   line-height: ${typography.lineHeights.heading};
   letter-spacing: -0.5px;
   margin: 0;

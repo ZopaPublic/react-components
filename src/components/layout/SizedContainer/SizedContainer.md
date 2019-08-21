@@ -1,6 +1,10 @@
-Use `<SiedContainer />` to set a `max-width` around its children:
+### Summary
 
-#### Short size
+You can use `<SiedContainer />` to set a `max-width` around its children.
+
+### Examples
+
+- Short size
 
 ```jsx
 import { SizedContainer } from '@zopauk/react-components';
@@ -10,7 +14,7 @@ import { SizedContainer } from '@zopauk/react-components';
 </SizedContainer>;
 ```
 
-#### Medium size
+- Medium size
 
 ```jsx
 import { SizedContainer } from '@zopauk/react-components';
@@ -20,7 +24,7 @@ import { SizedContainer } from '@zopauk/react-components';
 </SizedContainer>;
 ```
 
-#### Long size
+- Long size
 
 ```jsx
 import { SizedContainer } from '@zopauk/react-components';
@@ -30,7 +34,7 @@ import { SizedContainer } from '@zopauk/react-components';
 </SizedContainer>;
 ```
 
-#### FullLength size
+- Fulll-length size
 
 ```jsx
 import { SizedContainer } from '@zopauk/react-components';

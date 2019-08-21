@@ -1,4 +1,12 @@
-Basic example:
+### Summary
+
+`<Navbar />` doesn't render anything: it's just a namespace for `<Navbar.Dropdwn />`, `<Navbar.Dropdown />` and `<Navbar.Link />`.
+
+In order to create a navigation bar to be used within a **Zopa application**, you will need to leverage these components together.
+
+### Examples
+
+- Static
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-components';
@@ -48,7 +56,7 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-componen
 />;
 ```
 
-Responsive Navbar example:
+- Responsive
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, FlexCol } from '@zopauk/react-components';

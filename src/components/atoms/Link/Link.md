@@ -1,39 +1,41 @@
-Creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.
+### Summary
 
-**Before using read this carefully**
+Use `<Link />` to create hyperlinks to other web pages, files, locations within the same page, email addresses, or any other URL.
 
-- Links are never Headers.
+⚠️ &nbsp; Links are never headings
 
-- Choose the color using this table:
+⚠️ &nbsp; Choose the color according to the following table:
 
-  | Background color | Font Color                       |
-  | ---------------- | -------------------------------- |
-  | white or grey    | colors.primary.blue500 (default) |
-  | dark colored     | respective 0/25 (lightest)       |
-  | light colored    | respective 900 (darkest)         |
+| Background color | Font Color                       |
+| ---------------- | -------------------------------- |
+| white or grey    | colors.primary.blue500 (default) |
+| dark colored     | respective 0/25 (lightest)       |
+| light colored    | respective 900 (darkest)         |
 
-Component with `target="_blank"`:
+### Examples
+
+- With `target="_blank"`
 
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
 <Text size="large" as="p">
-  A big paragraph with
+  Some text with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
-  </Link>!
+  </Link>
 </Text>;
 ```
 
-Component without `target="_blank"` (notice that the square disappeared!)
+- Without `target="_blank"` ( _notice that the square icon disappeared_ )
 
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
 <Text size="large" as="p">
-  A big paragraph with
+  Some text with
   <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
-  </Link>!
+  </Link>
 </Text>;
 ```

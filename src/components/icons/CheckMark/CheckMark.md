@@ -1,4 +1,8 @@
-Wrapper around svg code for a checkmark icon.
+### Summary
+
+Use it to render a checkmark icon.
+
+### Example
 
 ```jsx
 import { CheckMarkIcon } from '@zopauk/react-components';

@@ -1,4 +1,8 @@
-Styled AlertBox component
+### Summary
+
+`<Alertbox />` can be used to alert something important to the user within an interface. Its icon can be customised.
+
+### Example
 
 ```js
 import { AlertBox, Link, Text, SizedContainer } from '@zopauk/react-components';
