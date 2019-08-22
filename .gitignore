@@ -10,7 +10,3 @@ dist
 coverage
 
 yarn-error.log
-
-# used when developing locally
-.vscode/
-.DS_Store
