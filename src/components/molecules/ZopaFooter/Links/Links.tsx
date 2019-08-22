@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FooterLink from '../FooterLink/FooterLink';
@@ -19,7 +19,7 @@ export interface ILinkGroups {
 }
 
 const StyledHeading = styled(Heading)`
-  color: ${colors.base.white};
+  color: ${colors.neutral.white};
 `;
 
 const StyledList = styled.ul`

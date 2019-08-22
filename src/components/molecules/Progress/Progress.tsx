@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import Text from '../../atoms/Text/Text';
 
@@ -17,7 +17,7 @@ const SProgressBar = styled.div`
   position: relative;
   width: 100%;
   border-radius: 100px;
-  background: ${colors.base.white};
+  background: ${colors.neutral.white};
   height: 4px;
 `;
 
@@ -27,7 +27,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: ${colors.primary.yellow500};
+  background: ${colors.semantic.alert};
 
   > span {
     position: absolute;
@@ -36,7 +36,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
     font-size: ${typography.sizes.text[3]};
     line-height: 16px;
     font-weight: 600;
-    color: ${colors.neutral.neutral300};
+    color: ${colors.neutral.medium};
   }
 `;
 

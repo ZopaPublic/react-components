@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
-import { statusColors } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import warningIcon from '../../../content/images/red-warning.svg';
 import Text from '../Text/Text';
 
 const SErrorMessage = styled(Text)`
   width: 100%;
-  color: ${statusColors.error};
+  color: ${colors.semantic.error};
   display: block;
 
   &:before {

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import checkMark from '../../../content/images/white-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
@@ -28,7 +28,7 @@ const Input = styled.input<IInput>`
 
     &:before {
       content: '';
-      background-color: ${colors.extended.blue600};
+      background-color: ${colors.base.secondary};
     }
     &:after {
       content: '';
@@ -39,7 +39,7 @@ const Input = styled.input<IInput>`
   }
   &:focus + label {
     &:before {
-      border: 2px ${colors.extended.blue100} solid;
+      border: 2px ${colors.base.secondary} solid;
     }
   }
 `;
@@ -48,19 +48,19 @@ const Label = styled(InputLabel)`
   width: auto;
   display: flex;
   font-weight: ${typography.weights.regular};
-  color: ${colors.neutral.neutral900};
+  color: ${colors.neutral.dark};
   position: relative;
   user-select: none;
 
   &:before {
     content: '';
-    background-color: ${colors.neutral.neutral25};
+    background-color: ${colors.neutral.light};
     border-radius: 6px;
     height: 24px;
     width: 24px;
     flex-shrink: 0;
     margin-right: 8px;
-    border: 2px ${colors.base.white} solid;
+    border: 2px ${colors.neutral.white} solid;
     display: block;
   }
   &:after {
@@ -76,7 +76,7 @@ const Label = styled(InputLabel)`
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px ${colors.extended.blue100} solid;
+      border: 2px ${colors.neutral.medium} solid;
     }
   }
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import CheckMark from './CheckMark';
 
 describe('<CheckMark />', () => {
@@ -10,7 +10,7 @@ describe('<CheckMark />', () => {
   });
 
   it(`renders with a specific color`, () => {
-    const { container } = render(<CheckMark color={colors.primary.pink500} />);
+    const { container } = render(<CheckMark color={colors.semantic.success} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

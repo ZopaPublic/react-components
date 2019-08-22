@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
-import { statusColors } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import chevronDown from '../../../content/images/chevron-down.svg';
 
-export const DEFAULT_COLOR = colors.neutral.neutral75;
+export const DEFAULT_COLOR = colors.neutral.medium;
 
 export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
@@ -23,7 +22,7 @@ const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdow
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
 
-  border: 2px solid ${({ hasError }) => (hasError ? statusColors.error : DEFAULT_COLOR)};
+  border: 2px solid ${({ hasError }) => (hasError ? colors.semantic.error : DEFAULT_COLOR)};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
   height: 46px;
@@ -32,7 +31,7 @@ const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdow
 
   &:focus {
     outline-width: 0;
-    border: 2px solid ${colors.extended.blue500};
+    border: 2px solid ${colors.base.secondary};
     transition: border 0.2s;
   }
 `;

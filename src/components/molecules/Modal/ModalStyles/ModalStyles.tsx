@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 
 export interface IModalStylesProps {
   /**
@@ -29,7 +29,7 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.neutral.neutral800};
+    background-color: ${colors.neutral.dark};
     opacity: 0;
     transition: opacity 200ms ease-in-out;
   }
@@ -41,7 +41,7 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
   }
 
   .zopa-modal {
-    background-color: ${colors.base.white};
+    background-color: ${colors.neutral.white};
     max-height: 95%;
     overflow: auto;
   }

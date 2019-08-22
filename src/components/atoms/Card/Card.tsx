@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -9,14 +9,6 @@ export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
    * @default card
    */
   type?: TCardTypes;
-  /**
-   * @default colors.base.white
-   */
-  borderColor?: string;
-  /**
-   * @default colors.base.white
-   */
-  backgroundColor?: string;
   /**
    * CSS display property
    * @default block
@@ -32,8 +24,8 @@ const borderRadius: { [index in TCardTypes]: string } = {
 };
 
 const SCard = styled.div<ICardProps>`
-  background-color: ${({ backgroundColor }) => backgroundColor};
-  border-color: ${({ borderColor, backgroundColor }) => borderColor || backgroundColor};
+  background-color: ${colors.neutral.white};
+  border-color: ${colors.neutral.white};
   border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
   border-style: solid;
   border-width: 2px;
@@ -60,8 +52,6 @@ const Card: React.FunctionComponent<ICardProps> = props => {
 };
 
 Card.defaultProps = {
-  backgroundColor: colors.base.white,
-  borderColor: colors.base.white,
   type: 'card',
 };
 
