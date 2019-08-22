@@ -10,11 +10,6 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   margin-right: auto;
 }
 
-.c4 {
-  background-color: #282F52;
-  height: 1px;
-}
-
 .c2 {
   padding: 18px 0;
 }
@@ -68,23 +63,21 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
       <p
         class="c3"
       >
-        Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
-    London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
-    and entered on the Financial Services Register under firm registration number 718925.
+        Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
       </p>
-    </div>
-    <div
-      class="c4"
-    />
-    <div
-      class="c2"
-    >
+      <br />
       <p
         class="c3"
       >
-        © Zopa Limited 2025 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
-    Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
-    and we are registered with the Office of the Information Commissioner (No. Z8797078).
+        © Zopa Bank Limited 2025 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
+      </p>
+      <br />
+      <p
+        class="c3"
+      >
+        Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
+
+    
       </p>
     </div>
   </div>
@@ -99,11 +92,6 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.c10 {
-  background-color: #282F52;
-  height: 1px;
 }
 
 .c4 {
@@ -201,6 +189,11 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 
 .c14:hover {
   color: #6F748B;
+}
+
+.c10 {
+  background-color: #282F52;
+  height: 1px;
 }
 
 .c5 {
@@ -540,23 +533,21 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       <p
         class="c11"
       >
-        Zopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, 
-    London, SE1 2QG. Zopa Limited is authorised and regulated by the Financial Conduct Authority, 
-    and entered on the Financial Services Register under firm registration number 718925.
+        Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
       </p>
-    </div>
-    <div
-      class="c10"
-    />
-    <div
-      class="c4"
-    >
+      <br />
       <p
         class="c11"
       >
-        © Zopa Limited 2025 All rights reserved. 'Zopa' and the Zopa logo are trade marks of Zopa Limited. 
-    Zopa is a member of CIFAS – the UK's leading anti-fraud association, 
-    and we are registered with the Office of the Information Commissioner (No. Z8797078).
+        © Zopa Bank Limited 2025 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
+      </p>
+      <br />
+      <p
+        class="c11"
+      >
+        Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
+
+    
       </p>
     </div>
     <div
