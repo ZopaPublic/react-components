@@ -14,6 +14,7 @@ const FormTextField: FC<IFormTextFieldProps> = ({ name, ...rest }) => {
   };
   return (
     <TextField
+      isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
       inputProps={{ onChange: handleChange, onBlur, value, name }}
       {...rest}

@@ -48,7 +48,7 @@ const FormExample = () => (
     <Form.RadioField label="Borrower" name="type" value="borrower" />
     <Text fw="bold">Terms and conditions</Text>
     <Form.CheckboxField label="I accept" name="terms" />
-    <Form.Button>Submit</Form.Button>
+    <Form.Button disabled={false}>Submit</Form.Button>
   </Form.Provider>
 );
 

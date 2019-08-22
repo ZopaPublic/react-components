@@ -20,6 +20,7 @@ const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, 
         ...inputProps,
       }}
       items={items}
+      isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
       onChange={handleChange}
       {...rest}
