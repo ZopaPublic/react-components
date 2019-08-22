@@ -25,3 +25,13 @@ import { Dropdown, DropdownOption } from '@zopauk/react-components';
   <DropdownOption value="first">First value</DropdownOption>
 </Dropdown>;
 ```
+
+#### isValid
+
+```jsx
+import { Dropdown, DropdownOption } from '@zopauk/react-components';
+
+<Dropdown isValid={true}>
+  <DropdownOption value="first">First value</DropdownOption>
+</Dropdown>;
+```
