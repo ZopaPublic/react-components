@@ -8,7 +8,7 @@ const StyledParagraph = styled.p`
   color: ${colors.neutral.neutral400};
   font-size: 11px;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 24px 0;
 `;
 
 const Legal = () => {
@@ -26,9 +26,7 @@ const Legal = () => {
     <>
       <Wrapper>
         <StyledParagraph>{about}</StyledParagraph>
-        <br />
         <StyledParagraph>{rightsReserved}</StyledParagraph>
-        <br />
         <StyledParagraph>{cifas}</StyledParagraph>
       </Wrapper>
     </>
