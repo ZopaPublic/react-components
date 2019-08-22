@@ -6,6 +6,7 @@ import FormTextField from './FormTextField/FormTextField';
 import FormCheckboxField from './FormCheckboxField/FormCheckboxField';
 import FormRadioField from './FormRadioField/FormRadioField';
 import FormDropdownField from './FormDropdownField/FormDropdownField';
+import FormDropdownFilteredField from './FormDropdownFilteredField/FormDropdownFilteredField';
 
 class Form extends React.Component {
   public static Provider = Provider;
@@ -14,6 +15,7 @@ class Form extends React.Component {
   public static CheckboxField = FormCheckboxField;
   public static RadioField = FormRadioField;
   public static DropdownField = FormDropdownField;
+  public static DropdownFilteredField = FormDropdownFilteredField;
 
   public render() {
     return null;

@@ -5,6 +5,7 @@ const initialValues = {
   firstName: '',
   lastName: '',
   nationality: '',
+  referal: '',
   terms: false,
   type: '',
 };
@@ -19,6 +20,9 @@ const validate = values => {
   if (!values.lastName) {
     errors.lastName = 'Field is required';
   }
+  if (!values.nationality) {
+    errors.nationality = 'Field is required';
+  }
   if (!values.terms) {
     errors.terms = 'You need to accept terms and conditions';
   }
@@ -28,13 +32,26 @@ const validate = values => {
   return errors;
 };
 
+const nationalities = [
+  { alpha2: 'GB', value: 'British' },
+  { alpha2: 'AO', value: 'Angolan' },
+  { alpha2: 'AI', value: 'Anguillan' },
+  { alpha2: 'AG', value: 'Antiguan/Barbudan' },
+];
+
 const FormExample = () => (
   <Form.Provider initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form.TextField label="First name" name="firstName" />
     <Form.TextField label="Last name" name="lastName" />
-    <Form.DropdownField label="Nationality" name="nationality">
-      <option value="spain">Spain</option>
-      <option value="uk">UK</option>
+    <Form.DropdownFilteredField
+      name="nationality"
+      inputProps={{ placeholder: 'Select a nationality...' }}
+      items={nationalities}
+      label="Nationality"
+    />
+    <Form.DropdownField label="How did you hear about us?" name="referal">
+      <option value="newspaper">Newspaper</option>
+      <option value="socialMedia">Social media</option>
     </Form.DropdownField>
     <Text fw="bold">Type</Text>
     <Form.RadioField label="Investor" name="type" value="investor" />
