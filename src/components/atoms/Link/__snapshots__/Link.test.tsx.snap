@@ -12,7 +12,7 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c0:hover {
@@ -43,7 +43,7 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c0:hover {
@@ -73,7 +73,7 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
     xmlns="http://www.w3.org/2000/svg"
   >
     <g
-      fill="#4B3CFA"
+      fill="#4A3EDE"
     >
       <path
         d="M2.6 4H0v11h11v-2.6H2.6z"

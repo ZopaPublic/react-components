@@ -46,7 +46,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c3:hover {

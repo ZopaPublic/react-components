@@ -5,7 +5,7 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
   position: relative;
   list-style-type: none;
   margin: 0;
-  background-color: #fff;
+  background-color: #FFFFFF;
   box-shadow: inset 0 0 0 1px rgba(214,215,222,0.75),0 2px 4px 0 rgba(0,0,0,0.06);
   padding: 16px;
   border-radius: 4px;
@@ -24,7 +24,7 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
   -ms-transform: translateY(-50%) rotate(135deg);
   transform: translateY(-50%) rotate(135deg);
   background-color: inherit;
-  box-shadow: -1px 1px 0 0 #E2E3E7;
+  box-shadow: -1px 1px 0 0 #EAEAEE;
 }
 
 .c0 {

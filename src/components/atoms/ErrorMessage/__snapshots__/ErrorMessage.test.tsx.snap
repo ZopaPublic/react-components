@@ -15,7 +15,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
 
 .c0 {
   width: 100%;
-  color: #F52D2D;
+  color: #EE0505;
   display: block;
 }
 

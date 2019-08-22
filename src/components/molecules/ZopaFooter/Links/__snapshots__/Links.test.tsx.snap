@@ -57,7 +57,7 @@ exports[`<Links /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c7:hover {
@@ -86,7 +86,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c3 {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .c4 {
