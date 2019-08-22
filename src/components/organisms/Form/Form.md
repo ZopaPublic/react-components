@@ -23,6 +23,9 @@ const validate = values => {
   if (!values.nationality) {
     errors.nationality = 'Field is required';
   }
+  if (!values.referal) {
+    errors.referal = 'Field is required';
+  }
   if (!values.terms) {
     errors.terms = 'You need to accept terms and conditions';
   }

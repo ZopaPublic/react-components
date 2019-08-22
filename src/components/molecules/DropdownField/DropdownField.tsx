@@ -3,13 +3,11 @@ import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import HelpText from '../../atoms/HelpText/HelpText';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
-import Dropdown from '../../atoms/Dropdown/Dropdown';
+import Dropdown, { IDropdownProps } from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
 
-export interface IDropdownFieldProps
-  extends Omit<IField, 'isValid' | 'inputProps'>,
-    Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
+export interface IDropdownFieldProps extends Omit<IField, 'isValid' | 'inputProps'>, Omit<IDropdownProps, 'size'> {
   /**
    * Size attribute for the rendered HTML `<select>` element
    */

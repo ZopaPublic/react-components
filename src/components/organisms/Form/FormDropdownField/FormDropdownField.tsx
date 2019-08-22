@@ -15,6 +15,7 @@ const FormDropdownField: FC<IFormDropdownFieldProps> = ({ name, ...rest }) => {
   return (
     <DropdownField
       name={name}
+      hasError={touched && !!error}
       errorMessage={touched && error ? error : ''}
       onChange={handleChange}
       onBlur={onBlur}
