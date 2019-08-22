@@ -62,6 +62,15 @@ const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps): TUseForm
   const handleSubmit = useCallback(
     e => {
       e.preventDefault();
+      updateTouched(
+        Object.keys(initialValues).reduce(
+          (acc, key) => ({
+            ...acc,
+            [key]: true,
+          }),
+          {},
+        ),
+      );
       if (!invalid) {
         onSubmit(values);
       }
