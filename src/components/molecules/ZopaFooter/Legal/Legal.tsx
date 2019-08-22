@@ -5,7 +5,7 @@ import * as colors from '../../../../constants/colors';
 import Wrapper from '../Wrapper/Wrapper';
 
 const StyledParagraph = styled.p`
-  color: ${colors.neutral.neutral400};
+  color: ${colors.neutral.neutral75};
   font-size: 11px;
   line-height: 1.5;
   margin: 0 0 24px 0;

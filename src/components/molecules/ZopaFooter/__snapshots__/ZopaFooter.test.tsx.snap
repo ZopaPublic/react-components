@@ -15,7 +15,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
 }
 
 .c3 {
-  color: #6F748B;
+  color: #D6D7DE;
   font-size: 11px;
   line-height: 1.5;
   margin: 0 0 24px 0;
@@ -97,7 +97,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c13 {
-  color: #6F748B;
+  color: #D6D7DE;
   font-size: 11px;
   line-height: 1.5;
   margin: 0 0 24px 0;
