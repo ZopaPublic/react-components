@@ -13,26 +13,13 @@ const onSubmit = values => {
   alert(JSON.stringify(values));
 };
 const validate = values => {
-  let errors = {};
-  if (!values.firstName) {
-    errors.firstName = 'Field is required';
-  }
-  if (!values.lastName) {
-    errors.lastName = 'Field is required';
-  }
-  if (!values.nationality) {
-    errors.nationality = 'Field is required';
-  }
-  if (!values.referal) {
-    errors.referal = 'Field is required';
-  }
-  if (!values.terms) {
-    errors.terms = 'You need to accept terms and conditions';
-  }
-  if (!values.type) {
-    errors.terms = 'You need to pick one';
-  }
-  return errors;
+  return Object.keys(values).reduce(
+    (acc, key) => ({
+      ...acc,
+      ...(values[key] ? {} : { [key]: 'Field is required' }),
+    }),
+    {},
+  );
 };
 
 const nationalities = [
