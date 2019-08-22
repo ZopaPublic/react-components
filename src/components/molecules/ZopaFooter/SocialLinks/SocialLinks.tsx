@@ -32,7 +32,7 @@ const socialLinksData: ISocialLinkData[] = [
 ];
 
 const SocialLinks = () => (
-  <FlexRow justify={'flex-end'}>
+  <FlexRow justify="flex-end">
     {socialLinksData.map(({ component: Component, label, href }, index) => (
       <FlexCol xs="auto" key={`footer-social-link-${index}`}>
         <FooterLink href={href} aria-label={label}>
