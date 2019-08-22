@@ -2,6 +2,7 @@ import React from 'react';
 
 import Facebook from '../../../icons/Facebook/Facebook';
 import Twitter from '../../../icons/Twitter/Twitter';
+import Instagram from '../../../icons/Instagram/Instagram';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FooterLink from '../FooterLink/FooterLink';
@@ -14,19 +15,24 @@ export interface ISocialLinkData {
 
 const socialLinksData: ISocialLinkData[] = [
   {
-    component: Twitter,
-    href: 'https://twitter.com/zopa',
-    label: 'twitter',
+    component: Instagram,
+    href: 'https://www.instagram.com/Zopamoney/',
+    label: 'instagram',
   },
   {
     component: Facebook,
     href: 'https://facebook.com/zopa',
     label: 'facebook',
   },
+  {
+    component: Twitter,
+    href: 'https://twitter.com/zopa',
+    label: 'twitter',
+  },
 ];
 
 const SocialLinks = () => (
-  <FlexRow>
+  <FlexRow justify={'flex-end'}>
     {socialLinksData.map(({ component: Component, label, href }, index) => (
       <FlexCol xs="auto" key={`footer-social-link-${index}`}>
         <FooterLink href={href} aria-label={label}>
