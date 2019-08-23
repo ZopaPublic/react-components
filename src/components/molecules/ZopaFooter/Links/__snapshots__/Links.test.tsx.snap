@@ -164,106 +164,11 @@ exports[`<Links /> renders the component 1`] = `
       <div
         class="c3"
       >
-        About Zopa
+        What we do
       </div>
       <ul
         class="c4"
       >
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/about"
-          >
-            About Zopa
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/about/how-zopa-works"
-          >
-            How Zopa works
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/about/join-us"
-          >
-            Join us
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/about/press"
-          >
-            Press office
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/contact"
-          >
-            Contact Zopa
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="c7"
-    >
-      <div
-        class="c8"
-      />
-    </div>
-  </div>
-  <div
-    class="c1"
-    cols="12"
-  >
-    <div
-      class="c2"
-    >
-      <div
-        class="c3"
-      >
-        Zopa Loans
-      </div>
-      <ul
-        class="c4"
-      >
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/loans/debt-consolidation"
-          >
-            Debt consolidation
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6"
-            href="https://zopa.com/loans/home-improvement"
-          >
-            Home improvements
-          </a>
-        </li>
         <li
           class="c5"
         >
@@ -279,9 +184,49 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6"
-            href="https://zopa.com/loans/faq"
+            href="https://zopa.com/loans/debt-consolidation"
           >
-            FAQs for loans
+            Debt consolidation loans
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/home-improvement"
+          >
+            Home improvement loans
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/loans/wedding"
+          >
+            Wedding loans
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/invest"
+          >
+            Peer-to-peer investments
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/invest/isa"
+          >
+            Innovative Finance ISA
           </a>
         </li>
       </ul>
@@ -304,7 +249,7 @@ exports[`<Links /> renders the component 1`] = `
       <div
         class="c3"
       >
-        Invest your money
+        About Zopa
       </div>
       <ul
         class="c4"
@@ -314,9 +259,9 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6"
-            href="https://zopa.com/lending"
+            href="https://zopa.com/about"
           >
-            Invest at Zopa
+            About Us
           </a>
         </li>
         <li
@@ -324,9 +269,9 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6"
-            href="https://zopa.com/lending/risk-management"
+            href="https://zopa.com/about/our-story"
           >
-            Risk management
+            Our story
           </a>
         </li>
         <li
@@ -334,9 +279,179 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6"
-            href="https://zopa.com/lending/faq"
+            href="https://zopa.com/about/board"
           >
-            FAQs for investing
+            Meet the board
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/leadership"
+          >
+            Meet the leadership team
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/awards"
+          >
+            Awards
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/careers"
+          >
+            Careers
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/about/press"
+          >
+            Press team
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/feelgood"
+          >
+            New products
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8"
+      />
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        Legal
+      </div>
+      <ul
+        class="c4"
+      >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/cookie-policy"
+          >
+            Cookie policy
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/conflicts-policy"
+          >
+            Conflicts policy
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/modern-slavery"
+          >
+            Modern slavery
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/website-terms"
+          >
+            Website terms
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8"
+      />
+    </div>
+  </div>
+  <div
+    class="c1"
+    cols="12"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        Navigation
+      </div>
+      <ul
+        class="c4"
+      >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/contact"
+          >
+            Support
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/support/faqs"
+          >
+            Common Questions
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6"
+            href="https://zopa.com/sitemap"
+          >
+            Sitemap
           </a>
         </li>
       </ul>
