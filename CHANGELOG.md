@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/zopaUK/react-components/compare/v1.5.0...v1.5.1) (2019-08-22)
+
+
+### Bug Fixes
+
+* **update gitignore:** vscode folder added to gitignore ([ea03aa1](https://github.com/zopaUK/react-components/commit/ea03aa1))
+
 # [1.5.0](https://github.com/zopaUK/react-components/compare/v1.4.0...v1.5.0) (2019-08-09)
 
 
