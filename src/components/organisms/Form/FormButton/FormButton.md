@@ -12,7 +12,9 @@ const validate = values => {
 };
 
 <Form.Provider initialValues={{ firstName: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.TextField label="First name" name="firstName" />
+  <div style={{ marginBottom: '16px' }}>
+    <Form.TextField label="First name" name="firstName" />
+  </div>
   <Form.Button>Submit</Form.Button>
 </Form.Provider>;
 ```
