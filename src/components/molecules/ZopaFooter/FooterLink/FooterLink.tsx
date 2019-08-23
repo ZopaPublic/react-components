@@ -19,6 +19,7 @@ export const FooterLink = styled.a<IFooterLink>`
   font-size: ${({ size }) => size && sizes[size]};
   color: ${colors.neutral.neutral200};
   transition: color 0.2s ease;
+
   &:hover {
     color: ${colors.neutral.neutral400};
   }
