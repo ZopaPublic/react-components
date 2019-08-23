@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import grid from '../../../../constants/grid';
 import Facebook from '../../../icons/Facebook/Facebook';
 import Twitter from '../../../icons/Twitter/Twitter';
 import Instagram from '../../../icons/Instagram/Instagram';
@@ -16,7 +17,7 @@ export interface ISocialLinkData {
 }
 
 const SFlexRow = styled(FlexRow)`
-  @media (max-width: 768px) {
+  @media (max-width: ${grid.breakpoints.m}) {
     justify-content: center;
     margin-top: 32px;
   }
@@ -53,7 +54,7 @@ const SocialLinks = () => (
       </FooterLink>
     </FlexCol>
     <FlexCol xs={12} s={6} m={4} l={3}>
-      <SFlexRow justify="flex-end" gutter={8}>
+      <SFlexRow justify="flex-end" gutter={24}>
         {socialLinksData.map(({ component: Component, label, href }, index) => (
           <SFooterLink href={href} aria-label={label} key={`footer-social-link-${index}`}>
             <Component size="30px" />

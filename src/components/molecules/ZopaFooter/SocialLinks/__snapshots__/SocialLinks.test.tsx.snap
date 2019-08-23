@@ -57,8 +57,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -8px;
-  margin-left: -8px;
+  margin-right: -24px;
+  margin-left: -24px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -181,7 +181,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:768) {
   .c4 {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
