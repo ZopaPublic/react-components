@@ -17,9 +17,15 @@ export interface ISocialLinkData {
 }
 
 const SFlexRow = styled(FlexRow)`
-  @media (max-width: ${grid.breakpoints.m}) {
-    justify-content: center;
-    margin-top: 32px;
+  justify-content: center;
+  margin-top: 32px;
+
+  @media (min-width: ${grid.breakpoints.s}px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: ${grid.breakpoints.m}px) {
+    justify-content: flex-end;
   }
 `;
 
@@ -54,9 +60,9 @@ const SocialLinks = () => (
       </FooterLink>
     </FlexCol>
     <FlexCol xs={12} s={6} m={4} l={3}>
-      <SFlexRow justify="flex-end" gutter={24}>
-        {socialLinksData.map(({ component: Component, label, href }, index) => (
-          <SFooterLink href={href} aria-label={label} key={`footer-social-link-${index}`}>
+      <SFlexRow>
+        {socialLinksData.map(({ component: Component, label, href }) => (
+          <SFooterLink href={href} aria-label={label} key={`footer-social-link-${href}`}>
             <Component size="30px" />
           </SFooterLink>
         ))}

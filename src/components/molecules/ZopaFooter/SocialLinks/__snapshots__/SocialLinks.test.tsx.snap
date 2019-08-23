@@ -57,12 +57,12 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -24px;
-  margin-left: -24px;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  margin-right: -16px;
+  margin-left: -16px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -82,6 +82,14 @@ exports[`<SocialLinks /> renders the component 1`] = `
 
 .c2:hover {
   color: #6F748B;
+}
+
+.c4 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 32px;
 }
 
 .c6 {
@@ -181,13 +189,18 @@ exports[`<SocialLinks /> renders the component 1`] = `
   }
 }
 
-@media (max-width:768) {
+@media (min-width:576px) {
   .c4 {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 32px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 }
 

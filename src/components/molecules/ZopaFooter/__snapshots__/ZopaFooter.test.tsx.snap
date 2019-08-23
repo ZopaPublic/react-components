@@ -96,7 +96,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 18px 0;
 }
 
-.c16 {
+.c15 {
   color: #D6D7DE;
   font-size: 11px;
   line-height: 1.5;
@@ -125,7 +125,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   align-self: auto;
 }
 
-.c14 {
+.c13 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -170,29 +170,6 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -24px;
-  margin-left: -24px;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   margin-right: -16px;
   margin-left: -16px;
   -webkit-box-pack: start;
@@ -220,12 +197,12 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   color: #6F748B;
 }
 
-.c15 {
+.c14 {
   background-color: #282F52;
   height: 1px;
 }
 
-.c11 {
+.c10 {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
@@ -233,15 +210,23 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   margin-bottom: 16px;
 }
 
-.c12 {
+.c11 {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.c13 {
+.c12 {
   margin: 0 0 8px 0;
   padding: 0;
+}
+
+.c7 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 32px;
 }
 
 .c9 {
@@ -371,7 +356,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 @media (min-width:0px) {
-  .c14 {
+  .c13 {
     display: block;
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
@@ -385,18 +370,23 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 @media (min-width:576px) {
-  .c14 {
+  .c13 {
     display: none;
   }
 }
 
-@media (max-width:768) {
+@media (min-width:576px) {
   .c7 {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 32px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 }
 
@@ -532,7 +522,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       class="c2"
     >
       <div
-        class="c10"
+        class="c8"
         cols="12"
         direction="row"
       >
@@ -544,15 +534,15 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <div
-              class="c11"
+              class="c10"
             >
               What we do
             </div>
             <ul
-              class="c12"
+              class="c11"
             >
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -562,7 +552,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -572,7 +562,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -582,7 +572,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -592,7 +582,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -602,7 +592,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -614,10 +604,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </ul>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <div
-              class="c15"
+              class="c14"
             />
           </div>
         </div>
@@ -629,15 +619,15 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <div
-              class="c11"
+              class="c10"
             >
               About Zopa
             </div>
             <ul
-              class="c12"
+              class="c11"
             >
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -647,7 +637,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -657,7 +647,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -667,7 +657,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -677,7 +667,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -687,7 +677,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -697,7 +687,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -707,7 +697,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -719,10 +709,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </ul>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <div
-              class="c15"
+              class="c14"
             />
           </div>
         </div>
@@ -734,15 +724,15 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <div
-              class="c11"
+              class="c10"
             >
               Legal
             </div>
             <ul
-              class="c12"
+              class="c11"
             >
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -752,7 +742,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -762,7 +752,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -772,7 +762,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -784,10 +774,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </ul>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <div
-              class="c15"
+              class="c14"
             />
           </div>
         </div>
@@ -799,15 +789,15 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <div
-              class="c11"
+              class="c10"
             >
               Navigation
             </div>
             <ul
-              class="c12"
+              class="c11"
             >
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -817,7 +807,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -827,7 +817,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 </a>
               </li>
               <li
-                class="c13"
+                class="c12"
               >
                 <a
                   class="c5"
@@ -839,33 +829,33 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </ul>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <div
-              class="c15"
+              class="c14"
             />
           </div>
         </div>
       </div>
     </div>
     <div
-      class="c15"
+      class="c14"
     />
     <div
       class="c2"
     >
       <p
-        class="c16"
+        class="c15"
       >
         Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
       </p>
       <p
-        class="c16"
+        class="c15"
       >
         © Zopa Bank Limited 2025 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
       </p>
       <p
-        class="c16"
+        class="c15"
       >
         Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
 
