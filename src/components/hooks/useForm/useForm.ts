@@ -6,13 +6,13 @@ export type TValues = Record<string, TValue>;
 
 export type TErrors = Record<string, string | undefined>;
 
-export interface TUseFormProps {
+export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
   validate?: (values: TValues) => TErrors;
 }
 
-export interface TFieldProps {
+export interface IFieldProps {
   error: string | undefined;
   touched: boolean;
   value: TValue;
@@ -21,12 +21,12 @@ export interface TFieldProps {
 }
 
 export interface TUseFormValues {
-  getFieldProps: (name: string) => TFieldProps;
+  getFieldProps: (name: string) => IFieldProps;
   invalid: boolean;
   handleSubmit: (values: TValues) => void;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps): TUseFormValues => {
+const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseFormValues => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
