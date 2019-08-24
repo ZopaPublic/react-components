@@ -1,4 +1,4 @@
-`<Form.CheckboxField>` is just a small wrapper around the [`<CheckboxField />`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside [`<Form.Provider>`](#/Organisms/Form/FormProvider) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.CheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<Form.CheckboxField>` is just a small wrapper around the [`<CheckboxField>`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside [`<Form.Provider>`](#/Organisms/Form/FormProvider) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.CheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ```js
 import { Form } from '@zopauk/react-components';

@@ -1,3 +1,15 @@
+`<Form>` doesn't render anything: it's just a namespace for all the form components:
+
+- [`<Form.Provider>`](#/Components/Organisms/Form/FormProvider)
+- [`<Form.TextField>`](#/Components/Organisms/Form/FormTextField)
+- [`<Form.DropdownField>`](#/Components/Organisms/Form/FormDropdownField)
+- [`<Form.DropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
+- [`<Form.CheckboxField>`](#/Components/Organisms/Form/FormCheckboxField)
+- [`<Form.RadioField>`](#/Components/Organisms/Form/FormRadioField)
+- [`<Form.Button>`](#/Components/Organisms/Form/FormButton)
+
+See the example below for more details.
+
 ```js
 import { Form, Text } from '@zopauk/react-components';
 
@@ -48,7 +60,7 @@ const FormExample = () => (
     <Form.RadioField label="Borrower" name="type" value="borrower" />
     <Text fw="bold">Terms and conditions</Text>
     <Form.CheckboxField label="I accept" name="terms" />
-    <Form.Button disabled={false}>Submit</Form.Button>
+    <Form.Button>Submit</Form.Button>
   </Form.Provider>
 );
 
