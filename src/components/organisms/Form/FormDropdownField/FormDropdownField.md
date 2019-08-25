@@ -5,15 +5,15 @@ import { Form } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
-  if (!values.referal) {
-    errors.referal = 'Please pick one';
+  if (!values.referral) {
+    errors.referral = 'Please pick one';
   }
   return errors;
 };
 
-<Form.Provider initialValues={{ referal: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
+<Form.Provider initialValues={{ referral: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
   <div style={{ marginBottom: '16px' }}>
-    <Form.DropdownField label="How did you hear about us?" name="referal">
+    <Form.DropdownField label="How did you hear about us?" name="referral">
       <option disabled value="">
         select an option
       </option>

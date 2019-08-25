@@ -17,7 +17,7 @@ const initialValues = {
   firstName: '',
   lastName: '',
   nationality: '',
-  referal: '',
+  referral: '',
   terms: false,
   type: '',
 };
@@ -51,7 +51,7 @@ const FormExample = () => (
       items={nationalities}
       label="Nationality"
     />
-    <Form.DropdownField label="How did you hear about us?" name="referal">
+    <Form.DropdownField label="How did you hear about us?" name="referral">
       <option value="newspaper">Newspaper</option>
       <option value="socialMedia">Social media</option>
     </Form.DropdownField>
