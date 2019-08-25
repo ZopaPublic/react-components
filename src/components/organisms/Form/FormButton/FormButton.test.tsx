@@ -15,37 +15,40 @@ const validate = (values: TForm) => {
 };
 
 const onSubmit = jest.fn();
+const buttonLabel = 'continue';
+const fieldLabel = 'First name';
 
 const renderComponent = () =>
   render(
     <Form.Provider initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.TextField label="First name" name="firstName" />
-      <Form.Button>continue</Form.Button>
+      <Form.TextField label={fieldLabel} name="firstName" />
+      <Form.Button>{buttonLabel}</Form.Button>
     </Form.Provider>,
   );
 
 describe('<Form.Button />', () => {
   it('renders disabled button', () => {
     const { getByText } = renderComponent();
-    expect(getByText('continue')).toBeDisabled();
+    expect(getByText(buttonLabel)).toBeDisabled();
   });
 
   it('renders enabled button', () => {
     const { getByText, getByLabelText } = renderComponent();
     act(() => {
-      fireEvent.change(getByLabelText('First name'), { target: { value: 'name' } });
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
-    expect(getByText('continue')).not.toBeDisabled();
+    expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
   it('calls onSubmit callback', () => {
     const { getByText, getByLabelText } = renderComponent();
+    const value = 'name';
     act(() => {
-      fireEvent.change(getByLabelText('First name'), { target: { value: 'name' } });
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
     act(() => {
-      fireEvent.click(getByText('continue'));
+      fireEvent.click(getByText(buttonLabel));
     });
-    expect(onSubmit).toHaveBeenCalledWith({ firstName: 'name' });
+    expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });
 });
