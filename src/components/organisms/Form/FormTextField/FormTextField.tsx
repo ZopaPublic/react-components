@@ -3,11 +3,11 @@ import TextField, { ITextFieldProps } from '../../../molecules/TextField/TextFie
 
 import useFieldContext from '../useFieldContext';
 
-interface IFormTextFieldProps extends ITextFieldProps {
+interface IFormTextFieldProps extends Partial<ITextFieldProps> {
   name: string;
 }
 
-const FormTextField: FC<IFormTextFieldProps> = ({ name, ...rest }) => {
+const FormTextField: FC<IFormTextFieldProps> = ({ name, inputProps, ...rest }) => {
   const { error, touched, value, onChange, onBlur } = useFieldContext(name);
   const handleChange = e => {
     onChange(e.target.value);
@@ -16,7 +16,7 @@ const FormTextField: FC<IFormTextFieldProps> = ({ name, ...rest }) => {
     <TextField
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      inputProps={{ onChange: handleChange, onBlur, value, name }}
+      inputProps={{ onChange: handleChange, onBlur, value, name, ...inputProps }}
       {...rest}
     />
   );
