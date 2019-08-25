@@ -11,7 +11,7 @@ const validate = values => {
   return errors;
 };
 
-<Form.Provider initialValues={{ policy: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
+<Form.Provider initialValues={{ policy: false }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
   <div style={{ marginBottom: '16px' }}>
     <Form.CheckboxField label="I accept the policy" name="policy" />
   </div>
