@@ -7,13 +7,11 @@ export type ChevronDirection = 'up' | 'down' | 'left' | 'right' | number | strin
 export interface IChevronProps extends React.SVGProps<SVGSVGElement> {
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue300
    */
   color?: string;
 
   /**
    * Chevron arrow direction
-   * @default down
    */
   direction?: ChevronDirection;
 }

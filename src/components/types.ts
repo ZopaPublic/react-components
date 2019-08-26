@@ -48,7 +48,6 @@ export interface IField {
   inputProps: IInput;
   /**
    * Container size
-   * @default fullLength
    */
   size?: TContainerSizes;
 }

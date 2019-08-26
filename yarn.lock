@@ -11392,10 +11392,10 @@ react-docgen-displayname-handler@^2.1.1:
   dependencies:
     ast-types "0.11.5"
 
-react-docgen-typescript@^1.12.3:
-  version "1.12.5"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.12.5.tgz#922cdbd9b6f3804695c94bff377c1b40a2e04f0c"
-  integrity sha512-rXwT6sNThl4A9ISJCnhGLIZBbz0KnXKaNRDIJlpyAsUnG0CutR51grpJv+gsltj+wTLXyr4bhRcuOu8l6MkCHw==
+react-docgen-typescript@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.13.0.tgz#73f42392a700446d9cfd455b2e111a4e7bfb4541"
+  integrity sha512-hygNmugf8wH9CXYapW1M4AY+be8UrJu3ptPXt7cxxaPXV/o5kyMW5e8Milb6vQWxqwg4yGUspsf8oq0fyQFm5w==
 
 react-docgen@3.0.0-rc.2:
   version "3.0.0-rc.2"

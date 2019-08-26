@@ -6,9 +6,6 @@ export type TAlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'aut
 export type TColWidth = number | 'fill' | 'auto' | 'hidden';
 
 export interface IFlexColProps {
-  /**
-   * @default auto
-   */
   align?: TAlignSelf;
   cols?: number;
   gutter?: number;
@@ -66,10 +63,6 @@ const getWidth = (breakpoint, colWidth, cols) => {
   return genRelativeWidth(breakpoint, colWidth, cols);
 };
 
-const defaultProps: Partial<IFlexCol> = {
-  align: 'auto',
-};
-
 const StyledFlexCol = styled.div<IFlexCol>`
   position: relative;
   width: 100%;
@@ -84,8 +77,10 @@ const StyledFlexCol = styled.div<IFlexCol>`
       .map(breakpoint => getWidth(breakpoint, props[breakpoint], props.cols))}
 `;
 
-const FlexCol: React.FunctionComponent<IFlexCol> = props => <StyledFlexCol {...props} />;
+const FlexCol = props => <StyledFlexCol {...props} />;
 
-FlexCol.defaultProps = defaultProps;
+FlexCol.defaultProps = {
+  align: 'auto',
+};
 
 export default FlexCol;
