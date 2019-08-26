@@ -47,7 +47,8 @@ describe('<Form.DropdownField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
-    expect(onSubmit).toHaveBeenCalled();
+    expect(onSubmit).toHaveBeenCalledTimes(1);
+    expect(onSubmit).toHaveBeenCalledWith({ referral: 'newspaper' });
   });
 
   it('renders error message', () => {

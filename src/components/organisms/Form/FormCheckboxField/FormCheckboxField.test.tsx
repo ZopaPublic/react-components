@@ -41,6 +41,7 @@ describe('<Form.CheckboxField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ policy: true });
   });
 

@@ -37,6 +37,7 @@ describe('<Form.RadioField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ employmentType: 'employed' });
   });
 });

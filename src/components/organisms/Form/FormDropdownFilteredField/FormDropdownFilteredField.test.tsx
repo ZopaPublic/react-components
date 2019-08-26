@@ -52,6 +52,7 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: { value: 'British' } });
   });
 

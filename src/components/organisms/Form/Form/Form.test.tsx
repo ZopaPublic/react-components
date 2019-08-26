@@ -39,6 +39,7 @@ describe('<Form />', () => {
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });
+    expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });
 
