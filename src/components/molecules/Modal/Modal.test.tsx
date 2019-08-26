@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, waitForElement } from '@testing-library/react';
 import Modal from './Modal';
+import { getGlobalStyleTags } from '../../../helpers/test/styles';
 
 describe('<Modal />', () => {
   it('can render un-opened', async () => {
@@ -33,9 +34,3 @@ describe('<Modal />', () => {
     expect(globalModalStyles).toContain(`z-index:${expectedZIndex}`);
   });
 });
-
-function getGlobalStyleTags() {
-  return Array.from(document.querySelectorAll('style')).map(styleTag =>
-    styleTag.innerHTML.trim().replace(/\s+/gm, ' '),
-  );
-}
