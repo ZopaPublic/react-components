@@ -47,7 +47,6 @@ export interface ITextProps extends React.HTMLAttributes<HTMLSpanElement | HTMLP
   color?: string;
   /**
    * rendered tag
-   * @default span
    */
   as?: TTextTag;
 }
