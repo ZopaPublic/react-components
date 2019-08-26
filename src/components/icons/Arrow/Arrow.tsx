@@ -7,13 +7,11 @@ export type ArrowDirection = 'up' | 'down' | 'left' | 'right' | number | string;
 export interface IArrowProps extends React.SVGProps<SVGSVGElement> {
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue500
    */
   color?: string;
 
   /**
    * Arrow arrow direction
-   * @default down
    */
   direction?: ArrowDirection;
 }

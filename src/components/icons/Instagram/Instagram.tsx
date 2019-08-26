@@ -1,13 +1,10 @@
 import React from 'react';
 
 export interface IInstagramProps {
-  /**
-   * @default 24px
-   */
   size?: string;
 }
 
-const Instagram: React.FunctionComponent<IInstagramProps> = ({ size }) => (
+const Instagram: React.FunctionComponent<IInstagramProps> = ({ size = '24px' }) => (
   <svg
     role="img"
     stroke="currentColor"
@@ -22,9 +19,5 @@ const Instagram: React.FunctionComponent<IInstagramProps> = ({ size }) => (
     <path d="M19 0H5C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zm1.4 15.5c0 .9-.2 1.5-.4 2.1-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.5.2-1.2.4-2.1.4-.9 0-1.2.1-3.5.1s-2.6 0-3.5-.1c-.9 0-1.5-.2-2.1-.4-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.2-.5-.4-1.2-.4-2.1 0-.9-.1-1.2-.1-3.5s0-2.6.1-3.5c0-.9.2-1.5.4-2.1.2-.6.5-1 1-1.5s.9-.8 1.5-1c.7-.2 1.3-.3 2.2-.3.9 0 1.2-.1 3.5-.1s2.6 0 3.5.1c.9 0 1.5.2 2.1.4.6.2 1 .5 1.5 1s.8.9 1 1.5c.2.5.4 1.2.4 2.1 0 .9.1 1.2.1 3.5s-.1 2.5-.2 3.4z" />
   </svg>
 );
-
-Instagram.defaultProps = {
-  size: '24px',
-};
 
 export default Instagram;

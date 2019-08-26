@@ -5,7 +5,6 @@ import * as colors from '../../../../constants/colors';
 export interface IModalStylesProps {
   /**
    * The CSS `z-index` value to be applied on the rendered modal.
-   * @default 2
    */
   zIndex?: number;
 }

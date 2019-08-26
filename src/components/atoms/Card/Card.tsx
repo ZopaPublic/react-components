@@ -4,23 +4,9 @@ import * as colors from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
-  /**
-   * Type of card to render
-   * @default card
-   */
   type?: TCardTypes;
-  /**
-   * @default colors.base.white
-   */
   borderColor?: string;
-  /**
-   * @default colors.base.white
-   */
   backgroundColor?: string;
-  /**
-   * CSS display property
-   * @default block
-   */
   display?: string;
 }
 
@@ -35,10 +21,10 @@ const borderRadius: { [index in TCardTypes]: string } = {
 const SCard = styled.div<ICardProps>`
   background-color: ${({ backgroundColor }) => backgroundColor};
   border-color: ${({ borderColor, backgroundColor }) => borderColor || backgroundColor};
-  border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
+  border-radius: ${({ type }) => borderRadius[type]};
   border-style: solid;
   border-width: 2px;
-  display: ${(props: ICardProps) => props.display || 'block'};
+  display: ${({ display = 'block' }) => display};
   padding: 2em;
 
   ${maxMedia.tablet`

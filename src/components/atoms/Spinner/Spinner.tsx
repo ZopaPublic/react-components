@@ -5,25 +5,21 @@ import * as colors from '../../../constants/colors';
 export interface ISpinnerProps {
   /**
    * Background color (3 quarters of the spinner)
-   * @default colors.extended.teal100
    */
   backgroundColor?: string;
 
   /**
    * Width of the border
-   * @default 8px
    */
   borderWidth?: string;
 
   /**
    * Front color (1 quarter of the spinner)
-   * @default colors.base.white
    */
   frontColor?: string;
 
   /**
    * Size of the spinner
-   * @default 45px
    */
   size?: string;
 }

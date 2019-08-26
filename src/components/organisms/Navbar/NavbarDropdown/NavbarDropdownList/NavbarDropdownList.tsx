@@ -7,7 +7,6 @@ export type TAlignedTo = 'left' | 'right';
 export interface INavbarDropdownListProps extends React.HTMLAttributes<HTMLUListElement> {
   /**
    * Determines whether it's aligned to left or right
-   * @default right
    */
   alignedTo: TAlignedTo;
 }
