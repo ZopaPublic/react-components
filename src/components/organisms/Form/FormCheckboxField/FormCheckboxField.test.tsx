@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 interface TForm {
   policy: boolean;
@@ -26,10 +26,10 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form.Provider initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
       <Form.CheckboxField label={checkboxLabel} name="policy" />
       <Form.Button>{buttonLabel}</Form.Button>
-    </Form.Provider>,
+    </Form>,
   );
 
 describe('<Form.CheckboxField />', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 interface TForm {
   nationality: string;
@@ -25,7 +25,7 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 
 const renderComponent = () =>
   render(
-    <Form.Provider initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
       <Form.DropdownFilteredField
         name={fieldName}
         inputProps={{ placeholder: 'Select a nationality...' }}
@@ -33,7 +33,7 @@ const renderComponent = () =>
         label={dropdownLabel}
       />
       <Form.Button>{buttonLabel}</Form.Button>
-    </Form.Provider>,
+    </Form>,
   );
 
 describe('<Form.DropdownFilteredField />', () => {

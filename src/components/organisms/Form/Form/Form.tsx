@@ -1,10 +1,9 @@
 import React, { FC, HTMLAttributes } from 'react';
 
+import { FormContext } from '../context';
 import useForm, { IUseFormProps } from '../../../hooks/useForm/useForm';
 
-import FormContext from '../FormContext';
-
-const FormProvider: FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = ({
+const Form: FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = ({
   children,
   initialValues,
   onSubmit,
@@ -25,4 +24,4 @@ const FormProvider: FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = ({
   );
 };
 
-export default FormProvider;
+export default Form;

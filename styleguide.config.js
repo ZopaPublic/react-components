@@ -87,8 +87,9 @@ module.exports = {
             },
             {
               name: 'Form',
-              components: 'src/components/organisms/Form/**/*.tsx',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+              content: 'src/components/organisms/Form/index.md',
+              components: ['src/components/organisms/Form/**/*.tsx'],
+              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Form/index.tsx'],
             },
           ],
         },

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import CheckboxField from '../../../molecules/CheckboxField/CheckboxField';
 import { IField } from '../../../types';
 
-import useFieldContext from '../useFieldContext';
+import { useFieldContext } from '../context';
 
 interface IFormCheckboxFieldProps extends Partial<IField> {
   name: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 const onSubmit = jest.fn();
 const fieldLabel = 'First name';
@@ -20,12 +20,12 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form.Provider data-testid={testId} validate={validate} initialValues={{ firstName: '' }} onSubmit={onSubmit}>
+    <Form data-testid={testId} validate={validate} initialValues={{ firstName: '' }} onSubmit={onSubmit}>
       <Form.TextField label={fieldLabel} name="firstName" />
-    </Form.Provider>,
+    </Form>,
   );
 
-describe('<Form.Provider />', () => {
+describe('<Form />', () => {
   beforeEach(() => {
     onSubmit.mockReset();
   });

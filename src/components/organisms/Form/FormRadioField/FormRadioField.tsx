@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import RadioField, { IRadioField } from '../../../molecules/RadioField/RadioField';
 
-import useFieldContext from '../useFieldContext';
+import { useFieldContext } from '../context';
 
 interface IFormRadioFieldProps extends Partial<IRadioField> {
   name: string;

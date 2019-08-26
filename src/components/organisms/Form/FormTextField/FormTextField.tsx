@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import TextField, { ITextFieldProps } from '../../../molecules/TextField/TextField';
 
-import useFieldContext from '../useFieldContext';
+import { useFieldContext } from '../context';
 
 interface IFormTextFieldProps extends Partial<ITextFieldProps> {
   name: string;

@@ -1,4 +1,4 @@
-`<Form.DropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** inside [`<Form.Provider>`](#/Organisms/Form/FormProvider) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<Form.DropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ```js
 import { Form } from '@zopauk/react-components';
@@ -11,7 +11,7 @@ const validate = values => {
   return errors;
 };
 
-<Form.Provider initialValues={{ referral: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
+<Form initialValues={{ referral: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
   <div style={{ marginBottom: '16px' }}>
     <Form.DropdownField label="How did you hear about us?" name="referral">
       <option disabled value="">
@@ -22,5 +22,5 @@ const validate = values => {
     </Form.DropdownField>
   </div>
   <Form.Button>Submit</Form.Button>
-</Form.Provider>;
+</Form>;
 ```

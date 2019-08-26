@@ -1,4 +1,4 @@
-`<Form.DropdownFilteredField>` is just a small wrapper around the [`<DropdownFiltered>`](#/Components/Molecules/DropdownFiltered) component. It is meant to be used **ONLY** inside [`<Form.Provider>`](#/Organisms/Form/FormProvider) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownFilteredField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<Form.DropdownFilteredField>` is just a small wrapper around the [`<DropdownFiltered>`](#/Components/Molecules/DropdownFiltered) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownFilteredField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ```js
 import { Form } from '@zopauk/react-components';
@@ -18,11 +18,7 @@ const validate = values => {
   return errors;
 };
 
-<Form.Provider
-  initialValues={{ nationality: '' }}
-  validate={validate}
-  onSubmit={values => alert(JSON.stringify(values))}
->
+<Form initialValues={{ nationality: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
   <div style={{ marginBottom: '16px' }}>
     <Form.DropdownFilteredField
       name="nationality"
@@ -32,5 +28,5 @@ const validate = values => {
     />
   </div>
   <Form.Button>Submit</Form.Button>
-</Form.Provider>;
+</Form>;
 ```

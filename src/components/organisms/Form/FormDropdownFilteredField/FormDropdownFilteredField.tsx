@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import DropdownFiltered, { IDropdownFilteredProps } from '../../../molecules/DropdownFiltered/DropdownFiltered';
 
-import useFieldContext from '../useFieldContext';
+import { useFieldContext } from '../context';
 
 interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
   name: string;

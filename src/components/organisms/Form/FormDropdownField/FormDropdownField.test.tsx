@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 interface TForm {
   referral: string;
@@ -22,7 +22,7 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form.Provider initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
       <Form.DropdownField label={dropdownLabel} name="referral">
         <option disabled value="">
           select an option
@@ -31,7 +31,7 @@ const renderComponent = () =>
         <option value="socialMedia">Social media</option>
       </Form.DropdownField>
       <Form.Button>{buttonLabel}</Form.Button>
-    </Form.Provider>,
+    </Form>,
   );
 
 describe('<Form.DropdownField />', () => {

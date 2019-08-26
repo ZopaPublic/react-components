@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import DropdownField, { IDropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
 
-import useFieldContext from '../useFieldContext';
+import { useFieldContext } from '../context';
 
 interface IFormDropdownFieldProps extends IDropdownFieldProps {
   name: string;

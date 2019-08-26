@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Button, { IButtonProps } from '../../../atoms/Button/Button';
 
-import useFormContext from '../useFormContext';
+import { useFormContext } from '../context';
 
 const FormButton: FC<IButtonProps> = props => {
   const { invalid, handleSubmit } = useFormContext();

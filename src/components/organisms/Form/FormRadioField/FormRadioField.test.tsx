@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 interface TForm {
   employmentType: string;
@@ -21,11 +21,11 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form.Provider initialValues={{ employmentType: '' }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ employmentType: '' }} validate={validate} onSubmit={onSubmit}>
       <Form.RadioField label="Employed" name="employmentType" value="employed" />
       <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
       <Form.Button disabled={false}>{buttonLabel}</Form.Button>
-    </Form.Provider>,
+    </Form>,
   );
 
 describe('<Form.RadioField />', () => {

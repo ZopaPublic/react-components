@@ -1,6 +1,6 @@
-`<Form>` doesn't render anything: it's just a namespace for all the form components:
+`<Form>` is a top level form component holding its state and also serves as a namespace for all of the form components:
 
-- [`<Form.Provider>`](#/Components/Organisms/Form/FormProvider)
+- [`<Form>`](#/Components/Organisms/Form/Form)
 - [`<Form.TextField>`](#/Components/Organisms/Form/FormTextField)
 - [`<Form.DropdownField>`](#/Components/Organisms/Form/FormDropdownField)
 - [`<Form.DropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
@@ -42,7 +42,7 @@ const nationalities = [
 ];
 
 const FormExample = () => (
-  <Form.Provider initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
+  <Form initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form.TextField label="First name" name="firstName" />
     <Form.TextField label="Last name" name="lastName" />
     <Form.DropdownFilteredField
@@ -52,6 +52,9 @@ const FormExample = () => (
       label="Nationality"
     />
     <Form.DropdownField label="How did you hear about us?" name="referral">
+      <option disabled value="">
+        Select a value
+      </option>
       <option value="newspaper">Newspaper</option>
       <option value="socialMedia">Social media</option>
     </Form.DropdownField>
@@ -61,7 +64,7 @@ const FormExample = () => (
     <Text fw="bold">Terms and conditions</Text>
     <Form.CheckboxField label="I accept" name="terms" />
     <Form.Button>Submit</Form.Button>
-  </Form.Provider>
+  </Form>
 );
 
 <FormExample />;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '../Form';
+import Form from '..';
 
 interface TForm {
   firstName: string;
@@ -21,10 +21,10 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form.Provider initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
       <Form.TextField label={fieldLabel} name="firstName" />
       <Form.Button>{buttonLabel}</Form.Button>
-    </Form.Provider>,
+    </Form>,
   );
 
 describe('<Form.TextField />', () => {
