@@ -11,12 +11,12 @@ import FormDropdownFilteredField from './FormDropdownFilteredField/FormDropdownF
 import Form from './Form/Form';
 
 interface IFormStatic {
-  Button?: typeof FormButton;
-  TextField?: typeof FormTextField;
-  CheckboxField?: typeof FormCheckboxField;
-  RadioField?: typeof FormRadioField;
-  DropdownField?: typeof FormDropdownField;
-  DropdownFilteredField?: typeof FormDropdownFilteredField;
+  Button: typeof FormButton;
+  TextField: typeof FormTextField;
+  CheckboxField: typeof FormCheckboxField;
+  RadioField: typeof FormRadioField;
+  DropdownField: typeof FormDropdownField;
+  DropdownFilteredField: typeof FormDropdownFilteredField;
 }
 
 const FormWrapper: IFormStatic & FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = props => <Form {...props} />;
