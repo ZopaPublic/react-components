@@ -42,10 +42,10 @@ import { Navbar } from '@zopauk/react-components';
 - With custom components
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
-import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
+import { Navbar, Link, HamburgerIcon, colors } from '@zopauk/react-components';
 
 <Navbar
-  backgroundColor="#00B9A7"
+  backgroundColor={colors.base.primary}
   left={
     <Navbar.Dropdown
       id="custom-example-id"
@@ -54,7 +54,7 @@ import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" {...getOpenerProps()}>
-            <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
+            <HamburgerIcon size="30px" activeColor={colors.neutral.white} inactiveColor={colors.neutral.white} />
           </Navbar.Link>
         </div>
       )}

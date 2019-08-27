@@ -17,7 +17,7 @@ exports[`<Progress /> renders the component with props with no a11y violations 1
   position: relative;
   width: 100%;
   border-radius: 100px;
-  background: #FFFFFF;
+  background: #EAEAEE;
   height: 4px;
 }
 
@@ -36,7 +36,7 @@ exports[`<Progress /> renders the component with props with no a11y violations 1
   right: 0;
   line-height: 16px;
   font-weight: 600;
-  color: #C5C6CD;
+  color: #0D0A38;
 }
 
 <div

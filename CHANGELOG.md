@@ -1,3 +1,19 @@
+# [1.6.0](https://github.com/zopaUK/react-components/compare/v1.5.1...v1.6.0) (2019-08-26)
+
+### Bug Fixes
+
+- **dropdownfield:** enable passing hasError prop down to dropdown ([f677770](https://github.com/zopaUK/react-components/commit/f677770))
+
+### Features
+
+- **dropdown:** add isValid prop ([2876e4a](https://github.com/zopaUK/react-components/commit/2876e4a))
+
+## [1.5.1](https://github.com/zopaUK/react-components/compare/v1.5.0...v1.5.1) (2019-08-22)
+
+### Bug Fixes
+
+- **update gitignore:** vscode folder added to gitignore ([ea03aa1](https://github.com/zopaUK/react-components/commit/ea03aa1))
+
 # [1.5.0](https://github.com/zopaUK/react-components/compare/v1.4.0...v1.5.0) (2019-08-09)
 
 ### Features

@@ -4,7 +4,6 @@ import { colors } from '../../../../constants/colors';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FooterLink from '../FooterLink/FooterLink';
-import Separator from '../Separator/Separator';
 import Heading from '../../../atoms/Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
 
@@ -29,71 +28,112 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
   padding: 0;
 `;
 
 const linkGroups = [
   {
-    heading: 'About Zopa',
+    heading: 'What we do',
     links: [
-      {
-        href: 'https://zopa.com/about',
-        label: 'About Zopa',
-      },
-      {
-        href: 'https://zopa.com/about/how-zopa-works',
-        label: 'How Zopa works',
-      },
-      {
-        href: 'https://zopa.com/about/join-us',
-        label: 'Join us',
-      },
-      {
-        href: 'https://zopa.com/about/press',
-        label: 'Press office',
-      },
-      {
-        href: 'https://zopa.com/contact',
-        label: 'Contact Zopa',
-      },
-    ],
-  },
-  {
-    heading: 'Zopa Loans',
-    links: [
-      {
-        href: 'https://zopa.com/loans/debt-consolidation',
-        label: 'Debt consolidation',
-      },
-      {
-        href: 'https://zopa.com/loans/home-improvement',
-        label: 'Home improvements',
-      },
       {
         href: 'https://zopa.com/loans/car-loans',
         label: 'Car loans',
       },
       {
-        href: 'https://zopa.com/loans/faq',
-        label: 'FAQs for loans',
+        href: 'https://zopa.com/loans/debt-consolidation',
+        label: 'Debt consolidation loans',
+      },
+      {
+        href: 'https://zopa.com/loans/home-improvement',
+        label: 'Home improvement loans',
+      },
+      {
+        href: 'https://zopa.com/loans/wedding',
+        label: 'Wedding loans',
+      },
+      {
+        href: 'https://zopa.com/invest',
+        label: 'Peer-to-peer investments',
+      },
+      {
+        href: 'https://zopa.com/invest/isa',
+        label: 'Innovative Finance ISA',
       },
     ],
   },
   {
-    heading: 'Invest your money',
+    heading: 'About Zopa',
     links: [
       {
-        href: 'https://zopa.com/lending',
-        label: 'Invest at Zopa',
+        href: 'https://zopa.com/about',
+        label: 'About Us',
       },
       {
-        href: 'https://zopa.com/lending/risk-management',
-        label: 'Risk management',
+        href: 'https://zopa.com/about/our-story',
+        label: 'Our story',
       },
       {
-        href: 'https://zopa.com/lending/faq',
-        label: 'FAQs for investing',
+        href: 'https://zopa.com/about/board',
+        label: 'Meet the board',
+      },
+      {
+        href: 'https://zopa.com/about/leadership',
+        label: 'Meet the leadership team',
+      },
+      {
+        href: 'https://zopa.com/about/awards',
+        label: 'Awards',
+      },
+      {
+        href: 'https://zopa.com/about/careers',
+        label: 'Careers',
+      },
+      {
+        href: 'https://zopa.com/about/press',
+        label: 'Press team',
+      },
+      {
+        href: 'https://zopa.com/feelgood',
+        label: 'New products',
+      },
+    ],
+  },
+  {
+    heading: 'Legal',
+    links: [
+      {
+        href: 'https://zopa.com/cookie-policy',
+        label: 'Cookie policy',
+      },
+      {
+        href: 'https://zopa.com/conflicts-policy',
+        label: 'Conflicts policy',
+      },
+      {
+        href: 'https://zopa.com/modern-slavery',
+        label: 'Modern slavery',
+      },
+      {
+        href: 'https://zopa.com/website-terms',
+        label: 'Website terms',
+      },
+    ],
+  },
+  {
+    heading: 'Navigation',
+    links: [
+      {
+        href: 'https://zopa.com/contact',
+        label: 'Support',
+      },
+      {
+        href: 'https://zopa.com/support/faqs',
+        label: 'Common Questions',
+      },
+      {
+        href: 'https://zopa.com/sitemap',
+        label: 'Sitemap',
       },
     ],
   },
@@ -113,9 +153,6 @@ const Links = () => (
             ))}
           </StyledList>
         </Wrapper>
-        <FlexCol xs="fill" s="hidden">
-          <Separator />
-        </FlexCol>
       </FlexCol>
     ))}
   </FlexRow>
