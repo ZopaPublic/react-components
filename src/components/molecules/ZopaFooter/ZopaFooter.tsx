@@ -18,7 +18,6 @@ export interface IFooterProps {
   /**
    * This renders the legal copy only without any links.
    * This is useful for pages where by design requires the user to focus on one task.
-   * @default false
    */
   legalOnly?: boolean;
 }

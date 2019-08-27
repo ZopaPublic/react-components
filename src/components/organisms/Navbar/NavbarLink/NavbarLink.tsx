@@ -38,17 +38,12 @@ const ChevronContainer = styled.span<IChevronContainerProps>`
 export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   /**
    * Indicates whether the current route corresponds with the links href
-   * @default false
    */
   active?: boolean;
   /**
    * Determines whether the Chevron icon is shown on the side
-   * @default false
    */
   withChevron?: boolean;
-  /**
-   * @default false
-   */
   open?: boolean;
 }
 

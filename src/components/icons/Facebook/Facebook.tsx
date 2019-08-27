@@ -1,13 +1,10 @@
 import React from 'react';
 
 export interface IFacebookProps {
-  /**
-   * @default 24px
-   */
   size?: string;
 }
 
-const Facebook: React.FunctionComponent<IFacebookProps> = ({ size }) => (
+const Facebook: React.FunctionComponent<IFacebookProps> = ({ size = '24px' }) => (
   <svg
     role="img"
     width={size}
@@ -24,9 +21,5 @@ const Facebook: React.FunctionComponent<IFacebookProps> = ({ size }) => (
     />
   </svg>
 );
-
-Facebook.defaultProps = {
-  size: '24px',
-};
 
 export default Facebook;

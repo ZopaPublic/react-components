@@ -41,22 +41,12 @@ export type TTextTag = 'span' | 'p';
 export interface ITextProps extends React.HTMLAttributes<HTMLSpanElement | HTMLParagraphElement> {
   /**
    * font weight
-   * @default 400
    */
   fw?: TTextFontWeight;
-  /**
-   * size
-   * @default 14px
-   */
   size?: TTextSize;
-  /**
-   * color
-   * @default colors.neutral.neutral900
-   */
   color?: string;
   /**
    * rendered tag
-   * @default span
    */
   as?: TTextTag;
 }
