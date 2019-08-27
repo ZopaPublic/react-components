@@ -2,6 +2,7 @@
 
 exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
 .c0 {
+  color: #0D0A38;
   font-size: 48px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
@@ -17,12 +18,13 @@ exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
 <h1
   class="c0"
 >
-  Text
+  Header
 </h1>
 `;
 
 exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
 .c0 {
+  color: #0D0A38;
   font-size: 28px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
@@ -38,12 +40,13 @@ exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
 <h2
   class="c0"
 >
-  Text
+  Header
 </h2>
 `;
 
 exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
 .c0 {
+  color: #0D0A38;
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
@@ -59,12 +62,13 @@ exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
 <h3
   class="c0"
 >
-  Text
+  Header
 </h3>
 `;
 
 exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
 .c0 {
+  color: #0D0A38;
   font-size: 20px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
@@ -80,12 +84,13 @@ exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
 <h4
   class="c0"
 >
-  Text
+  Header
 </h4>
 `;
 
 exports[`<Heading /> renders without  a11y violations 1`] = `
 .c0 {
+  color: #0D0A38;
   font-size: 48px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;

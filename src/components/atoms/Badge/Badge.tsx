@@ -37,8 +37,8 @@ const fontColors: IFontColors = {
 };
 
 const StyledBadge = styled(Text)<IStyledBadgeProps>`
-  color: ${({ styling }) => styling && fontColors[styling]};
-  background-color: ${({ styling }) => styling && backgroundColors[styling]};
+  color: ${({ styling = 'default' }) => styling && fontColors[styling]};
+  background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
   padding: 3px 8px;
   white-space: nowrap;

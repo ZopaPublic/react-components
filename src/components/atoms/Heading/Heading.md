@@ -18,7 +18,9 @@ import { Heading } from '@zopauk/react-components';
   <Heading as="h1">Heading level 1</Heading>
   <Heading as="h2">Heading level 2</Heading>
   <Heading as="h3">Heading level 3</Heading>
-  <Heading as="h4">Heading level 4</Heading>
+  <Heading as="h4" mb={false}>
+    Heading level 4
+  </Heading>
 </Fragment>;
 ```
 
@@ -35,6 +37,20 @@ import { Heading } from '@zopauk/react-components';
   </Heading>
   <Heading as="h3" mb={false}>
     Without bottom white-space
+  </Heading>
+</Fragment>;
+```
+
+```jsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+import { Fragment } from 'react';
+import { Heading, colors } from '@zopauk/react-components';
+
+<Fragment>
+  <Heading as="h4" color={colors.neutral.white}>
+    White
+  </Heading>
+  <Heading as="h4" color={colors.neutral.dark} mb={false}>
+    Dark
   </Heading>
 </Fragment>;
 ```
