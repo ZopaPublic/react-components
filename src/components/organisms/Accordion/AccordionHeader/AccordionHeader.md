@@ -12,7 +12,7 @@
 ```js
 import { Accordion } from '@zopauk/react-components';
 
-<Accordion.Header isOpen={true}>opened accordion header</Accordion.Header>;
+// <Accordion.Header isOpen={true}>opened accordion header</Accordion.Header>;
 ```
 
 - Collapsed
@@ -20,5 +20,5 @@ import { Accordion } from '@zopauk/react-components';
 ```js
 import { Accordion } from '@zopauk/react-components';
 
-<Accordion.Header isOpen={false}>closed accordion header</Accordion.Header>;
+// <Accordion.Header isOpen={false}>closed accordion header</Accordion.Header>;
 ```
