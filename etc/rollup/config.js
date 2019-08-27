@@ -5,16 +5,9 @@ import customResolveOptions from 'rollup-plugin-node-resolve';
 import url from 'rollup-plugin-url';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
+import { terser } from 'rollup-plugin-terser';
 
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
-
-const targets = {
-  chrome: '51',
-  firefox: '54',
-  safari: '10',
-  ie: '11',
-  edge: '10',
-};
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -38,28 +31,7 @@ export default {
   plugins: [
     customResolveOptions({ extensions }),
     babel({
-      presets: [
-        ['react-app', { flow: false, typescript: true }],
-        [
-          '@babel/preset-env',
-          {
-            useBuiltIns: 'usage',
-            targets,
-            corejs: 3,
-          },
-        ],
-      ],
-      plugins: [
-        '@babel/plugin-transform-runtime',
-        ['@babel/plugin-proposal-class-properties', { loose: true }],
-        [
-          'babel-plugin-styled-components',
-          {
-            displayName: false,
-            minify: true,
-          },
-        ],
-      ],
+      presets: [['react-app', { flow: false, typescript: true }]],
       runtimeHelpers: true,
       extensions,
       exclude: 'node_modules/**',
@@ -72,5 +44,6 @@ export default {
       include: ['**/*.svg'], // defaults to .svg, .png, .jpg and .gif files
       emitFiles: true, // defaults to true
     }),
+    terser(),
   ],
 };
