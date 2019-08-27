@@ -37,15 +37,15 @@ exports[`Alert button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #EE0505,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -106,15 +106,15 @@ exports[`Compact button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -175,15 +175,15 @@ exports[`Disabled button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -246,15 +246,15 @@ exports[`Full width button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -315,15 +315,15 @@ exports[`Large button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -385,15 +385,15 @@ exports[`Left icon button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -459,7 +459,7 @@ exports[`Link button renders the component with props 1`] = `
 
 .c0:hover:enabled {
   opacity: 0.8;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -522,7 +522,7 @@ exports[`Link contrast button renders the component with props 1`] = `
 
 .c0:hover:enabled {
   opacity: 0.8;
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -583,15 +583,15 @@ exports[`Primary button renders the component with props with no a11y violations
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -651,15 +651,15 @@ exports[`Primary contrast button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #FFFFFF,inset 0 0 0 4px #4A3EDE;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -721,15 +721,15 @@ exports[`Right icon button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -793,17 +793,17 @@ exports[`Secondary button renders the component with props 1`] = `
   box-shadow: inset 0 0 0 2px #4A3EDE;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 4px #4A3EDE;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  color: #FFFFFF;
+  background-color: #4A3EDE;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -864,16 +864,16 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px #FFFFFF !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
 .c0:active:enabled {
@@ -934,15 +934,15 @@ exports[`Small button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
@@ -1003,15 +1003,15 @@ exports[`Warning button renders the component with props 1`] = `
   box-shadow: none;
 }
 
-.c0:hover:enabled {
-  opacity: 0.8;
-  box-shadow: none !important;
-}
-
 .c0:active:enabled,
 .c0:focus:enabled {
   box-shadow: inset 0 0 0 2px #FFB428,inset 0 0 0 4px #0D0A38;
   outline: none;
+}
+
+.c0:hover:enabled {
+  opacity: 0.8;
+  box-shadow: none;
 }
 
 .c0:active:enabled {
