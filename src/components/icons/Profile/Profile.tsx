@@ -4,20 +4,19 @@ import { colors } from '../../../constants/colors';
 export interface IProfileProps {
   /**
    * The width and height size
-   * @default 24px
    */
   size?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.base.secondary
    */
   activeColor?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.neutral.medium
    */
   inactiveColor?: string;
-  /** For the default active state */
+  /**
+   * For the default active state
+   */
   active?: boolean;
 }
 

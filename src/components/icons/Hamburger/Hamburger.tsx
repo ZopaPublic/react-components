@@ -4,20 +4,19 @@ import { colors } from '../../../constants/colors';
 export interface IHamburgerProps {
   /**
    * The width and height size
-   * @default 40px
    */
   size?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.base.secondary
    */
   activeColor?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.neutral.medium
    */
   inactiveColor?: string;
-  /** For the default active state */
+  /**
+   * For the default active state
+   */
   active?: boolean;
 }
 

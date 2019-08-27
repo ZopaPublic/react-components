@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import { TContainerSizes } from '../../types';
 
 export interface ISizedContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  /**
-   * @default 'fullLength'
-   */
   size?: TContainerSizes;
 }
 
@@ -17,10 +14,10 @@ const mapSizeToMaxWith: { [index in TContainerSizes]: string } = {
 };
 
 const Container = styled.div<ISizedContainerProps>`
-  max-width: ${({ size }) => (size && mapSizeToMaxWith[size]) || mapSizeToMaxWith.fullLength};
+  max-width: ${({ size }) => mapSizeToMaxWith[size]};
   width: 100%;
 `;
 
-const SizedContainer = (props: ISizedContainerProps) => <Container {...props} />;
+const SizedContainer = ({ size = 'fullLength', ...rest }: ISizedContainerProps) => <Container size={size} {...rest} />;
 
 export default SizedContainer;

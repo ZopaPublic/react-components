@@ -20,7 +20,7 @@ const LayoutOuter = styled.div<ILayoutOuterProps>`
   height: 80px;
   transition: box-shadow 0.2s ease-in-out;
   box-shadow: 0 0 0 transparent;
-  ${({ overlap }) => (overlap ? `box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;` : null)}
+  ${({ overlap }) => overlap && `box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;`}
 `;
 
 const LayoutInner = styled.nav`
@@ -45,7 +45,6 @@ const Container = styled(FlexContainer)`
 export interface INavbarLayoutProps {
   /**
    * background color
-   * @default colors.neutral.white
    */
   backgroundColor?: string;
   /**
@@ -62,12 +61,7 @@ export interface INavbarLayoutProps {
   right?: React.ReactNode;
 }
 
-const NavbarLayout: React.FunctionComponent<INavbarLayoutProps> = ({
-  backgroundColor = colors.neutral.white,
-  left,
-  center,
-  right,
-}) => {
+const NavbarLayout = ({ backgroundColor = colors.neutral.white, left, center, right }: INavbarLayoutProps) => {
   const overThreshold = useScrollThreshold();
 
   return (

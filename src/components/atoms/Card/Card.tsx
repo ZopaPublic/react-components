@@ -4,15 +4,7 @@ import { colors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
-  /**
-   * Type of card to render
-   * @default card
-   */
   type?: TCardTypes;
-  /**
-   * CSS display property
-   * @default block
-   */
   display?: string;
 }
 
@@ -29,7 +21,7 @@ const SCard = styled.div<ICardProps>`
   border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
   border-style: solid;
   border-width: 2px;
-  display: ${(props: ICardProps) => props.display || 'block'};
+  display: ${({ display = 'block' }) => display};
   padding: 2em;
 
   ${({ type }) =>
