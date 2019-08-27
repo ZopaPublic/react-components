@@ -4,8 +4,8 @@
 
 // Atoms
 // Constants (colors, fonts, ...)
-import * as colors from './constants/colors';
-import * as fonts from './constants/typography';
+import { colors } from './constants/colors';
+import { typography } from './constants/typography';
 
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
@@ -56,7 +56,7 @@ export { default as ProfileIcon } from './components/icons/Profile/Profile';
 export { default as useAccordion } from './components/hooks/useAccordion/useAccordion';
 export { default as useForm } from './components/hooks/useForm/useForm';
 
-export { colors, fonts };
+export { colors, typography };
 export { default as Fonts } from './components/styles/Fonts';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 

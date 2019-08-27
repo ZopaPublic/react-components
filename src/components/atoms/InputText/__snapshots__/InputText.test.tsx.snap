@@ -2,7 +2,7 @@
 
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -17,17 +17,17 @@ exports[`<InputText /> renders the component disabled 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c0:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 <input
@@ -39,7 +39,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
 
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
-  border: 2px solid #F52D2D;
+  border: 2px solid #EE0505;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -54,17 +54,17 @@ exports[`<InputText /> renders the component with error 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c0:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 <input
@@ -75,7 +75,7 @@ exports[`<InputText /> renders the component with error 1`] = `
 
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -90,17 +90,17 @@ exports[`<InputText /> renders the component with focus 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c0:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 <input
@@ -111,7 +111,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
 
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c0 {
-  border: 2px solid #00A45A;
+  border: 2px solid #1EC06A;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -126,17 +126,17 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c0:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 <input
@@ -147,7 +147,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -162,17 +162,17 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c0:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 <input

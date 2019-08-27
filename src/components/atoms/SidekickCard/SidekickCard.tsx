@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
-import { statusColors } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import alert from '../../../content/images/alert-icon.svg';
 import triumph from '../../../content/images/triumph-icon.svg';
 import verified from '../../../content/images/valid-icon.svg';
@@ -15,9 +14,9 @@ export interface ISidekickCardProps extends React.HTMLAttributes<HTMLDivElement>
 }
 
 const sidekickTypeColors = {
-  alert: colors.alert.alerty500,
-  triumph: statusColors.valid,
-  verified: statusColors.valid,
+  alert: colors.semantic.alert,
+  triumph: colors.semantic.success,
+  verified: colors.semantic.success,
 };
 
 const typeIcons = {
@@ -28,7 +27,7 @@ const typeIcons = {
 
 const SSidekickCard = styled.div<ISidekickCardProps>`
   border-radius: 4px;
-  background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.base.white};
+  background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.neutral.white};
   padding: 48px 48px 48px 80px;
   border-left: 16px solid ${({ type }) => sidekickTypeColors[type]};
 

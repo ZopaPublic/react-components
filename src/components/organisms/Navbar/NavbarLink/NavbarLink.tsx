@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
 import Link from '../../../atoms/Link/Link';
 
@@ -51,7 +51,7 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 }
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
-  ({ active = false, children, open = false, withChevron = false, color = colors.primary.blue500, ...rest }, ref) => (
+  ({ active = false, children, open = false, withChevron = false, color = colors.base.secondary, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} color={color} ref={ref} {...rest}>
       {children}
       {withChevron && (

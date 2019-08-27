@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import * as Colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import Alert from '../../icons/Alert/Alert';
 
 export interface IAlertBoxProps extends React.HTMLAttributes<HTMLElement> {
@@ -10,7 +10,7 @@ export interface IAlertBoxProps extends React.HTMLAttributes<HTMLElement> {
 const Box = styled.div`
   display: inline-flex;
   padding: 16px;
-  border: 1px solid ${Colors.neutral.neutral50};
+  border: 1px solid ${colors.neutral.light};
   border-radius: 8px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 `;

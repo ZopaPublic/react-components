@@ -1,9 +1,9 @@
 import React from 'react';
-import * as Colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface IAlertProps {
   /**
-   * @default Colors.neutral.neutral200
+   * @default colors.base.secondary
    */
   fillColor?: string;
   /**
@@ -26,7 +26,7 @@ const AlertIcon: React.FunctionComponent<IAlertProps> = ({ fillColor, size }) =>
 );
 
 AlertIcon.defaultProps = {
-  fillColor: Colors.neutral.neutral200,
+  fillColor: colors.base.secondary,
   size: '20px',
 };
 

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
@@ -17,16 +17,16 @@ const Input = styled.input<IInput>`
 
   &:focus {
     outline-width: 0;
-    border: 2px solid ${colors.extended.blue500};
+    border: 2px solid ${colors.base.secondary};
     transition: border 0.2s;
   }
 
   ::-webkit-input-placeholder {
-    color: ${colors.neutral.neutral400};
+    color: ${colors.neutral.medium};
   }
 
   &:disabled {
-    background-color: ${colors.neutral.neutral10};
+    background-color: ${colors.neutral.light};
   }
 `;
 

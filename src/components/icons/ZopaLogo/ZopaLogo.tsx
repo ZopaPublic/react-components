@@ -1,5 +1,5 @@
 import React from 'react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface IZopaLogoProps extends React.SVGProps<SVGSVGElement> {
   /**
@@ -35,7 +35,7 @@ const ZopaLogo: React.FunctionComponent<IZopaLogoProps> = ({ color, ...rest }) =
 );
 
 ZopaLogo.defaultProps = {
-  color: colors.base.white,
+  color: colors.base.primary,
   height: '100%',
   width: '100%',
 };

@@ -5,9 +5,10 @@ import Text from '../../atoms/Text/Text';
 import Heading from '../../atoms/Heading/Heading';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
+import { colors } from '../../../constants/colors';
 
 const HelpWrap = styled.div`
-  background: white;
+  background: ${colors.neutral.white};
   padding: 80px 16px;
   box-sizing: border-box;
 `;

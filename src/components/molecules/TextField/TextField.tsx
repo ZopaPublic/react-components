@@ -6,8 +6,8 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import InputText from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
+import { colors } from '../../../constants/colors';
 import { IField } from '../../types';
-import { colors } from '../../..';
 
 export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement> {
   prefix?: string;
@@ -67,7 +67,7 @@ const Prefix = styled.span<IPrefixProps>`
     display: flex;
     align-items: center;
     font-size: ${typography.sizes.text[1]};
-    color: ${colors.neutral.neutral400};
+    color: ${colors.neutral.dark};
   }
   
   input {

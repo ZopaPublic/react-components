@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Text from '../Text/Text';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
@@ -13,7 +13,7 @@ const SLink = styled(Text)`
   user-select: none;
   appearance: none;
 
-  color: ${colors.primary.blue500};
+  color: ${colors.base.secondary};
 
   &:hover {
     opacity: 0.88;
@@ -33,7 +33,7 @@ const STargetIcon = styled.svg`
 const TargetIcon = (props: ITargetIconProps) => {
   return (
     <STargetIcon xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-      <g fill={props.color || colors.primary.blue500}>
+      <g fill={props.color || colors.base.secondary}>
         <path d="M2.6 4H0v11h11v-2.6H2.6z" />
         <path d="M4 0v11h11V0H4zm9.7 1.3v8.4L5.2 1.3h8.5z" />
       </g>

@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export type ArrowDirection = 'up' | 'down' | 'left' | 'right' | number | string;
 
 export interface IArrowProps extends React.SVGProps<SVGSVGElement> {
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue500
+   * @default colors.base.secondary
    */
   color?: string;
 
@@ -35,7 +35,7 @@ const StyledArrow = styled.svg<IArrowProps>`
 
 const Arrow = ({
   ref,
-  color = colors.extended.blue500,
+  color = colors.base.secondary,
   height = '12px',
   width = '12px',
   direction = 'down',

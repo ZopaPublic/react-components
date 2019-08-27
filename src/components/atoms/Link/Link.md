@@ -6,11 +6,11 @@ Use `<Link />` to create hyperlinks to other web pages, files, locations within 
 
 ⚠️ &nbsp; Choose the color according to the following table:
 
-| Background color | Font Color                       |
-| ---------------- | -------------------------------- |
-| white or grey    | colors.primary.blue500 (default) |
-| dark colored     | respective 0/25 (lightest)       |
-| light colored    | respective 900 (darkest)         |
+| Background color | Font Color                            |
+| ---------------- | ------------------------------------- |
+| white or grey    | `colors.base.secondary` ( _default_ ) |
+| dark colored     | `colors.neutral.white`                |
+| light colored    | `colors.neutral.dark`                 |
 
 ### Examples
 

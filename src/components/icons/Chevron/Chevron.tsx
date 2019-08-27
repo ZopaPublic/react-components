@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export type ChevronDirection = 'up' | 'down' | 'left' | 'right' | number | string;
 
 export interface IChevronProps extends React.SVGProps<SVGSVGElement> {
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue300
+   * @default  colors.base.secondary
    */
   color?: string;
 
@@ -36,7 +36,7 @@ const StyledChevron = styled.svg<IChevronProps>`
 // ref is excluded from ...rest due to a type conflict; TODO: check if styled-components v4 fixes it.
 const Chevron = ({
   ref,
-  color = colors.extended.blue300,
+  color = colors.base.secondary,
   height = '24px',
   width = '24px',
   direction = 'down',

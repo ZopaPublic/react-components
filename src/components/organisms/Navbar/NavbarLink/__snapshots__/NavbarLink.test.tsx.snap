@@ -12,7 +12,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c1:hover {
@@ -32,7 +32,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c0:active,
@@ -42,7 +42,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 
 <a
   class="c0 c1"
-  color="#4B3CFA"
+  color="#4A3EDE"
 />
 `;
 
@@ -67,7 +67,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c1:hover {
@@ -87,7 +87,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c0:active,
@@ -115,7 +115,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 
 <a
   class="c0 c1"
-  color="#4B3CFA"
+  color="#4A3EDE"
 >
   <span
     class="c2"

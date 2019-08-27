@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HOOK: useScrollThreshold registers a scroll listener when called 1`] = `
+Array [
+  "scroll",
+  [Function],
+]
+`;

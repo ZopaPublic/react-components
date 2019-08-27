@@ -2,7 +2,7 @@
 
 exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c1 {
-  border: 2px solid #00A45A;
+  border: 2px solid #1EC06A;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -17,17 +17,17 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 
 .c1:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c1:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c0 {
@@ -50,7 +50,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 
 exports[`<TextField /> renders the component with error 1`] = `
 .c1 {
-  border: 2px solid #F52D2D;
+  border: 2px solid #EE0505;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -65,17 +65,17 @@ exports[`<TextField /> renders the component with error 1`] = `
 
 .c1:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c1:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c0 {
@@ -148,7 +148,7 @@ exports[`<TextField /> renders the component with label 1`] = `
 
 exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c1 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -163,17 +163,17 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 
 .c1:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c1:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c0 {
@@ -196,7 +196,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 
 exports[`<TextField /> renders the component with prefix 1`] = `
 .c2 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -211,17 +211,17 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 
 .c2:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c2:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c0 {
@@ -248,7 +248,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #6F748B;
+  color: #0D0A38;
 }
 
 .c1 input {
@@ -275,7 +275,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 
 exports[`<TextField /> renders the component with size 1`] = `
 .c1 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -290,17 +290,17 @@ exports[`<TextField /> renders the component with size 1`] = `
 
 .c1:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c1:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c0 {

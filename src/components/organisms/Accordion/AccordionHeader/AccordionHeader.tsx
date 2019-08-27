@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
 import Text, { ITextProps } from '../../../atoms/Text/Text';
 
@@ -24,7 +24,7 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled(Text)`
-  color: ${colors.primary.blue500};
+  color: ${colors.base.secondary};
   padding-left: 8px;
 `;
 
