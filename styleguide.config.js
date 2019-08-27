@@ -77,8 +77,9 @@ module.exports = {
           sections: [
             {
               name: 'Navbar',
+              content: 'src/components/organisms/Navbar/index.md',
               components: 'src/components/organisms/Navbar/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Navbar/index.tsx'],
             },
             {
               name: 'Accordion',

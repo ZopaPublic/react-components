@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from '../Navbar';
+import Navbar from '..';
 
-describe('<Navbar.Layout />', () => {
+describe('<Navbar />', () => {
   it('should render component with default props', () => {
-    const { container } = render(<Navbar.Layout />);
+    const { container } = render(<Navbar />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
@@ -12,7 +12,7 @@ describe('<Navbar.Layout />', () => {
     const left = <span>left</span>;
     const center = <span>center</span>;
     const right = <span>right</span>;
-    const { container } = render(<Navbar.Layout left={left} center={center} right={right} />);
+    const { container } = render(<Navbar left={left} center={center} right={right} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

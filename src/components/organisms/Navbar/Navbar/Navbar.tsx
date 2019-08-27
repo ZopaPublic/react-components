@@ -42,7 +42,7 @@ const Container = styled(FlexContainer)`
   height: inherit;
 `;
 
-export interface INavbarLayoutProps {
+export interface INavbarProps {
   /**
    * background color
    */
@@ -61,7 +61,7 @@ export interface INavbarLayoutProps {
   right?: React.ReactNode;
 }
 
-const NavbarLayout = ({ backgroundColor = colors.neutral.white, left, center, right }: INavbarLayoutProps) => {
+const Navbar = ({ backgroundColor = colors.neutral.white, left, center, right }: INavbarProps) => {
   const overThreshold = useScrollThreshold();
 
   return (
@@ -80,4 +80,4 @@ const NavbarLayout = ({ backgroundColor = colors.neutral.white, left, center, ri
   );
 };
 
-export default NavbarLayout;
+export default Navbar;
