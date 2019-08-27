@@ -6,7 +6,7 @@ import InputText from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
 import styled from 'styled-components';
-import { colors } from '../../..';
+import * as colors from '../../../constants/colors';
 
 export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement> {
   prefix?: string;
