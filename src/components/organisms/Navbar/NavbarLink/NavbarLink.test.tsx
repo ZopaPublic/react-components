@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from '../Navbar';
+import Navbar from '..';
 
 describe('<Navbar.Link />', () => {
   it('should render component with default props', () => {

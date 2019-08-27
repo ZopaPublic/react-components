@@ -6,7 +6,7 @@ It also handles all the accessibility attributes internally and passes them down
 
 The dropdown will be aligned to the right by default; however, if there's not enough room for the dropdown, it align to the left instead.
 
-- It's meant to be used at least along `<Navbar.Layout>`
+- It's meant to be used at least along `<Navbar>`
 - The dropdown contents are up to you but we highly recommend to use `<Navbar.Link />` for brand consistency
 
 ### Examples
@@ -16,7 +16,7 @@ The dropdown will be aligned to the right by default; however, if there's not en
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef"} } }
 import { Navbar } from '@zopauk/react-components';
 
-<Navbar.Layout
+<Navbar
   left={
     <Navbar.Dropdown
       id="basic-example-id"
@@ -44,7 +44,7 @@ import { Navbar } from '@zopauk/react-components';
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon } from '@zopauk/react-components';
 
-<Navbar.Layout
+<Navbar
   backgroundColor="#00B9A7"
   left={
     <Navbar.Dropdown

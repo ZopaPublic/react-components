@@ -42,7 +42,7 @@ const Container = styled(FlexContainer)`
   height: inherit;
 `;
 
-export interface INavbarLayoutProps {
+export interface INavbarProps {
   /**
    * background color
    * @default colors.base.white
@@ -62,7 +62,7 @@ export interface INavbarLayoutProps {
   right?: React.ReactNode;
 }
 
-const NavbarLayout: React.FunctionComponent<INavbarLayoutProps> = ({
+const Navbar: React.FunctionComponent<INavbarProps> = ({
   backgroundColor = colors.base.white,
   left,
   center,
@@ -86,4 +86,4 @@ const NavbarLayout: React.FunctionComponent<INavbarLayoutProps> = ({
   );
 };
 
-export default NavbarLayout;
+export default Navbar;

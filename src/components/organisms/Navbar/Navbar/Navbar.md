@@ -1,8 +1,8 @@
 ### Summary
 
-`<Navbar.Layout>` renders the base navigation bar layout, creating **right** and **left** to render the contents you like.
+`<Navbar>` renders the base navigation bar layout, creating **right**, **left**, and **center** to render the contents you like.
 
-It's meant to be used with other `<Navbar />` components like `<Navbar.Layout>`
+It's meant to be used with other `<Navbar />` components like `<Navbar>`
 
 ### Examples
 
@@ -11,7 +11,7 @@ It's meant to be used with other `<Navbar />` components like `<Navbar.Layout>`
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link } from '@zopauk/react-components';
 
-<Navbar.Layout left={<Link>left</Link>} center={<Link>center</Link>} right={<Link>right</Link>} />;
+<Navbar left={<Link>left</Link>} center={<Link>center</Link>} right={<Link>right</Link>} />;
 ```
 
 - Teal theme
@@ -19,5 +19,5 @@ import { Navbar, Link } from '@zopauk/react-components';
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#fff", "border": "2px solid #efefef" } } }
 import { Navbar, Link } from '@zopauk/react-components';
 
-<Navbar.Layout backgroundColor="#00B9A7" left={<Link>left</Link>} right={<Link>right</Link>} />;
+<Navbar backgroundColor="#00B9A7" left={<Link>left</Link>} right={<Link>right</Link>} />;
 ```
