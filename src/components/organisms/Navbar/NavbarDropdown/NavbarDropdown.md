@@ -6,8 +6,8 @@ It also handles all the accessibility attributes internally and passes them down
 
 The dropdown will be aligned to the right by default; however, if there's not enough room for the dropdown, it align to the left instead.
 
-- It's meant to be used at least along `<Navbar>`
-- The dropdown contents are up to you but we highly recommend to use `<Navbar.Link />` for brand consistency
+- It's meant to be used at least along [`<Navbar />`](#/Components/Organisms/Navbar/Navbar)
+- The dropdown contents are up to you but we highly recommend to use [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) for brand consistency
 
 ### Examples
 

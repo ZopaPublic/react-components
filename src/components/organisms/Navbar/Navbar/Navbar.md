@@ -2,7 +2,7 @@
 
 `<Navbar>` renders the base navigation bar layout, creating **right**, **left**, and **center** to render the contents you like.
 
-It's meant to be used with other `<Navbar />` components like `<Navbar>`
+It's meant to be used with other navbar components like [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) and [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown)
 
 ### Examples
 

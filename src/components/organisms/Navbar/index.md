@@ -1,6 +1,6 @@
 ### Summary
 
-`<Navbar />` is a wrapper and a namespace for `<Navbar.Dropdown />` and `<Navbar.Link />`.
+`<Navbar />` is a wrapper and a namespace for [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown) and [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink).
 
 In order to create a navigation bar to be used within a **Zopa application**, you will need to leverage these components together.
 

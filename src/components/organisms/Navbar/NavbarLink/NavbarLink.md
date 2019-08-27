@@ -2,7 +2,7 @@
 
 `<Navbar.Link />` is a wrap aroudn our [`<Link />`](/#/Components/Atoms/Link) atom, decorated with tow extra props: `active` and `withChevron`.
 
-It's meant to be used with other `<Navbar />` components like `<Navbar.Layout>`
+It's meant to be used with other [`<Navbar />`](#/Components/Organisms/Navbar) components like [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown)
 
 ### Examples
 
