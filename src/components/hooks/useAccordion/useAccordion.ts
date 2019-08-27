@@ -2,6 +2,40 @@ import { useRef, useState, Dispatch, SetStateAction } from 'react';
 import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
 import { mod } from '../../../helpers/utils';
 
+interface IAccordionHeaderProps {
+  'aria-controls': string;
+  'aria-disabled': boolean;
+  'aria-expanded': boolean;
+  id: string;
+  key: string;
+  onClick: () => void;
+  onFocus: () => void;
+  onKeyDown: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
+  ref: (node: HTMLButtonElement) => void;
+}
+
+export type TGetAccordionHeaderProps = (id: string, index: number) => IAccordionHeaderProps;
+
+interface IAccordionSectionStyles {
+  overflow: string;
+  transition: string;
+  height: string;
+}
+
+interface IAccordionSectionProps {
+  'aria-hidden': boolean;
+  'aria-labelledby': string;
+  id: string;
+  key: string;
+  ref: (node: HTMLDivElement) => void;
+  role: string;
+  style: IAccordionSectionStyles;
+}
+
+export type TGetAccordionSectionProps = (id: string, index: number) => IAccordionSectionProps;
+
+export type TIsActiveAccordionSection = (index: number) => boolean;
+
 type TActiveSections = number[];
 
 let activeSections: TActiveSections;
@@ -30,7 +64,7 @@ const useAccordion = () => {
 
   [activeSections, updateActiveSections] = useState<TActiveSections>([]);
 
-  const isActiveSection = (index: number) => activeSections.includes(index);
+  const isActiveSection: TIsActiveAccordionSection = index => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
     const sectionRef = sectionsRefs[index];
@@ -82,7 +116,7 @@ const useAccordion = () => {
     }
   };
 
-  const getHeaderProps = (id: string, index: number) => ({
+  const getHeaderProps: TGetAccordionHeaderProps = (id, index) => ({
     'aria-controls': getLinkingId(id),
     'aria-disabled': isActiveSection(index),
     'aria-expanded': isActiveSection(index),
@@ -94,7 +128,7 @@ const useAccordion = () => {
     ref: getHeaderRef(index),
   });
 
-  const getSectionProps = (id: string, index: number) => ({
+  const getSectionProps: TGetAccordionSectionProps = (id, index) => ({
     'aria-hidden': !isActiveSection(index),
     'aria-labelledby': id,
     id: getLinkingId(id),
