@@ -17,7 +17,7 @@ const SProgressBar = styled.div`
   position: relative;
   width: 100%;
   border-radius: 100px;
-  background: ${colors.neutral.white};
+  background: ${colors.neutral.light};
   height: 4px;
 `;
 
@@ -36,7 +36,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
     font-size: ${typography.sizes.text[3]};
     line-height: 16px;
     font-weight: 600;
-    color: ${colors.neutral.medium};
+    color: ${colors.neutral.dark};
   }
 `;
 

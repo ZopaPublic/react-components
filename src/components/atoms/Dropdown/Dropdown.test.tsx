@@ -65,4 +65,22 @@ describe('<Dropdown />', () => {
       expect(container.firstChild).toHaveStyleRule('border', expect.stringContaining(expectBorderColor));
     },
   );
+
+  test.each`
+    isValid      | expectBorderColor
+    ${false}     | ${DEFAULT_COLOR}
+    ${undefined} | ${DEFAULT_COLOR}
+    ${true}      | ${colors.semantic.success}
+  `(
+    'renders the border with the "$expectBorderColor" color if the isValid is "$isValid"',
+    ({ isValid, expectBorderColor }) => {
+      const { container } = render(
+        <Dropdown isValid={isValid}>
+          <Option value="first">First value</Option>
+          <Option value="second">Second value</Option>
+        </Dropdown>,
+      );
+      expect(container.firstChild).toHaveStyleRule('border', expect.stringContaining(expectBorderColor));
+    },
+  );
 });

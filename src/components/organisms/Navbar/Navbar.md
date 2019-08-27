@@ -9,10 +9,10 @@ In order to create a navigation bar to be used within a **Zopa application**, yo
 - Static
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
-import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-components';
+import { Navbar, Link, HamburgerIcon, ProfileIcon, colors } from '@zopauk/react-components';
 
 <Navbar.Layout
-  backgroundColor="#00B9A7"
+  backgroundColor={colors.base.primary}
   left={
     <Navbar.Dropdown
       id="unique-id"
@@ -21,7 +21,7 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-componen
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" open={open} {...getOpenerProps()}>
-            <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
+            <HamburgerIcon size="30px" activeColor={colors.neutral.white} inactiveColor={colors.neutral.white} />
           </Navbar.Link>
         </div>
       )}
@@ -59,7 +59,7 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon } from '@zopauk/react-componen
 - Responsive
 
 ```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
-import { Navbar, Link, HamburgerIcon, FlexCol } from '@zopauk/react-components';
+import { Navbar, Link, HamburgerIcon, FlexCol, colors } from '@zopauk/react-components';
 
 class ResponsiveNavbar extends React.Component {
   constructor(props) {
@@ -78,8 +78,8 @@ class ResponsiveNavbar extends React.Component {
             items={items}
             renderOpener={({ open, getOpenerProps }) => (
               <div style={{ padding: 8 }}>
-                <Navbar.Link color="#fff" href="#" open={open} {...getOpenerProps()}>
-                  <HamburgerIcon size="30px" activeColor="#fff" inactiveColor="#fff" />
+                <Navbar.Link color={colors.neutral.white} href="#" open={open} {...getOpenerProps()}>
+                  <HamburgerIcon size="30px" activeColor={colors.neutral.white} inactiveColor={colors.neutral.white} />
                 </Navbar.Link>
               </div>
             )}
@@ -92,7 +92,7 @@ class ResponsiveNavbar extends React.Component {
         </FlexCol>
         <FlexCol xs="hidden" m="auto">
           {items.map(({ label, href }, index) => (
-            <Link key={`desktop-link-${index}`} href={href} style={{ padding: 8 }}>
+            <Link key={`desktop-link-${index}`} color={colors.neutral.white} href={href} style={{ padding: 8 }}>
               {label}
             </Link>
           ))}

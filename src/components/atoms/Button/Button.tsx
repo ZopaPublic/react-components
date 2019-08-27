@@ -121,7 +121,7 @@ const SButton = styled.button<IButtonProps>`
     opacity: 0.8;
     color: ${({ styling }) => styling && hoverFontColors[styling]};
     background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
-    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
+    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')} !important;
   }
 
   &:active:enabled,
