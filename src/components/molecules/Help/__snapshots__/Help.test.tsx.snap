@@ -50,7 +50,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4B3CFA;
+  color: #4A3EDE;
 }
 
 .c7:hover {
@@ -64,6 +64,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 .c4 {
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 700;
   line-height: 1.2;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -119,7 +120,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 }
 
 .c0 {
-  background: white;
+  background: #FFFFFF;
   padding: 80px 16px;
   box-sizing: border-box;
 }

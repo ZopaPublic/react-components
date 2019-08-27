@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import * as colors from '../../../../constants/colors';
+import * as colors from '../colors';
 import Link from '../../../atoms/Link/Link';
 
 export const FooterLink = styled(Link)`
-  color: ${colors.neutral.neutral200};
+  color: ${colors.neutral200};
 
   &:hover {
-    color: ${colors.neutral.neutral400};
+    color: ${colors.neutral400};
   }
 `;
 

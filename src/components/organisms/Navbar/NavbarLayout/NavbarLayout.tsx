@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import useScrollThreshold from '../../../hooks/useScrollThreshold/useScrollThreshold';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 
@@ -45,7 +45,7 @@ const Container = styled(FlexContainer)`
 export interface INavbarLayoutProps {
   /**
    * background color
-   * @default colors.base.white
+   * @default colors.neutral.white
    */
   backgroundColor?: string;
   /**
@@ -63,7 +63,7 @@ export interface INavbarLayoutProps {
 }
 
 const NavbarLayout: React.FunctionComponent<INavbarLayoutProps> = ({
-  backgroundColor = colors.base.white,
+  backgroundColor = colors.neutral.white,
   left,
   center,
   right,

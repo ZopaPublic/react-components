@@ -7,5 +7,5 @@ Use it to render Zopa's logo as an SVG.
 ```jsx
 import { ZopaIcon } from '@zopauk/react-components';
 
-<ZopaIcon width="70px" height="50px" color="red" />;
+<ZopaIcon width="150px" />;
 ```

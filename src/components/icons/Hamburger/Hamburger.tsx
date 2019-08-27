@@ -1,5 +1,5 @@
 import React from 'react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface IHamburgerProps {
   /**
@@ -9,12 +9,12 @@ export interface IHamburgerProps {
   size?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue300
+   * @default colors.base.secondary
    */
   activeColor?: string;
   /**
    * Targets the svg's `fill` attribute
-   * @default colors.extended.blue500
+   * @default colors.neutral.medium
    */
   inactiveColor?: string;
   /** For the default active state */
@@ -28,8 +28,8 @@ export interface IHamburgerState {
 const Hamburger: React.FunctionComponent<IHamburgerProps> = ({
   size = '40px',
   active = false,
-  activeColor = colors.extended.blue300,
-  inactiveColor = colors.extended.blue500,
+  activeColor = colors.base.secondary,
+  inactiveColor = colors.neutral.medium,
 }) => {
   const color = active ? activeColor : inactiveColor;
   return (

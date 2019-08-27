@@ -1,7 +1,7 @@
 import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 import React from 'react';
 import styled, { css } from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
@@ -49,12 +49,12 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
     css`
       box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
       border-radius: 4px 4px 0 0;
-      border-color: ${colors.primary.blue500};
+      border-color: ${colors.base.secondary};
       border-bottom: 0;
 
       /* Hack to simulate a border in the bottom in the input as :after
          pseudo-elements doesn't work with inputs */
-      background: linear-gradient(${colors.neutral.neutral75}, ${colors.neutral.neutral75});
+      background: linear-gradient(${colors.neutral.light}, ${colors.neutral.light});
       background-size: 95% 1px;
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -70,20 +70,20 @@ const Option = styled.div<IOption>`
   font-size: ${typography.sizes.text[1]};
   font-weight: 600;
   line-height: 32px;
-  color: ${colors.neutral.neutral400}
+  color: ${colors.neutral.dark}
     ${({ selected, highLighted }) =>
       (selected || highLighted) &&
       css`
-        color: ${colors.base.white};
-        background-color: ${colors.primary.blue500};
+        color: ${colors.neutral.white};
+        background-color: ${colors.base.secondary};
       `};
 `;
 
 const Options = styled.div<IOptionsListProps>`
   z-index: 1;
   width: 100%;
-  background: ${colors.base.white};
-  border: 2px solid ${colors.primary.blue500};
+  background: ${colors.neutral.white};
+  border: 2px solid ${colors.base.secondary};
   border-top: 0;
   position: absolute;
   overflow: auto;
@@ -174,7 +174,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
           />
           <SearchArrow
             direction={isOpen ? 'up' : 'down'}
-            color={disabled ? colors.neutral.neutral400 : colors.extended.blue500}
+            color={disabled ? colors.neutral.light : colors.base.secondary}
             onClick={() => {
               if (!disabled) {
                 if (isOpen) {

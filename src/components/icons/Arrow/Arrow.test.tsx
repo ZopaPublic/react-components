@@ -3,6 +3,11 @@ import { render } from '@testing-library/react';
 import Arrow from './Arrow';
 
 describe('<Arrow />', () => {
+  it('should render without crashing', () => {
+    const { container } = render(<Arrow />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   const directions = ['down', 'up', 'left', 'right', 45, '225'];
   directions.forEach(direction => {
     it(`renders the component pointing ${direction}`, () => {
