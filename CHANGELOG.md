@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/zopaUK/react-components/compare/v1.6.1...v1.6.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* **rollup:** upgrade config and deps ([65b3719](https://github.com/zopaUK/react-components/commit/65b3719))
+
 ## [1.6.1](https://github.com/zopaUK/react-components/compare/v1.6.0...v1.6.1) (2019-08-27)
 
 
