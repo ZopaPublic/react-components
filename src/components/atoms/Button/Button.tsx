@@ -117,17 +117,17 @@ const SButton = styled.button<IButtonProps>`
     box-shadow: ${({ styling }) => (styling && boxShadows[styling]) || 'none'};
   }
 
-  &:hover:enabled {
-    opacity: 0.8;
-    color: ${({ styling }) => styling && hoverFontColors[styling]};
-    background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
-    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')} !important;
-  }
-
   &:active:enabled,
   &:focus:enabled {
     box-shadow: ${({ styling }) => styling && activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
+  }
+
+  &:hover:enabled {
+    opacity: 0.8;
+    color: ${({ styling }) => styling && hoverFontColors[styling]};
+    background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
+    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 
   &:active:enabled {
