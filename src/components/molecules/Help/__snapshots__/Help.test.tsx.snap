@@ -1,56 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Help /> renders the default Help component with no a11y violations 1`] = `
-.c6 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  display: block;
-  margin-bottom: 24px;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.c8 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.c9 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.c11 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 400;
-  font-size: 12px;
-}
-
 .c7 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -73,10 +23,52 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   opacity: 0.72;
 }
 
+.c6 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  display: block;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c8 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c10 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .c4 {
+  color: #0D0A38;
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   -webkit-letter-spacing: -0.5px;
   -moz-letter-spacing: -0.5px;
@@ -142,7 +134,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   max-width: 900px;
 }
 
-.c10 {
+.c9 {
   max-width: 350px;
 }
 
@@ -211,7 +203,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c6"
         >
           <a
-            class="c7 c8"
+            class="c7"
             href="mailto:savings@zopa.com"
           >
             savings@zopa.com
@@ -221,7 +213,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c6"
         >
           <a
-            class="c7 c8"
+            class="c7"
             href="tel:020 7580 6060"
           >
             020 7580 6060 
@@ -229,10 +221,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           for loans
         </span>
         <span
-          class="c9"
+          class="c8"
         >
           <a
-            class="c7 c8"
+            class="c7"
             href="tel:020 7291 8331"
           >
             020 7291 8331 
@@ -245,16 +237,16 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <div
-          class="c10"
+          class="c9"
         >
           <p
-            class="c9"
+            class="c8"
           >
             Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
           </p>
         </div>
         <p
-          class="c11"
+          class="c10"
         >
           We can't take applications over the phone. UK residents only. Calls may be monitored.
         </p>
