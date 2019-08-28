@@ -41,6 +41,8 @@ import { Heading } from '@zopauk/react-components';
 </Fragment>;
 ```
 
+- Colors
+
 ```jsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
