@@ -27,7 +27,7 @@ const StyledHeading = styled(Text)<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   font-size: ${({ as }) => headingSizes[as]};
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.bold};
+  font-weight: ${typography.weights.semibold};
   line-height: ${typography.lineHeights.heading};
   letter-spacing: -0.5px;
   margin: 0;
