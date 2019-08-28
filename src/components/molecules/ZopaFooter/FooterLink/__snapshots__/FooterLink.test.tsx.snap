@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FooterLink /> renders the component with a small size 1`] = `
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 12px;
-}
-
 .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -46,22 +34,11 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
 }
 
 <a
-  class="c0 c1 c2"
+  class="c0 c1"
 />
 `;
 
 exports[`<FooterLink /> renders the component with default props 1`] = `
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-}
-
 .c1 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -95,6 +72,6 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
 }
 
 <a
-  class="c0 c1 c2"
+  class="c0 c1"
 />
 `;
