@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Text from '../Text/Text';
 import { typography } from '../../../constants/typography';
 import { colors, THeadingHexColors } from '../../../constants/colors';
+import { maxMedia } from '../../../helpers/responsiveness';
 
 const {
   sizes: { heading: headingSizes },
@@ -25,7 +26,10 @@ interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
 
 const StyledHeading = styled(Text)<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
+  
   font-size: ${({ as }) => headingSizes[as]};
+  ${({ as }) => (as === 'h1' ? maxMedia.phone`font-size: 36px;` : null)}
+  
   font-family: ${typography.primary};
   font-weight: ${typography.weights.semibold};
   line-height: ${typography.lineHeights.heading};
