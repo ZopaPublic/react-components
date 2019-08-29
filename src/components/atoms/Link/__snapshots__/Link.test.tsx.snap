@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Link /> renders the link with default values and the svg is hidden with no a11y violations 1`] = `
-.c1 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 700;
-  font-size: 14px;
-}
-
 .c0 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -36,7 +24,7 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   href="http://duckduckgo.com"
 >
   text
@@ -44,18 +32,6 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 `;
 
 exports[`<Link /> renders the link with target _blank with the svg visible 1`] = `
-.c1 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 700;
-  font-size: 14px;
-}
-
 .c0 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -78,20 +54,20 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   opacity: 0.72;
 }
 
-.c2 {
+.c1 {
   margin-left: 6px;
   top: 2px;
   position: relative;
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   href="http://duckduckgo.com"
   target="_blank"
 >
   text
   <svg
-    class="c2"
+    class="c1"
     height="15"
     width="15"
     xmlns="http://www.w3.org/2000/svg"

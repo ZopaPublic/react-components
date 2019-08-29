@@ -1,9 +1,10 @@
 ### Summary
 
-1. Whenever you want to render text on any UI at Zopa, use the `<Text />` component
-2. Its size, weight, white-space and semantics can be customised according to context
-3. If you need to render long text, render it within `<p />` tag, otherwise use the defautl `<span />` tag
+1. Whenever you want to render text on any UI at Zopa, use the `<Text />` component 🙏🏻
+2. Its size, weight, white-space, semantics and colour can be customised
+3. If you need to render long text, render it within `<p />` tag, otherwise use the defautl `<span />` tag 👮🏻‍♂️
 4. Don't use `semibold` for now as we don't have clear specs on when to use it over `bold`
+5. Use the colours mindfully 🎨
 
 ### Examples
 
@@ -64,5 +65,28 @@ import { Text } from '@zopauk/react-components';
   <Text weight="bold" mb>
     Bold weight
   </Text>
+</Fragment>;
+```
+
+- Colors
+
+```jsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
+import { Fragment } from 'react';
+import { Text, colors } from '@zopauk/react-components';
+
+<Fragment>
+  <Text color={colors.neutral.white} mb>
+    White
+  </Text>
+  <Text color={colors.neutral.medium} mb>
+    Medium
+  </Text>
+  <Text color={colors.neutral.dark} mb>
+    Dark
+  </Text>
+  <Text color={colors.semantic.success} mb>
+    Success
+  </Text>
+  <Text color={colors.semantic.error}>Error</Text>
 </Fragment>;
 ```

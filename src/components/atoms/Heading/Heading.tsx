@@ -2,6 +2,7 @@ import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import Text from '../Text/Text';
 import { typography } from '../../../constants/typography';
+import { colors, THeadingHexColors } from '../../../constants/colors';
 
 const {
   sizes: { heading: headingSizes },
@@ -14,12 +15,16 @@ interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   as: 'h1' | 'h2' | 'h3' | 'h4';
   /**
    * Whether to add some margin below the rendered heading or not. Applied by default.
-   * @default false
    */
   mb?: boolean;
+  /**
+   * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
+   */
+  color?: THeadingHexColors;
 }
 
 const StyledHeading = styled(Text)<IStyledHeadingProps>`
+  color: ${({ color = colors.neutral.dark }) => color};
   font-size: ${({ as }) => headingSizes[as]};
   font-family: ${typography.primary};
   font-weight: ${typography.weights.bold};
