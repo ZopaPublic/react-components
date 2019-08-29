@@ -33,7 +33,7 @@ const Title = styled(Text)`
 export interface IAccordionHeader {
   id: string;
   index: number;
-  textSize: ITextProps['size'];
+  textSize?: ITextProps['size'];
 }
 
 const mapTextToArrowSize = {
