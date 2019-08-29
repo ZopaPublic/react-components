@@ -92,7 +92,7 @@ const useAccordion = () => {
 
   const getOnFocus = (index: number) => () => updateCursorPosition(index);
 
-  const getLinkingId = (id: string) => `${id}-tab`;
+  const getLinkingId = (id: string) => `${id}-section`;
 
   const focusOnHeader = (nextCursorPosition: number) => {
     const headerRef = headersRefs[nextCursorPosition];
