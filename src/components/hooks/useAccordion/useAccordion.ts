@@ -1,4 +1,4 @@
-import { useRef, useState, Dispatch, SetStateAction } from 'react';
+import { useRef, useState, Dispatch, SetStateAction, KeyboardEvent, RefObject } from 'react';
 import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
 import { mod } from '../../../helpers/utils';
 
@@ -10,7 +10,7 @@ interface IAccordionHeaderProps {
   key: string;
   onClick: () => void;
   onFocus: () => void;
-  onKeyDown: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
+  onKeyDown: (e: KeyboardEvent<HTMLButtonElement>) => void;
   ref: (node: HTMLButtonElement) => void;
 }
 
@@ -42,7 +42,7 @@ let activeSections: TActiveSections;
 let updateActiveSections: Dispatch<SetStateAction<TActiveSections>>;
 
 const useAccordion = () => {
-  const headersRefs = useRef<React.RefObject<HTMLButtonElement>['current'][]>([]).current;
+  const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
     if (node === null) {
@@ -52,7 +52,7 @@ const useAccordion = () => {
     }
   };
 
-  const sectionsRefs = useRef<React.RefObject<HTMLDivElement>['current'][]>([]).current;
+  const sectionsRefs = useRef<RefObject<HTMLDivElement>['current'][]>([]).current;
 
   const getSectionRef = (index: number) => (node: HTMLDivElement) => {
     if (node === null) {
@@ -101,7 +101,7 @@ const useAccordion = () => {
     }
   };
 
-  const onKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+  const onKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
     const { length } = headersRefs;
     if (isArrowUp(e)) {
       e.preventDefault();
