@@ -57,7 +57,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
 }
 
 <button
-  aria-controls="one-tab"
+  aria-controls="one-section"
   aria-disabled="false"
   aria-expanded="false"
   class="c0"

@@ -5,7 +5,7 @@ exports[`<AccordionSection /> renders the component with no a11y violations 1`] 
   aria-hidden="true"
   aria-labelledby="one"
   data-testid="section"
-  id="one-tab"
+  id="one-section"
   role="region"
   style="overflow: hidden; transition: height 200ms linear; height: 0px;"
 >
