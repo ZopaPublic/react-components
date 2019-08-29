@@ -83,8 +83,9 @@ module.exports = {
             },
             {
               name: 'Accordion',
+              content: 'src/components/organisms/Accordion/index.md',
               components: 'src/components/organisms/Accordion/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Accordion/index.tsx'],
             },
           ],
         },

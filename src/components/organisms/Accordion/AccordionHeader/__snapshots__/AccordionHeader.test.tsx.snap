@@ -5,9 +5,9 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .c4 {
@@ -57,15 +57,20 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
 }
 
 <button
+  aria-controls="one-section"
+  aria-disabled="false"
+  aria-expanded="false"
   class="c0"
+  data-testid="header"
+  id="one"
 >
   <div
     class="c1"
   >
     <svg
-      aria-label="Arrow pointing down"
+      aria-label="Arrow pointing right"
       class="c2"
-      direction="down"
+      direction="right"
       height="10px"
       role="img"
       viewBox="0 0 11 5"
@@ -73,8 +78,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>
-        arrow pointing 
-        down
+        arrow pointing right
       </title>
       <g
         fill="none"
@@ -104,7 +108,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
     <span
       class="c3 c4"
     >
-      Content
+      Header
     </span>
   </div>
 </button>

@@ -35,7 +35,7 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 
 // Organisms
 export { default as Navbar } from './components/organisms/Navbar';
-export { default as Accordion } from './components/organisms/Accordion/Accordion';
+export { default as Accordion } from './components/organisms/Accordion';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
