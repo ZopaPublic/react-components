@@ -12,7 +12,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-self: auto;
 }
 
-.c4 {
+.c5 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -46,7 +46,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,6 +69,18 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
 .c3 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -80,7 +92,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4A3EDE;
 }
 
 .c3:hover {
@@ -101,7 +112,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   color: #6F748B;
 }
 
-.c5 {
+.c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -109,7 +120,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-top: 32px;
 }
 
-.c7 {
+.c8 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -117,7 +128,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-right: 8px;
 }
 
-.c7:hover {
+.c8:hover {
   color: #6F748B;
 }
 
@@ -162,7 +173,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:0px) {
-  .c4 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -172,7 +183,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c4 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -182,7 +193,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 33.33333333333333%;
     -ms-flex: 0 0 33.33333333333333%;
@@ -192,7 +203,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:992px) {
-  .c4 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -202,13 +213,13 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c5 {
+  .c6 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -226,7 +237,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
     cols="12"
   >
     <a
-      class="c2 c3"
+      class="c2 c3 c4"
       href="https://www.zopa.com"
     >
       <svg
@@ -252,17 +263,17 @@ exports[`<SocialLinks /> renders the component 1`] = `
     </a>
   </div>
   <div
-    class="c4"
+    class="c5"
     cols="12"
   >
     <div
-      class="c5 c6"
+      class="c6 c7"
       cols="12"
       direction="row"
     >
       <a
         aria-label="instagram"
-        class="c7 c3"
+        class="c8 c3 c4"
         cols="12"
         href="https://www.instagram.com/Zopamoney/"
       >
@@ -290,7 +301,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        class="c7 c3"
+        class="c8 c3 c4"
         cols="12"
         href="https://facebook.com/zopa"
       >
@@ -312,7 +323,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        class="c7 c3"
+        class="c8 c3 c4"
         cols="12"
         href="https://twitter.com/zopa"
       >
