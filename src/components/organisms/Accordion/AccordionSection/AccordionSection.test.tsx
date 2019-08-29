@@ -6,7 +6,7 @@ import Accordion from '..';
 describe('<AccordionSection />', () => {
   it('renders the component with no a11y violations', async () => {
     const { container, getByTestId } = render(
-      <Accordion>
+      <Accordion aria-label="test-accordion">
         <Accordion.Header id="one" index={0} textSize="medium">
           Header
         </Accordion.Header>

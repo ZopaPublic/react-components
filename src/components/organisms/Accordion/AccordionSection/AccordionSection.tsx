@@ -16,4 +16,5 @@ const AccordionSection: FC<IAccordionSectionProps> = ({ children, id, index, ...
     </div>
   );
 };
+
 export default AccordionSection;
