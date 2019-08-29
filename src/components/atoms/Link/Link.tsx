@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors, TLinkHexColors } from '../../../constants/colors';
+import Text from '../../atoms/Text/Text';
 
 export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   color?: TLinkHexColors;
@@ -8,13 +9,11 @@ export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement
 
 export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
 
-const SLink = styled.a`
+const SLink = styled(Text)`
   cursor: pointer;
   text-decoration: none;
   user-select: none;
   appearance: none;
-
-  color: ${({ color = colors.base.secondary }) => color};
 
   &:hover {
     opacity: 0.88;
@@ -43,11 +42,11 @@ const TargetIcon = (props: ITargetIconProps) => {
 };
 
 const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, ...rest } = props;
+  const { children, color, ...rest } = props;
   return (
-    <SLink ref={ref} {...rest}>
+    <SLink ref={ref} {...rest} weight="semibold" color={color} forwardedAs="a">
       {children}
-      {rest.target === '_blank' && <TargetIcon color={rest.color} />}
+      {rest.target === '_blank' && <TargetIcon color={color} />}
     </SLink>
   );
 });

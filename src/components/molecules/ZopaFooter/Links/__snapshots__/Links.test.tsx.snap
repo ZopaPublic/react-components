@@ -35,6 +35,18 @@ exports[`<Links /> renders the component 1`] = `
   align-items: flex-start;
 }
 
+.c8 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
 .c7 {
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -46,7 +58,6 @@ exports[`<Links /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #4A3EDE;
 }
 
 .c7:hover {
@@ -150,7 +161,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/loans/car-loans"
           >
             Car loans
@@ -160,7 +171,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/loans/debt-consolidation"
           >
             Debt consolidation loans
@@ -170,7 +181,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/loans/home-improvement"
           >
             Home improvement loans
@@ -180,7 +191,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/loans/wedding"
           >
             Wedding loans
@@ -190,7 +201,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/invest"
           >
             Peer-to-peer investments
@@ -200,7 +211,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/invest/isa"
           >
             Innovative Finance ISA
@@ -228,7 +239,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about"
           >
             About Us
@@ -238,7 +249,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/our-story"
           >
             Our story
@@ -248,7 +259,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/board"
           >
             Meet the board
@@ -258,7 +269,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/leadership"
           >
             Meet the leadership team
@@ -268,7 +279,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/awards"
           >
             Awards
@@ -278,7 +289,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/careers"
           >
             Careers
@@ -288,7 +299,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/about/press"
           >
             Press team
@@ -298,7 +309,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/feelgood"
           >
             New products
@@ -326,7 +337,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/cookie-policy"
           >
             Cookie policy
@@ -336,7 +347,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/conflicts-policy"
           >
             Conflicts policy
@@ -346,7 +357,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/modern-slavery"
           >
             Modern slavery
@@ -356,7 +367,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/website-terms"
           >
             Website terms
@@ -384,7 +395,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/contact"
           >
             Support
@@ -394,7 +405,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/support/faqs"
           >
             Common Questions
@@ -404,7 +415,7 @@ exports[`<Links /> renders the component 1`] = `
           class="c5"
         >
           <a
-            class="c6 c7"
+            class="c6 c7 c8"
             href="https://zopa.com/sitemap"
           >
             Sitemap

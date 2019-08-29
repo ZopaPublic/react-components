@@ -21,7 +21,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 <Text size="large" as="p">
   Some text with
-  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
     a link
   </Link>
 </Text>;
@@ -39,6 +39,7 @@ import { Text, Link, colors } from '@zopauk/react-components';
     target="_blank"
     href="http://duckduckgo.com"
     onClick={() => alert('Link clicked!')}
+    size="large"
   >
     a link
   </Link>
@@ -52,7 +53,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 <Text size="large" as="p">
   Some text with
-  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
     a link
   </Link>
 </Text>;
@@ -65,7 +66,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 <Text size="large" as="p">
   Some text with
-  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
     a link
   </Link>
 </Text>;
