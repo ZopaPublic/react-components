@@ -1,4 +1,8 @@
+### Summary
+
 `<Form.RadioField>` is just a small wrapper around the [`<RadioField />`](#/Components/Molecules/RadioField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.RadioField>` already handles valid/invalid state, onChange, and onBlur callback.
+
+### Example
 
 ```js
 import { Form } from '@zopauk/react-components';

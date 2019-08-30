@@ -1,3 +1,5 @@
+### Summary
+
 `<Form>` is a top level form component holding its state and also serves as a namespace for all of the form components:
 
 - [`<Form>`](#/Components/Organisms/Form/Form)
@@ -9,6 +11,8 @@
 - [`<Form.Button>`](#/Components/Organisms/Form/FormButton)
 
 See the example below for more details.
+
+### Example
 
 ```js
 import { Form, Text } from '@zopauk/react-components';
