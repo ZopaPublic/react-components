@@ -15,6 +15,7 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 }
 
 .c0 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -58,6 +59,7 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
 }
 
 .c0 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;

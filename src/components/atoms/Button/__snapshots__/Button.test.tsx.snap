@@ -54,7 +54,7 @@ exports[`Alert button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -123,7 +123,7 @@ exports[`Compact button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -192,7 +192,7 @@ exports[`Disabled button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -263,7 +263,7 @@ exports[`Full width button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -332,7 +332,7 @@ exports[`Large button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -402,7 +402,7 @@ exports[`Left icon button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -468,7 +468,7 @@ exports[`Link button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -531,7 +531,7 @@ exports[`Link contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -600,7 +600,7 @@ exports[`Primary button renders the component with props with no a11y violations
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -668,7 +668,7 @@ exports[`Primary contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -738,7 +738,7 @@ exports[`Right icon button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -812,7 +812,7 @@ exports[`Secondary button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -882,7 +882,7 @@ exports[`Secondary contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -951,7 +951,7 @@ exports[`Small button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
@@ -1020,7 +1020,7 @@ exports[`Warning button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #C5C6CD;
+  color: #DCDBE2;
   background-color: #EAEAEE;
 }
 
