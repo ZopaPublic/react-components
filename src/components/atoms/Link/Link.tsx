@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colors, TLinkHexColors } from '../../../constants/colors';
+import { colors, IBaseColorSpec, INeutralColorSpec } from '../../../constants/colors';
 import Text from '../../atoms/Text/Text';
 
 export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  color?: TLinkHexColors;
+  color?: IBaseColorSpec['secondary'] | INeutralColorSpec['white'];
 }
 
 export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
@@ -43,7 +43,7 @@ const TargetIcon = (props: ITargetIconProps) => {
 };
 
 const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, color, ...rest } = props;
+  const { children, color = colors.base.secondary, ...rest } = props;
   return (
     <SLink ref={ref} {...rest} weight="semibold" color={color} forwardedAs="a">
       {children}
@@ -51,5 +51,9 @@ const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((pr
     </SLink>
   );
 });
+
+Link.defaultProps = {
+  color: colors.base.secondary,
+};
 
 export default Link;
