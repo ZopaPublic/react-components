@@ -1,3 +1,23 @@
+# [1.7.0](https://github.com/zopaUK/react-components/compare/v1.6.2...v1.7.0) (2019-08-30)
+
+
+### Bug Fixes
+
+* **dropdownfield:** fix its interface ([4106321](https://github.com/zopaUK/react-components/commit/4106321))
+* **formdropdownfield:** handle valid state ([d1e4b5a](https://github.com/zopaUK/react-components/commit/d1e4b5a))
+* **useform:** mark all fields as touched in submit callback ([631b1cd](https://github.com/zopaUK/react-components/commit/631b1cd))
+
+
+### Features
+
+* **form:** add Form component ([b5989d6](https://github.com/zopaUK/react-components/commit/b5989d6))
+* **form:** set up form/field hooks and form context/provider ([c8972b5](https://github.com/zopaUK/react-components/commit/c8972b5))
+* **formcheckboxfield:** set it up ([d5654b0](https://github.com/zopaUK/react-components/commit/d5654b0))
+* **formdropdownfield:** set it up ([7d7414c](https://github.com/zopaUK/react-components/commit/7d7414c))
+* **formdropdownfilteredfield:** set it up ([edcc41a](https://github.com/zopaUK/react-components/commit/edcc41a))
+* **formradiofield:** set it up ([216af31](https://github.com/zopaUK/react-components/commit/216af31))
+* **formtextfield:** set up TextField wrapper ([8411771](https://github.com/zopaUK/react-components/commit/8411771))
+
 ## [1.6.2](https://github.com/zopaUK/react-components/compare/v1.6.1...v1.6.2) (2019-08-27)
 
 
