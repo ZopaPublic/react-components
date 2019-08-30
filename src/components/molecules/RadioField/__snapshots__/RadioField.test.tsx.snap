@@ -1,12 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
-.c4 {
+.c5 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c4 {
   display: block;
 }
 
@@ -24,16 +32,15 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
   line-height: 24px;
-  color: #1C2139;
+  color: #0D0A38;
   font-weight: 400;
   position: relative;
 }
 
 .c3:before {
   content: '';
-  background-color: #EDEDF0;
+  background-color: #EAEAEE;
   border-radius: 50%;
   height: 24px;
   width: 24px;
@@ -41,7 +48,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: inline-block;
   vertical-align: top;
   margin-right: 8px;
-  border: 2px #D6D7DE solid;
+  border: 2px #C5C6CD solid;
 }
 
 .c3:hover {
@@ -49,7 +56,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c3:hover:before {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
 }
 
 .c2 {
@@ -62,7 +69,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c2:hover + label:before,
 .c2:focus + label:before {
-  border: 2px #9C94FC solid;
+  border: 2px #4A3EDE solid;
 }
 
 .c2:checked + label {
@@ -71,8 +78,8 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c2:checked + label:before {
   content: '';
-  background-color: #4033D5;
-  border: 2px #4033D5 solid;
+  background-color: #4A3EDE;
+  border: 2px #4A3EDE solid;
   border-radius: 50%;
   height: 24px;
   width: 24px;
@@ -83,7 +90,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c2:checked + label:after {
   content: '';
-  background-color: #fff;
+  background-color: #FFFFFF;
   border-radius: 50%;
   height: 8px;
   width: 8px;
@@ -96,12 +103,12 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c2:disabled + label {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c2:disabled + label:before {
-  border-color: #D6D7DE;
-  background-color: #EDEDF0;
+  border-color: #C5C6CD;
+  background-color: #EAEAEE;
 }
 
 .c2:disabled + label:hover {
@@ -119,7 +126,8 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     value="1"
   />
   <label
-    class="c3 c4"
+    class="c3 c4 c5"
+    color="#0D0A38"
     for="radio-id-1"
   >
     hello

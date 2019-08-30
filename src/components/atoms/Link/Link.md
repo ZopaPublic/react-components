@@ -1,39 +1,73 @@
-Creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.
+### Summary
 
-**Before using read this carefully**
+Use `<Link />` to create hyperlinks to other web pages, files, locations within the same page, email addresses, or any other URL.
 
-- Links are never Headers.
+⚠️ &nbsp; Links are never headings
 
-- Choose the color using this table:
+⚠️ &nbsp; Choose the color according to the following table:
 
-  | Background color | Font Color                       |
-  | ---------------- | -------------------------------- |
-  | white or grey    | colors.primary.blue500 (default) |
-  | dark colored     | respective 0/25 (lightest)       |
-  | light colored    | respective 900 (darkest)         |
+| Background color | Font Color                            |
+| ---------------- | ------------------------------------- |
+| white or grey    | `colors.base.secondary` ( _default_ ) |
+| dark colored     | `colors.neutral.white`                |
+| light colored    | `colors.neutral.dark`                 |
 
-Component with `target="_blank"`:
+### Examples
+
+- Normal link
 
 ```js
-import { Lead, Link } from '@zopauk/react-components';
+import { Text, Link } from '@zopauk/react-components';
 
-<Lead>
-  Lead component text with
-  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
-    a Link component
+<Text size="large" as="p">
+  Some text with
+  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
+    a link
   </Link>
-</Lead>;
+</Text>;
 ```
 
-Component without `target="_blank"` (notice that the square disappeared!)
+- Negative link
+
+```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+import { Text, Link, colors } from '@zopauk/react-components';
+
+<Text size="large" as="p" color={colors.neutral.white}>
+  Some text with
+  <Link
+    color={colors.neutral.white}
+    target="_blank"
+    href="http://duckduckgo.com"
+    onClick={() => alert('Link clicked!')}
+    size="large"
+  >
+    a link
+  </Link>
+</Text>;
+```
+
+- With `target="_blank"`
 
 ```js
-import { Lead, Link } from '@zopauk/react-components';
+import { Text, Link } from '@zopauk/react-components';
 
-<Lead>
-  Lead component text with
-  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
-    a Link component
-  </Link>!
-</Lead>;
+<Text size="large" as="p">
+  Some text with
+  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
+    a link
+  </Link>
+</Text>;
+```
+
+- Without `target="_blank"` ( _notice that the square icon disappeared_ )
+
+```js
+import { Text, Link } from '@zopauk/react-components';
+
+<Text size="large" as="p">
+  Some text with
+  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} size="large">
+    a link
+  </Link>
+</Text>;
 ```

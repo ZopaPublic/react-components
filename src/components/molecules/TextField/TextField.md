@@ -1,18 +1,21 @@
-`<TextField />` is a wrapper composed of four different components:
+### Summary
 
-- `<SizedContainer />` ... ( _container with `size` prop_ )
-- `<InputText />` ... ( _native input text_ )
-- `<InputLabel />` ... ( _label text, only rendered if the prop `label` is provided_ )
-- `<HelpText />` ... ( _addition information_ )
-- `<SizedContainer />` ... ( _error message, only rendered if the prop `errorMessage` provided_ )
+`<TextField />` is a convenient wrapper composed of four different components:
 
-`name` must be provided to automatically set:
+- [`<SizedContainer />`](/#/Components/Layout/SizedContainer)
+- [`<InputText />`](/#/Components/Atoms/InputText)
+- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
+
+⚠️ &nbsp;Note that a `name` prop **must be provided** to automatically set:
 
 - `htmlFor` prop on `<InputLabel />`
 - `data-automation` prop on `<ErrorMessage />`
 - `id` prop on `<InputText />`
 
-#### default
+### Examples
+
+- Default
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -20,7 +23,7 @@ import { TextField } from '@zopauk/react-components';
 <TextField inputProps={{ name: 'text1' }} />;
 ```
 
-#### specific size
+- With a specific size
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -28,7 +31,7 @@ import { TextField } from '@zopauk/react-components';
 <TextField size="short" inputProps={{ name: 'text2' }} />;
 ```
 
-#### with label
+- With a label
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -36,7 +39,7 @@ import { TextField } from '@zopauk/react-components';
 <TextField label="First name" inputProps={{ name: 'text3' }} />;
 ```
 
-#### with error message
+- With error message
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -44,7 +47,7 @@ import { TextField } from '@zopauk/react-components';
 <TextField errorMessage="Oops ! Error !" inputProps={{ name: 'text4' }} />;
 ```
 
-#### valid
+- Valid state
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -52,7 +55,7 @@ import { TextField } from '@zopauk/react-components';
 <TextField isValid={true} inputProps={{ name: 'text5' }} />;
 ```
 
-#### with label, help text, error message and specific size
+- With all the previous configuration
 
 ```jsx
 import { TextField } from '@zopauk/react-components';
@@ -66,7 +69,7 @@ import { TextField } from '@zopauk/react-components';
 />;
 ```
 
-#### with prefix
+- With a custom text prefix
 
 ```jsx
 import { TextField } from '@zopauk/react-components';

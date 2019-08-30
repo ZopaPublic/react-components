@@ -1,12 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FooterLink /> renders the component with a small size 1`] = `
-.c0 {
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  line-height: 1.4;
+  font-size: 12px;
+}
+
+.c1 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -17,17 +46,45 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1 c2"
 />
 `;
 
 exports[`<FooterLink /> renders the component with default props 1`] = `
-.c0 {
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  line-height: 1.4;
+}
+
+.c1 {
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c1:hover {
+  opacity: 0.88;
+}
+
+.c1:active {
+  opacity: 0.72;
+}
+
+.c0 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -38,6 +95,6 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
 }
 
 <a
-  class="c0"
+  class="c0 c1 c2"
 />
 `;

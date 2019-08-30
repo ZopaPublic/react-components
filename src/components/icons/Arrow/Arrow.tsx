@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export type ArrowDirection = 'up' | 'down' | 'left' | 'right' | number | string;
 
@@ -33,7 +33,7 @@ const StyledArrow = styled.svg<IArrowProps>`
 
 const Arrow = ({
   ref,
-  color = colors.extended.blue500,
+  color = colors.base.secondary,
   height = '12px',
   width = '12px',
   direction = 'down',

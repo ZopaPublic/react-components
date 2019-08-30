@@ -1,9 +1,12 @@
-Styled Dropdown component.
+### Summary
 
-It consists of 2 components:
+`<Dropdown />` is a component extending the native HTML `<select />` element.
 
-- `<Dropdown />`: which extends from html `<select>` element
-- `<Option />`: which extends from html `<option>` element
+`<DropdownOption />` extemds the native HTML `<option />` element.
+
+### Examples
+
+- Standard
 
 ```jsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';
@@ -16,7 +19,7 @@ import { Dropdown, DropdownOption } from '@zopauk/react-components';
 </Dropdown>;
 ```
 
-#### hasError
+- With error
 
 ```jsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';

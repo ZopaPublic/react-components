@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
-import { statusColors } from '../../../constants/colors';
-import { openSans } from '../../../constants/fonts';
+import { colors } from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 
 export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   contrastColor?: string;
@@ -32,61 +31,61 @@ const smallInset = 'inset 0 0 0 2px';
 const largeInset = 'inset 0 0 0 4px';
 
 const fontColors: Partial<TButtonStylingMapping> = {
-  alert: colors.base.white,
-  contrastLink: colors.base.white,
-  contrastSecondary: colors.base.white,
-  link: colors.primary.blue500,
-  primary: colors.base.white,
-  secondary: colors.primary.blue500,
-  warning: colors.alert.alerty900,
+  alert: colors.neutral.white,
+  contrastLink: colors.neutral.white,
+  contrastSecondary: colors.neutral.white,
+  link: colors.base.secondary,
+  primary: colors.neutral.white,
+  secondary: colors.base.secondary,
+  warning: colors.neutral.dark,
 };
 
 const backgroundColors: TButtonStylingMapping = {
-  alert: statusColors.error,
+  alert: colors.semantic.error,
   contrastLink: 'transparent',
-  contrastPrimary: colors.base.white,
+  contrastPrimary: colors.neutral.white,
   contrastSecondary: 'transparent',
   link: 'transparent',
-  primary: colors.primary.blue500,
+  primary: colors.base.secondary,
   secondary: 'transparent',
-  warning: colors.alert.alerty500,
+  warning: colors.semantic.alert,
 };
 
 const activeBackgroundColors: Partial<TButtonStylingMapping> = {
-  contrastSecondary: colors.base.white,
-  secondary: colors.primary.blue500,
+  contrastSecondary: 'transparent',
+  secondary: colors.base.secondary,
 };
 
 const boxShadows: Partial<TButtonStylingMapping> = {
-  contrastSecondary: `${smallInset} ${colors.base.white}`,
-  secondary: `${smallInset} ${colors.extended.blue100}`,
+  contrastSecondary: `${smallInset} ${colors.neutral.white}`,
+  secondary: `${smallInset} ${colors.base.secondary}`,
 };
 
 const activeBoxShadows: Partial<TButtonStylingMapping> = {
-  alert: `${smallInset} ${statusColors.error}, ${largeInset} ${colors.base.white}`,
-  contrastPrimary: `${smallInset} ${colors.base.white}, ${largeInset} ${colors.extended.navy700}`,
-  contrastSecondary: `${largeInset} ${colors.base.white}`,
-  primary: `${smallInset} ${colors.extended.blue500}, ${largeInset} ${colors.base.white}`,
-  secondary: `${largeInset} ${colors.primary.blue500}`,
-  warning: `${smallInset} ${colors.alert.alerty500}, ${largeInset} ${colors.alert.alerty900}`,
+  alert: `${smallInset} ${colors.semantic.error}, ${largeInset} ${colors.neutral.white}`,
+  contrastPrimary: `${smallInset} ${colors.neutral.white}, ${largeInset} ${colors.base.secondary}`,
+  contrastSecondary: `${smallInset} ${colors.neutral.white}`,
+  primary: `${smallInset} ${colors.base.secondary}, ${largeInset} ${colors.neutral.white}`,
+  secondary: `${largeInset} ${colors.base.secondary}`,
+  warning: `${smallInset} ${colors.semantic.alert}, ${largeInset} ${colors.neutral.dark}`,
 };
 
 const hoverFontColors: Partial<TButtonStylingMapping> = {
-  secondary: colors.base.white,
+  secondary: colors.neutral.white,
 };
 
 const fontSizes: TButtonSizingMapping = {
-  compact: '14px',
-  default: '16px',
-  large: '20px',
-  small: '16px',
+  compact: '12px',
+  default: '14px',
+  large: '18px',
+  small: '12px',
 };
 
 const paddings: TButtonSizingMapping = {
-  compact: '4px 16px',
-  default: '12px 32px',
-  large: '12px 32px',
-  small: '8px 24px',
+  compact: '4px 14px',
+  default: '10px 30px',
+  large: '10px 30px',
+  small: '6px 22px',
 };
 
 const SText = styled.span<IButtonProps>`
@@ -102,10 +101,10 @@ const SButton = styled.button<IButtonProps>`
   align-items: center;
   width: ${props => props.fullWidth && '100%'};
   padding: ${({ sizing }) => sizing && paddings[sizing]};
-  font-family: ${openSans};
+  font-family: ${typography.primary};
   font-size: ${({ sizing }) => sizing && fontSizes[sizing]};
   line-height: ${({ sizing }) => (sizing === 'large' ? '30px' : '24px')};
-  font-weight: 500;
+  font-weight: ${typography.weights.semibold};
   cursor: pointer;
   border: none;
   border-radius: 48px;
@@ -118,18 +117,17 @@ const SButton = styled.button<IButtonProps>`
     box-shadow: ${({ styling }) => (styling && boxShadows[styling]) || 'none'};
   }
 
-  &:hover:enabled {
-    opacity: 0.8;
-    color: ${props => props.contrastColor};
-    color: ${({ styling }) => styling && hoverFontColors[styling]};
-    background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
-    box-shadow: none;
-  }
-
   &:active:enabled,
   &:focus:enabled {
     box-shadow: ${({ styling }) => styling && activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
+  }
+
+  &:hover:enabled {
+    opacity: 0.8;
+    color: ${({ styling }) => styling && hoverFontColors[styling]};
+    background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
+    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 
   &:active:enabled {
@@ -138,8 +136,8 @@ const SButton = styled.button<IButtonProps>`
 
   &:disabled {
     cursor: not-allowed;
-    color: ${colors.neutral.neutral500};
-    background-color: ${colors.neutral.neutral100};
+    color: ${colors.neutral.medium};
+    background-color: ${colors.neutral.light};
   }
 `;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../../../constants/colors';
+import { colors } from '../../../../../constants/colors';
 
 export type TAlignedTo = 'left' | 'right';
 
@@ -15,7 +15,7 @@ const NavbarDropdownList = styled.ul<INavbarDropdownListProps>`
   position: relative;
   list-style-type: none;
   margin: 0;
-  background-color: ${colors.base.white};
+  background-color: ${colors.neutral.white};
   box-shadow: inset 0 0 0 1px rgba(214, 215, 222, 0.75), 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   padding: 16px;
   border-radius: 4px;
@@ -30,7 +30,7 @@ const NavbarDropdownList = styled.ul<INavbarDropdownListProps>`
     height: 15px;
     transform: translateY(-50%) rotate(135deg);
     background-color: inherit;
-    box-shadow: -1px 1px 0 0 ${colors.neutral.neutral50};
+    box-shadow: -1px 1px 0 0 ${colors.neutral.light};
   }
 `;
 

@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import * as colors from '../../../../constants/colors';
+import * as colors from '../colors';
+import Text from '../../../atoms/Text/Text';
 import Wrapper from '../Wrapper/Wrapper';
 
-const StyledParagraph = styled.p`
-  color: ${colors.neutral.neutral75};
-  font-size: 11px;
-  line-height: 1.5;
+const StyledParagraph = styled(Text).attrs({
+  forwardedAs: 'p',
+  size: 'small',
+  weight: 'semibold',
+})`
+  color: ${colors.neutral200};
   margin: 0 0 24px 0;
 `;
 

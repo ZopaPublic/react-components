@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
+import Link from '../../../atoms/Link/Link';
 
 export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   active: boolean;
@@ -9,14 +10,11 @@ export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLA
   withChevron: boolean;
 }
 
-const StyledNavbarLink = styled.a<IStyledNavbarLinkProps>`
-  appearance: none;
-  text-decoration: none;
-  font-weight: bold;
+const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
   display: inline-flex;
   align-items: center;
-  cursor: ${({ active }) => (active ? 'default' : 'pointer')};
   color: ${({ color }) => color};
+
   &:active,
   &:hover {
     opacity: ${({ active }) => (active ? 1 : 0.88)};
@@ -48,7 +46,7 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 }
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
-  ({ active = false, children, open = false, withChevron = false, color = colors.primary.blue500, ...rest }, ref) => (
+  ({ active = false, children, open = false, withChevron = false, color = colors.base.secondary, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} color={color} ref={ref} {...rest}>
       {children}
       {withChevron && (

@@ -1,42 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y violations 1`] = `
-.c1 {
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c1 {
   display: block;
 }
 
-.c4 {
-  border: 2px solid #D6D7DE;
+.c5 {
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c4:focus {
+.c5:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c4::-webkit-input-placeholder {
-  color: #6F748B;
+.c5::-webkit-input-placeholder {
+  color: #C5C6CD;
 }
 
-.c4:disabled {
-  background-color: #F8F8F9;
+.c5:disabled {
+  background-color: #EAEAEE;
 }
 
-.c6 {
+.c7 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -50,20 +61,20 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
-.c3 {
+.c4 {
   margin-bottom: 0;
-  -webkit-transition: border 0s;
-  transition: border 0s;
 }
 
-.c2 {
+.c3 {
   position: relative;
 }
 
-.c5 {
+.c6 {
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;
@@ -79,27 +90,28 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
     role="combobox"
   >
     <label
-      class="c1"
+      class="c1 c2"
+      color="#0D0A38"
       for="text-id-test"
       id="downshift-0-label"
     >
       Label
     </label>
     <div
-      class="c2"
+      class="c3"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-0-label"
         autocomplete="off"
-        class="c3 c4"
+        class="c4 c5"
         id="text-id-test"
         name="test"
         value=""
       />
       <svg
         aria-label="open.menu"
-        class="c5 c6"
+        class="c6 c7"
         direction="down"
         height="24px"
         viewBox="0 0 416 416"
@@ -108,7 +120,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
       >
         <path
           d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-          fill="#4B3CFA"
+          fill="#4A3EDE"
         />
       </svg>
     </div>
@@ -118,29 +130,32 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
 .c3 {
-  border: 2px solid #D6D7DE;
+  border: 2px solid #C5C6CD;
   border-radius: 4px;
   padding: 0 10px;
-  font-size: 20px;
   height: 48px;
   font-weight: 600;
   width: 100%;
   margin: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3:focus {
   outline-width: 0;
-  border: 2px solid #4B3CFA;
+  border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #6F748B;
+  color: #C5C6CD;
 }
 
 .c3:disabled {
-  background-color: #F8F8F9;
+  background-color: #EAEAEE;
 }
 
 .c5 {
@@ -159,8 +174,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2 {
   margin-bottom: 0;
-  -webkit-transition: border 0s;
-  transition: border 0s;
 }
 
 .c1 {
@@ -169,8 +182,10 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c4 {
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+  -ms-transform: translateY(-45%);
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;
@@ -208,7 +223,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
       >
         <path
           d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-          fill="#4B3CFA"
+          fill="#4A3EDE"
         />
       </svg>
     </div>

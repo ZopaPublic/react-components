@@ -1,46 +1,40 @@
-These Action Cards can be used in isolation or paired with Hero Action Cards to create urgency around certain
-events.
+### Summary
 
-They Give customers feedback for their actions, such as giving the all-clear when something goes right,
-alerting them when something goes wrong, or telling them something has changed.
+These Action Cards can be used to create urgency around certain events.
 
-There are 3 types of SidekickCards:
+They come in three variations.
 
-#### triumph type
+### Examples
 
-For success messages. It shows a green left border and a green check mark.
+- Triumph
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
-import { SidekickCard } from '@zopauk/react-components';
+import { SidekickCard, Text } from '@zopauk/react-components';
 
 <SidekickCard type="triumph">
   <h2>The action has been successfully completed</h2>
-  <p>Awesome everything is alright</p>
+  <Text as="p">Awesome everything is alright</Text>
 </SidekickCard>;
 ```
 
-#### verified type
-
-For verification messages. It shows a green left border and a green squiggly circle check mark.
+- Verified
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
-import { SidekickCard } from '@zopauk/react-components';
+import { SidekickCard, Text } from '@zopauk/react-components';
 
 <SidekickCard type="verified">
   <h2>Your account has been verfied</h2>
-  <p>You can star using your account now :)</p>
+  <Text as="p">You can start using your account now</Text>
 </SidekickCard>;
 ```
 
-#### alert type
-
-For alert/warning messages. It shows a yellow left border and a yellow warning icon.
+- Alert
 
 ```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
-import { SidekickCard } from '@zopauk/react-components';
+import { SidekickCard, Text } from '@zopauk/react-components';
 
 <SidekickCard type="alert">
   <h2>The action has a problem</h2>
-  <p>Ops, something went wrong</p>
+  <Text as="p">Ops, something went wrong</Text>
 </SidekickCard>;
 ```

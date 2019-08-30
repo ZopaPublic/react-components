@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled, { keyframes } from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -21,14 +22,14 @@ const FieldContainer = styled(SizedContainer)`
 
 const Label = styled(InputLabel)<IInputStatus>`
   display: flex;
-  font-size: 16px;
+  font-size: ${typography.sizes.text[1]};
   line-height: 24px;
-  color: ${colors.neutral.neutral900};
+  color: ${colors.neutral.dark};
   font-weight: 400;
   position: relative;
   &:before {
     content: '';
-    background-color: ${colors.neutral.neutral25};
+    background-color: ${colors.neutral.light};
     border-radius: 50%;
     height: 24px;
     width: 24px;
@@ -41,7 +42,7 @@ const Label = styled(InputLabel)<IInputStatus>`
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px solid ${colors.neutral.neutral75};
+      border: 2px solid ${colors.neutral.medium};
     }
   }
 `;
@@ -55,15 +56,15 @@ const Input = styled.input<IInputStatus>`
   &:hover + label,
   &:focus + label {
     &:before {
-      border: 2px ${colors.extended.blue200} solid;
+      border: 2px ${colors.base.secondary} solid;
     }
   }
   &:checked + label {
     font-weight: 600;
     &:before {
       content: '';
-      background-color: ${colors.extended.blue600};
-      border: 2px ${colors.extended.blue600} solid;
+      background-color: ${colors.base.secondary};
+      border: 2px ${colors.base.secondary} solid;
       border-radius: 50%;
       height: 24px;
       width: 24px;
@@ -73,7 +74,7 @@ const Input = styled.input<IInputStatus>`
     }
     &:after {
       content: '';
-      background-color: ${colors.base.white};
+      background-color: ${colors.neutral.white};
       border-radius: 50%;
       height: 8px;
       width: 8px;
@@ -85,10 +86,10 @@ const Input = styled.input<IInputStatus>`
     }
   }
   &:disabled + label {
-    color: ${colors.neutral.neutral400};
+    color: ${colors.neutral.medium};
     &:before {
-      border-color: ${getBorderColorByStatus};
-      background-color: ${colors.neutral.neutral25};
+      border-color: ${colors.neutral.medium};
+      background-color: ${colors.neutral.light};
     }
     &:hover {
       cursor: not-allowed;

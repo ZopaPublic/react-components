@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { alert as alertColors, neutral as neutralColors } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import CheckMark from '../../icons/CheckMark/CheckMark';
-import Text from '../../typography/Text/Text';
+import Text from '../Text/Text';
 
 type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type IBgColors = { [S in TStyling]: string };
@@ -23,24 +23,23 @@ interface IBadgeProps extends IStyledBadgeProps {
 }
 
 const backgroundColors: IBgColors = {
-  confirmed: alertColors.veggy500,
-  default: alertColors.alerty900,
-  invalid: alertColors.danger500,
-  waiting: alertColors.alerty500,
+  confirmed: colors.semantic.success,
+  default: colors.neutral.dark,
+  invalid: colors.semantic.error,
+  waiting: colors.semantic.alert,
 };
 
 const fontColors: IFontColors = {
-  confirmed: neutralColors.neutral10,
-  default: neutralColors.neutral10,
-  invalid: neutralColors.neutral10,
-  waiting: neutralColors.neutral900,
+  confirmed: colors.neutral.white,
+  default: colors.neutral.white,
+  invalid: colors.neutral.white,
+  waiting: colors.neutral.dark,
 };
 
 const StyledBadge = styled(Text)<IStyledBadgeProps>`
-  color: ${({ styling }) => styling && fontColors[styling]};
-  background-color: ${({ styling }) => styling && backgroundColors[styling]};
+  color: ${({ styling = 'default' }) => styling && fontColors[styling]};
+  background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
-  line-height: 1.4;
   padding: 3px 8px;
   white-space: nowrap;
   vertical-align: baseline;
@@ -62,7 +61,6 @@ function Badge({ children, styling, ...rest }: IBadgeProps) {
 }
 
 Badge.defaultProps = {
-  size: 's',
   styling: 'default',
 };
 

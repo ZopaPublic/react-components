@@ -1,31 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
   type?: TCardTypes;
-  borderColor?: string;
-  backgroundColor?: string;
   display?: string;
 }
 
-export type TCardTypes = 'card' | 'linkCard' | 'button';
+export type TCardTypes = 'card' | 'linkCard';
 
 const borderRadius: { [index in TCardTypes]: string } = {
-  button: '1000px',
   card: '4px',
   linkCard: '8px',
 };
 
 const SCard = styled.div<ICardProps>`
-  background-color: ${({ backgroundColor }) => backgroundColor};
-  border-color: ${({ borderColor, backgroundColor }) => borderColor || backgroundColor};
-  border-radius: ${({ type }) => borderRadius[type]};
+  background-color: ${colors.neutral.white};
+  border-color: ${colors.neutral.white};
+  border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
   border-style: solid;
   border-width: 2px;
   display: ${({ display = 'block' }) => display};
   padding: 2em;
+
+  ${({ type }) =>
+    type === 'linkCard'
+      ? `
+    cursor: pointer;
+    user-select: none;
+  `
+      : undefined}
 
   ${maxMedia.tablet`
     border-radius: 0;
@@ -39,8 +44,6 @@ const Card: React.FunctionComponent<ICardProps> = props => {
 };
 
 Card.defaultProps = {
-  backgroundColor: colors.base.white,
-  borderColor: colors.base.white,
   type: 'card',
 };
 

@@ -1,6 +1,10 @@
-ZopaFooter renders Zopa's standard footer with default links and the ability to provide custom links.
+### Summary
 
-#### default
+Use `<ZopaFooter />` to render Zopa's standard footer in a **Zopa application**.
+
+### Examples
+
+- Standard
 
 ```jsx
 import { ZopaFooter } from '@zopauk/react-components';
@@ -8,9 +12,7 @@ import { ZopaFooter } from '@zopauk/react-components';
 <ZopaFooter />;
 ```
 
-#### only legal section
-
-You can also reduce the footer to just the legal section on pages where you need the user to focus on a specific task like form applications.
+- Only with legal section
 
 ```jsx
 import { ZopaFooter } from '@zopauk/react-components';

@@ -1,12 +1,13 @@
 import React, { HTMLAttributes } from 'react';
+import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
-import HelpText from '../../atoms/HelpText/HelpText';
+import Text from '../../atoms/Text/Text';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import InputText from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
+import { typography } from '../../../constants/typography';
+import { colors } from '../../../constants/colors';
 import { IField } from '../../types';
-import styled from 'styled-components';
-import * as colors from '../../../constants/colors';
 
 export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement> {
   prefix?: string;
@@ -42,7 +43,7 @@ const TextField = (props: ITextFieldProps) => {
   return (
     <>
       {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
-      {helpText && <HelpText>{helpText}</HelpText>}
+      {helpText && <Text>{helpText}</Text>}
       <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
     </>
@@ -65,8 +66,8 @@ const Prefix = styled.span<IPrefixProps>`
     bottom: 0;
     display: flex;
     align-items: center;
-    font-size: 20px;
-    color: ${colors.neutral.neutral400};
+    font-size: ${typography.sizes.text[1]};
+    color: ${colors.neutral.dark};
   }
   
   input {

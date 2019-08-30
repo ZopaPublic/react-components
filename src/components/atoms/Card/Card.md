@@ -1,58 +1,30 @@
-The design team has agreed on three types of cards depending on the context.
+### Summary
 
-#### card type (_default_)
+`<Card />` can be used to highlight / categorise content within an interface.
 
-A standard or default card, which we'll assume if the type property has been omitted or set explicitly to card. As of this writing, cards of this type are non-interactable and have a border radius of 4px.
+It comes with two variations.
 
-```js { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
-import { Card } from '@zopauk/react-components';
+### Examples
+
+- Default
+
+```js { "props": { "style": { "backgroundColor": "#141E64", "border": "none"  } } }
+import { Card, Text } from '@zopauk/react-components';
 
 <Card type="card">
-  <p>I'm a card 😀 , with an explicit type prop.</p>
+  <Text as="p">I'm a card 😀 , with an explicit type prop.</Text>
 </Card>;
 ```
 
-#### linkCard type
-
-A card that is meant to be clickable and respond to user interactions (hover effects et al). Border radius of 8px. Note that any additional **styles and effects are meant to be added separately** by using this component as a base on which to build another with the desired effects.
+- Link variation
 
 Cards of type `"linkCard"` are meant to be used to build components that interact with user actions.
 
-```js { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
-import { Card, Header3 } from '@zopauk/react-components';
+```js { "props": { "style": { "backgroundColor": "#141E64",  "border": "none" } } }
+import { Card, Text, Heading } from '@zopauk/react-components';
 
-<div onClick={() => alert("You're a winner!")}>
-  <Card type="linkCard">
-    <Header3>New rates today! 💸</Header3>
-    <p>Find out how you can benefit the most from our new rates.</p>
-  </Card>
-</div>;
-```
-
-#### button type
-
-Same as above, but meant to appear as a button with minimal content. Has semicircular borders on horizontal axis.
-
-A card is entirely white (`colors.base.white`) by default.
-
-```jsx
-<div>
-  <div data-comment="Button 1" style={{ marginBottom: '20px' }}>
-    <Card type="button" backgroundColor={colors.primary.teal600}>
-      I look like a button
-    </Card>
-  </div>
-
-  <div data-comment="Button 2" style={{ marginBottom: '20px' }}>
-    <Card type="button" backgroundColor={colors.primary.teal600}>
-      <div style={{ textAlign: 'center' }}>Mix and match for desired effects</div>
-    </Card>
-  </div>
-
-  <div data-comment="Button 3">
-    <Card type="button" backgroundColor={colors.primary.teal600} display="inline-block">
-      Inline button example
-    </Card>
-  </div>
-</div>
+<Card type="linkCard" onClick={() => alert("You're a winner!")}>
+  <Heading as="h3">New rates today! 💸</Heading>
+  <Text as="p">Find out how you can benefit the most from our new rates.</Text>
+</Card>;
 ```

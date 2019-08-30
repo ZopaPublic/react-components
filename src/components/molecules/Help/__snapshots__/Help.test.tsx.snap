@@ -1,12 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Help /> renders the default Help component with no a11y violations 1`] = `
+.c6 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  display: block;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c8 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.c9 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.c11 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .c7 {
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  font-weight: bold;
-  color: #4B3CFA;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .c7:hover {
@@ -15,6 +74,20 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 
 .c7:active {
   opacity: 0.72;
+}
+
+.c4 {
+  color: #0D0A38;
+  font-size: 24px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.2;
+  -webkit-letter-spacing: -0.5px;
+  -moz-letter-spacing: -0.5px;
+  -ms-letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .c3 {
@@ -62,41 +135,8 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-items: flex-start;
 }
 
-.c9 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
-
-.c4 {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: Alverata,"Arial Black",Verdana,sans-serif;
-}
-
-.c6 {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
-
 .c0 {
-  background: white;
+  background: #FFFFFF;
   padding: 80px 16px;
   box-sizing: border-box;
 }
@@ -106,7 +146,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   max-width: 900px;
 }
 
-.c8 {
+.c10 {
   max-width: 350px;
 }
 
@@ -171,54 +211,54 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         class="c5"
         cols="12"
       >
-        <p
+        <span
           class="c6"
         >
           <a
-            class="c7"
+            class="c7 c8"
             href="mailto:savings@zopa.com"
           >
             savings@zopa.com
           </a>
-        </p>
-        <p
+        </span>
+        <span
           class="c6"
         >
           <a
-            class="c7"
+            class="c7 c8"
             href="tel:020 7580 6060"
           >
             020 7580 6060 
           </a>
           for loans
-        </p>
-        <p
-          class="c6"
+        </span>
+        <span
+          class="c9"
         >
           <a
-            class="c7"
+            class="c7 c8"
             href="tel:020 7291 8331"
           >
             020 7291 8331 
           </a>
           for investments
-        </p>
+        </span>
       </div>
       <div
         class="c5"
         cols="12"
       >
         <div
-          class="c8"
+          class="c10"
         >
           <p
-            class="c6"
+            class="c9"
           >
             Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
           </p>
         </div>
         <p
-          class="c9"
+          class="c11"
         >
           We can't take applications over the phone. UK residents only. Calls may be monitored.
         </p>

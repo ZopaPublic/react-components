@@ -1,4 +1,8 @@
-This component is a wrapper around the svg code for Profile's icon.
+### Summary
+
+Use it to render a user profile icon.
+
+### Example
 
 ```jsx
 import { ProfileIcon } from '@zopauk/react-components';

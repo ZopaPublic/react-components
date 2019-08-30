@@ -5,9 +5,22 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .c0 {
@@ -30,7 +43,6 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4B3CFA;
 }
 
 .c1 svg {
@@ -40,33 +52,33 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
 }
 
 .c3 {
-  color: #4B3CFA;
-  padding-left: 12px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
+  color: #4A3EDE;
+  padding-left: 8px;
 }
 
 <button
+  aria-controls="one-section"
+  aria-disabled="false"
+  aria-expanded="false"
   class="c0"
+  data-testid="header"
+  id="one"
 >
-  <span
+  <div
     class="c1"
   >
     <svg
-      aria-label="Arrow pointing down"
+      aria-label="Arrow pointing right"
       class="c2"
-      direction="down"
-      height="12px"
+      direction="right"
+      height="10px"
       role="img"
       viewBox="0 0 11 5"
-      width="12px"
+      width="10px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <title>
-        arrow pointing 
-        down
+        arrow pointing right
       </title>
       <g
         fill="none"
@@ -76,7 +88,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
         stroke-width="1"
       >
         <g
-          fill="#4B3CFA"
+          fill="#4A3EDE"
           fill-rule="nonzero"
           id="accordion/open"
           transform="translate(0.000000, -14.000000)"
@@ -94,10 +106,10 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
       </g>
     </svg>
     <span
-      class="c3"
+      class="c3 c4"
     >
-      Content
+      Header
     </span>
-  </span>
+  </div>
 </button>
 `;

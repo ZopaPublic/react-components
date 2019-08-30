@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, fireEvent, render } from '@testing-library/react';
-import Navbar from '../Navbar';
+import Navbar from '..';
 
 describe('<Navbar.Dropdown />', () => {
   const items = [{ label: 'one', href: '#' }, { label: 'two', href: '#' }];

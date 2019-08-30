@@ -1,7 +1,8 @@
 import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 import React from 'react';
 import styled, { css } from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import InputText from '../../atoms/InputText/InputText';
@@ -42,22 +43,18 @@ export interface IDropdownFilteredProps
 }
 
 const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
-  // TODO: Temporary hack. InputText margin has been added. We should think how to achieve the same behaviour without margin
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
-
-  transition: border 0s;
-
   ${({ isOpen }) =>
     isOpen &&
     css`
       box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
       border-radius: 4px 4px 0 0;
-      border-color: ${colors.primary.blue500};
+      border-color: ${colors.base.secondary};
       border-bottom: 0;
 
-      // Hack to simulate a border in the bottom in the input as :after
-      // pseudo-elements doesn't work with inputs
-      background: linear-gradient(${colors.neutral.neutral75}, ${colors.neutral.neutral75});
+      /* Hack to simulate a border in the bottom in the input as :after
+         pseudo-elements doesn't work with inputs */
+      background: linear-gradient(${colors.neutral.light}, ${colors.neutral.light});
       background-size: 95% 1px;
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -70,23 +67,23 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
 const Option = styled.div<IOption>`
   cursor: pointer;
   padding: 8px;
-  font-size: 20px;
+  font-size: ${typography.sizes.text[1]};
   font-weight: 600;
   line-height: 32px;
-  color: ${colors.neutral.neutral400}
+  color: ${colors.neutral.dark}
     ${({ selected, highLighted }) =>
       (selected || highLighted) &&
       css`
-        color: ${colors.base.white};
-        background-color: ${colors.primary.blue500};
+        color: ${colors.neutral.white};
+        background-color: ${colors.base.secondary};
       `};
 `;
 
 const Options = styled.div<IOptionsListProps>`
   z-index: 1;
   width: 100%;
-  background: ${colors.base.white};
-  border: 2px solid ${colors.primary.blue500};
+  background: ${colors.neutral.white};
+  border: 2px solid ${colors.base.secondary};
   border-top: 0;
   position: absolute;
   overflow: auto;
@@ -101,8 +98,8 @@ const SearchInputWrapper = styled.div`
 
 const SearchArrow = styled(Chevron)`
   position: absolute;
-  margin: auto;
-  top: 0;
+  top: 50%;
+  transform: translateY(-45%);
   bottom: 0;
   right: 12px;
   cursor: pointer;
@@ -177,7 +174,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
           />
           <SearchArrow
             direction={isOpen ? 'up' : 'down'}
-            color={disabled ? colors.neutral.neutral400 : colors.extended.blue500}
+            color={disabled ? colors.neutral.light : colors.base.secondary}
             onClick={() => {
               if (!disabled) {
                 if (isOpen) {

@@ -1,12 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
-.c3 {
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c3 {
   display: block;
 }
 
@@ -28,7 +36,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c1:checked + label:before {
   content: '';
-  background-color: #4033D5;
+  background-color: #4A3EDE;
 }
 
 .c1:checked + label:after {
@@ -40,7 +48,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c1:focus + label:before {
-  border: 2px #B7B1FD solid;
+  border: 2px #4A3EDE solid;
 }
 
 .c2 {
@@ -50,14 +58,17 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: -ms-flexbox;
   display: flex;
   font-weight: 400;
-  line-height: 24px;
-  color: #1C2139;
+  color: #0D0A38;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2:before {
   content: '';
-  background-color: #EDEDF0;
+  background-color: #EAEAEE;
   border-radius: 6px;
   height: 24px;
   width: 24px;
@@ -65,7 +76,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 8px;
-  border: 2px #fff solid;
+  border: 2px #FFFFFF solid;
   display: block;
 }
 
@@ -85,7 +96,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c2:hover:before {
-  border: 2px #B7B1FD solid;
+  border: 2px #C5C6CD solid;
 }
 
 <div
@@ -98,7 +109,8 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="c2 c3"
+    class="c2 c3 c4"
+    color="#0D0A38"
     for="checkbox-id-test1"
   >
     hello

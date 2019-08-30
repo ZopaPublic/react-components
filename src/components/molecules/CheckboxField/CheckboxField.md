@@ -1,17 +1,19 @@
-This is a wrapper of 2 different components:
+### Summary
 
-- Build-in custom checkbox input: This component is attached to the `label` so it's not possible to use standalone.
-- InputLabel: Only rendered if the prop `label` is filled in. This component has his own custom styles to show the
-  checkbox image (square), so it's not possible to use standalone.
-- ErrorMessage: Error message. Only rendered if the prop `errorMessage` is filled in.
+`<CheckboxField />` is a convenience wrapper around HTML `<input type="checkbox" />` and two **atoms**:
 
-`inputProps.name` must be set so it's used to automatically set:
+- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 
-- `htmlFor` in the `InputLabel` component.
-- `data-automation` in the `ErrorMessage`
-- `id` in `InputCheckbox` for automation test purposes.
+⚠️ &nbsp;Note that a `name` prop **must be provided** to automatically set:
 
-#### Default state
+- `htmlFor` prop in `<InputLabel />`
+- `data-automation` prop in `<ErrorMessage />`
+- `id` prop in `<input type="checkbox" />` for accessibility and automation purposes
+
+### Examples
+
+- Default
 
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
@@ -19,7 +21,7 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField inputProps={{ name: 'check1' }} />;
 ```
 
-#### Checked
+- Checked state
 
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
@@ -27,7 +29,7 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField inputProps={{ name: 'text2', defaultChecked: true }} />;
 ```
 
-#### With label
+- With a label
 
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
@@ -39,7 +41,7 @@ import { CheckboxField } from '@zopauk/react-components';
 </>;
 ```
 
-#### With error
+- With an error
 
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
