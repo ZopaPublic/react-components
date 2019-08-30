@@ -48,6 +48,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c7 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;

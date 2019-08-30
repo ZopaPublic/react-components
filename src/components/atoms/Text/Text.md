@@ -78,8 +78,8 @@ import { Text, colors } from '@zopauk/react-components';
   <Text color={colors.neutral.white} mb>
     White
   </Text>
-  <Text color={colors.neutral.medium} mb>
-    Medium
+  <Text color={colors.neutral.nearDark} mb>
+    Near Dark
   </Text>
   <Text color={colors.neutral.dark} mb>
     Dark

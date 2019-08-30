@@ -206,6 +206,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c6 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;

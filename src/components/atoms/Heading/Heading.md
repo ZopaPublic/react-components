@@ -43,13 +43,16 @@ import { Heading } from '@zopauk/react-components';
 
 - Colors
 
-```jsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```jsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
 import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
 
 <Fragment>
   <Heading as="h4" color={colors.neutral.white}>
     White
+  </Heading>
+  <Heading as="h4" color={colors.neutral.nearDark}>
+    Near Dark
   </Heading>
   <Heading as="h4" color={colors.neutral.dark} mb={false}>
     Dark

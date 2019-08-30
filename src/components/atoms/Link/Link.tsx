@@ -10,6 +10,7 @@ export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement
 export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
 
 const SLink = styled(Text)`
+  font-size: inherit;
   cursor: pointer;
   text-decoration: none;
   user-select: none;
