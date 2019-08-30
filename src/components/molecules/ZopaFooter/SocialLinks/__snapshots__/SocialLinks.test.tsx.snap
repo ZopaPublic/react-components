@@ -82,6 +82,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 .c3 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;

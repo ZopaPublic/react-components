@@ -1,5 +1,5 @@
-export type TTextHexColors = '#FFFFFF' | '#C5C6CD' | '#0D0A38' | '#1EC06A' | '#EE0505';
-export type THeadingHexColors = '#FFFFFF' | '#0D0A38';
+export type TTextHexColors = '#FFFFFF' | '#63637E' | '#0D0A38' | '#1EC06A' | '#EE0505';
+export type THeadingHexColors = '#FFFFFF' | '#63637E' | '#0D0A38';
 export type TLinkHexColors = '#FFFFFF' | '#0D0A38';
 
 export const colors = {
@@ -9,8 +9,10 @@ export const colors = {
   },
   neutral: {
     white: '#FFFFFF',
+    nearWhite: '#F8F8F8',
     light: '#EAEAEE',
-    medium: '#C5C6CD',
+    medium: '#DCDBE2',
+    nearDark: '#63637E',
     dark: '#0D0A38',
   },
   semantic: {

@@ -48,7 +48,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: inline-block;
   vertical-align: top;
   margin-right: 8px;
-  border: 2px #C5C6CD solid;
+  border: 2px #DCDBE2 solid;
 }
 
 .c3:hover {
@@ -56,7 +56,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c3:hover:before {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
 }
 
 .c2 {
@@ -103,11 +103,11 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c2:disabled + label {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c2:disabled + label:before {
-  border-color: #C5C6CD;
+  border-color: #DCDBE2;
   background-color: #EAEAEE;
 }
 

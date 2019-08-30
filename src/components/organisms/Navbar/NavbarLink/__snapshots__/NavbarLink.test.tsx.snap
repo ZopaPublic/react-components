@@ -15,6 +15,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 }
 
 .c1 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -82,6 +83,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 .c1 {
+  font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
