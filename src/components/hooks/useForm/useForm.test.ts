@@ -74,6 +74,24 @@ describe('useForm', () => {
   });
 
   describe('handleSubmit', () => {
+    it('should mark all fields as touched', () => {
+      const preventDefault = jest.fn();
+      const { result } = renderHook(() =>
+        useForm({
+          initialValues,
+          onSubmit,
+          validate,
+        }),
+      );
+      expect(result.current.getFieldProps('name').touched).toEqual(false);
+      expect(result.current.getFieldProps('lastName').touched).toEqual(false);
+      act(() => {
+        result.current.handleSubmit({ preventDefault });
+      });
+      expect(result.current.getFieldProps('name').touched).toEqual(true);
+      expect(result.current.getFieldProps('lastName').touched).toEqual(true);
+    });
+
     it('should fire provided onSubmit callback with form values', () => {
       const preventDefault = jest.fn();
       const { result } = renderHook(() =>
@@ -140,7 +158,7 @@ describe('useForm', () => {
       });
 
       act(() => {
-        result.current.getFieldProps('name').onChange({ target: { value: 'test' } });
+        result.current.getFieldProps('name').onChange('test');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: 'test',
@@ -148,7 +166,7 @@ describe('useForm', () => {
       });
 
       act(() => {
-        result.current.getFieldProps('name').onChange({ target: { value: '' } });
+        result.current.getFieldProps('name').onChange('');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: '',
