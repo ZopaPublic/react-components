@@ -7,7 +7,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
   height: 46px;
@@ -44,7 +44,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
   height: 46px;
@@ -87,7 +87,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
   height: 46px;
@@ -131,7 +131,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
   height: 46px;

@@ -48,13 +48,13 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
     isOpen &&
     css`
       box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
-      border-radius: 4px 4px 0 0;
+      border-radius: 6px 6px 0 0;
       border-color: ${colors.base.secondary};
       border-bottom: 0;
 
       /* Hack to simulate a border in the bottom in the input as :after
          pseudo-elements doesn't work with inputs */
-      background: linear-gradient(${colors.neutral.light}, ${colors.neutral.light});
+      background: linear-gradient(${colors.neutral.nearWhite}, ${colors.neutral.nearWhite});
       background-size: 95% 1px;
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -87,9 +87,9 @@ const Options = styled.div<IOptionsListProps>`
   border-top: 0;
   position: absolute;
   overflow: auto;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 6px 6px;
   max-height: ${({ optionsListMaxHeight = 'auto' }) => optionsListMaxHeight};
-  box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
+  box-shadow: 0 2px 1px 2px rgba(28, 33, 57, 0.15);
 `;
 
 const SearchInputWrapper = styled.div`

@@ -19,7 +19,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5 {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -40,7 +40,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c5:disabled {
@@ -130,7 +130,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
 .c3 {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -151,7 +151,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c3::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c3:disabled {

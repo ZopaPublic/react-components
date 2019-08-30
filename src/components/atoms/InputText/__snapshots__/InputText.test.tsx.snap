@@ -2,7 +2,7 @@
 
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -23,7 +23,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c0:disabled {
@@ -60,7 +60,7 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c0:disabled {
@@ -75,7 +75,7 @@ exports[`<InputText /> renders the component with error 1`] = `
 
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -96,7 +96,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c0:disabled {
@@ -132,7 +132,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c0:disabled {
@@ -147,7 +147,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
-  border: 2px solid #C5C6CD;
+  border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
@@ -168,7 +168,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #C5C6CD;
+  color: #DCDBE2;
 }
 
 .c0:disabled {
