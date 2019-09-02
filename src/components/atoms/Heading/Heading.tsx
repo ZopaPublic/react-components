@@ -2,7 +2,7 @@ import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import Text from '../Text/Text';
 import { typography } from '../../../constants/typography';
-import { colors, THeadingHexColors } from '../../../constants/colors';
+import { colors, INeutralColorSpec } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 const {
@@ -21,7 +21,7 @@ interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    */
-  color?: THeadingHexColors;
+  color?: INeutralColorSpec['white'] | INeutralColorSpec['nearDark'] | INeutralColorSpec['dark'];
 }
 
 const StyledHeading = styled(Text)<IStyledHeadingProps>`

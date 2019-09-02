@@ -2,7 +2,7 @@ import React from 'react';
 import { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, TTextHexColors } from '../../../constants/colors';
+import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
 
 export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagraphElement> {
   /**
@@ -24,7 +24,12 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagra
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Heading />`.
    */
-  color?: TTextHexColors;
+  color?:
+    | INeutralColorSpec['white']
+    | INeutralColorSpec['nearDark']
+    | INeutralColorSpec['dark']
+    | ISemanticColorSpec['success']
+    | ISemanticColorSpec['error'];
 }
 
 const Text = styled.span<ITextProps>`

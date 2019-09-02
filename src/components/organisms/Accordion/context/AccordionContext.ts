@@ -6,7 +6,7 @@ import {
   TIsActiveAccordionSection,
 } from '../../../hooks/useAccordion/useAccordion';
 
-interface IAccordionContext {
+export interface IAccordionContext {
   getHeaderProps: TGetAccordionHeaderProps;
   getSectionProps: TGetAccordionSectionProps;
   isActiveSection: TIsActiveAccordionSection;

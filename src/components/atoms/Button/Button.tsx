@@ -136,7 +136,7 @@ const SButton = styled.button<IButtonProps>`
 
   &:disabled {
     cursor: not-allowed;
-    color: ${colors.neutral.medium};
+    color: #b2b2b2;
     background-color: ${colors.neutral.light};
   }
 `;
