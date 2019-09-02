@@ -164,7 +164,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/loans/car-loans"
+            href="https://www.zopa.com/loans/car-loans"
           >
             Car loans
           </a>
@@ -175,7 +175,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/loans/debt-consolidation"
+            href="https://www.zopa.com/loans/debt-consolidation"
           >
             Debt consolidation loans
           </a>
@@ -186,7 +186,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/loans/home-improvement"
+            href="https://www.zopa.com/loans/home-improvement"
           >
             Home improvement loans
           </a>
@@ -197,7 +197,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/loans/wedding"
+            href="https://www.zopa.com/loans/wedding"
           >
             Wedding loans
           </a>
@@ -208,7 +208,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/invest"
+            href="https://www.zopa.com/invest"
           >
             Peer-to-peer investments
           </a>
@@ -219,7 +219,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/invest/isa"
+            href="https://www.zopa.com/invest/isa"
           >
             Innovative Finance ISA
           </a>
@@ -248,7 +248,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about"
+            href="https://www.zopa.com/about"
           >
             About Us
           </a>
@@ -259,7 +259,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/our-story"
+            href="https://www.zopa.com/about/our-story"
           >
             Our story
           </a>
@@ -270,7 +270,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/board"
+            href="https://www.zopa.com/about/board"
           >
             Meet the board
           </a>
@@ -281,7 +281,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/leadership"
+            href="https://www.zopa.com/about/leadership"
           >
             Meet the leadership team
           </a>
@@ -292,7 +292,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/awards"
+            href="https://www.zopa.com/about/awards"
           >
             Awards
           </a>
@@ -303,7 +303,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/careers"
+            href="https://www.zopa.com/about/careers"
           >
             Careers
           </a>
@@ -314,7 +314,18 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/about/press"
+            href="https://blog.zopa.com"
+          >
+            Blog
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6 c7 c8"
+            color="#4A3EDE"
+            href="https://www.zopa.com/about/press"
           >
             Press team
           </a>
@@ -325,7 +336,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/feelgood"
+            href="https://www.zopa.com/feelgood"
           >
             New products
           </a>
@@ -354,7 +365,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/cookie-policy"
+            href="https://www.zopa.com/cookie-policy"
           >
             Cookie policy
           </a>
@@ -365,7 +376,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/conflicts-policy"
+            href="https://www.zopa.com/conflicts-policy"
           >
             Conflicts policy
           </a>
@@ -376,7 +387,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/modern-slavery"
+            href="https://www.zopa.com/modern-slavery"
           >
             Modern slavery
           </a>
@@ -387,7 +398,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/website-terms"
+            href="https://www.zopa.com/website-terms"
           >
             Website terms
           </a>
@@ -416,7 +427,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/contact"
+            href="https://www.zopa.com/contact"
           >
             Support
           </a>
@@ -427,7 +438,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/support/faqs"
+            href="https://www.zopa.com/support/faqs"
           >
             Common Questions
           </a>
@@ -438,7 +449,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://zopa.com/sitemap"
+            href="https://www.zopa.com/sitemap"
           >
             Sitemap
           </a>

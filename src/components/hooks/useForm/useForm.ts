@@ -6,13 +6,27 @@ export type TValues = Record<string, TValue>;
 
 export type TErrors = Record<string, string | undefined>;
 
-export interface TUseFormProps {
+export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
   validate?: (values: TValues) => TErrors;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps) => {
+export interface IFieldProps {
+  error: string | undefined;
+  touched: boolean;
+  value: TValue;
+  onChange: (e: any) => void;
+  onBlur: () => void;
+}
+
+export interface TUseFormValues {
+  getFieldProps: (name: string) => IFieldProps;
+  invalid: boolean;
+  handleSubmit: (values: TValues) => void;
+}
+
+const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseFormValues => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
@@ -33,8 +47,8 @@ const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps) => {
       error: errors[name],
       touched: !!touched[name],
       value: values[name],
-      onChange(e) {
-        const newValues = { ...values, [name]: e.target.value };
+      onChange(value) {
+        const newValues = { ...values, [name]: value };
         updateValues(newValues);
         runValidation(newValues);
       },
@@ -48,6 +62,15 @@ const useForm = ({ initialValues, validate, onSubmit }: TUseFormProps) => {
   const handleSubmit = useCallback(
     e => {
       e.preventDefault();
+      updateTouched(
+        Object.keys(initialValues).reduce(
+          (acc, key) => ({
+            ...acc,
+            [key]: true,
+          }),
+          {},
+        ),
+      );
       if (!invalid) {
         onSubmit(values);
       }

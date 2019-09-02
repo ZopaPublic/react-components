@@ -37,27 +37,27 @@ const linkGroups = [
     heading: 'What we do',
     links: [
       {
-        href: 'https://zopa.com/loans/car-loans',
+        href: 'https://www.zopa.com/loans/car-loans',
         label: 'Car loans',
       },
       {
-        href: 'https://zopa.com/loans/debt-consolidation',
+        href: 'https://www.zopa.com/loans/debt-consolidation',
         label: 'Debt consolidation loans',
       },
       {
-        href: 'https://zopa.com/loans/home-improvement',
+        href: 'https://www.zopa.com/loans/home-improvement',
         label: 'Home improvement loans',
       },
       {
-        href: 'https://zopa.com/loans/wedding',
+        href: 'https://www.zopa.com/loans/wedding',
         label: 'Wedding loans',
       },
       {
-        href: 'https://zopa.com/invest',
+        href: 'https://www.zopa.com/invest',
         label: 'Peer-to-peer investments',
       },
       {
-        href: 'https://zopa.com/invest/isa',
+        href: 'https://www.zopa.com/invest/isa',
         label: 'Innovative Finance ISA',
       },
     ],
@@ -66,35 +66,39 @@ const linkGroups = [
     heading: 'About Zopa',
     links: [
       {
-        href: 'https://zopa.com/about',
+        href: 'https://www.zopa.com/about',
         label: 'About Us',
       },
       {
-        href: 'https://zopa.com/about/our-story',
+        href: 'https://www.zopa.com/about/our-story',
         label: 'Our story',
       },
       {
-        href: 'https://zopa.com/about/board',
+        href: 'https://www.zopa.com/about/board',
         label: 'Meet the board',
       },
       {
-        href: 'https://zopa.com/about/leadership',
+        href: 'https://www.zopa.com/about/leadership',
         label: 'Meet the leadership team',
       },
       {
-        href: 'https://zopa.com/about/awards',
+        href: 'https://www.zopa.com/about/awards',
         label: 'Awards',
       },
       {
-        href: 'https://zopa.com/about/careers',
+        href: 'https://www.zopa.com/about/careers',
         label: 'Careers',
       },
       {
-        href: 'https://zopa.com/about/press',
+        href: 'https://blog.zopa.com',
+        label: 'Blog',
+      },
+      {
+        href: 'https://www.zopa.com/about/press',
         label: 'Press team',
       },
       {
-        href: 'https://zopa.com/feelgood',
+        href: 'https://www.zopa.com/feelgood',
         label: 'New products',
       },
     ],
@@ -103,19 +107,19 @@ const linkGroups = [
     heading: 'Legal',
     links: [
       {
-        href: 'https://zopa.com/cookie-policy',
+        href: 'https://www.zopa.com/cookie-policy',
         label: 'Cookie policy',
       },
       {
-        href: 'https://zopa.com/conflicts-policy',
+        href: 'https://www.zopa.com/conflicts-policy',
         label: 'Conflicts policy',
       },
       {
-        href: 'https://zopa.com/modern-slavery',
+        href: 'https://www.zopa.com/modern-slavery',
         label: 'Modern slavery',
       },
       {
-        href: 'https://zopa.com/website-terms',
+        href: 'https://www.zopa.com/website-terms',
         label: 'Website terms',
       },
     ],
@@ -124,15 +128,15 @@ const linkGroups = [
     heading: 'Navigation',
     links: [
       {
-        href: 'https://zopa.com/contact',
+        href: 'https://www.zopa.com/contact',
         label: 'Support',
       },
       {
-        href: 'https://zopa.com/support/faqs',
+        href: 'https://www.zopa.com/support/faqs',
         label: 'Common Questions',
       },
       {
-        href: 'https://zopa.com/sitemap',
+        href: 'https://www.zopa.com/sitemap',
         label: 'Sitemap',
       },
     ],

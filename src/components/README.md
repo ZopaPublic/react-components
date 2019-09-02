@@ -10,5 +10,5 @@ import { Button, Text, FlexCol } from '@zopauk/react-components';
 <SizeContainer size="short">
   <Button>Click me</Button>
   <Text>Hi!</Text>
-</SizeContainer>
+</SizeContainer>;
 ```
