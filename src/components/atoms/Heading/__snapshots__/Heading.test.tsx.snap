@@ -17,7 +17,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
 
 @media (max-width:600px) {
   .c0 {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -111,7 +111,7 @@ exports[`<Heading /> renders without  a11y violations 1`] = `
 
 @media (max-width:600px) {
   .c0 {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
