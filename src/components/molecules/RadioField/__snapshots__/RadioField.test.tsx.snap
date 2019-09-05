@@ -32,6 +32,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-size: 14px;
   line-height: 24px;
   color: #0D0A38;
   font-weight: 400;

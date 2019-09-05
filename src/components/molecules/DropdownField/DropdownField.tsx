@@ -42,7 +42,7 @@ function DropdownField(props: IDropdownFieldProps) {
   return (
     <>
       {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
-      {helpText && <Help>{helpText}</Help>}
+      {helpText && <Help size="small">{helpText}</Help>}
       <SizedContainer size={size}>{input}</SizedContainer>
       {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
     </>

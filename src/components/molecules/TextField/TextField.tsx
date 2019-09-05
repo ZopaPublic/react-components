@@ -43,7 +43,7 @@ const TextField = (props: ITextFieldProps) => {
   return (
     <>
       {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
-      {helpText && <Text>{helpText}</Text>}
+      {helpText && <Text size="small">{helpText}</Text>}
       <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
     </>
@@ -66,7 +66,7 @@ const Prefix = styled.span<IPrefixProps>`
     bottom: 0;
     display: flex;
     align-items: center;
-    font-size: ${typography.sizes.text[1]};
+    font-size: ${typography.sizes.text.base};
     color: ${colors.neutral.dark};
   }
   

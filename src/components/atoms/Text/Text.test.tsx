@@ -33,10 +33,9 @@ describe('<Text />', () => {
   });
 
   it.each`
-    size        | pixels
-    ${'large'}  | ${'16px'}
-    ${'medium'} | ${'14px'}
-    ${'small'}  | ${'12px'}
+    size       | pixels
+    ${'base'}  | ${'16px'}
+    ${'small'} | ${'14px'}
   `('can render at different sizes:  $size – $pixels', ({ size, pixels }) => {
     const { container } = render(<Text size={size}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('font-size', pixels);

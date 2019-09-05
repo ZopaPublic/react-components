@@ -75,17 +75,17 @@ const hoverFontColors: Partial<TButtonStylingMapping> = {
 };
 
 const fontSizes: TButtonSizingMapping = {
-  compact: '12px',
-  default: '14px',
+  compact: '14px',
+  default: '16px',
   large: '18px',
-  small: '12px',
+  small: '16px',
 };
 
 const paddings: TButtonSizingMapping = {
-  compact: '4px 14px',
-  default: '10px 30px',
-  large: '10px 30px',
-  small: '6px 22px',
+  compact: '4px 16px',
+  default: '12px 32px',
+  large: '12px 32px',
+  small: '8px 24px',
 };
 
 const SText = styled.span<IButtonProps>`
