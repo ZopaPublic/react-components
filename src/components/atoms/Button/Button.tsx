@@ -82,10 +82,10 @@ const fontSizes: TButtonSizingMapping = {
 };
 
 const paddings: TButtonSizingMapping = {
-  compact: '4px 16px',
-  default: '12px 32px',
-  large: '12px 32px',
-  small: '8px 24px',
+  compact: '4px 20px',
+  default: '12px 40px 14px',
+  large: '12px 38px 14px',
+  small: '8px 30px',
 };
 
 const SText = styled.span<IButtonProps>`
@@ -107,7 +107,7 @@ const SButton = styled.button<IButtonProps>`
   font-weight: ${typography.weights.semibold};
   cursor: pointer;
   border: none;
-  border-radius: 48px;
+  border-radius: 8px;
   color: ${({ contrastColor }) => contrastColor};
   color: ${({ styling }) => styling && fontColors[styling]};
   background-color: ${({ styling }) => styling && backgroundColors[styling]};
