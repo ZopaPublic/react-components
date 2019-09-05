@@ -26,7 +26,6 @@ describe('<Badge />', () => {
     size
     ${'small'}
     ${'medium'}
-    ${'large'}
   `('renders with specific size: $size', ({ size }) => {
     const { container } = render(<Badge size={size}>Content</Badge>);
     expect(container.firstChild).toMatchSnapshot();

@@ -33,7 +33,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
     position: absolute;
     top: 10px;
     right: 0;
-    font-size: ${typography.sizes.text[3]};
+    font-size: ${typography.sizes.text.small};
     line-height: 16px;
     font-weight: 600;
     color: ${colors.neutral.dark};

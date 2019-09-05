@@ -36,21 +36,21 @@ const Help: React.FunctionComponent<IHelpProps> = ({ email }) => (
       </FlexRow>
       <FlexRow gutter={16}>
         <FlexCol xs={12} l={6}>
-          <Text size="large" mb>
+          <Text mb>
             <Link href={`mailto:${email}`}>{email}</Link>
           </Text>
-          <Text size="large" mb>
+          <Text mb>
             <Link href="tel:020 7580 6060">020 7580 6060 </Link>
             for loans
           </Text>
-          <Text size="large">
+          <Text>
             <Link href="tel:020 7291 8331">020 7291 8331 </Link>
             for investments
           </Text>
         </FlexCol>
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
-            <Text size="large" as="p">
+            <Text as="p" mb>
               Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
             </Text>
           </OpeningHoursWrapper>

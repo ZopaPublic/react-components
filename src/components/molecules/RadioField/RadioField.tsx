@@ -22,11 +22,12 @@ const FieldContainer = styled(SizedContainer)`
 
 const Label = styled(InputLabel)<IInputStatus>`
   display: flex;
-  font-size: ${typography.sizes.text[1]};
+  font-size: ${typography.sizes.text.small};
   line-height: 24px;
   color: ${colors.neutral.dark};
   font-weight: 400;
   position: relative;
+
   &:before {
     content: '';
     background-color: ${colors.neutral.light};

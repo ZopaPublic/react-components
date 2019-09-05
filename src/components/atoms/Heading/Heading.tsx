@@ -28,7 +28,7 @@ const StyledHeading = styled(Text)<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   
   font-size: ${({ as }) => headingSizes[as]};
-  ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 36px;`}
+  ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
   
   font-family: ${typography.primary};
   font-weight: ${typography.weights.semibold};

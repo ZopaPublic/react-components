@@ -18,7 +18,7 @@ Use `<Link />` to create hyperlinks to other web pages, files, locations within 
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
-<Text size="large" as="p">
+<Text as="p">
   Some text with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
@@ -31,7 +31,7 @@ import { Text, Link } from '@zopauk/react-components';
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Text, Link, colors } from '@zopauk/react-components';
 
-<Text size="large" as="p" color={colors.neutral.white}>
+<Text as="p" color={colors.neutral.white}>
   Some text with
   <Link
     color={colors.neutral.white}
@@ -49,7 +49,7 @@ import { Text, Link, colors } from '@zopauk/react-components';
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
-<Text size="large" as="p">
+<Text as="p">
   Some text with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
@@ -62,7 +62,7 @@ import { Text, Link } from '@zopauk/react-components';
 ```js
 import { Text, Link } from '@zopauk/react-components';
 
-<Text size="large" as="p">
+<Text as="p">
   Some text with
   <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link

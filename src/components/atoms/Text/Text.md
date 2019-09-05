@@ -43,11 +43,10 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text size="large" mb>
-    Size 1 ( 16px )
+  <Text mb>Medium ( 16px, default )</Text>
+  <Text size="small" mb>
+    Small ( 14px, small )
   </Text>
-  <Text mb>Size 2 ( 14px, default )</Text>
-  <Text size="small">Size 3 ( 12px )</Text>
 </Fragment>;
 ```
 

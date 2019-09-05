@@ -11,7 +11,7 @@
 import { Accordion } from '@zopauk/react-components';
 
 <Accordion aria-label="accordion">
-  <Accordion.Header id="first" index={0} textSize="medium">
+  <Accordion.Header id="first" index={0} textSize="base">
     accordion header
   </Accordion.Header>
 </Accordion>;

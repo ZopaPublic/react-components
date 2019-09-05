@@ -67,7 +67,7 @@ const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
 const Option = styled.div<IOption>`
   cursor: pointer;
   padding: 8px;
-  font-size: ${typography.sizes.text[1]};
+  font-size: ${typography.sizes.text.base};
   font-weight: 600;
   line-height: 32px;
   color: ${colors.neutral.dark}

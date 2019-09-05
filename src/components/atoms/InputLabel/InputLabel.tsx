@@ -10,7 +10,7 @@ const StyledLabel = styled(Text)`
 `;
 
 const InputLabel = (props: IInputLabelProps) => (
-  <StyledLabel {...props} weight="semibold" forwardedAs="label" size="large" color={colors.neutral.dark} />
+  <StyledLabel {...props} weight="semibold" forwardedAs="label" color={colors.neutral.dark} size="base" />
 );
 
 export default InputLabel;

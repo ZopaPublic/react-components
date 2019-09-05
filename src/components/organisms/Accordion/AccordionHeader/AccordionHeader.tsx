@@ -37,12 +37,11 @@ export interface IAccordionHeader {
 }
 
 const mapTextToArrowSize = {
-  large: '14px',
-  medium: '10px',
+  base: '10px',
   small: '8px',
 };
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'medium', ...rest }) => {
+const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, ...headerPropsRest } = getHeaderProps(id, index);
   return (
