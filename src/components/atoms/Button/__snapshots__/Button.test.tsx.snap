@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -19,14 +15,14 @@ exports[`Alert button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #EE0505;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #EE0505;
   -webkit-transition: all 140ms ease-in-out;
@@ -54,26 +50,17 @@ exports[`Alert button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Alert
-  </span>
+  Alert
 </button>
 `;
 
 exports[`Compact button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -88,14 +75,14 @@ exports[`Compact button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 16px;
+  padding: 10px 20px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -123,26 +110,17 @@ exports[`Compact button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Compact
-  </span>
+  Compact
 </button>
 `;
 
 exports[`Disabled button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -157,14 +135,14 @@ exports[`Disabled button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -192,27 +170,18 @@ exports[`Disabled button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
   disabled=""
 >
-  <span
-    class="c1"
-  >
-    Disabled
-  </span>
+  Disabled
 </button>
 `;
 
 exports[`Full width button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -228,14 +197,14 @@ exports[`Full width button renders the component with props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -263,26 +232,17 @@ exports[`Full width button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Full width
-  </span>
+  Full width
 </button>
 `;
 
 exports[`Large button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -297,14 +257,14 @@ exports[`Large button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -332,18 +292,13 @@ exports[`Large button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Large
-  </span>
+  Large
 </button>
 `;
 
@@ -367,14 +322,14 @@ exports[`Left icon button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -402,8 +357,7 @@ exports[`Left icon button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
@@ -421,10 +375,6 @@ exports[`Left icon button renders the component with props 1`] = `
 `;
 
 exports[`Link button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -439,14 +389,14 @@ exports[`Link button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   color: #4A3EDE;
   background-color: transparent;
   -webkit-transition: all 140ms ease-in-out;
@@ -468,26 +418,17 @@ exports[`Link button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Link
-  </span>
+  Link
 </button>
 `;
 
 exports[`Link contrast button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -502,14 +443,14 @@ exports[`Link contrast button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: transparent;
   -webkit-transition: all 140ms ease-in-out;
@@ -531,26 +472,17 @@ exports[`Link contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Link contrast
-  </span>
+  Link contrast
 </button>
 `;
 
 exports[`Primary button renders the component with props with no a11y violations 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -565,14 +497,14 @@ exports[`Primary button renders the component with props with no a11y violations
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -600,26 +532,17 @@ exports[`Primary button renders the component with props with no a11y violations
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Primary
-  </span>
+  Primary
 </button>
 `;
 
 exports[`Primary contrast button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -634,14 +557,14 @@ exports[`Primary contrast button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
   background-color: #FFFFFF;
   -webkit-transition: all 140ms ease-in-out;
   transition: all 140ms ease-in-out;
@@ -668,18 +591,13 @@ exports[`Primary contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Primary contrast
-  </span>
+  Primary contrast
 </button>
 `;
 
@@ -703,14 +621,14 @@ exports[`Right icon button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -738,8 +656,7 @@ exports[`Right icon button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
@@ -757,10 +674,6 @@ exports[`Right icon button renders the component with props 1`] = `
 `;
 
 exports[`Secondary button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -775,14 +688,14 @@ exports[`Secondary button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   color: #4A3EDE;
   background-color: transparent;
   -webkit-transition: all 140ms ease-in-out;
@@ -812,26 +725,17 @@ exports[`Secondary button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Secondary
-  </span>
+  Secondary
 </button>
 `;
 
 exports[`Secondary contrast button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -846,14 +750,14 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid transparent;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: transparent;
   -webkit-transition: all 140ms ease-in-out;
@@ -882,26 +786,17 @@ exports[`Secondary contrast button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Secondary contrast
-  </span>
+  Secondary contrast
 </button>
 `;
 
 exports[`Small button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -916,14 +811,14 @@ exports[`Small button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 24px;
+  padding: 15px 30px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #4A3EDE;
+  border-radius: 8px;
   color: #FFFFFF;
   background-color: #4A3EDE;
   -webkit-transition: all 140ms ease-in-out;
@@ -951,26 +846,17 @@ exports[`Small button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Small
-  </span>
+  Small
 </button>
 `;
 
 exports[`Warning button renders the component with props 1`] = `
-.c1 {
-  display: block;
-}
-
 .c0 {
   box-sizing: border-box;
   display: -webkit-inline-box;
@@ -985,14 +871,14 @@ exports[`Warning button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 32px;
+  padding: 15px 40px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid #FFB428;
+  border-radius: 8px;
   color: #0D0A38;
   background-color: #FFB428;
   -webkit-transition: all 140ms ease-in-out;
@@ -1020,17 +906,12 @@ exports[`Warning button renders the component with props 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  color: #b2b2b2;
-  background-color: #EAEAEE;
+  opacity: 0.3;
 }
 
 <button
   class="c0"
 >
-  <span
-    class="c1"
-  >
-    Warning
-  </span>
+  Warning
 </button>
 `;

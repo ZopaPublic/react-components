@@ -82,10 +82,10 @@ const fontSizes: TButtonSizingMapping = {
 };
 
 const paddings: TButtonSizingMapping = {
-  compact: '4px 16px',
-  default: '12px 32px',
-  large: '12px 32px',
-  small: '8px 24px',
+  compact: '10px 20px',
+  default: '15px 40px',
+  large: '15px 40px',
+  small: '15px 30px',
 };
 
 const SText = styled.span<IButtonProps>`
@@ -99,34 +99,34 @@ const SButton = styled.button<IButtonProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: ${props => props.fullWidth && '100%'};
-  padding: ${({ sizing }) => sizing && paddings[sizing]};
+  width: ${({ fullWidth }) => fullWidth && '100%'};
+  padding: ${({ sizing }) => paddings[sizing]};
   font-family: ${typography.primary};
-  font-size: ${({ sizing }) => sizing && fontSizes[sizing]};
-  line-height: ${({ sizing }) => (sizing === 'large' ? '30px' : '24px')};
+  font-size: ${({ sizing }) => fontSizes[sizing]};
+  line-height: 1.2;
   font-weight: ${typography.weights.semibold};
   cursor: pointer;
-  border: none;
-  border-radius: 48px;
+  border: 1px solid ${({ styling }) => backgroundColors[styling]};
+  border-radius: 8px;
   color: ${({ contrastColor }) => contrastColor};
-  color: ${({ styling }) => styling && fontColors[styling]};
-  background-color: ${({ styling }) => styling && backgroundColors[styling]};
+  color: ${({ styling }) => fontColors[styling]};
+  background-color: ${({ styling }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
 
   &:enabled {
-    box-shadow: ${({ styling }) => (styling && boxShadows[styling]) || 'none'};
+    box-shadow: ${({ styling }) => boxShadows[styling] || 'none'};
   }
 
   &:active:enabled,
   &:focus:enabled {
-    box-shadow: ${({ styling }) => styling && activeBoxShadows[styling]};
+    box-shadow: ${({ styling }) => activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
   }
 
   &:hover:enabled {
     opacity: 0.8;
-    color: ${({ styling }) => styling && hoverFontColors[styling]};
-    background-color: ${({ styling }) => styling && activeBackgroundColors[styling]};
+    color: ${({ styling }) => hoverFontColors[styling]};
+    background-color: ${({ styling }) => activeBackgroundColors[styling]};
     box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 
@@ -136,8 +136,7 @@ const SButton = styled.button<IButtonProps>`
 
   &:disabled {
     cursor: not-allowed;
-    color: #b2b2b2;
-    background-color: ${colors.neutral.light};
+    opacity: 0.3;
   }
 `;
 
@@ -146,11 +145,17 @@ const Button: React.FunctionComponent<IButtonProps> = props => {
 
   return (
     <SButton {...rest}>
-      {!!leftIcon && leftIcon}
-      <SText rightIcon={rightIcon} leftIcon={leftIcon}>
-        {children}
-      </SText>
-      {!!rightIcon && rightIcon}
+      {leftIcon || rightIcon ? (
+        <>
+          {!!leftIcon && leftIcon}
+          <SText rightIcon={rightIcon} leftIcon={leftIcon}>
+            {children}
+          </SText>
+          {!!rightIcon && rightIcon}
+        </>
+      ) : (
+        children
+      )}
     </SButton>
   );
 };
