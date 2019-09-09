@@ -104,7 +104,7 @@ const SButton = styled.button<IButtonProps>`
   font-family: ${typography.primary};
   font-size: ${({ sizing }) => fontSizes[sizing]};
   line-height: 1.2;
-  font-weight: ${typography.weights.regular};
+  font-weight: ${typography.weights.semibold};
   cursor: pointer;
   border: 1px solid ${({ styling }) => backgroundColors[styling]};
   border-radius: 8px;

@@ -19,7 +19,7 @@ exports[`Alert button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #EE0505;
   border-radius: 8px;
@@ -79,7 +79,7 @@ exports[`Compact button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -139,7 +139,7 @@ exports[`Disabled button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -201,7 +201,7 @@ exports[`Full width button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -261,7 +261,7 @@ exports[`Large button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 18px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -326,7 +326,7 @@ exports[`Left icon button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -393,7 +393,7 @@ exports[`Link button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -447,7 +447,7 @@ exports[`Link contrast button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -501,7 +501,7 @@ exports[`Primary button renders the component with props with no a11y violations
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -561,7 +561,7 @@ exports[`Primary contrast button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #FFFFFF;
   border-radius: 8px;
@@ -625,7 +625,7 @@ exports[`Right icon button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -692,7 +692,7 @@ exports[`Secondary button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -754,7 +754,7 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -815,7 +815,7 @@ exports[`Small button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #4A3EDE;
   border-radius: 8px;
@@ -875,7 +875,7 @@ exports[`Warning button renders the component with props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   cursor: pointer;
   border: 1px solid #FFB428;
   border-radius: 8px;
