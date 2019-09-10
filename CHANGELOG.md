@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/zopaUK/react-components/compare/v1.7.0...v1.7.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* **zopafoote:** updated logo styles on mobile ([7579cf5](https://github.com/zopaUK/react-components/commit/7579cf5))
+
 # [1.7.0](https://github.com/zopaUK/react-components/compare/v1.6.2...v1.7.0) (2019-08-30)
 
 
