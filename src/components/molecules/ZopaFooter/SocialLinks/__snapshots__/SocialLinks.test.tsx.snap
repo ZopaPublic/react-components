@@ -69,21 +69,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c2 {
-  font-weight: 600;
-  line-height: 1.4;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 16px;
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-
-.c2:hover {
-  color: #6F748B;
-}
-
 .c4 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -107,6 +92,33 @@ exports[`<SocialLinks /> renders the component 1`] = `
 
 .c6:hover {
   color: #6F748B;
+}
+
+.c2 {
+  font-weight: 600;
+  line-height: 1.4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2:hover {
+  color: #6F748B;
+}
+
+.c2 > svg {
+  max-width: 200px;
 }
 
 @media (min-width:0px) {
