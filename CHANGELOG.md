@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/zopaUK/react-components/compare/v1.7.1...v1.7.2) (2019-09-11)
+
+
+### Bug Fixes
+
+* **modal:** move z index to the overlay not the portal ([c8aae5f](https://github.com/zopaUK/react-components/commit/c8aae5f))
+
 ## [1.7.1](https://github.com/zopaUK/react-components/compare/v1.7.0...v1.7.1) (2019-09-10)
 
 
