@@ -70,13 +70,13 @@ const Option = styled.div<IOption>`
   font-size: ${typography.sizes.text.base};
   font-weight: 600;
   line-height: 32px;
-  color: ${colors.neutral.dark}
-    ${({ selected, highLighted }) =>
-      (selected || highLighted) &&
-      css`
-        color: ${colors.neutral.white};
-        background-color: ${colors.base.secondary};
-      `};
+  color: ${colors.neutral.dark};
+  ${({ selected, highLighted }) =>
+    (selected || highLighted) &&
+    css`
+      color: ${colors.neutral.white};
+      background-color: ${colors.base.secondary};
+    `};
 `;
 
 const Options = styled.div<IOptionsListProps>`
