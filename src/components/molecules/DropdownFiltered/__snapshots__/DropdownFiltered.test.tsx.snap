@@ -25,7 +25,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -145,7 +145,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

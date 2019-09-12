@@ -82,10 +82,10 @@ const fontSizes: TButtonSizingMapping = {
 };
 
 const paddings: TButtonSizingMapping = {
-  compact: '4px 16px',
-  default: '12px 32px',
-  large: '12px 32px',
-  small: '8px 24px',
+  compact: '6px 16px',
+  default: '14px 32px',
+  large: '14px 32px',
+  small: '10px 24px',
 };
 
 const SText = styled.span<IButtonProps>`
