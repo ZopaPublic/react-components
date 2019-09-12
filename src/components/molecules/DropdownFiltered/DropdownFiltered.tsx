@@ -43,6 +43,7 @@ export interface IDropdownFilteredProps
 }
 
 const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
+  margin: 0;
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
   ${({ isOpen }) =>
     isOpen &&
@@ -92,17 +93,18 @@ const Options = styled.div<IOptionsListProps>`
   box-shadow: 0 2px 1px 2px rgba(28, 33, 57, 0.15);
 `;
 
-const SearchInputWrapper = styled.div`
+const SearchInputWrap = styled.div`
   position: relative;
+  margin: 5px 0;
 `;
 
-const SearchArrow = styled(Chevron)`
+const SearchArrowWrap = styled.div`
   position: absolute;
-  top: 53%;
-  transform: translateY(-45%);
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 12px;
   cursor: pointer;
+  display: flex;
 `;
 
 export default class DropdownFiltered extends React.PureComponent<IDropdownFilteredProps> {
@@ -153,7 +155,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
             {label}
           </InputLabel>
         )}
-        <SearchInputWrapper>
+        <SearchInputWrap>
           <SearchInput
             {...(getInputProps as any)({
               // Types doesn't allow custom data-* attrs
@@ -172,22 +174,24 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
             hasError={showError}
             isOpen={isOpen}
           />
-          <SearchArrow
-            direction={isOpen ? 'up' : 'down'}
-            color={disabled ? colors.neutral.light : colors.base.secondary}
-            onClick={() => {
-              if (!disabled) {
-                if (isOpen) {
-                  closeMenu();
-                } else {
-                  clearSelection(() => {
-                    openMenu();
-                  });
+          <SearchArrowWrap>
+            <Chevron
+              direction={isOpen ? 'up' : 'down'}
+              color={disabled ? colors.neutral.light : colors.base.secondary}
+              onClick={() => {
+                if (!disabled) {
+                  if (isOpen) {
+                    closeMenu();
+                  } else {
+                    clearSelection(() => {
+                      openMenu();
+                    });
+                  }
                 }
-              }
-            }}
-            aria-label={isOpen ? 'close.menu' : 'open.menu'}
-          />
+              }}
+              aria-label={isOpen ? 'close.menu' : 'open.menu'}
+            />
+          </SearchArrowWrap>
           {isOpen && (
             <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
               {filteredResults.map((item, index) => (
@@ -203,7 +207,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
               ))}
             </Options>
           )}
-        </SearchInputWrapper>
+        </SearchInputWrap>
         {showError && <ErrorMessage data-automation={`ZA.error-${name}`}>{errorMessage}</ErrorMessage>}
       </div>
     );
