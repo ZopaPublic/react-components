@@ -33,15 +33,3 @@ import { Badge } from '@zopauk/react-components';
   </div>
 </Fragment>;
 ```
-
-- Sizes
-
-```js
-import { Fragment } from 'react';
-import { css } from 'styled-components';
-import { Badge } from '@zopauk/react-components';
-
-<Fragment>
-  <Badge size="small">Compact</Badge> ... <Badge>Default</Badge>
-</Fragment>;
-```
