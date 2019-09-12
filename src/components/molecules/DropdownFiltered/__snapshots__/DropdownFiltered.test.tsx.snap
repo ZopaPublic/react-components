@@ -71,7 +71,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c6 {
   position: absolute;
-  top: 50%;
+  top: 53%;
   -webkit-transform: translateY(-45%);
   -ms-transform: translateY(-45%);
   transform: translateY(-45%);
@@ -182,7 +182,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c4 {
   position: absolute;
-  top: 50%;
+  top: 53%;
   -webkit-transform: translateY(-45%);
   -ms-transform: translateY(-45%);
   transform: translateY(-45%);

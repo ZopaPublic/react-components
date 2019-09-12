@@ -98,7 +98,7 @@ const SearchInputWrapper = styled.div`
 
 const SearchArrow = styled(Chevron)`
   position: absolute;
-  top: 50%;
+  top: 53%;
   transform: translateY(-45%);
   bottom: 0;
   right: 12px;

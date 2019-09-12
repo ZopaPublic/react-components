@@ -40,10 +40,10 @@ const StyledBadge = styled(Text)<IStyledBadgeProps>`
   color: ${({ styling = 'default' }) => styling && fontColors[styling]};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px 6px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
+  line-height: 24px;
 `;
 
 const StyledCheckMark = styled(CheckMark)`
