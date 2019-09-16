@@ -17,16 +17,17 @@ export default {
   input: path.resolve('src/index.ts'),
   output: [
     {
-      file: pkg.main,
+      dir: 'cjs',
       format: 'cjs', // Universal Module Definition, works as amd, cjs and iife all in one
       sourcemap: true,
     },
     {
-      file: pkg.module,
+      dir: 'es',
       format: 'es',
       sourcemap: true,
     },
   ],
+  preserveModules: true,
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     customResolveOptions({ extensions }),
@@ -34,7 +35,7 @@ export default {
       presets: [['react-app', { flow: false, typescript: true }]],
       runtimeHelpers: true,
       extensions,
-      exclude: 'node_modules/**',
+      exclude: 'node_modules',
     }),
     commonjs({
       include: /node_modules/,
