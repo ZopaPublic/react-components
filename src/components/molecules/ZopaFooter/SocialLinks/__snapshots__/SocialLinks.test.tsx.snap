@@ -103,16 +103,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
   opacity: 0.72;
 }
 
-.c2 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-
-.c2:hover {
-  color: #6F748B;
-}
-
 .c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -131,6 +121,28 @@ exports[`<SocialLinks /> renders the component 1`] = `
 
 .c8:hover {
   color: #6F748B;
+}
+
+.c2 {
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2:hover {
+  color: #6F748B;
+}
+
+.c2 > svg {
+  max-width: 200px;
 }
 
 @media (min-width:0px) {

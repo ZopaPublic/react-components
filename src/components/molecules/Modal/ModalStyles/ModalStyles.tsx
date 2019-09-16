@@ -16,7 +16,6 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
 
   .zopa-modal-portal {
     position: relative;
-    z-index: ${({ zIndex = 2 }) => zIndex};
   }
 
   .zopa-modal-overlay {
@@ -31,6 +30,7 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
     background-color: ${colors.neutral.dark};
     opacity: 0;
     transition: opacity 200ms ease-in-out;
+    z-index: ${({ zIndex = 2 }) => zIndex};
   }
   .zopa-modal-overlay--after-open {
     opacity: 1;

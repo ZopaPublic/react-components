@@ -31,6 +31,15 @@ const SFooterLink = styled(FooterLink)`
   margin-right: 8px;
 `;
 
+const LogoLink = styled(FooterLink)`
+  display: flex;
+  justify-content: center;
+
+  > svg {
+    max-width: 200px;
+  }
+`;
+
 const socialLinksData: ISocialLinkData[] = [
   {
     component: function InstagramIcon() {
@@ -100,9 +109,9 @@ const socialLinksData: ISocialLinkData[] = [
 const SocialLinks = () => (
   <FlexRow justify="space-between">
     <FlexCol xs={12} s={6} m={4} l={2}>
-      <FooterLink href="https://www.zopa.com">
+      <LogoLink href="https://www.zopa.com">
         <ZopaLogo color={colors.neutral.white} />
-      </FooterLink>
+      </LogoLink>
     </FlexCol>
     <FlexCol xs={12} s={6} m={4} l={3}>
       <SFlexRow>

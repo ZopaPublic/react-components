@@ -115,7 +115,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   font-weight: 600;
 }
 
-.c17 {
+.c18 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -132,7 +132,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 18px 0;
 }
 
-.c16 {
+.c17 {
   color: #A9ACBA;
   margin: 0 0 24px 0;
 }
@@ -227,13 +227,13 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   opacity: 0.72;
 }
 
-.c5 {
+.c15 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.c5:hover {
+.c15:hover {
   color: #6F748B;
 }
 
@@ -252,7 +252,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 0;
 }
 
-.c15 {
+.c16 {
   background-color: #282F52;
   height: 1px;
 }
@@ -275,6 +275,28 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 
 .c11:hover {
   color: #6F748B;
+}
+
+.c5 {
+  color: #A9ACBA;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5:hover {
+  color: #6F748B;
+}
+
+.c5 > svg {
+  max-width: 200px;
 }
 
 .c0 {
@@ -560,7 +582,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/loans/car-loans"
                 >
@@ -571,7 +593,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/loans/debt-consolidation"
                 >
@@ -582,7 +604,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/loans/home-improvement"
                 >
@@ -593,7 +615,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/loans/wedding"
                 >
@@ -604,7 +626,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/invest"
                 >
@@ -615,7 +637,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/invest/isa"
                 >
@@ -644,7 +666,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about"
                 >
@@ -655,7 +677,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/our-story"
                 >
@@ -666,7 +688,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/board"
                 >
@@ -677,7 +699,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/leadership"
                 >
@@ -688,7 +710,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/awards"
                 >
@@ -699,7 +721,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/careers"
                 >
@@ -710,7 +732,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://blog.zopa.com"
                 >
@@ -721,7 +743,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/about/press"
                 >
@@ -732,7 +754,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/feelgood"
                 >
@@ -761,7 +783,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/cookie-policy"
                 >
@@ -772,7 +794,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/conflicts-policy"
                 >
@@ -783,7 +805,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/modern-slavery"
                 >
@@ -794,7 +816,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/website-terms"
                 >
@@ -823,7 +845,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/contact"
                 >
@@ -834,7 +856,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/support/faqs"
                 >
@@ -845,7 +867,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 class="c14"
               >
                 <a
-                  class="c5 c6 c7"
+                  class="c15 c6 c7"
                   color="#4A3EDE"
                   href="https://www.zopa.com/sitemap"
                 >
@@ -858,23 +880,23 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       </div>
     </div>
     <div
-      class="c15"
+      class="c16"
     />
     <div
       class="c2"
     >
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
       </p>
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         © Zopa Bank Limited 2025 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
       </p>
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
 
