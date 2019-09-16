@@ -67,7 +67,7 @@ module.exports = {
           name: 'Molecules',
           content: 'src/components/molecules/README.md',
           components: 'src/components/molecules/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/Nav/**', '**/modalStyles.ts'],
+          ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/Nav/**', '**/modalStyles.ts', '**/ZopaFooter/colors.ts'],
         },
         {
           name: 'Organisms',
