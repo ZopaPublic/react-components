@@ -11,17 +11,16 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
@@ -42,16 +41,16 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
+  font-size: 14px;
 }
 
 .c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
@@ -79,10 +78,9 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
@@ -103,17 +101,16 @@ exports[`<Badge /> renders with specific style 1`] = `
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .c0 {
   color: #FFFFFF;
   background-color: #1EC06A;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 .c2 {
@@ -164,17 +161,16 @@ exports[`<Badge /> renders without crashing 1`] = `
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span

@@ -8,7 +8,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -56,7 +56,7 @@ exports[`<TextField /> renders the component with error 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -158,7 +158,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -206,7 +206,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -286,7 +286,7 @@ exports[`<TextField /> renders the component with size 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

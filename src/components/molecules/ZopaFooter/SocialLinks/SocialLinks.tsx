@@ -5,7 +5,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import ZopaLogo from '../../../icons/ZopaLogo/ZopaLogo';
 import FooterLink from '../FooterLink/FooterLink';
-import { colors } from '../../../..';
+import { colors } from '../../../../constants/colors';
 
 export interface ISocialLinkData {
   component: React.FunctionComponent<{ size?: string }>;

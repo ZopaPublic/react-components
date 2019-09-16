@@ -40,10 +40,9 @@ const StyledBadge = styled(Text)<IStyledBadgeProps>`
   color: ${({ styling = 'default' }) => styling && fontColors[styling]};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 `;
 
 const StyledCheckMark = styled(CheckMark)`
@@ -53,7 +52,7 @@ const StyledCheckMark = styled(CheckMark)`
 
 function Badge({ children, styling, ...rest }: IBadgeProps) {
   return (
-    <StyledBadge styling={styling} {...rest}>
+    <StyledBadge styling={styling} {...rest} size="small">
       {styling === 'confirmed' && <StyledCheckMark color={fontColors.confirmed} />}
       {children}
     </StyledBadge>

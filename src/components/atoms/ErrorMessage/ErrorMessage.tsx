@@ -20,7 +20,7 @@ const SErrorMessage = styled(Text)`
 `;
 
 const ErrorMessage = (props: HTMLAttributes<HTMLSpanElement>) => (
-  <SErrorMessage {...props} role="alert" weight="semibold" size="base" />
+  <SErrorMessage {...props} role="alert" weight="semibold" size="small" />
 );
 
 export default ErrorMessage;

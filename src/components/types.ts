@@ -18,7 +18,7 @@ export interface IInputStatus {
   hasError?: boolean;
 }
 
-export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement | HTMLSelectElement> {
+export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement> {
   /**
    * Attribute used for testing porpuses
    */

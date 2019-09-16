@@ -25,7 +25,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -62,22 +62,27 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c4 {
+  margin: 0;
   margin-bottom: 0;
 }
 
 .c3 {
   position: relative;
+  margin: 5px 0;
 }
 
 .c6 {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-45%);
-  -ms-transform: translateY(-45%);
-  transform: translateY(-45%);
-  bottom: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 12px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 <div
@@ -109,20 +114,24 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         name="test"
         value=""
       />
-      <svg
-        aria-label="open.menu"
-        class="c6 c7"
-        direction="down"
-        height="24px"
-        viewBox="0 0 416 416"
-        width="24px"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="c6"
       >
-        <path
-          d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-          fill="#4A3EDE"
-        />
-      </svg>
+        <svg
+          aria-label="open.menu"
+          class="c7"
+          direction="down"
+          height="24px"
+          viewBox="0 0 416 416"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
+            fill="#4A3EDE"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
@@ -136,7 +145,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0;
+  margin: 4px 0 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -173,22 +182,27 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2 {
+  margin: 0;
   margin-bottom: 0;
 }
 
 .c1 {
   position: relative;
+  margin: 5px 0;
 }
 
 .c4 {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-45%);
-  -ms-transform: translateY(-45%);
-  transform: translateY(-45%);
-  bottom: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 12px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 <div
@@ -212,20 +226,24 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         name="test"
         value="orange"
       />
-      <svg
-        aria-label="open.menu"
-        class="c4 c5"
-        direction="down"
-        height="24px"
-        viewBox="0 0 416 416"
-        width="24px"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="c4"
       >
-        <path
-          d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-          fill="#4A3EDE"
-        />
-      </svg>
+        <svg
+          aria-label="open.menu"
+          class="c5"
+          direction="down"
+          height="24px"
+          viewBox="0 0 416 416"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
+            fill="#4A3EDE"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
