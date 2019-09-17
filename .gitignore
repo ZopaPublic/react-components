@@ -6,7 +6,10 @@ styleguide/*
 !styleguide/styles/
 !styleguide/components
 
-dist
+/es
+/cjs
+/types
+
 coverage
 
 yarn-error.log
