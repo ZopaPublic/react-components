@@ -13,7 +13,6 @@ const Input = styled.input<IInput>`
   font-weight: ${typography.weights.semibold};
   width: 100%;
   margin: 4px 0 0;
-  user-select: none;
 
   &:focus {
     outline-width: 0;

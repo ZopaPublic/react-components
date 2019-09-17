@@ -9,10 +9,6 @@ exports[`<InputText /> renders the component disabled 1`] = `
   font-weight: 600;
   width: 100%;
   margin: 4px 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0:focus {
@@ -46,10 +42,6 @@ exports[`<InputText /> renders the component with error 1`] = `
   font-weight: 600;
   width: 100%;
   margin: 4px 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0:focus {
@@ -82,10 +74,6 @@ exports[`<InputText /> renders the component with focus 1`] = `
   font-weight: 600;
   width: 100%;
   margin: 4px 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0:focus {
@@ -118,10 +106,6 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   font-weight: 600;
   width: 100%;
   margin: 4px 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0:focus {
@@ -154,10 +138,6 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   font-weight: 600;
   width: 100%;
   margin: 4px 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0:focus {
