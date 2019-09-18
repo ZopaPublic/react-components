@@ -26,7 +26,7 @@ const imagery = css`
   img {
     max-width: 100%;
   }
-`
+`;
 
 const GlobalStyles = createGlobalStyle`
   ${normalize}
