@@ -10,9 +10,12 @@
   - [What has changed](#user-content-what-has-changed-)
   - [What's new](#user-content-whats-new-)
 
-- [Migration primer](#migration-primer)
+- [Primer](#primer)
   - [Colors](#colors-)
   - [Typography](#typography-)
+  - [Icons](#icons)
+  - [Navbar](#navbar)
+  - [Accordion](#accordion)
 
 # Overview
 
@@ -173,7 +176,7 @@ Our color API is much more concise now and divided into three categories:
 - **neutral** ( _colors to enhance the user experience_ )
 - **semantic** ( _colors related to certain states of an application_ )
 
-# Migration primer
+# Primer
 
 ## Colors 🎨
 
