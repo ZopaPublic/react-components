@@ -34,6 +34,7 @@ describe('<Text />', () => {
 
   it.each`
     size       | pixels
+    ${'lead'}  | ${'20px'}
     ${'base'}  | ${'16px'}
     ${'small'} | ${'14px'}
   `('can render at different sizes:  $size – $pixels', ({ size, pixels }) => {

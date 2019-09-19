@@ -1,5 +1,5 @@
 import React from 'react';
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
@@ -10,9 +10,9 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagra
    */
   weight?: keyof typeof typography.weights;
   /**
-   * The size you want to render your text at, currently only `12px` | `14px` | `16px` supported.
+   * The size you want to render your text at, currently only `14px` | `16px` and `20px` supported.
    */
-  size?: keyof typeof typography.sizes.text;
+  size?: keyof typeof typography.sizes.text | 'lead';
   /**
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    */
@@ -47,12 +47,10 @@ const Text = styled.span<ITextProps>`
   line-height: ${typography.lineHeights.text};
   font-family: ${typography.primary};
   font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
-  font-size: ${({ size = 'base' }) => {
-    return typography.sizes.text[size];
-  }};
+  font-size: ${({ size = 'base' }) => (size === 'lead' ? typography.sizes.heading.h4 : typography.sizes.text[size])};
 `;
 
-const TextWrap: React.FunctionComponent<ITextProps> = props => <Text {...props} />;
+const TextWrap: FC<ITextProps> = props => <Text {...props} />;
 
 TextWrap.defaultProps = {
   as: 'span',
