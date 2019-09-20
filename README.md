@@ -41,9 +41,12 @@ The aim of this project is to share with the frontend community how we code in Z
 
 We think it might be useful for someone who wants to start a new react components library and want to re-use some of our code.
 
-## Contributing
+### Migration
 
-🚨 Check the [new migration docs](./etc/docs/migration-v2) if you're migrating to **v2** 🏃🏻
+- Check [how to migrate to v2](./etc/docs/migration-v2.md) 🏃🏻
+- Check [documentation for v1](https://zopauk.github.io/react-components/v1).
+
+## Contributing
 
 In case you want to contribute to this library, please have a look at our [contributing guidelines](./CONTRIBUTING.md) 🙌🏼
 
