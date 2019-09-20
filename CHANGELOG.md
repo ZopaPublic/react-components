@@ -1,3 +1,82 @@
+# [2.0.0](https://github.com/zopaUK/react-components/compare/v1.7.2...v2.0.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* **badge:** remove "size" prop ([72f80b4](https://github.com/zopaUK/react-components/commit/72f80b4))
+* **beta:** refine buttons, badge and form elements ([4474c3b](https://github.com/zopaUK/react-components/commit/4474c3b))
+* **brand:** color tweaks ([b5eca4b](https://github.com/zopaUK/react-components/commit/b5eca4b))
+* **button:** fix padding again ([549534e](https://github.com/zopaUK/react-components/commit/549534e))
+* **button:** refine styling ([1fddcbf](https://github.com/zopaUK/react-components/commit/1fddcbf))
+* **button:** update line-height ([e22d9b6](https://github.com/zopaUK/react-components/commit/e22d9b6))
+* **dropdown:** missing semicolon ([1102bff](https://github.com/zopaUK/react-components/commit/1102bff))
+* **dropdownfiltered:** align arrow ([616bb25](https://github.com/zopaUK/react-components/commit/616bb25))
+* **heading:** h1 smaller on mobile ([683969f](https://github.com/zopaUK/react-components/commit/683969f))
+* **heading:** use semibold weight ([207ee42](https://github.com/zopaUK/react-components/commit/207ee42))
+* **inputtext:** adjust types ([3e576d6](https://github.com/zopaUK/react-components/commit/3e576d6))
+* **inputtext:** remove `user-select: none` ([6c8f3d4](https://github.com/zopaUK/react-components/commit/6c8f3d4))
+* **link:** lock down styling ([7ec0d5e](https://github.com/zopaUK/react-components/commit/7ec0d5e))
+* **socialinks:** prevent circular dep ([691c336](https://github.com/zopaUK/react-components/commit/691c336))
+* **text:** update font-size spec ([396ebca](https://github.com/zopaUK/react-components/commit/396ebca))
+
+
+### Build System
+
+* **rollup:** enable tree shacking on the consumer side ([f3ec639](https://github.com/zopaUK/react-components/commit/f3ec639))
+
+
+### Code Refactoring
+
+* **accordion:** add Accordion wrapper & pass state through context ([0b48657](https://github.com/zopaUK/react-components/commit/0b48657))
+* **card:** remove type="button" ([6fd0295](https://github.com/zopaUK/react-components/commit/6fd0295))
+* **colors:** change brand colors ([d196916](https://github.com/zopaUK/react-components/commit/d196916)), closes [#52](https://github.com/zopaUK/react-components/issues/52)
+* **icons:** remove Facebook and Twitter icons ([4ad8560](https://github.com/zopaUK/react-components/commit/4ad8560)), closes [#30](https://github.com/zopaUK/react-components/issues/30)
+* **icons:** rename icons ([64f00dd](https://github.com/zopaUK/react-components/commit/64f00dd))
+* **navbar:** remove Navbar.Layout in favor of just Navbar ([d6ee558](https://github.com/zopaUK/react-components/commit/d6ee558))
+* **text:** apply new typography in all components ([c963c71](https://github.com/zopaUK/react-components/commit/c963c71)), closes [#51](https://github.com/zopaUK/react-components/issues/51)
+* **typography:** remove components ([cbf051d](https://github.com/zopaUK/react-components/commit/cbf051d)), closes [#51](https://github.com/zopaUK/react-components/issues/51)
+
+
+### Features
+
+* **button:** update disabled state ([45f8392](https://github.com/zopaUK/react-components/commit/45f8392))
+* **button:** update styles ([5cec2d7](https://github.com/zopaUK/react-components/commit/5cec2d7))
+* **fonts:** add new typographic rules ([8d05f29](https://github.com/zopaUK/react-components/commit/8d05f29)), closes [#51](https://github.com/zopaUK/react-components/issues/51)
+* **global styles:** images overlap their parent elements ([f0e6cd5](https://github.com/zopaUK/react-components/commit/f0e6cd5))
+* **heading:** new <Heading /> atom ([7a81d16](https://github.com/zopaUK/react-components/commit/7a81d16)), closes [#51](https://github.com/zopaUK/react-components/issues/51)
+* **text:** add colors ([0cd8269](https://github.com/zopaUK/react-components/commit/0cd8269))
+* **text:** lead size ([69afda5](https://github.com/zopaUK/react-components/commit/69afda5))
+* **text:** new <Text /> atom ([58c3a6d](https://github.com/zopaUK/react-components/commit/58c3a6d)), closes [#51](https://github.com/zopaUK/react-components/issues/51)
+
+
+### BREAKING CHANGES
+
+* **rollup:** path of types has been changed. Instead of `@zopauk/react-components/dist/...`
+replace by `zopauk/react-components/types/...`
+* **card:** You won't longer be able to use the "button" variant in the "type" prop of `<Card
+/>`.
+
+21
+* **accordion:** Accordion components have to be used within Accordion wrapper context
+* **navbar:** Navbar.Layout is now just Navbar
+* **colors:** We now only expose three groups of colors "base" | "neutral" | "semantic" each
+containing from two to four colours. The name of the colours now describe their intended use rather
+the color string they render. The colors palette is much shorter and you'll need the help of a
+designer to apply these new colour updates on your app.
+* **badge:** You won't be able to supply `size` to `<Badge />` anymore
+* **fonts:** You won't be able to see Alverate font anymore in the components. Default
+typography applied to the page through the CSS cascade has changed as well to reflect the new
+typographic rules.
+* **typography:** You won't be able to import and use anymore `<Header1 />`, `<Header2 />`, `<Header3
+/>`, `<Header4 />`, `<Title1 />`, `<Title2 />`, `<Title3 />`, `<Title4 />`, `<Caption />`,
+`<HelpText />`, `<SubHead />` and `<Lead />`.
+* **icons:** You won't be able to import <Facebook /> or <Twitter /> anymore from this library.
+* **icons:** Now all icon components have the word "Icon" on their name.
+
+20
+* **text:** The text rendering related props in some components have changed to reflect our new
+rules for text sizes (3 different) and weights.
+
 ## [1.7.2](https://github.com/zopaUK/react-components/compare/v1.7.1...v1.7.2) (2019-09-11)
 
 ### Bug Fixes
