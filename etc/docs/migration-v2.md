@@ -244,7 +244,7 @@ colors.neutral.neutral75
 
 ## Icons
 
-_Just the exported name of some icons changes for consistency_ )
+_Just the exported name of some icons changes for consistency. Added consistency between `activeColor` and `inactiveColor` props defaults._ )
 
 | v1                  | v2                  |
 | ------------------- | ------------------- |
