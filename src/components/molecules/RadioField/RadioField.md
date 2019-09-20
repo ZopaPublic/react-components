@@ -1,19 +1,19 @@
-`<RadioField />` is a single radio field element.
+### Summary
 
-Its error message is meant to be shown in a group of them.
+`<RadioField />` is a convenient wrapper that renders the following HTML elements:
 
-It's composed of three HTML elements:
-
-- `input`: input radio component, hidden for styling purposes\_
+- `input`: input radio component, hidden for styling purposes
 - `label`: text to show next to the radio field. It uses CSS `::after` and `::before` to draw the actual circles of the radio field
 - `div`: container to wrap the two previous elements.
 
-`value` must be provided so that it internally sets:
+⚠️ &nbsp;Note that a `value` prop **must be provided** to automatically set:
 
 - `htmlFor` prop on the `<InputLabel />` component.
 - `id` prop on `<InputRadio />` so that is easily to query (.i.e automated tests).
 
-#### default
+### Examples
+
+- Default
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -21,7 +21,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="option" inputProps={{ value: 'option', name: 'option' }} />;
 ```
 
-#### with error
+- With an error
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -29,7 +29,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField hasError={true} label="option" inputProps={{ value: 'radio2', name: 'radio2' }} />;
 ```
 
-#### valid
+- Valid state
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -37,7 +37,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField isValid={true} label="option" inputProps={{ value: 'radio3', name: 'radio3' }} />;
 ```
 
-#### pre-selected
+- Pre-selected
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -45,7 +45,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="I'm checked by default" inputProps={{ value: 'radio4', name: 'radio4', defaultChecked: true }} />;
 ```
 
-#### disabled and pre-selected
+- Disabled and pre-selected
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -56,7 +56,7 @@ import { RadioField } from '@zopauk/react-components';
 />;
 ```
 
-#### disabled, valid and pre-selected
+- Disabled, valid and pre-selected
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';
@@ -68,7 +68,7 @@ import { RadioField } from '@zopauk/react-components';
 />;
 ```
 
-#### multiple choices
+- Multiple choices
 
 ```jsx
 import { RadioField } from '@zopauk/react-components';

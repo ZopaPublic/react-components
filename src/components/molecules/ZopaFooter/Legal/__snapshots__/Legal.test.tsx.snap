@@ -1,14 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Legal /> renders the component 1`] = `
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .c0 {
   padding: 18px 0;
 }
 
 .c1 {
-  color: #D6D7DE;
-  font-size: 11px;
-  line-height: 1.5;
+  color: #A9ACBA;
   margin: 0 0 24px 0;
 }
 
@@ -17,17 +28,17 @@ exports[`<Legal /> renders the component 1`] = `
     class="c0"
   >
     <p
-      class="c1"
+      class="c1 c2"
     >
       Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
     </p>
     <p
-      class="c1"
+      class="c1 c2"
     >
       © Zopa Bank Limited 2016 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
     </p>
     <p
-      class="c1"
+      class="c1 c2"
     >
       Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
 

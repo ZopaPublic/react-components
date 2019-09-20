@@ -1,4 +1,10 @@
-This is a Help component that should sit ontop of the Footer to give the customer information about our opening hours and the phone numbers to call for specific products.
+### Summary
+
+If used, `<Help />` should sit ontop of [`<ZopaFooter />`](/#/Components/Molecules/ZopaFooter).
+
+Its aim is to give the customer information about Zopa's customer service opening hours and phone numbers to call about specific products.
+
+### Example
 
 ```jsx
 import { Help } from '@zopauk/react-components';

@@ -1,11 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ErrorMessage /> renders the component with props with no a11y violations 1`] = `
-.c0 {
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  width: 100%;
   font-size: 14px;
-  color: #F52D2D;
+}
+
+.c0 {
+  width: 100%;
+  color: #EE0505;
   display: block;
 }
 
@@ -19,7 +30,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
 }
 
 <span
-  class="c0"
+  class="c0 c1"
   role="alert"
 >
   Ops error !

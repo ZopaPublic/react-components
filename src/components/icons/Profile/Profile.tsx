@@ -1,5 +1,5 @@
 import React from 'react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface IProfileProps {
   /**
@@ -27,8 +27,8 @@ export interface IProfileState {
 const Profile: React.FunctionComponent<IProfileProps> = ({
   size = '30px',
   active = false,
-  activeColor = colors.extended.blue300,
-  inactiveColor = colors.extended.blue500,
+  activeColor = colors.base.secondary,
+  inactiveColor = colors.neutral.medium,
 }) => {
   const color = active ? activeColor : inactiveColor;
   return (

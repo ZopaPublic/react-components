@@ -67,7 +67,7 @@ module.exports = {
           name: 'Molecules',
           content: 'src/components/molecules/README.md',
           components: 'src/components/molecules/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/Nav/**', '**/modalStyles.ts'],
+          ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/Nav/**', '**/modalStyles.ts', '**/ZopaFooter/colors.ts'],
         },
         {
           name: 'Organisms',
@@ -77,13 +77,15 @@ module.exports = {
           sections: [
             {
               name: 'Navbar',
+              content: 'src/components/organisms/Navbar/index.md',
               components: 'src/components/organisms/Navbar/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Navbar/index.tsx'],
             },
             {
               name: 'Accordion',
+              content: 'src/components/organisms/Accordion/index.md',
               components: 'src/components/organisms/Accordion/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Accordion/index.tsx'],
             },
             {
               name: 'Form',
@@ -97,12 +99,6 @@ module.exports = {
           name: 'Icons',
           content: 'src/components/icons/README.md',
           components: 'src/components/icons/**/*.{js,jsx,ts,tsx}',
-          ignore: '**/*.test.{js,jsx,ts,tsx}',
-        },
-        {
-          name: 'Typography',
-          content: 'src/components/typography/README.md',
-          components: 'src/components/typography/*/*.{js,jsx,ts,tsx}',
           ignore: '**/*.test.{js,jsx,ts,tsx}',
         },
         {
@@ -121,7 +117,7 @@ module.exports = {
     maxWidth: '100%',
     color: {
       sidebarBackground: '#1C2139',
-      codeBackground: '#F5F5F5',
+      codeBackground: '#F5F5F5;',
     },
     fontFamily: {
       monospace: 'Monaco, Menlo, Courier, monospace',
@@ -153,7 +149,7 @@ module.exports = {
     },
     Playground: {
       preview: {
-        border: '3px #dcdcdc dashed',
+        border: '2px #ededed solid',
       },
     },
     TabButton: {
@@ -161,6 +157,11 @@ module.exports = {
         color: '#afafaf',
         textTransform: 'unset',
         border: 'none !important',
+      },
+    },
+    Editor: {
+      root: {
+        lineHeight: 1.5,
       },
     },
   },

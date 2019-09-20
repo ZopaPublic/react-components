@@ -12,7 +12,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-self: auto;
 }
 
-.c3 {
+.c5 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -46,7 +46,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -70,6 +70,40 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 .c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #4A3EDE;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+}
+
+.c3 {
+  font-size: inherit;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c3:hover {
+  opacity: 0.88;
+}
+
+.c3:active {
+  opacity: 0.72;
+}
+
+.c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -77,12 +111,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-top: 32px;
 }
 
-.c6 {
-  font-weight: 600;
-  line-height: 1.4;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 16px;
+.c8 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -90,16 +119,11 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-right: 8px;
 }
 
-.c6:hover {
+.c8:hover {
   color: #6F748B;
 }
 
 .c2 {
-  font-weight: 600;
-  line-height: 1.4;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: 16px;
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -162,7 +186,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:0px) {
-  .c3 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -172,7 +196,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c3 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -182,7 +206,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 33.33333333333333%;
     -ms-flex: 0 0 33.33333333333333%;
@@ -192,7 +216,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:992px) {
-  .c3 {
+  .c5 {
     display: block;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -202,13 +226,13 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c4 {
+  .c6 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -226,7 +250,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
     cols="12"
   >
     <a
-      class="c2"
+      class="c2 c3 c4"
+      color="#4A3EDE"
       href="https://www.zopa.com"
     >
       <svg
@@ -245,24 +270,25 @@ exports[`<SocialLinks /> renders the component 1`] = `
         <g>
           <path
             d="M36.90752,0 C42.6769778,0 46.8674844,3.93460861 46.8674844,9.36414355 C46.8674844,14.8199217 42.6769778,18.83326 36.90752,18.83326 C31.1380622,18.83326 26.9475556,14.8461649 26.9475556,9.36414355 C26.9475556,3.90836539 31.1380622,0 36.90752,0 Z M36.9851733,13.7701929 C39.0550044,13.7701929 40.7106844,11.9078615 40.7106844,9.38944951 C40.7106844,6.87197483 39.0550044,5.06212985 36.9851733,5.06212985 C34.8894578,5.06212985 33.1043556,6.87197483 33.1043556,9.38944951 C33.1043556,11.9078615 34.9153422,13.7701929 36.9851733,13.7701929 Z M16.4541867,1.04879158 C16.4541867,6.67702519 8.45959111,11.8600613 8.45959111,13.9529582 L16.1435733,13.9529582 L16.1435733,18.5708278 L0,18.5708278 L0,17.7048015 C0,12.0765679 7.99367111,6.89353176 7.99367111,4.8006349 L0.309688889,4.8006349 L0.309688889,0.183702546 L16.4541867,0.183702546 L16.4541867,1.04879158 Z M66.7153067,0.183702546 C71.4244267,0.183702546 74.1404444,2.56996113 74.1404444,6.76700194 C74.1404444,11.2255377 71.4244267,13.7964361 66.7153067,13.7964361 L64.2063644,13.7964361 L64.2063644,18.5708278 L58.5136356,18.5708278 L58.5136356,0.183702546 L66.7153067,0.183702546 Z M66.4046933,9.180441 C67.6989156,9.180441 68.44864,8.36690115 68.44864,6.95070449 C68.44864,5.58699426 67.6989156,4.79969764 66.4046933,4.79969764 L64.2063644,4.79969764 L64.2063644,9.180441 L66.4046933,9.180441 Z M96.6257067,0.612874778 L104,19 L97.6093156,19 L96.70336,16.4028584 L89.8994489,16.4028584 L88.9685333,19 L82.8108089,19 L90.4689067,0.612874778 L96.6257067,0.612874778 Z M91.4515911,11.619186 L95.2288711,11.619186 L93.3661156,6.24213753 L91.4515911,11.619186 Z"
-            fill="#fff"
+            fill="#FFFFFF"
           />
         </g>
       </svg>
     </a>
   </div>
   <div
-    class="c3"
+    class="c5"
     cols="12"
   >
     <div
-      class="c4 c5"
+      class="c6 c7"
       cols="12"
       direction="row"
     >
       <a
         aria-label="instagram"
-        class="c6"
+        class="c8 c3 c4"
+        color="#4A3EDE"
         cols="12"
         href="https://www.instagram.com/Zopamoney/"
       >
@@ -290,7 +316,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        class="c6"
+        class="c8 c3 c4"
+        color="#4A3EDE"
         cols="12"
         href="https://facebook.com/zopa"
       >
@@ -312,7 +339,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        class="c6"
+        class="c8 c3 c4"
+        color="#4A3EDE"
         cols="12"
         href="https://twitter.com/zopa"
       >

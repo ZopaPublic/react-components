@@ -1,61 +1,68 @@
 import React from 'react';
 import styled from 'styled-components';
-import * as defaultColors from './../../constants/colors';
+import { colors } from './../../constants/colors';
 
-export interface ISColorProps {
+export type TColorNames = keyof typeof colors.base | keyof typeof colors.neutral | keyof typeof colors.semantic;
+
+interface ISColorProps {
   color: string;
   colorName: string;
 }
 
-export const SColors = styled.div`
+const SColors = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
 
-export const SColor = styled.div<ISColorProps>`
-  height: 70px;
-  width: 70px;
+const mapColorToFontColor: { [K in TColorNames]: 'white' | 'black' } = {
+  primary: 'white',
+  secondary: 'white',
+  white: 'black',
+  nearWhite: 'black',
+  light: 'black',
+  medium: 'black',
+  nearDark: 'white',
+  dark: 'white',
+  success: 'white',
+  alert: 'black',
+  error: 'white',
+};
+
+const SColor = styled.div<ISColorProps>`
   background-color: ${({ color }) => color};
   margin: 5px;
-  border: 1px solid #cbcbcb;
-  border-radius: 2px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  font-family: monospace;
 
   > p {
-    color: ${({ color }) => color};
-    filter: invert(100%);
+    color: ${({ colorName }) => mapColorToFontColor[colorName]};
     text-align: center;
-    padding: 2px;
+    padding: 10px 20px;
     line-height: 18px;
-    font-size: ${({ color, colorName }) => 100 / Math.max(color.length, colorName.length)}px;
+    font-size: 16px;
   }
 `;
 
 export interface IColorsProps {
   /**
-   * Object with the colors for testing purposes.
-   * The key must be the name of the color and the value the color itself as in css. (e.g: { red: '#ff0000' }).
-   * @ignore
-   */
-  colors?: {
-    [colorName: string]: string;
-  };
-  /**
    * section of the default colors
    * @ignore
    */
-  defaultSection: 'base' | 'primary' | 'extended' | 'neutral' | 'alert';
+  variant: keyof typeof colors;
 }
 
-export default function Colors(props: IColorsProps) {
-  const colors = props.colors || defaultColors[props.defaultSection];
+export default function Colors({ variant }: IColorsProps) {
+  const colorGroup = colors[variant];
+
   return (
     <SColors>
-      {Object.keys(colors).map((colorKey, key) => (
-        <SColor key={key} color={colors[colorKey]} colorName={colorKey}>
+      {Object.keys(colorGroup).map(colorKey => (
+        <SColor key={colorKey} color={colorGroup[colorKey]} colorName={colorKey}>
           <p>
             {colorKey}
             <br />
-            {colors[colorKey]}
+            {colorGroup[colorKey]}
           </p>
         </SColor>
       ))}

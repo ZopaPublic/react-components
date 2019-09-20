@@ -7,60 +7,84 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 24px;
+  color: #0D0A38;
+  line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   font-size: 14px;
-  color: #1C2139;
 }
 
 .c0 {
-  color: #F8F8F9;
-  background-color: #383108;
+  color: #FFFFFF;
+  background-color: #0D0A38;
   display: inline-block;
-  line-height: 1.4;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
   class="c0 c1"
-  color="#1C2139"
 >
   Content
 </span>
 `;
 
-exports[`<Badge /> renders with specific size 1`] = `
+exports[`<Badge /> renders with specific size: "medium" 1`] = `
 .c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 24px;
+  color: #0D0A38;
+  line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 18px;
-  color: #1C2139;
+  font-size: 14px;
 }
 
 .c0 {
-  color: #F8F8F9;
-  background-color: #383108;
+  color: #FFFFFF;
+  background-color: #0D0A38;
   display: inline-block;
-  line-height: 1.4;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
   class="c0 c1"
-  color="#1C2139"
+>
+  Content
+</span>
+`;
+
+exports[`<Badge /> renders with specific size: "small" 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c0 {
+  color: #FFFFFF;
+  background-color: #0D0A38;
+  display: inline-block;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+<span
+  class="c0 c1"
 >
   Content
 </span>
@@ -73,22 +97,20 @@ exports[`<Badge /> renders with specific style 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 24px;
+  color: #0D0A38;
+  line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   font-size: 14px;
-  color: #1C2139;
 }
 
 .c0 {
-  color: #F8F8F9;
-  background-color: #00A45A;
+  color: #FFFFFF;
+  background-color: #1EC06A;
   display: inline-block;
-  line-height: 1.4;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 .c2 {
@@ -98,7 +120,6 @@ exports[`<Badge /> renders with specific style 1`] = `
 
 <span
   class="c0 c1"
-  color="#1C2139"
 >
   <svg
     aria-label="Checkmark"
@@ -117,7 +138,7 @@ exports[`<Badge /> renders with specific style 1`] = `
       transform="translate(-5.000000, -7.000000)"
     >
       <g
-        fill="#F8F8F9"
+        fill="#FFFFFF"
       >
         <path
           d="M8.8937112,18.1162104 L5.28067153,13.7796715 C4.86185798,13.276869 4.91785534,12.5208652 5.40783219,12.088863 C5.89547582,11.6556608 6.63277432,11.7132611 7.05275448,12.2196637 L9.70329594,15.3996797 L16.9806188,7.38003928 C17.4204314,6.89643685 18.1588965,6.87123672 18.629041,7.32243899 C19.100352,7.77484127 19.1260175,8.53324509 18.6862049,9.01924754 L10.4025549,18.1480964 C10.0314235,18.5570951 9.3990031,18.5877927 8.99000439,18.2166613 C8.95561314,18.1854542 8.92343754,18.1518893 8.8937112,18.1162104 Z"
@@ -136,27 +157,24 @@ exports[`<Badge /> renders without crashing 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  line-height: 24px;
+  color: #0D0A38;
+  line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   font-size: 14px;
-  color: #1C2139;
 }
 
 .c0 {
-  color: #F8F8F9;
-  background-color: #383108;
+  color: #FFFFFF;
+  background-color: #0D0A38;
   display: inline-block;
-  line-height: 1.4;
-  padding: 3px 8px;
+  padding: 4px 10px;
   white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 4px;
 }
 
 <span
   class="c0 c1"
-  color="#1C2139"
 >
   Content
 </span>

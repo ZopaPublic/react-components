@@ -1,17 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<InputLabel /> renders the component with props 1`] = `
-.c0 {
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  color: #1C2139;
+}
+
+.c0 {
   display: block;
 }
 
 <label
-  class="c0"
+  class="c0 c1"
+  color="#0D0A38"
   for="username"
 >
   Username:

@@ -1,4 +1,8 @@
-This component is a wrapper around the svg code for Hamburger's icon.
+### Summary
+
+Use it to render an hamburger icon.
+
+### Example
 
 ```jsx
 import { HamburgerIcon } from '@zopauk/react-components';

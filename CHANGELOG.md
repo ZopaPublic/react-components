@@ -1,50 +1,52 @@
 ## [1.7.2](https://github.com/zopaUK/react-components/compare/v1.7.1...v1.7.2) (2019-09-11)
 
-
 ### Bug Fixes
 
-* **modal:** move z index to the overlay not the portal ([c8aae5f](https://github.com/zopaUK/react-components/commit/c8aae5f))
+- **modal:** move z index to the overlay not the portal ([c8aae5f](https://github.com/zopaUK/react-components/commit/c8aae5f))
 
 ## [1.7.1](https://github.com/zopaUK/react-components/compare/v1.7.0...v1.7.1) (2019-09-10)
 
-
 ### Bug Fixes
 
-* **zopafoote:** updated logo styles on mobile ([7579cf5](https://github.com/zopaUK/react-components/commit/7579cf5))
+- **zopafoote:** updated logo styles on mobile ([7579cf5](https://github.com/zopaUK/react-components/commit/7579cf5))
 
 # [1.7.0](https://github.com/zopaUK/react-components/compare/v1.6.2...v1.7.0) (2019-08-30)
 
-
 ### Bug Fixes
 
-* **dropdownfield:** fix its interface ([4106321](https://github.com/zopaUK/react-components/commit/4106321))
-* **formdropdownfield:** handle valid state ([d1e4b5a](https://github.com/zopaUK/react-components/commit/d1e4b5a))
-* **useform:** mark all fields as touched in submit callback ([631b1cd](https://github.com/zopaUK/react-components/commit/631b1cd))
-
+- **dropdownfield:** fix its interface ([4106321](https://github.com/zopaUK/react-components/commit/4106321))
+- **formdropdownfield:** handle valid state ([d1e4b5a](https://github.com/zopaUK/react-components/commit/d1e4b5a))
+- **useform:** mark all fields as touched in submit callback ([631b1cd](https://github.com/zopaUK/react-components/commit/631b1cd))
 
 ### Features
 
-* **form:** add Form component ([b5989d6](https://github.com/zopaUK/react-components/commit/b5989d6))
-* **form:** set up form/field hooks and form context/provider ([c8972b5](https://github.com/zopaUK/react-components/commit/c8972b5))
-* **formcheckboxfield:** set it up ([d5654b0](https://github.com/zopaUK/react-components/commit/d5654b0))
-* **formdropdownfield:** set it up ([7d7414c](https://github.com/zopaUK/react-components/commit/7d7414c))
-* **formdropdownfilteredfield:** set it up ([edcc41a](https://github.com/zopaUK/react-components/commit/edcc41a))
-* **formradiofield:** set it up ([216af31](https://github.com/zopaUK/react-components/commit/216af31))
-* **formtextfield:** set up TextField wrapper ([8411771](https://github.com/zopaUK/react-components/commit/8411771))
+- **form:** add Form component ([b5989d6](https://github.com/zopaUK/react-components/commit/b5989d6))
+- **form:** set up form/field hooks and form context/provider ([c8972b5](https://github.com/zopaUK/react-components/commit/c8972b5))
+- **formcheckboxfield:** set it up ([d5654b0](https://github.com/zopaUK/react-components/commit/d5654b0))
+- **formdropdownfield:** set it up ([7d7414c](https://github.com/zopaUK/react-components/commit/7d7414c))
+- **formdropdownfilteredfield:** set it up ([edcc41a](https://github.com/zopaUK/react-components/commit/edcc41a))
+- **formradiofield:** set it up ([216af31](https://github.com/zopaUK/react-components/commit/216af31))
+- **formtextfield:** set up TextField wrapper ([8411771](https://github.com/zopaUK/react-components/commit/8411771))
+
+* **dropdownfield:** enable passing hasError prop down to dropdown ([f677770](https://github.com/zopaUK/react-components/commit/f677770))
+
+### Features
+
+- **dropdown:** add isValid prop ([2876e4a](https://github.com/zopaUK/react-components/commit/2876e4a))
 
 ## [1.6.2](https://github.com/zopaUK/react-components/compare/v1.6.1...v1.6.2) (2019-08-27)
 
-
 ### Bug Fixes
 
-* **rollup:** upgrade config and deps ([65b3719](https://github.com/zopaUK/react-components/commit/65b3719))
+- **rollup:** upgrade config and deps ([65b3719](https://github.com/zopaUK/react-components/commit/65b3719))
+
+* **update gitignore:** vscode folder added to gitignore ([ea03aa1](https://github.com/zopaUK/react-components/commit/ea03aa1))
 
 ## [1.6.1](https://github.com/zopaUK/react-components/compare/v1.6.0...v1.6.1) (2019-08-27)
 
-
 ### Bug Fixes
 
-* **links:** blog link added ([3165d1e](https://github.com/zopaUK/react-components/commit/3165d1e)), closes [#65](https://github.com/zopaUK/react-components/issues/65)
+- **links:** blog link added ([3165d1e](https://github.com/zopaUK/react-components/commit/3165d1e)), closes [#65](https://github.com/zopaUK/react-components/issues/65)
 
 # [1.6.0](https://github.com/zopaUK/react-components/compare/v1.5.1...v1.6.0) (2019-08-26)
 
@@ -55,6 +57,11 @@
 ### Features
 
 - **dropdown:** add isValid prop ([2876e4a](https://github.com/zopaUK/react-components/commit/2876e4a))
+
+### Features
+
+- **useform:** create first version of the form hook ([ae479e6](https://github.com/zopaUK/react-components/commit/ae479e6))
+- **useform:** set it up ([ab1e60a](https://github.com/zopaUK/react-components/commit/ab1e60a))
 
 ## [1.5.1](https://github.com/zopaUK/react-components/compare/v1.5.0...v1.5.1) (2019-08-22)
 
@@ -68,6 +75,10 @@
 
 - **useform:** create first version of the form hook ([ae479e6](https://github.com/zopaUK/react-components/commit/ae479e6))
 - **useform:** set it up ([ab1e60a](https://github.com/zopaUK/react-components/commit/ab1e60a))
+
+### Features
+
+- **flexrow:** add direction prop to allow for column swapping ([6449bb4](https://github.com/zopaUK/react-components/commit/6449bb4))
 
 # [1.4.0](https://github.com/zopaUK/react-components/compare/v1.3.1...v1.4.0) (2019-08-07)
 

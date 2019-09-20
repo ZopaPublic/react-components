@@ -1,17 +1,18 @@
-This is a `Accordion` subcomponent and it is meant to be used along with other components such as `<AccordionSection />` and `useAccordion` hook. It is a button with a chevron icon that rotates according to the `isOpen` prop.
+### Summary
 
-Opened Accordion.Header
+<Accordion.Header /> renders a button with a chevron icon that rotates on click.
 
-```js
-import { Accordion } from '@zopauk/react-components';
+- It's meant to be used along [`<Accordion>`](/#/Components/Organisms/Accordion/Accordion) and [`<Accordion.Section />`](/#/Components/Organisms/Accordion/AccordionSection).
+- Check out [`<Accordion />`](/#/Components/Organisms/Accordion) examples for how they're all meant to play together.
 
-<Accordion.Header isOpen={true}>opened accordion header</Accordion.Header>;
-```
-
-Closed Accordion.Header
+### Examples
 
 ```js
 import { Accordion } from '@zopauk/react-components';
 
-<Accordion.Header isOpen={false}>closed accordion header</Accordion.Header>;
+<Accordion aria-label="accordion">
+  <Accordion.Header id="first" index={0} textSize="base">
+    accordion header
+  </Accordion.Header>
+</Accordion>;
 ```

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> should render component with all the props 1`] = `
+.c0 {
+  height: 80px;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Navbar /> should render component with default props 1`] = `
+.c0 {
+  height: 80px;
+}
+
+<div
+  class="c0"
+/>
+`;

@@ -1,5 +1,17 @@
-Icons and logos of Zopa.
+Iconography related to Zopa's brand.
 
-SVGs are preferred. SVGs must be optimized with the tool: [SVGOMG](https://jakearchibald.github.io/svgomg/).
+- [`<AlertIcon />`](/#/Components/Icons/Alert)
+- [`<ArrowIcon />`](/#/Components/Icons/Arrow)
+- [`<CheckMarkIcon />`](/#/Components/Icons/CheckMark)
+- [`<ChevronIcon />`](/#/Components/Icons/Chevron)
+- [`<HamburgerIcon />`](/#/Components/Icons/Hamburger)
+- [`<ProfileIcon />`](/#/Components/Icons/Profile)
+- [`<ZopaIconIcon />`](/#/Components/Icons/ZopaIcon)
 
-Every SVG component in this folder must extend of `React.SVGProps<SVGSVGElement>`.
+### Tips
+
+- Note that every component has the word `"Icon"` on their name
+  - so that when importing we can easily understand it's meant to render an SVG icon.
+- We perfer to use SVG to ensure good display on any device resolution
+  - please compress them with [SVGOMG](https://jakearchibald.github.io/svgomg/).
+- Every component in this folder must extend of `React.SVGProps<SVGSVGElement>` for proper typing.

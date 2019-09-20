@@ -1,39 +1,55 @@
 This project aims to have all the common styled react components as a library/documentation.
 
-## Installation
+### Installation
 
-- Install it from the repository:
+- Install it from NPM:
 
   ```bash
   yarn add '@zopauk/react-components'
   ```
 
-- ⚠️ **In order to use this UI you must import the `<GlobalStyles />` component and use it in the root of your project.**
+### Setup
 
-  ```js static
-  import { GlobalStyles } from '@zopauk/react-components';
+#### ... `<GlobalStyles />`
 
-  // root component
-  const App = () => (
-    <>
-      <GlobalStyles />
-      // rest of your top-level components
-    </>
-  );
-  ```
+⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
-- **Fonts** (_optional_): This is not added in the default module because there are better ways to do it in terms of performance.
+```js static
+import { GlobalStyles } from '@zopauk/react-components';
 
-  ```js static
-  import { Fonts } from '@zopauk/react-components';
+// root component
+const App = () => (
+  <>
+    <GlobalStyles />
+    // rest of your top-level components
+  </>
+);
+```
 
-  // root component
-  const App = () => (
-    <>
-      <Fonts />
-      // rest of your top-level components
-    </>
-  );
-  ```
+#### ... `<Fonts />`
 
-Another option is to use a custom rule on your favourite builder to inject the css.
+[Open Sans](https://fonts.google.com/specimen/Open+Sans) is the typography chosen for Zopa's brand.
+
+We currently use three weights:
+
+- 400 ( _regular_ )
+- 600 ( _semibold_ )
+- 700 ( _bold_ )
+
+As a convenience, you can import `<Fonts />` and add it on the top level of your app:
+
+```js static
+import { Fonts } from '@zopauk/react-components';
+
+// root component
+const App = () => (
+  <>
+    <Fonts />
+    // rest of your top-level components
+  </>
+);
+```
+
+It'll grab **Open Sans** from Google's CDN [through a CSS import](https://github.com/zopaUK/react-components/blob/master/src/components/styles/Fonts.tsx#L3-L5).
+
+You're free to use this technique or add the dependency manually to your base HTML `<head />`

@@ -1,18 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-import * as colors from '../../../../constants/colors';
+import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
+import Text, { ITextProps } from '../../../atoms/Text/Text';
 
-type TTextSize = 'lead' | 'regular';
-interface ITitleStyleProps {
-  textSize?: TTextSize;
-}
-
-const sizes = {
-  regular: '16px',
-  lead: '20px',
-};
+import { useAccordionContext } from '../context';
 
 const StyledButton = styled.button`
   appearance: none;
@@ -23,39 +16,48 @@ const StyledButton = styled.button`
   padding: 0 4px;
 `;
 
-const TitleContainer = styled.span`
+const TitleContainer = styled.div`
   display: flex;
   align-items: center;
-  color: ${colors.primary.blue500};
+
   svg {
     flex-shrink: 0;
   }
 `;
 
-const Title = styled.span<ITitleStyleProps>`
-  color: ${colors.primary.blue500};
-  padding-left: 12px;
-  font-size: ${({ textSize }) => sizes[textSize]};
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: left;
+const Title = styled(Text)`
+  color: ${colors.base.secondary};
+  padding-left: 8px;
 `;
 
 export interface IAccordionHeader {
-  /** determines the position of the chevron icon */
-  isOpen: boolean;
-  textSize?: TTextSize;
+  id: string;
+  index: number;
+  textSize?: ITextProps['size'];
 }
 
-const AccordionHeader: FunctionComponent<IAccordionHeader> = React.forwardRef<HTMLButtonElement, IAccordionHeader>(
-  ({ children, isOpen, textSize = 'lead', ...rest }, ref) => (
-    <StyledButton ref={ref} {...rest}>
+const mapTextToArrowSize = {
+  base: '10px',
+  small: '8px',
+};
+
+const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', ...rest }) => {
+  const { getHeaderProps, isActiveSection } = useAccordionContext();
+  const { ref, ...headerPropsRest } = getHeaderProps(id, index);
+  return (
+    <StyledButton ref={ref} {...headerPropsRest} {...rest}>
       <TitleContainer>
-        <Arrow direction={isOpen ? 'down' : 'right'} />
-        <Title textSize={textSize}>{children}</Title>
+        <Arrow
+          direction={isActiveSection(index) ? 'down' : 'right'}
+          width={mapTextToArrowSize[textSize]}
+          height={mapTextToArrowSize[textSize]}
+        />
+        <Title weight="bold" size={textSize}>
+          {children}
+        </Title>
       </TitleContainer>
     </StyledButton>
-  ),
-);
+  );
+};
 
 export default AccordionHeader;

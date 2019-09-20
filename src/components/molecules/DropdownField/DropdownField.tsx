@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
-import HelpText from '../../atoms/HelpText/HelpText';
+import Text from '../../atoms/Text/Text';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import Dropdown, { IDropdownProps } from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -12,6 +12,7 @@ export interface IDropdownFieldProps extends Omit<IField, 'isValid' | 'inputProp
    * Size attribute for the rendered HTML `<select>` element
    */
   htmlSelectSize?: InputHTMLAttributes<HTMLSelectElement>['size'];
+  name: string;
 }
 
 const FieldError = styled(ErrorMessage)`
@@ -20,6 +21,11 @@ const FieldError = styled(ErrorMessage)`
 
 const Label = styled(InputLabel)`
   margin-bottom: 5px;
+`;
+
+const Help = styled(Text)`
+  margin-bottom: 10px;
+  display: block;
 `;
 
 function DropdownField(props: IDropdownFieldProps) {
@@ -36,7 +42,7 @@ function DropdownField(props: IDropdownFieldProps) {
   return (
     <>
       {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
-      {helpText && <HelpText>{helpText}</HelpText>}
+      {helpText && <Help size="small">{helpText}</Help>}
       <SizedContainer size={size}>{input}</SizedContainer>
       {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
     </>

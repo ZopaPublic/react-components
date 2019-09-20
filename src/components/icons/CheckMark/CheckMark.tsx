@@ -1,5 +1,5 @@
 import React from 'react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface ICheckMarkProps extends React.SVGProps<SVGSVGElement> {
   /**
@@ -8,7 +8,7 @@ export interface ICheckMarkProps extends React.SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const CheckMark = ({ color = colors.extended.blue500, ...rest }: ICheckMarkProps) => {
+const CheckMark = ({ color = colors.base.secondary, ...rest }: ICheckMarkProps) => {
   return (
     <svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" aria-label="Checkmark" role="img" {...rest}>
       <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" transform="translate(-5.000000, -7.000000)">

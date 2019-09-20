@@ -1,12 +1,12 @@
 import React from 'react';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface IAlertProps {
   fillColor?: string;
   size?: string;
 }
 
-const AlertIcon: React.FunctionComponent<IAlertProps> = ({ fillColor = colors.neutral.neutral200, size = '20px' }) => (
+const AlertIcon: React.FunctionComponent<IAlertProps> = ({ fillColor = colors.base.secondary, size = '20px' }) => (
   <svg width={size} height={size} viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <g fill="none" fillRule="evenodd">
       <path d="M-2-2h24v24H-2z" />

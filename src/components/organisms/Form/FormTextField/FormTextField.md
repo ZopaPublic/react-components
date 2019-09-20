@@ -1,4 +1,8 @@
+### Summary
+
 `<Form.TextField>` is just a small wrapper around the [`<TextField />`](#/Components/Molecules/TextField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.TextField>` already handles the form submit callback and the disabled attribute for you.
+
+### Example
 
 ```js
 import { Form } from '@zopauk/react-components';

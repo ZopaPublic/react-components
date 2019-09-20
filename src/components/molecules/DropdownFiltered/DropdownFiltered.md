@@ -1,36 +1,38 @@
 ![BETA](https://img.shields.io/badge/BETA-0.0.4-yellow.svg)
 
-Styled Dropdown component with typing filter.
+### Summary
 
-This is a wrapper of 4 different components using [paypal/downshift](https://github.com/paypal/downshift):
+`<DropdownFiltered />` is a custom dropdown with a filter applied on typing.
 
-- SizedContainer: Div container with size prop.
-- InputText: Native input text.
-- InputLabel: Label text. Only rendered if the prop `label` is filled in.
-- SizedContainer: Error message. Only rendered if the prop `errorMessage` is filled in.
+It wrap four components:
 
-### TODO:
+- [`<SizedContainer />`](/#/Components/Layout/SizedContainer)
+- [`<InputText />`](/#/Components/Atoms/InputText)
+- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 
-- Improve code readability
-- Add tests for filter
+And uses [paypal/downshift](https://github.com/paypal/downshift) internally.
 
-### Features:
+How it works:
 
-- Default value (see examples)
-- Close options on click over
-- Filter text: any case and any substring
-- Extendable: all props from [paypal/downshift](https://github.com/paypal/downshift) can also
-  be applied.
-
-### How it works
-
-Under the hood:
-
-- It uses [paypal/downshift](https://github.com/paypal/downshift).
 - The filtered text is always display in an input text.
 - The selected item is passed to the onChange function.
 
-Basic example:
+Also note that:
+
+- You can set a default value ( see the examples 👇🏻 )
+- Options lists closes when clicking outside of it
+- All props from [paypal/downshift](https://github.com/paypal/downshift) can be applied to it
+
+### Todos
+
+- Improve code readability
+- Simplify prop API 🤯
+- Test filter functionality
+
+### Examples
+
+- Standard
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -49,7 +51,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 />;
 ```
 
-#### With default value
+- With default value
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -69,7 +71,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 />;
 ```
 
-#### Long list and a optionsListMaxHeight
+- Long list with a `max-height` applied to it
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -141,7 +143,7 @@ const items = [
 />;
 ```
 
-#### With errorMessage
+- With an error message
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -161,7 +163,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 />;
 ```
 
-#### isValid
+- Valid state
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -181,7 +183,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 />;
 ```
 
-#### disabled
+- Disabled
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';
@@ -202,7 +204,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 />;
 ```
 
-#### size is "short"
+- With a short size
 
 ```jsx
 import { DropdownFiltered } from '@zopauk/react-components';

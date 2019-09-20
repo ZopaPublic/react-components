@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import * as colors from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 
 export interface ISpinnerProps {
   /**
@@ -46,9 +46,9 @@ const SSpinner = styled.div<ISpinnerProps>`
 const Spinner: React.FunctionComponent<ISpinnerProps> = props => <SSpinner {...props} />;
 
 Spinner.defaultProps = {
-  backgroundColor: colors.extended.teal100,
+  backgroundColor: colors.neutral.light,
   borderWidth: '8px',
-  frontColor: colors.base.white,
+  frontColor: colors.base.primary,
   size: '45px',
 };
 

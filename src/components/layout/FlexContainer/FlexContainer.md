@@ -1,3 +1,6 @@
-`<FlexContainer />` component is meant to be used as a wrap `<FlexRow />` when building a grid.
+### Summary
 
-Its responsibility is to set the grid's `max-width`, `gutter` and making sure it's centred horizontally within the viewport.
+`<FlexContainer />` is meant to wrap `<FlexRow />`
+
+- Its main goal is to set the layout `max-width` and `gutter`; making sure the layout stays horizontally centred within the viewport 📐
+- See [`<FlexCol />`](/#/Components/Layout/FlexCol) docs for usage examples.

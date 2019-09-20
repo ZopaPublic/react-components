@@ -4,8 +4,8 @@
 
 // Atoms
 // Constants (colors, fonts, ...)
-import * as colors from './constants/colors';
-import * as fonts from './constants/fonts';
+import { colors } from './constants/colors';
+import { typography } from './constants/typography';
 
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
@@ -20,8 +20,9 @@ export { default as DropdownFiltered } from './components/molecules/DropdownFilt
 export { default as Spinner } from './components/atoms/Spinner/Spinner';
 export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMessage';
 export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
-export { default as HelpText } from './components/atoms/HelpText/HelpText';
 export { default as InputText } from './components/atoms/InputText/InputText';
+export { default as Text } from './components/atoms/Text/Text';
+export { default as Heading } from './components/atoms/Heading/Heading';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
@@ -33,21 +34,9 @@ export { default as TextField } from './components/molecules/TextField/TextField
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
 
 // Organisms
-export { default as Navbar } from './components/organisms/Navbar/Navbar';
-export { default as Accordion } from './components/organisms/Accordion/Accordion';
 export { default as Form } from './components/organisms/Form';
-
-// Typography
-export { default as Header1 } from './components/typography/Header1/Header1';
-export { default as Header2 } from './components/typography/Header2/Header2';
-export { default as Header3 } from './components/typography/Header3/Header3';
-export { default as Title1 } from './components/typography/Title1/Title1';
-export { default as Title2 } from './components/typography/Title2/Title2';
-export { default as Title3 } from './components/typography/Title3/Title3';
-export { default as Lead } from './components/typography/Lead/Lead';
-export { default as Subhead } from './components/typography/Subhead/Subhead';
-export { default as Caption } from './components/typography/Caption/Caption';
-export { default as Text } from './components/typography/Text/Text';
+export { default as Navbar } from './components/organisms/Navbar';
+export { default as Accordion } from './components/organisms/Accordion';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
@@ -56,14 +45,11 @@ export { default as FlexCol } from './components/layout/FlexCol/FlexCol';
 export { default as SizedContainer } from './components/layout/SizedContainer/SizedContainer';
 
 // Icons
-export { default as Arrow } from './components/icons/Arrow/Arrow';
-export { default as Alert } from './components/icons/Alert/Alert';
-export { default as CheckMark } from './components/icons/CheckMark/CheckMark';
-export { default as Chevron } from './components/icons/Chevron/Chevron';
-export { default as Facebook } from './components/icons/Facebook/Facebook';
-export { default as Twitter } from './components/icons/Twitter/Twitter';
-export { default as Instagram } from './components/icons/Instagram/Instagram';
-export { default as ZopaLogo } from './components/icons/ZopaLogo/ZopaLogo';
+export { default as ArrowIcon } from './components/icons/Arrow/Arrow';
+export { default as AlertIcon } from './components/icons/Alert/Alert';
+export { default as CheckMarkIcon } from './components/icons/CheckMark/CheckMark';
+export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
+export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
 export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
@@ -71,7 +57,7 @@ export { default as ProfileIcon } from './components/icons/Profile/Profile';
 export { default as useAccordion } from './components/hooks/useAccordion/useAccordion';
 export { default as useForm } from './components/hooks/useForm/useForm';
 
-export { colors, fonts };
+export { colors, typography };
 export { default as Fonts } from './components/styles/Fonts';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 

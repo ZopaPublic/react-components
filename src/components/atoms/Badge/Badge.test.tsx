@@ -22,8 +22,12 @@ describe('<Badge />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('renders with specific size', () => {
-    const { container } = render(<Badge size="l">Content</Badge>);
+  it.each`
+    size
+    ${'small'}
+    ${'medium'}
+  `('renders with specific size: $size', ({ size }) => {
+    const { container } = render(<Badge size={size}>Content</Badge>);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
