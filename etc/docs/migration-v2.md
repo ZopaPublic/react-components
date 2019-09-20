@@ -119,7 +119,10 @@ import { Navbar } from '@zopauk/react-components'
 />
 ```
 
-For **Accordion**, you now need to wrap the sub-components with `<Accordion>` and `<Accordion.Header />` has now just two sizes ( `regular | small` ) to reflect the new [typography spec](https://user-images.githubusercontent.com/5938217/63936465-2c468100-ca60-11e9-8340-4313eef20fc4.png).
+For **Accordion**:
+
+- you now need to wrap the sub-components with `<Accordion>`
+- `<Accordion.Header size />` matches `<Text size />`
 
 ```jsx
 import { Accordion } from '@zopauk/react-components'
@@ -137,7 +140,7 @@ import { Accordion } from '@zopauk/react-components'
 </Accordion>
 ```
 
-See this article for more in-depth of the [benefits of dot notation](https://medium.com/@skovy/using-component-dot-notation-with-typescript-to-create-a-set-of-components-b0b2aad4892b).
+See this article for more in-depth on the [benefits of dot notation](https://medium.com/@skovy/using-component-dot-notation-with-typescript-to-create-a-set-of-components-b0b2aad4892b).
 
 Whichever component had a `colour` prop, that colour prop will only accept one of the new [defined colours](http://localhost:6060/#/Content?id=colors), or a subset of them where it makes sense.
 
