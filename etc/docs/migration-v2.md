@@ -21,13 +21,13 @@
 
 ## What's coming in `2.0.0` ?
 
-The new major version of `@zopauk/react-components` contains brand updates on our components reflecting the new design system that's being developed at Zopa.
+The new major version of `@zopauk/react-components` contains brand updates on our components reflecting the new design system that's developed at Zopa.
 
 ### Colors
 
 <img src="https://user-images.githubusercontent.com/5938217/63521744-51367380-c4f7-11e9-9c01-576b066da65c.png" width="300" />
 
-Limit the colors we expose to a small number and give them a function.
+Limit the colours we expose to a small number and give them a function.
 
 ### Typograhpy
 
@@ -36,7 +36,7 @@ Limit the colors we expose to a small number and give them a function.
 Remove Alverata as _heading fonts_ and use [Open Sans](https://fonts.google.com/specimen/Open+Sans) for everything.  
 Standardise the [typography spec](https://user-images.githubusercontent.com/5938217/63936465-2c468100-ca60-11e9-8340-4313eef20fc4.png) ( _font sizes, weights, line-heights..._ )
 
-## What's been removed ?
+## What we removed ?
 
 You won't be able to access any of the [old colors](https://zopauk.github.io/react-components/#/Content?id=colors):
 
@@ -137,16 +137,17 @@ import { Accordion } from '@zopauk/react-components'
 </Accordion>
 ```
 
-See this article for more in depth of the [benefits of dot notation](https://medium.com/@skovy/using-component-dot-notation-with-typescript-to-create-a-set-of-components-b0b2aad4892b).
+See this article for more in-depth of the [benefits of dot notation](https://medium.com/@skovy/using-component-dot-notation-with-typescript-to-create-a-set-of-components-b0b2aad4892b).
 
-Whichever component had a `color` prop, that color prop will only accept one of the new [defined colors](http://localhost:6060/#/Content?id=colors), or a subset of them where it makes sesne.
+Whichever component had a `colour` prop, that colour prop will only accept one of the new [defined colours](http://localhost:6060/#/Content?id=colors), or a subset of them where it makes sense.
 
 ## What's new ?
 
 #### [`<Text />`](https://zopauk.github.io/react-components/#/Components/Atoms/Text)
 
 Whenever you have to render short or long body text on your app, use the new `<Text />` component rather than HTML tags directly ( `<p>`, `<span`>, etc... ).
-It's built too match the latest specs on typography and give you enough flexibility to match any desing.
+
+It's built to match the latest specs on typography and give you enough flexibility to match any design.
 
 Make sure you use the `as` prop when rendering paragraph text so it ends up tagged semantically:
 
@@ -161,20 +162,20 @@ Whenever you need to render a heading in your app, use the new `<Heading />` com
 
 The `as` prop is mandatory to make you think which heading tag you're rendering.
 
-🚨 &nbsp; **Please dont't render paragraph text as a heading:**
+🚨 &nbsp; **Please don't render paragraph text as a heading:**
 
-```
+```jsx
 /* Don't do this, talk to the designer on why he's diverting from our design system! */
 <Heading as="h3">A long paragraph illustrating all the key features of Mario Bros</Heading>
 ```
 
 #### [`colors`](https://zopauk.github.io/react-components/#/Components/Atoms/Heading)
 
-Our color API is much more concise now and divided into three categories:
+Our colour API is much more concise now and divided into three categories:
 
 - **base** ( _colors related to Zopa's brand_ )
 - **neutral** ( _colors to enhance the user experience_ )
-- **semantic** ( _colors related to certain states of an application_ )
+- **semantic** ( _colors related to particular states of the application_ )
 
 # Primer
 
@@ -252,7 +253,7 @@ _Just the exported name of some icons changes for consistency_ )
 | `<CheckMarkIcon />` | `<CheckMarkIcon />` |
 | `<ZopaLogo />`      | `<ZopaIcon />`      |
 
-You shouldn't be using anymore:
+It would be best if you weren't using anymore:
 
 - `<Instagram />`
 - `<Twitter />`
