@@ -22,10 +22,17 @@ const defaultFont = css`
   }
 `;
 
+const imagery = css`
+  img {
+    max-width: 100%;
+  }
+`;
+
 const GlobalStyles = createGlobalStyle`
   ${normalize}
   ${defaultFont}
   ${boxSizing}
+  ${imagery}
 `;
 
 export default GlobalStyles;
