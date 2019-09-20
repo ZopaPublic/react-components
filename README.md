@@ -1,4 +1,4 @@
-# React components `2.0`
+# React components
 
 <img src="./etc/images/turtle.gif" />
 
