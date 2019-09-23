@@ -51,6 +51,7 @@ export { default as CheckMarkIcon } from './components/icons/CheckMark/CheckMark
 export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
 export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
 export { default as TrustPilotLogo } from './components/icons/TrustPilotLogo/TrustPilotLogo';
+export { default as TrustPilotStars } from './components/icons/TrustPilotStars/TrustPilotStars';
 export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
 

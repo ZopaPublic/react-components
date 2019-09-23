@@ -1,4 +1,4 @@
-This component is a wrapper around the svg code for Zopa's logo.
+This component is a wrapper around the svg code for the TrustPilot logo.
 
 ```jsx
 import { TrustPilotLogo } from '@zopauk/react-components';
