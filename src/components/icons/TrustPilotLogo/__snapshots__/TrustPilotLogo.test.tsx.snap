@@ -2,7 +2,6 @@
 
 exports[`<TrustPilotLogo /> renders the component with props 1`] = `
 <svg
-  height="50px"
   role="img"
   viewBox="0 0 212 53"
   width="70px"

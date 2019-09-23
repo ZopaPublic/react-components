@@ -4,7 +4,7 @@ import TrustPilotLogo from './TrustPilotLogo';
 
 describe('<TrustPilotLogo />', () => {
   it('renders the component with props', () => {
-    const { container } = render(<TrustPilotLogo width="70px" height="50px" />);
+    const { container } = render(<TrustPilotLogo width="70px" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
