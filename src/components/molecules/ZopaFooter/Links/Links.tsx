@@ -41,6 +41,10 @@ const linkGroups = [
         label: 'Car loans',
       },
       {
+        href: 'https://www.zopa.com/loans/car-finance',
+        label: 'Car finance',
+      },
+      {
         href: 'https://www.zopa.com/loans/debt-consolidation',
         label: 'Debt consolidation loans',
       },
