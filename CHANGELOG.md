@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/zopaUK/react-components/compare/v2.0.0...v2.1.0) (2019-09-24)
+
+
+### Features
+
+* **zopafooter:** car finance link added ([f522dc9](https://github.com/zopaUK/react-components/commit/f522dc9))
+
 # [2.0.0](https://github.com/zopaUK/react-components/compare/v1.7.2...v2.0.0) (2019-09-20)
 
 
