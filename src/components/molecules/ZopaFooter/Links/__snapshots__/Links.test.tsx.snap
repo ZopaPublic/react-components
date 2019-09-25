@@ -175,17 +175,6 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
-            href="https://www.zopa.com/loans/car-finance"
-          >
-            Car finance
-          </a>
-        </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6 c7 c8"
-            color="#4A3EDE"
             href="https://www.zopa.com/loans/debt-consolidation"
           >
             Debt consolidation loans

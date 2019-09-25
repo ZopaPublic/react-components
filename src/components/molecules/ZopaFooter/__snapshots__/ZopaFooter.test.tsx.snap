@@ -595,17 +595,6 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 <a
                   class="c15 c6 c7"
                   color="#4A3EDE"
-                  href="https://www.zopa.com/loans/car-finance"
-                >
-                  Car finance
-                </a>
-              </li>
-              <li
-                class="c14"
-              >
-                <a
-                  class="c15 c6 c7"
-                  color="#4A3EDE"
                   href="https://www.zopa.com/loans/debt-consolidation"
                 >
                   Debt consolidation loans
