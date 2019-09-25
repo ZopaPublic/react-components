@@ -85,6 +85,7 @@
     "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-url": "^2.2.2",
     "semantic-release": "^15.13.12",
+    "styled-components": "^4.4.0",
     "typescript": "^3.2.2"
   },
   "browserslist": [
