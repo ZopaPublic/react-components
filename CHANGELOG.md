@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/zopaUK/react-components/compare/v2.1.0...v2.2.0) (2019-09-25)
+
+
+### Features
+
+* **zopafooter:** car finance link removed ([8f4b005](https://github.com/zopaUK/react-components/commit/8f4b005))
+
 # [2.1.0](https://github.com/zopaUK/react-components/compare/v2.0.0...v2.1.0) (2019-09-24)
 
 
