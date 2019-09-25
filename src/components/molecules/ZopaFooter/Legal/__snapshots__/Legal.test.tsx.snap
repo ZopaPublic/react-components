@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Legal /> renders the component 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -18,7 +18,7 @@ exports[`<Legal /> renders the component 1`] = `
   padding: 18px 0;
 }
 
-.c1 {
+.c2 {
   color: #A9ACBA;
   margin: 0 0 24px 0;
 }
