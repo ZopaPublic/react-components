@@ -1,3 +1,11 @@
+## [2.2.1](https://github.com/zopaUK/react-components/compare/v2.2.0...v2.2.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* **peer dependencies:** add styled-components back to dev dependencies ([2a049f0](https://github.com/zopaUK/react-components/commit/2a049f0))
+* **peer dependencies:** move styled components to peer dependencies ([c2c029e](https://github.com/zopaUK/react-components/commit/c2c029e))
+
 # [2.2.0](https://github.com/zopaUK/react-components/compare/v2.1.0...v2.2.0) (2019-09-25)
 
 
