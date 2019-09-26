@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
-.c4 {
+.c2 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -51,7 +51,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border: 2px #4A3EDE solid;
 }
 
-.c2 {
+.c4 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -67,7 +67,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   user-select: none;
 }
 
-.c2:before {
+.c4:before {
   content: '';
   background-color: #EAEAEE;
   border-radius: 6px;
@@ -81,7 +81,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: block;
 }
 
-.c2:after {
+.c4:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -92,11 +92,11 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   top: 6px;
 }
 
-.c2:hover {
+.c4:hover {
   cursor: pointer;
 }
 
-.c2:hover:before {
+.c4:hover:before {
   border: 2px #DCDBE2 solid;
 }
 

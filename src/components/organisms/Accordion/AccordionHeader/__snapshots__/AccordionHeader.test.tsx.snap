@@ -10,7 +10,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   transform: rotate(-90deg);
 }
 
-.c4 {
+.c3 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -50,7 +50,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   flex-shrink: 0;
 }
 
-.c3 {
+.c4 {
   color: #4A3EDE;
   padding-left: 8px;
 }
