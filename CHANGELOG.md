@@ -1,3 +1,11 @@
+## [2.2.2](https://github.com/zopaUK/react-components/compare/v2.2.1...v2.2.2) (2019-10-01)
+
+
+### Bug Fixes
+
+* **accordionheader:** align items to text baseline ([9cc785b](https://github.com/zopaUK/react-components/commit/9cc785b))
+* **arrow:** remove `id` attrs from the SVG ([c31e91a](https://github.com/zopaUK/react-components/commit/c31e91a))
+
 ## [2.2.1](https://github.com/zopaUK/react-components/compare/v2.2.0...v2.2.1) (2019-09-26)
 
 
