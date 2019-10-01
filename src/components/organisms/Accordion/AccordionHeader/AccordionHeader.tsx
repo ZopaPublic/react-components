@@ -18,7 +18,8 @@ const StyledButton = styled.button`
 
 const TitleContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  text-align: left;
 
   svg {
     flex-shrink: 0;
