@@ -3,9 +3,9 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.4
 jobs:
-  test_node_8:
+  test_node_latest:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node
     steps:
       - checkout
       - restore_cache:
@@ -52,7 +52,7 @@ jobs:
       - store_test_results:
           path: reports/junit
       - store_artifacts:
-          path: reports/junit   
+          path: reports/junit
 
   release:
     docker:
@@ -101,7 +101,7 @@ jobs:
       # This is necessary to avoid the error related to permissions of Github (see official docs)
       - add_ssh_keys:
           fingerprints:
-            - "d3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e"
+            - 'd3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e'
       - run:
           name: Deploy website
           command: yarn deploy-web
@@ -110,18 +110,18 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - test_node_8
+      - test_node_latest
       - test_node_10
       - release:
           requires:
-            - test_node_8
+            - test_node_latest
             - test_node_10
           filters:
             branches:
               only: master
       - deploy-web:
           requires:
-            - test_node_8
+            - test_node_latest
             - test_node_10
           filters:
             branches:
