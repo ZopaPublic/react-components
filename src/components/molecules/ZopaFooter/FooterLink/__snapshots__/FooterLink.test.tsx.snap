@@ -37,13 +37,13 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
 }
 
 .c2 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
 .c2:hover {
-  color: #6F748B;
+  color: #63637E;
 }
 
 <a
@@ -88,13 +88,13 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
 }
 
 .c2 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
 .c2:hover {
-  color: #6F748B;
+  color: #63637E;
 }
 
 <a

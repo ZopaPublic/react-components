@@ -2,7 +2,7 @@
 
 exports[`<Separator /> renders the component 1`] = `
 .c0 {
-  background-color: #282F52;
+  background-color: #63637E;
   height: 1px;
 }
 

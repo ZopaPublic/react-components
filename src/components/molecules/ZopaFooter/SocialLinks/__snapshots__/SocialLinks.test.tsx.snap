@@ -112,7 +112,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 .c8 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
   margin-left: 8px;
@@ -120,11 +120,11 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 .c8:hover {
-  color: #6F748B;
+  color: #63637E;
 }
 
 .c4 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
   display: -webkit-box;
@@ -138,7 +138,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 .c4:hover {
-  color: #6F748B;
+  color: #63637E;
 }
 
 .c4 > svg {

@@ -70,13 +70,13 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c8 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
 .c8:hover {
-  color: #6F748B;
+  color: #63637E;
 }
 
 .c2 {
