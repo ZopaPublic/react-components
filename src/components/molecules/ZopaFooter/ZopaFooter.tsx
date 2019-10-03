@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import * as colors from './colors';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
 import Legal from './Legal/Legal';
 import Links from './Links/Links';
 import Separator from './Separator/Separator';
 import SocialLinks from './SocialLinks/SocialLinks';
 import Wrapper from './Wrapper/Wrapper';
+import { colors } from '../../../constants/colors';
 
 const StyledWrapper = styled.div`
-  background-color: ${colors.neutral900};
+  background-color: ${colors.neutral.dark};
   padding: 40px 0;
 `;
 
