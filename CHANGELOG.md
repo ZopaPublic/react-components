@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/zopaUK/react-components/compare/v2.3.0...v2.3.1) (2019-10-03)
+
+
+### Bug Fixes
+
+* **footer background:** change to background colour from brand ([a48b503](https://github.com/zopaUK/react-components/commit/a48b503))
+
 # [2.3.0](https://github.com/zopaUK/react-components/compare/v2.2.2...v2.3.0) (2019-10-03)
 
 
