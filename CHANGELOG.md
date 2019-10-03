@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/zopaUK/react-components/compare/v2.2.2...v2.3.0) (2019-10-03)
+
+
+### Features
+
+* **node:** suppoprt latest version by default ([96d79e1](https://github.com/zopaUK/react-components/commit/96d79e1))
+
 ## [2.2.2](https://github.com/zopaUK/react-components/compare/v2.2.1...v2.2.2) (2019-10-01)
 
 
