@@ -19,7 +19,7 @@ exports[`<Legal /> renders the component 1`] = `
 }
 
 .c2 {
-  color: #A9ACBA;
+  color: #DCDBE2;
   margin: 0 0 24px 0;
 }
 

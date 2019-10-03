@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import * as colors from '../colors';
 import Link from '../../../atoms/Link/Link';
+import { colors } from '../../../../constants/colors';
 
 export interface IFooterLink extends React.HTMLAttributes<HTMLAnchorElement> {
   size?: 'default' | 'small';
 }
 
 const FooterLink = styled(Link)`
-  color: ${colors.neutral200};
+  color: ${colors.neutral.medium};
   transition: color 0.2s ease;
 
   &:hover {
-    color: ${colors.neutral400};
+    color: ${colors.neutral.nearDark};
   }
 `;
 

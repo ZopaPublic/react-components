@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-
-import * as colors from '../colors';
+import { colors } from '../../../../constants/colors';
 
 const Separator = styled.div`
-  background-color: ${colors.neutral800};
+  background-color: ${colors.neutral.nearDark};
   height: 1px;
 `;
 
