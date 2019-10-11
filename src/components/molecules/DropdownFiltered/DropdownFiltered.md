@@ -8,7 +8,7 @@ It wrap four components:
 
 - [`<SizedContainer />`](/#/Components/Layout/SizedContainer)
 - [`<InputText />`](/#/Components/Atoms/InputText)
-- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<Label />`](/#/Components/Atoms/Label)
 - [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 
 And uses [paypal/downshift](https://github.com/paypal/downshift) internally.

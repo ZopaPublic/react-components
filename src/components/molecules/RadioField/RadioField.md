@@ -8,7 +8,7 @@
 
 ⚠️ &nbsp;Note that a `value` prop **must be provided** to automatically set:
 
-- `htmlFor` prop on the `<InputLabel />` component.
+- `htmlFor` prop on the `<Label />` component.
 - `id` prop on `<InputRadio />` so that is easily to query (.i.e automated tests).
 
 ### Examples

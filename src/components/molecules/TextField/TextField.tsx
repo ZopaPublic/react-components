@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import Label from '../../atoms/Label/Label';
 import InputText from '../../atoms/InputText/InputText';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
@@ -42,7 +42,7 @@ const TextField = (props: ITextFieldProps) => {
 
   return (
     <>
-      {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
+      {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
       {helpText && <Text size="small">{helpText}</Text>}
       <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}

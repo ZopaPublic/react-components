@@ -19,7 +19,7 @@ export { Option as DropdownOption } from './components/atoms/Dropdown/Dropdown';
 export { default as DropdownFiltered } from './components/molecules/DropdownFiltered/DropdownFiltered';
 export { default as Spinner } from './components/atoms/Spinner/Spinner';
 export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMessage';
-export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
+export { default as Label } from './components/atoms/Label/Label';
 export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';

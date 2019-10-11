@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import checkMark from '../../../content/images/white-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import Label from '../../atoms/Label/Label';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { IField, IInput } from '../../types';
@@ -44,7 +44,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const Label = styled(InputLabel)`
+const FieldLabel = styled(Label)`
   width: auto;
   display: flex;
   font-weight: ${typography.weights.regular};
@@ -92,7 +92,7 @@ const CheckboxField = (props: IField) => {
   return (
     <SizedContainer size={size} {...rest}>
       <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />
-      <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
+      <FieldLabel htmlFor={`checkbox-id-${name}`}>{label}</FieldLabel>
       {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </SizedContainer>
   );

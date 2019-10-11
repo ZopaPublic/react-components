@@ -2,12 +2,12 @@
 
 `<CheckboxField />` is a convenience wrapper around HTML `<input type="checkbox" />` and two **atoms**:
 
-- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<Label />`](/#/Components/Atoms/Label)
 - [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 
 ⚠️ &nbsp;Note that a `name` prop **must be provided** to automatically set:
 
-- `htmlFor` prop in `<InputLabel />`
+- `htmlFor` prop in `<Label />`
 - `data-automation` prop in `<ErrorMessage />`
 - `id` prop in `<input type="checkbox" />` for accessibility and automation purposes
 

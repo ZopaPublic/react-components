@@ -7,7 +7,7 @@ Atoms are usually made with only one single HTML element.
 - [`<Doprdown />`](/#/Components/Atoms/Doprdown)
 - [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 - [`<Heading />`](/#/Components/Atoms/Heading)
-- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<Label />`](/#/Components/Atoms/Label)
 - [`<InputText />`](/#/Components/Atoms/InputText)
 - [`<Link />`](/#/Components/Atoms/Link)
 - [`<SidekickCard />`](/#/Components/Atoms/SidekickCard)

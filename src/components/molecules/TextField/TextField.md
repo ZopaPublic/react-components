@@ -4,12 +4,12 @@
 
 - [`<SizedContainer />`](/#/Components/Layout/SizedContainer)
 - [`<InputText />`](/#/Components/Atoms/InputText)
-- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
+- [`<Label />`](/#/Components/Atoms/Label)
 - [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
 
 ⚠️ &nbsp;Note that a `name` prop **must be provided** to automatically set:
 
-- `htmlFor` prop on `<InputLabel />`
+- `htmlFor` prop on `<Label />`
 - `data-automation` prop on `<ErrorMessage />`
 - `id` prop on `<InputText />`
 

@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
-import InputLabel from '../../atoms/InputLabel/InputLabel';
+import Label from '../../atoms/Label/Label';
 import Dropdown, { IDropdownProps } from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
@@ -19,7 +19,7 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const Label = styled(InputLabel)`
+const FieldLabel = styled(Label)`
   margin-bottom: 5px;
 `;
 
@@ -41,7 +41,7 @@ function DropdownField(props: IDropdownFieldProps) {
 
   return (
     <>
-      {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
+      {label && <FieldLabel htmlFor={`text-id-${name}`}>{label}</FieldLabel>}
       {helpText && <Help size="small">{helpText}</Help>}
       <SizedContainer size={size}>{input}</SizedContainer>
       {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
