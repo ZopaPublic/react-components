@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y violations 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -14,11 +14,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-size: 16px;
 }
 
-.c2 {
+.c1 {
   display: block;
 }
 
-.c4 {
+.c5 {
   border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
@@ -28,18 +28,18 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   margin: 4px 0 0;
 }
 
-.c4:focus {
+.c5:focus {
   outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c4::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #DCDBE2;
 }
 
-.c4:disabled {
+.c5:disabled {
   background-color: #EAEAEE;
 }
 
@@ -57,7 +57,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
-.c5 {
+.c4 {
   margin: 0;
   margin-bottom: 0;
 }
@@ -134,7 +134,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 `;
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
-.c2 {
+.c3 {
   border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
@@ -144,18 +144,18 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   margin: 4px 0 0;
 }
 
-.c2:focus {
+.c3:focus {
   outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #DCDBE2;
 }
 
-.c2:disabled {
+.c3:disabled {
   background-color: #EAEAEE;
 }
 
@@ -173,7 +173,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   width: 100%;
 }
 
-.c3 {
+.c2 {
   margin: 0;
   margin-bottom: 0;
 }

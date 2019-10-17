@@ -16,7 +16,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 16px;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -55,7 +55,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 14px;
 }
 
-.c8 {
+.c7 {
   font-size: inherit;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -69,11 +69,11 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   appearance: none;
 }
 
-.c8:hover {
+.c7:hover {
   opacity: 0.88;
 }
 
-.c8:active {
+.c7:active {
   opacity: 0.72;
 }
 

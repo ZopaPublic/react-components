@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Badge /> renders with no a11y violations 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -14,7 +14,7 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
@@ -31,7 +31,7 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
 `;
 
 exports[`<Badge /> renders with specific size: "medium" 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -44,7 +44,7 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
@@ -61,7 +61,7 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
 `;
 
 exports[`<Badge /> renders with specific size: "small" 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -74,7 +74,7 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;
@@ -91,7 +91,7 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
 `;
 
 exports[`<Badge /> renders with specific style 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -104,7 +104,7 @@ exports[`<Badge /> renders with specific style 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   color: #FFFFFF;
   background-color: #1EC06A;
   display: inline-block;
@@ -151,7 +151,7 @@ exports[`<Badge /> renders with specific style 1`] = `
 `;
 
 exports[`<Badge /> renders without crashing 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -164,7 +164,7 @@ exports[`<Badge /> renders without crashing 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   color: #FFFFFF;
   background-color: #0D0A38;
   display: inline-block;

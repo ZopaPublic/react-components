@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ErrorMessage /> renders the component with props with no a11y violations 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -14,13 +14,13 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   font-size: 14px;
 }
 
-.c1 {
+.c0 {
   width: 100%;
   color: #EE0505;
   display: block;
 }
 
-.c1:before {
+.c0:before {
   content: '';
   background: url(red-warning.svg) no-repeat;
   width: 28px;

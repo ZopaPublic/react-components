@@ -46,7 +46,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,7 +69,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c2 {
+.c4 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -103,7 +103,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   opacity: 0.72;
 }
 
-.c7 {
+.c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -123,7 +123,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   color: #6F748B;
 }
 
-.c4 {
+.c2 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -137,11 +137,11 @@ exports[`<SocialLinks /> renders the component 1`] = `
   justify-content: center;
 }
 
-.c4:hover {
+.c2:hover {
   color: #6F748B;
 }
 
-.c4 > svg {
+.c2 > svg {
   max-width: 200px;
 }
 
@@ -226,13 +226,13 @@ exports[`<SocialLinks /> renders the component 1`] = `
 }
 
 @media (min-width:576px) {
-  .c7 {
+  .c6 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c6 {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -287,7 +287,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
     >
       <a
         aria-label="instagram"
-        class="c2 c3 c8"
+        class="c8 c3 c4"
         color="#4A3EDE"
         cols="12"
         href="https://www.instagram.com/Zopamoney/"
@@ -316,7 +316,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        class="c2 c3 c8"
+        class="c8 c3 c4"
         color="#4A3EDE"
         cols="12"
         href="https://facebook.com/zopa"
@@ -339,7 +339,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        class="c2 c3 c8"
+        class="c8 c3 c4"
         color="#4A3EDE"
         cols="12"
         href="https://twitter.com/zopa"

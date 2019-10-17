@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
-.c3 {
+.c5 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -18,16 +18,16 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: block;
 }
 
-.c0 {
+.c1 {
   max-width: 100%;
   width: 100%;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c5 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -38,7 +38,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   position: relative;
 }
 
-.c5:before {
+.c3:before {
   content: '';
   background-color: #EAEAEE;
   border-radius: 50%;
@@ -51,11 +51,11 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   border: 2px #DCDBE2 solid;
 }
 
-.c5:hover {
+.c3:hover {
   cursor: pointer;
 }
 
-.c5:hover:before {
+.c3:hover:before {
   border: 2px solid #DCDBE2;
 }
 
