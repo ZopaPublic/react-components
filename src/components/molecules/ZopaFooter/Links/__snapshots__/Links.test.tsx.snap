@@ -35,7 +35,7 @@ exports[`<Links /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c6 {
+.c8 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -69,13 +69,13 @@ exports[`<Links /> renders the component 1`] = `
   opacity: 0.72;
 }
 
-.c8 {
+.c6 {
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.c8:hover {
+.c6:hover {
   color: #6F748B;
 }
 
@@ -359,6 +359,17 @@ exports[`<Links /> renders the component 1`] = `
       <ul
         class="c4"
       >
+        <li
+          class="c5"
+        >
+          <a
+            class="c6 c7 c8"
+            color="#4A3EDE"
+            href="https://www.zopa.com/privacy-notice"
+          >
+            Privacy notice
+          </a>
+        </li>
         <li
           class="c5"
         >

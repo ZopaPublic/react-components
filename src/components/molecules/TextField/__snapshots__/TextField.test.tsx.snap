@@ -89,7 +89,7 @@ exports[`<TextField /> renders the component with error 1`] = `
 `;
 
 exports[`<TextField /> renders the component with error and label and size 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -102,7 +102,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   font-size: 16px;
 }
 
-.c1 {
+.c0 {
   display: block;
 }
 
@@ -116,7 +116,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
 `;
 
 exports[`<TextField /> renders the component with label 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -129,7 +129,7 @@ exports[`<TextField /> renders the component with label 1`] = `
   font-size: 16px;
 }
 
-.c1 {
+.c0 {
   display: block;
 }
 

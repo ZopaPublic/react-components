@@ -107,6 +107,10 @@ const linkGroups = [
     heading: 'Legal',
     links: [
       {
+        href: 'https://www.zopa.com/privacy-notice',
+        label: 'Privacy notice',
+      },
+      {
         href: 'https://www.zopa.com/cookie-policy',
         label: 'Cookie policy',
       },
