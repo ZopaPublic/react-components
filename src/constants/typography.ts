@@ -22,7 +22,7 @@ const typography = {
   },
   lineHeights: {
     text: 1.6,
-    heading: 1.2,
+    heading: 1.1,
   },
 };
 

@@ -1,15 +1,24 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { colors, IBaseColorSpec, INeutralColorSpec } from '../../../constants/colors';
-import Text from '../../atoms/Text/Text';
+import { colors } from '../../../constants/colors';
+import Text, { ITextProps } from '../../atoms/Text/Text';
 
-export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  color?: IBaseColorSpec['secondary'] | INeutralColorSpec['white'];
+export interface ILinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    React.RefAttributes<HTMLAnchorElement> {
+  as?: any;
+  target?: '_blank' | 'none';
+  color?: any;
 }
 
-export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
+interface IStyledLinkProps extends Omit<ITextProps, 'color'> {
+  color: ILinkProps['color'];
+}
 
-const SLink = styled(Text)`
+const SLink = styled(Text).attrs({
+  weight: 'semibold',
+  forwardedAs: ({ as = 'a' }) => as,
+})<IStyledLinkProps>`
   font-size: inherit;
   cursor: pointer;
   text-decoration: none;
@@ -31,7 +40,7 @@ const STargetIcon = styled.svg`
   position: relative;
 `;
 
-const TargetIcon = (props: ITargetIconProps) => {
+const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <STargetIcon xmlns="http://www.w3.org/2000/svg" width="15" height="15">
       <g fill={props.color || colors.base.secondary}>
@@ -42,12 +51,12 @@ const TargetIcon = (props: ITargetIconProps) => {
   );
 };
 
-const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, color = colors.base.secondary, ...rest } = props;
+const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
+  const { children, color = colors.base.secondary, target = 'none', ...rest } = props;
   return (
-    <SLink ref={ref} {...rest} weight="semibold" color={color} forwardedAs="a">
+    <SLink ref={ref} color={color} {...rest}>
       {children}
-      {rest.target === '_blank' && <TargetIcon color={color} />}
+      {target === '_blank' && <TargetIcon color={color} />}
     </SLink>
   );
 });

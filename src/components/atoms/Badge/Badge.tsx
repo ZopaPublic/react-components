@@ -36,7 +36,9 @@ const fontColors: IFontColors = {
   waiting: colors.neutral.dark,
 };
 
-const StyledBadge = styled(Text)<IStyledBadgeProps>`
+const StyledBadge = styled(Text).attrs({
+  size: 'small',
+})<IStyledBadgeProps>`
   color: ${({ styling = 'default' }) => styling && fontColors[styling]};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
@@ -52,7 +54,7 @@ const StyledCheckMark = styled(CheckMark)`
 
 function Badge({ children, styling, ...rest }: IBadgeProps) {
   return (
-    <StyledBadge styling={styling} {...rest} size="small">
+    <StyledBadge styling={styling} {...rest}>
       {styling === 'confirmed' && <StyledCheckMark color={fontColors.confirmed} />}
       {children}
     </StyledBadge>

@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -50,7 +50,7 @@ const TextField = (props: ITextFieldProps) => {
   );
 };
 
-interface IPrefixProps extends HTMLSpanElement {
+interface IPrefixProps {
   prefix: string;
 }
 

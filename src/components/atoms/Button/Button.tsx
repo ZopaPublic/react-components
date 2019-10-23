@@ -100,14 +100,15 @@ const SButton = styled.button<IButtonProps>`
   justify-content: center;
   align-items: center;
   width: ${({ fullWidth }) => fullWidth && '100%'};
-  padding: ${({ sizing }) => paddings[sizing]};
+  padding: ${({ sizing = 'default' }) => paddings[sizing]};
   font-family: ${typography.primary};
-  font-size: ${({ sizing }) => fontSizes[sizing]};
+  font-size: ${({ sizing = 'default' }) => fontSizes[sizing]};
   line-height: 1.2;
   font-weight: ${typography.weights.semibold};
   cursor: pointer;
-  border: 1px solid ${({ styling }) => backgroundColors[styling]};
+  border: 1px solid ${({ styling = 'primary' }) => backgroundColors[styling]};
   border-radius: 8px;
+  color: ${({ contrastColor }) => contrastColor};
   color: ${({ styling, contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
   background-color: ${({ styling }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
@@ -124,8 +125,8 @@ const SButton = styled.button<IButtonProps>`
 
   &:hover:not(:disabled) {
     opacity: 0.8;
-    color: ${({ styling }) => hoverFontColors[styling]};
-    background-color: ${({ styling }) => activeBackgroundColors[styling]};
+    color: ${({ styling = 'primary' }) => hoverFontColors[styling]};
+    background-color: ${({ styling = 'primary' }) => activeBackgroundColors[styling]};
     box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 

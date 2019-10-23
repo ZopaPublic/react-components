@@ -42,7 +42,7 @@ export interface IDropdownFilteredProps
   items: IDropdownItem[];
 }
 
-const SearchInput = styled<ISearchInputProps & IInput>(InputText)`
+const SearchInput = styled(InputText)<ISearchInputProps & IInput>`
   margin: 0;
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
   ${({ isOpen }) =>

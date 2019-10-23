@@ -5,6 +5,10 @@ import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
 
+export interface IInputTextProps
+  extends React.InputHTMLAttributes<HTMLInputElement>,
+    React.RefAttributes<HTMLInputElement> {}
+
 const Input = styled.input<IInput>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
@@ -29,7 +33,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = forwardRef((props: IInput, ref) => {
+const InputText = forwardRef<HTMLInputElement, IInputTextProps>((props: IInput, ref) => {
   return <Input {...props} ref={ref} />;
 });
 

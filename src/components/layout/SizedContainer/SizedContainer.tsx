@@ -14,7 +14,7 @@ const mapSizeToMaxWith: { [index in TContainerSizes]: string } = {
 };
 
 const Container = styled.div<ISizedContainerProps>`
-  max-width: ${({ size }) => mapSizeToMaxWith[size]};
+  max-width: ${({ size = 'medium' }) => mapSizeToMaxWith[size]};
   width: 100%;
 `;
 

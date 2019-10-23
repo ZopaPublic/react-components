@@ -5,12 +5,15 @@ import { colors } from '../../../constants/colors';
 
 export interface IInputLabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
 
-const StyledLabel = styled(Text)`
+const StyledLabel = styled(Text).attrs({
+  forwardedAs: 'label',
+  weight: 'semibold',
+  color: colors.neutral.dark,
+  size: 'base',
+})<IInputLabelProps>`
   display: block;
 `;
 
-const InputLabel = (props: IInputLabelProps) => (
-  <StyledLabel {...props} weight="semibold" forwardedAs="label" color={colors.neutral.dark} size="base" />
-);
+const InputLabel = ({ children, htmlFor }: IInputLabelProps) => <StyledLabel htmlFor={htmlFor}>{children}</StyledLabel>;
 
 export default InputLabel;
