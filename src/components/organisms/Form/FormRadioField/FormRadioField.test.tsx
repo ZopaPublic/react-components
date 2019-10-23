@@ -13,9 +13,14 @@ const errorMessage = 'You need to pick one';
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
+<<<<<<< HEAD
+=======
+
+>>>>>>> refactor(form): fix linting
   if (!values.employmentType) {
     errors.employmentType = errorMessage;
   }
+
   return errors;
 };
 
