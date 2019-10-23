@@ -51,55 +51,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border: 2px #4A3EDE solid;
 }
 
-.c4 {
-  width: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 400;
-  line-height: 1.4;
-  color: #0D0A38;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c4:before {
-  content: '';
-  background-color: #EAEAEE;
-  border-radius: 6px;
-  height: 24px;
-  width: 24px;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 8px;
-  border: 2px #FFFFFF solid;
-  display: block;
-}
-
-.c4:after {
-  content: '';
-  background-size: contain;
-  background: transparent none no-repeat center;
-  height: 12px;
-  width: 12px;
-  position: absolute;
-  left: 6px;
-  top: 6px;
-}
-
-.c4:hover {
-  cursor: pointer;
-}
-
-.c4:hover:before {
-  border: 2px #DCDBE2 solid;
-}
-
 <div
   class="c0"
 >
@@ -110,7 +61,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="c2 c3 c4"
+    class="c2 c3"
     color="#0D0A38"
     for="checkbox-id-test1"
   >

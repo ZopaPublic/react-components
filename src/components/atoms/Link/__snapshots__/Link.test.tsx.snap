@@ -91,7 +91,6 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   class="c0 c1"
   color="#4A3EDE"
   href="http://duckduckgo.com"
-  target="_blank"
 >
   text
   <svg

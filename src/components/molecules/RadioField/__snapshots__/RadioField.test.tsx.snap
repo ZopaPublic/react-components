@@ -27,38 +27,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   position: relative;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 1.4;
-  color: #0D0A38;
-  font-weight: 400;
-  position: relative;
-}
-
-.c5:before {
-  content: '';
-  background-color: #EAEAEE;
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  min-width: 24px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 8px;
-  border: 2px #DCDBE2 solid;
-}
-
-.c5:hover {
-  cursor: pointer;
-}
-
-.c5:hover:before {
-  border: 2px solid #DCDBE2;
-}
-
 .c2 {
   width: 1px;
   height: 1px;
@@ -126,7 +94,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     value="1"
   />
   <label
-    class="c3 c4 c5"
+    class="c3 c4"
     color="#0D0A38"
     for="radio-id-1"
   >

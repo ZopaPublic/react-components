@@ -31,10 +31,14 @@ describe('<DropdownField />', () => {
   });
 
   it('should throw if no name prop is provided', () => {
-    console.error = jest.fn();
     expect(() =>
       render(
-        <DropdownField>
+        <DropdownField
+          label="Your cool dropdown ❤"
+          errorMessage="You need to choose something!"
+          size="short"
+          name="dropdown-field-default"
+        >
           <option value="first" key="first">
             First value
           </option>
