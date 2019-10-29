@@ -140,7 +140,7 @@ const SButton = styled.button<IButtonProps>`
     &:active,
     &:focus {
       box-shadow: ${activeBoxShadows[styling]};
-      ${styling === 'contrastLink' || styling === 'link' ? null : 'outline: none'};
+      outline: ${styling === 'contrastLink' || styling === 'link' ? 'none' : 'inherit'};
     }
     
     &:hover {
