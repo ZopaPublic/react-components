@@ -27,6 +27,8 @@ export type TSizing = 'default' | 'large' | 'small' | 'compact';
 export type TButtonStylingMapping = { [key in TStyling]: string };
 export type TButtonSizingMapping = { [key in TSizing]: string };
 
+const smallBorder = '1px solid';
+const largeBorder = '2px solid';
 const smallInset = 'inset 0 0 0 2px';
 const largeInset = 'inset 0 0 0 4px';
 
@@ -51,14 +53,20 @@ const backgroundColors: TButtonStylingMapping = {
   warning: colors.semantic.alert,
 };
 
+const borders: TButtonStylingMapping = {
+  alert: `${smallBorder} ${colors.semantic.error}`,
+  contrastLink: `${smallBorder} transparent`,
+  contrastPrimary: `${smallBorder} ${colors.neutral.white}`,
+  contrastSecondary: `${largeBorder} ${colors.neutral.white}`,
+  link: `${smallBorder} transparent`,
+  primary: `${smallBorder} ${colors.base.secondary}`,
+  secondary: `${largeBorder} ${colors.base.secondary}`,
+  warning: `${smallBorder} ${colors.semantic.alert}`,
+};
+
 const activeBackgroundColors: Partial<TButtonStylingMapping> = {
   contrastSecondary: 'transparent',
   secondary: colors.base.secondary,
-};
-
-const boxShadows: Partial<TButtonStylingMapping> = {
-  contrastSecondary: `${smallInset} ${colors.neutral.white}`,
-  secondary: `${smallInset} ${colors.base.secondary}`,
 };
 
 const activeBoxShadows: Partial<TButtonStylingMapping> = {
@@ -95,6 +103,7 @@ const SText = styled.span<IButtonProps>`
 `;
 
 const SButton = styled.button<IButtonProps>`
+  position: relative;
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
@@ -105,39 +114,46 @@ const SButton = styled.button<IButtonProps>`
   font-size: ${({ sizing }) => fontSizes[sizing]};
   line-height: 1.2;
   font-weight: ${typography.weights.semibold};
-  cursor: pointer;
-  border: 1px solid ${({ styling }) => backgroundColors[styling]};
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  border: 1px solid transparent;
   border-radius: 8px;
   color: ${({ contrastColor }) => contrastColor};
   color: ${({ styling }) => fontColors[styling]};
   background-color: ${({ styling }) => backgroundColors[styling]};
+  opacity: ${({ disabled }) => (disabled ? '0.3' : '1')};
   transition: all 140ms ease-in-out;
 
-  &:enabled {
-    box-shadow: ${({ styling }) => boxShadows[styling] || 'none'};
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: ${({ styling }) => borders[styling]};
+    border-radius: 8px;
   }
 
-  &:active:enabled,
-  &:focus:enabled {
-    box-shadow: ${({ styling }) => activeBoxShadows[styling]};
-    ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
-  }
-
-  &:hover:enabled {
-    opacity: 0.8;
-    color: ${({ styling }) => hoverFontColors[styling]};
-    background-color: ${({ styling }) => activeBackgroundColors[styling]};
-    box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
-  }
-
-  &:active:enabled {
-    opacity: 0.4;
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.3;
-  }
+  ${({ disabled, styling }) =>
+    !disabled &&
+    `
+    &:active,
+    &:focus {
+      box-shadow: ${activeBoxShadows[styling]};
+      ${styling === 'contrastLink' || styling === 'link' ? null : 'outline: none'};
+    }
+    
+    &:hover {
+      opacity: 0.8;
+      color: ${hoverFontColors[styling]};
+      background-color: ${activeBackgroundColors[styling]};
+      box-shadow: ${styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none'};
+    }
+    
+    &:active {
+      opacity: 0.4;
+    }
+  `};
 `;
 
 const Button: React.FunctionComponent<IButtonProps> = props => {
