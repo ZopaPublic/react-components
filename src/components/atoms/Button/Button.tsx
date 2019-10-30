@@ -108,29 +108,28 @@ const SButton = styled.button<IButtonProps>`
   cursor: pointer;
   border: 1px solid ${({ styling }) => backgroundColors[styling]};
   border-radius: 8px;
-  color: ${({ contrastColor }) => contrastColor};
-  color: ${({ styling }) => fontColors[styling]};
+  color: ${({ styling, contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
   background-color: ${({ styling }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
 
-  &:enabled {
+  &:not(:disabled) {
     box-shadow: ${({ styling }) => boxShadows[styling] || 'none'};
   }
 
-  &:active:enabled,
-  &:focus:enabled {
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
     box-shadow: ${({ styling }) => activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
   }
 
-  &:hover:enabled {
+  &:hover:not(:disabled) {
     opacity: 0.8;
     color: ${({ styling }) => hoverFontColors[styling]};
     background-color: ${({ styling }) => activeBackgroundColors[styling]};
     box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 
-  &:active:enabled {
+  &:active:not(:disabled) {
     opacity: 0.4;
   }
 
