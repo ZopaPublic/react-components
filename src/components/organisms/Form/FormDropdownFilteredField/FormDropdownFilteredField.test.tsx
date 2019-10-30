@@ -14,7 +14,7 @@ const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
 const validate = (values: TForm) => {
-  let errors: Partial<TForm> = {};
+  const errors: Partial<TForm> = {};
   if (!values.nationality) {
     errors.nationality = errorMessage;
   }
