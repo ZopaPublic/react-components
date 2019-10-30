@@ -12,7 +12,7 @@ const fieldLabel = 'First name';
 const errorMessage = 'This field is required';
 
 const validate = (values: TForm) => {
-  let errors: Partial<TForm> = {};
+  const errors: Partial<TForm> = {};
   if (!values.firstName) {
     errors.firstName = errorMessage;
   }
