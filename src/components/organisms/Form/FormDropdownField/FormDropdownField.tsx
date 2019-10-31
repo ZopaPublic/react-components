@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ChangeEvent } from 'react';
 import DropdownField, { IDropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
 
 import { useFieldContext } from '../context';
@@ -8,10 +8,12 @@ interface IFormDropdownFieldProps extends IDropdownFieldProps {
 }
 
 const FormDropdownField: FC<IFormDropdownFieldProps> = ({ name, ...rest }) => {
-  const { error, touched, value, onChange, onBlur } = useFieldContext(name);
-  const handleChange = e => {
+  const { error, touched, onChange, onBlur } = useFieldContext(name);
+
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
     onChange(e.target.value);
   };
+
   return (
     <DropdownField
       name={name}
@@ -20,7 +22,6 @@ const FormDropdownField: FC<IFormDropdownFieldProps> = ({ name, ...rest }) => {
       errorMessage={touched && error ? error : ''}
       onChange={handleChange}
       onBlur={onBlur}
-      value={value}
       {...rest}
     />
   );

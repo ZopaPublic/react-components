@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import React, { InputHTMLAttributes, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -7,7 +7,10 @@ import Dropdown, { IDropdownProps } from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { IField } from '../../types';
 
-export interface IDropdownFieldProps extends Omit<IField, 'isValid' | 'inputProps'>, Omit<IDropdownProps, 'size'> {
+export interface IDropdownFieldProps
+  extends Omit<IField, 'isValid' | 'inputProps'>,
+    Omit<IDropdownProps, 'size'>,
+    HTMLAttributes<HTMLSelectElement> {
   /**
    * Size attribute for the rendered HTML `<select>` element
    */

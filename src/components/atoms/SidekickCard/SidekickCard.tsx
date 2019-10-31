@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import alert from '../../../content/images/alert-icon.svg';
@@ -8,7 +8,7 @@ import { maxMedia } from '../../../helpers/responsiveness';
 
 export type TSidekickCardTypes = 'triumph' | 'verified' | 'alert';
 
-export interface ISidekickCardProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ISidekickCardProps {
   /** Type of SidekickCard to render */
   type: TSidekickCardTypes;
 }
@@ -38,6 +38,6 @@ const SSidekickCard = styled.div<ISidekickCardProps>`
   `};
 `;
 
-const SidekickCard = (props: ISidekickCardProps) => <SSidekickCard {...props} />;
+const SidekickCard: FC<ISidekickCardProps> = props => <SSidekickCard {...props} />;
 
 export default SidekickCard;

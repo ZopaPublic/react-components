@@ -1,10 +1,10 @@
 import React from 'react';
-import { HTMLAttributes, FC } from 'react';
+import { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
 
-export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLParagraphElement | HTMLLabelElement> {
+export interface ITextProps {
   /**
    * The weight of the rendered text. Avoid the use of `semibold` as for now.
    */

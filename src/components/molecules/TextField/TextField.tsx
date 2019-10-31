@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -13,11 +13,36 @@ export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement
   prefix?: string;
 }
 
+export interface IPrefixProps {
+  prefix: string;
+}
+
 const TextFieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const TextField = (props: ITextFieldProps) => {
+const Prefix = styled.span<IPrefixProps>`
+  position: relative;
+  display: block;
+  
+  &::before {
+    content: '${({ prefix }: IPrefixProps) => prefix}';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: ${typography.sizes.text.base};
+    color: ${colors.neutral.dark};
+  }
+  
+  input {
+    padding-left: 24px;
+  }
+`;
+
+const TextField: FC<ITextFieldProps> = props => {
   const { label, errorMessage, isValid, inputProps, size, helpText, prefix } = props;
   const { name } = inputProps;
 
@@ -49,30 +74,5 @@ const TextField = (props: ITextFieldProps) => {
     </>
   );
 };
-
-interface IPrefixProps {
-  prefix: string;
-}
-
-const Prefix = styled.span<IPrefixProps>`
-  position: relative;
-  display: block;
-  
-  &::before {
-    content: '${({ prefix }: IPrefixProps) => prefix}';
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    font-size: ${typography.sizes.text.base};
-    color: ${colors.neutral.dark};
-  }
-  
-  input {
-    padding-left: 24px;
-  }
-`;
 
 export default TextField;

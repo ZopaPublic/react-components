@@ -4,16 +4,12 @@ import { colors } from '../../../constants/colors';
 import warningIcon from '../../../content/images/red-warning.svg';
 import Text from '../Text/Text';
 
-interface IErrorMessageProps {
-  as?: any;
-}
-
 const SErrorMessage = styled(Text).attrs({
   role: 'alert',
   weight: 'semibold',
   forwardedAs: 'span',
   size: 'small',
-})<IErrorMessageProps>`
+})`
   width: 100%;
   color: ${colors.semantic.error};
   display: block;
@@ -28,6 +24,6 @@ const SErrorMessage = styled(Text).attrs({
   }
 `;
 
-const ErrorMessage: FC<IErrorMessageProps> = props => <SErrorMessage {...props} />;
+const ErrorMessage: FC<{}> = props => <SErrorMessage {...props} />;
 
 export default ErrorMessage;

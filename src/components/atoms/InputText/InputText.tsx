@@ -1,13 +1,9 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
-
-export interface IInputTextProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
-    React.RefAttributes<HTMLInputElement> {}
 
 const Input = styled.input<IInput>`
   border: 2px solid ${getBorderColorByStatus};
@@ -33,7 +29,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, IInputTextProps>((props: IInput, ref) => {
+const InputText = forwardRef<HTMLInputElement, HTMLAttributes<HTMLInputElement>>((props, ref) => {
   return <Input {...props} ref={ref} />;
 });
 

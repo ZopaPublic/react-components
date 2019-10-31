@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-
 import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
 import Text, { ITextProps } from '../../../atoms/Text/Text';
-
 import { useAccordionContext } from '../context';
+
+export interface IAccordionHeader {
+  id: string;
+  index: number;
+  textSize?: ITextProps['size'];
+}
 
 const StyledButton = styled.button`
   appearance: none;
@@ -30,12 +34,6 @@ const Title = styled(Text)`
   color: ${colors.base.secondary};
   padding-left: 8px;
 `;
-
-export interface IAccordionHeader {
-  id: string;
-  index: number;
-  textSize?: ITextProps['size'];
-}
 
 const mapTextToArrowSize = {
   base: '10px',

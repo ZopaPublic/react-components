@@ -22,7 +22,7 @@ export interface IFooterProps {
   legalOnly?: boolean;
 }
 
-const ZopaFooter: React.FunctionComponent<IFooterProps> = ({ legalOnly }) => (
+const ZopaFooter: React.FC<IFooterProps> = ({ legalOnly }) => (
   <StyledWrapper id="zopa-footer">
     <FlexContainer gutter={16}>
       {legalOnly || (

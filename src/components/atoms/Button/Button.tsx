@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
-export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
   contrastColor?: string;
   fullWidth?: boolean;
   leftIcon?: JSX.Element;
@@ -99,7 +99,7 @@ const SButton = styled.button<IButtonProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: ${({ fullWidth }) => fullWidth && '100%'};
+  width: ${({ fullWidth = false }) => fullWidth && '100%'};
   padding: ${({ sizing = 'default' }) => paddings[sizing]};
   font-family: ${typography.primary};
   font-size: ${({ sizing = 'default' }) => fontSizes[sizing]};
@@ -140,7 +140,7 @@ const SButton = styled.button<IButtonProps>`
   }
 `;
 
-const Button: React.FunctionComponent<IButtonProps> = props => {
+const Button: React.FC<IButtonProps> = props => {
   const { children, leftIcon, rightIcon, ...rest } = props;
 
   return (
@@ -158,12 +158,6 @@ const Button: React.FunctionComponent<IButtonProps> = props => {
       )}
     </SButton>
   );
-};
-
-Button.defaultProps = {
-  fullWidth: false,
-  sizing: 'default',
-  styling: 'primary',
 };
 
 export default Button;

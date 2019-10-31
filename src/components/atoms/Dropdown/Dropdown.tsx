@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import chevronDown from '../../../content/images/chevron-down.svg';
@@ -6,7 +5,7 @@ import { getBorderColorByStatus } from '../../../helpers/utils';
 
 export const DEFAULT_COLOR = colors.neutral.medium;
 
-export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface IDropdownProps {
   /**
    * Border gets red if this is set to true.
    */
@@ -17,11 +16,9 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
   isValid?: boolean;
 }
 
-export interface IOption extends React.OptionHTMLAttributes<HTMLOptionElement> {}
+const Option = styled.option``;
 
-const Option: React.FunctionComponent<IOption> = styled.option``;
-
-const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdownProps>`
+const Dropdown = styled.select<IDropdownProps>`
   appearance: none;
 
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;

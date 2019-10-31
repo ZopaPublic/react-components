@@ -34,22 +34,15 @@ const spin = keyframes`
 `;
 
 const SSpinner = styled.div<ISpinnerProps>`
-  width: ${({ size }) => size};
-  height: ${({ size }) => size};
+  width: ${({ size = '45px' }) => size};
+  height: ${({ size = '45px' }) => size};
   margin: 8px;
-  border: ${({ borderWidth }) => borderWidth} solid ${({ frontColor }) => frontColor};
+  border: ${({ borderWidth = '8px' }) => borderWidth} solid ${({ frontColor = colors.base.primary }) => frontColor};
   border-radius: 50%;
-  border-top-color: ${({ backgroundColor }) => backgroundColor};
+  border-top-color: ${({ backgroundColor = colors.neutral.light }) => backgroundColor};
   animation: ${spin} 1.2s linear infinite;
 `;
 
-const Spinner: React.FunctionComponent<ISpinnerProps> = props => <SSpinner {...props} />;
-
-Spinner.defaultProps = {
-  backgroundColor: colors.neutral.light,
-  borderWidth: '8px',
-  frontColor: colors.base.primary,
-  size: '45px',
-};
+const Spinner: React.FC<ISpinnerProps> = props => <SSpinner {...props} />;
 
 export default Spinner;

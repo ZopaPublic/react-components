@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, INeutralColorSpec } from '../../../constants/colors';
@@ -8,7 +8,7 @@ const {
   sizes: { heading: headingSizes },
 } = typography;
 
-interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
