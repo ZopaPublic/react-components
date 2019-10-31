@@ -94,6 +94,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
       class="c1 c2"
       color="#0D0A38"
       for="text-id-test"
+      id="downshift-0-label"
     >
       Label
     </label>

@@ -11,7 +11,7 @@ interface IErrorMessageProps {
 const SErrorMessage = styled(Text).attrs({
   role: 'alert',
   weight: 'semibold',
-  as: 'span',
+  forwardedAs: 'span',
   size: 'small',
 })<IErrorMessageProps>`
   width: 100%;

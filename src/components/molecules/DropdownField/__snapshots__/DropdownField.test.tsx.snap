@@ -18,8 +18,12 @@ exports[`<DropdownField /> renders the component with props with no a11y violati
   display: block;
 }
 
+.c2 {
+  margin-bottom: 5px;
+}
+
 <label
-  class="c0 c1"
+  class="c0 c1 c2"
   color="#0D0A38"
   for="text-id-dropdown-field-default"
 >

@@ -1,24 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
-import Text, { ITextProps } from '../../atoms/Text/Text';
+import Text from '../../atoms/Text/Text';
 
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   as?: any;
-  target?: '_blank' | 'none';
+  target?: '_blank';
   color?: any;
-}
-
-interface IStyledLinkProps extends Omit<ITextProps, 'color'> {
-  color: ILinkProps['color'];
 }
 
 const SLink = styled(Text).attrs({
   weight: 'semibold',
-  forwardedAs: ({ as = 'a' }) => as,
-})<IStyledLinkProps>`
+  forwardedAs: 'a',
+})<ILinkProps>`
   font-size: inherit;
   cursor: pointer;
   text-decoration: none;
@@ -52,9 +48,10 @@ const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
 };
 
 const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, color = colors.base.secondary, target = 'none', ...rest } = props;
+  const { children, color = colors.base.secondary, target, ...rest } = props;
+
   return (
-    <SLink ref={ref} color={color} {...rest}>
+    <SLink ref={ref} color={color} target={target} {...rest}>
       {children}
       {target === '_blank' && <TargetIcon color={color} />}
     </SLink>

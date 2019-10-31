@@ -20,7 +20,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">
   Some text with
-  <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
   </Link>
 </Text>;
@@ -33,18 +33,13 @@ import { Text, Link, colors } from '@zopauk/react-components';
 
 <Text as="p" color={colors.neutral.white}>
   Some text with
-  <Link
-    color={colors.neutral.white}
-    target="_blank"
-    href="http://duckduckgo.com"
-    onClick={() => alert('Link clicked!')}
-  >
+  <Link color={colors.neutral.white} href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
   </Link>
 </Text>;
 ```
 
-- With `target="_blank"`
+- With `target="_blank"` ( _notice a square icon appeared_ )
 
 ```js
 import { Text, Link } from '@zopauk/react-components';
@@ -52,19 +47,6 @@ import { Text, Link } from '@zopauk/react-components';
 <Text as="p">
   Some text with
   <Link target="_blank" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
-    a link
-  </Link>
-</Text>;
-```
-
-- Without `target="_blank"` ( _notice that the square icon disappeared_ )
-
-```js
-import { Text, Link } from '@zopauk/react-components';
-
-<Text as="p">
-  Some text with
-  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
   </Link>
 </Text>;

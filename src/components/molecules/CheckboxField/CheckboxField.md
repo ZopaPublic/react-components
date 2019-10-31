@@ -18,7 +18,7 @@
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField inputProps={{ name: 'check1' }} />;
+<CheckboxField label="Do you love jazz?" inputProps={{ name: 'check1' }} />;
 ```
 
 - Checked state
@@ -26,19 +26,7 @@ import { CheckboxField } from '@zopauk/react-components';
 ```jsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField inputProps={{ name: 'text2', defaultChecked: true }} />;
-```
-
-- With a label
-
-```jsx
-import { CheckboxField } from '@zopauk/react-components';
-
-<>
-  <CheckboxField label="Do you accept?" inputProps={{ name: 'text3', defaultChecked: true }} />
-  <CheckboxField label="Are you sure?" inputProps={{ name: 'text4' }} />
-  <CheckboxField label="Do you really accept?" inputProps={{ name: 'text5' }} />
-</>;
+<CheckboxField label="Do you love rap?" inputProps={{ name: 'text2', defaultChecked: true }} />;
 ```
 
 - With an error

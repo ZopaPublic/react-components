@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
-import styled from 'styled-components';
+import React, { FC, ReactNode } from 'react';
+import styled, { StyledComponentProps } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import Alert from '../../icons/Alert/Alert';
 
-export interface IAlertBoxProps extends React.HTMLAttributes<HTMLElement> {
-  icon?: FC;
+export interface IAlertBoxProps extends StyledComponentProps<'div', {}, {}, ''> {
+  icon?: ReactNode;
 }
 
 const Box = styled.div`
