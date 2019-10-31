@@ -1,3 +1,10 @@
+## [2.3.3](https://github.com/zopaUK/react-components/compare/v2.3.2...v2.3.3) (2019-10-31)
+
+
+### Bug Fixes
+
+* **FlexRow:** update types to include missing varients ([b7d5a05](https://github.com/zopaUK/react-components/commit/b7d5a05c1cbc7aab8f4a075481dbbfee156c3fac))
+
 ## [2.3.2](https://github.com/zopaUK/react-components/compare/v2.3.1...v2.3.2) (2019-10-30)
 
 
