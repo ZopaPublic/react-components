@@ -109,17 +109,17 @@ const SButton = styled.button<IButtonProps>`
   border: 1px solid ${({ styling = 'primary' }) => backgroundColors[styling]};
   border-radius: 8px;
   color: ${({ contrastColor }) => contrastColor};
-  color: ${({ styling, contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
-  background-color: ${({ styling }) => backgroundColors[styling]};
+  color: ${({ styling = 'primary', contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
+  background-color: ${({ styling = 'primary' }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
 
   &:not(:disabled) {
-    box-shadow: ${({ styling }) => boxShadows[styling] || 'none'};
+    box-shadow: ${({ styling = 'primary' }) => boxShadows[styling] || 'none'};
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    box-shadow: ${({ styling }) => activeBoxShadows[styling]};
+    box-shadow: ${({ styling = 'primary' }) => activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
   }
 
