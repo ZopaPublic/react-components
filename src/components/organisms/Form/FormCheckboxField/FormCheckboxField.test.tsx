@@ -18,10 +18,7 @@ const errorMessage = 'You need to accept the policy';
 
 const validate = (values: TForm) => {
   const errors: Partial<TFormErrors> = {};
-<<<<<<< HEAD
-=======
 
->>>>>>> refactor(form): fix linting
   if (!values.policy) {
     errors.policy = errorMessage;
   }

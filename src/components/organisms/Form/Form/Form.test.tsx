@@ -12,10 +12,7 @@ interface TForm {
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
-<<<<<<< HEAD
-=======
 
->>>>>>> refactor(form): fix linting
   if (!values.firstName) {
     errors.firstName = 'This field is required';
   }

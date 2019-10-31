@@ -15,10 +15,7 @@ const errorMessage = 'Please pick one';
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
-<<<<<<< HEAD
-=======
 
->>>>>>> refactor(form): fix linting
   if (!values.nationality) {
     errors.nationality = errorMessage;
   }
