@@ -23,7 +23,7 @@
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
     "test": "react-scripts test",
-    "format": "prettier -l --ignore-path ./prettierignore --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
+    "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
     "format:fix": "yarn format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
