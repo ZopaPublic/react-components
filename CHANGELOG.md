@@ -1,3 +1,11 @@
+## [2.3.4](https://github.com/zopaUK/react-components/compare/v2.3.3...v2.3.4) (2019-11-03)
+
+
+### Bug Fixes
+
+* **prettier:** update command and remove node_modules value ([e441a6f](https://github.com/zopaUK/react-components/commit/e441a6ffb676cdc8e6aac450f90260d32121f797))
+* **prettier:** update file name to start with a dot ([ee6b2b8](https://github.com/zopaUK/react-components/commit/ee6b2b89cf24c1bf916f7d11feda9a793fb36c1e))
+
 ## [2.3.3](https://github.com/zopaUK/react-components/compare/v2.3.2...v2.3.3) (2019-10-31)
 
 
