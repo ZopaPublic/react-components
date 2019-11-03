@@ -1,3 +1,17 @@
+## [2.3.3](https://github.com/zopaUK/react-components/compare/v2.3.2...v2.3.3) (2019-10-31)
+
+
+### Bug Fixes
+
+* **FlexRow:** update types to include missing varients ([b7d5a05](https://github.com/zopaUK/react-components/commit/b7d5a05c1cbc7aab8f4a075481dbbfee156c3fac))
+
+## [2.3.2](https://github.com/zopaUK/react-components/compare/v2.3.1...v2.3.2) (2019-10-30)
+
+
+### Bug Fixes
+
+* **button:** add styles for button with as prop ([b50dabe](https://github.com/zopaUK/react-components/commit/b50dabea448551d760829276c00b2efb6dfd9a15)), closes [#129](https://github.com/zopaUK/react-components/issues/129)
+
 ## [2.3.1](https://github.com/zopaUK/react-components/compare/v2.3.0...v2.3.1) (2019-10-03)
 
 

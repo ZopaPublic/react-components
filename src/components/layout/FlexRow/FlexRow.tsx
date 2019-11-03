@@ -2,16 +2,32 @@ import React from 'react';
 import styled from 'styled-components';
 import grid from '../../../constants/grid';
 
-export type TFlexValues = 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly';
+export type TFlexAlignmentValues =
+  | 'stretch'
+  | 'center'
+  | 'flex-start'
+  | 'flex-end'
+  | 'baseline'
+  | 'initial'
+  | 'inherit';
 
-export type TFlexDirection = 'row' | 'row-reverse';
+export type TFlexJustificationValues =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'initial'
+  | 'inherit';
+
+export type TFlexDirectionValues = 'row' | 'row-reverse' | 'column' | 'column-reverse' | 'initial' | 'inherit';
 
 export interface IFlexRowProps {
-  align?: TFlexValues;
+  align?: TFlexAlignmentValues;
   cols?: number;
   gutter?: number;
-  justify?: TFlexValues;
-  direction?: TFlexDirection;
+  justify?: TFlexJustificationValues;
+  direction?: TFlexDirectionValues;
 }
 
 export interface IFlexRow extends React.HTMLAttributes<HTMLDivElement>, IFlexRowProps {}

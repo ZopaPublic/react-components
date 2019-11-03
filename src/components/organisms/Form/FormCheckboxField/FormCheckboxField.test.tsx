@@ -17,7 +17,7 @@ const buttonLabel = 'Continue';
 const errorMessage = 'You need to accept the policy';
 
 const validate = (values: TForm) => {
-  let errors: Partial<TFormErrors> = {};
+  const errors: Partial<TFormErrors> = {};
   if (!values.policy) {
     errors.policy = errorMessage;
   }

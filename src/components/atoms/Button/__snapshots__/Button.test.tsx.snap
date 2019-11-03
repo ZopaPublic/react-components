@@ -29,22 +29,22 @@ exports[`Alert button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #EE0505,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -89,22 +89,22 @@ exports[`Compact button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -149,22 +149,22 @@ exports[`Disabled button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -211,22 +211,22 @@ exports[`Full width button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -271,22 +271,22 @@ exports[`Large button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -336,22 +336,22 @@ exports[`Left icon button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -403,16 +403,16 @@ exports[`Link button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -457,16 +457,16 @@ exports[`Link contrast button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -511,22 +511,22 @@ exports[`Primary button renders the component with props with no a11y violations
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -570,22 +570,22 @@ exports[`Primary contrast button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #FFFFFF,inset 0 0 0 4px #4A3EDE;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -635,22 +635,22 @@ exports[`Right icon button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -702,24 +702,24 @@ exports[`Secondary button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 4px #4A3EDE;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   color: #FFFFFF;
   background-color: #4A3EDE;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -764,23 +764,23 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   background-color: transparent;
   box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -825,22 +825,22 @@ exports[`Small button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 
@@ -885,22 +885,22 @@ exports[`Warning button renders the component with props 1`] = `
   transition: all 140ms ease-in-out;
 }
 
-.c0:enabled {
+.c0:not(:disabled) {
   box-shadow: none;
 }
 
-.c0:active:enabled,
-.c0:focus:enabled {
+.c0:active:not(:disabled),
+.c0:focus:not(:disabled) {
   box-shadow: inset 0 0 0 2px #FFB428,inset 0 0 0 4px #0D0A38;
   outline: none;
 }
 
-.c0:hover:enabled {
+.c0:hover:not(:disabled) {
   opacity: 0.8;
   box-shadow: none;
 }
 
-.c0:active:enabled {
+.c0:active:not(:disabled) {
   opacity: 0.4;
 }
 

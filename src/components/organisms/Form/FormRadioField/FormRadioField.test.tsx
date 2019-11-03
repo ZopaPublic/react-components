@@ -12,7 +12,7 @@ const buttonLabel = 'Continue';
 const errorMessage = 'You need to pick one';
 
 const validate = (values: TForm) => {
-  let errors: Partial<TForm> = {};
+  const errors: Partial<TForm> = {};
   if (!values.employmentType) {
     errors.employmentType = errorMessage;
   }
