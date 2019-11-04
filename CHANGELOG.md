@@ -1,3 +1,11 @@
+## [2.3.5](https://github.com/zopaUK/react-components/compare/v2.3.4...v2.3.5) (2019-11-04)
+
+
+### Bug Fixes
+
+* **zopafooter:** update tests for zopafooter ([e86ebe6](https://github.com/zopaUK/react-components/commit/e86ebe6a972be0790ad7fbffc7259907dc8f1d76))
+* **zopafootr:** restore privacy notice ([6f523f3](https://github.com/zopaUK/react-components/commit/6f523f31526941a64f3d46a4118a2b2e323358fa))
+
 ## [2.3.4](https://github.com/zopaUK/react-components/compare/v2.3.3...v2.3.4) (2019-11-03)
 
 
