@@ -365,6 +365,17 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7 c8"
             color="#4A3EDE"
+            href="https://www.zopa.com/privacy-notice"
+          >
+            Privacy notice
+          </a>
+        </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6 c7 c8"
+            color="#4A3EDE"
             href="https://www.zopa.com/cookie-policy"
           >
             Cookie policy

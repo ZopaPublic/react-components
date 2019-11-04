@@ -785,6 +785,17 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 <a
                   class="c5 c6 c15"
                   color="#4A3EDE"
+                  href="https://www.zopa.com/privacy-notice"
+                >
+                  Privacy notice
+                </a>
+              </li>
+              <li
+                class="c14"
+              >
+                <a
+                  class="c5 c6 c15"
+                  color="#4A3EDE"
                   href="https://www.zopa.com/cookie-policy"
                 >
                   Cookie policy
