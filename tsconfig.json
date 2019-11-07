@@ -3,7 +3,6 @@
     "lib": ["es2018", "dom"],
     "module": "esnext",
     "target": "es5",
-    "noImplicitAny": false,
     "sourceMap": true,
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,

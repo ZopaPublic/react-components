@@ -13,6 +13,8 @@ const typography = {
       h2: '28px',
       h3: '24px',
       h4: '20px',
+      h5: '20px',
+      h6: '20px',
     },
   },
   weights: {

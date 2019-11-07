@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ChangeEvent } from 'react';
 import RadioField, { IRadioField } from '../../../molecules/RadioField/RadioField';
 
 import { useFieldContext } from '../context';
@@ -10,9 +10,11 @@ interface IFormRadioFieldProps extends Partial<IRadioField> {
 
 const FormRadioField: FC<IFormRadioFieldProps> = ({ name, value, inputProps, ...rest }) => {
   const { error, touched, onChange, onBlur } = useFieldContext(name);
-  const handleChange = e => {
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };
+
   return (
     <RadioField
       hasError={touched && !!error}

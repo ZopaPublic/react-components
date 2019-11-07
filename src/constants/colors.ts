@@ -20,7 +20,7 @@ export interface ISemanticColorSpec {
   error: '#EE0505';
 }
 
-interface IColorSpec {
+export interface IColorSpec {
   base: IBaseColorSpec;
   neutral: INeutralColorSpec;
   semantic: ISemanticColorSpec;

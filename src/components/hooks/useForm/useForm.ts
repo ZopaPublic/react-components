@@ -1,9 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 
 type TValue = any;
-
 export type TValues = Record<string, TValue>;
-
 export type TErrors = Record<string, string | undefined>;
 
 export interface IUseFormProps {
@@ -16,8 +14,8 @@ export interface IFieldProps {
   error: string | undefined;
   touched: boolean;
   value: TValue;
-  onChange: (e: any) => void;
-  onBlur: () => void;
+  onChange: (eventData: unknown) => void;
+  onBlur: (eventData: unknown) => void;
 }
 
 export interface TUseFormValues {
@@ -47,7 +45,7 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseForm
       error: errors[name],
       touched: !!touched[name],
       value: values[name],
-      onChange(value) {
+      onChange(value: unknown) {
         const newValues = { ...values, [name]: value };
         updateValues(newValues);
         runValidation(newValues);

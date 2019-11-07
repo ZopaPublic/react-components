@@ -13,16 +13,19 @@ export interface IArrowProps extends React.SVGProps<SVGSVGElement> {
   /**
    * Arrow arrow direction
    */
-  direction?: ArrowDirection;
+  direction?: 'down' | 'left' | 'right' | 'up';
 }
 
-const getRotation = (direction: ArrowDirection = 'down'): string => {
+const defaultDirection = 'down';
+
+const getRotation = (direction: IArrowProps['direction'] = defaultDirection): string => {
   const directionMap = {
     down: '0',
     left: '90',
     right: '-90',
     up: '180',
   };
+
   return directionMap[direction] || direction;
 };
 
@@ -36,7 +39,7 @@ const Arrow = ({
   color = colors.base.secondary,
   height = '12px',
   width = '12px',
-  direction = 'down',
+  direction = defaultDirection,
   ...rest
 }: IArrowProps) => (
   <StyledArrow

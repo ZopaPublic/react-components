@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
-import Text, { ITextProps } from '../../../atoms/Text/Text';
+import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../context';
 
 export interface IAccordionHeader {
   id: string;
   index: number;
-  textSize?: ITextProps['size'];
+  textSize?: 'base' | 'small';
 }
 
 const StyledButton = styled.button`

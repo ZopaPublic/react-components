@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 
-export type ChevronDirection = 'up' | 'down' | 'left' | 'right' | number | string;
+export type ChevronDirection = 'up' | 'down' | 'left' | 'right';
 
 export interface IChevronProps extends React.SVGProps<SVGSVGElement> {
   /**
@@ -16,14 +16,17 @@ export interface IChevronProps extends React.SVGProps<SVGSVGElement> {
   direction?: ChevronDirection;
 }
 
-const getRotation = (direction: ChevronDirection = 'down'): string => {
-  const directionMap = {
+const getRotation = (direction: ChevronDirection & number | string = 'down'): string => {
+  const directionMap: { [k in ChevronDirection]: '0' | '90' | '-90' | '180' } = {
     down: '0',
     left: '90',
     right: '-90',
     up: '180',
   };
-  return directionMap[direction] || direction;
+
+  if (typeof direction === 'string' || typeof direction === 'number') return direction;
+
+  return directionMap[direction];
 };
 
 const StyledChevron = styled.svg<IChevronProps>`
