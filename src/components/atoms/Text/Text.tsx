@@ -50,7 +50,9 @@ const Text = styled.span<ITextProps>`
   font-size: ${({ size = 'base' }) => (size === 'lead' ? typography.sizes.heading.h4 : typography.sizes.text[size])};
 `;
 
-const TextWrap: FC<ITextProps> = props => <Text {...props} />;
+const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
+  <Text {...props} ref={ref} />
+));
 
 TextWrap.defaultProps = {
   as: 'span',
