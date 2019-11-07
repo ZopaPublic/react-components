@@ -25,7 +25,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0 0;
 }
 
 .c4:focus {
@@ -47,9 +46,9 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(downdeg);
-  -ms-transform: rotate(downdeg);
-  transform: rotate(downdeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c0 {
@@ -141,7 +140,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 48px;
   font-weight: 600;
   width: 100%;
-  margin: 4px 0 0;
 }
 
 .c2:focus {
@@ -163,9 +161,9 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(downdeg);
-  -ms-transform: rotate(downdeg);
-  transform: rotate(downdeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c0 {

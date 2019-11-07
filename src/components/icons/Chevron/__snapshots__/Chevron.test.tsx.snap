@@ -30,9 +30,9 @@ exports[`<Chevron /> renders the component pointing 225 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
+  -webkit-transform: rotate(deg);
+  -ms-transform: rotate(deg);
+  transform: rotate(deg);
 }
 
 <svg
@@ -55,9 +55,9 @@ exports[`<Chevron /> renders the component pointing down 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(downdeg);
-  -ms-transform: rotate(downdeg);
-  transform: rotate(downdeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <svg
@@ -80,9 +80,9 @@ exports[`<Chevron /> renders the component pointing left 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(leftdeg);
-  -ms-transform: rotate(leftdeg);
-  transform: rotate(leftdeg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 <svg
@@ -105,9 +105,9 @@ exports[`<Chevron /> renders the component pointing right 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(rightdeg);
-  -ms-transform: rotate(rightdeg);
-  transform: rotate(rightdeg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 <svg
@@ -130,9 +130,9 @@ exports[`<Chevron /> renders the component pointing up 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(updeg);
-  -ms-transform: rotate(updeg);
-  transform: rotate(updeg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 <svg
@@ -155,9 +155,9 @@ exports[`<Chevron /> should render without crashing 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(downdeg);
-  -ms-transform: rotate(downdeg);
-  transform: rotate(downdeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <svg

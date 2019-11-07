@@ -16,7 +16,7 @@ export interface IChevronProps extends React.SVGProps<SVGSVGElement> {
   direction?: ChevronDirection;
 }
 
-const getRotation = (direction: ChevronDirection & number | string = 'down'): string => {
+const getRotation = (direction: ChevronDirection | number = 'down'): string => {
   const directionMap: { [k in ChevronDirection]: '0' | '90' | '-90' | '180' } = {
     down: '0',
     left: '90',
@@ -24,7 +24,7 @@ const getRotation = (direction: ChevronDirection & number | string = 'down'): st
     up: '180',
   };
 
-  if (typeof direction === 'string' || typeof direction === 'number') return direction;
+  if (typeof direction === 'number') return direction.toString();
 
   return directionMap[direction];
 };

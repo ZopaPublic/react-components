@@ -21,6 +21,10 @@ const TextFieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
+const TextFieldLabel = styled(InputLabel)`
+  margin-bottom: 5px;
+`;
+
 const Prefix = styled.span<IPrefixProps>`
   position: relative;
   display: block;
@@ -67,7 +71,7 @@ const TextField: FC<ITextFieldProps> = props => {
 
   return (
     <>
-      {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
+      {label && <TextFieldLabel htmlFor={`text-id-${name}`}>{label}</TextFieldLabel>}
       {helpText && <Text size="small">{helpText}</Text>}
       <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}

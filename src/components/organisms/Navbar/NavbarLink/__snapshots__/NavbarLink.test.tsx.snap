@@ -64,9 +64,9 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(downdeg);
-  -ms-transform: rotate(downdeg);
-  transform: rotate(downdeg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c0 {
