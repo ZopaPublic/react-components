@@ -6,8 +6,8 @@ import Text from '../../atoms/Text/Text';
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
-  as?: any;
   target?: '_blank';
+  // See #139 for more context on why this.
   color?: any;
 }
 

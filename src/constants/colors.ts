@@ -1,4 +1,5 @@
 export type TTextHexColors = '#FFFFFF' | '#63637E' | '#0D0A38' | '#1EC06A' | '#EE0505';
+export type TLinkHexColors = '#FFFFFF' | '#0D0A38';
 
 export interface IBaseColorSpec {
   primary: '#00B9A7';
