@@ -10,6 +10,8 @@ export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
   rightIcon?: JSX.Element;
   sizing?: TSizing;
   styling?: TStyling;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export type TStyling =

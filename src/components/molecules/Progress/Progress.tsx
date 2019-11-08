@@ -11,7 +11,7 @@ export interface IProgressionStyleProps {
 export interface IProgressProps extends IProgressionStyleProps {
   totalSteps: number;
   currentStep: number;
-  style: CSSProperties;
+  style?: CSSProperties;
 }
 
 const SProgressBar = styled.div`
