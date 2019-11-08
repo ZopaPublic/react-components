@@ -6,7 +6,7 @@ import Link, { ILinkProps } from '../../../atoms/Link/Link';
 
 export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   active: boolean;
-  color: ILinkProps['color'];
+  color?: ILinkProps['color'];
   withChevron: boolean;
 }
 
@@ -37,8 +37,8 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
   active?: boolean;
   withChevron?: boolean;
   open?: boolean;
-  color: ILinkProps['color'];
-  target: ILinkProps['target'];
+  color?: ILinkProps['color'];
+  target?: ILinkProps['target'];
 }
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
