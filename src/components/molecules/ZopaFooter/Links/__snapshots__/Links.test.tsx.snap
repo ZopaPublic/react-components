@@ -414,6 +414,17 @@ exports[`<Links /> renders the component 1`] = `
             Website terms
           </a>
         </li>
+        <li
+          class="c5"
+        >
+          <a
+            class="c6 c7 c8"
+            color="#4A3EDE"
+            href="https://www.zopa.com/principles"
+          >
+            P2P Principles
+          </a>
+        </li>
       </ul>
     </div>
   </div>
