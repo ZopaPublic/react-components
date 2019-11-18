@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/zopaUK/react-components/compare/v2.3.5...v2.4.0) (2019-11-18)
+
+
+### Features
+
+* **zopafooter:** added link to p2p principles ([f148871](https://github.com/zopaUK/react-components/commit/f148871718fabf5d91853fd96cd269a40507066a))
+
 ## [2.3.5](https://github.com/zopaUK/react-components/compare/v2.3.4...v2.3.5) (2019-11-04)
 
 
