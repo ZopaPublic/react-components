@@ -29,10 +29,10 @@ const renderComponent = () =>
   );
 
 describe('<Form.RadioField />', () => {
-  it('handles value change', () => {
+  it('handles value change', async () => {
     const { getByText, getByLabelText } = renderComponent();
-    act(() => {
-      fireEvent.click(getByLabelText('Employed'));
+    await act(async () => {
+      await fireEvent.click(getByLabelText('Employed'));
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));

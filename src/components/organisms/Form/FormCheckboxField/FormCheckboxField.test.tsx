@@ -33,10 +33,10 @@ const renderComponent = () =>
   );
 
 describe('<Form.CheckboxField />', () => {
-  it('handles value change', () => {
+  it('handles value change', async () => {
     const { getByText, getByLabelText } = renderComponent();
-    act(() => {
-      fireEvent.click(getByLabelText(checkboxLabel));
+    await act(async () => {
+      await fireEvent.click(getByLabelText(checkboxLabel));
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));
@@ -45,17 +45,17 @@ describe('<Form.CheckboxField />', () => {
     expect(onSubmit).toHaveBeenCalledWith({ policy: true });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getByLabelText } = renderComponent();
     const checkbox = getByLabelText(checkboxLabel);
-    act(() => {
-      fireEvent.click(checkbox);
+    await act(async () => {
+      await fireEvent.click(checkbox);
     });
     act(() => {
       fireEvent.blur(checkbox);
     });
-    act(() => {
-      fireEvent.click(checkbox);
+    await act(async () => {
+      await fireEvent.click(checkbox);
     });
     expect(queryByText(errorMessage)).toBeTruthy();
   });

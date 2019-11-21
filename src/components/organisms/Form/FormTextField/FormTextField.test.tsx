@@ -28,11 +28,11 @@ const renderComponent = () =>
   );
 
 describe('<Form.TextField />', () => {
-  it('handles value change', () => {
+  it('handles value change', async () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));
