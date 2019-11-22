@@ -1,4 +1,4 @@
-import { useRef, useState, Dispatch, SetStateAction, KeyboardEvent, RefObject } from 'react';
+import { useRef, useState, KeyboardEvent, RefObject } from 'react';
 import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
 import { mod } from '../../../helpers/utils';
 
@@ -38,9 +38,6 @@ export type TIsActiveAccordionSection = (index: number) => boolean;
 
 type TActiveSections = number[];
 
-let activeSections: TActiveSections;
-let updateActiveSections: Dispatch<SetStateAction<TActiveSections>>;
-
 const useAccordion = () => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
@@ -62,8 +59,7 @@ const useAccordion = () => {
     }
   };
 
-  [activeSections, updateActiveSections] = useState<TActiveSections>([]);
-
+  const [activeSections, updateActiveSections] = useState<TActiveSections>([]);
   const isActiveSection: TIsActiveAccordionSection = index => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
@@ -78,10 +74,11 @@ const useAccordion = () => {
     return { ...baseStyle, height: `${sectionRef.clientHeight}px` };
   };
 
-  const toggleAccordionSection = (index: number) =>
+  const toggleAccordionSection = (index: number) => {
     updateActiveSections(prevSections =>
       prevSections.includes(index) ? prevSections.filter(i => i !== index) : prevSections.concat(index),
     );
+  };
 
   const [cursorPosition, updateCursorPosition] = useState<number>(-1);
 
