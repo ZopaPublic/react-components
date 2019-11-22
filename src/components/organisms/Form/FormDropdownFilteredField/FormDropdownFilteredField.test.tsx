@@ -37,7 +37,7 @@ const renderComponent = () =>
   );
 
 describe('<Form.DropdownFilteredField />', () => {
-  it('handles value change', () => {
+  it('handles value change', async () => {
     const { getByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
     act(() => {
@@ -46,8 +46,8 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.change(dropdown, { target: { value: 'B' } });
     });
-    act(() => {
-      fireEvent.click(getByText('British'));
+    await act(async () => {
+      await fireEvent.click(getByText('British'));
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));

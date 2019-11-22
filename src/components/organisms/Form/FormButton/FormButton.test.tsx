@@ -32,19 +32,19 @@ describe('<Form.Button />', () => {
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
-  it('renders enabled button', () => {
+  it('renders enabled button', async () => {
     const { getByText, getByLabelText } = renderComponent();
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
     expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
-  it('calls onSubmit callback', () => {
+  it('calls onSubmit callback', async () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));

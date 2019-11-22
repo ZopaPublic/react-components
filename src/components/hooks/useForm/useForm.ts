@@ -9,7 +9,7 @@ export type TErrors = Record<string, string | undefined>;
 export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
-  validate?: (values: TValues) => TErrors;
+  validate?: (values: TValues) => Promise<TErrors> | TErrors;
 }
 
 export interface IFieldProps {
@@ -31,14 +31,12 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseForm
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
 
-  const runValidation = useCallback(
-    formValues => {
-      if (validate) {
-        updateErrors(validate(formValues));
-      }
-    },
-    [validate],
-  );
+  const runValidation = async formValues => {
+    if (validate) {
+      const errors = await validate(formValues);
+      updateErrors(errors);
+    }
+  };
 
   const invalid = useMemo(() => !!Object.keys(errors).length, [errors]);
 

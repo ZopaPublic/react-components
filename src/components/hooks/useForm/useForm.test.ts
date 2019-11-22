@@ -144,7 +144,7 @@ describe('useForm', () => {
   });
 
   describe('onChange', () => {
-    it('should properly handle value change', () => {
+    it('should properly handle value change', async () => {
       const { result } = renderHook(() =>
         useForm({
           initialValues,
@@ -157,16 +157,16 @@ describe('useForm', () => {
         error: undefined,
       });
 
-      act(() => {
-        result.current.getFieldProps('name').onChange('test');
+      await act(async () => {
+        await result.current.getFieldProps('name').onChange('test');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: 'test',
         error: undefined,
       });
 
-      act(() => {
-        result.current.getFieldProps('name').onChange('');
+      await act(async () => {
+        await result.current.getFieldProps('name').onChange('');
       });
       expect(result.current.getFieldProps('name')).toMatchObject({
         value: '',
@@ -176,7 +176,7 @@ describe('useForm', () => {
   });
 
   describe('onBlur', () => {
-    it('should properly handle blur', () => {
+    it('should properly handle blur', async () => {
       const { result } = renderHook(() =>
         useForm({
           initialValues,
