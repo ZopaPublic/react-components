@@ -1,3 +1,10 @@
+## [2.4.2](https://github.com/zopaUK/react-components/compare/v2.4.1...v2.4.2) (2019-11-22)
+
+
+### Bug Fixes
+
+* **form:** fix Form interface and make validation either sync or async ([9f034f4](https://github.com/zopaUK/react-components/commit/9f034f4d8f78c99fd3701e1b02b123a09c37bc80))
+
 ## [2.4.1](https://github.com/zopaUK/react-components/compare/v2.4.0...v2.4.1) (2019-11-22)
 
 
