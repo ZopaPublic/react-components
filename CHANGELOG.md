@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/zopaUK/react-components/compare/v2.4.0...v2.4.1) (2019-11-22)
+
+
+### Bug Fixes
+
+* **accordion:** fix accordion not opening ([fc161dd](https://github.com/zopaUK/react-components/commit/fc161ddc2ca759c3b63ede26c2be9c4e92467224))
+
 # [2.4.0](https://github.com/zopaUK/react-components/compare/v2.3.5...v2.4.0) (2019-11-18)
 
 
