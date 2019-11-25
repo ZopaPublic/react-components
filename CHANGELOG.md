@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/zopaUK/react-components/compare/v2.4.2...v2.4.3) (2019-11-25)
+
+
+### Bug Fixes
+
+* **link:** link not wrapping text ([6b4b802](https://github.com/zopaUK/react-components/commit/6b4b8028fc3b56c3b29aa90b824205afb1b71a25)), closes [#143](https://github.com/zopaUK/react-components/issues/143)
+
 ## [2.4.2](https://github.com/zopaUK/react-components/compare/v2.4.1...v2.4.2) (2019-11-22)
 
 
