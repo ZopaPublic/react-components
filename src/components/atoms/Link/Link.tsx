@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors, IBaseColorSpec, INeutralColorSpec } from '../../../constants/colors';
-import Text from '../../atoms/Text/Text';
+import { typography } from '../../../constants/typography';
 
 export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   color?: IBaseColorSpec['secondary'] | INeutralColorSpec['white'];
@@ -9,9 +9,14 @@ export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement
 
 export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
 
-const SLink = styled(Text)`
+const SLink = styled.a<ILinkProps>`
   font-size: inherit;
+  font-family: ${typography.primary};
+  font-weight: ${typography.weights.semibold};
+  line-height: ${typography.lineHeights.text};
+  color: ${({ color = colors.neutral.dark }) => color};
   cursor: pointer;
+  letter-spacing: normal;
   text-decoration: none;
   user-select: none;
   appearance: none;
