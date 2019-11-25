@@ -2,21 +2,16 @@
 
 exports[`<Navbar.Link /> should render component with default props 1`] = `
 .c0 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #4A3EDE;
-  line-height: 1.6;
+  font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  font-size: 16px;
-}
-
-.c1 {
-  font-size: inherit;
+  line-height: 1.6;
+  color: #4A3EDE;
   cursor: pointer;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -28,15 +23,15 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   appearance: none;
 }
 
-.c1:hover {
+.c0:hover {
   opacity: 0.88;
 }
 
-.c1:active {
+.c0:active {
   opacity: 0.72;
 }
 
-.c2 {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -48,19 +43,20 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   color: #4A3EDE;
 }
 
-.c2:active,
-.c2:hover {
+.c1:active,
+.c1:hover {
   opacity: 0.88;
 }
 
 <a
-  class="c0 c1 c2"
+  as="a"
+  class="c0 c1"
   color="#4A3EDE"
 />
 `;
 
 exports[`<Navbar.Link /> should render component with specific props 1`] = `
-.c4 {
+.c3 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -70,21 +66,16 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 .c0 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #4A3EDE;
-  line-height: 1.6;
+  font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  font-size: 16px;
-}
-
-.c1 {
-  font-size: inherit;
+  line-height: 1.6;
+  color: #4A3EDE;
   cursor: pointer;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -96,15 +87,15 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   appearance: none;
 }
 
-.c1:hover {
+.c0:hover {
   opacity: 0.88;
 }
 
-.c1:active {
+.c0:active {
   opacity: 0.72;
 }
 
-.c2 {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -116,12 +107,12 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   color: #4A3EDE;
 }
 
-.c2:active,
-.c2:hover {
+.c1:active,
+.c1:hover {
   opacity: 1;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -140,15 +131,16 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 <a
-  class="c0 c1 c2"
+  as="a"
+  class="c0 c1"
   color="#4A3EDE"
 >
   <span
-    class="c3"
+    class="c2"
     open=""
   >
     <svg
-      class="c4"
+      class="c3"
       direction="down"
       height="18px"
       viewBox="0 0 416 416"
