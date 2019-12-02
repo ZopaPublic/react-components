@@ -8,10 +8,6 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -32,7 +28,6 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 }
 
 <a
-  as="a"
   class="c0"
   color="#4A3EDE"
   href="http://duckduckgo.com"
@@ -49,10 +44,6 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -79,7 +70,6 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
 }
 
 <a
-  as="a"
   class="c0"
   color="#4A3EDE"
   href="http://duckduckgo.com"

@@ -8,10 +8,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -211,7 +207,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c6"
         >
           <a
-            as="a"
             class="c7"
             color="#4A3EDE"
             href="mailto:savings@zopa.com"
@@ -223,7 +218,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c6"
         >
           <a
-            as="a"
             class="c7"
             color="#4A3EDE"
             href="tel:020 7580 6060"
@@ -236,7 +230,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c8"
         >
           <a
-            as="a"
             class="c7"
             color="#4A3EDE"
             href="tel:020 7291 8331"

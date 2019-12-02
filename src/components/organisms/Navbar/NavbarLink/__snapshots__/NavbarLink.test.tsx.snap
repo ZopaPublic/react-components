@@ -8,10 +8,6 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -49,7 +45,6 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 }
 
 <a
-  as="a"
   class="c0 c1"
   color="#4A3EDE"
 />
@@ -72,10 +67,6 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -131,7 +122,6 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 <a
-  as="a"
   class="c0 c1"
   color="#4A3EDE"
 >
