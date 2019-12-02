@@ -126,6 +126,10 @@ const linkGroups = [
         href: 'https://www.zopa.com/website-terms',
         label: 'Website terms',
       },
+      {
+        href: 'https://www.zopa.com/principles',
+        label: 'P2P Principles',
+      },
     ],
   },
   {

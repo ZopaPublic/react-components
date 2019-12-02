@@ -37,14 +37,14 @@ const renderComponent = () =>
   );
 
 describe('<Form.DropdownField />', () => {
-  it('handles value change', () => {
+  it('handles value change', async () => {
     const { getByText, getByLabelText } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
     act(() => {
       fireEvent.click(dropdown);
     });
-    act(() => {
-      fireEvent.change(dropdown, { target: { value: 'newspaper' } });
+    await act(async () => {
+      await fireEvent.change(dropdown, { target: { value: 'newspaper' } });
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));

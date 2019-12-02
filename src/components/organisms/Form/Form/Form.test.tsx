@@ -35,8 +35,8 @@ describe('<Form />', () => {
   it('calls onSubmit callback', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
     const value = 'name';
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
     act(() => {
       fireEvent.submit(getByTestId(testId));

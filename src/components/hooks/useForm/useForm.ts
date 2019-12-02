@@ -29,19 +29,17 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseForm
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
 
-  const runValidation = useCallback(
-    formValues => {
-      if (validate) {
-        updateErrors(validate(formValues));
-      }
-    },
-    [validate],
-  );
+  const runValidation = (formValues: typeof initialValues) => {
+    if (validate) {
+      const errors = validate(formValues);
+      updateErrors(errors);
+    }
+  };
 
   const invalid = useMemo(() => !!Object.keys(errors).length, [errors]);
 
   const getFieldProps = useCallback(
-    name => ({
+    (name: string) => ({
       error: errors[name],
       touched: !!touched[name],
       value: values[name],

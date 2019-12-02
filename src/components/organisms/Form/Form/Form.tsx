@@ -3,7 +3,7 @@ import React, { FC, HTMLAttributes } from 'react';
 import { FormContext } from '../context';
 import useForm, { IUseFormProps } from '../../../hooks/useForm/useForm';
 
-const Form: FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = ({
+const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps> = ({
   children,
   initialValues,
   onSubmit,

@@ -1,3 +1,31 @@
+## [2.4.3](https://github.com/zopaUK/react-components/compare/v2.4.2...v2.4.3) (2019-11-25)
+
+
+### Bug Fixes
+
+* **link:** link not wrapping text ([6b4b802](https://github.com/zopaUK/react-components/commit/6b4b8028fc3b56c3b29aa90b824205afb1b71a25)), closes [#143](https://github.com/zopaUK/react-components/issues/143)
+
+## [2.4.2](https://github.com/zopaUK/react-components/compare/v2.4.1...v2.4.2) (2019-11-22)
+
+
+### Bug Fixes
+
+* **form:** fix Form interface and make validation either sync or async ([9f034f4](https://github.com/zopaUK/react-components/commit/9f034f4d8f78c99fd3701e1b02b123a09c37bc80))
+
+## [2.4.1](https://github.com/zopaUK/react-components/compare/v2.4.0...v2.4.1) (2019-11-22)
+
+
+### Bug Fixes
+
+* **accordion:** fix accordion not opening ([fc161dd](https://github.com/zopaUK/react-components/commit/fc161ddc2ca759c3b63ede26c2be9c4e92467224))
+
+# [2.4.0](https://github.com/zopaUK/react-components/compare/v2.3.5...v2.4.0) (2019-11-18)
+
+
+### Features
+
+* **zopafooter:** added link to p2p principles ([f148871](https://github.com/zopaUK/react-components/commit/f148871718fabf5d91853fd96cd269a40507066a))
+
 ## [2.3.5](https://github.com/zopaUK/react-components/compare/v2.3.4...v2.3.5) (2019-11-04)
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
-import Text from '../../atoms/Text/Text';
+import { typography } from '../../../constants/typography';
 
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -11,11 +11,12 @@ export interface ILinkProps
   color?: any;
 }
 
-const SLink = styled(Text).attrs({
-  weight: 'semibold',
-  forwardedAs: 'a',
-})<ILinkProps>`
+const SLink = styled.a<ILinkProps>`
   font-size: inherit;
+  font-family: ${typography.primary};
+  font-weight: ${typography.weights.semibold};
+  line-height: ${typography.lineHeights.text};
+  color: ${({ color = colors.neutral.dark }) => color};
   cursor: pointer;
   text-decoration: none;
   user-select: none;
