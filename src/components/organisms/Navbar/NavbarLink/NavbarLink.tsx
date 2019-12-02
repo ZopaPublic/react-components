@@ -4,9 +4,8 @@ import { colors } from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
 import Link, { ILinkProps } from '../../../atoms/Link/Link';
 
-export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface IStyledNavbarLinkProps extends ILinkProps {
   active: boolean;
-  color?: ILinkProps['color'];
   withChevron: boolean;
 }
 

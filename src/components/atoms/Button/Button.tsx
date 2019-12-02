@@ -29,6 +29,11 @@ export type TSizing = 'default' | 'large' | 'small' | 'compact';
 export type TButtonStylingMapping = { [key in TStyling]: string };
 export type TButtonSizingMapping = { [key in TSizing]: string };
 
+const defaultButtonProps: Partial<IButtonProps> = {
+  sizing: 'default',
+  styling: 'primary',
+};
+
 const smallInset = 'inset 0 0 0 2px';
 const largeInset = 'inset 0 0 0 4px';
 
@@ -161,5 +166,8 @@ const Button: React.FC<IButtonProps> = props => {
     </SButton>
   );
 };
+
+Button.defaultProps = defaultButtonProps;
+SButton.defaultProps = defaultButtonProps;
 
 export default Button;

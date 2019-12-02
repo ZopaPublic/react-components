@@ -24,9 +24,7 @@ const getRotation = (direction: ChevronDirection | number = 'down'): string => {
     up: '180',
   };
 
-  if (typeof direction === 'number') return direction.toString();
-
-  return directionMap[direction];
+  return typeof direction === 'number' ? String(direction) : directionMap[direction];
 };
 
 const StyledChevron = styled.svg<IChevronProps>`

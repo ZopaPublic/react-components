@@ -55,16 +55,16 @@ const genRelativeWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, col
 `;
 
 const getWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, cols: IFlexColProps['cols']) => {
-  if (colWidth === 'hidden') {
-    return genHidden(breakpoint);
+  switch (colWidth) {
+    case 'hidden':
+      return genHidden(breakpoint);
+    case 'auto':
+      return genAutoWidth(breakpoint);
+    case 'fill':
+      return genFillWidth(breakpoint);
+    default:
+      return genRelativeWidth(breakpoint, colWidth, cols);
   }
-  if (colWidth === 'auto') {
-    return genAutoWidth(breakpoint);
-  }
-  if (colWidth === 'fill') {
-    return genFillWidth(breakpoint);
-  }
-  return genRelativeWidth(breakpoint, colWidth, cols);
 };
 
 const StyledFlexCol = styled.div<IFlexCol>`

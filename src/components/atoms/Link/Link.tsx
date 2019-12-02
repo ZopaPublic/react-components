@@ -7,8 +7,7 @@ export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
-  // See #139 for more context on why this.
-  color?: any;
+  color?: any; // see issue #139 for more context on why the explicit `any` here.
 }
 
 const SLink = styled.a<ILinkProps>`
@@ -48,16 +47,16 @@ const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, color = colors.base.secondary, target, ...rest } = props;
-
-  return (
-    <SLink ref={ref} color={color} target={target} {...rest}>
-      {children}
-      {target === '_blank' && <TargetIcon color={color} />}
-    </SLink>
-  );
-});
+const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>(
+  ({ children, color = colors.base.secondary, target, ...rest }, ref) => {
+    return (
+      <SLink ref={ref} color={color} target={target} {...rest}>
+        {children}
+        {target === '_blank' && <TargetIcon color={color} />}
+      </SLink>
+    );
+  },
+);
 
 Link.defaultProps = {
   color: colors.base.secondary,

@@ -2,10 +2,10 @@ export type TGridBreakpoints = 'xs' | 's' | 'm' | 'l' | 'xl';
 export type TGridWidths = 's' | 'm' | 'l' | 'xl';
 
 interface IGrid {
-  breakpoints: { [k in TGridBreakpoints]: number };
+  breakpoints: Record<TGridBreakpoints, number>;
   cols: number;
   gutter: number;
-  width: { [k in TGridWidths]: number };
+  width: Record<TGridWidths, number>;
 }
 
 const grid: IGrid = {
