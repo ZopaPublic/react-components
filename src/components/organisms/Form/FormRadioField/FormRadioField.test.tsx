@@ -13,9 +13,11 @@ const errorMessage = 'You need to pick one';
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
+
   if (!values.employmentType) {
     errors.employmentType = errorMessage;
   }
+
   return errors;
 };
 

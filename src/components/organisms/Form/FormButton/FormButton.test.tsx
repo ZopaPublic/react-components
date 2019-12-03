@@ -8,9 +8,11 @@ interface TForm {
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
+
   if (!values.firstName) {
     errors.firstName = 'This field is required';
   }
+
   return errors;
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
@@ -8,9 +8,10 @@ export interface IProgressionStyleProps {
   width?: string;
 }
 
-export interface IProgressProps extends IProgressionStyleProps, React.HTMLAttributes<HTMLElement> {
+export interface IProgressProps extends IProgressionStyleProps {
   totalSteps: number;
   currentStep: number;
+  style?: CSSProperties;
 }
 
 const SProgressBar = styled.div`
@@ -40,8 +41,8 @@ const SProgression = styled.div<IProgressionStyleProps>`
   }
 `;
 
-const Progress: React.FunctionComponent<IProgressProps> = ({ totalSteps, currentStep, style }) => (
-  <SProgressBar style={style}>
+const Progress: React.FC<IProgressProps> = ({ totalSteps, currentStep, ...rest }) => (
+  <SProgressBar {...rest}>
     <SProgression width={`${(100 / totalSteps) * currentStep}%`}>
       <Text size="small">
         Step {currentStep} of {totalSteps}

@@ -76,10 +76,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
   line-height: 1.6;
   color: #4A3EDE;
   cursor: pointer;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-user-select: none;
@@ -246,7 +242,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
     cols="12"
   >
     <a
-      as="a"
       class="c2 c3"
       color="#4A3EDE"
       href="https://www.zopa.com"
@@ -284,7 +279,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
     >
       <a
         aria-label="instagram"
-        as="a"
         class="c2 c7"
         color="#4A3EDE"
         cols="12"
@@ -314,7 +308,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        as="a"
         class="c2 c7"
         color="#4A3EDE"
         cols="12"
@@ -338,7 +331,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        as="a"
         class="c2 c7"
         color="#4A3EDE"
         cols="12"

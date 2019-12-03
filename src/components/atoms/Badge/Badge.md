@@ -27,9 +27,7 @@ import { Badge } from '@zopauk/react-components';
     </Badge>
   </div>
   <div>
-    <Badge styling="invalid" mb>
-      Invalid
-    </Badge>
+    <Badge styling="invalid">Invalid</Badge>
   </div>
 </Fragment>;
 ```

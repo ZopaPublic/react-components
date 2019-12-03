@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
-export interface ICardProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ICardProps {
   type?: TCardTypes;
-  display?: string;
+  display?: 'block' | 'none' | 'inline-block';
 }
 
 export type TCardTypes = 'card' | 'linkCard';

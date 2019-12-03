@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
-export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
   contrastColor?: string;
   fullWidth?: boolean;
   leftIcon?: JSX.Element;
   rightIcon?: JSX.Element;
   sizing?: TSizing;
   styling?: TStyling;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export type TStyling =
@@ -26,6 +28,11 @@ export type TSizing = 'default' | 'large' | 'small' | 'compact';
 
 export type TButtonStylingMapping = { [key in TStyling]: string };
 export type TButtonSizingMapping = { [key in TSizing]: string };
+
+const defaultButtonProps: Partial<IButtonProps> = {
+  sizing: 'default',
+  styling: 'primary',
+};
 
 const smallInset = 'inset 0 0 0 2px';
 const largeInset = 'inset 0 0 0 4px';
@@ -99,33 +106,34 @@ const SButton = styled.button<IButtonProps>`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: ${({ fullWidth }) => fullWidth && '100%'};
-  padding: ${({ sizing }) => paddings[sizing]};
+  width: ${({ fullWidth = false }) => fullWidth && '100%'};
+  padding: ${({ sizing = 'default' }) => paddings[sizing]};
   font-family: ${typography.primary};
-  font-size: ${({ sizing }) => fontSizes[sizing]};
+  font-size: ${({ sizing = 'default' }) => fontSizes[sizing]};
   line-height: 1.2;
   font-weight: ${typography.weights.semibold};
   cursor: pointer;
-  border: 1px solid ${({ styling }) => backgroundColors[styling]};
+  border: 1px solid ${({ styling = 'primary' }) => backgroundColors[styling]};
   border-radius: 8px;
-  color: ${({ styling, contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
-  background-color: ${({ styling }) => backgroundColors[styling]};
+  color: ${({ contrastColor }) => contrastColor};
+  color: ${({ styling = 'primary', contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
+  background-color: ${({ styling = 'primary' }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
 
   &:not(:disabled) {
-    box-shadow: ${({ styling }) => boxShadows[styling] || 'none'};
+    box-shadow: ${({ styling = 'primary' }) => boxShadows[styling] || 'none'};
   }
 
   &:active:not(:disabled),
   &:focus:not(:disabled) {
-    box-shadow: ${({ styling }) => activeBoxShadows[styling]};
+    box-shadow: ${({ styling = 'primary' }) => activeBoxShadows[styling]};
     ${({ styling }) => (styling === 'contrastLink' || styling === 'link' ? null : 'outline: none')};
   }
 
   &:hover:not(:disabled) {
     opacity: 0.8;
-    color: ${({ styling }) => hoverFontColors[styling]};
-    background-color: ${({ styling }) => activeBackgroundColors[styling]};
+    color: ${({ styling = 'primary' }) => hoverFontColors[styling]};
+    background-color: ${({ styling = 'primary' }) => activeBackgroundColors[styling]};
     box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};
   }
 
@@ -139,7 +147,7 @@ const SButton = styled.button<IButtonProps>`
   }
 `;
 
-const Button: React.FunctionComponent<IButtonProps> = props => {
+const Button: React.FC<IButtonProps> = props => {
   const { children, leftIcon, rightIcon, ...rest } = props;
 
   return (
@@ -159,10 +167,7 @@ const Button: React.FunctionComponent<IButtonProps> = props => {
   );
 };
 
-Button.defaultProps = {
-  fullWidth: false,
-  sizing: 'default',
-  styling: 'primary',
-};
+Button.defaultProps = defaultButtonProps;
+SButton.defaultProps = defaultButtonProps;
 
 export default Button;

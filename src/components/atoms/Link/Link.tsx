@@ -1,13 +1,14 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { colors, IBaseColorSpec, INeutralColorSpec } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
-export interface ILinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  color?: IBaseColorSpec['secondary'] | INeutralColorSpec['white'];
+export interface ILinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    React.RefAttributes<HTMLAnchorElement> {
+  target?: '_blank';
+  color?: any; // see issue #139 for more context on why the explicit `any` here.
 }
-
-export interface ITargetIconProps extends React.SVGProps<SVGSVGElement> {}
 
 const SLink = styled.a<ILinkProps>`
   font-size: inherit;
@@ -16,7 +17,6 @@ const SLink = styled.a<ILinkProps>`
   line-height: ${typography.lineHeights.text};
   color: ${({ color = colors.neutral.dark }) => color};
   cursor: pointer;
-  letter-spacing: normal;
   text-decoration: none;
   user-select: none;
   appearance: none;
@@ -36,7 +36,7 @@ const STargetIcon = styled.svg`
   position: relative;
 `;
 
-const TargetIcon = (props: ITargetIconProps) => {
+const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <STargetIcon xmlns="http://www.w3.org/2000/svg" width="15" height="15">
       <g fill={props.color || colors.base.secondary}>
@@ -47,15 +47,16 @@ const TargetIcon = (props: ITargetIconProps) => {
   );
 };
 
-const Link: FC<ILinkProps> = React.forwardRef<HTMLAnchorElement, ILinkProps>((props, ref) => {
-  const { children, color = colors.base.secondary, ...rest } = props;
-  return (
-    <SLink ref={ref} {...rest} weight="semibold" color={color} forwardedAs="a">
-      {children}
-      {rest.target === '_blank' && <TargetIcon color={color} />}
-    </SLink>
-  );
-});
+const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>(
+  ({ children, color = colors.base.secondary, target, ...rest }, ref) => {
+    return (
+      <SLink ref={ref} color={color} target={target} {...rest}>
+        {children}
+        {target === '_blank' && <TargetIcon color={color} />}
+      </SLink>
+    );
+  },
+);
 
 Link.defaultProps = {
   color: colors.base.secondary,

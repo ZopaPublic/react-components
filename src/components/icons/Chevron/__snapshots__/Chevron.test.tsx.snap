@@ -30,9 +30,9 @@ exports[`<Chevron /> renders the component pointing 225 1`] = `
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
+  -webkit-transform: rotate(deg);
+  -ms-transform: rotate(deg);
+  transform: rotate(deg);
 }
 
 <svg

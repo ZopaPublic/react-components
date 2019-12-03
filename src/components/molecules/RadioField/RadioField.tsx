@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
@@ -98,18 +98,11 @@ const Input = styled.input<IInputStatus>`
 
 export interface IRadioField extends IField, IInputStatus {}
 
-const RadioField: FunctionComponent<IRadioField> = ({
-  label,
-  hasError,
-  errorMessage,
-  isValid,
-  inputProps,
-  ...rest
-}) => {
-  if (!inputProps.value) {
-    throw Error('Value must be set in inputProps. Check the docs.');
-  }
+const RadioField: FC<IRadioField> = ({ label, hasError, errorMessage, isValid, inputProps, ...rest }) => {
   const { value } = inputProps;
+
+  if (!inputProps.value) throw Error('Value must be set in inputProps. Check the docs.');
+
   return (
     <FieldContainer {...rest}>
       <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} type="radio" {...inputProps} />

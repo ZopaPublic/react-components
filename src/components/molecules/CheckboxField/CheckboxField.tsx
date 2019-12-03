@@ -82,13 +82,12 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const CheckboxField = (props: IField) => {
+const CheckboxField: React.FC<IField> = props => {
   const { label, inputProps, errorMessage, size, ...rest } = props;
   const { name } = inputProps;
 
-  if (!name) {
-    throw Error('Name must be set in inputProps. Check the docs.');
-  }
+  if (!name) throw Error('Name must be set in inputProps. Check the docs.');
+
   return (
     <SizedContainer size={size} {...rest}>
       <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />

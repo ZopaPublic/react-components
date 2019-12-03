@@ -26,7 +26,7 @@ export interface IHelpProps {
   email: string;
 }
 
-const Help: React.FunctionComponent<IHelpProps> = ({ email }) => (
+const Help: React.FC<IHelpProps> = ({ email }) => (
   <HelpWrap>
     <HelpContent>
       <FlexRow gutter={16}>

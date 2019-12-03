@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -13,11 +13,40 @@ export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement
   prefix?: string;
 }
 
+export interface IPrefixProps {
+  prefix: string;
+}
+
 const TextFieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const TextField = (props: ITextFieldProps) => {
+const TextFieldLabel = styled(InputLabel)`
+  margin-bottom: 5px;
+`;
+
+const Prefix = styled.span<IPrefixProps>`
+  position: relative;
+  display: block;
+  
+  &::before {
+    content: '${({ prefix }: IPrefixProps) => prefix}';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: ${typography.sizes.text.base};
+    color: ${colors.neutral.dark};
+  }
+  
+  input {
+    padding-left: 24px;
+  }
+`;
+
+const TextField: FC<ITextFieldProps> = props => {
   const { label, errorMessage, isValid, inputProps, size, helpText, prefix } = props;
   const { name } = inputProps;
 
@@ -42,37 +71,12 @@ const TextField = (props: ITextFieldProps) => {
 
   return (
     <>
-      {label && <InputLabel htmlFor={`text-id-${name}`}>{label}</InputLabel>}
+      {label && <TextFieldLabel htmlFor={`text-id-${name}`}>{label}</TextFieldLabel>}
       {helpText && <Text size="small">{helpText}</Text>}
       <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
       {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
     </>
   );
 };
-
-interface IPrefixProps extends HTMLSpanElement {
-  prefix: string;
-}
-
-const Prefix = styled.span<IPrefixProps>`
-  position: relative;
-  display: block;
-  
-  &::before {
-    content: '${({ prefix }: IPrefixProps) => prefix}';
-    position: absolute;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    font-size: ${typography.sizes.text.base};
-    color: ${colors.neutral.dark};
-  }
-  
-  input {
-    padding-left: 24px;
-  }
-`;
 
 export default TextField;

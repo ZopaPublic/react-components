@@ -8,18 +8,11 @@ type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type IBgColors = { [S in TStyling]: string };
 type IFontColors = { [S in TStyling]: string };
 
-interface IStyledBadgeProps {
+interface IBadgeProps {
   /**
    * The style you want to assign to your badge.
    */
   styling?: TStyling;
-}
-
-interface IBadgeProps extends IStyledBadgeProps {
-  /**
-   * The string of text you want to render in your badge
-   */
-  children: string;
 }
 
 const backgroundColors: IBgColors = {
@@ -36,7 +29,9 @@ const fontColors: IFontColors = {
   waiting: colors.neutral.dark,
 };
 
-const StyledBadge = styled(Text)<IStyledBadgeProps>`
+const StyledBadge = styled(Text).attrs({
+  size: 'small',
+})<IBadgeProps>`
   color: ${({ styling = 'default' }) => styling && fontColors[styling]};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
@@ -50,14 +45,14 @@ const StyledCheckMark = styled(CheckMark)`
   margin-right: 5px;
 `;
 
-function Badge({ children, styling, ...rest }: IBadgeProps) {
+const Badge: React.FC<IBadgeProps> = ({ children, styling, ...rest }) => {
   return (
-    <StyledBadge styling={styling} {...rest} size="small">
+    <StyledBadge styling={styling} {...rest}>
       {styling === 'confirmed' && <StyledCheckMark color={fontColors.confirmed} />}
       {children}
     </StyledBadge>
   );
-}
+};
 
 Badge.defaultProps = {
   styling: 'default',

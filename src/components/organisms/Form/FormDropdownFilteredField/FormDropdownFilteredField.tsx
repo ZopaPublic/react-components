@@ -1,5 +1,8 @@
 import React, { FC } from 'react';
-import DropdownFiltered, { IDropdownFilteredProps } from '../../../molecules/DropdownFiltered/DropdownFiltered';
+import DropdownFiltered, {
+  IDropdownFilteredProps,
+  IDropdownItem,
+} from '../../../molecules/DropdownFiltered/DropdownFiltered';
 
 import { useFieldContext } from '../context';
 
@@ -9,9 +12,11 @@ interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
 
 const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, items, inputProps, ...rest }) => {
   const { error, touched, onChange, onBlur } = useFieldContext(name);
-  const handleChange = item => {
+
+  const handleChange = (item: IDropdownItem) => {
     onChange(item);
   };
+
   return (
     <DropdownFiltered
       inputProps={{

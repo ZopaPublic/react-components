@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from './../../constants/colors';
+import { colors, TTextHexColors, IColorSpec } from './../../constants/colors';
 
 export type TColorNames = keyof typeof colors.base | keyof typeof colors.neutral | keyof typeof colors.semantic;
 
 interface ISColorProps {
-  color: string;
-  colorName: string;
+  color: TTextHexColors;
+  colorName: TColorNames;
 }
 
 const SColors = styled.div`
@@ -49,7 +49,7 @@ export interface IColorsProps {
    * section of the default colors
    * @ignore
    */
-  variant: keyof typeof colors;
+  variant: keyof IColorSpec;
 }
 
 export default function Colors({ variant }: IColorsProps) {
@@ -57,15 +57,20 @@ export default function Colors({ variant }: IColorsProps) {
 
   return (
     <SColors>
-      {Object.keys(colorGroup).map(colorKey => (
-        <SColor key={colorKey} color={colorGroup[colorKey]} colorName={colorKey}>
-          <p>
-            {colorKey}
-            <br />
-            {colorGroup[colorKey]}
-          </p>
-        </SColor>
-      ))}
+      {Object.keys(colorGroup).map((colorKey: string) => {
+        const colorName = colorKey as TColorNames;
+        const actualColor = (colorGroup as any)[colorName];
+
+        return (
+          <SColor key={colorKey} color={actualColor} colorName={colorName}>
+            <p>
+              {colorName}
+              <br />
+              {actualColor}
+            </p>
+          </SColor>
+        );
+      })}
     </SColors>
   );
 }

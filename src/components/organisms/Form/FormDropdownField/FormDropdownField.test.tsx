@@ -14,9 +14,11 @@ const errorMessage = 'Please pick one';
 
 const validate = (values: TForm) => {
   const errors: Partial<TForm> = {};
+
   if (!values.referral) {
     errors.referral = errorMessage;
   }
+
   return errors;
 };
 

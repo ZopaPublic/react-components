@@ -1,8 +1,6 @@
 import { css } from 'styled-components';
 
-export type TDeviceSizes = 'tablet' | 'phone' | 'desktop' | string;
-
-type TDeviceMediaStyledComponentFunctions = { [index in TDeviceSizes]: typeof css };
+export type TDeviceSizes = 'tablet' | 'phone' | 'desktop';
 
 // TODO: Consider the breakpoints defined by google's material design https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
 const sizes = {
@@ -11,22 +9,24 @@ const sizes = {
   tablet: 720,
 };
 
-// TODO: this needs to be cleaned out once we have the official breakpoints, as well as the responsive strategy (which might not be JS based).
-// TODO: either remove usage of reduce, or create usable types to be used. Not sure the types are being inferred properly through reduce.
-export const maxMedia: TDeviceMediaStyledComponentFunctions = Object.keys(sizes).reduce((accumulator, label) => {
-  accumulator[label] = style => css`
-    @media (max-width: ${sizes[label]}px) {
-      ${style};
-    }
-  `;
-  return accumulator;
-}, {});
+const maxMedia = {
+  phone: interpolate('phone', 'max'),
+  tablet: interpolate('tablet', 'max'),
+  desktop: interpolate('desktop', 'max'),
+};
 
-export const minMedia: TDeviceMediaStyledComponentFunctions = Object.keys(sizes).reduce((accumulator, label) => {
-  accumulator[label] = style => css`
-    @media (min-width: ${sizes[label]}px) {
+const minMedia = {
+  phone: interpolate('phone', 'min'),
+  tablet: interpolate('tablet', 'min'),
+  desktop: interpolate('desktop', 'min'),
+};
+
+function interpolate(sizeLabel: keyof typeof sizes, direction: 'min' | 'max') {
+  return (style: TemplateStringsArray) => css`
+    @media (${direction}-width: ${sizes[sizeLabel]}px) {
       ${style};
     }
   `;
-  return accumulator;
-}, {});
+}
+
+export { maxMedia, minMedia };

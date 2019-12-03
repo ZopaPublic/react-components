@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
@@ -12,7 +12,6 @@ const Input = styled.input<IInput>`
   height: 48px;
   font-weight: ${typography.weights.semibold};
   width: 100%;
-  margin: 4px 0 0;
 
   &:focus {
     outline-width: 0;
@@ -29,7 +28,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = forwardRef((props: IInput, ref) => {
+const InputText = forwardRef<HTMLInputElement, HTMLAttributes<HTMLInputElement>>((props, ref) => {
   return <Input {...props} ref={ref} />;
 });
 

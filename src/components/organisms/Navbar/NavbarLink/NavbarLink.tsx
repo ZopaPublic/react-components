@@ -2,11 +2,10 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Chevron from '../../../icons/Chevron/Chevron';
-import Link from '../../../atoms/Link/Link';
+import Link, { ILinkProps } from '../../../atoms/Link/Link';
 
-export interface IStyledNavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface IStyledNavbarLinkProps extends ILinkProps {
   active: boolean;
-  color: string;
   withChevron: boolean;
 }
 
@@ -34,15 +33,11 @@ const ChevronContainer = styled.span<IChevronContainerProps>`
 `;
 
 export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  /**
-   * Indicates whether the current route corresponds with the links href
-   */
   active?: boolean;
-  /**
-   * Determines whether the Chevron icon is shown on the side
-   */
   withChevron?: boolean;
   open?: boolean;
+  color?: ILinkProps['color'];
+  target?: ILinkProps['target'];
 }
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(

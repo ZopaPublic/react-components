@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import chevronDown from '../../../content/images/chevron-down.svg';
@@ -19,9 +19,9 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export interface IOption extends React.OptionHTMLAttributes<HTMLOptionElement> {}
 
-const Option: React.FunctionComponent<IOption> = styled.option``;
+const Option: FC<IOption> = styled.option``;
 
-const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdownProps>`
+const Dropdown = styled.select<IDropdownProps>`
   appearance: none;
 
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
@@ -41,5 +41,7 @@ const Dropdown: React.FunctionComponent<IDropdownProps> = styled.select<IDropdow
   }
 `;
 
-export default Dropdown;
+const DropdownWrap: FC<IDropdownProps> = props => <Dropdown {...props} />;
+
+export default DropdownWrap;
 export { Option };

@@ -1,6 +1,5 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
-import Text from '../Text/Text';
 import { typography } from '../../../constants/typography';
 import { colors, INeutralColorSpec } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
@@ -9,11 +8,11 @@ const {
   sizes: { heading: headingSizes },
 } = typography;
 
-interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
+interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
-  as: 'h1' | 'h2' | 'h3' | 'h4';
+  as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   /**
    * Whether to add some margin below the rendered heading or not. Applied by default.
    */
@@ -24,7 +23,7 @@ interface IStyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   color?: INeutralColorSpec['white'] | INeutralColorSpec['nearDark'] | INeutralColorSpec['dark'];
 }
 
-const StyledHeading = styled(Text)<IStyledHeadingProps>`
+const StyledHeading = styled.h1<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   
   font-size: ${({ as }) => headingSizes[as]};
