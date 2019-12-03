@@ -1,3 +1,18 @@
+# [2.5.0](https://github.com/zopaUK/react-components/compare/v2.4.3...v2.5.0) (2019-12-03)
+
+
+### Bug Fixes
+
+* **input-text:** fix prefix alignment ([167442c](https://github.com/zopaUK/react-components/commit/167442cde57e0ddf5c7a63c127ca58a04fe18ca6))
+* **text:** address forward ref warning ([acfc7e9](https://github.com/zopaUK/react-components/commit/acfc7e987ff683a7e4320daa36c402f771e89af2))
+* **text:** further type refinements ([e0234d7](https://github.com/zopaUK/react-components/commit/e0234d761c5feee8bb66cc7e43c6fcde685cb0b8))
+* **types:** add `@types/styled-components` ([ac7aa31](https://github.com/zopaUK/react-components/commit/ac7aa319ffbec58e7e680ab90220dfab261396c7))
+
+
+### Features
+
+* **types:** revert beta version ([2968ec4](https://github.com/zopaUK/react-components/commit/2968ec411d1c1ee548696cbfc8337ef468927642))
+
 ## [2.4.3](https://github.com/zopaUK/react-components/compare/v2.4.2...v2.4.3) (2019-11-25)
 
 
