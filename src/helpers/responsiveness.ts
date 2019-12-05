@@ -22,9 +22,10 @@ const minMedia = {
 };
 
 function interpolate(sizeLabel: keyof typeof sizes, direction: 'min' | 'max') {
-  return (style: TemplateStringsArray) => css`
+  return (style: TemplateStringsArray, ...rest: any) => css`
     @media (${direction}-width: ${sizes[sizeLabel]}px) {
       ${style};
+      ${rest};
     }
   `;
 }
