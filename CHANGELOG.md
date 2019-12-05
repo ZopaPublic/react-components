@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/zopaUK/react-components/compare/v2.5.0...v2.5.1) (2019-12-05)
+
+
+### Bug Fixes
+
+* **responsiveness:** interpolate function typing ([86531dc](https://github.com/zopaUK/react-components/commit/86531dc1a946766f05b37a0badabf5aef4669f60))
+
 # [2.5.0](https://github.com/zopaUK/react-components/compare/v2.4.3...v2.5.0) (2019-12-03)
 
 
