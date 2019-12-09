@@ -33,9 +33,7 @@ const spin = keyframes`
   }
 `;
 
-const Spinner = styled.div.attrs({
-  as: 'div',
-})<ISpinnerProps>`
+const Spinner = styled.div<ISpinnerProps>`
   width: ${({ size = '45px' }) => size};
   height: ${({ size = '45px' }) => size};
   margin: 8px;

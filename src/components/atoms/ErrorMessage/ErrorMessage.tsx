@@ -7,7 +7,7 @@ import Text from '../Text/Text';
 const ErrorMessage = styled(Text).attrs({
   role: 'alert',
   weight: 'semibold',
-  forwardedAs: 'p',
+  forwardedAs: 'span',
   size: 'small',
 })`
   width: 100%;

@@ -8,7 +8,7 @@ type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type IBgColors = { [S in TStyling]: string };
 type IFontColors = { [S in TStyling]: string };
 
-interface IBadgeProps extends Omit<HTMLAttributes<HTMLDivElement>, 'color'> {
+interface IBadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
   /**
    * The style you want to assign to your badge.
    */

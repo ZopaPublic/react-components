@@ -19,14 +19,10 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export const Option = styled.option``;
 
-const Dropdown = styled.select.attrs({
-  as: 'select',
-})<IDropdownProps>`
+const Dropdown = styled.select<IDropdownProps>`
   appearance: none;
-
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;

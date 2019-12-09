@@ -101,9 +101,7 @@ const SText = styled.span<IButtonProps>`
   margin-left: ${({ leftIcon }) => !!leftIcon && '8px'};
 `;
 
-const SButton = styled.button.attrs({
-  as: 'button',
-})<IButtonProps>`
+const SButton = styled.button<IButtonProps>`
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;

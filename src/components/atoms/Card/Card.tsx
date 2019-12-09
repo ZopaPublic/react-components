@@ -15,9 +15,7 @@ const borderRadius: { [index in TCardTypes]: string } = {
   linkCard: '8px',
 };
 
-const Card = styled.div.attrs({
-  as: 'div',
-})<ICardProps>`
+const Card = styled.div<ICardProps>`
   background-color: ${colors.neutral.white};
   border-color: ${colors.neutral.white};
   border-radius: ${({ type }) => borderRadius[type as TCardTypes]};

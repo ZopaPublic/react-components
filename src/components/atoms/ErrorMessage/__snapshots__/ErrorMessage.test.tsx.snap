@@ -29,10 +29,10 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   vertical-align: middle;
 }
 
-<p
+<span
   class="c0 c1"
   role="alert"
 >
   Ops error !
-</p>
+</span>
 `;

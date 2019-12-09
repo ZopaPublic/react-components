@@ -7,9 +7,7 @@ export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
   icon?: ReactElement;
 }
 
-const Box = styled.div.attrs({
-  as: 'div',
-})`
+const Box = styled.div`
   display: inline-flex;
   padding: 16px;
   border: 1px solid ${colors.neutral.light};

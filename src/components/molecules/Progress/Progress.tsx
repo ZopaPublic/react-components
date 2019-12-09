@@ -14,9 +14,7 @@ export interface IProgressProps extends IProgressionStyleProps, HTMLAttributes<H
   style?: CSSProperties;
 }
 
-const SProgressBar = styled.div.attrs({
-  as: 'div',
-})`
+const SProgressBar = styled.div`
   position: relative;
   width: 100%;
   border-radius: 100px;

@@ -25,9 +25,7 @@ const typeIcons = {
   verified,
 };
 
-const SidekickCard = styled.div.attrs({
-  as: 'div',
-})<ISidekickCardProps>`
+const SidekickCard = styled.div<ISidekickCardProps>`
   border-radius: 4px;
   background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.neutral.white};
   padding: 48px 48px 48px 80px;
