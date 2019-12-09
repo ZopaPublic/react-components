@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import styled from 'styled-components';
 import Text from '../Text/Text';
 import { colors } from '../../../constants/colors';
@@ -8,7 +8,7 @@ export interface IInputLabelProps {
   children: ReactNode;
 }
 
-const StyledLabel = styled(Text).attrs({
+const InputLabel = styled(Text).attrs({
   forwardedAs: 'label',
   weight: 'semibold',
   color: colors.neutral.dark,
@@ -18,6 +18,7 @@ const StyledLabel = styled(Text).attrs({
   display: block;
 `;
 
-const InputLabel = (props: IInputLabelProps) => <StyledLabel {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistInputLabel: FC<IInputLabelProps> = props => <InputLabel {...props} />;
 
 export default InputLabel;

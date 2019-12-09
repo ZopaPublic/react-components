@@ -33,7 +33,9 @@ const spin = keyframes`
   }
 `;
 
-const SSpinner = styled.div<ISpinnerProps>`
+const Spinner = styled.div.attrs({
+  as: 'div',
+})<ISpinnerProps>`
   width: ${({ size = '45px' }) => size};
   height: ${({ size = '45px' }) => size};
   margin: 8px;
@@ -43,6 +45,7 @@ const SSpinner = styled.div<ISpinnerProps>`
   animation: ${spin} 1.2s linear infinite;
 `;
 
-const Spinner: React.FC<ISpinnerProps> = props => <SSpinner {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistSpinner: React.FC<ISpinnerProps> = props => <Spinner {...props} />;
 
 export default Spinner;

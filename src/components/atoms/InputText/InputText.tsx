@@ -5,7 +5,9 @@ import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IInput } from '../../types';
 
-const Input = styled.input<IInput>`
+const Input = styled.input.attrs({
+  as: 'input',
+})<IInput>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 0 10px;

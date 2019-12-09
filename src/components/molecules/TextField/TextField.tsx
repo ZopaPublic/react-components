@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, FC } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -9,7 +9,7 @@ import { typography } from '../../../constants/typography';
 import { colors } from '../../../constants/colors';
 import { IField } from '../../types';
 
-export interface ITextFieldProps extends IField, HTMLAttributes<HTMLInputElement> {
+export interface ITextFieldProps extends IField<HTMLInputElement> {
   prefix?: string;
 }
 

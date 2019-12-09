@@ -1,13 +1,15 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import Alert from '../../icons/Alert/Alert';
 
-export interface IAlertBoxProps {
+export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
   icon?: ReactElement;
 }
 
-const Box = styled.div`
+const Box = styled.div.attrs({
+  as: 'div',
+})`
   display: inline-flex;
   padding: 16px;
   border: 1px solid ${colors.neutral.light};

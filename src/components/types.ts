@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from 'react';
+import { InputHTMLAttributes, HTMLAttributes } from 'react';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -25,7 +25,7 @@ export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputEleme
   'data-automation'?: string;
 }
 
-export interface IField {
+export interface IField<T = HTMLDivElement> extends HTMLAttributes<T> {
   /**
    * The text to be shown on the label. If this is not set it doesn't render the label.
    */

@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
 import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../context';
 
-export interface IAccordionHeader {
+export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
   id: string;
   index: number;
   textSize?: 'base' | 'small';
