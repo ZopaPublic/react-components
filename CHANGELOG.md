@@ -1,3 +1,10 @@
+## [2.5.2](https://github.com/zopaUK/react-components/compare/v2.5.1...v2.5.2) (2019-12-10)
+
+
+### Bug Fixes
+
+* **global:** always type native HTML attributes ([1ec67e0](https://github.com/zopaUK/react-components/commit/1ec67e0842b3851a093e3a56a5917709e649bc50))
+
 ## [2.5.1](https://github.com/zopaUK/react-components/compare/v2.5.0...v2.5.1) (2019-12-05)
 
 
