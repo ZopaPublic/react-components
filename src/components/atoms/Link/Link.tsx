@@ -8,6 +8,7 @@ export interface ILinkProps
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
   color?: any; // see issue #139 for more context on why the explicit `any` here.
+  as?: 'a' | 'button';
 }
 
 const SLink = styled.a<ILinkProps>`

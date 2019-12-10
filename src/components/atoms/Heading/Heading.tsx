@@ -23,7 +23,7 @@ interface IStyledHeadingProps {
   color?: INeutralColorSpec['white'] | INeutralColorSpec['nearDark'] | INeutralColorSpec['dark'];
 }
 
-const StyledHeading = styled.h1<IStyledHeadingProps>`
+const Heading = styled.h1<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   
   font-size: ${({ as }) => headingSizes[as]};
@@ -38,6 +38,7 @@ const StyledHeading = styled.h1<IStyledHeadingProps>`
   ${({ mb = true }) => mb && 'margin-bottom: 24px'};
 `;
 
-const Heading: FC<IStyledHeadingProps> = props => <StyledHeading {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistHeading: FC<IStyledHeadingProps> = props => <Heading {...props} />;
 
 export default Heading;

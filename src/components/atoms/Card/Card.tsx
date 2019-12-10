@@ -15,7 +15,7 @@ const borderRadius: { [index in TCardTypes]: string } = {
   linkCard: '8px',
 };
 
-const SCard = styled.div<ICardProps>`
+const Card = styled.div<ICardProps>`
   background-color: ${colors.neutral.white};
   border-color: ${colors.neutral.white};
   border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
@@ -39,12 +39,13 @@ const SCard = styled.div<ICardProps>`
   `};
 `;
 
-const Card: React.FunctionComponent<ICardProps> = props => {
-  return <SCard {...props} />;
-};
-
 Card.defaultProps = {
   type: 'card',
+};
+
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidstCard: React.FC<ICardProps> = props => {
+  return <Card {...props} />;
 };
 
 export default Card;

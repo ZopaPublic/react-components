@@ -4,7 +4,7 @@ import { IField } from '../../../types';
 
 import { useFieldContext } from '../context';
 
-interface IFormCheckboxFieldProps extends Partial<IField> {
+interface IFormCheckboxFieldProps extends IField<HTMLInputElement> {
   name: string;
 }
 

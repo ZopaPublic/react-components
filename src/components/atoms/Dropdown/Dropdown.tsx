@@ -17,16 +17,12 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
   isValid?: boolean;
 }
 
-export interface IOption extends React.OptionHTMLAttributes<HTMLOptionElement> {}
-
-const Option: FC<IOption> = styled.option``;
+export const Option = styled.option``;
 
 const Dropdown = styled.select<IDropdownProps>`
   appearance: none;
-
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
@@ -41,7 +37,7 @@ const Dropdown = styled.select<IDropdownProps>`
   }
 `;
 
-const DropdownWrap: FC<IDropdownProps> = props => <Dropdown {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistDropdown: FC<IDropdownProps> = props => <Dropdown {...props} />;
 
-export default DropdownWrap;
-export { Option };
+export default Dropdown;

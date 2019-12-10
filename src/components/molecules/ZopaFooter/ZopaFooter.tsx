@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   padding: 40px 0;
 `;
 
-export interface IFooterProps {
+export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * This renders the legal copy only without any links.
    * This is useful for pages where by design requires the user to focus on one task.
@@ -22,8 +22,8 @@ export interface IFooterProps {
   legalOnly?: boolean;
 }
 
-const ZopaFooter: React.FC<IFooterProps> = ({ legalOnly }) => (
-  <StyledWrapper id="zopa-footer">
+const ZopaFooter: React.FC<IFooterProps> = ({ legalOnly, ...rest }) => (
+  <StyledWrapper id="zopa-footer" {...rest}>
     <FlexContainer gutter={16}>
       {legalOnly || (
         <>

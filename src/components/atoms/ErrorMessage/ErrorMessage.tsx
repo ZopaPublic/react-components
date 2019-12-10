@@ -4,7 +4,7 @@ import { colors } from '../../../constants/colors';
 import warningIcon from '../../../content/images/red-warning.svg';
 import Text from '../Text/Text';
 
-const SErrorMessage = styled(Text).attrs({
+const ErrorMessage = styled(Text).attrs({
   role: 'alert',
   weight: 'semibold',
   forwardedAs: 'span',
@@ -24,6 +24,7 @@ const SErrorMessage = styled(Text).attrs({
   }
 `;
 
-const ErrorMessage: FC<{}> = props => <SErrorMessage {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistErrorMessage: FC<{}> = props => <ErrorMessage {...props} />;
 
 export default ErrorMessage;

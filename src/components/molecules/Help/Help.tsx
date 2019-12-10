@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import Link from '../../atoms/Link/Link';
 import Text from '../../atoms/Text/Text';
@@ -22,12 +22,12 @@ const OpeningHoursWrapper = styled.div`
   max-width: 350px;
 `;
 
-export interface IHelpProps {
+export interface IHelpProps extends HTMLAttributes<HTMLDivElement> {
   email: string;
 }
 
-const Help: React.FC<IHelpProps> = ({ email }) => (
-  <HelpWrap>
+const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
+  <HelpWrap {...rest}>
     <HelpContent>
       <FlexRow gutter={16}>
         <FlexCol xs={12}>

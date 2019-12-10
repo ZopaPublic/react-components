@@ -14,10 +14,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   font-size: 16px;
 }
 
-.c3 {
-  display: block;
-}
-
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -51,7 +47,8 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border: 2px #4A3EDE solid;
 }
 
-.c4 {
+.c3 {
+  display: block;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -67,7 +64,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   user-select: none;
 }
 
-.c4:before {
+.c3:before {
   content: '';
   background-color: #EAEAEE;
   border-radius: 6px;
@@ -81,7 +78,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: block;
 }
 
-.c4:after {
+.c3:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -92,11 +89,11 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   top: 6px;
 }
 
-.c4:hover {
+.c3:hover {
   cursor: pointer;
 }
 
-.c4:hover:before {
+.c3:hover:before {
   border: 2px #DCDBE2 solid;
 }
 
@@ -110,7 +107,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="c2 c3 c4"
+    class="c2 c3"
     color="#0D0A38"
     for="checkbox-id-test1"
   >

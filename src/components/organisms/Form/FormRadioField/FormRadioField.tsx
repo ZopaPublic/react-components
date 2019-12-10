@@ -3,7 +3,7 @@ import RadioField, { IRadioField } from '../../../molecules/RadioField/RadioFiel
 
 import { useFieldContext } from '../context';
 
-interface IFormRadioFieldProps extends Partial<IRadioField> {
+interface IFormRadioFieldProps extends IRadioField {
   name: string;
   value: string;
 }

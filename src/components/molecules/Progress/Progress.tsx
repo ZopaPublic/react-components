@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
@@ -8,7 +8,7 @@ export interface IProgressionStyleProps {
   width?: string;
 }
 
-export interface IProgressProps extends IProgressionStyleProps {
+export interface IProgressProps extends IProgressionStyleProps, HTMLAttributes<HTMLDivElement> {
   totalSteps: number;
   currentStep: number;
   style?: CSSProperties;

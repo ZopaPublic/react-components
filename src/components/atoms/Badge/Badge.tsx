@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import CheckMark from '../../icons/CheckMark/CheckMark';
@@ -8,7 +8,7 @@ type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type IBgColors = { [S in TStyling]: string };
 type IFontColors = { [S in TStyling]: string };
 
-interface IBadgeProps {
+interface IBadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
   /**
    * The style you want to assign to your badge.
    */
@@ -31,6 +31,7 @@ const fontColors: IFontColors = {
 
 const StyledBadge = styled(Text).attrs({
   size: 'small',
+  forwardedAs: 'span',
 })<IBadgeProps>`
   color: ${({ styling = 'default' }) => styling && fontColors[styling]};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};

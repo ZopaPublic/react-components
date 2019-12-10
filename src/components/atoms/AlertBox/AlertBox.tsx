@@ -1,9 +1,9 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import Alert from '../../icons/Alert/Alert';
 
-export interface IAlertBoxProps {
+export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
   icon?: ReactElement;
 }
 

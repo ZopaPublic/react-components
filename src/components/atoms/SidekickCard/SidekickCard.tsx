@@ -25,7 +25,7 @@ const typeIcons = {
   verified,
 };
 
-const SSidekickCard = styled.div<ISidekickCardProps>`
+const SidekickCard = styled.div<ISidekickCardProps>`
   border-radius: 4px;
   background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.neutral.white};
   padding: 48px 48px 48px 80px;
@@ -38,6 +38,7 @@ const SSidekickCard = styled.div<ISidekickCardProps>`
   `};
 `;
 
-const SidekickCard: FC<ISidekickCardProps> = props => <SSidekickCard {...props} />;
+// TODO: Styleguidist to be able to locate styled components. See #147.
+export const StyleguidistSidekickCard: FC<ISidekickCardProps> = props => <SidekickCard {...props} />;
 
 export default SidekickCard;
