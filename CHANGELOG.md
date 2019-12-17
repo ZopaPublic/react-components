@@ -1,3 +1,11 @@
+# [2.6.0](https://github.com/zopaUK/react-components/compare/v2.5.2...v2.6.0) (2019-12-17)
+
+
+### Features
+
+* **grid:** export grid consants ([deec2b5](https://github.com/zopaUK/react-components/commit/deec2b5fda7aea2701ab371f94b3c219031fbaa5)), closes [#149](https://github.com/zopaUK/react-components/issues/149)
+* **grid:** export grid constants ([#150](https://github.com/zopaUK/react-components/issues/150)) ([159f227](https://github.com/zopaUK/react-components/commit/159f227b7e33e860e54b16783e17ca64119c99ec))
+
 ## [2.5.2](https://github.com/zopaUK/react-components/compare/v2.5.1...v2.5.2) (2019-12-10)
 
 
