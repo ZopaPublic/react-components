@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/zopaUK/react-components/compare/v2.6.0...v2.7.0) (2019-12-17)
+
+
+### Features
+
+* **expiry-modal:** new molecule ([a11900d](https://github.com/zopaUK/react-components/commit/a11900d8a8c93c2cf28ea625e2db9b514ebdee04))
+
 # [2.6.0](https://github.com/zopaUK/react-components/compare/v2.5.2...v2.6.0) (2019-12-17)
 
 
