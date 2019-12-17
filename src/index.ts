@@ -27,6 +27,7 @@ export { default as Heading } from './components/atoms/Heading/Heading';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
+export { default as ExpiryModal } from './components/molecules/ExpiryModal/ExpiryModal';
 export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFooter';
 export { default as Help } from './components/molecules/Help/Help';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';

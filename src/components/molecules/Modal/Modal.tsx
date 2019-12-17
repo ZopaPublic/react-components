@@ -2,7 +2,9 @@ import React from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 
-class Modal extends React.PureComponent<ReactModal.Props> {
+export type TModalProps = ReactModal.Props;
+
+class Modal extends React.PureComponent<TModalProps> {
   public static Styles = ModalStyles;
   public static setAppElement = ReactModal.setAppElement;
 
