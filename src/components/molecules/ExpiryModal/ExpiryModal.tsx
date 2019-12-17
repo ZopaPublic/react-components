@@ -18,7 +18,6 @@ interface IExpiryModalProps extends TModalProps {
 
 const ModalInner = styled.div`
   padding: 50px 40px 40px;
-  position: relative;
 `;
 
 const ButtonRow = styled.div`
