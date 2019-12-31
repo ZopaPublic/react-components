@@ -50,7 +50,7 @@ const StyledFlexRow = styled.div<IFlexRow>`
   align-items: ${props => props.align};
 `;
 
-const FlexRow: React.FunctionComponent<IFlexRow> = ({ children, ...props }) => {
+const FlexRow: React.FC<IFlexRow> = ({ children, ...props }) => {
   const childrenWithProps = React.Children.toArray(children)
     .filter(child => !!child)
     .map(child => React.cloneElement(child as any, { gutter: props.gutter, cols: props.cols }));
