@@ -223,6 +223,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
 }
 
 .c14:hover {
@@ -272,6 +274,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -284,6 +288,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

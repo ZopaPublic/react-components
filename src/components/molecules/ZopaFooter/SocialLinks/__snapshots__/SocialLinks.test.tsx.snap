@@ -107,6 +107,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -119,6 +121,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -8,6 +8,8 @@ const FooterLink = styled(Link).attrs({
 })`
   color: ${colors.neutral200};
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
 
   &:hover {
     color: ${colors.neutral400};

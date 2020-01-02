@@ -31,6 +31,8 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
 }
 
 .c1:hover {
@@ -74,6 +76,8 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
   color: #A9ACBA;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  display: block;
+  padding: 5px 0;
 }
 
 .c1:hover {
