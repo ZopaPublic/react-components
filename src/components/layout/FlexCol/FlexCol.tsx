@@ -50,7 +50,7 @@ const genRelativeWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, col
     flex: 0 0 ${(colWidth / cols) * 100}%;
     max-width: ${(colWidth / cols) * 100}%;
     `
-      : null}
+      : null};
   }
 `;
 
@@ -88,7 +88,7 @@ const StyledFlexCol = styled.div<IFlexCol>`
       })}
 `;
 
-const FlexCol: FC<IFlexColProps> = props => <StyledFlexCol {...props} />;
+const FlexCol: FC<IFlexCol> = props => <StyledFlexCol {...props} />;
 
 FlexCol.defaultProps = {
   align: 'auto',
