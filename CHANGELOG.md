@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/zopaUK/react-components/compare/v2.7.0...v2.7.1) (2020-01-02)
+
+
+### Bug Fixes
+
+* **flexcol:** inherit HTML types ([c3158fd](https://github.com/zopaUK/react-components/commit/c3158fd688d9ac369e4365cbe4fae561838eeb25))
+
 # [2.7.0](https://github.com/zopaUK/react-components/compare/v2.6.0...v2.7.0) (2019-12-17)
 
 
