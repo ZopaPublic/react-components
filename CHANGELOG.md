@@ -1,3 +1,10 @@
+## [2.7.2](https://github.com/zopaUK/react-components/compare/v2.7.1...v2.7.2) (2020-01-02)
+
+
+### Bug Fixes
+
+* **zopa-footer:** increase tap targets ([9451ac7](https://github.com/zopaUK/react-components/commit/9451ac764f94bcad77dc332ab703517759412b4e))
+
 ## [2.7.1](https://github.com/zopaUK/react-components/compare/v2.7.0...v2.7.1) (2020-01-02)
 
 
