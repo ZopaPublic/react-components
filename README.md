@@ -44,7 +44,6 @@ We think it might be useful for someone who wants to start a new react component
 ### Migration
 
 - Check [how to migrate to v2](./etc/docs/migration-v2.md) 🏃🏻
-- Check [documentation for v1](https://zopauk.github.io/react-components/v1).
 
 ## Contributing
 
