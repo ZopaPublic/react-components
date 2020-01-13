@@ -1,4 +1,4 @@
-import React, { forwardRef, HTMLAttributes } from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
@@ -28,7 +28,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, HTMLAttributes<HTMLInputElement>>((props, ref) => {
+const InputText = forwardRef<HTMLInputElement, IInput>((props, ref) => {
   return <Input {...props} ref={ref} />;
 });
 
