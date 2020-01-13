@@ -1,5 +1,11 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "commitBodyTable": true,
+  "requiredStatusChecks": null,
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
   ]
 }
