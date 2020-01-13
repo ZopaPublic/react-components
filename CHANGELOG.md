@@ -1,3 +1,11 @@
+## [2.7.4](https://github.com/zopaUK/react-components/compare/v2.7.3...v2.7.4) (2020-01-13)
+
+
+### Bug Fixes
+
+* **modal:** update lock file ([46ff078](https://github.com/zopaUK/react-components/commit/46ff078dcde2c5f50d467e42aea15e47917e8b90))
+* **react-modal:** move types from dev dependencies to dependencies ([e7d7cb9](https://github.com/zopaUK/react-components/commit/e7d7cb92d7bf42816506a2f73f7269d68795b531))
+
 ## [2.7.3](https://github.com/zopaUK/react-components/compare/v2.7.2...v2.7.3) (2020-01-13)
 
 
