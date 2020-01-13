@@ -1,3 +1,10 @@
+## [2.7.3](https://github.com/zopaUK/react-components/compare/v2.7.2...v2.7.3) (2020-01-13)
+
+
+### Bug Fixes
+
+* **text-input:** fix types ([7f49a32](https://github.com/zopaUK/react-components/commit/7f49a323816d3c426efa8d01b70189b4172fc77b))
+
 ## [2.7.2](https://github.com/zopaUK/react-components/compare/v2.7.1...v2.7.2) (2020-01-02)
 
 
