@@ -1,7 +1,6 @@
 {
   "extends": ["config:base"],
   "commitBodyTable": true,
-  "requiredStatusChecks": null,
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "pin", "digest"],
