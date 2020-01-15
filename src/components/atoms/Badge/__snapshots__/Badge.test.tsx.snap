@@ -14,139 +14,425 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   font-size: 14px;
 }
 
-.c1 {
-  color: #FFFFFF;
-  background-color: #0D0A38;
-  display: inline-block;
-  padding: 4px 10px;
-  white-space: nowrap;
-  border-radius: 4px;
-}
-
-<span
-  class="c0 c1"
->
-  Content
-</span>
-`;
-
-exports[`<Badge /> renders with specific size: "medium" 1`] = `
-.c0 {
+.c3 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
+  color: #FFFFFF;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   font-size: 14px;
-}
-
-.c1 {
-  color: #FFFFFF;
-  background-color: #0D0A38;
-  display: inline-block;
-  padding: 4px 10px;
-  white-space: nowrap;
-  border-radius: 4px;
-}
-
-<span
-  class="c0 c1"
->
-  Content
-</span>
-`;
-
-exports[`<Badge /> renders with specific size: "small" 1`] = `
-.c0 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.c1 {
-  color: #FFFFFF;
-  background-color: #0D0A38;
-  display: inline-block;
-  padding: 4px 10px;
-  white-space: nowrap;
-  border-radius: 4px;
-}
-
-<span
-  class="c0 c1"
->
-  Content
-</span>
-`;
-
-exports[`<Badge /> renders with specific style 1`] = `
-.c0 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.c1 {
-  color: #FFFFFF;
-  background-color: #1EC06A;
-  display: inline-block;
-  padding: 4px 10px;
-  white-space: nowrap;
-  border-radius: 4px;
 }
 
 .c2 {
-  display: inline-block;
-  margin-right: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #63637E;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  margin-left: 8px;
 }
 
 <span
   class="c0 c1"
 >
-  <svg
-    aria-label="Checkmark"
+  <div
     class="c2"
-    height="12px"
-    role="img"
-    version="1.1"
-    viewBox="0 0 14 12"
-    width="14px"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke="none"
-      stroke-width="1"
-      transform="translate(-5.000000, -7.000000)"
+    <span
+      class="c3"
+      color="#FFFFFF"
+    >
+      −
+    </span>
+  </div>
+  <div
+    class="c4"
+  >
+    Content
+  </div>
+</span>
+`;
+
+exports[`<Badge /> renders with specific style: "confirmed" 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #1EC06A;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c3 {
+  margin-left: 8px;
+}
+
+<span
+  class="c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <svg
+      aria-label="Checkmark"
+      height="10"
+      role="img"
+      version="1.1"
+      viewBox="0 0 14 12"
+      width="10"
     >
       <g
-        fill="#FFFFFF"
+        fill="none"
+        fill-rule="evenodd"
+        stroke="none"
+        stroke-width="1"
+        transform="translate(-5.000000, -7.000000)"
       >
-        <path
-          d="M8.8937112,18.1162104 L5.28067153,13.7796715 C4.86185798,13.276869 4.91785534,12.5208652 5.40783219,12.088863 C5.89547582,11.6556608 6.63277432,11.7132611 7.05275448,12.2196637 L9.70329594,15.3996797 L16.9806188,7.38003928 C17.4204314,6.89643685 18.1588965,6.87123672 18.629041,7.32243899 C19.100352,7.77484127 19.1260175,8.53324509 18.6862049,9.01924754 L10.4025549,18.1480964 C10.0314235,18.5570951 9.3990031,18.5877927 8.99000439,18.2166613 C8.95561314,18.1854542 8.92343754,18.1518893 8.8937112,18.1162104 Z"
-        />
+        <g
+          fill="#FFFFFF"
+        >
+          <path
+            d="M8.8937112,18.1162104 L5.28067153,13.7796715 C4.86185798,13.276869 4.91785534,12.5208652 5.40783219,12.088863 C5.89547582,11.6556608 6.63277432,11.7132611 7.05275448,12.2196637 L9.70329594,15.3996797 L16.9806188,7.38003928 C17.4204314,6.89643685 18.1588965,6.87123672 18.629041,7.32243899 C19.100352,7.77484127 19.1260175,8.53324509 18.6862049,9.01924754 L10.4025549,18.1480964 C10.0314235,18.5570951 9.3990031,18.5877927 8.99000439,18.2166613 C8.95561314,18.1854542 8.92343754,18.1518893 8.8937112,18.1162104 Z"
+          />
+        </g>
       </g>
-    </g>
-  </svg>
-  Content
+    </svg>
+  </div>
+  <div
+    class="c3"
+  >
+    Content
+  </div>
+</span>
+`;
+
+exports[`<Badge /> renders with specific style: "default" 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #63637E;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  margin-left: 8px;
+}
+
+<span
+  class="c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <span
+      class="c3"
+      color="#FFFFFF"
+    >
+      −
+    </span>
+  </div>
+  <div
+    class="c4"
+  >
+    Content
+  </div>
+</span>
+`;
+
+exports[`<Badge /> renders with specific style: "invalid" 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EE0505;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  margin-left: 8px;
+}
+
+<span
+  class="c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <span
+      class="c3"
+      color="#FFFFFF"
+    >
+      !
+    </span>
+  </div>
+  <div
+    class="c4"
+  >
+    Content
+  </div>
+</span>
+`;
+
+exports[`<Badge /> renders with specific style: "waiting" 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFB428;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c3 {
+  margin-left: 8px;
+}
+
+<span
+  class="c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <span
+      class="c0"
+    >
+      !
+    </span>
+  </div>
+  <div
+    class="c3"
+  >
+    Content
+  </div>
 </span>
 `;
 
@@ -164,18 +450,77 @@ exports[`<Badge /> renders without crashing 1`] = `
   font-size: 14px;
 }
 
-.c1 {
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   color: #FFFFFF;
-  background-color: #0D0A38;
-  display: inline-block;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #63637E;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 4px 10px;
   white-space: nowrap;
   border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  margin-left: 8px;
 }
 
 <span
   class="c0 c1"
 >
-  Content
+  <div
+    class="c2"
+  >
+    <span
+      class="c3"
+      color="#FFFFFF"
+    >
+      −
+    </span>
+  </div>
+  <div
+    class="c4"
+  >
+    Content
+  </div>
 </span>
 `;

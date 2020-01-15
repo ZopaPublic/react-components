@@ -17,17 +17,14 @@ describe('<Badge />', () => {
     expect(results).toHaveNoViolations();
   });
 
-  it('renders with specific style', () => {
-    const { container } = render(<Badge styling="confirmed">Content</Badge>);
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   it.each`
-    size
-    ${'small'}
-    ${'medium'}
-  `('renders with specific size: $size', ({ size }) => {
-    const { container } = render(<Badge size={size}>Content</Badge>);
+    style
+    ${'default'}
+    ${'waiting'}
+    ${'confirmed'}
+    ${'invalid'}
+  `('renders with specific style: $style', ({ style }) => {
+    const { container } = render(<Badge styling={style}>Content</Badge>);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

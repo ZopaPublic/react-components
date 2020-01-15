@@ -1,7 +1,7 @@
 import React, { FC, ReactElement, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
-import Alert from '../../icons/Alert/Alert';
+import RoundIcon from '../../icons/RoundIcon/RoundIcon';
 
 export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
   icon?: ReactElement;
@@ -22,7 +22,7 @@ const IconContainer = styled.div`
 
 const AlertBox: FC<IAlertBoxProps> = ({ children, icon, ...rest }) => (
   <Box {...rest}>
-    <IconContainer>{icon || <Alert />}</IconContainer>
+    <IconContainer>{icon || <RoundIcon variant="waiting" />}</IconContainer>
     {children}
   </Box>
 );
