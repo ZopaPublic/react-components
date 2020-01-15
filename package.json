@@ -89,6 +89,7 @@
     "rollup-plugin-url": "^3.0.0",
     "semantic-release": "^15.13.12",
     "styled-components": "^4.4.0",
+    "tippy.js": "^5.1.4",
     "typescript": "^3.2.2"
   },
   "browserslist": [
