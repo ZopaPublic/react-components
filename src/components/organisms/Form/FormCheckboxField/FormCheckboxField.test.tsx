@@ -2,11 +2,11 @@ import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import Form from '..';
 
-interface TForm {
+interface IForm {
   policy: boolean;
 }
 
-interface TFormErrors {
+interface IFormErrors {
   policy: string;
 }
 
@@ -16,8 +16,8 @@ const checkboxLabel = 'I accept the policy';
 const buttonLabel = 'Continue';
 const errorMessage = 'You need to accept the policy';
 
-const validate = (values: TForm) => {
-  const errors: Partial<TFormErrors> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IFormErrors> = {};
 
   if (!values.policy) {
     errors.policy = errorMessage;
