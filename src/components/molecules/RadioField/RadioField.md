@@ -42,7 +42,7 @@ import { RadioField } from '@zopauk/react-components';
 ```jsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="I'm checked by default" inputProps={{ value: 'radio4', name: 'radio4', defaultChecked: true }} />;
+<RadioField label="I'm checked by default" inputProps={{ value: 'radio4', name: 'radio4', checked: true }} />;
 ```
 
 - Disabled and pre-selected
@@ -52,7 +52,7 @@ import { RadioField } from '@zopauk/react-components';
 
 <RadioField
   label="I'm disabled and checked"
-  inputProps={{ value: 'radio5', name: 'radio5', disabled: true, defaultChecked: true }}
+  inputProps={{ value: 'radio5', name: 'radio5', disabled: true, checked: true }}
 />;
 ```
 
@@ -64,7 +64,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField
   label="I'm disabled, valid and checked"
   isValid={true}
-  inputProps={{ value: 'radio6', name: 'radio6', disabled: true, defaultChecked: true }}
+  inputProps={{ value: 'radio6', name: 'radio6', disabled: true, checked: true }}
 />;
 ```
 
