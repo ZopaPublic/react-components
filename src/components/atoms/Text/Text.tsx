@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
 
-export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface ITextProps extends HTMLAttributes<HTMLSpanElement | HTMLLabelElement> {
   /**
    * The weight of the rendered text. Avoid the use of `semibold` as for now.
    */
@@ -21,6 +21,10 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    * Whether to add some margin below the rendered text or not. Use it to give meaningful white-space.
    */
   mb?: boolean;
+  /**
+   * Set the associated input for a label
+   */
+  htmlFor?: string;
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Heading />`.
    */
@@ -50,7 +54,7 @@ const Text = styled.span<ITextProps>`
   font-size: ${({ size = 'base' }) => (size === 'lead' ? typography.sizes.heading.h4 : typography.sizes.text[size])};
 `;
 
-const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
+const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, HTMLLabelElement, ITextProps>((props, ref) => (
   <Text {...props} ref={ref} />
 ));
 
