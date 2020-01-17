@@ -83,10 +83,10 @@ import { HelpText } from '@zopauk/react-components';
 the `size` prop of [Badge](https://zopauk.github.io/react-components/#/Components/Atoms/Badge) 🗑
 
 ```jsx
-import { colors } from '@zopauk/react-components'
+import { colors } from '@zopauk/react-components';
 
 // Nie!
- <Badge size="xs">Ups</Card>
+<Badge size="xs">Ups</Card>;
 ```
 
 and the following icon components:

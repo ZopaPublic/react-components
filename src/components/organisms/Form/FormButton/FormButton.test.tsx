@@ -2,12 +2,12 @@ import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import Form from '..';
 
-interface TForm {
+interface IForm {
   firstName: string;
 }
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.firstName) {
     errors.firstName = 'This field is required';
