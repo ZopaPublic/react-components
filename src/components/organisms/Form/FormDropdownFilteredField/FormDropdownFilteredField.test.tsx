@@ -2,7 +2,7 @@ import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import Form from '..';
 
-interface TForm {
+interface IForm {
   nationality: string;
 }
 
@@ -13,8 +13,8 @@ const fieldName = 'nationality';
 const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.nationality) {
     errors.nationality = errorMessage;

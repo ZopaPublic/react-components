@@ -2,7 +2,7 @@ import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import Form from '..';
 
-interface TForm {
+interface IForm {
   referral: string;
 }
 
@@ -12,8 +12,8 @@ const dropdownLabel = 'How did you hear about us?';
 const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.referral) {
     errors.referral = errorMessage;

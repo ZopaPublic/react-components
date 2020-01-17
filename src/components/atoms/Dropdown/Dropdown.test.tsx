@@ -34,7 +34,10 @@ describe('<Dropdown />', () => {
   });
 
   it('renders the Dropdown with options passed through an array.map', () => {
-    const options = [{ value: 'value1', text: 'value1' }, { value: 'value2', text: 'value2' }];
+    const options = [
+      { value: 'value1', text: 'value1' },
+      { value: 'value2', text: 'value2' },
+    ];
     const { container } = render(
       <Dropdown defaultValue="defaultValue">
         <Option value="">Select a value</Option>
