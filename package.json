@@ -48,6 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "@rollup/plugin-json": "^4.0.1",
     "@semantic-release/changelog": "^3.0.1",
     "@semantic-release/git": "^7.0.5",
     "@testing-library/jest-dom": "^4.2.0",
@@ -89,7 +90,6 @@
     "rollup-plugin-url": "^3.0.0",
     "semantic-release": "^15.13.12",
     "styled-components": "^4.4.0",
-    "tippy.js": "^5.1.4",
     "typescript": "^3.2.2"
   },
   "browserslist": [
