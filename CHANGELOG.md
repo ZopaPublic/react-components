@@ -1,3 +1,16 @@
+# [2.8.0](https://github.com/zopaUK/react-components/compare/v2.7.4...v2.8.0) (2020-01-20)
+
+
+### Bug Fixes
+
+* **tooling:** upgrade react-scripts + other deps ([a3284cd](https://github.com/zopaUK/react-components/commit/a3284cd5be63d414de514b0d3df81f19dbe87e40))
+* **tooltip:** get CSS from CDN ([924e401](https://github.com/zopaUK/react-components/commit/924e401df85d26d58e3820c10faf35dab2bd39ad))
+
+
+### Features
+
+* **tooltip:** new component ([8601c09](https://github.com/zopaUK/react-components/commit/8601c0930941f068b6a58640b41bff7fe3881029))
+
 ## [2.7.4](https://github.com/zopaUK/react-components/compare/v2.7.3...v2.7.4) (2020-01-13)
 
 
