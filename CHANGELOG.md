@@ -1,3 +1,10 @@
+## [2.8.1](https://github.com/zopaUK/react-components/compare/v2.8.0...v2.8.1) (2020-01-20)
+
+
+### Bug Fixes
+
+* **styleguide:** fix missing styles ([874059a](https://github.com/zopaUK/react-components/commit/874059a2ed5b4167363385d5c753f3cb01762a6f))
+
 # [2.8.0](https://github.com/zopaUK/react-components/compare/v2.7.4...v2.8.0) (2020-01-20)
 
 
