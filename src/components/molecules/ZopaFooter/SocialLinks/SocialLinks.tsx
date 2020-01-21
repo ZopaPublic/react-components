@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import grid from '../../../../constants/grid';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
@@ -11,13 +11,6 @@ export interface ISocialLinkData {
   component: React.FunctionComponent<{ size?: string }>;
   href: string;
   label: string;
-}
-
-export interface ISocialLinkProps {
-  /**
-   * Define the Url for the logo
-   */
-  logoUrl?: string;
 }
 
 const SFlexRow = styled(FlexRow)`
@@ -113,7 +106,7 @@ const socialLinksData: ISocialLinkData[] = [
   },
 ];
 
-const SocialLinks: FC<ISocialLinkProps> = ({ logoUrl = 'https://www.zopa.com' }) => (
+const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
   <FlexRow justify="space-between">
     <FlexCol xs={12} s={6} m={4} l={2}>
       <LogoLink href={logoUrl}>
