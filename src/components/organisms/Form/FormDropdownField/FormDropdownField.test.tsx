@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, wait, act } from '@testing-library/react';
 import Form from '..';
 
 interface IForm {
@@ -43,17 +43,18 @@ describe('<Form.DropdownField />', () => {
     act(() => {
       fireEvent.click(dropdown);
     });
-    await act(async () => {
-      await fireEvent.change(dropdown, { target: { value: 'newspaper' } });
+    act(() => {
+      fireEvent.change(dropdown, { target: { value: 'newspaper' } });
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ referral: 'newspaper' });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getByLabelText } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
     act(() => {
@@ -62,6 +63,7 @@ describe('<Form.DropdownField />', () => {
     act(() => {
       fireEvent.blur(dropdown);
     });
+    await wait();
     expect(queryByText(errorMessage)).toBeTruthy();
   });
 });
