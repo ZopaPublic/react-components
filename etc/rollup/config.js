@@ -6,6 +6,7 @@ import url from 'rollup-plugin-url';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
+import json from '@rollup/plugin-json';
 
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
 
@@ -30,6 +31,7 @@ export default {
   preserveModules: true,
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
+    json(),
     customResolveOptions({ extensions }),
     babel({
       presets: [['react-app', { flow: false, typescript: true }]],

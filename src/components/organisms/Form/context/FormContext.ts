@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
-import { TUseFormValues } from '../../../hooks/useForm/useForm';
+import { IUseFormValues } from '../../../hooks/useForm/useForm';
 
-const FormContext = createContext<TUseFormValues | undefined>(undefined);
+const FormContext = createContext<IUseFormValues | undefined>(undefined);
 
 export default FormContext;
