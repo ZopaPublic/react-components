@@ -5,8 +5,8 @@
 // Atoms
 // Constants (colors, fonts, ...)
 import { colors } from './constants/colors';
-export { default as grid } from './constants/grid';
 import { typography } from './constants/typography';
+export { default as grid } from './constants/grid';
 
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';

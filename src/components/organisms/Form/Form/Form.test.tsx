@@ -6,12 +6,12 @@ const onSubmit = jest.fn();
 const fieldLabel = 'First name';
 const testId = 'test-form';
 
-interface TForm {
+interface IForm {
   firstName: string;
 }
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.firstName) {
     errors.firstName = 'This field is required';
