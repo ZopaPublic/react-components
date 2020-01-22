@@ -106,10 +106,10 @@ const socialLinksData: ISocialLinkData[] = [
   },
 ];
 
-const SocialLinks = () => (
+const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
   <FlexRow justify="space-between">
     <FlexCol xs={12} s={6} m={4} l={2}>
-      <LogoLink href="https://www.zopa.com">
+      <LogoLink href={logoUrl}>
         <ZopaLogo color={colors.neutral.white} />
       </LogoLink>
     </FlexCol>
