@@ -3,7 +3,10 @@ import { cleanup, fireEvent, render } from '@testing-library/react';
 import Navbar from '..';
 
 describe('<Navbar.Dropdown />', () => {
-  const items = [{ label: 'one', href: '#' }, { label: 'two', href: '#' }];
+  const items = [
+    { label: 'one', href: '#' },
+    { label: 'two', href: '#' },
+  ];
   const renderOpener = ({ getOpenerProps }) => <button {...getOpenerProps()}>opener</button>;
   const renderItem = ({ item: { label, href }, getItemProps }) => (
     <a href={href} {...getItemProps()}>

@@ -18,13 +18,13 @@ export interface IFieldProps {
   onBlur: (eventData: unknown) => void;
 }
 
-export interface TUseFormValues {
+export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
   invalid: boolean;
   handleSubmit: (values: TValues) => void;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseFormValues => {
+const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
