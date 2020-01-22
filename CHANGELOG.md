@@ -1,3 +1,17 @@
+# [2.9.0](https://github.com/zopaUK/react-components/compare/v2.8.1...v2.9.0) (2020-01-22)
+
+
+### Bug Fixes
+
+* **footer:** footer links base url update ([ec07cbe](https://github.com/zopaUK/react-components/commit/ec07cbe901251d067e7ac0927dd9104e017bbda0)), closes [#173](https://github.com/zopaUK/react-components/issues/173)
+* **footer:** remove FC type from social links component ([937a925](https://github.com/zopaUK/react-components/commit/937a9257bd4f91db058803cba48c52331daf94ca)), closes [#175](https://github.com/zopaUK/react-components/issues/175)
+* **footer:** update default value and typings for the footer component ([680a7af](https://github.com/zopaUK/react-components/commit/680a7af5320f847d50c353aa6fb2559f0140b982))
+
+
+### Features
+
+* **useform:** make it possible for the validate function to be async ([6871893](https://github.com/zopaUK/react-components/commit/6871893b920e5f020e3547b642ea23f6af3f791b))
+
 ## [2.8.1](https://github.com/zopaUK/react-components/compare/v2.8.0...v2.8.1) (2020-01-20)
 
 
