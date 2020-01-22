@@ -1,3 +1,12 @@
+## [2.9.1](https://github.com/zopaUK/react-components/compare/v2.9.0...v2.9.1) (2020-01-22)
+
+
+### Bug Fixes
+
+* **inputlabel:** remove all other props except htmlFor ([0cc36d4](https://github.com/zopaUK/react-components/commit/0cc36d423225fbac5857fdb628000f1e4c3ce12f))
+* **inputlabel:** remove text component from label ([cfbeb60](https://github.com/zopaUK/react-components/commit/cfbeb6089e357d7d6f07451940b4ade3d037e2c2))
+* **inputlabel:** update margin and test snapshots ([2439d2f](https://github.com/zopaUK/react-components/commit/2439d2f06e381ab1a1c1f87b82a95da68ef555fc))
+
 # [2.9.0](https://github.com/zopaUK/react-components/compare/v2.8.1...v2.9.0) (2020-01-22)
 
 
