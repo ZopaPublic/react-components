@@ -1,6 +1,7 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, wait } from '@testing-library/react';
 import Form from '..';
+import { act } from 'react-dom/test-utils';
 
 const onSubmit = jest.fn();
 const fieldLabel = 'First name';
@@ -34,10 +35,12 @@ describe('<Form />', () => {
 
   it('calls onSubmit callback', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
+    await wait();
     const value = 'name';
-    await act(async () => {
-      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    act(() => {
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
+    await wait();
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });
@@ -45,8 +48,9 @@ describe('<Form />', () => {
     expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });
 
-  it('does not call onSubmit if the form is invalid', () => {
+  it('does not call onSubmit if the form is invalid', async () => {
     const { getByTestId } = renderComponent();
+    await wait();
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });
