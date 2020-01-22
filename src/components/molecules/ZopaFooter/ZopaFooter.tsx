@@ -26,7 +26,7 @@ export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
 }
 
-const ZopaFooter: React.FC<IFooterProps> = ({ legalOnly, baseUrl = 'https://www.zopa.com', ...rest }) => (
+const ZopaFooter = ({ legalOnly = false, baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
   <StyledWrapper id="zopa-footer" {...rest}>
     <FlexContainer gutter={16}>
       {legalOnly || (
