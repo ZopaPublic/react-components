@@ -12,7 +12,7 @@ export interface IInputLabelProps extends HTMLAttributes<HTMLLabelElement> {
 
 const InputLabel = styled.label<IInputLabelProps>`
   display: block;
-  margin: 0 0 24px;
+  margin: 0 0 10px;
   letter-spacing: 0;
   color: ${colors.neutral.dark};
   line-height: ${typography.lineHeights.text};
