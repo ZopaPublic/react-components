@@ -24,7 +24,7 @@ export interface IUseFormValues {
   handleSubmit: (values: TValues) => void;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseFormValues => {
+export const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
@@ -84,5 +84,3 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseForm
     handleSubmit,
   };
 };
-
-export default useForm;
