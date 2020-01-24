@@ -24,6 +24,7 @@ export interface IOption extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface IDropdownItem {
+  label?: string;
   value: string;
 }
 
@@ -202,7 +203,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
                   selected={selectedItem === item}
                   disabled={disabled}
                 >
-                  {item.value}
+                  {item.label || item.value}
                 </Option>
               ))}
             </Options>
