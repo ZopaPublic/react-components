@@ -7,6 +7,7 @@ export type TErrors = Record<string, string | undefined>;
 export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
+  onChange?: (values: TValues) => void;
   validate?: (values: TValues) => TErrors | Promise<TErrors>;
 }
 
@@ -24,7 +25,7 @@ export interface IUseFormValues {
   handleSubmit: (values: TValues) => void;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseFormValues => {
+const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
   const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
@@ -49,6 +50,7 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): IUseForm
       value: values[name],
       onChange(value: unknown) {
         const newValues = { ...values, [name]: value };
+        onChange && onChange(newValues);
         updateValues(newValues);
         runValidation(newValues);
       },
