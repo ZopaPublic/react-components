@@ -14,4 +14,4 @@ export const Accordion: IAccordionStatic & FC<IAccordion> = props => <AccordionC
 Accordion.Header = AccordionHeader;
 Accordion.Section = AccordionSection;
 
-export * from './useAccordion';
+export * from './hooks';

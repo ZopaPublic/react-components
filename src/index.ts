@@ -2,12 +2,14 @@
     Expose shared endpoints:
  */
 
-// Atoms
-// Constants (colors, fonts, ...)
-import { colors } from './constants/colors';
-import { typography } from './constants/typography';
+// Global (colors, fonts, ...)
+export { typography } from './constants/typography';
+export { colors } from './constants/colors';
 export { default as grid } from './constants/grid';
+export { default as Fonts } from './components/styles/Fonts';
+export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
+// Atoms
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Button } from './components/atoms/Button/Button';
@@ -55,13 +57,6 @@ export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
 export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
 export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
-
-// Hooks
-export { default as useAccordion } from './components/organisms/Accordion/useAccordion/useAccordion';
-
-export { colors, typography };
-export { default as Fonts } from './components/styles/Fonts';
-export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
 // Helpers
 export * from './helpers/responsiveness';
