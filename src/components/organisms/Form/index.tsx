@@ -1,6 +1,6 @@
 import React, { FC, HTMLAttributes } from 'react';
 
-import { IUseFormProps } from './useForm';
+import { IUseFormProps } from './hooks';
 import FormButton from './FormButton/FormButton';
 import FormTextField from './FormTextField/FormTextField';
 import FormCheckboxField from './FormCheckboxField/FormCheckboxField';
@@ -29,4 +29,4 @@ Form.RadioField = FormRadioField;
 Form.DropdownField = FormDropdownField;
 Form.DropdownFilteredField = FormDropdownFilteredField;
 
-export * from './useForm';
+export * from './hooks';
