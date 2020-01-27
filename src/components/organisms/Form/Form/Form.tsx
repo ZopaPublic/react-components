@@ -1,5 +1,5 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { useForm, IUseFormProps, FormContext } from '../../../hooks/useForm';
+import { useForm, IUseFormProps, FormContext } from '../useForm';
 
 const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps> = ({
   children,

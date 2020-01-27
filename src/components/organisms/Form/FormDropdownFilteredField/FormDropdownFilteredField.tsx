@@ -3,7 +3,7 @@ import DropdownFiltered, {
   IDropdownFilteredProps,
   IDropdownItem,
 } from '../../../molecules/DropdownFiltered/DropdownFiltered';
-import { useFieldContext } from '../../../hooks/useForm';
+import { useFieldContext } from '../useForm';
 
 interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
   name: string;
