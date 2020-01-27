@@ -1,7 +1,6 @@
 import React, { FC, ChangeEvent } from 'react';
 import RadioField, { IRadioField } from '../../../molecules/RadioField/RadioField';
-
-import { useFieldContext } from '../context';
+import { useFieldContext } from '../../../hooks/useForm';
 
 interface IFormRadioFieldProps extends IRadioField {
   name: string;

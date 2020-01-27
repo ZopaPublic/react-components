@@ -1,5 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useForm, { TValues, TErrors } from './useForm';
+
+import { useForm, TValues, TErrors } from './useForm';
 
 const initialValues = {
   name: 'name',
