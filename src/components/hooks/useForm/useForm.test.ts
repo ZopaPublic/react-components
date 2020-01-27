@@ -135,6 +135,41 @@ describe('useForm', () => {
     });
   });
 
+  describe('onChange', () => {
+    it('should be called with the form values when any of them change', async () => {
+      const onChange = jest.fn();
+      const { result, waitForNextUpdate } = renderHook(() =>
+        useForm({
+          initialValues,
+          onSubmit,
+          onChange,
+          validate,
+        }),
+      );
+      await waitForNextUpdate();
+
+      const name = 'Jan';
+      act(() => {
+        result.current.getFieldProps('name').onChange(name);
+      });
+      await waitForNextUpdate();
+      expect(onChange).toHaveBeenCalledWith({
+        ...initialValues,
+        name,
+      });
+
+      const lastName = 'Dzban';
+      act(() => {
+        result.current.getFieldProps('lastName').onChange(lastName);
+      });
+      await waitForNextUpdate();
+      expect(onChange).toHaveBeenCalledWith({
+        name,
+        lastName,
+      });
+    });
+  });
+
   describe('getFieldProps', () => {
     it('should return the correct object', async () => {
       const { result, waitForNextUpdate } = renderHook(() =>
