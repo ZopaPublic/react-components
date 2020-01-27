@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
 
-import useFormContext from './useFormContext';
+import { useFormContext } from './useFormContext';
 
 describe('useFormContext', () => {
   it('should throw if no context present', () => {

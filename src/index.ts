@@ -58,7 +58,7 @@ export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
 // Hooks
 export { default as useAccordion } from './components/hooks/useAccordion/useAccordion';
-export { default as useForm } from './components/hooks/useForm/useForm';
+export * from './components/hooks/useForm';
 
 export { colors, typography };
 export { default as Fonts } from './components/styles/Fonts';
