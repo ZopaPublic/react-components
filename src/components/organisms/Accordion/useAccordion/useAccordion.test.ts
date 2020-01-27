@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import useAccordion from './useAccordion';
+import { useAccordion } from './useAccordion';
 
 describe('useAccordion', () => {
   it('should render correct tab and section props', () => {

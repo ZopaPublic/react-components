@@ -38,8 +38,8 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 
 // Organisms
 export * from './components/organisms/Form';
+export * from './components/organisms/Accordion';
 export { default as Navbar } from './components/organisms/Navbar';
-export { default as Accordion } from './components/organisms/Accordion';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
@@ -57,7 +57,7 @@ export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
 // Hooks
-export { default as useAccordion } from './components/hooks/useAccordion/useAccordion';
+export { default as useAccordion } from './components/organisms/Accordion/useAccordion/useAccordion';
 
 export { colors, typography };
 export { default as Fonts } from './components/styles/Fonts';

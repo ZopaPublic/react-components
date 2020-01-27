@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import Accordion, { IAccordion } from './Accordion/Accordion';
+import AccordionComponent, { IAccordion } from './Accordion/Accordion';
 import AccordionHeader from './AccordionHeader/AccordionHeader';
 import AccordionSection from './AccordionSection/AccordionSection';
 
@@ -9,9 +9,9 @@ interface IAccordionStatic {
   Section: typeof AccordionSection;
 }
 
-const AccordionWrapper: IAccordionStatic & FC<IAccordion> = props => <Accordion {...props} />;
+export const Accordion: IAccordionStatic & FC<IAccordion> = props => <AccordionComponent {...props} />;
 
-AccordionWrapper.Header = AccordionHeader;
-AccordionWrapper.Section = AccordionSection;
+Accordion.Header = AccordionHeader;
+Accordion.Section = AccordionSection;
 
-export default AccordionWrapper;
+export * from './useAccordion';
