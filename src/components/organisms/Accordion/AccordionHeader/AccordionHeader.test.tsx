@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
-import Accordion from '..';
+import { Accordion } from '..';
 
 describe('<AccordionHeader />', () => {
   it('renders the component with no a11y violations', async () => {
     const { container, getByTestId } = render(
       <Accordion aria-label="test-accordion">
-        <Accordion.Header data-testid="header" id="one" index={0} textSize="medium">
+        <Accordion.Header data-testid="header" id="one" index={0} textSize="base">
           Header
         </Accordion.Header>
         <Accordion.Section id="one" index={0}>

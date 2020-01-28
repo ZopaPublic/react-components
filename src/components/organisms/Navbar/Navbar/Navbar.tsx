@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../../../../constants/colors';
-import useScrollThreshold from '../../../hooks/useScrollThreshold/useScrollThreshold';
+import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 
 export interface ILayoutOuterProps extends React.HTMLAttributes<HTMLDivElement> {

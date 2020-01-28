@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Button, { IButtonProps } from '../../../atoms/Button/Button';
-import { useFormContext } from '../../../hooks/useForm';
+import { useFormContext } from '../hooks';
 
 export interface IFromButtonProps extends IButtonProps {
   type?: 'button' | 'reset' | 'submit';
