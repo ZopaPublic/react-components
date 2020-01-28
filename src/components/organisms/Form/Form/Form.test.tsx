@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, wait } from '@testing-library/react';
-import Form from '..';
 import { act } from 'react-dom/test-utils';
+import { Form } from '..';
 
 const onSubmit = jest.fn();
 const onChange = jest.fn();

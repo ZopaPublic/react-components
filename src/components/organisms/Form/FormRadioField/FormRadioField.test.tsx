@@ -1,6 +1,6 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '..';
+import { Form } from '..';
 
 interface IForm {
   employmentType: string;
