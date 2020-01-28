@@ -5,6 +5,7 @@ const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps
   children,
   initialValues,
   onSubmit,
+  onChange,
   validate,
   ...rest
 }) => {
@@ -12,6 +13,7 @@ const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps
     initialValues,
     onSubmit,
     validate,
+    onChange,
   });
   return (
     <FormContext.Provider value={context}>
