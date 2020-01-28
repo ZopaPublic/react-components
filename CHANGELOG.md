@@ -1,3 +1,11 @@
+# [2.10.0](https://github.com/zopaUK/react-components/compare/v2.9.1...v2.10.0) (2020-01-28)
+
+
+### Features
+
+* **form:** pass through onChange in Form ([9bc3340](https://github.com/zopaUK/react-components/commit/9bc3340e2a78e8ce27e8a14055884f9810ee82ee))
+* **useform:** add onChange prop ([8f6ad60](https://github.com/zopaUK/react-components/commit/8f6ad60fa09d70aa716c5f38b6b78ce3b1510869))
+
 ## [2.9.1](https://github.com/zopaUK/react-components/compare/v2.9.0...v2.9.1) (2020-01-22)
 
 
