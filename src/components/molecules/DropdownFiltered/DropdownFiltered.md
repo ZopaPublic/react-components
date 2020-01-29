@@ -15,8 +15,8 @@ And uses [paypal/downshift](https://github.com/paypal/downshift) internally.
 
 How it works:
 
-- The filtered text is always display in an input text.
-- The selected item is passed to the onChange function.
+- The filtered text is always display in an input text
+- The selected item is passed to the onChange function
 
 Also note that:
 

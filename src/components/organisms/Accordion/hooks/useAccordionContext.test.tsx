@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
 
-import useAccordionContext from './useAccordionContext';
+import { useAccordionContext } from './useAccordionContext';
 
 describe('useAccordionContext', () => {
   it('should throw if no context present', () => {

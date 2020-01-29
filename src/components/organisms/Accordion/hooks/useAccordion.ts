@@ -1,8 +1,8 @@
 import { useRef, useState, KeyboardEvent, RefObject } from 'react';
-import { isArrowDown, isArrowUp } from '../../../helpers/keyboard-keys';
-import { mod } from '../../../helpers/utils';
+import { isArrowDown, isArrowUp } from '../../../../helpers/keyboard-keys';
+import { mod } from '../../../../helpers/utils';
 
-interface IAccordionHeaderProps {
+export interface IAccordionHeaderProps {
   'aria-controls': string;
   'aria-disabled': boolean;
   'aria-expanded': boolean;
@@ -22,7 +22,7 @@ interface IAccordionSectionStyles {
   height: string;
 }
 
-interface IAccordionSectionProps {
+export interface IAccordionSectionProps {
   'aria-hidden': boolean;
   'aria-labelledby': string;
   id: string;
@@ -38,7 +38,7 @@ export type TIsActiveAccordionSection = (index: number) => boolean;
 
 type TActiveSections = number[];
 
-const useAccordion = () => {
+export const useAccordion = () => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
@@ -141,5 +141,3 @@ const useAccordion = () => {
     isActiveSection,
   };
 };
-
-export default useAccordion;

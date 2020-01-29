@@ -2,7 +2,8 @@
 
 exports[`<DropdownField /> renders the component with props with no a11y violations 1`] = `
 .c0 {
-  margin: 0;
+  display: block;
+  margin: 0 0 10px;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -12,16 +13,11 @@ exports[`<DropdownField /> renders the component with props with no a11y violati
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-}
-
-.c1 {
-  display: block;
   margin-bottom: 5px;
 }
 
 <label
-  class="c0 c1"
-  color="#0D0A38"
+  class="c0"
   for="text-id-dropdown-field-default"
 >
   Your cool dropdown ❤

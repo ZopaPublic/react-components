@@ -1,17 +1,20 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
-import Form from '..';
+import { fireEvent, render, wait } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
+import { Form } from '..';
 
 const onSubmit = jest.fn();
+const onChange = jest.fn();
 const fieldLabel = 'First name';
+const fieldName = 'firstName';
 const testId = 'test-form';
 
-interface TForm {
+interface IForm {
   firstName: string;
 }
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.firstName) {
     errors.firstName = 'This field is required';
@@ -22,8 +25,14 @@ const validate = (values: TForm) => {
 
 const renderComponent = () =>
   render(
-    <Form data-testid={testId} validate={validate} initialValues={{ firstName: '' }} onSubmit={onSubmit}>
-      <Form.TextField label={fieldLabel} name="firstName" />
+    <Form
+      data-testid={testId}
+      validate={validate}
+      initialValues={{ firstName: '' }}
+      onSubmit={onSubmit}
+      onChange={onChange}
+    >
+      <Form.TextField label={fieldLabel} name={fieldName} />
     </Form>,
   );
 
@@ -32,21 +41,25 @@ describe('<Form />', () => {
     onSubmit.mockReset();
   });
 
-  it('calls onSubmit callback', async () => {
+  it('calls onChange and onSubmit callback', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
+    await wait();
     const value = 'name';
-    await act(async () => {
-      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    act(() => {
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
+    await wait();
+    expect(onChange).toHaveBeenCalledWith({ [fieldName]: value });
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
+    expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: value });
   });
 
-  it('does not call onSubmit if the form is invalid', () => {
+  it('does not call onSubmit if the form is invalid', async () => {
     const { getByTestId } = renderComponent();
+    await wait();
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });

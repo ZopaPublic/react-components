@@ -1,8 +1,8 @@
 import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import Form from '..';
+import { Form } from '..';
 
-interface TForm {
+interface IForm {
   employmentType: string;
 }
 
@@ -11,8 +11,8 @@ const onSubmit = jest.fn();
 const buttonLabel = 'Continue';
 const errorMessage = 'You need to pick one';
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.employmentType) {
     errors.employmentType = errorMessage;

@@ -17,7 +17,11 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon, colors } from '@zopauk/react-
     <Navbar.Dropdown
       id="unique-id"
       ariaLabel="Awesome navbar dropdown"
-      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
+      items={[
+        { label: 'one', href: '#' },
+        { label: 'two', href: '#' },
+        { label: 'three', href: '#' },
+      ]}
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" open={open} {...getOpenerProps()}>
@@ -36,7 +40,10 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon, colors } from '@zopauk/react-
     <Navbar.Dropdown
       id="another-unique-id"
       ariaLabel="Awesome navbar dropdown"
-      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }]}
+      items={[
+        { label: 'one', href: '#' },
+        { label: 'two', href: '#' },
+      ]}
       renderOpener={({ open, getOpenerProps }) => {
         return (
           <div style={{ padding: 8 }}>
@@ -68,7 +75,11 @@ class ResponsiveNavbar extends React.Component {
   }
 
   renderLeft() {
-    const items = [{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }];
+    const items = [
+      { label: 'one', href: '#' },
+      { label: 'two', href: '#' },
+      { label: 'three', href: '#' },
+    ];
     return (
       <div>
         <FlexCol xs="auto" m="hidden">

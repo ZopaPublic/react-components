@@ -1,13 +1,13 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
-import Form from '..';
+import { fireEvent, render, wait, act } from '@testing-library/react';
+import { Form } from '..';
 
-interface TForm {
+interface IForm {
   firstName: string;
 }
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.firstName) {
     errors.firstName = 'This field is required';
@@ -29,28 +29,31 @@ const renderComponent = () =>
   );
 
 describe('<Form.Button />', () => {
-  it('renders disabled button', () => {
+  it('renders disabled button', async () => {
     const { getByText } = renderComponent();
+    await wait();
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
   it('renders enabled button', async () => {
     const { getByText, getByLabelText } = renderComponent();
-    await act(async () => {
-      await fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
+    act(() => {
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
+    await wait();
     expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
   it('calls onSubmit callback', async () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
-    await act(async () => {
-      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    act(() => {
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });

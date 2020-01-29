@@ -21,7 +21,11 @@ import { Navbar } from '@zopauk/react-components';
     <Navbar.Dropdown
       id="basic-example-id"
       ariaLabel="test"
-      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
+      items={[
+        { label: 'one', href: '#' },
+        { label: 'two', href: '#' },
+        { label: 'three', href: '#' },
+      ]}
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" {...getOpenerProps()}>
@@ -50,7 +54,11 @@ import { Navbar, Link, HamburgerIcon, colors } from '@zopauk/react-components';
     <Navbar.Dropdown
       id="custom-example-id"
       ariaLabel="test"
-      items={[{ label: 'one', href: '#' }, { label: 'two', href: '#' }, { label: 'three', href: '#' }]}
+      items={[
+        { label: 'one', href: '#' },
+        { label: 'two', href: '#' },
+        { label: 'three', href: '#' },
+      ]}
       renderOpener={({ open, getOpenerProps }) => (
         <div style={{ padding: 8 }}>
           <Navbar.Link href="#" {...getOpenerProps()}>
