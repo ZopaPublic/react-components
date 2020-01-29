@@ -1,8 +1,8 @@
 import React from 'react';
-import { act, fireEvent, render } from '@testing-library/react';
-import Form from '..';
+import { fireEvent, render, wait, act } from '@testing-library/react';
+import { Form } from '..';
 
-interface TForm {
+interface IForm {
   nationality: string;
 }
 
@@ -13,8 +13,8 @@ const fieldName = 'nationality';
 const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
-const validate = (values: TForm) => {
-  const errors: Partial<TForm> = {};
+const validate = (values: IForm) => {
+  const errors: Partial<IForm> = {};
 
   if (!values.nationality) {
     errors.nationality = errorMessage;
@@ -48,17 +48,18 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.change(dropdown, { target: { value: 'B' } });
     });
-    await act(async () => {
-      await fireEvent.click(getByText('British'));
+    act(() => {
+      fireEvent.click(getByText('British'));
     });
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
+    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: { value: 'British' } });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
     act(() => {
@@ -67,6 +68,7 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.blur(dropdown);
     });
+    await wait();
     expect(queryByText(errorMessage)).toBeTruthy();
   });
 });

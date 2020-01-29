@@ -1,3 +1,54 @@
+# [2.10.0](https://github.com/zopaUK/react-components/compare/v2.9.1...v2.10.0) (2020-01-28)
+
+
+### Features
+
+* **form:** pass through onChange in Form ([9bc3340](https://github.com/zopaUK/react-components/commit/9bc3340e2a78e8ce27e8a14055884f9810ee82ee))
+* **useform:** add onChange prop ([8f6ad60](https://github.com/zopaUK/react-components/commit/8f6ad60fa09d70aa716c5f38b6b78ce3b1510869))
+
+## [2.9.1](https://github.com/zopaUK/react-components/compare/v2.9.0...v2.9.1) (2020-01-22)
+
+
+### Bug Fixes
+
+* **inputlabel:** remove all other props except htmlFor ([0cc36d4](https://github.com/zopaUK/react-components/commit/0cc36d423225fbac5857fdb628000f1e4c3ce12f))
+* **inputlabel:** remove text component from label ([cfbeb60](https://github.com/zopaUK/react-components/commit/cfbeb6089e357d7d6f07451940b4ade3d037e2c2))
+* **inputlabel:** update margin and test snapshots ([2439d2f](https://github.com/zopaUK/react-components/commit/2439d2f06e381ab1a1c1f87b82a95da68ef555fc))
+
+# [2.9.0](https://github.com/zopaUK/react-components/compare/v2.8.1...v2.9.0) (2020-01-22)
+
+
+### Bug Fixes
+
+* **footer:** footer links base url update ([ec07cbe](https://github.com/zopaUK/react-components/commit/ec07cbe901251d067e7ac0927dd9104e017bbda0)), closes [#173](https://github.com/zopaUK/react-components/issues/173)
+* **footer:** remove FC type from social links component ([937a925](https://github.com/zopaUK/react-components/commit/937a9257bd4f91db058803cba48c52331daf94ca)), closes [#175](https://github.com/zopaUK/react-components/issues/175)
+* **footer:** update default value and typings for the footer component ([680a7af](https://github.com/zopaUK/react-components/commit/680a7af5320f847d50c353aa6fb2559f0140b982))
+
+
+### Features
+
+* **useform:** make it possible for the validate function to be async ([6871893](https://github.com/zopaUK/react-components/commit/6871893b920e5f020e3547b642ea23f6af3f791b))
+
+## [2.8.1](https://github.com/zopaUK/react-components/compare/v2.8.0...v2.8.1) (2020-01-20)
+
+
+### Bug Fixes
+
+* **styleguide:** fix missing styles ([874059a](https://github.com/zopaUK/react-components/commit/874059a2ed5b4167363385d5c753f3cb01762a6f))
+
+# [2.8.0](https://github.com/zopaUK/react-components/compare/v2.7.4...v2.8.0) (2020-01-20)
+
+
+### Bug Fixes
+
+* **tooling:** upgrade react-scripts + other deps ([a3284cd](https://github.com/zopaUK/react-components/commit/a3284cd5be63d414de514b0d3df81f19dbe87e40))
+* **tooltip:** get CSS from CDN ([924e401](https://github.com/zopaUK/react-components/commit/924e401df85d26d58e3820c10faf35dab2bd39ad))
+
+
+### Features
+
+* **tooltip:** new component ([8601c09](https://github.com/zopaUK/react-components/commit/8601c0930941f068b6a58640b41bff7fe3881029))
+
 ## [2.7.4](https://github.com/zopaUK/react-components/compare/v2.7.3...v2.7.4) (2020-01-13)
 
 

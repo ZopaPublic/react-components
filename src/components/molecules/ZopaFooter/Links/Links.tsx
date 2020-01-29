@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
@@ -17,6 +17,10 @@ export interface ILinkGroups {
   links: ILinkData[];
 }
 
+export interface ILinksProps {
+  baseUrl?: string;
+}
+
 const StyledHeading = styled(Heading)`
   color: ${colors.neutral.white};
 `;
@@ -32,32 +36,32 @@ const StyledListItem = styled.li`
   padding: 0;
 `;
 
-const linkGroups = [
+const linkGroups = (baseUrl: string) => [
   {
     heading: 'What we do',
     links: [
       {
-        href: 'https://www.zopa.com/loans/car-loans',
+        href: `${baseUrl}/loans/car-loans`,
         label: 'Car loans',
       },
       {
-        href: 'https://www.zopa.com/loans/debt-consolidation',
+        href: `${baseUrl}/loans/debt-consolidation`,
         label: 'Debt consolidation loans',
       },
       {
-        href: 'https://www.zopa.com/loans/home-improvement',
+        href: `${baseUrl}/loans/home-improvement`,
         label: 'Home improvement loans',
       },
       {
-        href: 'https://www.zopa.com/loans/wedding',
+        href: `${baseUrl}/loans/wedding`,
         label: 'Wedding loans',
       },
       {
-        href: 'https://www.zopa.com/invest',
+        href: `${baseUrl}/invest`,
         label: 'Peer-to-peer investments',
       },
       {
-        href: 'https://www.zopa.com/invest/isa',
+        href: `${baseUrl}/invest/isa`,
         label: 'Innovative Finance ISA',
       },
     ],
@@ -66,27 +70,27 @@ const linkGroups = [
     heading: 'About Zopa',
     links: [
       {
-        href: 'https://www.zopa.com/about',
+        href: `${baseUrl}/about`,
         label: 'About Us',
       },
       {
-        href: 'https://www.zopa.com/about/our-story',
+        href: `${baseUrl}/about/our-story`,
         label: 'Our story',
       },
       {
-        href: 'https://www.zopa.com/about/board',
+        href: `${baseUrl}/about/board`,
         label: 'Meet the board',
       },
       {
-        href: 'https://www.zopa.com/about/leadership',
+        href: `${baseUrl}/about/leadership`,
         label: 'Meet the leadership team',
       },
       {
-        href: 'https://www.zopa.com/about/awards',
+        href: `${baseUrl}/about/awards`,
         label: 'Awards',
       },
       {
-        href: 'https://www.zopa.com/about/careers',
+        href: `${baseUrl}/about/careers`,
         label: 'Careers',
       },
       {
@@ -94,11 +98,11 @@ const linkGroups = [
         label: 'Blog',
       },
       {
-        href: 'https://www.zopa.com/about/press',
+        href: `${baseUrl}/about/press`,
         label: 'Press team',
       },
       {
-        href: 'https://www.zopa.com/feelgood',
+        href: `${baseUrl}/feelgood`,
         label: 'New products',
       },
     ],
@@ -107,27 +111,27 @@ const linkGroups = [
     heading: 'Legal',
     links: [
       {
-        href: 'https://www.zopa.com/privacy-notice',
+        href: `${baseUrl}/privacy-notice`,
         label: 'Privacy notice',
       },
       {
-        href: 'https://www.zopa.com/cookie-policy',
+        href: `${baseUrl}/cookie-policy`,
         label: 'Cookie policy',
       },
       {
-        href: 'https://www.zopa.com/conflicts-policy',
+        href: `${baseUrl}/conflicts-policy`,
         label: 'Conflicts policy',
       },
       {
-        href: 'https://www.zopa.com/modern-slavery',
+        href: `${baseUrl}/modern-slavery`,
         label: 'Modern slavery',
       },
       {
-        href: 'https://www.zopa.com/website-terms',
+        href: `${baseUrl}/website-terms`,
         label: 'Website terms',
       },
       {
-        href: 'https://www.zopa.com/principles',
+        href: `${baseUrl}/principles`,
         label: 'P2P Principles',
       },
     ],
@@ -136,7 +140,7 @@ const linkGroups = [
     heading: 'Navigation',
     links: [
       {
-        href: 'https://www.zopa.com/contact',
+        href: `${baseUrl}/contact`,
         label: 'Support',
       },
       {
@@ -144,16 +148,16 @@ const linkGroups = [
         label: 'Common Questions',
       },
       {
-        href: 'https://www.zopa.com/sitemap',
+        href: `${baseUrl}/sitemap`,
         label: 'Sitemap',
       },
     ],
   },
 ];
 
-const Links = () => (
+const Links: FC<ILinksProps> = ({ baseUrl = 'https://www.zopa.com' }) => (
   <FlexRow>
-    {linkGroups.map(({ heading, links }, index) => (
+    {linkGroups(baseUrl).map(({ heading, links }, index) => (
       <FlexCol xs={12} s={6} m={4} l={3} key={`footer-links-${index}`}>
         <Wrapper>
           <StyledHeading as="h3">{heading}</StyledHeading>

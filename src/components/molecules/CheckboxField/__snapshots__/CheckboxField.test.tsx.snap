@@ -1,19 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 16px;
-}
-
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -47,8 +34,18 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border: 2px #4A3EDE solid;
 }
 
-.c3 {
+.c2 {
   display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #0D0A38;
+  line-height: 1.6;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 16px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -64,7 +61,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   user-select: none;
 }
 
-.c3:before {
+.c2:before {
   content: '';
   background-color: #EAEAEE;
   border-radius: 6px;
@@ -78,7 +75,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: block;
 }
 
-.c3:after {
+.c2:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -89,11 +86,11 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   top: 6px;
 }
 
-.c3:hover {
+.c2:hover {
   cursor: pointer;
 }
 
-.c3:hover:before {
+.c2:hover:before {
   border: 2px #DCDBE2 solid;
 }
 
@@ -107,8 +104,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="c2 c3"
-    color="#0D0A38"
+    class="c2"
     for="checkbox-id-test1"
   >
     hello

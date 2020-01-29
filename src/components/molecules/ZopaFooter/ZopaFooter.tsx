@@ -20,18 +20,22 @@ export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
    * This is useful for pages where by design requires the user to focus on one task.
    */
   legalOnly?: boolean;
+  /**
+   * This sets the base url for all links in the footer
+   */
+  baseUrl?: string;
 }
 
-const ZopaFooter: React.FC<IFooterProps> = ({ legalOnly, ...rest }) => (
+const ZopaFooter = ({ legalOnly = false, baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
   <StyledWrapper id="zopa-footer" {...rest}>
     <FlexContainer gutter={16}>
       {legalOnly || (
         <>
           <Wrapper>
-            <SocialLinks />
+            <SocialLinks logoUrl={baseUrl} />
           </Wrapper>
           <Wrapper>
-            <Links />
+            <Links baseUrl={baseUrl} />
           </Wrapper>
           <Separator />
         </>

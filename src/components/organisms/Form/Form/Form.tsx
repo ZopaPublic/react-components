@@ -1,11 +1,11 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { FormContext } from '../context';
-import useForm, { IUseFormProps } from '../../../hooks/useForm/useForm';
+import { useForm, IUseFormProps, FormContext } from '../hooks';
 
 const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps> = ({
   children,
   initialValues,
   onSubmit,
+  onChange,
   validate,
   ...rest
 }) => {
@@ -13,6 +13,7 @@ const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps
     initialValues,
     onSubmit,
     validate,
+    onChange,
   });
   return (
     <FormContext.Provider value={context}>

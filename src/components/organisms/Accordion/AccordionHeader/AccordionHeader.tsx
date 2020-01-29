@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Arrow from '../../../icons/Arrow/Arrow';
 import Text from '../../../atoms/Text/Text';
-import { useAccordionContext } from '../context';
+import { useAccordionContext } from '../hooks';
 
 export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
   id: string;

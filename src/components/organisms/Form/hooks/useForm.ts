@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 
 type TValue = any;
 export type TValues = Record<string, TValue>;
@@ -7,7 +7,8 @@ export type TErrors = Record<string, string | undefined>;
 export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
-  validate?: (values: TValues) => TErrors;
+  onChange?: (values: TValues) => void;
+  validate?: (values: TValues) => TErrors | Promise<TErrors>;
 }
 
 export interface IFieldProps {
@@ -18,23 +19,27 @@ export interface IFieldProps {
   onBlur: (eventData: unknown) => void;
 }
 
-export interface TUseFormValues {
+export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
   invalid: boolean;
   handleSubmit: (values: TValues) => void;
 }
 
-const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseFormValues => {
+export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
-  const [errors, updateErrors] = useState(validate ? validate(initialValues) : {});
+  const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
   const [touched, updateTouched] = useState<Record<string, boolean>>({});
 
-  const runValidation = (formValues: typeof initialValues) => {
+  const runValidation = async (formValues: typeof initialValues) => {
     if (validate) {
-      const errors = validate(formValues);
+      const errors = await validate(formValues);
       updateErrors(errors);
     }
   };
+
+  useEffect(() => {
+    runValidation(values);
+  }, []);
 
   const invalid = useMemo(() => !!Object.keys(errors).length, [errors]);
 
@@ -45,6 +50,7 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseForm
       value: values[name],
       onChange(value: unknown) {
         const newValues = { ...values, [name]: value };
+        onChange && onChange(newValues);
         updateValues(newValues);
         runValidation(newValues);
       },
@@ -80,5 +86,3 @@ const useForm = ({ initialValues, validate, onSubmit }: IUseFormProps): TUseForm
     handleSubmit,
   };
 };
-
-export default useForm;

@@ -2,7 +2,8 @@
 
 exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y violations 1`] = `
 .c1 {
-  margin: 0;
+  display: block;
+  margin: 0 0 10px;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
@@ -14,11 +15,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-size: 16px;
 }
 
-.c2 {
-  display: block;
-}
-
-.c4 {
+.c3 {
   border: 2px solid #DCDBE2;
   border-radius: 4px;
   padding: 0 10px;
@@ -27,22 +24,22 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
-.c4:focus {
+.c3:focus {
   outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #DCDBE2;
 }
 
-.c4:disabled {
+.c3:disabled {
   background-color: #EAEAEE;
 }
 
-.c7 {
+.c6 {
   -webkit-transition: -webkit-transform 0.2s;
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
@@ -56,17 +53,17 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
-.c5 {
+.c4 {
   margin: 0;
   margin-bottom: 0;
 }
 
-.c3 {
+.c2 {
   position: relative;
   margin: 5px 0;
 }
 
-.c6 {
+.c5 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -90,31 +87,30 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
     role="combobox"
   >
     <label
-      class="c1 c2"
-      color="#0D0A38"
+      class="c1"
       for="text-id-test"
       id="downshift-0-label"
     >
       Label
     </label>
     <div
-      class="c3"
+      class="c2"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-0-label"
         autocomplete="off"
-        class="c4 c5"
+        class="c3 c4"
         id="text-id-test"
         name="test"
         value=""
       />
       <div
-        class="c6"
+        class="c5"
       >
         <svg
           aria-label="open.menu"
-          class="c7"
+          class="c6"
           direction="down"
           height="24px"
           viewBox="0 0 416 416"
