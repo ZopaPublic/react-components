@@ -1,3 +1,12 @@
+## [2.10.1](https://github.com/zopaUK/react-components/compare/v2.10.0...v2.10.1) (2020-01-29)
+
+
+### Bug Fixes
+
+* **footer:** update FAQs link ([f6a314e](https://github.com/zopaUK/react-components/commit/f6a314e5c418dfe1db71edc1ffbd6896c5a0f09b))
+* **linting:** linting for the Footer component ([c736be1](https://github.com/zopaUK/react-components/commit/c736be1638834f58af2e563ec84b572c579a356b))
+* **snapshots:** update snapshots for footer ([8296886](https://github.com/zopaUK/react-components/commit/829688687279778b7ac900f66314dfdcedb3b844))
+
 # [2.10.0](https://github.com/zopaUK/react-components/compare/v2.9.1...v2.10.0) (2020-01-28)
 
 
