@@ -1,7 +1,7 @@
 import React, { FC, HTMLAttributes } from 'react';
 
-import { AccordionContext } from '../context';
-import useAccordion from '../../../hooks/useAccordion/useAccordion';
+import { AccordionContext } from '../hooks';
+import { useAccordion } from '../hooks/useAccordion';
 
 export interface IAccordion extends HTMLAttributes<HTMLDivElement> {
   'aria-label': string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, wait, act } from '@testing-library/react';
-import Form from '..';
+import { Form } from '..';
 
 interface IForm {
   firstName: string;
