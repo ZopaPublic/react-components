@@ -465,7 +465,7 @@ exports[`<Links /> renders the component 1`] = `
           <a
             class="c6 c7"
             color="#4A3EDE"
-            href="https://www.zopa.com/support/faqs"
+            href="https://helpcentre.zopa.com/"
           >
             Common Questions
           </a>

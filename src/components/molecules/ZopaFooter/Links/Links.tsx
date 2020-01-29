@@ -144,7 +144,7 @@ const linkGroups = (baseUrl: string) => [
         label: 'Support',
       },
       {
-        href: `${baseUrl}/support/faqs`,
+        href: 'https://helpcentre.zopa.com/',
         label: 'Common Questions',
       },
       {
