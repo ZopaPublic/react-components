@@ -140,7 +140,7 @@ const linkGroups = [
         label: 'Support',
       },
       {
-        href: 'https://www.zopa.com/support/faqs',
+        href: 'https://helpcentre.zopa.com/',
         label: 'Common Questions',
       },
       {
