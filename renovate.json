@@ -1,0 +1,11 @@
+{
+  "extends": ["config:base"],
+  "commitBodyTable": true,
+  "ignoreDeps": ["@types/jest-axe", "@types/jest", "react-scripts"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
