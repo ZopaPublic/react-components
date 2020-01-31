@@ -1,6 +1,7 @@
 {
   "extends": ["config:base"],
   "commitBodyTable": true,
+  "prConcurrentLimit": 6,
   "ignoreDeps": ["@types/jest-axe", "@types/jest", "react-scripts"],
   "packageRules": [
     {
