@@ -1,6 +1,5 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React from 'react';
 
-import { IUseFormProps } from './hooks';
 import FormButton from './FormButton/FormButton';
 import FormTextField from './FormTextField/FormTextField';
 import FormCheckboxField from './FormCheckboxField/FormCheckboxField';
@@ -18,9 +17,7 @@ interface IFormStatic {
   DropdownFilteredField: typeof FormDropdownFilteredField;
 }
 
-export const Form: IFormStatic & FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = props => (
-  <FormComponent {...props} />
-);
+export const Form: IFormStatic & typeof FormComponent = props => <FormComponent {...props} />;
 
 Form.Button = FormButton;
 Form.TextField = FormTextField;
