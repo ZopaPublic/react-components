@@ -1,14 +1,14 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 
 type TValue = any;
-export type TValues = Record<string, TValue>;
-export type TErrors = Record<string, string | undefined>;
+export type TFormValues = Record<string, TValue>;
+export type TFormErrors = Record<string, string | undefined>;
 
 export interface IUseFormProps {
-  initialValues: TValues;
-  onSubmit: (values: TValues) => void;
-  onChange?: (values: TValues) => void;
-  validate?: (values: TValues) => TErrors | Promise<TErrors>;
+  initialValues: TFormValues;
+  onSubmit: (values: TFormValues) => void;
+  onChange?: (values: TFormValues) => void;
+  validate?: (values: TFormValues) => TFormErrors | Promise<TFormErrors>;
 }
 
 export interface IFieldProps {
@@ -22,7 +22,7 @@ export interface IFieldProps {
 export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
   invalid: boolean;
-  handleSubmit: (values: TValues) => void;
+  handleSubmit: (values: TFormValues) => void;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
