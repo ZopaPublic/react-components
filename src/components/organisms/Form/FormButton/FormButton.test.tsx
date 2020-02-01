@@ -44,7 +44,7 @@ describe('<Form.Button />', () => {
     expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
-  it('renders disabled button even the form is valid', async () => {
+  it('renders disabled button even though the form is valid', async () => {
     const { getByText, getByLabelText } = renderComponent({ disabled: true });
     act(() => {
       fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
