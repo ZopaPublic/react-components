@@ -20,11 +20,11 @@ const onSubmit = jest.fn();
 const buttonLabel = 'continue';
 const fieldLabel = 'First name';
 
-const renderComponent = () =>
+const renderComponent = (props = {}) =>
   render(
     <Form initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
       <Form.TextField label={fieldLabel} name="firstName" />
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Button {...props}>{buttonLabel}</Form.Button>
     </Form>,
   );
 
@@ -42,6 +42,15 @@ describe('<Form.Button />', () => {
     });
     await wait();
     expect(getByText(buttonLabel)).not.toBeDisabled();
+  });
+
+  it('renders disabled button even the form is valid', async () => {
+    const { getByText, getByLabelText } = renderComponent({ disabled: true });
+    act(() => {
+      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
+    });
+    await wait();
+    expect(getByText(buttonLabel)).toBeDisabled();
   });
 
   it('calls onSubmit callback', async () => {

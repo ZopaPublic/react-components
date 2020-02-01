@@ -7,9 +7,9 @@ export interface IFromButtonProps extends IButtonProps {
   disabled?: boolean;
 }
 
-const FormButton: FC<IFromButtonProps> = props => {
+const FormButton: FC<IFromButtonProps> = ({ disabled, ...rest }) => {
   const { invalid, handleSubmit } = useFormContext();
-  return <Button type="submit" disabled={invalid} onClick={handleSubmit} {...props} />;
+  return <Button type="submit" disabled={invalid || disabled} onClick={handleSubmit} {...rest} />;
 };
 
 export default FormButton;
