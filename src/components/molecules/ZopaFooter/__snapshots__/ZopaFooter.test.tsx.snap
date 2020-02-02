@@ -209,6 +209,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c5:hover {

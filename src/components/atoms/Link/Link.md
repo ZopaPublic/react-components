@@ -26,6 +26,19 @@ import { Text, Link } from '@zopauk/react-components';
 </Text>;
 ```
 
+- Button link
+
+```js
+import { Text, Link } from '@zopauk/react-components';
+
+<Text as="p">
+  Some text with
+  <Link as="button" href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+    a link
+  </Link>
+</Text>;
+```
+
 - Negative link
 
 ```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }

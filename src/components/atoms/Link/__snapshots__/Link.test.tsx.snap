@@ -17,6 +17,8 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {
@@ -53,6 +55,8 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {

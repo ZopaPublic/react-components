@@ -17,6 +17,8 @@ exports[`<FooterLink /> renders the component with a small size 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {
@@ -62,6 +64,8 @@ exports[`<FooterLink /> renders the component with default props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {

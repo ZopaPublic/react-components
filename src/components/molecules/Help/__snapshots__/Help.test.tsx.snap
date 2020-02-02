@@ -17,6 +17,8 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c7:hover {
