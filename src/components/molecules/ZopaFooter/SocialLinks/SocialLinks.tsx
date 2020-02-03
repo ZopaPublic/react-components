@@ -4,7 +4,7 @@ import grid from '../../../../constants/grid';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import ZopaLogo from '../../../icons/ZopaLogo/ZopaLogo';
-import Link from '../../../atoms/Link/Link'
+import Link from '../../../atoms/Link/Link';
 import { colors } from '../../../../constants/colors';
 
 export interface ISocialLinkData {
