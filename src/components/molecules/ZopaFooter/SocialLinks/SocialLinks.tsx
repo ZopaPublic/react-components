@@ -4,7 +4,7 @@ import grid from '../../../../constants/grid';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import ZopaLogo from '../../../icons/ZopaLogo/ZopaLogo';
-import FooterLink from '../FooterLink/FooterLink';
+import Link from '../../../atoms/Link/Link';
 import { colors } from '../../../../constants/colors';
 
 export interface ISocialLinkData {
@@ -26,12 +26,12 @@ const SFlexRow = styled(FlexRow)`
   }
 `;
 
-const SFooterLink = styled(FooterLink)`
+const SFooterLink = styled(Link)`
   margin-left: 8px;
   margin-right: 8px;
 `;
 
-const LogoLink = styled(FooterLink)`
+const LogoLink = styled(Link)`
   display: flex;
   justify-content: center;
 
@@ -116,7 +116,7 @@ const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
     <FlexCol xs={12} s={6} m={4} l={3}>
       <SFlexRow>
         {socialLinksData.map(({ component: Component, label, href }) => (
-          <SFooterLink href={href} aria-label={label} key={`footer-social-link-${href}`}>
+          <SFooterLink color={colors.neutral.white} href={href} aria-label={label} key={`footer-social-link-${href}`}>
             <Component />
           </SFooterLink>
         ))}
