@@ -103,7 +103,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   margin-right: auto;
 }
 
-.c16 {
+.c17 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -120,7 +120,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   padding: 18px 0;
 }
 
-.c17 {
+.c18 {
   color: #A9ACBA;
   margin: 0 0 24px 0;
 }
@@ -221,19 +221,63 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   opacity: 0.72;
 }
 
-.c14 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 5px 0;
+.c10 {
+  font-size: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.6;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
 }
 
-.c14:hover {
-  color: #6F748B;
+.c10:hover {
+  opacity: 0.88;
 }
 
-.c11 {
+.c10:active {
+  opacity: 0.72;
+}
+
+.c15 {
+  font-size: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.6;
+  color: #DCDBE2;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c15:hover {
+  opacity: 0.88;
+}
+
+.c15:active {
+  opacity: 0.72;
+}
+
+.c12 {
   color: #0D0A38;
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -248,18 +292,18 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   color: #FFFFFF;
 }
 
-.c12 {
+.c13 {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.c13 {
+.c14 {
   margin: 0 0 5px 0;
   padding: 0;
 }
 
-.c15 {
+.c16 {
   background-color: #282F52;
   height: 1px;
 }
@@ -272,26 +316,12 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   margin-top: 32px;
 }
 
-.c10 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 5px 0;
+.c11 {
   margin-left: 8px;
   margin-right: 8px;
 }
 
-.c10:hover {
-  color: #6F748B;
-}
-
 .c6 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 5px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -300,10 +330,6 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c6:hover {
-  color: #6F748B;
 }
 
 .c6 > svg {
@@ -491,8 +517,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
           >
             <a
               aria-label="instagram"
-              class="c5 c10"
-              color="#4A3EDE"
+              class="c10 c11"
+              color="#FFFFFF"
               cols="12"
               href="https://www.instagram.com/Zopamoney/"
             >
@@ -520,8 +546,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </a>
             <a
               aria-label="facebook"
-              class="c5 c10"
-              color="#4A3EDE"
+              class="c10 c11"
+              color="#FFFFFF"
               cols="12"
               href="https://facebook.com/zopa"
             >
@@ -543,8 +569,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             </a>
             <a
               aria-label="twitter"
-              class="c5 c10"
-              color="#4A3EDE"
+              class="c10 c11"
+              color="#FFFFFF"
               cols="12"
               href="https://twitter.com/zopa"
             >
@@ -582,74 +608,74 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c12"
             >
               What we do
             </h3>
             <ul
-              class="c12"
+              class="c13"
             >
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/loans/car-loans"
                 >
                   Car loans
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/loans/debt-consolidation"
                 >
                   Debt consolidation loans
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/loans/home-improvement"
                 >
                   Home improvement loans
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/loans/wedding"
                 >
                   Wedding loans
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/invest"
                 >
                   Peer-to-peer investments
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/invest/isa"
                 >
                   Innovative Finance ISA
@@ -666,107 +692,107 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c12"
             >
               About Zopa
             </h3>
             <ul
-              class="c12"
+              class="c13"
             >
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about"
                 >
                   About Us
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/our-story"
                 >
                   Our story
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/board"
                 >
                   Meet the board
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/leadership"
                 >
                   Meet the leadership team
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/awards"
                 >
                   Awards
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/careers"
                 >
                   Careers
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://blog.zopa.com"
                 >
                   Blog
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/about/press"
                 >
                   Press team
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/feelgood"
                 >
                   New products
@@ -783,74 +809,74 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c12"
             >
               Legal
             </h3>
             <ul
-              class="c12"
+              class="c13"
             >
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/privacy-notice"
                 >
                   Privacy notice
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/cookie-policy"
                 >
                   Cookie policy
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/conflicts-policy"
                 >
                   Conflicts policy
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/modern-slavery"
                 >
                   Modern slavery
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/website-terms"
                 >
                   Website terms
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/principles"
                 >
                   P2P Principles
@@ -867,41 +893,41 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c12"
             >
               Navigation
             </h3>
             <ul
-              class="c12"
+              class="c13"
             >
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/contact"
                 >
                   Support
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://helpcentre.zopa.com/"
                 >
                   Common Questions
                 </a>
               </li>
               <li
-                class="c13"
+                class="c14"
               >
                 <a
-                  class="c5 c14"
-                  color="#4A3EDE"
+                  class="c15"
+                  color="#DCDBE2"
                   href="https://www.zopa.com/sitemap"
                 >
                   Sitemap
@@ -913,23 +939,23 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       </div>
     </div>
     <div
-      class="c15"
+      class="c16"
     />
     <div
       class="c2"
     >
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
       </p>
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         © Zopa Bank Limited 2025 All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
       </p>
       <p
-        class="c16 c17"
+        class="c17 c18"
       >
         Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).
 

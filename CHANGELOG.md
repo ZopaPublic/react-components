@@ -1,3 +1,11 @@
+## [2.10.2](https://github.com/zopaUK/react-components/compare/v2.10.1...v2.10.2) (2020-02-04)
+
+
+### Bug Fixes
+
+* **zopafooter:** fix lint issue ([c269a38](https://github.com/zopaUK/react-components/commit/c269a3836e7add27be24ad6aa434ed34297ae099))
+* **zopafooter:** fix zopafooter css inheritance issue ([3c1a500](https://github.com/zopaUK/react-components/commit/3c1a500f6463947a27fb2518ab8702f4092d7334))
+
 ## [2.10.1](https://github.com/zopaUK/react-components/compare/v2.10.0...v2.10.1) (2020-01-29)
 
 
