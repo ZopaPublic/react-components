@@ -95,6 +95,32 @@ exports[`<SocialLinks /> renders the component 1`] = `
   opacity: 0.72;
 }
 
+.c7 {
+  font-size: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: 1.6;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.c7:hover {
+  opacity: 0.88;
+}
+
+.c7:active {
+  opacity: 0.72;
+}
+
 .c6 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -103,26 +129,12 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-top: 32px;
 }
 
-.c7 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 5px 0;
+.c8 {
   margin-left: 8px;
   margin-right: 8px;
 }
 
-.c7:hover {
-  color: #6F748B;
-}
-
 .c3 {
-  color: #A9ACBA;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 5px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,10 +143,6 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c3:hover {
-  color: #6F748B;
 }
 
 .c3 > svg {
@@ -283,8 +291,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
     >
       <a
         aria-label="instagram"
-        class="c2 c7"
-        color="#4A3EDE"
+        class="c7 c8"
+        color="#FFFFFF"
         cols="12"
         href="https://www.instagram.com/Zopamoney/"
       >
@@ -312,8 +320,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        class="c2 c7"
-        color="#4A3EDE"
+        class="c7 c8"
+        color="#FFFFFF"
         cols="12"
         href="https://facebook.com/zopa"
       >
@@ -335,8 +343,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        class="c2 c7"
-        color="#4A3EDE"
+        class="c7 c8"
+        color="#FFFFFF"
         cols="12"
         href="https://twitter.com/zopa"
       >

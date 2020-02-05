@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
-import FooterLink from '../FooterLink/FooterLink';
+import Link from '../../../atoms/Link/Link';
 import Heading from '../../../atoms/Heading/Heading';
 import Wrapper from '../Wrapper/Wrapper';
 
@@ -144,7 +144,7 @@ const linkGroups = (baseUrl: string) => [
         label: 'Support',
       },
       {
-        href: `${baseUrl}/support/faqs`,
+        href: 'https://helpcentre.zopa.com/',
         label: 'Common Questions',
       },
       {
@@ -164,7 +164,9 @@ const Links: FC<ILinksProps> = ({ baseUrl = 'https://www.zopa.com' }) => (
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>
-                <FooterLink href={href}>{label}</FooterLink>
+                <Link color={colors.neutral.medium} href={href}>
+                  {label}
+                </Link>
               </StyledListItem>
             ))}
           </StyledList>
