@@ -198,7 +198,7 @@ module.exports = {
 
   ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/*.d.ts', '**/src/styleguide-components/**', '**/styleguide/**'],
   // Webpack configuration
-  webpackConfig: require('react-scripts/config/webpack.config.dev'),
+  webpackConfig: require('react-scripts/config/webpack.config'),
   // props table config
   usageMode: 'expand',
 
