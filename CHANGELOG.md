@@ -1,3 +1,11 @@
+## [2.10.4](https://github.com/zopaUK/react-components/compare/v2.10.3...v2.10.4) (2020-02-05)
+
+
+### Bug Fixes
+
+* **link:** links highlight ([b7c0f2a](https://github.com/zopaUK/react-components/commit/b7c0f2aa72f639858364bac5c8ddee69285ba699))
+* **link:** links highlight ([#201](https://github.com/zopaUK/react-components/issues/201)) ([e42f6ec](https://github.com/zopaUK/react-components/commit/e42f6ec72199a993535a51c106e6131577a9463e))
+
 ## [2.10.3](https://github.com/zopaUK/react-components/compare/v2.10.2...v2.10.3) (2020-02-04)
 
 
