@@ -59,3 +59,43 @@ exports[`<Progress /> renders the component with props with no a11y violations 1
   </div>
 </div>
 `;
+
+exports[`<Progress /> renders the component without the step text 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EAEAEE;
+  height: 4px;
+}
+
+.c1 {
+  width: 40%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #FFB428;
+}
+
+.c1 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #0D0A38;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      width="40%"
+    />
+  </div>
+</div>
+`;
