@@ -1,23 +1,26 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 
 import Progress from './Progress';
 
-describe('<Progress />', () => {
-  it('renders the component with props with no a11y violations', async () => {
-    const { container } = render(<Progress totalSteps={5} currentStep={2} />);
-    expect(container.firstChild).toMatchSnapshot();
-    const results = await axe(container.innerHTML);
-    expect(results).toHaveNoViolations();
-  });
+describe('<Progress /> Props', () => {
   it('renders the component with the step text', () => {
-    const { queryAllByText } = render(<Progress totalSteps={5} currentStep={2} />);
-    expect(queryAllByText('Step 2 of 5')).toBeTruthy();
-    expect(queryAllByText('Step 2 of 5')).toHaveLength(2);
+    const { getByText } = render(<Progress totalSteps={5} currentStep={2} />);
+    expect(getByText('Step 2 of 5')).toBeTruthy();
   });
   it('renders the component without the step text', () => {
-    const { queryAllByText } = render(<Progress totalSteps={5} currentStep={2} withStep={false} />);
-    expect(queryAllByText('Step 2 of 5')).toHaveLength(1);
+    const { queryByText } = render(<Progress totalSteps={5} currentStep={2} withStep={false} />);
+    expect(queryByText('Step 2 of 5')).toBeFalsy();
+  });
+});
+
+describe('<Progress /> Accessibility', () => {
+  it('renders the component with props with no a11y violations', async () => {
+    const { container } = render(<Progress totalSteps={5} currentStep={2} />);
+    expect(container).toMatchSnapshot();
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
+    cleanup();
   });
 });

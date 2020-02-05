@@ -30,7 +30,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: ${({ progressColor }) => (progressColor ? progressColor : colors.semantic.alert)};
+  background: ${({ progressColor = colors.semantic.alert }) => progressColor};
 
   > span {
     position: absolute;
