@@ -1,3 +1,11 @@
+## [2.10.5](https://github.com/zopaUK/react-components/compare/v2.10.4...v2.10.5) (2020-02-05)
+
+
+### Bug Fixes
+
+* **styleguide:** fix react-scripts ([ec6eec9](https://github.com/zopaUK/react-components/commit/ec6eec9496f8fe5378d92d451df5963798bcf972))
+* **styleguide:** fix react-scripts ([7d3d35a](https://github.com/zopaUK/react-components/commit/7d3d35a42a1242dd2c0137948435ae2c663de471))
+
 ## [2.10.4](https://github.com/zopaUK/react-components/compare/v2.10.3...v2.10.4) (2020-02-05)
 
 

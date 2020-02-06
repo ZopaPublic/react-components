@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Progress /> renders the component with props with no a11y violations 1`] = `
+exports[`<Progress /> Accessibility renders the component with props with no a11y violations 1`] = `
 .c2 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -41,21 +41,23 @@ exports[`<Progress /> renders the component with props with no a11y violations 1
   color: #0D0A38;
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
-    width="40%"
+    class="c0"
   >
-    <span
-      class="c2"
+    <div
+      class="c1"
+      width="40%"
     >
-      Step 
-      2
-       of 
-      5
-    </span>
+      <span
+        class="c2"
+      >
+        Step 
+        2
+         of 
+        5
+      </span>
+    </div>
   </div>
 </div>
 `;
