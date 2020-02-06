@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 type TValue = any;
 export type TFormValues = Record<string, TValue>;
 export type TFormErrors = Record<string, string | undefined>;
+export type TFormTouched = Record<string, boolean>;
 
 export interface IUseFormProps {
   initialValues: TFormValues;
@@ -27,8 +28,8 @@ export interface IUseFormValues {
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
-  const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
-  const [touched, updateTouched] = useState<Record<string, boolean>>({});
+  const [errors, updateErrors] = useState<TFormErrors>({});
+  const [touched, updateTouched] = useState<TFormTouched>({});
 
   const runValidation = async (formValues: typeof initialValues) => {
     if (validate) {
