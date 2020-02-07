@@ -3,6 +3,7 @@ import { useState, useCallback, useEffect, useMemo } from 'react';
 type TValue = any;
 export type TValues = Record<string, TValue>;
 export type TErrors = Record<string, string | undefined>;
+export type TTouched = Record<string, boolean>;
 
 export interface IUseFormProps {
   initialValues: TValues;
@@ -21,14 +22,16 @@ export interface IFieldProps {
 
 export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
-  invalid: boolean;
   handleSubmit: (values: TValues) => void;
+  invalid: boolean;
+  errors: TErrors;
+  touched: TTouched;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
-  const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
-  const [touched, updateTouched] = useState<Record<string, boolean>>({});
+  const [errors, updateErrors] = useState<TErrors>({});
+  const [touched, updateTouched] = useState<TTouched>({});
 
   const runValidation = async (formValues: typeof initialValues) => {
     if (validate) {
@@ -84,5 +87,7 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
     getFieldProps,
     invalid,
     handleSubmit,
+    errors,
+    touched,
   };
 };

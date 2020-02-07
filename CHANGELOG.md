@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/zopaUK/react-components/compare/v2.10.5...v2.11.0) (2020-02-06)
+
+
+### Features
+
+* **useform:** expose errors and touched objects ([23849b1](https://github.com/zopaUK/react-components/commit/23849b1fe3b15e5ba30c6d0825f676bee9a4db91))
+
 ## [2.10.5](https://github.com/zopaUK/react-components/compare/v2.10.4...v2.10.5) (2020-02-05)
 
 
