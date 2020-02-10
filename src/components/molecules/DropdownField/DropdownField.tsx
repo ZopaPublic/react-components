@@ -29,29 +29,23 @@ const Help = styled(Text)`
 `;
 
 const DropdownField = forwardRef<HTMLSelectElement, IDropdownFieldProps>(
-  ({ label, errorMessage, size, helpText, htmlSelectSize, name, ...rest }, ref) => {
-    if (!name) {
-      throw Error("You didn't supply a name for the dropdown. Check the docs.");
-    }
-
-    return (
-      <>
-        {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
-        {helpText && <Help size="small">{helpText}</Help>}
-        <SizedContainer size={size}>
-          <Dropdown
-            id={`text-id-${name}`}
-            name={name}
-            aria-label={label ? undefined : name}
-            size={htmlSelectSize}
-            ref={ref}
-            {...rest}
-          />
-        </SizedContainer>
-        {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
-      </>
-    );
-  },
+  ({ label, errorMessage, size, helpText, htmlSelectSize, name, ...rest }, ref) => (
+    <>
+      {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
+      {helpText && <Help size="small">{helpText}</Help>}
+      <SizedContainer size={size}>
+        <Dropdown
+          id={`text-id-${name}`}
+          name={name}
+          aria-label={label ? undefined : name}
+          size={htmlSelectSize}
+          ref={ref}
+          {...rest}
+        />
+      </SizedContainer>
+      {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
+    </>
+  ),
 );
 
 export default DropdownField;
