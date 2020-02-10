@@ -49,4 +49,11 @@ describe('<TextField />', () => {
     const { container } = render(<TextField inputProps={{ name: 'test1' }} size="short" prefix={'£'} />);
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('throws if no name provided', () => {
+    console.error = jest.fn();
+    expect(() => render(<TextField inputProps={{}} errorMessage="Ops !" />)).toThrow(
+      'Name must be set in inputProps. Check the docs.',
+    );
+  });
 });
