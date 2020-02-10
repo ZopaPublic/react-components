@@ -22,8 +22,10 @@ export interface IFieldProps {
 
 export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
-  invalid: boolean;
   handleSubmit: (values: TFormValues) => void;
+  invalid: boolean;
+  errors: TFormErrors;
+  touched: TFormTouched;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
@@ -85,5 +87,7 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
     getFieldProps,
     invalid,
     handleSubmit,
+    errors,
+    touched,
   };
 };
