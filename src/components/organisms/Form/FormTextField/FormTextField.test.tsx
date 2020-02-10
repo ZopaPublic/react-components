@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, wait, act } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
 interface IForm {
@@ -30,7 +30,7 @@ const renderComponent = () =>
   );
 
 describe('<Form.TextField />', () => {
-  it('handles value change', async () => {
+  it('handles value change', () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
     act(() => {
@@ -39,12 +39,11 @@ describe('<Form.TextField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
-    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });
 
-  it('renders error message', async () => {
+  it('renders error message', () => {
     const { queryByText, getByLabelText } = renderComponent();
     const textField = getByLabelText(fieldLabel);
     act(() => {
@@ -53,7 +52,6 @@ describe('<Form.TextField />', () => {
     act(() => {
       fireEvent.blur(textField);
     });
-    await wait();
     expect(queryByText(errorMessage)).toBeTruthy();
   });
 });

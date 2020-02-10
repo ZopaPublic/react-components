@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, wait, act } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
 interface IForm {
@@ -29,31 +29,28 @@ const renderComponent = (props = {}) =>
   );
 
 describe('<Form.Button />', () => {
-  it('renders disabled button', async () => {
+  it('renders disabled button', () => {
     const { getByText } = renderComponent();
-    await wait();
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
-  it('renders enabled button', async () => {
+  it('renders enabled button', () => {
     const { getByText, getByLabelText } = renderComponent();
     act(() => {
       fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
-    await wait();
     expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
-  it('renders disabled button even though the form is valid', async () => {
+  it('renders disabled button even though the form is valid', () => {
     const { getByText, getByLabelText } = renderComponent({ disabled: true });
     act(() => {
       fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
-    await wait();
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
-  it('calls onSubmit callback', async () => {
+  it('calls onSubmit callback', () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
     act(() => {
@@ -62,7 +59,6 @@ describe('<Form.Button />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
-    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
   });
