@@ -1,6 +1,6 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC } from 'react';
 
-import { IUseFormProps } from './hooks';
+import { IUseFormProps, useForm, FormContext } from './hooks';
 import FormButton from './FormButton/FormButton';
 import FormTextField from './FormTextField/FormTextField';
 import FormCheckboxField from './FormCheckboxField/FormCheckboxField';
@@ -11,22 +11,30 @@ import FormComponent from './Form/Form';
 
 interface IFormStatic {
   Button: typeof FormButton;
-  TextField: typeof FormTextField;
   CheckboxField: typeof FormCheckboxField;
-  RadioField: typeof FormRadioField;
   DropdownField: typeof FormDropdownField;
   DropdownFilteredField: typeof FormDropdownFilteredField;
+  Form: typeof FormComponent;
+  RadioField: typeof FormRadioField;
+  TextField: typeof FormTextField;
 }
 
-export const Form: IFormStatic & FC<HTMLAttributes<HTMLFormElement> & IUseFormProps> = props => (
-  <FormComponent {...props} />
-);
+export const Form: IFormStatic & FC<IUseFormProps> = ({ initialValues, onSubmit, validate, onChange, ...rest }) => {
+  const context = useForm({
+    initialValues,
+    onSubmit,
+    validate,
+    onChange,
+  });
+  return <FormContext.Provider value={context} {...rest} />;
+};
 
 Form.Button = FormButton;
-Form.TextField = FormTextField;
 Form.CheckboxField = FormCheckboxField;
-Form.RadioField = FormRadioField;
 Form.DropdownField = FormDropdownField;
 Form.DropdownFilteredField = FormDropdownFilteredField;
+Form.Form = FormComponent;
+Form.RadioField = FormRadioField;
+Form.TextField = FormTextField;
 
 export * from './hooks';

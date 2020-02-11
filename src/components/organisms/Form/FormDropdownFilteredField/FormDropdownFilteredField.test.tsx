@@ -28,13 +28,15 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 const renderComponent = () =>
   render(
     <Form initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.DropdownFilteredField
-        name={fieldName}
-        inputProps={{ placeholder: 'Select a nationality...' }}
-        items={nationalities}
-        label={dropdownLabel}
-      />
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.DropdownFilteredField
+          name={fieldName}
+          inputProps={{ placeholder: 'Select a nationality...' }}
+          items={nationalities}
+          label={dropdownLabel}
+        />
+        <Form.Button>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 

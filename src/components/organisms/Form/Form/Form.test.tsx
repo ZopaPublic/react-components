@@ -25,14 +25,10 @@ const validate = (values: IForm) => {
 
 const renderComponent = () =>
   render(
-    <Form
-      data-testid={testId}
-      validate={validate}
-      initialValues={{ firstName: '' }}
-      onSubmit={onSubmit}
-      onChange={onChange}
-    >
-      <Form.TextField label={fieldLabel} name={fieldName} />
+    <Form validate={validate} initialValues={{ firstName: '' }} onSubmit={onSubmit} onChange={onChange}>
+      <Form.Form data-testid={testId}>
+        <Form.TextField label={fieldLabel} name={fieldName} />
+      </Form.Form>
     </Form>,
   );
 

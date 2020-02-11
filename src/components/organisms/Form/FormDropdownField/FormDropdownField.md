@@ -16,15 +16,17 @@ const validate = values => {
 };
 
 <Form initialValues={{ referral: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <div style={{ marginBottom: '16px' }}>
-    <Form.DropdownField label="How did you hear about us?" name="referral">
-      <option disabled value="">
-        select an option
-      </option>
-      <option value="newspaper">Newspaper</option>
-      <option value="socialMedia">Social media</option>
-    </Form.DropdownField>
-  </div>
-  <Form.Button>Submit</Form.Button>
+  <Form.Form>
+    <div style={{ marginBottom: '16px' }}>
+      <Form.DropdownField label="How did you hear about us?" name="referral">
+        <option disabled value="">
+          select an option
+        </option>
+        <option value="newspaper">Newspaper</option>
+        <option value="socialMedia">Social media</option>
+      </Form.DropdownField>
+    </div>
+    <Form.Button>Submit</Form.Button>
+  </Form.Form>
 </Form>;
 ```
