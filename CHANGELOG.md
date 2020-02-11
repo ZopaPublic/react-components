@@ -1,3 +1,14 @@
+## [2.11.1](https://github.com/zopaUK/react-components/compare/v2.11.0...v2.11.1) (2020-02-11)
+
+
+### Bug Fixes
+
+* **dropdown:** forward ref ([c7c9c95](https://github.com/zopaUK/react-components/commit/c7c9c9503c184d19bc4eaf26dda7bba0bd7822b8))
+* **dropdownfield:** forward ref ([9c55acf](https://github.com/zopaUK/react-components/commit/9c55acf7a4d81872bff715763890a4fd66bbdae1))
+* **formdropdownfield:** forward ref ([fb5cd89](https://github.com/zopaUK/react-components/commit/fb5cd8982f951eb5c02604b8b88baf956c517894))
+* **formtextfield:** forward ref ([78b804e](https://github.com/zopaUK/react-components/commit/78b804e3c661206afd2e5670dd13d81cfcadaf4a))
+* **textfield:** forward ref ([026f51b](https://github.com/zopaUK/react-components/commit/026f51b4d16d1785c23490294900ae9f4af99fc6))
+
 # [2.11.0](https://github.com/zopaUK/react-components/compare/v2.10.5...v2.11.0) (2020-02-06)
 
 
