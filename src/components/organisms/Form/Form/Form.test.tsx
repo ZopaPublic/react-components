@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, wait } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import { Form } from '..';
 
@@ -41,14 +41,12 @@ describe('<Form />', () => {
     onSubmit.mockReset();
   });
 
-  it('calls onChange and onSubmit callback', async () => {
+  it('calls onChange and onSubmit callback', () => {
     const { getByTestId, getByLabelText } = renderComponent();
-    await wait();
     const value = 'name';
     act(() => {
       fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
-    await wait();
     expect(onChange).toHaveBeenCalledWith({ [fieldName]: value });
     act(() => {
       fireEvent.submit(getByTestId(testId));
@@ -57,9 +55,8 @@ describe('<Form />', () => {
     expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: value });
   });
 
-  it('does not call onSubmit if the form is invalid', async () => {
+  it('does not call onSubmit if the form is invalid', () => {
     const { getByTestId } = renderComponent();
-    await wait();
     act(() => {
       fireEvent.submit(getByTestId(testId));
     });

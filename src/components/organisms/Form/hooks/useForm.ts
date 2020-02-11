@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 
 type TValue = any;
 export type TValues = Record<string, TValue>;
@@ -9,7 +9,7 @@ export interface IUseFormProps {
   initialValues: TValues;
   onSubmit: (values: TValues) => void;
   onChange?: (values: TValues) => void;
-  validate?: (values: TValues) => TErrors | Promise<TErrors>;
+  validate?: (values: TValues) => TErrors;
 }
 
 export interface IFieldProps {
@@ -30,19 +30,15 @@ export interface IUseFormValues {
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
-  const [errors, updateErrors] = useState<TErrors>({});
+  const [errors, updateErrors] = useState<TErrors>(validate ? validate(initialValues) : {});
   const [touched, updateTouched] = useState<TTouched>({});
 
   const runValidation = async (formValues: typeof initialValues) => {
     if (validate) {
-      const errors = await validate(formValues);
+      const errors = validate(formValues);
       updateErrors(errors);
     }
   };
-
-  useEffect(() => {
-    runValidation(values);
-  }, []);
 
   const invalid = useMemo(() => !!Object.keys(errors).length, [errors]);
 
