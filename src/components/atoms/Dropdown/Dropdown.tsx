@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import chevronDown from '../../../content/images/chevron-down.svg';
@@ -19,7 +19,7 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export const Option = styled.option``;
 
-const Dropdown = styled.select<IDropdownProps>`
+const StyledDropdown = styled.select<IDropdownProps>`
   appearance: none;
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
@@ -37,7 +37,6 @@ const Dropdown = styled.select<IDropdownProps>`
   }
 `;
 
-// TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistDropdown: FC<IDropdownProps> = props => <Dropdown {...props} />;
+const Dropdown = forwardRef<HTMLSelectElement, IDropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
 
 export default Dropdown;
