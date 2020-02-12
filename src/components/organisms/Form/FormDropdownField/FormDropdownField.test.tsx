@@ -25,14 +25,16 @@ const validate = (values: IForm) => {
 const renderComponent = () =>
   render(
     <Form initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.DropdownField label={dropdownLabel} name="referral">
-        <option disabled value="">
-          select an option
-        </option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </Form.DropdownField>
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.DropdownField label={dropdownLabel} name="referral">
+          <option disabled value="">
+            select an option
+          </option>
+          <option value="newspaper">Newspaper</option>
+          <option value="socialMedia">Social media</option>
+        </Form.DropdownField>
+        <Form.Button>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 

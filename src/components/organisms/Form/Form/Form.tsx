@@ -1,26 +1,12 @@
 import React, { FC, HTMLAttributes } from 'react';
-import { useForm, IUseFormProps, FormContext } from '../hooks';
+import { useFormContext } from '../hooks';
 
-const Form: FC<Omit<HTMLAttributes<HTMLFormElement>, 'onSubmit'> & IUseFormProps> = ({
-  children,
-  initialValues,
-  onSubmit,
-  onChange,
-  validate,
-  ...rest
-}) => {
-  const context = useForm({
-    initialValues,
-    onSubmit,
-    validate,
-    onChange,
-  });
+const Form: FC<HTMLAttributes<HTMLFormElement>> = ({ onSubmit, children, ...rest }) => {
+  const { handleSubmit } = useFormContext();
   return (
-    <FormContext.Provider value={context}>
-      <form onSubmit={context.handleSubmit} {...rest}>
-        {children}
-      </form>
-    </FormContext.Provider>
+    <form onSubmit={handleSubmit} {...rest}>
+      {children}
+    </form>
   );
 };
 

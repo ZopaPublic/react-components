@@ -24,9 +24,11 @@ const validate = (values: IForm) => {
 const renderComponent = () =>
   render(
     <Form initialValues={{ employmentType: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.RadioField label="Employed" name="employmentType" value="employed" />
-      <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
-      <Form.Button disabled={false}>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.RadioField label="Employed" name="employmentType" value="employed" />
+        <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
+        <Form.Button disabled={false}>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 

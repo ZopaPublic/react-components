@@ -23,8 +23,10 @@ const fieldLabel = 'First name';
 const renderComponent = (props = {}) =>
   render(
     <Form initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.TextField label={fieldLabel} name="firstName" />
-      <Form.Button {...props}>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.TextField label={fieldLabel} name="firstName" />
+        <Form.Button {...props}>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 
