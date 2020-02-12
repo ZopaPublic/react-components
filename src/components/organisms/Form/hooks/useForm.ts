@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 
-type TValue = any;
-export type TFormValues = Record<string, TValue>;
+type TFormValue = any;
+export type TFormValues = Record<string, TFormValue>;
 export type TFormErrors = Record<string, string | undefined>;
 export type TFormTouched = Record<string, boolean>;
 
@@ -15,7 +15,7 @@ export interface IUseFormProps {
 export interface IFieldProps {
   error: string | undefined;
   touched: boolean;
-  value: TValue;
+  value: TFormValue;
   onChange: (eventData: unknown) => void;
   onBlur: (eventData: unknown) => void;
 }
