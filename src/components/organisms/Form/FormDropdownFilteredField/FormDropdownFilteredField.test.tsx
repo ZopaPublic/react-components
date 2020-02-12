@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, wait, act } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
 interface IForm {
@@ -28,18 +28,20 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 const renderComponent = () =>
   render(
     <Form initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.DropdownFilteredField
-        name={fieldName}
-        inputProps={{ placeholder: 'Select a nationality...' }}
-        items={nationalities}
-        label={dropdownLabel}
-      />
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.DropdownFilteredField
+          name={fieldName}
+          inputProps={{ placeholder: 'Select a nationality...' }}
+          items={nationalities}
+          label={dropdownLabel}
+        />
+        <Form.Button>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 
 describe('<Form.DropdownFilteredField />', () => {
-  it('handles value change', async () => {
+  it('handles value change', () => {
     const { getByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
     act(() => {
@@ -54,12 +56,11 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
-    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: { value: 'British' } });
   });
 
-  it('renders error message', async () => {
+  it('renders error message', () => {
     const { queryByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
     act(() => {
@@ -68,7 +69,6 @@ describe('<Form.DropdownFilteredField />', () => {
     act(() => {
       fireEvent.blur(dropdown);
     });
-    await wait();
     expect(queryByText(errorMessage)).toBeTruthy();
   });
 });
