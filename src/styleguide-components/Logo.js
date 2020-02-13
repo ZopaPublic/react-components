@@ -1,7 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Styled from 'rsg-components/Styled';
-import zopaLogo from './svg/zopaLogo.svg';
+import zLogo from './images/z-logo.png';
+
 const styles = ({ fontFamily, color }) => ({
   container: {
     width: '80%',
@@ -13,6 +15,9 @@ const styles = ({ fontFamily, color }) => ({
     fontWeight: 'normal',
     color: color.baseBackground,
   },
+  logoWrap: {
+    textAlign: 'center',
+  },
   divSvg: {
     margin: '0 auto',
     with: '100%',
@@ -21,18 +26,25 @@ const styles = ({ fontFamily, color }) => ({
     marginBottom: '1em',
   },
   titleRepo: {
-    fontSize: '13.5px',
+    fontSize: 14,
+    color: '#C0E1D7',
     textAlign: 'center',
     cursor: 'pointer',
   },
 });
 
+const ZLogo = styled.img`
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 50px;
+`;
+
 export function LogoRenderer({ classes, children }) {
   return (
     <div className={classes.container}>
       <h1 className={classes.logo}>
-        <div className={classes.divSvg}>
-          <img src={zopaLogo} alt="logo zopa" />
+        <div className={classes.logoWrap}>
+          <ZLogo src={zLogo} alt="Zopa logo just displaying the letter Z" width="50" />
         </div>
         <a
           className={classes.titleRepo}
