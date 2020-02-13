@@ -1,6 +1,6 @@
 ### Usage
 
-⚠️ &nbsp; `<Color />` is **NOT available in the library**. It is used for presentation on this page only.
+`<Color />` is **NOT available in the library**. It is used for presentation on this page only.
 
 ```js static
 import { colors } from '@zopauk/react-components';

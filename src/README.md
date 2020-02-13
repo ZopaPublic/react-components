@@ -10,8 +10,6 @@ This project aims to have all the common styled react components as a library/do
 
 ### Setup
 
-#### ... `<GlobalStyles />`
-
 ⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
 ```js static
@@ -25,8 +23,6 @@ const App = () => (
   </>
 );
 ```
-
-#### ... `<Fonts />`
 
 [Open Sans](https://fonts.google.com/specimen/Open+Sans) is the typography chosen for Zopa's brand.
 
