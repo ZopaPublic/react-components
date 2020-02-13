@@ -121,6 +121,8 @@ module.exports = {
     color: {
       sidebarBackground: '#1C2139',
       codeBackground: '#F5F5F5;',
+      link: '#FFFFFF',
+      linkHover: '#FFFFFF',
     },
     fontFamily: {
       monospace: 'Monaco, Menlo, Courier, monospace',
