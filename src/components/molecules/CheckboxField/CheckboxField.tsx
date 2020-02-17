@@ -82,7 +82,9 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const CheckboxField: React.FC<IField & IInput> = props => {
+export interface ICheckboxFieldProps extends IField, IInput {}
+
+const CheckboxField: React.FC<ICheckboxFieldProps> = props => {
   const { label, name, errorMessage, inputSize, className, ...rest } = props;
 
   if (!name) throw Error('Name must be set. Check the docs.');
