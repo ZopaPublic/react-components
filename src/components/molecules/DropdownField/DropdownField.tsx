@@ -28,7 +28,16 @@ const Help = styled(Text)`
   display: block;
 `;
 
-const DropdownField = ({ label, errorMessage, size, helpText, htmlSelectSize, name, ...rest }: IDropdownFieldProps) => {
+const DropdownField = ({
+  label,
+  errorMessage,
+  size,
+  helpText,
+  htmlSelectSize,
+  name,
+  inputProps,
+  ...rest
+}: IDropdownFieldProps) => {
   if (!name) {
     throw Error("You didn't supply a name for the dropdown. Check the docs.");
   }
@@ -43,6 +52,7 @@ const DropdownField = ({ label, errorMessage, size, helpText, htmlSelectSize, na
           name={name}
           aria-label={label ? undefined : name}
           size={htmlSelectSize}
+          {...inputProps}
           {...rest}
         />
       </SizedContainer>

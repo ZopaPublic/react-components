@@ -4,8 +4,10 @@ import DropdownFiltered, {
   IDropdownItem,
 } from '../../../molecules/DropdownFiltered/DropdownFiltered';
 import { useFieldContext } from '../hooks';
+import { IInput } from '../../../types';
 
-interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
+interface IFormDropdownFilteredFieldProps extends Omit<IDropdownFilteredProps, 'inputProps'> {
+  inputProps?: IInput;
   name: string;
 }
 
