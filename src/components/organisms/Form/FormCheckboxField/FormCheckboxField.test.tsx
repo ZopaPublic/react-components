@@ -29,8 +29,10 @@ const validate = (values: IForm) => {
 const renderComponent = () =>
   render(
     <Form initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
-      <Form.CheckboxField label={checkboxLabel} name="policy" />
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.CheckboxField label={checkboxLabel} name="policy" />
+        <Form.Button>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 

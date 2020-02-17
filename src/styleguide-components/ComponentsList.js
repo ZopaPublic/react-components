@@ -15,7 +15,6 @@ const styles = ({ color, fontFamily, fontSize, space, mq }) => ({
     margin: [[space[1], 0, space[1], 0]],
     fontFamily: fontFamily.base,
     fontSize: fontSize.base,
-    listStyle: 'none',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
   },
@@ -29,6 +28,21 @@ const styles = ({ color, fontFamily, fontSize, space, mq }) => ({
     color: color.base,
     marginTop: space[1],
     fontFamily: fontFamily.base,
+  },
+  headingLink: {
+    color: 'gray',
+    fontSize: 11,
+    textTransform: 'uppercase',
+    borderBottom: '1px solid #454545',
+    cursor: 'pointer',
+  },
+  link: {
+    color: 'whitesmoke',
+    cursor: 'pointer',
+    '&:hover': {
+      color: '#00B9A7',
+      cursor: 'pointer',
+    },
   },
 });
 
@@ -44,7 +58,11 @@ export function ComponentsListRenderer({ classes, items }) {
         return (
           <li className={cx(classes.item, (!content || !content.props.items.length) && classes.isChild)} key={href}>
             <Link className={cx(heading && classes.heading)} href={href}>
-              {heading ? <span style={{ opacity: 0.5 }}>{name}</span> : name}
+              {heading ? (
+                <span className={classes.headingLink}>{name}</span>
+              ) : (
+                <span className={classes.link}>{name}</span>
+              )}
             </Link>
             {content}
           </li>

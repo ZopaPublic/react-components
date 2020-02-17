@@ -19,7 +19,7 @@ const SLink = styled.a<ILinkProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   cursor: pointer;
   text-decoration: none;
-  user-select: none;
+  user-select: auto;
   appearance: none;
 
   &:hover {

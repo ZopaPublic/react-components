@@ -1,45 +1,44 @@
-import { useState, useCallback, useEffect, useMemo } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 
-type TValue = any;
-export type TValues = Record<string, TValue>;
-export type TErrors = Record<string, string | undefined>;
+type TFormValue = any;
+export type TFormValues = Record<string, TFormValue>;
+export type TFormErrors = Record<string, string | undefined>;
+export type TFormTouched = Record<string, boolean>;
 
 export interface IUseFormProps {
-  initialValues: TValues;
-  onSubmit: (values: TValues) => void;
-  onChange?: (values: TValues) => void;
-  validate?: (values: TValues) => TErrors | Promise<TErrors>;
+  initialValues: TFormValues;
+  onSubmit: (values: TFormValues) => void;
+  onChange?: (values: TFormValues) => void;
+  validate?: (values: TFormValues) => TFormErrors;
 }
 
 export interface IFieldProps {
   error: string | undefined;
   touched: boolean;
-  value: TValue;
+  value: TFormValue;
   onChange: (eventData: unknown) => void;
   onBlur: (eventData: unknown) => void;
 }
 
 export interface IUseFormValues {
   getFieldProps: (name: string) => IFieldProps;
+  handleSubmit: (values: TFormValues) => void;
   invalid: boolean;
-  handleSubmit: (values: TValues) => void;
+  errors: TFormErrors;
+  touched: TFormTouched;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
   const [values, updateValues] = useState(initialValues);
-  const [errors, updateErrors] = useState<Record<string, string | undefined>>({});
-  const [touched, updateTouched] = useState<Record<string, boolean>>({});
+  const [errors, updateErrors] = useState<TFormErrors>(validate ? validate(initialValues) : {});
+  const [touched, updateTouched] = useState<TFormTouched>({});
 
   const runValidation = async (formValues: typeof initialValues) => {
     if (validate) {
-      const errors = await validate(formValues);
+      const errors = validate(formValues);
       updateErrors(errors);
     }
   };
-
-  useEffect(() => {
-    runValidation(values);
-  }, []);
 
   const invalid = useMemo(() => !!Object.keys(errors).length, [errors]);
 
@@ -84,5 +83,7 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
     getFieldProps,
     invalid,
     handleSubmit,
+    errors,
+    touched,
   };
 };

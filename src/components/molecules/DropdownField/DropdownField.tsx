@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import React, { InputHTMLAttributes, forwardRef } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -28,21 +28,8 @@ const Help = styled(Text)`
   display: block;
 `;
 
-const DropdownField = ({
-  label,
-  errorMessage,
-  size,
-  helpText,
-  htmlSelectSize,
-  name,
-  inputProps,
-  ...rest
-}: IDropdownFieldProps) => {
-  if (!name) {
-    throw Error("You didn't supply a name for the dropdown. Check the docs.");
-  }
-
-  return (
+const DropdownField = forwardRef<HTMLSelectElement, IDropdownFieldProps>(
+  ({ label, errorMessage, size, helpText, htmlSelectSize, name, inputProps, ...rest }, ref) => (
     <>
       {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
       {helpText && <Help size="small">{helpText}</Help>}
@@ -52,13 +39,14 @@ const DropdownField = ({
           name={name}
           aria-label={label ? undefined : name}
           size={htmlSelectSize}
+          ref={ref}
           {...inputProps}
           {...rest}
         />
       </SizedContainer>
       {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
     </>
-  );
-};
+  ),
+);
 
 export default DropdownField;

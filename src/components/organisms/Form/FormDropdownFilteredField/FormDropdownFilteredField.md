@@ -23,14 +23,16 @@ const validate = values => {
 };
 
 <Form initialValues={{ nationality: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <div style={{ marginBottom: '16px' }}>
-    <Form.DropdownFilteredField
-      name="nationality"
-      inputProps={{ placeholder: 'Select a nationality...' }}
-      items={nationalities}
-      label="Nationality"
-    />
-  </div>
-  <Form.Button>Submit</Form.Button>
+  <Form.Form>
+    <div style={{ marginBottom: '16px' }}>
+      <Form.DropdownFilteredField
+        name="nationality"
+        inputProps={{ placeholder: 'Select a nationality...' }}
+        items={nationalities}
+        label="Nationality"
+      />
+    </div>
+    <Form.Button>Submit</Form.Button>
+  </Form.Form>
 </Form>;
 ```

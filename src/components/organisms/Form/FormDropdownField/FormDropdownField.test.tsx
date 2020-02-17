@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, wait, act } from '@testing-library/react';
+import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
 interface IForm {
@@ -25,19 +25,21 @@ const validate = (values: IForm) => {
 const renderComponent = () =>
   render(
     <Form initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.DropdownField label={dropdownLabel} name="referral">
-        <option disabled value="">
-          select an option
-        </option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </Form.DropdownField>
-      <Form.Button>{buttonLabel}</Form.Button>
+      <Form.Form>
+        <Form.DropdownField label={dropdownLabel} name="referral">
+          <option disabled value="">
+            select an option
+          </option>
+          <option value="newspaper">Newspaper</option>
+          <option value="socialMedia">Social media</option>
+        </Form.DropdownField>
+        <Form.Button>{buttonLabel}</Form.Button>
+      </Form.Form>
     </Form>,
   );
 
 describe('<Form.DropdownField />', () => {
-  it('handles value change', async () => {
+  it('handles value change', () => {
     const { getByText, getByLabelText } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
     act(() => {
@@ -49,12 +51,11 @@ describe('<Form.DropdownField />', () => {
     act(() => {
       fireEvent.click(getByText(buttonLabel));
     });
-    await wait();
     expect(onSubmit).toHaveBeenCalledTimes(1);
     expect(onSubmit).toHaveBeenCalledWith({ referral: 'newspaper' });
   });
 
-  it('renders error message', async () => {
+  it('renders error message', () => {
     const { queryByText, getByLabelText } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
     act(() => {
@@ -63,7 +64,6 @@ describe('<Form.DropdownField />', () => {
     act(() => {
       fireEvent.blur(dropdown);
     });
-    await wait();
     expect(queryByText(errorMessage)).toBeTruthy();
   });
 });

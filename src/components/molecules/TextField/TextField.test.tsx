@@ -49,4 +49,16 @@ describe('<TextField />', () => {
     const { container } = render(<TextField inputProps={{ name: 'test1' }} size="short" prefix={'£'} />);
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('throws if no name provided', () => {
+    console.error = jest.fn();
+    expect(() => render(<TextField inputProps={{}} />)).toThrow('Name must be set in inputProps. Check the docs.');
+  });
+
+  it('throws if prefix is longer than one character', () => {
+    console.error = jest.fn();
+    expect(() => render(<TextField inputProps={{ name: 'test1' }} prefix="$$" />)).toThrow(
+      'Prefixes can only have one character',
+    );
+  });
 });

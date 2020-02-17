@@ -1,9 +1,9 @@
-import React, { FC, ChangeEvent } from 'react';
+import React, { ChangeEvent, forwardRef } from 'react';
 import TextField from '../../../molecules/TextField/TextField';
 import { useFieldContext } from '../hooks';
 import { IFormInputField } from '../types';
 
-const FormTextField: FC<IFormInputField> = ({ name, inputProps, ...rest }) => {
+const FormTextField = forwardRef<HTMLInputElement, IFormInputField>(({ name, inputProps, ...rest }, ref) => {
   const { error, touched, value, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -15,9 +15,10 @@ const FormTextField: FC<IFormInputField> = ({ name, inputProps, ...rest }) => {
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
       inputProps={{ onChange: handleChange, onBlur, value, name, ...inputProps }}
+      ref={ref}
       {...rest}
     />
   );
-};
+});
 
 export default FormTextField;

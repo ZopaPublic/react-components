@@ -16,10 +16,12 @@ const validate = values => {
 };
 
 <Form initialValues={{ employmentType: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <div style={{ marginBottom: '16px' }}>
-    <Form.RadioField label="Employed" name="employmentType" value="employed" />
-    <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
-  </div>
-  <Form.Button disabled={false}>Submit</Form.Button>
+  <Form.Form>
+    <div style={{ marginBottom: '16px' }}>
+      <Form.RadioField label="Employed" name="employmentType" value="employed" />
+      <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
+    </div>
+    <Form.Button disabled={false}>Submit</Form.Button>
+  </Form.Form>
 </Form>;
 ```
