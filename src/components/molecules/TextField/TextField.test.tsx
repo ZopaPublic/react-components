@@ -46,7 +46,7 @@ describe('<TextField />', () => {
 
   it('throws if no name provided', () => {
     console.error = jest.fn();
-    expect(() => render(<TextField />)).toThrow('Name must be set in check docs.');
+    expect(() => render(<TextField />)).toThrow('Name must be set in inputProps. Check the docs.');
   });
 
   it('throws if prefix is longer than one character', () => {

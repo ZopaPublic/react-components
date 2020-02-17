@@ -1,4 +1,4 @@
-import React, { FC, ChangeEvent } from 'react';
+import React, { FC } from 'react';
 import RadioField, { IRadioField } from '../../../molecules/RadioField/RadioField';
 import { useFieldContext } from '../hooks';
 
@@ -10,8 +10,8 @@ interface IFormRadioFieldProps extends IRadioField {
 const FormRadioField: FC<IFormRadioFieldProps> = ({ name, value, ...rest }) => {
   const { error, touched, onChange, onBlur } = useFieldContext(name);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.value);
+  const handleChange = () => {
+    onChange(value);
   };
 
   return (
