@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, HTMLAttributes } from 'react';
+import { InputHTMLAttributes, SelectHTMLAttributes, HTMLAttributes } from 'react';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -18,7 +18,14 @@ export interface IInputStatus {
   hasError?: boolean;
 }
 
-export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement> {
+export interface IInput<T = HTMLInputElement> extends IInputStatus, InputHTMLAttributes<T> {
+  /**
+   * Attribute used for testing porpuses
+   */
+  'data-automation'?: string;
+}
+
+export interface ISelect<T = HTMLSelectElement> extends IInputStatus, SelectHTMLAttributes<T> {
   /**
    * Attribute used for testing porpuses
    */
@@ -45,7 +52,7 @@ export interface IField<T = HTMLDivElement> extends HTMLAttributes<T> {
   /**
    * Props for the native input element
    */
-  inputProps: IInput;
+  inputProps: IInput<T>;
   /**
    * Container size
    */
