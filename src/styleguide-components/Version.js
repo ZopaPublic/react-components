@@ -1,6 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Styled from 'rsg-components/Styled';
+import styled from 'styled-components';
+
+const Rainbow = styled.p`
+  background-image: linear-gradient(to left, violet, indigo, cyan, pink, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+`;
 
 const styles = ({ fontFamily, fontSize }) => ({
   version: {
@@ -15,9 +24,9 @@ const styles = ({ fontFamily, fontSize }) => ({
 
 export function VersionRenderer({ classes, children }) {
   return (
-    <p aria-label="version" className={classes.version}>
+    <Rainbow aria-label="version" className={classes.version}>
       v{children}
-    </p>
+    </Rainbow>
   );
 }
 
