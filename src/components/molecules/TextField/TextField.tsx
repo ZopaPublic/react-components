@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Text from '../../atoms/Text/Text';
@@ -46,37 +46,39 @@ const Prefix = styled.span<IPrefixProps>`
   }
 `;
 
-const TextField: FC<ITextFieldProps> = props => {
-  const { label, errorMessage, isValid, inputProps, size, helpText, prefix } = props;
-  const { name } = inputProps;
+const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
+  ({ label, errorMessage, isValid, inputProps, size, helpText, prefix }, ref) => {
+    const { name } = inputProps;
 
-  if (!name) {
-    throw Error('Name must be set in inputProps. Check the docs.');
-  }
+    if (!name) {
+      throw Error('Name must be set in inputProps. Check the docs.');
+    }
 
-  if (prefix && prefix.length > 1) {
-    throw Error('Prefixes can only have one character');
-  }
+    if (prefix && prefix.length > 1) {
+      throw Error('Prefixes can only have one character');
+    }
 
-  const input = (
-    <InputText
-      id={`text-id-${name}`}
-      type="text"
-      hasError={!!errorMessage}
-      isValid={isValid}
-      aria-label={label ? undefined : name}
-      {...inputProps}
-    />
-  );
+    const input = (
+      <InputText
+        id={`text-id-${name}`}
+        type="text"
+        hasError={!!errorMessage}
+        isValid={isValid}
+        aria-label={label ? undefined : name}
+        ref={ref}
+        {...inputProps}
+      />
+    );
 
-  return (
-    <>
-      {label && <TextFieldLabel htmlFor={`text-id-${name}`}>{label}</TextFieldLabel>}
-      {helpText && <Text size="small">{helpText}</Text>}
-      <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
-      {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
-    </>
-  );
-};
+    return (
+      <>
+        {label && <TextFieldLabel htmlFor={`text-id-${name}`}>{label}</TextFieldLabel>}
+        {helpText && <Text size="small">{helpText}</Text>}
+        <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
+        {errorMessage && <TextFieldError data-automation={`ZA.error-${name}`}>{errorMessage}</TextFieldError>}
+      </>
+    );
+  },
+);
 
 export default TextField;

@@ -1,3 +1,37 @@
+## [2.11.1](https://github.com/zopaUK/react-components/compare/v2.11.0...v2.11.1) (2020-02-11)
+
+
+### Bug Fixes
+
+* **dropdown:** forward ref ([c7c9c95](https://github.com/zopaUK/react-components/commit/c7c9c9503c184d19bc4eaf26dda7bba0bd7822b8))
+* **dropdownfield:** forward ref ([9c55acf](https://github.com/zopaUK/react-components/commit/9c55acf7a4d81872bff715763890a4fd66bbdae1))
+* **formdropdownfield:** forward ref ([fb5cd89](https://github.com/zopaUK/react-components/commit/fb5cd8982f951eb5c02604b8b88baf956c517894))
+* **formtextfield:** forward ref ([78b804e](https://github.com/zopaUK/react-components/commit/78b804e3c661206afd2e5670dd13d81cfcadaf4a))
+* **textfield:** forward ref ([026f51b](https://github.com/zopaUK/react-components/commit/026f51b4d16d1785c23490294900ae9f4af99fc6))
+
+# [2.11.0](https://github.com/zopaUK/react-components/compare/v2.10.5...v2.11.0) (2020-02-06)
+
+
+### Features
+
+* **useform:** expose errors and touched objects ([23849b1](https://github.com/zopaUK/react-components/commit/23849b1fe3b15e5ba30c6d0825f676bee9a4db91))
+
+## [2.10.5](https://github.com/zopaUK/react-components/compare/v2.10.4...v2.10.5) (2020-02-05)
+
+
+### Bug Fixes
+
+* **styleguide:** fix react-scripts ([ec6eec9](https://github.com/zopaUK/react-components/commit/ec6eec9496f8fe5378d92d451df5963798bcf972))
+* **styleguide:** fix react-scripts ([7d3d35a](https://github.com/zopaUK/react-components/commit/7d3d35a42a1242dd2c0137948435ae2c663de471))
+
+## [2.10.4](https://github.com/zopaUK/react-components/compare/v2.10.3...v2.10.4) (2020-02-05)
+
+
+### Bug Fixes
+
+* **link:** links highlight ([b7c0f2a](https://github.com/zopaUK/react-components/commit/b7c0f2aa72f639858364bac5c8ddee69285ba699))
+* **link:** links highlight ([#201](https://github.com/zopaUK/react-components/issues/201)) ([e42f6ec](https://github.com/zopaUK/react-components/commit/e42f6ec72199a993535a51c106e6131577a9463e))
+
 ## [2.10.3](https://github.com/zopaUK/react-components/compare/v2.10.2...v2.10.3) (2020-02-04)
 
 

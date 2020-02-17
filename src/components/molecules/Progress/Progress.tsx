@@ -6,12 +6,14 @@ import Text from '../../atoms/Text/Text';
 
 export interface IProgressionStyleProps {
   width?: string;
+  progressColor?: string;
 }
 
 export interface IProgressProps extends IProgressionStyleProps, HTMLAttributes<HTMLDivElement> {
   totalSteps: number;
   currentStep: number;
   style?: CSSProperties;
+  withStep?: boolean;
 }
 
 const SProgressBar = styled.div`
@@ -28,7 +30,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: ${colors.semantic.alert};
+  background: ${({ progressColor = colors.semantic.alert }) => progressColor};
 
   > span {
     position: absolute;
@@ -41,12 +43,14 @@ const SProgression = styled.div<IProgressionStyleProps>`
   }
 `;
 
-const Progress: React.FC<IProgressProps> = ({ totalSteps, currentStep, ...rest }) => (
+const Progress: React.FC<IProgressProps> = ({ totalSteps, currentStep, withStep = true, progressColor, ...rest }) => (
   <SProgressBar {...rest}>
-    <SProgression width={`${(100 / totalSteps) * currentStep}%`}>
-      <Text size="small">
-        Step {currentStep} of {totalSteps}
-      </Text>
+    <SProgression width={`${(100 / totalSteps) * currentStep}%`} progressColor={progressColor}>
+      {withStep && (
+        <Text size="small">
+          Step {currentStep} of {totalSteps}
+        </Text>
+      )}
     </SProgression>
   </SProgressBar>
 );
