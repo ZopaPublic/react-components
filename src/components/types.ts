@@ -25,7 +25,14 @@ export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputEleme
   'data-automation'?: string;
 }
 
-export interface IField extends IInput {
+export interface ISelect extends IInputStatus, InputHTMLAttributes<HTMLSelectElement> {
+  /**
+   * Attribute used for testing porpuses
+   */
+  'data-automation'?: string;
+}
+
+export interface IField {
   /**
    * The text to be shown on the label. If this is not set it doesn't render the label.
    */

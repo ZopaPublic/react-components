@@ -82,7 +82,7 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const CheckboxField: React.FC<IField> = props => {
+const CheckboxField: React.FC<IField & IInput> = props => {
   const { label, name, errorMessage, inputSize, className, ...rest } = props;
 
   if (!name) throw Error('Name must be set. Check the docs.');
