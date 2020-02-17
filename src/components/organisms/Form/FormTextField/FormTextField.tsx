@@ -1,12 +1,9 @@
 import React, { FC, ChangeEvent } from 'react';
-import TextField, { ITextFieldProps } from '../../../molecules/TextField/TextField';
+import TextField from '../../../molecules/TextField/TextField';
 import { useFieldContext } from '../hooks';
+import { IFormInputField } from '../types';
 
-interface IFormTextFieldProps extends ITextFieldProps {
-  name: string;
-}
-
-const FormTextField: FC<IFormTextFieldProps> = ({ name, inputProps, ...rest }) => {
+const FormTextField: FC<IFormInputField> = ({ name, inputProps, ...rest }) => {
   const { error, touched, value, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
