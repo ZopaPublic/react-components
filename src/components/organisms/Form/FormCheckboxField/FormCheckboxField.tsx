@@ -1,13 +1,12 @@
 import React, { FC, ChangeEvent } from 'react';
-import CheckboxField from '../../../molecules/CheckboxField/CheckboxField';
-import { IField } from '../../../types';
+import CheckboxField, { ICheckboxFieldProps } from '../../../molecules/CheckboxField/CheckboxField';
 import { useFieldContext } from '../hooks';
 
-interface IFormCheckboxFieldProps extends IField<HTMLInputElement> {
+interface IFormCheckboxFieldProps extends ICheckboxFieldProps {
   name: string;
 }
 
-const FormCheckboxField: FC<IFormCheckboxFieldProps> = ({ name, inputProps, ...rest }) => {
+const FormCheckboxField: FC<IFormCheckboxFieldProps> = ({ name, ...rest }) => {
   const { error, touched, value, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -18,7 +17,10 @@ const FormCheckboxField: FC<IFormCheckboxFieldProps> = ({ name, inputProps, ...r
     <CheckboxField
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      inputProps={{ onChange: handleChange, onBlur, value, name, ...inputProps }}
+      onChange={handleChange}
+      onBlur={onBlur}
+      value={value}
+      name={name}
       {...rest}
     />
   );

@@ -7,7 +7,7 @@ interface IFormRadioFieldProps extends IRadioField {
   value: string;
 }
 
-const FormRadioField: FC<IFormRadioFieldProps> = ({ name, value, inputProps, ...rest }) => {
+const FormRadioField: FC<IFormRadioFieldProps> = ({ name, value, ...rest }) => {
   const { error, touched, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +17,10 @@ const FormRadioField: FC<IFormRadioFieldProps> = ({ name, value, inputProps, ...
   return (
     <RadioField
       hasError={touched && !!error}
-      inputProps={{ onChange: handleChange, onBlur, value, name, ...inputProps }}
+      onChange={handleChange}
+      onBlur={onBlur}
+      value={value}
+      name={name}
       {...rest}
     />
   );

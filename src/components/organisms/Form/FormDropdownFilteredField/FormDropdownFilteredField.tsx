@@ -9,7 +9,7 @@ interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
   name: string;
 }
 
-const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, items, inputProps, ...rest }) => {
+const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, items, ...rest }) => {
   const { error, touched, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (item: IDropdownItem) => {
@@ -18,11 +18,8 @@ const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, 
 
   return (
     <DropdownFiltered
-      inputProps={{
-        name,
-        onBlur,
-        ...inputProps,
-      }}
+      name={name}
+      onBlur={onBlur}
       items={items}
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
