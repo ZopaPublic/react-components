@@ -1,3 +1,11 @@
+## [2.11.2](https://github.com/zopaUK/react-components/compare/v2.11.1...v2.11.2) (2020-02-18)
+
+
+### Bug Fixes
+
+* **footer:** update Footer links clickable area ([adfd2c1](https://github.com/zopaUK/react-components/commit/adfd2c14414857dd0798d91cf2eaa85390bce905)), closes [#227](https://github.com/zopaUK/react-components/issues/227)
+* **footer:** update testing snapshots ([113f932](https://github.com/zopaUK/react-components/commit/113f932c1fe2f51c86380ba511e6ca04bc4675d0)), closes [#227](https://github.com/zopaUK/react-components/issues/227)
+
 ## [2.11.1](https://github.com/zopaUK/react-components/compare/v2.11.0...v2.11.1) (2020-02-11)
 
 
