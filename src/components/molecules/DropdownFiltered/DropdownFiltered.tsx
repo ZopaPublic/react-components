@@ -177,6 +177,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
               },
               ...rest,
             })}
+            name={name}
             id={`text-id-${name}`}
             isValid={isValid}
             hasError={showError}
