@@ -2,7 +2,11 @@ import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
 import { colors } from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
 import Heading from './Heading';
+const {
+  sizes: { heading: headingSizes },
+} = typography;
 
 describe('<Heading />', () => {
   it('renders without  a11y violations', async () => {
@@ -14,14 +18,44 @@ describe('<Heading />', () => {
   });
 
   it.each`
-    tag
-    ${'h1'}
-    ${'h2'}
-    ${'h3'}
-    ${'h4'}
-  `('it can render with a different HTML tag: $tag', ({ tag }: { tag: 'h1' | 'h2' | 'h3' | 'h4' }) => {
+    tag     | expectedSize
+    ${'h1'} | ${headingSizes.h1}
+    ${'h2'} | ${headingSizes.h2}
+    ${'h3'} | ${headingSizes.h3}
+    ${'h4'} | ${headingSizes.h4}
+    ${'h5'} | ${headingSizes.h5}
+    ${'h6'} | ${headingSizes.h6}
+  `('it can render with a different HTML tag: $tag', ({ tag, expectedSize }) => {
     const { container } = render(<Heading as={tag}>Header</Heading>);
-    expect(container.firstChild).toMatchSnapshot();
+
+    expect(container.firstChild).toHaveStyleRule('font-size', expectedSize);
+    expect(container.querySelector(tag)).not.toBe(null);
+  });
+
+  it('allows to control the size despite the rendered HTML tag', () => {
+    const { container } = render(
+      <Heading as="h1" size="h3">
+        Header
+      </Heading>,
+    );
+
+    expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h3);
+  });
+
+  it('renders with H1 size as default when rendering a `span`', () => {
+    const { container } = render(<Heading as="span">Header</Heading>);
+
+    expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h1);
+  });
+
+  it('allows to control the size when rendering as a `span`', () => {
+    const { container } = render(
+      <Heading as="span" size="h4">
+        Header
+      </Heading>,
+    );
+
+    expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h4);
   });
 
   it.each`
