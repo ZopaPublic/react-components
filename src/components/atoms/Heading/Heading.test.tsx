@@ -42,10 +42,10 @@ describe('<Heading />', () => {
     expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h3);
   });
 
-  it('renders with H1 size as default when rendering a `span`', () => {
+  it('renders with H4 size as default when rendering a `span`', () => {
     const { container } = render(<Heading as="span">Header</Heading>);
 
-    expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h1);
+    expect(container.firstChild).toHaveStyleRule('font-size', headingSizes.h4);
   });
 
   it('allows to control the size when rendering as a `span`', () => {

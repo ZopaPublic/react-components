@@ -32,7 +32,7 @@ interface IStyledHeadingProps {
 const Heading = styled.h1<IStyledHeadingProps>`
   color: ${({ color = colors.neutral.dark }) => color};
   
-  font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h1'] : headingSizes[as])};
+  font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h4'] : headingSizes[as])};
   ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
   ${({ as }) => as === 'span' && `display: block;`}
 
