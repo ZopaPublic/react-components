@@ -100,7 +100,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   <input
     class="c1"
     id="checkbox-id-test1"
-    name="test1"
     type="checkbox"
   />
   <label

@@ -117,7 +117,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     id="radio-id-1"
     name="test1"
     type="radio"
-    value="1"
   />
   <label
     class="c3"

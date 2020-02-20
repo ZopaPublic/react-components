@@ -6,7 +6,7 @@ interface IFormTextFieldProps extends ITextFieldProps {
   name: string;
 }
 
-const FormTextField = forwardRef<HTMLInputElement, IFormTextFieldProps>(({ name, inputProps, ...rest }, ref) => {
+const FormTextField = forwardRef<HTMLInputElement, IFormTextFieldProps>(({ name, ...rest }, ref) => {
   const { error, touched, value, onChange, onBlur } = useFieldContext(name);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +17,10 @@ const FormTextField = forwardRef<HTMLInputElement, IFormTextFieldProps>(({ name,
     <TextField
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      inputProps={{ onChange: handleChange, onBlur, value, name, ...inputProps }}
+      onChange={handleChange}
+      onBlur={onBlur}
+      value={value}
+      name={name}
       ref={ref}
       {...rest}
     />

@@ -82,15 +82,16 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const CheckboxField: React.FC<IField> = props => {
-  const { label, inputProps, errorMessage, size, ...rest } = props;
-  const { name } = inputProps;
+export interface ICheckboxFieldProps extends IField, IInput {}
 
-  if (!name) throw Error('Name must be set in inputProps. Check the docs.');
+const CheckboxField: React.FC<ICheckboxFieldProps> = props => {
+  const { label, name, errorMessage, inputSize, className, ...rest } = props;
+
+  if (!name) throw Error('Name must be set. Check the docs.');
 
   return (
-    <SizedContainer size={size} {...rest}>
-      <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />
+    <SizedContainer size={inputSize} className={className}>
+      <Input id={`checkbox-id-${name}`} type="checkbox" {...rest} />
       <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
       {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </SizedContainer>
