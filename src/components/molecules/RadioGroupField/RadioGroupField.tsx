@@ -11,17 +11,18 @@ type RadioGroupFieldItem = {
   value: string;
   label: string;
   defaultChecked?: boolean;
+  disabled?: boolean;
 };
 
 type RadioGroupFieldProps = {
   label: string;
   items: RadioGroupFieldItem[];
   onChange: (value: string) => void;
-  hasError?: boolean;
+  disabled?: boolean;
   value?: string;
 };
 
-const RadioGroupField = ({ items, label, onChange, value, hasError }: RadioGroupFieldProps) => {
+const RadioGroupField = ({ items, label, onChange, value, disabled }: RadioGroupFieldProps) => {
   const defaultItem = items.find(({ defaultChecked }) => defaultChecked);
 
   const [innerValue, setInnerValue] = useState(
@@ -43,7 +44,7 @@ const RadioGroupField = ({ items, label, onChange, value, hasError }: RadioGroup
       {items.map(item => (
         <RadioWrapper key={item.value}>
           <RadioField
-            hasError={hasError}
+            disabled={disabled}
             value={item.value}
             onChange={handleChange(item.value)}
             label={item.label}
