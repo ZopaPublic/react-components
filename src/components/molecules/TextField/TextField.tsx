@@ -64,6 +64,7 @@ const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
         isValid={isValid}
         aria-label={label ? undefined : name}
         ref={ref}
+        name={name}
         {...rest}
       />
     );
