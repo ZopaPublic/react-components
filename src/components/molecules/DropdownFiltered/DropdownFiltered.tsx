@@ -31,7 +31,8 @@ export interface IDropdownFilteredProps
   extends DownshiftProps<IDropdownItem>,
     ISearchInputProps,
     IOptionsListProps,
-    Pick<IField, 'inputProps' | 'errorMessage' | 'label' | 'isValid' | 'size'> {
+    Omit<IInput, 'onSelect' | 'onChange' | 'children'>,
+    IField {
   /**
    * Native props for the native label element.
    */
@@ -110,7 +111,7 @@ const SearchArrowWrap = styled.div`
 export default class DropdownFiltered extends React.PureComponent<IDropdownFilteredProps> {
   public render() {
     return (
-      <SizedContainer size={this.props.size}>
+      <SizedContainer size={this.props.inputSize}>
         <Downshift itemToString={item => (item ? item.value : '')} {...this.props}>
           {this.dropdownContent}
         </Downshift>
@@ -136,13 +137,20 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
       selectedItem,
     } = options;
 
-    const { errorMessage, items = [], label, optionsListMaxHeight, inputProps, labelProps, isValid } = this.props;
-    const { name } = inputProps;
+    const {
+      errorMessage,
+      items = [],
+      label,
+      optionsListMaxHeight,
+      name,
+      labelProps,
+      isValid,
+      disabled,
+      ...rest
+    } = this.props;
     if (!name) {
       throw Error('Name must be set in inputProps. Check the docs.');
     }
-    // We use disabled from inputProps to make it consistent with the rest of the Fields components
-    const disabled = inputProps && inputProps.disabled;
 
     const filteredResults = items.filter(({ value }) => this.searchMatch(value, inputValue || ''));
 
@@ -167,8 +175,9 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
               onFocus: () => {
                 openMenu();
               },
-              ...inputProps,
+              ...rest,
             })}
+            name={name}
             id={`text-id-${name}`}
             isValid={isValid}
             hasError={showError}

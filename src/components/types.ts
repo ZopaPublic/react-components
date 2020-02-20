@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, HTMLAttributes } from 'react';
+import { InputHTMLAttributes } from 'react';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -25,7 +25,14 @@ export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputEleme
   'data-automation'?: string;
 }
 
-export interface IField<T = HTMLDivElement> extends HTMLAttributes<T> {
+export interface ISelect extends IInputStatus, InputHTMLAttributes<HTMLSelectElement> {
+  /**
+   * Attribute used for testing porpuses
+   */
+  'data-automation'?: string;
+}
+
+export interface IField {
   /**
    * The text to be shown on the label. If this is not set it doesn't render the label.
    */
@@ -43,11 +50,7 @@ export interface IField<T = HTMLDivElement> extends HTMLAttributes<T> {
    */
   isValid?: boolean;
   /**
-   * Props for the native input element
+   * Input size
    */
-  inputProps: IInput;
-  /**
-   * Container size
-   */
-  size?: TContainerSizes;
+  inputSize?: TContainerSizes;
 }

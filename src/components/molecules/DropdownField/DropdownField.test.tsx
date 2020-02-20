@@ -9,7 +9,7 @@ describe('<DropdownField />', () => {
       <DropdownField
         label="Your cool dropdown ❤"
         errorMessage="You need to choose something!"
-        size="short"
+        inputSize="short"
         name="dropdown-field-default"
       >
         <option value="first" key="first">

@@ -5,9 +5,9 @@ import Text from '../../atoms/Text/Text';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import Dropdown from '../../atoms/Dropdown/Dropdown';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { IField } from '../../types';
+import { ISelect, IField } from '../../types';
 
-export interface IDropdownFieldProps extends IField<HTMLSelectElement> {
+export interface IDropdownFieldProps extends IField, ISelect {
   /**
    * Size attribute for the rendered HTML `<select>` element
    */
@@ -29,11 +29,11 @@ const Help = styled(Text)`
 `;
 
 const DropdownField = forwardRef<HTMLSelectElement, IDropdownFieldProps>(
-  ({ label, errorMessage, size, helpText, htmlSelectSize, name, ...rest }, ref) => (
+  ({ label, errorMessage, inputSize, helpText, htmlSelectSize, name, ...rest }, ref) => (
     <>
       {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
       {helpText && <Help size="small">{helpText}</Help>}
-      <SizedContainer size={size}>
+      <SizedContainer size={inputSize}>
         <Dropdown
           id={`text-id-${name}`}
           name={name}
