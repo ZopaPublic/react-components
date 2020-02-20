@@ -112,7 +112,7 @@ const RadioField: FC<IRadioField> = ({
 
   return (
     <FieldContainer className={className} size={inputSize}>
-      <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} type="radio" {...rest} />
+      <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} value={value} type="radio" {...rest} />
       <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
         {label}
       </Label>
