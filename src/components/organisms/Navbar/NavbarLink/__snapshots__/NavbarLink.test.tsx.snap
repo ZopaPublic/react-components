@@ -17,6 +17,8 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {
@@ -76,6 +78,8 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c0:hover {

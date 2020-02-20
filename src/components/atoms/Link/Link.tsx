@@ -21,6 +21,8 @@ const SLink = styled.a<ILinkProps>`
   text-decoration: none;
   user-select: auto;
   appearance: none;
+  padding: 0;
+  border: none;
 
   &:hover {
     opacity: 0.88;

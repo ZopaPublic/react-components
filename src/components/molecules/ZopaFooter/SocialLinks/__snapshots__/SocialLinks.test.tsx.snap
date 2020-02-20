@@ -85,6 +85,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c2:hover {
@@ -111,6 +113,8 @@ exports[`<SocialLinks /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c7:hover {

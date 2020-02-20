@@ -51,6 +51,8 @@ exports[`<Links /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c6:hover {
