@@ -91,7 +91,7 @@ const CheckboxField: React.FC<ICheckboxFieldProps> = props => {
 
   return (
     <SizedContainer size={inputSize} className={className}>
-      <Input id={`checkbox-id-${name}`} type="checkbox" {...rest} />
+      <Input id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
       <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
       {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </SizedContainer>
