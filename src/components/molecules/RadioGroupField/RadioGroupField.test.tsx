@@ -4,7 +4,7 @@ import { axe } from 'jest-axe';
 import RadioGroupField from './RadioGroupField';
 
 describe('<RadioGroupField />', () => {
-  it('should fire handle value change if it is not controlled', () => {
+  it('should handle value change if it is not controlled', () => {
     const onChange = jest.fn();
     const { getByLabelText } = render(
       <RadioGroupField
@@ -34,7 +34,7 @@ describe('<RadioGroupField />', () => {
     expect(labelTwo.checked).toEqual(true);
   });
 
-  it('should fire onChange with a correct value if is not controlled', () => {
+  it('should handle value change if it is controlled', () => {
     const ControlledRadioGroupField = () => {
       const [value, setValue] = useState('one');
       return (
