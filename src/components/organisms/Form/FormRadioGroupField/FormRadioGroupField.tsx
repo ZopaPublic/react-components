@@ -7,9 +7,9 @@ interface IFormRadioGroupFieldProps extends Omit<IRadioGroupFieldProps, 'onChang
 }
 
 const FormRadioGroupField = ({ name, ...rest }: IFormRadioGroupFieldProps) => {
-  const field = useFieldContext(name);
+  const { value, onChange } = useFieldContext(name);
 
-  return <RadioGroupField onChange={field.onChange} value={field.value} {...rest} />;
+  return <RadioGroupField onChange={onChange} value={value} {...rest} />;
 };
 
 export default FormRadioGroupField;
