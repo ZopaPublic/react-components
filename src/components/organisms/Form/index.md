@@ -7,7 +7,7 @@
 - [`<Form.DropdownField>`](#/Components/Organisms/Form/FormDropdownField)
 - [`<Form.DropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
 - [`<Form.CheckboxField>`](#/Components/Organisms/Form/FormCheckboxField)
-- [`<Form.RadioField>`](#/Components/Organisms/Form/FormRadioField)
+- [`<Form.RadioGroupField>`](#/Components/Organisms/Form/FormRadioGroupField)
 - [`<Form.Button>`](#/Components/Organisms/Form/FormButton)
 
 See the example below for more details.
@@ -63,9 +63,20 @@ const FormExample = () => (
         <option value="newspaper">Newspaper</option>
         <option value="socialMedia">Social media</option>
       </Form.DropdownField>
-      <Text fw="bold">Type</Text>
-      <Form.RadioField label="Investor" name="type" value="investor" />
-      <Form.RadioField label="Borrower" name="type" value="borrower" />
+      <Form.RadioGroupField
+        label="Type"
+        name="type"
+        items={[
+          {
+            value: 'investor',
+            label: 'Investor',
+          },
+          {
+            value: 'borrower',
+            label: 'Borrower',
+          },
+        ]}
+      />
       <Text fw="bold">Terms and conditions</Text>
       <Form.CheckboxField label="I accept" name="terms" />
       <Form.Button>Submit</Form.Button>
