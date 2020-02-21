@@ -16,7 +16,7 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    */
-  as?: 'span' | 'p' | 'legend';
+  as?: 'span' | 'p';
   /**
    * Whether to add some margin below the rendered text or not. Use it to give meaningful white-space.
    */
