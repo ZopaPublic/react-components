@@ -7,6 +7,11 @@ const RadioWrapper = styled.div`
   padding: 4px 0;
 `;
 
+const Label = styled(Text)`
+  display: block;
+  margin-bottom: 16px;
+`;
+
 interface IRadioGroupFieldItem {
   value: string;
   label: string;
@@ -40,7 +45,7 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
 
   return (
     <div>
-      <Text weight="semibold">{label}</Text>
+      <Label weight="semibold">{label}</Label>
       {items.map(item => (
         <RadioWrapper key={item.value}>
           <RadioField
