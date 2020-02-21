@@ -3,13 +3,24 @@ import styled from 'styled-components';
 import RadioField from '../RadioField/RadioField';
 import Text from '../../atoms/Text/Text';
 
-const RadioWrapper = styled.div`
-  padding: 4px 0;
+const Fieldset = styled.fieldset`
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
 `;
 
-const Label = styled(Text)`
-  display: block;
+const Legend = styled(Text).attrs({
+  as: 'legend',
+  weight: 'semibold',
+})`
+  padding: 0;
+  display: table;
   margin-bottom: 16px;
+`;
+
+const RadioWrapper = styled.div`
+  padding: 4px 0;
 `;
 
 interface IRadioGroupFieldItem {
@@ -44,8 +55,8 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
   };
 
   return (
-    <div>
-      <Label weight="semibold">{label}</Label>
+    <Fieldset>
+      <Legend>{label}</Legend>
       {items.map(item => (
         <RadioWrapper key={item.value}>
           <RadioField
@@ -57,7 +68,7 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
           />
         </RadioWrapper>
       ))}
-    </div>
+    </Fieldset>
   );
 };
 
