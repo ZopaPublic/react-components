@@ -34,7 +34,7 @@ describe('<RadioGroupField />', () => {
     expect(labelTwo.checked).toEqual(true);
   });
 
-  it('should fire onChange with a correct value if is not controlled', () => {
+  it('should not handle value change by itself if controlled', () => {
     const ControlledRadioGroupField = () => {
       const [value, setValue] = useState('one');
       return (
