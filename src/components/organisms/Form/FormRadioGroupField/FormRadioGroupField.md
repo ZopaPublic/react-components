@@ -7,7 +7,7 @@
 ```js
 import { Form } from '@zopauk/react-components';
 
-<Form initialValues={{ employmentType: '' }} onSubmit={values => alert(JSON.stringify(values))}>
+<Form initialValues={{ employment: '' }} onSubmit={values => alert(JSON.stringify(values))}>
   <Form.Form>
     <div style={{ marginBottom: '16px' }}>
       <Form.RadioGroupField
