@@ -5,6 +5,7 @@ import FormButton from './FormButton/FormButton';
 import FormTextField from './FormTextField/FormTextField';
 import FormCheckboxField from './FormCheckboxField/FormCheckboxField';
 import FormRadioField from './FormRadioField/FormRadioField';
+import FormRadioGroupField from './FormRadioGroupField/FormRadioGroupField';
 import FormDropdownField from './FormDropdownField/FormDropdownField';
 import FormDropdownFilteredField from './FormDropdownFilteredField/FormDropdownFilteredField';
 import FormComponent from './Form/Form';
@@ -16,6 +17,7 @@ interface IFormStatic {
   DropdownFilteredField: typeof FormDropdownFilteredField;
   Form: typeof FormComponent;
   RadioField: typeof FormRadioField;
+  RadioGroupField: typeof FormRadioGroupField;
   TextField: typeof FormTextField;
 }
 
@@ -35,6 +37,7 @@ Form.DropdownField = FormDropdownField;
 Form.DropdownFilteredField = FormDropdownFilteredField;
 Form.Form = FormComponent;
 Form.RadioField = FormRadioField;
+Form.RadioGroupField = FormRadioGroupField;
 Form.TextField = FormTextField;
 
 export * from './hooks';
