@@ -5,16 +5,17 @@ It should be used within `<Fieldset />` element for accessibility reasons.
 
 ### Examples
 
-- Grouping checkmarks
+- Label for grouped checkmarks
 
 ```js
 import { Legend, Fieldset, CheckboxField, Text } from '@zopauk/react-components';
 
 <Fieldset>
   <Legend>
-    <Text weight="semibold">Which cuisine do you prefer?</Text>
+    <Text weight="semibold">Which cuisine do you like?</Text>
   </Legend>
   <CheckboxField label="italian" name="italian" />
   <CheckboxField label="polish" name="polish" />
+  <CheckboxField label="greek" name="greek" />
 </Fieldset>;
 ```

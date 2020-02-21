@@ -27,6 +27,7 @@ export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';
 export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
+export { default as Legend } from './components/atoms/Legend/Legend';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';

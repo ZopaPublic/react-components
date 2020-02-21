@@ -5,7 +5,7 @@ It should be used along with `<Legend />` element for accessibility reasons.
 
 ### Examples
 
-- Label for grouped checkmarks
+- Grouping checkmarks
 
 ```js
 import { Fieldset, CheckboxField, Legend, Text } from '@zopauk/react-components';

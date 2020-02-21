@@ -1,23 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import RadioField from '../RadioField/RadioField';
+import Fieldset from '../../atoms/Fieldset/Fieldset';
+import Legend from '../../atoms/Legend/Legend';
 import Text from '../../atoms/Text/Text';
-
-const Fieldset = styled.fieldset`
-  border: 0;
-  padding: 0.01em 0 0 0;
-  margin: 0;
-  min-width: 0;
-`;
-
-const Legend = styled(Text).attrs({
-  as: 'legend',
-  weight: 'semibold',
-})`
-  padding: 0;
-  display: table;
-  margin-bottom: 16px;
-`;
 
 const RadioWrapper = styled.div`
   padding: 4px 0;
@@ -56,7 +42,9 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
 
   return (
     <Fieldset>
-      <Legend>{label}</Legend>
+      <Legend>
+        <Text weight="semibold">{label}</Text>
+      </Legend>
       {items.map(item => (
         <RadioWrapper key={item.value}>
           <RadioField
