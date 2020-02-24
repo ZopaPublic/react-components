@@ -1666,9 +1666,9 @@
     "@types/react" "*"
 
 "@types/react-modal@^3.10.2":
-  version "3.10.4"
-  resolved "https://registry.yarnpkg.com/@types/react-modal/-/react-modal-3.10.4.tgz#ab85b9e1e15c52364d4cbfc32d4d4500c84d88cf"
-  integrity sha512-Sd89N8z+UAzHtbPHW+zB97UgEhIVcYhQxscX21r3pxMLpZJwvjReGmH4omKxWYPv84vF8MQNZZEw+JkX91ZUzA==
+  version "3.10.5"
+  resolved "https://registry.yarnpkg.com/@types/react-modal/-/react-modal-3.10.5.tgz#5aa40bcb71b59243126069330856eb430ed3adcc"
+  integrity sha512-iLL9afYbcgYlboW2J8mFNKH2tFgErIHR0q+JgHotKrFK99+d97v+V/dxL5LVoxt1OjlnWsuwj8sZuBMVsI1MtQ==
   dependencies:
     "@types/react" "*"
 
@@ -1686,18 +1686,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "16.9.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.19.tgz#c842aa83ea490007d29938146ff2e4d9e4360c40"
-  integrity sha512-LJV97//H+zqKWMms0kvxaKYJDG05U2TtQB3chRLF8MPNs+MQh/H1aGlyDUxjaHvu08EAGerdX2z4LTBc7ns77A==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
-
-"@types/react@16.9.20":
-  version "16.9.20"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.20.tgz#e83285766340fb1a7fafe7e5c4708c53832e3641"
-  integrity sha512-jRrWBr25zzEVNa4QbESKLPluvrZ3W6Odfwrfe2F5vzbrDuNvlpnHa/xbZcXg8RH5D4CE181J5VxrRrLvzRH+5A==
+"@types/react@*", "@types/react@^16.9.22":
+  version "16.9.22"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.22.tgz#f0288c92d94e93c4b43e3f5633edf788b2c040ae"
+  integrity sha512-7OSt4EGiLvy0h5R7X+r0c7S739TCU/LvWbkNOrm10lUwNHe7XPz5OLhLOSZeCkqO9JSCly1NkYJ7ODTUqVnHJQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -4533,7 +4525,12 @@ cssstyle@^2.1.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^2.2.0, csstype@^2.6.5:
+csstype@^2.2.0:
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
+  integrity sha512-xz39Sb4+OaTsULgUERcCk+TJj8ylkL4aSVDQiX/ksxbELSqwkgt4d4RD7fovIdgJGSuNYqwZEiVjYY5l0ask+Q==
+
+csstype@^2.6.5:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
   integrity sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
@@ -14461,9 +14458,9 @@ styled-components@4.4.1:
     supports-color "^5.5.0"
 
 styled-normalize@^8.0.6:
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-8.0.6.tgz#f27f87292f46aa79ad6db6339aff5db529df3c91"
-  integrity sha512-tOnAD1+wV04aiVy6chaQA4u/EtkGiGZPlIBYvEfWlZQBrDqRhu9EdPyXlFzLWxpOmANoQelJqSOMlV3QNCDKkw==
+  version "8.0.7"
+  resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-8.0.7.tgz#e883bff6a0c59a65a39365a4eb9c6cf48372c61f"
+  integrity sha512-qQV4O7B9g7ZUnStCwGde7Dc/mcFF/pz0Ha/LL7+j/r6uopf6kJCmmR7jCPQMCBrDkYiQ4xvw1hUoceVJkdaMuQ==
 
 stylehacks@^4.0.0:
   version "4.0.3"
