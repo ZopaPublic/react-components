@@ -34,6 +34,41 @@ describe('<RadioGroupField />', () => {
     expect(labelTwo.checked).toEqual(true);
   });
 
+  it('should not change value if it is disabled', () => {
+    const onChange = jest.fn();
+    const { getByLabelText } = render(
+      <RadioGroupField
+        disabled
+        label="label"
+        onChange={onChange}
+        items={[
+          {
+            value: 'one',
+            label: 'label one',
+          },
+          {
+            value: 'two',
+            label: 'label two',
+          },
+        ]}
+      />,
+    );
+    const labelOne: any = getByLabelText('label one');
+    const labelTwo: any = getByLabelText('label two');
+    expect(labelOne.checked).toEqual(false);
+    expect(labelTwo.checked).toEqual(false);
+
+    fireEvent.click(labelOne);
+    expect(onChange).not.toHaveBeenCalledWith('two');
+    expect(labelOne.checked).toEqual(false);
+    expect(labelOne.checked).toEqual(false);
+
+    fireEvent.click(labelTwo);
+    expect(onChange).not.toHaveBeenCalledWith('two');
+    expect(labelOne.checked).toEqual(false);
+    expect(labelTwo.checked).toEqual(false);
+  });
+
   it('should handle value change if it is controlled', () => {
     const ControlledRadioGroupField = () => {
       const [value, setValue] = useState('one');

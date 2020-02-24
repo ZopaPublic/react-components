@@ -32,10 +32,12 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
   const isControlled = !!value;
 
   const handleChange = (value: string) => () => {
-    if (!isControlled) {
-      setInnerValue(value);
+    if (!disabled) {
+      if (!isControlled) {
+        setInnerValue(value);
+      }
+      onChange(value);
     }
-    onChange(value);
   };
 
   return (
