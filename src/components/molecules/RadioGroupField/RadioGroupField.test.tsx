@@ -59,7 +59,7 @@ describe('<RadioGroupField />', () => {
     expect(labelTwo.checked).toEqual(false);
 
     fireEvent.click(labelOne);
-    expect(onChange).not.toHaveBeenCalledWith('two');
+    expect(onChange).not.toHaveBeenCalledWith('one');
     expect(labelOne.checked).toEqual(false);
     expect(labelOne.checked).toEqual(false);
 
