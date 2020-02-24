@@ -25,11 +25,9 @@ export interface IRadioGroupFieldProps {
 }
 
 const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGroupFieldProps) => {
-  const defaultItem = items.find(({ defaultChecked }) => defaultChecked);
+  const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
-  const [innerValue, setInnerValue] = useState(
-    defaultItem && defaultItem.defaultChecked ? defaultItem.value : undefined,
-  );
+  const [innerValue, setInnerValue] = useState(defaultValue);
 
   const isControlled = !!value;
 
