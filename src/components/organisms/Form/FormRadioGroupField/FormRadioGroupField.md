@@ -1,6 +1,8 @@
 ### Summary
 
-`<Form.RadioGroupField>` is just a small wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.RadioGroupField>` already handles value change.
+`<Form.RadioGroupField>` is just a small wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component.
+It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<Form.RadioGroupField>` already handles value change.
 
 ### Example
 
