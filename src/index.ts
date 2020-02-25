@@ -26,6 +26,8 @@ export { default as InputLabel } from './components/atoms/InputLabel/InputLabel'
 export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';
+export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
+export { default as Legend } from './components/atoms/Legend/Legend';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
@@ -35,6 +37,7 @@ export { default as Help } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as RadioField } from './components/molecules/RadioField/RadioField';
+export { default as RadioGroupField } from './components/molecules/RadioGroupField/RadioGroupField';
 export { default as TextField } from './components/molecules/TextField/TextField';
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
 

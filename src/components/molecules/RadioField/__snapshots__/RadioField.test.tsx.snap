@@ -30,6 +30,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   color: #0D0A38;
   font-weight: 400;
   position: relative;
+  margin-bottom: 0;
 }
 
 .c3:before {

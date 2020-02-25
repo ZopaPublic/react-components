@@ -2,31 +2,27 @@ import React from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
 import { Form } from '..';
 
-interface IForm {
-  employmentType: string;
-}
-
 const onSubmit = jest.fn();
-
 const buttonLabel = 'Continue';
-const errorMessage = 'You need to pick one';
-
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
-
-  if (!values.employmentType) {
-    errors.employmentType = errorMessage;
-  }
-
-  return errors;
-};
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ employmentType: '' }} validate={validate} onSubmit={onSubmit}>
+    <Form initialValues={{ employment: '' }} onSubmit={onSubmit}>
       <Form.Form>
-        <Form.RadioField label="Employed" name="employmentType" value="employed" />
-        <Form.RadioField label="Unemployed" name="employmentType" value="unemployed" />
+        <Form.RadioGroupField
+          label="Employment"
+          name="employment"
+          items={[
+            {
+              value: 'employed',
+              label: 'Employed',
+            },
+            {
+              value: 'unemployed',
+              label: 'Unemployed',
+            },
+          ]}
+        />
         <Form.Button disabled={false}>{buttonLabel}</Form.Button>
       </Form.Form>
     </Form>,
@@ -42,6 +38,6 @@ describe('<Form.RadioField />', () => {
       fireEvent.click(getByText(buttonLabel));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ employmentType: 'employed' });
+    expect(onSubmit).toHaveBeenCalledWith({ employment: 'employed' });
   });
 });

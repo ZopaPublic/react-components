@@ -67,18 +67,3 @@ import { RadioField } from '@zopauk/react-components';
   defaultChecked={true}
 />;
 ```
-
-- Multiple choices
-
-```jsx
-import { RadioField } from '@zopauk/react-components';
-
-<>
-  <RadioField label="Apple 🍏" value="apple" name="apple-choice" />
-  <RadioField label="Avocado 🥑" value="avocado" name="avocado-choice" />
-  <RadioField label="Chilly 🌶" value="chilly" name="chilly-choice" />
-  <RadioField label="Sweet Potato 🍠" value="potato" name="potato-choice" />
-  <RadioField label="Kiwi 🥝" value="kiwi" name="kiwi-choice" />
-  <RadioField label="Watermelon 🍉" value="watermelon" name="watermelon-choice" />
-</>;
-```

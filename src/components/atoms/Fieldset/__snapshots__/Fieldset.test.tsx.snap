@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Fieldset /> renders the component with no a11y violations 1`] = `
+.c0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+
+<fieldset
+  class="c0"
+/>
+`;
