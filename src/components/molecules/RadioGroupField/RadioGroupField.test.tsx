@@ -53,20 +53,24 @@ describe('<RadioGroupField />', () => {
         ]}
       />,
     );
-    const labelOne: any = getByLabelText('label one');
+    const labelOne = getByLabelText('label one');
     const labelTwo: any = getByLabelText('label two');
-    expect(labelOne.checked).toEqual(false);
-    expect(labelTwo.checked).toEqual(false);
 
-    fireEvent.click(labelOne);
-    expect(onChange).not.toHaveBeenCalledWith('one');
-    expect(labelOne.checked).toEqual(false);
-    expect(labelOne.checked).toEqual(false);
+    if (labelOne instanceof HTMLInputElement && labelTwo instanceof HTMLInputElement) {
+      expect(labelOne.checked).toEqual(false);
+      expect(labelTwo.checked).toEqual(false);
+      fireEvent.click(labelOne);
+      expect(onChange).not.toHaveBeenCalledWith('one');
+      expect(labelOne.checked).toEqual(false);
+      expect(labelOne.checked).toEqual(false);
 
-    fireEvent.click(labelTwo);
-    expect(onChange).not.toHaveBeenCalledWith('two');
-    expect(labelOne.checked).toEqual(false);
-    expect(labelTwo.checked).toEqual(false);
+      fireEvent.click(labelTwo);
+      expect(onChange).not.toHaveBeenCalledWith('two');
+      expect(labelOne.checked).toEqual(false);
+      expect(labelTwo.checked).toEqual(false);
+    } else {
+      throw new Error('expected labelOne and labelTwo to be html input elements');
+    }
   });
 
   it('should handle value change if it is controlled', () => {
