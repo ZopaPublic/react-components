@@ -27,9 +27,7 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const Help = styled(Text).attrs({
-  size: 'small',
-})`
+const HelpText = styled(Text)`
   margin-bottom: 5px;
   display: block;
 `;
@@ -42,7 +40,7 @@ const DropdownField = forwardRef<HTMLSelectElement, IDropdownFieldProps>(
           {label}
         </Label>
       )}
-      {helpText && <Help size="small">{helpText}</Help>}
+      {helpText && <HelpText size="small">{helpText}</HelpText>}
       <SizedContainer size={size}>
         <Dropdown
           id={`text-id-${name}`}

@@ -87,7 +87,7 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const CheckboxField: React.FC<Omit<IField, 'helpText'>> = props => {
+const CheckboxField = (props: Omit<IField, 'helpText'>) => {
   const { label, inputProps, errorMessage, size, ...rest } = props;
   const { name } = inputProps;
 

@@ -19,7 +19,7 @@ const Input = styled.input<IInput>`
     transition: border 0.2s;
   }
 
-  ::-webkit-input-placeholder {
+  ::placeholder {
     color: ${colors.neutral.medium};
   }
 

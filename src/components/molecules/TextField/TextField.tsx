@@ -29,7 +29,7 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const Help = styled(Text).attrs({
+const HelpText = styled(Text).attrs({
   size: 'small',
 })`
   margin-bottom: 5px;
@@ -88,7 +88,7 @@ const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
             {label}
           </Label>
         )}
-        {helpText && <Help size="small">{helpText}</Help>}
+        {helpText && <HelpText size="small">{helpText}</HelpText>}
         <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
         {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
       </>
