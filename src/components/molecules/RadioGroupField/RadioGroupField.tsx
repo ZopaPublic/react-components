@@ -6,7 +6,7 @@ import Legend from '../../atoms/Legend/Legend';
 import Text from '../../atoms/Text/Text';
 
 const RadioWrapper = styled.div`
-  padding: 4px 0;
+  margin-bottom: 16px;
 `;
 
 interface IRadioGroupFieldItem extends HTMLAttributes<HTMLInputElement> {
