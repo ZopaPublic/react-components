@@ -52,6 +52,7 @@ const Label = styled(InputLabel)`
   color: ${colors.neutral.dark};
   position: relative;
   user-select: none;
+  margin-bottom: 0;
 
   &:before {
     content: '';
@@ -82,18 +83,24 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const CheckboxField: React.FC<IField> = props => {
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
+
+const CheckboxField: React.FC<Omit<IField, 'helpText'>> = props => {
   const { label, inputProps, errorMessage, size, ...rest } = props;
   const { name } = inputProps;
 
   if (!name) throw Error('Name must be set in inputProps. Check the docs.');
 
   return (
-    <SizedContainer size={size} {...rest}>
-      <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />
-      <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
-      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
-    </SizedContainer>
+    <>
+      <SizedContainer size={size} {...rest}>
+        <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />
+        <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
+      </SizedContainer>
+      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+    </>
   );
 };
 

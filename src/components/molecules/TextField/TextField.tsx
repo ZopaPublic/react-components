@@ -17,23 +17,19 @@ export interface IPrefixProps {
   prefix: string;
 }
 
-export interface IContainerProps {
-  withError?: boolean;
-}
-
 export interface ILabelProps {
   withHelpText?: boolean;
 }
-
-const Container = styled(SizedContainer)<IContainerProps>`
-  ${({ withError }) => withError && `margin-bottom: 5px;`}
-`;
 
 const Label = styled(InputLabel)<ILabelProps>`
   ${({ withHelpText }) => withHelpText && `margin-bottom: 0;`}
 `;
 
-const HelpText = styled(Text).attrs({
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
+
+const Help = styled(Text).attrs({
   size: 'small',
 })`
   margin-bottom: 5px;
@@ -92,11 +88,9 @@ const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
             {label}
           </Label>
         )}
-        {helpText && <HelpText size="small">{helpText}</HelpText>}
-        <Container withError={!!errorMessage} size={size}>
-          {prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}
-        </Container>
-        {errorMessage && <ErrorMessage data-automation={`ZA.error-${name}`}>{errorMessage}</ErrorMessage>}
+        {helpText && <Help size="small">{helpText}</Help>}
+        <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
+        {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
       </>
     );
   },

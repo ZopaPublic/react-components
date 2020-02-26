@@ -15,23 +15,33 @@ export interface IDropdownFieldProps extends IField<HTMLSelectElement> {
   name: string;
 }
 
+export interface ILabelProps {
+  withHelpText?: boolean;
+}
+
+const Label = styled(InputLabel)<ILabelProps>`
+  ${({ withHelpText }) => withHelpText && `margin-bottom: 0;`}
+`;
+
 const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const Label = styled(InputLabel)`
+const Help = styled(Text).attrs({
+  size: 'small',
+})`
   margin-bottom: 5px;
-`;
-
-const Help = styled(Text)`
-  margin-bottom: 10px;
   display: block;
 `;
 
 const DropdownField = forwardRef<HTMLSelectElement, IDropdownFieldProps>(
   ({ label, errorMessage, size, helpText, htmlSelectSize, name, ...rest }, ref) => (
     <>
-      {label && <Label htmlFor={`text-id-${name}`}>{label}</Label>}
+      {label && (
+        <Label withHelpText={!!helpText} htmlFor={`text-id-${name}`}>
+          {label}
+        </Label>
+      )}
       {helpText && <Help size="small">{helpText}</Help>}
       <SizedContainer size={size}>
         <Dropdown

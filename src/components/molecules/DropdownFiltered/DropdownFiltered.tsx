@@ -95,7 +95,6 @@ const Options = styled.div<IOptionsListProps>`
 
 const SearchInputWrap = styled.div`
   position: relative;
-  margin: 5px 0;
 `;
 
 const SearchArrowWrap = styled.div`
@@ -105,6 +104,10 @@ const SearchArrowWrap = styled.div`
   right: 12px;
   cursor: pointer;
   display: flex;
+`;
+
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
 `;
 
 export default class DropdownFiltered extends React.PureComponent<IDropdownFilteredProps> {
@@ -208,7 +211,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
             </Options>
           )}
         </SearchInputWrap>
-        {showError && <ErrorMessage data-automation={`ZA.error-${name}`}>{errorMessage}</ErrorMessage>}
+        {showError && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
       </div>
     );
   };

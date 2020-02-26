@@ -60,7 +60,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c2 {
   position: relative;
-  margin: 5px 0;
 }
 
 .c5 {
@@ -174,7 +173,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c1 {
   position: relative;
-  margin: 5px 0;
 }
 
 .c4 {

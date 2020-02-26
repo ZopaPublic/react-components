@@ -17,6 +17,11 @@ const zoomIn = keyframes`
 
 const FieldContainer = styled(SizedContainer)`
   position: relative;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const Label = styled(InputLabel)<IInputStatus>`
@@ -25,6 +30,7 @@ const Label = styled(InputLabel)<IInputStatus>`
   color: ${colors.neutral.dark};
   font-weight: 400;
   position: relative;
+  margin-bottom: 0;
 
   &:before {
     content: '';

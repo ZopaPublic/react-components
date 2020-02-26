@@ -59,6 +59,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-bottom: 0;
 }
 
 .c2:before {
