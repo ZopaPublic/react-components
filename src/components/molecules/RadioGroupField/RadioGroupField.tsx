@@ -44,14 +44,15 @@ const RadioGroupField = ({ items, label, onChange, value, disabled, className }:
       <Legend>
         <Text weight="semibold">{label}</Text>
       </Legend>
-      {items.map(item => (
-        <RadioWrapper key={item.value}>
+      {items.map(({ value, label, ...rest }) => (
+        <RadioWrapper key={value}>
           <RadioField
             disabled={disabled}
-            value={item.value}
-            onChange={handleChange(item.value)}
-            label={item.label}
-            checked={isControlled ? value === item.value : innerValue === item.value}
+            value={value}
+            onChange={handleChange(value)}
+            label={label}
+            checked={isControlled ? value === value : innerValue === value}
+            {...rest}
           />
         </RadioWrapper>
       ))}
