@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import RadioField from '../RadioField/RadioField';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
@@ -9,11 +9,9 @@ const RadioWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface IRadioGroupFieldItem {
+interface IRadioGroupFieldItem extends HTMLAttributes<HTMLInputElement> {
   value: string;
   label: string;
-  defaultChecked?: boolean;
-  disabled?: boolean;
 }
 
 export interface IRadioGroupFieldProps {
@@ -22,9 +20,10 @@ export interface IRadioGroupFieldProps {
   onChange: (value: string) => void;
   disabled?: boolean;
   value?: string;
+  className?: string;
 }
 
-const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGroupFieldProps) => {
+const RadioGroupField = ({ items, label, onChange, value, disabled, className }: IRadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
   const [innerValue, setInnerValue] = useState(defaultValue);
@@ -41,7 +40,7 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
   };
 
   return (
-    <Fieldset>
+    <Fieldset className={className}>
       <Legend>
         <Text weight="semibold">{label}</Text>
       </Legend>
