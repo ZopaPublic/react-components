@@ -31,7 +31,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 "
 >
   <input
     aria-label="test1"
@@ -44,7 +44,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 `;
 
 exports[`<TextField /> renders the component with error 1`] = `
-.c1 {
+.c2 {
   border: 2px solid #EE0505;
   border-radius: 4px;
   padding: 0 10px;
@@ -53,18 +53,18 @@ exports[`<TextField /> renders the component with error 1`] = `
   width: 100%;
 }
 
-.c1:focus {
+.c2:focus {
   outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #DCDBE2;
 }
 
-.c1:disabled {
+.c2:disabled {
   background-color: #EAEAEE;
 }
 
@@ -73,12 +73,16 @@ exports[`<TextField /> renders the component with error 1`] = `
   width: 100%;
 }
 
+.c1 {
+  margin-bottom: 5px;
+}
+
 <div
-  class="c0"
+  class="c0 c1"
 >
   <input
     aria-label="test1"
-    class="c1"
+    class="c2"
     id="text-id-test1"
     name="test1"
     type="text"
@@ -99,7 +103,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 <label
@@ -123,7 +127,6 @@ exports[`<TextField /> renders the component with label 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   font-size: 16px;
-  margin-bottom: 5px;
 }
 
 <label
@@ -165,7 +168,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 "
 >
   <input
     aria-label="test1"
@@ -235,7 +238,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 "
 >
   <span
     class="c1"
@@ -283,7 +286,7 @@ exports[`<TextField /> renders the component with size 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 "
 >
   <input
     aria-label="test1"
