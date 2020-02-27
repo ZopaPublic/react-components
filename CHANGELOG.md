@@ -1,3 +1,11 @@
+## [2.11.3](https://github.com/zopaUK/react-components/compare/v2.11.2...v2.11.3) (2020-02-27)
+
+
+### Bug Fixes
+
+* ***-field:** adjust spacing ([01689cf](https://github.com/zopaUK/react-components/commit/01689cfaf98c0365252b4f3db760067a6a7d6a4a))
+* **text-field:** adjust childs spacing ([bc9b31a](https://github.com/zopaUK/react-components/commit/bc9b31ae02177b5a67199ea13d42e962196cc9ab))
+
 ## [2.11.2](https://github.com/zopaUK/react-components/compare/v2.11.1...v2.11.2) (2020-02-18)
 
 
