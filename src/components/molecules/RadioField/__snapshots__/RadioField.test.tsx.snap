@@ -8,6 +8,11 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c1 {
   position: relative;
+  margin-bottom: 10px;
+}
+
+.c1:last-of-type {
+  margin-bottom: 0;
 }
 
 .c3 {
@@ -30,6 +35,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   color: #0D0A38;
   font-weight: 400;
   position: relative;
+  margin-bottom: 0;
 }
 
 .c3:before {
