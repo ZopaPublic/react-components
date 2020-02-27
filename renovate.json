@@ -2,7 +2,7 @@
   "extends": ["config:base"],
   "commitBodyTable": true,
   "prConcurrentLimit": 6,
-  "ignoreDeps": ["@types/jest-axe", "@types/jest", "react-scripts"],
+  "ignoreDeps": ["@types/jest-axe", "@types/jest", "@types/react", "react-scripts"],
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "pin", "digest"],

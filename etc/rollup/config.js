@@ -6,7 +6,7 @@ import url from 'rollup-plugin-url';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
-import json from '@rollup/plugin-json';
+import css from 'rollup-plugin-css-only';
 
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
 
@@ -48,5 +48,6 @@ export default {
       emitFiles: true, // defaults to true
     }),
     terser(),
+    css(),
   ],
 };
