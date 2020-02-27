@@ -1,3 +1,10 @@
+## [2.11.4](https://github.com/zopaUK/react-components/compare/v2.11.3...v2.11.4) (2020-02-27)
+
+
+### Bug Fixes
+
+* **input-text:** adjust placeholder styles ([b683a49](https://github.com/zopaUK/react-components/commit/b683a49e1873edcfbbffc005f0df94bfe9b3794b))
+
 ## [2.11.3](https://github.com/zopaUK/react-components/compare/v2.11.2...v2.11.3) (2020-02-27)
 
 
