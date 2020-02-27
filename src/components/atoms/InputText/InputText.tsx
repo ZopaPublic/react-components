@@ -19,8 +19,11 @@ const Input = styled.input<IInput>`
     transition: border 0.2s;
   }
 
-  ::placeholder {
+  &::placeholder {
+    /* Firefox applies by default 0.5 opacity to the placeholder, 'normalize.css' stopped normalising this due to a Microsoft Edge bug */
+    /* @see https://github.com/necolas/normalize.css/issues/741  */
     color: ${colors.neutral.medium};
+    opacity: 1;
   }
 
   &:disabled {
