@@ -19,18 +19,22 @@ exports[`<InputText /> renders the component disabled 1`] = `
 
 .c0::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::-moz-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:disabled {
@@ -63,18 +67,22 @@ exports[`<InputText /> renders the component with error 1`] = `
 
 .c0::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::-moz-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:disabled {
@@ -106,18 +114,22 @@ exports[`<InputText /> renders the component with focus 1`] = `
 
 .c0::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::-moz-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:disabled {
@@ -149,18 +161,22 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 
 .c0::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::-moz-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:disabled {
@@ -192,18 +208,22 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 
 .c0::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::-moz-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0::placeholder {
   color: #DCDBE2;
+  opacity: 1;
 }
 
 .c0:disabled {
