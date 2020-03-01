@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { useForm, TValues, TErrors } from './useForm';
+import { useForm, TFormValues, TFormErrors } from './useForm';
 
 const initialValues = {
   name: 'name',
@@ -8,8 +8,8 @@ const initialValues = {
 };
 const errorMessage = 'required';
 const onSubmit = jest.fn();
-const validate = (values: TValues) => {
-  const errors: TErrors = {};
+const validate = (values: TFormValues) => {
+  const errors: TFormErrors = {};
   if (values.name === '') {
     errors.name = errorMessage;
   }
@@ -33,7 +33,7 @@ describe('useForm', () => {
       }),
     );
 
-    ['getFieldProps', 'invalid', 'handleSubmit'].forEach(property => {
+    ['getFieldProps', 'invalid', 'handleSubmit', 'touched', 'initialValues'].forEach(property => {
       expect(result.current).toHaveProperty(property);
     });
   });

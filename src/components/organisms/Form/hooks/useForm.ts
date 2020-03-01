@@ -26,6 +26,7 @@ export interface IUseFormValues {
   invalid: boolean;
   errors: TFormErrors;
   touched: TFormTouched;
+  initialValues: TFormValues;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
@@ -85,5 +86,6 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
     handleSubmit,
     errors,
     touched,
+    initialValues,
   };
 };
