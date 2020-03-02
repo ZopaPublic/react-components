@@ -1,8 +1,8 @@
 import React from 'react';
 import Tippy, { TippyProps } from '@tippy.js/react';
+import TooltipStyles from './TooltipStyles/TooltipStyles';
 
-import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/shift-toward.css';
+Tooltip.Styles = TooltipStyles;
 
 export default function Tooltip({ children, ...config }: Omit<TippyProps, 'animation' | 'theme' | 'flipOnUpdate'>) {
   return (

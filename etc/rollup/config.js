@@ -1,4 +1,5 @@
 import path from 'path';
+import pkg from '../../package.json';
 
 // Plugins
 import customResolveOptions from 'rollup-plugin-node-resolve';
@@ -7,8 +8,6 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
-
-const pkg = require(path.resolve(process.cwd(), 'package.json'));
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -31,7 +30,6 @@ export default {
   preserveModules: true,
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
-    json(),
     customResolveOptions({ extensions }),
     babel({
       presets: [['react-app', { flow: false, typescript: true }]],
@@ -48,6 +46,6 @@ export default {
       emitFiles: true, // defaults to true
     }),
     terser(),
-    css(),
+    css({ output: 'tooltip.css' }),
   ],
 };
