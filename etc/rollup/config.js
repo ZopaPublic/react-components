@@ -7,7 +7,7 @@ import url from 'rollup-plugin-url';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
-import css from 'rollup-plugin-css-only';
+import postcss from 'rollup-plugin-postcss';
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -46,6 +46,6 @@ export default {
       emitFiles: true, // defaults to true
     }),
     terser(),
-    css({ output: 'tooltip.css' }),
+    postcss({ extract: true, minimize: true }),
   ],
 };
