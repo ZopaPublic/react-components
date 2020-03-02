@@ -7,7 +7,7 @@ export type TFormTouched = Record<string, boolean>;
 
 export interface IUseFormProps {
   initialValues: TFormValues;
-  onSubmit: (values: TFormValues) => void;
+  onSubmit?: (values: TFormValues) => void;
   onChange?: (values: TFormValues) => void;
   validate?: (values: TFormValues) => TFormErrors;
 }
@@ -26,6 +26,7 @@ export interface IUseFormValues {
   invalid: boolean;
   errors: TFormErrors;
   touched: TFormTouched;
+  initialValues: TFormValues;
 }
 
 export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFormProps): IUseFormValues => {
@@ -72,7 +73,7 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
           {},
         ),
       );
-      if (!invalid) {
+      if (!invalid && onSubmit) {
         onSubmit(values);
       }
     },
@@ -85,5 +86,6 @@ export const useForm = ({ initialValues, validate, onSubmit, onChange }: IUseFor
     handleSubmit,
     errors,
     touched,
+    initialValues,
   };
 };
