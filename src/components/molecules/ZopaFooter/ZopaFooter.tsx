@@ -9,7 +9,7 @@ import SocialLinks from './SocialLinks/SocialLinks';
 import Wrapper from './Wrapper/Wrapper';
 import { colors } from '../../../constants/colors';
 
-const StyledWrapper = styled.div`
+const Footer = styled.footer`
   background-color: ${colors.neutral.dark};
   padding: 40px 0;
 `;
@@ -27,7 +27,7 @@ export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const ZopaFooter = ({ legalOnly = false, baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
-  <StyledWrapper id="zopa-footer" {...rest}>
+  <Footer {...rest}>
     <FlexContainer gutter={16}>
       {legalOnly || (
         <>
@@ -42,7 +42,7 @@ const ZopaFooter = ({ legalOnly = false, baseUrl = 'https://www.zopa.com', ...re
       )}
       <Legal />
     </FlexContainer>
-  </StyledWrapper>
+  </Footer>
 );
 
 ZopaFooter.defaultProps = {
