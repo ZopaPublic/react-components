@@ -1,6 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
+import { getGlobalStyleTags } from '../../../helpers/test/styles';
 import Tooltip from './Tooltip';
 
 describe('<Tooltip />', () => {
@@ -14,5 +15,12 @@ describe('<Tooltip />', () => {
     expect(container.firstChild).toMatchSnapshot();
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
+  });
+
+  it('allows to set global styles', () => {
+    render(<Tooltip.Styles />);
+
+    const [globalModalStyles] = getGlobalStyleTags();
+    expect(globalModalStyles).toMatchSnapshot();
   });
 });
