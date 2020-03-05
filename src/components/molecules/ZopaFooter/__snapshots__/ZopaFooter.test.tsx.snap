@@ -61,9 +61,8 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   }
 }
 
-<div
+<footer
   class="c0"
-  id="zopa-footer"
 >
   <div
     class="c1"
@@ -90,7 +89,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
       </p>
     </div>
   </div>
-</div>
+</footer>
 `;
 
 exports[`<ZopaFooter /> renders the component with default props 1`] = `
@@ -458,9 +457,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   }
 }
 
-<div
+<footer
   class="c0"
-  id="zopa-footer"
 >
   <div
     class="c1"
@@ -961,5 +959,5 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
       </p>
     </div>
   </div>
-</div>
+</footer>
 `;
