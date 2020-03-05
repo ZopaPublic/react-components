@@ -15,7 +15,7 @@ function readViewport() {
   };
 }
 
-export function useViewport({ timeout = 300 }: IUseViewportOptions) {
+export function useViewport({ timeout = 300 }: IUseViewportOptions = {}) {
   const [size, setSize] = useState(readViewport());
   const onResize = throttle(() => setSize(readViewport()), timeout);
 

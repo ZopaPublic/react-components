@@ -8,12 +8,12 @@ It can be useful for conditional rendering, which is usually prefered over hidin
 
 ```js
 import React from 'react';
-import { useViewport, Text } from '@zopauk/react-components';
+import { useViewport, Text, breakpoints } from '@zopauk/react-components';
 
 function Example() {
   const { width } = useViewport();
 
-  return <Text size="lead">{width > 900 ? '🍅 Tomato!' : '🥔 Potato!'}</Text>;
+  return <Text size="lead">{width > breakpoints.tablet ? '🍅 Tomato!' : '🥔 Potato!'}</Text>;
 }
 
 <Example />;
