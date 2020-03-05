@@ -2,8 +2,7 @@ import { css } from 'styled-components';
 
 export type TDeviceSizes = 'tablet' | 'phone' | 'desktop';
 
-// TODO: Consider the breakpoints defined by google's material design https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
-const sizes = {
+export const breakpoints = {
   desktop: 1280,
   phone: 600,
   tablet: 720,
@@ -21,9 +20,9 @@ const minMedia = {
   desktop: interpolate('desktop', 'min'),
 };
 
-function interpolate(sizeLabel: keyof typeof sizes, direction: 'min' | 'max') {
+function interpolate(sizeLabel: keyof typeof breakpoints, direction: 'min' | 'max') {
   return (style: TemplateStringsArray, ...rest: any) => css`
-    @media (${direction}-width: ${sizes[sizeLabel]}px) {
+    @media (${direction}-width: ${breakpoints[sizeLabel]}px) {
       ${style};
       ${rest};
     }
