@@ -8,6 +8,8 @@ import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { IField, IInput } from '../../types';
 
+export interface ICheckboxFieldProps extends IField, IInput {}
+
 const zoomOut = keyframes`
   from {
     transform: scale(0.4);
@@ -52,6 +54,7 @@ const Label = styled(InputLabel)`
   color: ${colors.neutral.dark};
   position: relative;
   user-select: none;
+  margin-bottom: 0;
 
   &:before {
     content: '';
@@ -82,19 +85,23 @@ const Label = styled(InputLabel)`
   }
 `;
 
-export interface ICheckboxFieldProps extends IField, IInput {}
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
 
-const CheckboxField: React.FC<ICheckboxFieldProps> = props => {
-  const { label, name, errorMessage, inputSize, className, ...rest } = props;
+const CheckboxField = (props: ICheckboxFieldProps) => {
+  const { label, errorMessage, className, inputSize, name, ...rest } = props;
 
   if (!name) throw Error('Name must be set. Check the docs.');
 
   return (
-    <SizedContainer size={inputSize} className={className}>
-      <Input id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
-      <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
-      {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
-    </SizedContainer>
+    <>
+      <SizedContainer size={inputSize} className={className}>
+        <Input id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
+        <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
+      </SizedContainer>
+      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+    </>
   );
 };
 

@@ -33,6 +33,22 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c3::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
+}
+
+.c3::-moz-placeholder {
+  color: #DCDBE2;
+  opacity: 1;
+}
+
+.c3:-ms-input-placeholder {
+  color: #DCDBE2;
+  opacity: 1;
+}
+
+.c3::placeholder {
+  color: #DCDBE2;
+  opacity: 1;
 }
 
 .c3:disabled {
@@ -60,7 +76,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c2 {
   position: relative;
-  margin: 5px 0;
 }
 
 .c5 {
@@ -147,6 +162,22 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2::-webkit-input-placeholder {
   color: #DCDBE2;
+  opacity: 1;
+}
+
+.c2::-moz-placeholder {
+  color: #DCDBE2;
+  opacity: 1;
+}
+
+.c2:-ms-input-placeholder {
+  color: #DCDBE2;
+  opacity: 1;
+}
+
+.c2::placeholder {
+  color: #DCDBE2;
+  opacity: 1;
 }
 
 .c2:disabled {
@@ -174,7 +205,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c1 {
   position: relative;
-  margin: 5px 0;
 }
 
 .c4 {

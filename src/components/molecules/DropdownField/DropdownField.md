@@ -9,11 +9,11 @@ import { DropdownField } from '@zopauk/react-components';
 
 <DropdownField
   hasError={true}
-  label="Your cool dropdown ❤"
+  label="Your cool dropdown"
   errorMessage="You need to choose something!"
   inputSize="short"
   name="foo"
-  helpText="Some contextual help"
+  helpText="Additional info"
 >
   <option value="first">First value</option>
   <option value="second">Second value</option>
