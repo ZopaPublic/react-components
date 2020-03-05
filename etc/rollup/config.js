@@ -46,6 +46,6 @@ export default {
       emitFiles: true, // defaults to true
     }),
     terser(),
-    postcss({ extract: true, minimize: true }),
+    postcss({ minimize: true }),
   ],
 };

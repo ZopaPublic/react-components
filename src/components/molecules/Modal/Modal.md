@@ -17,7 +17,7 @@ const App = () => (
   <>
     <Routes />
     <GlobalStyles />
-    <Tooltip.Styles />
+    <Modal.Styles />
   </>
 );
 ```
