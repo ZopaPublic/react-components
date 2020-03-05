@@ -36,6 +36,7 @@
     "@types/react-modal": "^3.10.2",
     "core-js": "^3.3.5",
     "downshift": "^2.2.2",
+    "lodash.throttle": "^4.1.1",
     "react-modal": "^3.8.1",
     "styled-normalize": "^8.0.6"
   },
@@ -56,6 +57,7 @@
     "@testing-library/react-hooks": "3.2.1",
     "@types/jest": "^24.9.0",
     "@types/jest-axe": "^3.2.1",
+    "@types/lodash.throttle": "^4.1.6",
     "@types/node": "12.12.27",
     "@types/react": "^16.9.22",
     "@types/react-dom": "16.9.5",

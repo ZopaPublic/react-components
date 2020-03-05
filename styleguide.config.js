@@ -55,6 +55,11 @@ module.exports = {
       ignore: 'src/content/**/*constants.{js,jsx,ts,tsx}',
     },
     {
+      name: 'Hooks',
+      content: 'src/hooks/README.md',
+      components: 'src/hooks/**/*.{js,jsx,ts,tsx}',
+    },
+    {
       sectionDepth: 2,
       name: 'Components',
       content: 'src/components/README.md',

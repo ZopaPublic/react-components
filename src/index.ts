@@ -61,5 +61,8 @@ export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
 export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
+// Hooks
+export * from './hooks/useViewport/useViewport';
+
 // Helpers
 export * from './helpers/responsiveness';
