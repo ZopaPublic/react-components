@@ -1,12 +1,12 @@
 Iconography related to Zopa's brand.
 
-- [`<AlertIcon />`](/#/Components/Icons/Alert)
-- [`<ArrowIcon />`](/#/Components/Icons/Arrow)
-- [`<CheckMarkIcon />`](/#/Components/Icons/CheckMark)
-- [`<ChevronIcon />`](/#/Components/Icons/Chevron)
-- [`<HamburgerIcon />`](/#/Components/Icons/Hamburger)
-- [`<ProfileIcon />`](/#/Components/Icons/Profile)
-- [`<ZopaIconIcon />`](/#/Components/Icons/ZopaIcon)
+- [`<AlertIcon />`](#/Components/Icons/Alert)
+- [`<ArrowIcon />`](#/Components/Icons/Arrow)
+- [`<CheckMarkIcon />`](#/Components/Icons/CheckMark)
+- [`<ChevronIcon />`](#/Components/Icons/Chevron)
+- [`<HamburgerIcon />`](#/Components/Icons/Hamburger)
+- [`<ProfileIcon />`](#/Components/Icons/Profile)
+- [`<ZopaLogo />`](#/Components/Icons/ZopaLogo)
 
 ### Tips
 
