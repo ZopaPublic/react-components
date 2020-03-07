@@ -6,7 +6,7 @@ Its aim is to give the customer information about Zopa's customer service openin
 
 ### Example
 
-```jsx
+```tsx
 import { Help } from '@zopauk/react-components';
 
 <Help email="savings@zopa.com" />;

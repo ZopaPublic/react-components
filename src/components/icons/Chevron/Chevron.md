@@ -4,7 +4,7 @@ Use it to render a chevron icon. You can specify the direction of the chevron th
 
 ### Example
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { ChevronIcon } from '@zopauk/react-components';
 

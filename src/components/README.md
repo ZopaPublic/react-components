@@ -4,7 +4,7 @@ Components are organized following the [atomic design](http://bradfrost.com/blog
 
 To use them, simply import the desired component to your project as follows:
 
-```jsx static
+```tsx static
 import { Button, Text, FlexCol } from '@zopauk/react-components';
 
 <SizeContainer size="short">

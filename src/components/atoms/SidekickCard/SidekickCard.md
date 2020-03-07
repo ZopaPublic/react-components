@@ -8,7 +8,7 @@ They come in three variations.
 
 - Triumph
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text, Heading } from '@zopauk/react-components';
 
 <SidekickCard type="triumph">
@@ -19,7 +19,7 @@ import { SidekickCard, Text, Heading } from '@zopauk/react-components';
 
 - Verified
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text, Heading } from '@zopauk/react-components';
 
 <SidekickCard type="verified">
@@ -30,7 +30,7 @@ import { SidekickCard, Text, Heading } from '@zopauk/react-components';
 
 - Alert
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "none" } } }
 import { SidekickCard, Text, Heading } from '@zopauk/react-components';
 
 <SidekickCard type="alert">

@@ -8,7 +8,7 @@ It's meant to be used with other navbar components like [`<Navbar.Link />`](#/Co
 
 - White theme
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link } from '@zopauk/react-components';
 
 <Navbar left={<Link>left</Link>} center={<Link>center</Link>} right={<Link>right</Link>} />;
@@ -16,7 +16,7 @@ import { Navbar, Link } from '@zopauk/react-components';
 
 - Teal theme
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#fff", "border": "2px solid #efefef" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#fff", "border": "2px solid #efefef" } } }
 import { Navbar, Link } from '@zopauk/react-components';
 
 <Navbar

@@ -12,7 +12,7 @@ This project aims to have all the common styled react components as a library/do
 
 ⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
-```js static
+```ts static
 import { GlobalStyles } from '@zopauk/react-components';
 
 // root component
@@ -34,7 +34,7 @@ We currently use three weights:
 
 As a convenience, you can import `<Fonts />` and add it on the top level of your app:
 
-```js static
+```ts static
 import { Fonts } from '@zopauk/react-components';
 
 // root component

@@ -89,7 +89,7 @@ src/
 
 Once it's ready, expose the new component in `src/index.ts` by adding:
 
-```js
+```ts
 export { default as Button } from './components/Button/Button';
 ```
 

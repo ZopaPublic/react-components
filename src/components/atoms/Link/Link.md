@@ -15,7 +15,7 @@ Use `<Link />` to create hyperlinks to other web pages, files, locations within 
 
 - Normal link
 
-```js
+```ts
 import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">
@@ -28,7 +28,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 - Negative link
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Text, Link, colors } from '@zopauk/react-components';
 
 <Text as="p" color={colors.neutral.white}>
@@ -41,7 +41,7 @@ import { Text, Link, colors } from '@zopauk/react-components';
 
 - With `target="_blank"` ( _notice a square icon appeared_ )
 
-```js
+```ts
 import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">

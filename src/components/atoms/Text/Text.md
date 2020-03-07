@@ -10,7 +10,7 @@
 
 - Variations
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
@@ -26,7 +26,7 @@ import { Text } from '@zopauk/react-components';
 
 - With white-space
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
@@ -38,7 +38,7 @@ import { Text } from '@zopauk/react-components';
 
 - Sizes
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
@@ -53,7 +53,7 @@ import { Text } from '@zopauk/react-components';
 
 - Weights
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
@@ -70,7 +70,7 @@ import { Text } from '@zopauk/react-components';
 
 - Colors
 
-```jsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
 import { Fragment } from 'react';
 import { Text, colors } from '@zopauk/react-components';
 

@@ -40,7 +40,7 @@ Standardise the [typography spec](https://user-images.githubusercontent.com/5938
 
 You won't be able to access any of the [old colors](https://zopauk.github.io/react-components/#/Content?id=colors):
 
-```js
+```ts
 import { colors } from '@zopauk/react-components';
 
 // all these will throw access errors 🙀
@@ -64,7 +64,7 @@ all the typography components of **v1**:
 
 the `type="button"` variant of [Card](https://zopauk.github.io/react-components/#/Components/Atoms/Card) 🗑
 
-```jsx
+```tsx
 import { colors } from '@zopauk/react-components';
 
 // Noop!
@@ -73,7 +73,7 @@ import { colors } from '@zopauk/react-components';
 
 and [HelpText](https://zopauk.github.io/react-components/#/Components/Atoms/HelpText) 🗑
 
-```jsx
+```tsx
 import { HelpText } from '@zopauk/react-components';
 
 // <Text as="p">Use this instead</Text>
@@ -82,7 +82,7 @@ import { HelpText } from '@zopauk/react-components';
 
 the `size` prop of [Badge](https://zopauk.github.io/react-components/#/Components/Atoms/Badge) 🗑
 
-```jsx
+```tsx
 import { colors } from '@zopauk/react-components';
 
 // Nie!
@@ -101,7 +101,7 @@ The render API of [Navbar](http://localhost:6060/#/Components/Organisms/Navbar) 
 
 For **Navbar**, we just renamed `<Navbar.Layout />` to just `<Navbar />`:
 
-```jsx
+```tsx
 import { Navbar } from '@zopauk/react-components'
 
 // before
@@ -124,7 +124,7 @@ For **Accordion**:
 - you now need to wrap the sub-components with `<Accordion>`
 - `<Accordion.Header size />` matches `<Text size />`
 
-```jsx
+```tsx
 import { Accordion } from '@zopauk/react-components'
 
 // before
@@ -154,7 +154,7 @@ It's built to match the latest specs on typography and give you enough flexibili
 
 Make sure you use the `as` prop when rendering paragraph text so it ends up tagged semantically:
 
-```jsx
+```tsx
 <Text as="p">A long paragraph illustrating all the key features of Mario Bros</Text>
 <Text weight="bold">v2.0.0</Text> /* by default <Text /> renders a <span /> ... */
 ```
@@ -167,7 +167,7 @@ The `as` prop is mandatory to make you think which heading tag you're rendering.
 
 🚨 &nbsp; **Please don't render paragraph text as a heading:**
 
-```jsx
+```tsx
 /* Don't do this, talk to the designer on why he's diverting from our design system! */
 <Heading as="h3">A long paragraph illustrating all the key features of Mario Bros</Heading>
 ```
@@ -188,7 +188,7 @@ Our colour API is much more concise now and divided into three categories:
 
 #### Legend
 
-```js
+```ts
 colors.primary.blue{400|500|600}
 // short for
 colors.primary.blue400
@@ -266,7 +266,7 @@ It would be best if you weren't using anymore:
 
 _Just the exported name of `<Navbar.Layout />` changed_
 
-```jsx
+```tsx
 // Before
 <Navbar.Layout left={/* ... */} right={/* ... */} />
 
@@ -278,7 +278,7 @@ _Just the exported name of `<Navbar.Layout />` changed_
 
 _Need to wrap stuff in `<Accordion />` rather than a `<div />`_
 
-```jsx
+```tsx
 // before
 <div>
   <Accordion.Header />
