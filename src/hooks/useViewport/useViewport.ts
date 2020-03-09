@@ -1,7 +1,11 @@
-import { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState, useContext } from 'react';
 import throttle from 'lodash.throttle';
+import { ViewportContext } from './ViewportProvider';
 
-interface IUseViewportOptions {
+export interface IUseViewportOptions {
+  /**
+   * The timeout supplied to `lodash.throttle` in case the viewport dimensions are read directly.
+   */
   timeout?: number;
 }
 
@@ -16,7 +20,10 @@ function readViewport() {
 }
 
 export function useViewport({ timeout = 300 }: IUseViewportOptions = {}) {
-  const [size, setSize] = useState(readViewport());
+  const contextSize = useContext(ViewportContext);
+  if (contextSize !== undefined) return contextSize;
+
+  const [size, setSize] = useState(contextSize || readViewport());
   const onResize = throttle(() => setSize(readViewport()), timeout);
 
   useLayoutEffect(() => {
