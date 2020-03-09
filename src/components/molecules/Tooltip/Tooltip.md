@@ -11,7 +11,7 @@ For more information:
 
 You should include `<Tooltip.Styles>` in you top-most level component, preferably like this:
 
-```jsx static
+```tsx static
 import { Tooltip, GlobalStyles } from '@zopauk/react-components';
 
 const App = () => (
@@ -33,7 +33,7 @@ So that styles are applied once and not every time the user navigates to a parti
 
 ### Example
 
-```jsx
+```tsx
 import { forwardRef } from 'react';
 import { Tooltip, Button } from '@zopauk/react-components';
 

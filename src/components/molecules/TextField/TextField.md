@@ -17,7 +17,7 @@
 
 - Default
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField inputProps={{ name: 'text1' }} />;
@@ -25,7 +25,7 @@ import { TextField } from '@zopauk/react-components';
 
 - With a specific size
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField size="short" inputProps={{ name: 'text2' }} />;
@@ -33,7 +33,7 @@ import { TextField } from '@zopauk/react-components';
 
 - With a label
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField label="First name" inputProps={{ name: 'text3' }} />;
@@ -41,7 +41,7 @@ import { TextField } from '@zopauk/react-components';
 
 - With error message
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField errorMessage="Oops ! Error !" inputProps={{ name: 'text4' }} />;
@@ -49,7 +49,7 @@ import { TextField } from '@zopauk/react-components';
 
 - Valid state
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField isValid={true} inputProps={{ name: 'text5' }} />;
@@ -57,7 +57,7 @@ import { TextField } from '@zopauk/react-components';
 
 - With all the previous configuration
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField
@@ -71,7 +71,7 @@ import { TextField } from '@zopauk/react-components';
 
 - With a custom text prefix
 
-```jsx
+```tsx
 import { TextField } from '@zopauk/react-components';
 
 <TextField label="Label" size="short" inputProps={{ name: 'text7' }} prefix={'£'} />;

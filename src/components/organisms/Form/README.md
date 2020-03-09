@@ -14,7 +14,7 @@ See the example below for more details.
 
 ### Example
 
-```js
+```ts
 import { Form, Text } from '@zopauk/react-components';
 
 const initialValues = {

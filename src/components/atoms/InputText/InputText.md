@@ -8,7 +8,7 @@ For a richer input see [`<TextField />`](/#/Components/Molecules/TextField).
 
 - Default
 
-```jsx
+```tsx
 import { InputText } from '@zopauk/react-components';
 
 <InputText name="default" defaultValue="example of input" />;
@@ -16,7 +16,7 @@ import { InputText } from '@zopauk/react-components';
 
 - Valid state
 
-```jsx
+```tsx
 import { InputText } from '@zopauk/react-components';
 
 <InputText name="isValid" isValid={true} />;
@@ -24,7 +24,7 @@ import { InputText } from '@zopauk/react-components';
 
 - With error
 
-```jsx
+```tsx
 import { InputText } from '@zopauk/react-components';
 
 <InputText name="error" hasError={true} />;
@@ -32,7 +32,7 @@ import { InputText } from '@zopauk/react-components';
 
 - Disabled
 
-```jsx
+```tsx
 import { InputText } from '@zopauk/react-components';
 
 <InputText name="disabled" disabled={true} value="Ha ! You cannot edit me !" />;

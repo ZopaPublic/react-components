@@ -6,7 +6,7 @@ Use `<Spinner />` whenever we need to notify the user that something is loading.
 
 ### Example
 
-```js
+```ts
 import { colors, Spinner } from '@zopauk/react-components';
 
 <Spinner size="100px" borderWidth="16px" />;

@@ -6,7 +6,7 @@
 
 With default props:
 
-```jsx { "props": { "style": { "padding": "20px 10px 30px" } } }
+```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
 <Progress totalSteps="4" currentStep="2" style={{ backgroundColor: colors.neutral.neutral25 }} />;
@@ -14,7 +14,7 @@ import { colors, Progress } from '@zopauk/react-components';
 
 Without step text:
 
-```jsx { "props": { "style": { "padding": "20px 10px 30px" } } }
+```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
 <Progress totalSteps="4" currentStep="2" style={{ backgroundColor: colors.neutral.neutral25 }} withStep={false} />;
@@ -22,7 +22,7 @@ import { colors, Progress } from '@zopauk/react-components';
 
 With custom progressColor:
 
-```jsx { "props": { "style": { "padding": "20px 10px 30px" } } }
+```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
 <Progress

@@ -6,7 +6,7 @@ You can use `<SiedContainer />` to set a `max-width` around its children.
 
 - Short size
 
-```jsx
+```tsx
 import { SizedContainer } from '@zopauk/react-components';
 
 <SizedContainer size="short">
@@ -16,7 +16,7 @@ import { SizedContainer } from '@zopauk/react-components';
 
 - Medium size
 
-```jsx
+```tsx
 import { SizedContainer } from '@zopauk/react-components';
 
 <SizedContainer size="medium">
@@ -26,7 +26,7 @@ import { SizedContainer } from '@zopauk/react-components';
 
 - Long size
 
-```jsx
+```tsx
 import { SizedContainer } from '@zopauk/react-components';
 
 <SizedContainer size="long">
@@ -36,7 +36,7 @@ import { SizedContainer } from '@zopauk/react-components';
 
 - Fulll-length size
 
-```jsx
+```tsx
 import { SizedContainer } from '@zopauk/react-components';
 
 <SizedContainer size="fullLength">

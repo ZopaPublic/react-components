@@ -8,7 +8,7 @@ It's meant to be used with other [`<Navbar />`](#/Components/Organisms/Navbar) c
 
 - Default
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff">Navbar.Link</Navbar.Link>;
@@ -16,7 +16,7 @@ import { Navbar } from '@zopauk/react-components';
 
 - Active
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" active>
@@ -26,7 +26,7 @@ import { Navbar } from '@zopauk/react-components';
 
 - With chevron icon pointing down
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" withChevron open={false}>
@@ -36,7 +36,7 @@ import { Navbar } from '@zopauk/react-components';
 
 - With chevron icon pointing up
 
-```js { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar.Link color="#fff" withChevron open>

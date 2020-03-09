@@ -8,7 +8,7 @@ It comes with two variations.
 
 - Default
 
-```js { "props": { "style": { "backgroundColor": "#141E64", "border": "none"  } } }
+```ts { "props": { "style": { "backgroundColor": "#141E64", "border": "none"  } } }
 import { Card, Text } from '@zopauk/react-components';
 
 <Card type="card">
@@ -20,7 +20,7 @@ import { Card, Text } from '@zopauk/react-components';
 
 Cards of type `"linkCard"` are meant to be used to build components that interact with user actions.
 
-```js { "props": { "style": { "backgroundColor": "#141E64",  "border": "none" } } }
+```ts { "props": { "style": { "backgroundColor": "#141E64",  "border": "none" } } }
 import { Card, Text, Heading } from '@zopauk/react-components';
 
 <Card type="linkCard" onClick={() => alert("You're a winner!")}>

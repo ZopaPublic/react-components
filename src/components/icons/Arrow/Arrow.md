@@ -4,7 +4,7 @@ Use it to render an arrow icon. You can specify the direction of the arrow throu
 
 ### Example
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { ArrowIcon } from '@zopauk/react-components';
 

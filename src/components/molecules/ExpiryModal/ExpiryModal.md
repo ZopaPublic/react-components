@@ -8,7 +8,7 @@ It should be used to warn the user the session is about to expire and give the o
 
 ### Example
 
-```jsx
+```tsx
 import { ExpiryModal, Modal, Button } from '@zopauk/react-components';
 
 function ExpiryModalDemo() {

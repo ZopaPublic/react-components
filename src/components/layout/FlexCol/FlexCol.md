@@ -6,7 +6,7 @@
 
 - Standard layout
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer gutter={0}>
@@ -26,7 +26,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Content based layout ( _collapsing on mobile_ )
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -43,7 +43,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Responsive layout
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -60,7 +60,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Layout with a column hidden on small screens
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -77,7 +77,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Layout with column order swapped on small screens
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -94,7 +94,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Layout aligned vertically
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -111,7 +111,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Each column with different vertical alignment
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -134,7 +134,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Layout with custom gutter ( `48px` )
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>
@@ -154,7 +154,7 @@ import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 - Layout with custom number of columns ( `5` )
 
-```jsx
+```tsx
 import { FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
 
 <FlexContainer>

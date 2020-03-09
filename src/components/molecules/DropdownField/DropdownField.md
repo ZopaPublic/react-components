@@ -4,7 +4,7 @@
 
 ### Example
 
-```jsx
+```tsx
 import { DropdownField } from '@zopauk/react-components';
 
 <DropdownField

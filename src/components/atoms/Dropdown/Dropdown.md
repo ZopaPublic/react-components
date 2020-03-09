@@ -8,7 +8,7 @@
 
 - Standard
 
-```jsx
+```tsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown name="I ❤️ dropdowns" defaultValue="third">
@@ -21,7 +21,7 @@ import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 - With error
 
-```jsx
+```tsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown hasError={true}>
@@ -31,7 +31,7 @@ import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 #### isValid
 
-```jsx
+```tsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown isValid={true}>

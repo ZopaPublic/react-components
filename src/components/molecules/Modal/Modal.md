@@ -8,7 +8,7 @@ Props are passed down to `react-modal` so if you want to customize it, please re
 
 You should include `<Modal.Styles />` in you top-most level component, preferably like this:
 
-```jsx static
+```tsx static
 import { Tooltip, GlobalStyles } from '@zopauk/react-components';
 
 Modal.setAppElement('#app');
@@ -31,7 +31,7 @@ And call `Modal.setAppElement('#YOUR_ID');` before any modals are open.
 
 ### Example
 
-```jsx
+```tsx
 import { Modal, Button, Heading } from '@zopauk/react-components';
 
 // Call Modal.setAppElement ONCE in the top level level component and pass it a query selector indentifiying the root of your app.

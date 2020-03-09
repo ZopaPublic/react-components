@@ -8,7 +8,7 @@ It comes in a lot of variations to suit different needs.
 
 - Primary ( _used for the main call to action, should only appear once per screen._ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button styling="primary">Button smash</Button>;
@@ -16,7 +16,7 @@ import { Button } from '@zopauk/react-components';
 
 - Secondary ( _standard button for most actions_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button styling="secondary">Button smash</Button>;
@@ -24,7 +24,7 @@ import { Button } from '@zopauk/react-components';
 
 - Disabled state ( _for use when actions are disabled, both primary and secondary_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button disabled={true}>Button smash</Button>;
@@ -32,7 +32,7 @@ import { Button } from '@zopauk/react-components';
 
 - Text button ( _used to navigate to other pages, always in current window unless external icon is present_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button styling="link">Link smash</Button>;
@@ -40,7 +40,7 @@ import { Button } from '@zopauk/react-components';
 
 - Warning state ( _for potentially risky actions_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button styling="warning">Proceed</Button>;
@@ -48,7 +48,7 @@ import { Button } from '@zopauk/react-components';
 
 - Alert state ( _for very dangerous actions_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button styling="alert">Delete</Button>;
@@ -56,7 +56,7 @@ import { Button } from '@zopauk/react-components';
 
 - Large size ( _rarely to be used, but it's here_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button sizing="large">Big smash</Button>;
@@ -64,7 +64,7 @@ import { Button } from '@zopauk/react-components';
 
 - Small size ( _mainly used when many actions are available in close proximity_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button sizing="small">Little smash</Button>;
@@ -72,7 +72,7 @@ import { Button } from '@zopauk/react-components';
 
 - Compact size ( _for when the link style just won't work_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button sizing="compact">Tiny smash</Button>;
@@ -80,7 +80,7 @@ import { Button } from '@zopauk/react-components';
 
 - With an icon on its right side ( _can be used with arrows, among other icons_ )
 
-```jsx
+```tsx
 import { AlertIcon, Button } from '@zopauk/react-components';
 
 <Button rightIcon={<AlertIcon fillColor="#fff" />}>Learn more</Button>;
@@ -88,7 +88,7 @@ import { AlertIcon, Button } from '@zopauk/react-components';
 
 - With an icon on its left side ( _for when the icon conveys the meaning faster than text_ )
 
-```jsx
+```tsx
 import { AlertIcon, Button } from '@zopauk/react-components';
 
 <Button leftIcon={<AlertIcon fillColor="#fff" />}>Smash now</Button>;
@@ -96,7 +96,7 @@ import { AlertIcon, Button } from '@zopauk/react-components';
 
 - Full width ( _for when the button should stretch the entire width of the divider_ )
 
-```jsx
+```tsx
 import { Button } from '@zopauk/react-components';
 
 <Button fullWidth={true}>Button smash</Button>;
@@ -104,7 +104,7 @@ import { Button } from '@zopauk/react-components';
 
 - Primary contrast ( _note that the text colour is the same as the background_ )
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
 <Button styling="contrastPrimary" contrastColor={colors.neutral.dark}>
@@ -114,7 +114,7 @@ import { Button, colors } from '@zopauk/react-components';
 
 - Secondary contrast ( _the border should be the colour's shade in 50 or close to that_ )
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
 <Button styling="contrastSecondary" contrastColor={colors.neutral.light}>
@@ -124,7 +124,7 @@ import { Button, colors } from '@zopauk/react-components';
 
 - Text button contrast ( _see above_ )
 
-```jsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
+```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button } from '@zopauk/react-components';
 
 <Button styling="contrastLink">Link smash</Button>;

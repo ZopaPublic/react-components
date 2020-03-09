@@ -4,7 +4,7 @@
 
 ### Example
 
-```js
+```ts
 import { Form } from '@zopauk/react-components';
 
 const validate = values => {

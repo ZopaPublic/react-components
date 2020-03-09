@@ -7,7 +7,7 @@
 
 ### Examples
 
-```js
+```ts
 import { Accordion } from '@zopauk/react-components';
 
 <Accordion aria-label="accordion">

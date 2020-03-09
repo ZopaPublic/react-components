@@ -51,64 +51,53 @@ module.exports = {
     {
       name: 'Content',
       content: 'src/content/README.md',
-      components: 'src/content/**/*.{js,jsx,ts,tsx}',
-      ignore: 'src/content/**/*constants.{js,jsx,ts,tsx}',
+      components: 'src/content/**/*.tsx',
     },
     {
       sectionDepth: 2,
       name: 'Components',
       content: 'src/components/README.md',
-      components: 'src/components/*/*.{js,jsx,ts,tsx}',
       sections: [
         {
           name: 'Atoms',
           content: 'src/components/atoms/README.md',
-          components: 'src/components/atoms/*/*.{js,jsx,ts,tsx}',
-          ignore: '**/*.test.{js,jsx,ts,tsx}',
+          components: 'src/components/atoms/*/*.tsx',
         },
         {
           name: 'Molecules',
           content: 'src/components/molecules/README.md',
-          components: 'src/components/molecules/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/Nav/**', '**/modalStyles.ts', '**/ZopaFooter/colors.ts'],
+          components: 'src/components/molecules/*/*.tsx',
         },
         {
           name: 'Organisms',
           content: 'src/components/organisms/README.md',
-          components: 'src/components/organisms/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/{Navbar,Accordion,Form}/**', '**/*.test.{js,jsx,ts,tsx}'],
           sections: [
             {
               name: 'Navbar',
-              content: 'src/components/organisms/Navbar/index.md',
-              components: 'src/components/organisms/Navbar/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Navbar/index.tsx'],
+              content: 'src/components/organisms/Navbar/README.md',
+              components: 'src/components/organisms/Navbar/**/[A-Z]*.tsx',
             },
             {
               name: 'Accordion',
-              content: 'src/components/organisms/Accordion/index.md',
-              components: 'src/components/organisms/Accordion/**/*.{js,jsx,ts,tsx}',
-              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Accordion/index.tsx'],
+              content: 'src/components/organisms/Accordion/README.md',
+              components: 'src/components/organisms/Accordion/**/[A-Z]*.tsx',
             },
             {
               name: 'Form',
-              content: 'src/components/organisms/Form/index.md',
-              components: ['src/components/organisms/Form/**/*.tsx'],
-              ignore: ['**/*.test.{js,jsx,ts,tsx}', 'src/components/organisms/Form/index.tsx'],
+              content: 'src/components/organisms/Form/README.md',
+              components: 'src/components/organisms/Form/**/[A-Z]*.tsx',
             },
           ],
         },
         {
           name: 'Icons',
           content: 'src/components/icons/README.md',
-          components: 'src/components/icons/**/*.{js,jsx,ts,tsx}',
-          ignore: '**/*.test.{js,jsx,ts,tsx}',
+          components: 'src/components/icons/**/*.tsx',
         },
         {
           name: 'Layout',
           content: 'src/components/layout/README.md',
-          components: 'src/components/layout/*/*.{js,jsx,ts,tsx}',
-          ignore: ['**/*.test.{js,jsx,ts,tsx}'],
+          components: 'src/components/layout/*/*.tsx',
         },
       ],
     },
@@ -197,8 +186,6 @@ module.exports = {
     url: 'https://github.com/zopaUK/react-components',
     text: 'Fork me!',
   },
-
-  ignore: ['**/*.test.{js,jsx,ts,tsx}', '**/*.d.ts', '**/src/styleguide-components/**', '**/styleguide/**'],
   // Webpack configuration
   webpackConfig: require('react-scripts/config/webpack.config.dev'),
   // props table config

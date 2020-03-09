@@ -13,7 +13,7 @@ The dropdown will be aligned to the right by default; however, if there's not en
 
 - Standard usage
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef"} } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef"} } }
 import { Navbar } from '@zopauk/react-components';
 
 <Navbar
@@ -45,7 +45,7 @@ import { Navbar } from '@zopauk/react-components';
 
 - With custom components
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, colors } from '@zopauk/react-components';
 
 <Navbar
