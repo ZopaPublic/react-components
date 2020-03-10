@@ -36,6 +36,7 @@ export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFoo
 export { default as Help } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
+export { default as CheckboxGroupField } from './components/molecules/CheckboxGroupField/CheckboxGroupField';
 export { default as RadioField } from './components/molecules/RadioField/RadioField';
 export { default as RadioGroupField } from './components/molecules/RadioGroupField/RadioGroupField';
 export { default as TextField } from './components/molecules/TextField/TextField';
