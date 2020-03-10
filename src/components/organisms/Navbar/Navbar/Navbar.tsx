@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from '../../../../constants/colors';
+import { navbarHeight } from '../../../../constants/components';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 
@@ -17,7 +18,7 @@ const LayoutOuter = styled.div<ILayoutOuterProps>`
   right: 0;
   z-index: 1;
   background-color: ${({ backgroundColor }) => backgroundColor};
-  height: 80px;
+  height: ${navbarHeight}px;
   transition: box-shadow 0.2s ease-in-out;
   box-shadow: 0 0 0 transparent;
   ${({ overlap }) => overlap && `box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;`}
@@ -35,7 +36,7 @@ const LayoutInner = styled.nav`
 `;
 
 const Spacer = styled.div`
-  height: 80px;
+  height: ${navbarHeight}px;
 `;
 
 const Container = styled(FlexContainer)`

@@ -6,6 +6,7 @@
 export { typography } from './constants/typography';
 export { colors } from './constants/colors';
 export { breakpoints } from './constants/breakpoints';
+export * from './constants/components';
 export { default as grid } from './constants/grid';
 export { default as Fonts } from './components/styles/Fonts';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
