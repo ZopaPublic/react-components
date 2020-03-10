@@ -4,7 +4,7 @@ import { axe } from 'jest-axe';
 import CheckboxGroupField from './CheckboxGroupField';
 
 describe('<CheckboxGroupField />', () => {
-  it('should handle values change if it is not controlled', () => {
+  it('should handle value change if it is not controlled', () => {
     const onChange = jest.fn();
     const { getByLabelText } = render(
       <CheckboxGroupField
@@ -34,7 +34,7 @@ describe('<CheckboxGroupField />', () => {
     expect(labelTwo.checked).toEqual(true);
   });
 
-  it('should not change values if it is disabled', () => {
+  it('should not change value if it is disabled', () => {
     const onChange = jest.fn();
     const { getByLabelText } = render(
       <CheckboxGroupField
@@ -73,17 +73,17 @@ describe('<CheckboxGroupField />', () => {
     }
   });
 
-  it('should handle values change if it is controlled', () => {
+  it('should handle value change if it is controlled', () => {
     const ControlledCheckboxGroupField = () => {
-      const [values, setValues] = useState<Record<string, boolean>>({ one: true, two: false });
+      const [value, setValue] = useState<Record<string, boolean>>({ one: true, two: false });
       return (
         <CheckboxGroupField
           items={[
             { name: 'one', label: 'label one' },
             { name: 'two', label: 'label two' },
           ]}
-          values={values}
-          onChange={setValues}
+          value={value}
+          onChange={setValue}
           label="label"
         />
       );

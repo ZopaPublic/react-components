@@ -19,13 +19,13 @@ interface ICheckboxGroupFieldItem {
 export interface ICheckboxGroupFieldProps {
   label: string;
   items: ICheckboxGroupFieldItem[];
-  onChange: (values: Record<string, boolean>) => void;
+  onChange: (value: Record<string, boolean>) => void;
   disabled?: boolean;
-  values?: Record<string, boolean>;
+  value?: Record<string, boolean>;
 }
 
-const CheckboxGroupField = ({ items, label, onChange, values, disabled }: ICheckboxGroupFieldProps) => {
-  const [innerValues, setInnerValues] = useState<Record<string, boolean>>(
+const CheckboxGroupField = ({ items, label, onChange, value, disabled }: ICheckboxGroupFieldProps) => {
+  const [innerValue, setInnerValue] = useState<Record<string, boolean>>(
     items.reduce(
       (acc, { name, defaultChecked }) => ({
         ...acc,
@@ -37,17 +37,17 @@ const CheckboxGroupField = ({ items, label, onChange, values, disabled }: ICheck
 
   const handleChange = (name: string) => () => {
     if (!disabled) {
-      if (!values) {
-        const newValues = {
-          ...innerValues,
-          [name]: !innerValues[name],
+      if (!value) {
+        const newValue = {
+          ...innerValue,
+          [name]: !innerValue[name],
         };
-        setInnerValues(newValues);
-        onChange(newValues);
+        setInnerValue(newValue);
+        onChange(newValue);
       } else {
         onChange({
-          ...values,
-          [name]: !values[name],
+          ...value,
+          [name]: !value[name],
         });
       }
     }
@@ -65,7 +65,7 @@ const CheckboxGroupField = ({ items, label, onChange, values, disabled }: ICheck
             disabled={disabled}
             onChange={handleChange(item.name)}
             label={item.label}
-            checked={values ? values[item.name] : innerValues[item.name]}
+            checked={value ? value[item.name] : innerValue[item.name]}
           />
         </CheckboxWrapper>
       ))}
