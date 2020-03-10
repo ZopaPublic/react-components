@@ -21,9 +21,9 @@ function readViewport() {
 
 export function useViewport({ timeout = 300 }: IUseViewportOptions = {}) {
   const contextSize = useContext(ViewportContext);
-  if (contextSize !== undefined) return contextSize;
+  if (contextSize.width !== undefined) return contextSize;
 
-  const [size, setSize] = useState(contextSize || readViewport());
+  const [size, setSize] = useState(readViewport());
   const onResize = throttle(() => setSize(readViewport()), timeout);
 
   useLayoutEffect(() => {

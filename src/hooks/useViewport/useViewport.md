@@ -1,8 +1,8 @@
 ### Summary
 
-`useViewport()` can be used to programatically read the viewport size on a React compnent.
+`useViewport()` can be used to programmatically read the viewport size on a React component.
 
-It can be useful for conditional rendering, which is usually prefered over hiding with CSS given it reduces the VDOM tree size.
+It can be useful for conditional rendering, which is usually preferred over hiding with CSS given it reduces the VDOM tree size.
 
 ### Tips
 
