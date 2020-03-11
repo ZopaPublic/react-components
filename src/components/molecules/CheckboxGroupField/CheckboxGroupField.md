@@ -3,7 +3,7 @@
 `<CheckboxGroupField />` is a convenient wrapper that renders group of `<CheckboxField>`s:
 
 ⚠️ &nbsp;Note that the `name` for each item has to be unique as it determines the `id`
-and `htmlFor` prop fof each checkbox field.
+and `htmlFor` prop for each checkbox field.
 
 ### Examples
 
