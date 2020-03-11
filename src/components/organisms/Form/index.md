@@ -24,6 +24,11 @@ const initialValues = {
   referral: '',
   terms: false,
   type: '',
+  products: {
+    creditCard: false,
+    debitCard: false,
+    savingsAccount: false,
+  },
 };
 const onSubmit = values => {
   alert(JSON.stringify(values));
@@ -49,13 +54,16 @@ const FormExample = () => (
   <Form initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form.Form>
       <Form.TextField label="First name" name="firstName" />
+      <div style={{ height: '16px' }} />
       <Form.TextField label="Last name" name="lastName" />
+      <div style={{ height: '16px' }} />
       <Form.DropdownFilteredField
         name="nationality"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
         label="Nationality"
       />
+      <div style={{ height: '16px' }} />
       <Form.DropdownField label="How did you hear about us?" name="referral">
         <option disabled value="">
           Select a value
@@ -63,6 +71,26 @@ const FormExample = () => (
         <option value="newspaper">Newspaper</option>
         <option value="socialMedia">Social media</option>
       </Form.DropdownField>
+      <div style={{ height: '16px' }} />
+      <Form.CheckboxGroupField
+        label="Which products are you interested in?"
+        name="products"
+        items={[
+          {
+            name: 'creditCard',
+            label: 'Credit card',
+          },
+          {
+            name: 'debitCard',
+            label: 'Debit card',
+          },
+          {
+            name: 'savingsAccount',
+            label: 'Savings account',
+          },
+        ]}
+      />
+      <div style={{ height: '16px' }} />
       <Form.RadioGroupField
         label="Type"
         name="type"
@@ -77,8 +105,9 @@ const FormExample = () => (
           },
         ]}
       />
-      <Text fw="bold">Terms and conditions</Text>
-      <Form.CheckboxField label="I accept" name="terms" />
+      <div style={{ height: '24px' }} />
+      <Form.CheckboxField label="I accept terms and condtions" name="terms" />
+      <div style={{ height: '16px' }} />
       <Form.Button>Submit</Form.Button>
     </Form.Form>
   </Form>

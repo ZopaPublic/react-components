@@ -8,7 +8,9 @@ import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { IField, IInput } from '../../types';
 
-export interface ICheckboxFieldProps extends IField, IInput {}
+export interface ICheckboxFieldProps extends IField, IInput {
+  name: string;
+}
 
 const zoomOut = keyframes`
   from {
@@ -91,8 +93,6 @@ const FieldError = styled(ErrorMessage)`
 
 const CheckboxField = (props: ICheckboxFieldProps) => {
   const { label, errorMessage, className, inputSize, name, ...rest } = props;
-
-  if (!name) throw Error('Name must be set. Check the docs.');
 
   return (
     <>
