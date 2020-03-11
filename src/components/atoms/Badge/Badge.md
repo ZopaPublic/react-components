@@ -8,7 +8,7 @@ There's four variations available and accepts the same sizes as [`<Text />`](#/C
 
 - Variations
 
-```js
+```ts
 import { Fragment } from 'react';
 import { Badge } from '@zopauk/react-components';
 

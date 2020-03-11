@@ -4,7 +4,7 @@ Use it to render a checkmark icon.
 
 ### Example
 
-```jsx
+```tsx
 import { CheckMarkIcon } from '@zopauk/react-components';
 
 <CheckMarkIcon />;

@@ -8,7 +8,7 @@ In order to create a navigation bar to be used within a **Zopa application**, yo
 
 - Static
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, ProfileIcon, colors } from '@zopauk/react-components';
 
 <Navbar
@@ -65,7 +65,7 @@ import { Navbar, Link, HamburgerIcon, ProfileIcon, colors } from '@zopauk/react-
 
 - Responsive
 
-```js { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "border": "2px solid #efefef" } } }
 import { Navbar, Link, HamburgerIcon, FlexCol, colors } from '@zopauk/react-components';
 
 class ResponsiveNavbar extends React.Component {

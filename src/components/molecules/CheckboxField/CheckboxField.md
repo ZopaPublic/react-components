@@ -15,7 +15,7 @@
 
 - Default
 
-```jsx
+```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
 <CheckboxField label="Do you love jazz?" name="check1" />;
@@ -23,7 +23,7 @@ import { CheckboxField } from '@zopauk/react-components';
 
 - Checked state
 
-```jsx
+```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
 <CheckboxField label="Do you love rap?" name="text2" defaultChecked={true} />;
@@ -31,7 +31,7 @@ import { CheckboxField } from '@zopauk/react-components';
 
 - With an error
 
-```jsx
+```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
 <CheckboxField label="Do you agree?" errorMessage="Oops! You forgot to check this" name="text6" />;

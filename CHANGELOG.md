@@ -1,3 +1,22 @@
+# [2.12.0](https://github.com/zopaUK/react-components/compare/v2.11.5...v2.12.0) (2020-03-05)
+
+
+### Bug Fixes
+
+* **tooltip:** relative import of Tippy CSS ([c8a5ce2](https://github.com/zopaUK/react-components/commit/c8a5ce2686a9c60ed4c830903a5fac61412ce392))
+
+
+### Features
+
+* **tooltip:** abstract `<Tooltip.Styles />` ([91ae1c9](https://github.com/zopaUK/react-components/commit/91ae1c928663682ee793f0e16c0c14c7a70ce6bd))
+
+## [2.11.5](https://github.com/zopaUK/react-components/compare/v2.11.4...v2.11.5) (2020-03-05)
+
+
+### Bug Fixes
+
+* **zopa-footer:** render semantic HTML tag ([22a7193](https://github.com/zopaUK/react-components/commit/22a719362d4a802cb8b084334a5445f86d5c550e))
+
 ## [2.11.4](https://github.com/zopaUK/react-components/compare/v2.11.3...v2.11.4) (2020-02-27)
 
 

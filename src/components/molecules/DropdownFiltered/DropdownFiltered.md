@@ -34,7 +34,7 @@ Also note that:
 
 - Standard
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
@@ -51,7 +51,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 
 - With default value
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
@@ -69,7 +69,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 
 - Long list with a `max-height` applied to it
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [
@@ -139,7 +139,7 @@ const items = [
 
 - With an error message
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
@@ -157,7 +157,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 
 - Valid state
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
@@ -175,7 +175,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 
 - Disabled
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];
@@ -194,7 +194,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
 
 - With a short size
 
-```jsx
+```tsx
 import { DropdownFiltered } from '@zopauk/react-components';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];

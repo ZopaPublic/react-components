@@ -11,7 +11,7 @@
 
 - Variations
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Heading } from '@zopauk/react-components';
 
@@ -27,7 +27,7 @@ import { Heading } from '@zopauk/react-components';
 
 - With white-space
 
-```jsx
+```tsx
 import { Fragment } from 'react';
 import { Heading } from '@zopauk/react-components';
 
@@ -62,7 +62,7 @@ import { Heading } from '@zopauk/react-components';
 
 - Colors
 
-```jsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
 import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
 

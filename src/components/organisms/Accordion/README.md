@@ -6,7 +6,7 @@ In order to create an accordion, you will need to use all of these components to
 
 ### Example
 
-```js
+```ts
 import { Accordion, Text } from '@zopauk/react-components';
 
 const AccordionExample = () => {
