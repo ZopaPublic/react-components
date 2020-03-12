@@ -1,22 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, TLinkHexColors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
-  color?: any; // see issue #139 for more context on why the explicit `any` here.
+  color?: TLinkHexColors;
   as?: 'a' | 'button';
 }
 
 const SLink = styled.a<ILinkProps>`
+  background-color: transparent;
   font-size: inherit;
   font-family: ${typography.primary};
   font-weight: ${typography.weights.semibold};
   line-height: ${typography.lineHeights.text};
-  color: ${({ color = colors.neutral.dark }) => color};
+  color: ${({ color }) => color};
   cursor: pointer;
   text-decoration: none;
   user-select: auto;

@@ -37,6 +37,7 @@ const StyledListItem = styled.li`
 `;
 
 const BlockLink = styled(Link)`
+  color: ${colors.neutral.medium};
   display: block;
 `;
 
@@ -168,9 +169,7 @@ const Links: FC<ILinksProps> = ({ baseUrl = 'https://www.zopa.com' }) => (
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>
-                <BlockLink color={colors.neutral.medium} href={href}>
-                  {label}
-                </BlockLink>
+                <BlockLink href={href}>{label}</BlockLink>
               </StyledListItem>
             ))}
           </StyledList>
