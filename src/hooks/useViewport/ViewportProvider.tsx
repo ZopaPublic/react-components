@@ -1,14 +1,6 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import { useViewport, IUseViewportOptions } from './useViewport';
-
-interface IViewportSize {
-  width: number | undefined;
-  height: number | undefined;
-}
-
-type TViewportContext = IViewportSize;
-
-const ViewportContext = createContext<TViewportContext>({ width: undefined, height: undefined });
+import { ViewportContext } from './context';
 
 const ViewportProvider: React.FC<IUseViewportOptions> = ({ children, ...rest }) => {
   const size = useViewport(rest);
