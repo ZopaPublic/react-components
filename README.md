@@ -41,9 +41,16 @@ The aim of this project is to share with the frontend community how we code in Z
 
 We think it might be useful for someone who wants to start a new react components library and want to re-use some of our code.
 
-### Migration
+### Types
 
-- Check [how to migrate to v2](./etc/docs/migration-v2.md) 🏃🏻
+You can access typings for specific components under `@zopauk/react-components/types`:
+
+```tsx
+import { Button } from '@zopauk/react-components';
+import { IButtonProps } from '@zopauk/react-components/types/components/atoms/Button';
+```
+
+To inspect the folder structure within `@zopauk/react-components/types` you can run `yarn compile:types` and navigate the generated `types/` folder in the project root.
 
 ## Contributing
 
