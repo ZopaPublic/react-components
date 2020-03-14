@@ -1647,7 +1647,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.19":
+"@types/react@*", "@types/react@16.9.23":
   version "16.9.23"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.23.tgz#1a66c6d468ba11a8943ad958a8cb3e737568271c"
   integrity sha512-SsGVT4E7L2wLN3tPYLiF20hmZTPGuzaayVunfgXzUn1x4uHVsKH6QDJQ/TdpHqwsTLd4CwrmQ2vOgxN7gE24gw==
@@ -12456,7 +12456,7 @@ react-docgen-displayname-handler@^3.0.0:
   dependencies:
     ast-types "0.13.2"
 
-react-docgen-typescript@^1.16.2:
+react-docgen-typescript@1.16.2:
   version "1.16.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.16.2.tgz#d5f26ba6591ac4bc61628c514d492de461ae7c2c"
   integrity sha512-nECrg2qih81AKp0smkxXebF72/2EjmEn7gXSlWLDHLbpGcbw2yIorol24fw1FWqvndIY82sfSd0x/SyfMKY1Jw==
@@ -12589,7 +12589,7 @@ react-simple-code-editor@^0.10.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
   integrity sha512-bL5W5mAxSW6+cLwqqVWY47Silqgy2DKDTR4hDBrLrUqC5BXc29YVx17l2IZk5v36VcDEq1Bszu2oHm1qBwKqBA==
 
-react-styleguidist@^11.0.0:
+react-styleguidist@11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/react-styleguidist/-/react-styleguidist-11.0.0.tgz#87997fdbf5d468c714b800f1dc13a25c1b25e23e"
   integrity sha512-Za/OiEBSJ+B01f6vu5M5ByS5tnlmYm9Zc3oju4V4YAns67P4ehzOSgwq3lzg5tWkw/gg5m7eSXUP8msPzfrhXg==
@@ -13381,7 +13381,7 @@ rollup-plugin-node-resolve@5.2.0:
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-postcss@^2.1.1:
+rollup-plugin-postcss@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-2.1.1.tgz#39b9b7c5da91741631b3a07ad1622a3477b307f4"
   integrity sha512-A9G3VGnWwfjlb5REp992+9NEosY0KdrysXYytNFCy107+QlZaRzIgHQYwBQ67BYlV8K4t0Yk2ukySFQceneUKA==
