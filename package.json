@@ -97,7 +97,7 @@
     "cover 99.5% in GB"
   ],
   "resolutions": {
-    "semantic-release/@semantic-release/github": "5.2.1"
+    "semantic-release/@semantic-release/github": "5.5.8"
   },
   "jest": {
     "collectCoverageFrom": [
