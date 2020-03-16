@@ -129,3 +129,22 @@ import { Button } from '@zopauk/react-components';
 
 <Button styling="contrastLink">Link smash</Button>;
 ```
+
+- Button as a custom component
+
+```tsx
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import { buttonStyle } from '@zopauk/react-components';
+
+// could be a gatsby or react-router-dom <Link />
+const Link = ({ href, ...rest }) => <a href={href} {...rest} />;
+
+const ButtonLink = styled(Link)`
+  ${buttonStyle}
+`;
+
+<ButtonLink href="https://www.zopa.com" styling="secondary">
+  Zopa
+</ButtonLink>;
+```
