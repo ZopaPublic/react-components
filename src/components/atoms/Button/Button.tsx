@@ -102,6 +102,7 @@ const SText = styled.span<IButtonProps>`
 `;
 
 export const buttonStyle = css<IButtonProps>`
+  text-decoration: none;
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;

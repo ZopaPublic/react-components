@@ -145,6 +145,6 @@ const ButtonLink = styled(Link)`
 `;
 
 <ButtonLink href="https://www.zopa.com" styling="secondary">
-  Zopa
+  Button link
 </ButtonLink>;
 ```
