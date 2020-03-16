@@ -14,11 +14,11 @@ export { default as GlobalStyles } from './components/styles/GlobalStyles';
 // Atoms
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
-export { default as Button } from './components/atoms/Button/Button';
+export { default as Button, buttonStyle } from './components/atoms/Button/Button';
 export { default as Progress } from './components/molecules/Progress/Progress';
 export { default as Card } from './components/atoms/Card/Card';
 export { default as SidekickCard } from './components/atoms/SidekickCard/SidekickCard';
-export { default as Link } from './components/atoms/Link/Link';
+export { default as Link, linkStyle } from './components/atoms/Link/Link';
 export { default as Dropdown } from './components/atoms/Dropdown/Dropdown';
 export { Option as DropdownOption } from './components/atoms/Dropdown/Dropdown';
 export { default as DropdownFiltered } from './components/molecules/DropdownFiltered/DropdownFiltered';

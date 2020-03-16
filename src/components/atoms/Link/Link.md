@@ -15,7 +15,7 @@ Use `<Link />` to create hyperlinks to other web pages, files, locations within 
 
 - Normal link
 
-```ts
+```tsx
 import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">
@@ -28,7 +28,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 - Button link
 
-```js
+```tsx
 import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">
@@ -41,7 +41,7 @@ import { Text, Link } from '@zopauk/react-components';
 
 - Negative link
 
-```ts { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
+```tsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Text, Link, colors } from '@zopauk/react-components';
 
 <Text as="p" color={colors.neutral.white}>
@@ -54,7 +54,7 @@ import { Text, Link, colors } from '@zopauk/react-components';
 
 - With `target="_blank"` ( _notice a square icon appeared_ )
 
-```ts
+```tsx
 import { Text, Link } from '@zopauk/react-components';
 
 <Text as="p">
@@ -63,4 +63,21 @@ import { Text, Link } from '@zopauk/react-components';
     a link
   </Link>
 </Text>;
+```
+
+- Link as a custom component
+
+```tsx
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import { linkStyle } from '@zopauk/react-components';
+
+// could be a gatsby or react-router-dom <Link />
+const SomeLibraryLink = ({ href, ...rest }) => <a href={href} {...rest} />;
+
+const CustomLink = styled(SomeLibraryLink)`
+  ${linkStyle}
+`;
+
+<CustomLink href="https://www.zopa.com">Custom link</CustomLink>;
 ```

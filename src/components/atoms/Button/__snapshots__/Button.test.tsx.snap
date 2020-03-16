@@ -2,6 +2,8 @@
 
 exports[`Alert button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -62,6 +64,8 @@ exports[`Alert button renders the component with props 1`] = `
 
 exports[`Compact button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -122,6 +126,8 @@ exports[`Compact button renders the component with props 1`] = `
 
 exports[`Disabled button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -183,6 +189,8 @@ exports[`Disabled button renders the component with props 1`] = `
 
 exports[`Full width button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -244,6 +252,8 @@ exports[`Full width button renders the component with props 1`] = `
 
 exports[`Large button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -309,6 +319,8 @@ exports[`Left icon button renders the component with props 1`] = `
 }
 
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -376,6 +388,8 @@ exports[`Left icon button renders the component with props 1`] = `
 
 exports[`Link button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -430,6 +444,8 @@ exports[`Link button renders the component with props 1`] = `
 
 exports[`Link contrast button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -484,6 +500,8 @@ exports[`Link contrast button renders the component with props 1`] = `
 
 exports[`Primary button renders the component with props with no a11y violations 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -544,6 +562,8 @@ exports[`Primary button renders the component with props with no a11y violations
 
 exports[`Primary contrast button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -608,6 +628,8 @@ exports[`Right icon button renders the component with props 1`] = `
 }
 
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -675,6 +697,8 @@ exports[`Right icon button renders the component with props 1`] = `
 
 exports[`Secondary button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -737,6 +761,8 @@ exports[`Secondary button renders the component with props 1`] = `
 
 exports[`Secondary contrast button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -798,6 +824,8 @@ exports[`Secondary contrast button renders the component with props 1`] = `
 
 exports[`Small button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -858,6 +886,8 @@ exports[`Small button renders the component with props 1`] = `
 
 exports[`Warning button renders the component with props 1`] = `
 .c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

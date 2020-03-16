@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors, TLinkHexColors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
@@ -11,7 +11,7 @@ export interface ILinkProps
   as?: 'a' | 'button';
 }
 
-const SLink = styled.a<ILinkProps>`
+export const linkStyle = css<ILinkProps>`
   background-color: transparent;
   font-size: inherit;
   font-family: ${typography.primary};
@@ -32,6 +32,10 @@ const SLink = styled.a<ILinkProps>`
   &:active {
     opacity: 0.72;
   }
+`;
+
+const SLink = styled.a<ILinkProps>`
+  ${linkStyle}
 `;
 
 const STargetIcon = styled.svg`
