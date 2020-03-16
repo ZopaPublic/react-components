@@ -14,7 +14,7 @@ export { default as GlobalStyles } from './components/styles/GlobalStyles';
 // Atoms
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
-export { default as Button } from './components/atoms/Button/Button';
+export { default as Button, buttonStyle } from './components/atoms/Button/Button';
 export { default as Progress } from './components/molecules/Progress/Progress';
 export { default as Card } from './components/atoms/Card/Card';
 export { default as SidekickCard } from './components/atoms/SidekickCard/SidekickCard';

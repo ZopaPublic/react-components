@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
@@ -101,7 +101,7 @@ const SText = styled.span<IButtonProps>`
   margin-left: ${({ leftIcon }) => !!leftIcon && '8px'};
 `;
 
-const SButton = styled.button<IButtonProps>`
+export const buttonStyle = css<IButtonProps>`
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
@@ -145,6 +145,10 @@ const SButton = styled.button<IButtonProps>`
     cursor: not-allowed;
     opacity: 0.3;
   }
+`;
+
+const SButton = styled.button<IButtonProps>`
+  ${buttonStyle}
 `;
 
 const Button: React.FC<IButtonProps> = props => {
