@@ -4,18 +4,17 @@ exports[`<Card type="card"/> renders default card type with explicit card type 1
 .c0 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  border-radius: 4px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: block;
-  padding: 2em;
 }
 
-@media (max-width:720px) {
+@media (min-width:720px) {
   .c0 {
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+    border-radius: 4px;
   }
 }
 
@@ -33,18 +32,17 @@ exports[`<Card type="card"/> renders default card type with implicit card type w
 .c0 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  border-radius: 4px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: block;
-  padding: 2em;
 }
 
-@media (max-width:720px) {
+@media (min-width:720px) {
   .c0 {
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+    border-radius: 4px;
   }
 }
 
@@ -62,18 +60,17 @@ exports[`<Card type="card"/> renders the card type with multiple props 1`] = `
 .c0 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  border-radius: 4px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: block;
-  padding: 2em;
 }
 
-@media (max-width:720px) {
+@media (min-width:720px) {
   .c0 {
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+    border-radius: 4px;
   }
 }
 
@@ -91,11 +88,11 @@ exports[`<Card type="linkCard"/> renders default linkCard 1`] = `
 .c0 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  border-radius: 8px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: block;
-  padding: 2em;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -103,11 +100,10 @@ exports[`<Card type="linkCard"/> renders default linkCard 1`] = `
   user-select: none;
 }
 
-@media (max-width:720px) {
+@media (min-width:720px) {
   .c0 {
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+    border-radius: 8px;
   }
 }
 
@@ -121,11 +117,11 @@ exports[`<Card type="linkCard"/> renders the component with props 1`] = `
 .c0 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  border-radius: 8px;
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: block;
-  padding: 2em;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -133,11 +129,10 @@ exports[`<Card type="linkCard"/> renders the component with props 1`] = `
   user-select: none;
 }
 
-@media (max-width:720px) {
+@media (min-width:720px) {
   .c0 {
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 2em;
+    border-radius: 8px;
   }
 }
 
