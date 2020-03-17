@@ -862,9 +862,9 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                 <a
                   class="c15 c16"
                   color="#DCDBE2"
-                  href="https://www.zopa.com/website-terms"
+                  href="https://www.zopa.com/terms-of-use"
                 >
-                  Website terms
+                  Terms of use
                 </a>
               </li>
               <li
