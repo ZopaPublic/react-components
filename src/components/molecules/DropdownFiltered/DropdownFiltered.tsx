@@ -149,6 +149,8 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
       labelProps,
       isValid,
       disabled,
+      onChange,
+      onFocus,
       ...rest
     } = this.props;
     if (!name) {
