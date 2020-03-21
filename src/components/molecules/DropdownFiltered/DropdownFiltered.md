@@ -62,7 +62,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit-default"
-  defaultSelectedItem={{ value: 'orange' }}
+  initialSelectedItem={{ value: 'orange' }}
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
   inputProps={{
     placeholder: 'Select a fruit...',
