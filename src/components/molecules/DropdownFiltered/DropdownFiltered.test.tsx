@@ -16,7 +16,7 @@ describe('<DropdownFiltered />', () => {
 
   it('renders the DropdownFiltered with options and a default selected value', () => {
     const { container } = render(
-      <DropdownFiltered defaultSelectedItem={{ value: 'orange' }} items={items} inputProps={{ name: 'test' }} />,
+      <DropdownFiltered initialSelectedItem={{ value: 'orange' }} items={items} inputProps={{ name: 'test' }} />,
     );
     expect(container.firstChild).toMatchSnapshot();
   });
