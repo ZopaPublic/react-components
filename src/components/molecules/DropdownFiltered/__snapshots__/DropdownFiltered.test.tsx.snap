@@ -240,7 +240,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         class="c2 c3"
         id="text-id-test"
         name="test"
-        value=""
+        value="orange"
       />
       <div
         class="c4"
