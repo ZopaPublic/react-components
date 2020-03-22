@@ -1,3 +1,10 @@
+## [2.12.1](https://github.com/zopaUK/react-components/compare/v2.12.0...v2.12.1) (2020-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency downshift to v5 ([06343f9](https://github.com/zopaUK/react-components/commit/06343f9d9379e745600499a6fffb0c0fcddd2ca5))
+
 # [2.12.0](https://github.com/zopaUK/react-components/compare/v2.11.5...v2.12.0) (2020-03-05)
 
 
