@@ -1,3 +1,10 @@
+## [2.12.2](https://github.com/zopaUK/react-components/compare/v2.12.1...v2.12.2) (2020-03-23)
+
+
+### Bug Fixes
+
+* **footer:** added alt to svg social icons ([781ad1b](https://github.com/zopaUK/react-components/commit/781ad1b4953e9ff8955db54f9eb1ac17c300f88e))
+
 ## [2.12.1](https://github.com/zopaUK/react-components/compare/v2.12.0...v2.12.1) (2020-03-21)
 
 
