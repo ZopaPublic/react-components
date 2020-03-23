@@ -1,6 +1,6 @@
 ### Summary
 
-`<Form>` is just a small wrapper component around the `useForm` hook. It holds the form state and passes it down through context to other [Form](#/Organisms/Form) components.
+`<Form.Form>` is just a small wrapper component around the native `form` element. It grabs `handleSubmit` off of the context and passes it to the `onSubmit` prop.
 
 ### Example
 
@@ -8,9 +8,11 @@
 import { Form } from '@zopauk/react-components';
 
 <Form initialValues={{ firstName: '' }} onSubmit={values => alert(JSON.stringify(values))}>
-  <div style={{ marginBottom: '16px' }}>
-    <Form.TextField label="First name" name="firstName" />
-  </div>
-  <Form.Button>Submit</Form.Button>
+  <Form.Form>
+    <div style={{ marginBottom: '16px' }}>
+      <Form.TextField label="First name" name="firstName" />
+    </div>
+    <Form.Button>Submit</Form.Button>
+  </Form.Form>
 </Form>;
 ```

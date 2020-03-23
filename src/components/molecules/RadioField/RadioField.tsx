@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { IField, IInputStatus } from '../../types';
+import { IField, IInputStatus, IInput } from '../../types';
 
 const zoomIn = keyframes`
   from {
@@ -102,16 +102,14 @@ const Input = styled.input<IInputStatus>`
   }
 `;
 
-export interface IRadioField extends IField, IInputStatus {}
+export interface IRadioField extends IField, IInput {}
 
-const RadioField: FC<IRadioField> = ({ label, hasError, errorMessage, isValid, inputProps, ...rest }) => {
-  const { value } = inputProps;
-
-  if (!inputProps.value) throw Error('Value must be set in inputProps. Check the docs.');
+const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: IRadioField) => {
+  if (!value) throw Error('Value must be set in inputProps. Check the docs.');
 
   return (
-    <FieldContainer {...rest}>
-      <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} type="radio" {...inputProps} />
+    <FieldContainer className={className} size={inputSize}>
+      <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} value={value} type="radio" {...rest} />
       <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
         {label}
       </Label>

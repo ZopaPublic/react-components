@@ -18,7 +18,7 @@
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you love jazz?" inputProps={{ name: 'check1' }} />;
+<CheckboxField label="Do you love jazz?" name="check1" />;
 ```
 
 - Checked state
@@ -26,7 +26,7 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you love rap?" inputProps={{ name: 'text2', defaultChecked: true }} />;
+<CheckboxField label="Do you love rap?" name="text2" defaultChecked={true} />;
 ```
 
 - With an error
@@ -34,5 +34,5 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you agree?" errorMessage="Oops! You forgot to check this" inputProps={{ name: 'text6' }} />;
+<CheckboxField label="Do you agree?" errorMessage="Oops! You forgot to check this" name="text6" />;
 ```

@@ -7,9 +7,9 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { colors } from '../../../constants/colors';
-import { IField } from '../../types';
+import { IField, IInput } from '../../types';
 
-export interface ITextFieldProps extends IField<HTMLInputElement> {
+export interface ITextFieldProps extends IField, IInput {
   prefix?: string;
 }
 
@@ -20,7 +20,6 @@ export interface IPrefixProps {
 export interface ILabelProps {
   withHelpText?: boolean;
 }
-
 const Label = styled(InputLabel)<ILabelProps>`
   ${({ withHelpText }) => withHelpText && `margin-bottom: 0;`}
 `;
@@ -58,9 +57,7 @@ const Prefix = styled.span<IPrefixProps>`
 `;
 
 const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
-  ({ label, errorMessage, isValid, inputProps, size, helpText, prefix }, ref) => {
-    const { name } = inputProps;
-
+  ({ label, errorMessage, isValid, name, inputSize, helpText, prefix, ...rest }, ref) => {
     if (!name) {
       throw Error('Name must be set in inputProps. Check the docs.');
     }
@@ -77,7 +74,8 @@ const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
         isValid={isValid}
         aria-label={label ? undefined : name}
         ref={ref}
-        {...inputProps}
+        name={name}
+        {...rest}
       />
     );
 
@@ -89,7 +87,7 @@ const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
           </Label>
         )}
         {helpText && <HelpText size="small">{helpText}</HelpText>}
-        <SizedContainer size={size}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
+        <SizedContainer size={inputSize}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
         {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
       </>
     );

@@ -5,7 +5,7 @@ import TextField from './TextField';
 
 describe('<TextField />', () => {
   it('renders the component with no a11y violations', async () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} />);
+    const { container } = render(<TextField name="test1" />);
     const results = await axe(container.innerHTML);
 
     expect(container.firstChild).toMatchSnapshot();
@@ -13,52 +13,44 @@ describe('<TextField />', () => {
   });
 
   it('renders the component with label', () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} label="Username" />);
+    const { container } = render(<TextField name="test1" label="Username" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component and isValid set to true', () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} isValid={true} />);
+    const { container } = render(<TextField name="test1" isValid={true} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with error', () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} errorMessage="Ops !" />);
+    const { container } = render(<TextField name="test1" errorMessage="Ops !" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with size', () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} size="short" />);
+    const { container } = render(<TextField name="test1" inputSize="short" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with error and label and size', () => {
     const { container } = render(
-      <TextField
-        inputProps={{ name: 'test1' }}
-        helpText="Additional info"
-        errorMessage="Ops !"
-        label="yes!"
-        size="long"
-      />,
+      <TextField name="test1" helpText="Additional info" errorMessage="Ops !" label="yes!" inputSize="long" />,
     );
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with prefix', () => {
-    const { container } = render(<TextField inputProps={{ name: 'test1' }} size="short" prefix={'£'} />);
+    const { container } = render(<TextField name="test1" inputSize="short" prefix="£" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('throws if no name provided', () => {
     console.error = jest.fn();
-    expect(() => render(<TextField inputProps={{}} />)).toThrow('Name must be set in inputProps. Check the docs.');
+    expect(() => render(<TextField />)).toThrow('Name must be set in inputProps. Check the docs.');
   });
 
   it('throws if prefix is longer than one character', () => {
     console.error = jest.fn();
-    expect(() => render(<TextField inputProps={{ name: 'test1' }} prefix="$$" />)).toThrow(
-      'Prefixes can only have one character',
-    );
+    expect(() => render(<TextField name="test1" prefix="$$" />)).toThrow('Prefixes can only have one character');
   });
 });

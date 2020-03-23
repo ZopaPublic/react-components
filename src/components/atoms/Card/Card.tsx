@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
-import { maxMedia } from '../../../helpers/responsiveness';
+import { minMedia } from '../../../helpers/responsiveness';
 
 export interface ICardProps {
   type?: TCardTypes;
@@ -18,25 +18,26 @@ const borderRadius: { [index in TCardTypes]: string } = {
 const Card = styled.div<ICardProps>`
   background-color: ${colors.neutral.white};
   border-color: ${colors.neutral.white};
-  border-radius: ${({ type }) => borderRadius[type as TCardTypes]};
   border-style: solid;
   border-width: 2px;
+  border-radius: 0;
+  padding: 2em 1em;
   display: ${({ display = 'block' }) => display};
-  padding: 2em;
-
   ${({ type }) =>
     type === 'linkCard'
-      ? `
-    cursor: pointer;
-    user-select: none;
-  `
+      ? css`
+          cursor: pointer;
+          user-select: none;
+        `
       : undefined}
 
-  ${maxMedia.tablet`
-    border-radius: 0;
-    padding-left: 1em;
-    padding-right: 1em;
-  `};
+  ${minMedia.tablet`
+      padding: 2em;
+      ${({ type }: ICardProps) =>
+        css`
+          border-radius: ${borderRadius[type as TCardTypes]};
+        `};
+    `};
 `;
 
 Card.defaultProps = {

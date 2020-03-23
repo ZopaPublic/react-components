@@ -1,18 +1,18 @@
 Atoms are usually made with only one single HTML element.
 
-- [`<AlertBox />`](/#/Components/Atoms/AlertBox)
-- [`<Badge />`](/#/Components/Atoms/Badge)
-- [`<Button />`](/#/Components/Atoms/Button)
-- [`<Card />`](/#/Components/Atoms/Card)
-- [`<Doprdown />`](/#/Components/Atoms/Doprdown)
-- [`<ErrorMessage />`](/#/Components/Atoms/ErrorMessage)
-- [`<Heading />`](/#/Components/Atoms/Heading)
-- [`<InputLabel />`](/#/Components/Atoms/InputLabel)
-- [`<InputText />`](/#/Components/Atoms/InputText)
-- [`<Link />`](/#/Components/Atoms/Link)
-- [`<SidekickCard />`](/#/Components/Atoms/SidekickCard)
-- [`<Spinner />`](/#/Components/Atoms/Spinner)
-- [`<Text />`](/#/Components/Atoms/Text)
+- [`<AlertBox />`](#/Components/Atoms/AlertBox)
+- [`<Badge />`](#/Components/Atoms/Badge)
+- [`<Button />`](#/Components/Atoms/Button)
+- [`<Card />`](#/Components/Atoms/Card)
+- [`<Doprdown />`](#/Components/Atoms/Dropdown)
+- [`<ErrorMessage />`](#/Components/Atoms/ErrorMessage)
+- [`<Heading />`](#/Components/Atoms/Heading)
+- [`<InputLabel />`](#/Components/Atoms/InputLabel)
+- [`<InputText />`](#/Components/Atoms/InputText)
+- [`<Link />`](#/Components/Atoms/Link)
+- [`<SidekickCard />`](#/Components/Atoms/SidekickCard)
+- [`<Spinner />`](#/Components/Atoms/Spinner)
+- [`<Text />`](#/Components/Atoms/Text)
 
 ### Tips
 

@@ -8,6 +8,10 @@ import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { IField, IInput } from '../../types';
 
+export interface ICheckboxFieldProps extends IField, IInput {
+  name: string;
+}
+
 const zoomOut = keyframes`
   from {
     transform: scale(0.4);
@@ -87,16 +91,13 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const CheckboxField = (props: Omit<IField, 'helpText'>) => {
-  const { label, inputProps, errorMessage, size, ...rest } = props;
-  const { name } = inputProps;
-
-  if (!name) throw Error('Name must be set in inputProps. Check the docs.');
+const CheckboxField = (props: ICheckboxFieldProps) => {
+  const { label, errorMessage, className, inputSize, name, ...rest } = props;
 
   return (
     <>
-      <SizedContainer size={size} {...rest}>
-        <Input id={`checkbox-id-${name}`} type="checkbox" {...inputProps} />
+      <SizedContainer size={inputSize} className={className}>
+        <Input id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
         <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
       </SizedContainer>
       {errorMessage && <FieldError>{errorMessage}</FieldError>}

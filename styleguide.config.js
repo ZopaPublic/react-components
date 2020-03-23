@@ -54,6 +54,12 @@ module.exports = {
       components: 'src/content/**/*.tsx',
     },
     {
+      name: 'Hooks',
+      content: 'src/hooks/README.md',
+      components: 'src/hooks/**/*.{js,ts}',
+      ignore: 'src/hooks/**/index.ts',
+    },
+    {
       sectionDepth: 2,
       name: 'Components',
       content: 'src/components/README.md',

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Legend /> renders the component with no a11y violations 1`] = `
+.c0 {
+  padding: 0;
+  display: table;
+  margin-bottom: 10px;
+}
+
+<legend
+  class="c0"
+/>
+`;

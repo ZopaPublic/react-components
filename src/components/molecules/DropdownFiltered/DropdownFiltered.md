@@ -44,10 +44,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   items={items}
   name="fruit"
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
-  inputProps={{
-    placeholder: 'Select a fruit...',
-    name: 'fruits1',
-  }}
+  placeholder="Select a fruit..."
+  name="fruits1"
 />;
 ```
 
@@ -64,10 +62,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   name="fruit-default"
   initialSelectedItem={{ value: 'orange' }}
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
-  inputProps={{
-    placeholder: 'Select a fruit...',
-    name: 'fruits2',
-  }}
+  placeholder="Select a fruit..."
+  name="fruits2"
 />;
 ```
 
@@ -136,10 +132,8 @@ const items = [
   name="nationality-default"
   onChange={selection => selection && console.log(`You selected ${selection.alpha2}`)}
   optionsListMaxHeight="250px"
-  inputProps={{
-    placeholder: 'Select a nationality...',
-    name: 'nationality1',
-  }}
+  placeholder="Select a nationality..."
+  name="nationality1"
 />;
 ```
 
@@ -156,10 +150,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   name="fruit-error"
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
   errorMessage="Ops! There is an error!"
-  inputProps={{
-    placeholder: 'Select a fruit...',
-    name: 'fruits3',
-  }}
+  placeholder="Select a fruit..."
+  name="fruits3"
 />;
 ```
 
@@ -175,10 +167,8 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   items={items}
   name="fruit-isValid"
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
-  inputProps={{
-    placeholder: 'Select a fruit...',
-    name: 'fruits4',
-  }}
+  placeholder="Select a fruit..."
+  name="fruits4"
   isValid={true}
 />;
 ```
@@ -195,11 +185,9 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   items={items}
   name="fruit-disabled"
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
-  inputProps={{
-    disabled: true,
-    placeholder: 'Select a fruit...',
-    name: 'fruits5',
-  }}
+  disabled={true}
+  placeholder="Select a fruit..."
+  name="fruits5"
   defaultSelectedItem={{ value: 'orange' }}
 />;
 ```
@@ -217,11 +205,9 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   name="fruit-sized"
   onChange={selection => selection && console.log(`You selected ${selection.value}`)}
   defaultSelectedItem={{ value: 'orange' }}
-  inputProps={{
-    disabled: true,
-    placeholder: 'Select a fruit...',
-    name: 'fruits6',
-  }}
+  disabled={true}
+  placeholder="Select a fruit..."
+  name="fruits6"
   size="short"
 />;
 ```

@@ -36,11 +36,12 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c6 {
+  background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   line-height: 1.6;
-  color: #DCDBE2;
+  color: #4A3EDE;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -51,6 +52,8 @@ exports[`<Links /> renders the component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  padding: 0;
+  border: none;
 }
 
 .c6:hover {
@@ -92,6 +95,7 @@ exports[`<Links /> renders the component 1`] = `
 }
 
 .c7 {
+  color: #DCDBE2;
   display: block;
 }
 
@@ -160,7 +164,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/loans/car-loans"
           >
             Car loans
@@ -171,7 +175,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/loans/debt-consolidation"
           >
             Debt consolidation loans
@@ -182,7 +186,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/loans/home-improvement"
           >
             Home improvement loans
@@ -193,7 +197,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/loans/wedding"
           >
             Wedding loans
@@ -204,7 +208,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/invest"
           >
             Peer-to-peer investments
@@ -215,7 +219,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/invest/isa"
           >
             Innovative Finance ISA
@@ -244,7 +248,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about"
           >
             About Us
@@ -255,7 +259,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/our-story"
           >
             Our story
@@ -266,7 +270,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/board"
           >
             Meet the board
@@ -277,7 +281,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/leadership"
           >
             Meet the leadership team
@@ -288,7 +292,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/awards"
           >
             Awards
@@ -299,7 +303,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/careers"
           >
             Careers
@@ -310,7 +314,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://blog.zopa.com"
           >
             Blog
@@ -321,7 +325,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/about/press"
           >
             Press team
@@ -332,7 +336,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/feelgood"
           >
             New products
@@ -361,7 +365,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/privacy-notice"
           >
             Privacy notice
@@ -372,7 +376,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/cookie-policy"
           >
             Cookie policy
@@ -383,7 +387,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/conflicts-policy"
           >
             Conflicts policy
@@ -394,7 +398,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/modern-slavery"
           >
             Modern slavery
@@ -405,7 +409,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/website-terms"
           >
             Website terms
@@ -416,7 +420,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/principles"
           >
             P2P Principles
@@ -445,7 +449,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/contact"
           >
             Support
@@ -456,7 +460,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://helpcentre.zopa.com/"
           >
             Common Questions
@@ -467,7 +471,7 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#DCDBE2"
+            color="#4A3EDE"
             href="https://www.zopa.com/sitemap"
           >
             Sitemap

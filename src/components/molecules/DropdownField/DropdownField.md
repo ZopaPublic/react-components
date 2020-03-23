@@ -11,7 +11,7 @@ import { DropdownField } from '@zopauk/react-components';
   hasError={true}
   label="Your cool dropdown"
   errorMessage="You need to choose something!"
-  size="short"
+  inputSize="short"
   name="foo"
   helpText="Additional info"
 >
