@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
@@ -104,16 +104,7 @@ const Input = styled.input<IInputStatus>`
 
 export interface IRadioField extends IField, IInput {}
 
-const RadioField: FC<IRadioField> = ({
-  label,
-  hasError,
-  errorMessage,
-  isValid,
-  value,
-  inputSize,
-  className,
-  ...rest
-}) => {
+const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: IRadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
 
   return (
