@@ -1,3 +1,74 @@
+# [3.0.0](https://github.com/zopaUK/react-components/compare/v2.12.2...v3.0.0) (2020-03-23)
+
+
+### Bug Fixes
+
+* **button:** extract and export buttonStyle ([e41f222](https://github.com/zopaUK/react-components/commit/e41f222a1b0eea38a813705d46ad67d90975fce8))
+* **button:** remove underline in case button is a link ([a586902](https://github.com/zopaUK/react-components/commit/a586902c53905fea3317238ed27790f66c120184))
+* **card:** fix card styling to follow mobile-first approach ([5e9fa4f](https://github.com/zopaUK/react-components/commit/5e9fa4ff8f2801c7710ebfd1b5affcbd82648ad5))
+* **checkboxfield:** remove inputProps and rename size to inputSize ([50cab97](https://github.com/zopaUK/react-components/commit/50cab971cef50734cd5cb4559abac17d9f706be0))
+* **dropdownfield:** remove inputProps and rename size to inputSize ([b668511](https://github.com/zopaUK/react-components/commit/b66851161697b5d1295c8717100be577094447d9))
+* **dropdownfiltered:** don't overwrite input's onChange and onFocus ([70be323](https://github.com/zopaUK/react-components/commit/70be32389193e2e5492885e8d587a5c06b7b1167))
+* **dropdownfiltered:** pass name prop to search input ([99bc51d](https://github.com/zopaUK/react-components/commit/99bc51dca0a836809cbc8196deed4a9ba87ca986))
+* **dropdownfiltered:** remove inputProps, rename size to inputSize ([8a342e0](https://github.com/zopaUK/react-components/commit/8a342e0a402114f7c8dbbe783dd273e44e7a0bdd))
+* **form:** make the Form type consistent with the form component ([e4a3007](https://github.com/zopaUK/react-components/commit/e4a3007458924dd708033ba898592e29eafa8b6b))
+* **form:** remove inputProps from underlying form components ([d9698fa](https://github.com/zopaUK/react-components/commit/d9698fab6ea7e0832a569575e1e80ceb845962f5))
+* **form:** split form into provider and form element ([0481816](https://github.com/zopaUK/react-components/commit/048181623fbdf4334ed6ab2869c53e87129e7e6d)), closes [#206](https://github.com/zopaUK/react-components/issues/206)
+* **formradiofield:** properly handle value change ([ecea874](https://github.com/zopaUK/react-components/commit/ecea8741c8645963c946b9fe91e626c8280eae86))
+* **formradiofield:** remove it ([3453fcd](https://github.com/zopaUK/react-components/commit/3453fcd6c3230e08cff7d3bf43c5de997e49cfdd))
+* **link:** extract and export linkStyle ([be43ffb](https://github.com/zopaUK/react-components/commit/be43ffb89a5d01b1d0e8ba04e7830bfe5f6c56c5))
+* **link:** remove padding and border from link if used as button ([9d718c5](https://github.com/zopaUK/react-components/commit/9d718c5b976e62a08a1485493d59b4b78de72bad))
+* **link:** type `color` prop properly ([39a68df](https://github.com/zopaUK/react-components/commit/39a68df7a2e15be74f6ba221410202c77054e817))
+* **radio-field:** don't implicitly allow children ([ce09c69](https://github.com/zopaUK/react-components/commit/ce09c69f2a0441d6bdffeab8b3ee623a51db414e))
+* **radio-field:** remove margin bottom ([388a23e](https://github.com/zopaUK/react-components/commit/388a23efd9b9deed091ba8968e28aea0382019d9))
+* **radiofield:** pass value prop to underlying input ([7ef8d33](https://github.com/zopaUK/react-components/commit/7ef8d33bfc5c867bf6a76272c2d703d0af05c3f5))
+* **radiofield:** remove inputProps and rename size to inputSize ([d841644](https://github.com/zopaUK/react-components/commit/d8416443f34bb9488dcd6f426f4c4b6d07a51b6b))
+* **radiogroupfield:** add a bit more spacing below the label ([629102b](https://github.com/zopaUK/react-components/commit/629102be6465880f9d0e2f977406bf448412c22a))
+* **radiogroupfield:** add a bit more spacing below the label ([b32e789](https://github.com/zopaUK/react-components/commit/b32e7892341adefc76fc706877ce3ba79ca650ec))
+* **radiogroupfield:** fix disabling the input ([2398e4e](https://github.com/zopaUK/react-components/commit/2398e4efd934456d0f97a8d553bf767f79224674))
+* **radiogroupfield:** make it accessible - use fieldset and legend ([a0e1dbf](https://github.com/zopaUK/react-components/commit/a0e1dbfc2dd11880792a03cce930814fa0377e42))
+* **textfield:** remove inputProps and rename size to inputSize ([948bf02](https://github.com/zopaUK/react-components/commit/948bf022a6e25f25325a795e761f1e65ca83616f)), closes [#152](https://github.com/zopaUK/react-components/issues/152)
+* pass name to TextField and CheckboxField ([5285a0c](https://github.com/zopaUK/react-components/commit/5285a0cb2f819f7056ba71717c942d72e45e5be4))
+* **use-viewport:** add timeout option ([71ef789](https://github.com/zopaUK/react-components/commit/71ef78996b19f7bc1d67fc134efe56662445f82d))
+* **use-viewport:** circular dep ([c37cd33](https://github.com/zopaUK/react-components/commit/c37cd335275b4fccbbe59d3d53c7c7b916e4e8e3))
+* **useform:** make exported types less generic ([7899a24](https://github.com/zopaUK/react-components/commit/7899a248ecbff7251406a9aa1d9b41e9deba112c))
+* **useform:** make onSubmit optional ([6dce3ec](https://github.com/zopaUK/react-components/commit/6dce3ec07d570a4d379f927dcb6ea933674cb04c))
+* **useform:** make validation sync ([9709d6d](https://github.com/zopaUK/react-components/commit/9709d6df4aefa769bcd116864bc10d94dcef8f3b))
+* **useform:** pass through initialValues ([7492b8f](https://github.com/zopaUK/react-components/commit/7492b8fa44e34991aef4b13bd116a1e3606bc55e))
+
+
+### Features
+
+* **breakpoints:** expose constants ([d9c0e71](https://github.com/zopaUK/react-components/commit/d9c0e718810a050e3156706525aa97c54320fbda))
+* **checkboxgroupfield:** create CheckboxGroupField component ([29cb9da](https://github.com/zopaUK/react-components/commit/29cb9da9b57c3f16ad11ad6ab9ca8aeeb0b746fe))
+* **fieldset:** add Fieldset that resets browser default styling ([e397681](https://github.com/zopaUK/react-components/commit/e3976812ca34bda37de862a651ea356db79f3973))
+* **formcheckboxgroupfield:** create FormCheckboxGroupField component ([e688e98](https://github.com/zopaUK/react-components/commit/e688e981fed0e0c8bd27cf46445811f6b51b05eb))
+* **formradiogroupfield:** add RadioGroupField to Form ([74df57e](https://github.com/zopaUK/react-components/commit/74df57e43d97e80fdb63f184b9c04579774c6209))
+* **heading:** granular size control ([6614dfc](https://github.com/zopaUK/react-components/commit/6614dfcc1c3f44db534ce2116b05ee111ccafff0))
+* **legend:** add Legend to reset browser defaults ([b9b2669](https://github.com/zopaUK/react-components/commit/b9b26697320bbcaf9415f42fcd0ec139fe6407ca))
+* **navbar:** export height ([c7e0c3d](https://github.com/zopaUK/react-components/commit/c7e0c3df7013df673ecad8eae41881b7e8ebd0be))
+* **radiogroupfield:** create RadioGroupField component ([594b527](https://github.com/zopaUK/react-components/commit/594b52759480b7772579ba73037a8fcb937bbd71)), closes [#182](https://github.com/zopaUK/react-components/issues/182)
+* **use-viewport:** new hook ([3d18d57](https://github.com/zopaUK/react-components/commit/3d18d57460113d6bd9b49e9d79978bf3ba895ddb))
+* **use-viewport:** read from context ([2d935a9](https://github.com/zopaUK/react-components/commit/2d935a973e46c3312059ef9223f6d7b4ae524a18))
+
+
+### BREAKING CHANGES
+
+* **formradiofield:** FormRadioField is no longer present. Use FormRadioGroup instead
+* **textfield:** since inputProps are gone, props have to be passed directly to the component, size
+has been replaced with inputSize
+* **radiofield:** since inputProps are gone, props have to be passed directly to the component, size
+has been replaced with inputSize
+* **dropdownfiltered:** since inputProps are gone, props have to be passed directly to the component, size
+has been replaced with inputSize
+* **dropdownfield:** since inputProps are gone, props have to be passed directly to the component, size
+has been replaced with inputSize
+* **checkboxfield:** since inputProps are gone, props have to be passed directly to the component, size
+has been replaced with inputSize
+* **useform:** Prepend form types with the word Form
+* **form:** You need to nest <Form.Form> under <Form /> to maintain the previous
+structure/behavior
+
 ## [2.12.2](https://github.com/zopaUK/react-components/compare/v2.12.1...v2.12.2) (2020-03-23)
 
 
