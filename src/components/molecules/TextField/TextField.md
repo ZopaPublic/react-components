@@ -28,7 +28,7 @@ import { TextField } from '@zopauk/react-components';
 ```tsx
 import { TextField } from '@zopauk/react-components';
 
-<TextField size="short" name="text2" />;
+<TextField inputSize="short" name="text2" />;
 ```
 
 - With a label
@@ -60,7 +60,7 @@ import { TextField } from '@zopauk/react-components';
 ```tsx
 import { TextField } from '@zopauk/react-components';
 
-<TextField label="Label" helpText="Additional info" errorMessage="Not ok!" size="short" name="text6" />;
+<TextField label="Label" helpText="Additional info" errorMessage="Not ok!" inputSize="short" name="text6" />;
 ```
 
 - With a custom text prefix
@@ -68,5 +68,5 @@ import { TextField } from '@zopauk/react-components';
 ```tsx
 import { TextField } from '@zopauk/react-components';
 
-<TextField label="Label" size="short" name="text7" prefix="£" />;
+<TextField label="Label" inputSize="short" name="text7" prefix="£" />;
 ```

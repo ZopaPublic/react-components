@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/zopaUK/react-components/compare/v3.0.0...v3.0.1) (2020-03-24)
+
+
+### Bug Fixes
+
+* **InputText:** remove webkit appearance ([ddaf94d](https://github.com/zopaUK/react-components/commit/ddaf94de44fdf1d2a31136a2117e55b37fb6a7ea))
+
 # [3.0.0](https://github.com/zopaUK/react-components/compare/v2.12.2...v3.0.0) (2020-03-23)
 
 
