@@ -29,6 +29,34 @@ However, [nor the interface nor the types were consistent](https://github.com/zo
 <TextField label="Your favorite hero?" name="hero" placeholder="Saitama" />
 ```
 
+### ☕️ &nbsp;Input size
+
+Before, to control the rendered size on our `<*Field />` components you had to supply a `size` prop:
+
+```jsx
+<TextField size="short" label="Your hero?" inputProps={{ name: 'hero' }} />
+```
+
+This conflicted sometimes with native HTML `size` attributes on some form controls, so we decided to rename it to `inputSize`:
+
+```jsx
+<TextField inputSize="short" label="Your hero?" name="hero" />
+```
+
+### ☕️ &nbsp;Downshift
+
+We upgraded to the last major version of [Downshift](https://github.com/downshift-js/downshift) 🏎 ❤️.
+
+We use it on `<DropdownFiltered />`: the prop to toggle options as selected by default has been renamed accordingly:
+
+```jsx
+// before
+<DropdownFiltered defaultSelectedItem={{value: 'Britain'}} />
+
+// now
+<DropdownFiltered initialSelectedItem={{value: 'Britain'}} />
+```
+
 ### ☕️ `<Form.Form />`
 
 Before it wasn't possible to have a nested `<Form />` within `<Form />` as that would generate an HTML like:
@@ -78,6 +106,10 @@ To render a group of radio buttons.
 
 To render a group of checkboxes.
 
+### 🥕 `<FieldSet />` and `<Legend />`
+
+New components to enhance semantics on groups of form controls.
+
 ### 🥕 `<Heading size />`
 
 You can now have more fine control over the rendered `font-size` on `<Heading />` through the new `size` prop:
@@ -109,6 +141,7 @@ We also exported our [breakpoints](https://github.com/zopaUK/react-components/bl
 The CSS to generate `<Button />` and `<Link />` is now exported as `buttonStyle` and `linkStyle` to be able to create custom button and links:
 
 ```jsx
+import { buttonStyle } from '@zopauk/react-components';
 import { Link } from 'react-router-dom';
 
 const ButtonLink = styled(Link)`

@@ -208,6 +208,6 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   disabled={true}
   placeholder="Select a fruit..."
   name="fruits6"
-  size="short"
+  inputSize="short"
 />;
 ```
