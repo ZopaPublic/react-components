@@ -23,10 +23,10 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
 }
 
 .c3:focus {
-  outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
@@ -153,10 +153,10 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
 }
 
 .c2:focus {
-  outline-width: 0;
   border: 2px solid #4A3EDE;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
