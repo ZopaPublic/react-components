@@ -8,6 +8,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c1:focus {
@@ -67,6 +68,7 @@ exports[`<TextField /> renders the component with error 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c1:focus {
@@ -173,6 +175,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c1:focus {
@@ -232,6 +235,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c2:focus {
@@ -323,6 +327,7 @@ exports[`<TextField /> renders the component with size 1`] = `
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c1:focus {
