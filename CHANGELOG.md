@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/zopaUK/react-components/compare/v3.0.1...v3.0.2) (2020-03-24)
+
+
+### Bug Fixes
+
+* **inputtext:** remove outline at all ([5b90383](https://github.com/zopaUK/react-components/commit/5b90383c837458f893dc149d8626f197aff6d25e))
+
 ## [3.0.1](https://github.com/zopaUK/react-components/compare/v3.0.0...v3.0.1) (2020-03-24)
 
 
