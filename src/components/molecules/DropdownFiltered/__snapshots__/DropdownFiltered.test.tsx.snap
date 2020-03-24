@@ -22,6 +22,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c3:focus {
@@ -151,6 +152,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 48px;
   font-weight: 600;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .c2:focus {

@@ -12,6 +12,7 @@ const Input = styled.input<IInput>`
   height: 48px;
   font-weight: ${typography.weights.semibold};
   width: 100%;
+  -webkit-appearance: none;
 
   &:focus {
     outline-width: 0;
