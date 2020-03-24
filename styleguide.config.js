@@ -56,8 +56,8 @@ module.exports = {
     {
       name: 'Hooks',
       content: 'src/hooks/README.md',
-      components: 'src/hooks/**/*.{js,ts}',
-      ignore: 'src/hooks/**/index.ts',
+      components: 'src/hooks/**/*.ts',
+      ignore: 'src/hooks/**/{index,types,context}.ts',
     },
     {
       sectionDepth: 2,
