@@ -58,7 +58,7 @@ In case you want to contribute to this library, please have a look at our [contr
 
 ## License
 
-This repository is [MIT-licensed](./LICENSE).
+This repository is currently [MIT-licensed](./LICENSE).
 
 ## Trade marks
 
