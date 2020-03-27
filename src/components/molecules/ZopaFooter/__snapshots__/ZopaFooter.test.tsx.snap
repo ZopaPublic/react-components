@@ -16,7 +16,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
+  color: #2C3246;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -33,7 +33,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
 }
 
 .c0 {
-  background-color: #0D0A38;
+  background-color: #2C3246;
   padding: 40px 0;
 }
 
@@ -108,7 +108,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
+  color: #2C3246;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -198,10 +198,10 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
   line-height: 1.6;
-  color: #4A3EDE;
+  color: #3B46C4;
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
@@ -229,8 +229,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   line-height: 1.6;
   color: #FFFFFF;
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
@@ -251,7 +251,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c12 {
-  color: #0D0A38;
+  color: #2C3246;
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -277,7 +277,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c15 {
-  color: #DCDBE2;
+  color: #D4D7D9;
   display: block;
 }
 
@@ -315,7 +315,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c0 {
-  background-color: #0D0A38;
+  background-color: #2C3246;
   padding: 40px 0;
 }
 
@@ -458,7 +458,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
         >
           <a
             class="c5 c6"
-            color="#4A3EDE"
+            color="#3B46C4"
             href="https://www.zopa.com"
           >
             <svg
@@ -615,7 +615,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/loans/car-loans"
                 >
                   Car loans
@@ -626,7 +626,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/loans/debt-consolidation"
                 >
                   Debt consolidation loans
@@ -637,7 +637,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/loans/home-improvement"
                 >
                   Home improvement loans
@@ -648,7 +648,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/loans/wedding"
                 >
                   Wedding loans
@@ -659,7 +659,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/invest"
                 >
                   Peer-to-peer investments
@@ -670,7 +670,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/invest/isa"
                 >
                   Innovative Finance ISA
@@ -699,7 +699,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about"
                 >
                   About Us
@@ -710,7 +710,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/our-story"
                 >
                   Our story
@@ -721,7 +721,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/board"
                 >
                   Meet the board
@@ -732,7 +732,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/leadership"
                 >
                   Meet the leadership team
@@ -743,7 +743,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/awards"
                 >
                   Awards
@@ -754,7 +754,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/careers"
                 >
                   Careers
@@ -765,7 +765,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://blog.zopa.com"
                 >
                   Blog
@@ -776,7 +776,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/about/press"
                 >
                   Press team
@@ -787,7 +787,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/feelgood"
                 >
                   New products
@@ -816,7 +816,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/privacy-notice"
                 >
                   Privacy notice
@@ -827,7 +827,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/cookie-policy"
                 >
                   Cookie policy
@@ -838,7 +838,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/conflicts-policy"
                 >
                   Conflicts policy
@@ -849,7 +849,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/modern-slavery"
                 >
                   Modern slavery
@@ -860,7 +860,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/website-terms"
                 >
                   Website terms
@@ -871,7 +871,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/principles"
                 >
                   P2P Principles
@@ -900,7 +900,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/contact"
                 >
                   Support
@@ -911,7 +911,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://helpcentre.zopa.com/"
                 >
                   Common Questions
@@ -922,7 +922,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
               >
                 <a
                   class="c5 c15"
-                  color="#4A3EDE"
+                  color="#3B46C4"
                   href="https://www.zopa.com/sitemap"
                 >
                   Sitemap

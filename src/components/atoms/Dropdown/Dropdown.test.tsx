@@ -55,7 +55,7 @@ describe('<Dropdown />', () => {
     hasError     | expectBorderColor
     ${false}     | ${DEFAULT_COLOR}
     ${undefined} | ${DEFAULT_COLOR}
-    ${true}      | ${colors.semantic.error}
+    ${true}      | ${colors.alert}
   `(
     'renders the border with the "$expectBorderColor" color if the hasError is "$hasError"',
     ({ hasError, expectBorderColor }) => {
@@ -73,7 +73,7 @@ describe('<Dropdown />', () => {
     isValid      | expectBorderColor
     ${false}     | ${DEFAULT_COLOR}
     ${undefined} | ${DEFAULT_COLOR}
-    ${true}      | ${colors.semantic.success}
+    ${true}      | ${colors.success}
   `(
     'renders the border with the "$expectBorderColor" color if the isValid is "$isValid"',
     ({ isValid, expectBorderColor }) => {

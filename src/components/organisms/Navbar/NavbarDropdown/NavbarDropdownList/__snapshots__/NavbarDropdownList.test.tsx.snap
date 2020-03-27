@@ -24,7 +24,7 @@ exports[`NavbarDropdownList renders the component with props 1`] = `
   -ms-transform: translateY(-50%) rotate(135deg);
   transform: translateY(-50%) rotate(135deg);
   background-color: inherit;
-  box-shadow: -1px 1px 0 0 #EAEAEE;
+  box-shadow: -1px 1px 0 0 #EFEFEF;
 }
 
 <ul

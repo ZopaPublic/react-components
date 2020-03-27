@@ -67,13 +67,13 @@ import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
 
 <Fragment>
-  <Heading as="h4" color={colors.neutral.white}>
+  <Heading as="h4" color={colors.white}>
     White
   </Heading>
-  <Heading as="h4" color={colors.neutral.nearDark}>
+  <Heading as="h4" color={colors.grey}>
     Near Dark
   </Heading>
-  <Heading as="h4" color={colors.neutral.dark} mb={false}>
+  <Heading as="h4" color={colors.greyDarkest} mb={false}>
     Dark
   </Heading>
 </Fragment>;

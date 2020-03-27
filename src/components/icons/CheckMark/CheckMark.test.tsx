@@ -10,7 +10,7 @@ describe('<CheckMark />', () => {
   });
 
   it(`renders with a specific color`, () => {
-    const { container } = render(<CheckMark color={colors.semantic.success} />);
+    const { container } = render(<CheckMark color={colors.success} />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
