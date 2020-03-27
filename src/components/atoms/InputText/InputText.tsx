@@ -13,9 +13,9 @@ const Input = styled.input<IInput>`
   font-weight: ${typography.weights.semibold};
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
 
   &:focus {
-    outline-width: 0;
     border: 2px solid ${colors.base.secondary};
     transition: border 0.2s;
   }
