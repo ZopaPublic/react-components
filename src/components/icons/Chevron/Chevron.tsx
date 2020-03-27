@@ -35,7 +35,7 @@ const StyledChevron = styled.svg<IChevronProps>`
 // ref is excluded from ...rest due to a type conflict; TODO: check if styled-components v4 fixes it.
 const Chevron = ({
   ref,
-  color = colors.base.secondary,
+  color = colors.actionPlain,
   height = '24px',
   width = '24px',
   direction = 'down',

@@ -27,8 +27,8 @@ export interface IProfileState {
 const Profile: React.FunctionComponent<IProfileProps> = ({
   size = '30px',
   active = false,
-  activeColor = colors.base.secondary,
-  inactiveColor = colors.neutral.medium,
+  activeColor = colors.actionPlain,
+  inactiveColor = colors.greyLight,
 }) => {
   const color = active ? activeColor : inactiveColor;
   return (

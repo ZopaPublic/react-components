@@ -1,48 +1,69 @@
-export type TTextHexColors = '#FFFFFF' | '#63637E' | '#0D0A38' | '#1EC06A' | '#EE0505';
-export type TLinkHexColors = '#FFFFFF' | '#4A3EDE';
-
-export interface IBaseColorSpec {
-  primary: '#00B9A7';
-  secondary: '#4A3EDE';
+export interface IBrandColors {
+  brand: '#00D9C5';
+  brandDark: '#063737';
+  brandLight: '#ECFCF9';
 }
 
-export interface INeutralColorSpec {
+export interface IActionColors {
+  action: 'linear-gradient(90deg, #4F5AD8 0%, #3B46C4 100%)';
+  actionPlain: '#3B46C4';
+  actionDark: '#21247F';
+  actionLight: '#E9EAFA';
+}
+
+export interface INeutralColors {
   white: '#FFFFFF';
-  nearWhite: '#F8F8F8';
-  light: '#EAEAEE';
-  medium: '#DCDBE2';
-  nearDark: '#63637E';
-  dark: '#0D0A38';
+  greyLightest: '#F7F7F7';
+  greyLighter: '#EFEFEF';
+  greyLight: '#D4D7D9';
+  grey: '#818F9B';
+  greyDark: '#4A545E';
+  greyDarkest: '#2C3246';
 }
 
-export interface ISemanticColorSpec {
-  success: '#1EC06A';
-  alert: '#FFB428';
-  error: '#EE0505';
+export interface INotificationColors {
+  alert: '#FF4539';
+  alertDark: '#940700';
+  alertLight: '#FFDAD8';
+  warning: '#FF9F0A';
+  warningDark: '#704300';
+  warningLight: '#FFECCE';
+  success: '#3EBC64';
+  successDark: '#17592B';
+  successLight: '#DDFDE5';
 }
 
-export interface IColorSpec {
-  base: IBaseColorSpec;
-  neutral: INeutralColorSpec;
-  semantic: ISemanticColorSpec;
-}
+export type IColors = IBrandColors & IActionColors & INeutralColors & INotificationColors;
 
-export const colors: IColorSpec = {
-  base: {
-    primary: '#00B9A7',
-    secondary: '#4A3EDE',
-  },
-  neutral: {
-    white: '#FFFFFF',
-    nearWhite: '#F8F8F8',
-    light: '#EAEAEE',
-    medium: '#DCDBE2',
-    nearDark: '#63637E',
-    dark: '#0D0A38',
-  },
-  semantic: {
-    success: '#1EC06A',
-    alert: '#FFB428',
-    error: '#EE0505',
-  },
+export const colors: IColors = {
+  // Brand
+  brand: '#00D9C5',
+  brandDark: '#063737',
+  brandLight: '#ECFCF9',
+  // Actions
+  action: 'linear-gradient(90deg, #4F5AD8 0%, #3B46C4 100%)',
+  actionPlain: '#3B46C4',
+  actionDark: '#21247F',
+  actionLight: '#E9EAFA',
+  // Neutral
+  white: '#FFFFFF',
+  greyLightest: '#F7F7F7',
+  greyLighter: '#EFEFEF',
+  greyLight: '#D4D7D9',
+  grey: '#818F9B',
+  greyDark: '#4A545E',
+  greyDarkest: '#2C3246',
+  // Notifications
+  alert: '#FF4539',
+  alertDark: '#940700',
+  alertLight: '#FFDAD8',
+  warning: '#FF9F0A',
+  warningDark: '#704300',
+  warningLight: '#FFECCE',
+  success: '#3EBC64',
+  successDark: '#17592B',
+  successLight: '#DDFDE5',
 };
+
+export type TTextHexColors = '#FFFFFF' | '#63637E' | '#0D0A38' | '#1EC06A' | '#EE0505';
+export type TLinkHexColors = IActionColors['actionPlain'] | INeutralColors['white'];

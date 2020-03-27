@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, INeutralColorSpec } from '../../../constants/colors';
+import { colors, INeutralColors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 const {
@@ -26,11 +26,11 @@ interface IStyledHeadingProps {
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    */
-  color?: INeutralColorSpec['white'] | INeutralColorSpec['nearDark'] | INeutralColorSpec['dark'];
+  color?: INeutralColors['white'] | INeutralColors['grey'] | INeutralColors['greyDarkest'];
 }
 
 const Heading = styled.h1<IStyledHeadingProps>`
-  color: ${({ color = colors.neutral.dark }) => color};
+  color: ${({ color = colors.greyDarkest }) => color};
   
   font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h4'] : headingSizes[as])};
   ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}

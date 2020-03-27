@@ -116,13 +116,13 @@ const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
   <FlexRow justify="space-between">
     <FlexCol xs={12} s={6} m={4} l={2}>
       <LogoLink href={logoUrl}>
-        <ZopaLogo color={colors.neutral.white} />
+        <ZopaLogo color={colors.white} />
       </LogoLink>
     </FlexCol>
     <FlexCol xs={12} s={6} m={4} l={3}>
       <SFlexRow>
         {socialLinksData.map(({ component: Component, label, href }) => (
-          <SFooterLink color={colors.neutral.white} href={href} aria-label={label} key={`footer-social-link-${href}`}>
+          <SFooterLink color={colors.white} href={href} aria-label={label} key={`footer-social-link-${href}`}>
             <Component />
           </SFooterLink>
         ))}

@@ -44,9 +44,9 @@ import { Text, Link } from '@zopauk/react-components';
 ```tsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Text, Link, colors } from '@zopauk/react-components';
 
-<Text as="p" color={colors.neutral.white}>
+<Text as="p" color={colors.white}>
   Some text with
-  <Link color={colors.neutral.white} href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link color={colors.white} href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
     a link
   </Link>
 </Text>;

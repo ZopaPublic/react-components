@@ -37,9 +37,9 @@ const Spinner = styled.div<ISpinnerProps>`
   width: ${({ size = '45px' }) => size};
   height: ${({ size = '45px' }) => size};
   margin: 8px;
-  border: ${({ borderWidth = '8px' }) => borderWidth} solid ${({ frontColor = colors.base.primary }) => frontColor};
+  border: ${({ borderWidth = '8px' }) => borderWidth} solid ${({ frontColor = colors.brand }) => frontColor};
   border-radius: 50%;
-  border-top-color: ${({ backgroundColor = colors.neutral.light }) => backgroundColor};
+  border-top-color: ${({ backgroundColor = colors.greyLighter }) => backgroundColor};
   animation: ${spin} 1.2s linear infinite;
 `;
 

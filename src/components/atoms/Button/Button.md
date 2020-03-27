@@ -107,7 +107,7 @@ import { Button } from '@zopauk/react-components';
 ```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
-<Button styling="contrastPrimary" contrastColor={colors.neutral.dark}>
+<Button styling="contrastPrimary" contrastColor={colors.greyDark}>
   Button smash
 </Button>;
 ```
@@ -117,7 +117,7 @@ import { Button, colors } from '@zopauk/react-components';
 ```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
 import { Button, colors } from '@zopauk/react-components';
 
-<Button styling="contrastSecondary" contrastColor={colors.neutral.light}>
+<Button styling="contrastSecondary" contrastColor={colors.greyLighter}>
   Button smash
 </Button>;
 ```

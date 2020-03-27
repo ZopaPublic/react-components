@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import chevronDown from '../../../content/images/chevron-down.svg';
 import { getBorderColorByStatus } from '../../../helpers/utils';
+import { typography } from '../../../constants/typography';
 
-export const DEFAULT_COLOR = colors.neutral.medium;
+export const DEFAULT_COLOR = colors.greyLight;
 
 export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
@@ -26,13 +27,14 @@ const StyledDropdown = styled.select<IDropdownProps>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
+  font-weight: ${typography.weights.semibold};
   height: 46px;
   min-width: 100px;
   user-select: none;
 
   &:focus {
     outline-width: 0;
-    border: 2px solid ${colors.base.secondary};
+    border: 2px solid ${colors.actionPlain};
     transition: border 0.2s;
   }
 `;

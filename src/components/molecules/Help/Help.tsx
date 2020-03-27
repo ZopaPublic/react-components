@@ -8,7 +8,7 @@ import FlexRow from '../../layout/FlexRow/FlexRow';
 import { colors } from '../../../constants/colors';
 
 const HelpWrap = styled.div`
-  background: ${colors.neutral.white};
+  background: ${colors.white};
   padding: 80px 16px;
   box-sizing: border-box;
 `;

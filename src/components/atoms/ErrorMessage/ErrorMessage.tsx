@@ -11,7 +11,7 @@ const ErrorMessage = styled(Text).attrs({
   size: 'small',
 })`
   width: 100%;
-  color: ${colors.semantic.error};
+  color: ${colors.alert};
   display: block;
 
   &:before {

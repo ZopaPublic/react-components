@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
+import { colors, INeutralColors, INotificationColors } from '../../../constants/colors';
 
 export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
@@ -25,17 +25,17 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Heading />`.
    */
   color?:
-    | INeutralColorSpec['white']
-    | INeutralColorSpec['nearDark']
-    | INeutralColorSpec['dark']
-    | ISemanticColorSpec['success']
-    | ISemanticColorSpec['error'];
+    | INeutralColors['white']
+    | INeutralColors['grey']
+    | INeutralColors['greyDarkest']
+    | INotificationColors['success']
+    | INotificationColors['alert'];
 }
 
 const Text = styled.span<ITextProps>`
   margin: 0;
   letter-spacing: 0;
-  color: ${({ color = colors.neutral.dark }) => color};
+  color: ${({ color = colors.greyDarkest }) => color};
 
   ${({ mb = false }) =>
     mb &&
