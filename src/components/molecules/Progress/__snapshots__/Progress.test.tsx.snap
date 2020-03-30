@@ -7,7 +7,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
+  color: #2C3246;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
@@ -18,7 +18,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   position: relative;
   width: 100%;
   border-radius: 100px;
-  background: #EAEAEE;
+  background: #EFEFEF;
   height: 4px;
 }
 
@@ -28,7 +28,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: #FFB428;
+  background: #00D9C5;
 }
 
 .c1 > span {
@@ -38,7 +38,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
-  color: #0D0A38;
+  color: #2C3246;
 }
 
 <div>

@@ -36,7 +36,7 @@ const StyledArrow = styled.svg<IArrowProps>`
 
 const Arrow = ({
   ref,
-  color = colors.base.secondary,
+  color = colors.actionPlain,
   height = '12px',
   width = '12px',
   direction = defaultDirection,

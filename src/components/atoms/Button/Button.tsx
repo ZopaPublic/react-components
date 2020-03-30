@@ -38,47 +38,47 @@ const smallInset = 'inset 0 0 0 2px';
 const largeInset = 'inset 0 0 0 4px';
 
 const fontColors: Partial<TButtonStylingMapping> = {
-  alert: colors.neutral.white,
-  contrastLink: colors.neutral.white,
-  contrastSecondary: colors.neutral.white,
-  link: colors.base.secondary,
-  primary: colors.neutral.white,
-  secondary: colors.base.secondary,
-  warning: colors.neutral.dark,
+  alert: colors.white,
+  contrastLink: colors.white,
+  contrastSecondary: colors.white,
+  link: colors.actionPlain,
+  primary: colors.white,
+  secondary: colors.greyDark,
+  warning: colors.greyDarkest,
 };
 
 const backgroundColors: TButtonStylingMapping = {
-  alert: colors.semantic.error,
+  alert: colors.alert,
   contrastLink: 'transparent',
-  contrastPrimary: colors.neutral.white,
+  contrastPrimary: colors.white,
   contrastSecondary: 'transparent',
   link: 'transparent',
-  primary: colors.base.secondary,
-  secondary: 'transparent',
-  warning: colors.semantic.alert,
+  primary: colors.action,
+  secondary: colors.greyLighter,
+  warning: colors.warning,
 };
 
 const activeBackgroundColors: Partial<TButtonStylingMapping> = {
   contrastSecondary: 'transparent',
-  secondary: colors.base.secondary,
+  secondary: colors.action,
 };
 
 const boxShadows: Partial<TButtonStylingMapping> = {
-  contrastSecondary: `${smallInset} ${colors.neutral.white}`,
-  secondary: `${smallInset} ${colors.base.secondary}`,
+  contrastSecondary: `${smallInset} ${colors.white}`,
+  secondary: `${smallInset} ${colors.action}`,
 };
 
 const activeBoxShadows: Partial<TButtonStylingMapping> = {
-  alert: `${smallInset} ${colors.semantic.error}, ${largeInset} ${colors.neutral.white}`,
-  contrastPrimary: `${smallInset} ${colors.neutral.white}, ${largeInset} ${colors.base.secondary}`,
-  contrastSecondary: `${smallInset} ${colors.neutral.white}`,
-  primary: `${smallInset} ${colors.base.secondary}, ${largeInset} ${colors.neutral.white}`,
-  secondary: `${largeInset} ${colors.base.secondary}`,
-  warning: `${smallInset} ${colors.semantic.alert}, ${largeInset} ${colors.neutral.dark}`,
+  alert: `${smallInset} ${colors.alert}, ${largeInset} ${colors.white}`,
+  contrastPrimary: `${smallInset} ${colors.white}, ${largeInset} ${colors.action}`,
+  contrastSecondary: `${smallInset} ${colors.white}`,
+  primary: `${smallInset} ${colors.action}, ${largeInset} ${colors.white}`,
+  secondary: `${largeInset} ${colors.action}`,
+  warning: `${smallInset} ${colors.warning}, ${largeInset} ${colors.greyDarkest}`,
 };
 
 const hoverFontColors: Partial<TButtonStylingMapping> = {
-  secondary: colors.neutral.white,
+  secondary: colors.greyDark,
 };
 
 const fontSizes: TButtonSizingMapping = {
@@ -118,7 +118,7 @@ export const buttonStyle = css<IButtonProps>`
   border-radius: 8px;
   color: ${({ contrastColor }) => contrastColor};
   color: ${({ styling = 'primary', contrastColor }) => (contrastColor ? contrastColor : fontColors[styling])};
-  background-color: ${({ styling = 'primary' }) => backgroundColors[styling]};
+  background: ${({ styling = 'primary' }) => backgroundColors[styling]};
   transition: all 140ms ease-in-out;
 
   &:not(:disabled) {
@@ -132,7 +132,6 @@ export const buttonStyle = css<IButtonProps>`
   }
 
   &:hover:not(:disabled) {
-    opacity: 0.8;
     color: ${({ styling = 'primary' }) => hoverFontColors[styling]};
     background-color: ${({ styling = 'primary' }) => activeBackgroundColors[styling]};
     box-shadow: ${({ styling }) => (styling === 'contrastSecondary' ? activeBoxShadows[styling] : 'none')};

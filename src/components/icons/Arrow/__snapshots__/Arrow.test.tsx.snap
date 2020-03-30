@@ -307,7 +307,7 @@ exports[`<Arrow /> should render without crashing 1`] = `
     stroke-width="1"
   >
     <g
-      fill="#4A3EDE"
+      fill="#3B46C4"
       fill-rule="nonzero"
       transform="translate(0.000000, -14.000000)"
     >

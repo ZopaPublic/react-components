@@ -10,7 +10,7 @@ import Wrapper from './Wrapper/Wrapper';
 import { colors } from '../../../constants/colors';
 
 const Footer = styled.footer`
-  background-color: ${colors.neutral.dark};
+  background-color: ${colors.greyDarkest};
   padding: 40px 0;
 `;
 

@@ -62,7 +62,7 @@ export interface INavbarProps {
   right?: React.ReactNode;
 }
 
-const Navbar = ({ backgroundColor = colors.neutral.white, left, center, right }: INavbarProps) => {
+const Navbar = ({ backgroundColor = colors.white, left, center, right }: INavbarProps) => {
   const overThreshold = useScrollThreshold();
 
   return (

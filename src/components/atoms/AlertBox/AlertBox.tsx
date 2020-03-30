@@ -10,7 +10,7 @@ export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
 const Box = styled.div`
   display: inline-flex;
   padding: 16px;
-  border: 1px solid ${colors.neutral.light};
+  border: 1px solid ${colors.greyLighter};
   border-radius: 8px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 `;

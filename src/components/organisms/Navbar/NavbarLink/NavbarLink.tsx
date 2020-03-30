@@ -41,7 +41,7 @@ export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorE
 }
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
-  ({ active = false, children, open = false, withChevron = false, color = colors.base.secondary, ...rest }, ref) => (
+  ({ active = false, children, open = false, withChevron = false, color = colors.actionPlain, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} color={color} ref={ref} {...rest}>
       {children}
       {withChevron && (

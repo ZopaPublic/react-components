@@ -14,9 +14,9 @@ export interface ISidekickCardProps {
 }
 
 const sidekickTypeColors = {
-  alert: colors.semantic.alert,
-  triumph: colors.semantic.success,
-  verified: colors.semantic.success,
+  alert: colors.warning,
+  triumph: colors.success,
+  verified: colors.success,
 };
 
 const typeIcons = {
@@ -27,7 +27,7 @@ const typeIcons = {
 
 const SidekickCard = styled.div<ISidekickCardProps>`
   border-radius: 4px;
-  background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.neutral.white};
+  background: url(${({ type }) => typeIcons[type]}) 24px 48px no-repeat ${colors.white};
   padding: 48px 48px 48px 80px;
   border-left: 16px solid ${({ type }) => sidekickTypeColors[type]};
 

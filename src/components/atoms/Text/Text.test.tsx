@@ -53,12 +53,12 @@ describe('<Text />', () => {
   });
 
   it.each`
-    hex                        | name
-    ${colors.neutral.white}    | ${'White'}
-    ${colors.neutral.medium}   | ${'Medium'}
-    ${colors.neutral.dark}     | ${'Dark'}
-    ${colors.semantic.success} | ${'Success'}
-    ${colors.semantic.error}   | ${'Error'}
+    hex                   | name
+    ${colors.white}       | ${'White'}
+    ${colors.grey}        | ${'Grey'}
+    ${colors.greyDarkest} | ${'Grey Darkest'}
+    ${colors.success}     | ${'Success'}
+    ${colors.alert}       | ${'Alert'}
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(<Text color={hex}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('color', hex);

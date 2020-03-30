@@ -24,9 +24,9 @@ describe('<Link />', () => {
   });
 
   it.each`
-    hex                      | name
-    ${colors.base.secondary} | ${'Blue'}
-    ${colors.neutral.white}  | ${'White'}
+    hex                   | name
+    ${colors.actionPlain} | ${'Action'}
+    ${colors.white}       | ${'White'}
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(
       <Link href="http://duckduckgo.com" color={hex}>

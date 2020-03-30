@@ -19,7 +19,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c1:checked + label:before {
   content: '';
-  background-color: #4A3EDE;
+  background-color: #3B46C4;
 }
 
 .c1:checked + label:after {
@@ -31,7 +31,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c1:focus + label:before {
-  border: 2px #4A3EDE solid;
+  border: 2px #3B46C4 solid;
 }
 
 .c2 {
@@ -41,7 +41,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
+  color: #2C3246;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -53,7 +53,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: flex;
   font-weight: 400;
   line-height: 1.4;
-  color: #0D0A38;
+  color: #2C3246;
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -64,7 +64,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c2:before {
   content: '';
-  background-color: #EAEAEE;
+  background-color: #EFEFEF;
   border-radius: 6px;
   height: 24px;
   width: 24px;
@@ -92,7 +92,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c2:hover:before {
-  border: 2px #DCDBE2 solid;
+  border: 2px #D4D7D9 solid;
 }
 
 <div

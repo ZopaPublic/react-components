@@ -62,9 +62,7 @@ import { Text } from '@zopauk/react-components';
   <Text weight="semibold" mb>
     Semi-bold weight
   </Text>
-  <Text weight="bold" mb>
-    Bold weight
-  </Text>
+  <Text weight="bold">Bold weight</Text>
 </Fragment>;
 ```
 
@@ -75,18 +73,18 @@ import { Fragment } from 'react';
 import { Text, colors } from '@zopauk/react-components';
 
 <Fragment>
-  <Text color={colors.neutral.white} mb>
+  <Text color={colors.white} mb>
     White
   </Text>
-  <Text color={colors.neutral.nearDark} mb>
-    Near Dark
+  <Text color={colors.grey} mb>
+    Grey
   </Text>
-  <Text color={colors.neutral.dark} mb>
-    Dark
+  <Text color={colors.greyDarkest} mb>
+    Grey Darkest
   </Text>
-  <Text color={colors.semantic.success} mb>
+  <Text color={colors.success} mb>
     Success
   </Text>
-  <Text color={colors.semantic.error}>Error</Text>
+  <Text color={colors.alert}>Alert</Text>
 </Fragment>;
 ```

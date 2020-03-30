@@ -16,19 +16,19 @@ const Input = styled.input<IInput>`
   outline: none;
 
   &:focus {
-    border: 2px solid ${colors.base.secondary};
+    border: 2px solid ${colors.actionPlain};
     transition: border 0.2s;
   }
 
   &::placeholder {
     /* Firefox applies by default 0.5 opacity to the placeholder, 'normalize.css' stopped normalising this due to a Microsoft Edge bug */
     /* @see https://github.com/necolas/normalize.css/issues/741  */
-    color: ${colors.neutral.medium};
+    color: ${colors.greyLight};
     opacity: 1;
   }
 
   &:disabled {
-    background-color: ${colors.neutral.light};
+    background-color: ${colors.greyLighter};
   }
 `;
 
