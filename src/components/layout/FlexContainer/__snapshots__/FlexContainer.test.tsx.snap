@@ -4,8 +4,8 @@ exports[`<FlexContainer /> renders FlexContainer 1`] = `
 .c0 {
   width: 100%;
   max-width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 11px;
+  padding-left: 11px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -28,9 +28,9 @@ exports[`<FlexContainer /> renders FlexContainer 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1250px) {
   .c0 {
-    max-width: 1140px;
+    max-width: 1226px;
   }
 }
 
