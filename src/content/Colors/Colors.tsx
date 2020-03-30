@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import {
   colors,
-  IColors,
-  IBrandColors,
-  IActionColors,
-  INeutralColors,
-  INotificationColors,
+  TColors,
+  brandColors,
+  actionColors,
+  neutralColors,
+  notificationColors,
 } from './../../constants/colors';
 
-type TColorVariants = keyof IColors;
+type TColorVariants = keyof TColors;
 
 interface ISColorProps {
   color: string;
@@ -25,10 +25,10 @@ interface IColorsProps {
 }
 
 interface IColorGroups {
-  brand: Array<keyof IBrandColors>;
-  actions: Array<keyof IActionColors>;
-  neutral: Array<keyof INeutralColors>;
-  notifications: Array<keyof INotificationColors>;
+  brand: Array<string>;
+  actions: Array<string>;
+  neutral: Array<string>;
+  notifications: Array<string>;
 }
 
 const SColors = styled.div`
@@ -36,51 +36,11 @@ const SColors = styled.div`
   flex-flow: row wrap;
 `;
 
-const mapColorToFontColor: { [C in TColorVariants]: 'white' | 'black' } = {
-  // Brand
-  brand: 'white',
-  brandDark: 'white',
-  brandLight: 'black',
-  // Actions
-  action: 'white',
-  actionPlain: 'white',
-  actionDark: 'white',
-  actionLight: 'black',
-  // Neutral
-  white: 'black',
-  greyLightest: 'black',
-  greyLighter: 'black',
-  greyLight: 'black',
-  grey: 'white',
-  greyDark: 'white',
-  greyDarkest: 'white',
-  // Notifications
-  alert: 'white',
-  alertDark: 'white',
-  alertLight: 'black',
-  warning: 'white',
-  warningDark: 'white',
-  warningLight: 'black',
-  success: 'white',
-  successDark: 'white',
-  successLight: 'black',
-};
-
 const colorGroups: IColorGroups = {
-  brand: ['brand', 'brandDark', 'brandLight'],
-  actions: ['action', 'actionPlain', 'actionDark', 'actionLight'],
-  neutral: ['white', 'greyLightest', 'greyLighter', 'greyLight', 'grey', 'greyDark', 'greyDarkest'],
-  notifications: [
-    'alert',
-    'alertDark',
-    'alertLight',
-    'warning',
-    'warningLight',
-    'warningDark',
-    'success',
-    'successLight',
-    'successDark',
-  ],
+  brand: Object.keys(brandColors),
+  actions: Object.keys(actionColors),
+  neutral: Object.keys(neutralColors),
+  notifications: Object.keys(notificationColors),
 };
 
 const SColor = styled.div<ISColorProps>`
@@ -91,7 +51,7 @@ const SColor = styled.div<ISColorProps>`
   font-family: monospace;
 
   > p {
-    color: ${({ colorName }) => mapColorToFontColor[colorName]};
+    color: ${({ color }) => getContrastOfColor(color)};
     text-align: center;
     padding: 10px 20px;
     line-height: 18px;
@@ -120,4 +80,14 @@ export default function Colors({ variant }: IColorsProps) {
       })}
     </SColors>
   );
+}
+
+function getContrastOfColor(color: string) {
+  const hex = color.charAt(0) === '#' ? color.substr(1, 6) : color;
+  const hexR = parseInt(hex.substr(0, 2), 16);
+  const hexG = parseInt(hex.substr(2, 2), 16);
+  const hexB = parseInt(hex.substr(4, 2), 16);
+  const contrastRatio = (hexR + hexG + hexB) / (255 * 3);
+
+  return contrastRatio >= 0.5 ? 'black' : 'white';
 }

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, INeutralColors } from '../../../constants/colors';
+import { colors, TColors } from '../../../constants/colors';
 import { maxMedia } from '../../../helpers/responsiveness';
 
 const {
@@ -26,7 +26,7 @@ interface IStyledHeadingProps {
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    */
-  color?: INeutralColors['white'] | INeutralColors['grey'] | INeutralColors['greyDarkest'];
+  color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
 }
 
 const Heading = styled.h1<IStyledHeadingProps>`

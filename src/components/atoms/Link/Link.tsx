@@ -1,13 +1,13 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { colors, TLinkHexColors } from '../../../constants/colors';
+import { colors, TColors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
-  color?: TLinkHexColors;
+  color?: TColors['actionPlain'] | TColors['white'];
   as?: 'a' | 'button';
 }
 
