@@ -4,24 +4,15 @@ import { colors } from '../../../constants/colors';
 
 export interface ISpinnerProps {
   /**
-   * Background color (3 quarters of the spinner)
-   */
-  backgroundColor?: string;
-
-  /**
-   * Width of the border
-   */
-  borderWidth?: string;
-
-  /**
-   * Front color (1 quarter of the spinner)
-   */
-  frontColor?: string;
-
-  /**
    * Size of the spinner
+   * @default false
    */
-  size?: string;
+  small?: boolean;
+  /**
+   * Adjusts colour to display on top of dark background
+   * @default false
+   */
+  negative?: boolean;
 }
 
 const spin = keyframes`
@@ -33,17 +24,17 @@ const spin = keyframes`
   }
 `;
 
-const Spinner = styled.div<ISpinnerProps>`
-  width: ${({ size = '45px' }) => size};
-  height: ${({ size = '45px' }) => size};
-  margin: 8px;
-  border: ${({ borderWidth = '8px' }) => borderWidth} solid ${({ frontColor = colors.brand }) => frontColor};
+const StyledSpinner = styled.div<ISpinnerProps>`
+  ${({ small = false, negative = false }) => `
+    width: ${small ? 20 : 40}px;
+    height: ${small ? 20 : 40}px;
+    border: ${small ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};
+  `}
   border-radius: 50%;
-  border-top-color: ${({ backgroundColor = colors.greyLighter }) => backgroundColor};
+  border-top-color: transparent;
   animation: ${spin} 1.2s linear infinite;
 `;
 
-// TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistSpinner: React.FC<ISpinnerProps> = props => <Spinner {...props} />;
+const Spinner: React.FC<ISpinnerProps> = props => <StyledSpinner {...props} />;
 
 export default Spinner;

@@ -1,15 +1,23 @@
 import React from 'react';
+import { axe } from 'jest-axe';
 import { render } from '@testing-library/react';
 import Spinner from './Spinner';
 
 describe('<Spinner />', () => {
-  it('renders the component', () => {
+  it('renders a spinner', async () => {
     const { container } = render(<Spinner />);
+    expect(container.firstChild).toMatchSnapshot();
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
+  });
+
+  it('renders small', () => {
+    const { container } = render(<Spinner small />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('renders the component with props', () => {
-    const { container } = render(<Spinner size="38px" borderWidth="4px" />);
+  it('renders negative', () => {
+    const { container } = render(<Spinner negative />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
