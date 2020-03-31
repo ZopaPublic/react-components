@@ -55,7 +55,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   }
 }
 
-@media (min-width:1250px) {
+@media (min-width:1300px) {
   .c1 {
     max-width: 1224px;
   }
@@ -337,7 +337,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   }
 }
 
-@media (min-width:1250px) {
+@media (min-width:1300px) {
   .c1 {
     max-width: 1224px;
   }

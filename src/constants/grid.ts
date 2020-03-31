@@ -13,7 +13,7 @@ const grid: IGrid = {
     l: 992,
     m: 768,
     s: 576,
-    xl: 1250,
+    xl: 1300,
     xs: 0,
   },
   cols: 12,
