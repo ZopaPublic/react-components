@@ -17,12 +17,12 @@ const grid: IGrid = {
     xs: 0,
   },
   cols: 12,
-  gutter: 11,
+  gutter: 12,
   width: {
     l: 960,
     m: 720,
     s: 540,
-    xl: 1226,
+    xl: 1224,
   },
 };
 

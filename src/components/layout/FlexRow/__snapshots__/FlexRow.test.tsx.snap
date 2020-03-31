@@ -12,8 +12,8 @@ exports[`<FlexRow /> renders a FlexRow component 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -11px;
-  margin-left: -11px;
+  margin-right: -12px;
+  margin-left: -12px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
