@@ -55,9 +55,9 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1300px) {
   .c1 {
-    max-width: 1140px;
+    max-width: 1224px;
   }
 }
 
@@ -128,8 +128,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 12px;
+  padding-left: 12px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -139,8 +139,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 12px;
+  padding-left: 12px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -157,8 +157,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -16px;
-  margin-left: -16px;
+  margin-right: -12px;
+  margin-left: -12px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -180,8 +180,8 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -16px;
-  margin-left: -16px;
+  margin-right: -12px;
+  margin-left: -12px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -337,9 +337,9 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1300px) {
   .c1 {
-    max-width: 1140px;
+    max-width: 1224px;
   }
 }
 
