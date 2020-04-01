@@ -17,7 +17,7 @@ Small:
 ```ts
 import { Spinner } from '@zopauk/react-components';
 
-<Spinner small />;
+<Spinner size="small" />;
 ```
 
 Negative:

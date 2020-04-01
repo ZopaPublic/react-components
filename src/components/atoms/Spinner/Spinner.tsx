@@ -5,9 +5,9 @@ import { colors } from '../../../constants/colors';
 export interface ISpinnerProps {
   /**
    * Size of the spinner
-   * @default false
+   * @default 'standard'
    */
-  small?: boolean;
+  size?: 'standard' | 'small';
   /**
    * Adjusts colour to display on top of dark background
    * @default false
@@ -25,10 +25,10 @@ const spin = keyframes`
 `;
 
 const StyledSpinner = styled.div<ISpinnerProps>`
-  ${({ small = false, negative = false }) => `
-    width: ${small ? 20 : 40}px;
-    height: ${small ? 20 : 40}px;
-    border: ${small ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};
+  ${({ size = 'standard', negative = false }) => `
+    width: ${size === 'small' ? 20 : 40}px;
+    height: ${size === 'small' ? 20 : 40}px;
+    border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};
   `}
   border-radius: 50%;
   border-top-color: transparent;

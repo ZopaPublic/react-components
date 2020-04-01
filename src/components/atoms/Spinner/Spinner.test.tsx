@@ -12,7 +12,7 @@ describe('<Spinner />', () => {
   });
 
   it('renders small', () => {
-    const { container } = render(<Spinner small />);
+    const { container } = render(<Spinner size="small" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 

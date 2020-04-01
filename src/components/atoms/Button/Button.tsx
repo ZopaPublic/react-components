@@ -97,7 +97,7 @@ const Button: React.FC<IButtonProps> = props => {
     <SButton styling={styling} {...rest}>
       {isLoading && (
         <>
-          <Spinner negative={styling === 'primary'} small /> {'\u00A0 '}
+          <Spinner negative={styling === 'primary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}
