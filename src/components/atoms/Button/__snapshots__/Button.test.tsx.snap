@@ -895,7 +895,7 @@ exports[`Warning button renders the component with props 1`] = `
   cursor: pointer;
   border: 1px solid #FF9F0A;
   border-radius: 8px;
-  color: #2C3246;
+  color: #2C3236;
   background: #FF9F0A;
   -webkit-transition: all 140ms ease-in-out;
   transition: all 140ms ease-in-out;
@@ -907,7 +907,7 @@ exports[`Warning button renders the component with props 1`] = `
 
 .c0:active:not(:disabled),
 .c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #FF9F0A,inset 0 0 0 4px #2C3246;
+  box-shadow: inset 0 0 0 2px #FF9F0A,inset 0 0 0 4px #2C3236;
   outline: none;
 }
 
