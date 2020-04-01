@@ -11,7 +11,7 @@ It comes in a lot of variations to suit different needs.
 ```tsx
 import { Button } from '@zopauk/react-components';
 
-<Button styling="primary">Button smash</Button>;
+<Button>Primary Button</Button>;
 ```
 
 - Secondary ( _standard button for most actions_ )
@@ -19,7 +19,7 @@ import { Button } from '@zopauk/react-components';
 ```tsx
 import { Button } from '@zopauk/react-components';
 
-<Button styling="secondary">Button smash</Button>;
+<Button styling="secondary">Secondary Button</Button>;
 ```
 
 - Disabled state ( _for use when actions are disabled, both primary and secondary_ )
@@ -27,107 +27,79 @@ import { Button } from '@zopauk/react-components';
 ```tsx
 import { Button } from '@zopauk/react-components';
 
-<Button disabled={true}>Button smash</Button>;
+<Button disabled={true}>Disabled Button</Button>;
 ```
 
-- Text button ( _used to navigate to other pages, always in current window unless external icon is present_ )
+- Text flavour ( _used to navigate to other pages, always in current window unless external icon is present_ )
 
 ```tsx
 import { Button } from '@zopauk/react-components';
 
-<Button styling="link">Link smash</Button>;
+<Button styling="link">Text Button</Button>;
 ```
 
-- Warning state ( _for potentially risky actions_ )
+- As wide as its container
 
 ```tsx
-import { Button } from '@zopauk/react-components';
+import { Button, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-components';
 
-<Button styling="warning">Proceed</Button>;
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={8}>
+      <Button fullWidth>Wide Button</Button>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
 ```
 
-- Alert state ( _for very dangerous actions_ )
+- Loading ( _spinner won't show for `styling="link"`_ )
 
 ```tsx
-import { Button } from '@zopauk/react-components';
+import { Button, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-components';
 
-<Button styling="alert">Delete</Button>;
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={6}>
+      <Button loading>Loading</Button>
+    </FlexCol>
+    <FlexCol xs={6}>
+      <Button styling="secondary" loading>
+        Waiting
+      </Button>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
 ```
 
-- Large size ( _rarely to be used, but it's here_ )
+- With icons
 
 ```tsx
-import { Button } from '@zopauk/react-components';
+import { Button, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight, faArrowCircleLeft, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-<Button sizing="large">Big smash</Button>;
-```
-
-- Small size ( _mainly used when many actions are available in close proximity_ )
-
-```tsx
-import { Button } from '@zopauk/react-components';
-
-<Button sizing="small">Little smash</Button>;
-```
-
-- Compact size ( _for when the link style just won't work_ )
-
-```tsx
-import { Button } from '@zopauk/react-components';
-
-<Button sizing="compact">Tiny smash</Button>;
-```
-
-- With an icon on its right side ( _can be used with arrows, among other icons_ )
-
-```tsx
-import { AlertIcon, Button } from '@zopauk/react-components';
-
-<Button rightIcon={<AlertIcon fillColor="#fff" />}>Learn more</Button>;
-```
-
-- With an icon on its left side ( _for when the icon conveys the meaning faster than text_ )
-
-```tsx
-import { AlertIcon, Button } from '@zopauk/react-components';
-
-<Button leftIcon={<AlertIcon fillColor="#fff" />}>Smash now</Button>;
-```
-
-- Full width ( _for when the button should stretch the entire width of the divider_ )
-
-```tsx
-import { Button } from '@zopauk/react-components';
-
-<Button fullWidth={true}>Button smash</Button>;
-```
-
-- Primary contrast ( _note that the text colour is the same as the background_ )
-
-```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
-import { Button, colors } from '@zopauk/react-components';
-
-<Button styling="contrastPrimary" contrastColor={colors.greyDark}>
-  Button smash
-</Button>;
-```
-
-- Secondary contrast ( _the border should be the colour's shade in 50 or close to that_ )
-
-```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
-import { Button, colors } from '@zopauk/react-components';
-
-<Button styling="contrastSecondary" contrastColor={colors.greyLighter}>
-  Button smash
-</Button>;
-```
-
-- Text button contrast ( _see above_ )
-
-```tsx { "props": { "style": { "backgroundColor": "#141E64", "border": "2px solid #efefef" } } }
-import { Button } from '@zopauk/react-components';
-
-<Button styling="contrastLink">Link smash</Button>;
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Button>
+        <FontAwesomeIcon icon={faArrowCircleLeft} />
+        {'\u00A0'} Previous
+      </Button>
+    </FlexCol>
+    <FlexCol xs={4}>
+      <Button>
+        Have some {'\u00A0'}
+        <FontAwesomeIcon icon={faCoffee} />
+      </Button>
+    </FlexCol>
+    <FlexCol xs={4}>
+      <Button>
+        Next {'\u00A0'}
+        <FontAwesomeIcon icon={faArrowCircleRight} />
+      </Button>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
 ```
 
 - Button as a custom component
@@ -145,6 +117,6 @@ const ButtonLink = styled(Link)`
 `;
 
 <ButtonLink href="https://www.zopa.com" styling="secondary">
-  Button link
+  Custom Button
 </ButtonLink>;
 ```
