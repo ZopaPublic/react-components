@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
-import { shadeHexColor } from '../../../helpers/utils';
+import { spacing } from '../../../constants/spacing';
 import Spinner from '../Spinner/Spinner';
 
 export type TStyling = 'primary' | 'secondary' | 'link';
@@ -25,12 +25,12 @@ const colorMap = {
   secondary: {
     text: colors.actionDark,
     bg: colors.actionLight,
-    hover: shadeHexColor(colors.actionLight, 0.24),
+    hover: '#EEEFFB',
   },
   link: {
     text: colors.actionDark,
     bg: 'transparent',
-    hover: shadeHexColor(colors.actionLight, 0.24),
+    hover: '#EAEBFA',
   },
 };
 
@@ -41,7 +41,7 @@ export const buttonStyle = css<IButtonProps>`
   justify-content: center;
   align-items: center;
   width: ${({ fullWidth = false }) => fullWidth && '100%'};
-  padding: 15px 25px;
+  padding: ${spacing[2]}px ${spacing[3]}px;
   font-family: ${typography.primary};
   font-size: ${typography.sizes.text};
   line-height: 1.2;
@@ -50,6 +50,7 @@ export const buttonStyle = css<IButtonProps>`
   border-radius: 8px;
   color: ${({ styling = 'primary' }) => colorMap[styling].text};
   border: none;
+  outline: 0;
 
   ${({ styling = 'primary' }) => {
     const { bg } = colorMap[styling];
@@ -66,11 +67,7 @@ export const buttonStyle = css<IButtonProps>`
     background: ${({ styling = 'primary' }) => colorMap[styling].hover};
   }
 
-  &:active:not(:disabled) {
-    opacity: 0.8;
-  }
-
-  &:focus:not(:disabled) {
+  &:focus:not(:active) {
     border: 1px solid ${colors.white};
     box-shadow: 0 0 4px ${colors.actionPlain};
   }
@@ -79,6 +76,12 @@ export const buttonStyle = css<IButtonProps>`
     cursor: not-allowed;
     background: ${colors.greyLightest};
     color: ${colors.grey};
+  }
+
+  &:active:not(:disabled) {
+    border: none;
+    box-shadow: unset;
+    opacity: 0.8;
   }
 `;
 
@@ -92,8 +95,11 @@ const Button: React.FC<IButtonProps> = props => {
 
   return (
     <SButton styling={styling} {...rest}>
-      {isLoading && <Spinner negative={styling === 'primary'} small />}
-      {'\u00A0 '}
+      {isLoading && (
+        <>
+          <Spinner negative={styling === 'primary'} small /> {'\u00A0 '}
+        </>
+      )}
       {children}
     </SButton>
   );
