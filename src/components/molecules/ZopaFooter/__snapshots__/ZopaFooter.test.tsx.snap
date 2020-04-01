@@ -16,7 +16,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2C3246;
+  color: #2C3236;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -33,7 +33,7 @@ exports[`<ZopaFooter /> renders the component with a legalOnly prop 1`] = `
 }
 
 .c0 {
-  background-color: #2C3246;
+  background-color: #2C3236;
   padding: 40px 0;
 }
 
@@ -108,7 +108,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2C3246;
+  color: #2C3236;
   line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -251,7 +251,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c12 {
-  color: #2C3246;
+  color: #2C3236;
   font-size: 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
@@ -315,7 +315,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
 }
 
 .c0 {
-  background-color: #2C3246;
+  background-color: #2C3236;
   padding: 40px 0;
 }
 
