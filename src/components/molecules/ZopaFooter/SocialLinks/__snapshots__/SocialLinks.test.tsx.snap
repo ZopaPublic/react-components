@@ -74,7 +74,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  line-height: 1.4;
+  line-height: inherit;
   color: #3B46C4;
   cursor: pointer;
   -webkit-text-decoration: underline;
@@ -103,7 +103,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 600;
-  line-height: 1.4;
+  line-height: inherit;
   color: #FFFFFF;
   cursor: pointer;
   -webkit-text-decoration: underline;
