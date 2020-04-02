@@ -8,10 +8,10 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c1 {
@@ -38,10 +38,10 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c1 {
@@ -68,10 +68,10 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c1 {
@@ -98,10 +98,10 @@ exports[`<Badge /> renders with specific style 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c1 {
@@ -158,10 +158,10 @@ exports[`<Badge /> renders without crashing 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c1 {
