@@ -12,15 +12,23 @@
 - Variations
 
 ```tsx
+import styled from 'styled-components';
 import { Fragment } from 'react';
-import { Heading } from '@zopauk/react-components';
+import { colors, Heading, Text } from '@zopauk/react-components';
 
 <Fragment>
+  <Heading as="h1" size="display">
+    Display Heading
+  </Heading>
+  <Text color={colors.alert}>☝🏻❗️ Only to be used for marketing purposes.</Text>
+  <hr style={{ margin: '30px 0' }} />
   <Heading as="h1">Heading level 1</Heading>
   <Heading as="h2">Heading level 2</Heading>
   <Heading as="h3">Heading level 3</Heading>
-  <Heading as="h4" mb={false}>
-    Heading level 4
+  <Heading as="h4">Heading level 4</Heading>
+  <Heading as="h5">Heading level 5</Heading>
+  <Heading as="h6" mb={false}>
+    Heading level 6
   </Heading>
 </Fragment>;
 ```

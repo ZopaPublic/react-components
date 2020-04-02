@@ -18,7 +18,7 @@ const defaultFont = css`
   html,
   body {
     font-family: ${typography.primary};
-    font-size: ${typography.sizes.text.base};
+    font-size: ${typography.sizes.text.body};
   }
 `;
 

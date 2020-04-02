@@ -15,8 +15,8 @@ export const linkStyle = css<ILinkProps>`
   background-color: transparent;
   font-size: inherit;
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  line-height: ${typography.lineHeights.text};
+  font-weight: ${typography.weights.semiBold};
+  line-height: ${typography.lineHeights.big};
   color: ${({ color }) => color};
   cursor: pointer;
   text-decoration: underline;

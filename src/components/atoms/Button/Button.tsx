@@ -45,7 +45,7 @@ export const buttonStyle = css<IButtonProps>`
   font-family: ${typography.primary};
   font-size: ${typography.sizes.text};
   line-height: 1.2;
-  font-weight: ${typography.weights.semibold};
+  font-weight: ${typography.weights.semiBold};
   cursor: pointer;
   border-radius: 8px;
   color: ${({ styling = 'primary' }) => colorMap[styling].text};

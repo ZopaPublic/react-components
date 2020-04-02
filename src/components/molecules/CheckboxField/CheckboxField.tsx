@@ -28,7 +28,7 @@ const Input = styled.input<IInput>`
   position: absolute;
 
   &:checked + label {
-    font-weight: ${typography.weights.semibold};
+    font-weight: ${typography.weights.semiBold};
 
     &:before {
       content: '';

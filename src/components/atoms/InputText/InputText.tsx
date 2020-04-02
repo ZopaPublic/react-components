@@ -10,7 +10,7 @@ const Input = styled.input<IInput>`
   border-radius: 4px;
   padding: 0 10px;
   height: 48px;
-  font-weight: ${typography.weights.semibold};
+  font-weight: ${typography.weights.semiBold};
   width: 100%;
   -webkit-appearance: none;
   outline: none;

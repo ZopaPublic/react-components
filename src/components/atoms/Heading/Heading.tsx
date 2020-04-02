@@ -17,29 +17,41 @@ interface IStyledHeadingProps {
   as: THeadingSizes | 'span';
   /**
    * Override the default size assigned to the rendered HTML tag.
+   * @default `as`
    */
-  size?: THeadingSizes;
+  size?: THeadingSizes | 'display';
   /**
    * Whether to add some margin below the rendered heading or not. Applied by default.
+   * @default true
    */
   mb?: boolean;
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
+   * @default `colors.greyDarkest`
    */
   color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
 }
 
+const isExtraBold = (tag: THeadingSizes | 'span') => ['h1', 'display'].includes(tag);
+
 const Heading = styled.h1<IStyledHeadingProps>`
   color: ${({ color = colors.greyDarkest }) => color};
   
-  font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h4'] : headingSizes[as])};
+  font-size: ${({ as, size }) => {
+    if (as === 'span') return headingSizes[size || 'h4'];
+    return headingSizes[size || as];
+  }};
+
+  line-height: ${({ size = '', as }) => {
+    if (size === 'display' || ['h1', 'h2'].includes(as)) return typography.lineHeights.small;
+    return typography.lineHeights.medium;
+  }};
+
   ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
   ${({ as }) => as === 'span' && `display: block;`}
-
   
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  line-height: ${typography.lineHeights.heading};
+  font-weight: ${({ as }) => (isExtraBold(as) ? typography.weights.extraBold : typography.weights.bold)};
   letter-spacing: -0.5px;
   margin: 0;
 

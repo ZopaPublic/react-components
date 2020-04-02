@@ -16,11 +16,11 @@ import { Text } from '@zopauk/react-components';
 
 <Fragment>
   <Text as="p" mb>
-    Long paragraph, rendered within a HTML `p` tag: we give our customers a fair deal as standard and our products are
-    built so that we win when you win. Managing your money is no sweat. With handy tools to get stuff done and helpful
-    people always at the end of a phone. We listen to what you want and change with your needs.
+    Long paragraph, rendered as `p`: we give our customers a fair deal as standard and our products are built so that we
+    win when you win. Managing your money is no sweat. With handy tools to get stuff done and helpful people always at
+    the end of a phone. We listen to what you want and change with your needs.
   </Text>
-  <Text>Text as HTML `span`</Text>
+  <Text>Text as `span`</Text>
 </Fragment>;
 ```
 
@@ -44,10 +44,10 @@ import { Text } from '@zopauk/react-components';
 
 <Fragment>
   <Text size="lead" mb>
-    Lead ( 20px )
+    Lead ( 18px )
   </Text>
-  <Text mb>Medium ( 16px, default )</Text>
-  <Text size="small">Small ( 14px )</Text>
+  <Text mb>Medium ( default: 15px )</Text>
+  <Text size="small">Small ( 13px )</Text>
 </Fragment>;
 ```
 
@@ -58,11 +58,10 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text mb>Regular weight</Text>
-  <Text weight="semibold" mb>
-    Semi-bold weight
+  <Text mb>Regular</Text>
+  <Text weight="bold" mb>
+    Bold
   </Text>
-  <Text weight="bold">Bold weight</Text>
 </Fragment>;
 ```
 
@@ -77,7 +76,7 @@ import { Text, colors } from '@zopauk/react-components';
     White
   </Text>
   <Text color={colors.grey} mb>
-    Grey
+    ❗️`grey` has poor contrast (not AAA compliant). Use it for a text that doesn't convey a critical message.
   </Text>
   <Text color={colors.greyDarkest} mb>
     Grey Darkest

@@ -8,7 +8,7 @@ import Wrapper from '../Wrapper/Wrapper';
 const StyledParagraph = styled(Text).attrs({
   forwardedAs: 'p',
   size: 'small',
-  weight: 'semibold',
+  weight: 'semiBold',
 })`
   color: ${colors.neutral200};
   margin: 0 0 24px 0;

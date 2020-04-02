@@ -27,7 +27,7 @@ const StyledDropdown = styled.select<IDropdownProps>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
-  font-weight: ${typography.weights.semibold};
+  font-weight: ${typography.weights.semiBold};
   height: 46px;
   min-width: 100px;
   user-select: none;

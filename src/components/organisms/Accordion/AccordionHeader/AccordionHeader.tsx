@@ -8,7 +8,7 @@ import { useAccordionContext } from '../hooks';
 export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
   id: string;
   index: number;
-  textSize?: 'base' | 'small';
+  textSize?: 'body' | 'small';
 }
 
 const StyledButton = styled.button`
@@ -36,11 +36,11 @@ const Title = styled(Text)`
 `;
 
 const mapTextToArrowSize = {
-  base: '10px',
+  body: '10px',
   small: '8px',
 };
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', ...rest }) => {
+const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'body', ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, ...headerPropsRest } = getHeaderProps(id, index);
   return (
