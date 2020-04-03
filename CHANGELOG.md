@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/zopaUK/react-components/compare/v3.0.2...v3.0.3) (2020-04-03)
+
+
+### Bug Fixes
+
+* **help:** update opening hours ([453afa0](https://github.com/zopaUK/react-components/commit/453afa0534eacef7a230179da1e47d0b5b79d920))
+
 ## [3.0.2](https://github.com/zopaUK/react-components/compare/v3.0.1...v3.0.2) (2020-03-24)
 
 
