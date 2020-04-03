@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/zopaUK/react-components/compare/v3.0.3...v3.0.4) (2020-04-03)
+
+
+### Bug Fixes
+
+* **help:** fix weird spacing for Help section ([9c6da35](https://github.com/zopaUK/react-components/commit/9c6da35b8cc820c9f0e455518eda27a988245bca))
+
 ## [3.0.3](https://github.com/zopaUK/react-components/compare/v3.0.2...v3.0.3) (2020-04-03)
 
 
