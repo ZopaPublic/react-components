@@ -51,7 +51,7 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
             <Text as="p" mb>
-              Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
+              Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
             </Text>
           </OpeningHoursWrapper>
           <Text size="small" as="p">
