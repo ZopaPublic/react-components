@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Help /> renders the default Help component with no a11y violations 1`] = `
-.c7 {
+.c8 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -22,15 +22,15 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   border: none;
 }
 
-.c7:hover {
+.c8:hover {
   opacity: 0.88;
 }
 
-.c7:active {
+.c8:active {
   opacity: 0.72;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -45,7 +45,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 16px;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -58,7 +58,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 16px;
 }
 
-.c10 {
+.c11 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -141,7 +141,11 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   max-width: 900px;
 }
 
-.c9 {
+.c6 {
+  margin-bottom: 24px;
+}
+
+.c10 {
   max-width: 350px;
 }
 
@@ -175,6 +179,12 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   }
 }
 
+@media (min-width:992px) {
+  .c6 {
+    margin-bottom: 0;
+  }
+}
+
 <div
   class="c0"
 >
@@ -203,14 +213,14 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
       direction="row"
     >
       <div
-        class="c5"
+        class="c5 c6"
         cols="12"
       >
         <span
-          class="c6"
+          class="c7"
         >
           <a
-            class="c7"
+            class="c8"
             color="#4A3EDE"
             href="mailto:savings@zopa.com"
           >
@@ -218,10 +228,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           </a>
         </span>
         <span
-          class="c6"
+          class="c7"
         >
           <a
-            class="c7"
+            class="c8"
             color="#4A3EDE"
             href="tel:020 7580 6060"
           >
@@ -230,10 +240,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           for loans
         </span>
         <span
-          class="c8"
+          class="c9"
         >
           <a
-            class="c7"
+            class="c8"
             color="#4A3EDE"
             href="tel:020 7291 8331"
           >
@@ -247,16 +257,16 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <div
-          class="c9"
+          class="c10"
         >
           <p
-            class="c6"
+            class="c7"
           >
             Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
           </p>
         </div>
         <p
-          class="c10"
+          class="c11"
         >
           We can't take applications over the phone. UK residents only. Calls may be monitored.
         </p>
