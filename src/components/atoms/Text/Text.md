@@ -87,3 +87,28 @@ import { Text, colors } from '@zopauk/react-components';
   <Text color={colors.alert}>Alert</Text>
 </Fragment>;
 ```
+
+- Alignment
+
+```tsx
+import { Fragment } from 'react';
+import { Text } from '@zopauk/react-components';
+
+<Fragment>
+  <Text mb>Left aligned</Text>
+  <Text align="center" mb>
+    Center
+  </Text>
+  <Text align="right" mb>
+    Right aligned
+  </Text>
+</Fragment>;
+```
+
+- Capitalised
+
+```tsx
+import { Text } from '@zopauk/react-components';
+
+<Text capitalize>Vivacious</Text>;
+```

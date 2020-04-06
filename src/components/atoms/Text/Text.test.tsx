@@ -62,4 +62,14 @@ describe('<Text />', () => {
     const { container } = render(<Text color={hex}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('color', hex);
   });
+
+  it.each`
+    direction
+    ${'left'}
+    ${'right'}
+    ${'center'}
+  `('can align at:  $direction', ({ direction }) => {
+    const { container } = render(<Text align={direction}>Text</Text>);
+    expect(container.firstChild).toHaveStyleRule('text-align', direction);
+  });
 });

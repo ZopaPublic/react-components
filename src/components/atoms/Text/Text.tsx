@@ -26,11 +26,27 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    */
   mb?: boolean;
   /**
+   * Whether to render the text in all caps or not.
+   * @default false
+   */
+  capitalize?: boolean;
+  /**
+   * Where the rendered text should be aligned to.
+   * @default 'left'
+   */
+  align?: 'left' | 'right' | 'center';
+  /**
    * Accepts a subset of the Zopa brand colors.
    * @default `colors.greyDarkest`
    */
   color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'] | TColors['success'] | TColors['alert'];
 }
+
+const lineHeightMap = {
+  lead: '26px',
+  body: '22px',
+  small: '18px',
+};
 
 const Text = styled.span<ITextProps>`
   margin: 0;
@@ -44,18 +60,17 @@ const Text = styled.span<ITextProps>`
     margin-bottom:   24px
   `};
 
-  line-height: ${typography.lineHeights.big};
+  font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
+  line-height: ${({ size = 'body' }) => lineHeightMap[size]};
+  font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
+
   font-family: ${typography.primary};
-  font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
-  font-size: ${({ size = 'body' }) => typography.sizes.text[size]};
+  text-align: ${({ align }) => align};
+  text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
 `;
 
 const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
   <Text {...props} ref={ref} />
 ));
-
-TextWrap.defaultProps = {
-  as: 'span',
-};
 
 export default TextWrap;
