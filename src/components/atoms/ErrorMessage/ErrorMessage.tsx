@@ -6,21 +6,21 @@ import Text from '../Text/Text';
 
 const ErrorMessage = styled(Text).attrs({
   role: 'alert',
-  weight: 'semiBold',
+  weight: 'bold',
   forwardedAs: 'span',
   size: 'small',
 })`
   width: 100%;
   color: ${colors.alert};
-  display: block;
+  display: flex;
 
   &:before {
     content: '';
     background: url(${warningIcon}) no-repeat;
-    width: 28px;
+    width: 20px;
     height: 16px;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    margin-right: 10px;
   }
 `;
 

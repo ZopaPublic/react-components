@@ -1,20 +1,20 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, TColors } from '../../../constants/colors';
 
-type THeadingSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
 interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
-  as: THeadingSizes | 'span';
+  as: THeadingTags;
   /**
    * Override the default size assigned to the rendered HTML tag.
    * @default `as`
    */
-  size?: THeadingSizes | 'display';
+  size?: keyof typeof typography.sizes.heading;
   /**
    * Whether to add some margin below the rendered heading or not. Applied by default.
    * @default true
@@ -46,24 +46,20 @@ const lineHeightMap = {
   h6: '20px',
 };
 
-const isExtraBold = (tag: THeadingSizes | 'span') => ['h1', 'display'].includes(tag);
-
 const Heading = styled.h1<IStyledHeadingProps>`
-  font-size: ${({ as, size }) => {
-    if (as === 'span') return headingSizes[size || 'h4'];
-    return headingSizes[size || as];
-  }};
-
-  line-height: ${({ size, as }) => {
-    if (as === 'span') return lineHeightMap[size || 'h4'];
-    return headingSizes[size || as];
+  ${({ as, size }) => {
+    const tag = size || (as === 'span' ? 'h4' : as);
+    return css`
+      font-size: ${headingSizes[tag]};
+      line-height: ${lineHeightMap[tag]};
+    `;
   }};
 
   color: ${({ color = colors.greyDarkest }) => color};
   display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
   text-align: ${({ align }) => align};
   font-family: ${typography.primary};
-  font-weight: ${({ as }) => (isExtraBold(as) ? typography.weights.extraBold : typography.weights.bold)};
+  font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
   letter-spacing: -0.5px;
   margin: 0;
 

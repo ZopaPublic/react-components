@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Button from './Button';
 
-it('renders as "primary" and with no a11y violations', async () => {
+it('renders with no a11y violations', async () => {
   const { container } = render(<Button>Primary</Button>);
   expect(container.firstChild).toMatchSnapshot();
   const results = await axe(container.innerHTML);
@@ -11,11 +11,16 @@ it('renders as "primary" and with no a11y violations', async () => {
 });
 
 it('renders as "secondary"', () => {
-  const { container } = render(<Button styling="link">Secondary</Button>);
+  const { container } = render(<Button styling="secondary">Secondary</Button>);
   expect(container.firstChild).toMatchSnapshot();
 });
 
 it('renders as "link"', () => {
+  const { container } = render(<Button styling="link">Secondary</Button>);
+  expect(container.firstChild).toMatchSnapshot();
+});
+
+it('renders disabled', () => {
   const { container } = render(<Button disabled>Secondary</Button>);
   expect(container.firstChild).toMatchSnapshot();
 });

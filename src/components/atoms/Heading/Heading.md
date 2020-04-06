@@ -20,7 +20,7 @@ import { colors, Heading, Text } from '@zopauk/react-components';
   <Heading as="h1" size="display">
     Display Heading
   </Heading>
-  <Text color={colors.alert}>☝🏻❗️ Only to be used for marketing purposes.</Text>
+  <Text color={colors.alert}>❗️ Only to be used for marketing purposes.</Text>
   <hr style={{ margin: '30px 0' }} />
   <Heading as="h1">Heading level 1</Heading>
   <Heading as="h2">Heading level 2</Heading>

@@ -22,12 +22,14 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 .c1 {
@@ -84,12 +86,14 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 .c1 {

@@ -43,7 +43,7 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGrou
   return (
     <Fieldset>
       <Legend>
-        <Text weight="semiBold">{label}</Text>
+        <Text weight="bold">{label}</Text>
       </Legend>
       {items.map(item => (
         <RadioWrapper key={item.value}>

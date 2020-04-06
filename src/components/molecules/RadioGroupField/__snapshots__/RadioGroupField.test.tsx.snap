@@ -21,10 +21,10 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.4;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
   font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 <fieldset

@@ -19,9 +19,123 @@ exports[`renders as "link" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: none;
+  outline: 0;
+  background: transparent;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EAEBFA;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: none;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+>
+  Secondary
+</button>
+`;
+
+exports[`renders as "secondary" 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: none;
+  outline: 0;
+  background: #E9EAFA;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EEEFFB;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: none;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+>
+  Secondary
+</button>
+`;
+
+exports[`renders disabled 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -62,127 +176,6 @@ exports[`renders as "link" 1`] = `
 </button>
 `;
 
-exports[`renders as "primary" and with no a11y violations 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 24px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: none;
-  outline: 0;
-  background-color: #3B46C4;
-  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
-}
-
-.c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
-}
-
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
-}
-
-.c0:active:not(:disabled) {
-  border: none;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
-<button
-  class="c0"
->
-  Primary
-</button>
-`;
-
-exports[`renders as "secondary" 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 24px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: none;
-  outline: 0;
-  background: transparent;
-}
-
-.c0:hover:not(:disabled) {
-  background: #EAEBFA;
-}
-
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
-}
-
-.c0:active:not(:disabled) {
-  border: none;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
-<button
-  class="c0"
->
-  Secondary
-</button>
-`;
-
 exports[`renders loading as "primary" 1`] = `
 .c1 {
   width: 20px;
@@ -212,9 +205,7 @@ exports[`renders loading as "primary" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -288,9 +279,7 @@ exports[`renders loading as "secondary" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -354,9 +343,7 @@ exports[`renders wide 1`] = `
   width: 100%;
   padding: 16px 24px;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: lead:18px;
-  body: 15px;
-  small: 13px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -393,5 +380,64 @@ exports[`renders wide 1`] = `
   class="c0"
 >
   Secondary
+</button>
+`;
+
+exports[`renders with no a11y violations 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: none;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0:hover:not(:disabled) {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: none;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+>
+  Primary
 </button>
 `;

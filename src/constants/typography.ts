@@ -25,11 +25,6 @@ const typography = {
     bold: 700,
     extraBold: 800,
   },
-  lineHeights: {
-    big: 1.4,
-    medium: 1.2,
-    small: 1,
-  },
 };
 
 export { typography };

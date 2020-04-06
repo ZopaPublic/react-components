@@ -43,7 +43,7 @@ export const buttonStyle = css<IButtonProps>`
   width: ${({ fullWidth = false }) => fullWidth && '100%'};
   padding: ${spacing[2]}px ${spacing[3]}px;
   font-family: ${typography.primary};
-  font-size: ${typography.sizes.text};
+  font-size: ${typography.sizes.text.body};
   line-height: 1.2;
   font-weight: ${typography.weights.semiBold};
   cursor: pointer;

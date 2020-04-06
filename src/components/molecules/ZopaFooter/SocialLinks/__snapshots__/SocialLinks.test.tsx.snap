@@ -90,41 +90,14 @@ exports[`<SocialLinks /> renders the component 1`] = `
   border: none;
 }
 
-.c2:hover {
-  opacity: 0.88;
-}
-
+.c2:hover,
 .c2:active {
-  opacity: 0.72;
+  color: #21247F;
 }
 
-.c7 {
-  background-color: transparent;
-  font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  line-height: inherit;
-  color: #FFFFFF;
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  border: none;
-}
-
-.c7:hover {
-  opacity: 0.88;
-}
-
-.c7:active {
-  opacity: 0.72;
+.c2:hover svg path,
+.c2:active svg path {
+  fill: #21247F;
 }
 
 .c6 {
@@ -135,7 +108,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
   margin-top: 32px;
 }
 
-.c8 {
+.c7 {
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -297,7 +270,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
     >
       <a
         aria-label="instagram"
-        class="c7 c8"
+        class="c2 c7"
         color="#FFFFFF"
         cols="12"
         href="https://www.instagram.com/Zopamoney/"
@@ -332,7 +305,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="facebook"
-        class="c7 c8"
+        class="c2 c7"
         color="#FFFFFF"
         cols="12"
         href="https://facebook.com/zopa"
@@ -361,7 +334,7 @@ exports[`<SocialLinks /> renders the component 1`] = `
       </a>
       <a
         aria-label="twitter"
-        class="c7 c8"
+        class="c2 c7"
         color="#FFFFFF"
         cols="12"
         href="https://twitter.com/zopa"

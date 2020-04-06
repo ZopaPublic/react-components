@@ -22,12 +22,14 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 <a
@@ -61,12 +63,14 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 .c1 {

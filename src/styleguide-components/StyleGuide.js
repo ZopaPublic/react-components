@@ -9,13 +9,9 @@ import Ribbon from 'rsg-components/Ribbon';
 import Version from 'rsg-components/Version';
 
 import GlobalStyles from '../components/styles/GlobalStyles';
-import Fonts from '../components/styles/Fonts';
 
 const GlobalStyleGuideStyles = createGlobalStyle`
-  /* System Fonts as used by GitHub */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
 `;
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
@@ -79,7 +75,6 @@ export function StyleGuideRenderer({ classes, title, version, homepageUrl, child
     <div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
       <GlobalStyles />
       <GlobalStyleGuideStyles />
-      <Fonts />
       <main className={classes.content}>
         {children}
         <footer className={classes.footer}>
