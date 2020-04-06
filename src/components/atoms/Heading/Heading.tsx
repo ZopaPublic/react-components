@@ -2,11 +2,6 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, TColors } from '../../../constants/colors';
-import { maxMedia } from '../../../helpers/responsiveness';
-
-const {
-  sizes: { heading: headingSizes },
-} = typography;
 
 type THeadingSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
@@ -30,26 +25,43 @@ interface IStyledHeadingProps {
    * @default `colors.greyDarkest`
    */
   color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
+  /**
+   * Where the rendered text should be aligned to.
+   * @default 'left'
+   */
+  align?: 'left' | 'right' | 'center';
 }
+
+const {
+  sizes: { heading: headingSizes },
+} = typography;
+
+const lineHeightMap = {
+  display: '76px',
+  h1: '54px',
+  h2: '46px',
+  h3: '36px',
+  h4: '32px',
+  h5: '26px',
+  h6: '20px',
+};
 
 const isExtraBold = (tag: THeadingSizes | 'span') => ['h1', 'display'].includes(tag);
 
 const Heading = styled.h1<IStyledHeadingProps>`
-  color: ${({ color = colors.greyDarkest }) => color};
-  
   font-size: ${({ as, size }) => {
     if (as === 'span') return headingSizes[size || 'h4'];
     return headingSizes[size || as];
   }};
 
-  line-height: ${({ size = '', as }) => {
-    if (size === 'display' || ['h1', 'h2'].includes(as)) return typography.lineHeights.small;
-    return typography.lineHeights.medium;
+  line-height: ${({ size, as }) => {
+    if (as === 'span') return lineHeightMap[size || 'h4'];
+    return headingSizes[size || as];
   }};
 
-  ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
-  ${({ as }) => as === 'span' && `display: block;`}
-  
+  color: ${({ color = colors.greyDarkest }) => color};
+  display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
+  text-align: ${({ align }) => align};
   font-family: ${typography.primary};
   font-weight: ${({ as }) => (isExtraBold(as) ? typography.weights.extraBold : typography.weights.bold)};
   letter-spacing: -0.5px;

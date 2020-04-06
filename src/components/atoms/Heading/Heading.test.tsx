@@ -80,4 +80,19 @@ describe('<Heading />', () => {
 
     expect(container.firstChild).toHaveStyleRule('margin', '0');
   });
+
+  it.each`
+    direction
+    ${'left'}
+    ${'right'}
+    ${'center'}
+  `('can align at:  $direction', ({ direction }) => {
+    const { container } = render(
+      <Heading as="h4" align={direction}>
+        Text
+      </Heading>,
+    );
+
+    expect(container.firstChild).toHaveStyleRule('text-align', direction);
+  });
 });

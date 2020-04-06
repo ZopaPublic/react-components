@@ -86,3 +86,20 @@ import { Heading, colors } from '@zopauk/react-components';
   </Heading>
 </Fragment>;
 ```
+
+- Alignment
+
+```tsx
+import { Fragment } from 'react';
+import { Heading } from '@zopauk/react-components';
+
+<Fragment>
+  <Heading as="h4">Left aligned</Heading>
+  <Heading as="h4" align="center">
+    Center
+  </Heading>
+  <Heading as="h4" align="right" mb={false}>
+    Right aligned
+  </Heading>
+</Fragment>;
+```

@@ -2,9 +2,9 @@
 
 exports[`<Heading /> renders without  a11y violations 1`] = `
 .c0 {
-  color: #2C3236;
   font-size: 48px;
-  line-height: 1;
+  line-height: 48px;
+  color: #2C3236;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 800;
   -webkit-letter-spacing: -0.5px;
@@ -13,12 +13,6 @@ exports[`<Heading /> renders without  a11y violations 1`] = `
   letter-spacing: -0.5px;
   margin: 0;
   margin-bottom: 24px;
-}
-
-@media (max-width:600px) {
-  .c0 {
-    font-size: 32px;
-  }
 }
 
 <div>
