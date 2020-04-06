@@ -7,9 +7,10 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #DCDBE2;
+  border: 2px solid #D4D7D9;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
+  font-weight: 600;
   height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
@@ -20,7 +21,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4A3EDE;
+  border: 2px solid #3B46C4;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
@@ -44,9 +45,10 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #DCDBE2;
+  border: 2px solid #D4D7D9;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
+  font-weight: 600;
   height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
@@ -57,7 +59,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4A3EDE;
+  border: 2px solid #3B46C4;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
@@ -87,9 +89,10 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #DCDBE2;
+  border: 2px solid #D4D7D9;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
+  font-weight: 600;
   height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
@@ -100,7 +103,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4A3EDE;
+  border: 2px solid #3B46C4;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
@@ -131,9 +134,10 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   appearance: none;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
   background-size: 13px;
-  border: 2px solid #DCDBE2;
+  border: 2px solid #D4D7D9;
   border-radius: 4px;
   padding: 8px 32px 8px 16px;
+  font-weight: 600;
   height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
@@ -144,7 +148,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #4A3EDE;
+  border: 2px solid #3B46C4;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }

@@ -16,8 +16,8 @@ const borderRadius: { [index in TCardTypes]: string } = {
 };
 
 const Card = styled.div<ICardProps>`
-  background-color: ${colors.neutral.white};
-  border-color: ${colors.neutral.white};
+  background-color: ${colors.white};
+  border-color: ${colors.white};
   border-style: solid;
   border-width: 2px;
   border-radius: 0;

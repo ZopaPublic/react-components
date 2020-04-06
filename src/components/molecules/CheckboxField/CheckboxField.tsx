@@ -32,7 +32,7 @@ const Input = styled.input<IInput>`
 
     &:before {
       content: '';
-      background-color: ${colors.base.secondary};
+      background-color: ${colors.actionPlain};
     }
     &:after {
       content: '';
@@ -43,7 +43,7 @@ const Input = styled.input<IInput>`
   }
   &:focus + label {
     &:before {
-      border: 2px ${colors.base.secondary} solid;
+      border: 2px ${colors.actionPlain} solid;
     }
   }
 `;
@@ -53,20 +53,20 @@ const Label = styled(InputLabel)`
   display: flex;
   font-weight: ${typography.weights.regular};
   line-height: 1.4;
-  color: ${colors.neutral.dark};
+  color: ${colors.greyDarkest};
   position: relative;
   user-select: none;
   margin-bottom: 0;
 
   &:before {
     content: '';
-    background-color: ${colors.neutral.light};
+    background-color: ${colors.greyLighter};
     border-radius: 6px;
     height: 24px;
     width: 24px;
     flex-shrink: 0;
     margin-right: 8px;
-    border: 2px ${colors.neutral.white} solid;
+    border: 2px ${colors.white} solid;
     display: block;
   }
   &:after {
@@ -82,7 +82,7 @@ const Label = styled(InputLabel)`
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px ${colors.neutral.medium} solid;
+      border: 2px ${colors.greyLight} solid;
     }
   }
 `;

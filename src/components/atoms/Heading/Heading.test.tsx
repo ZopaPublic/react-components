@@ -59,9 +59,9 @@ describe('<Heading />', () => {
   });
 
   it.each`
-    hex                     | name
-    ${colors.neutral.white} | ${'White'}
-    ${colors.neutral.dark}  | ${'Dark'}
+    hex                   | name
+    ${colors.white}       | ${'White'}
+    ${colors.greyDarkest} | ${'Dark'}
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(
       <Heading as="h2" color={hex}>

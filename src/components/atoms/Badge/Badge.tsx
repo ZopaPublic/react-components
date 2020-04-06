@@ -16,24 +16,17 @@ interface IBadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
 }
 
 const backgroundColors: IBgColors = {
-  confirmed: colors.semantic.success,
-  default: colors.neutral.dark,
-  invalid: colors.semantic.error,
-  waiting: colors.semantic.alert,
-};
-
-const fontColors: IFontColors = {
-  confirmed: colors.neutral.white,
-  default: colors.neutral.white,
-  invalid: colors.neutral.white,
-  waiting: colors.neutral.dark,
+  confirmed: colors.successLight,
+  default: colors.greyLight,
+  invalid: colors.alertLight,
+  waiting: colors.warningLight,
 };
 
 const StyledBadge = styled(Text).attrs({
   size: 'small',
   forwardedAs: 'span',
 })<IBadgeProps>`
-  color: ${({ styling = 'default' }) => styling && fontColors[styling]};
+  color: ${colors.greyDarkest};
   background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
   display: inline-block;
   padding: 4px 10px;
@@ -49,7 +42,7 @@ const StyledCheckMark = styled(CheckMark)`
 const Badge: React.FC<IBadgeProps> = ({ children, styling, ...rest }) => {
   return (
     <StyledBadge styling={styling} {...rest}>
-      {styling === 'confirmed' && <StyledCheckMark color={fontColors.confirmed} />}
+      {styling === 'confirmed' && <StyledCheckMark color={colors.greyDarkest} />}
       {children}
     </StyledBadge>
   );

@@ -31,7 +31,7 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled(Text)`
-  color: ${colors.base.secondary};
+  color: ${colors.actionPlain};
   padding-left: 8px;
 `;
 

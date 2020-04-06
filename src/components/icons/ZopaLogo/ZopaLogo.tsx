@@ -31,7 +31,7 @@ const ZopaLogo: React.FunctionComponent<IZopaLogoProps> = ({ color, ...rest }) =
 );
 
 ZopaLogo.defaultProps = {
-  color: colors.base.primary,
+  color: colors.actionPlain,
   height: '100%',
   width: '100%',
 };

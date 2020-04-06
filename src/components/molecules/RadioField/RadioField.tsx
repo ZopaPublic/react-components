@@ -27,14 +27,14 @@ const FieldContainer = styled(SizedContainer)`
 const Label = styled(InputLabel)<IInputStatus>`
   display: flex;
   line-height: 1.4;
-  color: ${colors.neutral.dark};
+  color: ${colors.greyDarkest};
   font-weight: 400;
   position: relative;
   margin-bottom: 0;
 
   &:before {
     content: '';
-    background-color: ${colors.neutral.light};
+    background-color: ${colors.greyLighter};
     border-radius: 50%;
     height: 24px;
     width: 24px;
@@ -47,7 +47,7 @@ const Label = styled(InputLabel)<IInputStatus>`
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px solid ${colors.neutral.medium};
+      border: 2px solid ${colors.greyLight};
     }
   }
 `;
@@ -61,15 +61,15 @@ const Input = styled.input<IInputStatus>`
   &:hover + label,
   &:focus + label {
     &:before {
-      border: 2px ${colors.base.secondary} solid;
+      border: 2px ${colors.actionPlain} solid;
     }
   }
   &:checked + label {
     font-weight: 600;
     &:before {
       content: '';
-      background-color: ${colors.base.secondary};
-      border: 2px ${colors.base.secondary} solid;
+      background-color: ${colors.actionPlain};
+      border: 2px ${colors.actionPlain} solid;
       border-radius: 50%;
       height: 24px;
       width: 24px;
@@ -79,7 +79,7 @@ const Input = styled.input<IInputStatus>`
     }
     &:after {
       content: '';
-      background-color: ${colors.neutral.white};
+      background-color: ${colors.white};
       border-radius: 50%;
       height: 8px;
       width: 8px;
@@ -91,10 +91,10 @@ const Input = styled.input<IInputStatus>`
     }
   }
   &:disabled + label {
-    color: ${colors.neutral.medium};
+    color: ${colors.greyLight};
     &:before {
-      border-color: ${colors.neutral.medium};
-      background-color: ${colors.neutral.light};
+      border-color: ${colors.greyLight};
+      background-color: ${colors.greyLighter};
     }
     &:hover {
       cursor: not-allowed;

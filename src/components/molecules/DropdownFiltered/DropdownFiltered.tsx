@@ -45,18 +45,19 @@ export interface IDropdownFilteredProps
 
 const SearchInput = styled(InputText)<ISearchInputProps & IInput>`
   margin: 0;
+  padding: 8px 32px 8px 16px;
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
   ${({ isOpen }) =>
     isOpen &&
     css`
       box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
       border-radius: 6px 6px 0 0;
-      border-color: ${colors.base.secondary};
+      border-color: ${colors.actionPlain};
       border-bottom: 0;
 
       /* Hack to simulate a border in the bottom in the input as :after
          pseudo-elements doesn't work with inputs */
-      background: linear-gradient(${colors.neutral.nearWhite}, ${colors.neutral.nearWhite});
+      background: linear-gradient(${colors.greyLightest}, ${colors.greyLightest});
       background-size: 95% 1px;
       background-position: bottom center;
       background-repeat: no-repeat;
@@ -69,23 +70,23 @@ const SearchInput = styled(InputText)<ISearchInputProps & IInput>`
 const Option = styled.div<IOption>`
   cursor: pointer;
   padding: 8px;
+  line-height: 32px;
   font-size: ${typography.sizes.text.base};
   font-weight: 600;
-  line-height: 32px;
-  color: ${colors.neutral.dark};
+  color: ${colors.greyDarkest};
   ${({ selected, highLighted }) =>
     (selected || highLighted) &&
     css`
-      color: ${colors.neutral.white};
-      background-color: ${colors.base.secondary};
+      color: ${colors.white};
+      background-color: ${colors.actionPlain};
     `};
 `;
 
 const Options = styled.div<IOptionsListProps>`
   z-index: 1;
   width: 100%;
-  background: ${colors.neutral.white};
-  border: 2px solid ${colors.base.secondary};
+  background: ${colors.white};
+  border: 2px solid ${colors.actionPlain};
   border-top: 0;
   position: absolute;
   overflow: auto;
@@ -191,7 +192,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
           <SearchArrowWrap>
             <Chevron
               direction={isOpen ? 'up' : 'down'}
-              color={disabled ? colors.neutral.light : colors.base.secondary}
+              color={disabled ? colors.greyLight : colors.actionPlain}
               onClick={() => {
                 if (!disabled) {
                   if (isOpen) {

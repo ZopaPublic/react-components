@@ -27,8 +27,8 @@ export interface IHamburgerState {
 const Hamburger: React.FunctionComponent<IHamburgerProps> = ({
   size = '40px',
   active = false,
-  activeColor = colors.base.secondary,
-  inactiveColor = colors.neutral.medium,
+  activeColor = colors.actionPlain,
+  inactiveColor = colors.greyLight,
 }) => {
   const color = active ? activeColor : inactiveColor;
   return (

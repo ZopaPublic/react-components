@@ -1,48 +1,52 @@
-export type TTextHexColors = '#FFFFFF' | '#63637E' | '#0D0A38' | '#1EC06A' | '#EE0505';
-export type TLinkHexColors = '#FFFFFF' | '#4A3EDE';
+const brandColors = {
+  brand: '#00D9C5',
+  brandDark: '#063737',
+  brandLight: '#ECFCF9',
+} as const;
 
-export interface IBaseColorSpec {
-  primary: '#00B9A7';
-  secondary: '#4A3EDE';
-}
+const actionColors = {
+  action: 'linear-gradient(90deg, #4F5AD8 0%, #3B46C4 100%)',
+  actionPlain: '#3B46C4',
+  actionDark: '#21247F',
+  actionLight: '#E9EAFA',
+} as const;
 
-export interface INeutralColorSpec {
-  white: '#FFFFFF';
-  nearWhite: '#F8F8F8';
-  light: '#EAEAEE';
-  medium: '#DCDBE2';
-  nearDark: '#63637E';
-  dark: '#0D0A38';
-}
+const neutralColors = {
+  white: '#FFFFFF',
+  greyLightest: '#F7F7F7',
+  greyLighter: '#EFEFEF',
+  greyLight: '#D4D7D9',
+  grey: '#818F9B',
+  greyDark: '#4A545E',
+  greyDarkest: '#2C3236',
+} as const;
 
-export interface ISemanticColorSpec {
-  success: '#1EC06A';
-  alert: '#FFB428';
-  error: '#EE0505';
-}
+const notificationColors = {
+  alert: '#FF4539',
+  alertDark: '#940700',
+  alertLight: '#FFDAD8',
+  warning: '#FF9F0A',
+  warningDark: '#704300',
+  warningLight: '#FFECCE',
+  success: '#3EBC64',
+  successDark: '#17592B',
+  successLight: '#DDFDE5',
+} as const;
 
-export interface IColorSpec {
-  base: IBaseColorSpec;
-  neutral: INeutralColorSpec;
-  semantic: ISemanticColorSpec;
-}
+export type TColors = typeof brandColors & typeof actionColors & typeof neutralColors & typeof notificationColors;
 
-export const colors: IColorSpec = {
-  base: {
-    primary: '#00B9A7',
-    secondary: '#4A3EDE',
-  },
-  neutral: {
-    white: '#FFFFFF',
-    nearWhite: '#F8F8F8',
-    light: '#EAEAEE',
-    medium: '#DCDBE2',
-    nearDark: '#63637E',
-    dark: '#0D0A38',
-  },
-  semantic: {
-    success: '#1EC06A',
-    alert: '#FFB428',
-    error: '#EE0505',
-  },
+const colors: TColors = {
+  ...brandColors,
+  ...actionColors,
+  ...neutralColors,
+  ...notificationColors,
+};
+
+export {
+  colors,
+  // Exported only for documentation purposes in `<Colors />`
+  brandColors,
+  actionColors,
+  neutralColors,
+  notificationColors,
 };

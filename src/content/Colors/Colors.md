@@ -5,13 +5,19 @@
 ```ts static
 import { colors } from '@zopauk/react-components';
 
-const whiteColor = colors.neutral.white; // #fff
+const whiteColor = colors.white; // #fff
 ```
 
-### Base Colors
+### Brand Colors
 
 ```ts noeditor
-<Colors variant="base" />
+<Colors variant="brand" />
+```
+
+### Action Colors
+
+```ts noeditor
+<Colors variant="actions" />
 ```
 
 ### Neutral Colors
@@ -20,8 +26,8 @@ const whiteColor = colors.neutral.white; // #fff
 <Colors variant="neutral" />
 ```
 
-### Semantic Colors
+### Notification Colors
 
 ```ts noeditor
-<Colors variant="semantic" />
+<Colors variant="notifications" />
 ```

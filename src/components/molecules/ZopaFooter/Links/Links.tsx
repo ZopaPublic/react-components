@@ -22,7 +22,7 @@ export interface ILinksProps {
 }
 
 const StyledHeading = styled(Heading)`
-  color: ${colors.neutral.white};
+  color: ${colors.white};
 `;
 
 const StyledList = styled.ul`
@@ -37,7 +37,7 @@ const StyledListItem = styled.li`
 `;
 
 const BlockLink = styled(Link)`
-  color: ${colors.neutral.medium};
+  color: ${colors.greyLight};
   display: block;
 `;
 

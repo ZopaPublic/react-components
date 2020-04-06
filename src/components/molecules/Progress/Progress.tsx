@@ -20,7 +20,7 @@ const SProgressBar = styled.div`
   position: relative;
   width: 100%;
   border-radius: 100px;
-  background: ${colors.neutral.light};
+  background: ${colors.greyLighter};
   height: 4px;
 `;
 
@@ -30,7 +30,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: ${({ progressColor = colors.semantic.alert }) => progressColor};
+  background: ${({ progressColor = colors.brand }) => progressColor};
 
   > span {
     position: absolute;
@@ -39,7 +39,7 @@ const SProgression = styled.div<IProgressionStyleProps>`
     font-size: ${typography.sizes.text.small};
     line-height: 16px;
     font-weight: 600;
-    color: ${colors.neutral.dark};
+    color: ${colors.greyDarkest};
   }
 `;
 
