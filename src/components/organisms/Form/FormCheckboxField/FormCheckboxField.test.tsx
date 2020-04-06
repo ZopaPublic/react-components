@@ -1,4 +1,5 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
 import { Form } from '..';
 
@@ -11,9 +12,8 @@ interface IFormErrors {
 }
 
 const onSubmit = jest.fn();
-
+const testId = 'checkbox-field-form';
 const checkboxLabel = 'I accept the policy';
-const buttonLabel = 'Continue';
 const errorMessage = 'You need to accept the policy';
 
 const validate = (values: IForm) => {
@@ -28,25 +28,24 @@ const validate = (values: IForm) => {
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
-      <Form.Form>
+    <Formik validateOnMount initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
         <Form.CheckboxField label={checkboxLabel} name="policy" />
-        <Form.Button>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+      </FormikForm>
+    </Formik>,
   );
 
 describe('<Form.CheckboxField />', () => {
   it('handles value change', async () => {
-    const { getByText, getByLabelText } = renderComponent();
+    const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {
       await fireEvent.click(getByLabelText(checkboxLabel));
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ policy: true });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ policy: true });
   });
 
   it('renders error message', async () => {
@@ -55,8 +54,8 @@ describe('<Form.CheckboxField />', () => {
     await act(async () => {
       await fireEvent.click(checkbox);
     });
-    act(() => {
-      fireEvent.blur(checkbox);
+    await act(async () => {
+      await fireEvent.blur(checkbox);
     });
     await act(async () => {
       await fireEvent.click(checkbox);

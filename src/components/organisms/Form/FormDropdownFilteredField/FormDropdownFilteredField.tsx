@@ -1,13 +1,13 @@
-import React, { FC } from 'react';
+import React from 'react';
+import { useField } from 'formik';
 import DropdownFiltered, { IDropdownFilteredProps } from '../../../molecules/DropdownFiltered/DropdownFiltered';
-import { useFieldContext } from '../hooks';
 
 interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
   name: string;
 }
 
-const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, items, ...rest }) => {
-  const { error, touched, onChange, onBlur } = useFieldContext(name);
+const FormDropdownFilteredField = ({ name, items, ...rest }: IFormDropdownFilteredFieldProps) => {
+  const [{ onBlur }, { error, touched }, helpers] = useField(name);
 
   return (
     <DropdownFiltered
@@ -16,7 +16,7 @@ const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, 
       items={items}
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      onChange={item => onChange(item)}
+      onChange={item => helpers.setValue(item)}
       {...rest}
     />
   );

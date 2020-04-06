@@ -1,4 +1,5 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
@@ -7,10 +8,9 @@ interface IForm {
 }
 
 const onSubmit = jest.fn();
-
+const testId = 'dropdown-filtered-field-form';
 const dropdownLabel = 'Nationality';
 const fieldName = 'nationality';
-const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
 const validate = (values: IForm) => {
@@ -27,47 +27,46 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.Form>
+    <Formik validateOnMount initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
         <Form.DropdownFilteredField
           name={fieldName}
-          inputProps={{ placeholder: 'Select a nationality...' }}
+          placeholder="Select a nationality..."
           items={nationalities}
           label={dropdownLabel}
         />
-        <Form.Button>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+      </FormikForm>
+    </Formik>,
   );
 
 describe('<Form.DropdownFilteredField />', () => {
-  it('handles value change', () => {
-    const { getByText, getAllByLabelText } = renderComponent();
+  it('handles value change', async () => {
+    const { getByTestId, getByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
-    act(() => {
-      fireEvent.click(dropdown);
+    await act(async () => {
+      await fireEvent.click(dropdown);
     });
-    act(() => {
-      fireEvent.change(dropdown, { target: { value: 'B' } });
+    await act(async () => {
+      await fireEvent.change(dropdown, { target: { value: 'B' } });
     });
-    act(() => {
-      fireEvent.click(getByText('British'));
+    await act(async () => {
+      await fireEvent.click(getByText('British'));
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ [fieldName]: { value: 'British' } });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ [fieldName]: { value: 'British' } });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];
-    act(() => {
-      fireEvent.click(dropdown);
+    await act(async () => {
+      await fireEvent.click(dropdown);
     });
-    act(() => {
-      fireEvent.blur(dropdown);
+    await act(async () => {
+      await fireEvent.blur(dropdown);
     });
     expect(queryByText(errorMessage)).toBeTruthy();
   });

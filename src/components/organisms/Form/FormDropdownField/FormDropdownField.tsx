@@ -1,24 +1,19 @@
-import React, { forwardRef, ChangeEvent } from 'react';
+import React, { forwardRef } from 'react';
+import { useField } from 'formik';
 import DropdownField, { IDropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
-import { useFieldContext } from '../hooks';
 
 interface IFormDropdownFieldProps extends IDropdownFieldProps {
   name: string;
 }
 
 const FormDropdownField = forwardRef<HTMLSelectElement, IFormDropdownFieldProps>(({ name, ...rest }, ref) => {
-  const { error, touched, onChange, onBlur } = useFieldContext(name);
-
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    onChange(e.target.value);
-  };
-
+  const [{ onBlur, onChange }, { error, touched }] = useField(name);
   return (
     <DropdownField
       name={name}
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      onChange={handleChange}
+      onChange={onChange}
       onBlur={onBlur}
       ref={ref}
       {...rest}

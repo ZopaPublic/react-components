@@ -1,15 +1,15 @@
 import React from 'react';
+import { useField } from 'formik';
 import CheckboxGroupField, { ICheckboxGroupFieldProps } from '../../../molecules/CheckboxGroupField/CheckboxGroupField';
-import { useFieldContext } from '../hooks';
 
 interface IFormCheckboxGroupFieldProps extends Omit<ICheckboxGroupFieldProps, 'onChange' | 'value'> {
   name: string;
 }
 
 const FormCheckboxGroupField = ({ name, ...rest }: IFormCheckboxGroupFieldProps) => {
-  const { value, onChange } = useFieldContext(name);
+  const [{ value }, , { setValue }] = useField(name);
 
-  return <CheckboxGroupField onChange={onChange} value={value} {...rest} />;
+  return <CheckboxGroupField onChange={setValue} value={value} {...rest} />;
 };
 
 export default FormCheckboxGroupField;

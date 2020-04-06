@@ -1,4 +1,5 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
 import { Form } from '..';
 
@@ -7,7 +8,7 @@ interface IForm {
 }
 
 const onSubmit = jest.fn();
-const buttonLabel = 'continue';
+const testId = 'text-field-form';
 const fieldLabel = 'First name';
 const errorMessage = 'This field is required';
 
@@ -21,38 +22,41 @@ const validate = (values: IForm) => {
   return errors;
 };
 
+const initialValues: IForm = {
+  firstName: '',
+};
+
 const renderComponent = () =>
   render(
-    <Form initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.Form>
+    <Formik validateOnMount initialValues={initialValues} validate={validate} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
         <Form.TextField label={fieldLabel} name="firstName" />
-        <Form.Button>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+      </FormikForm>
+    </Formik>,
   );
 
 describe('<Form.TextField />', () => {
-  it('handles value change', () => {
-    const { getByText, getByLabelText } = renderComponent();
+  it('handles value change', async () => {
+    const { getByTestId, getByLabelText } = renderComponent();
     const value = 'name';
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ firstName: value });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getByLabelText } = renderComponent();
     const textField = getByLabelText(fieldLabel);
-    act(() => {
-      fireEvent.click(textField);
+    await act(async () => {
+      await fireEvent.click(textField);
     });
-    act(() => {
-      fireEvent.blur(textField);
+    await act(async () => {
+      await fireEvent.blur(textField);
     });
     expect(queryByText(errorMessage)).toBeTruthy();
   });
