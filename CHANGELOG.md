@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/zopaUK/react-components/compare/v3.0.4...v3.0.5) (2020-04-06)
+
+
+### Bug Fixes
+
+* **footer:** update footer website terms links ([5546c5b](https://github.com/zopaUK/react-components/commit/5546c5be6faf82b4fd08afa16bfdc3de11789855))
+
 ## [3.0.4](https://github.com/zopaUK/react-components/compare/v3.0.3...v3.0.4) (2020-04-03)
 
 
