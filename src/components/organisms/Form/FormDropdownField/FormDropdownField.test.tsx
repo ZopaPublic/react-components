@@ -26,13 +26,24 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.DropdownField label={dropdownLabel} name="referral">
-          <option disabled value="">
-            select an option
-          </option>
-          <option value="newspaper">Newspaper</option>
-          <option value="socialMedia">Social media</option>
-        </Form.DropdownField>
+        <Form.DropdownField
+          label={dropdownLabel}
+          name="referral"
+          options={[
+            {
+              label: 'Select an option',
+              value: '',
+            },
+            {
+              label: 'Newspaper',
+              value: 'newspaper',
+            },
+            {
+              label: 'Social media',
+              value: 'socialMedia',
+            },
+          ]}
+        />
       </FormikForm>
     </Formik>,
   );

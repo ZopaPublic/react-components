@@ -64,11 +64,24 @@ const FormExample = () => (
         label="Nationality"
       />
       <div style={{ height: '16px' }} />
-      <RCForm.DropdownField label="How did you hear about us?" name="referral">
-        <option value="">Select a value</option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </RCForm.DropdownField>
+      <RCForm.DropdownField
+        label="How did you hear about us?"
+        name="referral"
+        options={[
+          {
+            label: 'Select an option',
+            value: '',
+          },
+          {
+            label: 'Newspaper',
+            value: 'newspaper',
+          },
+          {
+            label: 'Social media',
+            value: 'socialMedia',
+          },
+        ]}
+      />
       <div style={{ height: '16px' }} />
       <RCForm.CheckboxGroupField
         label="Which products are you interested in?"

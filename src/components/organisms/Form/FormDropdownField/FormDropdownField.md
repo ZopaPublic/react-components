@@ -18,17 +18,30 @@ const validate = values => {
 
 <Formik
   validateOnMount
-  initialValues={{ referral: '' }}
+  initialValues={{ referral: 'newspaper' }}
   validate={validate}
   onSubmit={values => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>
-      <RCForm.DropdownField label="How did you hear about us?" name="referral">
-        <option value="">select an option</option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </RCForm.DropdownField>
+      <RCForm.DropdownField
+        options={[
+          {
+            label: 'Select an option',
+            value: '',
+          },
+          {
+            label: 'Newspaper',
+            value: 'newspaper',
+          },
+          {
+            label: 'Social media',
+            value: 'socialMedia',
+          },
+        ]}
+        label="How did you hear about us?"
+        name="referral"
+      />
     </div>
     <RCForm.Button>Submit</RCForm.Button>
   </Form>
