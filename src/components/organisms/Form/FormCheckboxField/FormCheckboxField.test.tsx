@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
-import { Form } from '..';
+import { FormCheckboxField } from '..';
 
 interface IForm {
   policy: boolean;
@@ -30,12 +30,12 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.CheckboxField label={checkboxLabel} name="policy" />
+        <FormCheckboxField label={checkboxLabel} name="policy" />
       </FormikForm>
     </Formik>,
   );
 
-describe('<Form.CheckboxField />', () => {
+describe('<FormCheckboxField />', () => {
   it('handles value change', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {

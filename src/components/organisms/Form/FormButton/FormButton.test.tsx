@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act, wait } from '@testing-library/react';
-import { Form } from '..';
+import { FormTextField, FormButton } from '..';
 
 interface IForm {
   firstName: string;
@@ -25,13 +25,13 @@ const renderComponent = (props = {}) =>
   render(
     <Formik validateOnMount initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
       <FormikForm>
-        <Form.TextField label={fieldLabel} name="firstName" />
-        <Form.Button {...props}>{buttonLabel}</Form.Button>
+        <FormTextField label={fieldLabel} name="firstName" />
+        <FormButton {...props}>{buttonLabel}</FormButton>
       </FormikForm>
     </Formik>,
   );
 
-describe('<Form.Button />', () => {
+describe('<FormButton />', () => {
   afterEach(() => {
     onSubmit.mockReset();
   });

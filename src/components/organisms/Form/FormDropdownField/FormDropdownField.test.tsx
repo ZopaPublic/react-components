@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
-import { Form } from '..';
+import { FormDropdownField } from '..';
 
 interface IForm {
   referral: string;
@@ -26,7 +26,7 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.DropdownField
+        <FormDropdownField
           label={dropdownLabel}
           name="referral"
           options={[
@@ -48,7 +48,7 @@ const renderComponent = () =>
     </Formik>,
   );
 
-describe('<Form.DropdownField />', () => {
+describe('<FormDropdownField />', () => {
   it('handles value change', async () => {
     const { getByLabelText, getByTestId } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);

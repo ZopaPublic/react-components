@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
-import { Form } from '..';
+import { FormCheckboxGroupField } from '..';
 
 const onSubmit = jest.fn();
 const testId = 'checkbox-group-field-form';
@@ -10,7 +10,7 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ music: { jazz: false, rock: false } }} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.CheckboxGroupField
+        <FormCheckboxGroupField
           label="Music"
           name="music"
           items={[
@@ -28,7 +28,7 @@ const renderComponent = () =>
     </Formik>,
   );
 
-describe('<Form.CheckboxGroupField />', () => {
+describe('<FormCheckboxGroupField />', () => {
   it('handles value change', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {

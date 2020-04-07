@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
-import { Form } from '..';
+import { FormRadioGroupField } from '..';
 
 const onSubmit = jest.fn();
 const testId = 'radio-group-field-form';
@@ -10,7 +10,7 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ employment: '' }} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.RadioGroupField
+        <FormRadioGroupField
           label="Employment"
           name="employment"
           items={[
@@ -28,7 +28,7 @@ const renderComponent = () =>
     </Formik>,
   );
 
-describe('<Form.RadioField />', () => {
+describe('<FormRadioField />', () => {
   it('handles value change', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {

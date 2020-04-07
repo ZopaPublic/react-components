@@ -1,12 +1,12 @@
 ### Summary
 
-`<Form.CheckboxField>` is just a small wrapper around the [`<CheckboxField>`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.CheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<FormCheckboxField>` is just a small wrapper around the [`<CheckboxField>`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<FormCheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 
 ```tsx
 import { Formik, Form } from 'formik';
-import { Form as RCForm } from '@zopauk/react-components';
+import { FormCheckboxField, FormButton } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
@@ -24,9 +24,9 @@ const validate = values => {
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>
-      <RCForm.CheckboxField label="I accept the policy" name="policy" />
+      <FormCheckboxField label="I accept the policy" name="policy" />
     </div>
-    <RCForm.Button>Submit</RCForm.Button>
+    <FormButton>Submit</FormButton>
   </Form>
 </Formik>;
 ```

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
-import { Form } from '..';
+import { FormTextField } from '..';
 
 interface IForm {
   firstName: string;
@@ -30,12 +30,12 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={initialValues} validate={validate} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.TextField label={fieldLabel} name="firstName" />
+        <FormTextField label={fieldLabel} name="firstName" />
       </FormikForm>
     </Formik>,
   );
 
-describe('<Form.TextField />', () => {
+describe('<FormTextField />', () => {
   it('handles value change', async () => {
     const { getByTestId, getByLabelText } = renderComponent();
     const value = 'name';

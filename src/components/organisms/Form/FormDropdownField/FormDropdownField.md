@@ -1,12 +1,12 @@
 ### Summary
 
-`<Form.DropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** iinside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<FormDropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** iinside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<FormDropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 
 ```tsx
 import { Formik, Form } from 'formik';
-import { Form as RCForm } from '@zopauk/react-components';
+import { DropdownField, FormButton } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
@@ -24,7 +24,7 @@ const validate = values => {
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>
-      <RCForm.DropdownField
+      <FormDropdownField
         options={[
           {
             label: 'Select an option',
@@ -43,7 +43,7 @@ const validate = values => {
         name="referral"
       />
     </div>
-    <RCForm.Button>Submit</RCForm.Button>
+    <FormButton>Submit</FormButton>
   </Form>
 </Formik>;
 ```

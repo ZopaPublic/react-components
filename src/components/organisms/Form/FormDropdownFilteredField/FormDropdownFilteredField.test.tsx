@@ -1,7 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
-import { Form } from '..';
+import { FormDropdownFilteredField } from '..';
 
 interface IForm {
   nationality: string;
@@ -29,7 +29,7 @@ const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
       <FormikForm data-testid={testId}>
-        <Form.DropdownFilteredField
+        <FormDropdownFilteredField
           name={fieldName}
           placeholder="Select a nationality..."
           items={nationalities}
@@ -39,7 +39,7 @@ const renderComponent = () =>
     </Formik>,
   );
 
-describe('<Form.DropdownFilteredField />', () => {
+describe('<FormDropdownFilteredField />', () => {
   it('handles value change', async () => {
     const { getByTestId, getByText, getAllByLabelText } = renderComponent();
     const dropdown = getAllByLabelText(dropdownLabel)[0];

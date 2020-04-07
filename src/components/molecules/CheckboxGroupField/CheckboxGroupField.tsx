@@ -19,7 +19,7 @@ interface ICheckboxGroupFieldItem<Val extends Record<string, boolean>> {
 export interface ICheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   label: string;
   items: ICheckboxGroupFieldItem<Val>[];
-  onChange: (value: Val) => void;
+  onChange?: (value: Val) => void;
   disabled?: boolean;
   value?: Val;
 }
@@ -49,12 +49,13 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
           [name]: !innerValue[name],
         };
         setInnerValue(newValue);
-        onChange(newValue);
+        onChange && onChange(newValue);
       } else {
-        onChange({
-          ...value,
-          [name]: !value[name],
-        });
+        onChange &&
+          onChange({
+            ...value,
+            [name]: !value[name],
+          });
       }
     }
   };
