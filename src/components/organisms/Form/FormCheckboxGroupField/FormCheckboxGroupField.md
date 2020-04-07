@@ -1,18 +1,19 @@
 ### Summary
 
 `<Form.CheckboxGroupField>` is just a small wrapper around the [`<CheckboxGroupField />`](#/Components/Molecules/CheckboxGroupField) component.
-It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
 Thanks to the form data passed down through context, `<Form.CheckboxGroupField>` already handles value change.
 
 ### Example
 
-```js
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { Form as RCForm } from '@zopauk/react-components';
 
-<Form initialValues={{ music: { jazz: false, rock: false } }} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik initialValues={{ music: { jazz: false, rock: false } }} onSubmit={values => alert(JSON.stringify(values))}>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.CheckboxGroupField
+      <RCForm.CheckboxGroupField
         label="Pick music you like"
         name="music"
         items={[
@@ -27,7 +28,7 @@ import { Form } from '@zopauk/react-components';
         ]}
       />
     </div>
-    <Form.Button disabled={false}>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <RCForm.Button disabled={false}>Submit</RCForm.Button>
+  </Form>
+</Formik>;
 ```

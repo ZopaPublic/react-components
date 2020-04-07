@@ -1,11 +1,12 @@
 ### Summary
 
-`<Form.CheckboxField>` is just a small wrapper around the [`<CheckboxField>`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.CheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<Form.CheckboxField>` is just a small wrapper around the [`<CheckboxField>`](#/Components/Molecules/CheckboxField) component. It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.CheckboxField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 
-```ts
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { Form as RCForm } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
@@ -15,12 +16,17 @@ const validate = values => {
   return errors;
 };
 
-<Form initialValues={{ policy: false }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik
+  validateOnMount
+  initialValues={{ policy: false }}
+  validate={validate}
+  onSubmit={values => alert(JSON.stringify(values))}
+>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.CheckboxField label="I accept the policy" name="policy" />
+      <RCForm.CheckboxField label="I accept the policy" name="policy" />
     </div>
-    <Form.Button>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <RCForm.Button>Submit</RCForm.Button>
+  </Form>
+</Formik>;
 ```

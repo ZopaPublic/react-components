@@ -1,11 +1,12 @@
 ### Summary
 
-`<Form.TextField>` is just a small wrapper around the [`<TextField />`](#/Components/Molecules/TextField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.TextField>` already handles the form submit callback and the disabled attribute for you.
+`<Form.TextField>` is just a small wrapper around the [`<TextField />`](#/Components/Molecules/TextField) component. It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.TextField>` already handles the form submit callback and the disabled attribute for you.
 
 ### Example
 
-```ts
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { Form as RCForm } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
@@ -15,12 +16,17 @@ const validate = values => {
   return errors;
 };
 
-<Form initialValues={{ firstName: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik
+  validateOnMount
+  initialValues={{ firstName: '' }}
+  validate={validate}
+  onSubmit={values => alert(JSON.stringify(values))}
+>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.TextField label="First name" name="firstName" />
+      <RCForm.TextField label="First name" name="firstName" />
     </div>
-    <Form.Button>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <RCForm.Button>Submit</RCForm.Button>
+  </Form>
+</Formik>;
 ```

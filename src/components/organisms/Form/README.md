@@ -2,7 +2,6 @@
 
 `<Form>` is a top level form component holding its state and also serves as a namespace for all of the form components:
 
-- [`<Form.Form>`](#/Components/Organisms/Form/Form)
 - [`<Form.TextField>`](#/Components/Organisms/Form/FormTextField)
 - [`<Form.DropdownField>`](#/Components/Organisms/Form/FormDropdownField)
 - [`<Form.DropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
@@ -14,8 +13,9 @@ See the example below for more details.
 
 ### Example
 
-```ts
-import { Form, Text } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { Form as RCForm } from '@zopauk/react-components';
 
 const initialValues = {
   firstName: '',
@@ -51,28 +51,28 @@ const nationalities = [
 ];
 
 const FormExample = () => (
-  <Form initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
-    <Form.Form>
-      <Form.TextField label="First name" name="firstName" />
+  <Formik validateOnMount initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
+    <Form>
+      <RCForm.TextField label="First name" name="firstName" />
       <div style={{ height: '16px' }} />
-      <Form.TextField label="Last name" name="lastName" />
+      <RCForm.TextField label="Last name" name="lastName" />
       <div style={{ height: '16px' }} />
-      <Form.DropdownFilteredField
+      <RCForm.DropdownFilteredField
         name="nationality"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
         label="Nationality"
       />
       <div style={{ height: '16px' }} />
-      <Form.DropdownField label="How did you hear about us?" name="referral">
+      <RCForm.DropdownField label="How did you hear about us?" name="referral">
         <option disabled value="">
           Select a value
         </option>
         <option value="newspaper">Newspaper</option>
         <option value="socialMedia">Social media</option>
-      </Form.DropdownField>
+      </RCForm.DropdownField>
       <div style={{ height: '16px' }} />
-      <Form.CheckboxGroupField
+      <RCForm.CheckboxGroupField
         label="Which products are you interested in?"
         name="products"
         items={[
@@ -91,7 +91,7 @@ const FormExample = () => (
         ]}
       />
       <div style={{ height: '16px' }} />
-      <Form.RadioGroupField
+      <RCForm.RadioGroupField
         label="Type"
         name="type"
         items={[
@@ -106,11 +106,11 @@ const FormExample = () => (
         ]}
       />
       <div style={{ height: '24px' }} />
-      <Form.CheckboxField label="I accept terms and condtions" name="terms" />
+      <RCForm.CheckboxField label="I accept terms and condtions" name="terms" />
       <div style={{ height: '16px' }} />
-      <Form.Button>Submit</Form.Button>
-    </Form.Form>
-  </Form>
+      <RCForm.Button>Submit</RCForm.Button>
+    </Form>
+  </Formik>
 );
 
 <FormExample />;
