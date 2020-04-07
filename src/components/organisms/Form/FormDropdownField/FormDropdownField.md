@@ -25,9 +25,7 @@ const validate = values => {
   <Form>
     <div style={{ marginBottom: '16px' }}>
       <RCForm.DropdownField label="How did you hear about us?" name="referral">
-        <option disabled value="">
-          select an option
-        </option>
+        <option value="">select an option</option>
         <option value="newspaper">Newspaper</option>
         <option value="socialMedia">Social media</option>
       </RCForm.DropdownField>

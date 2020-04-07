@@ -65,9 +65,7 @@ const FormExample = () => (
       />
       <div style={{ height: '16px' }} />
       <RCForm.DropdownField label="How did you hear about us?" name="referral">
-        <option disabled value="">
-          Select a value
-        </option>
+        <option value="">Select a value</option>
         <option value="newspaper">Newspaper</option>
         <option value="socialMedia">Social media</option>
       </RCForm.DropdownField>
