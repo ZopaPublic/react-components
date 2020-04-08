@@ -27,9 +27,9 @@ interface IStyledHeadingProps {
   color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
   /**
    * Where the rendered text should be aligned to.
-   * @default 'left'
+   * @default 'inherit'
    */
-  align?: 'left' | 'right' | 'center';
+  align?: 'inherit' | 'left' | 'right' | 'center';
 }
 
 const {
@@ -46,21 +46,31 @@ const lineHeightMap = {
   h6: '20px',
 };
 
+const letterSpacingMap = {
+  display: '-2.86px',
+  h1: '-1.25px',
+  h2: '-0.85px',
+  h3: '-0.45px',
+  h4: '-0.25px',
+  h5: '-0.02px',
+  h6: '-0.01px',
+};
+
 const Heading = styled.h1<IStyledHeadingProps>`
   ${({ as, size }) => {
     const tag = size || (as === 'span' ? 'h4' : as);
     return css`
       font-size: ${headingSizes[tag]};
       line-height: ${lineHeightMap[tag]};
+      letter-spacing: ${letterSpacingMap[tag]};
     `;
   }};
 
   color: ${({ color = colors.greyDarkest }) => color};
   display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
-  text-align: ${({ align }) => align};
+  text-align: ${({ align = 'inherit' }) => align};
   font-family: ${typography.primary};
   font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
-  letter-spacing: -0.5px;
   margin: 0;
 
   ${({ mb = true }) => mb && 'margin-bottom: 24px'};

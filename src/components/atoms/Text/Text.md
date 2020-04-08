@@ -1,10 +1,13 @@
 ### Summary
 
-1. Whenever you want to render text on any UI at Zopa, use the `<Text />` component 🙏🏻
-2. Its size, weight, white-space, semantics and colour can be customised
-3. If you need to render long text, render it within `<p />` tag, otherwise use the defautl `<span />` tag 👮🏻‍♂️
-4. Don't use `semibold` for now as we don't have clear specs on when to use it over `bold`
-5. Use the colours mindfully 🎨
+Whenever you want to render text on any UI at Zopa, use the `<Text />` component 🙏🏻
+
+❗❗️ This library assumes **Open Sans** is available for the typography to render correctly.  
+❗❗️ Make sure you make it available in your application HTML skeleton:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+```
 
 ### Examples
 
@@ -95,7 +98,12 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text mb>Left aligned</Text>
+  <div style={{ textAlign: 'right' }}>
+    <Text mb>Inherits from his parent by default</Text>
+  </div>
+  <Text align="left" mb>
+    Left
+  </Text>
   <Text align="center" mb>
     Center
   </Text>

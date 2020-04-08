@@ -32,9 +32,9 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
   capitalize?: boolean;
   /**
    * Where the rendered text should be aligned to.
-   * @default 'left'
+   * @default 'inherit'
    */
-  align?: 'left' | 'right' | 'center';
+  align?: 'inherit' | 'left' | 'right' | 'center';
   /**
    * Accepts a subset of the Zopa brand colors.
    * @default `colors.greyDarkest`
@@ -65,7 +65,7 @@ const Text = styled.span<ITextProps>`
   font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
 
   font-family: ${typography.primary};
-  text-align: ${({ align }) => align};
+  text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
 `;
 

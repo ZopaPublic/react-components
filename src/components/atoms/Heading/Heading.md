@@ -1,11 +1,13 @@
 ### Summary
 
-1. Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component
-2. Supply an `as` prop to specify which level to render: "h1" | "h2" | "h3" | "h4"
-3. Depending on the rendered tag through `as` the headings will render at bigger or smaller size
-4. Its size can be controlled through the `size` prop as well for more granular control
-5. Its weight can't be customised
-6. It comes with bottom white-space (margin) by default but you can disabled that through the `mb` prop
+Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component.
+
+❗❗️ This library assumes **Open Sans** is available for the typography to render correctly.  
+❗❗️ Make sure you make it available in your application HTML skeleton:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+```
 
 ### Examples
 
@@ -94,7 +96,14 @@ import { Fragment } from 'react';
 import { Heading } from '@zopauk/react-components';
 
 <Fragment>
-  <Heading as="h4">Left aligned</Heading>
+  <div style={{ textAlign: 'right' }}>
+    <Heading as="h4" mb>
+      Inherits from his parent by default
+    </Heading>
+  </div>
+  <Heading as="h4" align="left">
+    Left aligned
+  </Heading>
   <Heading as="h4" align="center">
     Center
   </Heading>

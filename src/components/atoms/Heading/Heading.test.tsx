@@ -18,17 +18,17 @@ describe('<Heading />', () => {
   });
 
   it.each`
-    tag     | expectedSize
-    ${'h1'} | ${headingSizes.h1}
-    ${'h2'} | ${headingSizes.h2}
-    ${'h3'} | ${headingSizes.h3}
-    ${'h4'} | ${headingSizes.h4}
-    ${'h5'} | ${headingSizes.h5}
-    ${'h6'} | ${headingSizes.h6}
-  `('it can render with a different HTML tag: $tag', ({ tag, expectedSize }) => {
+    tag
+    ${'h1'}
+    ${'h2'}
+    ${'h3'}
+    ${'h4'}
+    ${'h5'}
+    ${'h6'}
+  `('it can render with a different HTML tag: $tag', ({ tag }) => {
     const { container } = render(<Heading as={tag}>Header</Heading>);
 
-    expect(container.firstChild).toHaveStyleRule('font-size', expectedSize);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.querySelector(tag)).not.toBe(null);
   });
 
