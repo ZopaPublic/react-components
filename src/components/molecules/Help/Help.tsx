@@ -6,6 +6,7 @@ import Heading from '../../atoms/Heading/Heading';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import { colors } from '../../../constants/colors';
+import grid from '../../../constants/grid';
 
 const HelpWrap = styled.div`
   background: ${colors.white};
@@ -16,6 +17,14 @@ const HelpWrap = styled.div`
 const HelpContent = styled.div`
   margin: 0 auto;
   max-width: 900px;
+`;
+
+const HelpLinks = styled(FlexCol)`
+  margin-bottom: 24px;
+
+  @media (min-width: ${grid.breakpoints.l}px) {
+    margin-bottom: 0;
+  }
 `;
 
 const OpeningHoursWrapper = styled.div`
@@ -35,7 +44,7 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
         </FlexCol>
       </FlexRow>
       <FlexRow gutter={16}>
-        <FlexCol xs={12} l={6}>
+        <HelpLinks xs={12} l={6}>
           <Text mb>
             <Link href={`mailto:${email}`}>{email}</Link>
           </Text>
@@ -47,11 +56,11 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
             <Link href="tel:020 7291 8331">020 7291 8331 </Link>
             for investments
           </Text>
-        </FlexCol>
+        </HelpLinks>
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
             <Text as="p" mb>
-              Monday to Thursday (8am to 8pm), and Friday (8am to 5pm)
+              Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
             </Text>
           </OpeningHoursWrapper>
           <Text size="small" as="p">

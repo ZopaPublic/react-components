@@ -1,3 +1,24 @@
+## [3.0.5](https://github.com/zopaUK/react-components/compare/v3.0.4...v3.0.5) (2020-04-06)
+
+
+### Bug Fixes
+
+* **footer:** update footer website terms links ([5546c5b](https://github.com/zopaUK/react-components/commit/5546c5be6faf82b4fd08afa16bfdc3de11789855))
+
+## [3.0.4](https://github.com/zopaUK/react-components/compare/v3.0.3...v3.0.4) (2020-04-03)
+
+
+### Bug Fixes
+
+* **help:** fix weird spacing for Help section ([9c6da35](https://github.com/zopaUK/react-components/commit/9c6da35b8cc820c9f0e455518eda27a988245bca))
+
+## [3.0.3](https://github.com/zopaUK/react-components/compare/v3.0.2...v3.0.3) (2020-04-03)
+
+
+### Bug Fixes
+
+* **help:** update opening hours ([453afa0](https://github.com/zopaUK/react-components/commit/453afa0534eacef7a230179da1e47d0b5b79d920))
+
 ## [3.0.2](https://github.com/zopaUK/react-components/compare/v3.0.1...v3.0.2) (2020-03-24)
 
 
