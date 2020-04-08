@@ -1,46 +1,76 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, TColors } from '../../../constants/colors';
-import { maxMedia } from '../../../helpers/responsiveness';
 
-const {
-  sizes: { heading: headingSizes },
-} = typography;
-
-type THeadingSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
 interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
-  as: THeadingSizes | 'span';
+  as: THeadingTags;
   /**
    * Override the default size assigned to the rendered HTML tag.
+   * @default `as`
    */
-  size?: THeadingSizes;
+  size?: keyof typeof typography.sizes.heading;
   /**
    * Whether to add some margin below the rendered heading or not. Applied by default.
+   * @default true
    */
   mb?: boolean;
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
+   * @default `colors.greyDarkest`
    */
   color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
+  /**
+   * Where the rendered text should be aligned to.
+   * @default 'inherit'
+   */
+  align?: 'inherit' | 'left' | 'right' | 'center';
 }
 
-const Heading = styled.h1<IStyledHeadingProps>`
-  color: ${({ color = colors.greyDarkest }) => color};
-  
-  font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h4'] : headingSizes[as])};
-  ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
-  ${({ as }) => as === 'span' && `display: block;`}
+const {
+  sizes: { heading: headingSizes },
+} = typography;
 
-  
+const lineHeightMap = {
+  display: '76px',
+  h1: '54px',
+  h2: '46px',
+  h3: '36px',
+  h4: '32px',
+  h5: '26px',
+  h6: '20px',
+};
+
+const letterSpacingMap = {
+  display: '-2.86px',
+  h1: '-1.25px',
+  h2: '-0.85px',
+  h3: '-0.45px',
+  h4: '-0.25px',
+  h5: '-0.02px',
+  h6: '-0.01px',
+};
+
+const Heading = styled.h1<IStyledHeadingProps>`
+  ${({ as, size }) => {
+    const tag = size || (as === 'span' ? 'h4' : as);
+    return css`
+      font-size: ${headingSizes[tag]};
+      line-height: ${lineHeightMap[tag]};
+      letter-spacing: ${letterSpacingMap[tag]};
+    `;
+  }};
+
+  color: ${({ color = colors.greyDarkest }) => color};
+  display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
+  text-align: ${({ align = 'inherit' }) => align};
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  line-height: ${typography.lineHeights.heading};
-  letter-spacing: -0.5px;
+  font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
   margin: 0;
 
   ${({ mb = true }) => mb && 'margin-bottom: 24px'};

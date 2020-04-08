@@ -9,10 +9,9 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  line-height: 1.6;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .c3 {

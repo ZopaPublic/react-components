@@ -71,7 +71,7 @@ const Option = styled.div<IOption>`
   cursor: pointer;
   padding: 8px;
   line-height: 32px;
-  font-size: ${typography.sizes.text.base};
+  font-size: ${typography.sizes.text.body};
   font-weight: 600;
   color: ${colors.greyDarkest};
   ${({ selected, highLighted }) =>

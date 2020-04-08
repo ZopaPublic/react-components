@@ -34,19 +34,18 @@ describe('<Text />', () => {
 
   it.each`
     size       | pixels
-    ${'lead'}  | ${'20px'}
-    ${'base'}  | ${'16px'}
-    ${'small'} | ${'14px'}
+    ${'lead'}  | ${'18px'}
+    ${'body'}  | ${'15px'}
+    ${'small'} | ${'13px'}
   `('can render at different sizes:  $size – $pixels', ({ size, pixels }) => {
     const { container } = render(<Text size={size}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('font-size', pixels);
   });
 
   it.each`
-    name          | weight
-    ${'regular'}  | ${'400'}
-    ${'semibold'} | ${'600'}
-    ${'bold'}     | ${'700'}
+    name         | weight
+    ${'regular'} | ${'400'}
+    ${'bold'}    | ${'700'}
   `('can render at different weights:  $name', ({ name, weight }) => {
     const { container } = render(<Text weight={name}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('font-weight', weight);
@@ -62,5 +61,15 @@ describe('<Text />', () => {
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(<Text color={hex}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('color', hex);
+  });
+
+  it.each`
+    direction
+    ${'left'}
+    ${'right'}
+    ${'center'}
+  `('can align at:  $direction', ({ direction }) => {
+    const { container } = render(<Text align={direction}>Text</Text>);
+    expect(container.firstChild).toHaveStyleRule('text-align', direction);
   });
 });

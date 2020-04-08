@@ -15,10 +15,9 @@ const InputLabel = styled.label<IInputLabelProps>`
   margin: 0 0 10px;
   letter-spacing: 0;
   color: ${colors.greyDarkest};
-  line-height: ${typography.lineHeights.text};
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  font-size: ${typography.sizes.text['base']};
+  font-weight: ${typography.weights.bold};
+  font-size: ${typography.sizes.text.body};
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.

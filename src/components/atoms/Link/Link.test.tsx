@@ -23,16 +23,13 @@ describe('<Link />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it.each`
-    hex                   | name
-    ${colors.actionPlain} | ${'Action'}
-    ${colors.white}       | ${'White'}
-  `('can render in different colors: $name – $hex', ({ hex }) => {
+  it('renders for being displayed on top of dark backgrounds', () => {
     const { container } = render(
-      <Link href="http://duckduckgo.com" color={hex}>
+      <Link href="http://duckduckgo.com" target="_blank" negative>
         text
       </Link>,
     );
-    expect(container.firstChild).toHaveStyleRule('color', hex);
+
+    expect(container.firstChild).toHaveStyleRule('color', colors.greyDarkest);
   });
 });

@@ -56,7 +56,7 @@ const CheckboxGroupField = ({ items, label, onChange, value, disabled }: ICheckb
   return (
     <Fieldset>
       <Legend>
-        <Text weight="semibold">{label}</Text>
+        <Text weight="bold">{label}</Text>
       </Legend>
       {items.map(item => (
         <CheckboxWrapper key={item.name}>

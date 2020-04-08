@@ -1,13 +1,13 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { colors, TColors } from '../../../constants/colors';
+import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
 export interface ILinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
-  color?: TColors['actionPlain'] | TColors['white'];
+  negative?: boolean;
   as?: 'a' | 'button';
 }
 
@@ -15,9 +15,9 @@ export const linkStyle = css<ILinkProps>`
   background-color: transparent;
   font-size: inherit;
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  line-height: ${typography.lineHeights.text};
-  color: ${({ color }) => color};
+  font-weight: ${typography.weights.semiBold};
+  line-height: inherit;
+  color: ${({ negative }) => (negative ? colors.greyDarkest : colors.actionPlain)};
   cursor: pointer;
   text-decoration: underline;
   user-select: auto;
@@ -25,12 +25,13 @@ export const linkStyle = css<ILinkProps>`
   padding: 0;
   border: none;
 
-  &:hover {
-    opacity: 0.88;
-  }
-
+  &:hover,
   &:active {
-    opacity: 0.72;
+    color: ${({ negative }) => (negative ? 'black' : colors.actionDark)};
+
+    svg path {
+      fill: ${({ negative }) => (negative ? 'black' : colors.actionDark)};
+    }
   }
 `;
 

@@ -47,7 +47,7 @@ const Prefix = styled.span<IPrefixProps>`
     bottom: 0;
     display: flex;
     align-items: center;
-    font-size: ${typography.sizes.text.base};
+    font-size: ${typography.sizes.text.body};
     color: ${colors.greyDarkest};
   }
   
