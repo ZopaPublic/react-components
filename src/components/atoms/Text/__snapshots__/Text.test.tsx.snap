@@ -12,6 +12,7 @@ exports[`<Text /> it can render as an HTML "p" tag 1`] = `
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 <p
@@ -33,6 +34,7 @@ exports[`<Text /> it can render as an HTML "span" tag 1`] = `
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 <span
@@ -54,6 +56,7 @@ exports[`<Text /> renders without  a11y violations 1`] = `
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 <div>

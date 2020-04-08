@@ -12,6 +12,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c0 {

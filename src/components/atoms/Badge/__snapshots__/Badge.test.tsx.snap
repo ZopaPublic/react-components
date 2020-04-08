@@ -12,6 +12,7 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c1 {
@@ -42,6 +43,7 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c1 {
@@ -72,6 +74,7 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c1 {
@@ -102,6 +105,7 @@ exports[`<Badge /> renders with specific style 1`] = `
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c1 {
@@ -162,6 +166,7 @@ exports[`<Badge /> renders without crashing 1`] = `
   line-height: 18px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
 }
 
 .c1 {
