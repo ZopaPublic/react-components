@@ -1,6 +1,8 @@
 ### Summary
 
-`<FormDropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** iinside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<FormDropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<FormDropdownField>` is just a thin wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component.
+It is meant to be used **ONLY** iinside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormDropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 

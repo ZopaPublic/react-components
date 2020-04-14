@@ -1,6 +1,8 @@
 ### Summary
 
-`<FormButton>` is just a small wrapper around the [`<Button>`](#/Components/Atoms/Button) component. It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<FormButton>` already handles the form submit callback and the disabled attribute for you.
+`<FormButton>` is just a thin wrapper around the [`<Button>`](#/Components/Atoms/Button) component.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormButton>` already handles the form submit callback and the disabled attribute for you.
 
 ### Example
 

@@ -1,6 +1,6 @@
 ### Summary
 
-`<FormRadioGroupField>` is just a small wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component.
+`<FormRadioGroupField>` is just a thin wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component.
 It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
 Thanks to the form data passed down through context, `<FormRadioGroupField>` already handles value change.
 
