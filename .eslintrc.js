@@ -17,7 +17,7 @@ module.exports = {
     // -- TYPESCRIPT
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': ['warn', 'always'],
+    '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-explicit-any': 'off', // TODO: Fix all any
     '@typescript-eslint/no-object-literal-type-assertion': 'off',
     '@typescript-eslint/no-empty-interface': 'off',

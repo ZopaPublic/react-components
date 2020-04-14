@@ -3,7 +3,7 @@ import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
 import { FormDropdownField } from '..';
 
-interface IForm {
+interface Form {
   referral: string;
 }
 
@@ -12,8 +12,8 @@ const testId = 'dropdown-field-form';
 const dropdownLabel = 'How did you hear about us?';
 const errorMessage = 'Please pick one';
 
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
+const validate = (values: Form) => {
+  const errors: Partial<Form> = {};
 
   if (!values.referral) {
     errors.referral = errorMessage;

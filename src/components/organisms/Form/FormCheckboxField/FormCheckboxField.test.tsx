@@ -3,11 +3,11 @@ import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
 import { FormCheckboxField } from '..';
 
-interface IForm {
+interface Form {
   policy: boolean;
 }
 
-interface IFormErrors {
+interface FormErrors {
   policy: string;
 }
 
@@ -16,8 +16,8 @@ const testId = 'checkbox-field-form';
 const checkboxLabel = 'I accept the policy';
 const errorMessage = 'You need to accept the policy';
 
-const validate = (values: IForm) => {
-  const errors: Partial<IFormErrors> = {};
+const validate = (values: Form) => {
+  const errors: Partial<FormErrors> = {};
 
   if (!values.policy) {
     errors.policy = errorMessage;

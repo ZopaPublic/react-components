@@ -3,7 +3,7 @@ import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
 import { FormTextField } from '..';
 
-interface IForm {
+interface Form {
   firstName: string;
 }
 
@@ -12,8 +12,8 @@ const testId = 'text-field-form';
 const fieldLabel = 'First name';
 const errorMessage = 'This field is required';
 
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
+const validate = (values: Form) => {
+  const errors: Partial<Form> = {};
 
   if (!values.firstName) {
     errors.firstName = errorMessage;
@@ -22,7 +22,7 @@ const validate = (values: IForm) => {
   return errors;
 };
 
-const initialValues: IForm = {
+const initialValues: Form = {
   firstName: '',
 };
 

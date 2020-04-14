@@ -3,7 +3,7 @@ import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
 import { FormDropdownFilteredField } from '..';
 
-interface IForm {
+interface Form {
   nationality: string;
 }
 
@@ -13,8 +13,8 @@ const dropdownLabel = 'Nationality';
 const fieldName = 'nationality';
 const errorMessage = 'Please pick one';
 
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
+const validate = (values: Form) => {
+  const errors: Partial<Form> = {};
 
   if (!values.nationality) {
     errors.nationality = errorMessage;
