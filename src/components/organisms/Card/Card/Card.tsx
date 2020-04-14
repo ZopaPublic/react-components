@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { typography } from '../../../../constants/typography';
 import { colors } from '../../../../constants/colors';
 import { CardImageContainer } from '../CardImage';
-import CardHeading from '../CardHeading';
+import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText';
 
 export type TCardLayout = 'horizontal' | 'vertical';
