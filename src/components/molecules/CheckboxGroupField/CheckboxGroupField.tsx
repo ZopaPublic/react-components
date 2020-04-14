@@ -42,21 +42,22 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   );
 
   const handleChange = (name: keyof Val) => () => {
-    if (!disabled) {
-      if (!value) {
-        const newValue = {
-          ...innerValue,
-          [name]: !innerValue[name],
-        };
-        setInnerValue(newValue);
-        onChange && onChange(newValue);
-      } else {
-        onChange &&
-          onChange({
-            ...value,
-            [name]: !value[name],
-          });
-      }
+    if (disabled) {
+      return;
+    }
+    if (!value) {
+      const newValue = {
+        ...innerValue,
+        [name]: !innerValue[name],
+      };
+      setInnerValue(newValue);
+      onChange && onChange(newValue);
+    } else {
+      onChange &&
+        onChange({
+          ...value,
+          [name]: !value[name],
+        });
     }
   };
 
