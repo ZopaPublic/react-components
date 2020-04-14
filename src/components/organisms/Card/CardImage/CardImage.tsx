@@ -1,10 +1,16 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
-type CardImageProps = {
+interface CardImageProps {
+  /**
+   * url of the background image
+   */
   url: string;
+  /**
+   * allows you to overlay the image with a button or link
+   */
   overlayWith?: ReactNode;
-};
+}
 
 export const CardImageContainer = styled.div`
   position: relative;

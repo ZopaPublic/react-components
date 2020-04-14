@@ -8,10 +8,18 @@ import CardText from '../CardText/CardText';
 export type CardLayout = 'horizontal' | 'vertical';
 export type CardStyling = 'primary' | 'secondary';
 
-export type CardProps = {
+export interface CardProps {
+  /**
+   * Determines the layout of the card
+   * @default `vertical`
+   */
   layout?: CardLayout;
+  /**
+   * Determines the styling of the card
+   * @default `vertical`
+   */
   styling?: CardStyling;
-};
+}
 
 const layoutDirections: { [key in CardLayout]: string } = {
   horizontal: 'row',
