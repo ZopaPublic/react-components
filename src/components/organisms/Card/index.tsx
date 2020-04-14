@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
 import CardComponent, { TCardProps } from './Card/Card';
+import CardActions from './CardActions/CardActions';
 import CardImage from './CardImage';
 import CardContent from './CardContent';
-import CardActions from './CardActions';
 import CardHeading from './CardHeading';
 import CardText from './CardText';
 

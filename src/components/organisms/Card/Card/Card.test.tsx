@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { axe } from 'jest-axe';
-import Card, { TCardLayout, TCardStyling } from './Card';
+import { TCardLayout, TCardStyling } from './Card';
+import Card from '..';
 
 const layouts: TCardLayout[] = ['vertical', 'horizontal'];
 const stylings: TCardStyling[] = ['primary', 'secondary'];
