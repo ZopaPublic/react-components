@@ -14,6 +14,7 @@ export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean;
   loading?: boolean;
   fullWidth?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 const colorMap = {
