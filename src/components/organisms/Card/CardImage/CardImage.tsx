@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 type TCardImageProps = {
   url: string;
-  renderWith?: ReactNode;
+  overlayWith?: ReactNode;
 };
 
 export const CardImageContainer = styled.div`
@@ -28,10 +28,10 @@ const Image = styled.div<Pick<TCardImageProps, 'url'>>`
   background-position: center;
 `;
 
-const CardImage = ({ renderWith, url }: TCardImageProps) => (
+const CardImage = ({ overlayWith, url }: TCardImageProps) => (
   <CardImageContainer>
     <Image url={url} />
-    {renderWith}
+    {overlayWith}
   </CardImageContainer>
 );
 

@@ -4,7 +4,7 @@ import CardActions from './CardActions/CardActions';
 import CardComponent, { TCardProps } from './Card/Card';
 import CardContent from './CardContent/CardContent';
 import CardHeading from './CardHeading/CardHeading';
-import CardImage from './CardImage';
+import CardImage from './CardImage/CardImage';
 import CardText from './CardText/CardText';
 
 type TCardStatic = {
