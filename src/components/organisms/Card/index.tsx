@@ -1,26 +1,26 @@
 import React, { FC } from 'react';
 
-import CardComponent, { TCardProps } from './Card/Card';
 import CardActions from './CardActions/CardActions';
+import CardComponent, { TCardProps } from './Card/Card';
 import CardContent from './CardContent/CardContent';
-import CardImage from './CardImage';
 import CardHeading from './CardHeading/CardHeading';
-import CardText from './CardText';
+import CardImage from './CardImage';
+import CardText from './CardText/CardText';
 
 type TCardStatic = {
-  Image: typeof CardImage;
-  Content: typeof CardContent;
   Actions: typeof CardActions;
+  Content: typeof CardContent;
   Heading: typeof CardHeading;
+  Image: typeof CardImage;
   Text: typeof CardText;
 };
 
 const Card: TCardStatic & FC<TCardProps> = props => <CardComponent {...props} />;
 
-Card.Image = CardImage;
-Card.Content = CardContent;
 Card.Actions = CardActions;
+Card.Content = CardContent;
 Card.Heading = CardHeading;
+Card.Image = CardImage;
 Card.Text = CardText;
 
 export default Card;

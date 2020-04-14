@@ -3,7 +3,7 @@ import { typography } from '../../../../constants/typography';
 import { colors } from '../../../../constants/colors';
 import { CardImageContainer } from '../CardImage';
 import CardHeading from '../CardHeading/CardHeading';
-import CardText from '../CardText';
+import CardText from '../CardText/CardText';
 
 export type TCardLayout = 'horizontal' | 'vertical';
 export type TCardStyling = 'primary' | 'secondary';
