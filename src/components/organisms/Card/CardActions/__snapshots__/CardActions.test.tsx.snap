@@ -13,6 +13,16 @@ exports[`<Card.Actions /> renders the component with no a11y violations 1`] = `
   justify-content: flex-end;
 }
 
+.c0 > a,
+.c0 > button {
+  margin-right: 16px;
+}
+
+.c0 > a:last-child,
+.c0 > button:last-child {
+  margin-right: 0;
+}
+
 <div
   class="c0"
 />
