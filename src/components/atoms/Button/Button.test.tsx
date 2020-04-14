@@ -60,7 +60,8 @@ describe('<Button />', () => {
     ${'reset'}
     ${'button'}
   `('renders with the specified type: $type', ({ type }) => {
-    const { container } = render(<Button type={type}>Foo</Button>);
-    expect(container).toMatchSnapshot();
+    const { getByText } = render(<Button type={type}>Foo</Button>);
+    const target = getByText('Foo');
+    expect(target.getAttribute('type')).toEqual(type);
   });
 });
