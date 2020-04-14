@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
-import { CardImageContainer } from './CardImage';
-import CardHeading from './CardHeading';
-import CardText from './CardText';
+import { typography } from '../../../../constants/typography';
+import { colors } from '../../../../constants/colors';
+import { CardImageContainer } from '../CardImage';
+import CardHeading from '../CardHeading';
+import CardText from '../CardText';
 
 export type TCardLayout = 'horizontal' | 'vertical';
 export type TCardStyling = 'primary' | 'secondary';
