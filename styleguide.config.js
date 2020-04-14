@@ -93,6 +93,11 @@ module.exports = {
               content: 'src/components/organisms/Form/README.md',
               components: 'src/components/organisms/Form/**/[A-Z]*.tsx',
             },
+            {
+              name: 'Card',
+              content: 'src/components/organisms/Card/README.md',
+              components: 'src/components/organisms/Card/**/[A-Z]*.tsx',
+            },
           ],
         },
         {

@@ -15,7 +15,6 @@ export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';
 export { default as Progress } from './components/molecules/Progress/Progress';
-export { default as Card } from './components/atoms/Card/Card';
 export { default as SidekickCard } from './components/atoms/SidekickCard/SidekickCard';
 export { default as Link, linkStyle } from './components/atoms/Link/Link';
 export { default as Dropdown } from './components/atoms/Dropdown/Dropdown';
@@ -47,6 +46,7 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
 export { default as Navbar } from './components/organisms/Navbar';
+export { default as Card } from './components/organisms/Card';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
