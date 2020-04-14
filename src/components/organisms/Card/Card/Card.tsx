@@ -5,35 +5,35 @@ import { CardImageContainer } from '../CardImage/CardImage';
 import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
 
-export type TCardLayout = 'horizontal' | 'vertical';
-export type TCardStyling = 'primary' | 'secondary';
+export type CardLayout = 'horizontal' | 'vertical';
+export type CardStyling = 'primary' | 'secondary';
 
-export type TCardProps = {
-  layout?: TCardLayout;
-  styling?: TCardStyling;
+export type CardProps = {
+  layout?: CardLayout;
+  styling?: CardStyling;
 };
 
-const layoutDirections: { [key in TCardLayout]: string } = {
+const layoutDirections: { [key in CardLayout]: string } = {
   horizontal: 'row',
   vertical: 'column',
 };
 
-const layoutImageStyles: { [key in TCardLayout]: string } = {
+const layoutImageStyles: { [key in CardLayout]: string } = {
   horizontal: '200px',
   vertical: '200px',
 };
 
-const headingSizes: { [key in TCardStyling]: string } = {
+const headingSizes: { [key in CardStyling]: string } = {
   secondary: typography.sizes.heading.h6,
   primary: typography.sizes.heading.h5,
 };
 
-const textSizes: { [key in TCardStyling]: string } = {
+const textSizes: { [key in CardStyling]: string } = {
   secondary: typography.sizes.text.small,
   primary: typography.sizes.text.body,
 };
 
-const Card = styled.div<TCardProps>`
+const Card = styled.div<CardProps>`
   height: 100%;
   width: 100%;
   display: flex;
