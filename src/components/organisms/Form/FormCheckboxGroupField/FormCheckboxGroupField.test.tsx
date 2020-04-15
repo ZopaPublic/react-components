@@ -1,15 +1,16 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
-import { Form } from '..';
+import { FormCheckboxGroupField } from '..';
 
 const onSubmit = jest.fn();
-const buttonLabel = 'Continue';
+const testId = 'checkbox-group-field-form';
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ music: { jazz: false, rock: false } }} onSubmit={onSubmit}>
-      <Form.Form>
-        <Form.CheckboxGroupField
+    <Formik validateOnMount initialValues={{ music: { jazz: false, rock: false } }} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
+        <FormCheckboxGroupField
           label="Music"
           name="music"
           items={[
@@ -23,21 +24,20 @@ const renderComponent = () =>
             },
           ]}
         />
-        <Form.Button disabled={false}>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+      </FormikForm>
+    </Formik>,
   );
 
-describe('<Form.CheckboxGroupField />', () => {
+describe('<FormCheckboxGroupField />', () => {
   it('handles value change', async () => {
-    const { getByText, getByLabelText } = renderComponent();
+    const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {
       await fireEvent.click(getByLabelText('Jazz'));
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ music: { jazz: true, rock: false } });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ music: { jazz: true, rock: false } });
   });
 });

@@ -1,18 +1,19 @@
 ### Summary
 
-`<Form.RadioGroupField>` is just a small wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component.
-It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components.
-Thanks to the form data passed down through context, `<Form.RadioGroupField>` already handles value change.
+`<FormRadioGroupField>` is just a thin wrapper around the [`<RadioGroupField />`](#/Components/Molecules/RadioGroupField) component.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormRadioGroupField>` already handles value change.
 
 ### Example
 
-```js
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { FormRadioGroupField, FormButton } from '@zopauk/react-components';
 
-<Form initialValues={{ employment: '' }} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik initialValues={{ employment: '' }} onSubmit={values => alert(JSON.stringify(values))}>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.RadioGroupField
+      <FormRadioGroupField
         label="Employment"
         name="employment"
         items={[
@@ -27,7 +28,7 @@ import { Form } from '@zopauk/react-components';
         ]}
       />
     </div>
-    <Form.Button disabled={false}>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <FormButton disabled={false}>Submit</FormButton>
+  </Form>
+</Formik>;
 ```
