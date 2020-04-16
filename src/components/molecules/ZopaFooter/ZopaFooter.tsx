@@ -4,13 +4,8 @@ import styled from 'styled-components';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
 import Legal from './Legal/Legal';
 import Links from './Links/Links';
-import Separator from './Separator/Separator';
-import SocialLinks from './SocialLinks/SocialLinks';
-import Wrapper from './Wrapper/Wrapper';
-import { colors } from '../../../constants/colors';
 
 const Footer = styled.footer`
-  background-color: ${colors.greyDarkest};
   padding: 40px 0;
 `;
 
@@ -29,18 +24,8 @@ export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
 const ZopaFooter = ({ legalOnly = false, baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
   <Footer {...rest}>
     <FlexContainer gutter={16}>
-      {legalOnly || (
-        <>
-          <Wrapper>
-            <SocialLinks logoUrl={baseUrl} />
-          </Wrapper>
-          <Wrapper>
-            <Links baseUrl={baseUrl} />
-          </Wrapper>
-          <Separator />
-        </>
-      )}
-      <Legal />
+      {legalOnly || <Links baseUrl={baseUrl} />}
+      <Legal logoUrl={baseUrl} />
     </FlexContainer>
   </Footer>
 );

@@ -1,9 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import grid from '../../../../constants/grid';
-import FlexCol from '../../../layout/FlexCol/FlexCol';
-import FlexRow from '../../../layout/FlexRow/FlexRow';
-import ZopaLogo from '../../../icons/ZopaLogo/ZopaLogo';
 import Link from '../../../atoms/Link/Link';
 import { colors } from '../../../../constants/colors';
 
@@ -13,31 +9,11 @@ export interface ISocialLinkData {
   label: string;
 }
 
-const SFlexRow = styled(FlexRow)`
-  justify-content: center;
-  margin-top: 32px;
-
-  @media (min-width: ${grid.breakpoints.s}px) {
-    margin-top: 0;
-  }
-
-  @media (min-width: ${grid.breakpoints.m}px) {
-    justify-content: flex-end;
-  }
-`;
-
 const SFooterLink = styled(Link)`
+  color: ${colors.actionDark};
   margin-left: 8px;
   margin-right: 8px;
-`;
-
-const LogoLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-
-  > svg {
-    max-width: 200px;
-  }
+  margin: 0 8px 24px;
 `;
 
 const socialLinksData: ISocialLinkData[] = [
@@ -112,23 +88,14 @@ const socialLinksData: ISocialLinkData[] = [
   },
 ];
 
-const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
-  <FlexRow justify="space-between">
-    <FlexCol xs={12} s={6} m={4} l={2}>
-      <LogoLink href={logoUrl}>
-        <ZopaLogo color={colors.white} />
-      </LogoLink>
-    </FlexCol>
-    <FlexCol xs={12} s={6} m={4} l={3}>
-      <SFlexRow>
-        {socialLinksData.map(({ component: Component, label, href }) => (
-          <SFooterLink color={colors.white} href={href} aria-label={label} key={`footer-social-link-${href}`}>
-            <Component />
-          </SFooterLink>
-        ))}
-      </SFlexRow>
-    </FlexCol>
-  </FlexRow>
+const SocialLinks = () => (
+  <>
+    {socialLinksData.map(({ component: Component, label, href }) => (
+      <SFooterLink color={colors.actionDark} href={href} aria-label={label} key={`footer-social-link-${href}`}>
+        <Component />
+      </SFooterLink>
+    ))}
+  </>
 );
 
 export default SocialLinks;

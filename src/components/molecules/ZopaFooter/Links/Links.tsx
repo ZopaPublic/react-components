@@ -1,11 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import Link from '../../../atoms/Link/Link';
-import Heading from '../../../atoms/Heading/Heading';
-import Wrapper from '../Wrapper/Wrapper';
+import Text from '../../../atoms/Text/Text';
 
 export interface ILinkData {
   label: string;
@@ -21,8 +19,8 @@ export interface ILinksProps {
   baseUrl?: string;
 }
 
-const StyledHeading = styled(Heading)`
-  color: ${colors.white};
+const Wrapper = styled.div`
+  padding: 18px 0;
 `;
 
 const StyledList = styled.ul`
@@ -32,13 +30,25 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
+  display: block;
   margin: 0 0 8px 0;
   padding: 0;
 `;
 
-const BlockLink = styled(Link)`
-  color: ${colors.greyLight};
-  display: block;
+const StyledListTitle = styled(Text).attrs({
+  size: 'small',
+  weight: 'bold',
+  color: '#2C3236',
+  capitalize: true,
+})`
+  margin-bottom: 24px;
+  display: inline-block;
+`;
+
+const StyledListItemLink = styled(Link)`
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
 `;
 
 const linkGroups = (baseUrl: string) => [
@@ -165,11 +175,11 @@ const Links: FC<ILinksProps> = ({ baseUrl = 'https://www.zopa.com' }) => (
     {linkGroups(baseUrl).map(({ heading, links }, index) => (
       <FlexCol xs={12} s={6} m={4} l={3} key={`footer-links-${index}`}>
         <Wrapper>
-          <StyledHeading as="h3">{heading}</StyledHeading>
+          <StyledListTitle>{heading}</StyledListTitle>
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>
-                <BlockLink href={href}>{label}</BlockLink>
+                <StyledListItemLink href={href}>{label}</StyledListItemLink>
               </StyledListItem>
             ))}
           </StyledList>

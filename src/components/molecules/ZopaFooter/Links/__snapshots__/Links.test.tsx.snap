@@ -35,7 +35,7 @@ exports[`<Links /> renders the component 1`] = `
   align-items: flex-start;
 }
 
-.c6 {
+.c7 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -56,50 +56,57 @@ exports[`<Links /> renders the component 1`] = `
   border: none;
 }
 
-.c6:hover,
-.c6:active {
+.c7:hover,
+.c7:active {
   color: #21247F;
 }
 
-.c6:hover svg path,
-.c6:active svg path {
+.c7:hover svg path,
+.c7:active svg path {
   fill: #21247F;
+}
+
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
+  text-transform: uppercase;
 }
 
 .c2 {
   padding: 18px 0;
 }
 
-.c3 {
-  font-size: 28px;
-  line-height: 36px;
-  -webkit-letter-spacing: -0.45px;
-  -moz-letter-spacing: -0.45px;
-  -ms-letter-spacing: -0.45px;
-  letter-spacing: -0.45px;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
-  color: #FFFFFF;
-}
-
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.c5 {
+.c6 {
+  display: block;
   margin: 0 0 8px 0;
   padding: 0;
 }
 
-.c7 {
-  color: #D4D7D9;
-  display: block;
+.c4 {
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  margin-bottom: 16px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 @media (min-width:0px) {
@@ -154,19 +161,20 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <h3
-        class="c3"
+      <span
+        class="c3 c4"
+        color="#2C3236"
       >
         What we do
-      </h3>
+      </span>
       <ul
-        class="c4"
+        class="c5"
       >
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/loans/car-loans"
           >
@@ -174,10 +182,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/loans/debt-consolidation"
           >
@@ -185,10 +193,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/loans/home-improvement"
           >
@@ -196,10 +204,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/loans/wedding"
           >
@@ -207,10 +215,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/invest"
           >
@@ -218,10 +226,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/invest/isa"
           >
@@ -238,19 +246,20 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <h3
-        class="c3"
+      <span
+        class="c3 c4"
+        color="#2C3236"
       >
         About Zopa
-      </h3>
+      </span>
       <ul
-        class="c4"
+        class="c5"
       >
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about"
           >
@@ -258,10 +267,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/our-story"
           >
@@ -269,10 +278,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/board"
           >
@@ -280,10 +289,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/leadership"
           >
@@ -291,10 +300,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/awards"
           >
@@ -302,10 +311,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/careers"
           >
@@ -313,10 +322,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://blog.zopa.com"
           >
@@ -324,10 +333,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/about/press"
           >
@@ -335,10 +344,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/feelgood"
           >
@@ -355,19 +364,20 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <h3
-        class="c3"
+      <span
+        class="c3 c4"
+        color="#2C3236"
       >
         Legal
-      </h3>
+      </span>
       <ul
-        class="c4"
+        class="c5"
       >
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/privacy-notice"
           >
@@ -375,10 +385,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/cookie-policy"
           >
@@ -386,10 +396,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/conflicts-policy"
           >
@@ -397,10 +407,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/modern-slavery"
           >
@@ -408,10 +418,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/terms-of-use"
           >
@@ -419,10 +429,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/principles"
           >
@@ -439,19 +449,20 @@ exports[`<Links /> renders the component 1`] = `
     <div
       class="c2"
     >
-      <h3
-        class="c3"
+      <span
+        class="c3 c4"
+        color="#2C3236"
       >
         Navigation
-      </h3>
+      </span>
       <ul
-        class="c4"
+        class="c5"
       >
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/contact"
           >
@@ -459,10 +470,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://helpcentre.zopa.com/"
           >
@@ -470,10 +481,10 @@ exports[`<Links /> renders the component 1`] = `
           </a>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <a
-            class="c6 c7"
+            class="c7 c8"
             color="#3B46C4"
             href="https://www.zopa.com/sitemap"
           >

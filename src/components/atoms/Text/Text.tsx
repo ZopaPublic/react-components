@@ -39,7 +39,13 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    * Accepts a subset of the Zopa brand colors.
    * @default `colors.greyDarkest`
    */
-  color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'] | TColors['success'] | TColors['alert'];
+  color?:
+    | TColors['white']
+    | TColors['grey']
+    | TColors['greyDark']
+    | TColors['greyDarkest']
+    | TColors['success']
+    | TColors['alert'];
 }
 
 const lineHeightMap = {

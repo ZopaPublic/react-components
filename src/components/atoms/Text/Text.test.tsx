@@ -55,6 +55,7 @@ describe('<Text />', () => {
     hex                   | name
     ${colors.white}       | ${'White'}
     ${colors.grey}        | ${'Grey'}
+    ${colors.greyDark}    | ${'Grey Dark'}
     ${colors.greyDarkest} | ${'Grey Darkest'}
     ${colors.success}     | ${'Success'}
     ${colors.alert}       | ${'Alert'}
