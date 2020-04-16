@@ -9,47 +9,55 @@ const CheckboxWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface ICheckboxGroupFieldItem {
+interface ICheckboxGroupFieldItem<Val extends Record<string, boolean>> {
   label: string;
-  name: string;
+  name: keyof Val;
   defaultChecked?: boolean;
   disabled?: boolean;
 }
 
-export interface ICheckboxGroupFieldProps {
+export interface ICheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   label: string;
-  items: ICheckboxGroupFieldItem[];
-  onChange: (value: Record<string, boolean>) => void;
+  items: ICheckboxGroupFieldItem<Val>[];
+  onChange?: (value: Val) => void;
   disabled?: boolean;
-  value?: Record<string, boolean>;
+  value?: Val;
 }
 
-const CheckboxGroupField = ({ items, label, onChange, value, disabled }: ICheckboxGroupFieldProps) => {
-  const [innerValue, setInnerValue] = useState<Record<string, boolean>>(
+const CheckboxGroupField = <Val extends Record<string, boolean>>({
+  items,
+  label,
+  onChange,
+  value,
+  disabled,
+}: ICheckboxGroupFieldProps<Val>) => {
+  const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
       (acc, { name, defaultChecked }) => ({
         ...acc,
         [name]: defaultChecked || false,
       }),
-      {},
+      {} as Val,
     ),
   );
 
-  const handleChange = (name: string) => () => {
-    if (!disabled) {
-      if (!value) {
-        const newValue = {
-          ...innerValue,
-          [name]: !innerValue[name],
-        };
-        setInnerValue(newValue);
-        onChange(newValue);
-      } else {
+  const handleChange = (name: keyof Val) => () => {
+    if (disabled) {
+      return;
+    }
+    if (!value) {
+      const newValue = {
+        ...innerValue,
+        [name]: !innerValue[name],
+      };
+      setInnerValue(newValue);
+      onChange && onChange(newValue);
+    } else {
+      onChange &&
         onChange({
           ...value,
           [name]: !value[name],
         });
-      }
     }
   };
 
@@ -59,13 +67,13 @@ const CheckboxGroupField = ({ items, label, onChange, value, disabled }: ICheckb
         <Text weight="bold">{label}</Text>
       </Legend>
       {items.map(item => (
-        <CheckboxWrapper key={item.name}>
+        <CheckboxWrapper key={item.name.toString()}>
           <CheckboxField
-            name={item.name}
+            name={item.name.toString()}
             disabled={disabled}
             onChange={handleChange(item.name)}
             label={item.label}
-            checked={value ? value[item.name] : innerValue[item.name]}
+            checked={value ? !!value[item.name] : !!innerValue[item.name]}
           />
         </CheckboxWrapper>
       ))}

@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "4.0.0-beta.2",
+  "version": "4.0.0--beta.3",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -36,6 +36,7 @@
     "@types/react-modal": "^3.10.2",
     "core-js": "^3.3.5",
     "downshift": "^5.0.0",
+    "formik": "^2.1.4",
     "lodash.throttle": "^4.1.1",
     "react-modal": "^3.8.1",
     "styled-normalize": "^8.0.6"
