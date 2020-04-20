@@ -49,3 +49,24 @@ const App = () => (
 It'll grab **Open Sans** from Google's CDN [through a CSS import](https://github.com/zopaUK/react-components/blob/master/src/components/styles/Fonts.tsx#L3-L5).
 
 You're free to use this technique or add the dependency manually to your base HTML `<head />`
+
+### Spacing
+
+```ts static
+import { Margin } from '@zopauk/react-components';
+
+// root component
+const App = () => (
+  <>
+    <Margin />
+    <Padding />
+    // rest of your top-level components
+  </>
+);
+```
+
+Spacing can be added to your components using the className.
+
+```ts static
+const App = () => <div className="mb-3">I have a margin at the bottom with a value of 24px</div>;
+```
