@@ -676,17 +676,6 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                   Innovative Finance ISA
                 </a>
               </li>
-              <li
-                class="c14"
-              >
-                <a
-                  class="c5 c15"
-                  color="#4A3EDE"
-                  href="https://www.zopa.com/savings-accounts"
-                >
-                  Savings
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -885,7 +874,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
                   color="#4A3EDE"
                   href="https://www.zopa.com/principles"
                 >
-                  Investor Principles
+                  P2P Principles
                 </a>
               </li>
             </ul>
