@@ -225,17 +225,6 @@ exports[`<Links /> renders the component 1`] = `
             Innovative Finance ISA
           </a>
         </li>
-        <li
-          class="c5"
-        >
-          <a
-            class="c6 c7"
-            color="#4A3EDE"
-            href="https://www.zopa.com/savings-accounts"
-          >
-            Savings
-          </a>
-        </li>
       </ul>
     </div>
   </div>
@@ -434,7 +423,7 @@ exports[`<Links /> renders the component 1`] = `
             color="#4A3EDE"
             href="https://www.zopa.com/principles"
           >
-            Investor Principles
+            P2P Principles
           </a>
         </li>
       </ul>
