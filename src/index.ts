@@ -9,8 +9,6 @@ export { breakpoints } from './constants/breakpoints';
 export * from './constants/components';
 export { default as grid } from './constants/grid';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
-export { Margin } from './components/styles/Spacing';
-export { Padding } from './components/styles/Spacing';
 
 // Atoms
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';

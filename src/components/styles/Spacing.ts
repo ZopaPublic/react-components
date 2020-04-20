@@ -1,4 +1,4 @@
-import { css, createGlobalStyle } from 'styled-components';
+import { css } from 'styled-components';
 import { spacing as sizes } from '../../constants/spacing';
 import grid, { TGridBreakpoints } from '../../constants/grid';
 
@@ -25,7 +25,7 @@ const spacingCssFactory = (callback: TSpacingBuilderCallback): string =>
     )
     .join(' ');
 
-const spacing = (type: TSpacingTypes) => css`
+export const spacing = (type: TSpacingTypes) => css`
   ${spacingCssFactory(
     (shortHandPosition, sizingIndex, position, sizingValue) =>
       `.${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} { ${type}-${position}: ${sizingValue}px; }`,
@@ -47,6 +47,3 @@ const spacing = (type: TSpacingTypes) => css`
     )
     .join(' ')}
 `;
-
-export const Margin = createGlobalStyle`${spacing('margin')}`;
-export const Padding = createGlobalStyle`${spacing('padding')}`;
