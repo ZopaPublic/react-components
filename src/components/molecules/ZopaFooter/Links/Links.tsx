@@ -69,10 +69,6 @@ const linkGroups = (baseUrl: string) => [
         href: `${baseUrl}/invest/isa`,
         label: 'Innovative Finance ISA',
       },
-      {
-        href: `${baseUrl}/savings-accounts`,
-        label: 'Savings',
-      },
     ],
   },
   {
@@ -141,7 +137,7 @@ const linkGroups = (baseUrl: string) => [
       },
       {
         href: `${baseUrl}/principles`,
-        label: 'Investor Principles',
+        label: 'P2P Principles',
       },
     ],
   },
