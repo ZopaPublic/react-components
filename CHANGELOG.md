@@ -1,3 +1,15 @@
+## [3.0.7](https://github.com/zopaUK/react-components/compare/v3.0.6...v3.0.7) (2020-04-20)
+
+
+### Bug Fixes
+
+* **footer:** update snapshots ([aefec51](https://github.com/zopaUK/react-components/commit/aefec5111c2b370ec4b89340ede7c4c9dd5a7dc3))
+
+
+### Reverts
+
+* Revert "fix(footer): update Footer links" ([bd1ddb4](https://github.com/zopaUK/react-components/commit/bd1ddb47ae9268f4a6ab8902fd61501923a2d8e3))
+
 ## [3.0.6](https://github.com/zopaUK/react-components/compare/v3.0.5...v3.0.6) (2020-04-17)
 
 
