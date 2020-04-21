@@ -4,7 +4,7 @@
 
 ### Example
 
-```ts
+```tsx
 import { AlertBox, Link, Text, SizedContainer } from '@zopauk/react-components';
 
 <AlertBox>
