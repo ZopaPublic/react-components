@@ -1,52 +1,31 @@
-# Docs: https://circleci.com/docs/2.0/language-javascript/
+# Docs: https://circleci.com/docs
 version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.5
-jobs:
-  test_node_latest:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-      - run:
-          name: Run tests
-          command: yarn test --watchAll=false --runInBand
 
-  test_node_10:
+orbs:
+  node: circleci/node@2.0.2
+  codecov: codecov/codecov@1.0.5
+
+jobs:
+  test:
     docker:
-      - image: circleci/node:10
+      - image: cimg/base:stable
+    parameters:
+      node-version:
+        type: string
     steps:
       - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-      - run:
-          name: Run linter
-          command: yarn lint --format junit -o reports/junit/js-lint-results.xml
+      - node/install:
+          node-version: << parameters.node-version >>
+          install-yarn: true
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-key: yarn.lock
       - run:
           name: Run tests
           command: yarn test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
+      - run:
+          name: Run linter
+          command: yarn lint --format junit -o reports/junit/js-lint-results.xml
       - codecov/upload:
           file: coverage/*.json
       - store_test_results:
@@ -56,21 +35,12 @@ jobs:
 
   release:
     docker:
-      - image: circleci/node:10
+      - image: cimg/node:12.6
     steps:
       - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-key: yarn.lock
       - run:
           name: Compile the code
           command: yarn compile
@@ -78,23 +48,14 @@ jobs:
           name: Release
           command: yarn release
 
-  deploy-web:
+  deploy_web:
     docker:
-      - image: circleci/node:10
+      - image: cimg/node:12.6
     steps:
       - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-key: yarn.lock
       - run:
           name: Build website
           command: yarn build
@@ -107,22 +68,21 @@ jobs:
           command: yarn deploy-web
 
 workflows:
-  version: 2
   test_and_release:
     jobs:
-      - test_node_latest
-      - test_node_10
+      - test:
+          matrix:
+            parameters:
+              node-version: ["12.16.2", "latest"]
       - release:
           requires:
-            - test_node_latest
-            - test_node_10
+            - test
           filters:
             branches:
               only: master
-      - deploy-web:
+      - deploy_web:
           requires:
-            - test_node_latest
-            - test_node_10
+            - test
           filters:
             branches:
-              only: master
+              only: master 
