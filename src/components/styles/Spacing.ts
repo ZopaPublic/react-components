@@ -10,8 +10,8 @@ const positions: TSpacingPositionNames[] = ['top', 'right', 'bottom', 'left', 'x
 
 const spacingCssFactory = (callback: TSpacingFactoryCallback): string =>
   sizes
-    .flatMap((sizingValue, sizingIndex) =>
-      positions.map(position => callback(position.substr(0, 1), sizingIndex, position, sizingValue)),
+    .map((sizingValue, sizingIndex) =>
+      positions.map(position => callback(position.substr(0, 1), sizingIndex, position, sizingValue)).join(''),
     )
     .join(' ');
 
