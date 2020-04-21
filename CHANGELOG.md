@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/zopaUK/react-components/compare/v3.1.0...v3.1.1) (2020-04-21)
+
+
+### Bug Fixes
+
+* **alert:** fix white space for svg ([dc1fbdf](https://github.com/zopaUK/react-components/commit/dc1fbdff1966a99ee901e66901970725a6e2b44a))
+
 # [3.1.0](https://github.com/zopaUK/react-components/compare/v3.0.7...v3.1.0) (2020-04-21)
 
 
