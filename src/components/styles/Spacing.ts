@@ -2,43 +2,69 @@ import { css } from 'styled-components';
 import { spacing as sizes } from '../../constants/spacing';
 import grid, { TGridBreakpoints } from '../../constants/grid';
 
-type TSpacingPositions = 't' | 'r' | 'b' | 'l';
-type TSpacingPositionNames = 'top' | 'right' | 'bottom' | 'left';
+type TSpacingPositionNames = 'top' | 'right' | 'bottom' | 'left' | 'x' | 'y';
 type TSpacingTypes = 'margin' | 'padding';
-type TSpacingBuilderCallback = (pos: string, index: number, position: string, size: number) => string;
+type TSpacingFactoryCallback = (pos: string, index: number, position: string, size: number) => string;
 
-const positions: Record<TSpacingPositions, TSpacingPositionNames> = {
-  t: 'top',
-  r: 'right',
-  b: 'bottom',
-  l: 'left',
-};
+const positions: TSpacingPositionNames[] = ['top', 'right', 'bottom', 'left', 'x', 'y'];
 
-const spacingCssFactory = (callback: TSpacingBuilderCallback): string =>
-  Object.keys(positions)
-    .map(shortHandPosition =>
-      sizes
-        .map((sizingValue, sizingIndex) =>
-          callback(shortHandPosition, sizingIndex, positions[shortHandPosition as TSpacingPositions], sizingValue),
-        )
-        .join(' '),
+const spacingCssFactory = (callback: TSpacingFactoryCallback): string =>
+  sizes
+    .flatMap((sizingValue, sizingIndex) =>
+      positions.map(position => callback(position.substr(0, 1), sizingIndex, position, sizingValue)),
     )
     .join(' ');
 
+const propertyFactory = (type: TSpacingTypes, sizingValue: number, position: string): string => {
+  if (position == 'y') {
+    return `
+        ${type}-top: ${sizingValue}px;
+        ${type}-bottom: ${sizingValue}px;
+      `;
+  }
+
+  if (position == 'x') {
+    return `
+        ${type}-left: ${sizingValue}px;
+        ${type}-right: ${sizingValue}px;
+      `;
+  }
+
+  return `${type}-${position}: ${sizingValue}px;`;
+};
+
 export const spacing = (type: TSpacingTypes) => css`
+
+  ${sizes
+    .map((sizingValue, sizingIndex) => `.${type.substr(0, 1)}-${sizingIndex} { ${type}: ${sizingValue}px; }`)
+    .join('')}
+
   ${spacingCssFactory(
-    (shortHandPosition, sizingIndex, position, sizingValue) =>
-      `.${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} { ${type}-${position}: ${sizingValue}px; }`,
+    (shortHandPosition, sizingIndex, position, sizingValue) => `
+      .${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} {
+        ${propertyFactory(type, sizingValue, position)}
+      }`,
   )}
 
   ${Object.keys(grid.breakpoints)
     .map(
       breakpoint => `
       @media screen and (min-width: ${grid.breakpoints[breakpoint as TGridBreakpoints]}px) {
+
+        ${sizes
+          .map(
+            (sizingValue, sizingIndex) =>
+              `.${breakpoint as TGridBreakpoints}${CSS.escape(':')}${type.substr(
+                0,
+                1,
+              )}-${sizingIndex} { ${type}: ${sizingValue}px; }`,
+          )
+          .join('')}
+
         ${spacingCssFactory(
           (shortHandPosition, sizingIndex, position, sizingValue) => `
         .${breakpoint as TGridBreakpoints}${CSS.escape(':')}${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} {
-          ${type}-${position}: ${sizingValue}px;
+          ${propertyFactory(type, sizingValue, position)}
         }
       `,
         )}
