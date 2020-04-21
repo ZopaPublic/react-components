@@ -16,6 +16,10 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   fill: #818F9B;
 }
 
+.c0 svg {
+  display: block;
+}
+
 .c0 a {
   color: #2C3236 !important;
   font-size: 15px;
@@ -70,6 +74,10 @@ exports[`Alert renders with specific severity: "alert" 1`] = `
   line-height: 20px;
   font-weight: 400;
   fill: #FF453A;
+}
+
+.c0 svg {
+  display: block;
 }
 
 .c0 a {
@@ -128,6 +136,10 @@ exports[`Alert renders with specific severity: "info" 1`] = `
   fill: #818F9B;
 }
 
+.c0 svg {
+  display: block;
+}
+
 .c0 a {
   color: #2C3236 !important;
   font-size: 15px;
@@ -184,6 +196,10 @@ exports[`Alert renders with specific severity: "success" 1`] = `
   fill: #3EBC64;
 }
 
+.c0 svg {
+  display: block;
+}
+
 .c0 a {
   color: #17592B !important;
   font-size: 15px;
@@ -238,6 +254,10 @@ exports[`Alert renders with specific severity: "warning" 1`] = `
   line-height: 20px;
   font-weight: 400;
   fill: #FF9F0A;
+}
+
+.c0 svg {
+  display: block;
 }
 
 .c0 a {
