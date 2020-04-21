@@ -63,7 +63,7 @@ Padding: https://tailwindcss.com/docs/padding/
 the number you define in the class refers to the index of the spacing constants set out here:
 
 ```ts static
-[4, 8, 16, 24, 32, 40, 56, 64, 104];
+[0, 4, 8, 16, 24, 32, 40, 56, 64, 104];
 ```
 
 Example:
