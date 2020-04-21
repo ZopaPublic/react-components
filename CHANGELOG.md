@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/zopaUK/react-components/compare/v3.0.7...v3.1.0) (2020-04-21)
+
+
+### Features
+
+* **alert:** create new Alert component and deprecate AlertBox ([3931b31](https://github.com/zopaUK/react-components/commit/3931b31f611a172a02548e4aa21737a5c1815d4d))
+
 ## [3.0.7](https://github.com/zopaUK/react-components/compare/v3.0.6...v3.0.7) (2020-04-20)
 
 
