@@ -59,6 +59,10 @@ const Wrapper = styled.div<Required<IAlertProps>>`
   font-weight: 400;
   fill: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
 
+  svg {
+    display: block;
+  }
+
   a {
     color: ${props => MAP_BY_SEVERITY[props.severity].text} !important;
     font-size: 15px;
