@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/zopaUK/react-components/compare/v3.1.1...v3.1.2) (2020-04-22)
+
+
+### Bug Fixes
+
+* **alert:** adding spread props ([b8ddd61](https://github.com/zopaUK/react-components/commit/b8ddd612a130cc498442a8145fa291425ca367a1))
+
 ## [3.1.1](https://github.com/zopaUK/react-components/compare/v3.1.0...v3.1.1) (2020-04-21)
 
 
