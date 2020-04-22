@@ -79,11 +79,11 @@ const IconWrapper = styled.div`
   margin-right: 8px;
 `;
 
-const Alert: FC<IAlertProps> = ({ severity = 'info', children }) => {
+const Alert: FC<IAlertProps> = ({ severity = 'info', children, ...rest }) => {
   const Icon = MAP_BY_SEVERITY[severity].component;
 
   return (
-    <Wrapper severity={severity}>
+    <Wrapper severity={severity} {...rest}>
       <IconWrapper>
         <Icon />
       </IconWrapper>
