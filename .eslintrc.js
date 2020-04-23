@@ -23,6 +23,7 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
+    '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
