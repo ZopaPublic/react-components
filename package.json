@@ -34,12 +34,14 @@
   "dependencies": {
     "@tippy.js/react": "^3.1.1",
     "@types/react-modal": "^3.10.2",
+    "@types/util-deprecate": "^1.0.0",
     "core-js": "^3.3.5",
     "downshift": "^5.0.0",
     "formik": "^2.1.4",
     "lodash.throttle": "^4.1.1",
     "react-modal": "^3.8.1",
-    "styled-normalize": "^8.0.6"
+    "styled-normalize": "^8.0.6",
+    "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
     "react": "^16.8.1",

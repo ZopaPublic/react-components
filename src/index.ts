@@ -11,6 +11,7 @@ export { default as grid } from './constants/grid';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
 // Atoms
+export { default as Alert } from './components/atoms/Alert/Alert';
 export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';

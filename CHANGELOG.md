@@ -1,3 +1,44 @@
+## [3.1.2](https://github.com/zopaUK/react-components/compare/v3.1.1...v3.1.2) (2020-04-22)
+
+
+### Bug Fixes
+
+* **alert:** adding spread props ([b8ddd61](https://github.com/zopaUK/react-components/commit/b8ddd612a130cc498442a8145fa291425ca367a1))
+
+## [3.1.1](https://github.com/zopaUK/react-components/compare/v3.1.0...v3.1.1) (2020-04-21)
+
+
+### Bug Fixes
+
+* **alert:** fix white space for svg ([dc1fbdf](https://github.com/zopaUK/react-components/commit/dc1fbdff1966a99ee901e66901970725a6e2b44a))
+
+# [3.1.0](https://github.com/zopaUK/react-components/compare/v3.0.7...v3.1.0) (2020-04-21)
+
+
+### Features
+
+* **alert:** create new Alert component and deprecate AlertBox ([3931b31](https://github.com/zopaUK/react-components/commit/3931b31f611a172a02548e4aa21737a5c1815d4d))
+
+## [3.0.7](https://github.com/zopaUK/react-components/compare/v3.0.6...v3.0.7) (2020-04-20)
+
+
+### Bug Fixes
+
+* **footer:** update snapshots ([aefec51](https://github.com/zopaUK/react-components/commit/aefec5111c2b370ec4b89340ede7c4c9dd5a7dc3))
+
+
+### Reverts
+
+* Revert "fix(footer): update Footer links" ([bd1ddb4](https://github.com/zopaUK/react-components/commit/bd1ddb47ae9268f4a6ab8902fd61501923a2d8e3))
+
+## [3.0.6](https://github.com/zopaUK/react-components/compare/v3.0.5...v3.0.6) (2020-04-17)
+
+
+### Bug Fixes
+
+* **footer:** update Footer links ([4cfad0d](https://github.com/zopaUK/react-components/commit/4cfad0db40d22f21c18bb475d44984e41d1c65ae))
+* **footer:** update test snapshots ([7f02df0](https://github.com/zopaUK/react-components/commit/7f02df0da35dd2c9a6f579b9e7112cc8c96978bb))
+
 ## [3.0.5](https://github.com/zopaUK/react-components/compare/v3.0.4...v3.0.5) (2020-04-06)
 
 
