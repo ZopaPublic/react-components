@@ -49,3 +49,49 @@ const App = () => (
 It'll grab **Open Sans** from Google's CDN [through a CSS import](https://github.com/zopaUK/react-components/blob/master/src/components/styles/Fonts.tsx#L3-L5).
 
 You're free to use this technique or add the dependency manually to your base HTML `<head />`
+
+### Spacing
+
+Spacing is included as part of the GlobalStyles component and is split into margin and padding each can be used as atomic classes on your components.
+
+We follow the same guidelines set out in Tailwind
+
+Margin: https://tailwindcss.com/docs/margin/
+
+Padding: https://tailwindcss.com/docs/padding/
+
+The number you define in the class selector refers to the index of the spacing constants set out here:
+
+```ts static
+const spacing = {
+  '0': '0',
+  '1': '4px',
+  '2': '8px',
+  '3': '16px',
+  '4': '24px',
+  '5': '32px',
+  '6': '40px',
+  '7': '56px',
+  '8': '64px',
+  '9': '104px',
+};
+```
+
+Example:
+
+```tsx
+import { GlobalStyles } from '@zopauk/react-components';
+
+<>
+  <GlobalStyles />
+
+  <h3>Margin</h3>
+  <div className="mx-5">I have a 32px margin on the x axis</div>
+  <div className="my-2">I have a 8px margin on the y axis</div>
+  <div className="ml-4">I have a 24px margin on the left</div>
+
+  <h3>Padding</h3>
+  <div className="p-4 m:p-5">I have a 24px padding on all sides at mobile then 32px at desktop</div>
+  <div className="pb-3">I have a 16px padding on the bottom</div>
+</>;
+```

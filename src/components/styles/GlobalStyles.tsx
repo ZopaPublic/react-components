@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { typography } from '../../constants/typography';
+import { spacing } from './Spacing';
 
 // Universal box sizing with Inheritance. More info: https://css-tricks.com/box-sizing/#article-header-id-6
 const boxSizing = css`
@@ -34,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
   ${defaultFont}
   ${boxSizing}
   ${imagery}
+  ${spacing}
 `;
 
 export default GlobalStyles;
