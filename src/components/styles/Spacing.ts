@@ -2,74 +2,81 @@ import { css } from 'styled-components';
 import { spacing as sizes } from '../../constants/spacing';
 import grid, { TGridBreakpoints } from '../../constants/grid';
 
-type TSpacingPositionNames = 'top' | 'right' | 'bottom' | 'left' | 'x' | 'y';
 type TSpacingTypes = 'margin' | 'padding';
-type TSpacingFactoryCallback = (pos: string, index: number, position: string, size: number) => string;
 
-const positions: TSpacingPositionNames[] = ['top', 'right', 'bottom', 'left', 'x', 'y'];
+const createTopLevelSizes = (type: TSpacingTypes) =>
+  Object.keys(sizes).reduce(
+    (classNames, size) => ({
+      ...classNames,
+      [`.${type[0]}-${size}`]: {
+        [type]: sizes[size],
+      },
+      [`.${type[0]}y-${size}`]: {
+        [`${type}Top`]: sizes[size],
+        [`${type}Bottom`]: sizes[size],
+      },
+      [`.${type[0]}x-${size}`]: {
+        [`${type}Right`]: sizes[size],
+        [`${type}Left`]: sizes[size],
+      },
+      [`.${type[0]}t-${size}`]: {
+        [`${type}Top`]: sizes[size],
+      },
+      [`.${type[0]}r-${size}`]: {
+        marginRight: sizes[size],
+      },
+      [`.${type[0]}b-${size}`]: {
+        [`${type}Bottom`]: sizes[size],
+      },
+      [`.${type[0]}l-${size}`]: {
+        [`${type}Left`]: sizes[size],
+      },
+    }),
+    {},
+  );
 
-const spacingCssFactory = (callback: TSpacingFactoryCallback): string =>
-  sizes
-    .map((sizingValue, sizingIndex) =>
-      positions.map(position => callback(position.substr(0, 1), sizingIndex, position, sizingValue)).join(''),
-    )
-    .join(' ');
+const createResponsiveSizes = (type: TSpacingTypes) =>
+  Object.keys(grid.breakpoints).reduce(
+    (mediaQueries, breakpoint) => ({
+      ...mediaQueries,
+      [`@media screen and (min-width: ${grid.breakpoints[breakpoint as TGridBreakpoints]}px)`]: {
+        ...Object.keys(sizes).reduce(
+          (classNames, size) => ({
+            ...classNames,
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}-${size}`]: {
+              [type]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}y-${size}`]: {
+              [`${type}Top`]: sizes[size],
+              [`${type}Bottom`]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}x-${size}`]: {
+              [`${type}Right`]: sizes[size],
+              [`${type}Left`]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}t-${size}`]: {
+              [`${type}Top`]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}r-${size}`]: {
+              [`${type}Right`]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}b-${size}`]: {
+              [`${type}Bottom`]: sizes[size],
+            },
+            [`.${breakpoint}${CSS.escape(':')}${type[0]}l-${size}`]: {
+              [`${type}Left`]: sizes[size],
+            },
+          }),
+          {},
+        ),
+      },
+    }),
+    {},
+  );
 
-const propertyFactory = (type: TSpacingTypes, sizingValue: number, position: string): string => {
-  if (position == 'y') {
-    return `
-        ${type}-top: ${sizingValue}px;
-        ${type}-bottom: ${sizingValue}px;
-      `;
-  }
-
-  if (position == 'x') {
-    return `
-        ${type}-left: ${sizingValue}px;
-        ${type}-right: ${sizingValue}px;
-      `;
-  }
-
-  return `${type}-${position}: ${sizingValue}px;`;
-};
-
-export const spacing = (type: TSpacingTypes) => css`
-
-  ${sizes
-    .map((sizingValue, sizingIndex) => `.${type.substr(0, 1)}-${sizingIndex} { ${type}: ${sizingValue}px; }`)
-    .join('')}
-
-  ${spacingCssFactory(
-    (shortHandPosition, sizingIndex, position, sizingValue) => `
-      .${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} {
-        ${propertyFactory(type, sizingValue, position)}
-      }`,
-  )}
-
-  ${Object.keys(grid.breakpoints)
-    .map(
-      breakpoint => `
-      @media screen and (min-width: ${grid.breakpoints[breakpoint as TGridBreakpoints]}px) {
-
-        ${sizes
-          .map(
-            (sizingValue, sizingIndex) =>
-              `.${breakpoint as TGridBreakpoints}${CSS.escape(':')}${type.substr(
-                0,
-                1,
-              )}-${sizingIndex} { ${type}: ${sizingValue}px; }`,
-          )
-          .join('')}
-
-        ${spacingCssFactory(
-          (shortHandPosition, sizingIndex, position, sizingValue) => `
-        .${breakpoint as TGridBreakpoints}${CSS.escape(':')}${type.substr(0, 1)}${shortHandPosition}-${sizingIndex} {
-          ${propertyFactory(type, sizingValue, position)}
-        }
-      `,
-        )}
-      }
-    `,
-    )
-    .join(' ')}
+export const spacing = css`
+  ${css(createTopLevelSizes('margin'))}
+  ${css(createResponsiveSizes('margin'))}
+  ${css(createTopLevelSizes('padding'))}
+  ${css(createResponsiveSizes('padding'))}
 `;

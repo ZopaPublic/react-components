@@ -60,10 +60,21 @@ Margin: https://tailwindcss.com/docs/margin/
 
 Padding: https://tailwindcss.com/docs/padding/
 
-the number you define in the class refers to the index of the spacing constants set out here:
+The number you define in the class selector refers to the index of the spacing constants set out here:
 
 ```ts static
-[0, 4, 8, 16, 24, 32, 40, 56, 64, 104];
+const spacing = {
+  '0': '0',
+  '1': '4px',
+  '2': '8px',
+  '3': '16px',
+  '4': '24px',
+  '5': '32px',
+  '6': '40px',
+  '7': '56px',
+  '8': '64px',
+  '9': '104px',
+};
 ```
 
 Example:
@@ -75,12 +86,12 @@ import { GlobalStyles } from '@zopauk/react-components';
   <GlobalStyles />
 
   <h3>Margin</h3>
-  <div className="mx-4">I have a 32px margin on the x axis</div>
-  <div className="my-1">I have a 8px margin on the y axis</div>
-  <div className="ml-3">I have a 24px margin on the left</div>
+  <div className="mx-5">I have a 32px margin on the x axis</div>
+  <div className="my-2">I have a 8px margin on the y axis</div>
+  <div className="ml-4">I have a 24px margin on the left</div>
 
   <h3>Padding</h3>
-  <div className="p-3 m:p-4">I have a 24px padding on all sides at mobile then 32px at desktop</div>
-  <div className="pb-2">I have a 16px padding on the bottom</div>
+  <div className="p-4 m:p-5">I have a 24px padding on all sides at mobile then 32px at desktop</div>
+  <div className="pb-3">I have a 16px padding on the bottom</div>
 </>;
 ```
