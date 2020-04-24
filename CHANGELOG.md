@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/zopaUK/react-components/compare/v3.1.2...v3.1.3) (2020-04-24)
+
+
+### Bug Fixes
+
+* **icons:** deprecate existing components ([4dfac3d](https://github.com/zopaUK/react-components/commit/4dfac3d1369a1d545bab967ca5d737a6215b6242))
+
 ## [3.1.2](https://github.com/zopaUK/react-components/compare/v3.1.1...v3.1.2) (2020-04-22)
 
 
