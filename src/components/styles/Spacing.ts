@@ -45,27 +45,27 @@ const createResponsiveSizes = (type: TSpacingTypes) =>
           ...Object.keys(sizes).reduce(
             (classNames, size) => ({
               ...classNames,
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}-${size}`]: {
                 [type]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}y-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}y-${size}`]: {
                 [`${type}Top`]: sizes[size],
                 [`${type}Bottom`]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}x-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}x-${size}`]: {
                 [`${type}Right`]: sizes[size],
                 [`${type}Left`]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}t-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}t-${size}`]: {
                 [`${type}Top`]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}r-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}r-${size}`]: {
                 [`${type}Right`]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}b-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}b-${size}`]: {
                 [`${type}Bottom`]: sizes[size],
               },
-              [`.${breakpoint}${CSS.escape(':')}${type[0]}l-${size}`]: {
+              [`.${breakpoint}\\:${type[0]}l-${size}`]: {
                 [`${type}Left`]: sizes[size],
               },
             }),

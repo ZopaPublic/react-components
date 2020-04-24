@@ -67,13 +67,15 @@ const spacing = {
   '0': '0',
   '1': '4px',
   '2': '8px',
-  '3': '16px',
-  '4': '24px',
-  '5': '32px',
-  '6': '40px',
-  '7': '56px',
-  '8': '64px',
-  '9': '104px',
+  '3': '12px',
+  '4': '16px',
+  '5': '20px',
+  '6': '24px',
+  '7': '32px',
+  '8': '40px',
+  '9': '56px',
+  '10': '64px',
+  '11': '104px',
 };
 ```
 
@@ -86,12 +88,12 @@ import { GlobalStyles } from '@zopauk/react-components';
   <GlobalStyles />
 
   <h3>Margin</h3>
-  <div className="mx-5">I have a 32px margin on the x axis</div>
+  <div className="mx-7">I have a 32px margin on the x axis</div>
   <div className="my-2">I have a 8px margin on the y axis</div>
-  <div className="ml-4">I have a 24px margin on the left</div>
+  <div className="ml-6">I have a 24px margin on the left</div>
 
   <h3>Padding</h3>
-  <div className="p-4 m:p-5">I have a 24px padding on all sides at mobile then 32px at desktop</div>
-  <div className="pb-3">I have a 16px padding on the bottom</div>
+  <div className="p-6 m:p-7">I have a 24px padding on all sides at mobile then 32px at desktop</div>
+  <div className="pb-4">I have a 16px padding on the bottom</div>
 </>;
 ```
