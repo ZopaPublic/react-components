@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
+import deprecate from 'util-deprecate';
 
 export type ChevronDirection = 'up' | 'down' | 'left' | 'right';
 
@@ -56,4 +57,15 @@ const Chevron = ({
   </StyledChevron>
 );
 
-export default Chevron;
+/**
+ * @deprecated `<ChevronIcon />` is deprecated and will be removed in: `4.0.0`. Use [font-awesome 'chevron' icons](https://fontawesome.com/icons/chevron-right?style=solid) instead.
+ */
+export default deprecate(
+  Chevron,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <ChevronIcon /> is deprecated and it will be removed in the next major version: 4.0.0. 
+  For icons we plan to rely on font-awesome, use: <i class="fas fa-chevron-{direction}"></i> instead.
+`,
+);

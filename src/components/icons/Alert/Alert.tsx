@@ -1,4 +1,5 @@
 import React from 'react';
+import deprecate from 'util-deprecate';
 import { colors } from '../../../constants/colors';
 
 export interface IAlertProps {
@@ -19,4 +20,15 @@ const AlertIcon: React.FunctionComponent<IAlertProps> = ({ fillColor = colors.ba
   </svg>
 );
 
-export default AlertIcon;
+/**
+ * @deprecated `<AlertIcon />` is deprecated and will be removed in: `4.0.0`. Use [this font-awesome 'exclamation-triangle' icon](https://fontawesome.com/icons/exclamation-triangle?style=solid) instead.
+ */
+export default deprecate(
+  AlertIcon,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <AlertIcon /> is deprecated and it will be removed in the next major version: 4.0.0. 
+  For icons we plan to rely on font-awesome, use: <i class="fas fa-exclamation-triangle" /> instead.
+`,
+);
