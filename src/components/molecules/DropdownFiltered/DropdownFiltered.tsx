@@ -188,6 +188,7 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
             isValid={isValid}
             hasError={showError}
             isOpen={isOpen}
+            disabled={disabled}
           />
           <SearchArrowWrap>
             <Chevron
