@@ -6,7 +6,7 @@ Iconography related to Zopa's brand.
 - [`<ChevronIcon />`](#/Components/Icons/Chevron)
 - [`<HamburgerIcon />`](#/Components/Icons/Hamburger)
 - [`<ProfileIcon />`](#/Components/Icons/Profile)
-- [`<ZopaLogo />`](#/Components/Icons/ZopaLogo)
+- [`<ZopaIcon />`](#/Components/Icons/ZopaIcon)
 
 ### Tips
 

@@ -60,7 +60,7 @@ export { default as ArrowIcon } from './components/icons/Arrow/Arrow';
 export { default as AlertIcon } from './components/icons/Alert/Alert';
 export { default as CheckMarkIcon } from './components/icons/CheckMark/CheckMark';
 export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
-export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
+export { default as ZopaIcon } from './components/icons/ZopaIcon/ZopaIcon';
 export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
 export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
