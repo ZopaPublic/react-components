@@ -1,7 +1,7 @@
 import React from 'react';
 import { colors } from '../../../constants/colors';
 
-export interface IZopaLogoProps extends React.SVGProps<SVGSVGElement> {
+export interface IZopaIconProps extends React.SVGProps<SVGSVGElement> {
   width?: string;
   height?: string;
   /**
@@ -10,7 +10,7 @@ export interface IZopaLogoProps extends React.SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const ZopaLogo: React.FunctionComponent<IZopaLogoProps> = ({ color, ...rest }) => (
+const ZopaIcon: React.FunctionComponent<IZopaIconProps> = ({ color, ...rest }) => (
   <svg
     viewBox="0 0 104 19"
     version="1.1"
@@ -30,10 +30,10 @@ const ZopaLogo: React.FunctionComponent<IZopaLogoProps> = ({ color, ...rest }) =
   </svg>
 );
 
-ZopaLogo.defaultProps = {
-  color: colors.actionPlain,
+ZopaIcon.defaultProps = {
+  color: colors.brand,
   height: '100%',
   width: '100%',
 };
 
-export default ZopaLogo;
+export default ZopaIcon;
