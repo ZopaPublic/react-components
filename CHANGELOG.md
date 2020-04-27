@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/zopaUK/react-components/compare/v3.1.3...v3.1.4) (2020-04-27)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix onClick handler ([9a67ce9](https://github.com/zopaUK/react-components/commit/9a67ce99e1196fc52ba4b6cd5b8636e92657d021))
+
 ## [3.1.3](https://github.com/zopaUK/react-components/compare/v3.1.2...v3.1.3) (2020-04-24)
 
 
