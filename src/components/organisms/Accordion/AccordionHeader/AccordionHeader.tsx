@@ -9,7 +9,7 @@ export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
   id: string;
   index: number;
   textSize?: 'base' | 'small';
-  onClick: (e: MouseEvent<HTMLButtonElement>) => ((willBecomeActive: boolean) => void) | void;
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => ((willBecomeActive: boolean) => void) | void;
 }
 
 const StyledButton = styled.button`
