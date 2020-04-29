@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/zopaUK/react-components/compare/v3.1.4...v3.1.5) (2020-04-29)
+
+
+### Bug Fixes
+
+* **footer:** change terms of use back to website terms ([6d49232](https://github.com/zopaUK/react-components/commit/6d49232890fdded21005e0612a0f0119f48440f6))
+
 ## [3.1.4](https://github.com/zopaUK/react-components/compare/v3.1.3...v3.1.4) (2020-04-27)
 
 
