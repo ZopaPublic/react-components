@@ -1,3 +1,10 @@
+## [3.1.6](https://github.com/zopaUK/react-components/compare/v3.1.5...v3.1.6) (2020-04-29)
+
+
+### Bug Fixes
+
+* **accordion:** removed an empty line ([fc15e66](https://github.com/zopaUK/react-components/commit/fc15e66f8724a07375795646b59f11104df5cb85))
+
 ## [3.1.5](https://github.com/zopaUK/react-components/compare/v3.1.4...v3.1.5) (2020-04-29)
 
 
