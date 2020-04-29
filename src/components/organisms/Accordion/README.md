@@ -4,9 +4,9 @@
 
 In order to create an accordion, you will need to use all of these components together.
 
-You can pass a click handler to `<Accordion.Header />` if you need to track the opening and closing of the `<Accordion.Section />` on e.g. analytics.
+You can pass a click handler function to `<Accordion.Header />` if you need to track the opening and closing of the `<Accordion.Section />` for e.g. analytics.
 
-This click handler can be a normal function receiving just a click event, or a curried function receiving a click event and a boolean `willBecomeActive` value.
+This click handler will receive a boolean indicating the current state of `<Accordion.Section />` _before_ the click. False means the section is currently closed and it will open.
 
 ### Example
 
@@ -29,8 +29,8 @@ const AccordionExample = () => {
     },
   ];
 
-  const onClick = willBecomeActive => {
-    console.log(willBecomeActive ? 'Element opening' : 'Element closing');
+  const onClick = isActive => {
+    console.log(isActive ? 'Section closing' : 'Section opening');
   };
 
   return (

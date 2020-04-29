@@ -9,7 +9,7 @@ export interface IAccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>
   id: string;
   index: number;
   textSize?: 'base' | 'small';
-  onClick?: (willBecomeActive: boolean) => void;
+  onClick?: (isActive: boolean) => void;
 }
 const StyledButton = styled.button`
   appearance: none;
@@ -44,10 +44,8 @@ const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize =
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 
-  const willBecomeActive = !isActiveSection(index);
-
   const handleClick = () => {
-    onClick && onClick(willBecomeActive);
+    onClick && onClick(isActiveSection(index));
 
     contextOnClick();
   };
