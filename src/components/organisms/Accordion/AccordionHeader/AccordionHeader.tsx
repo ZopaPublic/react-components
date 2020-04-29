@@ -46,7 +46,6 @@ const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize =
 
   const handleClick = () => {
     onClick && onClick(isActiveSection(index));
-
     contextOnClick();
   };
 
