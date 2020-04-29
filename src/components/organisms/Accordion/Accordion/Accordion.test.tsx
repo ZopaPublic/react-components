@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Accordion } from '..';
 
 describe('<Accordion />', () => {
-  it('should render standard attributes but not require aria-label', () => {
+  it('should render supplied HTML attributes', () => {
     const title = 'test-accordion';
     const { queryByTitle } = render(<Accordion title={title} />);
     expect(queryByTitle(title)).toBeTruthy();
