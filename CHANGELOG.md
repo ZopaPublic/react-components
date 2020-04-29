@@ -1,3 +1,24 @@
+## [3.1.5](https://github.com/zopaUK/react-components/compare/v3.1.4...v3.1.5) (2020-04-29)
+
+
+### Bug Fixes
+
+* **footer:** change terms of use back to website terms ([6d49232](https://github.com/zopaUK/react-components/commit/6d49232890fdded21005e0612a0f0119f48440f6))
+
+## [3.1.4](https://github.com/zopaUK/react-components/compare/v3.1.3...v3.1.4) (2020-04-27)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix onClick handler ([9a67ce9](https://github.com/zopaUK/react-components/commit/9a67ce99e1196fc52ba4b6cd5b8636e92657d021))
+
+## [3.1.3](https://github.com/zopaUK/react-components/compare/v3.1.2...v3.1.3) (2020-04-24)
+
+
+### Bug Fixes
+
+* **icons:** deprecate existing components ([4dfac3d](https://github.com/zopaUK/react-components/commit/4dfac3d1369a1d545bab967ca5d737a6215b6242))
+
 ## [3.1.2](https://github.com/zopaUK/react-components/compare/v3.1.1...v3.1.2) (2020-04-22)
 
 

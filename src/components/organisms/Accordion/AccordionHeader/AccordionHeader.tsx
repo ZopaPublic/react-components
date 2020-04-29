@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes, MouseEvent } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Text from '../../../atoms/Text/Text';
@@ -46,11 +46,17 @@ const Cross = styled.span<{ active: boolean }>`
       `, linear-gradient(to right, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)`};
 `;
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'body', ...rest }) => {
+const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
-  const { ref, ...headerPropsRest } = getHeaderProps(id, index);
+  const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
+
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    onClick && onClick(e);
+    contextOnClick();
+  };
+
   return (
-    <StyledButton ref={ref} {...headerPropsRest} {...rest}>
+    <StyledButton ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
       <TitleContainer>
         <Title weight="bold" size={textSize}>
           {children}

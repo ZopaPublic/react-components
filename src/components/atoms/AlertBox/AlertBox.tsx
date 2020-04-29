@@ -29,6 +29,14 @@ const AlertBox: FC<IAlertBoxProps> = ({ children, icon, ...rest }) => (
 );
 
 /**
- * @deprecated `<AlertBox />` is deprecated. It will soon be removed. Use `<Alert />` instead.
+ * @deprecated `<AlertBox />` is deprecated and will be removed in: `4.0.0`. Use [`<Alert severity="warning" />`](#/Components/Atoms/Alert) instead.
  */
-export default deprecate(AlertBox, '<AlertBox /> is deprecated. It will soon be removed. Use <Alert /> instead.');
+export default deprecate(
+  AlertBox,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <AlertBox /> is deprecated and it will be removed in the next major version: 4.0.0.
+  Use <Alert severity="warning" /> instead.
+`,
+);
