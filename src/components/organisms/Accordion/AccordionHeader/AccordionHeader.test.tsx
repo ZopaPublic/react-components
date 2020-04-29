@@ -17,21 +17,6 @@ describe('<AccordionHeader />', () => {
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 
-  it('calls the curried click handler and the function it returns', () => {
-    const returnFunc = jest.fn();
-    const curriedOnClick = jest.fn().mockReturnValue(returnFunc);
-    const { getByTestId } = render(
-      <Accordion aria-label="test-accordion">
-        <Accordion.Header onClick={curriedOnClick} data-testid="header" id="one" index={0} textSize="base">
-          Header
-        </Accordion.Header>
-      </Accordion>,
-    );
-    fireEvent.click(getByTestId('header'));
-    expect(curriedOnClick).toHaveBeenCalledTimes(1);
-    expect(returnFunc).toHaveBeenCalledTimes(1);
-  });
-
   it('renders the component with no a11y violations', async () => {
     const { container, getByTestId } = render(
       <Accordion aria-label="test-accordion">

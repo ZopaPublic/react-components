@@ -29,7 +29,7 @@ const AccordionExample = () => {
     },
   ];
 
-  const curriedClickHandler = e => willBecomeActive => {
+  const onClick = willBecomeActive => {
     console.log(willBecomeActive ? 'Element opening' : 'Element closing');
   };
 
@@ -37,7 +37,7 @@ const AccordionExample = () => {
     <Accordion aria-label="accordion example">
       {items.map(({ id, header, section, size }, index) => (
         <div key={id}>
-          <Accordion.Header id={id} index={index} textSize={size} onClick={curriedClickHandler}>
+          <Accordion.Header id={id} index={index} textSize={size} onClick={onClick}>
             {header}
           </Accordion.Header>
           <Accordion.Section id={id} index={index}>
