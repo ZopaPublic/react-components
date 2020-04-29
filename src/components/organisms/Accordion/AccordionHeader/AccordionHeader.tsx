@@ -9,6 +9,7 @@ export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
   id: string;
   index: number;
   textSize?: 'base' | 'small';
+  onClick: (e: MouseEvent<HTMLButtonElement>) => ((willBecomeActive: boolean) => void) | void;
 }
 
 const StyledButton = styled.button`
@@ -44,8 +45,15 @@ const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize =
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 
+  const willBecomeActive = !isActiveSection(index);
+
   const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
-    onClick && onClick(e);
+    const curried = onClick && onClick(e);
+
+    if (curried) {
+      curried(willBecomeActive);
+    }
+
     contextOnClick();
   };
 
