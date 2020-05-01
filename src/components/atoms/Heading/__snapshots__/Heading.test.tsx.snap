@@ -8,12 +8,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
   -moz-letter-spacing: -1.25px;
   -ms-letter-spacing: -1.25px;
   letter-spacing: -1.25px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 800;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h1
@@ -31,12 +30,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
   -moz-letter-spacing: -0.85px;
   -ms-letter-spacing: -0.85px;
   letter-spacing: -0.85px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h2
@@ -54,12 +52,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
   -moz-letter-spacing: -0.45px;
   -ms-letter-spacing: -0.45px;
   letter-spacing: -0.45px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h3
@@ -77,12 +74,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
   -moz-letter-spacing: -0.25px;
   -ms-letter-spacing: -0.25px;
   letter-spacing: -0.25px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h4
@@ -100,12 +96,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h5" 1`] = `
   -moz-letter-spacing: -0.02px;
   -ms-letter-spacing: -0.02px;
   letter-spacing: -0.02px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h5
@@ -123,12 +118,11 @@ exports[`<Heading /> it can render with a different HTML tag: "h6" 1`] = `
   -moz-letter-spacing: -0.01px;
   -ms-letter-spacing: -0.01px;
   letter-spacing: -0.01px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <h6
@@ -146,12 +140,11 @@ exports[`<Heading /> renders without  a11y violations 1`] = `
   -moz-letter-spacing: -1.25px;
   -ms-letter-spacing: -1.25px;
   letter-spacing: -1.25px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 800;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 <div>

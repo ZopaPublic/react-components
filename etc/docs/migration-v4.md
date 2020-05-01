@@ -33,6 +33,8 @@ Now you can use className to define different margin values
 </Text>
 ```
 
+Note the `as="p"` spans are natuarly inline elements and margin will **not** affect them
+
 ## New additions
 
 ## What was fixed

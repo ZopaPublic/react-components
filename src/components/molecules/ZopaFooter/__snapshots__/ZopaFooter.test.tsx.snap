@@ -232,12 +232,11 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
   -moz-letter-spacing: -0.45px;
   -ms-letter-spacing: -0.45px;
   letter-spacing: -0.45px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
   color: #FFFFFF;
 }
 
@@ -579,7 +578,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c11 mb-6"
             >
               What we do
             </h3>
@@ -663,7 +662,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c11 mb-6"
             >
               About Zopa
             </h3>
@@ -780,7 +779,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c11 mb-6"
             >
               Legal
             </h3>
@@ -864,7 +863,7 @@ exports[`<ZopaFooter /> renders the component with default props 1`] = `
             class="c2"
           >
             <h3
-              class="c11"
+              class="c11 mb-6"
             >
               Navigation
             </h3>
