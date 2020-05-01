@@ -15,7 +15,7 @@ describe('<Text />', () => {
 
   it('can render with bottom white-space', () => {
     const { container } = render(
-      <Text as="p" mb>
+      <Text as="p" className="mb-6">
         Long paragraph with some bottom white-space to prevent text next to it colliding.
       </Text>,
     );

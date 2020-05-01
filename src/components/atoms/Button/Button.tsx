@@ -8,8 +8,6 @@ import Spinner from '../Spinner/Spinner';
 export type TStyling = 'primary' | 'secondary' | 'link';
 
 export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  leftIcon?: JSX.Element;
-  rightIcon?: JSX.Element;
   styling?: TStyling;
   disabled?: boolean;
   loading?: boolean;
@@ -91,7 +89,7 @@ const SButton = styled.button<IButtonProps>`
 `;
 
 const Button: React.FC<IButtonProps> = props => {
-  const { children, leftIcon, rightIcon, loading, styling = 'primary', ...rest } = props;
+  const { children, loading, styling = 'primary', ...rest } = props;
   const isLoading = styling !== 'link' && loading;
 
   return (
