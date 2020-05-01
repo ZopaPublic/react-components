@@ -60,8 +60,6 @@ Margin: https://tailwindcss.com/docs/margin/
 
 Padding: https://tailwindcss.com/docs/padding/
 
-The introduction of this new feature means the **mb** property on `<Heading />` & `<Text />` are now deprecated.
-
 The number you define in the class selector refers to the index of the spacing constants set out here:
 
 ```ts static

@@ -17,7 +17,7 @@
 
 With V4 introduces a new way of spacing components apart. Using atomic classes there is more granular control over spacing at different breakpoints.
 
-As part of this upgrade the `mb` property on `<Heading />`, `<Text />` & `<Badge />` components has been deprecated.
+As part of this upgrade the `mb` property on `<Heading />`, `<Text />` & `<Badge />` components has been removed.
 
 Before you had to do:
 
@@ -28,12 +28,8 @@ Before you had to do:
 Now you can use className to define different margin values
 
 ```tsx static
-<Text as="p" className="mb-6">
-  This is a text element
-</Text>
+<Text className="mb-6">This is a text element</Text>
 ```
-
-Note the `as="p"` spans are natuarly inline elements and margin will **not** affect them
 
 ## New additions
 

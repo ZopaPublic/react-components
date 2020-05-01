@@ -55,6 +55,13 @@ const Text = styled.span<ITextProps>`
   font-family: ${typography.primary};
   text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
+
+  ${({ className = '', as }) =>
+    as === 'span' &&
+    className.split(' ').some(clss => clss.includes('mb')) &&
+    `
+    display: block
+  `}
 `;
 
 const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
