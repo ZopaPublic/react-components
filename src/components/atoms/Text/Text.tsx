@@ -57,7 +57,7 @@ const Text = styled.span<ITextProps>`
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
 
   ${({ className = '', as }) =>
-    as === 'span' &&
+    (!as || as === 'span') &&
     className.split(' ').some(clss => clss.includes('mb')) &&
     `
     display: block

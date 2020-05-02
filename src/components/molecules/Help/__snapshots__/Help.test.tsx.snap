@@ -44,9 +44,24 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   text-align: inherit;
+  display: block;
 }
 
-.c10 {
+.c9 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  text-align: inherit;
+}
+
+.c11 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -134,7 +149,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   margin-bottom: 24px;
 }
 
-.c9 {
+.c10 {
   max-width: 350px;
 }
 
@@ -190,7 +205,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <h3
-          class="c4"
+          class="c4 mb-6"
         >
           We're here to help
         </h3>
@@ -229,7 +244,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           for loans
         </span>
         <span
-          class="c7"
+          class="c9"
         >
           <a
             class="c8"
@@ -246,16 +261,16 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <div
-          class="c9"
+          class="c10"
         >
           <p
-            class="c7 mb-6"
+            class="c9 mb-6"
           >
             Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
           </p>
         </div>
         <p
-          class="c10"
+          class="c11"
         >
           We can't take applications over the phone. UK residents only. Calls may be monitored.
         </p>

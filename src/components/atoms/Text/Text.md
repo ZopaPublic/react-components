@@ -36,9 +36,7 @@ import { Fragment } from 'react';
 import { Text } from '@zopauk/react-components';
 
 <Fragment>
-  <Text className="mb-6" as="p">
-    I have `margin-bottom` below ⤵️
-  </Text>
+  <Text className="mb-6">I have `margin-bottom` below ⤵️</Text>
   <Text as="p">I'm pushed further down 🙄</Text>
 </Fragment>;
 ```

@@ -26,6 +26,19 @@ describe('<Text />', () => {
   it.each`
     tag
     ${'span'}
+    ${null}
+  `('it can add display block to span elements for $tag tag if a margin bottom is defined', ({ tag }) => {
+    const { container } = render(
+      <Text as={tag} className="mb-2">
+        Text
+      </Text>,
+    );
+    expect(container.firstChild).toHaveStyleRule('display', 'block');
+  });
+
+  it.each`
+    tag
+    ${'span'}
     ${'p'}
   `('it can render as an HTML $tag tag', ({ tag }) => {
     const { container } = render(<Text as={tag}>Text</Text>);

@@ -40,7 +40,9 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
     <HelpContent>
       <FlexRow gutter={16}>
         <FlexCol xs={12}>
-          <Heading as="h3">We're here to help</Heading>
+          <Heading as="h3" className="mb-6">
+            We're here to help
+          </Heading>
         </FlexCol>
       </FlexRow>
       <FlexRow gutter={16}>
