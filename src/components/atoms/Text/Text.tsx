@@ -58,7 +58,7 @@ const Text = styled.span<ITextProps>`
 
   ${({ className = '', as }) =>
     (!as || as === 'span') &&
-    className.split(' ').some(clss => clss.includes('mb')) &&
+    className.split(' ').some(clss => /[mp](\:[mp])?[tblr]?-\d+/.test(clss)) &&
     `
     display: block
   `}

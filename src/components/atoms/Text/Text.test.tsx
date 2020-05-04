@@ -29,7 +29,7 @@ describe('<Text />', () => {
     ${null}
   `('it can add display block to span elements for $tag tag if a margin bottom is defined', ({ tag }) => {
     const { container } = render(
-      <Text as={tag} className="mb-2">
+      <Text as={tag} className="someclass mb-2">
         Text
       </Text>,
     );
