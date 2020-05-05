@@ -39,13 +39,12 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  display: block;
-  margin-bottom: 24px;
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   text-align: inherit;
+  display: block;
 }
 
 .c9 {
@@ -83,12 +82,11 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -moz-letter-spacing: -0.45px;
   -ms-letter-spacing: -0.45px;
   letter-spacing: -0.45px;
+  margin: 0;
   color: #2C3236;
   text-align: inherit;
   font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 .c3 {
@@ -207,7 +205,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <h3
-          class="c4"
+          class="c4 mb-6"
         >
           We're here to help
         </h3>
@@ -223,7 +221,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         cols="12"
       >
         <span
-          class="c7"
+          class="c7 mb-6"
         >
           <a
             class="c8"
@@ -234,7 +232,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           </a>
         </span>
         <span
-          class="c7"
+          class="c7 mb-6"
         >
           <a
             class="c8"
@@ -266,7 +264,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c10"
         >
           <p
-            class="c7"
+            class="c9 mb-6"
           >
             Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
           </p>

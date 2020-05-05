@@ -165,7 +165,9 @@ const Links: FC<ILinksProps> = ({ baseUrl = 'https://www.zopa.com' }) => (
     {linkGroups(baseUrl).map(({ heading, links }, index) => (
       <FlexCol xs={12} s={6} m={4} l={3} key={`footer-links-${index}`}>
         <Wrapper>
-          <StyledHeading as="h3">{heading}</StyledHeading>
+          <StyledHeading as="h3" className="mb-6">
+            {heading}
+          </StyledHeading>
           <StyledList>
             {links.map(({ label, href }) => (
               <StyledListItem key={label}>

@@ -16,11 +16,6 @@ interface IStyledHeadingProps {
    */
   size?: keyof typeof typography.sizes.heading;
   /**
-   * Whether to add some margin below the rendered heading or not. Applied by default.
-   * @default true
-   */
-  mb?: boolean;
-  /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    * @default `colors.greyDarkest`
    */
@@ -66,14 +61,12 @@ const Heading = styled.h1<IStyledHeadingProps>`
     `;
   }};
 
+  margin: 0;
   color: ${({ color = colors.greyDarkest }) => color};
   display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
   text-align: ${({ align = 'inherit' }) => align};
   font-family: ${typography.primary};
   font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
-  margin: 0;
-
-  ${({ mb = true }) => mb && 'margin-bottom: 24px'};
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.

@@ -21,11 +21,6 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    */
   as?: 'span' | 'p';
   /**
-   * Whether to add some margin below the rendered text or not. Use it to give meaningful white-space.
-   * @default false
-   */
-  mb?: boolean;
-  /**
    * Whether to render the text in all caps or not.
    * @default false
    */
@@ -53,13 +48,6 @@ const Text = styled.span<ITextProps>`
   letter-spacing: 0;
   color: ${({ color = colors.greyDarkest }) => color};
 
-  ${({ mb = false }) =>
-    mb &&
-    `
-    display: block;
-    margin-bottom:   24px
-  `};
-
   font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
   line-height: ${({ size = 'body' }) => lineHeightMap[size]};
   font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
@@ -67,6 +55,13 @@ const Text = styled.span<ITextProps>`
   font-family: ${typography.primary};
   text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
+
+  ${({ className = '', as }) =>
+    (!as || as === 'span') &&
+    className.split(' ').some(clss => /[mp](\:[mp])?[tblrxy]?-\d+/.test(clss)) &&
+    `
+    display: block
+  `}
 `;
 
 const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (

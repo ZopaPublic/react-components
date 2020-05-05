@@ -72,11 +72,7 @@ describe('<Heading />', () => {
   });
 
   it('can render without margin bottom', () => {
-    const { container } = render(
-      <Heading as="h1" mb={false}>
-        Header
-      </Heading>,
-    );
+    const { container } = render(<Heading as="h1">Header</Heading>);
 
     expect(container.firstChild).toHaveStyleRule('margin', '0');
   });
