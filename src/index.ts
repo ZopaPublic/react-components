@@ -30,6 +30,7 @@ export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';
 export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
 export { default as Legend } from './components/atoms/Legend/Legend';
+export { default as Logo } from './components/atoms/Logo/Logo';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
@@ -55,15 +56,6 @@ export { default as FlexContainer } from './components/layout/FlexContainer/Flex
 export { default as FlexRow } from './components/layout/FlexRow/FlexRow';
 export { default as FlexCol } from './components/layout/FlexCol/FlexCol';
 export { default as SizedContainer } from './components/layout/SizedContainer/SizedContainer';
-
-// Icons
-export { default as ArrowIcon } from './components/icons/Arrow/Arrow';
-export { default as AlertIcon } from './components/icons/Alert/Alert';
-export { default as CheckMarkIcon } from './components/icons/CheckMark/CheckMark';
-export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
-export { default as ZopaIcon } from './components/icons/ZopaIcon/ZopaIcon';
-export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
-export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
 // Hooks
 export * from './hooks/useViewport';

@@ -101,11 +101,6 @@ module.exports = {
           ],
         },
         {
-          name: 'Icons',
-          content: 'src/components/icons/README.md',
-          components: 'src/components/icons/**/*.tsx',
-        },
-        {
           name: 'Layout',
           content: 'src/components/layout/README.md',
           components: 'src/components/layout/*/*.tsx',
