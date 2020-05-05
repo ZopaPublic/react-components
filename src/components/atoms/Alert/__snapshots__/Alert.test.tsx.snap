@@ -12,6 +12,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   color: #2C3236;
   font-size: 15px;
   line-height: 20px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   fill: #818F9B;
 }
@@ -72,6 +73,7 @@ exports[`Alert renders with specific severity: "alert" 1`] = `
   color: #940700;
   font-size: 15px;
   line-height: 20px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   fill: #FF453A;
 }
@@ -132,6 +134,7 @@ exports[`Alert renders with specific severity: "info" 1`] = `
   color: #2C3236;
   font-size: 15px;
   line-height: 20px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   fill: #818F9B;
 }
@@ -192,6 +195,7 @@ exports[`Alert renders with specific severity: "success" 1`] = `
   color: #17592B;
   font-size: 15px;
   line-height: 20px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   fill: #3EBC64;
 }
@@ -252,6 +256,7 @@ exports[`Alert renders with specific severity: "warning" 1`] = `
   color: #704300;
   font-size: 15px;
   line-height: 20px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: 400;
   fill: #FF9F0A;
 }
