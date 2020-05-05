@@ -55,15 +55,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   background-color: #EFEFEF;
 }
 
-.c6 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -125,17 +116,20 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         class="c5"
       >
         <svg
+          aria-hidden="true"
           aria-label="open.menu"
-          class="c6"
-          direction="down"
-          height="24px"
-          viewBox="0 0 416 416"
-          width="24px"
+          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          color="#3B46C4"
+          data-icon="chevron-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-            fill="#3B46C4"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            fill="currentColor"
           />
         </svg>
       </div>
@@ -184,15 +178,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2:disabled {
   background-color: #EFEFEF;
-}
-
-.c5 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .c0 {
@@ -249,17 +234,20 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         class="c4"
       >
         <svg
+          aria-hidden="true"
           aria-label="open.menu"
-          class="c5"
-          direction="down"
-          height="24px"
-          viewBox="0 0 416 416"
-          width="24px"
+          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          color="#3B46C4"
+          data-icon="chevron-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-            fill="#3B46C4"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            fill="currentColor"
           />
         </svg>
       </div>

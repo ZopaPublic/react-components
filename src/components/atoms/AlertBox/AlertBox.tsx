@@ -1,12 +1,9 @@
-import React, { FC, ReactElement, HTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
 import deprecate from 'util-deprecate';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
-import Alert from '../../icons/Alert/Alert';
-
-export interface IAlertBoxProps extends HTMLAttributes<HTMLDivElement> {
-  icon?: ReactElement;
-}
+import Icon from '../Icon/Icon';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
 const Box = styled.div`
   display: inline-flex;
@@ -21,9 +18,11 @@ const IconContainer = styled.div`
   margin-right: 16px;
 `;
 
-const AlertBox: FC<IAlertBoxProps> = ({ children, icon, ...rest }) => (
+const AlertBox: FC<HTMLAttributes<HTMLDivElement>> = ({ children, ...rest }) => (
   <Box {...rest}>
-    <IconContainer>{icon || <Alert />}</IconContainer>
+    <IconContainer>
+      <Icon variant={faExclamationTriangle} />
+    </IconContainer>
     {children}
   </Box>
 );
