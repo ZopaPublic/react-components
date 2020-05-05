@@ -1,10 +1,13 @@
 import React, { InputHTMLAttributes, useState, ChangeEvent, useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
+import arrowsAltH from '../../../content/images/arrows-alt-h.svg';
 import { colors } from '../../../constants/colors';
+import grid from '../../../constants/grid';
 import { calculateTrackPosition } from './helpers';
 
 const trackHeight = 8;
-const thumbDiameter = 40;
+const thumbDiameter = 50;
+const thumbDiameterMobile = 30;
 
 const TrackStyles = css`
   box-sizing: border-box;
@@ -18,9 +21,17 @@ const ThumbStyles = css`
   box-sizing: border-box;
   border: none;
   border-radius: 50%;
-  width: ${thumbDiameter}px;
-  height: ${thumbDiameter}px;
-  background: #007468;
+  width: ${thumbDiameterMobile}px;
+  height: ${thumbDiameterMobile}px;
+  background: ${colors.actionPlain};
+
+  @media (min-width: ${grid.breakpoints.m}px) {
+    width: ${thumbDiameter}px;
+    height: ${thumbDiameter}px;
+    background: url(${arrowsAltH}) no-repeat ${colors.actionPlain};
+    background-position: center center;
+    background-size: 20px 20px;
+  }
 `;
 
 const ThumbStylesFocus = css`
@@ -34,8 +45,12 @@ interface IInput extends InputHTMLAttributes<HTMLInputElement> {
 const SInputRange = styled.input<IInput>`
   -webkit-appearance: none;
   width: 100%;
-  height: ${thumbDiameter}px;
+  height: ${thumbDiameterMobile}px;
   cursor: pointer;
+
+  @media (min-width: ${grid.breakpoints.m}px) {
+    height: ${thumbDiameter}px;
+  }
 
   &::-webkit-slider-runnable-track {
     ${TrackStyles}
@@ -46,8 +61,12 @@ const SInputRange = styled.input<IInput>`
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    margin-top: ${(trackHeight - thumbDiameter) * 0.5}px;
+    margin-top: ${(trackHeight - thumbDiameterMobile) * 0.5}px;
     ${ThumbStyles}
+    
+    @media (min-width: ${grid.breakpoints.m}px) {
+       margin-top: ${(trackHeight - thumbDiameter) * 0.5}px;
+    }
   }
   &::-moz-range-thumb {
     ${ThumbStyles}
@@ -58,25 +77,27 @@ const SInputRange = styled.input<IInput>`
       linear,
       0% 0%,
       100% 0%,
-      color-stop(${({ trackPosition }) => trackPosition}, ${colors.brand}),
+      color-stop(${({ trackPosition }) => trackPosition}, ${colors.actionPlain}),
       color-stop(${({ trackPosition }) => trackPosition}, ${colors.greyLighter})
     );
   }
   &::-moz-range-progress {
     border-radius: ${trackHeight / 2}px;
     height: ${trackHeight}px;
-    background: ${colors.brand};
+    background: ${colors.actionPlain};
   }
 
-  &:focus {
-    outline: none;
-
+  &:active {
     &::-webkit-slider-thumb {
       ${ThumbStylesFocus}
     }
     &::-moz-range-thumb {
       ${ThumbStylesFocus}
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   ::-moz-focus-outer {
