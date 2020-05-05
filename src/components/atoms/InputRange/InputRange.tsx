@@ -105,7 +105,7 @@ const SInputRange = styled.input<IInput>`
   }
 `;
 
-interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue'> {
+export interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue'> {
   value: number;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   min?: number;
@@ -113,19 +113,22 @@ interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defau
   step?: number;
 }
 
-const InputRange = forwardRef<HTMLInputElement, IInputRange>(({ min = 0, max = 100, value, ...otherProps }, ref) => {
-  return (
-    <SInputRange
-      {...otherProps}
-      role="slider"
-      trackPosition={calculateTrackPosition({ min, max, value })}
-      min={min}
-      max={max}
-      value={value}
-      type="range"
-      ref={ref}
-    />
-  );
-});
+const InputRange = forwardRef<HTMLInputElement, IInputRange>(
+  ({ min = 0, max = 100, step = 1, value, ...otherProps }, ref) => {
+    return (
+      <SInputRange
+        {...otherProps}
+        role="slider"
+        trackPosition={calculateTrackPosition({ min, max, value })}
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        type="range"
+        ref={ref}
+      />
+    );
+  },
+);
 
 export default InputRange;

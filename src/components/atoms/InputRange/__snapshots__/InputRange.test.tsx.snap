@@ -108,6 +108,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   max="100"
   min="0"
   role="slider"
+  step="1"
   type="range"
   value="51"
 />

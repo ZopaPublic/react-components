@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputRangeWithControls /> renders the component with no a11y violations 1`] = `
+.c5 {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.c5::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  height: 8px;
+  background: #EFEFEF;
+}
+
+.c5::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  height: 8px;
+  background: #EFEFEF;
+}
+
+.c5::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -11px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #3B46C4;
+}
+
+.c5::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #3B46C4;
+}
+
+.c5::-webkit-slider-runnable-track {
+  background: -webkit-gradient( linear, 0% 0%, 100% 0%, color-stop(0.75,#3B46C4), color-stop(0.75,#EFEFEF) );
+}
+
+.c5::-moz-range-progress {
+  border-radius: 4px;
+  height: 8px;
+  background: #3B46C4;
+}
+
+.c5:active::-webkit-slider-thumb {
+  background: #3B46C4;
+}
+
+.c5:active::-moz-range-thumb {
+  background: #3B46C4;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5::-moz-focus-outer {
+  border: 0;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: #E9EAFA;
+}
+
+.c2:hover:not(:disabled) {
+  background: #EEEFFB;
+}
+
+.c2:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c2:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  padding: 12px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.c4 {
+  display: block;
+  font-size: 12px;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    height: 50px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5::-webkit-slider-thumb {
+    width: 50px;
+    height: 50px;
+    background: url(arrows-alt-h.svg) no-repeat #3B46C4;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5::-webkit-slider-thumb {
+    margin-top: -21px;
+  }
+}
+
+@media (min-width:768px) {
+  .c5::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+    background: url(arrows-alt-h.svg) no-repeat #3B46C4;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding: 16px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 20px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <button
+      class="c2 c3"
+      title="decrement"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-minus fa-w-14 c4"
+        data-icon="minus"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </div>
+  <input
+    aria-label="slider"
+    class="c5"
+    max="100"
+    min="0"
+    role="slider"
+    step="1"
+    title="range"
+    type="range"
+    value="75"
+  />
+  <div
+    class="c1"
+  >
+    <button
+      class="c2 c3"
+      title="increment"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-plus fa-w-14 c4"
+        data-icon="plus"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
