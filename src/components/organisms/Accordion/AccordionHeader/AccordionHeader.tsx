@@ -1,16 +1,16 @@
-import React, { FC, HTMLAttributes, MouseEvent } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../hooks';
 import { spacing } from '../../../../constants/spacing';
 
-export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
+export interface IAccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   id: string;
   index: number;
   textSize?: 'body' | 'small';
+  onClick?: (isActive: boolean) => void;
 }
-
 const StyledButton = styled.button`
   appearance: none;
   border: none;
@@ -50,8 +50,8 @@ const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize =
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 
-  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
-    onClick && onClick(e);
+  const handleClick = () => {
+    onClick && onClick(isActiveSection(index));
     contextOnClick();
   };
 
