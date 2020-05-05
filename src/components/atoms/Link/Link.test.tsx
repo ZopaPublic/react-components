@@ -23,6 +23,16 @@ describe('<Link />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it('doesnt render the link with a target icon', () => {
+    const { container } = render(
+      <Link href="http://duckduckgo.com" showTargetIcon={false} target="_blank">
+        text
+      </Link>,
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it('renders for being displayed on top of dark backgrounds', () => {
     const { container } = render(
       <Link href="http://duckduckgo.com" target="_blank" negative>
