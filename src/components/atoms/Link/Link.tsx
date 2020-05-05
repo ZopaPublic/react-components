@@ -9,6 +9,7 @@ export interface ILinkProps
   target?: '_blank';
   negative?: boolean;
   as?: 'a' | 'button';
+  showTargetIcon?: boolean;
 }
 
 export const linkStyle = css<ILinkProps>`
@@ -57,11 +58,11 @@ const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
 };
 
 const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>(
-  ({ children, color = colors.actionPlain, target, ...rest }, ref) => {
+  ({ children, color = colors.actionPlain, target, showTargetIcon = true, ...rest }, ref) => {
     return (
       <SLink ref={ref} color={color} target={target} {...rest}>
         {children}
-        {target === '_blank' && <TargetIcon color={color} />}
+        {target === '_blank' && showTargetIcon && <TargetIcon color={color} />}
       </SLink>
     );
   },
