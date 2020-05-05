@@ -24,7 +24,14 @@ describe('<InputRange />', () => {
   });
 
   it('renders the component with no a11y violations', async () => {
-    const { container } = render(<InputRange aria-label="slider" defaultValue={51} />);
+    const ControlledInputRange = () => {
+      const [value, setValue] = useState(51);
+      const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => setValue(Number(event.target.value));
+
+      return <InputRange aria-label="slider" value={value} onChange={onChangeHandler} />;
+    };
+
+    const { container } = render(<ControlledInputRange />);
     const results = await axe(container.innerHTML);
     expect(container.firstChild).toMatchSnapshot();
     expect(results).toHaveNoViolations();

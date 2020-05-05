@@ -1,50 +1,8 @@
 ### Summary
 
-Use `<InputRange />` to render a native HTML `<input type="range" />`.
+Use `<InputRange />` to render a **controlled** native HTML `<input type="range" />`.
 
 ### Examples
-
-With default props:
-
-```tsx
-import { InputRange } from '@zopauk/react-components';
-
-<InputRange />;
-```
-
-With default value:
-
-```tsx
-import { InputRange } from '@zopauk/react-components';
-
-<InputRange defaultValue={75} />;
-```
-
-With min and max:
-
-```tsx
-import { InputRange } from '@zopauk/react-components';
-
-<InputRange min={100} max={200} />;
-```
-
-With step:
-
-```tsx
-import { InputRange } from '@zopauk/react-components';
-
-<InputRange step={10} />;
-```
-
-With default value, min, max and step:
-
-```tsx
-import { InputRange } from '@zopauk/react-components';
-
-<InputRange defaultValue={150} min={100} max={500} step={50} />;
-```
-
-### Controlled Examples
 
 Store value of `<InputRange />`:
 
