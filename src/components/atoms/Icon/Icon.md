@@ -16,7 +16,7 @@ This component is just a wrapper around `<FontAwesomeIcon />` from `'@fortawesom
 
 - 🧐 &nbsp;Check the [`react-fontawesome` docs](https://github.com/FortAwesome/react-fontawesome) for all the possible configuration options.
 - 👉🏻 &nbsp;You'll need to install `@fortawesome/free-solid-svg-icons` in order to import them explicitly
-  - [explicit imports](https://github.com/FortAwesome/react-fontawesome#explicit-import) are import to prevent big bundles
+  - [**explicit imports**](https://github.com/FortAwesome/react-fontawesome#explicit-import) are crucial to prevent big bundles
 
 ### Example
 
