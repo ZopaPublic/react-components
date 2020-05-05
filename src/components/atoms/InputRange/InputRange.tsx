@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, useState, ChangeEvent, useRef, useEffect } from 'react';
+import React, { InputHTMLAttributes, ChangeEvent, forwardRef } from 'react';
 import styled, { css } from 'styled-components';
 import arrowsAltH from '../../../content/images/arrows-alt-h.svg';
 import { colors } from '../../../constants/colors';
@@ -105,43 +105,27 @@ const SInputRange = styled.input<IInput>`
   }
 `;
 
-interface IInputRange extends InputHTMLAttributes<HTMLInputElement> {
-  defaultValue?: number;
-  value?: number;
+interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue'> {
+  value: number;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   min?: number;
   max?: number;
   step?: number;
 }
 
-const InputRange = ({ min = 0, max = 100, onChange, ...otherProps }: IInputRange) => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const [trackPosition, setTrackPosition] = useState(0.5);
-
-  const calculateTrackPositionFromInput = (input: HTMLInputElement) => {
-    return calculateTrackPosition({ min: Number(input.min), max: Number(input.max), value: Number(input.value) });
-  };
-
-  useEffect(() => {
-    inputRef.current && setTrackPosition(calculateTrackPositionFromInput(inputRef.current));
-  }, []);
-
-  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    setTrackPosition(calculateTrackPositionFromInput(e.target));
-    onChange && onChange(e);
-  };
-
+const InputRange = forwardRef<HTMLInputElement, IInputRange>(({ min = 0, max = 100, value, ...otherProps }, ref) => {
   return (
     <SInputRange
       {...otherProps}
       role="slider"
-      trackPosition={trackPosition}
+      trackPosition={calculateTrackPosition({ min, max, value })}
       min={min}
       max={max}
-      onChange={onChangeHandler}
+      value={value}
       type="range"
-      ref={inputRef}
+      ref={ref}
     />
   );
-};
+});
 
 export default InputRange;
