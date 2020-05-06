@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../constants/colors';
-import Chevron from '../../../icons/Chevron/Chevron';
 import Link, { ILinkProps } from '../../../atoms/Link/Link';
+import Icon from '../../../atoms/Icon/Icon';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 export interface IStyledNavbarLinkProps extends ILinkProps {
   active: boolean;
@@ -46,7 +47,7 @@ const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INa
       {children}
       {withChevron && (
         <ChevronContainer open={open}>
-          <Chevron color="currentcolor" width="18px" height="18px" />
+          <Icon variant={faChevronDown} />
         </ChevronContainer>
       )}
     </StyledNavbarLink>

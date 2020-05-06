@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import grid from '../../../../constants/grid';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
-import ZopaIcon from '../../../icons/ZopaIcon/ZopaIcon';
+import Logo from '../../../atoms/Logo/Logo';
 import Link from '../../../atoms/Link/Link';
 import { colors } from '../../../../constants/colors';
 
@@ -116,7 +116,7 @@ const SocialLinks = ({ logoUrl = 'https://www.zopa.com' }) => (
   <FlexRow justify="space-between">
     <FlexCol xs={12} s={6} m={4} l={2}>
       <LogoLink href={logoUrl}>
-        <ZopaIcon color={colors.white} />
+        <Logo />
       </LogoLink>
     </FlexCol>
     <FlexCol xs={12} s={6} m={4} l={3}>

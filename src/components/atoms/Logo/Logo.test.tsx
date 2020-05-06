@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ZopaIcon from './ZopaIcon';
+import Logo from './Logo';
 
-describe('<ZopaIcon />', () => {
+describe('<Logo />', () => {
   it('renders the component with default props', () => {
-    const { container } = render(<ZopaIcon />);
+    const { container } = render(<Logo />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with props', () => {
-    const { container } = render(<ZopaIcon width="70px" height="50px" color="red" />);
+    const { container } = render(<Logo width="70px" height="50px" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
