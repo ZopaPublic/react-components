@@ -16,12 +16,13 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
 }
 
 .c1 {
-  color: #2C3236;
   background-color: #D4D7D9;
+  color: #2C3236;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 <span
@@ -47,12 +48,13 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
 }
 
 .c1 {
-  color: #2C3236;
   background-color: #D4D7D9;
+  color: #2C3236;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 <span
@@ -78,12 +80,13 @@ exports[`<Badge /> renders with specific size: "small" 1`] = `
 }
 
 .c1 {
-  color: #2C3236;
   background-color: #D4D7D9;
+  color: #2C3236;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 <span
@@ -109,12 +112,13 @@ exports[`<Badge /> renders with specific style 1`] = `
 }
 
 .c1 {
-  color: #2C3236;
   background-color: #DDFDE5;
+  color: #3EBC64;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 <span
@@ -140,12 +144,13 @@ exports[`<Badge /> renders without crashing 1`] = `
 }
 
 .c1 {
-  color: #2C3236;
   background-color: #D4D7D9;
+  color: #2C3236;
   display: inline-block;
-  padding: 4px 10px;
+  padding: 3px 10px;
   white-space: nowrap;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 <span
