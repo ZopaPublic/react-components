@@ -2,10 +2,30 @@
 
 Use it to render Zopa's logo as an SVG.
 
-### Example
+### Examples
+
+- By default grows as wide as its container allows to:
 
 ```tsx
-import { ZopaIcon } from '@zopauk/react-components';
+import { Logo, SizedContainer } from '@zopauk/react-components';
 
-<ZopaIcon width="150px" />;
+<SizedContainer size="short">
+  <Logo />
+</SizedContainer>;
+```
+
+- With custom size:
+
+```tsx
+import { Logo } from '@zopauk/react-components';
+
+<Logo width="100px" />;
+```
+
+- Negative version:
+
+```tsx { "props": { "style": { "backgroundColor": "black", "border": "none" } } }
+import { Logo } from '@zopauk/react-components';
+
+<Logo width="100px" negative />;
 ```
