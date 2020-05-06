@@ -1,131 +1,61 @@
-import React, { InputHTMLAttributes, ChangeEvent, forwardRef } from 'react';
-import styled, { css } from 'styled-components';
-import arrowsAltH from '../../../content/images/arrows-alt-h.svg';
-import { colors } from '../../../constants/colors';
-import grid from '../../../constants/grid';
+import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 'react';
 import { calculateTrackPosition } from './helpers';
+import { Button, Icon, Input, Wrapper } from './styles';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const trackHeight = 8;
-const thumbDiameter = 50;
-const thumbDiameterMobile = 30;
-
-const TrackStyles = css`
-  box-sizing: border-box;
-  border: none;
-  border-radius: ${trackHeight / 2}px;
-  height: ${trackHeight}px;
-  background: ${colors.greyLighter};
-`;
-
-const ThumbStyles = css`
-  box-sizing: border-box;
-  border: none;
-  border-radius: 50%;
-  width: ${thumbDiameterMobile}px;
-  height: ${thumbDiameterMobile}px;
-  background: ${colors.actionPlain};
-
-  @media (min-width: ${grid.breakpoints.m}px) {
-    width: ${thumbDiameter}px;
-    height: ${thumbDiameter}px;
-    background: url(${arrowsAltH}) no-repeat ${colors.actionPlain};
-    background-position: center center;
-    background-size: 20px 20px;
-  }
-`;
-
-const ThumbStylesFocus = css`
-  background: ${colors.actionPlain};
-`;
-
-interface IInput extends InputHTMLAttributes<HTMLInputElement> {
-  trackPosition: number;
-}
-
-const SInputRange = styled.input<IInput>`
-  -webkit-appearance: none;
-  width: 100%;
-  height: ${thumbDiameterMobile}px;
-  cursor: pointer;
-
-  @media (min-width: ${grid.breakpoints.m}px) {
-    height: ${thumbDiameter}px;
-  }
-
-  &::-webkit-slider-runnable-track {
-    ${TrackStyles}
-  }
-  &::-moz-range-track {
-    ${TrackStyles}
-  }
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    margin-top: ${(trackHeight - thumbDiameterMobile) * 0.5}px;
-    ${ThumbStyles}
-    
-    @media (min-width: ${grid.breakpoints.m}px) {
-       margin-top: ${(trackHeight - thumbDiameter) * 0.5}px;
-    }
-  }
-  &::-moz-range-thumb {
-    ${ThumbStyles}
-  }
-
-  &::-webkit-slider-runnable-track {
-    background: -webkit-gradient(
-      linear,
-      0% 0%,
-      100% 0%,
-      color-stop(${({ trackPosition }) => trackPosition}, ${colors.actionPlain}),
-      color-stop(${({ trackPosition }) => trackPosition}, ${colors.greyLighter})
-    );
-  }
-  &::-moz-range-progress {
-    border-radius: ${trackHeight / 2}px;
-    height: ${trackHeight}px;
-    background: ${colors.actionPlain};
-  }
-
-  &:active {
-    &::-webkit-slider-thumb {
-      ${ThumbStylesFocus}
-    }
-    &::-moz-range-thumb {
-      ${ThumbStylesFocus}
-    }
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  ::-moz-focus-outer {
-    border: 0;
-  }
-`;
-
-interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue'> {
+export interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange: (value: number) => void;
   min?: number;
   max?: number;
   step?: number;
+  controls?: boolean;
 }
 
-const InputRange = forwardRef<HTMLInputElement, IInputRange>(({ min = 0, max = 100, value, ...otherProps }, ref) => {
-  return (
-    <SInputRange
-      {...otherProps}
-      role="slider"
-      trackPosition={calculateTrackPosition({ min, max, value })}
-      min={min}
-      max={max}
-      value={value}
-      type="range"
-      ref={ref}
-    />
-  );
-});
+const InputRange = forwardRef<HTMLInputElement, IInputRange>(
+  ({ min = 0, max = 100, step = 1, controls = false, value, onChange, ...otherProps }, ref) => {
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+      onChange(Number(e.target.value));
+    };
+
+    const decrement = (e: MouseEvent) => {
+      e.preventDefault();
+      onChange(value - step);
+    };
+
+    const increment = (e: MouseEvent) => {
+      e.preventDefault();
+      onChange(value + step);
+    };
+
+    return (
+      <Wrapper>
+        {controls && (
+          <Button title="decrement" styling="secondary" disabled={value <= min} onClick={decrement}>
+            <Icon variant={faMinus} />
+          </Button>
+        )}
+        <Input
+          {...otherProps}
+          role="slider"
+          trackPosition={calculateTrackPosition({ min, max, value })}
+          min={min}
+          max={max}
+          step={step}
+          value={value}
+          onChange={onChangeHandler}
+          type="range"
+          title="range"
+          ref={ref}
+        />
+        {controls && (
+          <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
+            <Icon variant={faPlus} />
+          </Button>
+        )}
+      </Wrapper>
+    );
+  },
+);
 
 export default InputRange;
