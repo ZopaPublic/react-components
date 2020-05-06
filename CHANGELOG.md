@@ -1,3 +1,17 @@
+## [3.2.1](https://github.com/zopaUK/react-components/compare/v3.2.0...v3.2.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* **alert:** fix font family for Alert component ([329ba85](https://github.com/zopaUK/react-components/commit/329ba8524b83f29ff5566aacdc104f27ec1b46b0))
+
+# [3.2.0](https://github.com/zopaUK/react-components/compare/v3.1.6...v3.2.0) (2020-04-30)
+
+
+### Features
+
+* **inputrange:** adding Input Range without controls ([933e2da](https://github.com/zopaUK/react-components/commit/933e2daacc04f602588893fea628ed9897c246e1))
+
 ## [3.1.6](https://github.com/zopaUK/react-components/compare/v3.1.5...v3.1.6) (2020-04-29)
 
 
