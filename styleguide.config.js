@@ -192,8 +192,6 @@ module.exports = {
     url: 'https://github.com/zopaUK/react-components',
     text: 'Fork me!',
   },
-  // Webpack configuration
-  webpackConfig: require('react-scripts/config/webpack.config.dev'),
   // props table config
   usageMode: 'expand',
 
