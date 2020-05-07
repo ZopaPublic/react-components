@@ -48,7 +48,7 @@ export const buttonStyle = css<IButtonProps>`
   cursor: pointer;
   border-radius: 8px;
   color: ${({ styling = 'primary' }) => colorMap[styling].text};
-  border: none;
+  border: 1px solid transparent;
   outline: 0;
 
   ${({ styling = 'primary' }) => {
@@ -78,7 +78,7 @@ export const buttonStyle = css<IButtonProps>`
   }
 
   &:active:not(:disabled) {
-    border: none;
+    border: 1px solid transparent;
     box-shadow: unset;
     opacity: 0.8;
   }

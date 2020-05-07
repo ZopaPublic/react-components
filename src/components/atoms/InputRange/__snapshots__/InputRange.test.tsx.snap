@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<InputRange /> renders the component with no a11y violations 1`] = `
-.c0 {
+.c1 {
   -webkit-appearance: none;
   width: 100%;
   height: 30px;
   cursor: pointer;
 }
 
-.c0::-webkit-slider-runnable-track {
+.c1::-webkit-slider-runnable-track {
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
@@ -16,7 +16,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   background: #EFEFEF;
 }
 
-.c0::-moz-range-track {
+.c1::-moz-range-track {
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
@@ -24,7 +24,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   background: #EFEFEF;
 }
 
-.c0::-webkit-slider-thumb {
+.c1::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -11px;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   background: #3B46C4;
 }
 
-.c0::-moz-range-thumb {
+.c1::-moz-range-thumb {
   box-sizing: border-box;
   border: none;
   border-radius: 50%;
@@ -44,40 +44,51 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   background: #3B46C4;
 }
 
-.c0::-webkit-slider-runnable-track {
+.c1::-webkit-slider-runnable-track {
   background: -webkit-gradient( linear, 0% 0%, 100% 0%, color-stop(0.51,#3B46C4), color-stop(0.51,#EFEFEF) );
 }
 
-.c0::-moz-range-progress {
+.c1::-moz-range-progress {
   border-radius: 4px;
   height: 8px;
   background: #3B46C4;
 }
 
-.c0:active::-webkit-slider-thumb {
+.c1:active::-webkit-slider-thumb {
   background: #3B46C4;
 }
 
-.c0:active::-moz-range-thumb {
+.c1:active::-moz-range-thumb {
   background: #3B46C4;
 }
 
-.c0:focus {
+.c1:focus {
   outline: none;
 }
 
-.c0::-moz-focus-outer {
+.c1::-moz-focus-outer {
   border: 0;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     height: 50px;
   }
 }
 
 @media (min-width:768px) {
-  .c0::-webkit-slider-thumb {
+  .c1::-webkit-slider-thumb {
     width: 50px;
     height: 50px;
     background: url(arrows-alt-h.svg) no-repeat #3B46C4;
@@ -87,13 +98,13 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0::-webkit-slider-thumb {
+  .c1::-webkit-slider-thumb {
     margin-top: -21px;
   }
 }
 
 @media (min-width:768px) {
-  .c0::-moz-range-thumb {
+  .c1::-moz-range-thumb {
     width: 50px;
     height: 50px;
     background: url(arrows-alt-h.svg) no-repeat #3B46C4;
@@ -102,13 +113,19 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   }
 }
 
-<input
-  aria-label="slider"
+<div
   class="c0"
-  max="100"
-  min="0"
-  role="slider"
-  type="range"
-  value="51"
-/>
+>
+  <input
+    aria-label="slider"
+    class="c1"
+    max="100"
+    min="0"
+    role="slider"
+    step="1"
+    title="range"
+    type="range"
+    value="51"
+  />
+</div>
 `;

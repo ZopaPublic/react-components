@@ -12,12 +12,11 @@ import { InputRange, Text } from '@zopauk/react-components';
 
 const ControlledInputRange = () => {
   const [value, setValue] = useState(75);
-  const onChangeHandler = event => setValue(Number(event.target.value));
 
   return (
     <Fragment>
       <Text mb>Value: {value}</Text>
-      <InputRange value={value} onChange={onChangeHandler} />
+      <InputRange value={value} onChange={setValue} />
     </Fragment>
   );
 };
@@ -33,12 +32,11 @@ import { InputRange, Text } from '@zopauk/react-components';
 
 const ControlledInputRange = () => {
   const [value, setValue] = useState(150);
-  const onChangeHandler = event => setValue(Number(event.target.value));
 
   return (
     <Fragment>
       <Text mb>Value: {value}</Text>
-      <InputRange value={value} min={100} max={200} onChange={onChangeHandler} />
+      <InputRange value={value} min={100} max={200} onChange={setValue} />
     </Fragment>
   );
 };
@@ -54,12 +52,11 @@ import { InputRange, Text } from '@zopauk/react-components';
 
 const ControlledInputRange = () => {
   const [value, setValue] = useState(50);
-  const onChangeHandler = event => setValue(Number(event.target.value));
 
   return (
     <Fragment>
       <Text mb>Value: {value}</Text>
-      <InputRange value={value} step={10} onChange={onChangeHandler} />
+      <InputRange value={value} step={10} onChange={setValue} />
     </Fragment>
   );
 };
@@ -75,12 +72,31 @@ import { InputRange, Text } from '@zopauk/react-components';
 
 const ControlledInputRange = () => {
   const [value, setValue] = useState(150);
-  const onChangeHandler = event => setValue(Number(event.target.value));
 
   return (
     <Fragment>
       <Text mb>Value: {value}</Text>
-      <InputRange value={value} min={100} max={500} step={50} onChange={onChangeHandler} />
+      <InputRange value={value} min={100} max={500} step={50} onChange={setValue} />
+    </Fragment>
+  );
+};
+
+<ControlledInputRange />;
+```
+
+Store value of `<InputRange />` with controls:
+
+```tsx
+import { Fragment, useState } from 'react';
+import { InputRange, Text } from '@zopauk/react-components';
+
+const ControlledInputRange = () => {
+  const [value, setValue] = useState(75);
+
+  return (
+    <Fragment>
+      <Text mb>Value: {value}</Text>
+      <InputRange value={value} controls onChange={setValue} />
     </Fragment>
   );
 };
