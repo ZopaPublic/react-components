@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Text /> it can render as an HTML p tag 1`] = `
+exports[`<Text /> it can render as an HTML "p" tag 1`] = `
 .c0 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -21,7 +21,7 @@ exports[`<Text /> it can render as an HTML p tag 1`] = `
 </p>
 `;
 
-exports[`<Text /> it can render as an HTML span tag 1`] = `
+exports[`<Text /> it can render as an HTML "span" tag 1`] = `
 .c0 {
   margin: 0;
   -webkit-letter-spacing: 0;
