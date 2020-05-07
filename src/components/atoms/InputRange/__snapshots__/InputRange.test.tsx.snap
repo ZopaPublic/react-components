@@ -55,11 +55,11 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
 }
 
 .c1:active::-webkit-slider-thumb {
-  background: #3B46C4;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c1:active::-moz-range-thumb {
-  background: #3B46C4;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c1:focus {
