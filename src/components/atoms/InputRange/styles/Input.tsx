@@ -35,7 +35,7 @@ const ThumbStyles = css`
 `;
 
 const ThumbStylesFocus = css`
-  background: ${colors.actionPlain};
+  box-shadow: 0 0 4px ${colors.actionPlain};
 `;
 
 export const Input = styled.input<
