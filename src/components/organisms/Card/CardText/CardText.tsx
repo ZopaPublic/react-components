@@ -7,6 +7,7 @@ const CardText = styled.p`
   font-weight: ${typography.weights.regular};
   padding: 0;
   margin: 0;
+  flex: 1;
 `;
 
 export default CardText;
