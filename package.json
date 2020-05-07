@@ -86,7 +86,7 @@
     "react-docgen-typescript": "1.16.4",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.0",
-    "react-styleguidist": "11.0.5",
+    "react-styleguidist": "11.0.6",
     "react-test-renderer": "16.13.1",
     "rollup": "2.7.5",
     "rollup-plugin-postcss": "2.5.0",
