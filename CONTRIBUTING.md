@@ -141,3 +141,70 @@ Additionally we added the following plugins/steps:
 | @semantic-release/git       | Semantic-release plugin responsible the update the package version with the next version                                                                                            |
 | @semantic-release/github    | Semantic-release plugin to generates the artifacts for every release (download files), publish a new release, adds comments to github issues or PR and/or generates an Github issue |
 | gh-pages                    | Deployment for the styleguide                                                                                                                                                       |
+
+### Beta releases
+
+#### Conventions
+
+👍🏻 &nbsp;Please use **beta releases with care and mostly for**:
+
+- [x] getting feedback on major versions before releasing them
+- [x] getting feedback on APIs for new features
+
+👎🏻 &nbsp;Don't use beta releases for testing patches/fixes on this library
+
+We rely on a manual process for releasing beta versions of this library.
+( _this could be automated in a near future..._ )
+
+We use the following naming convention for **beta releases**:
+
+```js
+`${upcomingVersion}--beta.${currentBetaIteration}`;
+```
+
+For instance if `4.0.0--beta.4` means it's the **4th beta iteration** of the major version `4.0.0`.
+
+#### Process
+
+To release a beta iteration of your upcoming version:
+
+1. Let's update the version of the library:
+
+```
+# assuming we're in 3.8.0
+$ yarn version --new-version 4.0.0--beta.1
+```
+
+2. Let's compile the source code
+
+```
+# this should create the /es /types and /cjs directories on the project root
+$ yarn compile
+```
+
+3. Let's push our changes so we can tie this beta release to a point in the Git history:
+
+```
+# always do a beta release from a feature branch, never from master!
+$ git push origin milestone/4.0.0
+```
+
+4. Let's publish the package on NPM on the `next` tag (the one we use to publish betas):
+
+```
+# if you're not part of Zopa NPM organization you'll need to request access to be able to publish
+$ npm publish --tag next
+```
+
+5. Now clients of this library can try the beta release doing:
+
+```
+$ yarn add @zopauk/react-components@next
+```
+
+#### Further reading
+
+- [Semantic versioning](https://semver.org/)
+- [NPM distribution tags](https://docs.npmjs.com/adding-dist-tags-to-packages)
+- [`npm version`](https://docs.npmjs.com/cli/version)
+- [`npm publish`](https://docs.npmjs.com/cli-commands/publish.html)
