@@ -1,8 +1,8 @@
 # Contributing
 
-Keep in mind that these components are very focused on the ZOPA design system.
+The components exposed by this library are designed to adhere to ZOPA's design system.
 
-Any change can be refused if that change breaks with any of the company internal decisions.
+Any change can be refused if that change breaks with any of the company internal roadmap.
 If you still want to go ahead with those changes you can always fork the project.
 
 Please make sure you have a read to our [Code of Conduct](./CODE_OF_CONDUCT.md) before submitting any contribution.
@@ -20,19 +20,19 @@ Please make sure you have a read to our [Code of Conduct](./CODE_OF_CONDUCT.md) 
 
 ## Documentation ✍️
 
-Helping people with issues or writing docs are definitely the best ways to get started with this project.
+Helping people with issues or writing docs is probably the best ways to start helping on this project.
 
 ## Tracking progress 📈
 
-For this repo we are use a mix of Github issues and a private JIRA board (only accessible to Zopa employees).
+We use a mix of Github issues and a private JIRA board (only accessible to Zopa employees) for tracking progress on this library.
 
-A ticket or issue reference must be attached in the description of any pull request.
+A story or issue reference must be attached in the description of any pull request.
 
-Please help reviewers by documenting you PR extensively with screenshots and the rationale behind it.
+Please help reviewers by documenting you pull request extensively with screenshots and the rationale behind it.
 
 ## Project Structure 🎒
 
-Components should live in `src/components`, their own folder and contain the following files:
+Components live in `src/components` in their own folder and contain the following files:
 
 ```
 src/
@@ -47,21 +47,20 @@ src/
 - [x] Component file (`Button.tsx`)
 - [x] Unit tests file ( `Button.test.tsx`)
 
-Please follow the same code structure within the file found in the rest of the project.
+When making a new component please imitate the same code structure already present in other components so the source code in this project stays consistent.
 
-Once your component it's ready, expose it in `src/index.ts` by adding:
+Once your component it's ready you can expose it in `src/index.ts` by adding:
 
 ```ts
-export { default as Button } from './components/Button/Button';
+// assuming <PieChart /> is the new component you made
+export { default as PieChart } from './components/PieChart/PieChart';
 ```
 
 ## Git Commit Messages 💬
 
-The repository follows the **conventional commits specification**.
+This repository follows the [**conventional commits specification**](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification).
 
-You can [read the specs here](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification).
-
-You can use the following command to help you write your commit message following these standards:
+You can use the following command to ensure your commit message adheres to these standards:
 
 ```bash
 yarn commit
@@ -69,9 +68,9 @@ yarn commit
 
 ## Release process 🚀
 
-The conventional commits standard allows us to automate package releases.
+The conventional commits standard allows us to automate the release of this librart.
 
-[`semantic-release`](https://github.com/semantic-release/semantic-release) is the tool we are using for automatically releases, doing the following steps:
+[`semantic-release`](https://github.com/semantic-release/semantic-release) is the tool we use for automating this, following these steps:
 
 | Step                  | Description                                                                                                                     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -85,14 +84,14 @@ The conventional commits standard allows us to automate package releases.
 | **Publish**           | Publish the release.                                                                                                            |
 | **Notify**            | Notify of new releases or errors.                                                                                               |
 
-Additionally we added the following plugins/steps:
+Additionally we have the following additions:
 
 | Package                       | Description                                                                                                                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `@semantic-release/changelog` | Semantic-release plugin to create or update a changelog file.                                                                                                                       |
 | `@semantic-release/git`       | Semantic-release plugin responsible the update the package version with the next version                                                                                            |
 | `@semantic-release/github`    | Semantic-release plugin to generates the artifacts for every release (download files), publish a new release, adds comments to github issues or PR and/or generates an Github issue |
-| `gh-pages`                    | Deployment for the styleguide                                                                                                                                                       |
+| `gh-pages`                    | Deployment of the docs of this library                                                                                                                                              |
 
 ## Beta releases 🍉
 
