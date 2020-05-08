@@ -1,8 +1,8 @@
 # Contributing
 
-The components exposed by this library are designed to adhere to ZOPA's design system.
+The components exposed by this library are designed to adhere to ZOPA design system.
 
-Any change can be refused if that change breaks with any of the company internal roadmap.
+Any change can be refused if that change breaks with any of the company internal road-map.
 If you still want to go ahead with those changes you can always fork the project.
 
 Please make sure you have a read to our [Code of Conduct](./CODE_OF_CONDUCT.md) before submitting any contribution.
@@ -20,7 +20,7 @@ Please make sure you have a read to our [Code of Conduct](./CODE_OF_CONDUCT.md) 
 
 ## Documentation ✍️
 
-Helping people with issues or writing docs is probably the best ways to start helping on this project.
+Helping by raising issues or improving documentation is the recommended way to start contributions on this project.
 
 ## Tracking progress 📈
 
@@ -28,7 +28,7 @@ We use a mix of Github issues and a private JIRA board (only accessible to Zopa 
 
 A story or issue reference must be attached in the description of any pull request.
 
-Please help reviewers by documenting you pull request extensively with screenshots and the rationale behind it.
+Please help reviewers by documenting your pull request extensively with screenshots and the rationale behind it.
 
 ## Project Structure 🎒
 
@@ -68,9 +68,9 @@ yarn commit
 
 ## Release process 🚀
 
-The conventional commits standard allows us to automate the release of this librart.
+The **conventional commits** standard allows us to automate the releases of this library.
 
-[`semantic-release`](https://github.com/semantic-release/semantic-release) is the tool we use for automating this, following these steps:
+[`semantic-release`](https://github.com/semantic-release/semantic-release) is the tool we use for it, performing these steps:
 
 | Step                  | Description                                                                                                                     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ The conventional commits standard allows us to automate the release of this libr
 | **Publish**           | Publish the release.                                                                                                            |
 | **Notify**            | Notify of new releases or errors.                                                                                               |
 
-Additionally we have the following additions:
+Additionally we use the following packages:
 
 | Package                       | Description                                                                                                                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
