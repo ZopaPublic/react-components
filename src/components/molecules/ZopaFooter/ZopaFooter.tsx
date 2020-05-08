@@ -66,7 +66,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps)
       </FlexRow>
       <FlexRow>
         <LogoBlock>
-          <Link href={baseUrl}>
+          <Link href={baseUrl} title="Logo">
             <Logo width="165px" height="30px" />
           </Link>
         </LogoBlock>

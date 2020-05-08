@@ -702,6 +702,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c7"
           color="#3B46C4"
           href="https://www.zopa.com"
+          title="Logo"
         >
           <svg
             aria-label="zopa logo"
