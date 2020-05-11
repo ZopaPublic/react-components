@@ -5,7 +5,7 @@ import { colors, TColors } from '../../../constants/colors';
 
 type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
-interface IStyledHeadingProps {
+export interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
