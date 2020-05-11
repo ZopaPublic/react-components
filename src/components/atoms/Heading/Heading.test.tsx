@@ -17,6 +17,16 @@ describe('<Heading />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('renders display size as h2 at mobile', async () => {
+    const { container } = render(
+      <Heading as="h1" size="display">
+        Text
+      </Heading>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it.each`
     tag
     ${'h1'}

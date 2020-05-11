@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, TColors } from '../../../constants/colors';
+import grid from '../../../constants/grid';
 
 type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
@@ -67,6 +68,18 @@ const Heading = styled.h1<IStyledHeadingProps>`
   text-align: ${({ align = 'inherit' }) => align};
   font-family: ${typography.primary};
   font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
+
+  ${({ as, size }) =>
+    as === 'h1' && size === 'display'
+      ? css`
+          @media screen and (max-width: ${grid.breakpoints.l}px) {
+            font-size: ${headingSizes['h2']};
+            line-height: ${lineHeightMap['h2']};
+            letter-spacing: ${letterSpacingMap['h2']};
+            font-weight: ${typography.weights['bold']};
+          }
+        `
+      : ``}
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
