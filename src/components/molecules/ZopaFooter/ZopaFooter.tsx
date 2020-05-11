@@ -20,7 +20,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps)
   <Footer {...rest}>
     <FlexContainer gutter={16}>
       <FlexRow className="mb-6">
-        <FlexCol xs={12} s={6} m={4} l={3} className="mb-8">
+        <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">What we do</Heading>
           <List>
             <ListLink href={`${baseUrl}/loans/car-loans`}>Car loans</ListLink>
@@ -31,7 +31,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps)
             <ListLink href={`${baseUrl}/invest/isa`}>Innovative Finance ISA</ListLink>
           </List>
         </FlexCol>
-        <FlexCol xs={12} s={6} m={4} l={3} className="mb-8">
+        <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">About Zopa</Heading>
           <List>
             <ListLink href={`${baseUrl}/about`}>About Us</ListLink>
@@ -44,7 +44,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps)
             <ListLink href={`${baseUrl}/feelgood`}>New products</ListLink>
           </List>
         </FlexCol>
-        <FlexCol xs={12} s={6} m={4} l={3} className="mb-8">
+        <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">Legal</Heading>
           <List>
             <ListLink href={`${baseUrl}/privacy-notice`}>Privacy notice</ListLink>
@@ -55,7 +55,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps)
             <ListLink href={`${baseUrl}/principles`}>P2P Principles</ListLink>
           </List>
         </FlexCol>
-        <FlexCol xs={12} s={6} m={4} l={3} className="mb-8">
+        <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">Navigation</Heading>
           <List>
             <ListLink href={`${baseUrl}/contact`}>Support</ListLink>

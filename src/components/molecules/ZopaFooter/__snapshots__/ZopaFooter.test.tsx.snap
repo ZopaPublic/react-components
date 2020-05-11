@@ -93,6 +93,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 
 .c0 {
   margin-bottom: 56px;
+  padding-top: 64px;
 }
 
 .c4 {
@@ -265,16 +266,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c3 {
-    display: block;
-    -webkit-flex: 0 0 33.33333333333333%;
-    -ms-flex: 0 0 33.33333333333333%;
-    flex: 0 0 33.33333333333333%;
-    max-width: 33.33333333333333%;
-  }
-}
-
 @media (min-width:992px) {
   .c3 {
     display: block;
@@ -346,6 +337,12 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
+  .c0 {
+    padding-top: 104px;
+  }
+}
+
+@media (min-width:992px) {
   .c19 {
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -380,7 +377,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
       direction="row"
     >
       <div
-        class="c3 mb-8"
+        class="c3 mb-8 s:mb-9"
         cols="12"
       >
         <h3
@@ -460,7 +457,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         </ul>
       </div>
       <div
-        class="c3 mb-8"
+        class="c3 mb-8 s:mb-9"
         cols="12"
       >
         <h3
@@ -562,7 +559,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         </ul>
       </div>
       <div
-        class="c3 mb-8"
+        class="c3 mb-8 s:mb-9"
         cols="12"
       >
         <h3
@@ -642,7 +639,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         </ul>
       </div>
       <div
-        class="c3 mb-8"
+        class="c3 mb-8 s:mb-9"
         cols="12"
       >
         <h3
