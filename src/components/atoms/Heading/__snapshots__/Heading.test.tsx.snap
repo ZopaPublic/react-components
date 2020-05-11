@@ -132,6 +132,42 @@ exports[`<Heading /> it can render with a different HTML tag: "h6" 1`] = `
 </h6>
 `;
 
+exports[`<Heading /> renders display size as h2 at mobile 1`] = `
+.c0 {
+  font-size: 68px;
+  line-height: 76px;
+  -webkit-letter-spacing: -2.86px;
+  -moz-letter-spacing: -2.86px;
+  -ms-letter-spacing: -2.86px;
+  letter-spacing: -2.86px;
+  margin: 0;
+  color: #2C3236;
+  text-align: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 800;
+}
+
+@media screen and (max-width:992px) {
+  .c0 {
+    font-size: 38px;
+    line-height: 46px;
+    -webkit-letter-spacing: -0.85px;
+    -moz-letter-spacing: -0.85px;
+    -ms-letter-spacing: -0.85px;
+    letter-spacing: -0.85px;
+    font-weight: 700;
+  }
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Text
+  </h1>
+</div>
+`;
+
 exports[`<Heading /> renders without  a11y violations 1`] = `
 .c0 {
   font-size: 48px;
