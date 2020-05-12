@@ -1,68 +1,82 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import Styled from 'rsg-components/Styled';
-import zLogo from './images/z-logo.png';
+import zLogo from './svg/zopaLogo.svg';
 
-const styles = ({ fontFamily, color }) => ({
-  container: {
-    width: '80%',
-    margin: '0 auto',
-  },
-  logo: {
-    fontFamily: fontFamily.base,
-    fontSize: 18,
-    fontWeight: 'normal',
-    color: color.baseBackground,
-  },
-  logoWrap: {
-    textAlign: 'center',
-  },
-  divSvg: {
-    margin: '0 auto',
-    with: '100%',
-  },
-  svg: {
-    marginBottom: '1em',
-  },
-  titleRepo: {
-    fontSize: 14,
-    color: '#C0E1D7',
-    textAlign: 'center',
-    cursor: 'pointer',
-  },
-});
-
-const ZLogo = styled.img`
-  margin-bottom: 10px;
-  border-radius: 10px;
-  width: 50px;
+const Container = styled.div`
+  width: 170px;
+  margin: 0 auto;
+  text-align: center;
 `;
 
-export function LogoRenderer({ classes, children }) {
+const LogoTitle = styled.h1`
+  font-size: 18px;
+  font-weight: normal;
+  color: #00b9a7;
+  div {
+    text-align: center;
+    height: 50px;
+    width: 170px;
+    &:hover rect {
+      -webkit-animation: 0.5s draw linear forwards;
+      animation: 0.5s draw linear forwards;
+    }
+    @keyframes draw {
+      0% {
+        stroke-dasharray: 140, 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+      }
+      100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+      }
+    }
+  }
+`;
+
+const LinkRepo = styled.a`
+  font-size: 14px;
+  color: #c0e1d7;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+const LogoRect = styled.rect`
+  fill: transparent;
+  stroke-dasharray: 126px, 260px;
+  stroke-dashoffset: -243px;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+`;
+
+const ZLogo = styled.img`
+  position: relative;
+  top: -40px;
+`;
+
+export function LogoRenderer({ children }) {
   return (
-    <div className={classes.container}>
-      <h1 className={classes.logo}>
-        <div className={classes.logoWrap}>
-          <ZLogo src={zLogo} alt="Zopa logo just displaying the letter Z" width="50" />
+    <Container>
+      <LogoTitle>
+        <div>
+          <svg height="50" width="100%">
+            <LogoRect height="50" width="100%" />
+          </svg>
+          <ZLogo src={zLogo} alt="Zopa logo" />
         </div>
-        <a
-          className={classes.titleRepo}
+        <LinkRepo
           href="https://github.com/zopaUK/react-components"
           title="Go to github repository"
           target="_blank"
           rel="noopener noreferrer"
         >
           {children}
-        </a>
-      </h1>
-    </div>
+        </LinkRepo>
+      </LogoTitle>
+    </Container>
   );
 }
 
-LogoRenderer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  children: PropTypes.node,
-};
-
-export default Styled(styles)(LogoRenderer);
+export default LogoRenderer;
