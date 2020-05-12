@@ -1,36 +1,34 @@
 # Contributing
 
-The components exposed by this library are designed to adhere to ZOPA design system.
+The components exposed by this library follows the ZOPA design system.
 
-Any change can be refused if that change breaks with any of the company internal road-map.
-If you still want to go ahead with those changes you can always fork the project.
+Any change can be refused if that change breaks with any of the company internal road-map. If you still want to go ahead
+with those changes you can always fork the project.
 
 Please make sure you have a read to our [Code of Conduct](./CODE_OF_CONDUCT.md) before submitting any contribution.
 
-## Table of Contents 🗒
+## Table of Contents
 
 - [Documentation](#documentation)
 - [Tracking progress](#tracking-progress)
-- [Add components](#adding-new-components)
 - [Project structure](#project-structure)
-- [Testing](#testing)
-- [Commit messages](#git-commit-messages)
+- [Commit messages](#commit-messages)
 - [Release process](#release-process)
-- [Beta releases](#beta-releases)
+- [Prereleases](#prerelease-aka-beta-release)
 
-## Documentation ✍️
+## Documentation
 
-Helping by raising issues or improving documentation is the recommended way to start contributions on this project.
+Helping by raising issues or improving documentation is the recommended way to contribute on this project.
 
-## Tracking progress 📈
+## Tracking progress
 
-We use a mix of Github issues and a private JIRA board (only accessible to Zopa employees) for tracking progress on this library.
+We use a mix of Github issues, and a private JIRA board (only accessible to Zopa employees) for tracking progress on this library.
 
 A story or issue reference must be attached in the description of any pull request.
 
 Please help reviewers by documenting your pull request extensively with screenshots and the rationale behind it.
 
-## Project Structure 🎒
+## Project Structure
 
 Components live in `src/components` in their own folder and contain the following files:
 
@@ -47,7 +45,8 @@ src/
 - [x] Component file (`Button.tsx`)
 - [x] Unit tests file ( `Button.test.tsx`)
 
-When making a new component please imitate the same code structure already present in other components so the source code in this project stays consistent.
+When making a new component please imitate the same code structure already present in other components, so the source code
+in this project stays consistent.
 
 Once your component it's ready you can expose it in `src/index.ts` by adding:
 
@@ -56,7 +55,7 @@ Once your component it's ready you can expose it in `src/index.ts` by adding:
 export { default as PieChart } from './components/PieChart/PieChart';
 ```
 
-## Git Commit Messages 💬
+## Commit Messages
 
 This repository follows the [**conventional commits specification**](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification).
 
@@ -66,11 +65,22 @@ You can use the following command to ensure your commit message adheres to these
 yarn commit
 ```
 
-## Release process 🚀
+## Release process
 
 The **conventional commits** standard allows us to automate the releases of this library.
 
-[`semantic-release`](https://github.com/semantic-release/semantic-release) is the tool we use for it, performing these steps:
+- **fix**: create a PATCH release
+- **feat**: MINOR release
+- **BREAKING CHANGE**: a commit that has a footer BREAKING CHANGE = MAJOR release
+- Additional types (build, chore, ci, docs, style, refactor, perf, test, improvement) **will not create a release** (unless
+  they include a BREAKING CHANGE).
+
+We use [`semantic-release`](https://github.com/semantic-release/semantic-release).
+
+<details>
+  <summary>More details</summary>
+
+These are the steps that are automated:
 
 | Step                  | Description                                                                                                                     |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -84,7 +94,7 @@ The **conventional commits** standard allows us to automate the releases of this
 | **Publish**           | Publish the release.                                                                                                            |
 | **Notify**            | Notify of new releases or errors.                                                                                               |
 
-Additionally we use the following packages:
+Additionally, we use the following packages:
 
 | Package                       | Description                                                                                                                                                                         |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,68 +103,39 @@ Additionally we use the following packages:
 | `@semantic-release/github`    | Semantic-release plugin to generates the artifacts for every release (download files), publish a new release, adds comments to github issues or PR and/or generates an Github issue |
 | `gh-pages`                    | Deployment of the docs of this library                                                                                                                                              |
 
-## Beta releases 🍉
+</details>
 
-### Conventions
+## Prerelease (AKA beta release)
 
-👍🏻 &nbsp;Please use **beta releases with care and mostly for**:
+Please use **a prerelease only for**:
 
-- [x] getting feedback on major versions before releasing them
-- [x] getting feedback on APIs for new features
-
-👎🏻 &nbsp;Don't use beta releases for testing patches/fixes on this library
-
-We rely on a manual process for releasing beta versions of this library ( _this could be automated in a near future..._ ).
-
-We use the following naming convention for **beta releases**:
-
-```js
-`${upcomingVersion}--beta.${currentBetaIteration}`;
-```
-
-For instance, `4.0.0--beta.4` translates to the **4th beta iteration** of the next major version `4.0.0`.
+- Getting feedback on major versions before releasing them
+- Getting feedback on APIs for new features
 
 ### Process
 
-To release a beta iteration of your upcoming version:
+To release a new major prerelease:
 
-1. Let's update the version of the library:
-
-```
-# assuming we're in 3.8.0
-$ yarn version --new-version 4.0.0--beta.1
-```
-
-2. Let's compile the source code
-
-```
-# this should create the /es /types and /cjs directories on the project root
-$ yarn compile
+```bash
+git checkout -b milestone/2.0.0 # Create a new branch for the next major version assuming you are in v2.x
+yarn compile
+yarn version --premajor # This will create 2.0.0-0
+git push origin milestone/4.0.0
+yarn publish --tag next # Publish to https://www.npmjs.com/package/@zopauk/react-components
 ```
 
-3. Let's push our changes so we can tie this beta release to a point in the Git history:
+To release another iteration of the prerelease:
 
-```
-# always do a beta release from a feature branch, never from master!
-$ git push origin milestone/4.0.0
-```
-
-4. Let's publish the package on NPM on the `next` tag (the one we use to publish betas):
-
-```
-# if you're not part of Zopa NPM organization you'll need to request access to be able to publish
-$ npm publish --tag next
+```bash
+yarn compile
+yarn version --prerelease # This will create 2.0.0-1 assuming you are in 2.0.0-0
 ```
 
-5. Now clients of this library can try the beta release doing:
+Get the new prerelease version on your app:
 
+```bash
+yarn add @zopauk/react-components@next
 ```
-$ yarn add @zopauk/react-components@next
-```
 
-### Further reading
-
-- [Semantic versioning](https://semver.org/)
-- [NPM distribution tags](https://docs.npmjs.com/adding-dist-tags-to-packages)
-- [`npm version`](https://docs.npmjs.com/cli/version)
-- [`npm publish`](https://docs.npmjs.com/cli-commands/publish.html)
+Docs: [Semantic versioning](https://semver.org/) | [`yarn version`](https://classic.yarnpkg.com/en/docs/cli/version) |
+[`yarn publish`](https://classic.yarnpkg.com/en/docs/cli/publish) | [`yarn publish --tag`](https://classic.yarnpkg.com/en/docs/cli/publish#toc-yarn-publish-tag)
