@@ -16,6 +16,7 @@ const LogoTitle = styled.h1`
     text-align: center;
     height: 50px;
     width: 170px;
+    margin: 0 auto;
     &:hover rect {
       -webkit-animation: 0.5s draw linear forwards;
       animation: 0.5s draw linear forwards;
