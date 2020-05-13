@@ -11,11 +11,3 @@ import { ZopaFooter } from '@zopauk/react-components';
 
 <ZopaFooter />;
 ```
-
-- Only with legal section
-
-```tsx
-import { ZopaFooter } from '@zopauk/react-components';
-
-<ZopaFooter legalOnly />;
-```

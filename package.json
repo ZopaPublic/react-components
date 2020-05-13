@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "4.0.0--beta.14",
+  "version": "4.0.0--beta.16",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -22,7 +22,7 @@
     "compile:code": "rollup --config ./etc/rollup/config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
     "format:fix": "yarn format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
@@ -59,21 +59,21 @@
     "@rollup/plugin-babel": "5.0.0",
     "@rollup/plugin-commonjs": "11.1.0",
     "@rollup/plugin-node-resolve": "7.1.3",
-    "@rollup/plugin-url": "4.0.2",
+    "@rollup/plugin-url": "5.0.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
     "@testing-library/jest-dom": "5.5.0",
-    "@testing-library/react": "9.5.0",
+    "@testing-library/react": "10.0.4",
     "@testing-library/react-hooks": "3.2.1",
     "@types/jest-axe": "^3.2.1",
     "@types/lodash.throttle": "4.1.6",
     "@types/node": "12.12.38",
-    "@types/react": "16.9.34",
-    "@types/react-dom": "16.9.7",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
     "@types/styled-components": "4.4.3",
-    "@typescript-eslint/eslint-plugin": "2.31.0",
-    "@typescript-eslint/parser": "2.31.0",
-    "acorn": "7.1.1",
+    "@typescript-eslint/eslint-plugin": "2.32.0",
+    "@typescript-eslint/parser": "2.32.0",
+    "acorn": "7.2.0",
     "acorn-jsx": "5.2.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
@@ -83,6 +83,7 @@
     "gh-pages": "2.2.0",
     "husky": "4.2.5",
     "jest-axe": "3.3.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
     "jest-junit": "10.0.0",
     "jest-styled-components": "6.3.4",
     "lint-staged": "10.2.2",
@@ -90,13 +91,13 @@
     "react": "16.13.1",
     "react-docgen-typescript": "1.16.4",
     "react-dom": "16.13.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^3.4.1",
     "react-styleguidist": "11.0.6",
     "react-test-renderer": "16.13.1",
-    "rollup": "2.8.2",
+    "rollup": "2.9.1",
     "rollup-plugin-postcss": "2.9.0",
     "rollup-plugin-terser": "5.3.0",
-    "semantic-release": "15.14.0",
+    "semantic-release": "17.0.7",
     "styled-components": "4.4.1",
     "typescript": "3.8.3",
     "yarn-deduplicate": "2.0.0"
@@ -108,9 +109,6 @@
     "not ios <11",
     "not dead"
   ],
-  "resolutions": {
-    "semantic-release/@semantic-release/github": "5.5.8"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/components/**/*.{ts,tsx}"
@@ -140,6 +138,6 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=12.0.0"
   }
 }
