@@ -3,30 +3,9 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.5
 jobs:
-  test_node_latest:
+  tests:
     docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-      - run:
-          name: Run tests
-          command: yarn test --watchAll=false --runInBand
-
-  test_node_10:
-    docker:
-      - image: circleci/node:10
+      - image: circleci/node:12
     steps:
       - checkout
       - restore_cache:
@@ -110,19 +89,16 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - test_node_latest
-      - test_node_10
+      - tests
       - release:
           requires:
-            - test_node_latest
-            - test_node_10
+            - tests
           filters:
             branches:
               only: master
       - deploy-web:
           requires:
-            - test_node_latest
-            - test_node_10
+            - tests
           filters:
             branches:
               only: master
