@@ -186,6 +186,16 @@ Now you can use className to define different `margin` or `padding` values
 <Text className="mb-6 p-4">This is a text element</Text>
 ```
 
+### `AlertBox`
+
+`<AlertBox />` has been removed from the library.
+
+### `Grid`
+
+- default gutter is now `12px` instead of `16px`
+- desktop's container size changed from `1140px` to `1224px`
+- desktop breakpoint changed from `1200px` to `1300px`
+
 [Check the documentation](https://zopauk.github.io/react-components/#/Content?id=spacing) for all the possible combinations.
 
 ## What was fixed
