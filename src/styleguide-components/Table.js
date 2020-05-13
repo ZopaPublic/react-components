@@ -1,86 +1,56 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Styled from 'rsg-components/Styled';
+import styled from 'styled-components';
 
-export const styles = ({ space, color, fontFamily, fontSize }) => ({
-  table: {
-    width: '100%',
-    borderCollapse: 'collapse',
-    marginBottom: space[4],
-    tableLayout: 'auto',
-  },
-  cellHeading: {
-    color: color.base,
-    paddingRight: space[1],
-    paddingBottom: space[1],
-    textAlign: 'left',
-    fontFamily: fontFamily.base,
-    fontWeight: 'bold',
-    fontSize: '14px',
-    whiteSpace: 'nowrap',
-    textTransform: 'unset',
-    backgroundColor: '#efefef',
-    border: '1px solid #efefef',
-    padding: 10,
-  },
-  cell: {
-    color: color.base,
-    paddingRight: space[1],
-    paddingTop: space[1],
-    paddingBottom: space[1],
-    verticalAlign: 'top',
-    fontFamily: fontFamily.base,
-    fontSize: fontSize.small,
-    border: '1px solid #efefef',
-    padding: 10,
-    '&:last-child': {
-      isolate: false,
-      paddingRight: 0,
-    },
-    '& p:last-child': {
-      isolate: false,
-      marginBottom: 0,
-    },
-  },
-});
+const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  table-layout: auto;
+  th {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    text-transform: unset;
+    background-color: ghostwhite;
+    border: 1px solid ghostwhite;
+    padding: 10px;
+  }
+  td {
+    vertical-align: top;
+    font-size: 12px;
+    border: 1px solid ghostwhite;
+    padding: 10px;
+    &:last-child {
+      padding-right: 0;
+    }
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+`;
 
-export function TableRenderer({ classes, columns, rows, getRowKey }) {
+export function TableRenderer({ columns, rows, getRowKey }) {
   return (
-    <table className={classes.table}>
-      <thead className={classes.tableHead}>
+    <Table>
+      <thead>
         <tr>
           {columns.map(({ caption }) => (
-            <th key={caption} className={classes.cellHeading}>
-              {caption}
-            </th>
+            <th key={caption}>{caption}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {rows.map(row => (
+        {rows.map((row) => (
           <tr key={getRowKey(row)}>
             {columns.map(({ render }, index) => (
-              <td key={index} className={classes.cell}>
-                {render(row)}
-              </td>
+              <td key={index}>{render(row)}</td>
             ))}
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 }
 
-TableRenderer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  columns: PropTypes.arrayOf(
-    PropTypes.shape({
-      caption: PropTypes.string.isRequired,
-      render: PropTypes.func.isRequired,
-    }),
-  ).isRequired,
-  rows: PropTypes.arrayOf(PropTypes.object).isRequired,
-  getRowKey: PropTypes.func.isRequired,
-};
-
-export default Styled(styles)(TableRenderer);
+export default TableRenderer;

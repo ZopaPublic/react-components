@@ -7,7 +7,7 @@ const webpackDevServerUtils = require('react-dev-utils/WebpackDevServerUtils');
 // Make react-scripts get the eslint config
 process.env.EXTEND_ESLINT = 'true';
 
-const printServerInstructions = config => {
+const printServerInstructions = (config) => {
   const urls = webpackDevServerUtils.prepareUrls('http', config.serverHost, config.serverPort);
   console.log(`${kleur.cyan().bold(`
 /££££££££                              
@@ -112,9 +112,7 @@ module.exports = {
     favicon: 'https://s3-eu-west-1.amazonaws.com/cdn.zopa.com/images/201601215/favicon.ico',
   },
   theme: {
-    maxWidth: '100%',
     color: {
-      sidebarBackground: '#1C2139',
       codeBackground: '#F5F5F5;',
       link: '#00B9A7',
       linkHover: '#00B9A7',
@@ -134,37 +132,6 @@ module.exports = {
       h6: 16,
     },
   },
-  styles: {
-    TableOfContents: {
-      input: {
-        backgroundColor: '#80808000',
-        color: 'white',
-        borderColor: '#595959',
-      },
-    },
-    StyleGuide: {
-      logo: {
-        borderBottom: 'none',
-      },
-    },
-    Playground: {
-      preview: {
-        border: '2px #ededed solid',
-      },
-    },
-    TabButton: {
-      button: {
-        color: '#afafaf',
-        textTransform: 'unset',
-        border: 'none !important',
-      },
-    },
-    Editor: {
-      root: {
-        lineHeight: 1.5,
-      },
-    },
-  },
   // Override Styleguidist components
   styleguideComponents: {
     ComponentsListRenderer: path.resolve(__dirname, './src/styleguide-components/ComponentsList'),
@@ -177,7 +144,7 @@ module.exports = {
   },
   // Used to convert type definitions to documentation. More info: https://github.com/styleguidist/react-docgen-typescript
   propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', {
-    propFilter: prop => prop.parent && !prop.parent.fileName.includes('@types/react'),
+    propFilter: (prop) => prop.parent && !prop.parent.fileName.includes('@types/react'),
     componentNameResolver: (exp, source) => path.parse(source.fileName).name,
   }).parse,
   // Modules available for examples
@@ -188,10 +155,6 @@ module.exports = {
     '@zopauk/react-components': path.resolve(__dirname, 'src'),
   },
   printServerInstructions,
-  ribbon: {
-    url: 'https://github.com/zopaUK/react-components',
-    text: 'Fork me!',
-  },
   // props table config
   usageMode: 'expand',
 

@@ -1,80 +1,58 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import cx from 'clsx';
 import Link from './SidebarLink';
-import Styled from 'rsg-components/Styled';
+import styled from 'styled-components';
 
-const styles = ({ color, fontFamily, fontSize, space, mq }) => ({
-  list: {
-    margin: 0,
-    paddingLeft: '8px',
-  },
-  item: {
-    color: color.base,
-    display: 'block',
-    margin: [[space[1], 0, space[1], 0]],
-    fontFamily: fontFamily.base,
-    fontSize: fontSize.base,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-  },
-  isChild: {
-    [mq.small]: {
-      display: 'inline-block',
-      margin: [[0, space[1], 0, 0]],
-    },
-  },
-  heading: {
-    color: color.base,
-    marginTop: space[1],
-    fontFamily: fontFamily.base,
-  },
-  headingLink: {
-    color: 'gray',
-    fontSize: 11,
-    textTransform: 'uppercase',
-    borderBottom: '1px solid #454545',
-    cursor: 'pointer',
-  },
-  link: {
-    color: 'whitesmoke',
-    cursor: 'pointer',
-    '&:hover': {
-      color: '#00B9A7',
-      cursor: 'pointer',
-    },
-  },
-});
+const LinkSpan = styled.span`
+  color: whitesmoke;
+  cursor: pointer;
+  &:hover {
+    color: #00b9a7;
+    cursor: pointer;
+  }
+`;
 
-export function ComponentsListRenderer({ classes, items }) {
-  items = items.filter(item => item.name);
+const HeadingLinkSpan = styled.span`
+  color: ghostwhite;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin-top: 12px;
+`;
+
+const List = styled.ul`
+  margin: 0;
+  padding-left: 16px;
+`;
+
+const Item = styled.li`
+  display: block;
+  margin-bottom: 2px;
+  line-height: 1.6;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  ${({ isSection }) => isSection && 'margin-top: 12px'}
+`;
+
+export function ComponentsListRenderer({ items }) {
+  items = items.filter((item) => item.name);
 
   if (!items.length) {
     return null;
   }
   return (
-    <ul className={classes.list}>
+    <List>
       {items.map(({ heading, name, href, content }) => {
+        const isSection = !content || !content.props.items.length;
         return (
-          <li className={cx(classes.item, (!content || !content.props.items.length) && classes.isChild)} key={href}>
-            <Link className={cx(heading && classes.heading)} href={href}>
-              {heading ? (
-                <span className={classes.headingLink}>{name}</span>
-              ) : (
-                <span className={classes.link}>{name}</span>
-              )}
-            </Link>
+          <Item key={href} isSection={!isSection}>
+            <Link href={href}>{heading ? <HeadingLinkSpan>{name}</HeadingLinkSpan> : <LinkSpan>{name}</LinkSpan>}</Link>
             {content}
-          </li>
+          </Item>
         );
       })}
-    </ul>
+    </List>
   );
 }
 
-ComponentsListRenderer.propTypes = {
-  items: PropTypes.array.isRequired,
-  classes: PropTypes.object.isRequired,
-};
-
-export default Styled(styles)(ComponentsListRenderer);
+export default ComponentsListRenderer;
