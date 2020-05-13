@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h1 1`] = `
 .c0 {
   font-size: 48px;
   line-height: 54px;
@@ -22,7 +22,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h1" 1`] = `
 </h1>
 `;
 
-exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h2 1`] = `
 .c0 {
   font-size: 38px;
   line-height: 46px;
@@ -44,7 +44,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h2" 1`] = `
 </h2>
 `;
 
-exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h3 1`] = `
 .c0 {
   font-size: 28px;
   line-height: 36px;
@@ -66,7 +66,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h3" 1`] = `
 </h3>
 `;
 
-exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h4 1`] = `
 .c0 {
   font-size: 24px;
   line-height: 32px;
@@ -88,7 +88,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h4" 1`] = `
 </h4>
 `;
 
-exports[`<Heading /> it can render with a different HTML tag: "h5" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h5 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 26px;
@@ -110,7 +110,7 @@ exports[`<Heading /> it can render with a different HTML tag: "h5" 1`] = `
 </h5>
 `;
 
-exports[`<Heading /> it can render with a different HTML tag: "h6" 1`] = `
+exports[`<Heading /> it can render with a different HTML tag: h6 1`] = `
 .c0 {
   font-size: 15px;
   line-height: 20px;
