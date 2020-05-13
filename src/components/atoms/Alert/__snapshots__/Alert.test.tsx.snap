@@ -67,7 +67,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
 </div>
 `;
 
-exports[`Alert renders with specific severity: "alert" 1`] = `
+exports[`Alert renders with specific severity: alert 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -134,7 +134,7 @@ exports[`Alert renders with specific severity: "alert" 1`] = `
 </div>
 `;
 
-exports[`Alert renders with specific severity: "info" 1`] = `
+exports[`Alert renders with specific severity: info 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -201,7 +201,7 @@ exports[`Alert renders with specific severity: "info" 1`] = `
 </div>
 `;
 
-exports[`Alert renders with specific severity: "success" 1`] = `
+exports[`Alert renders with specific severity: success 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -268,7 +268,7 @@ exports[`Alert renders with specific severity: "success" 1`] = `
 </div>
 `;
 
-exports[`Alert renders with specific severity: "warning" 1`] = `
+exports[`Alert renders with specific severity: warning 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;

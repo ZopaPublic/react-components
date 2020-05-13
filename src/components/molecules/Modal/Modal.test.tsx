@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitForElement } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Modal from './Modal';
 import { getGlobalStyleTags } from '../../../helpers/test/styles';
 
@@ -13,9 +13,9 @@ describe('<Modal />', () => {
 
   it('can render opened', async () => {
     Modal.setAppElement('body');
-    const { getByText } = render(<Modal isOpen>text</Modal>);
+    const { findByText } = render(<Modal isOpen>text</Modal>);
 
-    const modal = await waitForElement(() => getByText('text'));
+    const modal = await findByText('text');
     expect(modal).toMatchSnapshot();
   });
 
