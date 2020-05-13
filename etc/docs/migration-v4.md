@@ -166,6 +166,26 @@ Dot notation has been removed from form components so they have to be imported s
 
 All of them are compatible with `<Formik />`'s component
 
+### `AlertBox`
+
+`<AlertBox />` has been removed from the library.
+
+### `Grid`
+
+- default gutter is now `12px` instead of `16px`
+- desktop's container size changed from `1140px` to `1224px`
+- desktop breakpoint changed from `1200px` to `1300px`
+
+### `Spinner`
+
+There have been a few changes to `<Spinner />` component to make it more consistent across different apps.
+
+- `backgroundColor`, `borderWidth`, and `frontColor` props have been removed
+- `size` props accepts only `standard` and `small` strings
+- `negative` prop has been added to handle color change on dark background
+
+### `InputRange`
+
 ## New additions
 
 ### 📐 `Spacing`
@@ -186,16 +206,8 @@ Now you can use className to define different `margin` or `padding` values
 <Text className="mb-6 p-4">This is a text element</Text>
 ```
 
-### `AlertBox`
-
-`<AlertBox />` has been removed from the library.
-
-### `Grid`
-
-- default gutter is now `12px` instead of `16px`
-- desktop's container size changed from `1140px` to `1224px`
-- desktop breakpoint changed from `1200px` to `1300px`
-
 [Check the documentation](https://zopauk.github.io/react-components/#/Content?id=spacing) for all the possible combinations.
+
+### Icon
 
 ## What was fixed
