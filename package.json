@@ -38,7 +38,7 @@
     "@types/react-modal": "^3.10.2",
     "@types/util-deprecate": "^1.0.0",
     "core-js": "^3.3.5",
-    "downshift": "^5.0.0",
+    "downshift": "^5.2.7",
     "formik": "^2.1.4",
     "lodash.throttle": "^4.1.1",
     "react-modal": "^3.8.1",
