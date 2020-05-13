@@ -188,6 +188,12 @@ There have been a few changes to `<Spinner />` component to make it more consist
 `<InputRange />` component is now required to be a controlled input - you have to pass it `onChange` and `value` props.
 Also, a new `controls` prop has been added to hide/show `+` and `-` buttons on the both sides of the slider.
 
+### Icons
+
+All the existing icons have been removed in favor of font awesome icons.
+We've added an `<Icon />` component which is a thin wrapper around `<FontAwesomeIcon />`.
+`<ZopaIcon />` has been replaced with `<Logo />` component
+
 ## New additions
 
 ### 📐 `Spacing`
@@ -209,7 +215,3 @@ Now you can use className to define different `margin` or `padding` values
 ```
 
 [Check the documentation](https://zopauk.github.io/react-components/#/Content?id=spacing) for all the possible combinations.
-
-### Icon
-
-A thin wrapper around `<FontAwesomeIcon />` that makes it more convenient to work with font awesome icons.
