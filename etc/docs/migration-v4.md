@@ -59,7 +59,7 @@ and move away from any custom solution you were using for this.
 
 #### Import
 
-The library doesn't `import` anymore **Open Sans** for you, the `<Fonts />` component has been removed.
+The library no longer `import`s **Open Sans** for you. The `<Fonts />` component has been removed.
 
 Add a manual link to your root HTML instead:
 
