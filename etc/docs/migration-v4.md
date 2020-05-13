@@ -186,6 +186,9 @@ There have been a few changes to `<Spinner />` component to make it more consist
 
 ### `InputRange`
 
+`<InputRange />` component is now required to be a controlled input - you have to pass it `onChange` and `value` props.
+Also, a new `controls` prop has been added to hide/show `+` and `-` buttons on the both sides of the slider.
+
 ## New additions
 
 ### 📐 `Spacing`
