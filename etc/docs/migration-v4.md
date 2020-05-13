@@ -7,7 +7,6 @@
 - [Overview](#overview) 🔭
   - [What has changed](#what-has-changed)
   - [What we added](#new-additions)
-  - [What we fixed](#what-was-fixed)
 
 # Overview 🔭
 
@@ -213,4 +212,4 @@ Now you can use className to define different `margin` or `padding` values
 
 ### Icon
 
-## What was fixed
+A thin wrapper around `<FontAwesomeIcon />` that makes it more convenient to work with font awesome icons.
