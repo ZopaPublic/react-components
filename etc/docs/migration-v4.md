@@ -147,6 +147,25 @@ The `legalOnly` prop has been removed and now comes in a **white theme** instead
 
 The styling has changed but the API is still the same.
 
+### `Form`
+
+All the form logic and hooks have been removed in favor of `formik` hooks and components.
+
+- `<Form />` -> `<Formik />`
+- `<Form.Form />` -> formik's `<Form />`
+
+Dot notation has been removed from form components so they have to be imported separately now.
+
+- `<Form.Button />` -> `<FormButton />`
+- `<Form.CheckboxField />` -> `<FormCheckboxField />`
+- `<Form.CheckboxGroupField />` -> `<FormCheckboxGroupField />`
+- `<Form.DropdownField />` -> `<FormDropdownField />`
+- `<Form.DropdownFilteredField />` -> `<FormDropdownFilteredField />`
+- `<Form.RadioGroupField />` -> `<FormRadioGroupField />`
+- `<Form.TextField />` -> `<FormTextField />`
+
+All of them are compatible with `<Formik />`'s component
+
 ## New additions
 
 ### 📐 `Spacing`
