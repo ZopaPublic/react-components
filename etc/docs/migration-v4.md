@@ -74,7 +74,9 @@ Add a manual link to your root HTML instead:
 import { Heading, Text, Link } from '@zopauk/react-components';
 ```
 
-These components retain their API, however `<Heading />` and `<Link />` have lost their `mb` prop, use [the new atomic classes](#new-additions) instead.
+These components retain their API, however `<Heading />`, `<Text />` and `<Link />` have lost their `mb` prop, use [the new atomic classes](#new-additions) instead.
+Since `<Heading />`'s `mb` prop was set to `true` by default, you should add `className="mb-6"` to maintain the existing styling.
+The default for `<Text />` and `<Link />` was `false` so you can just find and replace `mb` prop with `className="mb-6"`.
 
 #### Font sizes
 
