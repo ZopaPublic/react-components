@@ -4,7 +4,7 @@
 
 # Index
 
-- [Overview](#overview) 🔭
+- [Overview](#overview)
   - [What has changed](#what-has-changed)
   - [What we added](#new-additions)
 
