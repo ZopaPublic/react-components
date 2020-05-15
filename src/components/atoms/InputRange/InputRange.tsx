@@ -32,7 +32,7 @@ const InputRange = forwardRef<HTMLInputElement, IInputRange>(
       <Wrapper>
         {controls && (
           <Button title="decrement" styling="secondary" disabled={value <= min} onClick={decrement}>
-            <Icon variant={faMinus} size="1x" />
+            <Icon variant={faMinus} width="12px" height="12px" />
           </Button>
         )}
         <Input
@@ -50,7 +50,7 @@ const InputRange = forwardRef<HTMLInputElement, IInputRange>(
         />
         {controls && (
           <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
-            <Icon variant={faPlus} size="1x" />
+            <Icon variant={faPlus} width="12px" height="12px" />
           </Button>
         )}
       </Wrapper>
