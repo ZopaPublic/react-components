@@ -7,7 +7,6 @@ import Ribbon from 'rsg-components/Ribbon';
 import Version from 'rsg-components/Version';
 
 import GlobalStyles from '../components/styles/GlobalStyles';
-import Fonts from '../components/styles/Fonts';
 
 const GlobalStyleGuideStyles = createGlobalStyle`
   /* System Fonts as used by GitHub */
@@ -72,7 +71,6 @@ export function StyleGuideRenderer({ title, version, homepageUrl, children, toc 
     <Container>
       <GlobalStyles />
       <GlobalStyleGuideStyles />
-      <Fonts />
       <Main>
         {children}
         <Footer>
