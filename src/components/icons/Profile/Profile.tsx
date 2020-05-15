@@ -1,5 +1,6 @@
 import React from 'react';
 import { colors } from '../../../constants/colors';
+import deprecate from 'util-deprecate';
 
 export interface IProfileProps {
   /**
@@ -52,4 +53,15 @@ const Profile: React.FunctionComponent<IProfileProps> = ({
   );
 };
 
-export default Profile;
+/**
+ * @deprecated `<ProfileIcon />` is deprecated and will be removed in: `4.0.0`. Use [font-awesome 'user' icon](https://fontawesome.com/icons/user?style=solid) instead.
+ */
+export default deprecate(
+  Profile,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <ProfileIcon /> is deprecated and it will be removed in the next major version: 4.0.0. 
+  For icons we plan to rely on font-awesome, use: <i class="fas fa-user"></i> instead.
+`,
+);

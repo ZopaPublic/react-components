@@ -112,9 +112,7 @@ module.exports = {
     favicon: 'https://s3-eu-west-1.amazonaws.com/cdn.zopa.com/images/201601215/favicon.ico',
   },
   theme: {
-    maxWidth: '100%',
     color: {
-      sidebarBackground: '#1C2139',
       codeBackground: '#F5F5F5;',
       link: '#00B9A7',
       linkHover: '#00B9A7',
@@ -132,37 +130,6 @@ module.exports = {
       h4: 18,
       h5: 16,
       h6: 16,
-    },
-  },
-  styles: {
-    TableOfContents: {
-      input: {
-        backgroundColor: '#80808000',
-        color: 'white',
-        borderColor: '#595959',
-      },
-    },
-    StyleGuide: {
-      logo: {
-        borderBottom: 'none',
-      },
-    },
-    Playground: {
-      preview: {
-        border: '2px #ededed solid',
-      },
-    },
-    TabButton: {
-      button: {
-        color: '#afafaf',
-        textTransform: 'unset',
-        border: 'none !important',
-      },
-    },
-    Editor: {
-      root: {
-        lineHeight: 1.5,
-      },
     },
   },
   // Override Styleguidist components
@@ -188,12 +155,6 @@ module.exports = {
     '@zopauk/react-components': path.resolve(__dirname, 'src'),
   },
   printServerInstructions,
-  ribbon: {
-    url: 'https://github.com/zopaUK/react-components',
-    text: 'Fork me!',
-  },
-  // Webpack configuration
-  webpackConfig: require('react-scripts/config/webpack.config.dev'),
   // props table config
   usageMode: 'expand',
 

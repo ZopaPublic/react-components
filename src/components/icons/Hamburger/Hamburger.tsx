@@ -1,5 +1,6 @@
 import React from 'react';
 import { colors } from '../../../constants/colors';
+import deprecate from 'util-deprecate';
 
 export interface IHamburgerProps {
   /**
@@ -41,4 +42,15 @@ const Hamburger: React.FunctionComponent<IHamburgerProps> = ({
   );
 };
 
-export default Hamburger;
+/**
+ * @deprecated `<HamburgerIcon />` is deprecated and will be removed in: `4.0.0`. Use [font-awesome 'bars' icon](https://fontawesome.com/icons/bars?style=solid) instead.
+ */
+export default deprecate(
+  Hamburger,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <HamburgerIcon /> is deprecated and it will be removed in the next major version: 4.0.0. 
+  For icons we plan to rely on font-awesome, use: <i class="fas fa-bars"></i> instead.
+`,
+);

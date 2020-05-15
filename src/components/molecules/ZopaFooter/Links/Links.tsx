@@ -136,8 +136,8 @@ const linkGroups = (baseUrl: string) => [
         label: 'Modern slavery',
       },
       {
-        href: `${baseUrl}/terms-of-use`,
-        label: 'Terms of use',
+        href: `${baseUrl}/website-terms`,
+        label: 'Website terms',
       },
       {
         href: `${baseUrl}/principles`,

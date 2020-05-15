@@ -1,4 +1,5 @@
 import React, { FC, ReactElement, HTMLAttributes } from 'react';
+import deprecate from 'util-deprecate';
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import Alert from '../../icons/Alert/Alert';
@@ -27,4 +28,15 @@ const AlertBox: FC<IAlertBoxProps> = ({ children, icon, ...rest }) => (
   </Box>
 );
 
-export default AlertBox;
+/**
+ * @deprecated `<AlertBox />` is deprecated and will be removed in: `4.0.0`. Use [`<Alert severity="warning" />`](#/Components/Atoms/Alert) instead.
+ */
+export default deprecate(
+  AlertBox,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <AlertBox /> is deprecated and it will be removed in the next major version: 4.0.0.
+  Use <Alert severity="warning" /> instead.
+`,
+);

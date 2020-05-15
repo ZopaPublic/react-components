@@ -5,12 +5,12 @@ import Arrow from '../../../icons/Arrow/Arrow';
 import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../hooks';
 
-export interface IAccordionHeader extends HTMLAttributes<HTMLButtonElement> {
+export interface IAccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   id: string;
   index: number;
   textSize?: 'base' | 'small';
+  onClick?: (isActive: boolean) => void;
 }
-
 const StyledButton = styled.button`
   appearance: none;
   border: none;
@@ -40,11 +40,17 @@ const mapTextToArrowSize = {
   small: '8px',
 };
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', ...rest }) => {
+const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', onClick, ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
-  const { ref, ...headerPropsRest } = getHeaderProps(id, index);
+  const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
+
+  const handleClick = () => {
+    onClick && onClick(isActiveSection(index));
+    contextOnClick();
+  };
+
   return (
-    <StyledButton ref={ref} {...headerPropsRest} {...rest}>
+    <StyledButton ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
       <TitleContainer>
         <Arrow
           direction={isActiveSection(index) ? 'down' : 'right'}

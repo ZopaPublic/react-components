@@ -1,3 +1,66 @@
+## [3.2.1](https://github.com/zopaUK/react-components/compare/v3.2.0...v3.2.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* **alert:** fix font family for Alert component ([329ba85](https://github.com/zopaUK/react-components/commit/329ba8524b83f29ff5566aacdc104f27ec1b46b0))
+
+# [3.2.0](https://github.com/zopaUK/react-components/compare/v3.1.6...v3.2.0) (2020-04-30)
+
+
+### Features
+
+* **inputrange:** adding Input Range without controls ([933e2da](https://github.com/zopaUK/react-components/commit/933e2daacc04f602588893fea628ed9897c246e1))
+
+## [3.1.6](https://github.com/zopaUK/react-components/compare/v3.1.5...v3.1.6) (2020-04-29)
+
+
+### Bug Fixes
+
+* **accordion:** removed an empty line ([fc15e66](https://github.com/zopaUK/react-components/commit/fc15e66f8724a07375795646b59f11104df5cb85))
+
+## [3.1.5](https://github.com/zopaUK/react-components/compare/v3.1.4...v3.1.5) (2020-04-29)
+
+
+### Bug Fixes
+
+* **footer:** change terms of use back to website terms ([6d49232](https://github.com/zopaUK/react-components/commit/6d49232890fdded21005e0612a0f0119f48440f6))
+
+## [3.1.4](https://github.com/zopaUK/react-components/compare/v3.1.3...v3.1.4) (2020-04-27)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix onClick handler ([9a67ce9](https://github.com/zopaUK/react-components/commit/9a67ce99e1196fc52ba4b6cd5b8636e92657d021))
+
+## [3.1.3](https://github.com/zopaUK/react-components/compare/v3.1.2...v3.1.3) (2020-04-24)
+
+
+### Bug Fixes
+
+* **icons:** deprecate existing components ([4dfac3d](https://github.com/zopaUK/react-components/commit/4dfac3d1369a1d545bab967ca5d737a6215b6242))
+
+## [3.1.2](https://github.com/zopaUK/react-components/compare/v3.1.1...v3.1.2) (2020-04-22)
+
+
+### Bug Fixes
+
+* **alert:** adding spread props ([b8ddd61](https://github.com/zopaUK/react-components/commit/b8ddd612a130cc498442a8145fa291425ca367a1))
+
+## [3.1.1](https://github.com/zopaUK/react-components/compare/v3.1.0...v3.1.1) (2020-04-21)
+
+
+### Bug Fixes
+
+* **alert:** fix white space for svg ([dc1fbdf](https://github.com/zopaUK/react-components/commit/dc1fbdff1966a99ee901e66901970725a6e2b44a))
+
+# [3.1.0](https://github.com/zopaUK/react-components/compare/v3.0.7...v3.1.0) (2020-04-21)
+
+
+### Features
+
+* **alert:** create new Alert component and deprecate AlertBox ([3931b31](https://github.com/zopaUK/react-components/commit/3931b31f611a172a02548e4aa21737a5c1815d4d))
+
 ## [3.0.7](https://github.com/zopaUK/react-components/compare/v3.0.6...v3.0.7) (2020-04-20)
 
 

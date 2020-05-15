@@ -1,5 +1,6 @@
 import React from 'react';
 import { colors } from '../../../constants/colors';
+import deprecate from 'util-deprecate';
 
 export interface ICheckMarkProps extends React.SVGProps<SVGSVGElement> {
   /**
@@ -20,4 +21,15 @@ const CheckMark = ({ color = colors.base.secondary, ...rest }: ICheckMarkProps) 
   );
 };
 
-export default CheckMark;
+/**
+ * @deprecated `<CheckMarkIcon />` is deprecated and will be removed in: `4.0.0`. Use [font-awesome 'check' icon](https://fontawesome.com/icons/check?style=solid) instead.
+ */
+export default deprecate(
+  CheckMark,
+  `
+  ❗️ [@zopauk/react-components]
+  
+  <CheckMarkIcon /> is deprecated and it will be removed in the next major version: 4.0.0. 
+  For icons we plan to rely on font-awesome, use: <i class="fas fa-check"></i> instead.
+`,
+);

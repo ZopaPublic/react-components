@@ -2,10 +2,10 @@ import path from 'path';
 import pkg from '../../package.json';
 
 // Plugins
-import customResolveOptions from 'rollup-plugin-node-resolve';
-import url from 'rollup-plugin-url';
-import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
+import customResolveOptions from '@rollup/plugin-node-resolve';
+import url from '@rollup/plugin-url';
+import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 
@@ -20,6 +20,7 @@ export default {
       dir: 'cjs',
       format: 'cjs', // Universal Module Definition, works as amd, cjs and iife all in one
       sourcemap: true,
+      exports: 'named',
     },
     {
       dir: 'es',
@@ -33,7 +34,7 @@ export default {
     customResolveOptions({ extensions }),
     babel({
       presets: [['react-app', { flow: false, typescript: true }]],
-      runtimeHelpers: true,
+      babelHelpers: 'runtime',
       extensions,
       exclude: 'node_modules',
     }),
