@@ -90,7 +90,7 @@
     "react-styleguidist": "11.0.6",
     "react-test-renderer": "16.13.1",
     "rollup": "2.10.0",
-    "rollup-plugin-postcss": "2.9.0",
+    "rollup-plugin-postcss": "3.1.1",
     "rollup-plugin-terser": "5.3.0",
     "semantic-release": "17.0.7",
     "styled-components": "4.4.1",
