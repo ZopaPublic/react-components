@@ -5,6 +5,22 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   height: 80px;
 }
 
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1300px) {
+
+}
+
 <div
   class="c0"
 />
@@ -13,6 +29,22 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 exports[`<Navbar /> should render component with default props 1`] = `
 .c0 {
   height: 80px;
+}
+
+@media (min-width:576px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:1300px) {
+
 }
 
 <div

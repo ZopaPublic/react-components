@@ -46,11 +46,11 @@
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.4.0",
-    "typescript": ">=3.x <4",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0"
+    "typescript": ">=3.x <4"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
@@ -85,7 +85,7 @@
     "jest-axe": "3.3.0",
     "jest-environment-jsdom-sixteen": "1.0.3",
     "jest-junit": "10.0.0",
-    "jest-styled-components": "6.3.4",
+    "jest-styled-components": "7.0.2",
     "lint-staged": "10.2.2",
     "prettier": "1.19.1",
     "react": "16.13.1",
@@ -98,7 +98,7 @@
     "rollup-plugin-postcss": "3.1.1",
     "rollup-plugin-terser": "5.3.0",
     "semantic-release": "17.0.7",
-    "styled-components": "4.4.1",
+    "styled-components": "5.1.0",
     "typescript": "3.9.2",
     "yarn-deduplicate": "2.0.0"
   },

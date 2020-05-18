@@ -381,7 +381,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <h3
-          class="c4 mb-4 s:mb-6"
+          class="sc-AxgMl c4 mb-4 s:mb-6"
         >
           What we do
         </h3>
@@ -461,7 +461,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <h3
-          class="c4 mb-4 s:mb-6"
+          class="sc-AxgMl c4 mb-4 s:mb-6"
         >
           About Zopa
         </h3>
@@ -563,7 +563,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <h3
-          class="c4 mb-4 s:mb-6"
+          class="sc-AxgMl c4 mb-4 s:mb-6"
         >
           Legal
         </h3>
@@ -643,7 +643,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <h3
-          class="c4 mb-4 s:mb-6"
+          class="sc-AxgMl c4 mb-4 s:mb-6"
         >
           Navigation
         </h3>

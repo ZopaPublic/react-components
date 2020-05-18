@@ -42,16 +42,16 @@ exports[`<Card.Image /> renders the component with no a11y violations 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
-.c0 .c4 {
+.c0 .sc-AxhCb {
   font-size: 15px;
 }
 
-.c0 .c5 {
+.c0 .sc-AxhUy {
   font-size: 13px;
 }
 

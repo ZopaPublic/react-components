@@ -26,8 +26,8 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   content: '';
   background-size: contain;
   background-image: url(white-check-mark.svg);
-  -webkit-animation: guYtTV 180ms ease-in-out;
-  animation: guYtTV 180ms ease-in-out;
+  -webkit-animation: icNfUr 180ms ease-in-out;
+  animation: icNfUr 180ms ease-in-out;
 }
 
 .c1:focus + label:before {
@@ -104,7 +104,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="c2"
+    class="sc-AxiKw c2"
     for="checkbox-id-test1"
   >
     hello

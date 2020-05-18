@@ -94,8 +94,8 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   height: 8px;
   width: 8px;
   display: inline-block;
-  -webkit-animation: ciAMHu 120ms ease-in-out;
-  animation: ciAMHu 120ms ease-in-out;
+  -webkit-animation: hjYkn 120ms ease-in-out;
+  animation: hjYkn 120ms ease-in-out;
   left: 8px;
   top: 8px;
   position: absolute;
@@ -125,7 +125,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     value="1"
   />
   <label
-    class="c3"
+    class="sc-AxjAm c3"
     for="radio-id-1"
   >
     hello
