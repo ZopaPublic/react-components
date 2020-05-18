@@ -40,15 +40,17 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
     <HelpContent>
       <FlexRow gutter={16}>
         <FlexCol xs={12}>
-          <Heading as="h3">We're here to help</Heading>
+          <Heading as="h3" className="mb-6">
+            We're here to help
+          </Heading>
         </FlexCol>
       </FlexRow>
       <FlexRow gutter={16}>
         <HelpLinks xs={12} l={6}>
-          <Text mb>
+          <Text className="mb-6">
             <Link href={`mailto:${email}`}>{email}</Link>
           </Text>
-          <Text mb>
+          <Text className="mb-6">
             <Link href="tel:020 7580 6060">020 7580 6060 </Link>
             for loans
           </Text>
@@ -59,7 +61,7 @@ const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
         </HelpLinks>
         <FlexCol xs={12} l={6}>
           <OpeningHoursWrapper>
-            <Text as="p" mb>
+            <Text as="p" className="mb-6">
               Monday to Thursday (9am to 5.30pm), and Friday (9am to 5pm)
             </Text>
           </OpeningHoursWrapper>

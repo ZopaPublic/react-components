@@ -71,7 +71,6 @@ export function StyleGuideRenderer({ title, version, homepageUrl, children, toc 
     <Container>
       <GlobalStyles />
       <GlobalStyleGuideStyles />
-      <Fonts />
       <Main>
         {children}
         <Footer>

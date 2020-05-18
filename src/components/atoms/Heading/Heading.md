@@ -9,6 +9,8 @@ Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` c
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 ```
 
+The **mb** property has been deprecated in favour of atomic classes to define spacing you can [read more here](/#spacing)
+
 ### Examples
 
 - Variations
@@ -29,7 +31,7 @@ import { colors, Heading, Text } from '@zopauk/react-components';
   <Heading as="h3">Heading level 3</Heading>
   <Heading as="h4">Heading level 4</Heading>
   <Heading as="h5">Heading level 5</Heading>
-  <Heading as="h6" mb={false}>
+  <Heading as="h6" className="mb-0">
     Heading level 6
   </Heading>
 </Fragment>;
@@ -43,10 +45,10 @@ import { Heading } from '@zopauk/react-components';
 
 <Fragment>
   <Heading as="h3">With bottom white-space</Heading>
-  <Heading as="h3" mb={false}>
+  <Heading as="h3" className="mb-0">
     Without bottom white-space
   </Heading>
-  <Heading as="h3" mb={false}>
+  <Heading as="h3" className="mb-0">
     Without bottom white-space
   </Heading>
 </Fragment>;
@@ -83,7 +85,7 @@ import { Heading, colors } from '@zopauk/react-components';
   <Heading as="h4" color={colors.grey}>
     Near Dark
   </Heading>
-  <Heading as="h4" color={colors.greyDarkest} mb={false}>
+  <Heading as="h4" color={colors.greyDarkest} className="mb-0">
     Dark
   </Heading>
 </Fragment>;
@@ -97,7 +99,7 @@ import { Heading } from '@zopauk/react-components';
 
 <Fragment>
   <div style={{ textAlign: 'right' }}>
-    <Heading as="h4" mb>
+    <Heading as="h4" className="mb-7">
       Inherits from his parent by default
     </Heading>
   </div>
@@ -107,8 +109,27 @@ import { Heading } from '@zopauk/react-components';
   <Heading as="h4" align="center">
     Center
   </Heading>
-  <Heading as="h4" align="right" mb={false}>
+  <Heading as="h4" align="right" className="mb-0">
     Right aligned
+  </Heading>
+</Fragment>;
+```
+
+- Spacing
+
+```tsx
+import { Fragment } from 'react';
+import { Heading } from '@zopauk/react-components';
+
+<Fragment>
+  <Heading as="h3" className="mb-10">
+    Large Margin on the bottom
+  </Heading>
+  <Heading as="h2" className="mb-7">
+    Medium Margin on the bottom
+  </Heading>
+  <Heading as="h4" className="mb-4">
+    Small Margin on the bottom
   </Heading>
 </Fragment>;
 ```

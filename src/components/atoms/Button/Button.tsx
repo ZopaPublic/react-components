@@ -8,8 +8,6 @@ import Spinner from '../Spinner/Spinner';
 export type TStyling = 'primary' | 'secondary' | 'link';
 
 export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  leftIcon?: JSX.Element;
-  rightIcon?: JSX.Element;
   styling?: TStyling;
   disabled?: boolean;
   loading?: boolean;
@@ -50,7 +48,7 @@ export const buttonStyle = css<IButtonProps>`
   cursor: pointer;
   border-radius: 8px;
   color: ${({ styling = 'primary' }) => colorMap[styling].text};
-  border: none;
+  border: 1px solid transparent;
   outline: 0;
 
   ${({ styling = 'primary' }) => {
@@ -80,7 +78,7 @@ export const buttonStyle = css<IButtonProps>`
   }
 
   &:active:not(:disabled) {
-    border: none;
+    border: 1px solid transparent;
     box-shadow: unset;
     opacity: 0.8;
   }
@@ -91,7 +89,7 @@ const SButton = styled.button<IButtonProps>`
 `;
 
 const Button: React.FC<IButtonProps> = props => {
-  const { children, leftIcon, rightIcon, loading, styling = 'primary', ...rest } = props;
+  const { children, loading, styling = 'primary', ...rest } = props;
   const isLoading = styling !== 'link' && loading;
 
   return (

@@ -2,10 +2,11 @@ import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
 import { typography } from '../../../constants/typography';
 import { colors, TColors } from '../../../constants/colors';
+import grid from '../../../constants/grid';
 
 type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
-interface IStyledHeadingProps {
+export interface IStyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
@@ -15,11 +16,6 @@ interface IStyledHeadingProps {
    * @default `as`
    */
   size?: keyof typeof typography.sizes.heading;
-  /**
-   * Whether to add some margin below the rendered heading or not. Applied by default.
-   * @default true
-   */
-  mb?: boolean;
   /**
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    * @default `colors.greyDarkest`
@@ -66,14 +62,24 @@ const Heading = styled.h1<IStyledHeadingProps>`
     `;
   }};
 
+  margin: 0;
   color: ${({ color = colors.greyDarkest }) => color};
   display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
   text-align: ${({ align = 'inherit' }) => align};
   font-family: ${typography.primary};
   font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
-  margin: 0;
 
-  ${({ mb = true }) => mb && 'margin-bottom: 24px'};
+  ${({ as, size }) =>
+    as === 'h1' &&
+    size === 'display' &&
+    css`
+      @media screen and (max-width: ${grid.breakpoints.l}px) {
+        font-size: ${headingSizes['h2']};
+        line-height: ${lineHeightMap['h2']};
+        letter-spacing: ${letterSpacingMap['h2']};
+        font-weight: ${typography.weights['bold']};
+      }
+    `}
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.

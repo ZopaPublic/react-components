@@ -1,5 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Link /> doesnt render the link with a target icon 1`] = `
+.c0 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: #21247F;
+}
+
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
+}
+
+<a
+  class="c0"
+  color="#3B46C4"
+  href="http://duckduckgo.com"
+  target="_blank"
+>
+  text
+</a>
+`;
+
 exports[`<Link /> renders the link with default values and the svg is hidden with no a11y violations 1`] = `
 .c0 {
   background-color: transparent;

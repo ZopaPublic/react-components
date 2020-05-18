@@ -35,7 +35,9 @@ const GlobalStyles = createGlobalStyle`
   ${defaultFont}
   ${boxSizing}
   ${imagery}
-  ${spacing}
+  body {
+    ${spacing}
+  }
 `;
 
 export default GlobalStyles;

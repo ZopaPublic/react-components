@@ -1,14 +1,14 @@
 This project aims to have all the common styled react components as a library/documentation.
 
-### Installation
+## Installation
 
-- Install it from NPM:
+Install it from NPM:
 
-  ```bash
-  yarn add '@zopauk/react-components'
-  ```
+```bash
+yarn add '@zopauk/react-components'
+```
 
-### Setup
+## Global Styling
 
 ⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
@@ -24,76 +24,21 @@ const App = () => (
 );
 ```
 
+## Typography
+
 [Open Sans](https://fonts.google.com/specimen/Open+Sans) is the typography chosen for Zopa's brand.
 
-We currently use three weights:
+We currently use **four weights**:
 
 - 400 ( _regular_ )
 - 600 ( _semibold_ )
 - 700 ( _bold_ )
+- 800 ( _extrabold_ )
 
-As a convenience, you can import `<Fonts />` and add it on the top level of your app:
+This library assumes **Open Sans** is already available, so make sure you link it properly in the root HTML of your application:
 
-```ts static
-import { Fonts } from '@zopauk/react-components';
-
-// root component
-const App = () => (
-  <>
-    <Fonts />
-    // rest of your top-level components
-  </>
-);
+```html static
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 ```
-
-It'll grab **Open Sans** from Google's CDN [through a CSS import](https://github.com/zopaUK/react-components/blob/master/src/components/styles/Fonts.tsx#L3-L5).
 
 You're free to use this technique or add the dependency manually to your base HTML `<head />`
-
-### Spacing
-
-Spacing is included as part of the GlobalStyles component and is split into margin and padding each can be used as atomic classes on your components.
-
-We follow the same guidelines set out in Tailwind
-
-Margin: https://tailwindcss.com/docs/margin/
-
-Padding: https://tailwindcss.com/docs/padding/
-
-The number you define in the class selector refers to the index of the spacing constants set out here:
-
-```ts static
-const spacing = {
-  '0': '0',
-  '1': '4px',
-  '2': '8px',
-  '3': '12px',
-  '4': '16px',
-  '5': '20px',
-  '6': '24px',
-  '7': '32px',
-  '8': '40px',
-  '9': '56px',
-  '10': '64px',
-  '11': '104px',
-};
-```
-
-Example:
-
-```tsx
-import { GlobalStyles } from '@zopauk/react-components';
-
-<>
-  <GlobalStyles />
-
-  <h3>Margin</h3>
-  <div className="mx-7">I have a 32px margin on the x axis</div>
-  <div className="my-2">I have a 8px margin on the y axis</div>
-  <div className="ml-6">I have a 24px margin on the left</div>
-
-  <h3>Padding</h3>
-  <div className="p-6 m:p-7">I have a 24px padding on all sides at mobile then 32px at desktop</div>
-  <div className="pb-4">I have a 16px padding on the bottom</div>
-</>;
-```

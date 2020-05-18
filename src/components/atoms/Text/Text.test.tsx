@@ -15,12 +15,49 @@ describe('<Text />', () => {
 
   it('can render with bottom white-space', () => {
     const { container } = render(
-      <Text as="p" mb>
+      <Text as="p" className="mb-6">
         Long paragraph with some bottom white-space to prevent text next to it colliding.
       </Text>,
     );
 
     expect(container.firstChild).toHaveStyleRule('margin', '0');
+  });
+
+  it('should render inline by default', () => {
+    const { container } = render(<Text />);
+    expect(container).not.toHaveStyleRule('display', 'block');
+  });
+
+  it.each`
+    margin
+    ${'m-6'}
+    ${'mt-6'}
+    ${'mb-8'}
+    ${'ml-8'}
+    ${'mr-6'}
+    ${'mx-2'}
+    ${'my-2'}
+    ${'m:mb-2'}
+    ${'m:m-2'}
+  `('should apply block display when supplied a spacing class: $margin', ({ margin }) => {
+    const { container } = render(<Text className={margin} />);
+    expect(container.firstChild).toHaveStyleRule('display', 'block');
+  });
+
+  it.each`
+    padding
+    ${'p-6'}
+    ${'pt-6'}
+    ${'pb-8'}
+    ${'pl-8'}
+    ${'pr-6'}
+    ${'px-2'}
+    ${'py-2'}
+    ${'m:pb-2'}
+    ${'m:p-2'}
+  `('should apply block display when supplied a spacing class: $padding', ({ padding }) => {
+    const { container } = render(<Text className={padding} />);
+    expect(container.firstChild).toHaveStyleRule('display', 'block');
   });
 
   it.each`

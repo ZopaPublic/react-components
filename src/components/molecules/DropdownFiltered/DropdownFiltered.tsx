@@ -6,8 +6,9 @@ import { typography } from '../../../constants/typography';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import InputText from '../../atoms/InputText/InputText';
-import Chevron from '../../icons/Chevron/Chevron';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
+import Icon from '../../atoms/Icon/Icon';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { IField, IInput } from '../../types';
 
 export interface ISearchInputProps {
@@ -188,10 +189,12 @@ export default class DropdownFiltered extends React.PureComponent<IDropdownFilte
             isValid={isValid}
             hasError={showError}
             isOpen={isOpen}
+            disabled={disabled}
           />
           <SearchArrowWrap>
-            <Chevron
-              direction={isOpen ? 'up' : 'down'}
+            <Icon
+              variant={faChevronDown}
+              rotation={isOpen ? 180 : undefined}
               color={disabled ? colors.greyLight : colors.actionPlain}
               onClick={() => {
                 if (!disabled) {

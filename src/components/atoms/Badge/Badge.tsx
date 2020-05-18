@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
-import CheckMark from '../../icons/CheckMark/CheckMark';
 import Text from '../Text/Text';
+import { typography } from '../../../constants/typography';
 
 type TStyling = 'confirmed' | 'default' | 'invalid' | 'waiting';
-type IBgColors = { [S in TStyling]: string };
-type IFontColors = { [S in TStyling]: string };
+type TColorMapField = { bg: string; text: string };
+type TColorMap = { [S in TStyling]: TColorMapField };
 
 interface IBadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
   /**
@@ -15,34 +15,44 @@ interface IBadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
   styling?: TStyling;
 }
 
-const backgroundColors: IBgColors = {
-  confirmed: colors.successLight,
-  default: colors.greyLight,
-  invalid: colors.alertLight,
-  waiting: colors.warningLight,
+const colorMap: TColorMap = {
+  confirmed: {
+    bg: colors.successLight,
+    text: colors.success,
+  },
+  default: {
+    bg: colors.greyLight,
+    text: colors.greyDarkest,
+  },
+  invalid: {
+    bg: colors.alertLight,
+    text: colors.alertDark,
+  },
+  waiting: {
+    bg: colors.warningLight,
+    text: colors.warningDark,
+  },
 };
 
 const StyledBadge = styled(Text).attrs({
   size: 'small',
   forwardedAs: 'span',
 })<IBadgeProps>`
-  color: ${colors.greyDarkest};
-  background-color: ${({ styling = 'default' }) => styling && backgroundColors[styling]};
-  display: inline-block;
-  padding: 4px 10px;
-  white-space: nowrap;
-  border-radius: 4px;
-`;
+  ${({ styling = 'default' }) => css`
+    background-color: ${colorMap[styling].bg};
+    color: ${colorMap[styling].text};
+  `};
 
-const StyledCheckMark = styled(CheckMark)`
   display: inline-block;
-  margin-right: 5px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  border-radius: 12px;
+  font-weight: ${typography.weights.semiBold};
 `;
 
 const Badge: React.FC<IBadgeProps> = ({ children, styling, ...rest }) => {
   return (
     <StyledBadge styling={styling} {...rest}>
-      {styling === 'confirmed' && <StyledCheckMark color={colors.greyDarkest} />}
       {children}
     </StyledBadge>
   );
