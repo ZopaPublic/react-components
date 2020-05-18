@@ -9,25 +9,15 @@ export interface ISearchInputProps {
 
 export const SearchInput = styled(InputText)<ISearchInputProps & IInput>`
   margin: 0;
-  padding: 8px 32px 8px 16px;
+  padding-left: 16px;
+  padding-right: 32px;
   ${({ hasError }) => !hasError && 'margin-bottom: 0'};
   ${({ isOpen }) =>
     isOpen &&
     css`
-      box-shadow: 0 4px 1px 2px rgba(28, 33, 57, 0.15);
-      border-radius: 6px 6px 0 0;
-      border-color: ${colors.actionPlain};
-      border-bottom: 0;
-
-      /* Hack to simulate a border in the bottom in the input as :after
-         pseudo-elements doesn't work with inputs */
-      background: linear-gradient(${colors.greyLightest}, ${colors.greyLightest});
-      background-size: 95% 1px;
-      background-position: bottom center;
-      background-repeat: no-repeat;
-      &:focus {
-        border-bottom: 0;
-      }
+      box-shadow: 0 0 4px 0 ${colors.brand};
+      border-radius: 8px 8px 0 0;
+      border-color: ${colors.brand};
     `};
 `;
 

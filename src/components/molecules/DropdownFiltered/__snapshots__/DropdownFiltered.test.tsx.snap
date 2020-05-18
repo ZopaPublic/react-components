@@ -20,20 +20,26 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3 {
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c3:focus {
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c3::-webkit-input-placeholder {
@@ -57,12 +63,14 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3:disabled {
-  background-color: #EFEFEF;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c4 {
   margin: 0;
-  padding: 8px 32px 8px 16px;
+  padding-left: 16px;
+  padding-right: 32px;
   margin-bottom: 0;
 }
 
@@ -119,7 +127,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
           aria-hidden="true"
           aria-label="open.menu"
           class="svg-inline--fa fa-chevron-down fa-w-14 "
-          color="#3B46C4"
+          color="#818F9B"
           data-icon="chevron-down"
           data-prefix="fas"
           focusable="false"
@@ -145,20 +153,26 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2 {
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c2:focus {
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
@@ -182,12 +196,14 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2:disabled {
-  background-color: #EFEFEF;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c3 {
   margin: 0;
-  padding: 8px 32px 8px 16px;
+  padding-left: 16px;
+  padding-right: 32px;
   margin-bottom: 0;
 }
 
@@ -237,7 +253,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
           aria-hidden="true"
           aria-label="open.menu"
           class="svg-inline--fa fa-chevron-down fa-w-14 "
-          color="#3B46C4"
+          color="#818F9B"
           data-icon="chevron-down"
           data-prefix="fas"
           focusable="false"

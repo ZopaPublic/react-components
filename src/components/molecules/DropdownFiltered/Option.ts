@@ -18,7 +18,7 @@ const Option = styled.div<IOption>`
     (selected || highLighted) &&
     css`
       color: ${colors.white};
-      background-color: ${colors.actionPlain};
+      background-color: ${colors.brand};
     `};
 `;
 
