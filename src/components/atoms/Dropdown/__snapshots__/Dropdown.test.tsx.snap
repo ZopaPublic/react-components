@@ -15,6 +15,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
+  color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
@@ -57,6 +58,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
+  color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
@@ -105,6 +107,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
+  color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
@@ -154,6 +157,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
+  color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
