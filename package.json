@@ -46,11 +46,11 @@
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.4.0",
-    "typescript": ">=3.x <4",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0"
+    "typescript": ">=3.x <4"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
@@ -70,7 +70,7 @@
     "@types/node": "12.12.39",
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
-    "@types/styled-components": "4.4.3",
+    "@types/styled-components": "5.1.0",
     "@typescript-eslint/eslint-plugin": "2.33.0",
     "@typescript-eslint/parser": "2.33.0",
     "acorn": "7.2.0",
