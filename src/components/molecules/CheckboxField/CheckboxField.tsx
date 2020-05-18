@@ -1,11 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
-import checkMark from '../../../content/images/white-check-mark.svg';
+import tealCheckMark from '../../../content/images/teal-check-mark.svg';
+import greyCheckMark from '../../../content/images/grey-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
+import { getBorderColorByStatus } from '../../../helpers/utils';
 import { IField, IInput } from '../../types';
 
 export interface ICheckboxFieldProps extends IField, IInput {
@@ -26,24 +28,38 @@ const Input = styled.input<IInput>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-
-  &:checked + label {
-    font-weight: ${typography.weights.semiBold};
-
+  & + label {
     &:before {
-      content: '';
-      background-color: ${colors.actionPlain};
+      border: 1px ${getBorderColorByStatus} solid;
+    }
+  }
+  &:checked + label {
+    &:before {
+      border: 1px ${colors.brand} solid;
     }
     &:after {
-      content: '';
       background-size: contain;
-      background-image: ${`url(${checkMark})`};
+      background-image: ${`url(${tealCheckMark})`};
       animation: ${zoomOut} 180ms ease-in-out;
     }
   }
   &:focus + label {
     &:before {
-      border: 2px ${colors.actionPlain} solid;
+      border: 1px ${colors.brand} solid;
+      box-shadow: 0 0 4px 0 ${colors.brand};
+    }
+  }
+  &:disabled + label {
+    cursor: default;
+    color: ${colors.grey};
+    &:before {
+      border: 1px ${colors.greyLight} solid;
+      box-shadow: 0 0 4px 0 transparent;
+    }
+    &:after {
+      background-size: contain;
+      background-image: ${`url(${greyCheckMark})`};
+      animation: ${zoomOut} 180ms ease-in-out;
     }
   }
 `;
@@ -51,7 +67,9 @@ const Input = styled.input<IInput>`
 const Label = styled(InputLabel)`
   width: auto;
   display: flex;
+  align-items: center;
   font-weight: ${typography.weights.regular};
+  font-size: ${typography.sizes.text.body};
   line-height: 1.4;
   color: ${colors.greyDarkest};
   position: relative;
@@ -60,13 +78,15 @@ const Label = styled(InputLabel)`
 
   &:before {
     content: '';
-    background-color: ${colors.greyLighter};
+    background-color: ${colors.white};
     border-radius: 6px;
     height: 24px;
     width: 24px;
     flex-shrink: 0;
     margin-right: 8px;
-    border: 2px ${colors.white} solid;
+    transition-property: border, box-shadow;
+    transition: 0.2s ease-in-out;
+    border: 1px ${colors.grey} solid;
     display: block;
   }
   &:after {
@@ -82,7 +102,7 @@ const Label = styled(InputLabel)`
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px ${colors.greyLight} solid;
+      border: 1px ${colors.brand} solid;
     }
   }
 `;
