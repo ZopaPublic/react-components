@@ -31,7 +31,7 @@ exports[`<Badge /> renders with no a11y violations 1`] = `
 </span>
 `;
 
-exports[`<Badge /> renders with specific size: "medium" 1`] = `
+exports[`<Badge /> renders with specific size: medium 1`] = `
 .c0 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -62,7 +62,7 @@ exports[`<Badge /> renders with specific size: "medium" 1`] = `
 </span>
 `;
 
-exports[`<Badge /> renders with specific size: "small" 1`] = `
+exports[`<Badge /> renders with specific size: small 1`] = `
 .c0 {
   margin: 0;
   -webkit-letter-spacing: 0;

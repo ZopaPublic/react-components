@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { typography } from '../../../constants/typography';
 
 type TSeverity = 'info' | 'alert' | 'warning' | 'success';
 
@@ -56,6 +57,7 @@ const Wrapper = styled.div<Required<IAlertProps>>`
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].text};
   font-size: 15px;
   line-height: 20px;
+  font-family: ${typography.primary};
   font-weight: 400;
   fill: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
 

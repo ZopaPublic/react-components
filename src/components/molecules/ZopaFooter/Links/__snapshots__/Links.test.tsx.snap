@@ -412,10 +412,10 @@ exports[`<Links /> renders the component 1`] = `
         >
           <a
             class="c6 c7"
-            color="#3B46C4"
-            href="https://www.zopa.com/terms-of-use"
+            color="#4A3EDE"
+            href="https://www.zopa.com/website-terms"
           >
-            Terms of use
+            Website terms
           </a>
         </li>
         <li

@@ -24,6 +24,7 @@ export { default as DropdownFiltered } from './components/molecules/DropdownFilt
 export { default as Spinner } from './components/atoms/Spinner/Spinner';
 export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMessage';
 export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
+export { default as InputRange } from './components/atoms/InputRange/InputRange';
 export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';

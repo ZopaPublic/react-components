@@ -3,9 +3,7 @@ import React, { FC, HTMLAttributes } from 'react';
 import { AccordionContext } from '../hooks';
 import { useAccordion } from '../hooks/useAccordion';
 
-export interface IAccordion extends HTMLAttributes<HTMLDivElement> {
-  'aria-label': string;
-}
+export interface IAccordion extends HTMLAttributes<HTMLDivElement> {}
 
 const Accordion: FC<IAccordion> = ({ children, ...rest }) => {
   const context = useAccordion();
