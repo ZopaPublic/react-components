@@ -7,13 +7,6 @@ import Version from 'rsg-components/Version';
 
 import GlobalStyles from '../components/styles/GlobalStyles';
 
-const GlobalStyleGuideStyles = createGlobalStyle`
-  /* System Fonts as used by GitHub */
-  body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-`;
-
 const sidebarWidth = 260;
 
 const Container = styled.div`
@@ -69,7 +62,6 @@ export function StyleGuideRenderer({ title, version, homepageUrl, children, toc 
   return (
     <Container>
       <GlobalStyles />
-      <GlobalStyleGuideStyles />
       <Main>
         {children}
         <Footer>
