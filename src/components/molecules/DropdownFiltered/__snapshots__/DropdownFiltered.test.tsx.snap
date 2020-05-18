@@ -14,6 +14,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-size: 15px;
 }
 
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
 .c3 {
   border: 2px solid #D4D7D9;
   border-radius: 4px;
@@ -53,11 +58,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c3:disabled {
   background-color: #EFEFEF;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
 }
 
 .c4 {
@@ -139,6 +139,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 `;
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
 .c2 {
   border: 2px solid #D4D7D9;
   border-radius: 4px;
@@ -178,11 +183,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2:disabled {
   background-color: #EFEFEF;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
 }
 
 .c3 {
