@@ -110,6 +110,14 @@ module.exports = {
   ],
   template: {
     favicon: 'https://s3-eu-west-1.amazonaws.com/cdn.zopa.com/images/201601215/favicon.ico',
+    head: {
+      links: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap',
+        },
+      ],
+    },
   },
   theme: {
     color: {
@@ -118,6 +126,8 @@ module.exports = {
       linkHover: '#00B9A7',
     },
     fontFamily: {
+      base:
+        '"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
       monospace: 'Monaco, Menlo, Courier, monospace',
     },
     fontSize: {
