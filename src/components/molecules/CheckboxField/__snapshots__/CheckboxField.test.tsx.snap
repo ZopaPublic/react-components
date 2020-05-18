@@ -14,11 +14,11 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c1 + label:before {
-  border: 1px #818F9B solid;
+  border-color: #818F9B;
 }
 
 .c1:checked + label:before {
-  border: 1px #00D9C5 solid;
+  border-color: #00D9C5;
 }
 
 .c1:checked + label:after {
@@ -29,18 +29,17 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 }
 
 .c1:focus + label:before {
-  border: 1px #00D9C5 solid;
+  border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c1:disabled + label {
-  cursor: default;
+  cursor: not-allowed;
   color: #818F9B;
 }
 
 .c1:disabled + label:before {
-  border: 1px #D4D7D9 solid;
-  box-shadow: 0 0 4px 0 transparent;
+  border-color: #D4D7D9;
 }
 
 .c1:disabled + label:after {
@@ -96,6 +95,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  box-shadow: 0 0 4px 0 transparent;
   border: 1px #818F9B solid;
   display: block;
 }

@@ -30,12 +30,12 @@ const Input = styled.input<IInput>`
   position: absolute;
   & + label {
     &:before {
-      border: 1px ${getBorderColorByStatus} solid;
+      border-color: ${getBorderColorByStatus};
     }
   }
   &:checked + label {
     &:before {
-      border: 1px ${colors.brand} solid;
+      border-color: ${colors.brand};
     }
     &:after {
       background-size: contain;
@@ -45,16 +45,15 @@ const Input = styled.input<IInput>`
   }
   &:focus + label {
     &:before {
-      border: 1px ${colors.brand} solid;
+      border-color: ${colors.brand};
       box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
   &:disabled + label {
-    cursor: default;
+    cursor: not-allowed;
     color: ${colors.grey};
     &:before {
-      border: 1px ${colors.greyLight} solid;
-      box-shadow: 0 0 4px 0 transparent;
+      border-color: ${colors.greyLight};
     }
     &:after {
       background-size: contain;
@@ -86,6 +85,7 @@ const Label = styled(InputLabel)`
     margin-right: 8px;
     transition-property: border, box-shadow;
     transition: 0.2s ease-in-out;
+    box-shadow: 0 0 4px 0 transparent;
     border: 1px ${colors.grey} solid;
     display: block;
   }
