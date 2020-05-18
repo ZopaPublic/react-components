@@ -25,7 +25,7 @@ const StyledDropdown = styled.select<IDropdownProps>`
   padding-right: 32px;
   padding-left: 16px;
   height: 50px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: ${typography.weights.regular};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
