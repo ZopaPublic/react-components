@@ -14,7 +14,7 @@ const Options = styled.div<IOptionsListProps>`
   position: absolute;
   overflow: auto;
   border-radius: 0 0 8px 8px;
-  max-height: ${({ optionsListMaxHeight = 'auto' }) => optionsListMaxHeight};
+  max-height: ${({ optionsListMaxHeight = 'initial' }) => optionsListMaxHeight};
   box-shadow: 0 0 4px 0 ${colors.brand};
 `;
 
