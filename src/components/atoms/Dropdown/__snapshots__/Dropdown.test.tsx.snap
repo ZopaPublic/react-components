@@ -5,25 +5,29 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 8px 32px 8px 16px;
-  font-weight: 600;
-  height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: transparent;
+  padding-right: 32px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 <select
@@ -43,25 +47,29 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 8px 32px 8px 16px;
-  font-weight: 600;
-  height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: transparent;
+  padding-right: 32px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 <select
@@ -87,25 +95,29 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 8px 32px 8px 16px;
-  font-weight: 600;
-  height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: transparent;
+  padding-right: 32px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 <select
@@ -132,25 +144,29 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
-  border: 2px solid #D4D7D9;
-  border-radius: 4px;
-  padding: 8px 32px 8px 16px;
-  font-weight: 600;
-  height: 46px;
   min-width: 100px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: transparent;
+  padding-right: 32px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
   outline-width: 0;
-  border: 2px solid #3B46C4;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 <select
