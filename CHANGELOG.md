@@ -1,3 +1,10 @@
+### [3.2.2](https://github.com/zopaUK/react-components/compare/v3.2.1...v3.2.2) (2020-05-18)
+
+
+### Bug Fixes
+
+* **types:** fix styled-components types ([7871775](https://github.com/zopaUK/react-components/commit/7871775b7d338605f3e1702fe4cf5db9a193336f))
+
 ## [3.2.1](https://github.com/zopaUK/react-components/compare/v3.2.0...v3.2.1) (2020-05-05)
 
 
