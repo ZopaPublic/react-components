@@ -75,8 +75,14 @@ export const buttonStyle = css<IButtonProps>`
 
   &:disabled {
     cursor: not-allowed;
-    background: ${colors.greyLightest};
-    color: ${colors.grey};
+    ${({ loading }) => {
+      if (!loading) {
+        return css`
+          background: ${colors.greyLightest};
+          color: ${colors.grey};
+        `;
+      }
+    }}
   }
 
   &:active:not(:disabled) {
@@ -91,11 +97,11 @@ const SButton = styled.button<IButtonProps>`
 `;
 
 const Button: React.FC<IButtonProps> = props => {
-  const { children, loading, styling = 'primary', ...rest } = props;
+  const { children, loading, styling = 'primary', disabled, ...rest } = props;
   const isLoading = styling !== 'link' && loading;
 
   return (
-    <SButton styling={styling} {...rest}>
+    <SButton styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
           <Spinner negative={styling === 'primary'} size="small" /> {'\u00A0 '}
