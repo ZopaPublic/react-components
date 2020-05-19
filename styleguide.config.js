@@ -126,8 +126,7 @@ module.exports = {
       linkHover: '#00B9A7',
     },
     fontFamily: {
-      base:
-        '"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+      base: '"Open Sans", Roboto, Helvetica, Arial, sans-serif',
       monospace: 'Monaco, Menlo, Courier, monospace',
     },
     fontSize: {
