@@ -9,10 +9,7 @@ describe('<Navbar />', () => {
   });
 
   it('should render component with all the props', () => {
-    const left = <span>left</span>;
-    const center = <span>center</span>;
-    const right = <span>right</span>;
-    const { container } = render(<Navbar left={left} center={center} right={right} />);
+    const { container } = render(<Navbar overlayLogoWith={<a href="https://www.zopa.com"></a>}>Content</Navbar>);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

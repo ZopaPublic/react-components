@@ -9,7 +9,7 @@ describe('<Navbar.Link />', () => {
   });
 
   it('should render component with specific props', () => {
-    const { container } = render(<Navbar.Link active open withChevron />);
+    const { container } = render(<Navbar.Link active open withChevron isDropdownLink />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });

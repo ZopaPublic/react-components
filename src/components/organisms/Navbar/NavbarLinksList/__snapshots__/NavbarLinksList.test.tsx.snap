@@ -1,0 +1,578 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar.LinksList /> should render component with default props 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c6 {
+  margin: 12px 0 12px;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c1:hover,
+.c1:active {
+  color: #21247F;
+}
+
+.c1:hover svg path,
+.c1:active svg path {
+  fill: #21247F;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+}
+
+.c2:active,
+.c2:hover {
+  opacity: 0.88;
+}
+
+.c7 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+}
+
+.c7:active,
+.c7:hover {
+  opacity: 0.88;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+}
+
+.c8:active,
+.c8:hover {
+  opacity: 0.88;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.c4 {
+  display: none;
+}
+
+@media (min-width:1280px) {
+  .c6 {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 0px 1px #D4D7D9;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+    min-width: 240px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .c6:after {
+    z-index: 1;
+    content: '';
+    top: 1px;
+    left: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: translate(-50%,-50%) rotate(135deg);
+    -ms-transform: translate(-50%,-50%) rotate(135deg);
+    transform: translate(-50%,-50%) rotate(135deg);
+    background-color: inherit;
+    box-shadow: -1px 1px 0 0 #EFEFEF;
+  }
+}
+
+@media (min-width:1280px) {
+  .c5 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
+  }
+}
+
+@media (max-width:1280px) {
+  .c2 {
+    color: #2C3236;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width:1280px) {
+  .c7 {
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .c7:hover {
+    background-color: #E9EAFA;
+  }
+}
+
+@media (min-width:1280px) {
+  .c4 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+<body>
+    <div>
+      <span>
+        <div
+          class="c0"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="c1 c2"
+            color="#3B46C4"
+            data-automation="About.topBar.Menu"
+            href="#"
+            role="menuitem"
+            tabindex="0"
+          >
+            <span
+              class="c3"
+            >
+              About
+            </span>
+            <span
+              class="c4"
+            >
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                color="#818F9B"
+                data-icon="chevron-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+          <div
+            class="c5"
+          >
+            <ul
+              aria-label="About"
+              class="c6"
+              role="menu"
+            >
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="About.About.topBar.Menu"
+                  href="/about"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  About Zopa
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Story.About.topBar.Menu"
+                  href="/about/our-story"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Our story
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Our_Board.About.topBar.Menu"
+                  href="/about/board"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Our board
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Our_Leadership.About.topBar.Menu"
+                  href="/about/leadership"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Our leadership team
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Awards.About.topBar.Menu"
+                  href="/about/awards"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Awards
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Careers.About.topBar.Menu"
+                  href="/about/careers"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Careers
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  class="c1 c7"
+                  color="#3B46C4"
+                  data-automation="Press_office.About.topBar.Menu"
+                  href="/about/press"
+                  role="menuitem"
+                  tabindex="-1"
+                >
+                  Press office
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </span>
+      <span>
+        <a
+          class="c1 c8"
+          color="#3B46C4"
+          href="/contact"
+        >
+          Support
+        </a>
+      </span>
+    </div>
+  </body>,
+  "container": <div>
+    <span>
+      <div
+        class="sc-htoDjs kdxeeA"
+      >
+        <a
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="sc-iwsKbI fpOZyw sc-gqjmRU buLoAs"
+          color="#3B46C4"
+          data-automation="About.topBar.Menu"
+          href="#"
+          role="menuitem"
+          tabindex="0"
+        >
+          <span
+            class="sc-VigVT LUzAM"
+          >
+            About
+          </span>
+          <span
+            class="sc-jTzLTM fBpPrt"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+              color="#818F9B"
+              data-icon="chevron-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </a>
+        <div
+          class="sc-dnqmqq kSIpVd"
+        >
+          <ul
+            aria-label="About"
+            class="sc-gzVnrw jtKrnY"
+            role="menu"
+          >
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="About.About.topBar.Menu"
+                href="/about"
+                role="menuitem"
+                tabindex="-1"
+              >
+                About Zopa
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Story.About.topBar.Menu"
+                href="/about/our-story"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Our story
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Our_Board.About.topBar.Menu"
+                href="/about/board"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Our board
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Our_Leadership.About.topBar.Menu"
+                href="/about/leadership"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Our leadership team
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Awards.About.topBar.Menu"
+                href="/about/awards"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Awards
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Careers.About.topBar.Menu"
+                href="/about/careers"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Careers
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                color="#3B46C4"
+                data-automation="Press_office.About.topBar.Menu"
+                href="/about/press"
+                role="menuitem"
+                tabindex="-1"
+              >
+                Press office
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </span>
+    <span>
+      <a
+        class="sc-iwsKbI fpOZyw sc-gqjmRU frASJx"
+        color="#3B46C4"
+        href="/contact"
+      >
+        Support
+      </a>
+    </span>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

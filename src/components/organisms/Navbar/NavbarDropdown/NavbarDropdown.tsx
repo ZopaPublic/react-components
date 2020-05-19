@@ -1,8 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
+import { breakpoints } from '../../../../constants/breakpoints';
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
+
+import Navbar from '../';
 
 const NavbarDropdownContainer = styled.div`
   position: relative;
@@ -15,26 +19,29 @@ export type TAlignedTo = 'left' | 'right';
 
 export interface INavbarDropdownListContainer extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean;
-  alignedTo: TAlignedTo;
 }
 
 const NavbarDropdownListContainer = styled.div<INavbarDropdownListContainer>`
-  position: absolute;
-  ${({ alignedTo }) => alignedTo}: 0;
-  ${({ open }) =>
-    open
-      ? css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(20%);
-        `
-      : css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-10%);
-        `}
+  @media (min-width: ${breakpoints.desktop}px) {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+
+    ${({ open }) =>
+      open
+        ? css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0%);
+          `
+        : css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, -10%);
+          `}
+  }
 `;
 
 export interface IOpenerProps {
@@ -72,16 +79,17 @@ export interface IRenderItemProps {
   getItemProps: TGetItemProps;
   close: TClose;
 }
-
-export interface INavbarDropdownProps {
+interface IDefaultNavbarDropdownProps {
+  /** Function getting all the props and aria attributes meant to be spread on the dropdown item links */
+  renderItem: ({ item, getItemProps, close }: IRenderItemProps) => React.ReactNode;
+}
+export interface INavbarDropdownProps extends IDefaultNavbarDropdownProps {
   /** unique id */
   id: string;
   /** Short description of the navbar component */
   ariaLabel: string;
   /** Function getting all the props and aria attributes meant to be spread on the opener button/link */
   renderOpener: ({ open, getOpenerProps }: IRenderOpenerProps) => React.ReactNode;
-  /** Function getting all the props and aria attributes meant to be spread on the dropdown item links */
-  renderItem: ({ item, getItemProps, close }: IRenderItemProps) => React.ReactNode;
   /** Array of data representing the dropdown items (e.g links) */
   items: IItem[];
 }
@@ -93,6 +101,14 @@ export interface INavbarDropdownState {
 }
 
 export default class NavbarDropdown extends React.Component<INavbarDropdownProps, INavbarDropdownState> {
+  static defaultProps: IDefaultNavbarDropdownProps = {
+    renderItem: ({ item: { label, href }, getItemProps }) => (
+      <Navbar.Link href={href} {...getItemProps()} isDropdownLink>
+        {label}
+      </Navbar.Link>
+    ),
+  };
+
   private readonly dropdownRef = React.createRef<HTMLDivElement>();
   private readonly dropdownListRef = React.createRef<HTMLUListElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
@@ -144,12 +160,12 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
     const { getOpenerProps, close } = this;
     const { renderOpener, renderItem, items, ariaLabel, id } = this.props;
     const { open } = this.state;
-    const alignedTo = this.getAlignedTo();
+
     return (
       <NavbarDropdownContainer ref={this.dropdownRef}>
         {renderOpener({ open, getOpenerProps })}
-        <NavbarDropdownListContainer alignedTo={alignedTo} open={open}>
-          <NavbarDropdownList ref={this.dropdownListRef} alignedTo={alignedTo} role="menu" aria-label={ariaLabel}>
+        <NavbarDropdownListContainer open={open}>
+          <NavbarDropdownList ref={this.dropdownListRef} role="menu" aria-label={ariaLabel}>
             {items.map((item, index) => (
               <li key={`${id}-${index}`} role="none">
                 {renderItem({
@@ -218,14 +234,6 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
 
   private getRightCoordinate = () =>
     this.dropdownRef.current ? this.dropdownRef.current.getBoundingClientRect().left : 0;
-
-  private getAlignedTo = () => {
-    const dropdownList = this.dropdownListRef.current;
-    if (dropdownList) {
-      return this.state.right - dropdownList.offsetWidth < 0 ? 'left' : 'right';
-    }
-    return 'right';
-  };
 
   private handleOpenerClick = (e: React.MouseEvent) => {
     e.preventDefault();

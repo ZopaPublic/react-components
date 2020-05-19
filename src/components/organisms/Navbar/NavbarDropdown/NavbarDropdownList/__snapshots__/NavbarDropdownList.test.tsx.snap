@@ -2,29 +2,37 @@
 
 exports[`NavbarDropdownList renders the component with props 1`] = `
 .c0 {
-  position: relative;
+  margin: 12px 0 12px;
+  padding: 0;
   list-style-type: none;
-  margin: 0;
-  background-color: #FFFFFF;
-  box-shadow: inset 0 0 0 1px rgba(214,215,222,0.75),0 2px 4px 0 rgba(0,0,0,0.06);
-  padding: 16px;
-  border-radius: 4px;
-  min-width: 150px;
+  border-bottom: 1px solid #EFEFEF;
 }
 
-.c0:after {
-  z-index: 1;
-  content: '';
-  top: 1px;
-  left: 16px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  -webkit-transform: translateY(-50%) rotate(135deg);
-  -ms-transform: translateY(-50%) rotate(135deg);
-  transform: translateY(-50%) rotate(135deg);
-  background-color: inherit;
-  box-shadow: -1px 1px 0 0 #EFEFEF;
+@media (min-width:1280px) {
+  .c0 {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 0px 1px #D4D7D9;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+    min-width: 240px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .c0:after {
+    z-index: 1;
+    content: '';
+    top: 1px;
+    left: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: translate(-50%,-50%) rotate(135deg);
+    -ms-transform: translate(-50%,-50%) rotate(135deg);
+    transform: translate(-50%,-50%) rotate(135deg);
+    background-color: inherit;
+    box-shadow: -1px 1px 0 0 #EFEFEF;
+  }
 }
 
 <ul
