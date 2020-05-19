@@ -41,6 +41,11 @@ const StyledDropdown = styled.select<IDropdownProps>`
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
   }
+
+  &:disabled {
+    background-color: ${colors.greyLightest};
+    color: ${colors.grey};
+  }
 `;
 
 const Dropdown = forwardRef<HTMLSelectElement, IDropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);

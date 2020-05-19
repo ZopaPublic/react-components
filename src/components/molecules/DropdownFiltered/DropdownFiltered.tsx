@@ -106,7 +106,7 @@ const DropdownFiltered = (props: IDropdownFilteredProps) => {
                   <Icon
                     variant={faChevronDown}
                     rotation={isOpen ? 180 : undefined}
-                    color={disabled ? colors.greyLight : colors.grey}
+                    color={colors.grey}
                     onClick={() => {
                       if (!disabled) {
                         if (isOpen) {
