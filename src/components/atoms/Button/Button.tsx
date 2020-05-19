@@ -54,7 +54,9 @@ export const buttonStyle = css<IButtonProps>`
   ${({ styling = 'primary' }) => {
     const { bg } = colorMap[styling];
     const isActionGradient = bg === colors.action;
-    const bgFallback = `background-color: ${colors.actionPlain}`;
+    const bgFallback = css`
+      background-color: ${colors.actionPlain};
+    `;
 
     return css`
       ${isActionGradient && bgFallback}
