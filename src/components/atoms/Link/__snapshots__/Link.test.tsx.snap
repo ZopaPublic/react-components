@@ -4,7 +4,7 @@ exports[`<Link /> doesnt render the link with a target icon 1`] = `
 .c0 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: inherit;
   color: #3B46C4;
@@ -46,7 +46,7 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 .c0 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: inherit;
   color: #3B46C4;
@@ -87,7 +87,7 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
 .c0 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: inherit;
   color: #3B46C4;
