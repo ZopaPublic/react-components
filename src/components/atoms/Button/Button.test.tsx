@@ -54,6 +54,11 @@ describe('<Button />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it('renders loading with disabled attribute', () => {
+    const { container } = render(<Button loading>Loading</Button>);
+    expect(container.firstChild).toHaveAttribute('disabled');
+  });
+
   it.each`
     type
     ${'submit'}

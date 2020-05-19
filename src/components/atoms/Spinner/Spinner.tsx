@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 
 export interface ISpinnerProps {
@@ -25,7 +25,7 @@ const spin = keyframes`
 `;
 
 const StyledSpinner = styled.div<ISpinnerProps>`
-  ${({ size = 'standard', negative = false }) => `
+  ${({ size = 'standard', negative = false }) => css`
     width: ${size === 'small' ? 20 : 40}px;
     height: ${size === 'small' ? 20 : 40}px;
     border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};

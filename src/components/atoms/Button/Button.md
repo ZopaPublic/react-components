@@ -52,7 +52,7 @@ import { Button, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-component
 </FlexContainer>;
 ```
 
-- Loading ( _spinner won't show for `styling="link"`_ )
+- Loading ( _spinner won't show for `styling="link"`, loading buttons are always `disabled`_ )
 
 ```tsx
 import { Button, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-components';
