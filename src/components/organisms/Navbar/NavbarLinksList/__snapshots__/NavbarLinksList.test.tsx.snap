@@ -18,7 +18,7 @@ Object {
 .c1 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: inherit;
   color: #3B46C4;
@@ -370,7 +370,7 @@ Object {
         <a
           aria-expanded="false"
           aria-haspopup="true"
-          class="sc-iwsKbI fpOZyw sc-gqjmRU buLoAs"
+          class="sc-iwsKbI bJGjjM sc-gqjmRU buLoAs"
           color="#3B46C4"
           data-automation="About.topBar.Menu"
           href="#"
@@ -415,7 +415,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="About.About.topBar.Menu"
                 href="/about"
@@ -429,7 +429,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Story.About.topBar.Menu"
                 href="/about/our-story"
@@ -443,7 +443,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Our_Board.About.topBar.Menu"
                 href="/about/board"
@@ -457,7 +457,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Our_Leadership.About.topBar.Menu"
                 href="/about/leadership"
@@ -471,7 +471,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Awards.About.topBar.Menu"
                 href="/about/awards"
@@ -485,7 +485,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Careers.About.topBar.Menu"
                 href="/about/careers"
@@ -499,7 +499,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI fpOZyw sc-gqjmRU cKLlEs"
+                class="sc-iwsKbI bJGjjM sc-gqjmRU cKLlEs"
                 color="#3B46C4"
                 data-automation="Press_office.About.topBar.Menu"
                 href="/about/press"
@@ -515,7 +515,7 @@ Object {
     </span>
     <span>
       <a
-        class="sc-iwsKbI fpOZyw sc-gqjmRU frASJx"
+        class="sc-iwsKbI bJGjjM sc-gqjmRU frASJx"
         color="#3B46C4"
         href="/contact"
       >
