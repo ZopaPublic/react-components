@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import grid from '../../../../constants/grid';
-import ZopaButton, { IButtonProps } from '../../Button/Button';
+import { IButtonProps, buttonStyle } from '../../Button/Button';
 
 const ButtonWrapper = styled.div`
   padding: 12px;
@@ -10,7 +10,8 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-const SButton = styled(ZopaButton)`
+const SButton = styled.button`
+  ${buttonStyle};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +19,7 @@ const SButton = styled(ZopaButton)`
   width: 32px;
   height: 32px;
   padding: 0;
+
   @media (min-width: ${grid.breakpoints.m}px) {
     width: 50px;
     height: 50px;

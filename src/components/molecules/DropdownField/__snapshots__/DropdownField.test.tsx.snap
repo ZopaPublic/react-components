@@ -9,7 +9,7 @@ exports[`<DropdownField /> renders the component with props with no a11y violati
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 15px;
 }

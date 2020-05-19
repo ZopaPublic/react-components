@@ -1,8 +1,5 @@
-const systemFontStack =
-  '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
-
 const typography = {
-  primary: `"Open Sans",${systemFontStack}`,
+  primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
   sizes: {
     text: {
       lead: '18px',

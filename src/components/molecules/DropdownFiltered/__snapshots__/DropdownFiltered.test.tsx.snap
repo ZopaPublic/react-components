@@ -9,9 +9,14 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-size: 15px;
+}
+
+.c0 {
+  max-width: 100%;
+  width: 100%;
 }
 
 .c3 {
@@ -53,11 +58,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 
 .c3:disabled {
   background-color: #EFEFEF;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
 }
 
 .c4 {
@@ -139,6 +139,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 `;
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
 .c2 {
   border: 2px solid #D4D7D9;
   border-radius: 4px;
@@ -178,11 +183,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 
 .c2:disabled {
   background-color: #EFEFEF;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
 }
 
 .c3 {

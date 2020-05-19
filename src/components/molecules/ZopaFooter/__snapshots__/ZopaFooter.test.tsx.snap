@@ -87,7 +87,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
 }
 
@@ -106,7 +106,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   margin: 0;
   color: #2C3236;
   text-align: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -154,7 +154,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 .c7 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   line-height: inherit;
   color: #3B46C4;
