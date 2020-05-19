@@ -21,8 +21,8 @@ type ErrorMessageProps = {
   className?: string;
 };
 
-const ErrorMessage: FC<ErrorMessageProps> = ({ children, className }) => (
-  <StyledErrorMessage className={className}>
+const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => (
+  <StyledErrorMessage className={className} {...rest}>
     <Icon color={colors.alert} className="pr-2" variant={faExclamationCircle} />
     {children}
   </StyledErrorMessage>
