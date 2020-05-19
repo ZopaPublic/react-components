@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { typography } from '../../../constants/typography';
+import chevronDown from '../../../content/images/chevron-down.svg';
 
 export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
@@ -29,6 +30,8 @@ const StyledDropdown = styled.select<IDropdownProps>`
   color: ${colors.greyDarkest};
   font-weight: ${typography.weights.regular};
   border: 1px solid ${getBorderColorByStatus};
+  background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;

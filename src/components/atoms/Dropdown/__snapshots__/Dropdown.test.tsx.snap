@@ -18,6 +18,8 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
+  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -61,6 +63,8 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
+  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -110,6 +114,8 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
+  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -160,6 +166,8 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   color: #2C3236;
   font-weight: 400;
   border: 1px solid #818F9B;
+  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
