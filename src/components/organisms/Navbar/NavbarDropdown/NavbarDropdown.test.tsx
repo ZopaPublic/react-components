@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import Navbar from '..';
 
 describe('<Navbar.Dropdown />', () => {
@@ -18,7 +18,7 @@ describe('<Navbar.Dropdown />', () => {
     render(
       <>
         <Navbar.Dropdown
-          id="unique-dropdown-id "
+          id="unique-dropdown-id"
           ariaLabel="test"
           items={items}
           renderOpener={renderOpener}
@@ -27,8 +27,6 @@ describe('<Navbar.Dropdown />', () => {
         <button>button</button>
       </>,
     );
-
-  afterEach(cleanup);
 
   it('should render component', () => {
     const { container } = renderComponent();
