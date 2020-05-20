@@ -54,13 +54,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   width: 100%;
 }
 
-.c2 {
+.c3 {
   position: relative;
 }
 
-.c2 > a,
-.c2 > button,
-.c2 > div {
+.c3 > a,
+.c3 > button,
+.c3 > div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -69,6 +69,70 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  width: 64px;
+  font-size: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  width: 64px;
+  font-size: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c7 {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 16px 0;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  -webkit-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.c5 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -89,17 +153,17 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   border: none;
 }
 
-.c4:hover,
-.c4:active {
+.c5:hover,
+.c5:active {
   color: #21247F;
 }
 
-.c4:hover svg path,
-.c4:active svg path {
+.c5:hover svg path,
+.c5:active svg path {
   fill: #21247F;
 }
 
-.c5:hover {
+.c6:hover {
   color: #FFFFFF;
 }
 
@@ -111,7 +175,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c2 {
+  .c3 {
     width: 490px;
     height: 120px;
     background-image: url(nav-curve.svg);
@@ -121,13 +185,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c3 {
-    margin-right: 64px;
-  }
-}
-
-@media (min-width:1280px) {
-  .c5 {
+  .c6 {
     margin-left: 8px;
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -158,22 +216,22 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
   }
 
-  .c5:hover:not(:disabled) {
+  .c6:hover:not(:disabled) {
     background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
   }
 
-  .c5:focus:not(:active) {
+  .c6:focus:not(:active) {
     border: 1px solid #FFFFFF;
     box-shadow: 0 0 4px #3B46C4;
   }
 
-  .c5:disabled {
+  .c6:disabled {
     cursor: not-allowed;
     background: #F7F7F7;
     color: #818F9B;
   }
 
-  .c5:active:not(:disabled) {
+  .c6:active:not(:disabled) {
     border: 1px solid transparent;
     box-shadow: unset;
     opacity: 0.8;
@@ -193,8 +251,29 @@ exports[`<Navbar /> should render component with all the props 1`] = `
       <nav
         class="c1"
       >
-        <div
+        <span
           class="c2"
+          data-testid="hamburger-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+            color="#FFFFFF"
+            data-icon="bars"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div
+          class="c3"
         >
           <svg
             aria-label="zopa logo"
@@ -221,18 +300,37 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             href="https://www.zopa.com"
           />
         </div>
-        <div
-          class="c3"
+        <span
+          class="c4"
         >
-          Content
           <a
-            class="c4 c5"
+            class="c5 c6"
             color="#3B46C4"
             href="https://home.zopa.com/"
           >
-            Sign-in
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-user fa-w-14 fa-fw "
+              color="#FFFFFF"
+              data-icon="user"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                fill="currentColor"
+              />
+            </svg>
           </a>
-        </div>
+        </span>
+        <aside
+          class="c7"
+        >
+          Content
+        </aside>
       </nav>
     </div>
   </div>
@@ -463,6 +561,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
         <div
           class="c3"
         >
+          Content
           <a
             class="c4 c5"
             color="#3B46C4"
@@ -545,7 +644,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   right: 0;
 }
 
-.c2 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -563,7 +662,53 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   align-items: center;
 }
 
-.c4 {
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  width: 64px;
+  font-size: 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.c7 {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 16px 0;
+  background: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  -webkit-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.c5 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -584,17 +729,17 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   border: none;
 }
 
-.c4:hover,
-.c4:active {
+.c5:hover,
+.c5:active {
   color: #21247F;
 }
 
-.c4:hover svg path,
-.c4:active svg path {
+.c5:hover svg path,
+.c5:active svg path {
   fill: #21247F;
 }
 
-.c5:hover {
+.c6:hover {
   color: #FFFFFF;
 }
 
@@ -616,7 +761,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c5 {
+  .c6 {
     margin-left: 8px;
     -webkit-text-decoration: none;
     text-decoration: none;
@@ -647,22 +792,22 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
   }
 
-  .c5:hover:not(:disabled) {
+  .c6:hover:not(:disabled) {
     background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
   }
 
-  .c5:focus:not(:active) {
+  .c6:focus:not(:active) {
     border: 1px solid #FFFFFF;
     box-shadow: 0 0 4px #3B46C4;
   }
 
-  .c5:disabled {
+  .c6:disabled {
     cursor: not-allowed;
     background: #F7F7F7;
     color: #818F9B;
   }
 
-  .c5:active:not(:disabled) {
+  .c6:active:not(:disabled) {
     border: 1px solid transparent;
     box-shadow: unset;
     opacity: 0.8;
@@ -684,7 +829,25 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
       >
         <span
           class="c2"
-        />
+          data-testid="hamburger-icon"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+            color="#FFFFFF"
+            data-icon="bars"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
         <div
           class="c3"
         >
@@ -714,10 +877,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
           />
         </div>
         <span
-          class="c2"
+          class="c4"
         >
           <a
-            class="c4 c5"
+            class="c5 c6"
             color="#3B46C4"
             href="https://home.zopa.com/"
           >
@@ -739,6 +902,11 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             </svg>
           </a>
         </span>
+        <aside
+          class="c7"
+        >
+          Content
+        </aside>
       </nav>
     </div>
   </div>

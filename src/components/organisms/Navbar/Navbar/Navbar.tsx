@@ -160,7 +160,7 @@ const SmallDeviceNavbar: React.FC<NavbarProps> = ({ children, overlayLogoWith, w
   return (
     <>
       {children ? (
-        <HamburgerContainer open={open} onClick={() => setOpen(!open)}>
+        <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
           <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
         </HamburgerContainer>
       ) : (
