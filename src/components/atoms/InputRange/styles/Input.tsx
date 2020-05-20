@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../../../constants/colors';
 import grid from '../../../../constants/grid';
 import arrowsAltH from '../../../../content/images/arrows-alt-h.svg';
-import { IInputRange } from '../InputRange';
+import { InputRange } from '../InputRange';
 
 const trackHeight = 8;
 const thumbDiameter = 50;
@@ -39,7 +39,7 @@ const ThumbStylesFocus = css`
 `;
 
 export const Input = styled.input<
-  Omit<IInputRange, 'onChange'> & { trackPosition: number; onChange: (e: ChangeEvent<HTMLInputElement>) => void }
+  Omit<InputRange, 'onChange'> & { trackPosition: number; onChange: (e: ChangeEvent<HTMLInputElement>) => void }
 >`
   -webkit-appearance: none;
   width: 100%;

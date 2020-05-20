@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { IInput } from '../../types';
+import { InputProps } from '../../types';
 
-const Input = styled.input<IInput>`
+const Input = styled.input<InputProps>`
   border: 2px solid ${getBorderColorByStatus};
   border-radius: 4px;
   padding: 0 10px;
@@ -32,7 +32,7 @@ const Input = styled.input<IInput>`
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, IInput>((props, ref) => {
+const InputText = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   return <Input {...props} ref={ref} />;
 });
 

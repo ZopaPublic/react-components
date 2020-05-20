@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link, { ILinkProps } from '../../../atoms/Link/Link';
+import Link, { LinkProps } from '../../../atoms/Link/Link';
 import { Icon } from './Icon';
 import { spacing } from '../../../../constants/spacing';
 
-interface ISocialLink extends ILinkProps {
+interface SocialLink extends LinkProps {
   variant: string;
 }
 
-const SLink = styled(Link)`
+const LinkWrapper = styled(Link)`
   margin: 0 ${spacing[2]};
 `;
 
-export const SocialLink = ({ variant, ...otherProps }: ISocialLink) => (
-  <SLink {...otherProps}>
+export const SocialLink = ({ variant, ...otherProps }: SocialLink) => (
+  <LinkWrapper {...otherProps}>
     <Icon variant={variant} />
-  </SLink>
+  </LinkWrapper>
 );

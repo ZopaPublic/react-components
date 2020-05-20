@@ -1,16 +1,16 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, TColors } from '../../../constants/colors';
+import { colors, Colors } from '../../../constants/colors';
 import grid from '../../../constants/grid';
 
-type THeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
-export interface IStyledHeadingProps {
+export interface StyledHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    */
-  as: THeadingTags;
+  as: HeadingTags;
   /**
    * Override the default size assigned to the rendered HTML tag.
    * @default `as`
@@ -20,7 +20,7 @@ export interface IStyledHeadingProps {
    * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
    * @default `colors.greyDarkest`
    */
-  color?: TColors['white'] | TColors['grey'] | TColors['greyDarkest'];
+  color?: Colors['white'] | Colors['grey'] | Colors['greyDarkest'];
   /**
    * Where the rendered text should be aligned to.
    * @default 'inherit'
@@ -52,7 +52,7 @@ const letterSpacingMap = {
   h6: '-0.01px',
 };
 
-const Heading = styled.h1<IStyledHeadingProps>`
+const Heading = styled.h1<StyledHeadingProps>`
   ${({ as, size }) => {
     const tag = size || (as === 'span' ? 'h4' : as);
     return css`
@@ -83,6 +83,6 @@ const Heading = styled.h1<IStyledHeadingProps>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistHeading: FC<IStyledHeadingProps> = props => <Heading {...props} />;
+export const StyleguidistHeading: FC<StyledHeadingProps> = props => <Heading {...props} />;
 
 export default Heading;

@@ -7,20 +7,20 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { colors } from '../../../constants/colors';
-import { IField, IInput } from '../../types';
+import { FieldProps, InputProps } from '../../types';
 
-export interface ITextFieldProps extends IField, IInput {
+export interface TextFieldProps extends FieldProps, InputProps {
   prefix?: string;
 }
 
-export interface IPrefixProps {
+export interface PrefixProps {
   prefix: string;
 }
 
-export interface ILabelProps {
+export interface LabelProps {
   withHelpText?: boolean;
 }
-const Label = styled(InputLabel)<ILabelProps>`
+const Label = styled(InputLabel)<LabelProps>`
   ${({ withHelpText }) => withHelpText && `margin-bottom: 0;`}
 `;
 
@@ -35,12 +35,12 @@ const HelpText = styled(Text).attrs({
   display: block;
 `;
 
-const Prefix = styled.span<IPrefixProps>`
+const Prefix = styled.span<PrefixProps>`
   position: relative;
   display: block;
   
   &::before {
-    content: '${({ prefix }: IPrefixProps) => prefix}';
+    content: '${({ prefix }: PrefixProps) => prefix}';
     position: absolute;
     left: 10px;
     top: 0;
@@ -56,7 +56,7 @@ const Prefix = styled.span<IPrefixProps>`
   }
 `;
 
-const TextField = forwardRef<HTMLInputElement, ITextFieldProps>(
+const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ label, errorMessage, isValid, name, inputSize, helpText, prefix, ...rest }, ref) => {
     if (!name) {
       throw Error('Name must be set in inputProps. Check the docs.');

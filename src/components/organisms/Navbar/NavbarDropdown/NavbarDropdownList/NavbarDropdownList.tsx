@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../../../constants/colors';
 
-export type TAlignedTo = 'left' | 'right';
+export type AlignedTo = 'left' | 'right';
 
-export interface INavbarDropdownListProps extends React.HTMLAttributes<HTMLUListElement> {
+export interface NavbarDropdownListProps extends React.HTMLAttributes<HTMLUListElement> {
   /**
    * Determines whether it's aligned to left or right
    */
-  alignedTo: TAlignedTo;
+  alignedTo: AlignedTo;
 }
 
-const NavbarDropdownList = styled.ul<INavbarDropdownListProps>`
+const NavbarDropdownList = styled.ul<NavbarDropdownListProps>`
   position: relative;
   list-style-type: none;
   margin: 0;
