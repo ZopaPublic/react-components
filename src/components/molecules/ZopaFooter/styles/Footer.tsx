@@ -4,7 +4,7 @@ import grid from '../../../../constants/grid';
 import { colors } from '../../../..';
 
 export const Footer = styled.footer`
-  backgroung-color: ${colors.white};
+  background-color: ${colors.white};
   padding-bottom: ${spacing[9]};
   padding-top: ${spacing[10]};
 
