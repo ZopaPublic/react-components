@@ -8,7 +8,7 @@ By default [`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksLis
 
 - Default theme
 
-```ts
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
