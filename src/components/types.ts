@@ -4,9 +4,9 @@ import { InputHTMLAttributes } from 'react';
  * GLOBAL TYPES ACROSS COMPONENTS
  */
 
-export type TContainerSizes = 'short' | 'medium' | 'long' | 'fullLength';
+export type ContainerSizes = 'short' | 'medium' | 'long' | 'fullLength';
 
-export interface IInputStatus {
+export interface InputStatus {
   /**
    * If set to true the border color would be green unless there's an error.
    */
@@ -18,21 +18,21 @@ export interface IInputStatus {
   hasError?: boolean;
 }
 
-export interface IInput extends IInputStatus, InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputElement> {
   /**
-   * Attribute used for testing porpuses
+   * Attribute used for testing purposes
    */
   'data-automation'?: string;
 }
 
-export interface ISelect extends IInputStatus, InputHTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
   /**
-   * Attribute used for testing porpuses
+   * Attribute used for testing purposes
    */
   'data-automation'?: string;
 }
 
-export interface IField {
+export interface FieldProps {
   /**
    * The text to be shown on the label. If this is not set it doesn't render the label.
    */
@@ -52,5 +52,5 @@ export interface IField {
   /**
    * Input size
    */
-  inputSize?: TContainerSizes;
+  inputSize?: ContainerSizes;
 }

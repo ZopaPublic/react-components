@@ -9,22 +9,22 @@ const RadioWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface IRadioGroupFieldItem {
+interface RadioGroupFieldItem {
   value: string;
   label: string;
   defaultChecked?: boolean;
   disabled?: boolean;
 }
 
-export interface IRadioGroupFieldProps {
+export interface RadioGroupFieldProps {
   label: string;
-  items: IRadioGroupFieldItem[];
+  items: RadioGroupFieldItem[];
   onChange: (value: string) => void;
   disabled?: boolean;
   value?: string;
 }
 
-const RadioGroupField = ({ items, label, onChange, value, disabled }: IRadioGroupFieldProps) => {
+const RadioGroupField = ({ items, label, onChange, value, disabled }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
   const [innerValue, setInnerValue] = useState(defaultValue);

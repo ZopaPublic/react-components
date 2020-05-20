@@ -5,7 +5,7 @@ import { getBorderColorByStatus } from '../../../helpers/utils';
 import { typography } from '../../../constants/typography';
 import chevronDown from '../../../content/images/chevron-down.svg';
 
-export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
    * Border gets red if this is set to true.
    */
@@ -18,7 +18,7 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export const Option = styled.option``;
 
-const StyledDropdown = styled.select<IDropdownProps>`
+const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
   min-width: 100px;
   user-select: none;
@@ -48,6 +48,6 @@ const StyledDropdown = styled.select<IDropdownProps>`
   }
 `;
 
-const Dropdown = forwardRef<HTMLSelectElement, IDropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
+const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
 
 export default Dropdown;

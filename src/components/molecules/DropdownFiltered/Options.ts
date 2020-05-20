@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { colors } from '../../../constants/colors';
 
-export interface IOptionsListProps {
+export interface OptionsListProps {
   optionsListMaxHeight?: string;
 }
 
-const Options = styled.div<IOptionsListProps>`
+const Options = styled.div<OptionsListProps>`
   z-index: 1;
   width: 100%;
   background: ${colors.white};

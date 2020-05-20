@@ -5,8 +5,8 @@
 # Index
 
 - [Overview](#overview)
-  - [What has changed](#what-has-changed)
-  - [What we added](#new-additions)
+  - [What has changed?](#what-has-changed)
+  - [What we added?](#new-additions)
 
 # Overview 🔭
 
@@ -192,9 +192,13 @@ Also, a new `controls` prop has been added to hide/show `+` and `-` buttons on t
 
 All the existing icons have been removed in favor of font awesome icons.
 We've added an `<Icon />` component which is a thin wrapper around `<FontAwesomeIcon />`.
-`<ZopaIcon />` has been replaced with `<Logo />` component
+`<ZopaIcon />` has been replaced with `<Logo />` component.
 
-## New additions
+### Naming conventions
+
+All the types are interfaces no longer have the prefix `I` or `T` and this is enforced in eslint.
+
+## What we added?
 
 ### 📐 `Spacing`
 

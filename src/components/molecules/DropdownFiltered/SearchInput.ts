@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import InputText from '../../atoms/InputText/InputText';
-import { IInput } from '../../types';
+import { InputProps } from '../../types';
 
-export interface ISearchInputProps {
+export interface SearchInputProps {
   isOpen?: boolean;
 }
 
-export const SearchInput = styled(InputText)<ISearchInputProps & IInput>`
+export const SearchInput = styled(InputText)<SearchInputProps & InputProps>`
   margin: 0;
   padding-left: 16px;
   padding-right: 32px;

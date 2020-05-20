@@ -1,8 +1,6 @@
-interface ISpacing {
-  [key: string]: string;
-}
+type Spacing = Record<string, string>;
 
-export const spacing: ISpacing = {
+export const spacing: Spacing = {
   '0': '0',
   '1': '4px',
   '2': '8px',

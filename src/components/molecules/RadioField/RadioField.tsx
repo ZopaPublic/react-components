@@ -5,7 +5,7 @@ import { getBorderColorByStatus } from '../../../helpers/utils';
 import { typography } from '../../../constants/typography';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { IField, IInputStatus, IInput } from '../../types';
+import { FieldProps, InputStatus, InputProps } from '../../types';
 
 const zoomIn = keyframes`
   from {
@@ -25,7 +25,7 @@ const FieldContainer = styled(SizedContainer)`
   }
 `;
 
-const Label = styled(InputLabel)<IInputStatus>`
+const Label = styled(InputLabel)<InputStatus>`
   display: flex;
   align-items: center;
   line-height: 1.4;
@@ -65,7 +65,7 @@ const Label = styled(InputLabel)<IInputStatus>`
   }
 `;
 
-const Input = styled.input<IInputStatus>`
+const Input = styled.input<InputStatus>`
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -102,9 +102,9 @@ const Input = styled.input<IInputStatus>`
   }
 `;
 
-export interface IRadioField extends IField, IInput {}
+export interface RadioField extends FieldProps, InputProps {}
 
-const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: IRadioField) => {
+const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: RadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
 
   return (

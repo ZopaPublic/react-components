@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 
-export interface ILinkProps
+export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
   target?: '_blank';
@@ -12,7 +12,7 @@ export interface ILinkProps
   showTargetIcon?: boolean;
 }
 
-export const linkStyle = css<ILinkProps>`
+export const linkStyle = css<LinkProps>`
   background-color: transparent;
   font-size: inherit;
   font-family: ${typography.primary};
@@ -36,11 +36,11 @@ export const linkStyle = css<ILinkProps>`
   }
 `;
 
-const SLink = styled.a<ILinkProps>`
+const StyledLink = styled.a<LinkProps>`
   ${linkStyle}
 `;
 
-const STargetIcon = styled.svg`
+const TargetIconWrapper = styled.svg`
   margin-left: 6px;
   top: 2px;
   position: relative;
@@ -48,22 +48,22 @@ const STargetIcon = styled.svg`
 
 const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
-    <STargetIcon xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+    <TargetIconWrapper xmlns="http://www.w3.org/2000/svg" width="15" height="15">
       <g fill={props.color || colors.actionPlain}>
         <path d="M2.6 4H0v11h11v-2.6H2.6z" />
         <path d="M4 0v11h11V0H4zm9.7 1.3v8.4L5.2 1.3h8.5z" />
       </g>
-    </STargetIcon>
+    </TargetIconWrapper>
   );
 };
 
-const Link = React.forwardRef<HTMLAnchorElement, ILinkProps>(
+const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ children, color = colors.actionPlain, target, showTargetIcon = true, ...rest }, ref) => {
     return (
-      <SLink ref={ref} color={color} target={target} {...rest}>
+      <StyledLink ref={ref} color={color} target={target} {...rest}>
         {children}
         {target === '_blank' && showTargetIcon && <TargetIcon color={color} />}
-      </SLink>
+      </StyledLink>
     );
   },
 );

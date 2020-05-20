@@ -12,11 +12,11 @@ import linkedin from '../../../content/images/social/linkedin.svg';
 import Logo from '../../atoms/Logo/Logo';
 import Link from '../../atoms/Link/Link';
 
-export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
+export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
 }
 
-const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
+const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) => (
   <Footer {...rest}>
     <FlexContainer gutter={16}>
       <FlexRow className="mb-6">

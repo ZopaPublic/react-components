@@ -8,9 +8,9 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { IField, IInput } from '../../types';
+import { FieldProps, InputProps } from '../../types';
 
-export interface ICheckboxFieldProps extends IField, IInput {
+export interface CheckboxFieldProps extends FieldProps, InputProps {
   name: string;
 }
 
@@ -23,7 +23,7 @@ const zoomOut = keyframes`
   }
 `;
 
-const Input = styled.input<IInput>`
+const Input = styled.input<InputProps>`
   left: -100%;
   opacity: 0;
   z-index: -1;
@@ -111,7 +111,7 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const CheckboxField = (props: ICheckboxFieldProps) => {
+const CheckboxField = (props: CheckboxFieldProps) => {
   const { label, errorMessage, className, inputSize, name, ...rest } = props;
 
   return (

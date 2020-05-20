@@ -2,7 +2,7 @@ import { useRef, useState, KeyboardEvent, RefObject } from 'react';
 import { isArrowDown, isArrowUp } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
 
-export interface IAccordionHeaderProps {
+export interface AccordionHeaderProps {
   'aria-controls': string;
   'aria-disabled': boolean;
   'aria-expanded': boolean;
@@ -14,29 +14,29 @@ export interface IAccordionHeaderProps {
   ref: (node: HTMLButtonElement) => void;
 }
 
-export type TGetAccordionHeaderProps = (id: string, index: number) => IAccordionHeaderProps;
+export type GetAccordionHeaderProps = (id: string, index: number) => AccordionHeaderProps;
 
-interface IAccordionSectionStyles {
+interface AccordionSectionStyles {
   overflow: string;
   transition: string;
   height: string;
 }
 
-export interface IAccordionSectionProps {
+export interface AccordionSectionProps {
   'aria-hidden': boolean;
   'aria-labelledby': string;
   id: string;
   key: string;
   ref: (node: HTMLDivElement) => void;
   role: string;
-  style: IAccordionSectionStyles;
+  style: AccordionSectionStyles;
 }
 
-export type TGetAccordionSectionProps = (id: string, index: number) => IAccordionSectionProps;
+export type GetAccordionSectionProps = (id: string, index: number) => AccordionSectionProps;
 
-export type TIsActiveAccordionSection = (index: number) => boolean;
+export type IsActiveAccordionSection = (index: number) => boolean;
 
-type TActiveSections = number[];
+type ActiveSections = number[];
 
 export const useAccordion = () => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
@@ -59,8 +59,8 @@ export const useAccordion = () => {
     }
   };
 
-  const [activeSections, updateActiveSections] = useState<TActiveSections>([]);
-  const isActiveSection: TIsActiveAccordionSection = index => activeSections.includes(index);
+  const [activeSections, updateActiveSections] = useState<ActiveSections>([]);
+  const isActiveSection: IsActiveAccordionSection = index => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
     const sectionRef = sectionsRefs[index];
@@ -113,7 +113,7 @@ export const useAccordion = () => {
     }
   };
 
-  const getHeaderProps: TGetAccordionHeaderProps = (id, index) => ({
+  const getHeaderProps: GetAccordionHeaderProps = (id, index) => ({
     'aria-controls': getLinkingId(id),
     'aria-disabled': isActiveSection(index),
     'aria-expanded': isActiveSection(index),
@@ -125,7 +125,7 @@ export const useAccordion = () => {
     ref: getHeaderRef(index),
   });
 
-  const getSectionProps: TGetAccordionSectionProps = (id, index) => ({
+  const getSectionProps: GetAccordionSectionProps = (id, index) => ({
     'aria-hidden': !isActiveSection(index),
     'aria-labelledby': id,
     id: getLinkingId(id),
