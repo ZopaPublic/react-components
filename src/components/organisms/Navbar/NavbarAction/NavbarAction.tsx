@@ -15,7 +15,11 @@ export interface NavbarAction {
   /**
    * CTA text
    */
-  ctaText?: string;
+  ctaText: string;
+  /**
+   * CTA Url
+   */
+  ctaURL: string;
 }
 
 const ButtonLink = styled(Link)`
@@ -29,11 +33,11 @@ const ButtonLink = styled(Link)`
   }
 `;
 
-const NavbarAction: React.FC<NavbarAction> = ({ ctaText = 'Sign-in' }) => {
+const NavbarAction: React.FC<NavbarAction> = ({ ctaText = 'Sign-in', ctaURL = 'https://home.zopa.com/' }) => {
   const { width } = useViewport();
 
   return (
-    <ButtonLink href="https://home.zopa.com/">
+    <ButtonLink href={ctaURL}>
       {width && width >= breakpoints.desktop ? ctaText : <Icon variant={faUser} color={colors.white} fixedWidth />}
     </ButtonLink>
   );

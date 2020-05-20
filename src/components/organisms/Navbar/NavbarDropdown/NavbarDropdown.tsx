@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
+import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 
 import Navbar from '../';
@@ -21,24 +22,26 @@ export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDi
 }
 
 const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
-  ${({ open }) => css`
+  ${minMedia.desktop`
     position: absolute;
     left: 50%;
     top: 50px;
-
-    ${open
-      ? css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-          opacity: 1;
-          visibility: visible;
-          transform: translate(-50%, 0%);
-        `
-      : css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-          opacity: 0;
-          visibility: hidden;
-          transform: translate(-50%, -10%);
-        `}}
+    
+    ${({ open }: NavbarDropdownListContainer) => css`
+      ${open
+        ? css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0%);
+          `
+        : css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, -10%);
+          `}}
+    `}
   `}
 `;
 

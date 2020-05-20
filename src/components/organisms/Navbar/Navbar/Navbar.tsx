@@ -102,7 +102,9 @@ export const LogoContainer = styled.div`
 
 const NavbarLinksListContainer = styled.div`
   ${minMedia.desktop`
-    margin-right: ${spacing[10]};
+    ${css`
+      margin-right: ${spacing[10]};
+    `}
   `}
 `;
 
@@ -176,7 +178,7 @@ const SmallDeviceNavbar: React.FC<NavbarProps> = ({ children, overlayLogoWith, w
 
 const NavbarWrapper: React.FC<NavbarProps> = ({
   children,
-  overlayLogoWith = <a href={process.env.REACT_APP_ZOPA_LOGO_LINK || 'https://www.zopa.com'} />,
+  overlayLogoWith = <a href="https://www.zopa.com" />,
   withCTA = true,
   cta = <Navbar.Action />,
 }) => {
