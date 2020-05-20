@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import { breakpoints } from '../../../../constants/breakpoints';
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
@@ -22,26 +21,25 @@ export interface INavbarDropdownListContainer extends React.HTMLAttributes<HTMLD
 }
 
 const NavbarDropdownListContainer = styled.div<INavbarDropdownListContainer>`
-  @media (min-width: ${breakpoints.desktop}px) {
+  ${({ open }) => css`
     position: absolute;
     left: 50%;
     top: 50px;
 
-    ${({ open }) =>
-      open
-        ? css`
-            transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-            opacity: 1;
-            visibility: visible;
-            transform: translate(-50%, 0%);
-          `
-        : css`
-            transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-            opacity: 0;
-            visibility: hidden;
-            transform: translate(-50%, -10%);
-          `}
-  }
+    ${open
+      ? css`
+          transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+          opacity: 1;
+          visibility: visible;
+          transform: translate(-50%, 0%);
+        `
+      : css`
+          transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+          opacity: 0;
+          visibility: hidden;
+          transform: translate(-50%, -10%);
+        `}}
+  `}
 `;
 
 export interface IOpenerProps {

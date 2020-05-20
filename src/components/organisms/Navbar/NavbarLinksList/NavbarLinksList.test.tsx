@@ -79,34 +79,8 @@ describe('<Navbar.LinksList />', () => {
     ];
 
     render(<Navbar.LinksList links={NAV_ITEMS} />);
-    const dropdown = screen.getByRole('menu');
-    expect(dropdown).toBeInTheDocument();
-  });
-
-  it('should render a dropdown when links contain children', () => {
-    const NAV_ITEMS = [
-      {
-        label: 'About',
-        href: '/about',
-        qadata: 'About.topBar.Menu',
-        children: [
-          {
-            label: 'About Zopa',
-            href: '/about',
-            qadata: 'About.About.topBar.Menu',
-          },
-          {
-            label: 'Our story',
-            href: '/about/our-story',
-            qadata: 'Story.About.topBar.Menu',
-          },
-        ],
-      },
-    ];
-
-    render(<Navbar.LinksList links={NAV_ITEMS} />);
-    const dropdown = screen.getByRole('menu');
-    expect(dropdown).toBeInTheDocument();
+    const dropdownItem = screen.getByText('About Zopa');
+    expect(dropdownItem).toHaveAttribute('role', 'menuitem');
   });
 
   it('should render a navlink when links contain children', () => {

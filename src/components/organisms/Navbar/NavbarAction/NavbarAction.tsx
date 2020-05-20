@@ -4,6 +4,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { colors } from '../../../../constants/colors';
 import { breakpoints } from '../../../../constants/breakpoints';
+import { minMedia } from '../../../../helpers/responsiveness';
 
 import Link from '../../../atoms/Link/Link';
 import { buttonStyle } from '../../../atoms/Button/Button';
@@ -18,10 +19,11 @@ export interface INavbarAction {
 }
 
 const ButtonLink = styled(Link)`
-  @media (min-width: ${breakpoints.desktop}px) {
+  ${minMedia.desktop`
     ${buttonStyle}
     margin-left: 8px;
-  }
+  `}
+
   &:hover {
     color: ${colors.white};
   }

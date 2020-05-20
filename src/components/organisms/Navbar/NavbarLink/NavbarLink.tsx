@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { colors } from '../../../../constants/colors';
-import { breakpoints } from '../../../../constants/breakpoints';
 import { spacing } from '../../../../constants/spacing';
 import { typography } from '../../../../constants/typography';
+import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
 
 import Link, { ILinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
@@ -40,21 +40,21 @@ const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
 
-  ${({ withChevron }) =>
-    withChevron &&
-    css`
-      @media (max-width: ${breakpoints.desktop}px) {
+  ${maxMedia.desktop`
+    ${({ withChevron }: IStyledNavbarLinkProps) =>
+      withChevron &&
+      css`
         color: ${colors.greyDarkest};
         font-size: ${typography.sizes.text.small};
         font-weight: ${typography.weights.bold};
         text-transform: uppercase;
-      }
-    `}
+      `}
+  `}
 
-  ${({ isDropdownLink }) =>
-    isDropdownLink &&
-    css`
-      @media (min-width: ${breakpoints.desktop}px) {
+  ${minMedia.desktop`
+    ${({ isDropdownLink }: IStyledNavbarLinkProps) =>
+      isDropdownLink &&
+      css`
         padding: ${spacing[3]};
         border-radius: 8px;
         width: 100%;
@@ -62,8 +62,8 @@ const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
         &:hover {
           background-color: ${colors.actionLight};
         }
-      }
-    `}
+      `}
+  `}
 `;
 
 const LinkContainer = styled.span`
@@ -73,14 +73,15 @@ const LinkContainer = styled.span`
 
 const ChevronContainer = styled.span<IChevronContainerProps>`
   display: none;
-  @media (min-width: ${breakpoints.desktop}px) {
+
+  ${minMedia.desktop`
     display: inline-flex;
     align-items: center;
     font-size: 12px;
 
     transition: transform 0.3s;
-    transform: rotate(${({ open }) => (open ? 180 : 0)}deg);
-  }
+    ${({ open }: IChevronContainerProps) => (open ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)')}
+  `}
 `;
 
 const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(

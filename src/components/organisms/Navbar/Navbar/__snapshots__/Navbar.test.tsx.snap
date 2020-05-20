@@ -186,6 +186,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 @media (min-width:1280px) {
   .c6 {
+    margin-left: 8px;
     -webkit-text-decoration: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -213,7 +214,6 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     outline: 0;
     background-color: #3B46C4;
     background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
-    margin-left: 8px;
   }
 
   .c6:hover:not(:disabled) {
@@ -476,6 +476,7 @@ exports[`<Navbar /> should render component with default props 1`] = `
 
 @media (min-width:1280px) {
   .c5 {
+    margin-left: 8px;
     -webkit-text-decoration: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -503,7 +504,6 @@ exports[`<Navbar /> should render component with default props 1`] = `
     outline: 0;
     background-color: #3B46C4;
     background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
-    margin-left: 8px;
   }
 
   .c5:hover:not(:disabled) {
