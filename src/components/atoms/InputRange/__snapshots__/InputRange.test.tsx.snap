@@ -70,6 +70,55 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: 0;
 }
 
+.c1::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  height: 8px;
+  background: #EFEFEF;
+  box-sizing: content-box;
+  border: 0px solid transparent;
+  width: 100%;
+  cursor: pointer;
+  -webkit-animate: 0.2s;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+
+.c1::-ms-fill-lower {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  height: 8px;
+  background: #EFEFEF;
+  box-sizing: content-box;
+  border: 0px solid transparent;
+  background: #3B46C4;
+}
+
+.c1::-ms-fill-upper {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  height: 8px;
+  background: #EFEFEF;
+  box-sizing: content-box;
+  border: 0px solid transparent;
+}
+
+.c1::-ms-thumb {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #3B46C4;
+  box-sizing: content-box;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -105,6 +154,23 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
 
 @media (min-width:768px) {
   .c1::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+    background: url(arrows-alt-h.svg) no-repeat #3B46C4;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none) {
+  .c1 {
+    height: auto !important;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1::-ms-thumb {
     width: 50px;
     height: 50px;
     background: url(arrows-alt-h.svg) no-repeat #3B46C4;

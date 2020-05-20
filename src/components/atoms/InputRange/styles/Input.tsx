@@ -98,7 +98,44 @@ export const Input = styled.input<
     outline: none;
   }
 
-  ::-moz-focus-outer {
+  &::-moz-focus-outer {
     border: 0;
+  }
+  
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Durty Rotten IE11 fix  */
+    height: auto !important;
+    margin-top: 12px;
+  }
+  
+  &::-ms-track {
+    ${TrackStyles}
+    box-sizing: content-box;
+    border: 0px solid transparent;
+    width: 100%;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 39px 0;
+    color: transparent;
+  }
+  
+  &::-ms-fill-lower {
+    ${TrackStyles}
+    box-sizing: content-box;
+    border: 0px solid transparent;
+    background: ${colors.actionPlain};
+  }
+  
+  &::-ms-fill-upper {
+    ${TrackStyles}
+    box-sizing: content-box;
+    border: 0px solid transparent;
+  }
+  
+  &::-ms-thumb {
+    ${ThumbStyles}
+    box-sizing: content-box;
   }
 `;
