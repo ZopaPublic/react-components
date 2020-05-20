@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Headroom from 'react-headroom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { colors } from '../../../../constants/colors';
 import { breakpoints } from '../../../../constants/breakpoints';
+import { minMedia } from '../../../../helpers/responsiveness';
 import { spacing } from '../../../../constants/spacing';
 import { navbarHeight, mobileNavbarHeight } from '../../../../constants/components';
 import { useViewport } from '../../../../hooks/useViewport';
@@ -42,10 +43,12 @@ const PageNavigation = styled.header`
     background-color: ${colors.brand};
     height: ${mobileNavbarHeight}px;
 
-    @media (min-width: ${breakpoints.desktop}px) {
-      background-color: ${colors.white};
-      height: ${navbarHeight}px;
-    }
+    ${minMedia.desktop`
+      ${css`
+        background-color: ${colors.white};
+        height: ${navbarHeight}px;
+      `}
+    `}
   }
   .headroom--unfixed {
     position: relative;
@@ -75,13 +78,15 @@ const LayoutInner = styled.nav`
 export const LogoContainer = styled.div`
   position: relative;
 
-  @media (min-width: ${breakpoints.desktop}px) {
-    width: 490px;
-    height: ${navbarHeight}px;
-    background-image: ${`url(${navCurve})`};
-    background-repeat: no-repeat;
-    padding-left: ${spacing[10]};
-  }
+  ${minMedia.desktop`
+    ${css`
+      width: 490px;
+      height: ${navbarHeight}px;
+      background-image: ${`url(${navCurve})`};
+      background-repeat: no-repeat;
+      padding-left: ${spacing[10]};
+    `}
+  `}
 
   & > a,
   & > button,
@@ -95,9 +100,9 @@ export const LogoContainer = styled.div`
 `;
 
 const NavbarLinksListContainer = styled.div`
-  @media (min-width: ${breakpoints.desktop}px) {
+  ${minMedia.desktop`
     margin-right: ${spacing[10]};
-  }
+  `}
 `;
 
 const IconContainer = styled.span`
