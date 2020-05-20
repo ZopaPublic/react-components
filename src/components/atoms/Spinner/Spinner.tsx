@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import { colors } from '../../../constants/colors';
 
-export interface ISpinnerProps {
+export interface SpinnerProps {
   /**
    * Size of the spinner
    * @default 'standard'
@@ -24,7 +24,7 @@ const spin = keyframes`
   }
 `;
 
-const StyledSpinner = styled.div<ISpinnerProps>`
+const StyledSpinner = styled.div<SpinnerProps>`
   ${({ size = 'standard', negative = false }) => css`
     width: ${size === 'small' ? 20 : 40}px;
     height: ${size === 'small' ? 20 : 40}px;
@@ -35,6 +35,6 @@ const StyledSpinner = styled.div<ISpinnerProps>`
   animation: ${spin} 1.2s linear infinite;
 `;
 
-const Spinner: React.FC<ISpinnerProps> = props => <StyledSpinner {...props} />;
+const Spinner: React.FC<SpinnerProps> = props => <StyledSpinner {...props} />;
 
 export default Spinner;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import grid from '../../../../constants/grid';
-import { IButtonProps, buttonStyle } from '../../Button/Button';
+import { ButtonProps, buttonStyle } from '../../Button/Button';
 
 const ButtonWrapper = styled.div`
   padding: 12px;
@@ -10,7 +10,7 @@ const ButtonWrapper = styled.div`
   }
 `;
 
-const SButton = styled.button`
+const StyledButton = styled.button`
   ${buttonStyle};
   display: flex;
   justify-content: center;
@@ -26,10 +26,10 @@ const SButton = styled.button`
   }
 `;
 
-export const Button = (props: IButtonProps) => {
+export const Button = (props: ButtonProps) => {
   return (
     <ButtonWrapper>
-      <SButton {...props} />
+      <StyledButton {...props} />
     </ButtonWrapper>
   );
 };

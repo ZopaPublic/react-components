@@ -13,7 +13,8 @@ import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
 import Icon from '../../../atoms/Icon/Icon';
 import Navbar from '../';
-export interface INavbarProps {
+
+export interface NavbarProps {
   /**
    * allows you to overlay the logo with a button or link
    */
@@ -28,9 +29,9 @@ export interface INavbarProps {
   cta?: React.ReactNode;
 }
 
-export type ILargeDeviceNavbar = Pick<INavbarProps, 'overlayLogoWith'>;
+export type LargeDeviceNavbar = Pick<NavbarProps, 'overlayLogoWith'>;
 
-export interface IHamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
+export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
   open: boolean;
 }
 
@@ -114,11 +115,11 @@ const IconContainer = styled.span`
   align-items: center;
 `;
 
-const HamburgerContainer = styled(IconContainer)<IHamburgerContainerProps>`
+const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background-color: ${({ open }) => (open ? colors.white : 'transparent')};
 `;
 
-const HamburgerMenu = styled.aside<IHamburgerContainerProps>`
+const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   position: absolute;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -139,7 +140,7 @@ const HamburgerMenu = styled.aside<IHamburgerContainerProps>`
   overflow-y: auto;
 `;
 
-const LargeDeviceNavbar: React.FC<ILargeDeviceNavbar> = ({ children, overlayLogoWith }) => {
+const LargeDeviceNavbar: React.FC<LargeDeviceNavbar> = ({ children, overlayLogoWith }) => {
   return (
     <>
       <LogoContainer>
@@ -151,7 +152,7 @@ const LargeDeviceNavbar: React.FC<ILargeDeviceNavbar> = ({ children, overlayLogo
   );
 };
 
-const SmallDeviceNavbar: React.FC<INavbarProps> = ({ children, overlayLogoWith, withCTA, cta }) => {
+const SmallDeviceNavbar: React.FC<NavbarProps> = ({ children, overlayLogoWith, withCTA, cta }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
@@ -173,7 +174,7 @@ const SmallDeviceNavbar: React.FC<INavbarProps> = ({ children, overlayLogoWith, 
   );
 };
 
-const NavbarWrapper: React.FC<INavbarProps> = ({
+const NavbarWrapper: React.FC<NavbarProps> = ({
   children,
   overlayLogoWith = <a href={process.env.REACT_APP_ZOPA_LOGO_LINK || 'https://www.zopa.com'} />,
   withCTA = true,

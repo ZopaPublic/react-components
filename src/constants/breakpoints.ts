@@ -4,4 +4,4 @@ export const breakpoints = {
   tablet: 720,
 } as const;
 
-export type TDeviceSizes = keyof typeof breakpoints;
+export type DeviceSizes = keyof typeof breakpoints;

@@ -7,28 +7,28 @@ import { spacing } from '../../../../constants/spacing';
 import { typography } from '../../../../constants/typography';
 import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
 
-import Link, { ILinkProps } from '../../../atoms/Link/Link';
+import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
 
-export interface INavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface NavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   active?: boolean;
   withChevron?: boolean;
   isDropdownLink?: boolean;
   open?: boolean;
-  target?: ILinkProps['target'];
+  target?: LinkProps['target'];
 }
 
-export interface IStyledNavbarLinkProps extends ILinkProps {
+export interface StyledNavbarLinkProps extends LinkProps {
   active: boolean;
   withChevron: boolean;
   isDropdownLink: boolean;
 }
 
-export interface IChevronContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
+export interface ChevronContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
   open: boolean;
 }
 
-const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
+const StyledNavbarLink = styled(Link)<StyledNavbarLinkProps>`
   align-items: center;
   text-decoration: none;
 
@@ -41,7 +41,7 @@ const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
   }
 
   ${maxMedia.desktop`
-    ${({ withChevron }: IStyledNavbarLinkProps) =>
+    ${({ withChevron }: StyledNavbarLinkProps) =>
       withChevron &&
       css`
         color: ${colors.greyDarkest};
@@ -52,7 +52,7 @@ const StyledNavbarLink = styled(Link)<IStyledNavbarLinkProps>`
   `}
 
   ${minMedia.desktop`
-    ${({ isDropdownLink }: IStyledNavbarLinkProps) =>
+    ${({ isDropdownLink }: StyledNavbarLinkProps) =>
       isDropdownLink &&
       css`
         padding: ${spacing[3]};
@@ -71,7 +71,7 @@ const LinkContainer = styled.span`
   margin-right: ${spacing[2]};
 `;
 
-const ChevronContainer = styled.span<IChevronContainerProps>`
+const ChevronContainer = styled.span<ChevronContainerProps>`
   display: none;
 
   ${minMedia.desktop`
@@ -80,11 +80,11 @@ const ChevronContainer = styled.span<IChevronContainerProps>`
     font-size: 12px;
 
     transition: transform 0.3s;
-    ${({ open }: IChevronContainerProps) => (open ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)')}
+    ${({ open }: ChevronContainerProps) => (open ? 'transform: rotate(180deg)' : 'transform: rotate(0deg)')}
   `}
 `;
 
-const NavbarLink: FC<INavbarLinkProps> = React.forwardRef<HTMLAnchorElement, INavbarLinkProps>(
+const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
   ({ active = false, children, open = false, withChevron = false, isDropdownLink = false, ...rest }, ref) => (
     <StyledNavbarLink active={active} withChevron={withChevron} isDropdownLink={isDropdownLink} ref={ref} {...rest}>
       {withChevron ? <LinkContainer>{children}</LinkContainer> : children}

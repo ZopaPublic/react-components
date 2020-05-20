@@ -1,10 +1,10 @@
-interface ITrackPosition {
+interface TrackPosition {
   min?: number;
   max?: number;
   value: number;
 }
 
-export const calculateTrackPosition = ({ min = 0, max = 100, value }: ITrackPosition) => {
+export const calculateTrackPosition = ({ min = 0, max = 100, value }: TrackPosition) => {
   if (max < min) {
     return 0;
   }

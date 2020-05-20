@@ -1,15 +1,15 @@
 import { css } from 'styled-components';
-import { breakpoints, TDeviceSizes } from '../constants/breakpoints';
+import { breakpoints, DeviceSizes } from '../constants/breakpoints';
 
-type TMedia = Record<TDeviceSizes, ReturnType<typeof interpolate>>;
+type Media = Record<DeviceSizes, ReturnType<typeof interpolate>>;
 
-const maxMedia: TMedia = {
+const maxMedia: Media = {
   phone: interpolate('phone', 'max'),
   tablet: interpolate('tablet', 'max'),
   desktop: interpolate('desktop', 'max'),
 };
 
-const minMedia: TMedia = {
+const minMedia: Media = {
   phone: interpolate('phone', 'min'),
   tablet: interpolate('tablet', 'min'),
   desktop: interpolate('desktop', 'min'),

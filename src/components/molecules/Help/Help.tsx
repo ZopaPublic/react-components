@@ -31,11 +31,11 @@ const OpeningHoursWrapper = styled.div`
   max-width: 350px;
 `;
 
-export interface IHelpProps extends HTMLAttributes<HTMLDivElement> {
+export interface HelpProps extends HTMLAttributes<HTMLDivElement> {
   email: string;
 }
 
-const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
+const Help: React.FC<HelpProps> = ({ email, ...rest }) => (
   <HelpWrap {...rest}>
     <HelpContent>
       <FlexRow gutter={16}>

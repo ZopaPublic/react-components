@@ -1,4 +1,4 @@
 import { createContext } from 'react';
-import { IViewportSize } from './types';
+import { ViewportSize } from './types';
 
-export const ViewportContext = createContext<IViewportSize>({ width: undefined, height: undefined });
+export const ViewportContext = createContext<ViewportSize>({ width: undefined, height: undefined });

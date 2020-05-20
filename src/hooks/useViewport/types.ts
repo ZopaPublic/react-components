@@ -1,4 +1,4 @@
-export interface IViewportSize {
+export interface ViewportSize {
   width: number | undefined;
   height: number | undefined;
 }

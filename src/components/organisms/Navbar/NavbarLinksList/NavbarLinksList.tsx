@@ -1,32 +1,32 @@
 import React from 'react';
 
-import { INavbarLinkProps } from '../NavbarLink/NavbarLink';
+import { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import Navbar from '../';
 
-export interface INavigationItem {
+export interface NavigationItem {
   label: string;
   href?: string;
   qadata?: string;
-  children?: INavigationItem[];
+  children?: NavigationItem[];
 }
 
-export interface INavbarLinksList {
-  links?: INavigationItem[];
-  renderDropdown?: (item: INavigationItem, index: number) => React.ReactNode;
-  renderLink?: (item: INavigationItem, index: number, props?: any) => React.ReactNode;
+export interface NavbarLinksList {
+  links?: NavigationItem[];
+  renderDropdown?: (item: NavigationItem, index: number) => React.ReactNode;
+  renderLink?: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
 }
 
-interface INavbarLinksListLinkProps extends INavbarLinkProps {
+interface NavbarLinksListLinkProps extends NavbarLinkProps {
   'data-automation'?: string;
 }
 
-export interface INavbarLinksListLink {
-  item: INavigationItem;
+export interface NavbarLinksListLink {
+  item: NavigationItem;
   index: number;
-  props: INavbarLinksListLinkProps;
+  props: NavbarLinksListLinkProps;
 }
 
-const NavbarLinksListLink = ({ item: { label, href }, index, props }: INavbarLinksListLink) => {
+const NavbarLinksListLink = ({ item: { label, href }, index, props }: NavbarLinksListLink) => {
   return (
     <Navbar.Link key={`navbar-link-${index}`} href={href} {...props}>
       {label}
@@ -34,12 +34,12 @@ const NavbarLinksListLink = ({ item: { label, href }, index, props }: INavbarLin
   );
 };
 
-const NavbarLinksList: React.FC<INavbarLinksList> = ({
+const NavbarLinksList: React.FC<NavbarLinksList> = ({
   links,
-  renderLink = (item: INavigationItem, index: number, props) => (
+  renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
   ),
-  renderDropdown = (item: INavigationItem, index: number) => (
+  renderDropdown = (item: NavigationItem, index: number) => (
     <Navbar.Dropdown
       id={`navbar-dropdown-${index}`}
       ariaLabel={item.label}
@@ -72,7 +72,7 @@ const NavbarLinksList: React.FC<INavbarLinksList> = ({
   return (
     <>
       {links &&
-        links.map((item: INavigationItem, index: number) => {
+        links.map((item: NavigationItem, index: number) => {
           return !!item.children ? (
             <span key={`dropdown-${index}`}>{renderDropdown(item, index)}</span>
           ) : (

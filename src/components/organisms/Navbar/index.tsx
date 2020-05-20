@@ -1,19 +1,19 @@
 import React, { FC } from 'react';
 
-import Navbar, { INavbarProps } from './Navbar/Navbar';
+import Navbar, { NavbarProps } from './Navbar/Navbar';
 import NavbarDropdown from './NavbarDropdown/NavbarDropdown';
 import NavbarLink from './NavbarLink/NavbarLink';
 import NavbarLinkList from './NavbarLinksList/NavbarLinksList';
 import NavbarAction from './NavbarAction/NavbarAction';
 
-interface INavbarStatic {
+interface NavbarStatic {
   Dropdown: typeof NavbarDropdown;
   Link: typeof NavbarLink;
   LinksList: typeof NavbarLinkList;
   Action: typeof NavbarAction;
 }
 
-const NavbarWrapper: INavbarStatic & FC<INavbarProps> = props => <Navbar {...props} />;
+const NavbarWrapper: NavbarStatic & FC<NavbarProps> = props => <Navbar {...props} />;
 
 NavbarWrapper.Dropdown = NavbarDropdown;
 NavbarWrapper.Link = NavbarLink;

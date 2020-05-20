@@ -2,9 +2,9 @@ import React, { HTMLAttributes } from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
 import { typography } from '../../../constants/typography';
-import { colors, TColors } from '../../../constants/colors';
+import { colors, Colors } from '../../../constants/colors';
 
-export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
    * The weight of the rendered text.
    * @default 'regular'
@@ -35,12 +35,12 @@ export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
    * @default `colors.greyDarkest`
    */
   color?:
-    | TColors['white']
-    | TColors['grey']
-    | TColors['greyDark']
-    | TColors['greyDarkest']
-    | TColors['success']
-    | TColors['alert'];
+    | Colors['white']
+    | Colors['grey']
+    | Colors['greyDark']
+    | Colors['greyDarkest']
+    | Colors['success']
+    | Colors['alert'];
 }
 
 const lineHeightMap = {
@@ -49,7 +49,7 @@ const lineHeightMap = {
   small: '18px',
 };
 
-const Text = styled.span<ITextProps>`
+const Text = styled.span<TextProps>`
   margin: 0;
   letter-spacing: 0;
   color: ${({ color = colors.greyDarkest }) => color};
@@ -70,7 +70,7 @@ const Text = styled.span<ITextProps>`
   `}
 `;
 
-const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
+const TextWrap: FC<TextProps> = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => (
   <Text {...props} ref={ref} />
 ));
 

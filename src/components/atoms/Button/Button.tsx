@@ -5,10 +5,10 @@ import { typography } from '../../../constants/typography';
 import { spacing } from '../../../constants/spacing';
 import Spinner from '../Spinner/Spinner';
 
-export type TStyling = 'primary' | 'secondary' | 'link';
+export type Styling = 'primary' | 'secondary' | 'link';
 
-export interface IButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  styling?: TStyling;
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  styling?: Styling;
   disabled?: boolean;
   loading?: boolean;
   fullWidth?: boolean;
@@ -33,7 +33,7 @@ const colorMap = {
   },
 };
 
-export const buttonStyle = css<IButtonProps>`
+export const buttonStyle = css<ButtonProps>`
   text-decoration: none;
   box-sizing: border-box;
   display: inline-flex;
@@ -92,23 +92,23 @@ export const buttonStyle = css<IButtonProps>`
   }
 `;
 
-const SButton = styled.button<IButtonProps>`
+const ButtonWrapper = styled.button<ButtonProps>`
   ${buttonStyle}
 `;
 
-const Button: React.FC<IButtonProps> = props => {
+const Button: React.FC<ButtonProps> = props => {
   const { children, loading, styling = 'primary', disabled, ...rest } = props;
   const isLoading = styling !== 'link' && loading;
 
   return (
-    <SButton styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
+    <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
           <Spinner negative={styling === 'primary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}
-    </SButton>
+    </ButtonWrapper>
   );
 };
 

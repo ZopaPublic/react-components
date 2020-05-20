@@ -4,7 +4,7 @@ import { colors } from '../../../../../constants/colors';
 import { spacing } from '../../../../../constants/spacing';
 import { minMedia } from '../../../../../helpers/responsiveness';
 
-export type TAlignedTo = 'left' | 'right';
+export type AlignedTo = 'left' | 'right';
 
 const NavbarDropdownList = styled.ul`
   margin: ${spacing[3]} 0 ${spacing[3]};

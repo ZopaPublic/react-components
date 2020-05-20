@@ -11,7 +11,7 @@ import { buttonStyle } from '../../../atoms/Button/Button';
 import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport';
 
-export interface INavbarAction {
+export interface NavbarAction {
   /**
    * CTA text
    */
@@ -29,11 +29,11 @@ const ButtonLink = styled(Link)`
   }
 `;
 
-const NavbarAction: React.FC<INavbarAction> = ({ ctaText = 'Sign-in' }) => {
+const NavbarAction: React.FC<NavbarAction> = ({ ctaText = 'Sign-in' }) => {
   const { width } = useViewport();
 
   return (
-    <ButtonLink href={process.env.REACT_APP_ZOPA_MY_ACCOUNT_LINK || 'https://home.zopa.com/'} styling="primary">
+    <ButtonLink href="https://home.zopa.com/">
       {width && width >= breakpoints.desktop ? ctaText : <Icon variant={faUser} color={colors.white} fixedWidth />}
     </ButtonLink>
   );

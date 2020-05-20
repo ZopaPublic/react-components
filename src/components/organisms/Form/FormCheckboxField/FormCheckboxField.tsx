@@ -1,8 +1,8 @@
 import React from 'react';
 import { useField, FieldHookConfig } from 'formik';
-import CheckboxField, { ICheckboxFieldProps } from '../../../molecules/CheckboxField/CheckboxField';
+import CheckboxField, { CheckboxFieldProps } from '../../../molecules/CheckboxField/CheckboxField';
 
-export type FormCheckboxFieldProps = Pick<FieldHookConfig<boolean>, 'validate' | 'name'> & ICheckboxFieldProps;
+export type FormCheckboxFieldProps = Pick<FieldHookConfig<boolean>, 'validate' | 'name'> & CheckboxFieldProps;
 
 const FormCheckboxField = ({ name, validate, ...rest }: FormCheckboxFieldProps) => {
   const [{ value, onChange, onBlur }, { error, touched }] = useField<boolean>({ name, validate });
