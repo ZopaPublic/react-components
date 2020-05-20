@@ -123,7 +123,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 .c0 {
-  backgroung-color: #FFFFFF;
+  background-color: #FFFFFF;
   padding-bottom: 56px;
   padding-top: 64px;
 }
