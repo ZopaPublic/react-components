@@ -3,7 +3,7 @@ import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
-export interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
+export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
   onChange: (value: number) => void;
   min?: number;
@@ -12,7 +12,7 @@ export interface IInputRange extends Omit<InputHTMLAttributes<HTMLInputElement>,
   controls?: boolean;
 }
 
-const InputRange = forwardRef<HTMLInputElement, IInputRange>(
+const InputRange = forwardRef<HTMLInputElement, InputRange>(
   ({ min = 0, max = 100, step = 1, controls = false, value, onChange, ...otherProps }, ref) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
       onChange(Number(e.target.value));

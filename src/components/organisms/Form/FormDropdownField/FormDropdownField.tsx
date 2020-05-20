@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { useField, FieldHookConfig } from 'formik';
-import DropdownField, { IDropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
+import DropdownField, { DropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
 
 type FormDropdownOption = {
   label: string;
@@ -8,7 +8,7 @@ type FormDropdownOption = {
 };
 
 export type FormDropdownFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> &
-  IDropdownFieldProps & {
+  DropdownFieldProps & {
     options: FormDropdownOption[];
   };
 

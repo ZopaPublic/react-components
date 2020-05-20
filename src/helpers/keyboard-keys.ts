@@ -1,10 +1,8 @@
 import React from 'react';
 
-export interface IKeyCodesToKey {
-  [key: number]: string;
-}
+export type KeyCodesToKey = Record<number, string>;
 
-const keyCodesToKey: IKeyCodesToKey = {
+const keyCodesToKey: KeyCodesToKey = {
   13: 'Enter',
   27: 'Escape',
   32: ' ',
@@ -12,9 +10,9 @@ const keyCodesToKey: IKeyCodesToKey = {
   40: 'ArrowDown',
 };
 
-export type IEvent = KeyboardEvent | React.KeyboardEvent<HTMLButtonElement | HTMLAnchorElement>;
+export type Event = KeyboardEvent | React.KeyboardEvent<HTMLButtonElement | HTMLAnchorElement>;
 
-const isKey = (key: string) => (event: IEvent) => {
+const isKey = (key: string) => (event: Event) => {
   const eventKey = event.key || keyCodesToKey[event.keyCode];
   return key === eventKey;
 };

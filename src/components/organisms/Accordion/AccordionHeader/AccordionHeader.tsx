@@ -5,7 +5,7 @@ import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../hooks';
 import { spacing } from '../../../../constants/spacing';
 
-export interface IAccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
+export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   id: string;
   index: number;
   textSize?: 'body' | 'small';
@@ -46,7 +46,7 @@ const Cross = styled.span<{ active: boolean }>`
       `, linear-gradient(to right, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)`};
 `;
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
+const AccordionHeader: FC<AccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 

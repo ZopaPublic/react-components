@@ -7,7 +7,7 @@ import { typography } from '../../../constants/typography';
 
 export const DEFAULT_COLOR = colors.greyLight;
 
-export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
    * Border gets red if this is set to true.
    */
@@ -20,7 +20,7 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export const Option = styled.option``;
 
-const StyledDropdown = styled.select<IDropdownProps>`
+const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
   background-size: 13px;
@@ -39,6 +39,6 @@ const StyledDropdown = styled.select<IDropdownProps>`
   }
 `;
 
-const Dropdown = forwardRef<HTMLSelectElement, IDropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
+const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
 
 export default Dropdown;

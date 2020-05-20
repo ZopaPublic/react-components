@@ -6,12 +6,12 @@ import { navbarHeight } from '../../../../constants/components';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 
-export interface ILayoutOuterProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface LayoutOuterProps extends React.HTMLAttributes<HTMLDivElement> {
   backgroundColor: string;
   overlap: boolean;
 }
 
-const LayoutOuter = styled.div<ILayoutOuterProps>`
+const LayoutOuter = styled.div<LayoutOuterProps>`
   position: fixed;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ const Container = styled(FlexContainer)`
   height: inherit;
 `;
 
-export interface INavbarProps {
+export interface NavbarProps {
   /**
    * background color
    */
@@ -62,7 +62,7 @@ export interface INavbarProps {
   right?: React.ReactNode;
 }
 
-const Navbar = ({ backgroundColor = colors.white, left, center, right }: INavbarProps) => {
+const Navbar = ({ backgroundColor = colors.white, left, center, right }: NavbarProps) => {
   const overThreshold = useScrollThreshold();
 
   return (

@@ -1,14 +1,14 @@
-export type TGridBreakpoints = 'xs' | 's' | 'm' | 'l' | 'xl';
-export type TGridWidths = 's' | 'm' | 'l' | 'xl';
+export type GridBreakpoints = 'xs' | 's' | 'm' | 'l' | 'xl';
+export type GridWidths = 's' | 'm' | 'l' | 'xl';
 
-interface IGrid {
-  breakpoints: Record<TGridBreakpoints, number>;
+interface Grid {
+  breakpoints: Record<GridBreakpoints, number>;
   cols: number;
   gutter: number;
-  width: Record<TGridWidths, number>;
+  width: Record<GridWidths, number>;
 }
 
-const grid: IGrid = {
+const grid: Grid = {
   breakpoints: {
     l: 992,
     m: 768,

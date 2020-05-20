@@ -1,10 +1,10 @@
 import { css } from 'styled-components';
 import { spacing as sizes } from '../../constants/spacing';
-import grid, { TGridBreakpoints } from '../../constants/grid';
+import grid, { GridBreakpoints } from '../../constants/grid';
 
-type TSpacingTypes = 'margin' | 'padding';
+type SpacingTypes = 'margin' | 'padding';
 
-const createTopLevelSizes = (type: TSpacingTypes) =>
+const createTopLevelSizes = (type: SpacingTypes) =>
   Object.keys(sizes).reduce(
     (classNames, size) => ({
       ...classNames,
@@ -35,13 +35,13 @@ const createTopLevelSizes = (type: TSpacingTypes) =>
     {},
   );
 
-const createResponsiveSizes = (type: TSpacingTypes) =>
+const createResponsiveSizes = (type: SpacingTypes) =>
   Object.keys(grid.breakpoints)
     .filter(v => v !== 'xs')
     .reduce(
       (mediaQueries, breakpoint) => ({
         ...mediaQueries,
-        [`@media screen and (min-width: ${grid.breakpoints[breakpoint as TGridBreakpoints]}px)`]: {
+        [`@media screen and (min-width: ${grid.breakpoints[breakpoint as GridBreakpoints]}px)`]: {
           ...Object.keys(sizes).reduce(
             (classNames, size) => ({
               ...classNames,

@@ -33,9 +33,9 @@ const notificationColors = {
   successLight: '#DDFDE5',
 } as const;
 
-export type TColors = typeof brandColors & typeof actionColors & typeof neutralColors & typeof notificationColors;
+export type Colors = typeof brandColors & typeof actionColors & typeof neutralColors & typeof notificationColors;
 
-const colors: TColors = {
+const colors: Colors = {
   ...brandColors,
   ...actionColors,
   ...neutralColors,

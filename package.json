@@ -46,11 +46,11 @@
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.4.0",
-    "typescript": ">=3.x <4",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0"
+    "typescript": ">=3.x <4"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",

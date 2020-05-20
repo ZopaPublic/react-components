@@ -1,9 +1,9 @@
-export interface IMockDate {
+export interface MockDate {
   startMocking(): void;
   finishMocking(): void;
 }
 
-export function mockDate(date: Date): IMockDate {
+export function mockDate(date: Date): MockDate {
   const RealDate = Date;
 
   return {

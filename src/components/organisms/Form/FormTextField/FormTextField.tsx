@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import { useField, FieldHookConfig } from 'formik';
-import TextField, { ITextFieldProps } from '../../../molecules/TextField/TextField';
+import TextField, { TextFieldProps } from '../../../molecules/TextField/TextField';
 
-export type FormTextFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> & ITextFieldProps;
+export type FormTextFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> & TextFieldProps;
 
 const FormTextField = forwardRef<HTMLInputElement, FormTextFieldProps>(({ name, validate, ...rest }, ref) => {
   const [{ value, onChange, onBlur }, { error, touched }] = useField({ name, validate });

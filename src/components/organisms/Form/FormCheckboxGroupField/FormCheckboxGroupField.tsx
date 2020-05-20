@@ -1,12 +1,12 @@
 import React from 'react';
 import { useField, FieldHookConfig } from 'formik';
-import CheckboxGroupField, { ICheckboxGroupFieldProps } from '../../../molecules/CheckboxGroupField/CheckboxGroupField';
+import CheckboxGroupField, { CheckboxGroupFieldProps } from '../../../molecules/CheckboxGroupField/CheckboxGroupField';
 
 export type FormCheckboxGroupFieldProps<Val extends Record<string, boolean>> = Pick<
   FieldHookConfig<Val>,
   'validate' | 'name'
 > &
-  ICheckboxGroupFieldProps<Val>;
+  CheckboxGroupFieldProps<Val>;
 
 const FormCheckboxGroupField = <Val extends Record<string, boolean>>({
   name,

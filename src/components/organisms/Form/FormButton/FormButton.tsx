@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { useFormikContext } from 'formik';
-import Button, { IButtonProps } from '../../../atoms/Button/Button';
+import Button, { ButtonProps } from '../../../atoms/Button/Button';
 
-export interface FromButtonProps extends IButtonProps {
+export interface FromButtonProps extends ButtonProps {
   type?: 'button' | 'reset' | 'submit';
   disabled?: boolean;
 }
