@@ -228,8 +228,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
 }
 
 .c0:active:not(:disabled) {
@@ -240,6 +238,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 
 <button
   class="c0"
+  disabled=""
 >
   <div
     class="c1"
@@ -301,8 +300,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
 }
 
 .c0:active:not(:disabled) {
@@ -313,6 +310,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 
 <button
   class="c0"
+  disabled=""
 >
   <div
     class="c1"
@@ -374,8 +372,6 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
 
 .c0:disabled {
   cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
 }
 
 .c0:active:not(:disabled) {
@@ -386,6 +382,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
 
 <button
   class="c0"
+  disabled=""
 >
   <div
     class="c1"
