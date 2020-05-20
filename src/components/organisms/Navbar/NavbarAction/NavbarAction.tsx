@@ -15,11 +15,11 @@ export interface NavbarAction {
   /**
    * CTA text
    */
-  ctaText: string;
+  ctaText?: string;
   /**
    * CTA Url
    */
-  ctaURL: string;
+  ctaURL?: string;
 }
 
 const ButtonLink = styled(Link)`
