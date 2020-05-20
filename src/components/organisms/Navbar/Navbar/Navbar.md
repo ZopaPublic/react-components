@@ -8,7 +8,7 @@ By default [`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksLis
 
 - Default theme
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
+```ts
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
@@ -117,6 +117,7 @@ const NAV_ITEMS = [
 </Navbar>;
 ```
 
+<!--
 - Custom Navbar components
 
 ```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
@@ -370,4 +371,4 @@ const ButtonLink = styled(Link)`
     </ButtonLink>
   }
 ></Navbar>;
-```
+``` -->

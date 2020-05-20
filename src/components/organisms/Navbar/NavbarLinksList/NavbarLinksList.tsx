@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import Navbar from '../';
@@ -74,9 +74,9 @@ const NavbarLinksList: React.FC<NavbarLinksList> = ({
       {links &&
         links.map((item: NavigationItem, index: number) => {
           return !!item.children ? (
-            <span key={`dropdown-${index}`}>{renderDropdown(item, index)}</span>
+            <Fragment key={`dropdown-${index}`}>{renderDropdown(item, index)}</Fragment>
           ) : (
-            <span key={`link-${index}`}>{renderLink(item, index)}</span>
+            <Fragment key={`link-${index}`}>{renderLink(item, index)}</Fragment>
           );
         })}
     </>

@@ -37,12 +37,14 @@ export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanEl
 
 const PageNavigation = styled.header`
   .headroom {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
     background-color: ${colors.brand};
     height: ${mobileNavbarHeight}px;
+    transition: transform 200ms ease-in-out;
 
     ${minMedia.desktop`
       ${css`
@@ -52,18 +54,13 @@ const PageNavigation = styled.header`
     `}
   }
   .headroom--unfixed {
-    position: relative;
     transform: translateY(0);
   }
-  .headroom--scrolled {
-    transition: transform 200ms ease-in-out;
-  }
+
   .headroom--unpinned {
-    position: fixed;
     transform: translateY(-100%);
   }
   .headroom--pinned {
-    position: fixed;
     transform: translateY(0%);
   }
 `;
@@ -122,7 +119,7 @@ const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
 `;
 
 const HamburgerMenu = styled.aside<HamburgerContainerProps>`
-  position: absolute;
+  position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
   bottom: 0;
@@ -144,13 +141,15 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
 const LargeDeviceNavbar: React.FC<LargeDeviceNavbar> = ({ children, overlayLogoWith }) => {
   return (
-    <>
-      <LogoContainer>
-        <Logo color={colors.brand} width="150px" negative />
-        {overlayLogoWith}
-      </LogoContainer>
-      <NavbarLinksListContainer>{children}</NavbarLinksListContainer>
-    </>
+    <Headroom disableInlineStyles>
+      <LayoutInner>
+        <LogoContainer>
+          <Logo color={colors.brand} width="150px" negative />
+          {overlayLogoWith}
+        </LogoContainer>
+        <NavbarLinksListContainer>{children}</NavbarLinksListContainer>
+      </LayoutInner>
+    </Headroom>
   );
 };
 
@@ -158,21 +157,23 @@ const SmallDeviceNavbar: React.FC<NavbarProps> = ({ children, overlayLogoWith, w
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <>
-      {children ? (
-        <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
-          <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
-        </HamburgerContainer>
-      ) : (
-        <IconContainer />
-      )}
-      <LogoContainer>
-        <Logo color={colors.brand} width="150px" negative />
-        {overlayLogoWith}
-      </LogoContainer>
-      <IconContainer>{withCTA && cta}</IconContainer>
-      {children && <HamburgerMenu open={open}>{children}</HamburgerMenu>}
-    </>
+    <Headroom disableInlineStyles disable={open}>
+      <LayoutInner>
+        {children ? (
+          <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+            <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
+          </HamburgerContainer>
+        ) : (
+          <IconContainer />
+        )}
+        <LogoContainer>
+          <Logo color={colors.brand} width="150px" negative />
+          {overlayLogoWith}
+        </LogoContainer>
+        <IconContainer>{withCTA && cta}</IconContainer>
+        {children && <HamburgerMenu open={open}>{children}</HamburgerMenu>}
+      </LayoutInner>
+    </Headroom>
   );
 };
 
@@ -186,20 +187,16 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <PageNavigation role="banner">
-      <Headroom disableInlineStyles>
-        <LayoutInner>
-          {width && width >= breakpoints.desktop ? (
-            <LargeDeviceNavbar overlayLogoWith={overlayLogoWith}>
-              {children}
-              {withCTA && cta}
-            </LargeDeviceNavbar>
-          ) : (
-            <SmallDeviceNavbar overlayLogoWith={overlayLogoWith} withCTA={withCTA} cta={cta}>
-              {children}
-            </SmallDeviceNavbar>
-          )}
-        </LayoutInner>
-      </Headroom>
+      {width && width >= breakpoints.desktop ? (
+        <LargeDeviceNavbar overlayLogoWith={overlayLogoWith}>
+          {children}
+          {withCTA && cta}
+        </LargeDeviceNavbar>
+      ) : (
+        <SmallDeviceNavbar overlayLogoWith={overlayLogoWith} withCTA={withCTA} cta={cta}>
+          {children}
+        </SmallDeviceNavbar>
+      )}
     </PageNavigation>
   );
 };
