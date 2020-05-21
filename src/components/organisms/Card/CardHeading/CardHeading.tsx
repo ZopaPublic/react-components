@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
-import { typography } from '../../../../constants/typography';
+import { colors, typography } from '../../../../constants';
 
 const CardHeading = styled.h6`
   color: ${colors.greyDark};

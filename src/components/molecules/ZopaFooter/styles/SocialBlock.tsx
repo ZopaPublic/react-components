@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
-import { spacing } from '../../../../constants/spacing';
-import grid from '../../../../constants/grid';
+import { grid, spacing } from '../../../../constants';
 
 export const SocialBlock = styled(FlexCol).attrs({ xs: 12, l: 4 })`
   margin-bottom: ${spacing[7]};

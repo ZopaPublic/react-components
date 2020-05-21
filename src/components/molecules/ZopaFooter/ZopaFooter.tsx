@@ -4,7 +4,7 @@ import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import Text from '../../atoms/Text/Text';
 import { Footer, Heading, LegalBlock, List, ListLink, LogoBlock, SocialBlock, SocialLink } from './styles';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import facebook from '../../../content/images/social/facebook.svg';
 import twitter from '../../../content/images/social/twitter.svg';
 import instagram from '../../../content/images/social/instagram.svg';

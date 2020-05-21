@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ZopaIcon from '../../Icon/Icon';
-import grid from '../../../../constants/grid';
+import { grid } from '../../../../constants';
 
 export const Icon = styled(ZopaIcon)`
   display: block;

@@ -1,8 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { typography } from '../../../constants/typography';
 import chevronDown from '../../../content/images/chevron-down.svg';
 
 export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { typography } from '../../../constants/typography';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps } from '../../types';

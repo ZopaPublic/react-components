@@ -1,12 +1,11 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greyCheckMark from '../../../content/images/grey-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { typography } from '../../../constants/typography';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { FieldProps, InputProps } from '../../types';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 
 export interface SpinnerProps {
   /**

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { faCheckCircle, faExclamationCircle, faInfoCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../Icon/Icon';
-import { typography } from '../../../constants/typography';
+import { typography } from '../../../constants';
 
 type Severity = 'info' | 'alert' | 'warning' | 'success';
 

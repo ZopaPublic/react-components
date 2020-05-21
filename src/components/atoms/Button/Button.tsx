@@ -1,8 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
-import { spacing } from '../../../constants/spacing';
+import { colors, typography, spacing } from '../../../constants';
 import Spinner from '../Spinner/Spinner';
 
 export type Styling = 'primary' | 'secondary' | 'link';

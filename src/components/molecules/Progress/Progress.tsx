@@ -1,7 +1,6 @@
 import React, { CSSProperties, HTMLAttributes } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
+import { colors, typography } from '../../../constants';
 import Text from '../../atoms/Text/Text';
 
 export interface ProgressionStyleProps {

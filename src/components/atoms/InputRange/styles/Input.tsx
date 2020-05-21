@@ -1,7 +1,6 @@
 import { ChangeEvent } from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../../constants/colors';
-import grid from '../../../../constants/grid';
+import { colors, grid } from '../../../../constants';
 import arrowsAltH from '../../../../content/images/arrows-alt-h.svg';
 import { InputRange } from '../InputRange';
 

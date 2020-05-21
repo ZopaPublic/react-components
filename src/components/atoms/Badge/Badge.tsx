@@ -1,8 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import Text from '../Text/Text';
-import { typography } from '../../../constants/typography';
 
 type Styling = 'confirmed' | 'default' | 'invalid' | 'waiting';
 type ColorMapField = { bg: string; text: string };

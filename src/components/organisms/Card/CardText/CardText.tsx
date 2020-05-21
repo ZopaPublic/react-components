@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
-import { typography } from '../../../../constants/typography';
+import { colors, typography } from '../../../../constants';
 
 const CardText = styled.p`
   color: ${colors.grey};

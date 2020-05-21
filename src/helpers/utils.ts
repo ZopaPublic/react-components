@@ -1,5 +1,5 @@
 import { InputStatus } from '../components/types';
-import { colors } from '../constants/colors';
+import { colors } from '../constants';
 
 export const mod = (x: number, n: number) => ((x % n) + n) % n;
 
