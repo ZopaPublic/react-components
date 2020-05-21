@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { spacing } from '../../../../constants/spacing';
 import grid from '../../../../constants/grid';
-import { colors } from '../../../..';
+import { colors } from '../../../../constants/colors';
 
 export const Footer = styled.footer`
   background-color: ${colors.white};
