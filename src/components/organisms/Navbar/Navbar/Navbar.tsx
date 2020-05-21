@@ -12,6 +12,7 @@ import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
 import Icon from '../../../atoms/Icon/Icon';
+import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import Navbar from '../';
 
 export interface NavbarProps {
@@ -35,7 +36,11 @@ export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanEl
   open: boolean;
 }
 
-const PageNavigation = styled.header`
+export interface PageNavigationProps extends React.HTMLAttributes<HTMLHeadElement> {
+  overlap: boolean;
+}
+
+const PageNavigation = styled.header<PageNavigationProps>`
   .headroom {
     position: fixed;
     top: 0;
@@ -50,6 +55,8 @@ const PageNavigation = styled.header`
       ${css`
         background-color: ${colors.white};
         height: ${navbarHeight}px;
+
+        ${({ overlap }: PageNavigationProps) => overlap && `box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;`}
       `}
     `}
   }
@@ -184,9 +191,10 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   cta = <Navbar.Action />,
 }) => {
   const { width } = useViewport();
+  const overThreshold = useScrollThreshold();
 
   return (
-    <PageNavigation role="banner">
+    <PageNavigation role="banner" overlap={overThreshold}>
       {width && width >= breakpoints.desktop ? (
         <LargeDeviceNavbar overlayLogoWith={overlayLogoWith}>
           {children}
