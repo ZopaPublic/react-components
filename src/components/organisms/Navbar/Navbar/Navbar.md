@@ -8,18 +8,20 @@ By default [`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksLis
 
 - Default theme
 
-```ts
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
   {
     label: 'Borrow',
     href: '/loans',
+    onClick: () => alert('testing2'),
     qadata: 'Borrow.topBar.Button',
     children: [
       {
         label: 'Loans',
         href: '/loans',
+        onClick: () => alert('testing'),
         qadata: 'loans.Borrow.topBar.Menu',
       },
       {
@@ -117,10 +119,9 @@ const NAV_ITEMS = [
 </Navbar>;
 ```
 
-<!--
 - Custom Navbar components
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
 import { Navbar, Link } from '@zopauk/react-components';
 const NAV_ITEMS = [
   {
@@ -237,7 +238,7 @@ const NAV_ITEMS = [
 
 - Without CTA
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
 import { Navbar, Link, buttonStyle } from '@zopauk/react-components';
 import styled from 'styled-components';
 
@@ -354,7 +355,7 @@ const ButtonLink = styled(Link)`
 
 - Without links
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#00B9A7", "border": "2px solid #efefef", "overflow": "hidden" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
 import { Navbar, Link, buttonStyle } from '@zopauk/react-components';
 import styled from 'styled-components';
 
@@ -371,4 +372,4 @@ const ButtonLink = styled(Link)`
     </ButtonLink>
   }
 ></Navbar>;
-``` -->
+```

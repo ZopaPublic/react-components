@@ -201,176 +201,13 @@ Object {
 
 <body>
     <div>
-      <span>
-        <div
-          class="c0"
-        >
-          <a
-            aria-expanded="false"
-            aria-haspopup="true"
-            class="c1 c2"
-            color="#3B46C4"
-            data-automation="About.topBar.Menu"
-            href="#"
-            role="menuitem"
-            tabindex="0"
-          >
-            <span
-              class="c3"
-            >
-              About
-            </span>
-            <span
-              class="c4"
-            >
-              <svg
-                aria-hidden="true"
-                class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
-                color="#818F9B"
-                data-icon="chevron-down"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                  fill="currentColor"
-                />
-              </svg>
-            </span>
-          </a>
-          <div
-            class="c5"
-          >
-            <ul
-              aria-label="About"
-              class="c6"
-              role="menu"
-            >
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="About.About.topBar.Menu"
-                  href="/about"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  About Zopa
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Story.About.topBar.Menu"
-                  href="/about/our-story"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Our story
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Our_Board.About.topBar.Menu"
-                  href="/about/board"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Our board
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Our_Leadership.About.topBar.Menu"
-                  href="/about/leadership"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Our leadership team
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Awards.About.topBar.Menu"
-                  href="/about/awards"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Awards
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Careers.About.topBar.Menu"
-                  href="/about/careers"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Careers
-                </a>
-              </li>
-              <li
-                role="none"
-              >
-                <a
-                  class="c1 c7"
-                  color="#3B46C4"
-                  data-automation="Press_office.About.topBar.Menu"
-                  href="/about/press"
-                  role="menuitem"
-                  tabindex="-1"
-                >
-                  Press office
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </span>
-      <span>
-        <a
-          class="c1 c8"
-          color="#3B46C4"
-          href="/contact"
-        >
-          Support
-        </a>
-      </span>
-    </div>
-  </body>,
-  "container": <div>
-    <span>
       <div
-        class="sc-htoDjs kdxeeA"
+        class="c0"
       >
         <a
           aria-expanded="false"
           aria-haspopup="true"
-          class="sc-iwsKbI bJGjjM sc-gqjmRU cMXjqu"
+          class="c1 c2"
           color="#3B46C4"
           data-automation="About.topBar.Menu"
           href="#"
@@ -378,12 +215,12 @@ Object {
           tabindex="0"
         >
           <span
-            class="sc-VigVT LUzAM"
+            class="c3"
           >
             About
           </span>
           <span
-            class="sc-jTzLTM jGPPDt"
+            class="c4"
           >
             <svg
               aria-hidden="true"
@@ -404,18 +241,18 @@ Object {
           </span>
         </a>
         <div
-          class="sc-dnqmqq cWuOcM"
+          class="c5"
         >
           <ul
             aria-label="About"
-            class="sc-gzVnrw cYWHUG"
+            class="c6"
             role="menu"
           >
             <li
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="About.About.topBar.Menu"
                 href="/about"
@@ -429,7 +266,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Story.About.topBar.Menu"
                 href="/about/our-story"
@@ -443,7 +280,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Our_Board.About.topBar.Menu"
                 href="/about/board"
@@ -457,7 +294,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Our_Leadership.About.topBar.Menu"
                 href="/about/leadership"
@@ -471,7 +308,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Awards.About.topBar.Menu"
                 href="/about/awards"
@@ -485,7 +322,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Careers.About.topBar.Menu"
                 href="/about/careers"
@@ -499,7 +336,7 @@ Object {
               role="none"
             >
               <a
-                class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+                class="c1 c7"
                 color="#3B46C4"
                 data-automation="Press_office.About.topBar.Menu"
                 href="/about/press"
@@ -512,16 +349,171 @@ Object {
           </ul>
         </div>
       </div>
-    </span>
-    <span>
       <a
-        class="sc-iwsKbI bJGjjM sc-gqjmRU cGUCJy"
+        class="c1 c8"
         color="#3B46C4"
         href="/contact"
       >
         Support
       </a>
-    </span>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-htoDjs kdxeeA"
+    >
+      <a
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="sc-iwsKbI bJGjjM sc-gqjmRU cMXjqu"
+        color="#3B46C4"
+        data-automation="About.topBar.Menu"
+        href="#"
+        role="menuitem"
+        tabindex="0"
+      >
+        <span
+          class="sc-VigVT LUzAM"
+        >
+          About
+        </span>
+        <span
+          class="sc-jTzLTM jGPPDt"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+            color="#818F9B"
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </a>
+      <div
+        class="sc-dnqmqq cWuOcM"
+      >
+        <ul
+          aria-label="About"
+          class="sc-gzVnrw cYWHUG"
+          role="menu"
+        >
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="About.About.topBar.Menu"
+              href="/about"
+              role="menuitem"
+              tabindex="-1"
+            >
+              About Zopa
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Story.About.topBar.Menu"
+              href="/about/our-story"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Our story
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Our_Board.About.topBar.Menu"
+              href="/about/board"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Our board
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Our_Leadership.About.topBar.Menu"
+              href="/about/leadership"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Our leadership team
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Awards.About.topBar.Menu"
+              href="/about/awards"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Awards
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Careers.About.topBar.Menu"
+              href="/about/careers"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Careers
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              color="#3B46C4"
+              data-automation="Press_office.About.topBar.Menu"
+              href="/about/press"
+              role="menuitem"
+              tabindex="-1"
+            >
+              Press office
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a
+      class="sc-iwsKbI bJGjjM sc-gqjmRU cGUCJy"
+      color="#3B46C4"
+      href="/contact"
+    >
+      Support
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

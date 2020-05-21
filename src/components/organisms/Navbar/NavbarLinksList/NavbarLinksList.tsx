@@ -7,6 +7,7 @@ export interface NavigationItem {
   label: string;
   href?: string;
   qadata?: string;
+  onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
   children?: NavigationItem[];
 }
 
@@ -26,9 +27,9 @@ export interface NavbarLinksListLink {
   props: NavbarLinksListLinkProps;
 }
 
-const NavbarLinksListLink = ({ item: { label, href }, index, props }: NavbarLinksListLink) => {
+const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => {
   return (
-    <Navbar.Link key={`navbar-link-${index}`} href={href} {...props}>
+    <Navbar.Link key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
       {label}
     </Navbar.Link>
   );
