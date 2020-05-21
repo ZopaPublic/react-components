@@ -97,7 +97,6 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
 
 export interface NavbarDropdownState {
   cursor: number;
-  right: number;
   open: boolean;
 }
 
@@ -121,20 +120,16 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     this.state = {
       cursor: 0,
       open: false,
-      right: this.getRightCoordinate(),
     };
   }
 
   public componentDidMount() {
-    this.updateRightCoordinate();
-    window.addEventListener('resize', this.updateRightCoordinate);
     document.addEventListener('focus', this.handleFocusOutside, true);
     document.addEventListener('mousedown', this.handleFocusOutside, true);
     document.addEventListener('keydown', this.handleEscapeKey, true);
   }
 
   public componentWillUnmount() {
-    window.removeEventListener('resize', this.updateRightCoordinate);
     document.removeEventListener('focus', this.handleFocusOutside, true);
     document.removeEventListener('mousedown', this.handleFocusOutside, true);
     document.removeEventListener('keydown', this.handleEscapeKey, true);
@@ -228,13 +223,6 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
       );
     }
   };
-
-  private updateRightCoordinate = () => {
-    this.setState({ right: this.getRightCoordinate() });
-  };
-
-  private getRightCoordinate = () =>
-    this.dropdownRef.current ? this.dropdownRef.current.getBoundingClientRect().left : 0;
 
   private handleOpenerClick = (e: React.MouseEvent) => {
     e.preventDefault();
