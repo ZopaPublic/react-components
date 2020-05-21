@@ -34,5 +34,13 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you agree?" errorMessage="Oops! You forgot to check this" name="text6" />;
+<CheckboxField label="Do you agree?" hasError={true} errorMessage="Oops! You forgot to check this" name="text6" />;
+```
+
+- Disabled
+
+```tsx
+import { CheckboxField } from '@zopauk/react-components';
+
+<CheckboxField label="Do you love rap?" name="text2" defaultChecked={true} disabled={true} />;
 ```

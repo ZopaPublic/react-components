@@ -12,21 +12,21 @@ import { FormTextField, FormButton } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
-  if (!values.firstName) {
-    errors.firstName = 'This field is required';
+  if (!values.yourName) {
+    errors.yourName = 'This field is required';
   }
   return errors;
 };
 
 <Formik
   validateOnMount
-  initialValues={{ firstName: '' }}
+  initialValues={{ yourName: '' }}
   validate={validate}
   onSubmit={values => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>
-      <FormTextField label="First name" name="firstName" />
+      <FormTextField label="Your name" name="yourName" />
     </div>
     <FormButton>Submit</FormButton>
   </Form>
