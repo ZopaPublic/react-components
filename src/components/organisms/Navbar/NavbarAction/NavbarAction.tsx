@@ -1,45 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { colors } from '../../../../constants/colors';
 import { breakpoints } from '../../../../constants/breakpoints';
-import { minMedia } from '../../../../helpers/responsiveness';
 
-import Link from '../../../atoms/Link/Link';
-import { buttonStyle } from '../../../atoms/Button/Button';
+import Button from '../../../atoms/Button/Button';
 import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport';
 
-export interface NavbarAction {
+export interface NavbarAction extends React.HTMLAttributes<HTMLButtonElement> {
   /**
    * CTA text
    */
   ctaText?: string;
-  /**
-   * CTA Url
-   */
-  ctaURL?: string;
 }
 
-const ButtonLink = styled(Link)`
-  ${minMedia.desktop`
-    ${buttonStyle}
-    margin-left: 8px;
-  `}
-
-  &:hover {
-    color: ${colors.white};
-  }
-`;
-
-const NavbarAction: React.FC<NavbarAction> = ({ ctaText = 'Sign-in', ctaURL = 'https://home.zopa.com/' }) => {
+const NavbarAction: React.FC<NavbarAction> = ({
+  ctaText = 'Sign-in',
+  onClick = () => window.location.assign('https://home.zopa.com/'),
+}) => {
   const { width } = useViewport();
 
   return (
-    <ButtonLink href={ctaURL}>
+    <Button onClick={onClick} className="ml-2">
       {width && width >= breakpoints.desktop ? ctaText : <Icon variant={faUser} color={colors.white} fixedWidth />}
-    </ButtonLink>
+    </Button>
   );
 };
 
