@@ -55,7 +55,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c11 {
+.c12 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -66,7 +66,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c18 {
+.c19 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -77,7 +77,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c20 {
+.c21 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -122,6 +122,12 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   fill: #21247F;
 }
 
+.c11 {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  fill: #00D9C5;
+}
+
 .c0 {
   background-color: #FFFFFF;
   padding-bottom: 56px;
@@ -143,35 +149,35 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   text-transform: uppercase;
 }
 
-.c14 {
+.c15 {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(facebook.svg) no-repeat;
 }
 
-.c15 {
+.c16 {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(twitter.svg) no-repeat;
 }
 
-.c16 {
+.c17 {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(instagram.svg) no-repeat;
 }
 
-.c17 {
+.c18 {
   display: inline-block;
   width: 32px;
   height: 32px;
   background: url(linkedin.svg) no-repeat;
 }
 
-.c19 {
+.c20 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -211,7 +217,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   order: 1;
 }
 
-.c12 {
+.c13 {
   margin-bottom: 32px;
   text-align: center;
   -webkit-order: 2;
@@ -219,7 +225,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   order: 2;
 }
 
-.c13 {
+.c14 {
   margin: 0 8px;
 }
 
@@ -298,7 +304,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c11 {
+  .c12 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -308,7 +314,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c11 {
+  .c12 {
     display: block;
     -webkit-flex: 0 0 33.33333333333333%;
     -ms-flex: 0 0 33.33333333333333%;
@@ -318,7 +324,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c18 {
+  .c19 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -328,7 +334,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c18 {
+  .c19 {
     display: block;
     -webkit-flex: 0 0 41.66666666666667%;
     -ms-flex: 0 0 41.66666666666667%;
@@ -344,7 +350,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c19 {
+  .c20 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -358,7 +364,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c12 {
+  .c13 {
     text-align: right;
     -webkit-order: 3;
     -ms-flex-order: 3;
@@ -717,70 +723,70 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             </title>
             <g>
               <path
+                class="c11"
                 d="M36.90752,0 C42.6769778,0 46.8674844,3.93460861 46.8674844,9.36414355 C46.8674844,14.8199217 42.6769778,18.83326 36.90752,18.83326 C31.1380622,18.83326 26.9475556,14.8461649 26.9475556,9.36414355 C26.9475556,3.90836539 31.1380622,0 36.90752,0 Z M36.9851733,13.7701929 C39.0550044,13.7701929 40.7106844,11.9078615 40.7106844,9.38944951 C40.7106844,6.87197483 39.0550044,5.06212985 36.9851733,5.06212985 C34.8894578,5.06212985 33.1043556,6.87197483 33.1043556,9.38944951 C33.1043556,11.9078615 34.9153422,13.7701929 36.9851733,13.7701929 Z M16.4541867,1.04879158 C16.4541867,6.67702519 8.45959111,11.8600613 8.45959111,13.9529582 L16.1435733,13.9529582 L16.1435733,18.5708278 L0,18.5708278 L0,17.7048015 C0,12.0765679 7.99367111,6.89353176 7.99367111,4.8006349 L0.309688889,4.8006349 L0.309688889,0.183702546 L16.4541867,0.183702546 L16.4541867,1.04879158 Z M66.7153067,0.183702546 C71.4244267,0.183702546 74.1404444,2.56996113 74.1404444,6.76700194 C74.1404444,11.2255377 71.4244267,13.7964361 66.7153067,13.7964361 L64.2063644,13.7964361 L64.2063644,18.5708278 L58.5136356,18.5708278 L58.5136356,0.183702546 L66.7153067,0.183702546 Z M66.4046933,9.180441 C67.6989156,9.180441 68.44864,8.36690115 68.44864,6.95070449 C68.44864,5.58699426 67.6989156,4.79969764 66.4046933,4.79969764 L64.2063644,4.79969764 L64.2063644,9.180441 L66.4046933,9.180441 Z M96.6257067,0.612874778 L104,19 L97.6093156,19 L96.70336,16.4028584 L89.8994489,16.4028584 L88.9685333,19 L82.8108089,19 L90.4689067,0.612874778 L96.6257067,0.612874778 Z M91.4515911,11.619186 L95.2288711,11.619186 L93.3661156,6.24213753 L91.4515911,11.619186 Z"
-                fill="#00D9C5"
               />
             </g>
           </svg>
         </a>
       </div>
       <div
-        class="c11 c12"
+        class="c12 c13"
         cols="12"
       >
         <a
-          class="c7 c13"
+          class="c7 c14"
           color="#3B46C4"
           href="https://facebook.com/zopa"
           title="Facebook"
-        >
-          <span
-            class="c14"
-          />
-        </a>
-        <a
-          class="c7 c13"
-          color="#3B46C4"
-          href="https://twitter.com/zopa"
-          title="Twitter"
         >
           <span
             class="c15"
           />
         </a>
         <a
-          class="c7 c13"
+          class="c7 c14"
           color="#3B46C4"
-          href="https://www.instagram.com/Zopamoney/"
-          title="Instagram"
+          href="https://twitter.com/zopa"
+          title="Twitter"
         >
           <span
             class="c16"
           />
         </a>
         <a
-          class="c7 c13"
+          class="c7 c14"
           color="#3B46C4"
-          href="https://www.linkedin.com/company/zopa/"
-          title="Linkedin"
+          href="https://www.instagram.com/Zopamoney/"
+          title="Instagram"
         >
           <span
             class="c17"
           />
         </a>
+        <a
+          class="c7 c14"
+          color="#3B46C4"
+          href="https://www.linkedin.com/company/zopa/"
+          title="Linkedin"
+        >
+          <span
+            class="c18"
+          />
+        </a>
       </div>
       <div
-        class="c18 c19"
+        class="c19 c20"
         cols="12"
       >
         <p
-          class="c20 mb-4"
+          class="c21 mb-4"
           color="#4A545E"
         >
           Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
         </p>
         <p
-          class="c20 mb-4"
+          class="c21 mb-4"
           color="#4A545E"
         >
           © Zopa Bank Limited 
@@ -788,7 +794,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
            All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
         </p>
         <p
-          class="c20"
+          class="c21"
           color="#4A545E"
         >
           Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984, Z8797078).

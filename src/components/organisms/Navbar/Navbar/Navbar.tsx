@@ -5,9 +5,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { colors } from '../../../../constants/colors';
 import { breakpoints } from '../../../../constants/breakpoints';
-import { minMedia } from '../../../../helpers/responsiveness';
+import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
 import { spacing } from '../../../../constants/spacing';
-import { navbarHeight, mobileNavbarHeight } from '../../../../constants/components';
+import { navbarOpenHeight, navbarClosedHeight, mobileNavbarHeight } from '../../../../constants/components';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
@@ -30,46 +30,59 @@ export interface NavbarProps {
   cta?: React.ReactNode;
 }
 
-export type LargeDeviceNavbar = Pick<NavbarProps, 'overlayLogoWith'>;
-
 export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
   open: boolean;
 }
 
-export interface PageNavigationProps extends React.HTMLAttributes<HTMLHeadElement> {
-  overlap: boolean;
+export interface PageNavigationProps {
+  overlap?: boolean;
 }
 
 const PageNavigation = styled.header<PageNavigationProps>`
-  .headroom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: ${colors.brand};
-    height: ${mobileNavbarHeight}px;
-    transition: transform 200ms ease-in-out;
+  ${minMedia.desktop`
+    ${css`
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: ${colors.white};
+      max-height: ${navbarOpenHeight}px;
 
-    ${minMedia.desktop`
-      ${css`
-        background-color: ${colors.white};
-        height: ${navbarHeight}px;
+      transition: max-height 0.3s ease;
 
-        ${({ overlap }: PageNavigationProps) => overlap && `box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;`}
-      `}
+      ${({ overlap }: PageNavigationProps) =>
+        overlap &&
+        css`
+          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+          max-height: ${navbarClosedHeight}px;
+        `}
     `}
-  }
-  .headroom--unfixed {
-    transform: translateY(0);
-  }
+  `}
 
-  .headroom--unpinned {
-    transform: translateY(-100%);
-  }
-  .headroom--pinned {
-    transform: translateY(0%);
-  }
+  ${maxMedia.desktop`
+    ${css`
+      .headroom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: ${colors.brand};
+        transition: transform 200ms ease-in-out;
+      }
+      .headroom--unfixed {
+        transform: translateY(0);
+      }
+
+      .headroom--unpinned {
+        transform: translateY(-100%);
+      }
+      .headroom--pinned {
+        transform: translateY(0%);
+      }
+    `}
+  `}
 `;
 
 const LayoutInner = styled.nav`
@@ -80,18 +93,40 @@ const LayoutInner = styled.nav`
   width: 100%;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.div<PageNavigationProps>`
   position: relative;
 
   ${minMedia.desktop`
     ${css`
+      display: flex;
+      align-items: center;
       width: 490px;
-      height: ${navbarHeight}px;
-      background-image: ${`url(${navCurve})`};
-      background-repeat: no-repeat;
+      transition: 0.3s min-height ease;
+      min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
       padding-left: ${spacing[10]};
     `}
   `}
+
+  &:before {
+    ${minMedia.desktop`
+    ${css`
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      transition: opacity 0.3s ease;
+
+      background-image: ${`url(${navCurve})`};
+      background-repeat: no-repeat;
+      opacity: ${({ overlap }: PageNavigationProps) => (overlap ? 0 : 1)};
+
+      content: '';
+      z-index: -1;
+    `}
+  `}
+  }
 
   & > a,
   & > button,
@@ -146,64 +181,47 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
-const LargeDeviceNavbar: React.FC<LargeDeviceNavbar> = ({ children, overlayLogoWith }) => {
-  return (
-    <Headroom disableInlineStyles>
-      <LayoutInner>
-        <LogoContainer>
-          <Logo color={colors.brand} width="150px" negative />
-          {overlayLogoWith}
-        </LogoContainer>
-        <NavbarLinksListContainer>{children}</NavbarLinksListContainer>
-      </LayoutInner>
-    </Headroom>
-  );
-};
-
-const SmallDeviceNavbar: React.FC<NavbarProps> = ({ children, overlayLogoWith, withCTA, cta }) => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  return (
-    <Headroom disableInlineStyles disable={open}>
-      <LayoutInner>
-        {children ? (
-          <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
-            <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
-          </HamburgerContainer>
-        ) : (
-          <IconContainer />
-        )}
-        <LogoContainer>
-          <Logo color={colors.brand} width="150px" negative />
-          {overlayLogoWith}
-        </LogoContainer>
-        <IconContainer>{withCTA && cta}</IconContainer>
-        {children && <HamburgerMenu open={open}>{children}</HamburgerMenu>}
-      </LayoutInner>
-    </Headroom>
-  );
-};
-
 const NavbarWrapper: React.FC<NavbarProps> = ({
   children,
-  overlayLogoWith = <a href="https://www.zopa.com" />,
+  overlayLogoWith,
   withCTA = true,
   cta = <Navbar.Action />,
 }) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold();
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <PageNavigation role="banner" overlap={overThreshold}>
       {width && width >= breakpoints.desktop ? (
-        <LargeDeviceNavbar overlayLogoWith={overlayLogoWith}>
-          {children}
-          {withCTA && cta}
-        </LargeDeviceNavbar>
+        <LayoutInner>
+          <LogoContainer overlap={overThreshold}>
+            <Logo negative={!overThreshold} width="150px" />
+            {overlayLogoWith}
+          </LogoContainer>
+          <NavbarLinksListContainer>
+            {children}
+            {withCTA && cta}
+          </NavbarLinksListContainer>
+        </LayoutInner>
       ) : (
-        <SmallDeviceNavbar overlayLogoWith={overlayLogoWith} withCTA={withCTA} cta={cta}>
-          {children}
-        </SmallDeviceNavbar>
+        <Headroom disableInlineStyles disable={open}>
+          <LayoutInner>
+            {children ? (
+              <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
+              </HamburgerContainer>
+            ) : (
+              <IconContainer />
+            )}
+            <LogoContainer>
+              <Logo color={colors.brand} width="150px" negative />
+              {overlayLogoWith}
+            </LogoContainer>
+            <IconContainer>{withCTA && cta}</IconContainer>
+            {children && <HamburgerMenu open={open}>{children}</HamburgerMenu>}
+          </LayoutInner>
+        </Headroom>
       )}
     </PageNavigation>
   );

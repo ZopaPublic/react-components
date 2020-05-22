@@ -2,7 +2,7 @@
 
 By default [`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksList) will render [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown) or [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) based on whether links have `children` or not.
 
-⚠️ In the examples below the menu will disappear when scrolling down and reappear when scrolling up
+⚠️ The menu animates when scrolling. For a better preview view [Default example](#/Components/Organisms/Navbar/Navbar/1)
 
 ### Examples
 
@@ -114,7 +114,7 @@ const NAV_ITEMS = [
   },
 ];
 
-<Navbar>
+<Navbar overlayLogoWith={<span></span>}>
   <Navbar.LinksList links={NAV_ITEMS} />
 </Navbar>;
 ```

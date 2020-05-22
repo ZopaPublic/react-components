@@ -360,12 +360,12 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-htoDjs kdxeeA"
+      class="sc-dnqmqq ghmWLu"
     >
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-iwsKbI bJGjjM sc-gqjmRU cMXjqu"
+        class="sc-gZMcBi lfByGy sc-VigVT cFxqPO"
         color="#3B46C4"
         data-automation="About.topBar.Menu"
         href="#"
@@ -373,12 +373,12 @@ Object {
         tabindex="0"
       >
         <span
-          class="sc-VigVT LUzAM"
+          class="sc-jTzLTM edgmm"
         >
           About
         </span>
         <span
-          class="sc-jTzLTM jGPPDt"
+          class="sc-fjdhpX dHfski"
         >
           <svg
             aria-hidden="true"
@@ -399,18 +399,18 @@ Object {
         </span>
       </a>
       <div
-        class="sc-dnqmqq cWuOcM"
+        class="sc-iwsKbI gPniSp"
       >
         <ul
           aria-label="About"
-          class="sc-gzVnrw cYWHUG"
+          class="sc-htoDjs bUBjUg"
           role="menu"
         >
           <li
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="About.About.topBar.Menu"
               href="/about"
@@ -424,7 +424,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Story.About.topBar.Menu"
               href="/about/our-story"
@@ -438,7 +438,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Our_Board.About.topBar.Menu"
               href="/about/board"
@@ -452,7 +452,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Our_Leadership.About.topBar.Menu"
               href="/about/leadership"
@@ -466,7 +466,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Awards.About.topBar.Menu"
               href="/about/awards"
@@ -480,7 +480,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Careers.About.topBar.Menu"
               href="/about/careers"
@@ -494,7 +494,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-iwsKbI bJGjjM sc-gqjmRU fkXFEO"
+              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
               color="#3B46C4"
               data-automation="Press_office.About.topBar.Menu"
               href="/about/press"
@@ -508,7 +508,7 @@ Object {
       </div>
     </div>
     <a
-      class="sc-iwsKbI bJGjjM sc-gqjmRU cGUCJy"
+      class="sc-gZMcBi lfByGy sc-VigVT iPuNjo"
       color="#3B46C4"
       href="/contact"
     >
