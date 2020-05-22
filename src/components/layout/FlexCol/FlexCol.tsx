@@ -1,30 +1,31 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
-import grid, { TGridBreakpoints } from '../../../constants/grid';
+import { grid } from '../../../constants';
+import { GridBreakpoints } from '../../../constants/grid';
 
-export type TAlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'auto';
-export type TColWidth = number | 'fill' | 'auto' | 'hidden';
+export type AlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'auto';
+export type ColWidth = number | 'fill' | 'auto' | 'hidden';
 
-export interface IFlexColProps {
-  align?: TAlignSelf;
+export interface FlexColProps {
+  align?: AlignSelf;
   cols?: number;
   gutter?: number;
-  l?: TColWidth;
-  m?: TColWidth;
-  s?: TColWidth;
-  xl?: TColWidth;
-  xs?: TColWidth;
+  l?: ColWidth;
+  m?: ColWidth;
+  s?: ColWidth;
+  xl?: ColWidth;
+  xs?: ColWidth;
 }
 
-export interface IFlexCol extends React.HTMLAttributes<HTMLDivElement>, IFlexColProps {}
+export interface FlexCol extends React.HTMLAttributes<HTMLDivElement>, FlexColProps {}
 
-const genHidden = (breakpoint: TGridBreakpoints) => css`
+const genHidden = (breakpoint: GridBreakpoints) => css`
   @media (min-width: ${grid.breakpoints[breakpoint]}px) {
     display: none;
   }
 `;
 
-const genFillWidth = (breakpoint: TGridBreakpoints) => css`
+const genFillWidth = (breakpoint: GridBreakpoints) => css`
   @media (min-width: ${grid.breakpoints[breakpoint]}px) {
     display: block;
     flex-basis: 0;
@@ -33,7 +34,7 @@ const genFillWidth = (breakpoint: TGridBreakpoints) => css`
   }
 `;
 
-const genAutoWidth = (breakpoint: TGridBreakpoints) => css`
+const genAutoWidth = (breakpoint: GridBreakpoints) => css`
   @media (min-width: ${grid.breakpoints[breakpoint]}px) {
     display: block;
     flex: 0 0 auto;
@@ -42,7 +43,7 @@ const genAutoWidth = (breakpoint: TGridBreakpoints) => css`
   }
 `;
 
-const genRelativeWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, cols: IFlexColProps['cols']) => css`
+const genRelativeWidth = (breakpoint: GridBreakpoints, colWidth: ColWidth, cols: FlexColProps['cols']) => css`
   @media (min-width: ${grid.breakpoints[breakpoint]}px) {
     display: block;
     ${typeof colWidth === 'number' && typeof cols === 'number'
@@ -54,7 +55,7 @@ const genRelativeWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, col
   }
 `;
 
-const getWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, cols: IFlexColProps['cols']) => {
+const getWidth = (breakpoint: GridBreakpoints, colWidth: ColWidth, cols: FlexColProps['cols']) => {
   switch (colWidth) {
     case 'hidden':
       return genHidden(breakpoint);
@@ -67,7 +68,7 @@ const getWidth = (breakpoint: TGridBreakpoints, colWidth: TColWidth, cols: IFlex
   }
 };
 
-const StyledFlexCol = styled.div<IFlexCol>`
+const StyledFlexCol = styled.div<FlexCol>`
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -78,17 +79,17 @@ const StyledFlexCol = styled.div<IFlexCol>`
     Object.keys(grid.breakpoints)
       .sort((a, b) => {
         // Note: TS infers `a` and `b` as strings, hence the type assertion here.
-        return grid.breakpoints[a as TGridBreakpoints] - grid.breakpoints[b as TGridBreakpoints];
+        return grid.breakpoints[a as GridBreakpoints] - grid.breakpoints[b as GridBreakpoints];
       })
       .filter(breakpoint => Object.keys(props).includes(breakpoint))
       .map(breakpoint => {
         // Note: TS infers `breakpoint` as string again... hence more type assertion here.
-        const colWidth = props[breakpoint as TGridBreakpoints] || 'auto';
-        return getWidth(breakpoint as TGridBreakpoints, colWidth, props.cols);
+        const colWidth = props[breakpoint as GridBreakpoints] || 'auto';
+        return getWidth(breakpoint as GridBreakpoints, colWidth, props.cols);
       })}
 `;
 
-const FlexCol: FC<IFlexCol> = props => <StyledFlexCol {...props} />;
+const FlexCol: FC<FlexCol> = props => <StyledFlexCol {...props} />;
 
 FlexCol.defaultProps = {
   align: 'auto',

@@ -1,13 +1,10 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
-import chevronDown from '../../../content/images/chevron-down.svg';
+import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { typography } from '../../../constants/typography';
+import chevronDown from '../../../content/images/chevron-down.svg';
 
-export const DEFAULT_COLOR = colors.greyLight;
-
-export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
    * Border gets red if this is set to true.
    */
@@ -20,25 +17,36 @@ export interface IDropdownProps extends React.SelectHTMLAttributes<HTMLSelectEle
 
 export const Option = styled.option``;
 
-const StyledDropdown = styled.select<IDropdownProps>`
+const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
-  background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
-  border: 2px solid ${getBorderColorByStatus};
-  border-radius: 4px;
-  padding: 8px 32px 8px 16px;
-  font-weight: ${typography.weights.semiBold};
-  height: 46px;
   min-width: 100px;
   user-select: none;
+  background: transparent;
+  padding-right: 32px;
+  padding-left: 16px;
+  height: 50px;
+  border-radius: 8px;
+  color: ${colors.greyDarkest};
+  font-weight: ${typography.weights.regular};
+  border: 1px solid ${getBorderColorByStatus};
+  background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
+  background-size: 13px;
+  box-shadow: 0 0 4px 0 transparent;
+  transition-property: border, box-shadow;
+  transition: 0.2s ease-in-out;
 
   &:focus {
     outline-width: 0;
-    border: 2px solid ${colors.actionPlain};
-    transition: border 0.2s;
+    border: 1px solid ${colors.brand};
+    box-shadow: 0 0 4px 0 ${colors.brand};
+  }
+
+  &:disabled {
+    background-color: ${colors.greyLightest};
+    color: ${colors.grey};
   }
 `;
 
-const Dropdown = forwardRef<HTMLSelectElement, IDropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
+const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
 
 export default Dropdown;

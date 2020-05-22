@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
-import Dropdown, { DEFAULT_COLOR, Option } from './Dropdown';
+import { colors } from '../../../constants';
+import Dropdown, { Option } from './Dropdown';
 
 describe('<Dropdown />', () => {
   it('renders the Dropdown with options', () => {
@@ -53,8 +53,8 @@ describe('<Dropdown />', () => {
 
   test.each`
     hasError     | expectBorderColor
-    ${false}     | ${DEFAULT_COLOR}
-    ${undefined} | ${DEFAULT_COLOR}
+    ${false}     | ${colors.grey}
+    ${undefined} | ${colors.grey}
     ${true}      | ${colors.alert}
   `(
     'renders the border with the "$expectBorderColor" color if the hasError is "$hasError"',
@@ -71,8 +71,8 @@ describe('<Dropdown />', () => {
 
   test.each`
     isValid      | expectBorderColor
-    ${false}     | ${DEFAULT_COLOR}
-    ${undefined} | ${DEFAULT_COLOR}
+    ${false}     | ${colors.grey}
+    ${undefined} | ${colors.grey}
     ${true}      | ${colors.success}
   `(
     'renders the border with the "$expectBorderColor" color if the isValid is "$isValid"',

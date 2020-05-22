@@ -30,7 +30,13 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   line-height: 1.4;
+  font-weight: 400;
+  font-size: 15px;
   color: #2C3236;
   font-weight: 400;
   position: relative;
@@ -39,15 +45,28 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c3:before {
   content: '';
-  background-color: #EFEFEF;
+  background-color: #FFFFFF;
   border-radius: 50%;
   height: 24px;
   width: 24px;
   min-width: 24px;
   display: inline-block;
-  vertical-align: top;
   margin-right: 8px;
-  border: 2px #D4D7D9 solid;
+  border: 1px #818F9B solid;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+  left: 6px;
+  top: 6px;
 }
 
 .c3:hover {
@@ -55,7 +74,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c3:hover:before {
-  border: 2px solid #D4D7D9;
+  border-color: #D4D7D9;
 }
 
 .c2 {
@@ -66,52 +85,34 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   position: absolute;
 }
 
-.c2:hover + label:before,
-.c2:focus + label:before {
-  border: 2px #3B46C4 solid;
+.c2:hover + label:before {
+  border-color: #00D9C5;
 }
 
-.c2:checked + label {
-  font-weight: 600;
+.c2:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c2:checked + label:before {
-  content: '';
-  background-color: #3B46C4;
-  border: 2px #3B46C4 solid;
-  border-radius: 50%;
-  height: 24px;
-  width: 24px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 8px;
+  border-color: #00D9C5;
 }
 
 .c2:checked + label:after {
-  content: '';
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
-  display: inline-block;
-  -webkit-animation: hjYkn 120ms ease-in-out;
-  animation: hjYkn 120ms ease-in-out;
-  left: 8px;
-  top: 8px;
-  position: absolute;
+  background-color: #00D9C5;
+  height: 12px;
+  width: 12px;
+  -webkit-animation: hjYkn 200ms ease-in-out;
+  animation: hjYkn 200ms ease-in-out;
 }
 
 .c2:disabled + label {
-  color: #D4D7D9;
+  cursor: not-allowed;
+  color: #818F9B;
 }
 
 .c2:disabled + label:before {
   border-color: #D4D7D9;
-  background-color: #EFEFEF;
-}
-
-.c2:disabled + label:hover {
-  cursor: not-allowed;
 }
 
 <div

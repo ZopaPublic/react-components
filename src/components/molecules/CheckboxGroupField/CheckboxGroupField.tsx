@@ -9,16 +9,16 @@ const CheckboxWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface ICheckboxGroupFieldItem<Val extends Record<string, boolean>> {
+interface CheckboxGroupFieldItem<Val extends Record<string, boolean>> {
   label: string;
   name: keyof Val;
   defaultChecked?: boolean;
   disabled?: boolean;
 }
 
-export interface ICheckboxGroupFieldProps<Val extends Record<string, boolean>> {
+export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   label: string;
-  items: ICheckboxGroupFieldItem<Val>[];
+  items: CheckboxGroupFieldItem<Val>[];
   onChange?: (value: Val) => void;
   disabled?: boolean;
   value?: Val;
@@ -30,7 +30,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   onChange,
   value,
   disabled,
-}: ICheckboxGroupFieldProps<Val>) => {
+}: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
       (acc, { name, defaultChecked }) => ({

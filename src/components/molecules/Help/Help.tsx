@@ -5,8 +5,7 @@ import Text from '../../atoms/Text/Text';
 import Heading from '../../atoms/Heading/Heading';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
-import { colors } from '../../../constants/colors';
-import grid from '../../../constants/grid';
+import { colors, grid } from '../../../constants';
 
 const HelpWrap = styled.div`
   background: ${colors.white};
@@ -31,11 +30,11 @@ const OpeningHoursWrapper = styled.div`
   max-width: 350px;
 `;
 
-export interface IHelpProps extends HTMLAttributes<HTMLDivElement> {
+export interface HelpProps extends HTMLAttributes<HTMLDivElement> {
   email: string;
 }
 
-const Help: React.FC<IHelpProps> = ({ email, ...rest }) => (
+const Help: React.FC<HelpProps> = ({ email, ...rest }) => (
   <HelpWrap {...rest}>
     <HelpContent>
       <FlexRow gutter={16}>

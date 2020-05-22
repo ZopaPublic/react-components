@@ -2,16 +2,16 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { faCheckCircle, faExclamationCircle, faInfoCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../Icon/Icon';
-import { typography } from '../../../constants/typography';
+import { typography } from '../../../constants';
 
-type TSeverity = 'info' | 'alert' | 'warning' | 'success';
+type Severity = 'info' | 'alert' | 'warning' | 'success';
 
-interface IAlertProps {
-  severity?: TSeverity;
+interface AlertProps {
+  severity?: Severity;
 }
 
-type TAlertElementsBySeverity = Record<
-  TSeverity,
+type AlertElementsBySeverity = Record<
+  Severity,
   {
     icon: string;
     background: string;
@@ -20,7 +20,7 @@ type TAlertElementsBySeverity = Record<
   }
 >;
 
-const MAP_BY_SEVERITY: TAlertElementsBySeverity = {
+const MAP_BY_SEVERITY: AlertElementsBySeverity = {
   info: { icon: '#818F9B', background: '#EFEFEF', text: '#2C3236', component: () => <Icon variant={faInfoCircle} /> },
   alert: { icon: '#FF453A', background: '#FFDAD8', text: '#940700', component: () => <Icon variant={faMinusCircle} /> },
   warning: {
@@ -37,7 +37,7 @@ const MAP_BY_SEVERITY: TAlertElementsBySeverity = {
   },
 };
 
-const Wrapper = styled.div<Required<IAlertProps>>`
+const Wrapper = styled.div<Required<AlertProps>>`
   display: flex;
   position: relative;
   padding: 8px 16px 8px 16px;
@@ -60,7 +60,7 @@ const Wrapper = styled.div<Required<IAlertProps>>`
   }
 `;
 
-const IconWrapper = styled.div<Required<IAlertProps>>`
+const IconWrapper = styled.div<Required<AlertProps>>`
   margin-right: 8px;
   font-size: 20px;
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
@@ -70,7 +70,7 @@ const IconWrapper = styled.div<Required<IAlertProps>>`
   }
 `;
 
-const Alert: FC<IAlertProps> = ({ severity = 'info', children, ...rest }) => {
+const Alert: FC<AlertProps> = ({ severity = 'info', children, ...rest }) => {
   const Icon = MAP_BY_SEVERITY[severity].component;
 
   return (

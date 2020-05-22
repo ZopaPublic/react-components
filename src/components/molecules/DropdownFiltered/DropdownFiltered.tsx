@@ -1,27 +1,27 @@
 import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import Icon from '../../atoms/Icon/Icon';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { IField, IInput } from '../../types';
+import { FieldProps, InputProps } from '../../types';
 import Option from './Option';
-import Options, { IOptionsListProps } from './Options';
-import { ISearchInputProps, SearchInput, SearchArrowWrap, SearchInputWrap } from './SearchInput';
+import Options, { OptionsListProps } from './Options';
+import { SearchInputProps, SearchInput, SearchArrowWrap, SearchInputWrap } from './SearchInput';
 
-export interface IDropdownItem {
+export interface DropdownItem {
   value: string;
 }
 
-export interface IDropdownFilteredProps
-  extends DownshiftProps<IDropdownItem>,
-    ISearchInputProps,
-    IOptionsListProps,
-    Omit<IInput, 'onSelect' | 'onChange' | 'children'>,
-    IField {
+export interface DropdownFilteredProps
+  extends DownshiftProps<DropdownItem>,
+    SearchInputProps,
+    OptionsListProps,
+    Omit<InputProps, 'onSelect' | 'onChange' | 'children'>,
+    FieldProps {
   /**
    * Native props for the native label element.
    */
@@ -29,14 +29,14 @@ export interface IDropdownFilteredProps
   /**
    * Items for the options
    */
-  items: IDropdownItem[];
+  items: DropdownItem[];
 }
 
 const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const DropdownFiltered = (props: IDropdownFilteredProps) => {
+const DropdownFiltered = (props: DropdownFilteredProps) => {
   const {
     errorMessage,
     items = [],
@@ -70,7 +70,7 @@ const DropdownFiltered = (props: IDropdownFilteredProps) => {
           openMenu,
           closeMenu,
           selectedItem,
-        }: ControllerStateAndHelpers<IDropdownItem>) => {
+        }: ControllerStateAndHelpers<DropdownItem>) => {
           const filteredResults = items.filter(({ value }) => searchMatch(value, inputValue || ''));
 
           const showError = errorMessage && !isOpen;
@@ -99,14 +99,14 @@ const DropdownFiltered = (props: IDropdownFilteredProps) => {
                   id={`text-id-${name}`}
                   isValid={isValid}
                   hasError={showError}
-                  isOpen={isOpen}
+                  isOpen={isOpen && !!filteredResults.length}
                   disabled={disabled}
                 />
                 <SearchArrowWrap>
                   <Icon
                     variant={faChevronDown}
                     rotation={isOpen ? 180 : undefined}
-                    color={disabled ? colors.greyLight : colors.actionPlain}
+                    color={colors.grey}
                     onClick={() => {
                       if (!disabled) {
                         if (isOpen) {
@@ -121,7 +121,7 @@ const DropdownFiltered = (props: IDropdownFilteredProps) => {
                     aria-label={isOpen ? 'close.menu' : 'open.menu'}
                   />
                 </SearchArrowWrap>
-                {isOpen && (
+                {isOpen && !!filteredResults.length && (
                   <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
                     {filteredResults.map((item, index) => (
                       <Option

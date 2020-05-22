@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link, { ILinkProps } from '../../../atoms/Link/Link';
-import { typography } from '../../../../constants/typography';
-import { spacing } from '../../../../constants/spacing';
+import Link, { LinkProps } from '../../../atoms/Link/Link';
+import { spacing, typography } from '../../../../constants';
 
-const SListItem = styled.li`
+const ListItem = styled.li`
   margin-bottom: ${spacing[4]};
 
   &:last-child {
@@ -12,7 +11,7 @@ const SListItem = styled.li`
   }
 `;
 
-const SListLink = styled(Link)`
+const ListLinkWrapper = styled(Link)`
   font-weight: ${typography.weights.regular};
   text-decoration: none;
 
@@ -22,8 +21,8 @@ const SListLink = styled(Link)`
   }
 `;
 
-export const ListLink = (props: ILinkProps) => (
-  <SListItem>
-    <SListLink {...props} />
-  </SListItem>
+export const ListLink = (props: LinkProps) => (
+  <ListItem>
+    <ListLinkWrapper {...props} />
+  </ListItem>
 );

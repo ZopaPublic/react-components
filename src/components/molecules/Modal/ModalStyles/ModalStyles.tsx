@@ -1,15 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from '../../../../constants';
 
-import { colors } from '../../../../constants/colors';
-
-export interface IModalStylesProps {
+export interface ModalStylesProps {
   /**
    * The CSS `z-index` value to be applied on the rendered modal.
    */
   zIndex?: number;
 }
 
-const ModalStyles = createGlobalStyle<IModalStylesProps>`
+const ModalStyles = createGlobalStyle<ModalStylesProps>`
   .zopa-modal-body--open {
     overflow: hidden;
   }

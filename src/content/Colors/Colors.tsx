@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import { colors } from '../../constants';
 import {
-  colors,
-  TColors,
+  Colors as ColorsType,
   brandColors,
   actionColors,
   neutralColors,
   notificationColors,
-} from './../../constants/colors';
+} from '../../constants/colors';
 
-type TColorVariants = keyof TColors;
+type ColorVariants = keyof ColorsType;
 
-interface ISColorProps {
+interface ColorProps {
   color: string;
-  colorName: TColorVariants;
+  colorName: ColorVariants;
 }
 
-interface IColorsProps {
+interface ColorsProps {
   /**
    * section of the default colors
    * @ignore
@@ -24,26 +24,26 @@ interface IColorsProps {
   variant: 'brand' | 'actions' | 'neutral' | 'notifications';
 }
 
-interface IColorGroups {
+interface ColorGroups {
   brand: Array<string>;
   actions: Array<string>;
   neutral: Array<string>;
   notifications: Array<string>;
 }
 
-const SColors = styled.div`
+const ColorsWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
 
-const colorGroups: IColorGroups = {
+const colorGroups: ColorGroups = {
   brand: Object.keys(brandColors),
   actions: Object.keys(actionColors),
   neutral: Object.keys(neutralColors),
   notifications: Object.keys(notificationColors),
 };
 
-const SColor = styled.div<ISColorProps>`
+const Color = styled.div<ColorProps>`
   background: ${({ color }) => color};
   margin: 5px;
   border: 1px solid #efefef;
@@ -59,26 +59,26 @@ const SColor = styled.div<ISColorProps>`
   }
 `;
 
-export default function Colors({ variant }: IColorsProps) {
+export default function Colors({ variant }: ColorsProps) {
   const colorGroup = colorGroups[variant] as string[];
   return (
-    <SColors>
+    <ColorsWrapper>
       {colorGroup.map((colorKey: string) => {
-        const colorName = colorKey as TColorVariants;
+        const colorName = colorKey as ColorVariants;
         const actualColor = colorName === 'action' ? `#4F5AD8 to ${colors.actionPlain}` : colors[colorName];
         return (
           <>
-            <SColor key={colorKey} color={colors[colorName]} colorName={colorName}>
+            <Color key={colorKey} color={colors[colorName]} colorName={colorName}>
               <p>
                 {colorName}
                 <br />
                 {actualColor}
               </p>
-            </SColor>
+            </Color>
           </>
         );
       })}
-    </SColors>
+    </ColorsWrapper>
   );
 }
 

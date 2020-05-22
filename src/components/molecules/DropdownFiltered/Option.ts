@@ -1,13 +1,12 @@
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import styled, { css } from 'styled-components';
 
-interface IOption extends React.HTMLAttributes<HTMLDivElement> {
+interface OptionProps extends React.HTMLAttributes<HTMLDivElement> {
   highLighted?: boolean;
   selected?: boolean;
 }
 
-const Option = styled.div<IOption>`
+const Option = styled.div<OptionProps>`
   cursor: pointer;
   padding: 8px;
   line-height: 32px;
@@ -18,7 +17,7 @@ const Option = styled.div<IOption>`
     (selected || highLighted) &&
     css`
       color: ${colors.white};
-      background-color: ${colors.actionPlain};
+      background-color: ${colors.brand};
     `};
 `;
 

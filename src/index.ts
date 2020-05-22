@@ -3,11 +3,7 @@
  */
 
 // Global (colors, fonts, ...)
-export { typography } from './constants/typography';
-export { colors } from './constants/colors';
-export { breakpoints } from './constants/breakpoints';
-export * from './constants/components';
-export { default as grid } from './constants/grid';
+export { breakpoints, colors, grid, spacing, typography, navbarHeight } from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
 // Atoms

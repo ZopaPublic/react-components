@@ -1,23 +1,27 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
+import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { IInput } from '../../types';
+import { InputProps } from '../../types';
 
-const Input = styled.input<IInput>`
-  border: 2px solid ${getBorderColorByStatus};
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: ${typography.weights.semiBold};
+const Input = styled.input<InputProps>`
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: ${typography.sizes.text.body};
+  font-weight: ${typography.weights.regular};
+  color: ${colors.greyDarkest}
+  border: 1px solid ${getBorderColorByStatus};
+  box-shadow: 0 0 4px 0 transparent;
+  transition-property: border, box-shadow;
+  transition: 0.2s ease-in-out;
 
   &:focus {
-    border: 2px solid ${colors.actionPlain};
-    transition: border 0.2s;
+    border: 1px solid ${colors.brand};
+    box-shadow: 0 0 4px 0 ${colors.brand};
   }
 
   &::placeholder {
@@ -28,11 +32,12 @@ const Input = styled.input<IInput>`
   }
 
   &:disabled {
-    background-color: ${colors.greyLighter};
+    background-color: ${colors.greyLightest};
+    color: ${colors.grey}
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, IInput>((props, ref) => {
+const InputText = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   return <Input {...props} ref={ref} />;
 });
 

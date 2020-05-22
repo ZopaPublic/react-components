@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
-import { spacing } from '../../../../constants/spacing';
-import grid from '../../../../constants/grid';
+import { grid, spacing } from '../../../../constants';
 
 export const LogoBlock = styled(FlexCol).attrs({ xs: 12, l: 3 })`
   margin-bottom: ${spacing[8]};

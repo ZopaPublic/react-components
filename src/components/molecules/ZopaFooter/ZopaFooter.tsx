@@ -4,7 +4,7 @@ import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import Text from '../../atoms/Text/Text';
 import { Footer, Heading, LegalBlock, List, ListLink, LogoBlock, SocialBlock, SocialLink } from './styles';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import facebook from '../../../content/images/social/facebook.svg';
 import twitter from '../../../content/images/social/twitter.svg';
 import instagram from '../../../content/images/social/instagram.svg';
@@ -12,11 +12,11 @@ import linkedin from '../../../content/images/social/linkedin.svg';
 import Logo from '../../atoms/Logo/Logo';
 import Link from '../../atoms/Link/Link';
 
-export interface IFooterProps extends HTMLAttributes<HTMLDivElement> {
+export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
 }
 
-const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: IFooterProps) => (
+const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) => (
   <Footer {...rest}>
     <FlexContainer gutter={16}>
       <FlexRow className="mb-6">
