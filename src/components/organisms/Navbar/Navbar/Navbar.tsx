@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '../../../../constants/colors';
-import { navbarHeight } from '../../../../constants/components';
+import { colors, navbarHeight } from '../../../../constants';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 

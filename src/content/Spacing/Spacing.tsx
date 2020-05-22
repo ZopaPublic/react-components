@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../constants/colors';
+import { colors } from '../../constants';
 
 const Square = styled.div`
   background-color: ${colors.greyLightest};

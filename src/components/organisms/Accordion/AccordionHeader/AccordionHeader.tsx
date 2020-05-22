@@ -1,9 +1,8 @@
 import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
+import { colors, spacing } from '../../../../constants';
 import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../hooks';
-import { spacing } from '../../../../constants/spacing';
 
 export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   id: string;

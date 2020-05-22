@@ -1,8 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors, Colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
+import { Colors } from '../../../constants/colors';
 
 export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**

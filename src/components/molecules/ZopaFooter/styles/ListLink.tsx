@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link, { LinkProps } from '../../../atoms/Link/Link';
-import { typography } from '../../../../constants/typography';
-import { spacing } from '../../../../constants/spacing';
+import { spacing, typography } from '../../../../constants';
 
 const ListItem = styled.li`
   margin-bottom: ${spacing[4]};

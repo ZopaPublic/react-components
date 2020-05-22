@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { typography } from '../../../../constants/typography';
-import { colors } from '../../../../constants/colors';
+import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
 import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';

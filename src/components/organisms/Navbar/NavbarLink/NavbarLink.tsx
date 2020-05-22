@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
+import { colors } from '../../../../constants';
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';

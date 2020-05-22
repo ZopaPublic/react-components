@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import Text from '../Text/Text';
 import Icon from '../Icon/Icon';
 

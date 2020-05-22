@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
-import grid, { GridBreakpoints } from '../../../constants/grid';
+import { grid } from '../../../constants';
+import { GridBreakpoints } from '../../../constants/grid';
 
 export type AlignSelf = 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'auto';
 export type ColWidth = number | 'fill' | 'auto' | 'hidden';

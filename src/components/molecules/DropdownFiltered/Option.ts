@@ -1,5 +1,4 @@
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import styled, { css } from 'styled-components';
 
 interface OptionProps extends React.HTMLAttributes<HTMLDivElement> {

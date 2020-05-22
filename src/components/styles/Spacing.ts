@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
-import { spacing as sizes } from '../../constants/spacing';
-import grid, { GridBreakpoints } from '../../constants/grid';
+import { spacing as sizes, grid } from '../../constants';
+import { GridBreakpoints } from '../../constants/grid';
 
 type SpacingTypes = 'margin' | 'padding';
 

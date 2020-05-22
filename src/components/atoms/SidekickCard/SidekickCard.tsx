@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import alert from '../../../content/images/alert-icon.svg';
 import triumph from '../../../content/images/triumph-icon.svg';
 import verified from '../../../content/images/valid-icon.svg';

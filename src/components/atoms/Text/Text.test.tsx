@@ -2,7 +2,7 @@ import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
 import Text from './Text';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 
 describe('<Text />', () => {
   it('renders without  a11y violations', async () => {

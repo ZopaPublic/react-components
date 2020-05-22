@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import grid from '../../../../constants/grid';
+import { grid } from '../../../../constants';
 import { ButtonProps, buttonStyle } from '../../Button/Button';
 
 const ButtonWrapper = styled.div`

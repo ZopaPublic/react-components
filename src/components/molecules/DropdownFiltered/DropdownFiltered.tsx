@@ -1,7 +1,7 @@
 import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';

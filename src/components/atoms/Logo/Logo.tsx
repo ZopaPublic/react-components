@@ -1,5 +1,5 @@
 import React from 'react';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 
 export interface LogoProps extends React.SVGProps<SVGSVGElement> {
   width?: string;

@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import { typography } from '../../constants/typography';
+import { typography } from '../../constants';
 import { spacing } from './Spacing';
 
 // Universal box sizing with Inheritance. More info: https://css-tricks.com/box-sizing/#article-header-id-6

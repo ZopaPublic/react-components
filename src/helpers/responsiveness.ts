@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
-import { breakpoints, DeviceSizes } from '../constants/breakpoints';
+import { breakpoints } from '../constants';
+import { DeviceSizes } from '../constants/breakpoints';
 
 type Media = Record<DeviceSizes, ReturnType<typeof interpolate>>;
 

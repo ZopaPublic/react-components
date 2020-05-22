@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import Dropdown, { Option } from './Dropdown';
 
 describe('<Dropdown />', () => {

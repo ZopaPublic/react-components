@@ -5,8 +5,7 @@ import Text from '../../atoms/Text/Text';
 import InputText from '../../atoms/InputText/InputText';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import { FieldProps, InputProps } from '../../types';
 
 export interface TextFieldProps extends FieldProps, InputProps {
