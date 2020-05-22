@@ -1,5 +1,5 @@
 # NPM #
-node_modules
+/node_modules
 
 # Used to test the build process
 styleguide/*
