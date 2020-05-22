@@ -30,6 +30,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  max-width: 336px;
 }
 
 .c1 a {
@@ -45,7 +46,6 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
 }
 
 .c2 {
-  margin-right: 8px;
   font-size: 20px;
 }
 

@@ -21,6 +21,7 @@ const StyledErrorMessage = styled(Text).attrs({
   line-height: 20px;
   font-family: ${typography.primary};
   font-weight: 400;
+  max-width: 336px;
 
   a {
     font-size: 15px;
@@ -34,7 +35,6 @@ const StyledErrorMessage = styled(Text).attrs({
 `;
 
 const IconWrapper = styled.div`
-  margin-right: 8px;
   font-size: 20px;
 
   svg {
