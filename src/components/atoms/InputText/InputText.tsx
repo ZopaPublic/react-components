@@ -13,7 +13,7 @@ const Input = styled.input<InputProps>`
   height: 50px;
   font-size: ${typography.sizes.text.body};
   font-weight: ${typography.weights.regular};
-  color: ${colors.greyDarkest}
+  color: ${colors.greyDarkest};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
@@ -33,7 +33,7 @@ const Input = styled.input<InputProps>`
 
   &:disabled {
     background-color: ${colors.greyLightest};
-    color: ${colors.grey}
+    color: ${colors.grey};
   }
 `;
 
