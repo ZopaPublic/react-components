@@ -19,25 +19,25 @@ const nationalities = [
 
 const validate = values => {
   let errors = {};
-  if (!values.nationality) {
-    errors.nationality = 'Please pick one';
+  if (!values.country) {
+    errors.country = 'Please pick one';
   }
   return errors;
 };
 
 <Formik
   validateOnMount
-  initialValues={{ nationality: '' }}
+  initialValues={{ country: '' }}
   validate={validate}
   onSubmit={values => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>
       <FormDropdownFilteredField
-        name="nationality"
+        name="country"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
-        label="Nationality"
+        label="country"
       />
     </div>
     <FormButton>Submit</FormButton>

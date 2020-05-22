@@ -1,8 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, Colors, brandColors, actionColors, neutralColors, notificationColors } from './../../constants/colors';
+import { colors } from '../../constants';
+import {
+  Colors as ColorsType,
+  brandColors,
+  actionColors,
+  neutralColors,
+  notificationColors,
+} from '../../constants/colors';
 
-type ColorVariants = keyof Colors;
+type ColorVariants = keyof ColorsType;
 
 interface ColorProps {
   color: string;

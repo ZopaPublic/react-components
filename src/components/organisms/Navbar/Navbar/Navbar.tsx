@@ -3,11 +3,15 @@ import styled, { css } from 'styled-components';
 import Headroom from 'react-headroom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { colors } from '../../../../constants/colors';
-import { breakpoints } from '../../../../constants/breakpoints';
+import {
+  colors,
+  navbarOpenHeight,
+  navbarClosedHeight,
+  mobileNavbarHeight,
+  breakpoints,
+  spacing,
+} from '../../../../constants';
 import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
-import { spacing } from '../../../../constants/spacing';
-import { navbarOpenHeight, navbarClosedHeight, mobileNavbarHeight } from '../../../../constants/components';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';

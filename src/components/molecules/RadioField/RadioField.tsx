@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -26,28 +26,40 @@ const FieldContainer = styled(SizedContainer)`
 
 const Label = styled(InputLabel)<InputStatus>`
   display: flex;
+  align-items: center;
   line-height: 1.4;
+  font-weight: ${typography.weights.regular};
+  font-size: ${typography.sizes.text.body};
   color: ${colors.greyDarkest};
   font-weight: 400;
   position: relative;
   margin-bottom: 0;
-
   &:before {
     content: '';
-    background-color: ${colors.greyLighter};
+    background-color: ${colors.white};
     border-radius: 50%;
     height: 24px;
     width: 24px;
     min-width: 24px;
     display: inline-block;
-    vertical-align: top;
     margin-right: 8px;
-    border: 2px ${getBorderColorByStatus} solid;
+    border: 1px ${getBorderColorByStatus} solid;
+    box-shadow: 0 0 4px 0 transparent;
+    transition-property: border, box-shadow;
+    transition: 0.2s ease-in-out;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    left: 6px;
+    top: 6px;
   }
   &:hover {
     cursor: pointer;
     &:before {
-      border: 2px solid ${colors.greyLight};
+      border-color: ${colors.greyLight};
     }
   }
 `;
@@ -58,46 +70,33 @@ const Input = styled.input<InputStatus>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:hover + label,
+  &:hover + label {
+    &:before {
+      border-color: ${colors.brand};
+    }
+  }
   &:focus + label {
     &:before {
-      border: 2px ${colors.actionPlain} solid;
+      border-color: ${colors.brand};
+      box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
   &:checked + label {
-    font-weight: 600;
     &:before {
-      content: '';
-      background-color: ${colors.actionPlain};
-      border: 2px ${colors.actionPlain} solid;
-      border-radius: 50%;
-      height: 24px;
-      width: 24px;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 8px;
+      border-color: ${colors.brand};
     }
     &:after {
-      content: '';
-      background-color: ${colors.white};
-      border-radius: 50%;
-      height: 8px;
-      width: 8px;
-      display: inline-block;
-      animation: ${zoomIn} 120ms ease-in-out;
-      left: 8px;
-      top: 8px;
-      position: absolute;
+      background-color: ${({ disabled }) => (disabled ? colors.grey : colors.brand)};
+      height: 12px;
+      width: 12px;
+      animation: ${zoomIn} 200ms ease-in-out;
     }
   }
   &:disabled + label {
-    color: ${colors.greyLight};
+    cursor: not-allowed;
+    color: ${colors.grey};
     &:before {
       border-color: ${colors.greyLight};
-      background-color: ${colors.greyLighter};
-    }
-    &:hover {
-      cursor: not-allowed;
     }
   }
 `;

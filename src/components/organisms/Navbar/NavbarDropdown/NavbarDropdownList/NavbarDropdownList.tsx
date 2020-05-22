@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { colors } from '../../../../../constants/colors';
-import { spacing } from '../../../../../constants/spacing';
+import { colors, spacing } from '../../../../../constants';
 import { minMedia } from '../../../../../helpers/responsiveness';
 
 export type AlignedTo = 'left' | 'right';

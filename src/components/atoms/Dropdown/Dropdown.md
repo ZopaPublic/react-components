@@ -29,12 +29,22 @@ import { Dropdown, DropdownOption } from '@zopauk/react-components';
 </Dropdown>;
 ```
 
-#### isValid
+- Valid
 
 ```tsx
 import { Dropdown, DropdownOption } from '@zopauk/react-components';
 
 <Dropdown isValid={true}>
+  <DropdownOption value="first">First value</DropdownOption>
+</Dropdown>;
+```
+
+- Disabled
+
+```tsx
+import { Dropdown, DropdownOption } from '@zopauk/react-components';
+
+<Dropdown disabled={true}>
   <DropdownOption value="first">First value</DropdownOption>
 </Dropdown>;
 ```

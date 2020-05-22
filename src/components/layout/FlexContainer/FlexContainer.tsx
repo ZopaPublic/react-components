@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import grid from '../../../constants/grid';
+import { grid } from '../../../constants';
 
 export interface FlexContainerGutter {
   gutter?: number;

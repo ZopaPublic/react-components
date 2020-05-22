@@ -1,7 +1,6 @@
 import React, { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 
 export interface InputLabelProps extends HTMLAttributes<HTMLLabelElement> {
   /**

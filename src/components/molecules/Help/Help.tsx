@@ -5,8 +5,7 @@ import Text from '../../atoms/Text/Text';
 import Heading from '../../atoms/Heading/Heading';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
-import { colors } from '../../../constants/colors';
-import grid from '../../../constants/grid';
+import { colors, grid } from '../../../constants';
 
 const HelpWrap = styled.div`
   background: ${colors.white};

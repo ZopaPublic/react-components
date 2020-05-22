@@ -2,9 +2,7 @@ import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import { colors } from '../../../../constants/colors';
-import { spacing } from '../../../../constants/spacing';
-import { typography } from '../../../../constants/typography';
+import { colors, spacing, typography } from '../../../../constants';
 import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
 
 import Link, { LinkProps } from '../../../atoms/Link/Link';

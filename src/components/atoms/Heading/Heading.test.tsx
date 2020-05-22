@@ -1,8 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
+import { colors, typography } from '../../../constants';
 import Heading from './Heading';
 const {
   sizes: { heading: headingSizes },

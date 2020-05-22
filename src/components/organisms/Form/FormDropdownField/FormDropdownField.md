@@ -12,15 +12,15 @@ import { DropdownField, FormButton } from '@zopauk/react-components';
 
 const validate = values => {
   let errors = {};
-  if (!values.referral) {
-    errors.referral = 'Please pick one';
+  if (!values.ref) {
+    errors.ref = 'Please pick one';
   }
   return errors;
 };
 
 <Formik
   validateOnMount
-  initialValues={{ referral: 'newspaper' }}
+  initialValues={{ ref: 'newspaper' }}
   validate={validate}
   onSubmit={values => alert(JSON.stringify(values))}
 >
@@ -42,7 +42,7 @@ const validate = values => {
           },
         ]}
         label="How did you hear about us?"
-        name="referral"
+        name="ref"
       />
     </div>
     <FormButton>Submit</FormButton>

@@ -91,43 +91,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   text-align: inherit;
 }
 
-.c7 {
-  background-color: transparent;
-  font-size: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  line-height: inherit;
-  color: #3B46C4;
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  border: none;
-}
-
-.c7:hover,
-.c7:active {
-  color: #21247F;
-}
-
-.c7:hover svg path,
-.c7:active svg path {
-  fill: #21247F;
-}
-
-.c11 {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-  fill: #00D9C5;
-}
-
 .c0 {
   background-color: #FFFFFF;
   padding-bottom: 56px;
@@ -189,6 +152,37 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   list-style-type: none;
 }
 
+.c7 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c7:hover,
+.c7:active {
+  color: #21247F;
+}
+
+.c7:hover svg path,
+.c7:active svg path {
+  fill: #21247F;
+}
+
 .c6 {
   margin-bottom: 16px;
 }
@@ -227,6 +221,12 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 
 .c14 {
   margin: 0 8px;
+}
+
+.c11 {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  fill: #00D9C5;
 }
 
 @media (min-width:576px) {

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
+import { colors, typography } from '../../../constants';
 
 export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,

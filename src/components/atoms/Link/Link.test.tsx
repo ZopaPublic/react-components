@@ -1,7 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import Link from './Link';
 
 describe('<Link />', () => {

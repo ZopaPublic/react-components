@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors, Colors } from '../../../constants/colors';
-import grid from '../../../constants/grid';
+import { colors, grid, typography } from '../../../constants';
+import { Colors } from '../../../constants/colors';
 
 type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 

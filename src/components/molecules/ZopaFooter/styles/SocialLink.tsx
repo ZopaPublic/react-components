@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import { Icon } from './Icon';
-import { spacing } from '../../../../constants/spacing';
+import { spacing } from '../../../../constants';
 
 interface SocialLink extends LinkProps {
   variant: string;

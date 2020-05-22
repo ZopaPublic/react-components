@@ -1,7 +1,7 @@
 import Downshift, { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -99,14 +99,14 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   id={`text-id-${name}`}
                   isValid={isValid}
                   hasError={showError}
-                  isOpen={isOpen}
+                  isOpen={isOpen && !!filteredResults.length}
                   disabled={disabled}
                 />
                 <SearchArrowWrap>
                   <Icon
                     variant={faChevronDown}
                     rotation={isOpen ? 180 : undefined}
-                    color={disabled ? colors.greyLight : colors.actionPlain}
+                    color={colors.grey}
                     onClick={() => {
                       if (!disabled) {
                         if (isOpen) {
@@ -121,7 +121,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                     aria-label={isOpen ? 'close.menu' : 'open.menu'}
                   />
                 </SearchArrowWrap>
-                {isOpen && (
+                {isOpen && !!filteredResults.length && (
                   <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
                     {filteredResults.map((item, index) => (
                       <Option

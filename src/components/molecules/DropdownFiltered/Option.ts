@@ -1,5 +1,4 @@
-import { typography } from '../../../constants/typography';
-import { colors } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
 import styled, { css } from 'styled-components';
 
 interface OptionProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -18,7 +17,7 @@ const Option = styled.div<OptionProps>`
     (selected || highLighted) &&
     css`
       color: ${colors.white};
-      background-color: ${colors.actionPlain};
+      background-color: ${colors.brand};
     `};
 `;
 
