@@ -10,22 +10,18 @@ const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
   size: 'small',
 })`
-  display: flex;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
   padding: 8px 16px 8px 16px;
   color: ${colors.alertDark};
   background-color: ${colors.alertLight};
-  position: relative;
-  padding: 8px 16px 8px 16px;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: ${typography.sizes.text.body};
   font-family: ${typography.primary};
-  font-weight: 400;
+  font-weight: ${typography.weights.regular};
   max-width: 336px;
 
   a {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: ${typography.sizes.text.body};
     text-decoration: underline;
 
     &:hover {
@@ -34,12 +30,9 @@ const StyledErrorMessage = styled(Text).attrs({
   }
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.span`
   font-size: 20px;
-
-  svg {
-    display: block;
-  }
+  align-self: flex-start;
 `;
 
 type ErrorMessageProps = {
