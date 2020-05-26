@@ -54,6 +54,8 @@ const Input = styled.input<InputProps>`
     &:before {
       border-color: ${colors.greyLight};
     }
+  }
+  &:disabled:checked + label {
     &:after {
       background-size: contain;
       background-image: ${`url(${greyCheckMark})`};

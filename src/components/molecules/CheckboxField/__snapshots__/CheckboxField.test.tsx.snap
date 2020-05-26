@@ -42,7 +42,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border-color: #D4D7D9;
 }
 
-.c1:disabled + label:after {
+.c1:disabled:checked + label:after {
   background-size: contain;
   background-image: url(grey-check-mark.svg);
   -webkit-animation: icNfUr 180ms ease-in-out;

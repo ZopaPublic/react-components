@@ -52,7 +52,7 @@ const LogoRect = styled.rect`
   stroke: #19f6e8;
 `;
 
-const ZLogo = styled.img`
+const ZopaLogo = styled.img`
   position: relative;
   top: -40px;
 `;
@@ -65,7 +65,7 @@ export function LogoRenderer({ children }) {
           <svg height="50" width="100%">
             <LogoRect height="50" width="100%" />
           </svg>
-          <ZLogo src={zLogo} alt="Zopa logo" />
+          <ZopaLogo src={zLogo} alt="Zopa logo" />
         </div>
         <LinkRepo
           href="https://github.com/zopaUK/react-components"
