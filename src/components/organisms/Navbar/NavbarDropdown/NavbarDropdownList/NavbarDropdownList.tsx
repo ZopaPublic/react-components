@@ -4,6 +4,8 @@ import { colors, spacing } from '../../../../../constants';
 import { minMedia } from '../../../../../helpers/responsiveness';
 
 const NavbarDropdownList = styled.ul`
+  position: relative;
+  z-index: 1;
   margin: ${spacing[3]} 0 ${spacing[3]};
   padding: 0;
 
@@ -21,8 +23,7 @@ const NavbarDropdownList = styled.ul`
       margin: 0;
       padding: ${spacing[2]};
 
-      &:after {
-        z-index: 1;
+      &:before {
         content: '';
         top: 1px;
         left: 50%;

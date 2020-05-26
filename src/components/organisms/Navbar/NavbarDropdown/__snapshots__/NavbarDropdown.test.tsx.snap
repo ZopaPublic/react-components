@@ -2,6 +2,8 @@
 
 exports[`<Navbar.Dropdown /> should render component 1`] = `
 .c6 {
+  position: relative;
+  z-index: 1;
   margin: 12px 0 12px;
   padding: 0;
   list-style-type: none;
@@ -86,8 +88,7 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
     padding: 8px;
   }
 
-  .c6:after {
-    z-index: 1;
+  .c6:before {
     content: '';
     top: 1px;
     left: 50%;
