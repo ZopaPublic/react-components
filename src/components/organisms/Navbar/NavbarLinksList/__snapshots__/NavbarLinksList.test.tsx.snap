@@ -10,11 +10,6 @@ Object {
   border-bottom: 1px solid #EFEFEF;
 }
 
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
 .c1 {
   background-color: transparent;
   font-size: inherit;
@@ -115,6 +110,11 @@ Object {
   display: none;
 }
 
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
 @media (min-width:1280px) {
   .c6 {
     background-color: #FFFFFF;
@@ -139,22 +139,6 @@ Object {
     transform: translate(-50%,-50%) rotate(135deg);
     background-color: inherit;
     box-shadow: -1px 1px 0 0 #EFEFEF;
-  }
-}
-
-@media (min-width:1280px) {
-  .c5 {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
-    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%,-10%);
-    -ms-transform: translate(-50%,-10%);
-    transform: translate(-50%,-10%);
   }
 }
 
@@ -199,6 +183,22 @@ Object {
   }
 }
 
+@media (min-width:1280px) {
+  .c5 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
+  }
+}
+
 <body>
     <div>
       <div
@@ -209,7 +209,6 @@ Object {
           aria-haspopup="true"
           class="c1 c2"
           color="#3B46C4"
-          data-automation="About.topBar.Menu"
           href="#"
           role="menuitem"
           tabindex="0"
@@ -360,25 +359,24 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-dnqmqq ghmWLu"
+      class="sc-jTzLTM dahxmI"
     >
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-gZMcBi lfByGy sc-VigVT cFxqPO"
+        class="sc-dnqmqq erwKhR sc-gZMcBi heSWSQ"
         color="#3B46C4"
-        data-automation="About.topBar.Menu"
         href="#"
         role="menuitem"
         tabindex="0"
       >
         <span
-          class="sc-jTzLTM edgmm"
+          class="sc-gqjmRU kyarqY"
         >
           About
         </span>
         <span
-          class="sc-fjdhpX dHfski"
+          class="sc-VigVT jqhKcv"
         >
           <svg
             aria-hidden="true"
@@ -399,7 +397,7 @@ Object {
         </span>
       </a>
       <div
-        class="sc-iwsKbI gPniSp"
+        class="sc-fjdhpX iozrnZ"
       >
         <ul
           aria-label="About"
@@ -410,7 +408,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="About.About.topBar.Menu"
               href="/about"
@@ -424,7 +422,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Story.About.topBar.Menu"
               href="/about/our-story"
@@ -438,7 +436,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Our_Board.About.topBar.Menu"
               href="/about/board"
@@ -452,7 +450,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Our_Leadership.About.topBar.Menu"
               href="/about/leadership"
@@ -466,7 +464,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Awards.About.topBar.Menu"
               href="/about/awards"
@@ -480,7 +478,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Careers.About.topBar.Menu"
               href="/about/careers"
@@ -494,7 +492,7 @@ Object {
             role="none"
           >
             <a
-              class="sc-gZMcBi lfByGy sc-VigVT dOFmME"
+              class="sc-dnqmqq erwKhR sc-gZMcBi kbmNoe"
               color="#3B46C4"
               data-automation="Press_office.About.topBar.Menu"
               href="/about/press"
@@ -508,7 +506,7 @@ Object {
       </div>
     </div>
     <a
-      class="sc-gZMcBi lfByGy sc-VigVT iPuNjo"
+      class="sc-dnqmqq erwKhR sc-gZMcBi iSkvpf"
       color="#3B46C4"
       href="/contact"
     >

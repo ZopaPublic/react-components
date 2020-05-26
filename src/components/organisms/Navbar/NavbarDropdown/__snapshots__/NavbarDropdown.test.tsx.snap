@@ -1,11 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navbar.Dropdown /> should render component 1`] = `
-.c2 {
+.c6 {
   margin: 12px 0 12px;
   padding: 0;
   list-style-type: none;
   border-bottom: 1px solid #EFEFEF;
+}
+
+.c1 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c1:hover,
+.c1:active {
+  color: #21247F;
+}
+
+.c1:hover svg path,
+.c1:active svg path {
+  fill: #21247F;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+}
+
+.c2:active,
+.c2:hover {
+  opacity: 0.88;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.c4 {
+  display: none;
 }
 
 .c0 {
@@ -14,7 +76,7 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c2 {
+  .c6 {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -24,7 +86,7 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
     padding: 8px;
   }
 
-  .c2:after {
+  .c6:after {
     z-index: 1;
     content: '';
     top: 1px;
@@ -40,8 +102,37 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
   }
 }
 
+@media (max-width:1280px) {
+  .c2 {
+    color: #2C3236;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
 @media (min-width:1280px) {
-  .c1 {
+  .c4 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width:1280px) {
+  .c5 {
     position: absolute;
     left: 50%;
     top: 50px;
@@ -59,20 +150,47 @@ exports[`<Navbar.Dropdown /> should render component 1`] = `
 <div
   class="c0"
 >
-  <button
+  <a
     aria-expanded="false"
     aria-haspopup="true"
+    class="c1 c2"
+    color="#3B46C4"
+    href="#"
     role="menuitem"
     tabindex="0"
   >
-    opener
-  </button>
+    <span
+      class="c3"
+    >
+      test
+    </span>
+    <span
+      class="c4"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+        color="#818F9B"
+        data-icon="chevron-down"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
+  </a>
   <div
-    class="c1"
+    class="c5"
   >
     <ul
       aria-label="test"
-      class="c2"
+      class="c6"
       role="menu"
     >
       <li

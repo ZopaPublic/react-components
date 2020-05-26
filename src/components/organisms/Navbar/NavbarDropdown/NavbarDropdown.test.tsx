@@ -7,7 +7,6 @@ describe('<Navbar.Dropdown />', () => {
     { label: 'one', href: '#' },
     { label: 'two', href: '#' },
   ];
-  const renderOpener = ({ getOpenerProps }) => <button {...getOpenerProps()}>opener</button>;
   const renderItem = ({ item: { label, href }, getItemProps }) => (
     <a href={href} {...getItemProps()}>
       {label}
@@ -17,13 +16,7 @@ describe('<Navbar.Dropdown />', () => {
   const renderComponent = () =>
     render(
       <>
-        <Navbar.Dropdown
-          id="unique-dropdown-id"
-          ariaLabel="test"
-          items={items}
-          renderOpener={renderOpener}
-          renderItem={renderItem}
-        />
+        <Navbar.Dropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
         <button>button</button>
       </>,
     );

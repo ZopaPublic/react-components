@@ -1,6 +1,6 @@
 ### Summary
 
-[`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksList) is responsible for rendering navbar links. By default it will render [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown) for `links` with `children` and [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) for `links` within a dropdown (if using `<Navbar.Dropdown />`) or `links` without `children`. These can be changed using the `renderDropdown` and `renderLink` props.
+[`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksList) is responsible for rendering navbar links. By default it will render [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown) for `links` with `children` and [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) for `links` within a dropdown (if using `<Navbar.Dropdown />`) or `links` without `children`. These can be changed using the `renderLink` props.
 
 ### Examples
 
@@ -12,7 +12,6 @@ import { Navbar } from '@zopauk/react-components';
 const NAV_ITEMS = [
   {
     label: 'About',
-    href: '/about',
     qadata: 'About.topBar.Menu',
     children: [
       {
@@ -70,7 +69,6 @@ import { Navbar, Link } from '@zopauk/react-components';
 const NAV_ITEMS = [
   {
     label: 'About',
-    href: '/about',
     qadata: 'About.topBar.Menu',
     children: [
       {
@@ -119,12 +117,6 @@ const NAV_ITEMS = [
 
 <Navbar.LinksList
   links={NAV_ITEMS}
-  renderDropdown={(item, index) => (
-    <div>
-      Custom Dropdown
-      <br /> {item.children.map(link => `${link.label} `)}
-    </div>
-  )}
   renderLink={(item, props) => (
     <Link href={item.href} target="_blank" {...props}>
       {item.label}

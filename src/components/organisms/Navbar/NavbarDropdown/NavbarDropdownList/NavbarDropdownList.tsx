@@ -3,8 +3,6 @@ import styled, { css } from 'styled-components';
 import { colors, spacing } from '../../../../../constants';
 import { minMedia } from '../../../../../helpers/responsiveness';
 
-export type AlignedTo = 'left' | 'right';
-
 const NavbarDropdownList = styled.ul`
   margin: ${spacing[3]} 0 ${spacing[3]};
   padding: 0;
