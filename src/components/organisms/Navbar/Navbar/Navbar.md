@@ -225,7 +225,10 @@ const NAV_ITEMS = [
   },
 ];
 
-const CustomNavbarLink = styled(Link)`
+// could be a gatsby or react-router-dom <Link />
+const SomeLibraryLink = ({ href, ...rest }) => <a href={href} {...rest} />;
+
+const CustomLink = styled(SomeLibraryLink)`
   ${NavbarLinkStyles}
 `;
 
@@ -233,9 +236,9 @@ const CustomNavbarLink = styled(Link)`
   overlayLogoWith={<a href="https://www.zopa.com" />}
   links={NAV_ITEMS}
   renderLink={(item, index, props) => (
-    <CustomNavbarLink href={item.href} target="_blank" {...props} className="px-4 py-2" is>
+    <CustomLink href={item.href} target="_blank" {...props} className="px-4 py-2" is>
       {item.label}
-    </CustomNavbarLink>
+    </CustomLink>
   )}
 />;
 ```

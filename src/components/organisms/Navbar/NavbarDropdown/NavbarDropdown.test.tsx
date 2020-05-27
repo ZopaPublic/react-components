@@ -1,8 +1,8 @@
 import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import Navbar from '..';
+import NavbarDropdown from './NavbarDropdown';
 
-describe('<Navbar.Dropdown />', () => {
+describe('<NavbarDropdown />', () => {
   const items = [
     { label: 'one', href: '#' },
     { label: 'two', href: '#' },
@@ -16,7 +16,7 @@ describe('<Navbar.Dropdown />', () => {
   const renderComponent = () =>
     render(
       <>
-        <Navbar.Dropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
+        <NavbarDropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
         <button>button</button>
       </>,
     );

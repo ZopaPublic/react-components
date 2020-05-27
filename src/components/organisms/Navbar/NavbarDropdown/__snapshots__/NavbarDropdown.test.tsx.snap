@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar.Dropdown /> should render component 1`] = `
+exports[`<NavbarDropdown /> should render component 1`] = `
 .c6 {
   position: relative;
   z-index: 1;

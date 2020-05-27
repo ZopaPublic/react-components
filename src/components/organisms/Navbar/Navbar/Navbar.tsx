@@ -36,7 +36,7 @@ export interface NavbarLinksListProps {
   /**
    * Link component
    */
-  renderLink: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
+  renderLink?: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
 }
 
 export interface NavbarProps extends NavbarLinksListProps {
@@ -254,7 +254,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               <IconContainer />
             )}
             <LogoContainer>
-              <Logo color={colors.brand} width="150px" negative />
+              <Logo color={colors.brand} height="20px" negative />
               {overlayLogoWith}
             </LogoContainer>
             <IconContainer>{withCTA && cta}</IconContainer>

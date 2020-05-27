@@ -9,9 +9,9 @@ describe('<Navbar />', () => {
   });
 
   it('should not render the hamburger icon when no content is added', () => {
-    render(<Navbar>Content</Navbar>);
-    const hamburgerIcon = screen.getByTestId('hamburger-icon');
-    expect(hamburgerIcon).toBeInTheDocument();
+    render(<Navbar />);
+    const hamburgerIcon = screen.queryByTestId('hamburger-icon');
+    expect(hamburgerIcon).not.toBeInTheDocument();
   });
 
   it('should render component with all the props', () => {

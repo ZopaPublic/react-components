@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Navbar from '..';
+import NavbarLinksList from './NavbarLinksList';
 
-describe('<Navbar.LinksList />', () => {
+describe('<NavbarLinksList />', () => {
   it('should render component with default props', () => {
     const NAV_ITEMS = [
       {
@@ -52,34 +52,10 @@ describe('<Navbar.LinksList />', () => {
         qadata: 'Support.topBar.Menu',
       },
     ];
-    const container = render(<Navbar.LinksList links={NAV_ITEMS} />);
+    const container = render(
+      <NavbarLinksList links={NAV_ITEMS} renderLink={item => <a href={item.href}>{item.label}</a>} />,
+    );
     expect(container).toMatchSnapshot();
-  });
-
-  it('should render a dropdown when links contain children', () => {
-    const NAV_ITEMS = [
-      {
-        label: 'About',
-        href: '/about',
-        qadata: 'About.topBar.Menu',
-        children: [
-          {
-            label: 'About Zopa',
-            href: '/about',
-            qadata: 'About.About.topBar.Menu',
-          },
-          {
-            label: 'Our story',
-            href: '/about/our-story',
-            qadata: 'Story.About.topBar.Menu',
-          },
-        ],
-      },
-    ];
-
-    render(<Navbar.LinksList links={NAV_ITEMS} />);
-    const dropdownItem = screen.getByText('About Zopa');
-    expect(dropdownItem).toHaveAttribute('role', 'menuitem');
   });
 
   it('should render a navlink when links contain children', () => {
@@ -91,7 +67,7 @@ describe('<Navbar.LinksList />', () => {
       },
     ];
 
-    render(<Navbar.LinksList links={NAV_ITEMS} />);
+    render(<NavbarLinksList links={NAV_ITEMS} renderLink={item => <a href={item.href}>{item.label}</a>} />);
     const menuItem = screen.getByText('Support');
     expect(menuItem).toHaveAttribute('href', '/contact');
   });

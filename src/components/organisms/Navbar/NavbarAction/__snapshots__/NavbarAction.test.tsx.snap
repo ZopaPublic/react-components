@@ -24,15 +24,14 @@ exports[`<Navbar /> should render component with default props 1`] = `
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #21247F;
   border: 1px solid transparent;
   outline: 0;
-  background-color: #3B46C4;
-  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  background: transparent;
 }
 
 .c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  background: #EAEBFA;
 }
 
 .c0:focus:not(:active) {
@@ -52,13 +51,32 @@ exports[`<Navbar /> should render component with default props 1`] = `
   opacity: 0.8;
 }
 
+@media (max-width:1280px) {
+  .c1 {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c1:hover:not(:disabled) {
+    background: none;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    margin-left: 8px;
+  }
+}
+
 <div>
   <button
-    class="c0 ml-2"
+    class="c0 c1"
   >
     <svg
       aria-hidden="true"
-      class="svg-inline--fa fa-user fa-w-14 fa-fw "
+      class="svg-inline--fa fa-user fa-w-14 fa-lg "
       color="#FFFFFF"
       data-icon="user"
       data-prefix="fas"
