@@ -52,6 +52,16 @@ export interface PageNavigationProps {
   overlap?: boolean;
 }
 
+export interface NavbarLinksListLinkProps extends NavbarLinkProps {
+  'data-automation'?: string;
+}
+
+export interface NavbarLinksListLink {
+  item: NavigationItem;
+  index: number;
+  props: NavbarLinksListLinkProps;
+}
+
 const PageNavigation = styled.header<PageNavigationProps>`
   ${minMedia.desktop`
     ${css`
@@ -194,12 +204,6 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   z-index: 2;
   overflow-y: auto;
 `;
-
-export interface NavbarLinksListLink {
-  item: NavigationItem;
-  index: number;
-  props: NavbarLinksListLinkProps;
-}
 
 const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => (
   <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
