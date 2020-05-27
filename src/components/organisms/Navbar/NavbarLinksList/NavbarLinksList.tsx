@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
-import { NavbarLinkProps } from '../NavbarLink/NavbarLink';
-import Navbar from '../';
+import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
+import NavbarDropdown from '../NavbarDropdown/NavbarDropdown';
 
 export interface NavigationItem {
   label: string;
@@ -11,8 +11,14 @@ export interface NavigationItem {
   children?: NavigationItem[];
 }
 
-export interface NavbarLinksList {
+export interface NavbarLinksListProps {
+  /**
+   * Array of links
+   */
   links?: NavigationItem[];
+  /**
+   * Link component
+   */
   renderLink?: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
 }
 
@@ -27,12 +33,12 @@ export interface NavbarLinksListLink {
 }
 
 const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => (
-  <Navbar.Link key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
+  <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
     {label}
-  </Navbar.Link>
+  </NavbarLink>
 );
 
-const NavbarLinksList: React.FC<NavbarLinksList> = ({
+const NavbarLinksList: React.FC<NavbarLinksListProps> = ({
   links,
   renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
@@ -42,7 +48,7 @@ const NavbarLinksList: React.FC<NavbarLinksList> = ({
     {links &&
       links.map((item: NavigationItem, index: number) =>
         !!item.children ? (
-          <Navbar.Dropdown
+          <NavbarDropdown
             key={`dropdown-${index}`}
             id={`navbar-dropdown-${index}`}
             label={item.label}

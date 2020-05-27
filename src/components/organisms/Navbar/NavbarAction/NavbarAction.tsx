@@ -22,7 +22,7 @@ const NavbarAction: React.FC<NavbarAction> = ({
   const { width } = useViewport();
 
   return (
-    <Button onClick={onClick} className="ml-2">
+    <Button onClick={onClick} className="ml-2" styling={width && width >= breakpoints.desktop ? 'primary' : 'link'}>
       {width && width >= breakpoints.desktop ? ctaText : <Icon variant={faUser} color={colors.white} fixedWidth />}
     </Button>
   );

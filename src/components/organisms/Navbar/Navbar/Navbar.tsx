@@ -17,21 +17,31 @@ import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
 import Icon from '../../../atoms/Icon/Icon';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
-import Navbar from '../';
+import NavbarLink from '../NavbarLink/NavbarLink';
+import NavbarAction from '../NavbarAction/NavbarAction';
+import NavbarLinksList, { NavbarLinksListProps } from '../NavbarLinksList/NavbarLinksList';
 
-export interface NavbarProps {
+export interface NavbarProps extends NavbarLinksListProps {
   /**
    * allows you to overlay the logo with a button or link
    */
   overlayLogoWith?: React.ReactNode;
   /**
-   * Display CTA
+   * flag to display CTA
    */
   withCTA?: boolean;
   /**
    * CTA component
    */
   cta?: React.ReactNode;
+}
+
+export interface NavigationItem {
+  label: string;
+  href?: string;
+  qadata?: string;
+  onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
+  children?: NavigationItem[];
 }
 
 export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -185,11 +195,26 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
+export interface NavbarLinksListLink {
+  item: NavigationItem;
+  index: number;
+  props: NavbarLinksListLinkProps;
+}
+
+const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => (
+  <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
+    {label}
+  </NavbarLink>
+);
+
 const NavbarWrapper: React.FC<NavbarProps> = ({
-  children,
+  links,
+  renderLink = (item: NavigationItem, index: number, props) => (
+    <NavbarLinksListLink item={item} index={index} props={props} />
+  ),
   overlayLogoWith,
   withCTA = true,
-  cta = <Navbar.Action />,
+  cta = <NavbarAction />,
 }) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold();
@@ -204,14 +229,14 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
             {overlayLogoWith}
           </LogoContainer>
           <NavbarLinksListContainer>
-            {children}
+            <NavbarLinksList links={links} renderLink={renderLink} />
             {withCTA && cta}
           </NavbarLinksListContainer>
         </LayoutInner>
       ) : (
         <Headroom disableInlineStyles disable={open}>
           <LayoutInner>
-            {children ? (
+            {links ? (
               <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
                 <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
               </HamburgerContainer>
@@ -223,7 +248,11 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               {overlayLogoWith}
             </LogoContainer>
             <IconContainer>{withCTA && cta}</IconContainer>
-            {children && <HamburgerMenu open={open}>{children}</HamburgerMenu>}
+            {links && (
+              <HamburgerMenu open={open}>
+                <NavbarLinksList links={links} renderLink={renderLink} />
+              </HamburgerMenu>
+            )}
           </LayoutInner>
         </Headroom>
       )}

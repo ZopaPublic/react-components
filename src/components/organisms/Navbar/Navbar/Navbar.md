@@ -1,6 +1,6 @@
 ### Summary
 
-By default [`<Navbar.LinksList />`](#/Components/Organisms/Navbar/NavbarLinksList) will render [`<Navbar.Dropdown />`](#/Components/Organisms/Navbar/NavbarDropdown) or [`<Navbar.Link />`](#/Components/Organisms/Navbar/NavbarLink) based on whether links have `children` or not.
+Navbar will render an array of links provided using a dropdown which works on click and a link which is a wrap around our [`<Link />`](/#/Components/Atoms/Link) atom, decorated with tow extra props: `active` and `withChevron`. You can opt out displaying the CTA using `withCTA` prop.
 
 ⚠️ The menu animates when scrolling. For a better preview view [Default example](#/Components/Organisms/Navbar/Navbar/1)
 
@@ -114,9 +114,7 @@ const NAV_ITEMS = [
   },
 ];
 
-<Navbar overlayLogoWith={<span></span>}>
-  <Navbar.LinksList links={NAV_ITEMS} />
-</Navbar>;
+<Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />;
 ```
 
 - Custom Navbar components
@@ -224,16 +222,15 @@ const NAV_ITEMS = [
   },
 ];
 
-<Navbar overlayLogoWith={<a href="https://www.zopa.com" />}>
-  <Navbar.LinksList
-    links={NAV_ITEMS}
-    renderLink={(item, props) => (
-      <Link href={item.href} target="_blank" {...props} className="px-4 py-2">
-        {item.label}
-      </Link>
-    )}
-  />
-</Navbar>;
+<Navbar
+  overlayLogoWith={<a href="https://www.zopa.com" />}
+  links={NAV_ITEMS}
+  renderLink={(item, props) => (
+    <Link href={item.href} target="_blank" {...props} className="px-4 py-2">
+      {item.label}
+    </Link>
+  )}
+/>;
 ```
 
 - Without CTA
@@ -348,9 +345,7 @@ const ButtonLink = styled(Link)`
   margin-left: 8px;
 `;
 
-<Navbar withCTA={false}>
-  <Navbar.LinksList links={NAV_ITEMS} />
-</Navbar>;
+<Navbar withCTA={false} links={NAV_ITEMS} />;
 ```
 
 - Without links

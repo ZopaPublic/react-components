@@ -53,7 +53,7 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
-export { default as Navbar } from './components/organisms/Navbar';
+export { default as Navbar } from './components/organisms/Navbar/';
 export { default as Card } from './components/organisms/Card';
 
 // Layout
