@@ -17,7 +17,7 @@ import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
 import Icon from '../../../atoms/Icon/Icon';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
-import NavbarLink from '../NavbarLink/NavbarLink';
+import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList, { NavbarLinksListProps } from '../NavbarLinksList/NavbarLinksList';
 
@@ -52,14 +52,10 @@ export interface PageNavigationProps {
   overlap?: boolean;
 }
 
-export interface NavbarLinksListLinkProps extends NavbarLinkProps {
-  'data-automation'?: string;
-}
-
 export interface NavbarLinksListLink {
   item: NavigationItem;
   index: number;
-  props: NavbarLinksListLinkProps;
+  props: NavbarLinkProps;
 }
 
 const PageNavigation = styled.header<PageNavigationProps>`

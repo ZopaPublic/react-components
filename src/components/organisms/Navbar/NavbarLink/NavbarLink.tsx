@@ -14,6 +14,7 @@ export interface NavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorEl
   isDropdownLink?: boolean;
   open?: boolean;
   target?: LinkProps['target'];
+  'data-automation'?: string;
 }
 
 export interface StyledNavbarLinkProps extends LinkProps {
