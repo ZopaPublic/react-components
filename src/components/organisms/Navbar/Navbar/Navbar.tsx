@@ -19,7 +19,25 @@ import Icon from '../../../atoms/Icon/Icon';
 import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
-import NavbarLinksList, { NavbarLinksListProps } from '../NavbarLinksList/NavbarLinksList';
+import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
+
+export interface NavigationItem {
+  label: string;
+  href?: string;
+  qadata?: string;
+  onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
+  children?: NavigationItem[];
+}
+export interface NavbarLinksListProps {
+  /**
+   * Array of links
+   */
+  links?: NavigationItem[];
+  /**
+   * Link component
+   */
+  renderLink: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
+}
 
 export interface NavbarProps extends NavbarLinksListProps {
   /**
@@ -36,14 +54,6 @@ export interface NavbarProps extends NavbarLinksListProps {
   cta?: React.ReactNode;
 }
 
-export interface NavigationItem {
-  label: string;
-  href?: string;
-  qadata?: string;
-  onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
-  children?: NavigationItem[];
-}
-
 export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
   open: boolean;
 }
@@ -52,7 +62,7 @@ export interface PageNavigationProps {
   overlap?: boolean;
 }
 
-export interface NavbarLinksListLink {
+export interface NavbarLinksListLinkProps {
   item: NavigationItem;
   index: number;
   props: NavbarLinkProps;
@@ -201,7 +211,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
-const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => (
+export const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
     {label}
   </NavbarLink>

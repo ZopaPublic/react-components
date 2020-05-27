@@ -120,7 +120,10 @@ const NAV_ITEMS = [
 - Custom Navbar components
 
 ```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
-import { Navbar, Link } from '@zopauk/react-components';
+import styled from 'styled-components';
+
+import { Navbar, Link, NavbarLinkStyles } from '@zopauk/react-components';
+
 const NAV_ITEMS = [
   {
     label: 'Borrow',
@@ -222,13 +225,17 @@ const NAV_ITEMS = [
   },
 ];
 
+const CustomNavbarLink = styled(Link)`
+  ${NavbarLinkStyles}
+`;
+
 <Navbar
   overlayLogoWith={<a href="https://www.zopa.com" />}
   links={NAV_ITEMS}
-  renderLink={(item, props) => (
-    <Link href={item.href} target="_blank" {...props} className="px-4 py-2">
+  renderLink={(item, index, props) => (
+    <CustomNavbarLink href={item.href} target="_blank" {...props} className="px-4 py-2" is>
       {item.label}
-    </Link>
+    </CustomNavbarLink>
   )}
 />;
 ```
@@ -236,8 +243,7 @@ const NAV_ITEMS = [
 - Without CTA
 
 ```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
-import { Navbar, Link, buttonStyle } from '@zopauk/react-components';
-import styled from 'styled-components';
+import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
   {
@@ -339,11 +345,6 @@ const NAV_ITEMS = [
     qadata: 'Support.topBar.Menu',
   },
 ];
-
-const ButtonLink = styled(Link)`
-  ${buttonStyle}
-  margin-left: 8px;
-`;
 
 <Navbar withCTA={false} links={NAV_ITEMS} />;
 ```
