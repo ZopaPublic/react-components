@@ -7,7 +7,6 @@ describe('<Navbar.LinksList />', () => {
     const NAV_ITEMS = [
       {
         label: 'About',
-        href: '/about',
         qadata: 'About.topBar.Menu',
         children: [
           {

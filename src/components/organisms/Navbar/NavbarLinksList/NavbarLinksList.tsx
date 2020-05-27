@@ -13,11 +13,10 @@ export interface NavigationItem {
 
 export interface NavbarLinksList {
   links?: NavigationItem[];
-  renderDropdown?: (item: NavigationItem, index: number) => React.ReactNode;
   renderLink?: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
 }
 
-interface NavbarLinksListLinkProps extends NavbarLinkProps {
+export interface NavbarLinksListLinkProps extends NavbarLinkProps {
   'data-automation'?: string;
 }
 
@@ -27,61 +26,40 @@ export interface NavbarLinksListLink {
   props: NavbarLinksListLinkProps;
 }
 
-const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => {
-  return (
-    <Navbar.Link key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
-      {label}
-    </Navbar.Link>
-  );
-};
+const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLink) => (
+  <Navbar.Link key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
+    {label}
+  </Navbar.Link>
+);
 
 const NavbarLinksList: React.FC<NavbarLinksList> = ({
   links,
   renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
   ),
-  renderDropdown = (item: NavigationItem, index: number) => (
-    <Navbar.Dropdown
-      id={`navbar-dropdown-${index}`}
-      ariaLabel={item.label}
-      items={item.children!}
-      renderOpener={({ open, getOpenerProps }) => {
-        return (
-          <NavbarLinksListLink
-            item={item}
-            index={index}
-            props={{
-              href: '#',
-              ...getOpenerProps(),
-              withChevron: true,
-              open,
-              'data-automation': item.qadata ?? `ZA.${item.qadata}`,
-            }}
+}) => (
+  <>
+    {links &&
+      links.map((item: NavigationItem, index: number) =>
+        !!item.children ? (
+          <Navbar.Dropdown
+            key={`dropdown-${index}`}
+            id={`navbar-dropdown-${index}`}
+            label={item.label}
+            items={item.children!}
+            renderItem={({ item, getItemProps }) =>
+              renderLink(item, index, {
+                ...getItemProps(),
+                isDropdownLink: true,
+                'data-automation': item.qadata ?? `ZA.${item.qadata}`,
+              })
+            }
           />
-        );
-      }}
-      renderItem={({ item, getItemProps }) => {
-        return renderLink(item, index, {
-          ...getItemProps(),
-          isDropdownLink: true,
-          'data-automation': item.qadata ?? `ZA.${item.qadata}`,
-        });
-      }}
-    />
-  ),
-}) => {
-  return (
-    <>
-      {links &&
-        links.map((item: NavigationItem, index: number) => {
-          return !!item.children ? (
-            <Fragment key={`dropdown-${index}`}>{renderDropdown(item, index)}</Fragment>
-          ) : (
-            <Fragment key={`link-${index}`}>{renderLink(item, index)}</Fragment>
-          );
-        })}
-    </>
-  );
-};
+        ) : (
+          <Fragment key={`link-${index}`}>{renderLink(item, index)}</Fragment>
+        ),
+      )}
+  </>
+);
 
 export default NavbarLinksList;
