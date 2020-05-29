@@ -11,7 +11,7 @@ describe('<Navbar />', () => {
   it('should render component with custom text', () => {
     Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1280 });
 
-    render(<Navbar.Action ctaText="My Account" />);
+    render(<Navbar.Action>My Account</Navbar.Action>);
     const button = screen.getByText('My Account');
     expect(button).toBeInTheDocument();
   });

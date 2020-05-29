@@ -24,7 +24,7 @@ import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 export interface NavigationItem {
   label: string;
   href?: string;
-  qadata?: string;
+  'data-automation'?: string;
   onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
   children?: NavigationItem[];
 }
@@ -211,8 +211,12 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
-export const NavbarLinksListLink = ({ item: { label, href, onClick }, index, props }: NavbarLinksListLinkProps) => (
-  <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props}>
+export const NavbarLinksListLink = ({
+  item: { label, href, onClick, ...rest },
+  index,
+  props,
+}: NavbarLinksListLinkProps) => (
+  <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props} {...rest}>
     {label}
   </NavbarLink>
 );
@@ -257,7 +261,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               <Logo color={colors.brand} height="20px" negative />
               {overlayLogoWith}
             </LogoContainer>
-            <IconContainer>{withCTA && cta}</IconContainer>
+            {withCTA && cta}
             {links && (
               <HamburgerMenu open={open}>
                 <NavbarLinksList links={links} renderLink={renderLink} />

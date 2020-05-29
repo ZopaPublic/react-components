@@ -100,7 +100,6 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
   };
 
   private readonly dropdownRef = React.createRef<HTMLDivElement>();
-  private readonly dropdownListRef = React.createRef<HTMLUListElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
   private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
@@ -153,7 +152,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
           {label}
         </NavbarLink>
         <NavbarDropdownListContainer open={open}>
-          <NavbarDropdownList ref={this.dropdownListRef} role="menu" aria-label={label}>
+          <NavbarDropdownList role="menu" aria-label={label}>
             {items.map((item, index) => (
               <li key={`${id}-${index}`} role="none">
                 {renderItem({

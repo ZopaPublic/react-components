@@ -27,7 +27,7 @@ export interface ChevronContainerProps extends React.HTMLAttributes<HTMLSpanElem
   open: boolean;
 }
 
-export const NavbarLinkStyles = css<StyledNavbarLinkProps>`
+export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   align-items: center;
   text-decoration: none;
 
@@ -66,7 +66,7 @@ export const NavbarLinkStyles = css<StyledNavbarLinkProps>`
 `;
 
 const StyledNavbarLink = styled(Link)<StyledNavbarLinkProps>`
-  ${NavbarLinkStyles}
+  ${navbarLinkStyles}
 `;
 
 const LinkContainer = styled.span`

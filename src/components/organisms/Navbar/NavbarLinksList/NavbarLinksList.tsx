@@ -23,7 +23,6 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink }) 
               renderLink(item, index, {
                 ...getItemProps(),
                 isDropdownLink: true,
-                'data-automation': item.qadata ?? `ZA.${item.qadata}`,
               })
             }
           />

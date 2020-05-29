@@ -17,5 +17,5 @@ import { Navbar } from '@zopauk/react-components';
 ```ts { "props": { "style": { "backgroundColor": "#00B9A7" } } }
 import { Navbar } from '@zopauk/react-components';
 
-<Navbar.Action ctaText="My account" />;
+<Navbar.Action>My account</Navbar.Action>;
 ```

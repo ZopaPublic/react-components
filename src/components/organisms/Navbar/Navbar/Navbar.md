@@ -14,103 +14,87 @@ import { Navbar } from '@zopauk/react-components';
 const NAV_ITEMS = [
   {
     label: 'Borrow',
-    href: '/loans',
-    onClick: () => alert('testing2'),
-    qadata: 'Borrow.topBar.Button',
+    'data-automation': 'Borrow.topBar.Button',
     children: [
       {
         label: 'Loans',
         href: '/loans',
         onClick: () => alert('testing'),
-        qadata: 'loans.Borrow.topBar.Menu',
+        'data-automation': 'loans.Borrow.topBar.Menu',
       },
       {
-        label: 'Car finance',
-        groupTitle: 'carFinanceGroup',
-        groupChildren: [
-          {
-            label: 'Car loan',
-            href: '/loans/car-loans',
-            qadata: 'Car_loan.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Car loans',
+        href: '/loans/car-loans',
+        'data-automation': 'Car_loan.Borrow.topBar.Menu',
       },
       {
-        label: 'Tools',
-        groupTitle: 'toolsGroup',
-        groupChildren: [
-          {
-            label: 'Borrowing power',
-            href: '/borrowing-power',
-            qadata: 'Borrowing_Power.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Borrowing power',
+        href: '/borrowing-power',
+        'data-automation': 'Borrowing_Power.Borrow.topBar.Menu',
       },
     ],
   },
   {
     label: 'Invest',
-    href: '/invest',
-    qadata: 'Invest.topBar.Menu',
+    'data-automation': 'Invest.topBar.Menu',
     children: [
       {
         label: 'Peer-to peer investments',
         href: '/invest',
-        qadata: 'Peer_to_peer.Invest.topBar.Menu',
+        'data-automation': 'Peer_to_peer.Invest.topBar.Menu',
       },
       {
         label: 'Innovative Finance ISA',
         href: '/invest/isa',
-        qadata: 'Innovative.Invest.topBar.Menu',
+        'data-automation': 'Innovative.Invest.topBar.Menu',
       },
     ],
   },
   {
     label: 'About',
-    href: '/about',
-    qadata: 'About.topBar.Menu',
+    'data-automation': 'About.topBar.Menu',
     children: [
       {
         label: 'About Zopa',
         href: '/about',
-        qadata: 'About.About.topBar.Menu',
+        'data-automation': 'About.About.topBar.Menu',
       },
       {
         label: 'Our story',
         href: '/about/our-story',
-        qadata: 'Story.About.topBar.Menu',
+        'data-automation': 'Story.About.topBar.Menu',
       },
       {
         label: 'Our board',
         href: '/about/board',
-        qadata: 'Our_Board.About.topBar.Menu',
+        'data-automation': 'Our_Board.About.topBar.Menu',
       },
       {
         label: 'Our leadership team',
         href: '/about/leadership',
-        qadata: 'Our_Leadership.About.topBar.Menu',
+        'data-automation': 'Our_Leadership.About.topBar.Menu',
       },
       {
         label: 'Awards',
         href: '/about/awards',
-        qadata: 'Awards.About.topBar.Menu',
+        'data-automation': 'Awards.About.topBar.Menu',
       },
       {
         label: 'Careers',
         href: '/about/careers',
-        qadata: 'Careers.About.topBar.Menu',
+        'data-automation': 'Careers.About.topBar.Menu',
       },
       {
         label: 'Press office',
         href: '/about/press',
-        qadata: 'Press_office.About.topBar.Menu',
+        'data-automation': 'Press_office.About.topBar.Menu',
       },
     ],
   },
   {
     label: 'Support',
     href: '/contact',
-    qadata: 'Support.topBar.Menu',
+    'data-automation': 'Support.topBar.Menu',
   },
 ];
 
@@ -120,123 +104,112 @@ const NAV_ITEMS = [
 - Custom Navbar components
 
 ```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
+import { forwardRef } from 'react';
 import styled from 'styled-components';
 
-import { Navbar, Link, NavbarLinkStyles } from '@zopauk/react-components';
+import { Navbar, Link, navbarLinkStyles } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
   {
     label: 'Borrow',
-    href: '/loans',
-    qadata: 'Borrow.topBar.Button',
+    'data-automation': 'Borrow.topBar.Button',
     children: [
       {
         label: 'Loans',
         href: '/loans',
-        qadata: 'loans.Borrow.topBar.Menu',
+        onClick: () => alert('testing'),
+        'data-automation': 'loans.Borrow.topBar.Menu',
       },
       {
-        label: 'Car finance',
-        groupTitle: 'carFinanceGroup',
-        groupChildren: [
-          {
-            label: 'Car loan',
-            href: '/loans/car-loans',
-            qadata: 'Car_loan.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Car loans',
+        href: '/loans/car-loans',
+        'data-automation': 'Car_loan.Borrow.topBar.Menu',
       },
       {
-        label: 'Tools',
-        groupTitle: 'toolsGroup',
-        groupChildren: [
-          {
-            label: 'Borrowing power',
-            href: '/borrowing-power',
-            qadata: 'Borrowing_Power.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Borrowing power',
+        href: '/borrowing-power',
+        'data-automation': 'Borrowing_Power.Borrow.topBar.Menu',
       },
     ],
   },
   {
     label: 'Invest',
-    href: '/invest',
-    qadata: 'Invest.topBar.Menu',
+    'data-automation': 'Invest.topBar.Menu',
     children: [
       {
         label: 'Peer-to peer investments',
         href: '/invest',
-        qadata: 'Peer_to_peer.Invest.topBar.Menu',
+        'data-automation': 'Peer_to_peer.Invest.topBar.Menu',
       },
       {
         label: 'Innovative Finance ISA',
         href: '/invest/isa',
-        qadata: 'Innovative.Invest.topBar.Menu',
+        'data-automation': 'Innovative.Invest.topBar.Menu',
       },
     ],
   },
   {
     label: 'About',
-    href: '/about',
-    qadata: 'About.topBar.Menu',
+    'data-automation': 'About.topBar.Menu',
     children: [
       {
         label: 'About Zopa',
         href: '/about',
-        qadata: 'About.About.topBar.Menu',
+        'data-automation': 'About.About.topBar.Menu',
       },
       {
         label: 'Our story',
         href: '/about/our-story',
-        qadata: 'Story.About.topBar.Menu',
+        'data-automation': 'Story.About.topBar.Menu',
       },
       {
         label: 'Our board',
         href: '/about/board',
-        qadata: 'Our_Board.About.topBar.Menu',
+        'data-automation': 'Our_Board.About.topBar.Menu',
       },
       {
         label: 'Our leadership team',
         href: '/about/leadership',
-        qadata: 'Our_Leadership.About.topBar.Menu',
+        'data-automation': 'Our_Leadership.About.topBar.Menu',
       },
       {
         label: 'Awards',
         href: '/about/awards',
-        qadata: 'Awards.About.topBar.Menu',
+        'data-automation': 'Awards.About.topBar.Menu',
       },
       {
         label: 'Careers',
         href: '/about/careers',
-        qadata: 'Careers.About.topBar.Menu',
+        'data-automation': 'Careers.About.topBar.Menu',
       },
       {
         label: 'Press office',
         href: '/about/press',
-        qadata: 'Press_office.About.topBar.Menu',
+        'data-automation': 'Press_office.About.topBar.Menu',
       },
     ],
   },
   {
     label: 'Support',
     href: '/contact',
-    qadata: 'Support.topBar.Menu',
+    'data-automation': 'Support.topBar.Menu',
   },
 ];
 
 // could be a gatsby or react-router-dom <Link />
-const SomeLibraryLink = ({ href, ...rest }) => <a href={href} {...rest} />;
+const SomeLibraryLink = React.forwardRef((props, ref) => {
+  return <a {...props} ref={ref} />;
+});
 
 const CustomLink = styled(SomeLibraryLink)`
-  ${NavbarLinkStyles}
+  ${navbarLinkStyles}
 `;
 
 <Navbar
   overlayLogoWith={<a href="https://www.zopa.com" />}
   links={NAV_ITEMS}
   renderLink={(item, index, props) => (
-    <CustomLink href={item.href} target="_blank" {...props} className="px-4 py-2" is>
+    <CustomLink href={item.href} target="_blank" {...props} className="px-4 py-2">
       {item.label}
     </CustomLink>
   )}
@@ -251,101 +224,87 @@ import { Navbar } from '@zopauk/react-components';
 const NAV_ITEMS = [
   {
     label: 'Borrow',
-    href: '/loans',
-    qadata: 'Borrow.topBar.Button',
+    'data-automation': 'Borrow.topBar.Button',
     children: [
       {
         label: 'Loans',
         href: '/loans',
-        qadata: 'loans.Borrow.topBar.Menu',
+        onClick: () => alert('testing'),
+        'data-automation': 'loans.Borrow.topBar.Menu',
       },
       {
-        label: 'Car finance',
-        groupTitle: 'carFinanceGroup',
-        groupChildren: [
-          {
-            label: 'Car loan',
-            href: '/loans/car-loans',
-            qadata: 'Car_loan.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Car loans',
+        href: '/loans/car-loans',
+        'data-automation': 'Car_loan.Borrow.topBar.Menu',
       },
       {
-        label: 'Tools',
-        groupTitle: 'toolsGroup',
-        groupChildren: [
-          {
-            label: 'Borrowing power',
-            href: '/borrowing-power',
-            qadata: 'Borrowing_Power.Borrow.topBar.Menu',
-          },
-        ],
+        label: 'Borrowing power',
+        href: '/borrowing-power',
+        'data-automation': 'Borrowing_Power.Borrow.topBar.Menu',
       },
     ],
   },
   {
     label: 'Invest',
-    href: '/invest',
-    qadata: 'Invest.topBar.Menu',
+    'data-automation': 'Invest.topBar.Menu',
     children: [
       {
         label: 'Peer-to peer investments',
         href: '/invest',
-        qadata: 'Peer_to_peer.Invest.topBar.Menu',
+        'data-automation': 'Peer_to_peer.Invest.topBar.Menu',
       },
       {
         label: 'Innovative Finance ISA',
         href: '/invest/isa',
-        qadata: 'Innovative.Invest.topBar.Menu',
+        'data-automation': 'Innovative.Invest.topBar.Menu',
       },
     ],
   },
   {
     label: 'About',
-    href: '/about',
-    qadata: 'About.topBar.Menu',
+    'data-automation': 'About.topBar.Menu',
     children: [
       {
         label: 'About Zopa',
         href: '/about',
-        qadata: 'About.About.topBar.Menu',
+        'data-automation': 'About.About.topBar.Menu',
       },
       {
         label: 'Our story',
         href: '/about/our-story',
-        qadata: 'Story.About.topBar.Menu',
+        'data-automation': 'Story.About.topBar.Menu',
       },
       {
         label: 'Our board',
         href: '/about/board',
-        qadata: 'Our_Board.About.topBar.Menu',
+        'data-automation': 'Our_Board.About.topBar.Menu',
       },
       {
         label: 'Our leadership team',
         href: '/about/leadership',
-        qadata: 'Our_Leadership.About.topBar.Menu',
+        'data-automation': 'Our_Leadership.About.topBar.Menu',
       },
       {
         label: 'Awards',
         href: '/about/awards',
-        qadata: 'Awards.About.topBar.Menu',
+        'data-automation': 'Awards.About.topBar.Menu',
       },
       {
         label: 'Careers',
         href: '/about/careers',
-        qadata: 'Careers.About.topBar.Menu',
+        'data-automation': 'Careers.About.topBar.Menu',
       },
       {
         label: 'Press office',
         href: '/about/press',
-        qadata: 'Press_office.About.topBar.Menu',
+        'data-automation': 'Press_office.About.topBar.Menu',
       },
     ],
   },
   {
     label: 'Support',
     href: '/contact',
-    qadata: 'Support.topBar.Menu',
+    'data-automation': 'Support.topBar.Menu',
   },
 ];
 

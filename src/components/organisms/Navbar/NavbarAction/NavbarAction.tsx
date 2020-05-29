@@ -9,20 +9,8 @@ import Button from '../../../atoms/Button/Button';
 import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport';
 
-export interface NavbarAction extends React.HTMLAttributes<HTMLButtonElement> {
-  /**
-   * CTA text
-   */
-  ctaText?: string;
-}
-
 const StyledButton = styled(Button)`
   ${maxMedia.desktop`
-    padding: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-
     &:hover:not(:disabled) {
       background: none;
     }
@@ -35,15 +23,32 @@ const StyledButton = styled(Button)`
   `}
 `;
 
-const NavbarAction: React.FC<NavbarAction> = ({
-  ctaText = 'Sign in',
+const Content = styled.div`
+  ${maxMedia.desktop`
+    position: absolute;
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  `}
+`;
+
+const StyledIcon = styled(Icon)`
+  display: block;
+  ${minMedia.desktop`
+    display: none;
+  `}
+`;
+
+const NavbarAction: React.FC<React.HTMLAttributes<HTMLButtonElement>> = ({
+  children = 'Sign in',
   onClick = () => window.location.assign('https://home.zopa.com/'),
 }) => {
   const { width } = useViewport();
 
   return (
     <StyledButton onClick={onClick} styling={width && width >= breakpoints.desktop ? 'primary' : 'link'}>
-      {width && width >= breakpoints.desktop ? ctaText : <Icon variant={faUser} color={colors.white} size="lg" />}
+      <Content>{children}</Content>
+      <StyledIcon variant={faUser} color={colors.white} size="lg" />
     </StyledButton>
   );
 };

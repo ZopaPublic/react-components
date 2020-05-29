@@ -12,4 +12,4 @@ const NavbarWrapper: NavbarStatic & FC<NavbarProps> = props => <Navbar {...props
 NavbarWrapper.Action = NavbarAction;
 
 export default NavbarWrapper;
-export { NavbarLinkStyles } from './NavbarLink/NavbarLink';
+export { navbarLinkStyles } from './NavbarLink/NavbarLink';
