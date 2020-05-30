@@ -1,52 +1,87 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors, INeutralColorSpec } from '../../../constants/colors';
-import { maxMedia } from '../../../helpers/responsiveness';
+import styled, { css } from 'styled-components';
+import { colors, grid, typography } from '../../../constants';
+import { Colors } from '../../../constants/colors';
+
+type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+
+export interface StyledHeadingProps {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   */
+  as: HeadingTags;
+  /**
+   * Override the default size assigned to the rendered HTML tag.
+   * @default `as`
+   */
+  size?: keyof typeof typography.sizes.heading;
+  /**
+   * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
+   * @default `colors.greyDarkest`
+   */
+  color?: Colors['white'] | Colors['grey'] | Colors['greyDarkest'];
+  /**
+   * Where the rendered text should be aligned to.
+   * @default 'inherit'
+   */
+  align?: 'inherit' | 'left' | 'right' | 'center';
+}
 
 const {
   sizes: { heading: headingSizes },
 } = typography;
 
-type THeadingSizes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+const lineHeightMap = {
+  display: '76px',
+  h1: '54px',
+  h2: '46px',
+  h3: '36px',
+  h4: '32px',
+  h5: '26px',
+  h6: '20px',
+};
 
-interface IStyledHeadingProps {
-  /**
-   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
-   */
-  as: THeadingSizes | 'span';
-  /**
-   * Override the default size assigned to the rendered HTML tag.
-   */
-  size?: THeadingSizes;
-  /**
-   * Whether to add some margin below the rendered heading or not. Applied by default.
-   */
-  mb?: boolean;
-  /**
-   * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
-   */
-  color?: INeutralColorSpec['white'] | INeutralColorSpec['nearDark'] | INeutralColorSpec['dark'];
-}
+const letterSpacingMap = {
+  display: '-2.86px',
+  h1: '-1.25px',
+  h2: '-0.85px',
+  h3: '-0.45px',
+  h4: '-0.25px',
+  h5: '-0.02px',
+  h6: '-0.01px',
+};
 
-const Heading = styled.h1<IStyledHeadingProps>`
-  color: ${({ color = colors.neutral.dark }) => color};
-  
-  font-size: ${({ as, size }) => (as === 'span' || size ? headingSizes[size || 'h4'] : headingSizes[as])};
-  ${({ as }) => as === 'h1' && maxMedia.phone`font-size: 32px;`}
-  ${({ as }) => as === 'span' && `display: block;`}
+const Heading = styled.h1<StyledHeadingProps>`
+  ${({ as, size }) => {
+    const tag = size || (as === 'span' ? 'h4' : as);
+    return css`
+      font-size: ${headingSizes[tag]};
+      line-height: ${lineHeightMap[tag]};
+      letter-spacing: ${letterSpacingMap[tag]};
+    `;
+  }};
 
-  
-  font-family: ${typography.primary};
-  font-weight: ${typography.weights.semibold};
-  line-height: ${typography.lineHeights.heading};
-  letter-spacing: -0.5px;
   margin: 0;
+  color: ${({ color = colors.greyDarkest }) => color};
+  display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
+  text-align: ${({ align = 'inherit' }) => align};
+  font-family: ${typography.primary};
+  font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
 
-  ${({ mb = true }) => mb && 'margin-bottom: 24px'};
+  ${({ as, size }) =>
+    as === 'h1' &&
+    size === 'display' &&
+    css`
+      @media screen and (max-width: ${grid.breakpoints.l}px) {
+        font-size: ${headingSizes['h2']};
+        line-height: ${lineHeightMap['h2']};
+        letter-spacing: ${letterSpacingMap['h2']};
+        font-weight: ${typography.weights['bold']};
+      }
+    `}
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistHeading: FC<IStyledHeadingProps> = props => <Heading {...props} />;
+export const StyleguidistHeading: FC<StyledHeadingProps> = props => <Heading {...props} />;
 
 export default Heading;

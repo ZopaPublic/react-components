@@ -1,15 +1,16 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { act, fireEvent, render } from '@testing-library/react';
-import { Form } from '..';
+import { FormRadioGroupField } from '..';
 
 const onSubmit = jest.fn();
-const buttonLabel = 'Continue';
+const testId = 'radio-group-field-form';
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ employment: '' }} onSubmit={onSubmit}>
-      <Form.Form>
-        <Form.RadioGroupField
+    <Formik validateOnMount initialValues={{ employment: '' }} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
+        <FormRadioGroupField
           label="Employment"
           name="employment"
           items={[
@@ -23,21 +24,20 @@ const renderComponent = () =>
             },
           ]}
         />
-        <Form.Button disabled={false}>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+      </FormikForm>
+    </Formik>,
   );
 
-describe('<Form.RadioField />', () => {
+describe('<FormRadioField />', () => {
   it('handles value change', async () => {
-    const { getByText, getByLabelText } = renderComponent();
+    const { getByTestId, getByLabelText } = renderComponent();
     await act(async () => {
       await fireEvent.click(getByLabelText('Employed'));
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ employment: 'employed' });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ employment: 'employed' });
   });
 });

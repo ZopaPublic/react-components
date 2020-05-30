@@ -2,44 +2,51 @@
 
 exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c1 {
-  border: 2px solid #1EC06A;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #3EBC64;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c1:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0 {
@@ -62,44 +69,51 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 
 exports[`<TextField /> renders the component with error 1`] = `
 .c1 {
-  border: 2px solid #EE0505;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #FF4539;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c1:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0 {
@@ -128,11 +142,10 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 16px;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 15px;
   margin-bottom: 0;
 }
 
@@ -152,11 +165,10 @@ exports[`<TextField /> renders the component with label 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 16px;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 <label
@@ -169,44 +181,51 @@ exports[`<TextField /> renders the component with label 1`] = `
 
 exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c1 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c1:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0 {
@@ -229,44 +248,51 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 
 exports[`<TextField /> renders the component with prefix 1`] = `
 .c2 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c2:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c2::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c2:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c2::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c2:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0 {
@@ -293,8 +319,8 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 16px;
-  color: #0D0A38;
+  font-size: 15px;
+  color: #2C3236;
 }
 
 .c1 input {
@@ -321,44 +347,51 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 
 exports[`<TextField /> renders the component with size 1`] = `
 .c1 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c1:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c1:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0 {

@@ -1,61 +1,77 @@
 import React, { HTMLAttributes } from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
-import { typography } from '../../../constants/typography';
-import { colors, INeutralColorSpec, ISemanticColorSpec } from '../../../constants/colors';
+import { colors, typography } from '../../../constants';
+import { Colors } from '../../../constants/colors';
 
-export interface ITextProps extends HTMLAttributes<HTMLSpanElement> {
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
-   * The weight of the rendered text. Avoid the use of `semibold` as for now.
+   * The weight of the rendered text.
+   * @default 'regular'
    */
-  weight?: keyof typeof typography.weights;
+  weight?: 'regular' | 'bold';
   /**
-   * The size you want to render your text at, currently only `14px` | `16px` and `20px` supported.
+   * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
+   * @default 'body'
    */
-  size?: keyof typeof typography.sizes.text | 'lead';
+  size?: keyof typeof typography.sizes.text;
   /**
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
+   * @default 'span'
    */
   as?: 'span' | 'p';
   /**
-   * Whether to add some margin below the rendered text or not. Use it to give meaningful white-space.
+   * Whether to render the text in all caps or not.
+   * @default false
    */
-  mb?: boolean;
+  capitalize?: boolean;
   /**
-   * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Heading />`.
+   * Where the rendered text should be aligned to.
+   * @default 'inherit'
+   */
+  align?: 'inherit' | 'left' | 'right' | 'center';
+  /**
+   * Accepts a subset of the Zopa brand colors.
+   * @default `colors.greyDarkest`
    */
   color?:
-    | INeutralColorSpec['white']
-    | INeutralColorSpec['nearDark']
-    | INeutralColorSpec['dark']
-    | ISemanticColorSpec['success']
-    | ISemanticColorSpec['error'];
+    | Colors['white']
+    | Colors['grey']
+    | Colors['greyDark']
+    | Colors['greyDarkest']
+    | Colors['success']
+    | Colors['alert'];
 }
 
-const Text = styled.span<ITextProps>`
+const lineHeightMap = {
+  lead: '26px',
+  body: '22px',
+  small: '18px',
+};
+
+const Text = styled.span<TextProps>`
   margin: 0;
   letter-spacing: 0;
-  color: ${({ color = colors.neutral.dark }) => color};
+  color: ${({ color = colors.greyDarkest }) => color};
 
-  ${({ mb = false }) =>
-    mb &&
-    `
-    display: block;
-    margin-bottom:   24px
-  `};
+  font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
+  line-height: ${({ size = 'body' }) => lineHeightMap[size]};
+  font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
 
-  line-height: ${typography.lineHeights.text};
   font-family: ${typography.primary};
-  font-weight: ${({ weight = 'regular' }) => typography.weights[weight]};
-  font-size: ${({ size = 'base' }) => (size === 'lead' ? typography.sizes.heading.h4 : typography.sizes.text[size])};
+  text-align: ${({ align = 'inherit' }) => align};
+  text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
+
+  ${({ className = '', as }) =>
+    (!as || as === 'span') &&
+    className.split(' ').some(clss => /[mp](\:[mp])?[tblrxy]?-\d+/.test(clss)) &&
+    `
+    display: block
+  `}
 `;
 
-const TextWrap: FC<ITextProps> = React.forwardRef<HTMLSpanElement, ITextProps>((props, ref) => (
+const TextWrap: FC<TextProps> = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => (
   <Text {...props} ref={ref} />
 ));
-
-TextWrap.defaultProps = {
-  as: 'span',
-};
 
 export default TextWrap;

@@ -1,13 +1,11 @@
-import React, { FC } from 'react';
-import DropdownFiltered, { IDropdownFilteredProps } from '../../../molecules/DropdownFiltered/DropdownFiltered';
-import { useFieldContext } from '../hooks';
+import React from 'react';
+import { useField, FieldHookConfig } from 'formik';
+import DropdownFiltered, { DropdownFilteredProps } from '../../../molecules/DropdownFiltered/DropdownFiltered';
 
-interface IFormDropdownFilteredFieldProps extends IDropdownFilteredProps {
-  name: string;
-}
+export type FormDropdownFilteredFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> & DropdownFilteredProps;
 
-const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, items, ...rest }) => {
-  const { error, touched, onChange, onBlur } = useFieldContext(name);
+const FormDropdownFilteredField = ({ name, validate, items, ...rest }: FormDropdownFilteredFieldProps) => {
+  const [{ onBlur }, { error, touched }, helpers] = useField({ name, validate });
 
   return (
     <DropdownFiltered
@@ -16,7 +14,7 @@ const FormDropdownFilteredField: FC<IFormDropdownFilteredFieldProps> = ({ name, 
       items={items}
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      onChange={item => onChange(item)}
+      onChange={item => helpers.setValue(item)}
       {...rest}
     />
   );

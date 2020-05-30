@@ -1,14 +1,14 @@
 This project aims to have all the common styled react components as a library/documentation.
 
-### Installation
+## Installation
 
-- Install it from NPM:
+Install it from NPM:
 
-  ```bash
-  yarn add '@zopauk/react-components'
-  ```
+```bash
+yarn add '@zopauk/react-components'
+```
 
-### Setup
+## Global Styling
 
 ⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
@@ -24,28 +24,21 @@ const App = () => (
 );
 ```
 
+## Typography
+
 [Open Sans](https://fonts.google.com/specimen/Open+Sans) is the typography chosen for Zopa's brand.
 
-We currently use three weights:
+We currently use **four weights**:
 
 - 400 ( _regular_ )
 - 600 ( _semibold_ )
 - 700 ( _bold_ )
+- 800 ( _extrabold_ )
 
-As a convenience, you can import `<Fonts />` and add it on the top level of your app:
+This library assumes **Open Sans** is already available, so make sure you link it properly in the root HTML of your application:
 
-```ts static
-import { Fonts } from '@zopauk/react-components';
-
-// root component
-const App = () => (
-  <>
-    <Fonts />
-    // rest of your top-level components
-  </>
-);
+```html static
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 ```
-
-It'll grab **Open Sans** from Google's CDN [through a CSS import](https://github.com/zopaUK/react-components/blob/master/src/components/styles/Fonts.tsx#L3-L5).
 
 You're free to use this technique or add the dependency manually to your base HTML `<head />`

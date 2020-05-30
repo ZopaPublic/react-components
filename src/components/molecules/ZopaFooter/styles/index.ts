@@ -1,0 +1,9 @@
+export { Footer } from './Footer';
+export { Heading } from './Heading';
+export { Icon } from './Icon';
+export { LegalBlock } from './LegalBlock';
+export { List } from './List';
+export { ListLink } from './ListLink';
+export { LogoBlock } from './LogoBlock';
+export { SocialBlock } from './SocialBlock';
+export { SocialLink } from './SocialLink';

@@ -1,76 +1,93 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, TTextHexColors, IColorSpec } from './../../constants/colors';
+import { colors } from '../../constants';
+import {
+  Colors as ColorsType,
+  brandColors,
+  actionColors,
+  neutralColors,
+  notificationColors,
+} from '../../constants/colors';
 
-export type TColorNames = keyof typeof colors.base | keyof typeof colors.neutral | keyof typeof colors.semantic;
+type ColorVariants = keyof ColorsType;
 
-interface ISColorProps {
-  color: TTextHexColors;
-  colorName: TColorNames;
+interface ColorProps {
+  color: string;
+  colorName: ColorVariants;
 }
 
-const SColors = styled.div`
+interface ColorsProps {
+  /**
+   * section of the default colors
+   * @ignore
+   */
+  variant: 'brand' | 'actions' | 'neutral' | 'notifications';
+}
+
+interface ColorGroups {
+  brand: Array<string>;
+  actions: Array<string>;
+  neutral: Array<string>;
+  notifications: Array<string>;
+}
+
+const ColorsWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
 
-const mapColorToFontColor: { [K in TColorNames]: 'white' | 'black' } = {
-  primary: 'white',
-  secondary: 'white',
-  white: 'black',
-  nearWhite: 'black',
-  light: 'black',
-  medium: 'black',
-  nearDark: 'white',
-  dark: 'white',
-  success: 'white',
-  alert: 'black',
-  error: 'white',
+const colorGroups: ColorGroups = {
+  brand: Object.keys(brandColors),
+  actions: Object.keys(actionColors),
+  neutral: Object.keys(neutralColors),
+  notifications: Object.keys(notificationColors),
 };
 
-const SColor = styled.div<ISColorProps>`
-  background-color: ${({ color }) => color};
+const Color = styled.div<ColorProps>`
+  background: ${({ color }) => color};
   margin: 5px;
   border: 1px solid #efefef;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
   font-family: monospace;
 
   > p {
-    color: ${({ colorName }) => mapColorToFontColor[colorName]};
+    color: ${({ color }) => getContrastOfColor(color)};
     text-align: center;
     padding: 10px 20px;
     line-height: 18px;
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
-export interface IColorsProps {
-  /**
-   * section of the default colors
-   * @ignore
-   */
-  variant: keyof IColorSpec;
-}
-
-export default function Colors({ variant }: IColorsProps) {
-  const colorGroup = colors[variant];
-
+export default function ColorsComponent({ variant }: ColorsProps) {
+  const colorGroup = colorGroups[variant] as string[];
   return (
-    <SColors>
-      {Object.keys(colorGroup).map((colorKey: string) => {
-        const colorName = colorKey as TColorNames;
-        const actualColor = (colorGroup as any)[colorName];
-
+    <ColorsWrapper>
+      {colorGroup.map((colorKey: string) => {
+        const colorName = colorKey as ColorVariants;
+        const actualColor = colorName === 'action' ? `#4F5AD8 to ${colors.actionPlain}` : colors[colorName];
         return (
-          <SColor key={colorKey} color={actualColor} colorName={colorName}>
-            <p>
-              {colorName}
-              <br />
-              {actualColor}
-            </p>
-          </SColor>
+          <>
+            <Color key={colorKey} color={colors[colorName]} colorName={colorName}>
+              <p>
+                {colorName}
+                <br />
+                {actualColor}
+              </p>
+            </Color>
+          </>
         );
       })}
-    </SColors>
+    </ColorsWrapper>
   );
+}
+
+function getContrastOfColor(color: string) {
+  const hex = color.charAt(0) === '#' ? color.substr(1, 6) : color;
+  const hexR = parseInt(hex.substr(0, 2), 16);
+  const hexG = parseInt(hex.substr(2, 2), 16);
+  const hexB = parseInt(hex.substr(4, 2), 16);
+  const contrastRatio = (hexR + hexG + hexB) / (255 * 3);
+
+  return contrastRatio >= 0.5 ? 'black' : 'white';
 }

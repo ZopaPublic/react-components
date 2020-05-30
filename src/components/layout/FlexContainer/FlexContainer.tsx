@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import grid from '../../../constants/grid';
+import { grid } from '../../../constants';
 
-export interface IFlexContainerProps {
+export interface FlexContainerGutter {
   gutter?: number;
 }
 
-export interface IFlexContainer extends React.HTMLAttributes<HTMLDivElement>, IFlexContainerProps {}
+export interface FlexContainerProps extends React.HTMLAttributes<HTMLDivElement>, FlexContainerGutter {}
 
-const defaultProps: Partial<IFlexContainer> = {
+const defaultProps: Partial<FlexContainerProps> = {
   gutter: grid.gutter,
 };
 
-const StyledFlexContainer = styled.div<IFlexContainer>`
+const StyledFlexContainer = styled.div<FlexContainerProps>`
   width: 100%;
   max-width: 100%;
   padding-right: ${props => props.gutter}px;
@@ -33,7 +33,7 @@ const StyledFlexContainer = styled.div<IFlexContainer>`
   }
 `;
 
-const FlexContainer = (props: IFlexContainer) => <StyledFlexContainer {...props} />;
+const FlexContainer = (props: FlexContainerProps) => <StyledFlexContainer {...props} />;
 FlexContainer.defaultProps = defaultProps;
 
 export default FlexContainer;

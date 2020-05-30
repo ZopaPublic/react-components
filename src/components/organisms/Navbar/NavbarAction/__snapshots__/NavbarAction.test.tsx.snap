@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> should render component with default props 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EAEBFA;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+.c3 {
+  display: block;
+}
+
+@media (max-width:1280px) {
+  .c1:hover:not(:disabled) {
+    background: none;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width:1280px) {
+  .c2 {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    -webkit-clip: rect(1px,1px,1px,1px);
+    clip: rect(1px,1px,1px,1px);
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: none;
+  }
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      Sign in
+    </div>
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-user fa-w-14 fa-lg c3"
+      color="#FFFFFF"
+      data-icon="user"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;

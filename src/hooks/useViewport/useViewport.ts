@@ -1,16 +1,16 @@
 import { useLayoutEffect, useState, useContext } from 'react';
 import throttle from 'lodash.throttle';
 import { ViewportContext } from './context';
-import { IViewportSize } from './types';
+import { ViewportSize } from './types';
 
-export interface IUseViewportOptions {
+export interface UseViewportOptions {
   /**
    * The timeout supplied to `lodash.throttle` in case the viewport dimensions are read directly.
    */
   timeout?: number;
 }
 
-function readViewport(): IViewportSize {
+function readViewport(): ViewportSize {
   const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -20,9 +20,11 @@ function readViewport(): IViewportSize {
   };
 }
 
-export function useViewport({ timeout = 300 }: IUseViewportOptions = {}): IViewportSize {
+export function useViewport({ timeout = 300 }: UseViewportOptions = {}): ViewportSize {
   const contextSize = useContext(ViewportContext);
-  if (contextSize.width !== undefined) return contextSize;
+  if (contextSize.width !== undefined) {
+    return contextSize;
+  }
 
   const [size, setSize] = useState(readViewport());
   const onResize = throttle(() => setSize(readViewport()), timeout);
@@ -31,6 +33,7 @@ export function useViewport({ timeout = 300 }: IUseViewportOptions = {}): IViewp
     window.addEventListener('resize', onResize);
 
     return () => {
+      onResize.cancel();
       window.removeEventListener('resize', onResize);
     };
   }, []);

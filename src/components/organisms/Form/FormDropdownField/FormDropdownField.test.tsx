@@ -1,19 +1,19 @@
 import React from 'react';
+import { Formik, Form as FormikForm } from 'formik';
 import { fireEvent, render, act } from '@testing-library/react';
-import { Form } from '..';
+import { FormDropdownField } from '..';
 
-interface IForm {
+interface Form {
   referral: string;
 }
 
 const onSubmit = jest.fn();
-
+const testId = 'dropdown-field-form';
 const dropdownLabel = 'How did you hear about us?';
-const buttonLabel = 'Continue';
 const errorMessage = 'Please pick one';
 
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
+const validate = (values: Form) => {
+  const errors: Partial<Form> = {};
 
   if (!values.referral) {
     errors.referral = errorMessage;
@@ -24,45 +24,55 @@ const validate = (values: IForm) => {
 
 const renderComponent = () =>
   render(
-    <Form initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.Form>
-        <Form.DropdownField label={dropdownLabel} name="referral">
-          <option disabled value="">
-            select an option
-          </option>
-          <option value="newspaper">Newspaper</option>
-          <option value="socialMedia">Social media</option>
-        </Form.DropdownField>
-        <Form.Button>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+    <Formik validateOnMount initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
+      <FormikForm data-testid={testId}>
+        <FormDropdownField
+          label={dropdownLabel}
+          name="referral"
+          options={[
+            {
+              label: 'Select an option',
+              value: '',
+            },
+            {
+              label: 'Newspaper',
+              value: 'newspaper',
+            },
+            {
+              label: 'Social media',
+              value: 'socialMedia',
+            },
+          ]}
+        />
+      </FormikForm>
+    </Formik>,
   );
 
-describe('<Form.DropdownField />', () => {
-  it('handles value change', () => {
-    const { getByText, getByLabelText } = renderComponent();
+describe('<FormDropdownField />', () => {
+  it('handles value change', async () => {
+    const { getByLabelText, getByTestId } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
-    act(() => {
-      fireEvent.click(dropdown);
+    await act(async () => {
+      await fireEvent.click(dropdown);
     });
-    act(() => {
-      fireEvent.change(dropdown, { target: { value: 'newspaper' } });
+    await act(async () => {
+      await fireEvent.change(dropdown, { target: { value: 'newspaper' } });
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.submit(getByTestId(testId));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ referral: 'newspaper' });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ referral: 'newspaper' });
   });
 
-  it('renders error message', () => {
+  it('renders error message', async () => {
     const { queryByText, getByLabelText } = renderComponent();
     const dropdown = getByLabelText(dropdownLabel);
-    act(() => {
-      fireEvent.click(dropdown);
+    await act(async () => {
+      await fireEvent.click(dropdown);
     });
-    act(() => {
-      fireEvent.blur(dropdown);
+    await act(async () => {
+      await fireEvent.blur(dropdown);
     });
     expect(queryByText(errorMessage)).toBeTruthy();
   });

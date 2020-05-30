@@ -1,30 +1,51 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
-import warningIcon from '../../../content/images/red-warning.svg';
+import { typography } from '../../../constants/typography';
 import Text from '../Text/Text';
+import Icon from '../Icon/Icon';
 
-const ErrorMessage = styled(Text).attrs({
+const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
-  weight: 'semibold',
-  forwardedAs: 'span',
   size: 'small',
 })`
-  width: 100%;
-  color: ${colors.semantic.error};
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+  color: ${colors.alertDark};
+  background-color: ${colors.alertLight};
+  font-size: ${typography.sizes.text.body};
+  font-family: ${typography.primary};
+  font-weight: ${typography.weights.regular};
+  max-width: 336px;
 
-  &:before {
-    content: '';
-    background: url(${warningIcon}) no-repeat;
-    width: 28px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
+  a {
+    font-size: ${typography.sizes.text.body};
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 `;
 
-// TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistErrorMessage: FC<{}> = props => <ErrorMessage {...props} />;
+const IconWrapper = styled.span`
+  font-size: 20px;
+  align-self: flex-start;
+`;
+
+type ErrorMessageProps = {
+  className?: string;
+};
+
+const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => (
+  <StyledErrorMessage className={className} {...rest}>
+    <IconWrapper>
+      <Icon color={colors.alert} className="pr-2" variant={faExclamationCircle} />
+    </IconWrapper>
+    {children}
+  </StyledErrorMessage>
+);
 
 export default ErrorMessage;

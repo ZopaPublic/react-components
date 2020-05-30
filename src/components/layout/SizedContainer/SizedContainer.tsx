@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TContainerSizes } from '../../types';
+import { ContainerSizes } from '../../types';
 
-export interface ISizedContainerProps extends React.HTMLAttributes<HTMLDivElement> {
-  size?: TContainerSizes;
+export interface SizedContainerProps extends React.HTMLAttributes<HTMLDivElement> {
+  size?: ContainerSizes;
 }
 
-const mapSizeToMaxWith: { [index in TContainerSizes]: string } = {
+const mapSizeToMaxWith: Record<ContainerSizes, string> = {
   fullLength: '100%',
   long: '336px',
   medium: '222px',
   short: '148px',
-};
+} as const;
 
-const Container = styled.div<ISizedContainerProps>`
+const Container = styled.div<SizedContainerProps>`
   max-width: ${({ size = 'medium' }) => mapSizeToMaxWith[size]};
   width: 100%;
 `;
 
-const SizedContainer = ({ size = 'fullLength', ...rest }: ISizedContainerProps) => <Container size={size} {...rest} />;
+const SizedContainer = ({ size = 'fullLength', ...rest }: SizedContainerProps) => <Container size={size} {...rest} />;
 
 export default SizedContainer;

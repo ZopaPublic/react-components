@@ -4,13 +4,6 @@ Use `<Link />` to create hyperlinks to other web pages, files, locations within 
 
 ⚠️ &nbsp; Links are never headings
 
-⚠️ &nbsp; Choose the color according to the following table:
-
-| Background color     | Font Color                            |
-| -------------------- | ------------------------------------- |
-| white, grey or light | `colors.base.secondary` ( _default_ ) |
-| dark                 | `colors.neutral.white`                |
-
 ### Examples
 
 - Normal link
@@ -44,9 +37,9 @@ import { Text, Link } from '@zopauk/react-components';
 ```tsx { "props": { "style": { "backgroundColor": "#00B9A7", "border": "none" } } }
 import { Text, Link, colors } from '@zopauk/react-components';
 
-<Text as="p" color={colors.neutral.white}>
+<Text as="p" color={colors.greyDarkest}>
   Some text with
-  <Link color={colors.neutral.white} href="http://duckduckgo.com" onClick={() => alert('Link clicked!')}>
+  <Link href="http://duckduckgo.com" onClick={() => alert('Link clicked!')} negative>
     a link
   </Link>
 </Text>;

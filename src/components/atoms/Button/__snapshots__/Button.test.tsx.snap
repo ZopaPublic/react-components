@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Alert button renders the component with props 1`] = `
+exports[`<Button /> renders as "link" 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -17,52 +17,48 @@ exports[`Alert button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #EE0505;
   border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #EE0505;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #EE0505,inset 0 0 0 4px #FFFFFF;
-  outline: none;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
 }
 
 .c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
+  background: #EAEBFA;
 }
 
-.c0:active:not(:disabled) {
-  opacity: 0.4;
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c0:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
 }
 
 <button
   class="c0"
 >
-  Alert
+  Secondary
 </button>
 `;
 
-exports[`Compact button renders the component with props 1`] = `
+exports[`<Button /> renders as "secondary" 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -79,52 +75,48 @@ exports[`Compact button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 6px 16px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 14px;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #4A3EDE;
   border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: #E9EAFA;
 }
 
 .c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
+  background: #EEEFFB;
 }
 
-.c0:active:not(:disabled) {
-  opacity: 0.4;
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c0:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
 }
 
 <button
   class="c0"
 >
-  Compact
+  Secondary
 </button>
 `;
 
-exports[`Disabled button renders the component with props 1`] = `
+exports[`<Button /> renders disabled 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -141,53 +133,267 @@ exports[`Disabled button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #4A3EDE;
   border-radius: 8px;
   color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
+  border: 1px solid transparent;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c0:active:not(:disabled) {
-  opacity: 0.4;
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c0:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
 }
 
 <button
   class="c0"
   disabled=""
 >
-  Disabled
+  Secondary
 </button>
 `;
 
-exports[`Full width button renders the component with props 1`] = `
+exports[`<Button /> renders loading as "primary" 1`] = `
+.c1 {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  border-top-color: transparent;
+  -webkit-animation: iVXCSc 1.2s linear infinite;
+  animation: iVXCSc 1.2s linear infinite;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0:hover:not(:disabled) {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+  disabled=""
+>
+  <div
+    class="c1"
+  />
+   
+    
+  Loading
+</button>
+`;
+
+exports[`<Button /> renders loading as "secondary" 1`] = `
+.c1 {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #3B46C4;
+  border-radius: 50%;
+  border-top-color: transparent;
+  -webkit-animation: iVXCSc 1.2s linear infinite;
+  animation: iVXCSc 1.2s linear infinite;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: #E9EAFA;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EEEFFB;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+  disabled=""
+>
+  <div
+    class="c1"
+  />
+   
+    
+  Waiting
+</button>
+`;
+
+exports[`<Button /> renders loading as "secondary" 2`] = `
+.c1 {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #3B46C4;
+  border-radius: 50%;
+  border-top-color: transparent;
+  -webkit-animation: iVXCSc 1.2s linear infinite;
+  animation: iVXCSc 1.2s linear infinite;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: #E9EAFA;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EEEFFB;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+<button
+  class="c0"
+  disabled=""
+>
+  <div
+    class="c1"
+  />
+   
+    
+  Waiting
+</button>
+`;
+
+exports[`<Button /> renders wide 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -205,551 +411,39 @@ exports[`Full width button renders the component with props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #4A3EDE;
   border-radius: 8px;
   color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Full width
-</button>
-`;
-
-exports[`Large button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #4A3EDE;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Large
-</button>
-`;
-
-exports[`Left icon button renders the component with props 1`] = `
-.c1 {
-  display: block;
-  margin-left: 8px;
-}
-
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #4A3EDE;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  <div>
-    My icon
-  </div>
-  <span
-    class="c1"
-  >
-    Left icon
-  </span>
-</button>
-`;
-
-exports[`Link button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 8px;
-  color: #4A3EDE;
-  background-color: transparent;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Link
-</button>
-`;
-
-exports[`Link contrast button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: transparent;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Link contrast
-</button>
-`;
-
-exports[`Primary button renders the component with props with no a11y violations 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #4A3EDE;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Primary
-</button>
-`;
-
-exports[`Primary contrast button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
+.c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #FFFFFF,inset 0 0 0 4px #4A3EDE;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c0:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Primary contrast
-</button>
-`;
-
-exports[`Right icon button renders the component with props 1`] = `
-.c1 {
-  display: block;
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #4A3EDE;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
+  background: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  <span
-    class="c1"
-  >
-    Right icon
-  </span>
-  <div>
-    My icon
-  </div>
-</button>
-`;
-
-exports[`Secondary button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 8px;
-  color: #4A3EDE;
-  background-color: transparent;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 4px #4A3EDE;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
+  box-shadow: unset;
   opacity: 0.8;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
 }
 
 <button
@@ -759,7 +453,7 @@ exports[`Secondary button renders the component with props 1`] = `
 </button>
 `;
 
-exports[`Secondary contrast button renders the component with props 1`] = `
+exports[`<Button /> renders with no a11y violations 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -776,172 +470,44 @@ exports[`Secondary contrast button renders the component with props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 8px;
+  color: #FFFFFF;
   border: 1px solid transparent;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: transparent;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #FFFFFF;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #FFFFFF;
-  outline: none;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c0:hover:not(:disabled) {
-  opacity: 0.8;
-  background-color: transparent;
-  box-shadow: inset 0 0 0 2px #FFFFFF;
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c0:active:not(:disabled) {
-  opacity: 0.4;
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c0:disabled {
   cursor: not-allowed;
-  opacity: 0.3;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
 }
 
 <button
   class="c0"
 >
-  Secondary contrast
-</button>
-`;
-
-exports[`Small button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 24px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #4A3EDE;
-  border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #4A3EDE;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #4A3EDE,inset 0 0 0 4px #FFFFFF;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Small
-</button>
-`;
-
-exports[`Warning button renders the component with props 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 14px 32px;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #FFB428;
-  border-radius: 8px;
-  color: #0D0A38;
-  background-color: #FFB428;
-  -webkit-transition: all 140ms ease-in-out;
-  transition: all 140ms ease-in-out;
-}
-
-.c0:not(:disabled) {
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled),
-.c0:focus:not(:disabled) {
-  box-shadow: inset 0 0 0 2px #FFB428,inset 0 0 0 4px #0D0A38;
-  outline: none;
-}
-
-.c0:hover:not(:disabled) {
-  opacity: 0.8;
-  box-shadow: none;
-}
-
-.c0:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-
-<button
-  class="c0"
->
-  Warning
+  Primary
 </button>
 `;

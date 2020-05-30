@@ -23,15 +23,19 @@ describe('<CheckboxGroupField />', () => {
         ]}
       />,
     );
-    const labelOne: any = getByLabelText('label one');
-    const labelTwo: any = getByLabelText('label two');
-    expect(labelOne.checked).toEqual(true);
-    expect(labelTwo.checked).toEqual(false);
+    const labelOne = getByLabelText('label one');
+    const labelTwo = getByLabelText('label two');
+    if (labelOne instanceof HTMLInputElement && labelTwo instanceof HTMLInputElement) {
+      expect(labelOne.checked).toEqual(true);
+      expect(labelTwo.checked).toEqual(false);
 
-    fireEvent.click(labelTwo);
-    expect(onChange).toHaveBeenCalledWith({ one: true, two: true });
-    expect(labelOne.checked).toEqual(true);
-    expect(labelTwo.checked).toEqual(true);
+      fireEvent.click(labelTwo);
+      expect(onChange).toHaveBeenCalledWith({ one: true, two: true });
+      expect(labelOne.checked).toEqual(true);
+      expect(labelTwo.checked).toEqual(true);
+    } else {
+      throw new Error('expected labelOne and labelTwo to be html input elements');
+    }
   });
 
   it('should not change value if it is disabled', () => {
@@ -54,7 +58,7 @@ describe('<CheckboxGroupField />', () => {
       />,
     );
     const labelOne = getByLabelText('label one');
-    const labelTwo: any = getByLabelText('label two');
+    const labelTwo = getByLabelText('label two');
 
     if (labelOne instanceof HTMLInputElement && labelTwo instanceof HTMLInputElement) {
       expect(labelOne.checked).toEqual(false);
@@ -89,15 +93,19 @@ describe('<CheckboxGroupField />', () => {
       );
     };
     const { getByLabelText } = render(<ControlledCheckboxGroupField />);
-    const labelOne: any = getByLabelText('label one');
-    const labelTwo: any = getByLabelText('label two');
-    expect(labelOne.checked).toEqual(true);
-    expect(labelTwo.checked).toEqual(false);
-    act(() => {
-      fireEvent.click(labelTwo);
-    });
-    expect(labelOne.checked).toEqual(true);
-    expect(labelTwo.checked).toEqual(true);
+    const labelOne = getByLabelText('label one');
+    const labelTwo = getByLabelText('label two');
+    if (labelOne instanceof HTMLInputElement && labelTwo instanceof HTMLInputElement) {
+      expect(labelOne.checked).toEqual(true);
+      expect(labelTwo.checked).toEqual(false);
+      act(() => {
+        fireEvent.click(labelTwo);
+      });
+      expect(labelOne.checked).toEqual(true);
+      expect(labelTwo.checked).toEqual(true);
+    } else {
+      throw new Error('expected labelOne and labelTwo to be html input elements');
+    }
   });
 
   it('renders the component with props with no a11y violations', async () => {

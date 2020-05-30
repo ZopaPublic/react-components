@@ -1,8 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
-import { typography } from '../../../constants/typography';
+import { colors, typography } from '../../../constants';
 import Heading from './Heading';
 const {
   sizes: { heading: headingSizes },
@@ -17,18 +16,28 @@ describe('<Heading />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('renders display size as h2 at mobile', async () => {
+    const { container } = render(
+      <Heading as="h1" size="display">
+        Text
+      </Heading>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it.each`
-    tag     | expectedSize
-    ${'h1'} | ${headingSizes.h1}
-    ${'h2'} | ${headingSizes.h2}
-    ${'h3'} | ${headingSizes.h3}
-    ${'h4'} | ${headingSizes.h4}
-    ${'h5'} | ${headingSizes.h5}
-    ${'h6'} | ${headingSizes.h6}
-  `('it can render with a different HTML tag: $tag', ({ tag, expectedSize }) => {
+    tag
+    ${'h1'}
+    ${'h2'}
+    ${'h3'}
+    ${'h4'}
+    ${'h5'}
+    ${'h6'}
+  `('it can render with a different HTML tag: $tag', ({ tag }) => {
     const { container } = render(<Heading as={tag}>Header</Heading>);
 
-    expect(container.firstChild).toHaveStyleRule('font-size', expectedSize);
+    expect(container.firstChild).toMatchSnapshot();
     expect(container.querySelector(tag)).not.toBe(null);
   });
 
@@ -59,9 +68,9 @@ describe('<Heading />', () => {
   });
 
   it.each`
-    hex                     | name
-    ${colors.neutral.white} | ${'White'}
-    ${colors.neutral.dark}  | ${'Dark'}
+    hex                   | name
+    ${colors.white}       | ${'White'}
+    ${colors.greyDarkest} | ${'Dark'}
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(
       <Heading as="h2" color={hex}>
@@ -72,12 +81,23 @@ describe('<Heading />', () => {
   });
 
   it('can render without margin bottom', () => {
+    const { container } = render(<Heading as="h1">Header</Heading>);
+
+    expect(container.firstChild).toHaveStyleRule('margin', '0');
+  });
+
+  it.each`
+    direction
+    ${'left'}
+    ${'right'}
+    ${'center'}
+  `('can align at:  $direction', ({ direction }) => {
     const { container } = render(
-      <Heading as="h1" mb={false}>
-        Header
+      <Heading as="h4" align={direction}>
+        Text
       </Heading>,
     );
 
-    expect(container.firstChild).toHaveStyleRule('margin', '0');
+    expect(container.firstChild).toHaveStyleRule('text-align', direction);
   });
 });

@@ -2,44 +2,51 @@
 
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 <input
@@ -51,44 +58,51 @@ exports[`<InputText /> renders the component disabled 1`] = `
 
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
-  border: 2px solid #EE0505;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #FF4539;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 <input
@@ -99,44 +113,51 @@ exports[`<InputText /> renders the component with error 1`] = `
 
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 <input
@@ -147,44 +168,51 @@ exports[`<InputText /> renders the component with focus 1`] = `
 
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c0 {
-  border: 2px solid #1EC06A;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #3EBC64;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 <input
@@ -195,44 +223,51 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
   width: 100%;
   -webkit-appearance: none;
   outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .c0:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::-moz-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:-ms-input-placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0::placeholder {
-  color: #DCDBE2;
+  color: #D4D7D9;
   opacity: 1;
 }
 
 .c0:disabled {
-  background-color: #EAEAEE;
+  background-color: #F7F7F7;
+  color: #818F9B;
 }
 
 <input

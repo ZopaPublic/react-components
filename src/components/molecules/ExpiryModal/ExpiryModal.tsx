@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Modal, { TModalProps } from '../Modal/Modal';
+import Modal, { ModalProps } from '../Modal/Modal';
 import Text from '../../atoms/Text/Text';
 import Heading from '../../atoms/Heading/Heading';
 import Button from '../../atoms/Button/Button';
 
-interface IExpiryModalProps extends TModalProps {
+interface ExpiryModalProps extends ModalProps {
   /**
    * A callback that fires once the user clicks on 'Log out'
    **/
@@ -31,7 +31,7 @@ const SessionHint = styled(Text).attrs({
   margin-bottom: 40px;
 `;
 
-export default function ExpiryModal({ onEndSession, onKeepSession, ...rest }: IExpiryModalProps) {
+export default function ExpiryModal({ onEndSession, onKeepSession, ...rest }: ExpiryModalProps) {
   return (
     <Modal {...rest}>
       <ModalInner>

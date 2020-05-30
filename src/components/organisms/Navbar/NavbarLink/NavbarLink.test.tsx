@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Navbar from '..';
+import NavbarLink from './NavbarLink';
 
 describe('<Navbar.Link />', () => {
   it('should render component with default props', () => {
-    const { container } = render(<Navbar.Link />);
+    const { container } = render(<NavbarLink />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render component with specific props', () => {
-    const { container } = render(<Navbar.Link active open withChevron />);
+    const { container } = render(<NavbarLink active open withChevron isDropdownLink />);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
