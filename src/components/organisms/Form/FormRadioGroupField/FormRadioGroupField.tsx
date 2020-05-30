@@ -1,15 +1,13 @@
 import React from 'react';
-import RadioGroupField, { IRadioGroupFieldProps } from '../../../molecules/RadioGroupField/RadioGroupField';
-import { useFieldContext } from '../hooks';
+import { useField, FieldHookConfig } from 'formik';
+import RadioGroupField, { RadioGroupFieldProps } from '../../../molecules/RadioGroupField/RadioGroupField';
 
-interface IFormRadioGroupFieldProps extends Omit<IRadioGroupFieldProps, 'onChange' | 'value'> {
-  name: string;
-}
+export type FormRadioGroupFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> &
+  Omit<RadioGroupFieldProps, 'onChange' | 'value'>;
 
-const FormRadioGroupField = ({ name, ...rest }: IFormRadioGroupFieldProps) => {
-  const { value, onChange } = useFieldContext(name);
-
-  return <RadioGroupField onChange={onChange} value={value} {...rest} />;
+const FormRadioGroupField = ({ name, validate, ...rest }: FormRadioGroupFieldProps) => {
+  const [{ value }, , { setValue }] = useField<string>({ name, validate });
+  return <RadioGroupField onChange={setValue} value={value} {...rest} />;
 };
 
 export default FormRadioGroupField;

@@ -3,21 +3,24 @@
  */
 
 // Global (colors, fonts, ...)
-export { typography } from './constants/typography';
-export { colors } from './constants/colors';
-export { breakpoints } from './constants/breakpoints';
-export * from './constants/components';
-export { default as grid } from './constants/grid';
-export { default as Fonts } from './components/styles/Fonts';
+export {
+  breakpoints,
+  colors,
+  grid,
+  spacing,
+  typography,
+  navbarOpenHeight,
+  navbarClosedHeight,
+  mobileNavbarHeight,
+} from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
 // Atoms
 export { default as Alert } from './components/atoms/Alert/Alert';
-export { default as AlertBox } from './components/atoms/AlertBox/AlertBox';
 export { default as Badge } from './components/atoms/Badge/Badge';
+export { default as Icon } from './components/atoms/Icon/Icon';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';
 export { default as Progress } from './components/molecules/Progress/Progress';
-export { default as Card } from './components/atoms/Card/Card';
 export { default as SidekickCard } from './components/atoms/SidekickCard/SidekickCard';
 export { default as Link, linkStyle } from './components/atoms/Link/Link';
 export { default as Dropdown } from './components/atoms/Dropdown/Dropdown';
@@ -32,6 +35,7 @@ export { default as Text } from './components/atoms/Text/Text';
 export { default as Heading } from './components/atoms/Heading/Heading';
 export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
 export { default as Legend } from './components/atoms/Legend/Legend';
+export { default as Logo } from './components/atoms/Logo/Logo';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
@@ -49,22 +53,14 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
-export { default as Navbar } from './components/organisms/Navbar';
+export { default as Navbar, navbarLinkStyles } from './components/organisms/Navbar/';
+export { default as Card } from './components/organisms/Card';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
 export { default as FlexRow } from './components/layout/FlexRow/FlexRow';
 export { default as FlexCol } from './components/layout/FlexCol/FlexCol';
 export { default as SizedContainer } from './components/layout/SizedContainer/SizedContainer';
-
-// Icons
-export { default as ArrowIcon } from './components/icons/Arrow/Arrow';
-export { default as AlertIcon } from './components/icons/Alert/Alert';
-export { default as CheckMarkIcon } from './components/icons/CheckMark/CheckMark';
-export { default as ChevronIcon } from './components/icons/Chevron/Chevron';
-export { default as ZopaIcon } from './components/icons/ZopaLogo/ZopaLogo';
-export { default as HamburgerIcon } from './components/icons/Hamburger/Hamburger';
-export { default as ProfileIcon } from './components/icons/Profile/Profile';
 
 // Hooks
 export * from './hooks/useViewport';

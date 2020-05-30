@@ -14,15 +14,15 @@ import { Badge } from '@zopauk/react-components';
 
 <Fragment>
   <div>
-    <Badge mb>Default</Badge>
+    <Badge className="mb-6">Default</Badge>
   </div>
   <div>
-    <Badge styling="waiting" mb>
+    <Badge styling="waiting" className="mb-6">
       Pending
     </Badge>
   </div>
   <div>
-    <Badge styling="confirmed" mb>
+    <Badge styling="confirmed" className="mb-6">
       Approved
     </Badge>
   </div>

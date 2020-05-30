@@ -93,12 +93,12 @@ module.exports = {
               content: 'src/components/organisms/Form/README.md',
               components: 'src/components/organisms/Form/**/[A-Z]*.tsx',
             },
+            {
+              name: 'Card',
+              content: 'src/components/organisms/Card/README.md',
+              components: 'src/components/organisms/Card/**/[A-Z]*.tsx',
+            },
           ],
-        },
-        {
-          name: 'Icons',
-          content: 'src/components/icons/README.md',
-          components: 'src/components/icons/**/*.tsx',
         },
         {
           name: 'Layout',
@@ -110,6 +110,14 @@ module.exports = {
   ],
   template: {
     favicon: 'https://s3-eu-west-1.amazonaws.com/cdn.zopa.com/images/201601215/favicon.ico',
+    head: {
+      links: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap',
+        },
+      ],
+    },
   },
   theme: {
     color: {
@@ -118,6 +126,7 @@ module.exports = {
       linkHover: '#00B9A7',
     },
     fontFamily: {
+      base: '"Open Sans", Roboto, Helvetica, Arial, sans-serif',
       monospace: 'Monaco, Menlo, Courier, monospace',
     },
     fontSize: {

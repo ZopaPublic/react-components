@@ -1,11 +1,11 @@
 import { createContext } from 'react';
 
-import { TGetAccordionHeaderProps, TGetAccordionSectionProps, TIsActiveAccordionSection } from './useAccordion';
+import { GetAccordionHeaderProps, GetAccordionSectionProps, IsActiveAccordionSection } from './useAccordion';
 
-export interface IAccordionContext {
-  getHeaderProps: TGetAccordionHeaderProps;
-  getSectionProps: TGetAccordionSectionProps;
-  isActiveSection: TIsActiveAccordionSection;
+export interface AccordionContext {
+  getHeaderProps: GetAccordionHeaderProps;
+  getSectionProps: GetAccordionSectionProps;
+  isActiveSection: IsActiveAccordionSection;
 }
 
-export const AccordionContext = createContext<IAccordionContext | undefined>(undefined);
+export const AccordionContext = createContext<AccordionContext | undefined>(undefined);

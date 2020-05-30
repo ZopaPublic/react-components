@@ -1,129 +1,132 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
+import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
+import NavbarLink from '../NavbarLink/NavbarLink';
 
 const NavbarDropdownContainer = styled.div`
   position: relative;
   display: inline-block;
 `;
 
-export type TButtonLinkElement = HTMLButtonElement | HTMLAnchorElement;
+export type ButtonLinkElement = HTMLButtonElement | HTMLAnchorElement;
 
-export type TAlignedTo = 'left' | 'right';
-
-export interface INavbarDropdownListContainer extends React.HTMLAttributes<HTMLDivElement> {
+export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean;
-  alignedTo: TAlignedTo;
 }
 
-const NavbarDropdownListContainer = styled.div<INavbarDropdownListContainer>`
-  position: absolute;
-  ${({ alignedTo }) => alignedTo}: 0;
-  ${({ open }) =>
-    open
-      ? css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(20%);
-        `
-      : css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-10%);
-        `}
+const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
+  ${minMedia.desktop`
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    
+    ${({ open }: NavbarDropdownListContainer) => css`
+      ${
+        open
+          ? css`
+              transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+              opacity: 1;
+              visibility: visible;
+              transform: translate(-50%, 0%);
+            `
+          : css`
+              transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+              opacity: 0;
+              visibility: hidden;
+              transform: translate(-50%, -10%);
+            `
+      }}
+    `}
+  `}
 `;
 
-export interface IOpenerProps {
+export interface OpenerProps {
   'aria-expanded': boolean;
   'aria-haspopup': true;
-  ref: React.RefObject<TButtonLinkElement>;
+  ref: React.RefObject<ButtonLinkElement>;
   onClick: React.EventHandler<React.MouseEvent>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   role: string;
   tabIndex: number;
 }
 
-export type IItem = any;
+export type Item = any;
 
-export type TGetOpenerProps = () => IOpenerProps;
+export type GetOpenerProps = () => OpenerProps;
 
-export interface IRenderOpenerProps {
-  open: boolean;
-  getOpenerProps: TGetOpenerProps;
-}
-
-export interface IItemProps {
+export interface ItemProps {
   ref: React.RefObject<HTMLLIElement>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   role: string;
   tabIndex: number;
 }
 
-export type TGetItemProps = () => IItemProps;
+export type GetItemProps = () => ItemProps;
 
-export type TClose = () => void;
+export type Close = () => void;
 
-export interface IRenderItemProps {
-  item: IItem;
-  getItemProps: TGetItemProps;
-  close: TClose;
+export interface RenderItemProps {
+  item: Item;
+  getItemProps: GetItemProps;
+  close: Close;
 }
-
-export interface INavbarDropdownProps {
+export interface DefaultNavbarDropdownProps {
+  /** Function getting all the props and aria attributes meant to be spread on the dropdown item links */
+  renderItem: ({ item, getItemProps, close }: RenderItemProps) => React.ReactNode;
+}
+export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** unique id */
   id: string;
-  /** Short description of the navbar component */
-  ariaLabel: string;
-  /** Function getting all the props and aria attributes meant to be spread on the opener button/link */
-  renderOpener: ({ open, getOpenerProps }: IRenderOpenerProps) => React.ReactNode;
-  /** Function getting all the props and aria attributes meant to be spread on the dropdown item links */
-  renderItem: ({ item, getItemProps, close }: IRenderItemProps) => React.ReactNode;
-  /** Array of data representing the dropdown items (e.g links) */
-  items: IItem[];
+  /** dropdown label */
+  label: string;
+  /** array of data representing the dropdown items (e.g links) */
+  items: Item[];
 }
 
-export interface INavbarDropdownState {
+export interface NavbarDropdownState {
   cursor: number;
-  right: number;
   open: boolean;
 }
 
-export default class NavbarDropdown extends React.Component<INavbarDropdownProps, INavbarDropdownState> {
+export default class NavbarDropdown extends React.Component<NavbarDropdownProps, NavbarDropdownState> {
+  static defaultProps: DefaultNavbarDropdownProps = {
+    renderItem: ({ item: { label, href }, getItemProps }) => (
+      <NavbarLink href={href} {...getItemProps()} isDropdownLink>
+        {label}
+      </NavbarLink>
+    ),
+  };
+
   private readonly dropdownRef = React.createRef<HTMLDivElement>();
-  private readonly dropdownListRef = React.createRef<HTMLUListElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
   private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
-  public constructor(props: INavbarDropdownProps) {
+  public constructor(props: NavbarDropdownProps) {
     super(props);
     this.itemsRefs = props.items.map(() => React.createRef<HTMLLIElement>());
     this.state = {
       cursor: 0,
       open: false,
-      right: this.getRightCoordinate(),
     };
   }
 
   public componentDidMount() {
-    this.updateRightCoordinate();
-    window.addEventListener('resize', this.updateRightCoordinate);
     document.addEventListener('focus', this.handleFocusOutside, true);
     document.addEventListener('mousedown', this.handleFocusOutside, true);
     document.addEventListener('keydown', this.handleEscapeKey, true);
   }
 
   public componentWillUnmount() {
-    window.removeEventListener('resize', this.updateRightCoordinate);
     document.removeEventListener('focus', this.handleFocusOutside, true);
     document.removeEventListener('mousedown', this.handleFocusOutside, true);
     document.removeEventListener('keydown', this.handleEscapeKey, true);
   }
 
-  public getOpenerProps = (): IOpenerProps => ({
+  public getOpenerProps = (): OpenerProps => ({
     'aria-expanded': this.state.open,
     'aria-haspopup': true,
     onClick: this.handleOpenerClick,
@@ -142,14 +145,16 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
 
   public render() {
     const { getOpenerProps, close } = this;
-    const { renderOpener, renderItem, items, ariaLabel, id } = this.props;
+    const { renderItem, items, label, id } = this.props;
     const { open } = this.state;
-    const alignedTo = this.getAlignedTo();
+
     return (
       <NavbarDropdownContainer ref={this.dropdownRef}>
-        {renderOpener({ open, getOpenerProps })}
-        <NavbarDropdownListContainer alignedTo={alignedTo} open={open}>
-          <NavbarDropdownList ref={this.dropdownListRef} alignedTo={alignedTo} role="menu" aria-label={ariaLabel}>
+        <NavbarLink open={open} withChevron={true} href="#" {...getOpenerProps()}>
+          {label}
+        </NavbarLink>
+        <NavbarDropdownListContainer open={open}>
+          <NavbarDropdownList role="menu" aria-label={label}>
             {items.map((item, index) => (
               <li key={`${id}-${index}`} role="none">
                 {renderItem({
@@ -169,7 +174,7 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
     this.setState({ open: false });
   };
 
-  private handleOpenerKeyDown = (e: React.KeyboardEvent<TButtonLinkElement>) => {
+  private handleOpenerKeyDown = (e: React.KeyboardEvent<ButtonLinkElement>) => {
     if (isArrowUp(e)) {
       e.preventDefault();
       this.setState(
@@ -191,12 +196,12 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
     }
   };
 
-  private handleItemKeyDown = (e: React.KeyboardEvent<TButtonLinkElement>) => {
+  private handleItemKeyDown = (e: React.KeyboardEvent<ButtonLinkElement>) => {
     const { length } = this.itemsRefs;
     if (isArrowUp(e)) {
       e.preventDefault();
       this.setState(
-        prevState => ({
+        (prevState) => ({
           cursor: mod(prevState.cursor - 1, length),
         }),
         this.focusOnItem,
@@ -204,7 +209,7 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
     } else if (isArrowDown(e)) {
       e.preventDefault();
       this.setState(
-        prevState => ({
+        (prevState) => ({
           cursor: mod(prevState.cursor + 1, length),
         }),
         this.focusOnItem,
@@ -212,24 +217,9 @@ export default class NavbarDropdown extends React.Component<INavbarDropdownProps
     }
   };
 
-  private updateRightCoordinate = () => {
-    this.setState({ right: this.getRightCoordinate() });
-  };
-
-  private getRightCoordinate = () =>
-    this.dropdownRef.current ? this.dropdownRef.current.getBoundingClientRect().left : 0;
-
-  private getAlignedTo = () => {
-    const dropdownList = this.dropdownListRef.current;
-    if (dropdownList) {
-      return this.state.right - dropdownList.offsetWidth < 0 ? 'left' : 'right';
-    }
-    return 'right';
-  };
-
   private handleOpenerClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    this.setState(prevState => ({ open: !prevState.open }));
+    this.setState((prevState) => ({ open: !prevState.open }));
   };
 
   private focusOnItem = () => {

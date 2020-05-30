@@ -1,20 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
 import Logo from 'rsg-components/Logo';
 import Markdown from 'rsg-components/Markdown';
 import Ribbon from 'rsg-components/Ribbon';
 import Version from 'rsg-components/Version';
 
 import GlobalStyles from '../components/styles/GlobalStyles';
-import Fonts from '../components/styles/Fonts';
-
-const GlobalStyleGuideStyles = createGlobalStyle`
-  /* System Fonts as used by GitHub */
-  body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-`;
 
 const sidebarWidth = 260;
 
@@ -71,8 +62,6 @@ export function StyleGuideRenderer({ title, version, homepageUrl, children, toc 
   return (
     <Container>
       <GlobalStyles />
-      <GlobalStyleGuideStyles />
-      <Fonts />
       <Main>
         {children}
         <Footer>

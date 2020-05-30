@@ -33,7 +33,7 @@ export default {
   plugins: [
     customResolveOptions({ extensions }),
     babel({
-      presets: [['react-app', { flow: false, typescript: true }]],
+      presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
       babelHelpers: 'runtime',
       extensions,
       exclude: 'node_modules',

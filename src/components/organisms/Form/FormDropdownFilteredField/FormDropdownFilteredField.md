@@ -1,11 +1,14 @@
 ### Summary
 
-`<Form.DropdownFilteredField>` is just a small wrapper around the [`<DropdownFiltered>`](#/Components/Molecules/DropdownFiltered) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownFilteredField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<FormDropdownFilteredField>` is just a thin wrapper around the [`<DropdownFiltered>`](#/Components/Molecules/DropdownFiltered) component.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormDropdownFilteredField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 
-```ts
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { FormDropdownFilteredField, FormButton } from '@zopauk/react-components';
 
 const nationalities = [
   { alpha2: 'GB', value: 'British' },
@@ -14,25 +17,30 @@ const nationalities = [
   { alpha2: 'AG', value: 'Antiguan/Barbudan' },
 ];
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
-  if (!values.nationality) {
-    errors.nationality = 'Please pick one';
+  if (!values.country) {
+    errors.country = 'Please pick one';
   }
   return errors;
 };
 
-<Form initialValues={{ nationality: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik
+  validateOnMount
+  initialValues={{ country: '' }}
+  validate={validate}
+  onSubmit={(values) => alert(JSON.stringify(values))}
+>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.DropdownFilteredField
-        name="nationality"
+      <FormDropdownFilteredField
+        name="country"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
-        label="Nationality"
+        label="country"
       />
     </div>
-    <Form.Button>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <FormButton>Submit</FormButton>
+  </Form>
+</Formik>;
 ```

@@ -1,46 +1,51 @@
 import React, { FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
-import Arrow from '../../../icons/Arrow/Arrow';
+import { colors, spacing } from '../../../../constants';
 import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../hooks';
 
-export interface IAccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
+export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   id: string;
   index: number;
-  textSize?: 'base' | 'small';
+  textSize?: 'body' | 'small';
   onClick?: (isActive: boolean) => void;
 }
 const StyledButton = styled.button`
   appearance: none;
   border: none;
-  padding: 0;
   background: none;
   cursor: pointer;
-  padding: 0 4px;
+  padding: 0;
+  width: 100%;
+  margin-bottom: ${spacing[1]};
 `;
 
 const TitleContainer = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   text-align: left;
-
-  svg {
-    flex-shrink: 0;
-  }
+  background-color: ${colors.greyLightest};
+  width: 100%;
+  justify-content: space-between;
+  padding: ${spacing[4]};
 `;
 
 const Title = styled(Text)`
-  color: ${colors.base.secondary};
-  padding-left: 8px;
+  color: ${colors.greyDarkest};
 `;
 
-const mapTextToArrowSize = {
-  base: '10px',
-  small: '8px',
-};
+const Cross = styled.span<{ active: boolean }>`
+  width: 10px;
+  height: 10px;
+  // This background creates the ➖
+  background: linear-gradient(to bottom, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)
+    ${({ active }) =>
+      !active &&
+      // This adds the vertical stick to create ✚
+      `, linear-gradient(to right, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)`};
+`;
 
-const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize = 'base', onClick, ...rest }) => {
+const AccordionHeader: FC<AccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 
@@ -52,14 +57,10 @@ const AccordionHeader: FC<IAccordionHeader> = ({ children, id, index, textSize =
   return (
     <StyledButton ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
       <TitleContainer>
-        <Arrow
-          direction={isActiveSection(index) ? 'down' : 'right'}
-          width={mapTextToArrowSize[textSize]}
-          height={mapTextToArrowSize[textSize]}
-        />
         <Title weight="bold" size={textSize}>
           {children}
         </Title>
+        <Cross active={isActiveSection(index)} />
       </TitleContainer>
     </StyledButton>
   );

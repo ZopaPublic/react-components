@@ -1,27 +1,18 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { colors } from '../../../constants/colors';
+import styled, { css, keyframes } from 'styled-components';
+import { colors } from '../../../constants';
 
-export interface ISpinnerProps {
-  /**
-   * Background color (3 quarters of the spinner)
-   */
-  backgroundColor?: string;
-
-  /**
-   * Width of the border
-   */
-  borderWidth?: string;
-
-  /**
-   * Front color (1 quarter of the spinner)
-   */
-  frontColor?: string;
-
+export interface SpinnerProps {
   /**
    * Size of the spinner
+   * @default 'standard'
    */
-  size?: string;
+  size?: 'standard' | 'small';
+  /**
+   * Adjusts colour to display on top of dark background
+   * @default false
+   */
+  negative?: boolean;
 }
 
 const spin = keyframes`
@@ -33,17 +24,17 @@ const spin = keyframes`
   }
 `;
 
-const Spinner = styled.div<ISpinnerProps>`
-  width: ${({ size = '45px' }) => size};
-  height: ${({ size = '45px' }) => size};
-  margin: 8px;
-  border: ${({ borderWidth = '8px' }) => borderWidth} solid ${({ frontColor = colors.base.primary }) => frontColor};
+const StyledSpinner = styled.div<SpinnerProps>`
+  ${({ size = 'standard', negative = false }) => css`
+    width: ${size === 'small' ? 20 : 40}px;
+    height: ${size === 'small' ? 20 : 40}px;
+    border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};
+  `}
   border-radius: 50%;
-  border-top-color: ${({ backgroundColor = colors.neutral.light }) => backgroundColor};
+  border-top-color: transparent;
   animation: ${spin} 1.2s linear infinite;
 `;
 
-// TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistSpinner: React.FC<ISpinnerProps> = props => <Spinner {...props} />;
+const Spinner: React.FC<SpinnerProps> = (props) => <StyledSpinner {...props} />;
 
 export default Spinner;

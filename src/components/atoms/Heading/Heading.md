@@ -1,26 +1,38 @@
 ### Summary
 
-1. Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component
-2. Supply an `as` prop to specify which level to render: "h1" | "h2" | "h3" | "h4"
-3. Depending on the rendered tag through `as` the headings will render at bigger or smaller size
-4. Its size can be controlled through the `size` prop as well for more granular control
-5. Its weight can't be customised
-6. It comes with bottom white-space (margin) by default but you can disabled that through the `mb` prop
+Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component.
+
+❗❗️ This library assumes **Open Sans** is available for the typography to render correctly.  
+❗❗️ Make sure you make it available in your application HTML skeleton:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+```
+
+The **mb** property has been deprecated in favour of atomic classes to define spacing you can [read more here](/#spacing)
 
 ### Examples
 
 - Variations
 
 ```tsx
+import styled from 'styled-components';
 import { Fragment } from 'react';
-import { Heading } from '@zopauk/react-components';
+import { colors, Heading, Text } from '@zopauk/react-components';
 
 <Fragment>
+  <Heading as="h1" size="display">
+    Display Heading
+  </Heading>
+  <Text color={colors.alert}>❗️ Only to be used for marketing purposes.</Text>
+  <hr style={{ margin: '30px 0' }} />
   <Heading as="h1">Heading level 1</Heading>
   <Heading as="h2">Heading level 2</Heading>
   <Heading as="h3">Heading level 3</Heading>
-  <Heading as="h4" mb={false}>
-    Heading level 4
+  <Heading as="h4">Heading level 4</Heading>
+  <Heading as="h5">Heading level 5</Heading>
+  <Heading as="h6" className="mb-0">
+    Heading level 6
   </Heading>
 </Fragment>;
 ```
@@ -33,10 +45,10 @@ import { Heading } from '@zopauk/react-components';
 
 <Fragment>
   <Heading as="h3">With bottom white-space</Heading>
-  <Heading as="h3" mb={false}>
+  <Heading as="h3" className="mb-0">
     Without bottom white-space
   </Heading>
-  <Heading as="h3" mb={false}>
+  <Heading as="h3" className="mb-0">
     Without bottom white-space
   </Heading>
 </Fragment>;
@@ -67,14 +79,57 @@ import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
 
 <Fragment>
-  <Heading as="h4" color={colors.neutral.white}>
+  <Heading as="h4" color={colors.white}>
     White
   </Heading>
-  <Heading as="h4" color={colors.neutral.nearDark}>
+  <Heading as="h4" color={colors.grey}>
     Near Dark
   </Heading>
-  <Heading as="h4" color={colors.neutral.dark} mb={false}>
+  <Heading as="h4" color={colors.greyDarkest} className="mb-0">
     Dark
+  </Heading>
+</Fragment>;
+```
+
+- Alignment
+
+```tsx
+import { Fragment } from 'react';
+import { Heading } from '@zopauk/react-components';
+
+<Fragment>
+  <div style={{ textAlign: 'right' }}>
+    <Heading as="h4" className="mb-7">
+      Inherits from his parent by default
+    </Heading>
+  </div>
+  <Heading as="h4" align="left">
+    Left aligned
+  </Heading>
+  <Heading as="h4" align="center">
+    Center
+  </Heading>
+  <Heading as="h4" align="right" className="mb-0">
+    Right aligned
+  </Heading>
+</Fragment>;
+```
+
+- Spacing
+
+```tsx
+import { Fragment } from 'react';
+import { Heading } from '@zopauk/react-components';
+
+<Fragment>
+  <Heading as="h3" className="mb-10">
+    Large Margin on the bottom
+  </Heading>
+  <Heading as="h2" className="mb-7">
+    Medium Margin on the bottom
+  </Heading>
+  <Heading as="h4" className="mb-4">
+    Small Margin on the bottom
   </Heading>
 </Fragment>;
 ```

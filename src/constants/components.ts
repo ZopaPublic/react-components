@@ -1,1 +1,3 @@
-export const navbarHeight = 80;
+export const navbarOpenHeight = 120;
+export const navbarClosedHeight = 76;
+export const mobileNavbarHeight = 64;

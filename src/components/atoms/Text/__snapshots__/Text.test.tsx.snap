@@ -7,11 +7,12 @@ exports[`<Text /> it can render as an HTML p tag 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 400;
-  font-size: 16px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
 }
 
 <p
@@ -28,11 +29,12 @@ exports[`<Text /> it can render as an HTML span tag 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 400;
-  font-size: 16px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
 }
 
 <span
@@ -49,11 +51,12 @@ exports[`<Text /> renders without  a11y violations 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 400;
-  font-size: 16px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
 }
 
 <div>

@@ -1,26 +1,34 @@
 ### Summary
 
-`<Form.Button>` is just a small wrapper around the [`<Button>`](#/Components/Atoms/Button) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.Button>` already handles the form submit callback and the disabled attribute for you.
+`<FormButton>` is just a thin wrapper around the [`<Button>`](#/Components/Atoms/Button) component.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormButton>` already handles the form submit callback and the disabled attribute for you.
 
 ### Example
 
-```ts
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { FormTextField, FormButton } from '@zopauk/react-components';
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
-  if (!values.firstName) {
-    errors.firstName = 'This field is required';
+  if (!values.yourName) {
+    errors.yourName = 'This field is required';
   }
   return errors;
 };
 
-<Form initialValues={{ firstName: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik
+  validateOnMount
+  initialValues={{ yourName: '' }}
+  validate={validate}
+  onSubmit={(values) => alert(JSON.stringify(values))}
+>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.TextField label="First name" name="firstName" />
+      <FormTextField label="Your name" name="yourName" />
     </div>
-    <Form.Button>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <FormButton>Submit</FormButton>
+  </Form>
+</Formik>;
 ```

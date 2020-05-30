@@ -1,13 +1,14 @@
 import React from 'react';
-import { fireEvent, render, act } from '@testing-library/react';
-import { Form } from '..';
+import { Formik, Form as FormikForm } from 'formik';
+import { fireEvent, render, act, wait } from '@testing-library/react';
+import { FormTextField, FormButton } from '..';
 
-interface IForm {
+interface Form {
   firstName: string;
 }
 
-const validate = (values: IForm) => {
-  const errors: Partial<IForm> = {};
+const validate = (values: Form) => {
+  const errors: Partial<Form> = {};
 
   if (!values.firstName) {
     errors.firstName = 'This field is required';
@@ -22,46 +23,51 @@ const fieldLabel = 'First name';
 
 const renderComponent = (props = {}) =>
   render(
-    <Form initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
-      <Form.Form>
-        <Form.TextField label={fieldLabel} name="firstName" />
-        <Form.Button {...props}>{buttonLabel}</Form.Button>
-      </Form.Form>
-    </Form>,
+    <Formik validateOnMount initialValues={{ firstName: '' }} validate={validate} onSubmit={onSubmit}>
+      <FormikForm>
+        <FormTextField label={fieldLabel} name="firstName" />
+        <FormButton {...props}>{buttonLabel}</FormButton>
+      </FormikForm>
+    </Formik>,
   );
 
-describe('<Form.Button />', () => {
-  it('renders disabled button', () => {
+describe('<FormButton />', () => {
+  afterEach(() => {
+    onSubmit.mockReset();
+  });
+
+  it('renders disabled button', async () => {
     const { getByText } = renderComponent();
+    await wait();
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
-  it('renders enabled button', () => {
+  it('renders enabled button', async () => {
     const { getByText, getByLabelText } = renderComponent();
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
     expect(getByText(buttonLabel)).not.toBeDisabled();
   });
 
-  it('renders disabled button even though the form is valid', () => {
+  it('renders disabled button even though the form is valid', async () => {
     const { getByText, getByLabelText } = renderComponent({ disabled: true });
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value: 'name' } });
     });
     expect(getByText(buttonLabel)).toBeDisabled();
   });
 
-  it('calls onSubmit callback', () => {
+  it('calls onSubmit callback', async () => {
     const { getByText, getByLabelText } = renderComponent();
     const value = 'name';
-    act(() => {
-      fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
+    await act(async () => {
+      await fireEvent.change(getByLabelText(fieldLabel), { target: { value } });
     });
-    act(() => {
-      fireEvent.click(getByText(buttonLabel));
+    await act(async () => {
+      await fireEvent.click(getByText(buttonLabel));
     });
     expect(onSubmit).toHaveBeenCalledTimes(1);
-    expect(onSubmit).toHaveBeenCalledWith({ firstName: value });
+    expect(onSubmit.mock.calls[0][0]).toEqual({ firstName: value });
   });
 });

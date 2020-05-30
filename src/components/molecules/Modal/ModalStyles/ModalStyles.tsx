@@ -1,15 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from '../../../../constants';
 
-import { colors } from '../../../../constants/colors';
-
-export interface IModalStylesProps {
+export interface ModalStylesProps {
   /**
    * The CSS `z-index` value to be applied on the rendered modal.
    */
   zIndex?: number;
 }
 
-const ModalStyles = createGlobalStyle<IModalStylesProps>`
+const ModalStyles = createGlobalStyle<ModalStylesProps>`
   .zopa-modal-body--open {
     overflow: hidden;
   }
@@ -27,7 +26,7 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.neutral.dark};
+    background-color: ${colors.greyDarkest};
     opacity: 0;
     transition: opacity 200ms ease-in-out;
     z-index: ${({ zIndex = 2 }) => zIndex};
@@ -40,7 +39,7 @@ const ModalStyles = createGlobalStyle<IModalStylesProps>`
   }
 
   .zopa-modal {
-    background-color: ${colors.neutral.white};
+    background-color: ${colors.white};
     max-height: 95%;
     overflow: auto;
   }

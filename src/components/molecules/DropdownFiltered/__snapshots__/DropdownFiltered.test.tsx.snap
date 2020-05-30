@@ -8,61 +8,10 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #0D0A38;
-  line-height: 1.6;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.c3 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  -webkit-appearance: none;
-  outline: none;
-}
-
-.c3:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c3::-moz-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c3:-ms-input-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c3::placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c3:disabled {
-  background-color: #EAEAEE;
-}
-
-.c6 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .c0 {
@@ -70,8 +19,58 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
+.c3 {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c3:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3::-moz-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3:-ms-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3::placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3:disabled {
+  background-color: #F7F7F7;
+  color: #818F9B;
+}
+
 .c4 {
   margin: 0;
+  padding-left: 16px;
+  padding-right: 32px;
   margin-bottom: 0;
 }
 
@@ -125,17 +124,20 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         class="c5"
       >
         <svg
+          aria-hidden="true"
           aria-label="open.menu"
-          class="c6"
-          direction="down"
-          height="24px"
-          viewBox="0 0 416 416"
-          width="24px"
+          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          color="#818F9B"
+          data-icon="chevron-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-            fill="#4A3EDE"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            fill="currentColor"
           />
         </svg>
       </div>
@@ -145,63 +147,63 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 `;
 
 exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a default selected value 1`] = `
-.c2 {
-  border: 2px solid #DCDBE2;
-  border-radius: 4px;
-  padding: 0 10px;
-  height: 48px;
-  font-weight: 600;
-  width: 100%;
-  -webkit-appearance: none;
-  outline: none;
-}
-
-.c2:focus {
-  border: 2px solid #4A3EDE;
-  -webkit-transition: border 0.2s;
-  transition: border 0.2s;
-}
-
-.c2::-webkit-input-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c2::-moz-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c2:-ms-input-placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c2::placeholder {
-  color: #DCDBE2;
-  opacity: 1;
-}
-
-.c2:disabled {
-  background-color: #EAEAEE;
-}
-
-.c5 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c0 {
   max-width: 100%;
   width: 100%;
 }
 
+.c2 {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2C3236;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2::-moz-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2:-ms-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2::placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2:disabled {
+  background-color: #F7F7F7;
+  color: #818F9B;
+}
+
 .c3 {
   margin: 0;
+  padding-left: 16px;
+  padding-right: 32px;
   margin-bottom: 0;
 }
 
@@ -248,17 +250,20 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         class="c4"
       >
         <svg
+          aria-hidden="true"
           aria-label="open.menu"
-          class="c5"
-          direction="down"
-          height="24px"
-          viewBox="0 0 416 416"
-          width="24px"
+          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          color="#818F9B"
+          data-icon="chevron-down"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 448 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-            fill="#4A3EDE"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            fill="currentColor"
           />
         </svg>
       </div>

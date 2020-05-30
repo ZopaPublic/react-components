@@ -1,7 +1,7 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants/colors';
+import { colors } from '../../../constants';
 import Link from './Link';
 
 describe('<Link />', () => {
@@ -23,16 +23,23 @@ describe('<Link />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it.each`
-    hex                      | name
-    ${colors.base.secondary} | ${'Blue'}
-    ${colors.neutral.white}  | ${'White'}
-  `('can render in different colors: $name – $hex', ({ hex }) => {
+  it('doesnt render the link with a target icon', () => {
     const { container } = render(
-      <Link href="http://duckduckgo.com" color={hex}>
+      <Link href="http://duckduckgo.com" showTargetIcon={false} target="_blank">
         text
       </Link>,
     );
-    expect(container.firstChild).toHaveStyleRule('color', hex);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders for being displayed on top of dark backgrounds', () => {
+    const { container } = render(
+      <Link href="http://duckduckgo.com" target="_blank" negative>
+        text
+      </Link>,
+    );
+
+    expect(container.firstChild).toHaveStyleRule('color', colors.greyDarkest);
   });
 });

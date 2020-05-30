@@ -4,13 +4,13 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 .c0 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  line-height: 1.6;
-  color: #4A3EDE;
+  line-height: inherit;
+  color: #3B46C4;
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
@@ -22,24 +22,29 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4A3EDE;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
 }
 
 .c1:active,
@@ -49,30 +54,21 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 
 <a
   class="c0 c1"
-  color="#4A3EDE"
+  color="#3B46C4"
 />
 `;
 
 exports[`<Navbar.Link /> should render component with specific props 1`] = `
-.c3 {
-  -webkit-transition: -webkit-transform 0.2s;
-  -webkit-transition: transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
 .c0 {
   background-color: transparent;
   font-size: inherit;
-  font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  line-height: 1.6;
-  color: #4A3EDE;
+  line-height: inherit;
+  color: #3B46C4;
   cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
@@ -84,24 +80,29 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   border: none;
 }
 
-.c0:hover {
-  opacity: 0.88;
+.c0:hover,
+.c0:active {
+  color: #21247F;
 }
 
-.c0:active {
-  opacity: 0.72;
+.c0:hover svg path,
+.c0:active svg path {
+  fill: #21247F;
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4A3EDE;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
 }
 
 .c1:active,
@@ -114,38 +115,79 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  -webkit-transition: -webkit-transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  transition: transform 0.3s;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  margin-right: 8px;
+}
+
+.c3 {
+  display: none;
+}
+
+@media (max-width:1280px) {
+  .c1 {
+    color: #2C3236;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .c1:hover {
+    background-color: #E9EAFA;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 
 <a
   class="c0 c1"
-  color="#4A3EDE"
+  color="#3B46C4"
 >
   <span
     class="c2"
+  />
+  <span
+    class="c3"
     open=""
   >
     <svg
-      class="c3"
-      direction="down"
-      height="18px"
-      viewBox="0 0 416 416"
-      width="18px"
+      aria-hidden="true"
+      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+      color="#818F9B"
+      data-icon="chevron-down"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 448 512"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M214.8 287c2.2-.9 4.3-2.3 6.1-4.1l124-124c7.2-7.1 7.2-18.7 0-25.9-7.1-7.2-18.7-7.2-25.9 0L207.9 244.1l-111-111c-7.1-7.2-18.7-7.2-25.9 0-7.2 7.1-7.2 18.7 0 25.9l124 124c5.4 5.3 13.2 6.7 19.8 4z"
-        fill="currentcolor"
+        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        fill="currentColor"
       />
     </svg>
   </span>

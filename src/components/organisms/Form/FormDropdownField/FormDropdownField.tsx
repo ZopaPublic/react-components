@@ -1,29 +1,39 @@
-import React, { forwardRef, ChangeEvent } from 'react';
-import DropdownField, { IDropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
-import { useFieldContext } from '../hooks';
+import React, { forwardRef } from 'react';
+import { useField, FieldHookConfig } from 'formik';
+import DropdownField, { DropdownFieldProps } from '../../../molecules/DropdownField/DropdownField';
 
-interface IFormDropdownFieldProps extends IDropdownFieldProps {
-  name: string;
-}
+type FormDropdownOption = {
+  label: string;
+  value: string;
+};
 
-const FormDropdownField = forwardRef<HTMLSelectElement, IFormDropdownFieldProps>(({ name, ...rest }, ref) => {
-  const { error, touched, onChange, onBlur } = useFieldContext(name);
-
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    onChange(e.target.value);
+export type FormDropdownFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> &
+  DropdownFieldProps & {
+    options: FormDropdownOption[];
   };
 
-  return (
-    <DropdownField
-      name={name}
-      isValid={touched && !error}
-      errorMessage={touched && error ? error : ''}
-      onChange={handleChange}
-      onBlur={onBlur}
-      ref={ref}
-      {...rest}
-    />
-  );
-});
+const FormDropdownField = forwardRef<HTMLSelectElement, FormDropdownFieldProps>(
+  ({ name, validate, options, ...rest }, ref) => {
+    const [{ onBlur, onChange, value }, { error, touched }] = useField<string>({ name, validate });
+    return (
+      <DropdownField
+        name={name}
+        isValid={touched && !error}
+        errorMessage={touched && error ? error : ''}
+        onChange={onChange}
+        onBlur={onBlur}
+        ref={ref}
+        value={value}
+        {...rest}
+      >
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </DropdownField>
+    );
+  },
+);
 
 export default FormDropdownField;

@@ -1,32 +1,51 @@
 ### Summary
 
-`<Form.DropdownField>` is just a small wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component. It is meant to be used **ONLY** inside [`<Form>`](#/Organisms/Form/Form) along with other [Form](#/Organisms/Form) components. Thanks to the form data passed down through context, `<Form.DropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
+`<FormDropdownField>` is just a thin wrapper around the [`<DropdownField>`](#/Components/Molecules/DropdownField) component.
+It is meant to be used **ONLY** inside `<Formik>` and formik's `<Form />` along with other [Form](#/Organisms/Form) components.
+Thanks to the form data passed down through context, `<FormDropdownField>` already handles valid/invalid state, onChange, and onBlur callback.
 
 ### Example
 
-```ts
-import { Form } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import { DropdownField, FormButton } from '@zopauk/react-components';
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
-  if (!values.referral) {
-    errors.referral = 'Please pick one';
+  if (!values.ref) {
+    errors.ref = 'Please pick one';
   }
   return errors;
 };
 
-<Form initialValues={{ referral: '' }} validate={validate} onSubmit={values => alert(JSON.stringify(values))}>
-  <Form.Form>
+<Formik
+  validateOnMount
+  initialValues={{ ref: 'newspaper' }}
+  validate={validate}
+  onSubmit={(values) => alert(JSON.stringify(values))}
+>
+  <Form>
     <div style={{ marginBottom: '16px' }}>
-      <Form.DropdownField label="How did you hear about us?" name="referral">
-        <option disabled value="">
-          select an option
-        </option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </Form.DropdownField>
+      <FormDropdownField
+        options={[
+          {
+            label: 'Select an option',
+            value: '',
+          },
+          {
+            label: 'Newspaper',
+            value: 'newspaper',
+          },
+          {
+            label: 'Social media',
+            value: 'socialMedia',
+          },
+        ]}
+        label="How did you hear about us?"
+        name="ref"
+      />
     </div>
-    <Form.Button>Submit</Form.Button>
-  </Form.Form>
-</Form>;
+    <FormButton>Submit</FormButton>
+  </Form>
+</Formik>;
 ```

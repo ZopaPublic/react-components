@@ -1,21 +1,29 @@
 ### Summary
 
-`<Form>` is a top level form component holding its state and also serves as a namespace for all of the form components:
+The following components are meant to be used with `formik` components and hooks:
 
-- [`<Form.Form>`](#/Components/Organisms/Form/Form)
-- [`<Form.TextField>`](#/Components/Organisms/Form/FormTextField)
-- [`<Form.DropdownField>`](#/Components/Organisms/Form/FormDropdownField)
-- [`<Form.DropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
-- [`<Form.CheckboxField>`](#/Components/Organisms/Form/FormCheckboxField)
-- [`<Form.RadioGroupField>`](#/Components/Organisms/Form/FormRadioGroupField)
-- [`<Form.Button>`](#/Components/Organisms/Form/FormButton)
+- [`<FormTextField>`](#/Components/Organisms/Form/FormTextField)
+- [`<FormDropdownField>`](#/Components/Organisms/Form/FormDropdownField)
+- [`<FormDropdownFilteredField>`](#/Components/Organisms/Form/FormDropdownFilteredField)
+- [`<FormCheckboxField>`](#/Components/Organisms/Form/FormCheckboxField)
+- [`<FormRadioGroupField>`](#/Components/Organisms/Form/FormRadioGroupField)
+- [`<FormButton>`](#/Components/Organisms/Form/FormButton)
 
 See the example below for more details.
 
 ### Example
 
-```ts
-import { Form, Text } from '@zopauk/react-components';
+```tsx
+import { Formik, Form } from 'formik';
+import {
+  FormTextField,
+  FormDropdownFilteredField,
+  FormDropdownField,
+  FormCheckboxGroupField,
+  FormRadioGroupField,
+  FormCheckboxField,
+  FormButton,
+} from '@zopauk/react-components';
 
 const initialValues = {
   firstName: '',
@@ -30,10 +38,10 @@ const initialValues = {
     savingsAccount: false,
   },
 };
-const onSubmit = values => {
+const onSubmit = (values) => {
   alert(JSON.stringify(values));
 };
-const validate = values => {
+const validate = (values) => {
   return Object.keys(values).reduce(
     (acc, key) => ({
       ...acc,
@@ -51,28 +59,39 @@ const nationalities = [
 ];
 
 const FormExample = () => (
-  <Form initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
-    <Form.Form>
-      <Form.TextField label="First name" name="firstName" />
+  <Formik validateOnMount initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
+    <Form>
+      <FormTextField label="First name" name="firstName" />
       <div style={{ height: '16px' }} />
-      <Form.TextField label="Last name" name="lastName" />
+      <FormTextField label="Last name" name="lastName" />
       <div style={{ height: '16px' }} />
-      <Form.DropdownFilteredField
+      <FormDropdownFilteredField
         name="nationality"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
         label="Nationality"
       />
       <div style={{ height: '16px' }} />
-      <Form.DropdownField label="How did you hear about us?" name="referral">
-        <option disabled value="">
-          Select a value
-        </option>
-        <option value="newspaper">Newspaper</option>
-        <option value="socialMedia">Social media</option>
-      </Form.DropdownField>
+      <FormDropdownField
+        label="How did you hear about us?"
+        name="referral"
+        options={[
+          {
+            label: 'Select an option',
+            value: '',
+          },
+          {
+            label: 'Newspaper',
+            value: 'newspaper',
+          },
+          {
+            label: 'Social media',
+            value: 'socialMedia',
+          },
+        ]}
+      />
       <div style={{ height: '16px' }} />
-      <Form.CheckboxGroupField
+      <FormCheckboxGroupField
         label="Which products are you interested in?"
         name="products"
         items={[
@@ -91,7 +110,7 @@ const FormExample = () => (
         ]}
       />
       <div style={{ height: '16px' }} />
-      <Form.RadioGroupField
+      <FormRadioGroupField
         label="Type"
         name="type"
         items={[
@@ -106,11 +125,11 @@ const FormExample = () => (
         ]}
       />
       <div style={{ height: '24px' }} />
-      <Form.CheckboxField label="I accept terms and condtions" name="terms" />
+      <FormCheckboxField label="I accept terms and condtions" name="terms" />
       <div style={{ height: '16px' }} />
-      <Form.Button>Submit</Form.Button>
-    </Form.Form>
-  </Form>
+      <FormButton>Submit</FormButton>
+    </Form>
+  </Formik>
 );
 
 <FormExample />;
