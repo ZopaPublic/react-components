@@ -33,6 +33,7 @@ export function useViewport({ timeout = 300 }: UseViewportOptions = {}): Viewpor
     window.addEventListener('resize', onResize);
 
     return () => {
+      onResize.cancel();
       window.removeEventListener('resize', onResize);
     };
   }, []);
