@@ -132,7 +132,7 @@ The best idea is to [check the documentation](https://zopauk.github.io/react-com
 
 ### 🦔 `Navbar`
 
-`<Navbar>`api has been simplified. You will no longer be able to create a custom navbar using `left`, `right` and `center` props. Instead you need to pass in an array of links and the navbar will render styles for both mobile and desktop.
+`<Navbar>` has been simplified. You will no longer be able to create a custom navbar using `left`, `right` and `center` props and `<Navbar.Link>` or `<Navbar.dropdown>` components. Instead you need to pass in an array of links and the navbar will render styles for both mobile and desktop.
 
 Desktop
 <img width="1364" alt="navbar-desktop" src="https://user-images.githubusercontent.com/1081070/83405564-a8616100-a404-11ea-85a7-755e71356330.png">
