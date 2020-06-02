@@ -54,7 +54,7 @@ describe('<Navbar />', () => {
 
   it('should render small device navigation with default props', () => {
     const { container } = render(<Navbar links={NAV_ITEMS} />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('should not render the hamburger icon when no content is added', () => {
@@ -65,13 +65,13 @@ describe('<Navbar />', () => {
 
   it('should render component with all the props', () => {
     const { container } = render(<Navbar overlayLogoWith={<a href="https://www.zopa.com"></a>} links={NAV_ITEMS} />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('should render large device navigation with default props', () => {
     Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1280 });
 
     const { container } = render(<Navbar links={NAV_ITEMS} />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });
