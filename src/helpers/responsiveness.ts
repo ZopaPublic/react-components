@@ -18,7 +18,7 @@ const minMedia: Media = {
 
 function interpolate(sizeLabel: keyof typeof breakpoints, direction: 'min' | 'max') {
   return (style: TemplateStringsArray, ...rest: any) => css`
-    @media (${direction}-width: ${breakpoints[sizeLabel]}px) {
+    @media (${direction}-width: ${direction === 'max' ? breakpoints[sizeLabel] - 1 : breakpoints[sizeLabel]}px) {
       ${style};
       ${rest};
     }

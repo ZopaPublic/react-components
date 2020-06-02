@@ -97,13 +97,8 @@ const NAV_ITEMS = [
     'data-automation': 'Support.topBar.Menu',
   },
 ];
-<>
-  <Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />
-  <div>
-    <h1>Content</h1>
-    <p>Content paragraph</p>
-  </div>
-</>;
+
+<Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />;
 ```
 
 - Custom Navbar components

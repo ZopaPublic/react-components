@@ -122,7 +122,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   display: none;
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c1 {
     color: #2C3236;
     font-size: 13px;

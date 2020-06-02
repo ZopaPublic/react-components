@@ -259,7 +259,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   overflow-y: auto;
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c12 {
     color: #2C3236;
     font-size: 13px;
@@ -300,7 +300,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c6:hover:not(:disabled) {
     background: none;
   }
@@ -312,7 +312,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c7 {
     position: absolute;
     height: 1px;
@@ -385,7 +385,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c0 .headroom {
     position: fixed;
     top: 0;
@@ -921,7 +921,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   right: 0;
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c7 {
     color: #2C3236;
     font-size: 13px;
@@ -962,7 +962,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c15:hover:not(:disabled) {
     background: none;
   }
@@ -974,7 +974,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c16 {
     position: absolute;
     height: 1px;
@@ -1047,7 +1047,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c0 .headroom {
     position: fixed;
     top: 0;
@@ -1601,7 +1601,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   overflow-y: auto;
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c12 {
     color: #2C3236;
     font-size: 13px;
@@ -1642,7 +1642,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c6:hover:not(:disabled) {
     background: none;
   }
@@ -1654,7 +1654,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c7 {
     position: absolute;
     height: 1px;
@@ -1727,7 +1727,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c0 .headroom {
     position: fixed;
     top: 0;
