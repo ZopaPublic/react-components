@@ -3,14 +3,14 @@ import styled, { css } from 'styled-components';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { colors, breakpoints, spacing } from '../../../../constants';
-import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
+import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 
 import Button from '../../../atoms/Button/Button';
 import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport';
 
 const StyledButton = styled(Button)`
-  ${maxMedia.desktop`
+  ${maxEqualToMedia.desktop`
     &:hover:not(:disabled) {
       background: none;
     }
@@ -24,9 +24,10 @@ const StyledButton = styled(Button)`
 `;
 
 const Content = styled.div`
-  ${maxMedia.desktop`
+  ${maxEqualToMedia.desktop`
     position: absolute;
-    height: 1px; width: 1px; /* Nearly collapsed */
+    height: 1px; 
+    width: 1px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
   `}

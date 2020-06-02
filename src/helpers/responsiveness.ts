@@ -16,13 +16,23 @@ const minMedia: Media = {
   desktop: interpolate('desktop', 'min'),
 };
 
-function interpolate(sizeLabel: keyof typeof breakpoints, direction: 'min' | 'max') {
+/* Required due to 1px overlap between minMedia and maxMedia See https://github.com/zopaUK/react-components/issues/453 for details*/
+const maxEqualToMedia: Media = {
+  phone: interpolate('phone', 'maxEqualTo'),
+  tablet: interpolate('tablet', 'maxEqualTo'),
+  desktop: interpolate('desktop', 'maxEqualTo'),
+};
+
+function interpolate(sizeLabel: keyof typeof breakpoints, direction: 'min' | 'max' | 'maxEqualTo') {
+  const directionLabel = direction === 'maxEqualTo' ? 'max' : direction;
+  const breakpointSize = direction === 'maxEqualTo' ? breakpoints[sizeLabel] - 1 : breakpoints[sizeLabel];
+
   return (style: TemplateStringsArray, ...rest: any) => css`
-    @media (${direction}-width: ${direction === 'max' ? breakpoints[sizeLabel] - 1 : breakpoints[sizeLabel]}px) {
+    @media (${directionLabel}-width: ${breakpointSize}px) {
       ${style};
       ${rest};
     }
   `;
 }
 
-export { maxMedia, minMedia };
+export { maxMedia, minMedia, maxEqualToMedia };

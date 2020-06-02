@@ -8,7 +8,7 @@ exports[`<SidekickCard /> renders SidekickCard with alert card type 1`] = `
   border-left: 16px solid #FF9F0A;
 }
 
-@media (max-width:719px) {
+@media (max-width:720px) {
   .c0 {
     border-radius: 0;
     background-position: 24px 18px;
@@ -34,7 +34,7 @@ exports[`<SidekickCard /> renders SidekickCard with triumph card type  with no a
   border-left: 16px solid #3EBC64;
 }
 
-@media (max-width:719px) {
+@media (max-width:720px) {
   .c0 {
     border-radius: 0;
     background-position: 24px 18px;
@@ -60,7 +60,7 @@ exports[`<SidekickCard /> renders SidekickCard with verified card type 1`] = `
   border-left: 16px solid #3EBC64;
 }
 
-@media (max-width:719px) {
+@media (max-width:720px) {
   .c0 {
     border-radius: 0;
     background-position: 24px 18px;

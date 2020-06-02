@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { colors, spacing, typography } from '../../../../constants';
-import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
+import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
@@ -40,7 +40,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
 
-  ${maxMedia.desktop`
+  ${maxEqualToMedia.desktop`
     ${({ withChevron }: StyledNavbarLinkProps) =>
       withChevron &&
       css`
