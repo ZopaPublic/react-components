@@ -132,7 +132,17 @@ The best idea is to [check the documentation](https://zopauk.github.io/react-com
 
 ### 🦔 `Navbar`
 
-**TODO**
+`<Navbar>` has been simplified. You will no longer be able to create a custom navbar using `left`, `right` and `center` props and `<Navbar.Link>` or `<Navbar.dropdown>` components. Instead you need to pass in an array of links and the navbar will render styles for both mobile and desktop.
+
+Desktop
+<img width="1364" alt="navbar-desktop" src="https://user-images.githubusercontent.com/1081070/83405564-a8616100-a404-11ea-85a7-755e71356330.png">
+
+Mobile
+<img width="591" alt="navbar-mobile" src="https://user-images.githubusercontent.com/1081070/83405578-b1523280-a404-11ea-86aa-f074c09ed190.png">
+
+You can use a custom component (e.g gatsby link) when rendering links using `renderLink` prop.
+
+See the [documentation](https://zopauk.github.io/react-components/#/Components/Organisms/Navbar) for a detailed list of examples
 
 ### 🦥 `Footer`
 
