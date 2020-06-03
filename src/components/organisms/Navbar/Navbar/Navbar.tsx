@@ -249,7 +249,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   return (
     <>
       <PageNavigation role="banner" overlap={overThreshold}>
-        <Headroom disableInlineStyles disable={open || (width && width >= breakpoints.desktop)}>
+        <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
           {width && width >= breakpoints.desktop ? (
             <LayoutInner>
               <LogoContainer overlap={overThreshold}>

@@ -101,8 +101,8 @@ const NAV_ITEMS = [
 <>
   <Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />
   <div>
-    <h1>Content</h1>
-    <p>Conten2</p>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
   </div>
 </>;
 ```
