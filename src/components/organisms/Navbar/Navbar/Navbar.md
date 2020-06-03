@@ -8,7 +8,7 @@ Navbar will render an array of links provided using a dropdown which works on cl
 
 - Default theme
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
@@ -98,12 +98,18 @@ const NAV_ITEMS = [
   },
 ];
 
-<Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />;
+<>
+  <Navbar overlayLogoWith={<span></span>} links={NAV_ITEMS} />
+  <div>
+    <h1>Content</h1>
+    <p>Conten2</p>
+  </div>
+</>;
 ```
 
 - Custom Navbar components
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { forwardRef } from 'react';
 import styled from 'styled-components';
 
@@ -198,7 +204,10 @@ const NAV_ITEMS = [
 
 // could be a gatsby or react-router-dom <Link />
 const SomeLibraryLink = React.forwardRef((props, ref) => {
-  return <a {...props} ref={ref} />;
+  const linkProps = Object.assign({}, props);
+  delete linkProps.isDropdownLink;
+
+  return <a {...linkProps} ref={ref} />;
 });
 
 const CustomLink = styled(SomeLibraryLink)`
@@ -218,7 +227,7 @@ const CustomLink = styled(SomeLibraryLink)`
 
 - Without CTA
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
@@ -313,7 +322,7 @@ const NAV_ITEMS = [
 
 - Without links
 
-```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px" } } }
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { Navbar, Link, buttonStyle } from '@zopauk/react-components';
 import styled from 'styled-components';
 

@@ -11,7 +11,7 @@ import {
   breakpoints,
   spacing,
 } from '../../../../constants';
-import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
+import { minMedia } from '../../../../helpers/responsiveness';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
@@ -90,29 +90,31 @@ const PageNavigation = styled.header<PageNavigationProps>`
     `}
   `}
 
-  ${maxMedia.desktop`
-    ${css`
-      .headroom {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background-color: ${colors.brand};
-        transition: transform 200ms ease-in-out;
-      }
-      .headroom--unfixed {
-        transform: translateY(0);
-      }
+  .headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: ${colors.brand};
+    transition: transform 200ms ease-in-out;
 
-      .headroom--unpinned {
-        transform: translateY(-100%);
-      }
-      .headroom--pinned {
-        transform: translateY(0%);
-      }
-    `}
-  `}
+    ${minMedia.desktop`
+        ${css`
+          background-color: ${colors.white};
+        `}
+      `}
+  }
+  .headroom--unfixed {
+    transform: translateY(0);
+  }
+
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
 `;
 
 const Spacer = styled.div`
@@ -241,25 +243,25 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   cta = <NavbarAction />,
 }) => {
   const { width } = useViewport();
-  const overThreshold = useScrollThreshold();
+  const overThreshold = useScrollThreshold(navbarOpenHeight);
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
       <PageNavigation role="banner" overlap={overThreshold}>
-        {width && width >= breakpoints.desktop ? (
-          <LayoutInner>
-            <LogoContainer overlap={overThreshold}>
-              <Logo negative={!overThreshold} width="150px" />
-              {overlayLogoWith}
-            </LogoContainer>
-            <NavbarLinksListContainer>
-              <NavbarLinksList links={links} renderLink={renderLink} />
-              {withCTA && cta}
-            </NavbarLinksListContainer>
-          </LayoutInner>
-        ) : (
-          <Headroom disableInlineStyles disable={open}>
+        <Headroom disableInlineStyles disable={open || (width && width >= breakpoints.desktop)}>
+          {width && width >= breakpoints.desktop ? (
+            <LayoutInner>
+              <LogoContainer overlap={overThreshold}>
+                <Logo negative={!overThreshold} width="150px" />
+                {overlayLogoWith}
+              </LogoContainer>
+              <NavbarLinksListContainer>
+                <NavbarLinksList links={links} renderLink={renderLink} />
+                {withCTA && cta}
+              </NavbarLinksListContainer>
+            </LayoutInner>
+          ) : (
             <LayoutInner>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
@@ -279,8 +281,8 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 </HamburgerMenu>
               )}
             </LayoutInner>
-          </Headroom>
-        )}
+          )}
+        </Headroom>
       </PageNavigation>
       <Spacer />
     </>
