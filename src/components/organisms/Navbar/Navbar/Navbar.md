@@ -323,12 +323,20 @@ const NAV_ITEMS = [
 - Without links
 
 ```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
+import { Navbar } from '@zopauk/react-components';
+
+<Navbar overlayLogoWith={<a href="https://www.zopa.com" />}></Navbar>;
+```
+
+- Custom CTA
+
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { Navbar, Link, buttonStyle } from '@zopauk/react-components';
 import styled from 'styled-components';
 
 const ButtonLink = styled(Link)`
   ${buttonStyle}
-  margin-left: 8px;
+  margin: 8px;
 `;
 
 <Navbar

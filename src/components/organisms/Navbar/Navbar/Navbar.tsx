@@ -69,12 +69,13 @@ export interface NavbarLinksListLinkProps {
 }
 
 const PageNavigation = styled.header<PageNavigationProps>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   ${minMedia.desktop`
     ${css`
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
       z-index: 1;
       background-color: ${colors.white};
       max-height: ${navbarOpenHeight}px;
@@ -91,10 +92,6 @@ const PageNavigation = styled.header<PageNavigationProps>`
   `}
 
   .headroom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
     background-color: ${colors.brand};
     transition: transform 200ms ease-in-out;
@@ -274,7 +271,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 <Logo color={colors.brand} height="20px" negative />
                 {overlayLogoWith}
               </LogoContainer>
-              {withCTA && cta}
+              {withCTA ? cta : <IconContainer />}
               {links && (
                 <HamburgerMenu open={open}>
                   <NavbarLinksList links={links} renderLink={renderLink} />

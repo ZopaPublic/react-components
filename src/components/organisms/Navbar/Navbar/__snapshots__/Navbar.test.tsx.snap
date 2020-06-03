@@ -178,11 +178,14 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: inline-block;
 }
 
-.c0 .headroom {
+.c0 {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.c0 .headroom {
   z-index: 1;
   background-color: #00D9C5;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
@@ -403,10 +406,6 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 @media (min-width:1280px) {
   .c0 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
     background-color: #FFFFFF;
     max-height: 120px;
@@ -890,11 +889,14 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: inline-block;
 }
 
-.c0 .headroom {
+.c0 {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.c0 .headroom {
   z-index: 1;
   background-color: #00D9C5;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
@@ -1069,10 +1071,6 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 @media (min-width:1280px) {
   .c0 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
     background-color: #FFFFFF;
     max-height: 120px;
@@ -1536,11 +1534,14 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: inline-block;
 }
 
-.c0 .headroom {
+.c0 {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.c0 .headroom {
   z-index: 1;
   background-color: #00D9C5;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
@@ -1761,10 +1762,6 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 @media (min-width:1280px) {
   .c0 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
     background-color: #FFFFFF;
     max-height: 120px;
