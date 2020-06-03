@@ -104,7 +104,7 @@ exports[`<NavbarDropdown /> should render component 1`] = `
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c2 {
     color: #2C3236;
     font-size: 13px;

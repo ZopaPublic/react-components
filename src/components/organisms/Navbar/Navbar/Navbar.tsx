@@ -11,7 +11,7 @@ import {
   breakpoints,
   spacing,
 } from '../../../../constants';
-import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
+import { minMedia } from '../../../../helpers/responsiveness';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
@@ -69,12 +69,13 @@ export interface NavbarLinksListLinkProps {
 }
 
 const PageNavigation = styled.header<PageNavigationProps>`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   ${minMedia.desktop`
     ${css`
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
       z-index: 1;
       background-color: ${colors.white};
       max-height: ${navbarOpenHeight}px;
@@ -90,27 +91,35 @@ const PageNavigation = styled.header<PageNavigationProps>`
     `}
   `}
 
-  ${maxMedia.desktop`
-    ${css`
-      .headroom {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background-color: ${colors.brand};
-        transition: transform 200ms ease-in-out;
-      }
-      .headroom--unfixed {
-        transform: translateY(0);
-      }
+  .headroom {
+    z-index: 1;
+    background-color: ${colors.brand};
+    transition: transform 200ms ease-in-out;
 
-      .headroom--unpinned {
-        transform: translateY(-100%);
-      }
-      .headroom--pinned {
-        transform: translateY(0%);
-      }
+    ${minMedia.desktop`
+        ${css`
+          background-color: ${colors.white};
+        `}
+      `}
+  }
+  .headroom--unfixed {
+    transform: translateY(0);
+  }
+
+  .headroom--unpinned {
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+  }
+`;
+
+const Spacer = styled.div`
+  height: ${mobileNavbarHeight}px;
+
+  ${minMedia.desktop`
+    ${css`
+      height: ${navbarOpenHeight}px;
     `}
   `}
 `;
@@ -231,46 +240,49 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   cta = <NavbarAction />,
 }) => {
   const { width } = useViewport();
-  const overThreshold = useScrollThreshold();
+  const overThreshold = useScrollThreshold(navbarOpenHeight);
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <PageNavigation role="banner" overlap={overThreshold}>
-      {width && width >= breakpoints.desktop ? (
-        <LayoutInner>
-          <LogoContainer overlap={overThreshold}>
-            <Logo negative={!overThreshold} width="150px" />
-            {overlayLogoWith}
-          </LogoContainer>
-          <NavbarLinksListContainer>
-            <NavbarLinksList links={links} renderLink={renderLink} />
-            {withCTA && cta}
-          </NavbarLinksListContainer>
-        </LayoutInner>
-      ) : (
-        <Headroom disableInlineStyles disable={open}>
-          <LayoutInner>
-            {links ? (
-              <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
-                <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
-              </HamburgerContainer>
-            ) : (
-              <IconContainer />
-            )}
-            <LogoContainer>
-              <Logo color={colors.brand} height="20px" negative />
-              {overlayLogoWith}
-            </LogoContainer>
-            {withCTA && cta}
-            {links && (
-              <HamburgerMenu open={open}>
+    <>
+      <PageNavigation role="banner" overlap={overThreshold}>
+        <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
+          {width && width >= breakpoints.desktop ? (
+            <LayoutInner>
+              <LogoContainer overlap={overThreshold}>
+                <Logo negative={!overThreshold} width="150px" />
+                {overlayLogoWith}
+              </LogoContainer>
+              <NavbarLinksListContainer>
                 <NavbarLinksList links={links} renderLink={renderLink} />
-              </HamburgerMenu>
-            )}
-          </LayoutInner>
+                {withCTA && cta}
+              </NavbarLinksListContainer>
+            </LayoutInner>
+          ) : (
+            <LayoutInner>
+              {links ? (
+                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                  <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
+                </HamburgerContainer>
+              ) : (
+                <IconContainer />
+              )}
+              <LogoContainer>
+                <Logo color={colors.brand} height="20px" negative />
+                {overlayLogoWith}
+              </LogoContainer>
+              {withCTA ? cta : <IconContainer />}
+              {links && (
+                <HamburgerMenu open={open}>
+                  <NavbarLinksList links={links} renderLink={renderLink} />
+                </HamburgerMenu>
+              )}
+            </LayoutInner>
+          )}
         </Headroom>
-      )}
-    </PageNavigation>
+      </PageNavigation>
+      <Spacer />
+    </>
   );
 };
 

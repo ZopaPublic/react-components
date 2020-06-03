@@ -106,7 +106,7 @@ Object {
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c2 {
     color: #2C3236;
     font-size: 13px;
@@ -279,7 +279,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-bxivhb bvChbx"
+        class="sc-bwzfXH haaJDm sc-bxivhb gENJDD"
         color="#3B46C4"
         href="#"
         role="menuitem"
