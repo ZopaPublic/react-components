@@ -1,3 +1,15 @@
+### [4.0.1](https://github.com/zopaUK/react-components/compare/v4.0.0...v4.0.1) (2020-06-03)
+
+
+### Bug Fixes
+
+* **navbar:** add a spacer to ensure content is pushed down ([58fad9d](https://github.com/zopaUK/react-components/commit/58fad9d91da37744f52a02c292d1a2865a5519fb))
+* **navbar:** fix Headroom and isDropdownLink warnings ([ed48076](https://github.com/zopaUK/react-components/commit/ed480765f44779e984cf4a100a344c46157d7d5b))
+* **navbar:** fix spacer on mobile ([f14b312](https://github.com/zopaUK/react-components/commit/f14b312ef61c73155c26229b0eb23d9821ed5736))
+* **navbar:** fix type error ([b4ec40d](https://github.com/zopaUK/react-components/commit/b4ec40d01d930c9bf77273f13a9d60e14d51bb62))
+* **responsive helpers:** add maxEqualToMedia to avoid breaking changes ([7e8070a](https://github.com/zopaUK/react-components/commit/7e8070afcbca239a0c1c76ff2be5aadec7533c6e))
+* **responsive helpers:** maxmedia minuses 1 from breakpoint ([8a93698](https://github.com/zopaUK/react-components/commit/8a9369845aeced62528fc809a9074d34d29ce6c7))
+
 ## [4.0.0](https://github.com/zopaUK/react-components/compare/v3.2.2...v4.0.0) (2020-05-30)
 
 
