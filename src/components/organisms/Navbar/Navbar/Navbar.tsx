@@ -231,6 +231,26 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
+const LargeDeviceNavbar = styled.div`
+  display: none;
+
+  ${minMedia.desktop`
+    ${`
+      display:block;
+    `}
+  `}
+`;
+
+const SmallDeviceNavbar = styled.div`
+  display: block;
+
+  ${minMedia.desktop`
+    ${`
+      display:none;
+    `}
+  `}
+`;
+
 export const NavbarLinksListLink = ({
   item: { label, href, onClick, ...rest },
   index,
@@ -259,7 +279,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
     <>
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
-          {width && width >= breakpoints.desktop ? (
+          <LargeDeviceNavbar>
             <LayoutInner>
               <LogoContainer overlap={overThreshold || collapsed}>
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
@@ -270,7 +290,8 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 {withCTA && cta}
               </NavbarLinksListContainer>
             </LayoutInner>
-          ) : (
+          </LargeDeviceNavbar>
+          <SmallDeviceNavbar>
             <LayoutInner>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
@@ -290,7 +311,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 </HamburgerMenu>
               )}
             </LayoutInner>
-          )}
+          </SmallDeviceNavbar>
         </Headroom>
       </PageNavigation>
       <Spacer collapsed={collapsed} />
