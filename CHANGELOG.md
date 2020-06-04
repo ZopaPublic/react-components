@@ -1,3 +1,10 @@
+## [4.1.0](https://github.com/zopaUK/react-components/compare/v4.0.2...v4.1.0) (2020-06-04)
+
+
+### Features
+
+* **navbar:** add option to display scrolled styling by default ([f986ec0](https://github.com/zopaUK/react-components/commit/f986ec0e6e32fc632bb7570c8f1233793fa04a16))
+
 ### [4.0.2](https://github.com/zopaUK/react-components/compare/v4.0.1...v4.0.2) (2020-06-04)
 
 
