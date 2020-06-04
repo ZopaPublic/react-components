@@ -231,6 +231,26 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   overflow-y: auto;
 `;
 
+const LargeDeviceNavbar = styled.div`
+  display: none;
+
+  ${minMedia.desktop`
+    ${`
+      display:block;
+    `}
+  `}
+`;
+
+const SmallDeviceNavbar = styled.div`
+  display: block;
+
+  ${minMedia.desktop`
+    ${`
+      display:none;
+    `}
+  `}
+`;
+
 export const NavbarLinksListLink = ({
   item: { label, href, onClick, ...rest },
   index,
@@ -260,36 +280,40 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
           {width && width >= breakpoints.desktop ? (
-            <LayoutInner>
-              <LogoContainer overlap={overThreshold || collapsed}>
-                <Logo negative={!overThreshold && !collapsed} width="150px" />
-                {overlayLogoWith}
-              </LogoContainer>
-              <NavbarLinksListContainer>
-                <NavbarLinksList links={links} renderLink={renderLink} />
-                {withCTA && cta}
-              </NavbarLinksListContainer>
-            </LayoutInner>
-          ) : (
-            <LayoutInner>
-              {links ? (
-                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
-                  <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
-                </HamburgerContainer>
-              ) : (
-                <IconContainer />
-              )}
-              <LogoContainer>
-                <Logo color={colors.brand} height="20px" negative />
-                {overlayLogoWith}
-              </LogoContainer>
-              {withCTA ? cta : <IconContainer />}
-              {links && (
-                <HamburgerMenu open={open}>
+            <LargeDeviceNavbar>
+              <LayoutInner>
+                <LogoContainer overlap={overThreshold || collapsed}>
+                  <Logo negative={!overThreshold && !collapsed} width="150px" />
+                  {overlayLogoWith}
+                </LogoContainer>
+                <NavbarLinksListContainer>
                   <NavbarLinksList links={links} renderLink={renderLink} />
-                </HamburgerMenu>
-              )}
-            </LayoutInner>
+                  {withCTA && cta}
+                </NavbarLinksListContainer>
+              </LayoutInner>
+            </LargeDeviceNavbar>
+          ) : (
+            <SmallDeviceNavbar>
+              <LayoutInner>
+                {links ? (
+                  <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                    <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
+                  </HamburgerContainer>
+                ) : (
+                  <IconContainer />
+                )}
+                <LogoContainer>
+                  <Logo color={colors.brand} height="20px" negative />
+                  {overlayLogoWith}
+                </LogoContainer>
+                {withCTA ? cta : <IconContainer />}
+                {links && (
+                  <HamburgerMenu open={open}>
+                    <NavbarLinksList links={links} renderLink={renderLink} />
+                  </HamburgerMenu>
+                )}
+              </LayoutInner>
+            </SmallDeviceNavbar>
           )}
         </Headroom>
       </PageNavigation>
