@@ -252,7 +252,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   collapsed = false,
 }) => {
   const { width } = useViewport();
-  const overThreshold = useScrollThreshold(navbarOpenHeight);
+  const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
 
   return (
