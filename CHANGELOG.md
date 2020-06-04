@@ -1,3 +1,10 @@
+### [4.1.2](https://github.com/zopaUK/react-components/compare/v4.1.1...v4.1.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color on active and hover states ([a720a2a](https://github.com/zopaUK/react-components/commit/a720a2aedfaa9bf8b9a73e5f775536a9dde06163))
+
 ### [4.1.1](https://github.com/zopaUK/react-components/compare/v4.1.0...v4.1.1) (2020-06-04)
 
 
