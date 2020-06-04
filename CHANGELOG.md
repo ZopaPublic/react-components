@@ -1,3 +1,10 @@
+### [4.1.3](https://github.com/zopaUK/react-components/compare/v4.1.2...v4.1.3) (2020-06-04)
+
+
+### Bug Fixes
+
+* **useviewport:** fix useViewport hook for SSR apps ([62a7a00](https://github.com/zopaUK/react-components/commit/62a7a003a7b3f317c4b7cac95f233a100a5c99f0))
+
 ### [4.1.2](https://github.com/zopaUK/react-components/compare/v4.1.1...v4.1.2) (2020-06-04)
 
 
