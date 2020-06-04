@@ -1,3 +1,11 @@
+### [4.1.6](https://github.com/zopaUK/react-components/compare/v4.1.5...v4.1.6) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** dont use viewport to render navbars ([5213426](https://github.com/zopaUK/react-components/commit/5213426cf5f956677dcc8466f03c4f3b477069b8))
+* **navbar:** hide large or small navbar using css not js ([58ec7b2](https://github.com/zopaUK/react-components/commit/58ec7b2118eddd56bf05e81f0c9a40fb043d8415))
+
 ### [4.1.5](https://github.com/zopaUK/react-components/compare/v4.1.4...v4.1.5) (2020-06-04)
 
 
