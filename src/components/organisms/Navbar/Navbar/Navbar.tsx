@@ -52,6 +52,10 @@ export interface NavbarProps extends NavbarLinksListProps {
    * CTA component
    */
   cta?: React.ReactNode;
+  /**
+   * Displayed scrolled styling
+   */
+  collapsed?: boolean;
 }
 
 export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -60,6 +64,7 @@ export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanEl
 
 export interface PageNavigationProps {
   overlap?: boolean;
+  collapsed?: boolean;
 }
 
 export interface NavbarLinksListLinkProps {
@@ -81,6 +86,12 @@ const PageNavigation = styled.header<PageNavigationProps>`
       max-height: ${navbarOpenHeight}px;
 
       transition: max-height 0.3s ease;
+
+      ${({ collapsed }: PageNavigationProps) =>
+        collapsed &&
+        css`
+          max-height: ${navbarClosedHeight}px;
+        `}
 
       ${({ overlap }: PageNavigationProps) =>
         overlap &&
@@ -114,12 +125,12 @@ const PageNavigation = styled.header<PageNavigationProps>`
   }
 `;
 
-const Spacer = styled.div`
+const Spacer = styled.div<PageNavigationProps>`
   height: ${mobileNavbarHeight}px;
 
   ${minMedia.desktop`
     ${css`
-      height: ${navbarOpenHeight}px;
+      height: ${({ collapsed }: PageNavigationProps) => (collapsed ? navbarClosedHeight : navbarOpenHeight)}px;
     `}
   `}
 `;
@@ -238,6 +249,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   overlayLogoWith,
   withCTA = true,
   cta = <NavbarAction />,
+  collapsed = false,
 }) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(navbarOpenHeight);
@@ -245,12 +257,12 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <PageNavigation role="banner" overlap={overThreshold}>
+      <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
           {width && width >= breakpoints.desktop ? (
             <LayoutInner>
-              <LogoContainer overlap={overThreshold}>
-                <Logo negative={!overThreshold} width="150px" />
+              <LogoContainer overlap={overThreshold || collapsed}>
+                <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
@@ -281,7 +293,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           )}
         </Headroom>
       </PageNavigation>
-      <Spacer />
+      <Spacer collapsed={collapsed} />
     </>
   );
 };
