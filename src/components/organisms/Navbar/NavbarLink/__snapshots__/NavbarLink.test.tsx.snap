@@ -49,6 +49,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -107,6 +108,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 1;
 }
 

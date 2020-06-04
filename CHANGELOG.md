@@ -1,3 +1,12 @@
+### [4.1.1](https://github.com/zopaUK/react-components/compare/v4.1.0...v4.1.1) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** fix type error ([78d8d2d](https://github.com/zopaUK/react-components/commit/78d8d2dbb0e72917a6d4a916eb785967a543ed4f))
+* **navbar:** reduce the scrolled threshold before adjusing styles ([b280969](https://github.com/zopaUK/react-components/commit/b280969e2fa09a4750164eb04f304eed185c6733))
+* **navbaraction:** spread props to button ([85ed797](https://github.com/zopaUK/react-components/commit/85ed797990a14f7b8a70e7aeb8eb57f04a320e5e))
+
 ## [4.1.0](https://github.com/zopaUK/react-components/compare/v4.0.2...v4.1.0) (2020-06-04)
 
 
