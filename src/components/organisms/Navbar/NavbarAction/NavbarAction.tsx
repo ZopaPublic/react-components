@@ -43,11 +43,12 @@ const StyledIcon = styled(Icon)`
 const NavbarAction: React.FC<React.HTMLAttributes<HTMLButtonElement>> = ({
   children = 'Sign in',
   onClick = () => window.location.assign('https://home.zopa.com/'),
+  rest,
 }) => {
   const { width } = useViewport();
 
   return (
-    <StyledButton onClick={onClick} styling={width && width >= breakpoints.desktop ? 'primary' : 'link'}>
+    <StyledButton onClick={onClick} styling={width && width >= breakpoints.desktop ? 'primary' : 'link'} {...rest}>
       <Content>{children}</Content>
       <StyledIcon variant={faUser} color={colors.white} size="lg" />
     </StyledButton>
