@@ -55,6 +55,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 .c12:active,
 .c12:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -75,6 +76,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 .c17:active,
 .c17:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -95,6 +97,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 .c18:active,
 .c18:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -765,6 +768,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 .c7:active,
 .c7:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -785,6 +789,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 .c12:active,
 .c12:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -805,6 +810,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 .c13:active,
 .c13:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -1411,6 +1417,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 .c12:active,
 .c12:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -1431,6 +1438,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 .c17:active,
 .c17:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -1451,6 +1459,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 .c18:active,
 .c18:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -2118,6 +2127,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c7:active,
 .c7:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -2138,6 +2148,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c12:active,
 .c12:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -2158,6 +2169,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c13:active,
 .c13:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 

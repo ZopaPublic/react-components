@@ -37,6 +37,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
 
   &:active,
   &:hover {
+    color: ${colors.actionDark};
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
 
