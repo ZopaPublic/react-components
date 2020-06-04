@@ -1,3 +1,10 @@
+### [4.1.5](https://github.com/zopaUK/react-components/compare/v4.1.4...v4.1.5) (2020-06-04)
+
+
+### Bug Fixes
+
+* **usescrollthreshold:** fix typeof undefined ([a35d87e](https://github.com/zopaUK/react-components/commit/a35d87e79ef8c166be1a040191186488bf2c345d))
+
 ### [4.1.4](https://github.com/zopaUK/react-components/compare/v4.1.3...v4.1.4) (2020-06-04)
 
 
