@@ -43,7 +43,7 @@ const StyledIcon = styled(Icon)`
 const NavbarAction: React.FC<React.HTMLAttributes<HTMLButtonElement>> = ({
   children = 'Sign in',
   onClick = () => window.location.assign('https://home.zopa.com/'),
-  rest,
+  ...rest
 }) => {
   const { width } = useViewport();
 

@@ -443,7 +443,7 @@ const ButtonLink = styled(Link)`
 <Navbar
   overlayLogoWith={<a href="https://www.zopa.com" />}
   cta={
-    <ButtonLink href="https://www.zopa.com" styling="primary">
+    <ButtonLink href="https://www.zopa.com" styling="primary" data-automation="My_Account.topBar.Menu">
       Sign-in
     </ButtonLink>
   }
