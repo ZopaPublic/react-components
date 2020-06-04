@@ -8,7 +8,7 @@ Navbar will render an array of links provided using a dropdown which works on cl
 
 - Default theme
 
-```ts
+```ts { "props": { "style": { "transform": "translate3d(0, 0, 0)", "backgroundColor": "#FFFFFF", "overflow": "hidden", "height": "500px", "padding": "0" } } }
 import { Navbar } from '@zopauk/react-components';
 
 const NAV_ITEMS = [
