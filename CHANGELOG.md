@@ -1,3 +1,10 @@
+### [4.0.2](https://github.com/zopaUK/react-components/compare/v4.0.1...v4.0.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **checkboxfield:** add forwardRef to CheckboxField ([db7b122](https://github.com/zopaUK/react-components/commit/db7b122e0be4d883a158e8664614cc1b6ae4db00))
+
 ### [4.0.1](https://github.com/zopaUK/react-components/compare/v4.0.0...v4.0.1) (2020-06-03)
 
 
