@@ -74,4 +74,11 @@ describe('<Navbar />', () => {
     const { container } = render(<Navbar links={NAV_ITEMS} />);
     expect(container).toMatchSnapshot();
   });
+
+  it('should render the collapsed styled on large device navigation with default props and collapsed set to true', () => {
+    Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1280 });
+
+    const { container } = render(<Navbar links={NAV_ITEMS} collapsed />);
+    expect(container).toMatchSnapshot();
+  });
 });
