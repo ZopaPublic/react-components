@@ -95,7 +95,7 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
       {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
       {withChevron && (
         <ChevronContainer open={open}>
-          <Icon variant={faChevronDown} color={colors.grey} fixedWidth />
+          <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
         </ChevronContainer>
       )}
     </StyledNavbarLink>

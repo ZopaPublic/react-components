@@ -559,13 +559,15 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -699,8 +701,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
+                  height="20px"
                   role="img"
                   viewBox="0 0 448 512"
+                  width="20x"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -724,13 +728,15 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -782,8 +788,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 data-icon="user"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20x"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -817,13 +825,15 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -1511,13 +1521,15 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -1651,8 +1663,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
+                  height="20px"
                   role="img"
                   viewBox="0 0 448 512"
+                  width="20x"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -1676,13 +1690,15 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -1731,8 +1747,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 data-icon="user"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20x"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -1766,13 +1784,15 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -2459,13 +2479,15 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -2599,8 +2621,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
+                  height="20px"
                   role="img"
                   viewBox="0 0 448 512"
+                  width="20x"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -2624,13 +2648,15 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -2679,8 +2705,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 data-icon="user"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20x"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -2714,13 +2742,15 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -3464,13 +3494,15 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
@@ -3604,8 +3636,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   data-icon="user"
                   data-prefix="fas"
                   focusable="false"
+                  height="20px"
                   role="img"
                   viewBox="0 0 448 512"
+                  width="20x"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -3629,13 +3663,15 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-fw "
+                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20px"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -3684,8 +3720,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 data-icon="user"
                 data-prefix="fas"
                 focusable="false"
+                height="20px"
                 role="img"
                 viewBox="0 0 448 512"
+                width="20x"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -3719,13 +3757,15 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+                      class="svg-inline--fa fa-chevron-down fa-w-14 "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
+                      height="12px"
                       role="img"
                       viewBox="0 0 448 512"
+                      width="12px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path

@@ -172,13 +172,15 @@ exports[`<NavbarDropdown /> should render component 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+        class="svg-inline--fa fa-chevron-down fa-w-14 "
         color="#818F9B"
         data-icon="chevron-down"
         data-prefix="fas"
         focusable="false"
+        height="12px"
         role="img"
         viewBox="0 0 448 512"
+        width="12px"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

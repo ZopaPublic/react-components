@@ -50,7 +50,7 @@ const NavbarAction: React.FC<React.HTMLAttributes<HTMLButtonElement>> = ({
   return (
     <StyledButton onClick={onClick} styling={width && width >= breakpoints.desktop ? 'primary' : 'link'} {...rest}>
       <Content>{children}</Content>
-      <StyledIcon variant={faUser} color={colors.white} size="lg" />
+      <StyledIcon variant={faUser} color={colors.white} size="lg" width="20x" height="20px" />
     </StyledButton>
   );
 };
