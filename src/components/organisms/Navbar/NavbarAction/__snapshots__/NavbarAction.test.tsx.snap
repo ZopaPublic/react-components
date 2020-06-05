@@ -100,8 +100,10 @@ exports[`<Navbar /> should render component with default props 1`] = `
       data-icon="user"
       data-prefix="fas"
       focusable="false"
+      height="20px"
       role="img"
       viewBox="0 0 448 512"
+      width="20x"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

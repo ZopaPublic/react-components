@@ -295,7 +295,13 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
             <LayoutInner>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
-                  <Icon variant={faBars} color={open ? colors.brand : colors.white} fixedWidth />
+                  <Icon
+                    variant={faBars}
+                    color={open ? colors.brand : colors.white}
+                    width="20px"
+                    height="20px"
+                    size="1x"
+                  />
                 </HamburgerContainer>
               ) : (
                 <IconContainer />
