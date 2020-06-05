@@ -1,3 +1,11 @@
+### [4.1.7](https://github.com/zopaUK/react-components/compare/v4.1.6...v4.1.7) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbar:** use fixed sizes for icons ([eb6ca79](https://github.com/zopaUK/react-components/commit/eb6ca79da9d63827a7e5630d17d81639af47be8a))
+* **usescrolltreshold:** calculate treshold ondidmount ([8cdccd6](https://github.com/zopaUK/react-components/commit/8cdccd6528e4720debf6dc67444a887dbafd93a5))
+
 ### [4.1.6](https://github.com/zopaUK/react-components/compare/v4.1.5...v4.1.6) (2020-06-04)
 
 
