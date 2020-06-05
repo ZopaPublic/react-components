@@ -103,7 +103,7 @@ exports[`<Navbar /> should render component with default props 1`] = `
       height="20px"
       role="img"
       viewBox="0 0 448 512"
-      width="20x"
+      width="20px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
