@@ -1,3 +1,10 @@
+### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbaraction:** fix typo in width ([e3ec497](https://github.com/zopaUK/react-components/commit/e3ec4977325abf57e144f6b3510b92c2c9d9b2ed))
+
 ### [4.1.7](https://github.com/zopaUK/react-components/compare/v4.1.6...v4.1.7) (2020-06-05)
 
 
