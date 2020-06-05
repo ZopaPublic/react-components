@@ -17,6 +17,7 @@ export default function useScrollThreshold(threshold = 2) {
   };
 
   useEffect(() => {
+    setOverThreshold(window.scrollY > threshold);
     document.addEventListener('scroll', onScroll);
     return () => document.removeEventListener('scroll', onScroll);
   }, []);
