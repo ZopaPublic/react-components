@@ -73,20 +73,16 @@ const getStepPosition = (steps: number, stepIndex: number) => (100 / (steps - 1)
 
 const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }) => {
   const renderPoints = () => {
-    const points = [];
-
-    for (let i = 0; i < totalSteps; i++) {
-      points.push(
+    return [...Array(totalSteps).keys()].map(stepPoint => {
+      return (
         <ProgressPoint
-          position={getStepPosition(totalSteps, i)}
-          completed={i < currentStep}
-          key={`step-${i}`}
+          position={getStepPosition(totalSteps, stepPoint)}
+          completed={stepPoint < currentStep}
+          key={`step-${stepPoint}`}
           progressColor={progressColor}
-        />,
+        />
       );
-    }
-
-    return points;
+    });
   };
 
   return (
