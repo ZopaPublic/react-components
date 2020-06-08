@@ -206,7 +206,7 @@ We've added an `<Icon />` component which is a thin wrapper around `<FontAwesome
 
 ### Progress
 
-The `style` prop has been removed.
+No changes
 
 ### Naming conventions
 

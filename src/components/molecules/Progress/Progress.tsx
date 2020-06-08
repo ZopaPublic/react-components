@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 import { colors, typography } from '../../../constants';
@@ -13,9 +13,10 @@ export interface ProgressionStyleProps {
   progressColor?: Colors;
 }
 
-export interface ProgressProps extends ProgressionStyleProps {
+export interface ProgressProps extends ProgressionStyleProps, HTMLAttributes<HTMLDivElement> {
   totalSteps: number;
   currentStep: number;
+  style?: CSSProperties;
   withStep?: boolean;
 }
 
@@ -70,7 +71,7 @@ const ProgressPoint = styled.span<ProgressPointProps>`
 
 const getStepPosition = (steps: number, stepIndex: number) => (100 / (steps - 1)) * stepIndex;
 
-const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor }) => {
+const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }) => {
   const renderPoints = () => {
     const points = [];
 
@@ -89,7 +90,7 @@ const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep =
   };
 
   return (
-    <ProgressBar>
+    <ProgressBar {...rest}>
       {renderPoints()}
       <Progression position={getStepPosition(totalSteps, currentStep - 0.5)} progressColor={progressColor}>
         {withStep && (
