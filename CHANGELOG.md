@@ -1,3 +1,10 @@
+### [4.1.9](https://github.com/zopaUK/react-components/compare/v4.1.8...v4.1.9) (2020-06-08)
+
+
+### Bug Fixes
+
+* **navbar:** ensure navbar is displayed above page ([7586a1e](https://github.com/zopaUK/react-components/commit/7586a1e98e67b31f52a0f2d0d51b6072065a49df))
+
 ### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
 
 
