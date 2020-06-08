@@ -1,3 +1,207 @@
+### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbaraction:** fix typo in width ([e3ec497](https://github.com/zopaUK/react-components/commit/e3ec4977325abf57e144f6b3510b92c2c9d9b2ed))
+
+### [4.1.7](https://github.com/zopaUK/react-components/compare/v4.1.6...v4.1.7) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbar:** use fixed sizes for icons ([eb6ca79](https://github.com/zopaUK/react-components/commit/eb6ca79da9d63827a7e5630d17d81639af47be8a))
+* **usescrolltreshold:** calculate treshold ondidmount ([8cdccd6](https://github.com/zopaUK/react-components/commit/8cdccd6528e4720debf6dc67444a887dbafd93a5))
+
+### [4.1.6](https://github.com/zopaUK/react-components/compare/v4.1.5...v4.1.6) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** dont use viewport to render navbars ([5213426](https://github.com/zopaUK/react-components/commit/5213426cf5f956677dcc8466f03c4f3b477069b8))
+* **navbar:** hide large or small navbar using css not js ([58ec7b2](https://github.com/zopaUK/react-components/commit/58ec7b2118eddd56bf05e81f0c9a40fb043d8415))
+
+### [4.1.5](https://github.com/zopaUK/react-components/compare/v4.1.4...v4.1.5) (2020-06-04)
+
+
+### Bug Fixes
+
+* **usescrollthreshold:** fix typeof undefined ([a35d87e](https://github.com/zopaUK/react-components/commit/a35d87e79ef8c166be1a040191186488bf2c345d))
+
+### [4.1.4](https://github.com/zopaUK/react-components/compare/v4.1.3...v4.1.4) (2020-06-04)
+
+
+### Bug Fixes
+
+* **usescrolltreshold:** enable hook for SSR ([51cef9f](https://github.com/zopaUK/react-components/commit/51cef9f2bf978ccda519ac0e3e070e5b7ebb3771))
+
+### [4.1.3](https://github.com/zopaUK/react-components/compare/v4.1.2...v4.1.3) (2020-06-04)
+
+
+### Bug Fixes
+
+* **useviewport:** fix useViewport hook for SSR apps ([62a7a00](https://github.com/zopaUK/react-components/commit/62a7a003a7b3f317c4b7cac95f233a100a5c99f0))
+
+### [4.1.2](https://github.com/zopaUK/react-components/compare/v4.1.1...v4.1.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color on active and hover states ([a720a2a](https://github.com/zopaUK/react-components/commit/a720a2aedfaa9bf8b9a73e5f775536a9dde06163))
+
+### [4.1.1](https://github.com/zopaUK/react-components/compare/v4.1.0...v4.1.1) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** fix type error ([78d8d2d](https://github.com/zopaUK/react-components/commit/78d8d2dbb0e72917a6d4a916eb785967a543ed4f))
+* **navbar:** reduce the scrolled threshold before adjusing styles ([b280969](https://github.com/zopaUK/react-components/commit/b280969e2fa09a4750164eb04f304eed185c6733))
+* **navbaraction:** spread props to button ([85ed797](https://github.com/zopaUK/react-components/commit/85ed797990a14f7b8a70e7aeb8eb57f04a320e5e))
+
+## [4.1.0](https://github.com/zopaUK/react-components/compare/v4.0.2...v4.1.0) (2020-06-04)
+
+
+### Features
+
+* **navbar:** add option to display scrolled styling by default ([f986ec0](https://github.com/zopaUK/react-components/commit/f986ec0e6e32fc632bb7570c8f1233793fa04a16))
+
+### [4.0.2](https://github.com/zopaUK/react-components/compare/v4.0.1...v4.0.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **checkboxfield:** add forwardRef to CheckboxField ([db7b122](https://github.com/zopaUK/react-components/commit/db7b122e0be4d883a158e8664614cc1b6ae4db00))
+
+### [4.0.1](https://github.com/zopaUK/react-components/compare/v4.0.0...v4.0.1) (2020-06-03)
+
+
+### Bug Fixes
+
+* **navbar:** add a spacer to ensure content is pushed down ([58fad9d](https://github.com/zopaUK/react-components/commit/58fad9d91da37744f52a02c292d1a2865a5519fb))
+* **navbar:** fix Headroom and isDropdownLink warnings ([ed48076](https://github.com/zopaUK/react-components/commit/ed480765f44779e984cf4a100a344c46157d7d5b))
+* **navbar:** fix spacer on mobile ([f14b312](https://github.com/zopaUK/react-components/commit/f14b312ef61c73155c26229b0eb23d9821ed5736))
+* **navbar:** fix type error ([b4ec40d](https://github.com/zopaUK/react-components/commit/b4ec40d01d930c9bf77273f13a9d60e14d51bb62))
+* **responsive helpers:** add maxEqualToMedia to avoid breaking changes ([7e8070a](https://github.com/zopaUK/react-components/commit/7e8070afcbca239a0c1c76ff2be5aadec7533c6e))
+* **responsive helpers:** maxmedia minuses 1 from breakpoint ([8a93698](https://github.com/zopaUK/react-components/commit/8a9369845aeced62528fc809a9074d34d29ce6c7))
+
+## [4.0.0](https://github.com/zopaUK/react-components/compare/v3.2.2...v4.0.0) (2020-05-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **naming:** If you were using types from the library you will provable need to replace the name
+by removing the prefix and/or adding the word `Props` and the end.
+* **alert-box:** `<AlertBox />` it's been removed in favour of `<Alert />`. Use `<Alert serverity="warning" />` wherever you were using `<AlertBox />` before.
+* **icons:** You won't be ablet to access anymore any of the `<*Icon />` components (apart from `<ZopaIcon />` which has been renamed to just `<Logo />`). Please instead use font-awesome icons. See the migration guide for **v4** on how to map old components to new icons.
+* **typography:** Font sizes for headings and regular text (including form controls) has changed. There's an extra weight added `extraBold` and `base` font size has been renamed to `body`. Please to our updated documentation to see what has changed: [Heading](https://zopauk.github.io/react-components/#/Components/Atoms/Heading) [Text](https://zopauk.github.io/react-components/#/Components/Atoms/Text).
+* **button:** Both the style and configuration of `<Button />` has been simplified. Now there's fewer variants and configurations options and the colors match our new colour update. Refer to [our docs](http://localhost:6060/#/Components/Atoms/Button) to see what has changed.
+* **colors:** All our color spec within `colors` has been updated (and the components accordingly). To understand what has changed please refer to our colors documentation: https://zopauk.github.io/react-components/#/Content?id=colors
+
+### Features
+
+* **badge:** rebrand it ([c512aa3](https://github.com/zopaUK/react-components/commit/c512aa35c9d3a08d50135607bb69b9e74ce1f352))
+* **button:** update specs ([d905da2](https://github.com/zopaUK/react-components/commit/d905da2dadcda900b5fc65e08bf1c5edc83a5d4a))
+* **colors:** update existing colors ([a1475ff](https://github.com/zopaUK/react-components/commit/a1475fffc2b240723f0cb8544ff7f37b19689105))
+* **form:** add field level validation to form components ([fe38aa1](https://github.com/zopaUK/react-components/commit/fe38aa1ff72e990004c8778e7fc07b745153d627))
+* **heading:** add `align` prop ([9903a1f](https://github.com/zopaUK/react-components/commit/9903a1f0ee3ba00ccaa698010910462a8db639ee))
+* **icon:** new component ([159088c](https://github.com/zopaUK/react-components/commit/159088c46384b70094c927227ff2754678a139d4))
+* **inputrange:** add controls option to InputRange ([caded73](https://github.com/zopaUK/react-components/commit/caded73e6589d4b8402079f132b2f1fbd750fc7a))
+* **navbar:** add animation when scrolling ([66a4784](https://github.com/zopaUK/react-components/commit/66a4784d125a86d8f92f800176a628eaaf4e4a89))
+* **navbar:** add dropshadow when scrolling to navbar ([df3395c](https://github.com/zopaUK/react-components/commit/df3395c20a7c61d59ec7f351567a1893f6181f53))
+* **navbar:** build navbarlinkslist to render nav links and rebrand ([dae3ecb](https://github.com/zopaUK/react-components/commit/dae3ecbc4fc47688c5d47523f2f94e075c7a9ef3))
+* **navbar:** disable react-headroom when nav is open on mobile ([1d62a5d](https://github.com/zopaUK/react-components/commit/1d62a5d0248234149e2c229939f5c99e65b9f6d9))
+* **navbar:** export navbarlink styles ([2959702](https://github.com/zopaUK/react-components/commit/2959702319c2abd5c43420897e95177f0288e7c1))
+* **navbaraction:** add onClick handler ([12e6caa](https://github.com/zopaUK/react-components/commit/12e6caabd1f5a7fa78f184464ee29bcfbac7f9f4))
+* **navbarlinkslist:** add onClick handler to links ([723a098](https://github.com/zopaUK/react-components/commit/723a0980b8f0d1f68b1a1f8df8d8ccb4fe407380))
+* **spacing:** add atomic classes for margin and padding ([8e85ee4](https://github.com/zopaUK/react-components/commit/8e85ee45cde5706a1914c59c664232c58653d7e8))
+* **text:** add `align` and `capitalize` props ([06ac11b](https://github.com/zopaUK/react-components/commit/06ac11b7c5345daa0dc87ba9c9a9505c9b6dfb2c))
+* **typography:** update headings and text ([af7dcac](https://github.com/zopaUK/react-components/commit/af7dcac38e61366b23c2eaec7648b02c1b9a30f7))
+
+
+### Bug Fixes
+
+* **alert-box:** remove component ([16e524e](https://github.com/zopaUK/react-components/commit/16e524eb30309599eec491bb559e3aa9080e40d8))
+* **button:** always render loading button with disabled attribute ([a10f87e](https://github.com/zopaUK/react-components/commit/a10f87eb10cf218cae90f311554ad456949d9297))
+* **cardcontent:** flex cardcontent ([2d138f1](https://github.com/zopaUK/react-components/commit/2d138f1c9a7c0c92c72f3c4174b2dd7d39d7b320))
+* **cardtext:** flex on card text for uniform height card series ([a0e86f0](https://github.com/zopaUK/react-components/commit/a0e86f0748b3e09c13741666dd56e2e3168f381d))
+* **checkboxfield:** change styling ([e13cfb2](https://github.com/zopaUK/react-components/commit/e13cfb24fb6afa4514a4d5c7d1b926e5916e439f))
+* **checkboxfield:** fix disabled and checked style ([a0841ae](https://github.com/zopaUK/react-components/commit/a0841aedfa7b70039e3561b7d8e4c089cb48d267))
+* **components:** use new `<Icon />` ([c134a7e](https://github.com/zopaUK/react-components/commit/c134a7edfdbeb98ba2bf630606f057a1012ef626))
+* **dropdown:** bring back chevron icon to avoid breaking changes ([26a3f9e](https://github.com/zopaUK/react-components/commit/26a3f9e0683712491e5740539ec6fcb887f90cbb))
+* **dropdown:** change styling ([b621899](https://github.com/zopaUK/react-components/commit/b621899600d49670bc9fbceb2654261ec4e0d71e))
+* **dropdown:** fix dropdown's font color ([8f3842f](https://github.com/zopaUK/react-components/commit/8f3842f5faf82f7db782475bcb586533bf938542))
+* **dropdown:** make dropdown styling consistent with dropdown filtered ([0a671e1](https://github.com/zopaUK/react-components/commit/0a671e1e65c63e14ca7523184d6d7b6e072e8d7a))
+* **dropdownfiltered:** change styling ([82d0e87](https://github.com/zopaUK/react-components/commit/82d0e8739b11e278bd31e7c55b4a844353f0b2ac))
+* **errormessage:** change styling ([99fb155](https://github.com/zopaUK/react-components/commit/99fb155f9889f46ae42cefc5888cc6f3248e2960))
+* **errormessage:** spread rest of the props over the wrapper ([eb338a9](https://github.com/zopaUK/react-components/commit/eb338a92b8a9b8380d4db1cd6dc5faf3cd015e39))
+* **font:** update font stack ([ba39252](https://github.com/zopaUK/react-components/commit/ba39252932d6b0158e32ad4c27fa800f596b19eb))
+* **fonts:** update font stack ([d9778b2](https://github.com/zopaUK/react-components/commit/d9778b257cc51955791ab6c63d98a005877a2cb8))
+* **footer:** fix circular depedency ([f6115fc](https://github.com/zopaUK/react-components/commit/f6115fc28b1dfb01460151d26a48bacf8a95c16e))
+* **footer:** fix typo ([807df3b](https://github.com/zopaUK/react-components/commit/807df3bce8d7a59eb912c4ad9767ad9a10efb3b4))
+* **heading:** code tidy ([41c5bba](https://github.com/zopaUK/react-components/commit/41c5bba792f5ac65a732edc28f46ef91374dbfdd))
+* **heading:** remove obsolete test snapshot ([4f2a9d3](https://github.com/zopaUK/react-components/commit/4f2a9d3b55f328ace0ac7019f733674dd340de27))
+* **heading:** update display size at mobile ([097b898](https://github.com/zopaUK/react-components/commit/097b8985b2da4519b569f23ea1f14d3fc1ccdff6))
+* **inputrange:** extending styles in another way to solve weird issue ([2f855d2](https://github.com/zopaUK/react-components/commit/2f855d245d18980a81bde97020e1a5d557c2fa99))
+* **navbar:** fix type error ([c48b7c9](https://github.com/zopaUK/react-components/commit/c48b7c90eb5f489f71d360fb30ae97156a4bd76c))
+* **navbar:** pR comments ([e5d9c6b](https://github.com/zopaUK/react-components/commit/e5d9c6b1aff2c6fa355110e147fbce679bc5be7f))
+* **navbar:** remove renderOpener and rename ariaLabel to just label ([edc3166](https://github.com/zopaUK/react-components/commit/edc316692f9d4a9dbb76f09146f4dd427ecba7d5))
+* **navbardropdownlist:** fix dropdown list pointer ([5ad0819](https://github.com/zopaUK/react-components/commit/5ad081928e3374e918aed831022e4cff3519e9fc))
+* **navbarlinkstyle:** add correct font weight ([bdf2a97](https://github.com/zopaUK/react-components/commit/bdf2a97d249127926a6dec5ad4694d81db6456f1))
+* fix merge issues ([85bdb02](https://github.com/zopaUK/react-components/commit/85bdb0276485686899ccd741c676615c469cf15f))
+* **accordeon:** add new designs ([1068a37](https://github.com/zopaUK/react-components/commit/1068a3714c4888d22c8114da5e4564f16cc097dd))
+* **button:** bring back `type` prop ([e8955bf](https://github.com/zopaUK/react-components/commit/e8955bf397c3ac231f5e1e23443ffd3d6afd0be9))
+* **card:** create brand new card ([6894bac](https://github.com/zopaUK/react-components/commit/6894baccb42402db33753e41f44097ca3cffc02a))
+* **card:** make heading bold ([5568230](https://github.com/zopaUK/react-components/commit/55682307d9e42e625fe24f1ca64483dae98d054b))
+* **card:** remove prefix from card types ([52c1a46](https://github.com/zopaUK/react-components/commit/52c1a467405bd02ccc56003896d8ed3b9266c80f))
+* **colors:** fix grey darkest hex value ([6233550](https://github.com/zopaUK/react-components/commit/623355095a38932cc35348b9a78332a64a4e49ed))
+* **container:** add snapshots ([d9f064d](https://github.com/zopaUK/react-components/commit/d9f064d6431cfe39b9b8f727426b1b9c5fc72eed))
+* **container:** update breakpoint ([de9ac96](https://github.com/zopaUK/react-components/commit/de9ac96762279fed2562fc051426a120f6ef8e70))
+* **container:** update container size and gutter ([2a1f69a](https://github.com/zopaUK/react-components/commit/2a1f69a391b43d1cc7f08320fca83911e3526cc1))
+* **container:** update gutter size ([70f5871](https://github.com/zopaUK/react-components/commit/70f5871cabc68df4fa82e997a2342ead607250b8))
+* **dropdownfiltered:** pass disabled to the text input ([6cefc47](https://github.com/zopaUK/react-components/commit/6cefc47a0968469b1312c4a5901eed86afe034bf))
+* **form:** remove dot notation from form components ([a678c59](https://github.com/zopaUK/react-components/commit/a678c5940bc5003cb17f877cfdf9050fb6dfffd4))
+* **form:** remove hooks, and top level form component ([b3948fd](https://github.com/zopaUK/react-components/commit/b3948fd1d3e593a48955d4b121e9a4edbf79d9c4))
+* **form:** remove prefixes from form component types and interfaces ([c14ffdd](https://github.com/zopaUK/react-components/commit/c14ffddb4e51c5d6bc6baa5f73f56e333c5d0e07))
+* **formdropdownfield:** add required options prop ([08c0644](https://github.com/zopaUK/react-components/commit/08c0644d4d0d1d0aada465b69d521f9d9adcb59e))
+* **icons:** remove custom icon components ([6fcad47](https://github.com/zopaUK/react-components/commit/6fcad472abc5a98d0d6b199b4dfce9dffd506f58))
+* **inputrange:** make InputRange controlled only ([62f6f45](https://github.com/zopaUK/react-components/commit/62f6f45600f7df523bd4f365a8acf12c09d204ab))
+* **inputtext:** change styling ([b173719](https://github.com/zopaUK/react-components/commit/b173719df55f34e8fb3d5afa798f067db7f6eb32))
+* **link:** adjust `line-height` ([b1b7fbf](https://github.com/zopaUK/react-components/commit/b1b7fbfce7390a6d7163dd9c1dbd80be9233cad3))
+* **link:** toggle target icon ([12b1ade](https://github.com/zopaUK/react-components/commit/12b1ade8b1cbfc28992b420623c7bf5e72d4694c))
+* **navbaraction:** make props optional ([f9c4a8f](https://github.com/zopaUK/react-components/commit/f9c4a8f6f8f0dc8a717f3dddbb1a8532de6b2687))
+* **options:** change default options max-height from auto to initial ([5ee3cb4](https://github.com/zopaUK/react-components/commit/5ee3cb4fde0ca17fb447313c91c52e17aa8b1ec1))
+* **package:** add actual peer dep ([5fc52c0](https://github.com/zopaUK/react-components/commit/5fc52c0517ad8e65a510789ddf521992b0ad8eb2))
+* **radiofield:** change styling ([56b43db](https://github.com/zopaUK/react-components/commit/56b43dbe298c2cd9ee14ec3195d6c171c1cf1739))
+* **sc:** fix incompatibility with styled-components v5 ([738e897](https://github.com/zopaUK/react-components/commit/738e8977da71166ace8342b2aa2a6a0edf760ca1))
+* **spacing:** add spacing as part of global styles ([ef8fa33](https://github.com/zopaUK/react-components/commit/ef8fa3301e71dc89cbc520bb95c4f037672e3a33))
+* **spacing:** add x axis and y axis ([cf0da90](https://github.com/zopaUK/react-components/commit/cf0da90d93751e5a6d51eb1caec3e365dd671743))
+* **spacing:** add zero as a spacing option ([28275f3](https://github.com/zopaUK/react-components/commit/28275f3ede11bafc842017b5b824e192cc4230dc))
+* **spacing:** can't use flat map because of node 10 requirement ([1939f7f](https://github.com/zopaUK/react-components/commit/1939f7f629f0a0a3a0fccc9c83b1a3ba21629cf3))
+* **spacing:** more spacing rules and filter xs breakpoint ([7ba2830](https://github.com/zopaUK/react-components/commit/7ba283070427ea1394982946efcf652835bcdac9))
+* **spacing:** remove mb prop and document atomic spacing classes ([aa88758](https://github.com/zopaUK/react-components/commit/aa887584ae0c1cf3a828fe9fb281caca8e4f7c46))
+* **spacing:** update docs & diplay block span tags ([334dea1](https://github.com/zopaUK/react-components/commit/334dea1a9acd96882d0565f66cc9eca3c92f73c6))
+* **spacing:** update documentation spacing ([60858e7](https://github.com/zopaUK/react-components/commit/60858e725f801d880257f4912864adc562442f7a))
+* **spacing:** update readme and avoid CSS escape polyfill ([cc60643](https://github.com/zopaUK/react-components/commit/cc60643871efb515b64416e0f6d637d537d938da))
+* **spacing:** update snapshots ([dc0cf2e](https://github.com/zopaUK/react-components/commit/dc0cf2e219b972506b4e79d15499760096318178))
+* **spacing:** update snapshots and footer headings ([b2746f1](https://github.com/zopaUK/react-components/commit/b2746f1213617960b3af360e3a9b3433358d1468))
+* **spacing:** update spacing to give it more weight ([2a10941](https://github.com/zopaUK/react-components/commit/2a109416527ee4b381dd50ac3204b21bb73e1efc))
+* **spacing:** update spacing to object api over strings ([f7b33ee](https://github.com/zopaUK/react-components/commit/f7b33ee3f75a2c68f32eaf4d78a7534bc90a0f46))
+* **spacing:** use regex to determine if spacing classes are used ([c11f9ba](https://github.com/zopaUK/react-components/commit/c11f9baecbc6698e407acdd535a622713204579d))
+* **styleguide:** remove fonts from styleguide ([09108d8](https://github.com/zopaUK/react-components/commit/09108d824d75e120504c740d43c705ea69d8bd92))
+* **text:** update tests and added x & y ([3dc33b5](https://github.com/zopaUK/react-components/commit/3dc33b54f64bc73e3b392d742cfdfe7deae917da))
+* **text:** update tests for text component ([d9a6319](https://github.com/zopaUK/react-components/commit/d9a631991072e2ec5543166c28dfe932e43e19e9))
+* **text:** update text colors ([900dc68](https://github.com/zopaUK/react-components/commit/900dc6840c94470d7cbb4c1ac4790cf1a055ab3d))
+* **typography:** final clean-up ([61f752d](https://github.com/zopaUK/react-components/commit/61f752db49f1530faf025e6584eb840caa866f65))
+* **useviewport:** prevent onResize being called on unmount ([72477db](https://github.com/zopaUK/react-components/commit/72477db424083ddb762bb00bc42b7b9a88f41313))
+* **versioning:** update version to v4.0.0--beta.5 ([f15f169](https://github.com/zopaUK/react-components/commit/f15f169658f681f021816c2b329ebe8d59114e1d))
+* **zopafooter:** set white background color ([9824718](https://github.com/zopaUK/react-components/commit/98247180d322759fedbe81501a805c7aba7cb333))
+* **zopaicon:** fix ZopaLogo naming and fix default color ([1dd67d4](https://github.com/zopaUK/react-components/commit/1dd67d4f14b2c7f418bee7e8d0a6edcac7382659))
+
+
+### Code Refactoring
+
+* **naming:** remove prefix for types and interfaces names ([cd2b62d](https://github.com/zopaUK/react-components/commit/cd2b62d96882184da85d8418d05b13f0dd2c48a8))
+
 ### [3.2.2](https://github.com/zopaUK/react-components/compare/v3.2.1...v3.2.2) (2020-05-18)
 
 

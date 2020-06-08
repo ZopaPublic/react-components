@@ -1,13 +1,12 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from '@testing-library/react';
-import Navbar from '..';
+import { fireEvent, render } from '@testing-library/react';
+import NavbarDropdown from './NavbarDropdown';
 
-describe('<Navbar.Dropdown />', () => {
+describe('<NavbarDropdown />', () => {
   const items = [
     { label: 'one', href: '#' },
     { label: 'two', href: '#' },
   ];
-  const renderOpener = ({ getOpenerProps }) => <button {...getOpenerProps()}>opener</button>;
   const renderItem = ({ item: { label, href }, getItemProps }) => (
     <a href={href} {...getItemProps()}>
       {label}
@@ -17,18 +16,10 @@ describe('<Navbar.Dropdown />', () => {
   const renderComponent = () =>
     render(
       <>
-        <Navbar.Dropdown
-          id="unique-dropdown-id "
-          ariaLabel="test"
-          items={items}
-          renderOpener={renderOpener}
-          renderItem={renderItem}
-        />
+        <NavbarDropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
         <button>button</button>
       </>,
     );
-
-  afterEach(cleanup);
 
   it('should render component', () => {
     const { container } = renderComponent();

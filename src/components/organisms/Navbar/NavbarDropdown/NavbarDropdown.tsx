@@ -1,8 +1,11 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
+import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
+import NavbarLink from '../NavbarLink/NavbarLink';
 
 const NavbarDropdownContainer = styled.div`
   position: relative;
@@ -11,30 +14,32 @@ const NavbarDropdownContainer = styled.div`
 
 export type ButtonLinkElement = HTMLButtonElement | HTMLAnchorElement;
 
-export type AlignedTo = 'left' | 'right';
-
 export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean;
-  alignedTo: AlignedTo;
 }
 
 const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
-  position: absolute;
-  ${({ alignedTo }) => alignedTo}: 0;
-  ${({ open }) =>
-    open
-      ? css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(20%);
-        `
-      : css`
-          transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-10%);
-        `}
+  ${minMedia.desktop`
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    
+    ${({ open }: NavbarDropdownListContainer) => css`
+      ${open
+        ? css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0%);
+          `
+        : css`
+            transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, -10%);
+          `}}
+    `}
+  `}
 `;
 
 export interface OpenerProps {
@@ -50,11 +55,6 @@ export interface OpenerProps {
 export type Item = any;
 
 export type GetOpenerProps = () => OpenerProps;
-
-export interface RenderOpenerProps {
-  open: boolean;
-  getOpenerProps: GetOpenerProps;
-}
 
 export interface ItemProps {
   ref: React.RefObject<HTMLLIElement>;
@@ -72,29 +72,34 @@ export interface RenderItemProps {
   getItemProps: GetItemProps;
   close: Close;
 }
-
-export interface NavbarDropdownProps {
-  /** unique id */
-  id: string;
-  /** Short description of the navbar component */
-  ariaLabel: string;
-  /** Function getting all the props and aria attributes meant to be spread on the opener button/link */
-  renderOpener: ({ open, getOpenerProps }: RenderOpenerProps) => React.ReactNode;
+export interface DefaultNavbarDropdownProps {
   /** Function getting all the props and aria attributes meant to be spread on the dropdown item links */
   renderItem: ({ item, getItemProps, close }: RenderItemProps) => React.ReactNode;
-  /** Array of data representing the dropdown items (e.g links) */
+}
+export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
+  /** unique id */
+  id: string;
+  /** dropdown label */
+  label: string;
+  /** array of data representing the dropdown items (e.g links) */
   items: Item[];
 }
 
 export interface NavbarDropdownState {
   cursor: number;
-  right: number;
   open: boolean;
 }
 
 export default class NavbarDropdown extends React.Component<NavbarDropdownProps, NavbarDropdownState> {
+  static defaultProps: DefaultNavbarDropdownProps = {
+    renderItem: ({ item: { label, href }, getItemProps }) => (
+      <NavbarLink href={href} {...getItemProps()} isDropdownLink>
+        {label}
+      </NavbarLink>
+    ),
+  };
+
   private readonly dropdownRef = React.createRef<HTMLDivElement>();
-  private readonly dropdownListRef = React.createRef<HTMLUListElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
   private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
@@ -104,20 +109,16 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     this.state = {
       cursor: 0,
       open: false,
-      right: this.getRightCoordinate(),
     };
   }
 
   public componentDidMount() {
-    this.updateRightCoordinate();
-    window.addEventListener('resize', this.updateRightCoordinate);
     document.addEventListener('focus', this.handleFocusOutside, true);
     document.addEventListener('mousedown', this.handleFocusOutside, true);
     document.addEventListener('keydown', this.handleEscapeKey, true);
   }
 
   public componentWillUnmount() {
-    window.removeEventListener('resize', this.updateRightCoordinate);
     document.removeEventListener('focus', this.handleFocusOutside, true);
     document.removeEventListener('mousedown', this.handleFocusOutside, true);
     document.removeEventListener('keydown', this.handleEscapeKey, true);
@@ -142,14 +143,16 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
 
   public render() {
     const { getOpenerProps, close } = this;
-    const { renderOpener, renderItem, items, ariaLabel, id } = this.props;
+    const { renderItem, items, label, id } = this.props;
     const { open } = this.state;
-    const alignedTo = this.getAlignedTo();
+
     return (
       <NavbarDropdownContainer ref={this.dropdownRef}>
-        {renderOpener({ open, getOpenerProps })}
-        <NavbarDropdownListContainer alignedTo={alignedTo} open={open}>
-          <NavbarDropdownList ref={this.dropdownListRef} alignedTo={alignedTo} role="menu" aria-label={ariaLabel}>
+        <NavbarLink open={open} withChevron={true} href="#" {...getOpenerProps()}>
+          {label}
+        </NavbarLink>
+        <NavbarDropdownListContainer open={open}>
+          <NavbarDropdownList role="menu" aria-label={label}>
             {items.map((item, index) => (
               <li key={`${id}-${index}`} role="none">
                 {renderItem({
@@ -210,21 +213,6 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
         this.focusOnItem,
       );
     }
-  };
-
-  private updateRightCoordinate = () => {
-    this.setState({ right: this.getRightCoordinate() });
-  };
-
-  private getRightCoordinate = () =>
-    this.dropdownRef.current ? this.dropdownRef.current.getBoundingClientRect().left : 0;
-
-  private getAlignedTo = () => {
-    const dropdownList = this.dropdownListRef.current;
-    if (dropdownList) {
-      return this.state.right - dropdownList.offsetWidth < 0 ? 'left' : 'right';
-    }
-    return 'right';
   };
 
   private handleOpenerClick = (e: React.MouseEvent) => {

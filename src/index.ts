@@ -3,7 +3,16 @@
  */
 
 // Global (colors, fonts, ...)
-export { breakpoints, colors, grid, spacing, typography, navbarHeight } from './constants';
+export {
+  breakpoints,
+  colors,
+  grid,
+  spacing,
+  typography,
+  navbarOpenHeight,
+  navbarClosedHeight,
+  mobileNavbarHeight,
+} from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 
 // Atoms
@@ -44,7 +53,7 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
-export { default as Navbar } from './components/organisms/Navbar';
+export { default as Navbar, navbarLinkStyles } from './components/organisms/Navbar/';
 export { default as Card } from './components/organisms/Card';
 
 // Layout

@@ -33,19 +33,23 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #3B46C4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
 }
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -88,19 +92,23 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 }
 
 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #3B46C4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
 }
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 1;
 }
 
@@ -109,17 +117,52 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  -webkit-transition: -webkit-transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  transition: transform 0.3s;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  margin-right: 8px;
+}
+
+.c3 {
+  display: none;
+}
+
+@media (max-width:1279px) {
+  .c1 {
+    color: #2C3236;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .c1:hover {
+    background-color: #E9EAFA;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 
 <a
@@ -128,16 +171,22 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 >
   <span
     class="c2"
+  />
+  <span
+    class="c3"
     open=""
   >
     <svg
       aria-hidden="true"
       class="svg-inline--fa fa-chevron-down fa-w-14 "
+      color="#818F9B"
       data-icon="chevron-down"
       data-prefix="fas"
       focusable="false"
+      height="12px"
       role="img"
       viewBox="0 0 448 512"
+      width="12px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

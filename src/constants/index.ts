@@ -3,4 +3,4 @@ export { colors } from './colors';
 export { default as grid } from './grid';
 export { spacing } from './spacing';
 export { typography } from './typography';
-export { navbarHeight } from './components';
+export { navbarOpenHeight, navbarClosedHeight, mobileNavbarHeight } from './components';

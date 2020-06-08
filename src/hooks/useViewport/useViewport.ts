@@ -26,13 +26,15 @@ export function useViewport({ timeout = 300 }: UseViewportOptions = {}): Viewpor
     return contextSize;
   }
 
-  const [size, setSize] = useState(readViewport());
+  const [size, setSize] = useState({ width: 0, height: 0 } as ViewportSize);
   const onResize = throttle(() => setSize(readViewport()), timeout);
 
   useLayoutEffect(() => {
+    setSize(readViewport());
     window.addEventListener('resize', onResize);
 
     return () => {
+      onResize.cancel();
       window.removeEventListener('resize', onResize);
     };
   }, []);

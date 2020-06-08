@@ -59,7 +59,7 @@ const Color = styled.div<ColorProps>`
   }
 `;
 
-export default function Colors({ variant }: ColorsProps) {
+export default function ColorsComponent({ variant }: ColorsProps) {
   const colorGroup = colorGroups[variant] as string[];
   return (
     <ColorsWrapper>

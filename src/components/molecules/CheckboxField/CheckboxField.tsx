@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
@@ -112,18 +112,18 @@ const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
 `;
 
-const CheckboxField = (props: CheckboxFieldProps) => {
+const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
   const { label, errorMessage, className, inputSize, name, ...rest } = props;
 
   return (
     <>
       <SizedContainer size={inputSize} className={className}>
-        <Input id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
+        <Input ref={ref} id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
         <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
       </SizedContainer>
       {errorMessage && <FieldError>{errorMessage}</FieldError>}
     </>
   );
-};
+});
 
 export default CheckboxField;

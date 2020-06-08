@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarLinksList /> should render component with default props 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c6 {
+  position: relative;
+  z-index: 1;
+  margin: 12px 0 12px;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.c1 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c1:hover,
+.c1:active {
+  color: #21247F;
+}
+
+.c1:hover svg path,
+.c1:active svg path {
+  fill: #21247F;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+}
+
+.c2:active,
+.c2:hover {
+  color: #21247F;
+  opacity: 0.88;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.c4 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width:1280px) {
+  .c6 {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 0px 1px #D4D7D9;
+    border: 1px solid #EFEFEF;
+    border-radius: 12px;
+    min-width: 240px;
+    margin: 0;
+    padding: 8px;
+  }
+
+  .c6:before {
+    content: '';
+    top: 1px;
+    left: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: translate(-50%,-50%) rotate(135deg);
+    -ms-transform: translate(-50%,-50%) rotate(135deg);
+    transform: translate(-50%,-50%) rotate(135deg);
+    background-color: inherit;
+    box-shadow: -1px 1px 0 0 #EFEFEF;
+  }
+}
+
+@media (max-width:1279px) {
+  .c2 {
+    color: #2C3236;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width:1280px) {
+  .c4 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width:1280px) {
+  .c5 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
+  }
+}
+
+<body>
+    <div>
+      <div
+        class="c0"
+      >
+        <a
+          aria-expanded="false"
+          aria-haspopup="true"
+          class="c1 c2"
+          color="#3B46C4"
+          href="#"
+          role="menuitem"
+          tabindex="0"
+        >
+          <span
+            class="c3"
+          >
+            About
+          </span>
+          <span
+            class="c4"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-chevron-down fa-w-14 "
+              color="#818F9B"
+              data-icon="chevron-down"
+              data-prefix="fas"
+              focusable="false"
+              height="12px"
+              role="img"
+              viewBox="0 0 448 512"
+              width="12px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </a>
+        <div
+          class="c5"
+        >
+          <ul
+            aria-label="About"
+            class="c6"
+            role="menu"
+          >
+            <li
+              role="none"
+            >
+              <a
+                href="/about"
+              >
+                About Zopa
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/our-story"
+              >
+                Our story
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/board"
+              >
+                Our board
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/leadership"
+              >
+                Our leadership team
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/awards"
+              >
+                Awards
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/careers"
+              >
+                Careers
+              </a>
+            </li>
+            <li
+              role="none"
+            >
+              <a
+                href="/about/press"
+              >
+                Press office
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a
+        href="/contact"
+      >
+        Support
+      </a>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-bZQynM eReRwz"
+    >
+      <a
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="sc-bwzfXH haaJDm sc-bxivhb eXaLSp"
+        color="#3B46C4"
+        href="#"
+        role="menuitem"
+        tabindex="0"
+      >
+        <span
+          class="sc-ifAKCX fWNHzX"
+        >
+          About
+        </span>
+        <span
+          class="sc-EHOje epctgu"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-down fa-w-14 "
+            color="#818F9B"
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            height="12px"
+            role="img"
+            viewBox="0 0 448 512"
+            width="12px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </a>
+      <div
+        class="sc-gzVnrw hePaWT"
+      >
+        <ul
+          aria-label="About"
+          class="sc-bdVaJa fkzsud"
+          role="menu"
+        >
+          <li
+            role="none"
+          >
+            <a
+              href="/about"
+            >
+              About Zopa
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/our-story"
+            >
+              Our story
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/board"
+            >
+              Our board
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/leadership"
+            >
+              Our leadership team
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/awards"
+            >
+              Awards
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/careers"
+            >
+              Careers
+            </a>
+          </li>
+          <li
+            role="none"
+          >
+            <a
+              href="/about/press"
+            >
+              Press office
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a
+      href="/contact"
+    >
+      Support
+    </a>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
