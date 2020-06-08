@@ -204,6 +204,10 @@ All the existing icons have been removed in favor of font awesome icons.
 We've added an `<Icon />` component which is a thin wrapper around `<FontAwesomeIcon />`.
 `<ZopaIcon />` has been replaced with `<Logo />` component.
 
+### Progress
+
+No changes
+
 ### Naming conventions
 
 All the types are interfaces no longer have the prefix `I` or `T` and this is enforced in eslint.
