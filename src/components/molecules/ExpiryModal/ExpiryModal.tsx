@@ -25,18 +25,16 @@ const ButtonRow = styled.div`
   justify-content: space-around;
 `;
 
-const SessionHint = styled(Text).attrs({
-  forwardedAs: 'p',
-})`
-  margin-bottom: 40px;
-`;
-
 export default function ExpiryModal({ onEndSession, onKeepSession, ...rest }: ExpiryModalProps) {
   return (
     <Modal {...rest}>
       <ModalInner>
-        <Heading as="h2">Your session is about to expire</Heading>
-        <SessionHint>You've gone quiet. What would you like to do?</SessionHint>
+        <Heading as="h2" className="pb-5">
+          Your session is about to expire
+        </Heading>
+        <Text as="p" className="pb-8">
+          You've gone quiet. What would you like to do?
+        </Text>
         <ButtonRow>
           <Button onClick={onEndSession} styling="link">
             Log out
