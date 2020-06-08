@@ -6,7 +6,7 @@ import { typography } from '../../../constants';
 
 type Severity = 'info' | 'alert' | 'warning' | 'success';
 
-interface AlertProps {
+interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
 }
 
@@ -37,7 +37,7 @@ const MAP_BY_SEVERITY: AlertElementsBySeverity = {
   },
 };
 
-const Wrapper = styled.div<Required<AlertProps>>`
+const Wrapper = styled.div<{ severity: Severity }>`
   display: flex;
   position: relative;
   padding: 8px 16px 8px 16px;
@@ -60,7 +60,7 @@ const Wrapper = styled.div<Required<AlertProps>>`
   }
 `;
 
-const IconWrapper = styled.div<Required<AlertProps>>`
+const IconWrapper = styled.div<{ severity: Severity }>`
   margin-right: 8px;
   font-size: 20px;
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
