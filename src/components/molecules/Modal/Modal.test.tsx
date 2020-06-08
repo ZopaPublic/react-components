@@ -25,12 +25,4 @@ describe('<Modal />', () => {
     const [globalModalStyles] = getGlobalStyleTags();
     expect(globalModalStyles).toMatchSnapshot();
   });
-
-  it('allows to set the `z-index` for the modal portal', () => {
-    const expectedZIndex = 100;
-    render(<Modal.Styles zIndex={expectedZIndex} />);
-
-    const [globalModalStyles] = getGlobalStyleTags();
-    expect(globalModalStyles).toContain(`z-index:${expectedZIndex}`);
-  });
 });

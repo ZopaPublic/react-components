@@ -42,6 +42,9 @@ const ModalStyles = createGlobalStyle<ModalStylesProps>`
     background-color: ${colors.white};
     max-height: 95%;
     overflow: auto;
+    border-radius: 12px;
+    position: relative;
+    outline: none;
   }
 `;
 
