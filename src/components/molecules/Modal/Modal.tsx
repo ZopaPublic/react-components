@@ -1,21 +1,23 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
+import { CardProps } from '../../organisms/Card/Card/Card';
 
-export type ModalProps = ReactModal.Props & {
+export interface ModalProps extends ReactModal.Props {
   showCloseButton?: boolean;
-};
+  children: ReactElement<CardProps>;
+}
 
 type ModalComponent = FC<ModalProps> & {
   Styles: typeof ModalStyles;
   setAppElement: typeof ReactModal.setAppElement;
 };
 
-const CrossIcon = styled(Icon).attrs({ color: colors.greyLight, variant: faTimesCircle })`
+const CrossIcon = styled(Icon)`
   position: absolute;
   cursor: pointer;
   right: 10px;
@@ -43,7 +45,14 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     closeTimeoutMS={200}
     {...rest}
   >
-    {showCloseButton && <CrossIcon onClick={onRequestClose} />}
+    {showCloseButton && (
+      <CrossIcon
+        onClick={onRequestClose}
+        color={colors.greyLight}
+        variant={faTimesCircle}
+        data-testid="ZA.modal-cross-icon"
+      />
+    )}
     {children}
   </ReactModal>
 );

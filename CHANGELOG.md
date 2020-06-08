@@ -1,3 +1,23 @@
+## [4.2.0](https://github.com/zopaUK/react-components/compare/v4.1.9...v4.2.0) (2020-06-08)
+
+
+### Features
+
+* **progress:** update styles and remove style prop ([b98be84](https://github.com/zopaUK/react-components/commit/b98be8493d1924c0a2cc16b7902a5491559408b8))
+
+
+### Bug Fixes
+
+* **progress:** dont use imperative code ([93bc5a1](https://github.com/zopaUK/react-components/commit/93bc5a1c5e3c3d34b3806c6fd61c65079324f2e2))
+* **progress:** prevent breaking changes ([b948978](https://github.com/zopaUK/react-components/commit/b948978e52b91b813844b7f2220cb5ad01612a0f))
+
+### [4.1.9](https://github.com/zopaUK/react-components/compare/v4.1.8...v4.1.9) (2020-06-08)
+
+
+### Bug Fixes
+
+* **navbar:** ensure navbar is displayed above page ([7586a1e](https://github.com/zopaUK/react-components/commit/7586a1e98e67b31f52a0f2d0d51b6072065a49df))
+
 ### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
 
 

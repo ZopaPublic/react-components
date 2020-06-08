@@ -78,6 +78,7 @@ const PageNavigation = styled.header<PageNavigationProps>`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 
   ${minMedia.desktop`
     ${css`
