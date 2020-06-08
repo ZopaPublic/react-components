@@ -99,7 +99,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
 .c1 {
   margin-right: 8px;
   font-size: 20px;
-  color: #FF453A;
+  color: #FF4539;
 }
 
 .c1 svg {
