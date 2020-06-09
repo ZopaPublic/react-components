@@ -224,9 +224,9 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - ${mobileNavbarHeight}px);
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]} 0;
+  padding: ${spacing[8]} ${spacing[4]};
 
   background: ${colors.white};
 
@@ -279,9 +279,9 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.body.classList.add('nav-open');
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.classList.remove('nav-open');
     }
   }, [open]);
 

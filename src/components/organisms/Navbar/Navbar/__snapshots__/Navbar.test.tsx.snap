@@ -319,9 +319,9 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -1349,9 +1349,9 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -2372,9 +2372,9 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -3416,9 +3416,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
