@@ -13,7 +13,7 @@ import { ExpiryModal, Modal, Button } from '@zopauk/react-components';
 
 function ExpiryModalDemo() {
   const [isOpen, update] = React.useState(false);
-  const toggleModal = () => update(prevState => !prevState);
+  const toggleModal = () => update((prevState) => !prevState);
 
   const onEndSession = () => {
     window.alert('You are logged out!');
