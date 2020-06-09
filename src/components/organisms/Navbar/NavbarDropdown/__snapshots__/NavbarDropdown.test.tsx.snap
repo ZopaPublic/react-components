@@ -87,7 +87,7 @@ exports[`<NavbarDropdown /> should render component 1`] = `
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c6:before {

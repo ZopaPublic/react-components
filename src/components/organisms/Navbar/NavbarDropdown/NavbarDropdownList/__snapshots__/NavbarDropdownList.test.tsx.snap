@@ -18,7 +18,7 @@ exports[`NavbarDropdownList renders the component with props 1`] = `
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c0:before {
