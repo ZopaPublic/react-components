@@ -1,3 +1,130 @@
+### [4.3.1](https://github.com/zopaUK/react-components/compare/v4.3.0...v4.3.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color to navbar links ([2ae2c12](https://github.com/zopaUK/react-components/commit/2ae2c12cfcdc56c30c9252af91063294d9ee3498))
+
+## [4.3.0](https://github.com/zopaUK/react-components/compare/v4.2.1...v4.3.0) (2020-06-08)
+
+
+### Features
+
+* **alert:** add inline prop ([bacac05](https://github.com/zopaUK/react-components/commit/bacac054627a4bcd95f88b69037dc79c01ca4dec))
+
+### [4.2.1](https://github.com/zopaUK/react-components/compare/v4.2.0...v4.2.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* **alert:** fix props for Alert component ([2a34daf](https://github.com/zopaUK/react-components/commit/2a34dafa21f5150593528c8f0d2a9611e0e32cfb))
+
+## [4.2.0](https://github.com/zopaUK/react-components/compare/v4.1.9...v4.2.0) (2020-06-08)
+
+
+### Features
+
+* **progress:** update styles and remove style prop ([b98be84](https://github.com/zopaUK/react-components/commit/b98be8493d1924c0a2cc16b7902a5491559408b8))
+
+
+### Bug Fixes
+
+* **progress:** dont use imperative code ([93bc5a1](https://github.com/zopaUK/react-components/commit/93bc5a1c5e3c3d34b3806c6fd61c65079324f2e2))
+* **progress:** prevent breaking changes ([b948978](https://github.com/zopaUK/react-components/commit/b948978e52b91b813844b7f2220cb5ad01612a0f))
+
+### [4.1.9](https://github.com/zopaUK/react-components/compare/v4.1.8...v4.1.9) (2020-06-08)
+
+
+### Bug Fixes
+
+* **navbar:** ensure navbar is displayed above page ([7586a1e](https://github.com/zopaUK/react-components/commit/7586a1e98e67b31f52a0f2d0d51b6072065a49df))
+
+### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbaraction:** fix typo in width ([e3ec497](https://github.com/zopaUK/react-components/commit/e3ec4977325abf57e144f6b3510b92c2c9d9b2ed))
+
+### [4.1.7](https://github.com/zopaUK/react-components/compare/v4.1.6...v4.1.7) (2020-06-05)
+
+
+### Bug Fixes
+
+* **navbar:** use fixed sizes for icons ([eb6ca79](https://github.com/zopaUK/react-components/commit/eb6ca79da9d63827a7e5630d17d81639af47be8a))
+* **usescrolltreshold:** calculate treshold ondidmount ([8cdccd6](https://github.com/zopaUK/react-components/commit/8cdccd6528e4720debf6dc67444a887dbafd93a5))
+
+### [4.1.6](https://github.com/zopaUK/react-components/compare/v4.1.5...v4.1.6) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** dont use viewport to render navbars ([5213426](https://github.com/zopaUK/react-components/commit/5213426cf5f956677dcc8466f03c4f3b477069b8))
+* **navbar:** hide large or small navbar using css not js ([58ec7b2](https://github.com/zopaUK/react-components/commit/58ec7b2118eddd56bf05e81f0c9a40fb043d8415))
+
+### [4.1.5](https://github.com/zopaUK/react-components/compare/v4.1.4...v4.1.5) (2020-06-04)
+
+
+### Bug Fixes
+
+* **usescrollthreshold:** fix typeof undefined ([a35d87e](https://github.com/zopaUK/react-components/commit/a35d87e79ef8c166be1a040191186488bf2c345d))
+
+### [4.1.4](https://github.com/zopaUK/react-components/compare/v4.1.3...v4.1.4) (2020-06-04)
+
+
+### Bug Fixes
+
+* **usescrolltreshold:** enable hook for SSR ([51cef9f](https://github.com/zopaUK/react-components/commit/51cef9f2bf978ccda519ac0e3e070e5b7ebb3771))
+
+### [4.1.3](https://github.com/zopaUK/react-components/compare/v4.1.2...v4.1.3) (2020-06-04)
+
+
+### Bug Fixes
+
+* **useviewport:** fix useViewport hook for SSR apps ([62a7a00](https://github.com/zopaUK/react-components/commit/62a7a003a7b3f317c4b7cac95f233a100a5c99f0))
+
+### [4.1.2](https://github.com/zopaUK/react-components/compare/v4.1.1...v4.1.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color on active and hover states ([a720a2a](https://github.com/zopaUK/react-components/commit/a720a2aedfaa9bf8b9a73e5f775536a9dde06163))
+
+### [4.1.1](https://github.com/zopaUK/react-components/compare/v4.1.0...v4.1.1) (2020-06-04)
+
+
+### Bug Fixes
+
+* **navbar:** fix type error ([78d8d2d](https://github.com/zopaUK/react-components/commit/78d8d2dbb0e72917a6d4a916eb785967a543ed4f))
+* **navbar:** reduce the scrolled threshold before adjusing styles ([b280969](https://github.com/zopaUK/react-components/commit/b280969e2fa09a4750164eb04f304eed185c6733))
+* **navbaraction:** spread props to button ([85ed797](https://github.com/zopaUK/react-components/commit/85ed797990a14f7b8a70e7aeb8eb57f04a320e5e))
+
+## [4.1.0](https://github.com/zopaUK/react-components/compare/v4.0.2...v4.1.0) (2020-06-04)
+
+
+### Features
+
+* **navbar:** add option to display scrolled styling by default ([f986ec0](https://github.com/zopaUK/react-components/commit/f986ec0e6e32fc632bb7570c8f1233793fa04a16))
+
+### [4.0.2](https://github.com/zopaUK/react-components/compare/v4.0.1...v4.0.2) (2020-06-04)
+
+
+### Bug Fixes
+
+* **checkboxfield:** add forwardRef to CheckboxField ([db7b122](https://github.com/zopaUK/react-components/commit/db7b122e0be4d883a158e8664614cc1b6ae4db00))
+
+### [4.0.1](https://github.com/zopaUK/react-components/compare/v4.0.0...v4.0.1) (2020-06-03)
+
+
+### Bug Fixes
+
+* **navbar:** add a spacer to ensure content is pushed down ([58fad9d](https://github.com/zopaUK/react-components/commit/58fad9d91da37744f52a02c292d1a2865a5519fb))
+* **navbar:** fix Headroom and isDropdownLink warnings ([ed48076](https://github.com/zopaUK/react-components/commit/ed480765f44779e984cf4a100a344c46157d7d5b))
+* **navbar:** fix spacer on mobile ([f14b312](https://github.com/zopaUK/react-components/commit/f14b312ef61c73155c26229b0eb23d9821ed5736))
+* **navbar:** fix type error ([b4ec40d](https://github.com/zopaUK/react-components/commit/b4ec40d01d930c9bf77273f13a9d60e14d51bb62))
+* **responsive helpers:** add maxEqualToMedia to avoid breaking changes ([7e8070a](https://github.com/zopaUK/react-components/commit/7e8070afcbca239a0c1c76ff2be5aadec7533c6e))
+* **responsive helpers:** maxmedia minuses 1 from breakpoint ([8a93698](https://github.com/zopaUK/react-components/commit/8a9369845aeced62528fc809a9074d34d29ce6c7))
+
 ## [4.0.0](https://github.com/zopaUK/react-components/compare/v3.2.2...v4.0.0) (2020-05-30)
 
 

@@ -2,12 +2,13 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { faCheckCircle, faExclamationCircle, faInfoCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../Icon/Icon';
-import { typography } from '../../../constants';
+import { colors, typography } from '../../../constants';
 
 type Severity = 'info' | 'alert' | 'warning' | 'success';
 
-interface AlertProps {
+interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
+  inline?: boolean;
 }
 
 type AlertElementsBySeverity = Record<
@@ -21,24 +22,34 @@ type AlertElementsBySeverity = Record<
 >;
 
 const MAP_BY_SEVERITY: AlertElementsBySeverity = {
-  info: { icon: '#818F9B', background: '#EFEFEF', text: '#2C3236', component: () => <Icon variant={faInfoCircle} /> },
-  alert: { icon: '#FF453A', background: '#FFDAD8', text: '#940700', component: () => <Icon variant={faMinusCircle} /> },
+  info: {
+    icon: colors.grey,
+    background: colors.greyLighter,
+    text: colors.greyDarkest,
+    component: () => <Icon variant={faInfoCircle} />,
+  },
+  alert: {
+    icon: colors.alert,
+    background: colors.alertLight,
+    text: colors.alertDark,
+    component: () => <Icon variant={faMinusCircle} />,
+  },
   warning: {
-    icon: '#FF9F0A',
-    background: '#FFECCE',
-    text: '#704300',
+    icon: colors.warning,
+    background: colors.warningLight,
+    text: colors.warningDark,
     component: () => <Icon variant={faExclamationCircle} />,
   },
   success: {
-    icon: '#3EBC64',
-    background: '#DDFDE5',
-    text: '#17592B',
+    icon: colors.success,
+    background: colors.successLight,
+    text: colors.successDark,
     component: () => <Icon variant={faCheckCircle} />,
   },
 };
 
-const Wrapper = styled.div<Required<AlertProps>>`
-  display: flex;
+const Wrapper = styled.div<{ severity: Severity; inline: boolean }>`
+  display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
   padding: 8px 16px 8px 16px;
   background: ${({ severity }) => MAP_BY_SEVERITY[severity].background};
@@ -60,7 +71,7 @@ const Wrapper = styled.div<Required<AlertProps>>`
   }
 `;
 
-const IconWrapper = styled.div<Required<AlertProps>>`
+const IconWrapper = styled.div<{ severity: Severity }>`
   margin-right: 8px;
   font-size: 20px;
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
@@ -70,11 +81,11 @@ const IconWrapper = styled.div<Required<AlertProps>>`
   }
 `;
 
-const Alert: FC<AlertProps> = ({ severity = 'info', children, ...rest }) => {
+const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, children, ...rest }) => {
   const Icon = MAP_BY_SEVERITY[severity].component;
 
   return (
-    <Wrapper severity={severity} {...rest}>
+    <Wrapper severity={severity} inline={inline} {...rest}>
       <IconWrapper severity={severity}>
         <Icon />
       </IconWrapper>

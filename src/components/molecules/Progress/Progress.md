@@ -9,15 +9,17 @@ With default props:
 ```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
-<Progress totalSteps="4" currentStep="2" style={{ backgroundColor: colors.neutral.neutral25 }} />;
+<Progress totalSteps={4} currentStep={2} />;
 ```
 
-Without step text:
+With step text:
+
+⚠️ This style is not recommended and should be avoided unless absolutely necessary
 
 ```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
-<Progress totalSteps="4" currentStep="2" style={{ backgroundColor: colors.neutral.neutral25 }} withStep={false} />;
+<Progress totalSteps={4} currentStep={2} withStep={true} />;
 ```
 
 With custom progressColor:
@@ -25,10 +27,5 @@ With custom progressColor:
 ```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
-<Progress
-  totalSteps="4"
-  currentStep="2"
-  style={{ backgroundColor: colors.neutral.neutral25 }}
-  progressColor={colors.base.primary}
-/>;
+<Progress totalSteps={4} currentStep={2} progressColor={colors.actionPlain} />;
 ```

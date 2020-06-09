@@ -8,13 +8,16 @@ import { useEffect, useState } from 'react';
  *                  scrolled to or not. (default 2)
  */
 export default function useScrollThreshold(threshold = 2) {
-  const [overThreshold, setOverThreshold] = useState(window.scrollY > threshold);
+  const [overThreshold, setOverThreshold] = useState(
+    typeof window === 'undefined' ? false : window.scrollY > threshold,
+  );
 
   const onScroll = () => {
     window.requestAnimationFrame(() => setOverThreshold(window.scrollY > threshold));
   };
 
   useEffect(() => {
+    setOverThreshold(window.scrollY > threshold);
     document.addEventListener('scroll', onScroll);
     return () => document.removeEventListener('scroll', onScroll);
   }, []);

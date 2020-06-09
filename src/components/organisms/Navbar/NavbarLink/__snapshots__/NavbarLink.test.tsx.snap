@@ -40,6 +40,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -49,6 +50,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 0.88;
 }
 
@@ -98,6 +100,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -107,6 +110,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 
 .c1:active,
 .c1:hover {
+  color: #21247F;
   opacity: 1;
 }
 
@@ -122,7 +126,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   display: none;
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c1 {
     color: #2C3236;
     font-size: 13px;
@@ -176,13 +180,15 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="svg-inline--fa fa-chevron-down fa-w-14 fa-fw "
+      class="svg-inline--fa fa-chevron-down fa-w-14 "
       color="#818F9B"
       data-icon="chevron-down"
       data-prefix="fas"
       focusable="false"
+      height="12px"
       role="img"
       viewBox="0 0 448 512"
+      width="12px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

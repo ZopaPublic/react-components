@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { colors, spacing, typography } from '../../../../constants';
-import { minMedia, maxMedia } from '../../../../helpers/responsiveness';
+import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
@@ -30,17 +30,19 @@ export interface ChevronContainerProps extends React.HTMLAttributes<HTMLSpanElem
 export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   align-items: center;
   text-decoration: none;
-  font-weight: ${typography.weights.semiBold}
+  font-weight: ${typography.weights.semiBold};
+  color: ${colors.actionPlain};
 
   display: inline-flex;
   padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
 
   &:active,
   &:hover {
+    color: ${colors.actionDark};
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
 
-  ${maxMedia.desktop`
+  ${maxEqualToMedia.desktop`
     ${({ withChevron }: StyledNavbarLinkProps) =>
       withChevron &&
       css`
@@ -94,7 +96,7 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
       {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
       {withChevron && (
         <ChevronContainer open={open}>
-          <Icon variant={faChevronDown} color={colors.grey} fixedWidth />
+          <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
         </ChevronContainer>
       )}
     </StyledNavbarLink>
