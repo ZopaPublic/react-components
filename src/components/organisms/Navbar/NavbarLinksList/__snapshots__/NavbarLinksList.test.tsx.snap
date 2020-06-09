@@ -51,6 +51,7 @@ Object {
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -282,7 +283,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-bxivhb YqDfb"
+        class="sc-bwzfXH haaJDm sc-bxivhb cmjxwt"
         color="#3B46C4"
         href="#"
         role="menuitem"

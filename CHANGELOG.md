@@ -1,3 +1,10 @@
+### [4.3.1](https://github.com/zopaUK/react-components/compare/v4.3.0...v4.3.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color to navbar links ([2ae2c12](https://github.com/zopaUK/react-components/commit/2ae2c12cfcdc56c30c9252af91063294d9ee3498))
+
 ## [4.3.0](https://github.com/zopaUK/react-components/compare/v4.2.1...v4.3.0) (2020-06-08)
 
 

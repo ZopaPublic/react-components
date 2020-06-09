@@ -31,6 +31,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   align-items: center;
   text-decoration: none;
   font-weight: ${typography.weights.semiBold};
+  color: ${colors.actionPlain};
 
   display: inline-flex;
   padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
