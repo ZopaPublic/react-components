@@ -43,7 +43,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit"
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   placeholder="Select a fruit..."
   name="fruits1"
 />;
@@ -61,7 +61,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   items={items}
   name="fruit-default"
   initialSelectedItem={{ value: 'orange' }}
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   placeholder="Select a fruit..."
   name="fruits2"
 />;
@@ -130,7 +130,7 @@ const items = [
   label="Nationality"
   items={items}
   name="nationality-default"
-  onChange={selection => selection && console.log(`You selected ${selection.alpha2}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.alpha2}`)}
   optionsListMaxHeight="250px"
   placeholder="Select a nationality..."
   name="nationality1"
@@ -148,7 +148,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit-error"
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   errorMessage="Ops! There is an error!"
   placeholder="Select a fruit..."
   name="fruits3"
@@ -166,7 +166,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit-isValid"
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   placeholder="Select a fruit..."
   name="fruits4"
   isValid={true}
@@ -184,7 +184,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit-disabled"
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   disabled={true}
   placeholder="Select a fruit..."
   name="fruits5"
@@ -203,7 +203,7 @@ const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { val
   label="Fruits"
   items={items}
   name="fruit-sized"
-  onChange={selection => selection && console.log(`You selected ${selection.value}`)}
+  onChange={(selection) => selection && console.log(`You selected ${selection.value}`)}
   defaultSelectedItem={{ value: 'orange' }}
   disabled={true}
   placeholder="Select a fruit..."

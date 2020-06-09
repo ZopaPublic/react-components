@@ -60,7 +60,7 @@ export const useAccordion = () => {
   };
 
   const [activeSections, updateActiveSections] = useState<ActiveSections>([]);
-  const isActiveSection: IsActiveAccordionSection = index => activeSections.includes(index);
+  const isActiveSection: IsActiveAccordionSection = (index) => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
     const sectionRef = sectionsRefs[index];
@@ -75,8 +75,8 @@ export const useAccordion = () => {
   };
 
   const toggleAccordionSection = (index: number) => {
-    updateActiveSections(prevSections =>
-      prevSections.includes(index) ? prevSections.filter(i => i !== index) : prevSections.concat(index),
+    updateActiveSections((prevSections) =>
+      prevSections.includes(index) ? prevSections.filter((i) => i !== index) : prevSections.concat(index),
     );
   };
 

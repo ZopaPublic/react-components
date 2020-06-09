@@ -10,7 +10,7 @@ Thanks to the form data passed down through context, `<FormTextField>` already h
 import { Formik, Form } from 'formik';
 import { FormTextField, FormButton } from '@zopauk/react-components';
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
   if (!values.name) {
     errors.name = 'This field is required';
@@ -22,7 +22,7 @@ const validate = values => {
   validateOnMount
   initialValues={{ name: '' }}
   validate={validate}
-  onSubmit={values => alert(JSON.stringify(values))}
+  onSubmit={(values) => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>

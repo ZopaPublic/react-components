@@ -25,19 +25,21 @@ const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
     top: 50px;
     
     ${({ open }: NavbarDropdownListContainer) => css`
-      ${open
-        ? css`
-            transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-            opacity: 1;
-            visibility: visible;
-            transform: translate(-50%, 0%);
-          `
-        : css`
-            transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-            opacity: 0;
-            visibility: hidden;
-            transform: translate(-50%, -10%);
-          `}}
+      ${
+        open
+          ? css`
+              transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+              opacity: 1;
+              visibility: visible;
+              transform: translate(-50%, 0%);
+            `
+          : css`
+              transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
+              opacity: 0;
+              visibility: hidden;
+              transform: translate(-50%, -10%);
+            `
+      }}
     `}
   `}
 `;
@@ -199,7 +201,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     if (isArrowUp(e)) {
       e.preventDefault();
       this.setState(
-        prevState => ({
+        (prevState) => ({
           cursor: mod(prevState.cursor - 1, length),
         }),
         this.focusOnItem,
@@ -207,7 +209,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     } else if (isArrowDown(e)) {
       e.preventDefault();
       this.setState(
-        prevState => ({
+        (prevState) => ({
           cursor: mod(prevState.cursor + 1, length),
         }),
         this.focusOnItem,
@@ -217,7 +219,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
 
   private handleOpenerClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    this.setState(prevState => ({ open: !prevState.open }));
+    this.setState((prevState) => ({ open: !prevState.open }));
   };
 
   private focusOnItem = () => {

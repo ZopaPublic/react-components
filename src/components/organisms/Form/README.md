@@ -38,10 +38,10 @@ const initialValues = {
     savingsAccount: false,
   },
 };
-const onSubmit = values => {
+const onSubmit = (values) => {
   alert(JSON.stringify(values));
 };
-const validate = values => {
+const validate = (values) => {
   return Object.keys(values).reduce(
     (acc, key) => ({
       ...acc,

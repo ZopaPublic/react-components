@@ -39,6 +39,6 @@ const SidekickCard = styled.div<SidekickCardProps>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistSidekickCard: FC<SidekickCardProps> = props => <SidekickCard {...props} />;
+export const StyleguidistSidekickCard: FC<SidekickCardProps> = (props) => <SidekickCard {...props} />;
 
 export default SidekickCard;

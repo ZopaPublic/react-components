@@ -60,7 +60,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean }>`
   font-weight: 400;
 
   a {
-    color: ${props => MAP_BY_SEVERITY[props.severity].text} !important;
+    color: ${(props) => MAP_BY_SEVERITY[props.severity].text} !important;
     font-size: 15px;
     line-height: 20px;
     text-decoration: underline;

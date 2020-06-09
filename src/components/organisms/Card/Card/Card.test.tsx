@@ -8,14 +8,14 @@ const layouts: TCardLayout[] = ['vertical', 'horizontal'];
 const stylings: TCardStyling[] = ['primary', 'secondary'];
 
 describe('<Card />', () => {
-  layouts.forEach(layout => {
+  layouts.forEach((layout) => {
     it(`renders with ${layout} layout`, () => {
       const { container } = render(<Card layout={layout} />);
       expect(container.firstChild).toMatchSnapshot();
     });
   });
 
-  stylings.forEach(styling => {
+  stylings.forEach((styling) => {
     it(`renders with ${styling} styling`, () => {
       const { container } = render(<Card styling={styling} />);
       expect(container.firstChild).toMatchSnapshot();

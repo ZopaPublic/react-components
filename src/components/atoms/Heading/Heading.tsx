@@ -82,6 +82,6 @@ const Heading = styled.h1<StyledHeadingProps>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistHeading: FC<StyledHeadingProps> = props => <Heading {...props} />;
+export const StyleguidistHeading: FC<StyledHeadingProps> = (props) => <Heading {...props} />;
 
 export default Heading;

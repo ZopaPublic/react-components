@@ -66,7 +66,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
-      {items.map(item => (
+      {items.map((item) => (
         <CheckboxWrapper key={item.name.toString()}>
           <CheckboxField
             name={item.name.toString()}

@@ -37,7 +37,7 @@ const createTopLevelSizes = (type: SpacingTypes) =>
 
 const createResponsiveSizes = (type: SpacingTypes) =>
   Object.keys(grid.breakpoints)
-    .filter(v => v !== 'xs')
+    .filter((v) => v !== 'xs')
     .reduce(
       (mediaQueries, breakpoint) => ({
         ...mediaQueries,

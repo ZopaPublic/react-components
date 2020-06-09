@@ -36,17 +36,17 @@ const defaultProps: Partial<FlexRow> = {
 const StyledFlexRow = styled.div<FlexRow>`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: ${props => props.direction};
-  margin-right: -${props => props.gutter}px;
-  margin-left: -${props => props.gutter}px;
-  justify-content: ${props => props.justify};
-  align-items: ${props => props.align};
+  flex-direction: ${(props) => props.direction};
+  margin-right: -${(props) => props.gutter}px;
+  margin-left: -${(props) => props.gutter}px;
+  justify-content: ${(props) => props.justify};
+  align-items: ${(props) => props.align};
 `;
 
 const FlexRow: React.FunctionComponent<FlexRow> = ({ children, ...props }) => {
   const childrenWithProps = React.Children.toArray(children)
-    .filter(child => !!child)
-    .map(child => React.cloneElement(child as any, { gutter: props.gutter, cols: props.cols }));
+    .filter((child) => !!child)
+    .map((child) => React.cloneElement(child as any, { gutter: props.gutter, cols: props.cols }));
   return <StyledFlexRow {...props}>{childrenWithProps}</StyledFlexRow>;
 };
 
