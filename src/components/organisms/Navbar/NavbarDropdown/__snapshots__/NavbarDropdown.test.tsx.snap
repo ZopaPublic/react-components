@@ -49,6 +49,7 @@ exports[`<NavbarDropdown /> should render component 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
