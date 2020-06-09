@@ -21,7 +21,7 @@ const NavbarDropdownList = styled.ul`
 
       min-width: 240px;
       margin: 0;
-      padding: ${spacing[2]};
+      padding: ${spacing[2]} 0;
 
       &:before {
         content: '';

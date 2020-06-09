@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import Headroom from 'react-headroom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -21,12 +21,16 @@ import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 
+export interface NavigationItemSubLink extends Exclude<NavigationItem, 'children'> {
+  isDropdownHeading?: boolean;
+}
+
 export interface NavigationItem {
   label: string;
   href?: string;
   'data-automation'?: string;
   onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
-  children?: NavigationItem[];
+  children?: NavigationItemSubLink[];
 }
 export interface NavbarLinksListProps {
   /**
@@ -220,9 +224,9 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - ${mobileNavbarHeight}px);
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]} 0;
+  padding: ${spacing[8]} ${spacing[4]};
 
   background: ${colors.white};
 
@@ -230,6 +234,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   z-index: 2;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 const LargeDeviceNavbar = styled.div`
@@ -252,12 +257,8 @@ const SmallDeviceNavbar = styled.div`
   `}
 `;
 
-export const NavbarLinksListLink = ({
-  item: { label, href, onClick, ...rest },
-  index,
-  props,
-}: NavbarLinksListLinkProps) => (
-  <NavbarLink key={`navbar-link-${index}`} href={href} onClick={onClick} {...props} {...rest}>
+export const NavbarLinksListLink = ({ item: { label, onClick, ...rest }, index, props }: NavbarLinksListLinkProps) => (
+  <NavbarLink key={`navbar-link-${index}`} {...props} {...rest}>
     {label}
   </NavbarLink>
 );
@@ -275,6 +276,14 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add('nav-open');
+    } else {
+      document.body.classList.remove('nav-open');
+    }
+  }, [open]);
 
   return (
     <>
