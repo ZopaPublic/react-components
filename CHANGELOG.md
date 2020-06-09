@@ -1,3 +1,17 @@
+## [4.3.0](https://github.com/zopaUK/react-components/compare/v4.2.1...v4.3.0) (2020-06-08)
+
+
+### Features
+
+* **alert:** add inline prop ([bacac05](https://github.com/zopaUK/react-components/commit/bacac054627a4bcd95f88b69037dc79c01ca4dec))
+
+### [4.2.1](https://github.com/zopaUK/react-components/compare/v4.2.0...v4.2.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* **alert:** fix props for Alert component ([2a34daf](https://github.com/zopaUK/react-components/commit/2a34dafa21f5150593528c8f0d2a9611e0e32cfb))
+
 ## [4.2.0](https://github.com/zopaUK/react-components/compare/v4.1.9...v4.2.0) (2020-06-08)
 
 
