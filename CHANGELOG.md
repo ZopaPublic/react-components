@@ -1,3 +1,16 @@
+## [4.4.0](https://github.com/zopaUK/react-components/compare/v4.3.1...v4.4.0) (2020-06-09)
+
+
+### Features
+
+* **navbar:** add support for drodown subheading ([8569baa](https://github.com/zopaUK/react-components/commit/8569baa35cceacbb89cf0a89db6beef84a8cc721))
+
+
+### Bug Fixes
+
+* **code style:** fix code with prettier 3.0 ([6b5e380](https://github.com/zopaUK/react-components/commit/6b5e380693b6d4f47801736393ae77eb31f23efa))
+* **navbar:** prevent body from scrolling when hamburger is open ([482d908](https://github.com/zopaUK/react-components/commit/482d9083047e7c76391fed355f7595acf465a7c3))
+
 ### [4.3.1](https://github.com/zopaUK/react-components/compare/v4.3.0...v4.3.1) (2020-06-09)
 
 
