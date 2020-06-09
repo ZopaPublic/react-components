@@ -89,7 +89,7 @@ Object {
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c6:before {
@@ -282,7 +282,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-bxivhb eXaLSp"
+        class="sc-bwzfXH haaJDm sc-bxivhb YqDfb"
         color="#3B46C4"
         href="#"
         role="menuitem"
@@ -321,7 +321,7 @@ Object {
       >
         <ul
           aria-label="About"
-          class="sc-bdVaJa fkzsud"
+          class="sc-bdVaJa eIDiHs"
           role="menu"
         >
           <li

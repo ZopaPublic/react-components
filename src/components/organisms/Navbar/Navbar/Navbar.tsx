@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import Headroom from 'react-headroom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -276,6 +276,14 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [open]);
 
   return (
     <>
