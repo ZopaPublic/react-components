@@ -90,12 +90,11 @@ export const buttonStyle = css<ButtonProps>`
   }
 `;
 
-const ButtonWrapper = styled.button<ButtonProps>`
+const ButtonWrapper = styled(({ loading, fullWidth, ...rest }: ButtonProps) => <button {...rest} />)`
   ${buttonStyle}
 `;
 
-const Button: React.FC<ButtonProps> = (props) => {
-  const { children, loading, styling = 'primary', disabled, ...rest } = props;
+const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary', disabled, ...rest }) => {
   const isLoading = styling !== 'link' ? loading : undefined;
 
   return (
