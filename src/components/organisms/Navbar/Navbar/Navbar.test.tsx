@@ -24,6 +24,10 @@ describe('<Navbar />', () => {
           qadata: 'Our_Board.About.topBar.Menu',
         },
         {
+          label: 'Subheading',
+          isDropdownHeading: true,
+        },
+        {
           label: 'Our leadership team',
           href: '/about/leadership',
           qadata: 'Our_Leadership.About.topBar.Menu',
