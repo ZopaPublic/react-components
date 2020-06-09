@@ -741,6 +741,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               </a>
               <button
                 class="c16 c17"
+                styling="link"
               >
                 <div
                   class="c18"
@@ -828,6 +829,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             </div>
             <button
               class="c16 c17"
+              styling="link"
             >
               <div
                 class="c18"
@@ -1768,6 +1770,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </a>
               <button
                 class="c16 c17"
+                styling="primary"
               >
                 <div
                   class="c18"
@@ -1852,6 +1855,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
             </div>
             <button
               class="c16 c17"
+              styling="primary"
             >
               <div
                 class="c18"
@@ -2791,6 +2795,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </a>
               <button
                 class="c16 c17"
+                styling="link"
               >
                 <div
                   class="c18"
@@ -2875,6 +2880,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             </div>
             <button
               class="c16 c17"
+              styling="link"
             >
               <div
                 class="c18"
@@ -3871,6 +3877,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </a>
               <button
                 class="c16 c17"
+                styling="primary"
               >
                 <div
                   class="c18"
@@ -3955,6 +3962,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             </div>
             <button
               class="c16 c17"
+              styling="primary"
             >
               <div
                 class="c18"
