@@ -35,7 +35,7 @@ const Item = styled.li`
 `;
 
 export function ComponentsListRenderer({ items }) {
-  items = items.filter(item => item.name);
+  items = items.filter((item) => item.name);
 
   if (!items.length) {
     return null;

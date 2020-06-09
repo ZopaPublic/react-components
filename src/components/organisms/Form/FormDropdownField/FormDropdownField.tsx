@@ -26,7 +26,7 @@ const FormDropdownField = forwardRef<HTMLSelectElement, FormDropdownFieldProps>(
         value={value}
         {...rest}
       >
-        {options.map(option => (
+        {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
           </option>

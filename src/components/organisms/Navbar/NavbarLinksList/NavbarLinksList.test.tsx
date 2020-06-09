@@ -53,7 +53,7 @@ describe('<NavbarLinksList />', () => {
       },
     ];
     const container = render(
-      <NavbarLinksList links={NAV_ITEMS} renderLink={item => <a href={item.href}>{item.label}</a>} />,
+      <NavbarLinksList links={NAV_ITEMS} renderLink={(item) => <a href={item.href}>{item.label}</a>} />,
     );
     expect(container).toMatchSnapshot();
   });
@@ -67,7 +67,7 @@ describe('<NavbarLinksList />', () => {
       },
     ];
 
-    render(<NavbarLinksList links={NAV_ITEMS} renderLink={item => <a href={item.href}>{item.label}</a>} />);
+    render(<NavbarLinksList links={NAV_ITEMS} renderLink={(item) => <a href={item.href}>{item.label}</a>} />);
     const menuItem = screen.getByText('Support');
     expect(menuItem).toHaveAttribute('href', '/contact');
   });

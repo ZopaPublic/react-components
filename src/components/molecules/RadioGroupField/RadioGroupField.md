@@ -17,7 +17,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'one', label: 'label one' },
     { value: 'two', label: 'label two' },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Radio group field label"
 />;
 ```
@@ -32,7 +32,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'three', label: 'label three' },
     { value: 'four', label: 'label four', defaultChecked: true },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Radio group field label"
 />;
 ```
@@ -71,7 +71,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'seven', label: 'label seven' },
     { value: 'eight', label: 'label eight', defaultChecked: true },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Radio group field label"
   disabled
 />;

@@ -14,7 +14,7 @@ const FormDropdownFilteredField = ({ name, validate, items, ...rest }: FormDropd
       items={items}
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
-      onChange={item => helpers.setValue(item)}
+      onChange={(item) => helpers.setValue(item)}
       {...rest}
     />
   );

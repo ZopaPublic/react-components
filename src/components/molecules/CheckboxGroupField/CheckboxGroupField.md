@@ -17,7 +17,7 @@ import { CheckboxGroupField } from '@zopauk/react-components';
     { name: 'one', label: 'label one' },
     { name: 'two', label: 'label two' },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Checkbox group field label"
 />;
 ```
@@ -32,7 +32,7 @@ import { CheckboxGroupField } from '@zopauk/react-components';
     { name: 'three', label: 'label three' },
     { name: 'four', label: 'label four', defaultChecked: true },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Checkbox group field label"
 />;
 ```
@@ -71,7 +71,7 @@ import { CheckboxGroupField } from '@zopauk/react-components';
     { name: 'seven', label: 'label seven' },
     { name: 'eight', label: 'label eight', defaultChecked: true },
   ]}
-  onChange={value => console.log(value)}
+  onChange={(value) => console.log(value)}
   label="Checkbox group field label"
   disabled
 />;

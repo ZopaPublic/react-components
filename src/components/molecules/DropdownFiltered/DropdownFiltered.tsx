@@ -57,7 +57,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
 
   return (
     <SizedContainer size={inputSize}>
-      <Downshift itemToString={item => (item ? item.value : '')} {...props}>
+      <Downshift itemToString={(item) => (item ? item.value : '')} {...props}>
         {({
           clearSelection,
           getInputProps,

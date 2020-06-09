@@ -75,21 +75,21 @@ const StyledFlexCol = styled.div<FlexCol>`
   padding-right: ${({ gutter }) => gutter}px;
   padding-left: ${({ gutter }) => gutter}px;
   align-self: ${({ align }) => align};
-  ${props =>
+  ${(props) =>
     Object.keys(grid.breakpoints)
       .sort((a, b) => {
         // Note: TS infers `a` and `b` as strings, hence the type assertion here.
         return grid.breakpoints[a as GridBreakpoints] - grid.breakpoints[b as GridBreakpoints];
       })
-      .filter(breakpoint => Object.keys(props).includes(breakpoint))
-      .map(breakpoint => {
+      .filter((breakpoint) => Object.keys(props).includes(breakpoint))
+      .map((breakpoint) => {
         // Note: TS infers `breakpoint` as string again... hence more type assertion here.
         const colWidth = props[breakpoint as GridBreakpoints] || 'auto';
         return getWidth(breakpoint as GridBreakpoints, colWidth, props.cols);
       })}
 `;
 
-const FlexCol: FC<FlexCol> = props => <StyledFlexCol {...props} />;
+const FlexCol: FC<FlexCol> = (props) => <StyledFlexCol {...props} />;
 
 FlexCol.defaultProps = {
   align: 'auto',

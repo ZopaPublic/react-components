@@ -26,7 +26,7 @@ describe('<NavbarDropdown />', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  ['Enter', ' ', 'ArrowUp', 'ArrowDown'].forEach(key => {
+  ['Enter', ' ', 'ArrowUp', 'ArrowDown'].forEach((key) => {
     it(`should open the dropdown on ${key} press`, () => {
       const { getAllByRole } = renderComponent();
       const [opener] = getAllByRole('menuitem');

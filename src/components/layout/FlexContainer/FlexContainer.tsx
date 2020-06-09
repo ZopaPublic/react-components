@@ -15,8 +15,8 @@ const defaultProps: Partial<FlexContainerProps> = {
 const StyledFlexContainer = styled.div<FlexContainerProps>`
   width: 100%;
   max-width: 100%;
-  padding-right: ${props => props.gutter}px;
-  padding-left: ${props => props.gutter}px;
+  padding-right: ${(props) => props.gutter}px;
+  padding-left: ${(props) => props.gutter}px;
   margin-left: auto;
   margin-right: auto;
   @media (min-width: ${grid.breakpoints.s}px) {

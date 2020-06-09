@@ -10,7 +10,7 @@ Thanks to the form data passed down through context, `<FormDropdownField>` alrea
 import { Formik, Form } from 'formik';
 import { DropdownField, FormButton } from '@zopauk/react-components';
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
   if (!values.ref) {
     errors.ref = 'Please pick one';
@@ -22,7 +22,7 @@ const validate = values => {
   validateOnMount
   initialValues={{ ref: 'newspaper' }}
   validate={validate}
-  onSubmit={values => alert(JSON.stringify(values))}
+  onSubmit={(values) => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>

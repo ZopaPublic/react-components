@@ -51,7 +51,7 @@ const Footer = styled.footer`
   font-size: 12px;
 `;
 
-const footerText = homepageUrl => `
+const footerText = (homepageUrl) => `
 <sub>Generated with [React Styleguidist](${homepageUrl}) for [Zopa's react-components](https://github.com/zopaUK/react-components). \
 No permission is granted to use the trade names, trademarks, service marks, or product names of Zopa, except as required
 for reasonable and customary use in describing the origin of this library and reproducing the content of the notice in

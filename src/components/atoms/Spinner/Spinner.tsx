@@ -35,6 +35,6 @@ const StyledSpinner = styled.div<SpinnerProps>`
   animation: ${spin} 1.2s linear infinite;
 `;
 
-const Spinner: React.FC<SpinnerProps> = props => <StyledSpinner {...props} />;
+const Spinner: React.FC<SpinnerProps> = (props) => <StyledSpinner {...props} />;
 
 export default Spinner;

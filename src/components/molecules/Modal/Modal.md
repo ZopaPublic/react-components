@@ -39,7 +39,7 @@ Modal.setAppElement('#rsg-root');
 
 function ModalDemo() {
   const [isOpen, update] = React.useState(false);
-  const toggleModal = () => update(prevState => !prevState);
+  const toggleModal = () => update((prevState) => !prevState);
 
   return (
     <>

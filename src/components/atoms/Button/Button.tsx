@@ -94,7 +94,7 @@ const ButtonWrapper = styled.button<ButtonProps>`
   ${buttonStyle}
 `;
 
-const Button: React.FC<ButtonProps> = props => {
+const Button: React.FC<ButtonProps> = (props) => {
   const { children, loading, styling = 'primary', disabled, ...rest } = props;
   const isLoading = styling !== 'link' ? loading : undefined;
 
