@@ -8,20 +8,20 @@ import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
 
-export interface NavbarLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface NavbarLinkStyleProps {
   active?: boolean;
   withChevron?: boolean;
   isDropdownLink?: boolean;
+  isDropdownHeading?: boolean;
+}
+
+export interface NavbarLinkProps extends NavbarLinkStyleProps, React.AnchorHTMLAttributes<HTMLAnchorElement> {
   open?: boolean;
   target?: LinkProps['target'];
   'data-automation'?: string;
 }
 
-export interface StyledNavbarLinkProps extends LinkProps {
-  active: boolean;
-  withChevron: boolean;
-  isDropdownLink: boolean;
-}
+export type StyledNavbarLinkProps = Required<NavbarLinkStyleProps>;
 
 export interface ChevronContainerProps extends React.HTMLAttributes<HTMLSpanElement> {
   open: boolean;
@@ -36,36 +36,62 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   display: inline-flex;
   padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
 
+ 
+
   &:active,
   &:hover {
     color: ${colors.actionDark};
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
+  
 
   ${maxEqualToMedia.desktop`
     ${({ withChevron }: StyledNavbarLinkProps) =>
       withChevron &&
-      css`
+      `
         color: ${colors.greyDarkest};
         font-size: ${typography.sizes.text.small};
         font-weight: ${typography.weights.bold};
         text-transform: uppercase;
       `}
   `}
-
+  
   ${minMedia.desktop`
-    ${({ isDropdownLink }: StyledNavbarLinkProps) =>
+    ${({ isDropdownLink, isDropdownHeading }: StyledNavbarLinkProps) =>
       isDropdownLink &&
+      !isDropdownHeading &&
       css`
-        padding: ${spacing[3]};
+        padding: ${spacing[3]} ${spacing[2]};
+        width: calc(100% - 16px);
+        margin-left: 8px;
+        margin-right: 8px;
+
         border-radius: 8px;
-        width: 100%;
 
         &:hover {
           background-color: ${colors.actionLight};
         }
       `}
   `}
+
+  ${({ isDropdownHeading }: StyledNavbarLinkProps) =>
+    isDropdownHeading &&
+    css`
+      width: 100%;
+      margin-top: ${spacing[2]};
+
+      color: ${colors.greyDarkest};
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: ${typography.sizes.text.small};
+
+      border-top: 1px solid ${colors.greyLight};
+      border-radius: 0px;
+
+      &:hover {
+        cursor: default;
+      }
+    `}
 `;
 
 const StyledNavbarLink = styled(Link)<StyledNavbarLinkProps>`
@@ -91,8 +117,26 @@ const ChevronContainer = styled.span<ChevronContainerProps>`
 `;
 
 const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
-  ({ active = false, children, open = false, withChevron = false, isDropdownLink = false, ...rest }, ref) => (
-    <StyledNavbarLink active={active} withChevron={withChevron} isDropdownLink={isDropdownLink} ref={ref} {...rest}>
+  (
+    {
+      active = false,
+      children,
+      open = false,
+      withChevron = false,
+      isDropdownLink = false,
+      isDropdownHeading = false,
+      ...rest
+    },
+    ref,
+  ) => (
+    <StyledNavbarLink
+      active={active}
+      withChevron={withChevron}
+      isDropdownLink={isDropdownLink}
+      isDropdownHeading={isDropdownHeading}
+      ref={ref}
+      {...rest}
+    >
       {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
       {withChevron && (
         <ChevronContainer open={open}>

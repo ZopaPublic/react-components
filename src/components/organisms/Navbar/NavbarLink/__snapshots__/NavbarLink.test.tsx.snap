@@ -137,9 +137,11 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 
 @media (min-width:1280px) {
   .c1 {
-    padding: 12px;
+    padding: 12px 8px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 8px;
-    width: 100%;
   }
 
   .c1:hover {
