@@ -1,3 +1,10 @@
+### [4.4.3](https://github.com/zopaUK/react-components/compare/v4.4.2...v4.4.3) (2020-06-10)
+
+
+### Bug Fixes
+
+* **navbar:** remove outline for Headings ([b1dad74](https://github.com/zopaUK/react-components/commit/b1dad74296987cb199d9795cba40ded03a53ac0e))
+
 ### [4.4.2](https://github.com/zopaUK/react-components/compare/v4.4.1...v4.4.2) (2020-06-10)
 
 
