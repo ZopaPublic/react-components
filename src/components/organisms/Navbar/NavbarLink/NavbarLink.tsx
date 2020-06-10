@@ -36,8 +36,6 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   display: inline-flex;
   padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
 
- 
-
   &:active,
   &:hover {
     color: ${colors.actionDark};
@@ -87,6 +85,8 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
 
       border-top: 1px solid ${colors.greyLight};
       border-radius: 0px;
+      outline: none;
+      pointer-events: none;
 
       &:hover {
         cursor: default;
