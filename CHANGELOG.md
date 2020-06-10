@@ -1,3 +1,10 @@
+### [4.4.4](https://github.com/zopaUK/react-components/compare/v4.4.3...v4.4.4) (2020-06-10)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix accordion header icon ([cdb7180](https://github.com/zopaUK/react-components/commit/cdb718019ab94b72f6d947ca3854b7461be8729a))
+
 ### [4.4.3](https://github.com/zopaUK/react-components/compare/v4.4.2...v4.4.3) (2020-06-10)
 
 
