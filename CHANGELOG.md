@@ -1,3 +1,10 @@
+### [4.4.1](https://github.com/zopaUK/react-components/compare/v4.4.0...v4.4.1) (2020-06-10)
+
+
+### Bug Fixes
+
+* **button:** filter out loading and fullWidth props ([66520ab](https://github.com/zopaUK/react-components/commit/66520abe3fdc2f50ef8d3bc057b18d0b1ca43692)), closes [#489](https://github.com/zopaUK/react-components/issues/489)
+
 ## [4.4.0](https://github.com/zopaUK/react-components/compare/v4.3.1...v4.4.0) (2020-06-09)
 
 
