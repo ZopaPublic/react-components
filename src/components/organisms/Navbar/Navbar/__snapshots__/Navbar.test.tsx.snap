@@ -104,6 +104,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   font-size: 13px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
+  outline: none;
+  pointer-events: none;
 }
 
 .c14:active,
@@ -741,6 +743,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               </a>
               <button
                 class="c16 c17"
+                styling="link"
               >
                 <div
                   class="c18"
@@ -828,6 +831,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             </div>
             <button
               class="c16 c17"
+              styling="link"
             >
               <div
                 class="c18"
@@ -1133,6 +1137,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   font-size: 13px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
+  outline: none;
+  pointer-events: none;
 }
 
 .c14:active,
@@ -1768,6 +1774,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </a>
               <button
                 class="c16 c17"
+                styling="primary"
               >
                 <div
                   class="c18"
@@ -1852,6 +1859,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
             </div>
             <button
               class="c16 c17"
+              styling="primary"
             >
               <div
                 class="c18"
@@ -2157,6 +2165,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   font-size: 13px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
+  outline: none;
+  pointer-events: none;
 }
 
 .c14:active,
@@ -2791,6 +2801,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </a>
               <button
                 class="c16 c17"
+                styling="link"
               >
                 <div
                   class="c18"
@@ -2875,6 +2886,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             </div>
             <button
               class="c16 c17"
+              styling="link"
             >
               <div
                 class="c18"
@@ -3186,6 +3198,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   font-size: 13px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
+  outline: none;
+  pointer-events: none;
 }
 
 .c14:active,
@@ -3871,6 +3885,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </a>
               <button
                 class="c16 c17"
+                styling="primary"
               >
                 <div
                   class="c18"
@@ -3955,6 +3970,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             </div>
             <button
               class="c16 c17"
+              styling="primary"
             >
               <div
                 class="c18"

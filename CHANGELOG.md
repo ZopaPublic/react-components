@@ -1,3 +1,24 @@
+### [4.4.3](https://github.com/zopaUK/react-components/compare/v4.4.2...v4.4.3) (2020-06-10)
+
+
+### Bug Fixes
+
+* **navbar:** remove outline for Headings ([b1dad74](https://github.com/zopaUK/react-components/commit/b1dad74296987cb199d9795cba40ded03a53ac0e))
+
+### [4.4.2](https://github.com/zopaUK/react-components/compare/v4.4.1...v4.4.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* **checkboxfield:** fix checkbox and label alignment ([39adf5f](https://github.com/zopaUK/react-components/commit/39adf5fad9f2ad3413e3ab09a4356812b440ff9d))
+
+### [4.4.1](https://github.com/zopaUK/react-components/compare/v4.4.0...v4.4.1) (2020-06-10)
+
+
+### Bug Fixes
+
+* **button:** filter out loading and fullWidth props ([66520ab](https://github.com/zopaUK/react-components/commit/66520abe3fdc2f50ef8d3bc057b18d0b1ca43692)), closes [#489](https://github.com/zopaUK/react-components/issues/489)
+
 ## [4.4.0](https://github.com/zopaUK/react-components/compare/v4.3.1...v4.4.0) (2020-06-09)
 
 
