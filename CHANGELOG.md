@@ -1,3 +1,24 @@
+### [4.4.4](https://github.com/zopaUK/react-components/compare/v4.4.3...v4.4.4) (2020-06-10)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix accordion header icon ([cdb7180](https://github.com/zopaUK/react-components/commit/cdb718019ab94b72f6d947ca3854b7461be8729a))
+
+### [4.4.3](https://github.com/zopaUK/react-components/compare/v4.4.2...v4.4.3) (2020-06-10)
+
+
+### Bug Fixes
+
+* **navbar:** remove outline for Headings ([b1dad74](https://github.com/zopaUK/react-components/commit/b1dad74296987cb199d9795cba40ded03a53ac0e))
+
+### [4.4.2](https://github.com/zopaUK/react-components/compare/v4.4.1...v4.4.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* **checkboxfield:** fix checkbox and label alignment ([39adf5f](https://github.com/zopaUK/react-components/commit/39adf5fad9f2ad3413e3ab09a4356812b440ff9d))
+
 ### [4.4.1](https://github.com/zopaUK/react-components/compare/v4.4.0...v4.4.1) (2020-06-10)
 
 
