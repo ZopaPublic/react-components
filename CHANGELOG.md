@@ -1,3 +1,10 @@
+### [4.4.2](https://github.com/zopaUK/react-components/compare/v4.4.1...v4.4.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* **checkboxfield:** fix checkbox and label alignment ([39adf5f](https://github.com/zopaUK/react-components/commit/39adf5fad9f2ad3413e3ab09a4356812b440ff9d))
+
 ### [4.4.1](https://github.com/zopaUK/react-components/compare/v4.4.0...v4.4.1) (2020-06-10)
 
 
