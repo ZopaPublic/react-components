@@ -21,16 +21,13 @@ import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 
-export interface NavigationItemSubLink extends Exclude<NavigationItem, 'children'> {
-  isDropdownHeading?: boolean;
-}
-
 export interface NavigationItem {
   label: string;
   href?: string;
   'data-automation'?: string;
   onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
-  children?: NavigationItemSubLink[];
+  isDropdownHeading?: boolean;
+  children?: Exclude<NavigationItem, 'children'>[];
 }
 export interface NavbarLinksListProps {
   /**
