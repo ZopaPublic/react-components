@@ -78,6 +78,7 @@ const Label = styled(InputLabel)`
 
   &:before {
     content: '';
+    align-self: flex-start;
     background-color: ${colors.white};
     border-radius: 6px;
     height: 24px;
