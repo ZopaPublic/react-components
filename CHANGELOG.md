@@ -1,3 +1,10 @@
+### [4.4.7](https://github.com/zopaUK/react-components/compare/v4.4.6...v4.4.7) (2020-06-11)
+
+
+### Bug Fixes
+
+* **navbar:** fix scroll issue for IOS ([0f290c7](https://github.com/zopaUK/react-components/commit/0f290c7450891eefdb162b74b0162759a0439849))
+
 ### [4.4.6](https://github.com/zopaUK/react-components/compare/v4.4.5...v4.4.6) (2020-06-11)
 
 
