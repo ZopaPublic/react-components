@@ -41,7 +41,7 @@ export function TableRenderer({ columns, rows, getRowKey }) {
         </tr>
       </thead>
       <tbody>
-        {rows.map(row => (
+        {rows.map((row) => (
           <tr key={getRowKey(row)}>
             {columns.map(({ render }, index) => (
               <td key={index}>{render(row)}</td>

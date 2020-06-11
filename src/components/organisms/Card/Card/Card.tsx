@@ -16,7 +16,7 @@ export interface CardProps {
   layout?: CardLayout;
   /**
    * Determines the styling of the card
-   * @default `vertical`
+   * @default `secondary`
    */
   styling?: CardStyling;
 }

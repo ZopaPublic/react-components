@@ -7,7 +7,7 @@ const webpackDevServerUtils = require('react-dev-utils/WebpackDevServerUtils');
 // Make react-scripts get the eslint config
 process.env.EXTEND_ESLINT = 'true';
 
-const printServerInstructions = config => {
+const printServerInstructions = (config) => {
   const urls = webpackDevServerUtils.prepareUrls('http', config.serverHost, config.serverPort);
   console.log(`${kleur.cyan().bold(`
 /££££££££                              
@@ -153,7 +153,7 @@ module.exports = {
   },
   // Used to convert type definitions to documentation. More info: https://github.com/styleguidist/react-docgen-typescript
   propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', {
-    propFilter: prop => prop.parent && !prop.parent.fileName.includes('@types/react'),
+    propFilter: (prop) => prop.parent && !prop.parent.fileName.includes('@types/react'),
     componentNameResolver: (exp, source) => path.parse(source.fileName).name,
   }).parse,
   // Modules available for examples

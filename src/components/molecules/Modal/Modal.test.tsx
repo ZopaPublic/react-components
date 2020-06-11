@@ -1,27 +1,54 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import Modal from './Modal';
+import { fireEvent, render } from '@testing-library/react';
+import Modal, { ModalProps } from './Modal';
 import { getGlobalStyleTags } from '../../../helpers/test/styles';
+import Card from '../../organisms/Card';
+
+function renderModal(props: Omit<ModalProps, 'children'>) {
+  return render(
+    <Modal {...props}>
+      <Card.Content>
+        <Card.Heading>Title</Card.Heading>
+        <Card.Text data-testid="check-card">text</Card.Text>
+      </Card.Content>
+    </Modal>,
+  );
+}
 
 describe('<Modal />', () => {
   it('can render un-opened', async () => {
     Modal.setAppElement('body');
-    const { queryByText } = render(<Modal isOpen={false}>text</Modal>);
+    const { queryByTestId } = renderModal({ isOpen: false });
 
-    expect(queryByText('text')).toBe(null);
+    expect(queryByTestId('check-card')).toBe(null);
   });
 
   it('can render opened', async () => {
     Modal.setAppElement('body');
-    const { findByText } = render(<Modal isOpen>text</Modal>);
+    const { findByTestId } = renderModal({ isOpen: true });
 
-    const modal = await findByText('text');
+    const modal = await findByTestId('check-card');
     expect(modal).toMatchSnapshot();
+  });
+
+  it('can be closed by clicking the close button', async () => {
+    Modal.setAppElement('body');
+    const toggleModal = jest.fn();
+    const { findByTestId } = renderModal({ isOpen: true, onRequestClose: toggleModal });
+    const closeButton = await findByTestId('ZA.modal-cross-icon');
+    fireEvent.click(closeButton);
+    expect(toggleModal).toBeCalledTimes(1);
+  });
+
+  it('should not show the close button if needed', async () => {
+    Modal.setAppElement('body');
+    const toggleModal = jest.fn();
+    const { queryByTestId } = renderModal({ isOpen: true, onRequestClose: toggleModal, showCloseButton: false });
+    expect(queryByTestId('ZA.modal-cross-icon')).toBe(null);
   });
 
   it('allows to set global styles', () => {
     render(<Modal.Styles />);
-
     const [globalModalStyles] = getGlobalStyleTags();
     expect(globalModalStyles).toMatchSnapshot();
   });

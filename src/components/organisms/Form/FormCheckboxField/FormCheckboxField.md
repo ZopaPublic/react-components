@@ -10,7 +10,7 @@ Thanks to the form data passed down through context, `<FormCheckboxField>` alrea
 import { Formik, Form } from 'formik';
 import { FormCheckboxField, FormButton } from '@zopauk/react-components';
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
   if (!values.policy) {
     errors.policy = 'You need to accept the policy';
@@ -22,7 +22,7 @@ const validate = values => {
   validateOnMount
   initialValues={{ policy: false }}
   validate={validate}
-  onSubmit={values => alert(JSON.stringify(values))}
+  onSubmit={(values) => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>

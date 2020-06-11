@@ -46,6 +46,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -67,6 +68,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -88,6 +90,43 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+  width: 100%;
+  margin-top: 8px;
+  color: #2C3236;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  border-top: 1px solid #D4D7D9;
+  border-radius: 0px;
+  outline: none;
+  pointer-events: none;
+}
+
+.c14:active,
+.c14:hover {
+  color: #21247F;
+  opacity: 0.88;
+}
+
+.c14:hover {
+  cursor: default;
+}
+
+.c15 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -95,8 +134,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   padding: 12px 16px 16px;
 }
 
-.c14:active,
-.c14:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -113,7 +152,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: none;
 }
 
-.c15 {
+.c16 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -142,28 +181,28 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   background: transparent;
 }
 
-.c15:hover:not(:disabled) {
+.c16:hover:not(:disabled) {
   background: #EAEBFA;
 }
 
-.c15:focus:not(:active) {
+.c16:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c15:disabled {
+.c16:disabled {
   cursor: not-allowed;
   background: #F7F7F7;
   color: #818F9B;
 }
 
-.c15:active:not(:disabled) {
+.c16:active:not(:disabled) {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c18 {
+.c19 {
   display: block;
 }
 
@@ -186,6 +225,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .c0 .headroom {
@@ -214,7 +254,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   transform: translateY(0%);
 }
 
-.c22 {
+.c23 {
   height: 64px;
 }
 
@@ -249,7 +289,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   right: 0;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -268,7 +308,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   background-color: transparent;
 }
 
-.c21 {
+.c22 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -281,9 +321,9 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -293,13 +333,14 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   transform: translateX(-100%);
   z-index: 2;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c1 {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -314,9 +355,11 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 @media (min-width:1280px) {
   .c13 {
-    padding: 12px;
+    padding: 12px 8px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 8px;
-    width: 100%;
   }
 
   .c13:hover {
@@ -345,19 +388,19 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (max-width:1279px) {
-  .c16:hover:not(:disabled) {
+  .c17:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c16 {
+  .c17 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c17 {
+  .c18 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -368,7 +411,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c18 {
+  .c19 {
     display: none;
   }
 }
@@ -381,7 +424,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c12:before {
@@ -432,7 +475,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c22 {
+  .c23 {
     height: 120px;
   }
 }
@@ -485,7 +528,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -628,6 +671,18 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -680,23 +735,24 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
                 Support
               </a>
               <button
-                class="c15 c16"
+                class="c16 c17"
+                styling="link"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   Sign in
                 </div>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                   color="#FFFFFF"
                   data-icon="user"
                   data-prefix="fas"
@@ -717,13 +773,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
           </nav>
         </div>
         <div
-          class="c19"
+          class="c20"
         >
           <nav
             class="c2"
           >
             <span
-              class="c20"
+              class="c21"
               data-testid="hamburger-icon"
             >
               <svg
@@ -774,16 +830,17 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               />
             </div>
             <button
-              class="c15 c16"
+              class="c16 c17"
+              styling="link"
             >
               <div
-                class="c17"
+                class="c18"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -801,7 +858,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               </svg>
             </button>
             <aside
-              class="c21"
+              class="c22"
             >
               <div
                 class="c6"
@@ -894,6 +951,18 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -946,7 +1015,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
@@ -959,7 +1028,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     </div>
   </header>
   <div
-    class="c22"
+    class="c23"
   />
 </div>
 `;
@@ -1010,6 +1079,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1031,6 +1101,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1052,6 +1123,43 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+  width: 100%;
+  margin-top: 8px;
+  color: #2C3236;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  border-top: 1px solid #D4D7D9;
+  border-radius: 0px;
+  outline: none;
+  pointer-events: none;
+}
+
+.c14:active,
+.c14:hover {
+  color: #21247F;
+  opacity: 0.88;
+}
+
+.c14:hover {
+  cursor: default;
+}
+
+.c15 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1059,8 +1167,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c14:active,
-.c14:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -1077,7 +1185,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: none;
 }
 
-.c15 {
+.c16 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -1107,28 +1215,28 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c15:hover:not(:disabled) {
+.c16:hover:not(:disabled) {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c15:focus:not(:active) {
+.c16:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c15:disabled {
+.c16:disabled {
   cursor: not-allowed;
   background: #F7F7F7;
   color: #818F9B;
 }
 
-.c15:active:not(:disabled) {
+.c16:active:not(:disabled) {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c18 {
+.c19 {
   display: block;
 }
 
@@ -1151,6 +1259,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .c0 .headroom {
@@ -1179,7 +1288,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c22 {
+.c23 {
   height: 64px;
 }
 
@@ -1214,7 +1323,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   right: 0;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1233,7 +1342,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   background-color: transparent;
 }
 
-.c21 {
+.c22 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -1246,9 +1355,9 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -1258,13 +1367,14 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   transform: translateX(-100%);
   z-index: 2;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c1 {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -1279,9 +1389,11 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 @media (min-width:1280px) {
   .c13 {
-    padding: 12px;
+    padding: 12px 8px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 8px;
-    width: 100%;
   }
 
   .c13:hover {
@@ -1310,19 +1422,19 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c16:hover:not(:disabled) {
+  .c17:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c16 {
+  .c17 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c17 {
+  .c18 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -1333,7 +1445,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c18 {
+  .c19 {
     display: none;
   }
 }
@@ -1346,7 +1458,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c12:before {
@@ -1397,7 +1509,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c22 {
+  .c23 {
     height: 120px;
   }
 }
@@ -1450,7 +1562,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -1590,6 +1702,18 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -1642,23 +1766,24 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
                 Support
               </a>
               <button
-                class="c15 c16"
+                class="c16 c17"
+                styling="primary"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   Sign in
                 </div>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                   color="#FFFFFF"
                   data-icon="user"
                   data-prefix="fas"
@@ -1679,13 +1804,13 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
           </nav>
         </div>
         <div
-          class="c19"
+          class="c20"
         >
           <nav
             class="c2"
           >
             <span
-              class="c20"
+              class="c21"
               data-testid="hamburger-icon"
             >
               <svg
@@ -1733,16 +1858,17 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c15 c16"
+              class="c16 c17"
+              styling="primary"
             >
               <div
-                class="c17"
+                class="c18"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -1760,7 +1886,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </button>
             <aside
-              class="c21"
+              class="c22"
             >
               <div
                 class="c6"
@@ -1853,6 +1979,18 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -1905,7 +2043,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
@@ -1918,7 +2056,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
     </div>
   </header>
   <div
-    class="c22"
+    class="c23"
   />
 </div>
 `;
@@ -1969,6 +2107,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1990,6 +2129,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2011,6 +2151,43 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+  width: 100%;
+  margin-top: 8px;
+  color: #2C3236;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  border-top: 1px solid #D4D7D9;
+  border-radius: 0px;
+  outline: none;
+  pointer-events: none;
+}
+
+.c14:active,
+.c14:hover {
+  color: #21247F;
+  opacity: 0.88;
+}
+
+.c14:hover {
+  cursor: default;
+}
+
+.c15 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2018,8 +2195,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c14:active,
-.c14:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -2036,7 +2213,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: none;
 }
 
-.c15 {
+.c16 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -2065,28 +2242,28 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   background: transparent;
 }
 
-.c15:hover:not(:disabled) {
+.c16:hover:not(:disabled) {
   background: #EAEBFA;
 }
 
-.c15:focus:not(:active) {
+.c16:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c15:disabled {
+.c16:disabled {
   cursor: not-allowed;
   background: #F7F7F7;
   color: #818F9B;
 }
 
-.c15:active:not(:disabled) {
+.c16:active:not(:disabled) {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c18 {
+.c19 {
   display: block;
 }
 
@@ -2109,6 +2286,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .c0 .headroom {
@@ -2137,7 +2315,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c22 {
+.c23 {
   height: 64px;
 }
 
@@ -2172,7 +2350,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   right: 0;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2191,7 +2369,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   background-color: transparent;
 }
 
-.c21 {
+.c22 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -2204,9 +2382,9 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -2216,13 +2394,14 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   transform: translateX(-100%);
   z-index: 2;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c1 {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -2237,9 +2416,11 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 @media (min-width:1280px) {
   .c13 {
-    padding: 12px;
+    padding: 12px 8px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 8px;
-    width: 100%;
   }
 
   .c13:hover {
@@ -2268,19 +2449,19 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c16:hover:not(:disabled) {
+  .c17:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c16 {
+  .c17 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c17 {
+  .c18 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -2291,7 +2472,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c18 {
+  .c19 {
     display: none;
   }
 }
@@ -2304,7 +2485,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c12:before {
@@ -2355,7 +2536,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c22 {
+  .c23 {
     height: 120px;
   }
 }
@@ -2408,7 +2589,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -2548,6 +2729,18 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -2600,23 +2793,24 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
                 Support
               </a>
               <button
-                class="c15 c16"
+                class="c16 c17"
+                styling="link"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   Sign in
                 </div>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                   color="#FFFFFF"
                   data-icon="user"
                   data-prefix="fas"
@@ -2637,13 +2831,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
           </nav>
         </div>
         <div
-          class="c19"
+          class="c20"
         >
           <nav
             class="c2"
           >
             <span
-              class="c20"
+              class="c21"
               data-testid="hamburger-icon"
             >
               <svg
@@ -2691,16 +2885,17 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c15 c16"
+              class="c16 c17"
+              styling="link"
             >
               <div
-                class="c17"
+                class="c18"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -2718,7 +2913,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </button>
             <aside
-              class="c21"
+              class="c22"
             >
               <div
                 class="c6"
@@ -2811,6 +3006,18 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -2863,7 +3070,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
@@ -2876,13 +3083,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     </div>
   </header>
   <div
-    class="c22"
+    class="c23"
   />
 </div>
 `;
 
 exports[`<Navbar /> should render the collapsed styled on large device navigation with default props and collapsed set to true 1`] = `
-.c22 {
+.c23 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   fill: #FFFFFF;
@@ -2933,6 +3140,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2954,6 +3162,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2975,6 +3184,43 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-text-decoration: none;
   text-decoration: none;
   font-weight: 600;
+  color: #3B46C4;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px 16px 16px;
+  width: 100%;
+  margin-top: 8px;
+  color: #2C3236;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  border-top: 1px solid #D4D7D9;
+  border-radius: 0px;
+  outline: none;
+  pointer-events: none;
+}
+
+.c14:active,
+.c14:hover {
+  color: #21247F;
+  opacity: 0.88;
+}
+
+.c14:hover {
+  cursor: default;
+}
+
+.c15 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: #3B46C4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2982,8 +3228,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   padding: 12px 16px 16px;
 }
 
-.c14:active,
-.c14:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -3000,7 +3246,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: none;
 }
 
-.c15 {
+.c16 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -3030,28 +3276,28 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c15:hover:not(:disabled) {
+.c16:hover:not(:disabled) {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c15:focus:not(:active) {
+.c16:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c15:disabled {
+.c16:disabled {
   cursor: not-allowed;
   background: #F7F7F7;
   color: #818F9B;
 }
 
-.c15:active:not(:disabled) {
+.c16:active:not(:disabled) {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c18 {
+.c19 {
   display: block;
 }
 
@@ -3074,6 +3320,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .c0 .headroom {
@@ -3102,7 +3349,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateY(0%);
 }
 
-.c24 {
+.c25 {
   height: 64px;
 }
 
@@ -3123,13 +3370,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   width: 100%;
 }
 
-.c21 {
+.c22 {
   position: relative;
 }
 
-.c21 > a,
-.c21 > button,
-.c21 > div {
+.c22 > a,
+.c22 > button,
+.c22 > div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3151,7 +3398,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   right: 0;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3170,7 +3417,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   background-color: transparent;
 }
 
-.c23 {
+.c24 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -3183,9 +3430,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px 0;
+  padding: 40px 16px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -3195,13 +3442,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateX(-100%);
   z-index: 2;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c1 {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -3216,9 +3464,11 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 @media (min-width:1280px) {
   .c13 {
-    padding: 12px;
+    padding: 12px 8px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
     border-radius: 8px;
-    width: 100%;
   }
 
   .c13:hover {
@@ -3247,19 +3497,19 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (max-width:1279px) {
-  .c16:hover:not(:disabled) {
+  .c17:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c16 {
+  .c17 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c17 {
+  .c18 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -3270,7 +3520,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c18 {
+  .c19 {
     display: none;
   }
 }
@@ -3283,7 +3533,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     border-radius: 12px;
     min-width: 240px;
     margin: 0;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .c12:before {
@@ -3335,13 +3585,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c24 {
+  .c25 {
     height: 76px;
   }
 }
 
 @media (min-width:1280px) {
-  .c21 {
+  .c22 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3359,7 +3609,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c21:before {
+  .c22:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -3423,7 +3673,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -3563,6 +3813,18 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -3615,23 +3877,24 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
                 Support
               </a>
               <button
-                class="c15 c16"
+                class="c16 c17"
+                styling="primary"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   Sign in
                 </div>
                 <svg
                   aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                   color="#FFFFFF"
                   data-icon="user"
                   data-prefix="fas"
@@ -3652,13 +3915,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
           </nav>
         </div>
         <div
-          class="c19"
+          class="c20"
         >
           <nav
             class="c2"
           >
             <span
-              class="c20"
+              class="c21"
               data-testid="hamburger-icon"
             >
               <svg
@@ -3681,7 +3944,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </span>
             <div
-              class="c21"
+              class="c22"
             >
               <svg
                 aria-label="zopa logo"
@@ -3699,23 +3962,24 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </title>
                 <g>
                   <path
-                    class="c22"
+                    class="c23"
                     d="M36.90752,0 C42.6769778,0 46.8674844,3.93460861 46.8674844,9.36414355 C46.8674844,14.8199217 42.6769778,18.83326 36.90752,18.83326 C31.1380622,18.83326 26.9475556,14.8461649 26.9475556,9.36414355 C26.9475556,3.90836539 31.1380622,0 36.90752,0 Z M36.9851733,13.7701929 C39.0550044,13.7701929 40.7106844,11.9078615 40.7106844,9.38944951 C40.7106844,6.87197483 39.0550044,5.06212985 36.9851733,5.06212985 C34.8894578,5.06212985 33.1043556,6.87197483 33.1043556,9.38944951 C33.1043556,11.9078615 34.9153422,13.7701929 36.9851733,13.7701929 Z M16.4541867,1.04879158 C16.4541867,6.67702519 8.45959111,11.8600613 8.45959111,13.9529582 L16.1435733,13.9529582 L16.1435733,18.5708278 L0,18.5708278 L0,17.7048015 C0,12.0765679 7.99367111,6.89353176 7.99367111,4.8006349 L0.309688889,4.8006349 L0.309688889,0.183702546 L16.4541867,0.183702546 L16.4541867,1.04879158 Z M66.7153067,0.183702546 C71.4244267,0.183702546 74.1404444,2.56996113 74.1404444,6.76700194 C74.1404444,11.2255377 71.4244267,13.7964361 66.7153067,13.7964361 L64.2063644,13.7964361 L64.2063644,18.5708278 L58.5136356,18.5708278 L58.5136356,0.183702546 L66.7153067,0.183702546 Z M66.4046933,9.180441 C67.6989156,9.180441 68.44864,8.36690115 68.44864,6.95070449 C68.44864,5.58699426 67.6989156,4.79969764 66.4046933,4.79969764 L64.2063644,4.79969764 L64.2063644,9.180441 L66.4046933,9.180441 Z M96.6257067,0.612874778 L104,19 L97.6093156,19 L96.70336,16.4028584 L89.8994489,16.4028584 L88.9685333,19 L82.8108089,19 L90.4689067,0.612874778 L96.6257067,0.612874778 Z M91.4515911,11.619186 L95.2288711,11.619186 L93.3661156,6.24213753 L91.4515911,11.619186 Z"
                   />
                 </g>
               </svg>
             </div>
             <button
-              class="c15 c16"
+              class="c16 c17"
+              styling="primary"
             >
               <div
-                class="c17"
+                class="c18"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c18"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -3733,7 +3997,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </button>
             <aside
-              class="c23"
+              class="c24"
             >
               <div
                 class="c6"
@@ -3826,6 +4090,18 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                       role="none"
                     >
                       <a
+                        class="c7 c14"
+                        color="#3B46C4"
+                        role="menuitem"
+                        tabindex="-1"
+                      >
+                        Subheading
+                      </a>
+                    </li>
+                    <li
+                      role="none"
+                    >
+                      <a
                         class="c7 c13"
                         color="#3B46C4"
                         href="/about/leadership"
@@ -3878,7 +4154,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </div>
               </div>
               <a
-                class="c7 c14"
+                class="c7 c15"
                 color="#3B46C4"
                 href="/contact"
               >
@@ -3891,7 +4167,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     </div>
   </header>
   <div
-    class="c24"
+    class="c25"
   />
 </div>
 `;

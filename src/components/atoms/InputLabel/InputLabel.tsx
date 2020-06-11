@@ -20,6 +20,6 @@ const InputLabel = styled.label<InputLabelProps>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistInputLabel: FC<InputLabelProps> = props => <InputLabel {...props} />;
+export const StyleguidistInputLabel: FC<InputLabelProps> = (props) => <InputLabel {...props} />;
 
 export default InputLabel;

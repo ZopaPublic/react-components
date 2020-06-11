@@ -40,3 +40,11 @@ import { Alert } from '@zopauk/react-components';
 
 <Alert severity="success">Congratulations!</Alert>;
 ```
+
+- Inline
+
+```tsx
+import { Alert } from '@zopauk/react-components';
+
+<Alert inline>This is an inline alert</Alert>;
+```

@@ -1,3 +1,93 @@
+### [4.4.5](https://github.com/zopaUK/react-components/compare/v4.4.4...v4.4.5) (2020-06-11)
+
+
+### Bug Fixes
+
+* **expiry modal:** fix spacing between texts ([8f2f6fb](https://github.com/zopaUK/react-components/commit/8f2f6fbbb4a1e3f23b2bbf351896cb2275998afd))
+* **modal:** new modal styles ([c7813bc](https://github.com/zopaUK/react-components/commit/c7813bc86ec10718440f8e7cc787c2b624ebfbf7))
+
+### [4.4.4](https://github.com/zopaUK/react-components/compare/v4.4.3...v4.4.4) (2020-06-10)
+
+
+### Bug Fixes
+
+* **accordionheader:** fix accordion header icon ([cdb7180](https://github.com/zopaUK/react-components/commit/cdb718019ab94b72f6d947ca3854b7461be8729a))
+
+### [4.4.3](https://github.com/zopaUK/react-components/compare/v4.4.2...v4.4.3) (2020-06-10)
+
+
+### Bug Fixes
+
+* **navbar:** remove outline for Headings ([b1dad74](https://github.com/zopaUK/react-components/commit/b1dad74296987cb199d9795cba40ded03a53ac0e))
+
+### [4.4.2](https://github.com/zopaUK/react-components/compare/v4.4.1...v4.4.2) (2020-06-10)
+
+
+### Bug Fixes
+
+* **checkboxfield:** fix checkbox and label alignment ([39adf5f](https://github.com/zopaUK/react-components/commit/39adf5fad9f2ad3413e3ab09a4356812b440ff9d))
+
+### [4.4.1](https://github.com/zopaUK/react-components/compare/v4.4.0...v4.4.1) (2020-06-10)
+
+
+### Bug Fixes
+
+* **button:** filter out loading and fullWidth props ([66520ab](https://github.com/zopaUK/react-components/commit/66520abe3fdc2f50ef8d3bc057b18d0b1ca43692)), closes [#489](https://github.com/zopaUK/react-components/issues/489)
+
+## [4.4.0](https://github.com/zopaUK/react-components/compare/v4.3.1...v4.4.0) (2020-06-09)
+
+
+### Features
+
+* **navbar:** add support for drodown subheading ([8569baa](https://github.com/zopaUK/react-components/commit/8569baa35cceacbb89cf0a89db6beef84a8cc721))
+
+
+### Bug Fixes
+
+* **code style:** fix code with prettier 3.0 ([6b5e380](https://github.com/zopaUK/react-components/commit/6b5e380693b6d4f47801736393ae77eb31f23efa))
+* **navbar:** prevent body from scrolling when hamburger is open ([482d908](https://github.com/zopaUK/react-components/commit/482d9083047e7c76391fed355f7595acf465a7c3))
+
+### [4.3.1](https://github.com/zopaUK/react-components/compare/v4.3.0...v4.3.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **navbarlink:** force color to navbar links ([2ae2c12](https://github.com/zopaUK/react-components/commit/2ae2c12cfcdc56c30c9252af91063294d9ee3498))
+
+## [4.3.0](https://github.com/zopaUK/react-components/compare/v4.2.1...v4.3.0) (2020-06-08)
+
+
+### Features
+
+* **alert:** add inline prop ([bacac05](https://github.com/zopaUK/react-components/commit/bacac054627a4bcd95f88b69037dc79c01ca4dec))
+
+### [4.2.1](https://github.com/zopaUK/react-components/compare/v4.2.0...v4.2.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* **alert:** fix props for Alert component ([2a34daf](https://github.com/zopaUK/react-components/commit/2a34dafa21f5150593528c8f0d2a9611e0e32cfb))
+
+## [4.2.0](https://github.com/zopaUK/react-components/compare/v4.1.9...v4.2.0) (2020-06-08)
+
+
+### Features
+
+* **progress:** update styles and remove style prop ([b98be84](https://github.com/zopaUK/react-components/commit/b98be8493d1924c0a2cc16b7902a5491559408b8))
+
+
+### Bug Fixes
+
+* **progress:** dont use imperative code ([93bc5a1](https://github.com/zopaUK/react-components/commit/93bc5a1c5e3c3d34b3806c6fd61c65079324f2e2))
+* **progress:** prevent breaking changes ([b948978](https://github.com/zopaUK/react-components/commit/b948978e52b91b813844b7f2220cb5ad01612a0f))
+
+### [4.1.9](https://github.com/zopaUK/react-components/compare/v4.1.8...v4.1.9) (2020-06-08)
+
+
+### Bug Fixes
+
+* **navbar:** ensure navbar is displayed above page ([7586a1e](https://github.com/zopaUK/react-components/commit/7586a1e98e67b31f52a0f2d0d51b6072065a49df))
+
 ### [4.1.8](https://github.com/zopaUK/react-components/compare/v4.1.7...v4.1.8) (2020-06-05)
 
 

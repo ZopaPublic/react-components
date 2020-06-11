@@ -83,6 +83,9 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c2:before {
   content: '';
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   background-color: #FFFFFF;
   border-radius: 6px;
   height: 24px;

@@ -1,5 +1,5 @@
 function getGlobalStyleTags() {
-  return Array.from(document.querySelectorAll('style')).map(styleTag =>
+  return Array.from(document.querySelectorAll('style')).map((styleTag) =>
     styleTag.innerHTML.trim().replace(/\s+/gm, ' '),
   );
 }

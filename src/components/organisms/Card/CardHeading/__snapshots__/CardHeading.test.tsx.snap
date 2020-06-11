@@ -5,8 +5,7 @@ exports[`<Card.Heading /> renders the component with no a11y violations 1`] = `
   color: #4A545E;
   font-weight: 700;
   padding: 0;
-  margin: 0;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .c0 {

@@ -7,7 +7,7 @@ interface NavbarStatic {
   Action: typeof NavbarAction;
 }
 
-const NavbarWrapper: NavbarStatic & FC<NavbarProps> = props => <Navbar {...props} />;
+const NavbarWrapper: NavbarStatic & FC<NavbarProps> = (props) => <Navbar {...props} />;
 
 NavbarWrapper.Action = NavbarAction;
 

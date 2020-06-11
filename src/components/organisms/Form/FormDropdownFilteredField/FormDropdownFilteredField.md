@@ -17,7 +17,7 @@ const nationalities = [
   { alpha2: 'AG', value: 'Antiguan/Barbudan' },
 ];
 
-const validate = values => {
+const validate = (values) => {
   let errors = {};
   if (!values.country) {
     errors.country = 'Please pick one';
@@ -29,7 +29,7 @@ const validate = values => {
   validateOnMount
   initialValues={{ country: '' }}
   validate={validate}
-  onSubmit={values => alert(JSON.stringify(values))}
+  onSubmit={(values) => alert(JSON.stringify(values))}
 >
   <Form>
     <div style={{ marginBottom: '16px' }}>

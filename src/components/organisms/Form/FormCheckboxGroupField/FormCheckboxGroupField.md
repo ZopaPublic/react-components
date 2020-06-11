@@ -10,7 +10,7 @@ Thanks to the form data passed down through context, `<FormCheckboxGroupField>` 
 import { Formik, Form } from 'formik';
 import { CheckboxGroupField, FormButton } from '@zopauk/react-components';
 
-<Formik initialValues={{ music: { jazz: false, rock: false } }} onSubmit={values => alert(JSON.stringify(values))}>
+<Formik initialValues={{ music: { jazz: false, rock: false } }} onSubmit={(values) => alert(JSON.stringify(values))}>
   <Form>
     <div style={{ marginBottom: '16px' }}>
       <CheckboxGroupField

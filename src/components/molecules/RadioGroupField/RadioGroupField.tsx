@@ -45,7 +45,7 @@ const RadioGroupField = ({ items, label, onChange, value, disabled }: RadioGroup
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
-      {items.map(item => (
+      {items.map((item) => (
         <RadioWrapper key={item.value}>
           <RadioField
             disabled={disabled}

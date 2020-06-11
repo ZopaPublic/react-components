@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { typography } from '../../constants';
+import { maxEqualToMedia } from '../../helpers/responsiveness';
 import { spacing } from './Spacing';
 
 // Universal box sizing with Inheritance. More info: https://css-tricks.com/box-sizing/#article-header-id-6
@@ -30,11 +31,20 @@ const imagery = css`
   }
 `;
 
+const navMenu = css`
+  body.nav-open {
+    ${maxEqualToMedia.desktop`
+      ${`overflow: hidden;`}
+    `}
+  }
+`;
+
 const GlobalStyles = createGlobalStyle`
   ${normalize}
   ${defaultFont}
   ${boxSizing}
   ${imagery}
+  ${navMenu}
   body {
     ${spacing}
   }

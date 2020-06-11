@@ -9,7 +9,7 @@ interface AccordionStatic {
   Section: typeof AccordionSection;
 }
 
-export const Accordion: AccordionStatic & FC<AccordionProps> = props => <AccordionComponent {...props} />;
+export const Accordion: AccordionStatic & FC<AccordionProps> = (props) => <AccordionComponent {...props} />;
 
 Accordion.Header = AccordionHeader;
 Accordion.Section = AccordionSection;

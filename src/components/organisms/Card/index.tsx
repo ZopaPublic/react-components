@@ -15,7 +15,7 @@ type CardStatic = {
   Text: typeof CardText;
 };
 
-const Card: CardStatic & FC<CardProps> = props => <CardComponent {...props} />;
+const Card: CardStatic & FC<CardProps> = (props) => <CardComponent {...props} />;
 
 Card.Actions = CardActions;
 Card.Content = CardContent;

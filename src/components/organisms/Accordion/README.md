@@ -29,7 +29,7 @@ const AccordionExample = () => {
     },
   ];
 
-  const onClick = isActive => {
+  const onClick = (isActive) => {
     console.log(isActive ? 'Section closing' : 'Section opening');
   };
 
