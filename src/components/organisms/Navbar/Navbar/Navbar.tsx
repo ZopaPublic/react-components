@@ -81,6 +81,12 @@ const PageNavigation = styled.header<PageNavigationProps>`
   right: 0;
   z-index: 1;
 
+  ${({ overlap }) =>
+    overlap &&
+    css`
+      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+    `}
+
   ${minMedia.desktop`
     ${css`
       z-index: 1;
@@ -98,7 +104,6 @@ const PageNavigation = styled.header<PageNavigationProps>`
       ${({ overlap }: PageNavigationProps) =>
         overlap &&
         css`
-          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
           max-height: ${navbarClosedHeight}px;
         `}
     `}
@@ -223,7 +228,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   flex-direction: column;
   min-height: calc(100vh - ${mobileNavbarHeight}px);
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]};
+  padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
   background: ${colors.white};
 

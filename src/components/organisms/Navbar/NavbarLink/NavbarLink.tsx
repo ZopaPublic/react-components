@@ -36,6 +36,11 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   display: inline-flex;
   padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
 
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 0px ${colors.actionPlain};
+  }
+
   &:active,
   &:hover {
     color: ${colors.actionDark};
@@ -44,6 +49,8 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   
 
   ${maxEqualToMedia.desktop`
+    width: 100%;
+
     ${({ withChevron }: StyledNavbarLinkProps) =>
       withChevron &&
       `
@@ -75,7 +82,6 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   ${({ isDropdownHeading }: StyledNavbarLinkProps) =>
     isDropdownHeading &&
     css`
-      width: 100%;
       margin-top: ${spacing[2]};
 
       color: ${colors.greyDarkest};
