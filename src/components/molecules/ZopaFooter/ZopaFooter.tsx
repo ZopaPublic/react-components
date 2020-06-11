@@ -51,8 +51,8 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) 
             <ListLink href={`${baseUrl}/cookie-policy`}>Cookie policy</ListLink>
             <ListLink href={`${baseUrl}/conflicts-policy`}>Conflicts policy</ListLink>
             <ListLink href={`${baseUrl}/modern-slavery`}>Modern slavery</ListLink>
-            <ListLink href={`${baseUrl}/website-terms`}>Website terms</ListLink>
-            <ListLink href={`${baseUrl}/principles`}>P2P Principles</ListLink>
+            <ListLink href={`${baseUrl}/terms-of-use`}>Terms of use</ListLink>
+            <ListLink href={`${baseUrl}/investor-principles`}>Investor principles</ListLink>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
