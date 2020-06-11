@@ -68,6 +68,7 @@ const Label = styled(InputLabel)`
   width: auto;
   display: flex;
   align-items: center;
+  text-align: left;
   font-weight: ${typography.weights.regular};
   font-size: ${typography.sizes.text.body};
   line-height: 1.4;
