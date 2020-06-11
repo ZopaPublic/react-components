@@ -48,10 +48,21 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   padding: 12px 16px 16px;
 }
 
+.c1:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+}
+
 .c1:active,
 .c1:hover {
   color: #21247F;
   opacity: 0.88;
+}
+
+@media (max-width:1279px) {
+  .c1 {
+    width: 100%;
+  }
 }
 
 <a
@@ -108,6 +119,11 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   padding: 12px 16px 16px;
 }
 
+.c1:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+}
+
 .c1:active,
 .c1:hover {
   color: #21247F;
@@ -128,6 +144,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 
 @media (max-width:1279px) {
   .c1 {
+    width: 100%;
     color: #2C3236;
     font-size: 13px;
     font-weight: 700;

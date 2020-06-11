@@ -336,6 +336,10 @@ const NAV_ITEMS = [
         'data-automation': 'loans.Borrow.topBar.Menu',
       },
       {
+        label: 'Car Finance',
+        isDropdownHeading: true,
+      },
+      {
         label: 'Car loans',
         href: '/loans/car-loans',
         'data-automation': 'Car_loan.Borrow.topBar.Menu',
@@ -427,10 +431,11 @@ const CustomLink = styled(SomeLibraryLink)`
   overlayLogoWith={<a href="https://www.zopa.com" />}
   links={NAV_ITEMS}
   renderLink={(item, index, props) => (
-    <CustomLink href={item.href} target="_blank" {...props} className="px-4 py-2">
-      {item.label}
-    </CustomLink>
-  )}
+      <CustomLink {...item} target="_blank" {...props} className="px-4 py-2">
+        {item.label}
+      </CustomLink>
+    );
+  }
 />;
 ```
 
