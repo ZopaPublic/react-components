@@ -39,6 +39,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   &:focus {
     outline: none;
     box-shadow: 0px 0px 4px 0px ${colors.actionPlain};
+    border-radius: 4px;
   }
 
   &:active,
