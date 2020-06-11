@@ -431,11 +431,10 @@ const CustomLink = styled(SomeLibraryLink)`
   overlayLogoWith={<a href="https://www.zopa.com" />}
   links={NAV_ITEMS}
   renderLink={(item, index, props) => (
-      <CustomLink {...item} target="_blank" {...props} className="px-4 py-2">
-        {item.label}
-      </CustomLink>
-    );
-  }
+    <CustomLink {...item} target="_blank" {...props} className="px-4 py-2">
+      {item.label}
+    </CustomLink>
+  )}
 />;
 ```
 
