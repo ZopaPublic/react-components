@@ -276,9 +276,13 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   useEffect(() => {
     if (open) {
+      document.body.style.top = `-${window.scrollY}px`;
       document.body.classList.add('nav-open');
     } else {
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
       document.body.classList.remove('nav-open');
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
 
