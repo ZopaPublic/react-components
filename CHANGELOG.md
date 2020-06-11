@@ -1,3 +1,11 @@
+### [4.4.5](https://github.com/zopaUK/react-components/compare/v4.4.4...v4.4.5) (2020-06-11)
+
+
+### Bug Fixes
+
+* **expiry modal:** fix spacing between texts ([8f2f6fb](https://github.com/zopaUK/react-components/commit/8f2f6fbbb4a1e3f23b2bbf351896cb2275998afd))
+* **modal:** new modal styles ([c7813bc](https://github.com/zopaUK/react-components/commit/c7813bc86ec10718440f8e7cc787c2b624ebfbf7))
+
 ### [4.4.4](https://github.com/zopaUK/react-components/compare/v4.4.3...v4.4.4) (2020-06-10)
 
 
