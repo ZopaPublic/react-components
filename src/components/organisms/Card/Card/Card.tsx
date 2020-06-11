@@ -15,27 +15,27 @@ export interface CardProps {
   layout?: CardLayout;
   /**
    * Determines the styling of the card
-   * @default `vertical`
+   * @default `secondary`
    */
   styling?: CardStyling;
 }
 
-const layoutDirections: { [key in CardLayout]: string } = {
+const layoutDirections: Record<CardLayout, string> = {
   horizontal: 'row',
   vertical: 'column',
 };
 
-const layoutImageStyles: { [key in CardLayout]: string } = {
+const layoutImageStyles: Record<CardLayout, string> = {
   horizontal: '200px',
   vertical: '200px',
 };
 
-const headingSizes: { [key in CardStyling]: string } = {
+const headingSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.heading.h6,
   primary: typography.sizes.heading.h5,
 };
 
-const textSizes: { [key in CardStyling]: string } = {
+const textSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.text.small,
   primary: typography.sizes.text.body,
 };
