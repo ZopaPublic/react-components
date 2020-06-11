@@ -98,8 +98,8 @@ const PageNavigation = styled.header<PageNavigationProps>`
       ${({ overlap }: PageNavigationProps) =>
         overlap &&
         css`
-          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
           max-height: ${navbarClosedHeight}px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
         `}
     `}
   `}
@@ -223,7 +223,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   flex-direction: column;
   min-height: calc(100vh - ${mobileNavbarHeight}px);
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]};
+  padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
   background: ${colors.white};
 
