@@ -57,6 +57,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 .c8:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c8:active,
@@ -84,6 +85,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 .c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c13:active,
@@ -107,6 +109,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: inline-flex;
   padding: 12px 16px 16px;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -120,6 +123,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 .c14:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -151,6 +155,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 .c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -1128,6 +1133,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 .c8:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c8:active,
@@ -1155,6 +1161,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 .c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c13:active,
@@ -1178,6 +1185,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: inline-flex;
   padding: 12px 16px 16px;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -1191,6 +1199,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 .c14:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -1222,6 +1231,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 .c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -2194,6 +2204,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 .c8:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c8:active,
@@ -2221,6 +2232,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 .c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c13:active,
@@ -2244,6 +2256,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: inline-flex;
   padding: 12px 16px 16px;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -2257,6 +2270,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 .c14:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -2288,6 +2302,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 .c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -3265,6 +3280,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c8:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c8:active,
@@ -3292,6 +3308,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c13:active,
@@ -3315,6 +3332,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: inline-flex;
   padding: 12px 16px 16px;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -3328,6 +3346,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c14:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -3359,6 +3378,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,

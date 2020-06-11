@@ -84,6 +84,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
     isDropdownHeading &&
     css`
       margin-top: ${spacing[2]};
+      width: 100%;
 
       color: ${colors.greyDarkest};
       text-transform: uppercase;

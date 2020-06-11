@@ -51,6 +51,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 .c1:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c1:active,
@@ -122,6 +123,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 .c1:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c1:active,
