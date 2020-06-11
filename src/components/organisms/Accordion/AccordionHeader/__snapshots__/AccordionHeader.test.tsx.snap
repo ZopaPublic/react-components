@@ -49,6 +49,9 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
 }
 
 .c4 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
   background: linear-gradient(to bottom,transparent 35%,#818F9B 35%,#818F9B 65%,transparent 65%) ,linear-gradient(to right,transparent 35%,#818F9B 35%,#818F9B 65%,transparent 65%);

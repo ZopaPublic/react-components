@@ -35,6 +35,7 @@ const Title = styled(Text)`
 `;
 
 const Cross = styled.span<{ active: boolean }>`
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
   // This background creates the ➖
