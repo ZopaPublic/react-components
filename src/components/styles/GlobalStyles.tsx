@@ -33,8 +33,10 @@ const imagery = css`
 
 const navMenu = css`
   body.nav-open {
+    position: static;
+
     ${maxEqualToMedia.desktop`
-      ${`overflow: hidden;`}
+      ${`position: fixed; overflow: hidden;`}
     `}
   }
 `;
