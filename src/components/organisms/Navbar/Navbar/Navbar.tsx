@@ -222,6 +222,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - ${mobileNavbarHeight}px);
+  min-height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
@@ -285,6 +286,19 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
+
+  const onResize = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
 
   return (
     <>
