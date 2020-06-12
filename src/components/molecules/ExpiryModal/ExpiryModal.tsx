@@ -3,7 +3,7 @@ import Modal, { ModalProps } from '../Modal/Modal';
 import Button from '../../atoms/Button/Button';
 import Card from '../../organisms/Card';
 
-interface ExpiryModalProps extends ModalProps {
+interface ExpiryModalProps extends Omit<ModalProps, 'children'> {
   /**
    * A callback that fires once the user clicks on 'Log out'
    */
