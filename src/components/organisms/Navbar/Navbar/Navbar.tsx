@@ -254,7 +254,7 @@ const SmallDeviceNavbar = styled.div`
   `}
 `;
 
-export const NavbarLinksListLink = ({ item: { label, onClick, ...rest }, index, props }: NavbarLinksListLinkProps) => (
+export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...props} {...rest}>
     {label}
   </NavbarLink>
