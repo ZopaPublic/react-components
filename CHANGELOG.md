@@ -1,3 +1,10 @@
+### [4.4.9](https://github.com/zopaUK/react-components/compare/v4.4.8...v4.4.9) (2020-06-12)
+
+
+### Bug Fixes
+
+* **expiry modal:** omit children type ([274359c](https://github.com/zopaUK/react-components/commit/274359c53f1fa6186d795daaaea904acef08904a))
+
 ### [4.4.8](https://github.com/zopaUK/react-components/compare/v4.4.7...v4.4.8) (2020-06-11)
 
 
