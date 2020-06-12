@@ -32,12 +32,18 @@ const imagery = css`
 `;
 
 const navMenu = css`
-  body.nav-open {
-    position: static;
-
+  html.nav-open {
     ${maxEqualToMedia.desktop`
-      ${`position: fixed; overflow: hidden;`}
+        ${`overflow: hidden;`}
     `}
+
+    body {
+      position: static;
+
+      ${maxEqualToMedia.desktop`
+        ${`position: fixed; overflow: hidden;`}
+      `}
+    }
   }
 `;
 
