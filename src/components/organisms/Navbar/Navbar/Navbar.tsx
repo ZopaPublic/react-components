@@ -223,7 +223,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   flex-direction: column;
   min-height: calc(100vh - ${mobileNavbarHeight}px);
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
+  padding: ${spacing[8]} ${spacing[4]} ${spacing[11]} ${spacing[4]};
 
   background: ${colors.white};
 
