@@ -1,3 +1,10 @@
+### [4.4.10](https://github.com/zopaUK/react-components/compare/v4.4.9...v4.4.10) (2020-06-12)
+
+
+### Bug Fixes
+
+* **navbar:** add back onClick callback to navbar links ([e1ecce8](https://github.com/zopaUK/react-components/commit/e1ecce8645ac3e6799f662c5946d10f873958f51))
+
 ### [4.4.9](https://github.com/zopaUK/react-components/compare/v4.4.8...v4.4.9) (2020-06-12)
 
 
