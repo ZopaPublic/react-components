@@ -346,7 +346,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: calc(100vh - 64px);
-  min-height: calc(var(--vh,1vh) * 100);
+  min-height: calc((var(--vh,1vh) * 100) - 64px);
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -1424,7 +1424,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: calc(100vh - 64px);
-  min-height: calc(var(--vh,1vh) * 100);
+  min-height: calc((var(--vh,1vh) * 100) - 64px);
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -2495,7 +2495,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: calc(100vh - 64px);
-  min-height: calc(var(--vh,1vh) * 100);
+  min-height: calc((var(--vh,1vh) * 100) - 64px);
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -3587,7 +3587,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: calc(100vh - 64px);
-  min-height: calc(var(--vh,1vh) * 100);
+  min-height: calc((var(--vh,1vh) * 100) - 64px);
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;

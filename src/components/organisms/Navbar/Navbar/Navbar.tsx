@@ -222,7 +222,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - ${mobileNavbarHeight}px);
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: calc((var(--vh, 1vh) * 100) - ${mobileNavbarHeight}px);
   width: 100%;
   padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
