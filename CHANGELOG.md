@@ -1,3 +1,27 @@
+### [4.4.8](https://github.com/zopaUK/react-components/compare/v4.4.7...v4.4.8) (2020-06-11)
+
+
+### Bug Fixes
+
+* **checkboxfield:** force text-alignment ([2c5045a](https://github.com/zopaUK/react-components/commit/2c5045a173bd98a00d9d2a6aec0108286aae00d5))
+
+### [4.4.7](https://github.com/zopaUK/react-components/compare/v4.4.6...v4.4.7) (2020-06-11)
+
+
+### Bug Fixes
+
+* **navbar:** fix scroll issue for IOS ([0f290c7](https://github.com/zopaUK/react-components/commit/0f290c7450891eefdb162b74b0162759a0439849))
+
+### [4.4.6](https://github.com/zopaUK/react-components/compare/v4.4.5...v4.4.6) (2020-06-11)
+
+
+### Bug Fixes
+
+* **navbar:** make links full width, add drop shadow and focus state ([701ddd8](https://github.com/zopaUK/react-components/commit/701ddd8f3e9639b87af847a2d1926cd34d735927))
+* **navbar:** remove dropd shadow on mobile ([2e64e0f](https://github.com/zopaUK/react-components/commit/2e64e0f7bb0f626d113037c164ba75ded568ea24))
+* **navbarlink:** add border radius ([95fa31c](https://github.com/zopaUK/react-components/commit/95fa31c152332d02cacfe451986a72a233498e71))
+* **navbarlink:** make full width ([eca6e96](https://github.com/zopaUK/react-components/commit/eca6e96bff8f9b0f5ae92c3135fca63aab4b53a1))
+
 ### [4.4.5](https://github.com/zopaUK/react-components/compare/v4.4.4...v4.4.5) (2020-06-11)
 
 

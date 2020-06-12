@@ -3,6 +3,10 @@ import { render, screen } from '@testing-library/react';
 import Navbar from '..';
 
 describe('<Navbar />', () => {
+  beforeEach(() => {
+    window.scrollTo = jest.fn();
+  });
+
   const NAV_ITEMS = [
     {
       label: 'About',

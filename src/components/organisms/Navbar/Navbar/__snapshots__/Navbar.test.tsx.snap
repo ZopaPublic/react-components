@@ -54,6 +54,12 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   padding: 12px 16px 16px;
 }
 
+.c8:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c8:active,
 .c8:hover {
   color: #21247F;
@@ -76,6 +82,12 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   padding: 12px 16px 16px;
 }
 
+.c13:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c13:active,
 .c13:hover {
   color: #21247F;
@@ -96,8 +108,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
-  width: 100%;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -106,6 +118,12 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   border-radius: 0px;
   outline: none;
   pointer-events: none;
+}
+
+.c14:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -132,6 +150,12 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
+}
+
+.c15:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -323,7 +347,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   flex-direction: column;
   min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px;
+  padding: 40px 16px 64px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -346,10 +370,17 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
 @media (max-width:1279px) {
   .c8 {
+    width: 100%;
     color: #2C3236;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width:1279px) {
+  .c13 {
+    width: 100%;
   }
 }
 
@@ -364,6 +395,18 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 
   .c13:hover {
     background-color: #E9EAFA;
+  }
+}
+
+@media (max-width:1279px) {
+  .c14 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1279px) {
+  .c15 {
+    width: 100%;
   }
 }
 
@@ -1087,6 +1130,12 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
+.c8:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c8:active,
 .c8:hover {
   color: #21247F;
@@ -1109,6 +1158,12 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
+.c13:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c13:active,
 .c13:hover {
   color: #21247F;
@@ -1129,8 +1184,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
-  width: 100%;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -1139,6 +1194,12 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   border-radius: 0px;
   outline: none;
   pointer-events: none;
+}
+
+.c14:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -1165,6 +1226,12 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
+}
+
+.c15:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -1357,7 +1424,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   flex-direction: column;
   min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px;
+  padding: 40px 16px 64px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -1380,10 +1447,17 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
 @media (max-width:1279px) {
   .c8 {
+    width: 100%;
     color: #2C3236;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width:1279px) {
+  .c13 {
+    width: 100%;
   }
 }
 
@@ -1398,6 +1472,18 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 
   .c13:hover {
     background-color: #E9EAFA;
+  }
+}
+
+@media (max-width:1279px) {
+  .c14 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1279px) {
+  .c15 {
+    width: 100%;
   }
 }
 
@@ -2115,6 +2201,12 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
+.c8:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c8:active,
 .c8:hover {
   color: #21247F;
@@ -2137,6 +2229,12 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
+.c13:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c13:active,
 .c13:hover {
   color: #21247F;
@@ -2157,8 +2255,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
-  width: 100%;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -2167,6 +2265,12 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   border-radius: 0px;
   outline: none;
   pointer-events: none;
+}
+
+.c14:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -2193,6 +2297,12 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
+}
+
+.c15:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -2384,7 +2494,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   flex-direction: column;
   min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px;
+  padding: 40px 16px 64px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -2407,10 +2517,17 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
 @media (max-width:1279px) {
   .c8 {
+    width: 100%;
     color: #2C3236;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width:1279px) {
+  .c13 {
+    width: 100%;
   }
 }
 
@@ -2425,6 +2542,18 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 
   .c13:hover {
     background-color: #E9EAFA;
+  }
+}
+
+@media (max-width:1279px) {
+  .c14 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1279px) {
+  .c15 {
+    width: 100%;
   }
 }
 
@@ -3148,6 +3277,12 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   padding: 12px 16px 16px;
 }
 
+.c8:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c8:active,
 .c8:hover {
   color: #21247F;
@@ -3170,6 +3305,12 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   padding: 12px 16px 16px;
 }
 
+.c13:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
+}
+
 .c13:active,
 .c13:hover {
   color: #21247F;
@@ -3190,8 +3331,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
-  width: 100%;
   margin-top: 8px;
+  width: 100%;
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
@@ -3200,6 +3341,12 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   border-radius: 0px;
   outline: none;
   pointer-events: none;
+}
+
+.c14:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c14:active,
@@ -3226,6 +3373,12 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 12px 16px 16px;
+}
+
+.c15:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #3B46C4;
+  border-radius: 4px;
 }
 
 .c15:active,
@@ -3432,7 +3585,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   flex-direction: column;
   min-height: calc(100vh - 64px);
   width: 100%;
-  padding: 40px 16px;
+  padding: 40px 16px 64px;
   background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   -webkit-transition: transform 0.25s ease-in-out;
@@ -3455,10 +3608,17 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 @media (max-width:1279px) {
   .c8 {
+    width: 100%;
     color: #2C3236;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width:1279px) {
+  .c13 {
+    width: 100%;
   }
 }
 
@@ -3473,6 +3633,18 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
   .c13:hover {
     background-color: #E9EAFA;
+  }
+}
+
+@media (max-width:1279px) {
+  .c14 {
+    width: 100%;
+  }
+}
+
+@media (max-width:1279px) {
+  .c15 {
+    width: 100%;
   }
 }
 
