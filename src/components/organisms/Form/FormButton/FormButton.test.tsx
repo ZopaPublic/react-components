@@ -1,6 +1,6 @@
 import React from 'react';
 import { Formik, Form as FormikForm } from 'formik';
-import { fireEvent, render, act, wait } from '@testing-library/react';
+import { fireEvent, render, act, waitFor } from '@testing-library/react';
 import { FormTextField, FormButton } from '..';
 
 interface Form {
@@ -38,8 +38,7 @@ describe('<FormButton />', () => {
 
   it('renders disabled button', async () => {
     const { getByText } = renderComponent();
-    await wait();
-    expect(getByText(buttonLabel)).toBeDisabled();
+    await waitFor(() => expect(getByText(buttonLabel)).toBeDisabled());
   });
 
   it('renders enabled button', async () => {
