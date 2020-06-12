@@ -212,7 +212,7 @@ const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background-color: ${({ open }) => (open ? colors.white : 'transparent')};
 `;
 
-const HamburgerMenu = styled.aside<HamburgerContainerProps>`
+const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -221,8 +221,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - ${mobileNavbarHeight}px);
-  min-height: calc((var(--vh, 1vh) * 100) - ${mobileNavbarHeight}px);
+  min-height: ${({ height }) => `${height - mobileNavbarHeight}px`};
   width: 100%;
   padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
@@ -274,6 +273,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     if (open) {
@@ -288,11 +288,11 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   }, [open]);
 
   const onResize = () => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    setHeight(window.innerHeight);
   };
 
   useEffect(() => {
+    onResize();
     window.addEventListener('resize', onResize);
 
     return () => {
@@ -337,7 +337,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
               {links && (
-                <HamburgerMenu open={open}>
+                <HamburgerMenu open={open} height={height}>
                   <NavbarLinksList links={links} renderLink={renderLink} />
                 </HamburgerMenu>
               )}
