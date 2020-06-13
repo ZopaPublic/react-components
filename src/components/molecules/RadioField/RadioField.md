@@ -18,7 +18,7 @@
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="option" value="option" name="option" />;
+<RadioField label="Option" value="option" name="option" />;
 ```
 
 - With an error
@@ -26,7 +26,7 @@ import { RadioField } from '@zopauk/react-components';
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField hasError={true} label="option" value="radio2" name="radio2" />;
+<RadioField hasError={true} label="Option" value="radio2" name="radio2" />;
 ```
 
 - Valid state
@@ -34,7 +34,15 @@ import { RadioField } from '@zopauk/react-components';
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField isValid={true} label="option" value="radio3" name="radio3" />;
+<RadioField isValid={true} label="Option" value="radio3" name="radio3" />;
+```
+
+- Valid and pre-selected
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField isValid={true} label="Option" value="radio4" name="radio4" defaultChecked={true} />;
 ```
 
 - Pre-selected
@@ -42,15 +50,15 @@ import { RadioField } from '@zopauk/react-components';
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="I'm checked by default" value="radio4" name="radio4" defaultChecked={true} />;
+<RadioField label="I'm checked by default" value="radio5" name="radio5" defaultChecked={true} />;
 ```
 
-- Disabled and pre-selected
+- Disabled
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="I'm disabled and checked" value="radio5" name="radio5" disabled={true} defaultChecked={true} />;
+<RadioField label="I'm disabled and checked" value="radio6" name="radio6" disabled={true} />;
 ```
 
 - Disabled, valid and pre-selected
@@ -61,8 +69,8 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField
   label="I'm disabled, valid and checked"
   isValid={true}
-  value="radio6"
-  name="radio6"
+  value="radio7"
+  name="radio7"
   disabled={true}
   defaultChecked={true}
 />;

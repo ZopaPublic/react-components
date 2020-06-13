@@ -6,6 +6,16 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps } from '../../types';
 
+const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
+  if (isValid) {
+    return colors.success;
+  }
+  if (disabled) {
+    return colors.grey;
+  }
+  return colors.brand;
+};
+
 const zoomIn = keyframes`
   from {
     transform: scale(1.9);
@@ -31,6 +41,11 @@ const Label = styled(InputLabel)<InputStatus>`
   font-weight: ${typography.weights.regular};
   font-size: ${typography.sizes.text.body};
   color: ${colors.greyDarkest};
+  padding: 14px 16px;
+  border: 1px solid ${getBorderColorByStatus};
+  transition-property: border, box-shadow;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
   font-weight: 400;
   position: relative;
   margin-bottom: 0;
@@ -38,9 +53,8 @@ const Label = styled(InputLabel)<InputStatus>`
     content: '';
     background-color: ${colors.white};
     border-radius: 50%;
-    height: 24px;
-    width: 24px;
-    min-width: 24px;
+    height: 18px;
+    width: 18px;
     display: inline-block;
     margin-right: 8px;
     border: 1px ${getBorderColorByStatus} solid;
@@ -53,8 +67,7 @@ const Label = styled(InputLabel)<InputStatus>`
     position: absolute;
     border-radius: 50%;
     display: inline-block;
-    left: 6px;
-    top: 6px;
+    left: 20px;
   }
   &:hover {
     cursor: pointer;
@@ -71,30 +84,37 @@ const Input = styled.input<InputStatus>`
   z-index: -1;
   position: absolute;
   &:hover + label {
+    border-color: ${colors.brand};
     &:before {
       border-color: ${colors.brand};
     }
   }
   &:focus + label {
+    border-color: ${colors.brand};
+    box-shadow: 0 0 4px 0 ${colors.brand};
     &:before {
       border-color: ${colors.brand};
       box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
   &:checked + label {
+    border-color: ${getCheckedColor};
     &:before {
-      border-color: ${colors.brand};
+      border-color: ${getCheckedColor};
     }
     &:after {
-      background-color: ${({ disabled }) => (disabled ? colors.grey : colors.brand)};
-      height: 12px;
-      width: 12px;
+      background-color: ${getCheckedColor};
+      height: 10px;
+      width: 10px;
       animation: ${zoomIn} 200ms ease-in-out;
     }
   }
   &:disabled + label {
     cursor: not-allowed;
     color: ${colors.grey};
+  }
+  &:disabled:not(:checked) + label {
+    border-color: ${colors.greyLight};
     &:before {
       border-color: ${colors.greyLight};
     }
