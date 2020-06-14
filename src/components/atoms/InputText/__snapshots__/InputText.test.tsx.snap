@@ -11,7 +11,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   font-size: 15px;
   font-weight: 400;
   color: #2C3236;
-  border: 1px solid #818F9B;
+  border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
