@@ -30,10 +30,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   line-height: 1.4;
   font-weight: 400;
   font-size: 15px;
@@ -48,14 +44,18 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   font-weight: 400;
   position: relative;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .c3:before {
   content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   background-color: #FFFFFF;
   border-radius: 50%;
-  height: 18px;
-  width: 18px;
+  height: 20px;
+  width: 20px;
   display: inline-block;
   margin-right: 8px;
   border: 1px #818F9B solid;
@@ -71,7 +71,8 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   position: absolute;
   border-radius: 50%;
   display: inline-block;
-  left: 20px;
+  left: 21px;
+  top: 19px;
 }
 
 .c3:hover {

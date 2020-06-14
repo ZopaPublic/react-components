@@ -36,7 +36,6 @@ const FieldContainer = styled(SizedContainer)`
 
 const Label = styled(InputLabel)<InputStatus>`
   display: flex;
-  align-items: center;
   line-height: 1.4;
   font-weight: ${typography.weights.regular};
   font-size: ${typography.sizes.text.body};
@@ -49,12 +48,14 @@ const Label = styled(InputLabel)<InputStatus>`
   font-weight: 400;
   position: relative;
   margin-bottom: 0;
+  text-align: left;
   &:before {
     content: '';
+    flex-shrink: 0;
     background-color: ${colors.white};
     border-radius: 50%;
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
     margin-right: 8px;
     border: 1px ${getBorderColorByStatus} solid;
@@ -67,7 +68,8 @@ const Label = styled(InputLabel)<InputStatus>`
     position: absolute;
     border-radius: 50%;
     display: inline-block;
-    left: 20px;
+    left: 21px;
+    top: 19px;
   }
   &:hover {
     cursor: pointer;

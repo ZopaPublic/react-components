@@ -21,6 +21,16 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="Option" value="option" name="option" />;
 ```
 
+- Default with multiline label
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<div style={{ maxWidth: '200px' }}>
+  <RadioField label="This is an example of a multiline label" value="option1" name="option1" />
+</div>;
+```
+
 - With an error
 
 ```tsx
