@@ -68,6 +68,8 @@ const Label = styled(InputLabel)<InputStatus>`
     position: absolute;
     border-radius: 50%;
     display: inline-block;
+    transition-property: background-color;
+    transition: 0.2s ease-in-out;
     left: 21px;
     top: 19px;
   }
@@ -91,14 +93,6 @@ const Input = styled.input<InputStatus>`
       border-color: ${colors.brand};
     }
   }
-  &:focus + label {
-    border-color: ${colors.brand};
-    box-shadow: 0 0 4px 0 ${colors.brand};
-    &:before {
-      border-color: ${colors.brand};
-      box-shadow: 0 0 4px 0 ${colors.brand};
-    }
-  }
   &:checked + label {
     border-color: ${getCheckedColor};
     &:before {
@@ -109,6 +103,19 @@ const Input = styled.input<InputStatus>`
       height: 10px;
       width: 10px;
       animation: ${zoomIn} 200ms ease-in-out;
+    }
+  }
+  &:focus + label {
+    border-color: ${colors.brand};
+    box-shadow: 0 0 4px 0 ${colors.brand};
+    &:before {
+      border-color: ${colors.brand};
+      box-shadow: 0 0 4px 0 ${colors.brand};
+    }
+  }
+  &:focus:checked + label {
+    &:after {
+      background-color: ${colors.brand};
     }
   }
   &:disabled + label {
