@@ -152,7 +152,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           {label}
         </Label>
       </SizedContainer>
-      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
+      {errorMessage && <ErrorMessage className="mt-2">{errorMessage}</ErrorMessage>}
     </>
   );
 });
