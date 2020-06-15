@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
-import { colors, typography } from '../../../constants';
+import { colors } from '../../../constants';
 import Text from '../Text/Text';
 
-type Styling = 'confirmed' | 'default' | 'invalid' | 'waiting';
+type Styling = 'confirmed' | 'default' | 'invalid' | 'waiting' | 'brand';
 type ColorMapField = { bg: string; text: string };
 type ColorMap = Record<Styling, ColorMapField>;
 
@@ -15,12 +15,16 @@ interface BadgeProps extends Omit<HTMLAttributes<HTMLSpanElement>, 'color'> {
 }
 
 const colorMap: ColorMap = {
+  brand: {
+    bg: colors.brandLight,
+    text: colors.greyDarkest,
+  },
   confirmed: {
     bg: colors.successLight,
-    text: colors.success,
+    text: colors.successDark,
   },
   default: {
-    bg: colors.greyLight,
+    bg: colors.greyLighter,
     text: colors.greyDarkest,
   },
   invalid: {
@@ -46,7 +50,6 @@ const StyledBadge = styled(Text).attrs({
   padding: 3px 10px;
   white-space: nowrap;
   border-radius: 12px;
-  font-weight: ${typography.weights.semiBold};
 `;
 
 const Badge: React.FC<BadgeProps> = ({ children, styling, ...rest }) => {
