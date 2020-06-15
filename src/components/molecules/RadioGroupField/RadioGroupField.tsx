@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import RadioField from '../RadioField/RadioField';
+import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
 import Text from '../../atoms/Text/Text';
@@ -24,7 +25,12 @@ export interface RadioGroupFieldProps {
   disabled?: boolean;
   value?: string;
   isValid?: boolean;
+  errorMessage?: string;
 }
+
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
 
 const RadioGroupField = ({
   items,
@@ -34,6 +40,7 @@ const RadioGroupField = ({
   value,
   disabled,
   isValid = false,
+  errorMessage,
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -71,6 +78,7 @@ const RadioGroupField = ({
           </RadioWrapper>
         );
       })}
+      {errorMessage && <FieldError>{errorMessage}</FieldError>}
     </Fieldset>
   );
 };
