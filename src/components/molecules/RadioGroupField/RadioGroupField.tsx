@@ -26,11 +26,8 @@ export interface RadioGroupFieldProps {
   value?: string;
   isValid?: boolean;
   errorMessage?: string;
+  className?: string;
 }
-
-const FieldError = styled(ErrorMessage)`
-  margin-top: 5px;
-`;
 
 const RadioGroupField = ({
   items,
@@ -41,6 +38,7 @@ const RadioGroupField = ({
   disabled,
   isValid = false,
   errorMessage,
+  className,
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -58,7 +56,7 @@ const RadioGroupField = ({
   };
 
   return (
-    <Fieldset>
+    <Fieldset className={className}>
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
@@ -78,7 +76,7 @@ const RadioGroupField = ({
           </RadioWrapper>
         );
       })}
-      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );
 };

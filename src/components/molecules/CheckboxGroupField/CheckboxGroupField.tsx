@@ -26,11 +26,8 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   isValid?: boolean;
   value?: Val;
   errorMessage?: string;
+  className?: string;
 }
-
-const FieldError = styled(ErrorMessage)`
-  margin-top: 5px;
-`;
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
   items,
@@ -41,6 +38,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   disabled,
   isValid = false,
   errorMessage,
+  className,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -73,7 +71,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   };
 
   return (
-    <Fieldset>
+    <Fieldset className={className}>
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
@@ -93,7 +91,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
           </CheckboxWrapper>
         );
       })}
-      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );
 };
