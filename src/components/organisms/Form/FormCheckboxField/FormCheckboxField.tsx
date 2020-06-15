@@ -11,6 +11,7 @@ const FormCheckboxField = ({ name, validate, ...rest }: FormCheckboxFieldProps) 
     <CheckboxField
       isValid={touched && !error}
       errorMessage={touched && error ? error : ''}
+      hasError={touched && !!error}
       onChange={onChange}
       onBlur={onBlur}
       value={value.toString()}

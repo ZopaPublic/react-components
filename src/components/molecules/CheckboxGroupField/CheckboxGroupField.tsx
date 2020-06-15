@@ -20,7 +20,9 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   label: string;
   items: CheckboxGroupFieldItem<Val>[];
   onChange?: (value: Val) => void;
+  onBlur?: () => void;
   disabled?: boolean;
+  isValid?: boolean;
   value?: Val;
 }
 
@@ -28,8 +30,10 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   items,
   label,
   onChange,
+  onBlur,
   value,
   disabled,
+  isValid = false,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -66,17 +70,22 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
-      {items.map((item) => (
-        <CheckboxWrapper key={item.name.toString()}>
-          <CheckboxField
-            name={item.name.toString()}
-            disabled={disabled}
-            onChange={handleChange(item.name)}
-            label={item.label}
-            checked={value ? !!value[item.name] : !!innerValue[item.name]}
-          />
-        </CheckboxWrapper>
-      ))}
+      {items.map((item) => {
+        const checked = value ? !!value[item.name] : !!innerValue[item.name];
+        return (
+          <CheckboxWrapper key={item.name.toString()}>
+            <CheckboxField
+              name={item.name.toString()}
+              disabled={disabled}
+              onChange={handleChange(item.name)}
+              onBlur={onBlur}
+              label={item.label}
+              checked={checked}
+              isValid={checked && isValid}
+            />
+          </CheckboxWrapper>
+        );
+      })}
     </Fieldset>
   );
 };
