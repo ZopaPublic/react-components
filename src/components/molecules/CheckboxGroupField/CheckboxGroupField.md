@@ -76,3 +76,19 @@ import { CheckboxGroupField } from '@zopauk/react-components';
   disabled
 />;
 ```
+
+- With error
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  items={[
+    { name: 'nine', label: 'label nine' },
+    { name: 'ten', label: 'label ten' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
+  errorMessage="You have to check at least one"
+/>;
+```

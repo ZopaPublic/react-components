@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import CheckboxField from '../CheckboxField/CheckboxField';
+import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
 import Text from '../../atoms/Text/Text';
@@ -24,7 +25,12 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   disabled?: boolean;
   isValid?: boolean;
   value?: Val;
+  errorMessage?: string;
 }
+
+const FieldError = styled(ErrorMessage)`
+  margin-top: 5px;
+`;
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
   items,
@@ -34,6 +40,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   value,
   disabled,
   isValid = false,
+  errorMessage,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -86,6 +93,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
           </CheckboxWrapper>
         );
       })}
+      {errorMessage && <FieldError>{errorMessage}</FieldError>}
     </Fieldset>
   );
 };
