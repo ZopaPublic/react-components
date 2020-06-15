@@ -1,3 +1,10 @@
+### [4.5.2](https://github.com/zopaUK/react-components/compare/v4.5.1...v4.5.2) (2020-06-15)
+
+
+### Bug Fixes
+
+* **navbar:** show always shadow for mobile devices ([2bd69ec](https://github.com/zopaUK/react-components/commit/2bd69ec432fa964e5490953c098cdb84710ccdfb))
+
 ### [4.5.1](https://github.com/zopaUK/react-components/compare/v4.5.0...v4.5.1) (2020-06-15)
 
 
