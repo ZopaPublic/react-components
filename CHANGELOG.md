@@ -1,3 +1,13 @@
+### [4.4.11](https://github.com/zopaUK/react-components/compare/v4.4.10...v4.4.11) (2020-06-12)
+
+
+### Bug Fixes
+
+* **navbar:** add overflow hidden to html element ([b7947e8](https://github.com/zopaUK/react-components/commit/b7947e8e4cb7a3398defe38d21ad4e51400ad3f3))
+* **navbar:** calculate height onmount ([d32a5a1](https://github.com/zopaUK/react-components/commit/d32a5a184ccacc9e72f0af0aa4769b915baaf85f))
+* **navbar:** fix vh for IOS devices ([be132e3](https://github.com/zopaUK/react-components/commit/be132e3aef86b781fba5266e1d0e2b1b505acc68))
+* **navbar:** remove header spacing from aside calculation ([eada3a1](https://github.com/zopaUK/react-components/commit/eada3a160c9ac8b3189e1ba3847b89686ff72a05))
+
 ### [4.4.10](https://github.com/zopaUK/react-components/compare/v4.4.9...v4.4.10) (2020-06-12)
 
 

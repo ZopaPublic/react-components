@@ -212,7 +212,7 @@ const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background-color: ${({ open }) => (open ? colors.white : 'transparent')};
 `;
 
-const HamburgerMenu = styled.aside<HamburgerContainerProps>`
+const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -221,7 +221,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - ${mobileNavbarHeight}px);
+  min-height: ${({ height }) => `${height - mobileNavbarHeight}px`};
   width: 100%;
   padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
@@ -273,18 +273,32 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     if (open) {
       document.body.style.top = `-${window.scrollY}px`;
-      document.body.classList.add('nav-open');
+      document.documentElement.classList.add('nav-open');
     } else {
       const scrollY = document.body.style.top;
       document.body.style.top = '';
-      document.body.classList.remove('nav-open');
+      document.documentElement.classList.remove('nav-open');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
+
+  const onResize = () => {
+    setHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    onResize();
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
 
   return (
     <>
@@ -323,7 +337,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
               {links && (
-                <HamburgerMenu open={open}>
+                <HamburgerMenu open={open} height={height}>
                   <NavbarLinksList links={links} renderLink={renderLink} />
                 </HamburgerMenu>
               )}

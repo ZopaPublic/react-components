@@ -345,7 +345,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 64px);
+  min-height: 704px;
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -902,6 +902,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             </button>
             <aside
               class="c22"
+              height="768"
             >
               <div
                 class="c6"
@@ -1422,7 +1423,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 64px);
+  min-height: 704px;
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -1973,6 +1974,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
             </button>
             <aside
               class="c22"
+              height="768"
             >
               <div
                 class="c6"
@@ -2492,7 +2494,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 64px);
+  min-height: 704px;
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -3043,6 +3045,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             </button>
             <aside
               class="c22"
+              height="768"
             >
               <div
                 class="c6"
@@ -3583,7 +3586,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 64px);
+  min-height: 704px;
   width: 100%;
   padding: 40px 16px 64px;
   background: #FFFFFF;
@@ -4170,6 +4173,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             </button>
             <aside
               class="c24"
+              height="768"
             >
               <div
                 class="c6"
