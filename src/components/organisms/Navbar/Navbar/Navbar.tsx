@@ -136,18 +136,25 @@ const Spacer = styled.div<PageNavigationProps>`
   `}
 `;
 
-const LayoutInner = styled.nav`
+const LayoutInner = styled.nav<PageNavigationProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
 
-  ${({ overlap }: PageNavigationProps) =>
-    overlap &&
-    css`
-      box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+  ${minMedia.desktop`
+    ${css`
+      box-shadow: none;
+
+      ${({ overlap }: PageNavigationProps) =>
+        overlap &&
+        css`
+          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+        `}
     `}
+  `}
 `;
 
 export const LogoContainer = styled.div<PageNavigationProps>`
