@@ -22,7 +22,7 @@ import { FormCheckboxGroupField, FormButton } from '@zopauk/react-components';
   }}
 >
   <Form>
-    <div style={{ marginBottom: '16px' }}>
+    <div className="mb-4">
       <FormCheckboxGroupField
         label="Pick music you like"
         name="music"

@@ -61,20 +61,19 @@ const nationalities = [
 const FormExample = () => (
   <Formik validateOnMount initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form>
-      <FormTextField label="First name" name="firstName" />
-      <div style={{ height: '16px' }} />
-      <FormTextField label="Last name" name="lastName" />
-      <div style={{ height: '16px' }} />
+      <FormTextField label="First name" name="firstName" className="mb-4" />
+      <FormTextField label="Last name" name="lastName" className="mb-4" />
       <FormDropdownFilteredField
         name="nationality"
+        className="mb-4"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
         label="Nationality"
       />
-      <div style={{ height: '16px' }} />
       <FormDropdownField
         label="How did you hear about us?"
         name="referral"
+        className="mb-4"
         options={[
           {
             label: 'Select an option',
@@ -90,8 +89,8 @@ const FormExample = () => (
           },
         ]}
       />
-      <div style={{ height: '16px' }} />
       <FormCheckboxGroupField
+        className="mb-4"
         label="Which products are you interested in?"
         name="products"
         items={[
@@ -109,8 +108,8 @@ const FormExample = () => (
           },
         ]}
       />
-      <div style={{ height: '16px' }} />
       <FormRadioGroupField
+        className="mb-6"
         label="Type"
         name="type"
         items={[
@@ -124,9 +123,7 @@ const FormExample = () => (
           },
         ]}
       />
-      <div style={{ height: '24px' }} />
-      <FormCheckboxField label="I accept terms and condtions" name="terms" />
-      <div style={{ height: '16px' }} />
+      <FormCheckboxField label="I accept terms and condtions" name="terms" className="mb-4" />
       <FormButton>Submit</FormButton>
     </Form>
   </Formik>

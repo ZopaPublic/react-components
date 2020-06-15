@@ -22,7 +22,7 @@ import { FormRadioGroupField, FormButton } from '@zopauk/react-components';
   }}
 >
   <Form>
-    <div style={{ marginBottom: '16px' }}>
+    <div className="mb-4">
       <FormRadioGroupField
         label="Employment"
         name="employment"

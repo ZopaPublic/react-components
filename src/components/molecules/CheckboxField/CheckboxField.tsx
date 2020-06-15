@@ -134,10 +134,6 @@ const Input = styled.input<InputProps>`
   }
 `;
 
-const FieldError = styled(ErrorMessage)`
-  margin-top: 5px;
-`;
-
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
   const { label, errorMessage, className, inputSize, name, hasError, isValid, ...rest } = props;
   return (
@@ -156,7 +152,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           {label}
         </Label>
       </SizedContainer>
-      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </>
   );
 });

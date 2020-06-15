@@ -22,7 +22,7 @@ import {
 
 <FlexContainer>
   <FlexRow>
-    <FlexCol xs={12} l={4} style={{ marginBottom: '16px' }}>
+    <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
         <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
         <Card.Content>
@@ -36,7 +36,7 @@ import {
         </Card.Content>
       </Card>
     </FlexCol>
-    <FlexCol xs={12} l={4} style={{ marginBottom: '16px' }}>
+    <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
         <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
         <Card.Content>
@@ -50,7 +50,7 @@ import {
         </Card.Content>
       </Card>
     </FlexCol>
-    <FlexCol xs={12} l={4} style={{ marginBottom: '16px' }}>
+    <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
         <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
         <Card.Content>
