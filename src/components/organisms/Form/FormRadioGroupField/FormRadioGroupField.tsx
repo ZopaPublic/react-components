@@ -13,6 +13,7 @@ const FormRadioGroupField = ({ name, validate, ...rest }: FormRadioGroupFieldPro
       onBlur={() => setTouched(true)}
       isValid={!error && touched}
       value={value}
+      errorMessage={error}
       {...rest}
     />
   );
