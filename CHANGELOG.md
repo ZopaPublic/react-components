@@ -1,3 +1,10 @@
+### [4.4.12](https://github.com/zopaUK/react-components/compare/v4.4.11...v4.4.12) (2020-06-15)
+
+
+### Bug Fixes
+
+* **footer:** update footer links ([73f483d](https://github.com/zopaUK/react-components/commit/73f483df81a6c0227ddc0488eb596f71cece3026))
+
 ### [4.4.11](https://github.com/zopaUK/react-components/compare/v4.4.10...v4.4.11) (2020-06-12)
 
 
