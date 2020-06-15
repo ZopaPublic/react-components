@@ -20,6 +20,7 @@ const FormCheckboxGroupField = <Val extends Record<string, boolean>>({
       onBlur={() => setTouched(true)}
       value={value}
       isValid={!error && touched}
+      errorMessage={error}
       {...rest}
     />
   );
