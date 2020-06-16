@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import CheckboxField from '../CheckboxField/CheckboxField';
+import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
 import Text from '../../atoms/Text/Text';
@@ -20,16 +21,24 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   label: string;
   items: CheckboxGroupFieldItem<Val>[];
   onChange?: (value: Val) => void;
+  onBlur?: () => void;
   disabled?: boolean;
+  isValid?: boolean;
   value?: Val;
+  errorMessage?: string;
+  className?: string;
 }
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
   items,
   label,
   onChange,
+  onBlur,
   value,
   disabled,
+  isValid = false,
+  errorMessage,
+  className,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -62,21 +71,27 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   };
 
   return (
-    <Fieldset>
+    <Fieldset className={className}>
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
-      {items.map((item) => (
-        <CheckboxWrapper key={item.name.toString()}>
-          <CheckboxField
-            name={item.name.toString()}
-            disabled={disabled}
-            onChange={handleChange(item.name)}
-            label={item.label}
-            checked={value ? !!value[item.name] : !!innerValue[item.name]}
-          />
-        </CheckboxWrapper>
-      ))}
+      {items.map((item) => {
+        const checked = value ? !!value[item.name] : !!innerValue[item.name];
+        return (
+          <CheckboxWrapper key={item.name.toString()}>
+            <CheckboxField
+              name={item.name.toString()}
+              disabled={disabled}
+              onChange={handleChange(item.name)}
+              onBlur={onBlur}
+              label={item.label}
+              checked={checked}
+              isValid={checked && isValid}
+            />
+          </CheckboxWrapper>
+        );
+      })}
+      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );
 };
