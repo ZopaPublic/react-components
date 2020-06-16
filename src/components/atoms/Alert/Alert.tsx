@@ -1,14 +1,24 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { faCheckCircle, faExclamationCircle, faInfoCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheckCircle,
+  faExclamationCircle,
+  faInfoCircle,
+  faMinusCircle,
+  faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 import Icon from '../Icon/Icon';
 import { colors, typography } from '../../../constants';
 
-type Severity = 'info' | 'alert' | 'warning' | 'success';
+type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
 interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
   inline?: boolean;
+  /**
+   * if present it shows the "x" icon
+   */
+  onRequestClose?(event: React.MouseEvent | React.KeyboardEvent): void;
 }
 
 type AlertElementsBySeverity = Record<
@@ -22,6 +32,12 @@ type AlertElementsBySeverity = Record<
 >;
 
 const MAP_BY_SEVERITY: AlertElementsBySeverity = {
+  brand: {
+    icon: colors.brand,
+    background: colors.brandLight,
+    text: colors.greyDarkest,
+    component: () => <Icon variant={faInfoCircle} />,
+  },
   info: {
     icon: colors.grey,
     background: colors.greyLighter,
@@ -60,7 +76,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean }>`
   font-weight: 400;
 
   a {
-    color: ${(props) => MAP_BY_SEVERITY[props.severity].text} !important;
+    color: ${({ severity }) => MAP_BY_SEVERITY[severity].text} !important;
     font-size: 15px;
     line-height: 20px;
     text-decoration: underline;
@@ -81,13 +97,29 @@ const IconWrapper = styled.div<{ severity: Severity }>`
   }
 `;
 
-const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, children, ...rest }) => {
-  const Icon = MAP_BY_SEVERITY[severity].component;
+const CrossIcon = styled(Icon)`
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+`;
+
+const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, onRequestClose, children, ...rest }) => {
+  const { component: Icon, text } = MAP_BY_SEVERITY[severity];
 
   return (
     <Wrapper severity={severity} inline={inline} {...rest}>
       <IconWrapper severity={severity}>
         <Icon />
+        {onRequestClose && (
+          <CrossIcon
+            onClick={onRequestClose}
+            color={text}
+            variant={faTimes}
+            data-testid="ZA.alert-cross-icon"
+            size="xs"
+          />
+        )}
       </IconWrapper>
       <div>{children}</div>
     </Wrapper>
