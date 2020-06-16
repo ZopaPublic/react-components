@@ -1,3 +1,10 @@
+### [4.5.5](https://github.com/zopaUK/react-components/compare/v4.5.4...v4.5.5) (2020-06-16)
+
+
+### Bug Fixes
+
+* **expiry modal:** do not show the cross button ([a2b6cae](https://github.com/zopaUK/react-components/commit/a2b6cae30a047e243a514dcf407b712d9d459b98))
+
 ### [4.5.4](https://github.com/zopaUK/react-components/compare/v4.5.3...v4.5.4) (2020-06-16)
 
 
