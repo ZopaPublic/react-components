@@ -3,16 +3,15 @@
 exports[`<NavbarLinksList /> should render component with default props 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c6 {
+  "baseElement": .c7 {
   position: relative;
   z-index: 1;
   margin: 12px 0 12px;
   padding: 0;
   list-style-type: none;
-  border-bottom: 1px solid #EFEFEF;
 }
 
-.c1 {
+.c2 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -33,17 +32,17 @@ Object {
   border: none;
 }
 
-.c1:hover,
-.c1:active {
+.c2:hover,
+.c2:active {
   color: #21247F;
 }
 
-.c1:hover svg path,
-.c1:active svg path {
+.c2:hover svg path,
+.c2:active svg path {
   fill: #21247F;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -56,22 +55,22 @@ Object {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 12px 16px 16px;
+  padding: 12px 0;
 }
 
-.c2:focus {
+.c3:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c2:active,
-.c2:hover {
+.c3:active,
+.c3:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -79,30 +78,28 @@ Object {
   margin-right: 8px;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
-.c0 {
+.c1 {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
-.c7 {
+.c0 {
   display: inline-block;
   border-bottom: 1px solid #EFEFEF;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  padding: 12px 16px 12px 16px;
 }
 
-.c7:last-child {
+.c0:last-child {
   border-bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 @media (min-width:1280px) {
-  .c6 {
+  .c7 {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -112,7 +109,7 @@ Object {
     padding: 8px 0;
   }
 
-  .c6:before {
+  .c7:before {
     content: '';
     top: 1px;
     left: 50%;
@@ -128,7 +125,7 @@ Object {
 }
 
 @media (max-width:1279px) {
-  .c2 {
+  .c3 {
     width: 100%;
     color: #2C3236;
     font-size: 13px;
@@ -138,7 +135,7 @@ Object {
 }
 
 @media (min-width:1280px) {
-  .c4 {
+  .c5 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -158,7 +155,7 @@ Object {
 }
 
 @media (min-width:1280px) {
-  .c5 {
+  .c6 {
     position: absolute;
     left: 50%;
     top: 50px;
@@ -174,10 +171,8 @@ Object {
 }
 
 @media (min-width:1280px) {
-  .c7 {
+  .c0 {
     border-bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -186,22 +181,155 @@ Object {
       <div
         class="c0"
       >
+        <div
+          class="c1"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="c2 c3"
+            color="#3B46C4"
+            href="#"
+            role="menuitem"
+            tabindex="0"
+          >
+            <span
+              class="c4"
+            >
+              About
+            </span>
+            <span
+              class="c5"
+            >
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-chevron-down fa-w-14 "
+                color="#818F9B"
+                data-icon="chevron-down"
+                data-prefix="fas"
+                focusable="false"
+                height="12px"
+                role="img"
+                viewBox="0 0 448 512"
+                width="12px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+          <div
+            class="c6"
+          >
+            <ul
+              aria-label="About"
+              class="c7"
+              role="menu"
+            >
+              <li
+                role="none"
+              >
+                <a
+                  href="/about"
+                >
+                  About Zopa
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/our-story"
+                >
+                  Our story
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/board"
+                >
+                  Our board
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/leadership"
+                >
+                  Our leadership team
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/awards"
+                >
+                  Awards
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/careers"
+                >
+                  Careers
+                </a>
+              </li>
+              <li
+                role="none"
+              >
+                <a
+                  href="/about/press"
+                >
+                  Press office
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c0"
+      >
+        <a
+          href="/contact"
+        >
+          Support
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-htoDjs fQFgGL"
+    >
+      <div
+        class="sc-bZQynM iBYnzO"
+      >
         <a
           aria-expanded="false"
           aria-haspopup="true"
-          class="c1 c2"
+          class="sc-bwzfXH haaJDm sc-bxivhb hSrKBt"
           color="#3B46C4"
           href="#"
           role="menuitem"
           tabindex="0"
         >
           <span
-            class="c3"
+            class="sc-ifAKCX fWNHzX"
           >
             About
           </span>
           <span
-            class="c4"
+            class="sc-EHOje epctgu"
           >
             <svg
               aria-hidden="true"
@@ -224,11 +352,11 @@ Object {
           </span>
         </a>
         <div
-          class="c5"
+          class="sc-gzVnrw ftUZXL"
         >
           <ul
             aria-label="About"
-            class="c6"
+            class="sc-bdVaJa XZbsO"
             role="menu"
           >
             <li
@@ -297,134 +425,9 @@ Object {
           </ul>
         </div>
       </div>
-      <div
-        class="c7"
-      >
-        <a
-          href="/contact"
-        >
-          Support
-        </a>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-bZQynM eReRwz"
-    >
-      <a
-        aria-expanded="false"
-        aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-bxivhb kyhvYJ"
-        color="#3B46C4"
-        href="#"
-        role="menuitem"
-        tabindex="0"
-      >
-        <span
-          class="sc-ifAKCX fWNHzX"
-        >
-          About
-        </span>
-        <span
-          class="sc-EHOje epctgu"
-        >
-          <svg
-            aria-hidden="true"
-            class="svg-inline--fa fa-chevron-down fa-w-14 "
-            color="#818F9B"
-            data-icon="chevron-down"
-            data-prefix="fas"
-            focusable="false"
-            height="12px"
-            role="img"
-            viewBox="0 0 448 512"
-            width="12px"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-              fill="currentColor"
-            />
-          </svg>
-        </span>
-      </a>
-      <div
-        class="sc-gzVnrw ftUZXL"
-      >
-        <ul
-          aria-label="About"
-          class="sc-bdVaJa eIDiHs"
-          role="menu"
-        >
-          <li
-            role="none"
-          >
-            <a
-              href="/about"
-            >
-              About Zopa
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/our-story"
-            >
-              Our story
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/board"
-            >
-              Our board
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/leadership"
-            >
-              Our leadership team
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/awards"
-            >
-              Awards
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/careers"
-            >
-              Careers
-            </a>
-          </li>
-          <li
-            role="none"
-          >
-            <a
-              href="/about/press"
-            >
-              Press office
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
     <div
-      class="sc-htoDjs kzVlcq"
+      class="sc-htoDjs fQFgGL"
     >
       <a
         href="/contact"
