@@ -23,6 +23,29 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   position: relative;
 }
 
+.c6 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  right: 1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .c5 {
   width: 100%;
   -webkit-appearance: none;
@@ -30,6 +53,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
+  padding-right: 60px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -72,28 +96,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c4 {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 32px;
   margin-bottom: 0;
 }
 
 .c2 {
   position: relative;
-}
-
-.c6 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 12px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 <div
@@ -127,27 +134,27 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
           name="test"
           value=""
         />
-      </div>
-      <div
-        class="c6"
-      >
-        <svg
-          aria-hidden="true"
-          aria-label="open.menu"
-          class="svg-inline--fa fa-chevron-down fa-w-14 "
-          color="#818F9B"
-          data-icon="chevron-down"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          viewBox="0 0 448 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          class="c6"
         >
-          <path
-            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            aria-hidden="true"
+            aria-label="open.menu"
+            class="svg-inline--fa fa-chevron-down fa-w-14 "
+            color="#818F9B"
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -164,6 +171,29 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   position: relative;
 }
 
+.c5 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  right: 1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .c4 {
   width: 100%;
   -webkit-appearance: none;
@@ -171,6 +201,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
+  padding-right: 60px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -213,28 +244,11 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c3 {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 32px;
   margin-bottom: 0;
 }
 
 .c1 {
   position: relative;
-}
-
-.c5 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 12px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 <div
@@ -261,27 +275,27 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
           name="test"
           value="orange"
         />
-      </div>
-      <div
-        class="c5"
-      >
-        <svg
-          aria-hidden="true"
-          aria-label="open.menu"
-          class="svg-inline--fa fa-chevron-down fa-w-14 "
-          color="#818F9B"
-          data-icon="chevron-down"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          viewBox="0 0 448 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <span
+          class="c5"
         >
-          <path
-            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            aria-hidden="true"
+            aria-label="open.menu"
+            class="svg-inline--fa fa-chevron-down fa-w-14 "
+            color="#818F9B"
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
