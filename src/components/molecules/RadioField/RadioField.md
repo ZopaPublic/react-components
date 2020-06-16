@@ -45,12 +45,27 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="I'm checked by default" value="radio4" name="radio4" defaultChecked={true} />;
 ```
 
+- Two lines label text
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<div style={{ width: '400px' }}>
+  <RadioField
+    label="I am a super boring two lines long label. I am a super boring two lines long label."
+    value="radio5"
+    name="radio5"
+    defaultChecked={true}
+  />
+</div>;
+```
+
 - Disabled and pre-selected
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="I'm disabled and checked" value="radio5" name="radio5" disabled={true} defaultChecked={true} />;
+<RadioField label="I'm disabled and checked" value="radio6" name="radio6" disabled={true} defaultChecked={true} />;
 ```
 
 - Disabled, valid and pre-selected
@@ -61,8 +76,8 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField
   label="I'm disabled, valid and checked"
   isValid={true}
-  value="radio6"
-  name="radio6"
+  value="radio7"
+  name="radio7"
   disabled={true}
   defaultChecked={true}
 />;

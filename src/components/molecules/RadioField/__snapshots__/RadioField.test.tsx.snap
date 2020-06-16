@@ -66,7 +66,9 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   border-radius: 50%;
   display: inline-block;
   left: 6px;
-  top: 6px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .c3:hover {

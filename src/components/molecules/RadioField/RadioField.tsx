@@ -54,7 +54,9 @@ const Label = styled(InputLabel)<InputStatus>`
     border-radius: 50%;
     display: inline-block;
     left: 6px;
-    top: 6px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
   }
   &:hover {
     cursor: pointer;
