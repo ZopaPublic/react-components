@@ -1,3 +1,23 @@
+### [4.5.4](https://github.com/zopaUK/react-components/compare/v4.5.3...v4.5.4) (2020-06-16)
+
+
+### Bug Fixes
+
+* **checkboxfield:** add a bit more spacing above error message ([7a8c101](https://github.com/zopaUK/react-components/commit/7a8c1012e15e0609483933f3197a68ed7ad48293))
+* hide error message in radio and checkbox group if not touched ([71bc520](https://github.com/zopaUK/react-components/commit/71bc52002af65beaad73e74c1a71ceabe5543ebc))
+* pass className to radio checkbox group fields ([4d1727e](https://github.com/zopaUK/react-components/commit/4d1727ea201bb1cdd9ea30a482c5aae893a57110))
+* **checkboxfield:** add border ([3e1d740](https://github.com/zopaUK/react-components/commit/3e1d740712dd758dd98171da7d5fa693eda22e28))
+* **checkboxgroupfield:** add error message ([e337a37](https://github.com/zopaUK/react-components/commit/e337a3724e9950f4533a9980023ab2332a06749c))
+* **checkboxgroupfield:** handle error and valid states properly ([1327a07](https://github.com/zopaUK/react-components/commit/1327a075a42c93f79b78162039db6de57738c328))
+* **formcheckboxgroupfield:** handle error state ([1850c46](https://github.com/zopaUK/react-components/commit/1850c46b68ee3497cb39e6f7ac3a3c64614f8c9b))
+* **formradiogroupfield:** add error message ([9f4813b](https://github.com/zopaUK/react-components/commit/9f4813b26e77d842987866af6d6546af7d8a29ce))
+* **formradiogroupfield:** handle valid state ([528cd39](https://github.com/zopaUK/react-components/commit/528cd39d4db60744fc6836203eb78502017c4c27))
+* **radiofield:** add border with a correct color depending on the state ([e53ab5b](https://github.com/zopaUK/react-components/commit/e53ab5b9e97a4a53ff0a543215d9fd7b9e7ec1e6))
+* **radiofield:** handle multiline label ([8ed7cbd](https://github.com/zopaUK/react-components/commit/8ed7cbdf9c4f09011cb792788865d30025e01ab0))
+* **radiofield:** make focus state take precedence over valid state ([3a9470f](https://github.com/zopaUK/react-components/commit/3a9470f94cc76a8c202e4048b474cf4cabbd63d3))
+* **radiogroupfield:** add error message ([fddfa09](https://github.com/zopaUK/react-components/commit/fddfa0901b098b75ffdbd45a11cb9cc74d4e159f))
+* **utils:** handle disabled input's border color ([b0ac910](https://github.com/zopaUK/react-components/commit/b0ac9109e0e4b1b33c981a5896126c913064c767))
+
 ### [4.5.3](https://github.com/zopaUK/react-components/compare/v4.5.2...v4.5.3) (2020-06-16)
 
 
