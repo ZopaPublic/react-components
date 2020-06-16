@@ -5,7 +5,7 @@ import { getBorderColorByStatus, getInputTextColor } from '../../../helpers/util
 import { InputProps } from '../../types';
 
 type IconWrapperProps = {
-  start?: boolean;
+  startIcon?: boolean;
 };
 
 const InputWrapper = styled.div`
@@ -21,8 +21,8 @@ const IconWrapper = styled.span<IconWrapperProps>`
   justify-content: center;
   width: 48px;
   color: ${colors.grey};
-  ${({ start }) =>
-    start
+  ${({ startIcon }) =>
+    startIcon
       ? css`
           left: 1px;
           border-top-left-radius: 8px;
@@ -74,9 +74,9 @@ const Input = styled.input<InputProps>`
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => (
   <InputWrapper className={className}>
-    {startIcon && <IconWrapper start>{startIcon}</IconWrapper>}
+    {startIcon && <IconWrapper startIcon>{startIcon}</IconWrapper>}
     <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} />
-    {endIcon && <IconWrapper start={false}>{endIcon}</IconWrapper>}
+    {endIcon && <IconWrapper startIcon={false}>{endIcon}</IconWrapper>}
   </InputWrapper>
 ));
 
