@@ -1,3 +1,10 @@
+### [4.5.3](https://github.com/zopaUK/react-components/compare/v4.5.2...v4.5.3) (2020-06-16)
+
+
+### Bug Fixes
+
+* **navbar:** add separator for top single links ([d342023](https://github.com/zopaUK/react-components/commit/d342023a9c2b36e2081a15d44631412d4661e510))
+
 ### [4.5.2](https://github.com/zopaUK/react-components/compare/v4.5.1...v4.5.2) (2020-06-15)
 
 
