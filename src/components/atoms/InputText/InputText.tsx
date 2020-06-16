@@ -33,7 +33,7 @@ const IconWrapper = styled.span<IconWrapperProps>`
           border-top-right-radius: 8px;
           border-bottom-right-radius: 8px;
         `}
-  background-color: ${colors.greyLighter};
+  background-color: ${({ startIcon }) => startIcon && colors.greyLighter};
   border-top-left-radius
 `;
 
