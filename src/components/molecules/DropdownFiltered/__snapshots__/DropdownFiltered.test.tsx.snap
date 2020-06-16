@@ -28,7 +28,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -63,8 +63,8 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c4 {
@@ -161,7 +161,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -196,8 +196,8 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c3 {

@@ -15,7 +15,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
@@ -34,8 +34,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  cursor: not-allowed;
 }
 
 <select
@@ -65,7 +64,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
@@ -84,8 +83,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  cursor: not-allowed;
 }
 
 <select
@@ -121,7 +119,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
@@ -140,8 +138,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  cursor: not-allowed;
 }
 
 <select
@@ -178,7 +175,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
   background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
@@ -197,8 +194,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  cursor: not-allowed;
 }
 
 <select

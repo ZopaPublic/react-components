@@ -10,7 +10,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #818F9B;
   border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -45,8 +45,8 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <input
@@ -66,7 +66,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -101,8 +101,8 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <input
@@ -121,7 +121,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -156,8 +156,8 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <input
@@ -176,7 +176,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #3EBC64;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -211,8 +211,8 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <input
@@ -231,7 +231,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   height: 50px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -266,8 +266,8 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <input
