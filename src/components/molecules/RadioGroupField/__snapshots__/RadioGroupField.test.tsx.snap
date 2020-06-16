@@ -1,19 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroupField /> renders the component with props with no a11y violations 1`] = `
-.c0 {
-  border: 0;
-  padding: 0.01em 0 0 0;
-  margin: 0;
-  min-width: 0;
-}
-
-.c1 {
-  padding: 0;
-  display: table;
-  margin-bottom: 10px;
-}
-
 .c2 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -26,6 +13,19 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   font-weight: 700;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
+}
+
+.c0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.c1 {
+  padding: 0;
+  display: table;
+  margin-bottom: 10px;
 }
 
 <fieldset

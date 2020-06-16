@@ -6,8 +6,17 @@ export type FormRadioGroupFieldProps = Pick<FieldHookConfig<string>, 'validate' 
   Omit<RadioGroupFieldProps, 'onChange' | 'value'>;
 
 const FormRadioGroupField = ({ name, validate, ...rest }: FormRadioGroupFieldProps) => {
-  const [{ value }, , { setValue }] = useField<string>({ name, validate });
-  return <RadioGroupField onChange={setValue} value={value} {...rest} />;
+  const [{ value }, { error, touched }, { setValue, setTouched }] = useField<string>({ name, validate });
+  return (
+    <RadioGroupField
+      onChange={setValue}
+      onBlur={() => setTouched(true)}
+      isValid={!error && touched}
+      value={value}
+      errorMessage={touched && error ? error : ''}
+      {...rest}
+    />
+  );
 };
 
 export default FormRadioGroupField;

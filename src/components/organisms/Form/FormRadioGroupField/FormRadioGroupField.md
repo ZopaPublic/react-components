@@ -10,9 +10,19 @@ Thanks to the form data passed down through context, `<FormRadioGroupField>` alr
 import { Formik, Form } from 'formik';
 import { FormRadioGroupField, FormButton } from '@zopauk/react-components';
 
-<Formik initialValues={{ employment: '' }} onSubmit={(values) => alert(JSON.stringify(values))}>
+<Formik
+  initialValues={{ employment: '' }}
+  onSubmit={(values) => alert(JSON.stringify(values))}
+  validate={(values) => {
+    let errors = {};
+    if (!values.employment) {
+      errors.employment = 'You have to pick one';
+    }
+    return errors;
+  }}
+>
   <Form>
-    <div style={{ marginBottom: '16px' }}>
+    <div className="mb-4">
       <FormRadioGroupField
         label="Employment"
         name="employment"

@@ -6,49 +6,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   width: 100%;
 }
 
-.c1 {
-  left: -100%;
-  opacity: 0;
-  z-index: -1;
-  position: absolute;
-}
-
-.c1 + label:before {
-  border-color: #818F9B;
-}
-
-.c1:checked + label:before {
-  border-color: #00D9C5;
-}
-
-.c1:checked + label:after {
-  background-size: contain;
-  background-image: url(teal-check-mark.svg);
-  -webkit-animation: guYtTV 180ms ease-in-out;
-  animation: guYtTV 180ms ease-in-out;
-}
-
-.c1:focus + label:before {
-  border-color: #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
-}
-
-.c1:disabled + label {
-  cursor: not-allowed;
-  color: #818F9B;
-}
-
-.c1:disabled + label:before {
-  border-color: #D4D7D9;
-}
-
-.c1:disabled:checked + label:after {
-  background-size: contain;
-  background-image: url(grey-check-mark.svg);
-  -webkit-animation: guYtTV 180ms ease-in-out;
-  animation: guYtTV 180ms ease-in-out;
-}
-
 .c2 {
   display: block;
   margin: 0 0 10px;
@@ -65,13 +22,16 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-align: left;
   font-weight: 400;
   font-size: 15px;
+  padding: 14px 16px;
+  border: 1px solid #818F9B;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
   line-height: 1.4;
   color: #2C3236;
   position: relative;
@@ -84,16 +44,13 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c2:before {
   content: '';
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  background-color: #FFFFFF;
-  border-radius: 6px;
-  height: 24px;
-  width: 24px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
   margin-right: 8px;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -111,8 +68,8 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   height: 12px;
   width: 12px;
   position: absolute;
-  left: 6px;
-  top: 6px;
+  left: 20px;
+  top: 18px;
 }
 
 .c2:hover {
@@ -121,6 +78,67 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c2:hover:before {
   border: 1px #00D9C5 solid;
+}
+
+.c1 {
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c1:hover + label {
+  border-color: #00D9C5;
+}
+
+.c1:hover + label:before {
+  border-color: #00D9C5;
+}
+
+.c1:checked + label {
+  border-color: #00D9C5;
+}
+
+.c1:checked + label:before {
+  border-color: #00D9C5;
+}
+
+.c1:checked + label:after {
+  background-size: contain;
+  background-image: url(teal-check-mark.svg);
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
+}
+
+.c1:focus + label {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus:checked + label:after {
+  background-image: url(teal-check-mark.svg);
+}
+
+.c1:disabled + label {
+  cursor: not-allowed;
+  color: #818F9B;
+}
+
+.c1:disabled:checked:after {
+  background-image: url(grey-check-mark.svg);
+}
+
+.c1:disabled:not(:checked) + label {
+  border-color: #D4D7D9;
+}
+
+.c1:disabled:not(:checked) + label:before {
+  border-color: #D4D7D9;
 }
 
 <div

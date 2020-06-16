@@ -21,12 +21,14 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField label="Do you love jazz?" name="check1" />;
 ```
 
-- Checked state
+- Default with multiline label
 
 ```tsx
-import { CheckboxField } from '@zopauk/react-components';
+import { RadioField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you love rap?" name="text2" defaultChecked={true} />;
+<div style={{ maxWidth: '200px' }}>
+  <CheckboxField label="This is an example of a multiline label" name="check2" />
+</div>;
 ```
 
 - With an error
@@ -34,7 +36,23 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you agree?" hasError={true} errorMessage="Oops! You forgot to check this" name="text6" />;
+<CheckboxField label="Do you agree?" hasError={true} errorMessage="Oops! You forgot to check this" name="check3" />;
+```
+
+- Checked state
+
+```tsx
+import { CheckboxField } from '@zopauk/react-components';
+
+<CheckboxField label="Do you love rap?" name="check4" defaultChecked={true} />;
+```
+
+- Checked and valid
+
+```tsx
+import { CheckboxField } from '@zopauk/react-components';
+
+<CheckboxField label="Do you love rap?" name="check5" defaultChecked={true} isValid={true} />;
 ```
 
 - Disabled
@@ -42,5 +60,13 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you love rap?" name="text2" defaultChecked={true} disabled={true} />;
+<CheckboxField label="Do you love rap?" name="check6" disabled={true} />;
+```
+
+- Disabled, valid and checked
+
+```tsx
+import { CheckboxField } from '@zopauk/react-components';
+
+<CheckboxField label="Do you love rap?" name="check7" isValid={true} defaultChecked={true} disabled={true} />;
 ```

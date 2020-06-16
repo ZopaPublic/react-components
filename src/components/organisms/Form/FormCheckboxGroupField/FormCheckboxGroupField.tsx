@@ -13,8 +13,17 @@ const FormCheckboxGroupField = <Val extends Record<string, boolean>>({
   validate,
   ...rest
 }: FormCheckboxGroupFieldProps<Val>) => {
-  const [{ value }, , { setValue }] = useField<Val>({ name, validate });
-  return <CheckboxGroupField<Val> onChange={setValue} value={value} {...rest} />;
+  const [{ value }, { error, touched }, { setValue, setTouched }] = useField<Val>({ name, validate });
+  return (
+    <CheckboxGroupField<Val>
+      onChange={setValue}
+      onBlur={() => setTouched(true)}
+      value={value}
+      isValid={!error && touched}
+      errorMessage={touched && error ? error : ''}
+      {...rest}
+    />
+  );
 };
 
 export default FormCheckboxGroupField;

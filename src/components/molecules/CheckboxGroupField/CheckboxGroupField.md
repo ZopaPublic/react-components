@@ -69,10 +69,43 @@ import { CheckboxGroupField } from '@zopauk/react-components';
 <CheckboxGroupField
   items={[
     { name: 'seven', label: 'label seven' },
-    { name: 'eight', label: 'label eight', defaultChecked: true },
+    { name: 'eight', label: 'label eight' },
   ]}
   onChange={(value) => console.log(value)}
   label="Checkbox group field label"
   disabled
+/>;
+```
+
+- Disabled and valid
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  items={[
+    { name: 'eight', label: 'label eight' },
+    { name: 'nine', label: 'label nine', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
+  isValid={true}
+  disabled
+/>;
+```
+
+- With error
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  items={[
+    { name: 'ten', label: 'label ten' },
+    { name: 'eleven', label: 'label eleven' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
+  errorMessage="You have to check at least one"
 />;
 ```

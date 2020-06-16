@@ -69,10 +69,43 @@ import { RadioGroupField } from '@zopauk/react-components';
 <RadioGroupField
   items={[
     { value: 'seven', label: 'label seven' },
-    { value: 'eight', label: 'label eight', defaultChecked: true },
+    { value: 'eight', label: 'label eight' },
   ]}
   onChange={(value) => console.log(value)}
   label="Radio group field label"
   disabled
+/>;
+```
+
+- Disabled and valid
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  items={[
+    { value: 'eight', label: 'label eight' },
+    { value: 'nine', label: 'label nine', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
+  isValid={true}
+  disabled
+/>;
+```
+
+- With error
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  items={[
+    { value: 'ten', label: 'label ten' },
+    { value: 'eleven', label: 'label eleven' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
+  errorMessage="You have to pick one"
 />;
 ```
