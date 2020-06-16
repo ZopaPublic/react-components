@@ -14,6 +14,14 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="default" defaultValue="example of input" />;
 ```
 
+- With a placeholder
+
+```tsx
+import { InputText } from '@zopauk/react-components';
+
+<InputText name="placeholder" placeholder="With a placeholder" />;
+```
+
 - Valid state
 
 ```tsx
