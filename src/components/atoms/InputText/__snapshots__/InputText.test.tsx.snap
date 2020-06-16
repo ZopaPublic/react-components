@@ -2,12 +2,16 @@
 
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #818F9B;
@@ -19,51 +23,59 @@ exports[`<InputText /> renders the component disabled 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c1:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-<input
+<div
   class="c0"
-  disabled=""
-  name="name"
-/>
+>
+  <input
+    class="c1"
+    disabled=""
+    name="name"
+  />
+</div>
 `;
 
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -75,50 +87,58 @@ exports[`<InputText /> renders the component with error 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c1:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-<input
+<div
   class="c0"
-  name="name"
-/>
+>
+  <input
+    class="c1"
+    name="name"
+  />
+</div>
 `;
 
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -130,50 +150,58 @@ exports[`<InputText /> renders the component with focus 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c1:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-<input
+<div
   class="c0"
-  name="name"
-/>
+>
+  <input
+    class="c1"
+    name="name"
+  />
+</div>
 `;
 
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -185,50 +213,58 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c1:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-<input
+<div
   class="c0"
-  name="name"
-/>
+>
+  <input
+    class="c1"
+    name="name"
+  />
+</div>
 `;
 
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -240,38 +276,42 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c1:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c0::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::-moz-placeholder {
+.c1::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:-ms-input-placeholder {
+.c1:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0::placeholder {
+.c1::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c0:disabled {
+.c1:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-<input
+<div
   class="c0"
-  name="name"
-/>
+>
+  <input
+    class="c1"
+    name="name"
+  />
+</div>
 `;

@@ -20,12 +20,16 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3 {
+  position: relative;
+}
+
+.c5 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -37,32 +41,32 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   transition: 0.2s ease-in-out;
 }
 
-.c3:focus {
+.c5:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c3::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3::placeholder {
+.c5::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3:disabled {
+.c5:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -78,7 +82,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   position: relative;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -111,17 +115,21 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
     <div
       class="c2"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-0-label"
-        autocomplete="off"
-        class="c3 c4"
-        id="text-id-test"
-        name="test"
-        value=""
-      />
       <div
-        class="c5"
+        class="c3 c4"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
+          class="c5"
+          id="text-id-test"
+          name="test"
+          value=""
+        />
+      </div>
+      <div
+        class="c6"
       >
         <svg
           aria-hidden="true"
@@ -153,12 +161,16 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2 {
+  position: relative;
+}
+
+.c4 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
   color: #4A545E;
@@ -170,32 +182,32 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   transition: 0.2s ease-in-out;
 }
 
-.c2:focus {
+.c4:focus {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c2::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2::placeholder {
+.c4::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2:disabled {
+.c4:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -211,7 +223,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   position: relative;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -237,17 +249,21 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
     <div
       class="c1"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-1-label"
-        autocomplete="off"
-        class="c2 c3"
-        id="text-id-test"
-        name="test"
-        value="orange"
-      />
       <div
-        class="c4"
+        class="c2 c3"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-1-label"
+          autocomplete="off"
+          class="c4"
+          id="text-id-test"
+          name="test"
+          value="orange"
+        />
+      </div>
+      <div
+        class="c5"
       >
         <svg
           aria-hidden="true"
