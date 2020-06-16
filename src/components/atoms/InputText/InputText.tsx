@@ -34,7 +34,6 @@ const IconWrapper = styled.span<IconWrapperProps>`
           border-bottom-right-radius: 8px;
         `}
   background-color: ${({ startIcon }) => startIcon && colors.greyLighter};
-  border-top-left-radius
 `;
 
 const Input = styled.input<InputProps>`

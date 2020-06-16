@@ -64,6 +64,195 @@ exports[`<InputText /> renders the component disabled 1`] = `
 </div>
 `;
 
+exports[`<InputText /> renders the component with an icon on the left 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  left: 1px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #EFEFEF;
+}
+
+.c2 {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 16px;
+  padding-left: 60px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4A545E;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2::-moz-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2:-ms-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2::placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c2:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <span
+      data-testid="start-icon"
+    />
+  </span>
+  <input
+    class="c2"
+    name="name"
+  />
+</div>
+`;
+
+exports[`<InputText /> renders the component with an icon on the right 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  right: 1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.c1 {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 16px;
+  padding-right: 60px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4A545E;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c1::-moz-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c1:-ms-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c1::placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+<div
+  class="c0"
+>
+  <input
+    class="c1"
+    name="name"
+  />
+  <span
+    class="c2"
+  >
+    <span
+      data-testid="end-icon"
+    />
+  </span>
+</div>
+`;
+
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
   position: relative;
