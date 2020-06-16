@@ -8,7 +8,8 @@ Thanks to the form data passed down through context, `<FormTextField>` already h
 
 ```tsx
 import { Formik, Form } from 'formik';
-import { FormTextField, FormButton } from '@zopauk/react-components';
+import { FormTextField, FormButton, Icon, colors } from '@zopauk/react-components';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const validate = (values) => {
   let errors = {};
@@ -26,7 +27,7 @@ const validate = (values) => {
 >
   <Form>
     <div className="mb-4">
-      <FormTextField label="First name" name="name" />
+      <FormTextField startIcon={<Icon variant={faCoffee} />} label="First name" name="name" />
     </div>
     <FormButton>Submit</FormButton>
   </Form>
