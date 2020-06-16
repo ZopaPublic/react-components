@@ -56,8 +56,6 @@ export interface OpenerProps {
 
 export type Item = any;
 
-export type GetOpenerProps = () => OpenerProps;
-
 export interface ItemProps {
   ref: React.RefObject<HTMLLIElement>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
