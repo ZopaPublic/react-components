@@ -88,6 +88,19 @@ Object {
   display: inline-block;
 }
 
+.c7 {
+  display: inline-block;
+  border-bottom: 1px solid #EFEFEF;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+}
+
+.c7:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 @media (min-width:1280px) {
   .c6 {
     background-color: #FFFFFF;
@@ -157,6 +170,14 @@ Object {
     -webkit-transform: translate(-50%,-10%);
     -ms-transform: translate(-50%,-10%);
     transform: translate(-50%,-10%);
+  }
+}
+
+@media (min-width:1280px) {
+  .c7 {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -276,11 +297,15 @@ Object {
           </ul>
         </div>
       </div>
-      <a
-        href="/contact"
+      <div
+        class="c7"
       >
-        Support
-      </a>
+        <a
+          href="/contact"
+        >
+          Support
+        </a>
+      </div>
     </div>
   </body>,
   "container": <div>
@@ -398,11 +423,15 @@ Object {
         </ul>
       </div>
     </div>
-    <a
-      href="/contact"
+    <div
+      class="sc-htoDjs kzVlcq"
     >
-      Support
-    </a>
+      <a
+        href="/contact"
+      >
+        Support
+      </a>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
