@@ -51,6 +51,11 @@ const NAV_ITEMS = [
     ],
   },
   {
+    label: 'Save',
+    href: '/savings-accounts',
+    'data-automation': 'Save.topBar.Menu',
+  },
+  {
     label: 'About',
     'data-automation': 'About.topBar.Menu',
     children: [

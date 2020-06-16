@@ -99,7 +99,6 @@ const PageNavigation = styled.header<PageNavigationProps>`
         overlap &&
         css`
           max-height: ${navbarClosedHeight}px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
         `}
     `}
   `}
@@ -137,12 +136,25 @@ const Spacer = styled.div<PageNavigationProps>`
   `}
 `;
 
-const LayoutInner = styled.nav`
+const LayoutInner = styled.nav<PageNavigationProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+
+  ${minMedia.desktop`
+    ${css`
+      box-shadow: none;
+
+      ${({ overlap }: PageNavigationProps) =>
+        overlap &&
+        css`
+          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+        `}
+    `}
+  `}
 `;
 
 export const LogoContainer = styled.div<PageNavigationProps>`
@@ -305,7 +317,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
           <LargeDeviceNavbar>
-            <LayoutInner>
+            <LayoutInner overlap={overThreshold}>
               <LogoContainer overlap={overThreshold || collapsed}>
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
@@ -317,7 +329,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner>
+            <LayoutInner overlap={overThreshold}>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
                   <Icon
