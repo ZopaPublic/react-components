@@ -297,6 +297,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
 .c3 {
@@ -520,6 +521,12 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 @media (min-width:1280px) {
   .c23 {
     height: 120px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    box-shadow: none;
   }
 }
 
@@ -1375,6 +1382,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
 .c3 {
@@ -1598,6 +1606,12 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 @media (min-width:1280px) {
   .c23 {
     height: 120px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    box-shadow: none;
   }
 }
 
@@ -2446,6 +2460,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
 .c3 {
@@ -2669,6 +2684,12 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 @media (min-width:1280px) {
   .c23 {
     height: 120px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    box-shadow: none;
   }
 }
 
@@ -3524,6 +3545,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
 .c22 {
@@ -3762,6 +3784,12 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 @media (min-width:1280px) {
   .c25 {
     height: 76px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    box-shadow: none;
   }
 }
 

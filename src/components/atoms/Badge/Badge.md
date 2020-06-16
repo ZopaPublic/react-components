@@ -8,13 +8,18 @@ There's four variations available and accepts the same sizes as [`<Text />`](#/C
 
 - Variations
 
-```ts
+```tsx
 import { Fragment } from 'react';
 import { Badge } from '@zopauk/react-components';
 
 <Fragment>
   <div>
     <Badge className="mb-6">Default</Badge>
+  </div>
+  <div>
+    <Badge styling="brand" className="mb-6">
+      Brand
+    </Badge>
   </div>
   <div>
     <Badge styling="waiting" className="mb-6">
