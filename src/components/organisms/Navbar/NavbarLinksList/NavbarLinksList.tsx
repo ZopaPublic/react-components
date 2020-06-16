@@ -11,23 +11,18 @@ export interface RenderItemProps {
   getItemProps: () => ItemProps;
 }
 
-const SingleLink = styled.div`
+const NavbarDropdownWrapper = styled.div`
   display: inline-block;
   border-bottom: 1px solid ${colors.greyLighter};
-  margin-bottom: ${spacing[3]};
-  padding-bottom: ${spacing[2]};
-
-  ${minMedia.desktop`
-    border-bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  `}
+  padding: ${spacing[3]} ${spacing[4]} ${spacing[3]} ${spacing[4]};
 
   &:last-child {
     border-bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
+
+  ${minMedia.desktop`
+    border-bottom: 0;
+  `}
 `;
 
 const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink }) => (
@@ -35,21 +30,22 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink }) 
     {links &&
       links.map((item: NavigationItem, index: number) =>
         !!item.children ? (
-          <NavbarDropdown
-            key={`dropdown-${index}`}
-            id={`navbar-dropdown-${index}`}
-            label={item.label}
-            items={item.children!}
-            renderItem={({ item, getItemProps }: RenderItemProps) =>
-              renderLink &&
-              renderLink(item, index, {
-                ...getItemProps(),
-                isDropdownLink: true,
-              })
-            }
-          />
+          <NavbarDropdownWrapper key={`dropdown-${index}`}>
+            <NavbarDropdown
+              id={`navbar-dropdown-${index}`}
+              label={item.label}
+              items={item.children!}
+              renderItem={({ item, getItemProps }: RenderItemProps) =>
+                renderLink &&
+                renderLink(item, index, {
+                  ...getItemProps(),
+                  isDropdownLink: true,
+                })
+              }
+            />
+          </NavbarDropdownWrapper>
         ) : (
-          <SingleLink key={`link-${index}`}>{renderLink && renderLink(item, index)}</SingleLink>
+          <NavbarDropdownWrapper key={`link-${index}`}>{renderLink && renderLink(item, index)}</NavbarDropdownWrapper>
         ),
       )}
   </>

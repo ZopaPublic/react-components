@@ -34,7 +34,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
   color: ${colors.actionPlain};
 
   display: inline-flex;
-  padding: ${spacing[3]} ${spacing[4]} ${spacing[4]};
+  padding: ${spacing[3]} 0;
 
   &:focus {
     outline: none;
@@ -84,10 +84,12 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
     isDropdownHeading &&
     css`
       margin-top: ${spacing[2]};
+      padding: ${spacing[5]} 0 ${spacing[3]} 0;
       width: 100%;
 
       color: ${colors.greyDarkest};
       text-transform: uppercase;
+      letter-spacing: 2px;
       font-weight: 400;
       font-size: ${typography.sizes.text.small};
 
@@ -100,6 +102,14 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
         cursor: default;
       }
     `}
+  
+  ${minMedia.desktop`
+    ${({ isDropdownHeading }: StyledNavbarLinkProps) =>
+      isDropdownHeading &&
+      css`
+        padding: ${spacing[5]} ${spacing[4]} ${spacing[3]} ${spacing[4]};
+      `}
+  `}
 `;
 
 const StyledNavbarLink = styled(Link)<StyledNavbarLinkProps>`

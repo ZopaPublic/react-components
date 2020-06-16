@@ -235,7 +235,7 @@ const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
   flex-direction: column;
   min-height: ${({ height }) => `${height - mobileNavbarHeight}px`};
   width: 100%;
-  padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
+  padding: ${spacing[4]} 0 ${spacing[10]} 0;
 
   background: ${colors.white};
 

@@ -10,6 +10,7 @@ import NavbarLink from '../NavbarLink/NavbarLink';
 const NavbarDropdownContainer = styled.div`
   position: relative;
   display: inline-block;
+  width: 100%;
 `;
 
 export type ButtonLinkElement = HTMLButtonElement | HTMLAnchorElement;

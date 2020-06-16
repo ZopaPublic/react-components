@@ -10,7 +10,6 @@ const NavbarDropdownList = styled.ul`
   padding: 0;
 
   list-style-type: none;
-  border-bottom: 1px solid ${colors.greyLighter};
 
   ${minMedia.desktop`
     ${css`
