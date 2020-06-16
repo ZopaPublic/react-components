@@ -1,3 +1,17 @@
+## [4.6.0](https://github.com/zopaUK/react-components/compare/v4.5.5...v4.6.0) (2020-06-16)
+
+
+### Features
+
+* **alert:** add the ability to close the alert ([038240f](https://github.com/zopaUK/react-components/commit/038240f17a288d2c70fe1f9af8474db5d6018c61))
+
+### [4.5.5](https://github.com/zopaUK/react-components/compare/v4.5.4...v4.5.5) (2020-06-16)
+
+
+### Bug Fixes
+
+* **expiry modal:** do not show the cross button ([a2b6cae](https://github.com/zopaUK/react-components/commit/a2b6cae30a047e243a514dcf407b712d9d459b98))
+
 ### [4.5.4](https://github.com/zopaUK/react-components/compare/v4.5.3...v4.5.4) (2020-06-16)
 
 

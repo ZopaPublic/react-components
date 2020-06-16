@@ -4,7 +4,7 @@
 
 ### Example
 
-- Info
+- Default
 
 ```tsx
 import { Alert, Link } from '@zopauk/react-components';
@@ -12,6 +12,14 @@ import { Alert, Link } from '@zopauk/react-components';
 <Alert>
   You can save with us if you have tax residency in the UK only. <Link>Find out more</Link>
 </Alert>;
+```
+
+- Brand
+
+```tsx
+import { Alert, Link } from '@zopauk/react-components';
+
+<Alert severity="brand">Hello there! General Kenobi</Alert>;
 ```
 
 - Alert
@@ -47,4 +55,14 @@ import { Alert } from '@zopauk/react-components';
 import { Alert } from '@zopauk/react-components';
 
 <Alert inline>This is an inline alert</Alert>;
+```
+
+- With a cross icon
+
+```tsx
+import { Alert } from '@zopauk/react-components';
+
+<Alert severity="warning" onRequestClose={() => alert('close!')}>
+  This is an inline alert
+</Alert>;
 ```
