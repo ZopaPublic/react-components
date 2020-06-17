@@ -1,3 +1,10 @@
+### [4.6.1](https://github.com/zopaUK/react-components/compare/v4.6.0...v4.6.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* **progress:** fix empty and full state ([d7c0316](https://github.com/zopaUK/react-components/commit/d7c0316a0fe135431b438e4faf2b7dd86eba206d))
+
 ## [4.6.0](https://github.com/zopaUK/react-components/compare/v4.5.5...v4.6.0) (2020-06-16)
 
 
