@@ -13,6 +13,14 @@ describe('<Progress /> Props', () => {
     const { queryByText } = render(<Progress totalSteps={5} currentStep={2} />);
     expect(queryByText('Step 2 of 5')).toBeFalsy();
   });
+  it('renders empty progress bar', () => {
+    const { container } = render(<Progress totalSteps={5} currentStep={0} />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+  it('renders full progress bar', () => {
+    const { container } = render(<Progress totalSteps={5} currentStep={5} />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
 
 describe('<Progress /> Accessibility', () => {
