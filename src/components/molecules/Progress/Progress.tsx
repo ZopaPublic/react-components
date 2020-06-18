@@ -69,7 +69,16 @@ const ProgressPoint = styled.span<ProgressPointProps>`
   transform: translate(-50%, -50%);
 `;
 
-const getStepPosition = (steps: number, stepIndex: number) => (100 / (steps - 1)) * stepIndex;
+const getStepPosition = (steps: number, stepIndex: number) => {
+  const position = (100 / (steps - 1)) * stepIndex;
+  if (position < 0) {
+    return 0;
+  }
+  if (position > 100) {
+    return 100;
+  }
+  return position;
+};
 
 const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }) => {
   const renderPoints = () => {

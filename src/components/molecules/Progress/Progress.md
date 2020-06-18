@@ -4,12 +4,28 @@
 
 ### Examples
 
-With default props:
+Empty:
+
+```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
+import { colors, Progress } from '@zopauk/react-components';
+
+<Progress totalSteps={4} currentStep={0} />;
+```
+
+In progress:
 
 ```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
 import { colors, Progress } from '@zopauk/react-components';
 
 <Progress totalSteps={4} currentStep={2} />;
+```
+
+Full:
+
+```tsx { "props": { "style": { "padding": "20px 10px 30px" } } }
+import { colors, Progress } from '@zopauk/react-components';
+
+<Progress totalSteps={4} currentStep={4} />;
 ```
 
 With step text:
