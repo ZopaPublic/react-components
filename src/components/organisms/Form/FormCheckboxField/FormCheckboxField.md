@@ -25,7 +25,7 @@ const validate = (values) => {
   onSubmit={(values) => alert(JSON.stringify(values))}
 >
   <Form>
-    <div style={{ marginBottom: '16px' }}>
+    <div className="mb-4">
       <FormCheckboxField label="I accept the policy" name="policy" />
     </div>
     <FormButton>Submit</FormButton>

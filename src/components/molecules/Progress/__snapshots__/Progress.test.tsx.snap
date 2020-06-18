@@ -125,3 +125,251 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   </div>
 </div>
 `;
+
+exports[`<Progress /> Props renders empty progress bar 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c6 {
+  width: 0%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c6 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="c1"
+  />
+  <span
+    class="c2"
+  />
+  <span
+    class="c3"
+  />
+  <span
+    class="c4"
+  />
+  <span
+    class="c5"
+  />
+  <div
+    class="c6"
+  />
+</div>
+`;
+
+exports[`<Progress /> Props renders full progress bar 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c6 {
+  width: 100%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c6 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c1 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c5 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div
+  class="c0"
+>
+  <span
+    class="c1"
+  />
+  <span
+    class="c2"
+  />
+  <span
+    class="c3"
+  />
+  <span
+    class="c4"
+  />
+  <span
+    class="c5"
+  />
+  <div
+    class="c6"
+  />
+</div>
+`;

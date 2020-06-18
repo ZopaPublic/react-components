@@ -99,7 +99,6 @@ const PageNavigation = styled.header<PageNavigationProps>`
         overlap &&
         css`
           max-height: ${navbarClosedHeight}px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
         `}
     `}
   `}
@@ -137,12 +136,25 @@ const Spacer = styled.div<PageNavigationProps>`
   `}
 `;
 
-const LayoutInner = styled.nav`
+const LayoutInner = styled.nav<PageNavigationProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+
+  ${minMedia.desktop`
+    ${css`
+      box-shadow: none;
+
+      ${({ overlap }: PageNavigationProps) =>
+        overlap &&
+        css`
+          box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+        `}
+    `}
+  `}
 `;
 
 export const LogoContainer = styled.div<PageNavigationProps>`
@@ -212,7 +224,7 @@ const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background-color: ${({ open }) => (open ? colors.white : 'transparent')};
 `;
 
-const HamburgerMenu = styled.aside<HamburgerContainerProps>`
+const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -221,7 +233,7 @@ const HamburgerMenu = styled.aside<HamburgerContainerProps>`
 
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - ${mobileNavbarHeight}px);
+  min-height: ${({ height }) => `${height - mobileNavbarHeight}px`};
   width: 100%;
   padding: ${spacing[8]} ${spacing[4]} ${spacing[10]};
 
@@ -254,7 +266,7 @@ const SmallDeviceNavbar = styled.div`
   `}
 `;
 
-export const NavbarLinksListLink = ({ item: { label, onClick, ...rest }, index, props }: NavbarLinksListLinkProps) => (
+export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...props} {...rest}>
     {label}
   </NavbarLink>
@@ -273,25 +285,39 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState<boolean>(false);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     if (open) {
       document.body.style.top = `-${window.scrollY}px`;
-      document.body.classList.add('nav-open');
+      document.documentElement.classList.add('nav-open');
     } else {
       const scrollY = document.body.style.top;
       document.body.style.top = '';
-      document.body.classList.remove('nav-open');
+      document.documentElement.classList.remove('nav-open');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }, [open]);
+
+  const onResize = () => {
+    setHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    onResize();
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
 
   return (
     <>
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
           <LargeDeviceNavbar>
-            <LayoutInner>
+            <LayoutInner overlap={overThreshold}>
               <LogoContainer overlap={overThreshold || collapsed}>
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
@@ -303,7 +329,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner>
+            <LayoutInner overlap={overThreshold}>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
                   <Icon
@@ -323,7 +349,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
               {links && (
-                <HamburgerMenu open={open}>
+                <HamburgerMenu open={open} height={height}>
                   <NavbarLinksList links={links} renderLink={renderLink} />
                 </HamburgerMenu>
               )}

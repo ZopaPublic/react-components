@@ -627,9 +627,9 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
-              href="https://www.zopa.com/website-terms"
+              href="https://www.zopa.com/terms-of-use"
             >
-              Website terms
+              Terms of use
             </a>
           </li>
           <li
@@ -638,9 +638,9 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
-              href="https://www.zopa.com/principles"
+              href="https://www.zopa.com/investor-principles"
             >
-              P2P Principles
+              Investor principles
             </a>
           </li>
         </ul>

@@ -18,7 +18,17 @@
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="option" value="option" name="option" />;
+<RadioField label="Option" value="option" name="option" />;
+```
+
+- Default with multiline label
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<div style={{ maxWidth: '200px' }}>
+  <RadioField label="This is an example of a multiline label" value="option1" name="option1" />
+</div>;
 ```
 
 - With an error
@@ -26,18 +36,10 @@ import { RadioField } from '@zopauk/react-components';
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField hasError={true} label="option" value="radio2" name="radio2" />;
+<RadioField hasError={true} label="Option" value="radio2" name="radio2" />;
 ```
 
-- Valid state
-
-```tsx
-import { RadioField } from '@zopauk/react-components';
-
-<RadioField isValid={true} label="option" value="radio3" name="radio3" />;
-```
-
-- Pre-selected
+- Checked
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
@@ -45,15 +47,23 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="I'm checked by default" value="radio4" name="radio4" defaultChecked={true} />;
 ```
 
-- Disabled and pre-selected
+- Valid and checked
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
 
-<RadioField label="I'm disabled and checked" value="radio5" name="radio5" disabled={true} defaultChecked={true} />;
+<RadioField isValid={true} label="Option" value="radio3" name="radio3" defaultChecked={true} />;
 ```
 
-- Disabled, valid and pre-selected
+- Disabled
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField label="I'm disabled and checked" value="radio5" name="radio5" disabled={true} />;
+```
+
+- Disabled, valid and checked
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';

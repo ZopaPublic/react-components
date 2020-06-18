@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greyCheckMark from '../../../content/images/grey-check-mark.svg';
+import greenCheckMark from '../../../content/images/green-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -13,6 +14,16 @@ export interface CheckboxFieldProps extends FieldProps, InputProps {
   name: string;
 }
 
+const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
+  if (isValid) {
+    return colors.success;
+  }
+  if (disabled) {
+    return colors.grey;
+  }
+  return colors.brand;
+};
+
 const zoomOut = keyframes`
   from {
     transform: scale(0.4);
@@ -22,55 +33,17 @@ const zoomOut = keyframes`
   }
 `;
 
-const Input = styled.input<InputProps>`
-  left: -100%;
-  opacity: 0;
-  z-index: -1;
-  position: absolute;
-  & + label {
-    &:before {
-      border-color: ${getBorderColorByStatus};
-    }
-  }
-  &:checked + label {
-    &:before {
-      border-color: ${colors.brand};
-    }
-    &:after {
-      background-size: contain;
-      background-image: ${`url(${tealCheckMark})`};
-      animation: ${zoomOut} 180ms ease-in-out;
-    }
-  }
-  &:focus + label {
-    &:before {
-      border-color: ${colors.brand};
-      box-shadow: 0 0 4px 0 ${colors.brand};
-    }
-  }
-  &:disabled + label {
-    cursor: not-allowed;
-    color: ${colors.grey};
-    &:before {
-      border-color: ${colors.greyLight};
-    }
-  }
-  &:disabled:checked + label {
-    &:after {
-      background-size: contain;
-      background-image: ${`url(${greyCheckMark})`};
-      animation: ${zoomOut} 180ms ease-in-out;
-    }
-  }
-`;
-
 const Label = styled(InputLabel)`
   width: auto;
   display: flex;
-  align-items: center;
   text-align: left;
   font-weight: ${typography.weights.regular};
   font-size: ${typography.sizes.text.body};
+  padding: 14px 16px;
+  border: 1px solid ${getBorderColorByStatus};
+  transition-property: border, box-shadow;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
   line-height: 1.4;
   color: ${colors.greyDarkest};
   position: relative;
@@ -79,17 +52,16 @@ const Label = styled(InputLabel)`
 
   &:before {
     content: '';
-    align-self: flex-start;
-    background-color: ${colors.white};
-    border-radius: 6px;
-    height: 24px;
-    width: 24px;
     flex-shrink: 0;
+    background-color: ${colors.white};
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
     margin-right: 8px;
     transition-property: border, box-shadow;
     transition: 0.2s ease-in-out;
     box-shadow: 0 0 4px 0 transparent;
-    border: 1px ${colors.grey} solid;
+    border: 1px ${getBorderColorByStatus} solid;
     display: block;
   }
   &:after {
@@ -99,8 +71,8 @@ const Label = styled(InputLabel)`
     height: 12px;
     width: 12px;
     position: absolute;
-    left: 6px;
-    top: 6px;
+    left: 20px;
+    top: 18px;
   }
   &:hover {
     cursor: pointer;
@@ -110,20 +82,77 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const FieldError = styled(ErrorMessage)`
-  margin-top: 5px;
+const Input = styled.input<InputProps>`
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  &:hover + label {
+    border-color: ${colors.brand};
+    &:before {
+      border-color: ${colors.brand};
+    }
+  }
+  &:checked + label {
+    border-color: ${getCheckedColor};
+    &:before {
+      border-color: ${getCheckedColor};
+    }
+    &:after {
+      background-size: contain;
+      background-image: url(${({ isValid }) => (isValid ? greenCheckMark : tealCheckMark)});
+      animation: ${zoomOut} 180ms ease-in-out;
+    }
+  }
+  &:focus + label {
+    border-color: ${colors.brand};
+    box-shadow: 0 0 4px 0 ${colors.brand};
+    &:before {
+      border-color: ${colors.brand};
+      box-shadow: 0 0 4px 0 ${colors.brand};
+    }
+  }
+  &:focus:checked + label {
+    &:after {
+      background-image: ${`url(${tealCheckMark})`};
+    }
+  }
+  &:disabled + label {
+    cursor: not-allowed;
+    color: ${colors.grey};
+  }
+  &:disabled:checked {
+    &:after {
+      background-image: ${`url(${greyCheckMark})`};
+    }
+  }
+  &:disabled:not(:checked) + label {
+    border-color: ${colors.greyLight};
+    &:before {
+      border-color: ${colors.greyLight};
+    }
+  }
 `;
 
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
-  const { label, errorMessage, className, inputSize, name, ...rest } = props;
-
+  const { label, errorMessage, className, inputSize, name, hasError, isValid, ...rest } = props;
   return (
     <>
       <SizedContainer size={inputSize} className={className}>
-        <Input ref={ref} id={`checkbox-id-${name}`} type="checkbox" name={name} {...rest} />
-        <Label htmlFor={`checkbox-id-${name}`}>{label}</Label>
+        <Input
+          ref={ref}
+          id={`checkbox-id-${name}`}
+          type="checkbox"
+          hasError={hasError}
+          isValid={isValid}
+          name={name}
+          {...rest}
+        />
+        <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid}>
+          {label}
+        </Label>
       </SizedContainer>
-      {errorMessage && <FieldError>{errorMessage}</FieldError>}
+      {errorMessage && <ErrorMessage className="mt-2">{errorMessage}</ErrorMessage>}
     </>
   );
 });

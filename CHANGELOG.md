@@ -1,3 +1,103 @@
+### [4.6.1](https://github.com/zopaUK/react-components/compare/v4.6.0...v4.6.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* **progress:** fix empty and full state ([d7c0316](https://github.com/zopaUK/react-components/commit/d7c0316a0fe135431b438e4faf2b7dd86eba206d))
+
+## [4.6.0](https://github.com/zopaUK/react-components/compare/v4.5.5...v4.6.0) (2020-06-16)
+
+
+### Features
+
+* **alert:** add the ability to close the alert ([038240f](https://github.com/zopaUK/react-components/commit/038240f17a288d2c70fe1f9af8474db5d6018c61))
+
+### [4.5.5](https://github.com/zopaUK/react-components/compare/v4.5.4...v4.5.5) (2020-06-16)
+
+
+### Bug Fixes
+
+* **expiry modal:** do not show the cross button ([a2b6cae](https://github.com/zopaUK/react-components/commit/a2b6cae30a047e243a514dcf407b712d9d459b98))
+
+### [4.5.4](https://github.com/zopaUK/react-components/compare/v4.5.3...v4.5.4) (2020-06-16)
+
+
+### Bug Fixes
+
+* **checkboxfield:** add a bit more spacing above error message ([7a8c101](https://github.com/zopaUK/react-components/commit/7a8c1012e15e0609483933f3197a68ed7ad48293))
+* hide error message in radio and checkbox group if not touched ([71bc520](https://github.com/zopaUK/react-components/commit/71bc52002af65beaad73e74c1a71ceabe5543ebc))
+* pass className to radio checkbox group fields ([4d1727e](https://github.com/zopaUK/react-components/commit/4d1727ea201bb1cdd9ea30a482c5aae893a57110))
+* **checkboxfield:** add border ([3e1d740](https://github.com/zopaUK/react-components/commit/3e1d740712dd758dd98171da7d5fa693eda22e28))
+* **checkboxgroupfield:** add error message ([e337a37](https://github.com/zopaUK/react-components/commit/e337a3724e9950f4533a9980023ab2332a06749c))
+* **checkboxgroupfield:** handle error and valid states properly ([1327a07](https://github.com/zopaUK/react-components/commit/1327a075a42c93f79b78162039db6de57738c328))
+* **formcheckboxgroupfield:** handle error state ([1850c46](https://github.com/zopaUK/react-components/commit/1850c46b68ee3497cb39e6f7ac3a3c64614f8c9b))
+* **formradiogroupfield:** add error message ([9f4813b](https://github.com/zopaUK/react-components/commit/9f4813b26e77d842987866af6d6546af7d8a29ce))
+* **formradiogroupfield:** handle valid state ([528cd39](https://github.com/zopaUK/react-components/commit/528cd39d4db60744fc6836203eb78502017c4c27))
+* **radiofield:** add border with a correct color depending on the state ([e53ab5b](https://github.com/zopaUK/react-components/commit/e53ab5b9e97a4a53ff0a543215d9fd7b9e7ec1e6))
+* **radiofield:** handle multiline label ([8ed7cbd](https://github.com/zopaUK/react-components/commit/8ed7cbdf9c4f09011cb792788865d30025e01ab0))
+* **radiofield:** make focus state take precedence over valid state ([3a9470f](https://github.com/zopaUK/react-components/commit/3a9470f94cc76a8c202e4048b474cf4cabbd63d3))
+* **radiogroupfield:** add error message ([fddfa09](https://github.com/zopaUK/react-components/commit/fddfa0901b098b75ffdbd45a11cb9cc74d4e159f))
+* **utils:** handle disabled input's border color ([b0ac910](https://github.com/zopaUK/react-components/commit/b0ac9109e0e4b1b33c981a5896126c913064c767))
+
+### [4.5.3](https://github.com/zopaUK/react-components/compare/v4.5.2...v4.5.3) (2020-06-16)
+
+
+### Bug Fixes
+
+* **navbar:** add separator for top single links ([d342023](https://github.com/zopaUK/react-components/commit/d342023a9c2b36e2081a15d44631412d4661e510))
+
+### [4.5.2](https://github.com/zopaUK/react-components/compare/v4.5.1...v4.5.2) (2020-06-15)
+
+
+### Bug Fixes
+
+* **navbar:** show always shadow for mobile devices ([2bd69ec](https://github.com/zopaUK/react-components/commit/2bd69ec432fa964e5490953c098cdb84710ccdfb))
+
+### [4.5.1](https://github.com/zopaUK/react-components/compare/v4.5.0...v4.5.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* **navbar:** add shadow to mobile version (Navbar) ([78513e3](https://github.com/zopaUK/react-components/commit/78513e33b31e062b80d658ab358d6d43e920b410))
+
+## [4.5.0](https://github.com/zopaUK/react-components/compare/v4.4.12...v4.5.0) (2020-06-15)
+
+
+### Features
+
+* **badge:** add brand styling and fix other styles ([23cd52d](https://github.com/zopaUK/react-components/commit/23cd52dc598455a2a3914f8c37a94ad1d68222fd))
+
+### [4.4.12](https://github.com/zopaUK/react-components/compare/v4.4.11...v4.4.12) (2020-06-15)
+
+
+### Bug Fixes
+
+* **footer:** update footer links ([73f483d](https://github.com/zopaUK/react-components/commit/73f483df81a6c0227ddc0488eb596f71cece3026))
+
+### [4.4.11](https://github.com/zopaUK/react-components/compare/v4.4.10...v4.4.11) (2020-06-12)
+
+
+### Bug Fixes
+
+* **navbar:** add overflow hidden to html element ([b7947e8](https://github.com/zopaUK/react-components/commit/b7947e8e4cb7a3398defe38d21ad4e51400ad3f3))
+* **navbar:** calculate height onmount ([d32a5a1](https://github.com/zopaUK/react-components/commit/d32a5a184ccacc9e72f0af0aa4769b915baaf85f))
+* **navbar:** fix vh for IOS devices ([be132e3](https://github.com/zopaUK/react-components/commit/be132e3aef86b781fba5266e1d0e2b1b505acc68))
+* **navbar:** remove header spacing from aside calculation ([eada3a1](https://github.com/zopaUK/react-components/commit/eada3a160c9ac8b3189e1ba3847b89686ff72a05))
+
+### [4.4.10](https://github.com/zopaUK/react-components/compare/v4.4.9...v4.4.10) (2020-06-12)
+
+
+### Bug Fixes
+
+* **navbar:** add back onClick callback to navbar links ([e1ecce8](https://github.com/zopaUK/react-components/commit/e1ecce8645ac3e6799f662c5946d10f873958f51))
+
+### [4.4.9](https://github.com/zopaUK/react-components/compare/v4.4.8...v4.4.9) (2020-06-12)
+
+
+### Bug Fixes
+
+* **expiry modal:** omit children type ([274359c](https://github.com/zopaUK/react-components/commit/274359c53f1fa6186d795daaaea904acef08904a))
+
 ### [4.4.8](https://github.com/zopaUK/react-components/compare/v4.4.7...v4.4.8) (2020-06-11)
 
 
