@@ -150,7 +150,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
 }
 
 <label
-  class="sc-AxhCb c0"
+  class="sc-AxhUy c0"
   for="text-id-test1"
 >
   yes!
@@ -172,7 +172,7 @@ exports[`<TextField /> renders the component with label 1`] = `
 }
 
 <label
-  class="sc-AxhCb c0"
+  class="sc-AxhUy c0"
   for="text-id-test1"
 >
   Username
