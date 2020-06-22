@@ -1,15 +1,8 @@
 ### Summary
 
-Whenever you want to render text on any UI at Zopa, use the `<Text />` component 🙏🏻
+Whenever you want to render text on any UI at Zopa, use the `<Text />` component.
 
-❗❗️ This library assumes **Open Sans** is available for the typography to render correctly.  
-❗❗️ Make sure you make it available in your application HTML skeleton:
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-```
-
-The **mb** property has been deprecated in favour of atomic classes to define spacing you can [read more here](/#spacing)
+Apply margin/padding by [adding spacing](/#/Content?id=spacing).
 
 ### Examples
 
@@ -26,18 +19,6 @@ import { Text } from '@zopauk/react-components';
     the end of a phone. We listen to what you want and change with your needs.
   </Text>
   <Text>Text as `span`</Text>
-</Fragment>;
-```
-
-- With white-space
-
-```tsx
-import { Fragment } from 'react';
-import { Text } from '@zopauk/react-components';
-
-<Fragment>
-  <Text className="mb-6">I have `margin-bottom` below ⤵️</Text>
-  <Text as="p">I'm pushed further down 🙄</Text>
 </Fragment>;
 ```
 
