@@ -19,7 +19,8 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -86,7 +87,8 @@ exports[`<TextField /> renders the component with error 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -144,7 +146,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
   margin-bottom: 0;
 }
@@ -167,7 +169,7 @@ exports[`<TextField /> renders the component with label 1`] = `
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
 }
 
@@ -198,7 +200,8 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -265,7 +268,8 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c2:focus {
+.c2:focus,
+.c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -364,7 +368,8 @@ exports[`<TextField /> renders the component with size 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }

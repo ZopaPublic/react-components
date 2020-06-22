@@ -19,7 +19,8 @@ exports[`<InputText /> renders the component disabled 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -75,7 +76,8 @@ exports[`<InputText /> renders the component with error 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -130,7 +132,8 @@ exports[`<InputText /> renders the component with focus 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -185,7 +188,8 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -240,7 +244,8 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
