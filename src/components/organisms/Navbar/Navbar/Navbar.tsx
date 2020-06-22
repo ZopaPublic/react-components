@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import styled, { css } from 'styled-components';
 import Headroom from 'react-headroom';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -20,7 +20,6 @@ import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
-import { useOpen } from '../OpenProvider';
 
 export interface NavigationItem {
   label: string;
@@ -39,9 +38,10 @@ export interface NavbarLinksListProps {
    * Link component
    */
   renderLink?: (item: NavigationItem, index: number, props?: any) => React.ReactNode;
+  setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export interface NavbarProps extends NavbarLinksListProps {
+export interface NavbarProps extends Omit<NavbarLinksListProps, 'setOpen'> {
   /**
    * allows you to overlay the logo with a button or link
    */
@@ -285,7 +285,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 }) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
-  const { open, setOpen } = useOpen();
+  const [open, setOpen] = useState(false);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -324,7 +324,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
-                <NavbarLinksList links={links} renderLink={renderLink} />
+                <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
                 {withCTA && cta}
               </NavbarLinksListContainer>
             </LayoutInner>
@@ -351,7 +351,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               {withCTA ? cta : <IconContainer />}
               {links && (
                 <HamburgerMenu open={open} height={height}>
-                  <NavbarLinksList links={links} renderLink={renderLink} />
+                  <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
                 </HamburgerMenu>
               )}
             </LayoutInner>
