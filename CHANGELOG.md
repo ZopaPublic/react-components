@@ -1,3 +1,10 @@
+### [4.6.4](https://github.com/zopaUK/react-components/compare/v4.6.3...v4.6.4) (2020-06-22)
+
+
+### Bug Fixes
+
+* **navbar:** close hamburger menu on link click ([5305eef](https://github.com/zopaUK/react-components/commit/5305eefb051f9add9012d710543771e6b91c5a98))
+
 ### [4.6.3](https://github.com/zopaUK/react-components/compare/v4.6.2...v4.6.3) (2020-06-22)
 
 
