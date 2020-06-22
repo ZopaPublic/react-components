@@ -96,8 +96,16 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   cursor: not-allowed;
 }
 
-.c4 {
+.c4 input {
   margin-bottom: 0;
+}
+
+.c4 input + span {
+  cursor: pointer;
+}
+
+.c4 input:disabled + span {
+  cursor: not-allowed;
 }
 
 .c2 {
@@ -245,8 +253,16 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   cursor: not-allowed;
 }
 
-.c3 {
+.c3 input {
   margin-bottom: 0;
+}
+
+.c3 input + span {
+  cursor: pointer;
+}
+
+.c3 input:disabled + span {
+  cursor: not-allowed;
 }
 
 .c1 {
