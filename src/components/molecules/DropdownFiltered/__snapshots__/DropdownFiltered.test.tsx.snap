@@ -37,7 +37,8 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   transition: 0.2s ease-in-out;
 }
 
-.c3:focus {
+.c3:focus,
+.c3:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -126,17 +127,17 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         <svg
           aria-hidden="true"
           aria-label="open.menu"
-          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          class="svg-inline--fa fa-sort fa-w-10 "
           color="#818F9B"
-          data-icon="chevron-down"
+          data-icon="sort"
           data-prefix="fas"
           focusable="false"
           role="img"
-          viewBox="0 0 448 512"
+          viewBox="0 0 320 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
             fill="currentColor"
           />
         </svg>
@@ -170,7 +171,8 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   transition: 0.2s ease-in-out;
 }
 
-.c2:focus {
+.c2:focus,
+.c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
@@ -252,17 +254,17 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         <svg
           aria-hidden="true"
           aria-label="open.menu"
-          class="svg-inline--fa fa-chevron-down fa-w-14 "
+          class="svg-inline--fa fa-sort fa-w-10 "
           color="#818F9B"
-          data-icon="chevron-down"
+          data-icon="sort"
           data-prefix="fas"
           focusable="false"
           role="img"
-          viewBox="0 0 448 512"
+          viewBox="0 0 320 512"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
             fill="currentColor"
           />
         </svg>
