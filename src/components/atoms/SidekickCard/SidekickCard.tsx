@@ -5,6 +5,7 @@ import alert from '../../../content/images/alert-icon.svg';
 import triumph from '../../../content/images/triumph-icon.svg';
 import verified from '../../../content/images/valid-icon.svg';
 import { maxMedia } from '../../../helpers/responsiveness';
+import deprecate from 'util-deprecate';
 
 export type SidekickCardTypes = 'triumph' | 'verified' | 'alert';
 
@@ -41,4 +42,10 @@ const SidekickCard = styled.div<SidekickCardProps>`
 // TODO: Styleguidist to be able to locate styled components. See #147.
 export const StyleguidistSidekickCard: FC<SidekickCardProps> = (props) => <SidekickCard {...props} />;
 
-export default SidekickCard;
+/**
+ * @deprecated *SidekickCard* it's being deprecated and will be removed on the next release. Use the *Alert* component instead.
+ */
+export default deprecate(
+  SidekickCard,
+  "<SidekickCard /> it's being deprecated and will be removed on the next release. Use the <Alert /> component instead.",
+);
