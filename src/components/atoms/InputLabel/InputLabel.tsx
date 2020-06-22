@@ -15,7 +15,7 @@ const InputLabel = styled.label<InputLabelProps>`
   letter-spacing: 0;
   color: ${colors.greyDarkest};
   font-family: ${typography.primary};
-  font-weight: ${typography.weights.bold};
+  font-weight: ${typography.weights.semiBold};
   font-size: ${typography.sizes.text.body};
 `;
 

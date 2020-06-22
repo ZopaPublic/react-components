@@ -10,7 +10,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
 }
 
