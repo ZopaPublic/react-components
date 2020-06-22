@@ -133,7 +133,6 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
       withChevron = false,
       isDropdownLink = false,
       isDropdownHeading = false,
-      onClick,
       ...rest
     },
     ref,
@@ -144,7 +143,6 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
         withChevron={withChevron}
         isDropdownLink={isDropdownLink}
         isDropdownHeading={isDropdownHeading}
-        onClick={onClick}
         ref={ref}
         {...rest}
       >
