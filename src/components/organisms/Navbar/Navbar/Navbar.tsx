@@ -20,6 +20,7 @@ import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
+import { useOpen } from '../OpenProvider';
 
 export interface NavigationItem {
   label: string;
@@ -284,7 +285,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 }) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
-  const [open, setOpen] = useState<boolean>(false);
+  const { open, setOpen } = useOpen();
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
