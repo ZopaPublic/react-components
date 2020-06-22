@@ -1,3 +1,10 @@
+### [4.6.7](https://github.com/zopaUK/react-components/compare/v4.6.6...v4.6.7) (2020-06-22)
+
+
+### Bug Fixes
+
+* **navbar:** fix props for Navbar ([1b753f0](https://github.com/zopaUK/react-components/commit/1b753f054c6ab8443a9cf2484a5080de72b87abb))
+
 ### [4.6.6](https://github.com/zopaUK/react-components/compare/v4.6.5...v4.6.6) (2020-06-22)
 
 
