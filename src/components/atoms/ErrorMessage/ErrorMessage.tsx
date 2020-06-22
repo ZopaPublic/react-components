@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+import { faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import Text from '../Text/Text';
@@ -8,7 +8,6 @@ import Icon from '../Icon/Icon';
 
 const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
-  size: 'small',
 })`
   display: inline-flex;
   align-items: center;
@@ -18,7 +17,8 @@ const StyledErrorMessage = styled(Text).attrs({
   font-size: ${typography.sizes.text.body};
   font-family: ${typography.primary};
   font-weight: ${typography.weights.regular};
-  max-width: 336px;
+  border-radius: 4px;
+  width: 100%;
 
   a {
     font-size: ${typography.sizes.text.body};
@@ -42,7 +42,7 @@ type ErrorMessageProps = {
 const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => (
   <StyledErrorMessage className={className} {...rest}>
     <IconWrapper>
-      <Icon color={colors.alert} className="pr-2" variant={faExclamationCircle} />
+      <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
     </IconWrapper>
     {children}
   </StyledErrorMessage>
