@@ -1,3 +1,10 @@
+### [4.6.3](https://github.com/zopaUK/react-components/compare/v4.6.2...v4.6.3) (2020-06-22)
+
+
+### Bug Fixes
+
+* **label:** fix weight ([77d5265](https://github.com/zopaUK/react-components/commit/77d52655bcdcaa123d5777dcd632add9331359ad))
+
 ### [4.6.2](https://github.com/zopaUK/react-components/compare/v4.6.1...v4.6.2) (2020-06-22)
 
 
