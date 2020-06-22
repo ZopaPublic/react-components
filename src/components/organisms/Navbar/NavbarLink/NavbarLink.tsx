@@ -7,7 +7,6 @@ import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
-import { useOpen } from '../OpenProvider';
 
 export interface NavbarLinkStyleProps {
   active?: boolean;
@@ -139,20 +138,13 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
     },
     ref,
   ) => {
-    const { setOpen } = useOpen();
-
-    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      setOpen(false);
-      onClick && onClick(e);
-    };
-
     return (
       <StyledNavbarLink
         active={active}
         withChevron={withChevron}
         isDropdownLink={isDropdownLink}
         isDropdownHeading={isDropdownHeading}
-        onClick={handleClick}
+        onClick={onClick}
         ref={ref}
         {...rest}
       >

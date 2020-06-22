@@ -30,7 +30,7 @@ const SingleLink = styled.div`
   }
 `;
 
-const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink }) => (
+const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, setOpen }) => (
   <>
     {links &&
       links.map((item: NavigationItem, index: number) =>
@@ -45,6 +45,10 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink }) 
               renderLink(item, index, {
                 ...getItemProps(),
                 isDropdownLink: true,
+                onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                  setOpen(false);
+                  item.onClick && item.onClick(e);
+                },
               })
             }
           />
