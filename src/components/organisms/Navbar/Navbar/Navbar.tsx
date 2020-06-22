@@ -41,7 +41,7 @@ export interface NavbarLinksListProps {
   setOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-export interface NavbarProps extends Exclude<NavbarLinksListProps, 'setOpen'> {
+export interface NavbarProps extends Omit<NavbarLinksListProps, 'setOpen'> {
   /**
    * allows you to overlay the logo with a button or link
    */
