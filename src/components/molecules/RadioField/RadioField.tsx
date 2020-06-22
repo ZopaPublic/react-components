@@ -5,6 +5,7 @@ import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps } from '../../types';
+import deprecate from 'util-deprecate';
 
 const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
   if (isValid) {
@@ -45,7 +46,6 @@ const Label = styled(InputLabel)<InputStatus>`
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
   border-radius: 8px;
-  font-weight: 400;
   position: relative;
   margin-bottom: 0;
   text-align: left;
@@ -145,4 +145,10 @@ const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, 
   );
 };
 
-export default RadioField;
+/**
+ * @deprecated *RadioField* it's being deprecated and will be removed on the next release. Use *RadioGroupField* component instead.
+ */
+export default deprecate(
+  RadioField,
+  "<RadioField /> it's being deprecated and will be removed on the next release. Use <RadioGroupField /> component instead.",
+);
