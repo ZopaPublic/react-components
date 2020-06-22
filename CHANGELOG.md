@@ -1,3 +1,10 @@
+### [4.6.5](https://github.com/zopaUK/react-components/compare/v4.6.4...v4.6.5) (2020-06-22)
+
+
+### Bug Fixes
+
+* **error message:** fix icon and styles ([e9c26d1](https://github.com/zopaUK/react-components/commit/e9c26d1d023e966356cddab523109f43f3c33457))
+
 ### [4.6.4](https://github.com/zopaUK/react-components/compare/v4.6.3...v4.6.4) (2020-06-22)
 
 
