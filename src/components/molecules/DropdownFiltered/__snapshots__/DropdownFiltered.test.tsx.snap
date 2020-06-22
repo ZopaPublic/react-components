@@ -92,6 +92,8 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -249,6 +251,8 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c4:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }

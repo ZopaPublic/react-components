@@ -66,6 +66,8 @@ const Input = styled.input<InputProps>`
   }
 
   &:disabled {
+    border: 1px solid ${getBorderColorByStatus};
+    box-shadow: 0 0 4px 0 transparent;
     background-color: transparent;
     cursor: not-allowed;
   }

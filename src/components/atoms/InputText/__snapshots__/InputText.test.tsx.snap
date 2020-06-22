@@ -50,6 +50,8 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #D4D7D9;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -140,6 +142,8 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 }
 
 .c2:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -235,6 +239,8 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -306,6 +312,8 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #FF4539;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -370,6 +378,8 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -434,6 +444,8 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #3EBC64;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -498,6 +510,8 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c1:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
   background-color: transparent;
   cursor: not-allowed;
 }
