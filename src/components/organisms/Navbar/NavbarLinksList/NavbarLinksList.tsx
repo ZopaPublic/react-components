@@ -30,33 +30,43 @@ const SingleLink = styled.div`
   }
 `;
 
-const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, setOpen }) => (
-  <>
-    {links &&
-      links.map((item: NavigationItem, index: number) =>
-        !!item.children ? (
-          <NavbarDropdown
-            key={`dropdown-${index}`}
-            id={`navbar-dropdown-${index}`}
-            label={item.label}
-            items={item.children!}
-            renderItem={({ item, getItemProps }: RenderItemProps) =>
-              renderLink &&
-              renderLink(item, index, {
-                ...getItemProps(),
-                isDropdownLink: true,
-                onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
-                  setOpen(false);
-                  item.onClick && item.onClick(e);
-                },
-              })
-            }
-          />
-        ) : (
-          <SingleLink key={`link-${index}`}>{renderLink && renderLink(item, index)}</SingleLink>
-        ),
-      )}
-  </>
-);
+const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, setOpen }) => {
+  return (
+    <>
+      {links &&
+        links.map((item: NavigationItem, index: number) =>
+          !!item.children ? (
+            <NavbarDropdown
+              key={`dropdown-${index}`}
+              id={`navbar-dropdown-${index}`}
+              label={item.label}
+              items={item.children!}
+              renderItem={({ item, getItemProps }: RenderItemProps) =>
+                renderLink &&
+                renderLink(item, index, {
+                  ...getItemProps(),
+                  isDropdownLink: true,
+                  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                    setOpen(false);
+                    item.onClick && item.onClick(e);
+                  },
+                })
+              }
+            />
+          ) : (
+            <SingleLink key={`link-${index}`}>
+              {renderLink &&
+                renderLink(item, index, {
+                  onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                    setOpen(false);
+                    item.onClick && item.onClick(e);
+                  },
+                })}
+            </SingleLink>
+          ),
+        )}
+    </>
+  );
+};
 
 export default NavbarLinksList;
