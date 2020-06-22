@@ -1,3 +1,11 @@
+### [4.6.2](https://github.com/zopaUK/react-components/compare/v4.6.1...v4.6.2) (2020-06-22)
+
+
+### Bug Fixes
+
+* **dropdown:** fix icon ([a9d3b87](https://github.com/zopaUK/react-components/commit/a9d3b876d91b54153699c41fc7ee75ef223125a7))
+* **text:** fix hover styles ([5dfd49c](https://github.com/zopaUK/react-components/commit/5dfd49cb1ab3bf44cdb66f5dbcb8f50b666fa9c6))
+
 ### [4.6.1](https://github.com/zopaUK/react-components/compare/v4.6.0...v4.6.1) (2020-06-17)
 
 
