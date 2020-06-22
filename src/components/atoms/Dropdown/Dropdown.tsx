@@ -35,13 +35,17 @@ const StyledDropdown = styled.select<DropdownProps>`
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline-width: 0;
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
   }
 
   &:disabled {
+    border: 1px solid ${getBorderColorByStatus};
+    box-shadow: 0 0 4px 0 transparent;
+    background-color: transparent;
     cursor: not-allowed;
   }
 `;
