@@ -2,21 +2,13 @@
 
 Whenever you want to render a heading on any UI at Zopa, use the `<Heading />` component.
 
-❗❗️ This library assumes **Open Sans** is available for the typography to render correctly.  
-❗❗️ Make sure you make it available in your application HTML skeleton:
-
-```html
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-```
-
-The **mb** property has been deprecated in favour of atomic classes to define spacing you can [read more here](/#spacing)
+Apply margin/padding by [adding spacing](/#/Content?id=spacing).
 
 ### Examples
 
 - Variations
 
 ```tsx
-import styled from 'styled-components';
 import { Fragment } from 'react';
 import { colors, Heading, Text } from '@zopauk/react-components';
 
@@ -31,26 +23,7 @@ import { colors, Heading, Text } from '@zopauk/react-components';
   <Heading as="h3">Heading level 3</Heading>
   <Heading as="h4">Heading level 4</Heading>
   <Heading as="h5">Heading level 5</Heading>
-  <Heading as="h6" className="mb-0">
-    Heading level 6
-  </Heading>
-</Fragment>;
-```
-
-- With white-space
-
-```tsx
-import { Fragment } from 'react';
-import { Heading } from '@zopauk/react-components';
-
-<Fragment>
-  <Heading as="h3">With bottom white-space</Heading>
-  <Heading as="h3" className="mb-0">
-    Without bottom white-space
-  </Heading>
-  <Heading as="h3" className="mb-0">
-    Without bottom white-space
-  </Heading>
+  <Heading as="h6">Heading level 6</Heading>
 </Fragment>;
 ```
 
@@ -74,7 +47,7 @@ import { Heading } from '@zopauk/react-components';
 
 - Colors
 
-```tsx { "props": { "style": { "backgroundColor": "rgb(244, 248, 246)", "border": "none" } } }
+```tsx { "props": { "style": { "background": "linear-gradient(180deg, rgba(0,217,197,1) 0%, rgba(255,255,255,1) 100%)", "border": "none" } } }
 import { Fragment } from 'react';
 import { Heading, colors } from '@zopauk/react-components';
 
@@ -111,25 +84,6 @@ import { Heading } from '@zopauk/react-components';
   </Heading>
   <Heading as="h4" align="right" className="mb-0">
     Right aligned
-  </Heading>
-</Fragment>;
-```
-
-- Spacing
-
-```tsx
-import { Fragment } from 'react';
-import { Heading } from '@zopauk/react-components';
-
-<Fragment>
-  <Heading as="h3" className="mb-10">
-    Large Margin on the bottom
-  </Heading>
-  <Heading as="h2" className="mb-7">
-    Medium Margin on the bottom
-  </Heading>
-  <Heading as="h4" className="mb-4">
-    Small Margin on the bottom
   </Heading>
 </Fragment>;
 ```

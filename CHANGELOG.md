@@ -1,3 +1,32 @@
+### [4.6.5](https://github.com/zopaUK/react-components/compare/v4.6.4...v4.6.5) (2020-06-22)
+
+
+### Bug Fixes
+
+* **error message:** fix icon and styles ([e9c26d1](https://github.com/zopaUK/react-components/commit/e9c26d1d023e966356cddab523109f43f3c33457))
+
+### [4.6.4](https://github.com/zopaUK/react-components/compare/v4.6.3...v4.6.4) (2020-06-22)
+
+
+### Bug Fixes
+
+* **navbar:** close hamburger menu on link click ([5305eef](https://github.com/zopaUK/react-components/commit/5305eefb051f9add9012d710543771e6b91c5a98))
+
+### [4.6.3](https://github.com/zopaUK/react-components/compare/v4.6.2...v4.6.3) (2020-06-22)
+
+
+### Bug Fixes
+
+* **label:** fix weight ([77d5265](https://github.com/zopaUK/react-components/commit/77d52655bcdcaa123d5777dcd632add9331359ad))
+
+### [4.6.2](https://github.com/zopaUK/react-components/compare/v4.6.1...v4.6.2) (2020-06-22)
+
+
+### Bug Fixes
+
+* **dropdown:** fix icon ([a9d3b87](https://github.com/zopaUK/react-components/commit/a9d3b876d91b54153699c41fc7ee75ef223125a7))
+* **text:** fix hover styles ([5dfd49c](https://github.com/zopaUK/react-components/commit/5dfd49cb1ab3bf44cdb66f5dbcb8f50b666fa9c6))
+
 ### [4.6.1](https://github.com/zopaUK/react-components/compare/v4.6.0...v4.6.1) (2020-06-17)
 
 

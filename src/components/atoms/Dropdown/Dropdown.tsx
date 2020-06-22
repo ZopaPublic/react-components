@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus, getInputTextColor } from '../../../helpers/utils';
-import chevronDown from '../../../content/images/chevron-down.svg';
+import chevronDown from '../../../content/images/sort-solid.svg';
 
 export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
@@ -30,7 +30,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   font-weight: ${typography.weights.regular};
   border: 1px solid ${getBorderColorByStatus};
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
+  background-size: 8px;
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
