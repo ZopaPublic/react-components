@@ -7,7 +7,6 @@ import { minMedia, maxEqualToMedia } from '../../../../helpers/responsiveness';
 
 import Link, { LinkProps } from '../../../atoms/Link/Link';
 import Icon from '../../../atoms/Icon/Icon';
-import { useOpen } from '../OpenProvider';
 
 export interface NavbarLinkStyleProps {
   active?: boolean;
@@ -134,37 +133,26 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
       withChevron = false,
       isDropdownLink = false,
       isDropdownHeading = false,
-      onClick,
       ...rest
     },
     ref,
-  ) => {
-    const { setOpen } = useOpen();
-
-    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      setOpen(false);
-      onClick && onClick(e);
-    };
-
-    return (
-      <StyledNavbarLink
-        active={active}
-        withChevron={withChevron}
-        isDropdownLink={isDropdownLink}
-        isDropdownHeading={isDropdownHeading}
-        onClick={handleClick}
-        ref={ref}
-        {...rest}
-      >
-        {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
-        {withChevron && (
-          <ChevronContainer open={open}>
-            <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
-          </ChevronContainer>
-        )}
-      </StyledNavbarLink>
-    );
-  },
+  ) => (
+    <StyledNavbarLink
+      active={active}
+      withChevron={withChevron}
+      isDropdownLink={isDropdownLink}
+      isDropdownHeading={isDropdownHeading}
+      ref={ref}
+      {...rest}
+    >
+      {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
+      {withChevron && (
+        <ChevronContainer open={open}>
+          <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
+        </ChevronContainer>
+      )}
+    </StyledNavbarLink>
+  ),
 );
 
 export default NavbarLink;

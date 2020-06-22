@@ -20,4 +20,4 @@ const OpenProvider: FC = ({ children }) => {
 
 const useOpen = () => React.useContext(OpenContext);
 
-export { OpenProvider, useOpen };
+export { OpenContext, OpenProvider, useOpen };

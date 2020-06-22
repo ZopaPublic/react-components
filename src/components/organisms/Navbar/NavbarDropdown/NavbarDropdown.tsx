@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import styled, { css } from 'styled-components';
 
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
@@ -6,6 +6,8 @@ import { mod } from '../../../../helpers/utils';
 import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 import NavbarLink from '../NavbarLink/NavbarLink';
+import { OpenContext } from '../OpenProvider';
+import { NavigationItem } from '../Navbar/Navbar';
 
 const NavbarDropdownContainer = styled.div`
   position: relative;
@@ -134,8 +136,12 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     tabIndex: 0,
   });
 
-  public getItemProps = (index: number) => () => ({
+  public getItemProps = (index: number, setOpen: Dispatch<SetStateAction<boolean>>, item: NavigationItem) => () => ({
     onKeyDown: this.handleItemKeyDown,
+    onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+      setOpen(false);
+      item.onClick && item.onClick(e);
+    },
     ref: this.itemsRefs[index],
     role: 'menuitem',
     tabIndex: -1,
@@ -153,15 +159,19 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
         </NavbarLink>
         <NavbarDropdownListContainer open={open}>
           <NavbarDropdownList role="menu" aria-label={label}>
-            {items.map((item, index) => (
-              <li key={`${id}-${index}`} role="none">
-                {renderItem({
-                  close,
-                  getItemProps: this.getItemProps(index),
-                  item,
-                })}
-              </li>
-            ))}
+            <OpenContext.Consumer>
+              {({ setOpen }) =>
+                items.map((item, index) => (
+                  <li key={`${id}-${index}`} role="none">
+                    {renderItem({
+                      close,
+                      getItemProps: this.getItemProps(index, setOpen, item),
+                      item,
+                    })}
+                  </li>
+                ))
+              }
+            </OpenContext.Consumer>
           </NavbarDropdownList>
         </NavbarDropdownListContainer>
       </NavbarDropdownContainer>
