@@ -6,7 +6,7 @@ import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import Icon from '../../atoms/Icon/Icon';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faSort } from '@fortawesome/free-solid-svg-icons';
 import { FieldProps, InputProps } from '../../types';
 import Option from './Option';
 import Options, { OptionsListProps } from './Options';
@@ -104,8 +104,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                 />
                 <SearchArrowWrap>
                   <Icon
-                    variant={faChevronDown}
-                    rotation={isOpen ? 180 : undefined}
+                    variant={faSort}
                     color={colors.grey}
                     onClick={() => {
                       if (!disabled) {
