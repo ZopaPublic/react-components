@@ -74,7 +74,7 @@ workflows:
       - test_and_release
       - deploy-web:
           requires:
-            - tests
+            - test_and_release
             # The release process updates the version of package.json so it needs to be synchronous 
             - release
           filters:
