@@ -1,3 +1,26 @@
+### [4.6.8](https://github.com/zopaUK/react-components/compare/v4.6.7...v4.6.8) (2020-06-23)
+
+
+### Bug Fixes
+
+* **alert:** add spacing only when onRequestClose is present ([40481ad](https://github.com/zopaUK/react-components/commit/40481ada62e4115f1342d6cd2f5ae62fba6b2310))
+
+### [4.6.7](https://github.com/zopaUK/react-components/compare/v4.6.6...v4.6.7) (2020-06-22)
+
+
+### Bug Fixes
+
+* **navbar:** fix props for Navbar ([1b753f0](https://github.com/zopaUK/react-components/commit/1b753f054c6ab8443a9cf2484a5080de72b87abb))
+
+### [4.6.6](https://github.com/zopaUK/react-components/compare/v4.6.5...v4.6.6) (2020-06-22)
+
+
+### Bug Fixes
+
+* **navbar:** close menu for both dropdown and single links ([65311ab](https://github.com/zopaUK/react-components/commit/65311abf1866dcbe61f70669ccdd382ad10f51d4))
+* **navbar:** remove openProvider ([e9e7f9b](https://github.com/zopaUK/react-components/commit/e9e7f9b608fc2d931811fce3138ab903df1c9820))
+* **navbarlink:** remove unused onClick ([c55b470](https://github.com/zopaUK/react-components/commit/c55b470045feccbc1c41123f91b03e4926c27a8b))
+
 ### [4.6.5](https://github.com/zopaUK/react-components/compare/v4.6.4...v4.6.5) (2020-06-22)
 
 
