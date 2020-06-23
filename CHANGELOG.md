@@ -1,3 +1,10 @@
+## [4.7.0](https://github.com/zopaUK/react-components/compare/v4.6.8...v4.7.0) (2020-06-23)
+
+
+### Features
+
+* **help:** redesign help component ([cf8d8cc](https://github.com/zopaUK/react-components/commit/cf8d8cc50337283231a6be36a78861aec3bd91fa))
+
 ### [4.6.8](https://github.com/zopaUK/react-components/compare/v4.6.7...v4.6.8) (2020-06-23)
 
 
