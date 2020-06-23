@@ -121,7 +121,7 @@ const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, onRequestClo
           />
         )}
       </IconWrapper>
-      <div className="pr-4">{children}</div>
+      <div className={onRequestClose ? 'pr-4' : ''}>{children}</div>
     </Wrapper>
   );
 };
