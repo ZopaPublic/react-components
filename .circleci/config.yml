@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.5
 jobs:
-  tests:
+  test_and_release:
     docker:
       - image: circleci/node:12
     steps:
@@ -32,24 +32,6 @@ jobs:
           path: reports/junit
       - store_artifacts:
           path: reports/junit
-
-  release:
-    docker:
-      - image: circleci/node:12
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
       - run:
           name: Compile the code
           command: yarn compile
@@ -89,16 +71,12 @@ workflows:
   version: 2
   test_and_release:
     jobs:
-      - tests
-      - release:
-          requires:
-            - tests
-          filters:
-            branches:
-              only: master
+      - test_and_release
       - deploy-web:
           requires:
             - tests
+            # The release process updates the version of package.json so it needs to be synchronous 
+            - release
           filters:
             branches:
               only: master
