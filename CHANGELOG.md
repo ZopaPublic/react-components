@@ -1,3 +1,10 @@
+### [4.6.8](https://github.com/zopaUK/react-components/compare/v4.6.7...v4.6.8) (2020-06-23)
+
+
+### Bug Fixes
+
+* **alert:** add spacing only when onRequestClose is present ([40481ad](https://github.com/zopaUK/react-components/commit/40481ada62e4115f1342d6cd2f5ae62fba6b2310))
+
 ### [4.6.7](https://github.com/zopaUK/react-components/compare/v4.6.6...v4.6.7) (2020-06-22)
 
 
