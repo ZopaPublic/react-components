@@ -62,7 +62,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
     </svg>
   </div>
   <div
-    class="pr-4"
+    class=""
   >
     Alert Content
   </div>
@@ -131,7 +131,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
     </svg>
   </div>
   <div
-    class="pr-4"
+    class=""
   >
     Alert Content
   </div>
@@ -200,7 +200,7 @@ exports[`Alert renders with specific severity: info 1`] = `
     </svg>
   </div>
   <div
-    class="pr-4"
+    class=""
   >
     Alert Content
   </div>
@@ -269,7 +269,7 @@ exports[`Alert renders with specific severity: success 1`] = `
     </svg>
   </div>
   <div
-    class="pr-4"
+    class=""
   >
     Alert Content
   </div>
@@ -338,7 +338,7 @@ exports[`Alert renders with specific severity: warning 1`] = `
     </svg>
   </div>
   <div
-    class="pr-4"
+    class=""
   >
     Alert Content
   </div>

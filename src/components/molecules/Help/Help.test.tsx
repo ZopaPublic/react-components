@@ -5,9 +5,9 @@ import Help from './Help';
 
 describe('<Help />', () => {
   it('renders the default Help component with no a11y violations', async () => {
-    const { container } = render(<Help email="savings@zopa.com" />);
+    const { container } = render(<Help />);
     expect(container.firstChild).toMatchSnapshot();
-    const results = await axe(container.innerHTML);
+    const results = await axe(container.innerHTML, { rules: { 'heading-order': { enabled: false } } });
     expect(results).toHaveNoViolations();
   });
 });
