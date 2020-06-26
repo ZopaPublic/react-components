@@ -28,7 +28,7 @@ const StyledSpinner = styled.div<SpinnerProps>`
   ${({ size = 'standard', negative = false }) => css`
     width: ${size === 'small' ? 20 : 40}px;
     height: ${size === 'small' ? 20 : 40}px;
-    border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.actionPlain}};
+    border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.brand}};
   `}
   border-radius: 50%;
   border-top-color: transparent;
