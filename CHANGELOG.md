@@ -1,3 +1,17 @@
+### [4.7.1](https://github.com/zopaUK/react-components/compare/v4.7.0...v4.7.1) (2020-06-26)
+
+
+### Bug Fixes
+
+* **spinner:** set spinner to color.brand without affecting button ([1c732d5](https://github.com/zopaUK/react-components/commit/1c732d5c19f1b60b023cd60eacba994709c550cb))
+
+## [4.7.0](https://github.com/zopaUK/react-components/compare/v4.6.8...v4.7.0) (2020-06-23)
+
+
+### Features
+
+* **help:** redesign help component ([cf8d8cc](https://github.com/zopaUK/react-components/commit/cf8d8cc50337283231a6be36a78861aec3bd91fa))
+
 ### [4.6.8](https://github.com/zopaUK/react-components/compare/v4.6.7...v4.6.8) (2020-06-23)
 
 
