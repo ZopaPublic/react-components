@@ -1,3 +1,10 @@
+### [4.7.2](https://github.com/zopaUK/react-components/compare/v4.7.1...v4.7.2) (2020-06-30)
+
+
+### Bug Fixes
+
+* **navbar:** close navbar dropdown on link click ([ce228e1](https://github.com/zopaUK/react-components/commit/ce228e174bb4402909e631a6bb42730fa25589d1))
+
 ### [4.7.1](https://github.com/zopaUK/react-components/compare/v4.7.0...v4.7.1) (2020-06-26)
 
 
