@@ -1,15 +1,10 @@
 import React from 'react';
 
-import NavbarDropdown, { ItemProps } from '../NavbarDropdown/NavbarDropdown';
+import NavbarDropdown, { RenderItemProps } from '../NavbarDropdown/NavbarDropdown';
 import { NavigationItem, NavbarLinksListProps } from '../Navbar/Navbar';
 import styled from 'styled-components';
 import { colors, spacing } from '../../../../constants';
 import { minMedia } from '../../../../helpers/responsiveness';
-
-export interface RenderItemProps {
-  item: NavigationItem;
-  getItemProps: () => ItemProps;
-}
 
 const SingleLink = styled.div`
   display: inline-block;
@@ -41,12 +36,13 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, se
               id={`navbar-dropdown-${index}`}
               label={item.label}
               items={item.children!}
-              renderItem={({ item, getItemProps }: RenderItemProps) =>
+              renderItem={({ item, getItemProps, close }: RenderItemProps) =>
                 renderLink &&
                 renderLink(item, index, {
                   ...getItemProps(),
                   isDropdownLink: true,
                   onClick: (e: React.MouseEvent<HTMLAnchorElement>) => {
+                    close();
                     setOpen(false);
                     item.onClick && item.onClick(e);
                   },
