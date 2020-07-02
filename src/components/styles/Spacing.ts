@@ -1,11 +1,12 @@
 import { css } from 'styled-components';
 import { spacing as spacingSizes, grid } from '../../constants';
 import { GridBreakpoints } from '../../constants/grid';
+import { Spacing } from '../../constants/spacing';
 
 type SpacingTypes = 'margin' | 'padding';
 
 const createTopLevelSizes = (type: SpacingTypes) => {
-  const sizes = type === 'margin' ? { ...spacingSizes, auto: 'auto' } : { ...spacingSizes };
+  const sizes: Spacing = type === 'margin' ? { ...spacingSizes, auto: 'auto' } : { ...spacingSizes };
 
   return Object.keys(sizes).reduce(
     (classNames, size) => ({
@@ -39,7 +40,7 @@ const createTopLevelSizes = (type: SpacingTypes) => {
 };
 
 const createResponsiveSizes = (type: SpacingTypes) => {
-  const sizes = type === 'margin' ? { ...spacingSizes, auto: 'auto' } : { ...spacingSizes };
+  const sizes: Spacing = type === 'margin' ? { ...spacingSizes, auto: 'auto' } : { ...spacingSizes };
 
   return Object.keys(grid.breakpoints)
     .filter((v) => v !== 'xs')
