@@ -1,3 +1,12 @@
+### [4.8.1](https://github.com/zopaUK/react-components/compare/v4.8.0...v4.8.1) (2020-07-02)
+
+
+### Bug Fixes
+
+* **spacing:** dont mutate sizes ([5332fe4](https://github.com/zopaUK/react-components/commit/5332fe47999441aff79bd08f544ae8deebde7fb3))
+* **spacing:** fix padding right and add margin auto ([80b34ca](https://github.com/zopaUK/react-components/commit/80b34ca3cfc08b5cd72e941972293e24a67a96bc))
+* **spacing:** fix types ([da4c28b](https://github.com/zopaUK/react-components/commit/da4c28bb48fef2d2c3dafe7cf10022ea4e3590a3))
+
 ## [4.8.0](https://github.com/zopaUK/react-components/compare/v4.7.2...v4.8.0) (2020-07-02)
 
 
