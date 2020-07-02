@@ -28,4 +28,18 @@ describe('<InputText />', () => {
     const { container } = render(<InputText name="name" disabled={true} />);
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('renders the component with an icon on the left', () => {
+    const { container, queryByTestId } = render(
+      <InputText name="name" startIcon={<span data-testid="start-icon" />} />,
+    );
+    expect(queryByTestId('start-icon')).toBeTruthy();
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders the component with an icon on the right', () => {
+    const { container, queryByTestId } = render(<InputText name="name" endIcon={<span data-testid="end-icon" />} />);
+    expect(queryByTestId('end-icon')).toBeTruthy();
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

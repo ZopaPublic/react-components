@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
-import { getBorderColorByStatus } from '../../../helpers/utils';
+import { getBorderColorByStatus, getInputTextColor } from '../../../helpers/utils';
 import chevronDown from '../../../content/images/sort-solid.svg';
 
 export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
@@ -26,7 +26,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: ${colors.greyDarkest};
+  color: ${getInputTextColor};
   font-weight: ${typography.weights.regular};
   border: 1px solid ${getBorderColorByStatus};
   background: transparent url(${chevronDown}) no-repeat calc(100% - 13px) center;
@@ -35,15 +35,18 @@ const StyledDropdown = styled.select<DropdownProps>`
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline-width: 0;
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
   }
 
   &:disabled {
-    background-color: ${colors.greyLightest};
-    color: ${colors.grey};
+    border: 1px solid ${getBorderColorByStatus};
+    box-shadow: 0 0 4px 0 transparent;
+    background-color: transparent;
+    cursor: not-allowed;
   }
 `;
 

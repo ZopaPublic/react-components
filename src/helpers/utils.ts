@@ -19,3 +19,6 @@ export const getBorderColorByStatus = ({
   }
   return colors.grey;
 };
+
+export const getInputTextColor = ({ disabled }: Pick<InputProps, 'disabled'>) =>
+  disabled ? colors.grey : colors.greyDark;

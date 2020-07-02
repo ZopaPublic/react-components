@@ -20,15 +20,43 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c3 {
+  position: relative;
+}
+
+.c6 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  right: 1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.c5 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
+  padding-right: 60px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -37,60 +65,53 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   transition: 0.2s ease-in-out;
 }
 
-.c3:focus,
-.c3:hover {
+.c5:focus,
+.c5:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c3::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3::placeholder {
+.c5::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c3:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+.c5:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
-.c4 {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 32px;
+.c4 input {
   margin-bottom: 0;
+}
+
+.c4 input + span {
+  cursor: pointer;
+}
+
+.c4 input:disabled + span {
+  cursor: not-allowed;
 }
 
 .c2 {
   position: relative;
-}
-
-.c5 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 12px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 <div
@@ -112,35 +133,39 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
     <div
       class="c2"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-0-label"
-        autocomplete="off"
-        class="c3 c4"
-        id="text-id-test"
-        name="test"
-        value=""
-      />
       <div
-        class="c5"
+        class="c3 c4"
       >
-        <svg
-          aria-hidden="true"
-          aria-label="open.menu"
-          class="svg-inline--fa fa-sort fa-w-10 "
-          color="#818F9B"
-          data-icon="sort"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          viewBox="0 0 320 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
+          class="c5"
+          id="text-id-test"
+          name="test"
+          value=""
+        />
+        <span
+          class="c6"
         >
-          <path
-            d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            aria-hidden="true"
+            aria-label="open.menu"
+            class="svg-inline--fa fa-sort fa-w-10 "
+            color="#818F9B"
+            data-icon="sort"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -154,15 +179,43 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c2 {
+  position: relative;
+}
+
+.c5 {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 48px;
+  color: #818F9B;
+  right: 1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.c4 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
+  padding-right: 60px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -171,60 +224,53 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   transition: 0.2s ease-in-out;
 }
 
-.c2:focus,
-.c2:hover {
+.c4:focus,
+.c4:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c2::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2::placeholder {
+.c4::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c2:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+.c4:disabled {
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
-.c3 {
-  margin: 0;
-  padding-left: 16px;
-  padding-right: 32px;
+.c3 input {
   margin-bottom: 0;
+}
+
+.c3 input + span {
+  cursor: pointer;
+}
+
+.c3 input:disabled + span {
+  cursor: not-allowed;
 }
 
 .c1 {
   position: relative;
-}
-
-.c4 {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 12px;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 <div
@@ -239,35 +285,39 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
     <div
       class="c1"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-1-label"
-        autocomplete="off"
-        class="c2 c3"
-        id="text-id-test"
-        name="test"
-        value="orange"
-      />
       <div
-        class="c4"
+        class="c2 c3"
       >
-        <svg
-          aria-hidden="true"
-          aria-label="open.menu"
-          class="svg-inline--fa fa-sort fa-w-10 "
-          color="#818F9B"
-          data-icon="sort"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          viewBox="0 0 320 512"
-          xmlns="http://www.w3.org/2000/svg"
+        <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-1-label"
+          autocomplete="off"
+          class="c4"
+          id="text-id-test"
+          name="test"
+          value="orange"
+        />
+        <span
+          class="c5"
         >
-          <path
-            d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            aria-hidden="true"
+            aria-label="open.menu"
+            class="svg-inline--fa fa-sort fa-w-10 "
+            color="#818F9B"
+            data-icon="sort"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
