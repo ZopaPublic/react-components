@@ -1,3 +1,20 @@
+## [4.8.0](https://github.com/zopaUK/react-components/compare/v4.7.2...v4.8.0) (2020-07-02)
+
+
+### Features
+
+* **inputtext:** add startIcon and endIcon to InputText ([dd13d1b](https://github.com/zopaUK/react-components/commit/dd13d1b65311ad2cfde7ef045a5e0227b88d3190))
+
+
+### Bug Fixes
+
+* **dropdown:** maintain disabled state styling even if hovered over ([36d1f0a](https://github.com/zopaUK/react-components/commit/36d1f0afb8e7e3fcebb1e4c1424448ce778a92cc))
+* **dropdownfiltered:** handle cursor states ([0029ed6](https://github.com/zopaUK/react-components/commit/0029ed6d1121d207cd2e11316fb6e99b2de4bdd3))
+* **inputtext:** maintain disabled state even if hovered over ([e7f495d](https://github.com/zopaUK/react-components/commit/e7f495df18f70fb2e1cfb12a5e245dcac49e4c38))
+* **inputtext:** remove background from the endIcon wrapper ([a3707bc](https://github.com/zopaUK/react-components/commit/a3707bcccdb6849e822ec12c4107ac35761e684b))
+* **inputtext:** rename prop start to startIcon to avoid console errors ([70f0022](https://github.com/zopaUK/react-components/commit/70f00220192c659ad4b589894a3bb148101bfe8c))
+* set consistent cursor in disabled inputs ([2689dce](https://github.com/zopaUK/react-components/commit/2689dcef1dfaec6d3c4b90581eeeb1d7b8c9ab8c))
+
 ### [4.7.2](https://github.com/zopaUK/react-components/compare/v4.7.1...v4.7.2) (2020-06-30)
 
 
