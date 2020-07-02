@@ -64,7 +64,7 @@ const breakpoints: {
     <Spacing className="p-3">Block</Spacing>
   </div>
   <div>
-    <Spacing className="l:mx-auto px-auto" style={{ display: 'block', width: '70%' }}>
+    <Spacing className="l:mx-auto" style={{ display: 'block', width: '70%' }}>
       margin-left auto margin-right auto on screens wider than 992px
     </Spacing>
   </div>
