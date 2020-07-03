@@ -76,10 +76,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   cursor: pointer;
 }
 
-.c2:hover:before {
-  border: 1px #00D9C5 solid;
-}
-
 .c1 {
   left: -100%;
   opacity: 0;
