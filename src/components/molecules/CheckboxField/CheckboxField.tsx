@@ -2,7 +2,6 @@ import React, { forwardRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
-import greyCheckMark from '../../../content/images/grey-check-mark.svg';
 import greenCheckMark from '../../../content/images/green-check-mark.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
@@ -87,12 +86,6 @@ const Input = styled.input<InputProps>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:hover + label {
-    border-color: ${colors.brand};
-    &:before {
-      border-color: ${colors.brand};
-    }
-  }
   &:checked + label {
     border-color: ${getCheckedColor};
     &:before {
@@ -104,6 +97,7 @@ const Input = styled.input<InputProps>`
       animation: ${zoomOut} 180ms ease-in-out;
     }
   }
+  &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
@@ -112,6 +106,7 @@ const Input = styled.input<InputProps>`
       box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
+  &:hover:checked:not(:disabled) + label,
   &:focus:checked + label {
     &:after {
       background-image: ${`url(${tealCheckMark})`};
@@ -120,11 +115,6 @@ const Input = styled.input<InputProps>`
   &:disabled + label {
     cursor: not-allowed;
     color: ${colors.grey};
-  }
-  &:disabled:checked {
-    &:after {
-      background-image: ${`url(${greyCheckMark})`};
-    }
   }
   &:disabled:not(:checked) + label {
     border-color: ${colors.greyLight};
