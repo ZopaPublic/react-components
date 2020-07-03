@@ -75,9 +75,6 @@ const Label = styled(InputLabel)<InputStatus>`
   }
   &:hover {
     cursor: pointer;
-    &:before {
-      border-color: ${colors.greyLight};
-    }
   }
 `;
 
@@ -87,12 +84,6 @@ const Input = styled.input<InputStatus>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:hover + label {
-    border-color: ${colors.brand};
-    &:before {
-      border-color: ${colors.brand};
-    }
-  }
   &:checked + label {
     border-color: ${getCheckedColor};
     &:before {
@@ -105,6 +96,7 @@ const Input = styled.input<InputStatus>`
       animation: ${zoomIn} 200ms ease-in-out;
     }
   }
+  &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
@@ -113,6 +105,7 @@ const Input = styled.input<InputStatus>`
       box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
+  &:hover:checked:not(:disabled) + label,
   &:focus:checked + label {
     &:after {
       background-color: ${colors.brand};

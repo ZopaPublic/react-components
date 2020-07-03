@@ -75,9 +75,6 @@ const Label = styled(InputLabel)`
   }
   &:hover {
     cursor: pointer;
-    &:before {
-      border: 1px ${colors.brand} solid;
-    }
   }
 `;
 
