@@ -1,3 +1,10 @@
+### [4.8.2](https://github.com/zopaUK/react-components/compare/v4.8.1...v4.8.2) (2020-07-06)
+
+
+### Bug Fixes
+
+* **inputtext:** add missing semicolon ([a389711](https://github.com/zopaUK/react-components/commit/a38971170da209db1791cea51ebb91be14c12a3a))
+
 ### [4.8.1](https://github.com/zopaUK/react-components/compare/v4.8.0...v4.8.1) (2020-07-02)
 
 
