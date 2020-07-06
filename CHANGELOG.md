@@ -1,3 +1,12 @@
+### [4.8.3](https://github.com/zopaUK/react-components/compare/v4.8.2...v4.8.3) (2020-07-06)
+
+
+### Bug Fixes
+
+* **accordion:** fix opening icon ([3fe32b9](https://github.com/zopaUK/react-components/commit/3fe32b916997860da6b5ee9f739161284fc67f5c))
+* **checkboxfield:** add box shadow to hover state ([1f615c1](https://github.com/zopaUK/react-components/commit/1f615c169fe4e6dcb4a50847f93df8ad56b1c3bc))
+* **radiofield:** add box-shadow in hover state ([7cb5208](https://github.com/zopaUK/react-components/commit/7cb5208006dc3f4332dc5af85ae3e78ee4e0a92f))
+
 ### [4.8.2](https://github.com/zopaUK/react-components/compare/v4.8.1...v4.8.2) (2020-07-06)
 
 
