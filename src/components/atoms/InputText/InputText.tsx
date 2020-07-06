@@ -47,13 +47,14 @@ const Input = styled.input<InputProps>`
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${typography.sizes.text.body};
   font-weight: ${typography.weights.regular};
-  color: ${getInputTextColor}
+  color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
   }
