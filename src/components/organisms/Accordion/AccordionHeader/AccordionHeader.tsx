@@ -36,14 +36,28 @@ const Title = styled(Text)`
 
 const Cross = styled.span<{ active: boolean }>`
   flex-shrink: 0;
-  width: 10px;
-  height: 10px;
-  // This background creates the ➖
-  background: linear-gradient(to bottom, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)
-    ${({ active }) =>
-      !active &&
-      // This adds the vertical stick to create ✚
-      `, linear-gradient(to right, transparent 35%, ${colors.grey} 35%, ${colors.grey} 65%, transparent 65%)`};
+  width: 11px;
+  height: 11px;
+  position: relative;
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: ${colors.grey};
+  }
+  &:before {
+    width: 100%;
+    height: 3px;
+  }
+  &:after {
+    height: ${({ active }) => (active ? '0' : '100%')};
+    width: 3px;
+  }
 `;
 
 const AccordionHeader: FC<AccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
