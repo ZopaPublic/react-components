@@ -1,3 +1,10 @@
+### [4.8.4-beta.1](https://github.com/zopaUK/react-components/compare/v4.8.3...v4.8.4-beta.1) (2020-07-08)
+
+
+### Bug Fixes
+
+* **breakpoints:** follow bootstrap breakpoints ([b763e15](https://github.com/zopaUK/react-components/commit/b763e15c757190e67bd94c170fb0b9620e3c9b88))
+
 ### [4.8.3](https://github.com/zopaUK/react-components/compare/v4.8.2...v4.8.3) (2020-07-06)
 
 
