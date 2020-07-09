@@ -37,6 +37,7 @@ const StyledDropdown = styled.select<DropdownProps>`
 
   &:focus,
   &:hover {
+    outline: none;
     outline-width: 0;
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
