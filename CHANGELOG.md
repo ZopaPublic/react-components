@@ -1,3 +1,11 @@
+### [4.8.4](https://github.com/zopaUK/react-components/compare/v4.8.3...v4.8.4) (2020-07-10)
+
+
+### Bug Fixes
+
+* **dropdown:** remove default safari outline ([4a5cec7](https://github.com/zopaUK/react-components/commit/4a5cec765b9c43d5a83a794a9ca4d995302849eb))
+* **inputtext:** fix its color when disabled on safari ([6d6875a](https://github.com/zopaUK/react-components/commit/6d6875aa6eecbd47c8ba7ac5fcef3a6b17f6c80b))
+
 ### [4.8.3](https://github.com/zopaUK/react-components/compare/v4.8.2...v4.8.3) (2020-07-06)
 
 
