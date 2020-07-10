@@ -67,6 +67,8 @@ const Input = styled.input<InputProps>`
   }
 
   &:disabled {
+    -webkit-text-fill-color: ${colors.grey};
+    opacity: 1;
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
     background-color: transparent;

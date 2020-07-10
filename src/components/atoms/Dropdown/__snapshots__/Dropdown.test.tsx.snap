@@ -29,6 +29,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -82,6 +83,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -141,6 +143,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -201,6 +204,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
