@@ -92,7 +92,7 @@
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
     "react": "16.13.1",
-    "react-docgen-typescript": "1.16.6",
+    "react-docgen-typescript": "1.18.0",
     "react-dom": "16.13.1",
     "react-scripts": "^3.4.1",
     "react-styleguidist": "11.0.8",
