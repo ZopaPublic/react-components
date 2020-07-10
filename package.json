@@ -100,7 +100,7 @@
     "rollup": "2.15.0",
     "rollup-plugin-postcss": "3.1.2",
     "rollup-plugin-terser": "6.1.0",
-    "semantic-release": "17.0.7",
+    "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
     "typescript": "3.9.5",
     "yarn-deduplicate": "2.0.0"
