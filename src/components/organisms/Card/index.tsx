@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
 
 import CardActions from './CardActions/CardActions';
 import CardComponent, { CardProps } from './Card/Card';
@@ -15,7 +15,7 @@ type CardStatic = {
   Text: typeof CardText;
 };
 
-const Card: CardStatic & FC<CardProps> = (props) => <CardComponent {...props} />;
+const Card: CardStatic & FC<CardProps & HTMLAttributes<HTMLDivElement>> = (props) => <CardComponent {...props} />;
 
 Card.Actions = CardActions;
 Card.Content = CardContent;
