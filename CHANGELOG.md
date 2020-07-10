@@ -1,3 +1,10 @@
+### [4.8.5](https://github.com/zopaUK/react-components/compare/v4.8.4...v4.8.5) (2020-07-10)
+
+
+### Bug Fixes
+
+* **card:** extend Card interface to be able to use html props ([12e9b3a](https://github.com/zopaUK/react-components/commit/12e9b3ac5e91ae8ebe78efcb0dd411c4aea6b596))
+
 ### [4.8.4](https://github.com/zopaUK/react-components/compare/v4.8.3...v4.8.4) (2020-07-10)
 
 
