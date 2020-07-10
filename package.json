@@ -76,7 +76,7 @@
     "@types/styled-components": "5.1.0",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
-    "acorn": "7.2.0",
+    "acorn": "7.3.1",
     "acorn-jsx": "5.2.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
