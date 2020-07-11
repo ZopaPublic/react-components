@@ -103,7 +103,7 @@
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
     "typescript": "3.9.6",
-    "yarn-deduplicate": "2.0.0"
+    "yarn-deduplicate": "2.1.0"
   },
   "browserslist": [
     "cover 95% in GB",
