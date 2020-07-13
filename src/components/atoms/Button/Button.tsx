@@ -90,6 +90,11 @@ export const buttonStyle = css<ButtonProps>`
   }
 `;
 
+const StyledSpinner = styled(Spinner)<Pick<ButtonProps, 'styling'>>`
+  border-color: ${({ styling }) => styling === 'secondary' && colors.actionPlain};
+  border-top-color: transparent;
+`;
+
 const ButtonWrapper = styled(({ loading, fullWidth, ...rest }: ButtonProps) => <button {...rest} />)`
   ${buttonStyle}
 `;
@@ -101,7 +106,7 @@ const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary',
     <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
-          <Spinner negative={styling === 'primary'} size="small" /> {'\u00A0 '}
+          <StyledSpinner styling={styling} negative={styling === 'primary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}

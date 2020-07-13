@@ -1,7 +1,7 @@
 # Docs: https://circleci.com/docs/2.0/language-javascript/
 version: 2.1
 orbs:
-  codecov: codecov/codecov@1.0.5
+  codecov: codecov/codecov@1.1.0
 jobs:
   tests:
     docker:
@@ -20,6 +20,9 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+      - run:
+          name: Run typecheck
+          command: yarn typecheck
       - run:
           name: Run linter
           command: yarn lint --format junit -o reports/junit/js-lint-results.xml

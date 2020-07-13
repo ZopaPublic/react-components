@@ -11,6 +11,7 @@ This is our available spacing scale which is made out of **multiples of 4**:
 
 ```tsx static
 const spacingScale = {
+  'auto': 'auto', //Only available with margin
   '0': '0',
   '1': '4px',
   '2': '8px',
@@ -61,6 +62,11 @@ const breakpoints: {
   <div>
     <Spacing className="l:mr-9 p-3">margin-right 56px on screens wider than 992px</Spacing>
     <Spacing className="p-3">Block</Spacing>
+  </div>
+  <div>
+    <Spacing className="l:mx-auto" style={{ display: 'block', width: '70%' }}>
+      margin-left auto margin-right auto on screens wider than 992px
+    </Spacing>
   </div>
 </>
 ```

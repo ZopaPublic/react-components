@@ -190,6 +190,10 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   animation: iVXCSc 1.2s linear infinite;
 }
 
+.c2 {
+  border-top-color: transparent;
+}
+
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -245,7 +249,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   styling="primary"
 >
   <div
-    class="c1"
+    class="c1 c2"
   />
    
     
@@ -257,11 +261,16 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 .c1 {
   width: 20px;
   height: 20px;
-  border: 3px solid #3B46C4;
+  border: 3px solid #00D9C5;
   border-radius: 50%;
   border-top-color: transparent;
   -webkit-animation: iVXCSc 1.2s linear infinite;
   animation: iVXCSc 1.2s linear infinite;
+}
+
+.c2 {
+  border-color: #3B46C4;
+  border-top-color: transparent;
 }
 
 .c0 {
@@ -318,7 +327,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   styling="secondary"
 >
   <div
-    class="c1"
+    class="c1 c2"
   />
    
     
@@ -330,11 +339,16 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
 .c1 {
   width: 20px;
   height: 20px;
-  border: 3px solid #3B46C4;
+  border: 3px solid #00D9C5;
   border-radius: 50%;
   border-top-color: transparent;
   -webkit-animation: iVXCSc 1.2s linear infinite;
   animation: iVXCSc 1.2s linear infinite;
+}
+
+.c2 {
+  border-color: #3B46C4;
+  border-top-color: transparent;
 }
 
 .c0 {
@@ -391,7 +405,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   styling="secondary"
 >
   <div
-    class="c1"
+    class="c1 c2"
   />
    
     

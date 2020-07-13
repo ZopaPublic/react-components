@@ -2,15 +2,19 @@
 
 exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c1 {
+  position: relative;
+}
+
+.c2 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #3EBC64;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -19,35 +23,39 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus,
-.c1:hover {
+.c2:focus,
+.c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::placeholder {
+.c2::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+.c2:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
+  border: 1px solid #3EBC64;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c0 {
@@ -58,27 +66,35 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 <div
   class="c0"
 >
-  <input
-    aria-label="test1"
+  <div
     class="c1"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
+  >
+    <input
+      aria-label="test1"
+      class="c2"
+      id="text-id-test1"
+      name="test1"
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`<TextField /> renders the component with error 1`] = `
 .c1 {
+  position: relative;
+}
+
+.c2 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -87,35 +103,39 @@ exports[`<TextField /> renders the component with error 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus,
-.c1:hover {
+.c2:focus,
+.c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::placeholder {
+.c2::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+.c2:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
+  border: 1px solid #FF4539;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c0 {
@@ -126,13 +146,17 @@ exports[`<TextField /> renders the component with error 1`] = `
 <div
   class="c0"
 >
-  <input
-    aria-label="test1"
+  <div
     class="c1"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
+  >
+    <input
+      aria-label="test1"
+      class="c2"
+      id="text-id-test1"
+      name="test1"
+      type="text"
+    />
+  </div>
 </div>
 `;
 
@@ -183,83 +207,19 @@ exports[`<TextField /> renders the component with label 1`] = `
 
 exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c1 {
-  width: 100%;
-  -webkit-appearance: none;
-  outline: none;
-  border-radius: 8px;
-  padding: 0 16px;
-  height: 50px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #2C3236;
-  border: 1px solid #818F9B;
-  box-shadow: 0 0 4px 0 transparent;
-  -webkit-transition-property: border,box-shadow;
-  transition-property: border,box-shadow;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  position: relative;
 }
 
-.c1:focus,
-.c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1::-moz-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1:-ms-input-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1::placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
-}
-
-.c0 {
-  max-width: 100%;
-  width: 100%;
-}
-
-<div
-  class="c0"
->
-  <input
-    aria-label="test1"
-    class="c1"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
-</div>
-`;
-
-exports[`<TextField /> renders the component with prefix 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -295,8 +255,92 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 }
 
 .c2:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <input
+      aria-label="test1"
+      class="c2"
+      id="text-id-test1"
+      name="test1"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`<TextField /> renders the component with prefix 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  width: 100%;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 16px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4A545E;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c3:focus,
+.c3:hover {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3::-moz-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3:-ms-input-placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3::placeholder {
+  color: #D4D7D9;
+  opacity: 1;
+}
+
+.c3:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c0 {
@@ -338,28 +382,36 @@ exports[`<TextField /> renders the component with prefix 1`] = `
     class="c1"
     prefix="£"
   >
-    <input
-      aria-label="test1"
+    <div
       class="c2"
-      id="text-id-test1"
-      name="test1"
-      type="text"
-    />
+    >
+      <input
+        aria-label="test1"
+        class="c3"
+        id="text-id-test1"
+        name="test1"
+        type="text"
+      />
+    </div>
   </span>
 </div>
 `;
 
 exports[`<TextField /> renders the component with size 1`] = `
 .c1 {
+  position: relative;
+}
+
+.c2 {
   width: 100%;
   -webkit-appearance: none;
   outline: none;
   border-radius: 8px;
-  padding: 0 16px;
   height: 50px;
+  padding: 0 16px;
   font-size: 15px;
   font-weight: 400;
-  color: #2C3236;
+  color: #4A545E;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -368,35 +420,39 @@ exports[`<TextField /> renders the component with size 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c1:focus,
-.c1:hover {
+.c2:focus,
+.c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1::placeholder {
+.c2::placeholder {
   color: #D4D7D9;
   opacity: 1;
 }
 
-.c1:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+.c2:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 .c0 {
@@ -407,12 +463,16 @@ exports[`<TextField /> renders the component with size 1`] = `
 <div
   class="c0"
 >
-  <input
-    aria-label="test1"
+  <div
     class="c1"
-    id="text-id-test1"
-    name="test1"
-    type="text"
-  />
+  >
+    <input
+      aria-label="test1"
+      class="c2"
+      id="text-id-test1"
+      name="test1"
+      type="text"
+    />
+  </div>
 </div>
 `;

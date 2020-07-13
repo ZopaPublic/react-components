@@ -76,23 +76,11 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   cursor: pointer;
 }
 
-.c2:hover:before {
-  border: 1px #00D9C5 solid;
-}
-
 .c1 {
   left: -100%;
   opacity: 0;
   z-index: -1;
   position: absolute;
-}
-
-.c1:hover + label {
-  border-color: #00D9C5;
-}
-
-.c1:hover + label:before {
-  border-color: #00D9C5;
 }
 
 .c1:checked + label {
@@ -110,16 +98,19 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   animation: guYtTV 180ms ease-in-out;
 }
 
+.c1:hover:not(:disabled) + label,
 .c1:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
+.c1:hover:not(:disabled) + label:before,
 .c1:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
+.c1:hover:checked:not(:disabled) + label:after,
 .c1:focus:checked + label:after {
   background-image: url(teal-check-mark.svg);
 }
@@ -127,10 +118,6 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 .c1:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
-}
-
-.c1:disabled:checked:after {
-  background-image: url(grey-check-mark.svg);
 }
 
 .c1:disabled:not(:checked) + label {

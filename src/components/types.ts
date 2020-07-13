@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from 'react';
+import { InputHTMLAttributes, ReactNode } from 'react';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -23,6 +23,14 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    * Attribute used for testing purposes
    */
   'data-automation'?: string;
+  /**
+   * Slot for an icon on the left
+   */
+  startIcon?: ReactNode;
+  /**
+   * Slot for an icon on the right
+   */
+  endIcon?: ReactNode;
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {

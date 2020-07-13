@@ -1,3 +1,81 @@
+### [4.8.5](https://github.com/zopaUK/react-components/compare/v4.8.4...v4.8.5) (2020-07-10)
+
+
+### Bug Fixes
+
+* **card:** extend Card interface to be able to use html props ([12e9b3a](https://github.com/zopaUK/react-components/commit/12e9b3ac5e91ae8ebe78efcb0dd411c4aea6b596))
+
+### [4.8.4](https://github.com/zopaUK/react-components/compare/v4.8.3...v4.8.4) (2020-07-10)
+
+
+### Bug Fixes
+
+* **dropdown:** remove default safari outline ([4a5cec7](https://github.com/zopaUK/react-components/commit/4a5cec765b9c43d5a83a794a9ca4d995302849eb))
+* **inputtext:** fix its color when disabled on safari ([6d6875a](https://github.com/zopaUK/react-components/commit/6d6875aa6eecbd47c8ba7ac5fcef3a6b17f6c80b))
+
+### [4.8.3](https://github.com/zopaUK/react-components/compare/v4.8.2...v4.8.3) (2020-07-06)
+
+
+### Bug Fixes
+
+* **accordion:** fix opening icon ([3fe32b9](https://github.com/zopaUK/react-components/commit/3fe32b916997860da6b5ee9f739161284fc67f5c))
+* **checkboxfield:** add box shadow to hover state ([1f615c1](https://github.com/zopaUK/react-components/commit/1f615c169fe4e6dcb4a50847f93df8ad56b1c3bc))
+* **radiofield:** add box-shadow in hover state ([7cb5208](https://github.com/zopaUK/react-components/commit/7cb5208006dc3f4332dc5af85ae3e78ee4e0a92f))
+
+### [4.8.2](https://github.com/zopaUK/react-components/compare/v4.8.1...v4.8.2) (2020-07-06)
+
+
+### Bug Fixes
+
+* **inputtext:** add missing semicolon ([a389711](https://github.com/zopaUK/react-components/commit/a38971170da209db1791cea51ebb91be14c12a3a))
+
+### [4.8.1](https://github.com/zopaUK/react-components/compare/v4.8.0...v4.8.1) (2020-07-02)
+
+
+### Bug Fixes
+
+* **spacing:** dont mutate sizes ([5332fe4](https://github.com/zopaUK/react-components/commit/5332fe47999441aff79bd08f544ae8deebde7fb3))
+* **spacing:** fix padding right and add margin auto ([80b34ca](https://github.com/zopaUK/react-components/commit/80b34ca3cfc08b5cd72e941972293e24a67a96bc))
+* **spacing:** fix types ([da4c28b](https://github.com/zopaUK/react-components/commit/da4c28bb48fef2d2c3dafe7cf10022ea4e3590a3))
+
+## [4.8.0](https://github.com/zopaUK/react-components/compare/v4.7.2...v4.8.0) (2020-07-02)
+
+
+### Features
+
+* **inputtext:** add startIcon and endIcon to InputText ([dd13d1b](https://github.com/zopaUK/react-components/commit/dd13d1b65311ad2cfde7ef045a5e0227b88d3190))
+
+
+### Bug Fixes
+
+* **dropdown:** maintain disabled state styling even if hovered over ([36d1f0a](https://github.com/zopaUK/react-components/commit/36d1f0afb8e7e3fcebb1e4c1424448ce778a92cc))
+* **dropdownfiltered:** handle cursor states ([0029ed6](https://github.com/zopaUK/react-components/commit/0029ed6d1121d207cd2e11316fb6e99b2de4bdd3))
+* **inputtext:** maintain disabled state even if hovered over ([e7f495d](https://github.com/zopaUK/react-components/commit/e7f495df18f70fb2e1cfb12a5e245dcac49e4c38))
+* **inputtext:** remove background from the endIcon wrapper ([a3707bc](https://github.com/zopaUK/react-components/commit/a3707bcccdb6849e822ec12c4107ac35761e684b))
+* **inputtext:** rename prop start to startIcon to avoid console errors ([70f0022](https://github.com/zopaUK/react-components/commit/70f00220192c659ad4b589894a3bb148101bfe8c))
+* set consistent cursor in disabled inputs ([2689dce](https://github.com/zopaUK/react-components/commit/2689dcef1dfaec6d3c4b90581eeeb1d7b8c9ab8c))
+
+### [4.7.2](https://github.com/zopaUK/react-components/compare/v4.7.1...v4.7.2) (2020-06-30)
+
+
+### Bug Fixes
+
+* **navbar:** close navbar dropdown on link click ([ce228e1](https://github.com/zopaUK/react-components/commit/ce228e174bb4402909e631a6bb42730fa25589d1))
+
+### [4.7.1](https://github.com/zopaUK/react-components/compare/v4.7.0...v4.7.1) (2020-06-26)
+
+
+### Bug Fixes
+
+* **spinner:** set spinner to color.brand without affecting button ([1c732d5](https://github.com/zopaUK/react-components/commit/1c732d5c19f1b60b023cd60eacba994709c550cb))
+
+## [4.7.0](https://github.com/zopaUK/react-components/compare/v4.6.8...v4.7.0) (2020-06-23)
+
+
+### Features
+
+* **help:** redesign help component ([cf8d8cc](https://github.com/zopaUK/react-components/commit/cf8d8cc50337283231a6be36a78861aec3bd91fa))
+
 ### [4.6.8](https://github.com/zopaUK/react-components/compare/v4.6.7...v4.6.8) (2020-06-23)
 
 
