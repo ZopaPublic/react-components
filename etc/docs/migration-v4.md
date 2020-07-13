@@ -198,6 +198,30 @@ There have been a few changes to `<Spinner />` component to make it more consist
 `<InputRange />` component is now required to be a controlled input - you have to pass it `onChange` and `value` props.
 Also, a new `controls` prop has been added to hide/show `+` and `-` buttons on the both sides of the slider.
 
+### `InputText`
+
+`<InputText />` has now two new props `endIcon` and `startIcon`. However, this required wrapping the input inside a `<div>`
+and passing the `className` over to this wrapper, and not the input itself as it was before.
+If you have overwritten the `<InputText />` (i.e. `styled(InputText)`) or any of the form components that use it under the hood
+(`<TextField />`, `<FormTextField />`, `<DropdownFilteredField />`, or `<FormDropdownFilteredField />`), you need to tweak the styling a bit.
+
+```tsx static
+import styled from 'styled-components';
+import { InputText } from ''@zopauk/react-components'
+
+// you need to change this
+const CustomInput = styled(InputText)`
+  /* custom styles */
+`;
+
+// to this
+const CustomInput = styled(InputText)`
+  input {
+    /* custom styles */
+  }
+`;
+```
+
 ### Icons
 
 All the existing icons have been removed in favor of font awesome icons.

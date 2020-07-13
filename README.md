@@ -18,6 +18,12 @@ This repo contains 2 things at the same time:
 
 [Check the docs 💕](https://zopauk.github.io/react-components/)
 
+### Migrating from version 3
+
+There are a number of breaking changes which will need to be addressed when upgrading from Zopa React Components v3 to v4.
+
+[The migration guide](/etc/docs/migration-v4.md) will walk you through the major changes such as colours and typography.
+
 ### Installation
 
 ```

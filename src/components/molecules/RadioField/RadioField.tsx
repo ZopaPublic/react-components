@@ -5,6 +5,7 @@ import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps } from '../../types';
+import deprecate from 'util-deprecate';
 
 const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
   if (isValid) {
@@ -45,7 +46,6 @@ const Label = styled(InputLabel)<InputStatus>`
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
   border-radius: 8px;
-  font-weight: 400;
   position: relative;
   margin-bottom: 0;
   text-align: left;
@@ -75,9 +75,6 @@ const Label = styled(InputLabel)<InputStatus>`
   }
   &:hover {
     cursor: pointer;
-    &:before {
-      border-color: ${colors.greyLight};
-    }
   }
 `;
 
@@ -87,12 +84,6 @@ const Input = styled.input<InputStatus>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:hover + label {
-    border-color: ${colors.brand};
-    &:before {
-      border-color: ${colors.brand};
-    }
-  }
   &:checked + label {
     border-color: ${getCheckedColor};
     &:before {
@@ -105,6 +96,7 @@ const Input = styled.input<InputStatus>`
       animation: ${zoomIn} 200ms ease-in-out;
     }
   }
+  &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
@@ -113,6 +105,7 @@ const Input = styled.input<InputStatus>`
       box-shadow: 0 0 4px 0 ${colors.brand};
     }
   }
+  &:hover:checked:not(:disabled) + label,
   &:focus:checked + label {
     &:after {
       background-color: ${colors.brand};
@@ -145,4 +138,10 @@ const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, 
   );
 };
 
-export default RadioField;
+/**
+ * @deprecated *RadioField* it's being deprecated and will be removed on the next release. Use *RadioGroupField* component instead.
+ */
+export default deprecate(
+  RadioField,
+  "<RadioField /> it's being deprecated and will be removed on the next release. Use <RadioGroupField /> component instead.",
+);

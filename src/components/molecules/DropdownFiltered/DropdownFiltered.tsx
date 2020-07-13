@@ -6,11 +6,11 @@ import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import Icon from '../../atoms/Icon/Icon';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faSort } from '@fortawesome/free-solid-svg-icons';
 import { FieldProps, InputProps } from '../../types';
 import Option from './Option';
 import Options, { OptionsListProps } from './Options';
-import { SearchInputProps, SearchInput, SearchArrowWrap, SearchInputWrap } from './SearchInput';
+import { SearchInputProps, SearchInput } from './SearchInput';
 
 export interface DropdownItem {
   value: string;
@@ -34,6 +34,10 @@ export interface DropdownFilteredProps
 
 const FieldError = styled(ErrorMessage)`
   margin-top: 5px;
+`;
+
+export const SearchInputWrap = styled.div`
+  position: relative;
 `;
 
 const DropdownFiltered = (props: DropdownFilteredProps) => {
@@ -101,26 +105,26 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   hasError={showError}
                   isOpen={isOpen && !!filteredResults.length}
                   disabled={disabled}
-                />
-                <SearchArrowWrap>
-                  <Icon
-                    variant={faChevronDown}
-                    rotation={isOpen ? 180 : undefined}
-                    color={colors.grey}
-                    onClick={() => {
-                      if (!disabled) {
-                        if (isOpen) {
-                          closeMenu();
-                        } else {
-                          clearSelection(() => {
-                            openMenu();
-                          });
+                  endIcon={
+                    <Icon
+                      variant={faSort}
+                      rotation={isOpen ? 180 : undefined}
+                      color={colors.grey}
+                      onClick={() => {
+                        if (!disabled) {
+                          if (isOpen) {
+                            closeMenu();
+                          } else {
+                            clearSelection(() => {
+                              openMenu();
+                            });
+                          }
                         }
-                      }
-                    }}
-                    aria-label={isOpen ? 'close.menu' : 'open.menu'}
-                  />
-                </SearchArrowWrap>
+                      }}
+                      aria-label={isOpen ? 'close.menu' : 'open.menu'}
+                    />
+                  }
+                />
                 {isOpen && !!filteredResults.length && (
                   <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
                     {filteredResults.map((item, index) => (

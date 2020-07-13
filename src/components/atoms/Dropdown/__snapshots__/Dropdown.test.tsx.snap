@@ -15,11 +15,11 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
+  background: transparent url(sort-solid.svg) no-repeat calc(100% - 13px) center;
+  background-size: 8px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -27,15 +27,18 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <select
@@ -65,11 +68,11 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
+  background: transparent url(sort-solid.svg) no-repeat calc(100% - 13px) center;
+  background-size: 8px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -77,15 +80,18 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <select
@@ -121,11 +127,11 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
+  background: transparent url(sort-solid.svg) no-repeat calc(100% - 13px) center;
+  background-size: 8px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -133,15 +139,18 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <select
@@ -178,11 +187,11 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   padding-left: 16px;
   height: 50px;
   border-radius: 8px;
-  color: #2C3236;
+  color: #4A545E;
   font-weight: 400;
   border: 1px solid #818F9B;
-  background: transparent url(chevron-down.svg) no-repeat calc(100% - 13px) center;
-  background-size: 13px;
+  background: transparent url(sort-solid.svg) no-repeat calc(100% - 13px) center;
+  background-size: 8px;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -190,15 +199,18 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   transition: 0.2s ease-in-out;
 }
 
-.c0:focus {
+.c0:focus,
+.c0:hover {
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
 .c0:disabled {
-  background-color: #F7F7F7;
-  color: #818F9B;
+  border: 1px solid #818F9B;
+  box-shadow: 0 0 4px 0 transparent;
+  background-color: transparent;
+  cursor: not-allowed;
 }
 
 <select

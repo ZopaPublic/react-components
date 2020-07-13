@@ -136,23 +136,25 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
       ...rest
     },
     ref,
-  ) => (
-    <StyledNavbarLink
-      active={active}
-      withChevron={withChevron}
-      isDropdownLink={isDropdownLink}
-      isDropdownHeading={isDropdownHeading}
-      ref={ref}
-      {...rest}
-    >
-      {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
-      {withChevron && (
-        <ChevronContainer open={open}>
-          <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
-        </ChevronContainer>
-      )}
-    </StyledNavbarLink>
-  ),
+  ) => {
+    return (
+      <StyledNavbarLink
+        active={active}
+        withChevron={withChevron}
+        isDropdownLink={isDropdownLink}
+        isDropdownHeading={isDropdownHeading}
+        ref={ref}
+        {...rest}
+      >
+        {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
+        {withChevron && (
+          <ChevronContainer open={open}>
+            <Icon variant={faChevronDown} color={colors.grey} height="12px" width="12px" />
+          </ChevronContainer>
+        )}
+      </StyledNavbarLink>
+    );
+  },
 );
 
 export default NavbarLink;

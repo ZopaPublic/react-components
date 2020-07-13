@@ -24,7 +24,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
   display: -webkit-box;
   display: -webkit-flex;

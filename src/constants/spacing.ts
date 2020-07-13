@@ -1,4 +1,4 @@
-type Spacing = Record<string, string>;
+export type Spacing = Record<string, string>;
 
 export const spacing: Spacing = {
   '0': '0',
