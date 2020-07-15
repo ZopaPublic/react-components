@@ -1,3 +1,11 @@
+### [4.8.6](https://github.com/zopaUK/react-components/compare/v4.8.5...v4.8.6) (2020-07-15)
+
+
+### Bug Fixes
+
+* **checkboxgroupfield:** make it responsive ([6d6cbca](https://github.com/zopaUK/react-components/commit/6d6cbcaf6ef6ff37dc5d8b9651e5696bc2722c49))
+* **radiogroupfield:** make it responsive ([f74e5a6](https://github.com/zopaUK/react-components/commit/f74e5a65d0585b52b862063d52dd9885d35afcda))
+
 ### [4.8.5](https://github.com/zopaUK/react-components/compare/v4.8.4...v4.8.5) (2020-07-10)
 
 
