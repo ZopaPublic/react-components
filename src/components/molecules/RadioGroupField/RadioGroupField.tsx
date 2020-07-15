@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import FlexRow, { FlexRowProps } from '../../layout/FlexRow/FlexRow';
+import FlexCol, { FlexColProps } from '../../layout/FlexCol/FlexCol';
 import RadioField from '../RadioField/RadioField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
@@ -10,14 +12,14 @@ const RadioWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface RadioGroupFieldItem {
+type RadioGroupFieldItem = {
   value: string;
   label: string;
   defaultChecked?: boolean;
   disabled?: boolean;
-}
+};
 
-export interface RadioGroupFieldProps {
+export type RadioGroupFieldProps = {
   label: string;
   items: RadioGroupFieldItem[];
   onChange: (value: string) => void;
@@ -27,7 +29,9 @@ export interface RadioGroupFieldProps {
   isValid?: boolean;
   errorMessage?: string;
   className?: string;
-}
+  flexColProps?: FlexColProps;
+  flexRowProps?: FlexRowProps;
+};
 
 const RadioGroupField = ({
   items,
@@ -39,6 +43,8 @@ const RadioGroupField = ({
   isValid = false,
   errorMessage,
   className,
+  flexRowProps = {},
+  flexColProps = {},
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -60,22 +66,26 @@ const RadioGroupField = ({
       <Legend>
         <Text weight="bold">{label}</Text>
       </Legend>
-      {items.map((item) => {
-        const checked = isControlled ? value === item.value : innerValue === item.value;
-        return (
-          <RadioWrapper key={item.value}>
-            <RadioField
-              disabled={disabled}
-              value={item.value}
-              onChange={handleChange(item.value)}
-              onBlur={onBlur}
-              label={item.label}
-              checked={checked}
-              isValid={checked && isValid}
-            />
-          </RadioWrapper>
-        );
-      })}
+      <FlexRow {...flexRowProps}>
+        {items.map((item) => {
+          const checked = isControlled ? value === item.value : innerValue === item.value;
+          return (
+            <FlexCol {...flexColProps} key={item.value}>
+              <RadioWrapper>
+                <RadioField
+                  disabled={disabled}
+                  value={item.value}
+                  onChange={handleChange(item.value)}
+                  onBlur={onBlur}
+                  label={item.label}
+                  checked={checked}
+                  isValid={checked && isValid}
+                />
+              </RadioWrapper>
+            </FlexCol>
+          );
+        })}
+      </FlexRow>
       {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );

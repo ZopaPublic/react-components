@@ -109,3 +109,25 @@ import { RadioGroupField } from '@zopauk/react-components';
   errorMessage="You have to pick one"
 />;
 ```
+
+- Responsive
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  flexColProps={{
+    xs: 12,
+    m: 6,
+    xl: 3,
+  }}
+  items={[
+    { value: 'twelve', label: 'label twelve' },
+    { value: 'thirteen', label: 'label thirteen' },
+    { value: 'fourteen', label: 'label fourteen' },
+    { value: 'fifteen', label: 'label fifteen' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
+/>;
+```
