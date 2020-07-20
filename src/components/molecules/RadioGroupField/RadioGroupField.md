@@ -1,6 +1,6 @@
 ### Summary
 
-`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`s:
+`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`
 
 ⚠️ &nbsp;Note that the `value` for each item has to be unique as it determines the `id`
 and `htmlFor` prop fof each radio field.
@@ -19,6 +19,7 @@ import { RadioGroupField } from '@zopauk/react-components';
   ]}
   onChange={(value) => console.log(value)}
   label="Radio group field label"
+  showLoader={true}
 />;
 ```
 
@@ -110,6 +111,22 @@ import { RadioGroupField } from '@zopauk/react-components';
 />;
 ```
 
+- With loader (when selected)
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  items={[
+    { value: 'twelve', label: 'label twelve' },
+    { value: 'thirteen', label: 'label thirteen' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
+  showLoader={true}
+/>;
+```
+
 - Responsive
 
 ```jsx
@@ -122,10 +139,10 @@ import { RadioGroupField } from '@zopauk/react-components';
     xl: 3,
   }}
   items={[
-    { value: 'twelve', label: 'label twelve' },
-    { value: 'thirteen', label: 'label thirteen' },
     { value: 'fourteen', label: 'label fourteen' },
     { value: 'fifteen', label: 'label fifteen' },
+    { value: 'sixteen', label: 'label sixteen' },
+    { value: 'seventeen', label: 'label seventeen' },
   ]}
   onChange={(value) => console.log(value)}
   label="Radio group field label"
