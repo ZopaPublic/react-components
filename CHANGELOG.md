@@ -1,3 +1,11 @@
+### [4.9.1](https://github.com/zopaUK/react-components/compare/v4.9.0...v4.9.1) (2020-07-21)
+
+
+### Bug Fixes
+
+* **radiofield:** remove loader and change label to accept react node ([083f6f0](https://github.com/zopaUK/react-components/commit/083f6f0601fc98ed55aebe23e0730d254ea99d96))
+* **spinner:** set min height and width ([6208f73](https://github.com/zopaUK/react-components/commit/6208f731432b073e7893ce220b6cd0ded9b801ac))
+
 ## [4.9.0](https://github.com/zopaUK/react-components/compare/v4.8.6...v4.9.0) (2020-07-21)
 
 
