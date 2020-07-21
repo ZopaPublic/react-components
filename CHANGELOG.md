@@ -1,3 +1,15 @@
+## [4.9.0](https://github.com/zopaUK/react-components/compare/v4.8.6...v4.9.0) (2020-07-21)
+
+
+### Features
+
+* **radiofield:** add optional loading icon when selected ([eedea2e](https://github.com/zopaUK/react-components/commit/eedea2edcc26f9a012478ba2546f41df2f94914c))
+
+
+### Bug Fixes
+
+* **radiofield:** make label optional ([ff4cef1](https://github.com/zopaUK/react-components/commit/ff4cef1192e92338032dcb709e461c704f8e0a13))
+
 ### [4.8.6](https://github.com/zopaUK/react-components/compare/v4.8.5...v4.8.6) (2020-07-15)
 
 
