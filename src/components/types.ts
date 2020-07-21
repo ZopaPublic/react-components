@@ -61,8 +61,4 @@ export interface FieldProps {
    * Input size
    */
   inputSize?: ContainerSizes;
-  /**
-   * Shows a loading icon if true
-   */
-  showLoader?: boolean;
 }
