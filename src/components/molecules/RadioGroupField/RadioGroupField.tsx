@@ -14,10 +14,9 @@ const RadioWrapper = styled.div`
 
 type RadioGroupFieldItem = {
   value: string;
-  label?: string;
+  label?: string | React.ReactNode;
   defaultChecked?: boolean;
   disabled?: boolean;
-  showLoader?: boolean;
 };
 
 export type RadioGroupFieldProps = {
@@ -26,7 +25,6 @@ export type RadioGroupFieldProps = {
   onChange: (value: string) => void;
   onBlur?: () => void;
   disabled?: boolean;
-  showLoader?: boolean;
   value?: string;
   isValid?: boolean;
   errorMessage?: string;
@@ -42,7 +40,6 @@ const RadioGroupField = ({
   onBlur,
   value,
   disabled,
-  showLoader = false,
   isValid = false,
   errorMessage,
   className,
@@ -85,7 +82,6 @@ const RadioGroupField = ({
                   label={item.label}
                   checked={checked}
                   isValid={checked && isValid}
-                  showLoader={checked && showLoader}
                 />
               </RadioWrapper>
             </FlexCol>

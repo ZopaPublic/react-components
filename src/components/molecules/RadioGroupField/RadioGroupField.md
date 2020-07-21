@@ -110,22 +110,6 @@ import { RadioGroupField } from '@zopauk/react-components';
 />;
 ```
 
-- With loader (when selected)
-
-```jsx
-import { RadioGroupField } from '@zopauk/react-components';
-
-<RadioGroupField
-  items={[
-    { value: 'twelve', label: 'label twelve' },
-    { value: 'thirteen', label: 'label thirteen' },
-  ]}
-  onChange={(value) => console.log(value)}
-  label="Radio group field label"
-  showLoader={true}
-/>;
-```
-
 - Responsive
 
 ```jsx
