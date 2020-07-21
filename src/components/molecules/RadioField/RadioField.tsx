@@ -4,6 +4,7 @@ import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
+import Spinner from '../../atoms/Spinner/Spinner';
 import { FieldProps, InputStatus, InputProps } from '../../types';
 import deprecate from 'util-deprecate';
 
@@ -123,9 +124,23 @@ const Input = styled.input<InputStatus>`
   }
 `;
 
+const Loader = styled(Spinner)`
+  margin-left: auto;
+`;
+
 export interface RadioField extends FieldProps, InputProps {}
 
-const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: RadioField) => {
+const RadioField = ({
+  label,
+  hasError,
+  errorMessage,
+  isValid,
+  value,
+  inputSize,
+  showLoader,
+  className,
+  ...rest
+}: RadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
 
   return (
@@ -133,6 +148,7 @@ const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, 
       <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} value={value} type="radio" {...rest} />
       <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
         {label}
+        {showLoader && <Loader size={'small'} />}
       </Label>
     </FieldContainer>
   );

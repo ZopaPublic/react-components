@@ -14,17 +14,19 @@ const RadioWrapper = styled.div`
 
 type RadioGroupFieldItem = {
   value: string;
-  label: string;
+  label?: string;
   defaultChecked?: boolean;
   disabled?: boolean;
+  showLoader?: boolean;
 };
 
 export type RadioGroupFieldProps = {
-  label: string;
+  label?: string;
   items: RadioGroupFieldItem[];
   onChange: (value: string) => void;
   onBlur?: () => void;
   disabled?: boolean;
+  showLoader?: boolean;
   value?: string;
   isValid?: boolean;
   errorMessage?: string;
@@ -40,6 +42,7 @@ const RadioGroupField = ({
   onBlur,
   value,
   disabled,
+  showLoader = false,
   isValid = false,
   errorMessage,
   className,
@@ -63,9 +66,11 @@ const RadioGroupField = ({
 
   return (
     <Fieldset className={className}>
-      <Legend>
-        <Text weight="bold">{label}</Text>
-      </Legend>
+      {label && (
+        <Legend>
+          <Text weight="bold">{label}</Text>
+        </Legend>
+      )}
       <FlexRow {...flexRowProps}>
         {items.map((item) => {
           const checked = isControlled ? value === item.value : innerValue === item.value;
@@ -80,6 +85,7 @@ const RadioGroupField = ({
                   label={item.label}
                   checked={checked}
                   isValid={checked && isValid}
+                  showLoader={checked && showLoader}
                 />
               </RadioWrapper>
             </FlexCol>
