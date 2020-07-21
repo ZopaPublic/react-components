@@ -118,7 +118,11 @@ import { RadioGroupField } from '@zopauk/react-components';
 <RadioGroupField
   items={[
     { value: 'twelve', label: 'label twelve' },
-    { value: 'thirteen', label: 'label thirteen' },
+    {
+      value: 'thirteen',
+      label:
+        'Zopa decides the interest rate for loans and sets up the loan contract with the borrower before transferring the rights to the loan over to you.',
+    },
   ]}
   onChange={(value) => console.log(value)}
   label="Radio group field label"

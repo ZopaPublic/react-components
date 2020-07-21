@@ -26,6 +26,8 @@ const spin = keyframes`
 
 const StyledSpinner = styled.div<SpinnerProps>`
   ${({ size = 'standard', negative = false }) => css`
+    min-width: ${size === 'small' ? 20 : 40}px;
+    min-height: ${size === 'small' ? 20 : 40}px;
     width: ${size === 'small' ? 20 : 40}px;
     height: ${size === 'small' ? 20 : 40}px;
     border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.brand}};
