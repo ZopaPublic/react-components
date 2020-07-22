@@ -126,7 +126,7 @@ describe('<RadioGroupField />', () => {
           { value: 'one', label: 'label one' },
           { value: 'two', label: 'label two' },
         ]}
-        hideIcon
+        hideControl
       />,
     );
     const results = await axe(container.innerHTML);

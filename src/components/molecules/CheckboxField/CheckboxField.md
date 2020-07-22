@@ -26,7 +26,7 @@ import { CheckboxField } from '@zopauk/react-components';
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
 
-<CheckboxField label="Do you want to hide the icon?" name="hideIcon" hideIcon />;
+<CheckboxField label="Do you want to hide the icon?" name="hideControl" hideControl />;
 ```
 
 - Default with multiline label

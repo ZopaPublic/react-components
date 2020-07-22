@@ -64,5 +64,8 @@ export interface FieldProps {
 }
 
 export interface GroupingControlsProps {
-  hideIcon?: boolean;
+  /**
+   * hide/show the control
+   */
+  hideControl?: boolean;
 }

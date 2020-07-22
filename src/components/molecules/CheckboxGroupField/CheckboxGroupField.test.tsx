@@ -120,7 +120,12 @@ describe('<CheckboxGroupField />', () => {
 
   it('renders the component with no icon and no a11y violations', async () => {
     const { container } = render(
-      <CheckboxGroupField label="label" onChange={jest.fn()} items={[{ label: 'option', name: 'option' }]} hideIcon />,
+      <CheckboxGroupField
+        label="label"
+        onChange={jest.fn()}
+        items={[{ label: 'option', name: 'option' }]}
+        hideControl
+      />,
     );
     const results = await axe(container.innerHTML);
 

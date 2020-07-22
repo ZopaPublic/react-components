@@ -13,7 +13,7 @@ describe('<CheckboxField />', () => {
   });
 
   it('renders the component with no icon and  no a11y violations', async () => {
-    const { container } = render(<CheckboxField label={'hello'} name="test1" hideIcon />);
+    const { container } = render(<CheckboxField label={'hello'} name="test1" hideControl />);
     const results = await axe(container.innerHTML);
 
     expect(container.firstChild).toMatchSnapshot();

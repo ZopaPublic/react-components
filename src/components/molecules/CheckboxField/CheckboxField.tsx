@@ -124,8 +124,8 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
       animation: ${zoomOut} 180ms ease-in-out;
     }
   }
-  ${({ hideIcon }) =>
-    hideIcon &&
+  ${({ hideControl }) =>
+    hideControl &&
     css`
       & + label {
         &:before,
@@ -137,7 +137,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
 `;
 
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
-  const { label, errorMessage, className, inputSize, name, hasError, isValid, hideIcon, ...rest } = props;
+  const { label, errorMessage, className, inputSize, name, hasError, isValid, hideControl, ...rest } = props;
   return (
     <>
       <SizedContainer size={inputSize} className={className}>
@@ -148,7 +148,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           hasError={hasError}
           isValid={isValid}
           name={name}
-          hideIcon={hideIcon}
+          hideControl={hideControl}
           {...rest}
         />
         <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid}>

@@ -125,8 +125,8 @@ const Input = styled.input<InputStatus & GroupingControlsProps>`
       animation: ${zoomIn} 200ms ease-in-out;
     }
   }
-  ${({ hideIcon }) =>
-    hideIcon &&
+  ${({ hideControl }) =>
+    hideControl &&
     css`
       & + label {
         &:before,
@@ -147,7 +147,7 @@ const RadioField = ({
   value,
   inputSize,
   className,
-  hideIcon,
+  hideControl,
   ...rest
 }: RadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
@@ -159,7 +159,7 @@ const RadioField = ({
         hasError={hasError}
         isValid={isValid}
         value={value}
-        hideIcon={hideIcon}
+        hideControl={hideControl}
         type="radio"
         {...rest}
       />

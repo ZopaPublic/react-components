@@ -49,7 +49,7 @@ import { CheckboxGroupField } from '@zopauk/react-components';
   ]}
   onChange={(value) => console.log(value)}
   label="Checkbox group field label"
-  hideIcon
+  hideControl
 />;
 ```
 
