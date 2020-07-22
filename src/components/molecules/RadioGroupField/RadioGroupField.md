@@ -1,6 +1,6 @@
 ### Summary
 
-`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`s:
+`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`
 
 ⚠️ &nbsp;Note that the `value` for each item has to be unique as it determines the `id`
 and `htmlFor` prop fof each radio field.
@@ -107,5 +107,27 @@ import { RadioGroupField } from '@zopauk/react-components';
   onChange={(value) => console.log(value)}
   label="Radio group field label"
   errorMessage="You have to pick one"
+/>;
+```
+
+- Responsive
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  flexColProps={{
+    xs: 12,
+    m: 6,
+    xl: 3,
+  }}
+  items={[
+    { value: 'fourteen', label: 'label fourteen' },
+    { value: 'fifteen', label: 'label fifteen' },
+    { value: 'sixteen', label: 'label sixteen' },
+    { value: 'seventeen', label: 'label seventeen' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
 />;
 ```

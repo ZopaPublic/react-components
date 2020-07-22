@@ -1,3 +1,31 @@
+### [4.9.1](https://github.com/zopaUK/react-components/compare/v4.9.0...v4.9.1) (2020-07-21)
+
+
+### Bug Fixes
+
+* **radiofield:** remove loader and change label to accept react node ([083f6f0](https://github.com/zopaUK/react-components/commit/083f6f0601fc98ed55aebe23e0730d254ea99d96))
+* **spinner:** set min height and width ([6208f73](https://github.com/zopaUK/react-components/commit/6208f731432b073e7893ce220b6cd0ded9b801ac))
+
+## [4.9.0](https://github.com/zopaUK/react-components/compare/v4.8.6...v4.9.0) (2020-07-21)
+
+
+### Features
+
+* **radiofield:** add optional loading icon when selected ([eedea2e](https://github.com/zopaUK/react-components/commit/eedea2edcc26f9a012478ba2546f41df2f94914c))
+
+
+### Bug Fixes
+
+* **radiofield:** make label optional ([ff4cef1](https://github.com/zopaUK/react-components/commit/ff4cef1192e92338032dcb709e461c704f8e0a13))
+
+### [4.8.6](https://github.com/zopaUK/react-components/compare/v4.8.5...v4.8.6) (2020-07-15)
+
+
+### Bug Fixes
+
+* **checkboxgroupfield:** make it responsive ([6d6cbca](https://github.com/zopaUK/react-components/commit/6d6cbcaf6ef6ff37dc5d8b9651e5696bc2722c49))
+* **radiogroupfield:** make it responsive ([f74e5a6](https://github.com/zopaUK/react-components/commit/f74e5a65d0585b52b862063d52dd9885d35afcda))
+
 ### [4.8.5](https://github.com/zopaUK/react-components/compare/v4.8.4...v4.8.5) (2020-07-10)
 
 
