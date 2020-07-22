@@ -37,6 +37,22 @@ import { RadioGroupField } from '@zopauk/react-components';
 />;
 ```
 
+- Uncontrolled with hidden icon
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  items={[
+    { value: 'three', label: 'label three' },
+    { value: 'four', label: 'label four', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Radio group field label"
+  hideIcon
+/>;
+```
+
 - Controlled
 
 ```js

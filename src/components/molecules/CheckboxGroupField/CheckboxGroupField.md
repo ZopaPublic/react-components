@@ -37,6 +37,22 @@ import { CheckboxGroupField } from '@zopauk/react-components';
 />;
 ```
 
+- Uncontrolled with hidden icon
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  items={[
+    { name: 'three', label: 'label three' },
+    { name: 'four', label: 'label four', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
+  hideIcon
+/>;
+```
+
 - Controlled
 
 ```js
