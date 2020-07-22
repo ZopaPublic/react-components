@@ -1,3 +1,17 @@
+## [4.10.0](https://github.com/zopaUK/react-components/compare/v4.9.1...v4.10.0) (2020-07-22)
+
+
+### Features
+
+* **radio/checkbox:** show/hide the icon ([22e32b4](https://github.com/zopaUK/react-components/commit/22e32b4fa0dbc15ee7a945b03a8fe4c74c4371de))
+
+
+### Bug Fixes
+
+* **radio:** remove conosle log ([e175f46](https://github.com/zopaUK/react-components/commit/e175f467473a26c712c13317be6ae038ff786703))
+* **radio/checkbox:** add teal bg colour for selected state ([320390e](https://github.com/zopaUK/react-components/commit/320390e31c52e4e0b390f690287d8211edd10e61))
+* **radio/checkbox:** change hideIcon to hideControl ([25f3e88](https://github.com/zopaUK/react-components/commit/25f3e88dc9c315beef944246d7daaad90f12dc1a))
+
 ### [4.9.1](https://github.com/zopaUK/react-components/compare/v4.9.0...v4.9.1) (2020-07-21)
 
 
