@@ -31,6 +31,7 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   className?: string;
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
+  hideControl?: boolean;
 }
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
@@ -45,6 +46,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   className,
   flexRowProps = {},
   flexColProps = {},
+  hideControl,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -95,6 +97,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
                   label={item.label}
                   checked={checked}
                   isValid={checked && isValid}
+                  hideControl={hideControl}
                 />
               </CheckboxWrapper>
             </FlexCol>

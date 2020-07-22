@@ -109,7 +109,24 @@ describe('<CheckboxGroupField />', () => {
   });
 
   it('renders the component with props with no a11y violations', async () => {
-    const { container } = render(<CheckboxGroupField label="label" onChange={jest.fn()} items={[]} />);
+    const { container } = render(
+      <CheckboxGroupField label="label" onChange={jest.fn()} items={[{ label: 'option', name: 'option' }]} />,
+    );
+    const results = await axe(container.innerHTML);
+
+    expect(container.firstChild).toMatchSnapshot();
+    expect(results).toHaveNoViolations();
+  });
+
+  it('renders the component with no control icon and no a11y violations', async () => {
+    const { container } = render(
+      <CheckboxGroupField
+        label="label"
+        onChange={jest.fn()}
+        items={[{ label: 'option', name: 'option' }]}
+        hideControl
+      />,
+    );
     const results = await axe(container.innerHTML);
 
     expect(container.firstChild).toMatchSnapshot();
