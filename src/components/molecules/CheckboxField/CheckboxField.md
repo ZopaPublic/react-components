@@ -21,7 +21,7 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField label="Do you love jazz?" name="check1" />;
 ```
 
-- Hide check icon
+- Hide control
 
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';

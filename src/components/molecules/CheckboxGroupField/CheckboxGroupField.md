@@ -37,7 +37,7 @@ import { CheckboxGroupField } from '@zopauk/react-components';
 />;
 ```
 
-- Uncontrolled with hidden icon
+- Uncontrolled with hidden control
 
 ```jsx
 import { CheckboxGroupField } from '@zopauk/react-components';

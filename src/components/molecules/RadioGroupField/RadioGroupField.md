@@ -37,7 +37,7 @@ import { RadioGroupField } from '@zopauk/react-components';
 />;
 ```
 
-- Uncontrolled with hidden icon
+- Uncontrolled with hidden control
 
 ```jsx
 import { RadioGroupField } from '@zopauk/react-components';
