@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CheckboxField /> renders the component with no icon and  no a11y violations 1`] = `
+exports[`<CheckboxField /> renders the component with no control iconand  no a11y violations 1`] = `
 .c0 {
   max-width: 100%;
   width: 100%;

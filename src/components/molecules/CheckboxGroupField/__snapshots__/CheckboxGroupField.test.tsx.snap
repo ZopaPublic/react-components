@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CheckboxGroupField /> renders the component with no icon and no a11y violations 1`] = `
+exports[`<CheckboxGroupField /> renders the component with no control iconand no a11y violations 1`] = `
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
