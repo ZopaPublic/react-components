@@ -84,18 +84,7 @@ const Input = styled.input<InputStatus>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:checked + label {
-    border-color: ${getCheckedColor};
-    &:before {
-      border-color: ${getCheckedColor};
-    }
-    &:after {
-      background-color: ${getCheckedColor};
-      height: 10px;
-      width: 10px;
-      animation: ${zoomIn} 200ms ease-in-out;
-    }
-  }
+
   &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
@@ -119,6 +108,21 @@ const Input = styled.input<InputStatus>`
     border-color: ${colors.greyLight};
     &:before {
       border-color: ${colors.greyLight};
+    }
+  }
+  &:checked + label {
+    border-color: ${getCheckedColor};
+    background-color: ${colors.brandLight};
+    box-shadow: none;
+    &:before {
+      border-color: ${getCheckedColor};
+      box-shadow: none;
+    }
+    &:after {
+      background-color: ${getCheckedColor};
+      height: 10px;
+      width: 10px;
+      animation: ${zoomIn} 200ms ease-in-out;
     }
   }
 `;

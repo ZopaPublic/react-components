@@ -83,17 +83,7 @@ const Input = styled.input<InputProps>`
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:checked + label {
-    border-color: ${getCheckedColor};
-    &:before {
-      border-color: ${getCheckedColor};
-    }
-    &:after {
-      background-size: contain;
-      background-image: url(${({ isValid }) => (isValid ? greenCheckMark : tealCheckMark)});
-      animation: ${zoomOut} 180ms ease-in-out;
-    }
-  }
+
   &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
@@ -119,6 +109,20 @@ const Input = styled.input<InputProps>`
       border-color: ${colors.greyLight};
     }
   }
+  &:checked + label {
+    border-color: ${getCheckedColor};
+    background-color: ${colors.brandLight};
+    box-shadow: none;
+    &:before {
+      border-color: ${getCheckedColor};
+      box-shadow: none;
+    }
+    &:after {
+      background-size: contain;
+      background-image: url(${({ isValid }) => (isValid ? greenCheckMark : tealCheckMark)});
+      animation: ${zoomOut} 180ms ease-in-out;
+    }
+  }
 `;
 
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
@@ -139,7 +143,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           {label}
         </Label>
       </SizedContainer>
-      {errorMessage && <ErrorMessage className="mt-2">{errorMessage}</ErrorMessage>}
+      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </>
   );
 });
