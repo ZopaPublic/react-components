@@ -1,5 +1,252 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<CheckboxGroupField /> renders the component with no icon and no a11y violations 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c2 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c6 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c8 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 14px 16px;
+  border: 1px solid #818F9B;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
+  line-height: 1.4;
+  color: #2C3236;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+.c8:before {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 4px 0 transparent;
+  border: 1px #818F9B solid;
+  display: block;
+}
+
+.c8:after {
+  content: '';
+  background-size: contain;
+  background: transparent none no-repeat center;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.c8:hover {
+  cursor: pointer;
+}
+
+.c7 {
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
+  background-image: url(teal-check-mark.svg);
+}
+
+.c7:disabled + label {
+  cursor: not-allowed;
+  color: #818F9B;
+}
+
+.c7:disabled:not(:checked) + label {
+  border-color: #D4D7D9;
+}
+
+.c7:disabled:not(:checked) + label:before {
+  border-color: #D4D7D9;
+}
+
+.c7:checked + label {
+  border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
+}
+
+.c7:checked + label:before {
+  border-color: #00D9C5;
+  box-shadow: none;
+}
+
+.c7:checked + label:after {
+  background-size: contain;
+  background-image: url(teal-check-mark.svg);
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
+}
+
+.c7 + label:before,
+.c7 + label:after {
+  display: none;
+}
+
+.c0 {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.c1 {
+  padding: 0;
+  display: table;
+  margin-bottom: 10px;
+}
+
+.c5 {
+  padding: 4px 0;
+}
+
+<fieldset
+  class="c0"
+>
+  <legend
+    class="c1"
+  >
+    <span
+      class="c2"
+    >
+      label
+    </span>
+  </legend>
+  <div
+    class="c3"
+    cols="12"
+    direction="row"
+  >
+    <div
+      class="c4"
+      cols="12"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+        >
+          <input
+            class="c7"
+            id="checkbox-id-option"
+            name="option"
+            type="checkbox"
+          />
+          <label
+            class="c8"
+            for="checkbox-id-option"
+          >
+            option
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</fieldset>
+`;
+
 exports[`<CheckboxGroupField /> renders the component with props with no a11y violations 1`] = `
 .c3 {
   display: -webkit-box;
@@ -24,6 +271,17 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   align-items: flex-start;
 }
 
+.c4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
 .c2 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -38,6 +296,136 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   text-align: inherit;
 }
 
+.c6 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c8 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 14px 16px;
+  border: 1px solid #818F9B;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
+  line-height: 1.4;
+  color: #2C3236;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+.c8:before {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 4px 0 transparent;
+  border: 1px #818F9B solid;
+  display: block;
+}
+
+.c8:after {
+  content: '';
+  background-size: contain;
+  background: transparent none no-repeat center;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.c8:hover {
+  cursor: pointer;
+}
+
+.c7 {
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
+  background-image: url(teal-check-mark.svg);
+}
+
+.c7:disabled + label {
+  cursor: not-allowed;
+  color: #818F9B;
+}
+
+.c7:disabled:not(:checked) + label {
+  border-color: #D4D7D9;
+}
+
+.c7:disabled:not(:checked) + label:before {
+  border-color: #D4D7D9;
+}
+
+.c7:checked + label {
+  border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
+}
+
+.c7:checked + label:before {
+  border-color: #00D9C5;
+  box-shadow: none;
+}
+
+.c7:checked + label:after {
+  background-size: contain;
+  background-image: url(teal-check-mark.svg);
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
+}
+
 .c0 {
   border: 0;
   padding: 0.01em 0 0 0;
@@ -49,6 +437,10 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   padding: 0;
   display: table;
   margin-bottom: 10px;
+}
+
+.c5 {
+  padding: 4px 0;
 }
 
 <fieldset
@@ -67,6 +459,32 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
     class="c3"
     cols="12"
     direction="row"
-  />
+  >
+    <div
+      class="c4"
+      cols="12"
+    >
+      <div
+        class="c5"
+      >
+        <div
+          class="c6"
+        >
+          <input
+            class="c7"
+            id="checkbox-id-option"
+            name="option"
+            type="checkbox"
+          />
+          <label
+            class="c8"
+            for="checkbox-id-option"
+          >
+            option
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </fieldset>
 `;

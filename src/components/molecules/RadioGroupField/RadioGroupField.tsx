@@ -31,6 +31,7 @@ export type RadioGroupFieldProps = {
   className?: string;
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
+  hideIcon?: boolean;
 };
 
 const RadioGroupField = ({
@@ -45,6 +46,7 @@ const RadioGroupField = ({
   className,
   flexRowProps = {},
   flexColProps = {},
+  hideIcon,
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -82,6 +84,7 @@ const RadioGroupField = ({
                   label={item.label}
                   checked={checked}
                   isValid={checked && isValid}
+                  hideIcon={hideIcon}
                 />
               </RadioWrapper>
             </FlexCol>

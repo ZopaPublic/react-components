@@ -11,4 +11,12 @@ describe('<CheckboxField />', () => {
     expect(container.firstChild).toMatchSnapshot();
     expect(results).toHaveNoViolations();
   });
+
+  it('renders the component with no icon and  no a11y violations', async () => {
+    const { container } = render(<CheckboxField label={'hello'} name="test1" hideIcon />);
+    const results = await axe(container.innerHTML);
+
+    expect(container.firstChild).toMatchSnapshot();
+    expect(results).toHaveNoViolations();
+  });
 });

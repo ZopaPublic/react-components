@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greenCheckMark from '../../../content/images/green-check-mark.svg';
@@ -7,11 +7,12 @@ import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { getBorderColorByStatus } from '../../../helpers/utils';
-import { FieldProps, InputProps } from '../../types';
+import { FieldProps, InputProps, GroupingControlsProps } from '../../types';
 
-export interface CheckboxFieldProps extends FieldProps, InputProps {
-  name: string;
-}
+export interface CheckboxFieldProps
+  extends FieldProps,
+    GroupingControlsProps,
+    Omit<InputProps, 'startIcon' | 'endIcon'> {}
 
 const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
   if (isValid) {
@@ -78,7 +79,7 @@ const Label = styled(InputLabel)`
   }
 `;
 
-const Input = styled.input<InputProps>`
+const Input = styled.input<InputProps & GroupingControlsProps>`
   left: -100%;
   opacity: 0;
   z-index: -1;
@@ -123,10 +124,20 @@ const Input = styled.input<InputProps>`
       animation: ${zoomOut} 180ms ease-in-out;
     }
   }
+  ${({ hideIcon }) =>
+    hideIcon &&
+    css`
+      & + label {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    `}
 `;
 
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
-  const { label, errorMessage, className, inputSize, name, hasError, isValid, ...rest } = props;
+  const { label, errorMessage, className, inputSize, name, hasError, isValid, hideIcon, ...rest } = props;
   return (
     <>
       <SizedContainer size={inputSize} className={className}>
@@ -137,6 +148,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           hasError={hasError}
           isValid={isValid}
           name={name}
+          hideIcon={hideIcon}
           {...rest}
         />
         <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid}>
