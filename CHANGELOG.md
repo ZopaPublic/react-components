@@ -1,3 +1,10 @@
+### [4.10.1](https://github.com/zopaUK/react-components/compare/v4.10.0...v4.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* **text:** add "inherit" as a color option ([cb31b21](https://github.com/zopaUK/react-components/commit/cb31b2147851c26c3d52779161ff9586320e1394))
+
 ## [4.10.0](https://github.com/zopaUK/react-components/compare/v4.9.1...v4.10.0) (2020-07-22)
 
 
