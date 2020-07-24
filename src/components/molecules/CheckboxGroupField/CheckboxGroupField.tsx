@@ -6,7 +6,6 @@ import CheckboxField from '../CheckboxField/CheckboxField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
-import Text from '../../atoms/Text/Text';
 
 const CheckboxWrapper = styled.div`
   padding: 4px 0;
@@ -80,9 +79,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
 
   return (
     <Fieldset className={className}>
-      <Legend>
-        <Text weight="bold">{label}</Text>
-      </Legend>
+      <Legend>{label}</Legend>
       <FlexRow {...flexRowProps}>
         {items.map((item) => {
           const checked = value ? !!value[item.name] : !!innerValue[item.name];
