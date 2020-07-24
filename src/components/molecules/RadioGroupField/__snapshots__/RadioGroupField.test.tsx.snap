@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroupField /> renders the component with no control icon and no a11y violations 1`] = `
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,7 +24,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   align-items: flex-start;
 }
 
-.c4 {
+.c3 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -35,21 +35,21 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   align-self: auto;
 }
 
-.c6 {
+.c5 {
   max-width: 100%;
   width: 100%;
 }
 
-.c7 {
+.c6 {
   position: relative;
   margin-bottom: 10px;
 }
 
-.c7:last-of-type {
+.c6:last-of-type {
   margin-bottom: 0;
 }
 
-.c9 {
+.c8 {
   display: block;
   margin: 0 0 10px;
   -webkit-letter-spacing: 0;
@@ -80,7 +80,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   text-align: left;
 }
 
-.c9:before {
+.c8:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -99,7 +99,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   transition: 0.2s ease-in-out;
 }
 
-.c9:after {
+.c8:after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -112,11 +112,11 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   top: 19px;
 }
 
-.c9:hover {
+.c8:hover {
   cursor: pointer;
 }
 
-.c8 {
+.c7 {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -124,48 +124,48 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   position: absolute;
 }
 
-.c8:hover:not(:disabled) + label,
-.c8:focus + label {
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c8:hover:not(:disabled) + label:before,
-.c8:focus + label:before {
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c8:hover:checked:not(:disabled) + label:after,
-.c8:focus:checked + label:after {
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
   background-color: #00D9C5;
 }
 
-.c8:disabled + label {
+.c7:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
 }
 
-.c8:disabled:not(:checked) + label {
+.c7:disabled:not(:checked) + label {
   border-color: #D4D7D9;
 }
 
-.c8:disabled:not(:checked) + label:before {
+.c7:disabled:not(:checked) + label:before {
   border-color: #D4D7D9;
 }
 
-.c8:checked + label {
+.c7:checked + label {
   border-color: #00D9C5;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
-.c8:checked + label:before {
+.c7:checked + label:before {
   border-color: #00D9C5;
   box-shadow: none;
 }
 
-.c8:checked + label:after {
+.c7:checked + label:after {
   background-color: #00D9C5;
   height: 10px;
   width: 10px;
@@ -173,23 +173,9 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   animation: ciAMHu 200ms ease-in-out;
 }
 
-.c8 + label:before,
-.c8 + label:after {
+.c7 + label:before,
+.c7 + label:after {
   display: none;
-}
-
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 700;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
 }
 
 .c0 {
@@ -202,10 +188,11 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
 .c1 {
   padding: 0;
   display: table;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 'semi-bold';
 }
 
-.c5 {
+.c4 {
   padding: 4px 0;
 }
 
@@ -215,35 +202,31 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   <legend
     class="c1"
   >
-    <span
-      class="c2"
-    >
-      label
-    </span>
+    label
   </legend>
   <div
-    class="c3"
+    class="c2"
     cols="12"
     direction="row"
   >
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <input
-            class="c8"
+            class="c7"
             id="radio-id-one"
             type="radio"
             value="one"
           />
           <label
-            class="c9"
+            class="c8"
             for="radio-id-one"
           >
             label one
@@ -252,23 +235,23 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
       </div>
     </div>
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <input
-            class="c8"
+            class="c7"
             id="radio-id-two"
             type="radio"
             value="two"
           />
           <label
-            class="c9"
+            class="c8"
             for="radio-id-two"
           >
             label two
@@ -281,7 +264,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
 `;
 
 exports[`<RadioGroupField /> renders the component with props with no a11y violations 1`] = `
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,7 +287,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   align-items: flex-start;
 }
 
-.c4 {
+.c3 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -315,21 +298,21 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   align-self: auto;
 }
 
-.c6 {
+.c5 {
   max-width: 100%;
   width: 100%;
 }
 
-.c7 {
+.c6 {
   position: relative;
   margin-bottom: 10px;
 }
 
-.c7:last-of-type {
+.c6:last-of-type {
   margin-bottom: 0;
 }
 
-.c9 {
+.c8 {
   display: block;
   margin: 0 0 10px;
   -webkit-letter-spacing: 0;
@@ -360,7 +343,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   text-align: left;
 }
 
-.c9:before {
+.c8:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -379,7 +362,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   transition: 0.2s ease-in-out;
 }
 
-.c9:after {
+.c8:after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -392,11 +375,11 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   top: 19px;
 }
 
-.c9:hover {
+.c8:hover {
   cursor: pointer;
 }
 
-.c8 {
+.c7 {
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -404,67 +387,53 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   position: absolute;
 }
 
-.c8:hover:not(:disabled) + label,
-.c8:focus + label {
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c8:hover:not(:disabled) + label:before,
-.c8:focus + label:before {
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c8:hover:checked:not(:disabled) + label:after,
-.c8:focus:checked + label:after {
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
   background-color: #00D9C5;
 }
 
-.c8:disabled + label {
+.c7:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
 }
 
-.c8:disabled:not(:checked) + label {
+.c7:disabled:not(:checked) + label {
   border-color: #D4D7D9;
 }
 
-.c8:disabled:not(:checked) + label:before {
+.c7:disabled:not(:checked) + label:before {
   border-color: #D4D7D9;
 }
 
-.c8:checked + label {
+.c7:checked + label {
   border-color: #00D9C5;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
-.c8:checked + label:before {
+.c7:checked + label:before {
   border-color: #00D9C5;
   box-shadow: none;
 }
 
-.c8:checked + label:after {
+.c7:checked + label:after {
   background-color: #00D9C5;
   height: 10px;
   width: 10px;
   -webkit-animation: ciAMHu 200ms ease-in-out;
   animation: ciAMHu 200ms ease-in-out;
-}
-
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 700;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
 }
 
 .c0 {
@@ -477,10 +446,11 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
 .c1 {
   padding: 0;
   display: table;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 'semi-bold';
 }
 
-.c5 {
+.c4 {
   padding: 4px 0;
 }
 
@@ -490,35 +460,31 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   <legend
     class="c1"
   >
-    <span
-      class="c2"
-    >
-      label
-    </span>
+    label
   </legend>
   <div
-    class="c3"
+    class="c2"
     cols="12"
     direction="row"
   >
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <input
-            class="c8"
+            class="c7"
             id="radio-id-one"
             type="radio"
             value="one"
           />
           <label
-            class="c9"
+            class="c8"
             for="radio-id-one"
           >
             label one
@@ -527,23 +493,23 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
       </div>
     </div>
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <input
-            class="c8"
+            class="c7"
             id="radio-id-two"
             type="radio"
             value="two"
           />
           <label
-            class="c9"
+            class="c8"
             for="radio-id-two"
           >
             label two
