@@ -1,3 +1,10 @@
+### [4.10.2](https://github.com/zopaUK/react-components/compare/v4.10.1...v4.10.2) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes some spacing and font weight issues with Legend ([6add9be](https://github.com/zopaUK/react-components/commit/6add9be8d2a40173dbc110a8d6f1696ad0810331))
+
 ### [4.10.1](https://github.com/zopaUK/react-components/compare/v4.10.0...v4.10.1) (2020-07-23)
 
 
