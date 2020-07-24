@@ -9,7 +9,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The weight of the rendered text.
    * @default 'regular'
    */
-  weight?: 'regular' | 'semiBold' | 'bold';
+  weight?: 'regular' | 'bold';
   /**
    * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
    * @default 'body'
