@@ -1,3 +1,10 @@
+### [4.10.3](https://github.com/zopaUK/react-components/compare/v4.10.2...v4.10.3) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes incorrect semi-bold font weight css keyword ([ae4e8c0](https://github.com/zopaUK/react-components/commit/ae4e8c0c61ed5deabdcf4dd90b86a3f0067c8bd4))
+
 ### [4.10.2](https://github.com/zopaUK/react-components/compare/v4.10.1...v4.10.2) (2020-07-24)
 
 
