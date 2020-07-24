@@ -189,7 +189,12 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   padding: 0;
   display: table;
   margin-bottom: 8px;
-  font-weight: 'semi-bold';
+  font-weight: 600;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .c4 {
@@ -447,7 +452,12 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   padding: 0;
   display: table;
   margin-bottom: 8px;
-  font-weight: 'semi-bold';
+  font-weight: 600;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .c4 {
