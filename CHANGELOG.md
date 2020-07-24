@@ -1,3 +1,44 @@
+### [4.10.1](https://github.com/zopaUK/react-components/compare/v4.10.0...v4.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* **text:** add "inherit" as a color option ([cb31b21](https://github.com/zopaUK/react-components/commit/cb31b2147851c26c3d52779161ff9586320e1394))
+
+## [4.10.0](https://github.com/zopaUK/react-components/compare/v4.9.1...v4.10.0) (2020-07-22)
+
+
+### Features
+
+* **radio/checkbox:** show/hide the icon ([22e32b4](https://github.com/zopaUK/react-components/commit/22e32b4fa0dbc15ee7a945b03a8fe4c74c4371de))
+
+
+### Bug Fixes
+
+* **radio:** remove conosle log ([e175f46](https://github.com/zopaUK/react-components/commit/e175f467473a26c712c13317be6ae038ff786703))
+* **radio/checkbox:** add teal bg colour for selected state ([320390e](https://github.com/zopaUK/react-components/commit/320390e31c52e4e0b390f690287d8211edd10e61))
+* **radio/checkbox:** change hideIcon to hideControl ([25f3e88](https://github.com/zopaUK/react-components/commit/25f3e88dc9c315beef944246d7daaad90f12dc1a))
+
+### [4.9.1](https://github.com/zopaUK/react-components/compare/v4.9.0...v4.9.1) (2020-07-21)
+
+
+### Bug Fixes
+
+* **radiofield:** remove loader and change label to accept react node ([083f6f0](https://github.com/zopaUK/react-components/commit/083f6f0601fc98ed55aebe23e0730d254ea99d96))
+* **spinner:** set min height and width ([6208f73](https://github.com/zopaUK/react-components/commit/6208f731432b073e7893ce220b6cd0ded9b801ac))
+
+## [4.9.0](https://github.com/zopaUK/react-components/compare/v4.8.6...v4.9.0) (2020-07-21)
+
+
+### Features
+
+* **radiofield:** add optional loading icon when selected ([eedea2e](https://github.com/zopaUK/react-components/commit/eedea2edcc26f9a012478ba2546f41df2f94914c))
+
+
+### Bug Fixes
+
+* **radiofield:** make label optional ([ff4cef1](https://github.com/zopaUK/react-components/commit/ff4cef1192e92338032dcb709e461c704f8e0a13))
+
 ### [4.8.6](https://github.com/zopaUK/react-components/compare/v4.8.5...v4.8.6) (2020-07-15)
 
 

@@ -101,7 +101,34 @@ describe('<RadioGroupField />', () => {
   });
 
   it('renders the component with props with no a11y violations', async () => {
-    const { container } = render(<RadioGroupField label="label" onChange={jest.fn()} items={[]} />);
+    const { container } = render(
+      <RadioGroupField
+        label="label"
+        onChange={jest.fn()}
+        items={[
+          { value: 'one', label: 'label one' },
+          { value: 'two', label: 'label two' },
+        ]}
+      />,
+    );
+    const results = await axe(container.innerHTML);
+
+    expect(container.firstChild).toMatchSnapshot();
+    expect(results).toHaveNoViolations();
+  });
+
+  it('renders the component with no control icon and no a11y violations', async () => {
+    const { container } = render(
+      <RadioGroupField
+        label="label"
+        onChange={jest.fn()}
+        items={[
+          { value: 'one', label: 'label one' },
+          { value: 'two', label: 'label two' },
+        ]}
+        hideControl
+      />,
+    );
     const results = await axe(container.innerHTML);
 
     expect(container.firstChild).toMatchSnapshot();

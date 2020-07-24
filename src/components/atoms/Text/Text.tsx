@@ -40,7 +40,8 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
     | Colors['greyDark']
     | Colors['greyDarkest']
     | Colors['success']
-    | Colors['alert'];
+    | Colors['alert']
+    | 'inherit';
 }
 
 const lineHeightMap = {
