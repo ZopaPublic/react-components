@@ -3,8 +3,8 @@ import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 
 type FormSectionProps = {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
 };
 
 const FormSection: FC<FormSectionProps> = ({ title, subtitle, children }) => {
