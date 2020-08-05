@@ -2,7 +2,7 @@ import React, { FC, Children } from 'react';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 
-type FormSectionProps = {
+export type FormSectionProps = {
   title?: string;
   subtitle?: string;
 };
