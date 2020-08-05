@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CheckboxGroupField /> renders the component with no control icon and no a11y violations 1`] = `
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,7 +24,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   align-items: flex-start;
 }
 
-.c4 {
+.c3 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -35,26 +35,12 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   align-self: auto;
 }
 
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 700;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
-}
-
-.c6 {
+.c5 {
   max-width: 100%;
   width: 100%;
 }
 
-.c8 {
+.c7 {
   display: block;
   margin: 0 0 10px;
   -webkit-letter-spacing: 0;
@@ -90,7 +76,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   margin-bottom: 0;
 }
 
-.c8:before {
+.c7:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -109,7 +95,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   display: block;
 }
 
-.c8:after {
+.c7:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -120,67 +106,67 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   top: 18px;
 }
 
-.c8:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c7 {
+.c6 {
   left: -100%;
   opacity: 0;
   z-index: -1;
   position: absolute;
 }
 
-.c7:hover:not(:disabled) + label,
-.c7:focus + label {
+.c6:hover:not(:disabled) + label,
+.c6:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c7:hover:not(:disabled) + label:before,
-.c7:focus + label:before {
+.c6:hover:not(:disabled) + label:before,
+.c6:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c7:hover:checked:not(:disabled) + label:after,
-.c7:focus:checked + label:after {
+.c6:hover:checked:not(:disabled) + label:after,
+.c6:focus:checked + label:after {
   background-image: url(teal-check-mark.svg);
 }
 
-.c7:disabled + label {
+.c6:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
 }
 
-.c7:disabled:not(:checked) + label {
+.c6:disabled:not(:checked) + label {
   border-color: #D4D7D9;
 }
 
-.c7:disabled:not(:checked) + label:before {
+.c6:disabled:not(:checked) + label:before {
   border-color: #D4D7D9;
 }
 
-.c7:checked + label {
+.c6:checked + label {
   border-color: #00D9C5;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
-.c7:checked + label:before {
+.c6:checked + label:before {
   border-color: #00D9C5;
   box-shadow: none;
 }
 
-.c7:checked + label:after {
+.c6:checked + label:after {
   background-size: contain;
   background-image: url(teal-check-mark.svg);
   -webkit-animation: guYtTV 180ms ease-in-out;
   animation: guYtTV 180ms ease-in-out;
 }
 
-.c7 + label:before,
-.c7 + label:after {
+.c6 + label:before,
+.c6 + label:after {
   display: none;
 }
 
@@ -194,10 +180,16 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
 .c1 {
   padding: 0;
   display: table;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
-.c5 {
+.c4 {
   padding: 4px 0;
 }
 
@@ -207,35 +199,31 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   <legend
     class="c1"
   >
-    <span
-      class="c2"
-    >
-      label
-    </span>
+    label
   </legend>
   <div
-    class="c3"
+    class="c2"
     cols="12"
     direction="row"
   >
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <input
-            class="c7"
+            class="c6"
             id="checkbox-id-option"
             name="option"
             type="checkbox"
           />
           <label
-            class="c8"
+            class="c7"
             for="checkbox-id-option"
           >
             option
@@ -248,7 +236,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
 `;
 
 exports[`<CheckboxGroupField /> renders the component with props with no a11y violations 1`] = `
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -271,7 +259,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   align-items: flex-start;
 }
 
-.c4 {
+.c3 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -282,26 +270,12 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   align-self: auto;
 }
 
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 700;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
-}
-
-.c6 {
+.c5 {
   max-width: 100%;
   width: 100%;
 }
 
-.c8 {
+.c7 {
   display: block;
   margin: 0 0 10px;
   -webkit-letter-spacing: 0;
@@ -337,7 +311,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   margin-bottom: 0;
 }
 
-.c8:before {
+.c7:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -356,7 +330,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   display: block;
 }
 
-.c8:after {
+.c7:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -367,59 +341,59 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   top: 18px;
 }
 
-.c8:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c7 {
+.c6 {
   left: -100%;
   opacity: 0;
   z-index: -1;
   position: absolute;
 }
 
-.c7:hover:not(:disabled) + label,
-.c7:focus + label {
+.c6:hover:not(:disabled) + label,
+.c6:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c7:hover:not(:disabled) + label:before,
-.c7:focus + label:before {
+.c6:hover:not(:disabled) + label:before,
+.c6:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
-.c7:hover:checked:not(:disabled) + label:after,
-.c7:focus:checked + label:after {
+.c6:hover:checked:not(:disabled) + label:after,
+.c6:focus:checked + label:after {
   background-image: url(teal-check-mark.svg);
 }
 
-.c7:disabled + label {
+.c6:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
 }
 
-.c7:disabled:not(:checked) + label {
+.c6:disabled:not(:checked) + label {
   border-color: #D4D7D9;
 }
 
-.c7:disabled:not(:checked) + label:before {
+.c6:disabled:not(:checked) + label:before {
   border-color: #D4D7D9;
 }
 
-.c7:checked + label {
+.c6:checked + label {
   border-color: #00D9C5;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
-.c7:checked + label:before {
+.c6:checked + label:before {
   border-color: #00D9C5;
   box-shadow: none;
 }
 
-.c7:checked + label:after {
+.c6:checked + label:after {
   background-size: contain;
   background-image: url(teal-check-mark.svg);
   -webkit-animation: guYtTV 180ms ease-in-out;
@@ -436,10 +410,16 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
 .c1 {
   padding: 0;
   display: table;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
-.c5 {
+.c4 {
   padding: 4px 0;
 }
 
@@ -449,35 +429,31 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   <legend
     class="c1"
   >
-    <span
-      class="c2"
-    >
-      label
-    </span>
+    label
   </legend>
   <div
-    class="c3"
+    class="c2"
     cols="12"
     direction="row"
   >
     <div
-      class="c4"
+      class="c3"
       cols="12"
     >
       <div
-        class="c5"
+        class="c4"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <input
-            class="c7"
+            class="c6"
             id="checkbox-id-option"
             name="option"
             type="checkbox"
           />
           <label
-            class="c8"
+            class="c7"
             for="checkbox-id-option"
           >
             option
