@@ -1,3 +1,10 @@
+### [4.11.1](https://github.com/zopaUK/react-components/compare/v4.11.0...v4.11.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* **formsection:** export type ([3c91699](https://github.com/zopaUK/react-components/commit/3c9169956689d2e59ba858b5b06fde126e475f85))
+
 ## [4.11.0](https://github.com/zopaUK/react-components/compare/v4.10.3...v4.11.0) (2020-08-05)
 
 
