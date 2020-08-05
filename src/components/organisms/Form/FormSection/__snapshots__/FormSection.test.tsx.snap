@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FormButton /> renders the form section 1`] = `undefined`;
-
 exports[`<FormSection /> renders the form section 1`] = `
 Object {
   "asFragment": [Function],
