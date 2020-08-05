@@ -1,3 +1,24 @@
+### [4.10.3](https://github.com/zopaUK/react-components/compare/v4.10.2...v4.10.3) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes incorrect semi-bold font weight css keyword ([ae4e8c0](https://github.com/zopaUK/react-components/commit/ae4e8c0c61ed5deabdcf4dd90b86a3f0067c8bd4))
+
+### [4.10.2](https://github.com/zopaUK/react-components/compare/v4.10.1...v4.10.2) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes some spacing and font weight issues with Legend ([6add9be](https://github.com/zopaUK/react-components/commit/6add9be8d2a40173dbc110a8d6f1696ad0810331))
+
+### [4.10.1](https://github.com/zopaUK/react-components/compare/v4.10.0...v4.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* **text:** add "inherit" as a color option ([cb31b21](https://github.com/zopaUK/react-components/commit/cb31b2147851c26c3d52779161ff9586320e1394))
+
 ## [4.10.0](https://github.com/zopaUK/react-components/compare/v4.9.1...v4.10.0) (2020-07-22)
 
 

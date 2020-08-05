@@ -6,7 +6,6 @@ import RadioField from '../RadioField/RadioField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
-import Text from '../../atoms/Text/Text';
 
 const RadioWrapper = styled.div`
   padding: 4px 0;
@@ -65,11 +64,7 @@ const RadioGroupField = ({
 
   return (
     <Fieldset className={className}>
-      {label && (
-        <Legend>
-          <Text weight="bold">{label}</Text>
-        </Legend>
-      )}
+      {label && <Legend>{label}</Legend>}
       <FlexRow {...flexRowProps}>
         {items.map((item) => {
           const checked = isControlled ? value === item.value : innerValue === item.value;
