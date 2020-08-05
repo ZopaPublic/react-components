@@ -1,3 +1,15 @@
+## [4.11.0](https://github.com/zopaUK/react-components/compare/v4.10.3...v4.11.0) (2020-08-05)
+
+
+### Features
+
+* **formsection:** add FormSection component to group inputs ([bca5a2a](https://github.com/zopaUK/react-components/commit/bca5a2af59a6a6bbfed0ec5990a8733a11bc54d0))
+
+
+### Bug Fixes
+
+* **formsection:** make title and subtitle optional ([ecddc7d](https://github.com/zopaUK/react-components/commit/ecddc7dfc051a07a47be2fe96fa0095f2073748d))
+
 ### [4.10.3](https://github.com/zopaUK/react-components/compare/v4.10.2...v4.10.3) (2020-07-24)
 
 
