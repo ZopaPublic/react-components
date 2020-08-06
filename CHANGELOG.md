@@ -1,3 +1,10 @@
+### [4.11.2](https://github.com/zopaUK/react-components/compare/v4.11.1...v4.11.2) (2020-08-06)
+
+
+### Bug Fixes
+
+* **useViewport:** useEffect instead of useLayoutEffect ([7c7d05d](https://github.com/zopaUK/react-components/commit/7c7d05dcce7d66d7a533597d92f298dd8306b629))
+
 ### [4.11.1](https://github.com/zopaUK/react-components/compare/v4.11.0...v4.11.1) (2020-08-05)
 
 
