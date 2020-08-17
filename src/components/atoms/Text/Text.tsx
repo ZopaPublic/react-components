@@ -9,7 +9,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The weight of the rendered text.
    * @default 'regular'
    */
-  weight?: 'regular' | 'bold';
+  weight?: 'regular' | 'bold' | 'semiBold';
   /**
    * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
    * @default 'body'
@@ -57,8 +57,9 @@ const Text = styled.span<TextProps>`
 
   font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
   line-height: ${({ size = 'body' }) => lineHeightMap[size]};
-  font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
-
+  font-weight: ${({ weight = 'regular', capitalize }) => {
+    return typography.weights[capitalize ? 'bold' : weight];
+  }};
   font-family: ${typography.primary};
   text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
