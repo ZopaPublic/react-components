@@ -1,3 +1,15 @@
+## [4.12.0](https://github.com/zopaUK/react-components/compare/v4.11.2...v4.12.0) (2020-08-17)
+
+
+### Features
+
+* **text:** adds semibold to the public api for Text ([90005ea](https://github.com/zopaUK/react-components/commit/90005ead77eb4c65808baaa4a858cb67c8080d82))
+
+
+### Bug Fixes
+
+* **text:** updates snapshot for semibold ([9351e77](https://github.com/zopaUK/react-components/commit/9351e77a9e71decc4dffb9c32b75b141703a912d))
+
 ### [4.11.2](https://github.com/zopaUK/react-components/compare/v4.11.1...v4.11.2) (2020-08-06)
 
 
