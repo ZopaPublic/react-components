@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification renders the component with no props and no a11y violations 1`] = `
+exports[`Banner renders the component with no props and no a11y violations 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -65,7 +65,7 @@ exports[`Notification renders the component with no props and no a11y violations
   <div
     class=""
   >
-    Notification Content
+    Banner Content
   </div>
 </div>
 `;
