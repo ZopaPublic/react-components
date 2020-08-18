@@ -1,3 +1,15 @@
+## [4.13.0](https://github.com/zopaUK/react-components/compare/v4.12.0...v4.13.0) (2020-08-18)
+
+
+### Features
+
+* **alert:** adds banner and notification components ([0ae8d29](https://github.com/zopaUK/react-components/commit/0ae8d29443516c15f148969d6d78b0fa0bc58891))
+
+
+### Bug Fixes
+
+* **notification:** fixes notification using non rounded corners ([429e7ce](https://github.com/zopaUK/react-components/commit/429e7ce4a7483cc827ce6b6b4271728201164c5d))
+
 ## [4.12.0](https://github.com/zopaUK/react-components/compare/v4.11.2...v4.12.0) (2020-08-17)
 
 
