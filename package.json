@@ -18,15 +18,15 @@
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
     "build": "NODE_ENV=production styleguidist build",
-    "compile": "yarn compile:clean; yarn compile:types && yarn compile:code",
+    "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
     "compile:code": "rollup --config ./etc/rollup/config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
     "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
-    "format:fix": "yarn format --write",
+    "format:fix": "pnpm format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit",
     "deploy-web": "gh-pages -d styleguide -u \"Zopa Ltd. <frontend-opensource@zopa.com>\" -m \"[ci skip] - circleci\"",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
@@ -77,8 +77,6 @@
     "@types/styled-components": "5.1.0",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
-    "acorn": "7.3.1",
-    "acorn-jsx": "5.2.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "eslint-config-prettier": "6.11.0",
@@ -103,8 +101,7 @@
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
-    "typescript": "3.9.6",
-    "yarn-deduplicate": "2.1.0"
+    "typescript": "3.9.6"
   },
   "browserslist": [
     "cover 95% in GB",
@@ -120,7 +117,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn typecheck && yarn lint && yarn test --watchAll=false",
+      "pre-push": "pnpm typecheck && pnpm lint && pnpm test --watchAll=false",
       "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
       "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
     }
@@ -142,6 +139,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=12.0.0",
+    "pnpm": ">=3"
   }
 }

@@ -9,26 +9,26 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore Pnpm Package Cache
           keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+            - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
           name: Install Dependencies
-          command: yarn install --frozen-lockfile
+          command: pnpm i --frozen-lockfile
       - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          name: Save Pnpm Package Cache
+          key: pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
           paths:
-            - ~/.cache/yarn
+            - ~/.pnpm-store/v3
       - run:
           name: Run typecheck
-          command: yarn typecheck
+          command: pnpm typecheck
       - run:
           name: Run linter
-          command: yarn lint --format junit -o reports/junit/js-lint-results.xml
+          command: pnpm lint --format junit -o reports/junit/js-lint-results.xml
       - run:
           name: Run tests
-          command: yarn test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
+          command: pnpm test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
       - codecov/upload:
           file: coverage/*.json
       - store_test_results:
@@ -42,23 +42,23 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore Pnpm Package Cache
           keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+            - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
           name: Install Dependencies
-          command: yarn install --frozen-lockfile
+          command: pnpm install --frozen-lockfile
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          key: pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
           paths:
-            - ~/.cache/yarn
+            - ~/.pnpm-store/v3
       - run:
           name: Compile the code
-          command: yarn compile
+          command: pnpm compile
       - run:
           name: Release
-          command: yarn release
+          command: pnpm release
 
   deploy-web:
     docker:
@@ -68,25 +68,25 @@ jobs:
       - restore_cache:
           name: Restore Yarn Package Cache
           keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
+            - pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
       - run:
           name: Install Dependencies
-          command: yarn install --frozen-lockfile
+          command: pnpm i --frozen-lockfile
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
+          key: pnpm-packages-{{ checksum "pnpm-lock.yaml" }}
           paths:
-            - ~/.cache/yarn
+            - ~/.pnpm-store/v3
       - run:
           name: Build website
-          command: yarn build
+          command: pnpm build
       # This is necessary to avoid the error related to permissions of Github (see official docs)
       - add_ssh_keys:
           fingerprints:
             - 'd3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e'
       - run:
           name: Deploy website
-          command: yarn deploy-web
+          command: pnpm deploy-web
 
 workflows:
   version: 2

@@ -28,7 +28,7 @@ There are a number of breaking changes which will need to be addressed when upgr
 
 ```
 $ git clone https://github.com/zopaUK/react-components.git
-$ yarn
+$ pnpm i
 ```
 
 ### Running the project
@@ -36,7 +36,7 @@ $ yarn
 Execute the development environment:
 
 ```
-$ yarn dev
+$ pnpm dev
 ```
 
 The docs will run at [localhost:6060](http://localhost:6060).
