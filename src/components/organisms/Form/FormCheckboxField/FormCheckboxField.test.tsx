@@ -29,7 +29,7 @@ const validate = (values: Form) => {
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ policy: false }} validate={validate} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormCheckboxField label={checkboxLabel} name="policy" />
       </FormikForm>
     </Formik>,

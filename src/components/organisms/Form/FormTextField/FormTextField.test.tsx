@@ -29,7 +29,7 @@ const initialValues: Form = {
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={initialValues} validate={validate} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormTextField label={fieldLabel} name="firstName" />
       </FormikForm>
     </Formik>,

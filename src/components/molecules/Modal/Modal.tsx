@@ -50,7 +50,7 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
         onClick={onRequestClose}
         color={colors.greyLight}
         variant={faTimesCircle}
-        data-testid="ZA.modal-cross-icon"
+        data-automation="ZA.modal-cross-icon"
       />
     )}
     {children}
