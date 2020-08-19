@@ -32,19 +32,19 @@
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippyjs/react": "^4.1.0",
     "@types/react-headroom": "^2.2.1",
-    "@types/react-modal": "^3.10.2",
+    "@types/react-modal": "^3.10.6",
     "@types/util-deprecate": "^1.0.0",
-    "core-js": "^3.3.5",
-    "downshift": "^5.2.7",
-    "formik": "^2.1.4",
+    "core-js": "^3.6.5",
+    "downshift": "^5.4.7",
+    "formik": "^2.1.5",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
-    "react-modal": "^3.8.1",
-    "styled-normalize": "^8.0.6",
+    "react-modal": "^3.11.2",
+    "styled-normalize": "^8.0.7",
     "tippy.js": "^6.2.6",
     "util-deprecate": "^1.0.2"
   },
@@ -56,6 +56,7 @@
     "typescript": ">=3.x <4"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
     "@babel/runtime": "7.10.4",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
@@ -70,7 +71,7 @@
     "@testing-library/react": "10.4.5",
     "@testing-library/react-hooks": "3.3.0",
     "@types/jest": "^26.0.10",
-    "@types/jest-axe": "^3.2.1",
+    "@types/jest-axe": "^3.5.0",
     "@types/lodash.throttle": "4.1.6",
     "@types/node": "12.12.45",
     "@types/react": "16.9.35",
@@ -80,6 +81,7 @@
     "@typescript-eslint/parser": "2.34.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
+    "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.3",
@@ -94,7 +96,7 @@
     "react": "16.13.1",
     "react-docgen-typescript": "1.18.0",
     "react-dom": "16.13.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.3",
     "react-styleguidist": "11.0.8",
     "react-test-renderer": "16.13.1",
     "rollup": "2.21.0",
@@ -102,7 +104,8 @@
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
-    "typescript": "3.9.6"
+    "typescript": "3.9.6",
+    "webpack": "^4.44.1"
   },
   "browserslist": [
     "cover 95% in GB",
