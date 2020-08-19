@@ -6,7 +6,6 @@ import CheckboxField from '../CheckboxField/CheckboxField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
-import Text from '../../atoms/Text/Text';
 
 const CheckboxWrapper = styled.div`
   padding: 4px 0;
@@ -31,6 +30,7 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   className?: string;
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
+  hideControl?: boolean;
 }
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
@@ -45,6 +45,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   className,
   flexRowProps = {},
   flexColProps = {},
+  hideControl,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -78,9 +79,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
 
   return (
     <Fieldset className={className}>
-      <Legend>
-        <Text weight="bold">{label}</Text>
-      </Legend>
+      <Legend>{label}</Legend>
       <FlexRow {...flexRowProps}>
         {items.map((item) => {
           const checked = value ? !!value[item.name] : !!innerValue[item.name];
@@ -95,6 +94,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
                   label={item.label}
                   checked={checked}
                   isValid={checked && isValid}
+                  hideControl={hideControl}
                 />
               </CheckboxWrapper>
             </FlexCol>

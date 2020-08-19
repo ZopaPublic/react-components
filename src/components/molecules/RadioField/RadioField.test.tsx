@@ -11,4 +11,12 @@ xdescribe('<RadioField />', () => {
     expect(container.firstChild).toMatchSnapshot();
     expect(results).toHaveNoViolations();
   });
+
+  it('renders the component with no control icon and no a11y violations', async () => {
+    const { container } = render(<InputCheckbox label="hello" name="test1" value="1" hideControl />);
+    const results = await axe(container.innerHTML);
+
+    expect(container.firstChild).toMatchSnapshot();
+    expect(results).toHaveNoViolations();
+  });
 });

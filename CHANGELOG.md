@@ -1,3 +1,88 @@
+## [4.13.0](https://github.com/zopaUK/react-components/compare/v4.12.0...v4.13.0) (2020-08-18)
+
+
+### Features
+
+* **alert:** adds banner and notification components ([0ae8d29](https://github.com/zopaUK/react-components/commit/0ae8d29443516c15f148969d6d78b0fa0bc58891))
+
+
+### Bug Fixes
+
+* **notification:** fixes notification using non rounded corners ([429e7ce](https://github.com/zopaUK/react-components/commit/429e7ce4a7483cc827ce6b6b4271728201164c5d))
+
+## [4.12.0](https://github.com/zopaUK/react-components/compare/v4.11.2...v4.12.0) (2020-08-17)
+
+
+### Features
+
+* **text:** adds semibold to the public api for Text ([90005ea](https://github.com/zopaUK/react-components/commit/90005ead77eb4c65808baaa4a858cb67c8080d82))
+
+
+### Bug Fixes
+
+* **text:** updates snapshot for semibold ([9351e77](https://github.com/zopaUK/react-components/commit/9351e77a9e71decc4dffb9c32b75b141703a912d))
+
+### [4.11.2](https://github.com/zopaUK/react-components/compare/v4.11.1...v4.11.2) (2020-08-06)
+
+
+### Bug Fixes
+
+* **useViewport:** useEffect instead of useLayoutEffect ([7c7d05d](https://github.com/zopaUK/react-components/commit/7c7d05dcce7d66d7a533597d92f298dd8306b629))
+
+### [4.11.1](https://github.com/zopaUK/react-components/compare/v4.11.0...v4.11.1) (2020-08-05)
+
+
+### Bug Fixes
+
+* **formsection:** export type ([3c91699](https://github.com/zopaUK/react-components/commit/3c9169956689d2e59ba858b5b06fde126e475f85))
+
+## [4.11.0](https://github.com/zopaUK/react-components/compare/v4.10.3...v4.11.0) (2020-08-05)
+
+
+### Features
+
+* **formsection:** add FormSection component to group inputs ([bca5a2a](https://github.com/zopaUK/react-components/commit/bca5a2af59a6a6bbfed0ec5990a8733a11bc54d0))
+
+
+### Bug Fixes
+
+* **formsection:** make title and subtitle optional ([ecddc7d](https://github.com/zopaUK/react-components/commit/ecddc7dfc051a07a47be2fe96fa0095f2073748d))
+
+### [4.10.3](https://github.com/zopaUK/react-components/compare/v4.10.2...v4.10.3) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes incorrect semi-bold font weight css keyword ([ae4e8c0](https://github.com/zopaUK/react-components/commit/ae4e8c0c61ed5deabdcf4dd90b86a3f0067c8bd4))
+
+### [4.10.2](https://github.com/zopaUK/react-components/compare/v4.10.1...v4.10.2) (2020-07-24)
+
+
+### Bug Fixes
+
+* **legend:** fixes some spacing and font weight issues with Legend ([6add9be](https://github.com/zopaUK/react-components/commit/6add9be8d2a40173dbc110a8d6f1696ad0810331))
+
+### [4.10.1](https://github.com/zopaUK/react-components/compare/v4.10.0...v4.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* **text:** add "inherit" as a color option ([cb31b21](https://github.com/zopaUK/react-components/commit/cb31b2147851c26c3d52779161ff9586320e1394))
+
+## [4.10.0](https://github.com/zopaUK/react-components/compare/v4.9.1...v4.10.0) (2020-07-22)
+
+
+### Features
+
+* **radio/checkbox:** show/hide the icon ([22e32b4](https://github.com/zopaUK/react-components/commit/22e32b4fa0dbc15ee7a945b03a8fe4c74c4371de))
+
+
+### Bug Fixes
+
+* **radio:** remove conosle log ([e175f46](https://github.com/zopaUK/react-components/commit/e175f467473a26c712c13317be6ae038ff786703))
+* **radio/checkbox:** add teal bg colour for selected state ([320390e](https://github.com/zopaUK/react-components/commit/320390e31c52e4e0b390f690287d8211edd10e61))
+* **radio/checkbox:** change hideIcon to hideControl ([25f3e88](https://github.com/zopaUK/react-components/commit/25f3e88dc9c315beef944246d7daaad90f12dc1a))
+
 ### [4.9.1](https://github.com/zopaUK/react-components/compare/v4.9.0...v4.9.1) (2020-07-21)
 
 
