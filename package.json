@@ -34,7 +34,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@tippy.js/react": "^3.1.1",
+    "@tippyjs/react": "^4.1.0",
     "@types/react-headroom": "^2.2.1",
     "@types/react-modal": "^3.10.2",
     "@types/util-deprecate": "^1.0.0",
@@ -45,6 +45,7 @@
     "react-headroom": "^3.0.0",
     "react-modal": "^3.8.1",
     "styled-normalize": "^8.0.6",
+    "tippy.js": "^6.2.6",
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
