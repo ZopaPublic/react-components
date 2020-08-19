@@ -125,7 +125,7 @@ const Alert: FC<AlertProps> = ({
             onClick={onRequestClose}
             color={text}
             variant={faTimes}
-            data-testid="ZA.alert-cross-icon"
+            data-automation="ZA.alert-cross-icon"
             size="xs"
           />
         )}

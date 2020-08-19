@@ -10,7 +10,7 @@ describe('<AccordionSection />', () => {
         <Accordion.Header id="one" index={0} textSize="base">
           Header
         </Accordion.Header>
-        <Accordion.Section data-testid="section" id="one" index={0}>
+        <Accordion.Section data-automation="section" id="one" index={0}>
           Content
         </Accordion.Section>
       </Accordion>,
