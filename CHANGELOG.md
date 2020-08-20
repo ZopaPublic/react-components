@@ -1,3 +1,10 @@
+### [4.13.1](https://github.com/zopaUK/react-components/compare/v4.13.0...v4.13.1) (2020-08-20)
+
+
+### Bug Fixes
+
+* **notification:** adds export of notification and banner ([081e296](https://github.com/zopaUK/react-components/commit/081e29662281fbc311a6f025ccac138a7e8596a0))
+
 ## [4.13.0](https://github.com/zopaUK/react-components/compare/v4.12.0...v4.13.0) (2020-08-18)
 
 
