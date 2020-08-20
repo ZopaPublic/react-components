@@ -54,7 +54,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   opacity: 1;
   border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -148,7 +148,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -247,7 +247,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -322,7 +322,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   opacity: 1;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -390,7 +390,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -458,7 +458,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   opacity: 1;
   border: 1px solid #3EBC64;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -526,7 +526,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
