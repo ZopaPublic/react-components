@@ -1,3 +1,10 @@
+## [4.14.0](https://github.com/zopaUK/react-components/compare/v4.13.1...v4.14.0) (2020-08-21)
+
+
+### Features
+
+* **help:** allow help line prop and email address fix ([6527bbc](https://github.com/zopaUK/react-components/commit/6527bbc78e968e0ab61f54243342372d9250c9d0))
+
 ### [4.13.1](https://github.com/zopaUK/react-components/compare/v4.13.0...v4.13.1) (2020-08-20)
 
 
