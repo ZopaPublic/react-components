@@ -6,6 +6,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   width: 100%;
   height: 30px;
   cursor: pointer;
+  background: transparent;
 }
 
 .c1::-webkit-slider-runnable-track {
@@ -13,7 +14,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: none;
   border-radius: 4px;
   height: 8px;
-  background: transparent;
+  background: #EFEFEF;
 }
 
 .c1::-moz-range-track {
@@ -21,7 +22,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: none;
   border-radius: 4px;
   height: 8px;
-  background: transparent;
+  background: #EFEFEF;
 }
 
 .c1::-webkit-slider-thumb {
@@ -75,7 +76,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: none;
   border-radius: 4px;
   height: 8px;
-  background: transparent;
+  background: #EFEFEF;
   box-sizing: content-box;
   border: 0px solid transparent;
   width: 100%;
@@ -93,7 +94,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: none;
   border-radius: 4px;
   height: 8px;
-  background: transparent;
+  background: #EFEFEF;
   box-sizing: content-box;
   border: 0px solid transparent;
   background: #3B46C4;
@@ -104,7 +105,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   border: none;
   border-radius: 4px;
   height: 8px;
-  background: transparent;
+  background: #EFEFEF;
   box-sizing: content-box;
   border: 0px solid transparent;
 }

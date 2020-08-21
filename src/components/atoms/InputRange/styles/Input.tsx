@@ -13,7 +13,7 @@ const TrackStyles = css`
   border: none;
   border-radius: ${trackHeight / 2}px;
   height: ${trackHeight}px;
-  background: transparent;
+  background: ${colors.greyLighter};
 `;
 
 const ThumbStyles = css`
@@ -44,6 +44,7 @@ export const Input = styled.input<
   width: 100%;
   height: ${thumbDiameterMobile}px;
   cursor: pointer;
+  background: transparent;
 
   @media (min-width: ${grid.breakpoints.m}px) {
     height: ${thumbDiameter}px;
