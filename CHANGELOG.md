@@ -1,3 +1,24 @@
+### [4.14.1](https://github.com/zopaUK/react-components/compare/v4.14.0...v4.14.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* **inputrange:** make background color transparent ([227d99b](https://github.com/zopaUK/react-components/commit/227d99bdeaa2f3ebff7bcc51b88d24f2f1c5c194))
+
+## [4.14.0](https://github.com/zopaUK/react-components/compare/v4.13.1...v4.14.0) (2020-08-21)
+
+
+### Features
+
+* **help:** allow help line prop and email address fix ([6527bbc](https://github.com/zopaUK/react-components/commit/6527bbc78e968e0ab61f54243342372d9250c9d0))
+
+### [4.13.1](https://github.com/zopaUK/react-components/compare/v4.13.0...v4.13.1) (2020-08-20)
+
+
+### Bug Fixes
+
+* **notification:** adds export of notification and banner ([081e296](https://github.com/zopaUK/react-components/commit/081e29662281fbc311a6f025ccac138a7e8596a0))
+
 ## [4.13.0](https://github.com/zopaUK/react-components/compare/v4.12.0...v4.13.0) (2020-08-18)
 
 

@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "4.13.0",
+  "version": "4.14.1",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -77,8 +77,6 @@
     "@types/styled-components": "5.1.0",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
-    "acorn": "7.3.1",
-    "acorn-jsx": "5.2.0",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
     "eslint-config-prettier": "6.11.0",
@@ -103,8 +101,7 @@
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
-    "typescript": "3.9.6",
-    "yarn-deduplicate": "2.1.0"
+    "typescript": "3.9.6"
   },
   "browserslist": [
     "cover 95% in GB",

@@ -28,7 +28,14 @@ const ButtonAsLink = styled.a`
   ${buttonStyle}
 `;
 
-const Help: React.FC = () => (
+export enum HelpLine {
+  borrowers = '020 7580 6060',
+  investors = '020 7291 8331',
+}
+
+type HelpProps = { helpLine?: HelpLine };
+
+const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
   <HelpWrap className="pt-4">
     <HelpContent>
       <FlexRow>
@@ -51,12 +58,12 @@ const Help: React.FC = () => (
                   <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>020 7580 6060</Card.Heading>
+                  <Card.Heading>{helpLine}</Card.Heading>
                   <Card.Text>Monday to Thursday (8am to 8pm), Friday (8am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href="tel:020 7580 6060">
+                <ButtonAsLink styling="secondary" fullWidth href={`tel:${helpLine}`}>
                   Call us
                 </ButtonAsLink>
               </Card.Actions>
@@ -71,12 +78,12 @@ const Help: React.FC = () => (
                   <Icon variant={faEnvelope} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>contact@zopa.com</Card.Heading>
+                  <Card.Heading>contactus@zopa.com</Card.Heading>
                   <Card.Text>If your query is urgent, please contact our Team via phone.</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href="mailto:contact@zopa.com">
+                <ButtonAsLink styling="secondary" fullWidth href="mailto:contactus@zopa.com">
                   Email us
                 </ButtonAsLink>
               </Card.Actions>

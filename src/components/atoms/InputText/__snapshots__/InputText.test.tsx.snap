@@ -159,7 +159,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
     class="c1"
   >
     <span
-      data-testid="start-icon"
+      data-automation="start-icon"
     />
   </span>
   <input
@@ -262,7 +262,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
     class="c2"
   >
     <span
-      data-testid="end-icon"
+      data-automation="end-icon"
     />
   </span>
 </div>

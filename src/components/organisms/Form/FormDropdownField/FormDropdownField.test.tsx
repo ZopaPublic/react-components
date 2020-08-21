@@ -25,7 +25,7 @@ const validate = (values: Form) => {
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ referral: '' }} validate={validate} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormDropdownField
           label={dropdownLabel}
           name="referral"

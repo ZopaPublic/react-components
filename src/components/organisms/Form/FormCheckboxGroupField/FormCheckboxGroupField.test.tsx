@@ -9,7 +9,7 @@ const testId = 'checkbox-group-field-form';
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ music: { jazz: false, rock: false } }} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormCheckboxGroupField
           label="Music"
           name="music"

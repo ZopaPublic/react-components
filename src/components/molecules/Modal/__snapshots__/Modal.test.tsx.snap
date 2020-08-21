@@ -15,7 +15,7 @@ exports[`<Modal /> can render opened 1`] = `
 
 <p
   class="c0"
-  data-testid="check-card"
+  data-automation="check-card"
 >
   text
 </p>

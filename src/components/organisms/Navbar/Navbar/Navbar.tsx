@@ -332,7 +332,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           <SmallDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
               {links ? (
-                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
                   <Icon
                     variant={faBars}
                     color={open ? colors.brand : colors.white}
