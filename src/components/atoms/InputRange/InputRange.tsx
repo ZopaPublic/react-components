@@ -10,6 +10,7 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   max?: number;
   step?: number;
   controls?: boolean;
+  backgroundColor?: string;
 }
 
 const InputRange = forwardRef<HTMLInputElement, InputRange>(

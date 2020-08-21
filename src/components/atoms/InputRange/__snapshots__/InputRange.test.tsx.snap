@@ -8,6 +8,10 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   cursor: pointer;
 }
 
+.c1 background: @media (min-width:768px) {
+  height: 50px;
+}
+
 .c1::-webkit-slider-runnable-track {
   box-sizing: border-box;
   border: none;
@@ -128,12 +132,6 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    height: 50px;
-  }
 }
 
 @media (min-width:768px) {

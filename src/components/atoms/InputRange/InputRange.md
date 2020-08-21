@@ -103,3 +103,24 @@ const ControlledInputRange = () => {
 
 <ControlledInputRange />;
 ```
+
+Use a custom background color:
+
+```tsx
+import { Fragment, useState } from 'react';
+import { InputRange, Text } from '@zopauk/react-components';
+import { colors } from '../../../constants';
+
+const ControlledInputRange = () => {
+  const [value, setValue] = useState(75);
+
+  return (
+    <Fragment>
+      <Text mb>Value: {value}</Text>
+      <InputRange value={value} onChange={setValue} backgroundColor={colors.brand} />
+    </Fragment>
+  );
+};
+
+<ControlledInputRange />;
+```
