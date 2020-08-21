@@ -1,3 +1,10 @@
+### [4.14.1](https://github.com/zopaUK/react-components/compare/v4.14.0...v4.14.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* **inputrange:** make background color transparent ([227d99b](https://github.com/zopaUK/react-components/commit/227d99bdeaa2f3ebff7bcc51b88d24f2f1c5c194))
+
 ## [4.14.0](https://github.com/zopaUK/react-components/compare/v4.13.1...v4.14.0) (2020-08-21)
 
 
