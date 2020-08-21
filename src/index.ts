@@ -41,7 +41,7 @@ export { default as Logo } from './components/atoms/Logo/Logo';
 export { default as Modal } from './components/molecules/Modal/Modal';
 export { default as ExpiryModal } from './components/molecules/ExpiryModal/ExpiryModal';
 export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFooter';
-export { default as Help } from './components/molecules/Help/Help';
+export { default as Help, HelpLine } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as CheckboxGroupField } from './components/molecules/CheckboxGroupField/CheckboxGroupField';
