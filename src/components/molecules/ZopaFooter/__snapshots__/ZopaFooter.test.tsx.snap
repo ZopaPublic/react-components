@@ -461,6 +461,28 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Innovative Finance ISA
             </a>
           </li>
+          <li
+            class="c6"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/credit-card"
+            >
+              Credit cards
+            </a>
+          </li>
+          <li
+            class="c6"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/savings-accounts"
+            >
+              Fixed Term Savings
+            </a>
+          </li>
         </ul>
       </div>
       <div
