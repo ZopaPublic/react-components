@@ -1,3 +1,10 @@
+### [4.15.1](https://github.com/zopaUK/react-components/compare/v4.15.0...v4.15.1) (2020-08-24)
+
+
+### Bug Fixes
+
+* **inputs:** add backgroound color on disabled state ([1831e88](https://github.com/zopaUK/react-components/commit/1831e88096397a35f9a30a9054599c86207c8055))
+
 ## [4.15.0](https://github.com/zopaUK/react-components/compare/v4.14.2...v4.15.0) (2020-08-24)
 
 
