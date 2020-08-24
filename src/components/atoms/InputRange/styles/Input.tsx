@@ -44,6 +44,7 @@ export const Input = styled.input<
   width: 100%;
   height: ${thumbDiameterMobile}px;
   cursor: pointer;
+  background: transparent;
 
   @media (min-width: ${grid.breakpoints.m}px) {
     height: ${thumbDiameter}px;
@@ -60,7 +61,7 @@ export const Input = styled.input<
     -webkit-appearance: none;
     margin-top: ${(trackHeight - thumbDiameterMobile) * 0.5}px;
     ${ThumbStyles}
-    
+
     @media (min-width: ${grid.breakpoints.m}px) {
        margin-top: ${(trackHeight - thumbDiameter) * 0.5}px;
     }
@@ -100,13 +101,13 @@ export const Input = styled.input<
   &::-moz-focus-outer {
     border: 0;
   }
-  
+
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     /* Durty Rotten IE11 fix  */
     height: auto !important;
     margin-top: 12px;
   }
-  
+
   &::-ms-track {
     ${TrackStyles}
     box-sizing: content-box;
@@ -119,20 +120,20 @@ export const Input = styled.input<
     border-width: 39px 0;
     color: transparent;
   }
-  
+
   &::-ms-fill-lower {
     ${TrackStyles}
     box-sizing: content-box;
     border: 0px solid transparent;
     background: ${colors.actionPlain};
   }
-  
+
   &::-ms-fill-upper {
     ${TrackStyles}
     box-sizing: content-box;
     border: 0px solid transparent;
   }
-  
+
   &::-ms-thumb {
     ${ThumbStyles}
     box-sizing: content-box;

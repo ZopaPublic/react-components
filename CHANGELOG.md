@@ -1,3 +1,33 @@
+## [4.15.0](https://github.com/zopaUK/react-components/compare/v4.14.2...v4.15.0) (2020-08-24)
+
+
+### Features
+
+* **zopafooter:** add credit card link ([facf226](https://github.com/zopaUK/react-components/commit/facf2260920b3b400be6a0e7bf46fe4781e19c8d))
+* **zopafooter:** add savings link ([376c72f](https://github.com/zopaUK/react-components/commit/376c72fade282add97da46ecc0da70291074dca2))
+* **zopafooter:** update snapshot ([63520f1](https://github.com/zopaUK/react-components/commit/63520f18d06d4c7a48f6b58158f1a9a77e2edebf))
+
+### [4.14.2](https://github.com/zopaUK/react-components/compare/v4.14.1...v4.14.2) (2020-08-21)
+
+
+### Bug Fixes
+
+* **inputrange:** make background color transparent ([2f7418e](https://github.com/zopaUK/react-components/commit/2f7418e9cde59d6c3cb536da5998875d012c9b61))
+
+### [4.14.1](https://github.com/zopaUK/react-components/compare/v4.14.0...v4.14.1) (2020-08-21)
+
+
+### Bug Fixes
+
+* **inputrange:** make background color transparent ([227d99b](https://github.com/zopaUK/react-components/commit/227d99bdeaa2f3ebff7bcc51b88d24f2f1c5c194))
+
+## [4.14.0](https://github.com/zopaUK/react-components/compare/v4.13.1...v4.14.0) (2020-08-21)
+
+
+### Features
+
+* **help:** allow help line prop and email address fix ([6527bbc](https://github.com/zopaUK/react-components/commit/6527bbc78e968e0ab61f54243342372d9250c9d0))
+
 ### [4.13.1](https://github.com/zopaUK/react-components/compare/v4.13.0...v4.13.1) (2020-08-20)
 
 
