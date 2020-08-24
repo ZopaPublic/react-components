@@ -38,7 +38,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -92,7 +92,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -152,7 +152,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -213,7 +213,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 

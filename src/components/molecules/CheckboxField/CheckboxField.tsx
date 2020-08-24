@@ -103,6 +103,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
   &:disabled + label {
     cursor: not-allowed;
     color: ${colors.grey};
+    background-color: ${colors.greyLightest};
   }
   &:disabled:not(:checked) + label {
     border-color: ${colors.greyLight};

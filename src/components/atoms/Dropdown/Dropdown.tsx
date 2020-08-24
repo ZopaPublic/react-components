@@ -46,7 +46,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   &:disabled {
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: transparent;
+    background-color: ${colors.greyLightest};
     cursor: not-allowed;
   }
 `;
