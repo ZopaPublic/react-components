@@ -6,7 +6,7 @@ const ListComponent = styled.ul<ListProps>`
   padding-left: 28px;
   counter-reset: list-counter;
 
-  & li:not(.has-icon):before {
+  & > li:not(.has-icon):before {
     padding: 0;
     left: -25px;
     display: inline-block;
@@ -30,7 +30,7 @@ const ListComponent = styled.ul<ListProps>`
     `}
   }
 
-  & li.has-icon svg {
+  & > li.has-icon svg {
     padding: 0;
     left: -28px;
     top: 4px;
@@ -42,7 +42,7 @@ const ListComponent = styled.ul<ListProps>`
 `;
 
 export interface ListProps extends HTMLAttributes<HTMLUListElement | HTMLOListElement> {
-  as: 'ul' | 'ol';
+  as?: 'ul' | 'ol';
 }
 
 const List: FC<ListProps> = ({ ...props }) => <ListComponent {...props} />;

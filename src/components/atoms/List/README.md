@@ -11,7 +11,7 @@ import { List, Text, colors, Icon } from '@zopauk/react-components';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 <>
-  <List as="ul">
+  <List>
     <List.Item icon={<Icon variant={faCoffee} color={colors.brand} />}>
       <Text as="p" color={colors.greyDark}>
         Item
@@ -21,11 +21,23 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
       <Text as="p" color={colors.greyDark}>
         Item
       </Text>
-    </List.Item>
-    <List.Item>
-      <Text as="p" color={colors.greyDark}>
-        Item
-      </Text>
+      <List>
+        <List.Item>
+          <Text as="p" color={colors.greyDark}>
+            Indented Item one
+          </Text>
+        </List.Item>
+        <List.Item>
+          <Text as="p" color={colors.greyDark}>
+            Indented Item two
+          </Text>
+        </List.Item>
+        <List.Item>
+          <Text as="p" color={colors.greyDark}>
+            Indented Item Three
+          </Text>
+        </List.Item>
+      </List>
     </List.Item>
   </List>
 

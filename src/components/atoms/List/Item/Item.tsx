@@ -1,9 +1,9 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 import Icon from '../../Icon/Icon';
 
 interface ItemProps extends HTMLAttributes<HTMLLIElement> {
-  icon?: typeof Icon | string;
+  icon?: typeof Icon | ReactNode;
 }
 
 const ItemComponent = styled.li`
@@ -13,7 +13,7 @@ const ItemComponent = styled.li`
   padding: 0;
 `;
 
-const Item: FC<ItemProps> = ({ icon = '', className = '', children, ...rest }) => (
+const Item: FC<ItemProps> = ({ icon, className = '', children, ...rest }) => (
   <ItemComponent className={`${icon && 'has-icon '}${className}`} {...rest}>
     {icon}
     {children}
