@@ -1,3 +1,10 @@
+### [4.15.2](https://github.com/zopaUK/react-components/compare/v4.15.1...v4.15.2) (2020-08-28)
+
+
+### Bug Fixes
+
+* **alert:** set radius to 4px ([97a6b36](https://github.com/zopaUK/react-components/commit/97a6b3629ef8ad9bfc413b65c7f535fc8a02eb80))
+
 ### [4.15.1](https://github.com/zopaUK/react-components/compare/v4.15.0...v4.15.1) (2020-08-24)
 
 
