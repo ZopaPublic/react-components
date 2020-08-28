@@ -25,10 +25,10 @@ jobs:
           command: pnpm typecheck
       - run:
           name: Run linter
-          command: pnpm lint --format junit -o reports/junit/js-lint-results.xml
+          command: pnpm lint -- --format junit -o reports/junit/js-lint-results.xml
       - run:
           name: Run tests
-          command: pnpm test --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
+          command: pnpm test -- --watchAll=false --ci --coverage --reporters=default --reporters=jest-junit --runInBand
       - codecov/upload:
           file: coverage/*.json
       - store_test_results:
