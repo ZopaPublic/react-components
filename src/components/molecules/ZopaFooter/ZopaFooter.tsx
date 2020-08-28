@@ -29,6 +29,8 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) 
             <ListLink href={`${baseUrl}/loans/wedding`}>Wedding loans</ListLink>
             <ListLink href={`${baseUrl}/invest`}>Peer-to-peer investments</ListLink>
             <ListLink href={`${baseUrl}/invest/isa`}>Innovative Finance ISA</ListLink>
+            <ListLink href={`${baseUrl}/credit-card`}>Credit cards</ListLink>
+            <ListLink href={`${baseUrl}/savings-accounts`}>Fixed Term Savings</ListLink>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">

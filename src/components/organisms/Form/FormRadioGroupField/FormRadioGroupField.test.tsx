@@ -9,7 +9,7 @@ const testId = 'radio-group-field-form';
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ employment: '' }} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormRadioGroupField
           label="Employment"
           name="employment"
