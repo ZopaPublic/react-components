@@ -28,7 +28,6 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
     "typecheck": "tsc --noEmit",
-    "deploy-web": "gh-pages -d styleguide -u \"Zopa Ltd. <frontend-opensource@zopa.com>\" -m \"[ci skip] - circleci\"",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
@@ -82,7 +81,6 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.3",
-    "gh-pages": "2.2.0",
     "husky": "4.2.5",
     "jest-axe": "3.3.0",
     "jest-environment-jsdom-sixteen": "1.0.3",

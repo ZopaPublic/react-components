@@ -1,11 +1,13 @@
 # Docs: https://circleci.com/docs/2.0/language-javascript/
 version: 2.1
-orbs:
-  codecov: codecov/codecov@1.1.0
-jobs:
-  tests:
+executors:
+  node-executor:
     docker:
       - image: circleci/node:12
+orbs:
+  codecov: codecov/codecov@1.1.0
+commands:
+  install-deps:
     steps:
       - checkout
       - restore_cache:
@@ -20,6 +22,11 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+jobs:
+  tests:
+    executor: node-executor
+    steps:
+      - install-deps
       - run:
           name: Run typecheck
           command: yarn typecheck
@@ -37,22 +44,9 @@ jobs:
           path: reports/junit
 
   release:
-    docker:
-      - image: circleci/node:12
+    executor: node-executor
     steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
+      - install-deps
       - run:
           name: Compile the code
           command: yarn compile
@@ -60,46 +54,12 @@ jobs:
           name: Release
           command: yarn release
 
-  deploy-web:
-    docker:
-      - image: circleci/node:12
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-      - run:
-          name: Build website
-          command: yarn build
-      # This is necessary to avoid the error related to permissions of Github (see official docs)
-      - add_ssh_keys:
-          fingerprints:
-            - 'd3:31:7b:2f:30:65:1a:a7:43:aa:4a:af:7c:74:87:0e'
-      - run:
-          name: Deploy website
-          command: yarn deploy-web
-
 workflows:
   version: 2
   test_and_release:
     jobs:
       - tests
       - release:
-          requires:
-            - tests
-          filters:
-            branches:
-              only: master
-      - deploy-web:
           requires:
             - tests
           filters:
