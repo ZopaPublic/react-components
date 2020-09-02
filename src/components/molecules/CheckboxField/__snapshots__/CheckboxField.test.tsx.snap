@@ -103,6 +103,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
 .c1:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c1:disabled:not(:checked) + label {
@@ -257,6 +258,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 .c1:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c1:disabled:not(:checked) + label {

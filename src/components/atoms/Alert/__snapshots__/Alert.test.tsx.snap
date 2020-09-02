@@ -14,6 +14,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .c0 a {
@@ -83,6 +84,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .c0 a {
@@ -152,6 +154,7 @@ exports[`Alert renders with specific severity: info 1`] = `
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .c0 a {
@@ -221,6 +224,7 @@ exports[`Alert renders with specific severity: success 1`] = `
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .c0 a {
@@ -290,6 +294,7 @@ exports[`Alert renders with specific severity: warning 1`] = `
   line-height: 20px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 .c0 a {

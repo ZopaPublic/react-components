@@ -28,7 +28,7 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormDropdownFilteredField
           name={fieldName}
           placeholder="Select a nationality..."
