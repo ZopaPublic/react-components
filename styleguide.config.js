@@ -67,7 +67,8 @@ module.exports = {
         {
           name: 'Atoms',
           content: 'src/components/atoms/README.md',
-          components: 'src/components/atoms/*/*.tsx',
+          components: 'src/components/atoms/**/*.tsx',
+          ignore: 'src/components/atoms/**/{index,types,context}.tsx',
         },
         {
           name: 'Molecules',
