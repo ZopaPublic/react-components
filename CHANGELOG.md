@@ -1,3 +1,12 @@
+## [4.16.0](https://github.com/zopaUK/react-components/compare/v4.15.2...v4.16.0) (2020-09-03)
+
+
+### Features
+
+* **list:** add list component ([ebeab87](https://github.com/zopaUK/react-components/commit/ebeab87f11b4c5b8257fa7fa14532a227f9bef55))
+* **list:** list component added tests ([0a821b6](https://github.com/zopaUK/react-components/commit/0a821b67fa968e0255cf6c347cd173151c1f369f))
+* **list component:** documentation update ([2a7f377](https://github.com/zopaUK/react-components/commit/2a7f37703e00153e479aa970123c771ceffb09d6))
+
 ### [4.15.2](https://github.com/zopaUK/react-components/compare/v4.15.1...v4.15.2) (2020-08-28)
 
 
