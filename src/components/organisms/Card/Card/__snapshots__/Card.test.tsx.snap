@@ -1,5 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Card /> renders with action styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #3B46C4;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #E9EAFA;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with alert styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #FF4539;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #FFDAD8;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with brand styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #00D9C5;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #ECFCF9;
+}
+
+<div
+  class="c0"
+/>
+`;
+
 exports[`<Card /> renders with horizontal layout 1`] = `
 .c0 {
   height: 100%;
@@ -24,12 +147,57 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .c3 {
   font-size: 15px;
 }
 
-.c0 .c3 {
+.c0 .c4 {
   font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #FFFFFF;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with info styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #F7F7F7;
 }
 
 <div
@@ -61,12 +229,16 @@ exports[`<Card /> renders with primary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .c3 {
   font-size: 18px;
 }
 
-.c0 .c3 {
+.c0 .c4 {
   font-size: 15px;
+}
+
+.c0 .c2 {
+  background-color: #FFFFFF;
 }
 
 <div
@@ -98,12 +270,57 @@ exports[`<Card /> renders with secondary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .c3 {
   font-size: 15px;
 }
 
-.c0 .c3 {
+.c0 .c4 {
   font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #FFFFFF;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with success styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #3EBC64;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #DDFDE5;
 }
 
 <div
@@ -135,12 +352,57 @@ exports[`<Card /> renders with vertical layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .c3 {
   font-size: 15px;
 }
 
-.c0 .c3 {
+.c0 .c4 {
   font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #FFFFFF;
+}
+
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with warning styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #FF9F0A;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c3 {
+  font-size: 15px;
+}
+
+.c0 .c4 {
+  font-size: 13px;
+}
+
+.c0 .c2 {
+  background-color: #FFECCE;
 }
 
 <div

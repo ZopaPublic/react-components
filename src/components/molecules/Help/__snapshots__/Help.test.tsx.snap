@@ -52,7 +52,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-self: auto;
 }
 
-.c10 {
+.c11 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -63,7 +63,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-self: center;
 }
 
-.c11 {
+.c12 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -97,7 +97,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-items: flex-start;
 }
 
-.c16 {
+.c17 {
   margin-top: 24px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -109,24 +109,39 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   justify-content: flex-end;
 }
 
-.c16 > a,
-.c16 > button {
+.c17 > a,
+.c17 > button {
   margin-right: 16px;
 }
 
-.c16 > a:last-child,
-.c16 > button:last-child {
+.c17 > a:last-child,
+.c17 > button:last-child {
   margin-right: 0;
 }
 
-.c13 {
+.c10 {
+  background-color: white;
+  padding: 16px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
   color: #4A545E;
   font-weight: 700;
   padding: 0;
   margin: 0 0 16px;
 }
 
-.c15 {
+.c16 {
   color: #818F9B;
   font-weight: 400;
   padding: 0;
@@ -153,33 +168,22 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   flex-direction: column;
 }
 
-.c8 > .c18 {
+.c8 > .c19 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c8 .c12 {
+.c8 .c13 {
   font-size: 18px;
 }
 
-.c8 .c14 {
+.c8 .c15 {
   font-size: 15px;
 }
 
-.c9 {
-  background-color: white;
-  padding: 16px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c8 .c9 {
+  background-color: #FFFFFF;
 }
 
 .c0 {
@@ -196,7 +200,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   text-align: center;
 }
 
-.c17 {
+.c18 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -226,22 +230,22 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   background: #E9EAFA;
 }
 
-.c17:hover:not(:disabled) {
+.c18:hover:not(:disabled) {
   background: #EEEFFB;
 }
 
-.c17:focus:not(:active) {
+.c18:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c17:disabled {
+.c18:disabled {
   cursor: not-allowed;
   background: #F7F7F7;
   color: #818F9B;
 }
 
-.c17:active:not(:disabled) {
+.c18:active:not(:disabled) {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -278,7 +282,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 }
 
 @media (min-width:0px) {
-  .c10 {
+  .c11 {
     display: block;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -288,7 +292,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 }
 
 @media (min-width:0px) {
-  .c11 {
+  .c12 {
     display: block;
     -webkit-flex: 0 0 75%;
     -ms-flex: 0 0 75%;
@@ -340,7 +344,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c8"
         >
           <div
-            class="c9"
+            class="c9 c10"
           >
             <div
               class="c2"
@@ -348,7 +352,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
               direction="row"
             >
               <div
-                class="c10 c4"
+                class="c11 c4"
                 cols="12"
               >
                 <svg
@@ -369,26 +373,26 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 </svg>
               </div>
               <div
-                class="c11"
+                class="c12"
                 cols="12"
               >
                 <h6
-                  class="c12 c13"
+                  class="c13 c14"
                 >
                   020 7580 6060
                 </h6>
                 <p
-                  class="c14 c15"
+                  class="c15 c16"
                 >
                   Monday to Thursday (8am to 8pm), Friday (8am to 5pm)
                 </p>
               </div>
             </div>
             <div
-              class="c16"
+              class="c17"
             >
               <a
-                class="c17"
+                class="c18"
                 href="tel:020 7580 6060"
               >
                 Call us
@@ -405,7 +409,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
           class="c8"
         >
           <div
-            class="c9"
+            class="c9 c10"
           >
             <div
               class="c2"
@@ -413,7 +417,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
               direction="row"
             >
               <div
-                class="c10 c4"
+                class="c11 c4"
                 cols="12"
               >
                 <svg
@@ -434,26 +438,26 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 </svg>
               </div>
               <div
-                class="c11"
+                class="c12"
                 cols="12"
               >
                 <h6
-                  class="c12 c13"
+                  class="c13 c14"
                 >
                   contactus@zopa.com
                 </h6>
                 <p
-                  class="c14 c15"
+                  class="c15 c16"
                 >
                   If your query is urgent, please contact our Team via phone.
                 </p>
               </div>
             </div>
             <div
-              class="c16"
+              class="c17"
             >
               <a
-                class="c17"
+                class="c18"
                 href="mailto:contactus@zopa.com"
               >
                 Email us

@@ -222,15 +222,121 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-com
     <FlexCol xs={4}>
       <Card>
         <Card.Content>
-          <Card.Heading>Primary card</Card.Heading>
+          <Card.Heading>Secondary card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
       </Card>
     </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical brand card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
     <FlexCol xs={4}>
-      <Card>
+      <Card styling="brand">
         <Card.Content>
-          <Card.Heading>Secondary card</Card.Heading>
+          <Card.Heading>Brand card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical success card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="success">
+        <Card.Content>
+          <Card.Heading>Success card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical action card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="action">
+        <Card.Content>
+          <Card.Heading>Action card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical alert card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="alert">
+        <Card.Content>
+          <Card.Heading>Alert card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical warning card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="warning">
+        <Card.Content>
+          <Card.Heading>Warning card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical info card with just a heading and text
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="info">
+        <Card.Content>
+          <Card.Heading>Info card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
       </Card>
