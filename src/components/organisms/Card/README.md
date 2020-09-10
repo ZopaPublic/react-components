@@ -231,7 +231,7 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-com
 </FlexContainer>;
 ```
 
-- Vertical brand card with just a heading and text
+- Vertical brand card
 
 ```tsx
 import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
