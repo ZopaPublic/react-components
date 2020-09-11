@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
-import CardContent from '../CardContent/CardContent';
 import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
 
@@ -66,7 +65,7 @@ const Card = styled.div<CardProps>`
   width: 100%;
   display: flex;
   overflow: hidden;
-  background-color: ${colors.white};
+  background-color: ${({ styling = 'secondary' }) => backgroundStyle[styling]};
   border: ${({ styling = 'secondary' }) => borderStyle[styling]};
   border-radius: 12px;
   box-shadow: ${({ styling = 'secondary' }) => boxShadowStyle[styling]};
@@ -79,9 +78,6 @@ const Card = styled.div<CardProps>`
   }
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
-  }
-  & ${CardContent} {
-    background-color: ${({ styling = 'secondary' }) => backgroundStyle[styling]};
   }
 `;
 
