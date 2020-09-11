@@ -222,15 +222,26 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-com
     <FlexCol xs={4}>
       <Card>
         <Card.Content>
-          <Card.Heading>Primary card</Card.Heading>
+          <Card.Heading>Secondary card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
       </Card>
     </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical brand card
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
     <FlexCol xs={4}>
-      <Card>
+      <Card styling="brand">
         <Card.Content>
-          <Card.Heading>Secondary card</Card.Heading>
+          <Card.Heading>Brand card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
       </Card>

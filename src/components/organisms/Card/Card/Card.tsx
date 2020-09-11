@@ -5,7 +5,7 @@ import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
 
 export type CardLayout = 'horizontal' | 'vertical';
-export type CardStyling = 'primary' | 'secondary';
+export type CardStyling = 'primary' | 'secondary' | 'brand';
 
 export interface CardProps {
   /**
@@ -33,11 +33,31 @@ const layoutImageStyles: Record<CardLayout, string> = {
 const headingSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.heading.h6,
   primary: typography.sizes.heading.h5,
+  brand: typography.sizes.heading.h6,
 };
 
 const textSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.text.small,
   primary: typography.sizes.text.body,
+  brand: typography.sizes.text.small,
+};
+
+const boxShadowStyle: Record<CardStyling, string> = {
+  primary: `0 1px 0 0 ${colors.greyLight}`,
+  secondary: `0 1px 0 0 ${colors.greyLight}`,
+  brand: `none`,
+};
+
+const borderStyle: Record<CardStyling, string> = {
+  primary: `1px solid ${colors.greyLighter}`,
+  secondary: `1px solid ${colors.greyLighter}`,
+  brand: `1px solid ${colors.brand}`,
+};
+
+const backgroundStyle: Record<CardStyling, string> = {
+  primary: `${colors.white};`,
+  secondary: `${colors.white};`,
+  brand: `${colors.brandLight};`,
 };
 
 const Card = styled.div<CardProps>`
@@ -45,10 +65,10 @@ const Card = styled.div<CardProps>`
   width: 100%;
   display: flex;
   overflow: hidden;
-  background-color: ${colors.white};
-  border: 1px solid ${colors.greyLighter};
+  background-color: ${({ styling = 'secondary' }) => backgroundStyle[styling]};
+  border: ${({ styling = 'secondary' }) => borderStyle[styling]};
   border-radius: 12px;
-  box-shadow: 0 1px 0 0 ${colors.greyLight};
+  box-shadow: ${({ styling = 'secondary' }) => boxShadowStyle[styling]};
   flex-direction: ${({ layout = 'vertical' }) => layoutDirections[layout]};
   & > ${CardImageContainer} {
     flex: 0 1 ${({ layout = 'vertical' }) => layoutImageStyles[layout]};

@@ -1,5 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Card /> renders with brand styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #ECFCF9;
+  border: 1px solid #00D9C5;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c0 .c2 {
+  font-size: 15px;
+}
+
+.c0 .c3 {
+  font-size: 13px;
+}
+
+<div
+  class="c0"
+/>
+`;
+
 exports[`<Card /> renders with horizontal layout 1`] = `
 .c0 {
   height: 100%;
