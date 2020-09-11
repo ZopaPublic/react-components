@@ -9,7 +9,7 @@ exports[`<Card /> renders with brand styling 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #ECFCF9;
   border: 1px solid #00D9C5;
   border-radius: 12px;
   box-shadow: none;
@@ -24,16 +24,12 @@ exports[`<Card /> renders with brand styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 15px;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 13px;
-}
-
-.c0 .c2 {
-  background-color: #ECFCF9;
 }
 
 <div
@@ -65,16 +61,12 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 15px;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 13px;
-}
-
-.c0 .c2 {
-  background-color: #FFFFFF;
 }
 
 <div
@@ -106,16 +98,12 @@ exports[`<Card /> renders with primary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 18px;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 15px;
-}
-
-.c0 .c2 {
-  background-color: #FFFFFF;
 }
 
 <div
@@ -147,16 +135,12 @@ exports[`<Card /> renders with secondary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 15px;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 13px;
-}
-
-.c0 .c2 {
-  background-color: #FFFFFF;
 }
 
 <div
@@ -188,16 +172,12 @@ exports[`<Card /> renders with vertical layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 15px;
 }
 
-.c0 .c4 {
+.c0 .c3 {
   font-size: 13px;
-}
-
-.c0 .c2 {
-  background-color: #FFFFFF;
 }
 
 <div

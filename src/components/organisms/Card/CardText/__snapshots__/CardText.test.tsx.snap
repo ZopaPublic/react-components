@@ -34,16 +34,12 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c5 {
+.c0 .c4 {
   font-size: 15px;
 }
 
 .c0 .c1 {
   font-size: 13px;
-}
-
-.c0 .c4 {
-  background-color: #FFFFFF;
 }
 
 <div
