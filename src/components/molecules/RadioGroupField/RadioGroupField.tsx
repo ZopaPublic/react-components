@@ -13,7 +13,7 @@ const RadioWrapper = styled.div`
 
 type RadioGroupFieldItem = {
   value: string;
-  label?: string | React.ReactNode;
+  label?: React.ReactNode;
   defaultChecked?: boolean;
   disabled?: boolean;
 };

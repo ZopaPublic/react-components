@@ -52,6 +52,7 @@ export { default as TextField } from './components/molecules/TextField/TextField
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
 export { default as Banner } from './components/molecules/Banner/Banner';
 export { default as Notification } from './components/molecules/Notification/Notification';
+export { default as ActionCard } from './components/molecules/ActionCard/ActionCard';
 
 // Organisms
 export * from './components/organisms/Form';
