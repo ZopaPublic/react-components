@@ -9,8 +9,8 @@ import styled from 'styled-components';
 interface ActionCardProps {
   children: any;
   id: string;
-  icon: IconDefinition;
-  loading: boolean;
+  icon?: IconDefinition;
+  loading?: boolean;
   handleClick: (id: string) => void;
 }
 
@@ -19,17 +19,6 @@ const ActionCardIcon = (selected: string, cardId: string, icon: IconDefinition, 
 };
 
 const StyledActionCard = styled(Card)`
-  /* &:hover {
-    cursor: pointer;
-  } */
-`;
-
-const StyledActionCardContent = styled(Card.Content)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-
   &:hover {
     cursor: pointer;
     svg {
@@ -37,6 +26,13 @@ const StyledActionCardContent = styled(Card.Content)`
     }
     background-color: ${colors.greyLightest};
   }
+`;
+
+const StyledActionCardContent = styled(Card.Content)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 `;
 
 const ActionCard: FC<ActionCardProps> = ({ children, id, icon = faChevronRight, loading, handleClick }) => {
