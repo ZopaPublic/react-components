@@ -1,3 +1,15 @@
+## [4.17.0](https://github.com/zopaUK/react-components/compare/v4.16.0...v4.17.0) (2020-09-11)
+
+
+### Features
+
+* **card:** add new styles ([760a91d](https://github.com/zopaUK/react-components/commit/760a91de483cf0e0ed3577e4eba06b1d7c9686e3))
+* **card:** add new styles ([3791b14](https://github.com/zopaUK/react-components/commit/3791b14529322c4ce149c98fc57a6b4bc0cd75df))
+* **card:** add new styles ([76d7ba5](https://github.com/zopaUK/react-components/commit/76d7ba5e1aa03d69a607813c8b123b39efc5e268))
+* **card:** add new styles ([4740950](https://github.com/zopaUK/react-components/commit/474095071f371d6895b7425703cdcea37dcbf368))
+* **card:** change card content background colour ([8393f22](https://github.com/zopaUK/react-components/commit/8393f22e44f8aa93cef2e4547cfdbc06b69e4c0b))
+* **card:** update tests ([b51cd13](https://github.com/zopaUK/react-components/commit/b51cd13b3e0d8c5b976af74250e9554d31ae9d2e))
+
 ## [4.16.0](https://github.com/zopaUK/react-components/compare/v4.15.2...v4.16.0) (2020-09-03)
 
 
