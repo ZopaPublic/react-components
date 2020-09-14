@@ -11,7 +11,7 @@ interface ActionCardProps {
   id: string;
   icon?: IconDefinition;
   loading?: boolean;
-  handleClick: (id: string) => void;
+  onClick: (event: React.MouseEvent | React.KeyboardEvent, id: string) => void;
 }
 
 const ActionCardIcon = (selectedId: string, id: string, icon: IconDefinition, loading?: boolean) => {
@@ -39,11 +39,11 @@ const StyledActionCardContent = styled(Card.Content)`
   flex-direction: row;
 `;
 
-const ActionCard: FC<ActionCardProps> = ({ children, id, icon = faChevronRight, loading, handleClick }) => {
+const ActionCard: FC<ActionCardProps> = ({ children, id, icon = faChevronRight, loading, onClick }) => {
   const [selectedId, setSelectedId] = useState<string>('');
-  const handleOnClick = () => {
+  const handleOnClick = (event: React.MouseEvent | React.KeyboardEvent) => {
     setSelectedId(id);
-    handleClick(id);
+    onClick(event, id);
   };
   return (
     <StyledActionCard onClick={handleOnClick} data-automation="ZA.action-card">

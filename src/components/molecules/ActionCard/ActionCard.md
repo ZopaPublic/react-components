@@ -9,14 +9,14 @@ Use `<ActionCard />` to render an option card that optionally displays a loader 
 ```tsx
 import { ActionCard, CardImage, FlexContainer, FlexRow, FlexCol, Text, Spinner, Icon } from '@zopauk/react-components';
 
-const handleClick = (id) => {
+const handleClick = (event, id) => {
   alert(`The card with id ${id} has been clicked`);
 };
 
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-1" handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-1">
         <Text as="p" weight="bold" className="mb-1">
           Option 1
         </Text>
@@ -26,7 +26,7 @@ const handleClick = (id) => {
       </ActionCard>
     </FlexCol>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-2" handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-2">
         <Text as="p" weight="bold" className="mb-1">
           Option 2
         </Text>
@@ -46,7 +46,7 @@ In this example `loading` is hardcoded to true but in your code the state would 
 ```tsx
 import { ActionCard, CardImage, FlexContainer, FlexRow, FlexCol, Text, Spinner, Icon } from '@zopauk/react-components';
 
-const handleClick = (id) => {
+const handleClick = (event, id) => {
   alert(`The card with id ${id} has been clicked`);
   // set loading to true
 };
@@ -54,7 +54,7 @@ const handleClick = (id) => {
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-1" loading={true} handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-1" loading={true}>
         <Text as="p" weight="bold" className="mb-1">
           Option 1
         </Text>
@@ -64,7 +64,7 @@ const handleClick = (id) => {
       </ActionCard>
     </FlexCol>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-2" loading={true} handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-2" loading={true}>
         <Text as="p" weight="bold" className="mb-1">
           Option 2
         </Text>
@@ -83,14 +83,14 @@ const handleClick = (id) => {
 import { ActionCard, CardImage, FlexContainer, FlexRow, FlexCol, Text, Spinner, Icon } from '@zopauk/react-components';
 import { faPizzaSlice, faHamburger } from '@fortawesome/free-solid-svg-icons';
 
-const handleClick = (id) => {
+const handleClick = (event, id) => {
   alert(`The card with id ${id} has been clicked`);
 };
 
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-1" icon={faPizzaSlice} handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-1" icon={faPizzaSlice}>
         <Text as="p" weight="bold" className="mb-1">
           Option 1
         </Text>
@@ -100,7 +100,7 @@ const handleClick = (id) => {
       </ActionCard>
     </FlexCol>
     <FlexCol xs={4}>
-      <ActionCard handleClick={handleClick} id="option-2" icon={faHamburger} handleClick={handleClick}>
+      <ActionCard onClick={handleClick} id="option-2" icon={faHamburger}>
         <Text as="p" weight="bold" className="mb-1">
           Option 2
         </Text>
