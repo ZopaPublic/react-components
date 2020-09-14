@@ -15,7 +15,11 @@ interface ActionCardProps {
 }
 
 const ActionCardIcon = (selected: string, cardId: string, icon: IconDefinition, loading?: boolean) => {
-  return loading && selected === cardId ? <Spinner size="small" /> : <Icon variant={icon} color={colors.grey} />;
+  return loading && selected === cardId ? (
+    <Spinner size="small" data-automation="ZA.spinner-icon" />
+  ) : (
+    <Icon variant={icon} color={colors.grey} data-automation="ZA.action-card-icon" />
+  );
 };
 
 const StyledActionCard = styled(Card)`
@@ -42,7 +46,7 @@ const ActionCard: FC<ActionCardProps> = ({ children, id, icon = faChevronRight, 
     handleClick(id);
   };
   return (
-    <StyledActionCard onClick={handleOnClick}>
+    <StyledActionCard onClick={handleOnClick} data-automation="ZA.action-card">
       <StyledActionCardContent>
         <div>{children}</div>
         {ActionCardIcon(selectedId, id, icon, loading)}
