@@ -14,8 +14,8 @@ interface ActionCardProps {
   handleClick: (id: string) => void;
 }
 
-const ActionCardIcon = (selected: string, cardId: string, icon: IconDefinition, loading?: boolean) => {
-  return loading && selected === cardId ? (
+const ActionCardIcon = (selectedId: string, id: string, icon: IconDefinition, loading?: boolean) => {
+  return loading && selectedId === id ? (
     <Spinner size="small" data-automation="ZA.spinner-icon" />
   ) : (
     <Icon variant={icon} color={colors.grey} data-automation="ZA.action-card-icon" />
