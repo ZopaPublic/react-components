@@ -59,6 +59,9 @@ export * from './components/organisms/Accordion';
 export { default as Navbar, navbarLinkStyles } from './components/organisms/Navbar/';
 export { default as Card } from './components/organisms/Card';
 
+// Templates
+export { default as ProductTemplate } from './components/templates/Product/Template';
+
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
 export { default as FlexRow } from './components/layout/FlexRow/FlexRow';
