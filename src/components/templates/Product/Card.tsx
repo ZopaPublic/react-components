@@ -20,12 +20,8 @@ const StyledCard = styled(Card)`
 
 function SizedHeading(props: { children: ReactNode }) {
   const { width = 0 } = useViewport();
-  return width > breakpoints.phone ? (
-    <Heading as="h2" size="h3">
-      {props.children}
-    </Heading>
-  ) : (
-    <Heading as="h2" size="h4">
+  return  (
+    <Heading as="h2" size={width > breakpoints.phone ? "h3" : "h4"}>
       {props.children}
     </Heading>
   );
