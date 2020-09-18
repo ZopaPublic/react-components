@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { minMedia, Progress } from '../../..';
-import { ProgressProps } from '../../molecules/Progress/Progress';
+import Progress, { ProgressProps } from '../../../molecules/Progress/Progress';
+import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateProgressProps {
   nextStepUrl: string;
@@ -13,12 +13,10 @@ interface ProductTemplateProgressProps {
 
 const BackWrapper = styled.div`
   ${minMedia.desktop`
-    ${`
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
-    `}
   `}
 `;
 

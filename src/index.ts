@@ -60,7 +60,7 @@ export { default as Navbar, navbarLinkStyles } from './components/organisms/Navb
 export { default as Card } from './components/organisms/Card';
 
 // Templates
-export { default as ProductTemplate } from './components/templates/Product/Template';
+export { default as ProductTemplate } from './components/templates/ProductTemplate';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';

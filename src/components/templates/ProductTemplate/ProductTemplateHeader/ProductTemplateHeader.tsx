@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import { breakpoints, colors, Heading, Text, useViewport } from '../../../index';
+import { colors } from '../../../../constants/colors';
+import { breakpoints } from '../../../../constants/breakpoints';
+import { useViewport } from '../../../../hooks/useViewport';
+import Heading from '../../../atoms/Heading/Heading';
+import Text from '../../../atoms/Text/Text';
 
 interface ProductTemplateHeaderProps {
   title: string;
@@ -27,22 +30,26 @@ const ProductTemplateHeaderInnerContainer = styled.div`
   padding-bottom: 195px;
 `;
 
-export function ProductTemplateHeader(props: ProductTemplateHeaderProps) {
+export function ProductTemplateHeader({
+  title,
+  subtitle,
+  'data-automation': dataAutomation = 'PAGE_HEADER',
+}: ProductTemplateHeaderProps) {
   const { width = 0 } = useViewport();
   return (
-    <ProductTemplateHeaderBackground data-automation={props['data-automation'] ?? 'PAGE_HEADER'}>
+    <ProductTemplateHeaderBackground data-automation={dataAutomation}>
       <ProductTemplateHeaderContainer>
         <ProductTemplateHeaderInnerContainer className="pt-7 mx-6 m:mx-0">
-          {props.title && (
+          {title && (
             <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center">
-              {props.title}
+              {title}
             </Heading>
           )}
-          {props.subtitle ? (
+          {subtitle && (
             <Text as="p" size="lead" align="center" className="mt-4">
-              {props.subtitle}
+              {subtitle}
             </Text>
-          ) : null}
+          )}
         </ProductTemplateHeaderInnerContainer>
       </ProductTemplateHeaderContainer>
     </ProductTemplateHeaderBackground>
