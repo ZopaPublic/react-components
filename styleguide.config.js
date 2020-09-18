@@ -169,4 +169,5 @@ module.exports = {
   usageMode: 'expand',
 
   skipComponentsWithoutExample: true,
+  webpackConfig: require('./etc/webpack/config.js'),
 };

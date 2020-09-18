@@ -44,7 +44,8 @@
     "react-headroom": "^3.0.0",
     "react-modal": "^3.8.1",
     "styled-normalize": "^8.0.6",
-    "util-deprecate": "^1.0.2"
+    "util-deprecate": "^1.0.2",
+    "webpack": "^4.44.2"
   },
   "peerDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
@@ -64,6 +65,7 @@
     "@rollup/plugin-url": "5.0.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
+    "@swc/core": "^1.2.30",
     "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.5",
     "@testing-library/react-hooks": "3.3.0",
@@ -77,7 +79,9 @@
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "commitizen": "4.1.2",
+    "css-loader": "^4.3.0",
     "cz-conventional-changelog": "3.2.0",
+    "eslint": "^7.9.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.3",
@@ -91,15 +95,17 @@
     "react": "16.13.1",
     "react-docgen-typescript": "1.18.0",
     "react-dom": "16.13.1",
-    "react-scripts": "^3.4.1",
     "react-styleguidist": "11.0.8",
     "react-test-renderer": "16.13.1",
     "rollup": "2.21.0",
     "rollup-plugin-postcss": "3.1.2",
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.1.1",
+    "style-loader": "^1.2.1",
     "styled-components": "4.4.1",
-    "typescript": "3.9.6"
+    "swc-loader": "^0.1.12",
+    "typescript": "3.9.6",
+    "url-loader": "^4.1.0"
   },
   "browserslist": [
     "cover 95% in GB",
