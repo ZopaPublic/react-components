@@ -1,3 +1,10 @@
+### [4.17.1](https://github.com/zopaUK/react-components/compare/v4.17.0...v4.17.1) (2020-09-21)
+
+
+### Bug Fixes
+
+* **zopa logo:** use updated zopa logo svg ([6cb3b68](https://github.com/zopaUK/react-components/commit/6cb3b68448aa70fd7c87d09eaad31343602363c1))
+
 ## [4.17.0](https://github.com/zopaUK/react-components/compare/v4.16.0...v4.17.0) (2020-09-11)
 
 
