@@ -3,7 +3,7 @@ module.exports = {
   transform: {
     '^.+\\.(t|j)sx?$': ['@swc/jest'],
     '^.+\\.css$': '<rootDir>/../etc/jest/cssTransform.js',
-    '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)': '<rootDir>/../etc/jest/fileTransform.js',
+    '^(?!.*\\.(mjs|cjs|css|json)$)': '<rootDir>/../etc/jest/fileTransform.js',
   },
   transformIgnorePatterns: [
     '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',

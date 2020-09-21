@@ -4,10 +4,10 @@ import pkg from '../../package.json';
 // Plugins
 import customResolveOptions from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
-import babel from '@rollup/plugin-babel';
+import swc from 'rollup-plugin-swc';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
-import postcss from 'rollup-plugin-postcss';
+import styles from 'rollup-plugin-styles';
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -32,11 +32,14 @@ export default {
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     customResolveOptions({ extensions }),
-    babel({
-      presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
-      babelHelpers: 'runtime',
-      extensions,
-      exclude: 'node_modules',
+    styles(),
+    swc({
+      jsc: {
+        parser: {
+          syntax: 'typescript',
+          tsx: true,
+        },
+      },
     }),
     commonjs({
       include: /node_modules/,
@@ -47,6 +50,5 @@ export default {
       emitFiles: true, // defaults to true
     }),
     terser(),
-    postcss({ minimize: true }),
   ],
 };
