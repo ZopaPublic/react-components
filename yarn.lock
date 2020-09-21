@@ -1260,10 +1260,10 @@
     "@swc/core-linux" "^1.2.30"
     "@swc/core-win32" "^1.2.30"
 
-"@swc/ject@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@swc/ject/-/ject-0.1.1.tgz#0667196f3ca675eab6bae99bb162d52989515485"
-  integrity sha512-8VNlJV2oUnNAEotuD6YHxYm0cX5eI2oVhNlXXfgVqTp26SALuo6Q4zk07XDNFqEPecjBbTtSu5DGFA4D/j70fQ==
+"@swc/jest@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@swc/jest/-/jest-0.1.2.tgz#5195f2439c60430dff661b4a7b5c904483791eb7"
+  integrity sha512-14ju3wkSsTeKFivYzH222j4/y5UQWY5Wk9fOvPit6wyuZNyo4fP6AVYWwVzogmqQNe06IMs+aPJGQ3FbErRZjQ==
   dependencies:
     "@swc/core" "^1.2.30"
 

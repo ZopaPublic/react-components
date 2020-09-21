@@ -167,7 +167,6 @@ module.exports = {
   printServerInstructions,
   // props table config
   usageMode: 'expand',
-
   skipComponentsWithoutExample: true,
   webpackConfig: require('./etc/webpack/config.js'),
 };

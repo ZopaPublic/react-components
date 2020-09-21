@@ -22,7 +22,7 @@
     "compile:code": "rollup --config ./etc/rollup/config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
-    "test": "jest",
+    "test": "jest --config etc/jest/config.js",
     "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
     "format:fix": "yarn format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
@@ -33,6 +33,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@swc/jest": "^0.1.2",
     "@tippy.js/react": "^3.1.1",
     "@types/react-headroom": "^2.2.1",
     "@types/react-modal": "^3.10.2",
@@ -67,7 +68,6 @@
     "@semantic-release/git": "9.0.0",
     "@swc/cli": "^0.1.26",
     "@swc/core": "^1.2.30",
-    "@swc/ject": "^0.1.1",
     "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.5",
     "@testing-library/react-hooks": "3.3.0",
@@ -80,6 +80,7 @@
     "@types/styled-components": "5.1.0",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
+    "camelcase": "^6.0.0",
     "commitizen": "4.1.2",
     "css-loader": "^4.3.0",
     "cz-conventional-changelog": "3.2.0",
@@ -117,28 +118,6 @@
     "not ios <11",
     "not dead"
   ],
-  "jest": {
-    "rootDir": "./src",
-    "testMatch": [
-      "<rootDir>/**/*.test.{ts,tsx,js,jsx}"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "transform": {
-      "^.+\\.tsx?$": [
-        "@swc/ject"
-      ]
-    },
-    "collectCoverageFrom": [
-      "src/components/**/*.{ts,tsx}"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-push": "yarn typecheck && yarn lint && yarn test --watchAll=false",
