@@ -9,7 +9,7 @@ import Text from '../../../atoms/Text/Text';
 interface ProductTemplateHeaderProps {
   title: string;
   subtitle?: string;
-  ['data-automation']?: string;
+  dataAutomation?: string;
 }
 
 const ProductTemplateHeaderBackground = styled.header`
@@ -30,11 +30,7 @@ const ProductTemplateHeaderInnerContainer = styled.div`
   padding-bottom: 195px;
 `;
 
-export function ProductTemplateHeader({
-  title,
-  subtitle,
-  'data-automation': dataAutomation = 'PAGE_HEADER',
-}: ProductTemplateHeaderProps) {
+export function ProductTemplateHeader({ title, subtitle, dataAutomation = 'PAGE_HEADER' }: ProductTemplateHeaderProps) {
   const { width = 0 } = useViewport();
   return (
     <ProductTemplateHeaderBackground data-automation={dataAutomation}>

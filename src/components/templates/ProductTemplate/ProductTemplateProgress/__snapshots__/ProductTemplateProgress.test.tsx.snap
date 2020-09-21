@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c5 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c5 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c0 {
+  position: relative;
+  min-height: 30px;
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+<div>
+  <div
+    class="c0 l:mt-10 l:mb-4"
+    data-automation="ZA.ProductTemplateProgress"
+  >
+    <div
+      class="c1 my-4 l:mt-0 l:mb-7 pl-2"
+    >
+      All the children
+    </div>
+    <div
+      class="c2"
+    >
+      <span
+        class="c3"
+      />
+      <span
+        class="c4"
+      />
+      <div
+        class="c5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProductTemplateProgress /> renders with no prevStep 1`] = `<div />`;
+
+exports[`<ProductTemplateProgress /> renders with no progress 1`] = `<div />`;
