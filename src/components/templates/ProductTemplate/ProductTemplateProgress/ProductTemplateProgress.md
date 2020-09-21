@@ -1,3 +1,3 @@
 ### Summary
 
-`<ProductTemplateProgress>` the _<Progress />_ component with fixed styling.
+`<ProductTemplateProgress>` the `<Progress />` component with fixed styling.
