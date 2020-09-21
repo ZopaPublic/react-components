@@ -4,9 +4,6 @@ const path = require('path');
 const kleur = require('kleur');
 const webpackDevServerUtils = require('react-dev-utils/WebpackDevServerUtils');
 
-// Make react-scripts get the eslint config
-process.env.EXTEND_ESLINT = 'true';
-
 const printServerInstructions = (config) => {
   const urls = webpackDevServerUtils.prepareUrls('http', config.serverHost, config.serverPort);
   console.log(`${kleur.cyan().bold(`

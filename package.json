@@ -33,7 +33,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@swc/jest": "^0.1.2",
     "@tippy.js/react": "^3.1.1",
     "@types/react-headroom": "^2.2.1",
     "@types/react-modal": "^3.10.2",
@@ -45,8 +44,7 @@
     "react-headroom": "^3.0.0",
     "react-modal": "^3.8.1",
     "styled-normalize": "^8.0.6",
-    "util-deprecate": "^1.0.2",
-    "webpack": "^4.44.2"
+    "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
@@ -68,6 +66,7 @@
     "@semantic-release/git": "9.0.0",
     "@swc/cli": "^0.1.26",
     "@swc/core": "^1.2.30",
+    "@swc/jest": "^0.1.2",
     "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.5",
     "@testing-library/react-hooks": "3.3.0",
@@ -109,7 +108,8 @@
     "styled-components": "4.4.1",
     "swc-loader": "^0.1.12",
     "typescript": "3.9.6",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2"
   },
   "browserslist": [
     "cover 95% in GB",

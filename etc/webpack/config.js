@@ -1,3 +1,7 @@
+/**
+ * This webpack configuration is used by react-styleguidist in the styleguide.config.js for building the website
+ * The building process of the library is done with rollup (check out /etc/rollup)
+ */
 module.exports = {
   module: {
     rules: [
