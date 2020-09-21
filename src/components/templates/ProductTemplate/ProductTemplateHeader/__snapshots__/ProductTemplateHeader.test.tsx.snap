@@ -151,7 +151,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 <div>
   <header
     class="c0"
-    data-automation="automa tion"
+    data-automation="automation"
   >
     <div
       class="c1 px-0 m:px-4"
