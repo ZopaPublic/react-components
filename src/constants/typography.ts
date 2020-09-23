@@ -15,6 +15,18 @@ const typography = {
       h5: '18px',
       h6: '15px',
     },
+    lineHeight: {
+      display: '76px',
+      h1: '54px',
+      h2: '46px',
+      h3: '36px',
+      h4: '32px',
+      h5: '26px',
+      h6: '20px',
+      lead: '26px',
+      body: '22px',
+      small: '18px',
+    },
   },
   weights: {
     regular: 400,

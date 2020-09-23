@@ -44,11 +44,9 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
     | 'inherit';
 }
 
-const lineHeightMap = {
-  lead: '26px',
-  body: '22px',
-  small: '18px',
-};
+const {
+  sizes: { lineHeight: lineHeightMap },
+} = typography;
 
 const Text = styled.span<TextProps>`
   margin: 0;
