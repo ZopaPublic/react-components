@@ -49,8 +49,7 @@ exports[`<NumberLockUps /> renders without errors 1`] = `
   -ms-flex-order: 2;
   order: 2;
   font-size: 15px;
-  -webkit-ine-height: 22px;
-  ine-height: 22px;
+  line-height: 22px;
 }
 
 .c4 {
