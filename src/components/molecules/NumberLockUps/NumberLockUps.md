@@ -1,6 +1,6 @@
 ### Summary
 
-Display a numerical value with a title
+Display a numerical value with a title. The component will auto format the value and options can be modified using [Intl.NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
 
 ### Examples
 
