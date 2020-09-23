@@ -21,7 +21,8 @@ interface StyleProps {
 
 export interface NumberLockUpsProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
   title?: string;
-  value: string;
+  value: number;
+  formatterOptions?: Intl.NumberFormatOptions;
 }
 
 const Container = styled.div<Required<Pick<StyleProps, 'numberPosition'>>>`
@@ -109,7 +110,10 @@ const NumberLockUps: React.FC<NumberLockUpsProps> = ({
   value,
   numberPosition = 'top',
   numberFontSize = 'main',
+  formatterOptions = {},
 }) => {
+  const numberFormatter = (value: number) => new Intl.NumberFormat('en-GB', formatterOptions).format(value);
+
   const valueClassNames = classnames({
     'mt-2': numberPosition === 'bottom' && numberFontSize === 'main',
     'mt-1': numberPosition === 'bottom' && numberFontSize === 'small',
@@ -129,7 +133,7 @@ const NumberLockUps: React.FC<NumberLockUpsProps> = ({
         </Title>
       ) : null}
       <Value className={valueClassNames} numberPosition={numberPosition} numberFontSize={numberFontSize}>
-        {value}
+        {numberFormatter(value)}
       </Value>
     </Container>
   );

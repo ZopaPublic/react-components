@@ -6,17 +6,23 @@ import NumberLockUps from './NumberLockUps';
 
 import 'jest-styled-components';
 
-const renderComponent = (props = {}) =>
-  render(<NumberLockUps title="Overall Balance" value="£100,000.00" {...props} />);
+const renderComponent = (props = {}) => render(<NumberLockUps title="Overall Balance" value={100000} {...props} />);
 
 describe('<NumberLockUps />', () => {
   it('renders without errors', async () => {
-    const { container } = renderComponent();
+    const { container } = renderComponent({
+      formatterOptions: {
+        style: 'currency',
+        currency: 'GBP',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      },
+    });
     expect(container).toMatchSnapshot();
   });
 
   it('should position the numerical value to the right', () => {
-    const value = '£100,000.00';
+    const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'right' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'row');
     expect(container.firstChild).toHaveStyleRule('justify-content', 'space-between');
@@ -24,7 +30,7 @@ describe('<NumberLockUps />', () => {
   });
 
   it('should position the numerical value to the left', () => {
-    const value = '£100,000.00';
+    const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'left' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'row');
     expect(container.firstChild).toHaveStyleRule('justify-content', 'space-between');
@@ -32,14 +38,14 @@ describe('<NumberLockUps />', () => {
   });
 
   it('should position the numerical value to the right', () => {
-    const value = '£100,000.00';
+    const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'top' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'column');
     expect(screen.getByText(value)).toHaveStyleRule('order', '1');
   });
 
   it('should position the numerical value to the left', () => {
-    const value = '£100,000.00';
+    const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'bottom' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'column');
     expect(screen.getByText(value)).toHaveStyleRule('order', '2');
