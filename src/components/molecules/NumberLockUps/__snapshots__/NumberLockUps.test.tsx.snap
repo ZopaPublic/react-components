@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberLockUps /> renders without errors 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+  display: block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  font-size: 15px;
+  -webkit-ine-height: 22px;
+  ine-height: 22px;
+}
+
+.c4 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 800;
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c4 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <span
+      class="c1 c2"
+    >
+      Overall Balance
+    </span>
+    <span
+      class="c3 c4 mb-2"
+    >
+      £100,000.00
+    </span>
+  </div>
+</div>
+`;
