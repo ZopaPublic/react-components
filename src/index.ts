@@ -52,7 +52,7 @@ export { default as TextField } from './components/molecules/TextField/TextField
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
 export { default as Banner } from './components/molecules/Banner/Banner';
 export { default as Notification } from './components/molecules/Notification/Notification';
-
+export { default as NumberLockUps } from './components/molecules/NumberLockUps/NumberLockUps';
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
