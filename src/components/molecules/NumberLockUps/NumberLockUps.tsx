@@ -50,11 +50,11 @@ const Title = styled(Text)<Required<StyleProps>>`
     numberFontSize === 'main'
       ? `
         font-size: ${typography.sizes.text.body}; 
-        ine-height: ${typography.sizes.lineHeight.body};
+        line-height: ${typography.sizes.lineHeight.body};
       `
       : `
         font-size: ${typography.sizes.text.small}; 
-        ine-height: ${typography.sizes.lineHeight.small};
+        line-height: ${typography.sizes.lineHeight.small};
       `}
 
   ${minMedia.desktop`
