@@ -21,5 +21,8 @@ exports[`<Card.LineItem /> renders the component with no a11y violations 1`] = `
 
 <div
   class="c0"
-/>
+>
+  Line item
+  £10.00
+</div>
 `;
