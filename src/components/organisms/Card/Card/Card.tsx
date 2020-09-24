@@ -3,6 +3,7 @@ import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
 import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
+import CardLineItem from '../CardLineItem/CardLineItem';
 
 export type CardLayout = 'horizontal' | 'vertical';
 export type CardStyling = 'primary' | 'secondary' | 'brand' | 'action';
@@ -83,6 +84,10 @@ const Card = styled.div<CardProps>`
   }
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
+  }
+  & ${CardLineItem} {
+    display: flex;
+    justify-content: flex-end;
   }
   &:hover {
     cursor: ${({ styling }) => (styling === 'action' ? 'pointer' : 'initial')};
