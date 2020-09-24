@@ -28,18 +28,8 @@ export interface StyledHeadingProps {
 }
 
 const {
-  sizes: { heading: headingSizes },
+  sizes: { heading: headingSizes, lineHeight: lineHeightMap },
 } = typography;
-
-const lineHeightMap = {
-  display: '76px',
-  h1: '54px',
-  h2: '46px',
-  h3: '36px',
-  h4: '32px',
-  h5: '26px',
-  h6: '20px',
-};
 
 const letterSpacingMap = {
   display: '-2.86px',
