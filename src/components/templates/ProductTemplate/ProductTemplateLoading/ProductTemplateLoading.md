@@ -1,5 +1,0 @@
-### Summary
-
-`<ProductTemplateLoading>`
-
-// TODO

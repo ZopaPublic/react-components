@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../../../constants/colors';
-import { breakpoints } from '../../../../constants/breakpoints';
-import { useViewport } from '../../../../hooks/useViewport';
+
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
+import { breakpoints } from '../../../../constants/breakpoints';
+import { colors } from '../../../../constants/colors';
+import { useViewport } from '../../../../hooks/useViewport';
 
 interface ProductTemplateHeaderProps {
   title: string;

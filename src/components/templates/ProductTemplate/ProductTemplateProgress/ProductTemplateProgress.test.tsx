@@ -16,16 +16,7 @@ describe('<ProductTemplateProgress />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders with no prevStep', () => {
-    const { container } = render(
-      <ProductTemplateProgress nextStepUrl="/nextStep" progress={{ currentStep: 1, totalSteps: 2 }}>
-        All the children
-      </ProductTemplateProgress>,
-    );
-    expect(container).toMatchSnapshot();
-  });
-
-  it('renders with no progress', () => {
+  it('renders with no progress or prevStep', () => {
     const { container } = render(
       <ProductTemplateProgress nextStepUrl="/nextStep">All the children</ProductTemplateProgress>,
     );

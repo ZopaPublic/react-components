@@ -14,11 +14,6 @@ describe('<ProductTemplateHeader />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('renders with no subtitle and data-automation', () => {
-    const { container } = render(<ProductTemplateHeader title="ProductTemplateHeader title" />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('renders correct sized header on desktop', () => {
     const { container } = render(<ProductTemplateHeader title="ProductTemplateHeader title" />);
     expect(container).toMatchSnapshot();

@@ -1,167 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProductTemplateCard /> renders correct sized header on desktop 1`] = `
-.c1 {
-  font-size: 28px;
-  line-height: 36px;
-  -webkit-letter-spacing: -0.45px;
-  -moz-letter-spacing: -0.45px;
-  -ms-letter-spacing: -0.45px;
-  letter-spacing: -0.45px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
-.c0 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  border: 1px solid #EFEFEF;
-  border-radius: 12px;
-  box-shadow: 0 1px 0 0 #D4D7D9;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > .c2 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
-}
-
-.c0 .c3 {
-  font-size: 15px;
-}
-
-.c0 .c4 {
-  font-size: 13px;
-}
-
-@media (max-width:600px) {
-  .c0 {
-    border-radius: 0;
-  }
-}
-
-<div>
-  <div
-    class="c0 px-4 py-6 m:p-8"
-  >
-    <h2
-      class="c1"
-    >
-      ProductTemplateCard title
-    </h2>
-    All the children
-  </div>
-</div>
-`;
-
-exports[`<ProductTemplateCard /> renders correct sized header on small screens 1`] = `
-.c1 {
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
-.c0 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  border: 1px solid #EFEFEF;
-  border-radius: 12px;
-  box-shadow: 0 1px 0 0 #D4D7D9;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > .c2 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
-}
-
-.c0 .c3 {
-  font-size: 15px;
-}
-
-.c0 .c4 {
-  font-size: 13px;
-}
-
-@media (max-width:600px) {
-  .c0 {
-    border-radius: 0;
-  }
-}
-
-<div>
-  <div
-    class="c0 px-4 py-6 m:p-8"
-  >
-    <h2
-      class="c1"
-    >
-      ProductTemplateCard title
-    </h2>
-    All the children
-  </div>
-</div>
-`;
-
 exports[`<ProductTemplateCard /> renders with all the props 1`] = `
-.c1 {
-  font-size: 28px;
-  line-height: 36px;
-  -webkit-letter-spacing: -0.45px;
-  -moz-letter-spacing: -0.45px;
-  -ms-letter-spacing: -0.45px;
-  letter-spacing: -0.45px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
-.c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #4A545E;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 400;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
-  display: block;
-}
-
 .c0 {
   height: 100%;
   width: 100%;
@@ -179,90 +18,17 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   flex-direction: column;
 }
 
-.c0 > .c3 {
+.c0 > .c1 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c0 .c4 {
+.c0 .c2 {
   font-size: 15px;
-}
-
-.c0 .c5 {
-  font-size: 13px;
-}
-
-@media (max-width:600px) {
-  .c0 {
-    border-radius: 0;
-  }
-}
-
-<div>
-  <div
-    class="c0 px-4 py-6 m:p-8"
-  >
-    Notification
-    <h2
-      class="c1"
-    >
-      ProductTemplateCard title
-    </h2>
-    <span
-      class="c2 mt-2"
-      color="#4A545E"
-    >
-      ProductTemplateCard subtitle
-    </span>
-    All the children
-  </div>
-</div>
-`;
-
-exports[`<ProductTemplateCard /> renders with no props 1`] = `
-.c1 {
-  font-size: 28px;
-  line-height: 36px;
-  -webkit-letter-spacing: -0.45px;
-  -moz-letter-spacing: -0.45px;
-  -ms-letter-spacing: -0.45px;
-  letter-spacing: -0.45px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
-.c0 {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  border: 1px solid #EFEFEF;
-  border-radius: 12px;
-  box-shadow: 0 1px 0 0 #D4D7D9;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 > .c2 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
 }
 
 .c0 .c3 {
-  font-size: 15px;
-}
-
-.c0 .c4 {
   font-size: 13px;
 }
 
@@ -276,9 +42,6 @@ exports[`<ProductTemplateCard /> renders with no props 1`] = `
   <div
     class="c0 px-4 py-6 m:p-8"
   >
-    <h2
-      class="c1"
-    />
     All the children
   </div>
 </div>

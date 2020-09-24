@@ -99,6 +99,4 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
 </div>
 `;
 
-exports[`<ProductTemplateProgress /> renders with no prevStep 1`] = `<div />`;
-
-exports[`<ProductTemplateProgress /> renders with no progress 1`] = `<div />`;
+exports[`<ProductTemplateProgress /> renders with no progress or prevStep 1`] = `<div />`;
