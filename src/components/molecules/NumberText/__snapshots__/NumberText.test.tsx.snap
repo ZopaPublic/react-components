@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NumberLockUps /> renders without errors 1`] = `
+exports[`<NumberText /> renders without errors 1`] = `
 .c1 {
   margin: 0;
   -webkit-letter-spacing: 0;

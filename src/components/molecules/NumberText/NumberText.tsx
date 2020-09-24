@@ -19,7 +19,7 @@ interface StyleProps {
   numberPosition?: 'top' | 'bottom' | 'right' | 'left';
 }
 
-export interface NumberLockUpsProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
+export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
   title?: string;
   value: number;
   formatterOptions?: Intl.NumberFormatOptions;
@@ -105,7 +105,7 @@ const Value = styled(Text)<Required<StyleProps>>`
   `}
 `;
 
-const NumberLockUps: React.FC<NumberLockUpsProps> = ({
+const NumberText: React.FC<NumberTextProps> = ({
   title,
   value,
   numberPosition = 'top',
@@ -139,4 +139,4 @@ const NumberLockUps: React.FC<NumberLockUpsProps> = ({
   );
 };
 
-export default NumberLockUps;
+export default NumberText;
