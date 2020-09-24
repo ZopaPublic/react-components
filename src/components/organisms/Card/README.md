@@ -249,3 +249,51 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/rea
   </FlexRow>
 </FlexContainer>;
 ```
+
+- Vertical action card
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+import Icon from '../../atoms/Icon/Icon.tsx';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="action">
+        <Card.Content>
+          <Card.Heading>Brand card</Card.Heading>
+          <Card.LineItem icon={faChevronRight}>
+            <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+          </Card.LineItem>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical action card
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Text } from '@zopauk/react-components';
+import Icon from '../../atoms/Icon/Icon.tsx';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="action">
+        <Card.Content>
+          <Card.Heading>Brand card</Card.Heading>
+          <Card.LineItem content={<Text color={colors.success}>£10.00</Text>}>
+            <Text size="small">
+              Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.
+            </Text>
+          </Card.LineItem>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
