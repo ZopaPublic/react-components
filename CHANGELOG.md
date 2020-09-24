@@ -1,3 +1,10 @@
+### [4.18.1](https://github.com/zopaUK/react-components/compare/v4.18.0...v4.18.1) (2020-09-24)
+
+
+### Bug Fixes
+
+* **numbertext:** spread "rest" of the props on the container ([c2e2af7](https://github.com/zopaUK/react-components/commit/c2e2af72d0b0098e7775b7e83a137c86424783a9))
+
 ## [4.18.0](https://github.com/zopaUK/react-components/compare/v4.17.1...v4.18.0) (2020-09-24)
 
 
