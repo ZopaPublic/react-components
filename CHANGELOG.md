@@ -1,3 +1,17 @@
+## [4.18.0](https://github.com/zopaUK/react-components/compare/v4.17.1...v4.18.0) (2020-09-24)
+
+
+### Features
+
+* **numberlockups:** add NumberLockUps component ([33a3234](https://github.com/zopaUK/react-components/commit/33a3234a360d16d6d6e414838a7708ee6c2c4285))
+* **numberlockups:** enforce value as number ([efe62f6](https://github.com/zopaUK/react-components/commit/efe62f6b3610c4e53e09e2e2af4761e649ab7b48))
+
+
+### Bug Fixes
+
+* **numberlockups:** fix typo ([0f5e33e](https://github.com/zopaUK/react-components/commit/0f5e33e2daff7954a90095b3e781ed42439e4c3c))
+* **typography:** move lineheight to typography sizes ([8f606a1](https://github.com/zopaUK/react-components/commit/8f606a1de0e2979b6919a0d38a49d87450b3c958))
+
 ### [4.17.1](https://github.com/zopaUK/react-components/compare/v4.17.0...v4.17.1) (2020-09-21)
 
 
