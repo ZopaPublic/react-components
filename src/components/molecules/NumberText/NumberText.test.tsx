@@ -6,7 +6,8 @@ import NumberText from './NumberText';
 
 import 'jest-styled-components';
 
-const renderComponent = (props = {}) => render(<NumberText title="Overall Balance" value={100000} {...props} />);
+const renderComponent = (props = {}) =>
+  render(<NumberText title="Overall Balance" value={100000} {...props} className="mb-6 m:mb-7" />);
 
 describe('<NumberText />', () => {
   it('renders without errors', async () => {

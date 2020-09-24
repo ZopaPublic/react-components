@@ -50,5 +50,6 @@ import { NumberText } from '@zopauk/react-components';
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   }}
+  className="mb-6 m:mb-7"
 />;
 ```
