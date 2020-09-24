@@ -32,6 +32,15 @@ exports[`<Card /> renders with brand styling 1`] = `
   font-size: 13px;
 }
 
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover svg {
+  color: #4A545E;
+}
+
 <div
   class="c0"
 />
@@ -67,6 +76,15 @@ exports[`<Card /> renders with horizontal layout 1`] = `
 
 .c0 .c3 {
   font-size: 13px;
+}
+
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover svg {
+  color: #4A545E;
 }
 
 <div
@@ -106,6 +124,15 @@ exports[`<Card /> renders with primary styling 1`] = `
   font-size: 15px;
 }
 
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover svg {
+  color: #4A545E;
+}
+
 <div
   class="c0"
 />
@@ -143,6 +170,15 @@ exports[`<Card /> renders with secondary styling 1`] = `
   font-size: 13px;
 }
 
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover svg {
+  color: #4A545E;
+}
+
 <div
   class="c0"
 />
@@ -178,6 +214,15 @@ exports[`<Card /> renders with vertical layout 1`] = `
 
 .c0 .c3 {
   font-size: 13px;
+}
+
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover svg {
+  color: #4A545E;
 }
 
 <div

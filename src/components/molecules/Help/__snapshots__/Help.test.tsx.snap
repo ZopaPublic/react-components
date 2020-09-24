@@ -167,6 +167,15 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 15px;
 }
 
+.c8:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c8:hover svg {
+  color: #4A545E;
+}
+
 .c9 {
   background-color: transparent;
   padding: 16px;
