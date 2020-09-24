@@ -4,19 +4,19 @@ import { colors } from '../../../../constants';
 import Icon from '../../../atoms/Icon/Icon';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
-interface CardIconProps {
+interface CardLineItemProps {
+  /**
+   * font awesome icon
+   */
+  lineItemIcon?: IconDefinition;
   /**
    * url of the background image
    */
-  icon?: IconDefinition;
+  lineItemChild?: React.ReactNode;
   /**
-   * url of the background image
+   * the content to be displayed the line item
    */
-  children?: React.ReactNode;
-  /**
-   * url of the background image
-   */
-  content?: React.ReactNode;
+  children: React.ReactNode;
 }
 
 const CardLineItemContainer = styled.div`
@@ -26,11 +26,15 @@ const CardLineItemContainer = styled.div`
   flex-direction: row;
 `;
 
-const CardLineItem = ({ icon, content, children }: CardIconProps) => {
+const CardLineItem = ({ lineItemIcon, lineItemChild, children }: CardLineItemProps) => {
   return (
     <CardLineItemContainer>
       {children}
-      {icon ? <Icon variant={icon} color={colors.grey} data-automation="ZA.card-icon" /> : content}
+      {lineItemIcon ? (
+        <Icon variant={lineItemIcon} color={colors.grey} data-automation="ZA.card-line-item" />
+      ) : (
+        lineItemChild
+      )}
     </CardLineItemContainer>
   );
 };
