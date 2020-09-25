@@ -136,7 +136,7 @@ const NumberText: React.FC<NumberTextProps> = ({
         </Title>
       ) : null}
       <Value className={valueClassNames} numberPosition={numberPosition} numberFontSize={numberFontSize}>
-        {value ? numberFormatter(value) : fallback}
+        {value !== undefined && value >= 0 ? numberFormatter(value) : fallback}
       </Value>
     </Container>
   );
