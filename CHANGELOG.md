@@ -1,3 +1,10 @@
+## [4.20.0](https://github.com/zopaUK/react-components/compare/v4.19.0...v4.20.0) (2020-09-25)
+
+
+### Features
+
+* **number text:** deal with 0 values ([90a9653](https://github.com/zopaUK/react-components/commit/90a96536a768c409b91b564e7b01430c9e4cb6b7))
+
 ## [4.19.0](https://github.com/zopaUK/react-components/compare/v4.18.1...v4.19.0) (2020-09-25)
 
 
