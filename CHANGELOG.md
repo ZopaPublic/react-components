@@ -1,3 +1,12 @@
+## [4.19.0](https://github.com/zopaUK/react-components/compare/v4.18.1...v4.19.0) (2020-09-25)
+
+
+### Features
+
+* **number text:** add fallback option ([472cf50](https://github.com/zopaUK/react-components/commit/472cf5073f3adfcc2c2a452bfd60e811367e977b))
+* **number text:** add test for fallback option ([eb7eb95](https://github.com/zopaUK/react-components/commit/eb7eb95ea842dc05668150bd60d076cd2478fc2c))
+* **number text:** make value optional ([784e961](https://github.com/zopaUK/react-components/commit/784e9612f261c9c9f5dec2e829d5105c67fab8b1))
+
 ### [4.18.1](https://github.com/zopaUK/react-components/compare/v4.18.0...v4.18.1) (2020-09-24)
 
 
