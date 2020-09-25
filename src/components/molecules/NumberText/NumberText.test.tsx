@@ -52,6 +52,12 @@ describe('<NumberText />', () => {
     expect(screen.getByText(value)).toHaveStyleRule('order', '2');
   });
 
+  it('renders the fallback option', () => {
+    const fallback = 'N/A';
+    render(<NumberText title="Overall Balance" fallback={'N/A'} className="mb-6 m:mb-7" />);
+    expect(screen.getByText(fallback)).toHaveTextContent('N/A');
+  });
+
   it('renders without  a11y violations', async () => {
     const { container } = renderComponent();
     const results = await axe(container.innerHTML);
