@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
-const CardContent = styled.div``;
+const CardLineItem = styled.div`
+  padding: 16px;
+`;
 
-export default CardContent;
+export default CardLineItem;

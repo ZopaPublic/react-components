@@ -85,9 +85,8 @@ const Card = styled.div<CardProps>`
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
   }
-  & ${CardLineItem} {
-    display: flex;
-    justify-content: flex-end;
+  & > ${CardLineItem} {
+    align-self: center;
   }
   &:hover {
     cursor: ${({ styling }) => (styling === 'action' ? 'pointer' : 'initial')};

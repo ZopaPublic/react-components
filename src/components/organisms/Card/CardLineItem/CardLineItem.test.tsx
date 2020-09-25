@@ -5,7 +5,7 @@ import Card from '..';
 
 describe('<Card.LineItem />', () => {
   it('renders the component with no a11y violations', async () => {
-    const { container } = render(<Card.LineItem lineItemChild="£10.00">Line item</Card.LineItem>);
+    const { container } = render(<Card.LineItem>£10.00</Card.LineItem>);
     const results = await axe(container.innerHTML);
     expect(container.firstChild).toMatchSnapshot();
     expect(results).toHaveNoViolations();

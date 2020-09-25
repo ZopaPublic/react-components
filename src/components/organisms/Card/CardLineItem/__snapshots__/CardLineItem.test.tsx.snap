@@ -2,27 +2,12 @@
 
 exports[`<Card.LineItem /> renders the component with no a11y violations 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  padding: 16px;
 }
 
 <div
   class="c0"
 >
-  Line item
   £10.00
 </div>
 `;
