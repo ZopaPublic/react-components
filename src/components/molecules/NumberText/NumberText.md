@@ -53,3 +53,11 @@ import { NumberText } from '@zopauk/react-components';
   className="mb-6 m:mb-7"
 />;
 ```
+
+With fallback options:
+
+```tsx
+import { NumberText } from '@zopauk/react-components';
+
+<NumberText title="Core rate" fallback={'N/A'} className="mb-6 m:mb-7" />;
+```

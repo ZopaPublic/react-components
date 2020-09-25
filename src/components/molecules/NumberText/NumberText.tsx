@@ -21,7 +21,8 @@ interface StyleProps {
 
 export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
   title?: string;
-  value: number;
+  value?: number;
+  fallback?: string;
   formatterOptions?: Intl.NumberFormatOptions;
 }
 
@@ -108,6 +109,7 @@ const Value = styled(Text)<Required<StyleProps>>`
 const NumberText: React.FC<NumberTextProps> = ({
   title,
   value,
+  fallback,
   numberPosition = 'top',
   numberFontSize = 'main',
   formatterOptions = {},
@@ -134,7 +136,7 @@ const NumberText: React.FC<NumberTextProps> = ({
         </Title>
       ) : null}
       <Value className={valueClassNames} numberPosition={numberPosition} numberFontSize={numberFontSize}>
-        {numberFormatter(value)}
+        {value ? numberFormatter(value) : fallback}
       </Value>
     </Container>
   );
