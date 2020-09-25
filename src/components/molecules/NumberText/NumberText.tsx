@@ -21,7 +21,7 @@ interface StyleProps {
 
 export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
   title?: string;
-  value: number;
+  value?: number;
   fallback?: string;
   formatterOptions?: Intl.NumberFormatOptions;
 }
