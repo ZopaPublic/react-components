@@ -5,7 +5,6 @@ import Progress, { ProgressProps } from '../../../molecules/Progress/Progress';
 import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateProgressProps {
-  nextStepUrl: string;
   prevStepUrl?: string;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
   children: React.ReactNode;
