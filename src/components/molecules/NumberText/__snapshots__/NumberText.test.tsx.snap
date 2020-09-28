@@ -77,7 +77,7 @@ exports[`<NumberText /> renders without errors 1`] = `
 
 <div>
   <div
-    class="c0"
+    class="c0 mb-6 m:mb-7"
   >
     <span
       class="c1 c2"

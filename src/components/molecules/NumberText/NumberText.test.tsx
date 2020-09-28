@@ -6,7 +6,8 @@ import NumberText from './NumberText';
 
 import 'jest-styled-components';
 
-const renderComponent = (props = {}) => render(<NumberText title="Overall Balance" value={100000} {...props} />);
+const renderComponent = (props = {}) =>
+  render(<NumberText title="Overall Balance" value={100000} {...props} className="mb-6 m:mb-7" />);
 
 describe('<NumberText />', () => {
   it('renders without errors', async () => {
@@ -49,6 +50,18 @@ describe('<NumberText />', () => {
     const { container } = renderComponent({ numberPosition: 'bottom' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'column');
     expect(screen.getByText(value)).toHaveStyleRule('order', '2');
+  });
+
+  it('renders the fallback option', () => {
+    const fallback = 'N/A';
+    render(<NumberText title="Overall Balance" fallback={'N/A'} className="mb-6 m:mb-7" />);
+    expect(screen.getByText(fallback)).toHaveTextContent('N/A');
+  });
+
+  it('renders the value when it is zero', () => {
+    const value = '0';
+    render(<NumberText title="Overall Balance" value={0} className="mb-6 m:mb-7" />);
+    expect(screen.getByText(value)).toHaveTextContent('0');
   });
 
   it('renders without  a11y violations', async () => {

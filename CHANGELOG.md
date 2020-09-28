@@ -1,3 +1,26 @@
+## [4.20.0](https://github.com/zopaUK/react-components/compare/v4.19.0...v4.20.0) (2020-09-25)
+
+
+### Features
+
+* **number text:** deal with 0 values ([90a9653](https://github.com/zopaUK/react-components/commit/90a96536a768c409b91b564e7b01430c9e4cb6b7))
+
+## [4.19.0](https://github.com/zopaUK/react-components/compare/v4.18.1...v4.19.0) (2020-09-25)
+
+
+### Features
+
+* **number text:** add fallback option ([472cf50](https://github.com/zopaUK/react-components/commit/472cf5073f3adfcc2c2a452bfd60e811367e977b))
+* **number text:** add test for fallback option ([eb7eb95](https://github.com/zopaUK/react-components/commit/eb7eb95ea842dc05668150bd60d076cd2478fc2c))
+* **number text:** make value optional ([784e961](https://github.com/zopaUK/react-components/commit/784e9612f261c9c9f5dec2e829d5105c67fab8b1))
+
+### [4.18.1](https://github.com/zopaUK/react-components/compare/v4.18.0...v4.18.1) (2020-09-24)
+
+
+### Bug Fixes
+
+* **numbertext:** spread "rest" of the props on the container ([c2e2af7](https://github.com/zopaUK/react-components/commit/c2e2af72d0b0098e7775b7e83a137c86424783a9))
+
 ## [4.18.0](https://github.com/zopaUK/react-components/compare/v4.17.1...v4.18.0) (2020-09-24)
 
 
