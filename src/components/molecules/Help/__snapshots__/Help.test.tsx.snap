@@ -173,15 +173,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-self: center;
 }
 
-.c8:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c8:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 .c9 {
   background-color: transparent;
   padding: 16px;
