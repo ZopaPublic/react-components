@@ -61,3 +61,31 @@ import { NumberText } from '@zopauk/react-components';
 
 <NumberText title="Core rate" fallback={'N/A'} className="mb-6 m:mb-7" />;
 ```
+
+h2 number / small label / left align / semiBold:
+
+```tsx
+import { NumberText, Heading } from '@zopauk/react-components';
+import styled from 'styled-components';
+
+const StyledNumberText = styled(NumberText)`
+  ${Heading} {
+    font-weight: 600 !important;
+  }
+`;
+
+<StyledNumberText
+  title="Overall Balance"
+  value={100000}
+  labelFontSize="small"
+  numberFontSize="h2"
+  formatterOptions={{
+    style: 'currency',
+    currency: 'GBP',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }}
+  align="left"
+  semiBold
+/>;
+```

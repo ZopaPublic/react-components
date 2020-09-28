@@ -15,21 +15,6 @@ exports[`<NumberText /> renders without errors 1`] = `
   text-align: inherit;
 }
 
-.c3 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 400;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: inherit;
-  display: block;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -48,11 +33,23 @@ exports[`<NumberText /> renders without errors 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
-.c4 {
+.c3 {
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  margin: 0;
+  color: #2C3236;
+  display: block;
+  text-align: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -68,13 +65,6 @@ exports[`<NumberText /> renders without errors 1`] = `
   }
 }
 
-@media (min-width:1280px) {
-  .c4 {
-    font-size: 38px;
-    line-height: 46px;
-  }
-}
-
 <div>
   <div
     class="c0 mb-6 m:mb-7"
@@ -85,7 +75,7 @@ exports[`<NumberText /> renders without errors 1`] = `
       Overall Balance
     </span>
     <span
-      class="c3 c4 mb-2"
+      class="c3 mb-2"
     >
       £100,000.00
     </span>

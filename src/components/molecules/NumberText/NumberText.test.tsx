@@ -64,6 +64,12 @@ describe('<NumberText />', () => {
     expect(screen.getByText(value)).toHaveTextContent('0');
   });
 
+  it('should render the number with semiBold', () => {
+    const value = '100,000';
+    renderComponent({ numberPosition: 'top', semiBold: true });
+    expect(screen.getByText(value)).toHaveStyleRule('font-weight', '600');
+  });
+
   it('renders without  a11y violations', async () => {
     const { container } = renderComponent();
     const results = await axe(container.innerHTML);
