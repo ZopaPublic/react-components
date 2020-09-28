@@ -1,3 +1,15 @@
+## [4.22.0](https://github.com/zopaUK/react-components/compare/v4.21.0...v4.22.0) (2020-09-28)
+
+
+### Features
+
+* **numbertext:** number sizing can be any heading size and text align ([a49c1a7](https://github.com/zopaUK/react-components/commit/a49c1a7e79105a5514e7bd0ba3b03d9ec35a7f1c))
+
+
+### Bug Fixes
+
+* **numbertext:** remove responsive styles and support more sizes ([37add57](https://github.com/zopaUK/react-components/commit/37add57f5a1274d001babe06e762008e0505984d))
+
 ## [4.21.0](https://github.com/zopaUK/react-components/compare/v4.20.0...v4.21.0) (2020-09-28)
 
 
