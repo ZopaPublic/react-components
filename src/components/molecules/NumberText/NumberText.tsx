@@ -1,23 +1,22 @@
 import React, { HTMLAttributes } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import classnames from 'classnames';
 
 import Text from '../../atoms/Text/Text';
 import Heading from '../../atoms/Heading/Heading';
 import { typography } from '../../../constants';
-import { minMedia } from '../../../helpers/responsiveness';
 
 interface StyleProps {
   /**
    * font size styling for title
-   * @default `main`
+   * @default `body`
    */
-  labelFontSize?: 'small' | 'main';
+  labelFontSize?: keyof typeof typography.sizes.text;
   /**
    * font size styling for number
    * @default `main`
    */
-  numberFontSize?: 'small' | 'main' | keyof typeof typography.sizes.heading;
+  numberFontSize?: 'small' | 'lead' | 'main';
   /**
    * Position for the numerical value
    * @default `top`
@@ -35,8 +34,14 @@ interface StyleProps {
 }
 
 type ContainerProps = Pick<StyleProps, 'numberPosition' | 'align'>;
-type TitleProps = Pick<StyleProps, 'labelFontSize' | 'numberPosition'>;
+type TitleProps = Pick<StyleProps, 'numberPosition'>;
 type NumberProps = Pick<StyleProps, 'numberFontSize' | 'numberPosition' | 'semiBold'>;
+
+const numberFontStyles = {
+  small: 'h5',
+  lead: 'h4',
+  main: 'h1',
+};
 
 export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
   title?: string;
@@ -65,57 +70,12 @@ const Container = styled.div<Required<ContainerProps>>`
 
 const Title = styled(Text)<Required<TitleProps>>`
   order: ${({ numberPosition }) => (numberPosition === 'top' || numberPosition === 'left' ? 2 : 1)};
-
-  ${({ labelFontSize }) =>
-    labelFontSize === 'main'
-      ? `
-        font-size: ${typography.sizes.text.small}; 
-        line-height: ${typography.sizes.lineHeight.small};
-      `
-      : `
-        font-size: ${typography.sizes.text.small}; 
-        line-height: ${typography.sizes.lineHeight.small};
-      `}
-
-  ${minMedia.desktop`
-    ${css`
-      ${({ labelFontSize }: TitleProps) =>
-        labelFontSize === 'main'
-          ? `
-        font-size: ${typography.sizes.text.lead}; 
-        line-height: ${typography.sizes.lineHeight.lead};
-      `
-          : `
-        font-size: ${typography.sizes.text.body}; 
-        line-height: ${typography.sizes.lineHeight.body};
-      `}
-    `}
-  `}
 `;
 
-const Value = styled(Heading).attrs(({ numberFontSize }: NumberProps) => ({
-  size: numberFontSize !== 'small' && numberFontSize !== 'main' ? numberFontSize : undefined,
+const Value = styled(Heading).attrs(({ numberFontSize = 'main' }: NumberProps) => ({
+  size: numberFontStyles[numberFontSize],
 }))<Required<NumberProps>>`
   order: ${({ numberPosition }) => (numberPosition === 'top' || numberPosition === 'left' ? 1 : 2)};
-
-  ${({ numberFontSize }) => {
-    if (numberFontSize === 'main') {
-      return `
-        font-size: ${typography.sizes.heading.h2}; 
-        line-height: ${typography.sizes.lineHeight.h2};
-        font-weight: ${typography.weights.extraBold};
-      `;
-    }
-
-    if (numberFontSize === 'small') {
-      return `
-        font-size: ${typography.sizes.heading.h4}; 
-        line-height: ${typography.sizes.lineHeight.h4};
-        font-weight: ${typography.weights.bold};
-      `;
-    }
-  }}
-
   ${({ semiBold }) => (semiBold ? 'font-weight: 600' : null)}
 
   }
@@ -126,8 +86,8 @@ const NumberText: React.FC<NumberTextProps> = ({
   value,
   fallback,
   numberPosition = 'top',
+  labelFontSize = 'body',
   numberFontSize = 'main',
-  labelFontSize = 'main',
   formatterOptions = {},
   align = 'center',
   semiBold = false,
@@ -149,7 +109,7 @@ const NumberText: React.FC<NumberTextProps> = ({
   return (
     <Container numberPosition={numberPosition} align={align} {...rest}>
       {title ? (
-        <Title numberPosition={numberPosition} labelFontSize={labelFontSize}>
+        <Title numberPosition={numberPosition} size={labelFontSize}>
           {title}
         </Title>
       ) : null}

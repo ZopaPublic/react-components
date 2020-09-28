@@ -33,17 +33,15 @@ exports[`<NumberText /> renders without errors 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
-  font-size: 13px;
-  line-height: 18px;
 }
 
 .c3 {
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
+  font-size: 48px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
   margin: 0;
   color: #2C3236;
   display: block;
@@ -53,16 +51,6 @@ exports[`<NumberText /> renders without errors 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-  font-size: 38px;
-  line-height: 46px;
-  font-weight: 800;
-}
-
-@media (min-width:1280px) {
-  .c2 {
-    font-size: 18px;
-    line-height: 26px;
-  }
 }
 
 <div>

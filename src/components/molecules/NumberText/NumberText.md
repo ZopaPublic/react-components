@@ -20,12 +20,12 @@ import { NumberText } from '@zopauk/react-components';
 <NumberText title="Overall Balance" value={100000} numberPosition="bottom" numberFontSize="small" />;
 ```
 
-Main/Right:
+Lead/Right:
 
 ```tsx
 import { NumberText } from '@zopauk/react-components';
 
-<NumberText title="Overall Balance" value={100000} numberPosition="right" />;
+<NumberText numberFontSize="lead" title="Overall Balance" value={100000} numberPosition="right" />;
 ```
 
 Small/Left:
@@ -34,6 +34,25 @@ Small/Left:
 import { NumberText } from '@zopauk/react-components';
 
 <NumberText title="Overall Balance" value={100000} numberPosition="left" numberFontSize="small" />;
+```
+
+left align / semiBold:
+
+```tsx
+import { NumberText } from '@zopauk/react-components';
+
+<NumberText
+  title="Overall Balance"
+  value={100000}
+  formatterOptions={{
+    style: 'currency',
+    currency: 'GBP',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }}
+  align="left"
+  semiBold
+/>;
 ```
 
 With formatter options:
@@ -60,32 +79,4 @@ With fallback options:
 import { NumberText } from '@zopauk/react-components';
 
 <NumberText title="Core rate" fallback={'N/A'} className="mb-6 m:mb-7" />;
-```
-
-h2 number / small label / left align / semiBold:
-
-```tsx
-import { NumberText, Heading } from '@zopauk/react-components';
-import styled from 'styled-components';
-
-const StyledNumberText = styled(NumberText)`
-  ${Heading} {
-    font-weight: 600 !important;
-  }
-`;
-
-<StyledNumberText
-  title="Overall Balance"
-  value={100000}
-  labelFontSize="small"
-  numberFontSize="h2"
-  formatterOptions={{
-    style: 'currency',
-    currency: 'GBP',
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }}
-  align="left"
-  semiBold
-/>;
 ```
