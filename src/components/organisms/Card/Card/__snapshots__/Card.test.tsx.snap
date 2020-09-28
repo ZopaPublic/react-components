@@ -43,7 +43,7 @@ exports[`<Card /> renders with brand styling 1`] = `
   background-color: none;
 }
 
-.c0:hover svg {
+.c0:hover div:last-of-type svg {
   color: #4A545E;
 }
 
@@ -95,7 +95,7 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   background-color: none;
 }
 
-.c0:hover svg {
+.c0:hover div:last-of-type svg {
   color: #4A545E;
 }
 
@@ -147,7 +147,7 @@ exports[`<Card /> renders with primary styling 1`] = `
   background-color: none;
 }
 
-.c0:hover svg {
+.c0:hover div:last-of-type svg {
   color: #4A545E;
 }
 
@@ -199,7 +199,7 @@ exports[`<Card /> renders with secondary styling 1`] = `
   background-color: none;
 }
 
-.c0:hover svg {
+.c0:hover div:last-of-type svg {
   color: #4A545E;
 }
 
@@ -251,7 +251,7 @@ exports[`<Card /> renders with vertical layout 1`] = `
   background-color: none;
 }
 
-.c0:hover svg {
+.c0:hover div:last-of-type svg {
   color: #4A545E;
 }
 

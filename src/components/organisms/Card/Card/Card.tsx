@@ -90,7 +90,7 @@ const Card = styled.div<CardProps>`
   }
   &:hover {
     cursor: ${({ styling }) => (styling === 'action' ? 'pointer' : 'initial')};
-    svg {
+    div:last-of-type svg {
       color: ${colors.greyDark};
     }
     background-color: ${({ styling }) => (styling === 'action' ? `${colors.greyLightest}` : 'none')};
