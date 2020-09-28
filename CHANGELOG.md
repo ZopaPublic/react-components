@@ -1,3 +1,19 @@
+## [4.21.0](https://github.com/zopaUK/react-components/compare/v4.20.0...v4.21.0) (2020-09-28)
+
+
+### Features
+
+* **card line item:** add card with line item ([b97561d](https://github.com/zopaUK/react-components/commit/b97561d25a0aff768bed5e04b7c84b0ac7368147))
+* **card line item:** add example to readme ([200f6bb](https://github.com/zopaUK/react-components/commit/200f6bb9098bf3da3495c88d81d79dd93543a94c))
+* **card line item:** add hover state to last icon only ([3d0f296](https://github.com/zopaUK/react-components/commit/3d0f296a47425d46ca131eaa10d1642396ac70cf))
+* **card line item:** add tests ([7acd5bf](https://github.com/zopaUK/react-components/commit/7acd5bfcb50014f83906f6dd45c990850f98e204))
+* **card line item:** refactor ([bddf319](https://github.com/zopaUK/react-components/commit/bddf319043b078adafdffb57784617df55a00389))
+* **card line item:** refactor ([26f0216](https://github.com/zopaUK/react-components/commit/26f021628041d909773713297752bee2855526ae))
+* **card line item:** refactor ([37f5414](https://github.com/zopaUK/react-components/commit/37f5414ecebbfa46efbd37cbb8cae99014a3903c))
+* **card line item:** refactor css ([e30ef31](https://github.com/zopaUK/react-components/commit/e30ef31475a7dc043be9d2c9af3f8e3e542a9481))
+* **card line item:** refactor css ([5d35a31](https://github.com/zopaUK/react-components/commit/5d35a314e2607b13616d2eafcc5ab3cfbdb4e68a))
+* **card line item:** refactor layout ([607698c](https://github.com/zopaUK/react-components/commit/607698c6601b9db79fe5fb201dd1f7e0be934247))
+
 ## [4.20.0](https://github.com/zopaUK/react-components/compare/v4.19.0...v4.20.0) (2020-09-25)
 
 
