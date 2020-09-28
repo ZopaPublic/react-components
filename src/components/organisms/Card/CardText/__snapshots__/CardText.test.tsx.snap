@@ -42,6 +42,21 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   font-size: 13px;
 }
 
+.c0 > .c5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c0:hover div:last-of-type svg {
+  color: #4A545E;
+}
+
 <div
   class="c0"
 >
