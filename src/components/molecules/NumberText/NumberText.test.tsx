@@ -58,6 +58,12 @@ describe('<NumberText />', () => {
     expect(screen.getByText(fallback)).toHaveTextContent('N/A');
   });
 
+  it('renders the value when it is zero', () => {
+    const value = '0';
+    render(<NumberText title="Overall Balance" value={0} className="mb-6 m:mb-7" />);
+    expect(screen.getByText(value)).toHaveTextContent('0');
+  });
+
   it('renders without  a11y violations', async () => {
     const { container } = renderComponent();
     const results = await axe(container.innerHTML);
