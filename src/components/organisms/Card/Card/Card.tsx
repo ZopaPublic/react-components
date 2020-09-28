@@ -3,9 +3,10 @@ import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
 import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
+import CardLineItem from '../CardLineItem/CardLineItem';
 
 export type CardLayout = 'horizontal' | 'vertical';
-export type CardStyling = 'primary' | 'secondary' | 'brand';
+export type CardStyling = 'primary' | 'secondary' | 'brand' | 'action';
 
 export interface CardProps {
   /**
@@ -34,30 +35,35 @@ const headingSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.heading.h6,
   primary: typography.sizes.heading.h5,
   brand: typography.sizes.heading.h6,
+  action: typography.sizes.heading.h6,
 };
 
 const textSizes: Record<CardStyling, string> = {
   secondary: typography.sizes.text.small,
   primary: typography.sizes.text.body,
   brand: typography.sizes.text.small,
+  action: typography.sizes.text.small,
 };
 
 const boxShadowStyle: Record<CardStyling, string> = {
   primary: `0 1px 0 0 ${colors.greyLight}`,
   secondary: `0 1px 0 0 ${colors.greyLight}`,
   brand: `none`,
+  action: `none`,
 };
 
 const borderStyle: Record<CardStyling, string> = {
   primary: `1px solid ${colors.greyLighter}`,
   secondary: `1px solid ${colors.greyLighter}`,
   brand: `1px solid ${colors.brand}`,
+  action: `1px solid ${colors.greyLighter}`,
 };
 
 const backgroundStyle: Record<CardStyling, string> = {
   primary: `${colors.white};`,
   secondary: `${colors.white};`,
   brand: `${colors.brandLight};`,
+  action: `${colors.white};`,
 };
 
 const Card = styled.div<CardProps>`
@@ -78,6 +84,16 @@ const Card = styled.div<CardProps>`
   }
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
+  }
+  & > ${CardLineItem} {
+    align-self: center;
+  }
+  &:hover {
+    cursor: ${({ styling }) => (styling === 'action' ? 'pointer' : 'initial')};
+    div:last-of-type svg {
+      color: ${colors.greyDark};
+    }
+    background-color: ${({ styling }) => (styling === 'action' ? `${colors.greyLightest}` : 'none')};
   }
 `;
 

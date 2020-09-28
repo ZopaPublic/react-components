@@ -20,12 +20,12 @@ import { NumberText } from '@zopauk/react-components';
 <NumberText title="Overall Balance" value={100000} numberPosition="bottom" numberFontSize="small" />;
 ```
 
-Main/Right:
+Lead/Right:
 
 ```tsx
 import { NumberText } from '@zopauk/react-components';
 
-<NumberText title="Overall Balance" value={100000} numberPosition="right" />;
+<NumberText numberFontSize="lead" title="Overall Balance" value={100000} numberPosition="right" />;
 ```
 
 Small/Left:
@@ -34,6 +34,25 @@ Small/Left:
 import { NumberText } from '@zopauk/react-components';
 
 <NumberText title="Overall Balance" value={100000} numberPosition="left" numberFontSize="small" />;
+```
+
+left align / semiBold:
+
+```tsx
+import { NumberText } from '@zopauk/react-components';
+
+<NumberText
+  title="Overall Balance"
+  value={100000}
+  formatterOptions={{
+    style: 'currency',
+    currency: 'GBP',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }}
+  align="left"
+  semiBold
+/>;
 ```
 
 With formatter options:
