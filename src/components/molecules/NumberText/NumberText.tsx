@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import classnames from 'classnames';
 
 import Text from '../../atoms/Text/Text';
@@ -30,7 +30,7 @@ interface StyleProps {
    * Where the rendered text should be aligned to.
    * @default 'center'
    */
-  align?: 'left' | 'right' | 'center';
+  align?: 'left' | 'right' | 'center' | 'flex-start' | 'flex-end';
 }
 
 type ContainerProps = Pick<StyleProps, 'numberPosition' | 'align'>;
@@ -52,17 +52,28 @@ export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StylePr
 
 const Container = styled.div<Required<ContainerProps>>`
   display: flex;
-  align-items: ${({ align }) => align};
+  align-items: ${({ align }) => {
+    switch (align) {
+      case 'left':
+        return 'flex-start';
+      case 'right':
+        return 'flex-end';
+      default:
+        return align;
+    }
+  }};
 
   ${({ numberPosition }) => {
     if (numberPosition === 'left' || numberPosition === 'right') {
-      return `
+      return css`
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
       `;
     } else {
-      return `
+      return css`
         flex-direction: column;
+        justify-content: center;
       `;
     }
   }}
@@ -77,8 +88,6 @@ const Value = styled(Heading).attrs(({ numberFontSize = 'main' }: NumberProps) =
 }))<Required<NumberProps>>`
   order: ${({ numberPosition }) => (numberPosition === 'top' || numberPosition === 'left' ? 1 : 2)};
   ${({ semiBold }) => (semiBold ? 'font-weight: 600' : null)}
-
-  }
 `;
 
 const NumberText: React.FC<NumberTextProps> = ({
