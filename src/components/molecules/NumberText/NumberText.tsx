@@ -30,7 +30,7 @@ interface StyleProps {
    * Where the rendered text should be aligned to.
    * @default 'center'
    */
-  align?: 'left' | 'right' | 'center' | 'flex-start' | 'flex-end';
+  align?: 'left' | 'right' | 'center';
 }
 
 type ContainerProps = Pick<StyleProps, 'numberPosition' | 'align'>;
