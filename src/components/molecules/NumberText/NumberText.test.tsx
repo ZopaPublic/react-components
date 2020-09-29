@@ -22,33 +22,37 @@ describe('<NumberText />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should position the numerical value to the right', () => {
+  it('should position the numerical value to the right and vertically align the text in the center', () => {
     const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'right' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'row');
     expect(container.firstChild).toHaveStyleRule('justify-content', 'space-between');
+    expect(container.firstChild).toHaveStyleRule('align-items', 'center');
     expect(screen.getByText(value)).toHaveStyleRule('order', '2');
   });
 
-  it('should position the numerical value to the left', () => {
+  it('should position the numerical value to the left and vertically align the text in the center', () => {
     const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'left' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'row');
     expect(container.firstChild).toHaveStyleRule('justify-content', 'space-between');
+    expect(container.firstChild).toHaveStyleRule('align-items', 'center');
     expect(screen.getByText(value)).toHaveStyleRule('order', '1');
   });
 
-  it('should position the numerical value to the right', () => {
+  it('should position the numerical value at the top and vertically align the text in the center', () => {
     const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'top' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'column');
+    expect(container.firstChild).toHaveStyleRule('justify-content', 'center');
     expect(screen.getByText(value)).toHaveStyleRule('order', '1');
   });
 
-  it('should position the numerical value to the left', () => {
+  it('should position the numerical value at the bottom and vertically align the text in the center', () => {
     const value = '100,000';
     const { container } = renderComponent({ numberPosition: 'bottom' });
     expect(container.firstChild).toHaveStyleRule('flex-direction', 'column');
+    expect(container.firstChild).toHaveStyleRule('justify-content', 'center');
     expect(screen.getByText(value)).toHaveStyleRule('order', '2');
   });
 
@@ -70,7 +74,7 @@ describe('<NumberText />', () => {
     expect(screen.getByText(value)).toHaveStyleRule('font-weight', '600');
   });
 
-  it('renders without  a11y violations', async () => {
+  it('renders without a11y violations', async () => {
     const { container } = renderComponent();
     const results = await axe(container.innerHTML);
 
