@@ -38,15 +38,6 @@ exports[`<Card /> renders with brand styling 1`] = `
   align-self: center;
 }
 
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 <div
   class="c0"
 />
@@ -88,15 +79,6 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
 }
 
 <div
@@ -142,15 +124,6 @@ exports[`<Card /> renders with primary styling 1`] = `
   align-self: center;
 }
 
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 <div
   class="c0"
 />
@@ -194,15 +167,6 @@ exports[`<Card /> renders with secondary styling 1`] = `
   align-self: center;
 }
 
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 <div
   class="c0"
 />
@@ -244,15 +208,6 @@ exports[`<Card /> renders with vertical layout 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-}
-
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
 }
 
 <div
