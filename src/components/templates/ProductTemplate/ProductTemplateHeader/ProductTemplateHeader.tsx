@@ -1,54 +1,26 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
-import Heading from '../../../atoms/Heading/Heading';
-import Text from '../../../atoms/Text/Text';
-import { breakpoints } from '../../../../constants/breakpoints';
-import { colors } from '../../../../constants/colors';
-import { useViewport } from '../../../../hooks/useViewport';
+import { ProgressProps } from '../../../molecules/Progress/Progress';
+import { ProductTemplateNavigation } from '../ProductTemplateNavigation/ProductTemplateNavigation';
+import { ProductTemplateProgress } from '../ProductTemplateProgress/ProductTemplateProgress';
 
 interface ProductTemplateHeaderProps {
-  title: string;
-  subtitle?: string;
-  dataAutomation?: string;
+  prevStep?: string | ReactNode;
+  nextStep?: string | ReactNode;
+  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
 }
 
-const ProductTemplateHeaderBackground = styled.header`
-  background-color: ${colors.greyLightest};
-  /* Make the following element overlay the ProductHeader by 160px */
-  margin-bottom: -160px;
-  border-radius: 12px;
+const ProductTemplateHeaderContainer = styled.div`
+  position: relative;
+  min-height: 30px;
 `;
 
-const ProductTemplateHeaderContainer = styled.div.attrs({
-  className: 'px-0 m:px-4',
-})`
-  max-width: 612px;
-  margin: 0 auto;
-`;
-
-const ProductTemplateHeaderInnerContainer = styled.div`
-  padding-bottom: 195px;
-`;
-
-export function ProductTemplateHeader({ title, subtitle, dataAutomation = 'PAGE_HEADER' }: ProductTemplateHeaderProps) {
-  const { width = 0 } = useViewport();
+export function ProductTemplateHeader({ prevStep, nextStep, progress }: ProductTemplateHeaderProps) {
   return (
-    <ProductTemplateHeaderBackground data-automation={dataAutomation}>
-      <ProductTemplateHeaderContainer>
-        <ProductTemplateHeaderInnerContainer className="pt-7 mx-6 m:mx-0">
-          {title && (
-            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center">
-              {title}
-            </Heading>
-          )}
-          {subtitle && (
-            <Text as="p" size="lead" align="center" className="mt-4">
-              {subtitle}
-            </Text>
-          )}
-        </ProductTemplateHeaderInnerContainer>
-      </ProductTemplateHeaderContainer>
-    </ProductTemplateHeaderBackground>
+    <ProductTemplateHeaderContainer className="mb-4" data-automation="ZA.ProductTemplateHeader">
+      {(prevStep || nextStep) && <ProductTemplateNavigation prevStep={prevStep} nextStep={nextStep} />}
+      {progress && <ProductTemplateProgress progress={progress} />}
+    </ProductTemplateHeaderContainer>
   );
 }

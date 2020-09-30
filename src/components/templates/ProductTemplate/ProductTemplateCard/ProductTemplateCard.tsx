@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
-import Card from '../../../organisms/Card/Card/Card';
+
 import { maxMedia } from '../../../../helpers/responsiveness';
+import { colors } from '../../../../constants';
+import Card from '../../../organisms/Card/Card/Card';
 
 interface ProductTemplateCardProps {
   className?: string;
@@ -12,6 +14,8 @@ interface ProductTemplateCardProps {
 const StyledCard = styled(Card)`
   ${maxMedia.phone`
     border-radius: 0;
+    box-shadow: 0 0 1px 0 ${colors.greyLight}, 0 0 -1px 0 ${colors.greyLighter};
+    border: none;
   `}
 `;
 

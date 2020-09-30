@@ -1,7 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProductTemplate /> renders with title and children but without subtitle 1`] = `
-.c3 {
+exports[`<ProductTemplate /> renders with all props and 1`] = `
+.c20 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 12px;
+  box-shadow: 0 1px 0 0 #D4D7D9;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c20 > .c21 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c20 .c22 {
+  font-size: 15px;
+}
+
+.c20 .c23 {
+  font-size: 13px;
+}
+
+.c20 > .c24 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c20:hover {
+  cursor: initial;
+  background-color: none;
+}
+
+.c20:hover div:last-of-type svg {
+  color: #4A545E;
+}
+
+.c17 {
   font-size: 48px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -15,52 +61,364 @@ exports[`<ProductTemplate /> renders with title and children but without subtitl
   font-weight: 800;
 }
 
-.c0 {
+.c5 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c6 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+  display: block;
+}
+
+.c18 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+.c14 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
   border-radius: 12px;
 }
 
-.c1 {
+.c15 {
   max-width: 612px;
   margin: 0 auto;
 }
 
-.c2 {
+.c16 {
   padding-bottom: 195px;
 }
 
+.c8 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c13 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c13 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c9 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c10 {
+  position: absolute;
+  top: 50%;
+  left: 33.333333333333336%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c11 {
+  position: absolute;
+  top: 50%;
+  left: 66.66666666666667%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c12 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c3:hover,
+.c3:active {
+  color: #21247F;
+}
+
+.c3:hover svg path,
+.c3:active svg path {
+  fill: #21247F;
+}
+
 .c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
+  max-width: 612px;
+}
+
+.c1 {
+  position: relative;
+  min-height: 30px;
+}
+
+.c19 {
   max-width: 612px;
   margin: 0 auto;
+}
+
+.c0 {
+  position: relative;
+}
+
+@media (max-width:600px) {
+  .c20 {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width:1280px) {
+  .c2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 <div>
   <section
+    class="c0 mb-10"
     data-automation="ZA.ProductTemplate"
   >
+    <div
+      class="c1 headcontiner mb-4"
+      data-automation="ZA.ProductTemplateHead"
+    >
+      <div
+        class="c2 my-4 l:mt-0"
+        data-automation="ZA.ProductTemplateNavigation"
+      >
+        <a
+          aria-label="Back"
+          class="c3 c4"
+          color="#3B46C4"
+          href="prevStep"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
+            color="inherit"
+            data-icon="chevron-left"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              fill="currentColor"
+            />
+          </svg>
+          <span
+            class="c5"
+          >
+            Back
+          </span>
+        </a>
+        <a
+          aria-label="Next"
+          class="c3 c4 ml-auto"
+          color="#3B46C4"
+          href="nextStep"
+        >
+          <span
+            class="c6 mr-2"
+          >
+            Next
+          </span>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-right fa-w-10 "
+            color="inherit"
+            data-icon="chevron-right"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="c7 mx-auto pt-1"
+      >
+        <div
+          class="c8"
+        >
+          <span
+            class="c9"
+          />
+          <span
+            class="c10"
+          />
+          <span
+            class="c11"
+          />
+          <span
+            class="c12"
+          />
+          <div
+            class="c13"
+          />
+        </div>
+      </div>
+    </div>
     <header
-      class="c0"
+      class="c14"
       data-automation="PAGE_HEADER"
     >
       <div
-        class="c1 px-0 m:px-4"
+        class="c15 px-0 m:px-4"
       >
         <div
-          class="c2 pt-7 mx-6 m:mx-0"
+          class="c16 pt-7 mx-6 m:mx-0"
         >
           <h1
-            class="c3"
+            class="c17"
           >
-            ProductTemplate title
+            Product title
           </h1>
+          <p
+            class="c18 mt-4"
+          >
+            Product subtitle
+          </p>
         </div>
       </div>
     </header>
     <div
-      class="c4 px-0 m:px-4"
+      class="c19 px-0 m:px-4"
     >
-      All the children
+      <div
+        class="c20 px-4 py-6 m:p-8"
+      >
+        This is the body of the card
+      </div>
     </div>
   </section>
 </div>

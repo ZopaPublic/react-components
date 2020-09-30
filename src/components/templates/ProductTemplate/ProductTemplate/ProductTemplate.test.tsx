@@ -3,8 +3,18 @@ import { render } from '@testing-library/react';
 import ProductTemplate from '..';
 
 describe('<ProductTemplate />', () => {
-  it('renders with title and children but without subtitle', () => {
-    const { container } = render(<ProductTemplate title="ProductTemplate title">All the children</ProductTemplate>);
+  it('renders with all props and', () => {
+    const { container } = render(
+      <ProductTemplate
+        title="Product title"
+        subtitle="Product subtitle"
+        nextStep="nextStep"
+        prevStep="prevStep"
+        progress={{ currentStep: 2, totalSteps: 4 }}
+      >
+        <ProductTemplate.Card>This is the body of the card</ProductTemplate.Card>
+      </ProductTemplate>,
+    );
     expect(container).toMatchSnapshot();
   });
 });

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { ProductTemplateProgress } from './ProductTemplateProgress/ProductTemplateProgress';
 import { ProductTemplateCard } from './ProductTemplateCard/ProductTemplateCard';
 import ProductTemplateComponent, { ProductTemplateProps } from './ProductTemplate/ProductTemplate';
+import { ProductTemplateHeader } from './ProductTemplateHeader/ProductTemplateHeader';
 
 interface ProductTemplateStatic {
-  Progress: typeof ProductTemplateProgress;
   Card: typeof ProductTemplateCard;
+  Header: typeof ProductTemplateHeader;
 }
 
 const ProductTemplate: ProductTemplateStatic & React.FC<ProductTemplateProps> = (props) => (
@@ -14,6 +14,6 @@ const ProductTemplate: ProductTemplateStatic & React.FC<ProductTemplateProps> = 
 );
 
 ProductTemplate.Card = ProductTemplateCard;
-ProductTemplate.Progress = ProductTemplateProgress;
+ProductTemplate.Header = ProductTemplateHeader;
 
 export default ProductTemplate;

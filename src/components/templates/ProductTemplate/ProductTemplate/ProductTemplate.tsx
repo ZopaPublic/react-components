@@ -1,28 +1,38 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
+import { ProgressProps } from '../../../molecules/Progress/Progress';
+import { ProductTemplateTitle } from '../ProductTemplateTitle/ProductTemplateTitle';
 import { ProductTemplateHeader } from '../ProductTemplateHeader/ProductTemplateHeader';
 
 export interface ProductTemplateProps {
+  children: React.ReactNode;
   title: string;
   subtitle?: string;
-  children: React.ReactNode;
+  prevStep?: string | ReactNode;
+  nextStep?: string | ReactNode;
+  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
 }
 
-function ProductTemplate({ title, subtitle, children }: ProductTemplateProps) {
+function ProductTemplate({ title, subtitle, children, prevStep, nextStep, progress }: ProductTemplateProps) {
   return (
-    <section data-automation="ZA.ProductTemplate">
-      <ProductTemplateHeader title={title} subtitle={subtitle} />
-      <ProductTemplateContainer>{children}</ProductTemplateContainer>
-    </section>
+    <ProductTemplateContainer data-automation="ZA.ProductTemplate">
+      <ProductTemplateHeader nextStep={nextStep} prevStep={prevStep} progress={progress} />
+      <ProductTemplateTitle title={title} subtitle={subtitle} />
+      <ProductTemplateContent>{children}</ProductTemplateContent>
+    </ProductTemplateContainer>
   );
 }
 
-const ProductTemplateContainer = styled.div.attrs({
+const ProductTemplateContent = styled.div.attrs({
   className: 'px-0 m:px-4',
 })`
   max-width: 612px;
   margin: 0 auto;
+`;
+
+const ProductTemplateContainer = styled.section.attrs({ className: 'mb-10' })`
+  position: relative;
 `;
 
 export default ProductTemplate;

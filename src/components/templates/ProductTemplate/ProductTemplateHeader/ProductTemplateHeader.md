@@ -1,3 +1,3 @@
 ### Summary
 
-`<ProductTemplateHeader>` is a fixed style header and subtitle component.
+`<ProductTemplateHeader>` is a wrapper around the `<ProductTemplateNavigation />` and `<ProductTemplateProgress />` components.

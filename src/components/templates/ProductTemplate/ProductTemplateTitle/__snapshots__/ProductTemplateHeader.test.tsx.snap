@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductTemplateHeader /> renders correct sized header on desktop 1`] = `
+.c3 {
+  font-size: 48px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
+}
+
+.c0 {
+  background-color: #F7F7F7;
+  margin-bottom: -160px;
+  border-radius: 12px;
+}
+
+.c1 {
+  max-width: 612px;
+  margin: 0 auto;
+}
+
+.c2 {
+  padding-bottom: 195px;
+}
+
+<div>
+  <header
+    class="c0"
+    data-automation="PAGE_HEADER"
+  >
+    <div
+      class="c1 px-0 m:px-4"
+    >
+      <div
+        class="c2 pt-7 mx-6 m:mx-0"
+      >
+        <h1
+          class="c3"
+        >
+          ProductTemplateHeader title
+        </h1>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`<ProductTemplateHeader /> renders correct sized header on small screens 1`] = `
+.c3 {
+  font-size: 38px;
+  line-height: 46px;
+  -webkit-letter-spacing: -0.85px;
+  -moz-letter-spacing: -0.85px;
+  -ms-letter-spacing: -0.85px;
+  letter-spacing: -0.85px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
+}
+
+.c0 {
+  background-color: #F7F7F7;
+  margin-bottom: -160px;
+  border-radius: 12px;
+}
+
+.c1 {
+  max-width: 612px;
+  margin: 0 auto;
+}
+
+.c2 {
+  padding-bottom: 195px;
+}
+
+<div>
+  <header
+    class="c0"
+    data-automation="PAGE_HEADER"
+  >
+    <div
+      class="c1 px-0 m:px-4"
+    >
+      <div
+        class="c2 pt-7 mx-6 m:mx-0"
+      >
+        <h1
+          class="c3"
+        >
+          ProductTemplateHeader title
+        </h1>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
+.c3 {
+  font-size: 48px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
+}
+
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+.c0 {
+  background-color: #F7F7F7;
+  margin-bottom: -160px;
+  border-radius: 12px;
+}
+
+.c1 {
+  max-width: 612px;
+  margin: 0 auto;
+}
+
+.c2 {
+  padding-bottom: 195px;
+}
+
+<div>
+  <header
+    class="c0"
+    data-automation="automation"
+  >
+    <div
+      class="c1 px-0 m:px-4"
+    >
+      <div
+        class="c2 pt-7 mx-6 m:mx-0"
+      >
+        <h1
+          class="c3"
+        >
+          ProductTemplateHeader title
+        </h1>
+        <p
+          class="c4 mt-4"
+        >
+          ProductTemplateHeader subtitle
+        </p>
+      </div>
+    </div>
+  </header>
+</div>
+`;

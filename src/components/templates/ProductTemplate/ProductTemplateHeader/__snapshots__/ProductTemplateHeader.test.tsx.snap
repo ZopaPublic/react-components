@@ -1,124 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProductTemplateHeader /> renders correct sized header on desktop 1`] = `
-.c3 {
-  font-size: 48px;
-  line-height: 54px;
-  -webkit-letter-spacing: -1.25px;
-  -moz-letter-spacing: -1.25px;
-  -ms-letter-spacing: -1.25px;
-  letter-spacing: -1.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: center;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 800;
-}
-
-.c0 {
-  background-color: #F7F7F7;
-  margin-bottom: -160px;
-  border-radius: 12px;
-}
-
-.c1 {
-  max-width: 612px;
-  margin: 0 auto;
-}
-
-.c2 {
-  padding-bottom: 195px;
-}
-
-<div>
-  <header
-    class="c0"
-    data-automation="PAGE_HEADER"
-  >
-    <div
-      class="c1 px-0 m:px-4"
-    >
-      <div
-        class="c2 pt-7 mx-6 m:mx-0"
-      >
-        <h1
-          class="c3"
-        >
-          ProductTemplateHeader title
-        </h1>
-      </div>
-    </div>
-  </header>
-</div>
-`;
-
-exports[`<ProductTemplateHeader /> renders correct sized header on small screens 1`] = `
-.c3 {
-  font-size: 38px;
-  line-height: 46px;
-  -webkit-letter-spacing: -0.85px;
-  -moz-letter-spacing: -0.85px;
-  -ms-letter-spacing: -0.85px;
-  letter-spacing: -0.85px;
-  margin: 0;
-  color: #2C3236;
-  text-align: center;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 800;
-}
-
-.c0 {
-  background-color: #F7F7F7;
-  margin-bottom: -160px;
-  border-radius: 12px;
-}
-
-.c1 {
-  max-width: 612px;
-  margin: 0 auto;
-}
-
-.c2 {
-  padding-bottom: 195px;
-}
-
-<div>
-  <header
-    class="c0"
-    data-automation="PAGE_HEADER"
-  >
-    <div
-      class="c1 px-0 m:px-4"
-    >
-      <div
-        class="c2 pt-7 mx-6 m:mx-0"
-      >
-        <h1
-          class="c3"
-        >
-          ProductTemplateHeader title
-        </h1>
-      </div>
-    </div>
-  </header>
-</div>
-`;
-
-exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
-.c3 {
-  font-size: 48px;
-  line-height: 54px;
-  -webkit-letter-spacing: -1.25px;
-  -moz-letter-spacing: -1.25px;
-  -ms-letter-spacing: -1.25px;
-  letter-spacing: -1.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: center;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 800;
-}
-
+exports[`<ProductTemplateHead /> renders with all the props 1`] = `
 .c4 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -126,51 +8,590 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  text-align: center;
+  text-align: inherit;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c9 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c9 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c7 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c2:hover,
+.c2:active {
+  color: #21247F;
+}
+
+.c2:hover svg path,
+.c2:active svg path {
+  fill: #21247F;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  max-width: 612px;
 }
 
 .c0 {
-  background-color: #F7F7F7;
-  margin-bottom: -160px;
-  border-radius: 12px;
+  position: relative;
+  min-height: 30px;
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+<div>
+  <div
+    class="c0 mb-4"
+    data-automation="ZA.ProductTemplateHeader"
+  >
+    <div
+      class="c1 my-4 l:mt-0"
+      data-automation="ZA.ProductTemplateNavigation"
+    >
+      <a
+        aria-label="Back"
+        class="c2 c3"
+        color="#3B46C4"
+        href="/prevStep"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
+          color="inherit"
+          data-icon="chevron-left"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="c4"
+        >
+          Back
+        </span>
+      </a>
+    </div>
+    <div
+      class="c5 mx-auto pt-1"
+    >
+      <div
+        class="c6"
+      >
+        <span
+          class="c7"
+        />
+        <span
+          class="c8"
+        />
+        <div
+          class="c9"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProductTemplateHead /> renders with some props 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c5 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c5 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c1 {
   max-width: 612px;
-  margin: 0 auto;
 }
 
-.c2 {
-  padding-bottom: 195px;
+.c0 {
+  position: relative;
+  min-height: 30px;
 }
 
 <div>
-  <header
-    class="c0"
-    data-automation="automation"
+  <div
+    class="c0 mb-4"
+    data-automation="ZA.ProductTemplateHeader"
   >
     <div
-      class="c1 px-0 m:px-4"
+      class="c1 mx-auto pt-1"
     >
       <div
-        class="c2 pt-7 mx-6 m:mx-0"
+        class="c2"
       >
-        <h1
+        <span
           class="c3"
-        >
-          ProductTemplateHeader title
-        </h1>
-        <p
-          class="c4 mt-4"
-        >
-          ProductTemplateHeader subtitle
-        </p>
+        />
+        <span
+          class="c4"
+        />
+        <div
+          class="c5"
+        />
       </div>
     </div>
-  </header>
+  </div>
+</div>
+`;
+
+exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c9 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c9 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c7 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c8 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c2 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c2:hover,
+.c2:active {
+  color: #21247F;
+}
+
+.c2:hover svg path,
+.c2:active svg path {
+  fill: #21247F;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  max-width: 612px;
+}
+
+.c0 {
+  position: relative;
+  min-height: 30px;
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+<div>
+  <div
+    class="c0 mb-4"
+    data-automation="ZA.ProductTemplateHeader"
+  >
+    <div
+      class="c1 my-4 l:mt-0"
+      data-automation="ZA.ProductTemplateNavigation"
+    >
+      <a
+        aria-label="Back"
+        class="c2 c3"
+        color="#3B46C4"
+        href="/prevStep"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
+          color="inherit"
+          data-icon="chevron-left"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 320 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+            fill="currentColor"
+          />
+        </svg>
+        <span
+          class="c4"
+        >
+          Back
+        </span>
+      </a>
+    </div>
+    <div
+      class="c5 mx-auto pt-1"
+    >
+      <div
+        class="c6"
+      >
+        <span
+          class="c7"
+        />
+        <span
+          class="c8"
+        />
+        <div
+          class="c9"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ProductTemplateHeader /> renders with some props 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c5 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c5 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c3 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c4 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c1 {
+  max-width: 612px;
+}
+
+.c0 {
+  position: relative;
+  min-height: 30px;
+}
+
+<div>
+  <div
+    class="c0 mb-4"
+    data-automation="ZA.ProductTemplateHeader"
+  >
+    <div
+      class="c1 mx-auto pt-1"
+    >
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        />
+        <span
+          class="c4"
+        />
+        <div
+          class="c5"
+        />
+      </div>
+    </div>
+  </div>
 </div>
 `;

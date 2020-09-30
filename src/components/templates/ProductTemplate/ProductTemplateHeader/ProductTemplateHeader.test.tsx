@@ -5,23 +5,13 @@ import { ProductTemplateHeader } from './ProductTemplateHeader';
 describe('<ProductTemplateHeader />', () => {
   it('renders with all the props', () => {
     const { container } = render(
-      <ProductTemplateHeader
-        title="ProductTemplateHeader title"
-        subtitle="ProductTemplateHeader subtitle"
-        dataAutomation="automation"
-      />,
+      <ProductTemplateHeader prevStep="/prevStep" progress={{ currentStep: 1, totalSteps: 2 }} />,
     );
     expect(container).toMatchSnapshot();
   });
 
-  it('renders correct sized header on desktop', () => {
-    const { container } = render(<ProductTemplateHeader title="ProductTemplateHeader title" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  it('renders correct sized header on small screens', () => {
-    Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 320 });
-    const { container } = render(<ProductTemplateHeader title="ProductTemplateHeader title" />);
+  it('renders with some props', () => {
+    const { container } = render(<ProductTemplateHeader progress={{ currentStep: 1, totalSteps: 2 }} />);
     expect(container).toMatchSnapshot();
   });
 });
