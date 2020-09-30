@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import classnames from 'classnames';
 
 import { maxMedia } from '../../../../helpers/responsiveness';
@@ -13,9 +13,11 @@ interface ProductTemplateCardProps {
 
 const StyledCard = styled(Card)`
   ${maxMedia.phone`
-    border-radius: 0;
-    box-shadow: 0 0 1px 0 ${colors.greyLight}, 0 0 -1px 0 ${colors.greyLighter};
-    border: none;
+    ${css`
+      border-radius: 0;
+      box-shadow: 0 0 1px 0 ${colors.greyLight}, 0 0 -1px 0 ${colors.greyLighter};
+      border: none;
+    `}
   `}
 `;
 

@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import ProductTemplate from '..';
 
 describe('<ProductTemplate />', () => {
-  it('renders with all props and', () => {
+  it('renders with all props and content', () => {
     const { container } = render(
       <ProductTemplate
         title="Product title"

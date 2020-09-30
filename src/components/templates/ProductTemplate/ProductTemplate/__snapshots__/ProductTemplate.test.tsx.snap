@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ProductTemplate /> renders with all props and 1`] = `
+exports[`<ProductTemplate /> renders with all props and content 1`] = `
 .c20 {
   height: 100%;
   width: 100%;
@@ -280,7 +280,8 @@ exports[`<ProductTemplate /> renders with all props and 1`] = `
 @media (max-width:600px) {
   .c20 {
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: 0 0 1px 0 #D4D7D9,0 0 -1px 0 #EFEFEF;
+    border: none;
   }
 }
 
@@ -300,8 +301,8 @@ exports[`<ProductTemplate /> renders with all props and 1`] = `
     data-automation="ZA.ProductTemplate"
   >
     <div
-      class="c1 headcontiner mb-4"
-      data-automation="ZA.ProductTemplateHead"
+      class="c1 mb-4"
+      data-automation="ZA.ProductTemplateHeader"
     >
       <div
         class="c2 my-4 l:mt-0"
@@ -390,7 +391,7 @@ exports[`<ProductTemplate /> renders with all props and 1`] = `
     </div>
     <header
       class="c14"
-      data-automation="PAGE_HEADER"
+      data-automation="ZA.ProductTemplateTitle"
     >
       <div
         class="c15 px-0 m:px-4"
