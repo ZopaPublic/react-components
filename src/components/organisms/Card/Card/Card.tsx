@@ -88,13 +88,20 @@ const Card = styled.div<CardProps>`
   & > ${CardLineItem} {
     align-self: center;
   }
-  &:hover {
-    cursor: ${({ styling }) => (styling === 'action' ? 'pointer' : 'initial')};
-    div:last-of-type svg {
-      color: ${colors.greyDark};
-    }
-    background-color: ${({ styling }) => (styling === 'action' ? `${colors.greyLightest}` : 'none')};
-  }
+  ${({ styling }) =>
+    styling === 'action'
+      ? `&:hover {
+        cursor: pointer;
+        background-color: ${colors.greyLightest};
+
+        & > ${CardLineItem}:last-of-type { 
+          svg {
+            color: ${colors.greyDark};
+          }
+        }
+      } 
+  }`
+      : null}
 `;
 
 export default Card;
