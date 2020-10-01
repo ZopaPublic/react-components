@@ -1,3 +1,10 @@
+### [4.23.1](https://github.com/zopaUK/react-components/compare/v4.23.0...v4.23.1) (2020-10-01)
+
+
+### Bug Fixes
+
+* **help:** update time ([a83ee59](https://github.com/zopaUK/react-components/commit/a83ee5975af2f418093b6bd010f0e04ef5cfc2dc))
+
 ## [4.23.0](https://github.com/zopaUK/react-components/compare/v4.22.1...v4.23.0) (2020-10-01)
 
 
