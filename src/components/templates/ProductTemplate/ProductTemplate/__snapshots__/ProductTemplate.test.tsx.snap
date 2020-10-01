@@ -38,15 +38,6 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: center;
 }
 
-.c19:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c19:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 .c16 {
   font-size: 48px;
   line-height: 54px;

@@ -38,15 +38,6 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   align-self: center;
 }
 
-.c0:hover {
-  cursor: initial;
-  background-color: none;
-}
-
-.c0:hover div:last-of-type svg {
-  color: #4A545E;
-}
-
 @media (max-width:600px) {
   .c0 {
     border-radius: 0;
