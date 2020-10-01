@@ -1,3 +1,18 @@
+## [4.23.0](https://github.com/zopaUK/react-components/compare/v4.22.1...v4.23.0) (2020-10-01)
+
+
+### Features
+
+* **producttemplate:** adds the initial product template ([0701312](https://github.com/zopaUK/react-components/commit/0701312454c0e1b3b4a63e969c2e5dbb44214346)), closes [#zds41](https://github.com/zopaUK/react-components/issues/zds41)
+
+
+### Bug Fixes
+
+* **producttemplate:** fix css with nested interpolation ([a76c106](https://github.com/zopaUK/react-components/commit/a76c106b51156c11b6f293489a00c08f436d924e))
+* **producttemplate:** remove nextStep prop ([8b5502f](https://github.com/zopaUK/react-components/commit/8b5502f993cbcaadcc4a8b25c6b8cf7bdf03f267))
+* **producttemplate:** show navigation buttons by progress bar ([b75c704](https://github.com/zopaUK/react-components/commit/b75c7048781c8aa4f53b523e0dee0a169b7da52d))
+* **producttemplate:** update snapshots ([00cc87d](https://github.com/zopaUK/react-components/commit/00cc87d6429324ca363d9143e801706c89dfcce4))
+
 ### [4.22.1](https://github.com/zopaUK/react-components/compare/v4.22.0...v4.22.1) (2020-09-29)
 
 
