@@ -1,3 +1,10 @@
+### [4.22.1](https://github.com/zopaUK/react-components/compare/v4.22.0...v4.22.1) (2020-09-29)
+
+
+### Bug Fixes
+
+* **card:** ensure hover is only applied on style action ([5dc2663](https://github.com/zopaUK/react-components/commit/5dc2663cd5795c65f973c6742f54b8ef50927238))
+
 ## [4.22.0](https://github.com/zopaUK/react-components/compare/v4.21.0...v4.22.0) (2020-09-28)
 
 
