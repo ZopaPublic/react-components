@@ -59,7 +59,7 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                 </FlexColCenter>
                 <FlexCol xs={9}>
                   <Card.Heading>{helpLine}</Card.Heading>
-                  <Card.Text>Monday to Thursday (8am to 8pm), Friday (8am to 5pm)</Card.Text>
+                  <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
