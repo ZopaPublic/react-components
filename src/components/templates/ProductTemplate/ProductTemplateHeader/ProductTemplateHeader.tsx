@@ -7,7 +7,6 @@ import { ProductTemplateProgress } from '../ProductTemplateProgress/ProductTempl
 
 interface ProductTemplateHeaderProps {
   prevStep?: string | ReactNode;
-  nextStep?: string | ReactNode;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
 }
 
@@ -16,10 +15,10 @@ const ProductTemplateHeaderContainer = styled.div`
   min-height: 30px;
 `;
 
-export function ProductTemplateHeader({ prevStep, nextStep, progress }: ProductTemplateHeaderProps) {
+export function ProductTemplateHeader({ prevStep, progress }: ProductTemplateHeaderProps) {
   return (
     <ProductTemplateHeaderContainer className="mb-4" data-automation="ZA.ProductTemplateHeader">
-      {(prevStep || nextStep) && <ProductTemplateNavigation prevStep={prevStep} nextStep={nextStep} />}
+      {prevStep && <ProductTemplateNavigation prevStep={prevStep} />}
       {progress && <ProductTemplateProgress progress={progress} />}
     </ProductTemplateHeaderContainer>
   );

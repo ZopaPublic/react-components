@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled, { css } from 'styled-components';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 import { Text } from '../../../..';
 import Icon from '../../../atoms/Icon/Icon';
@@ -8,8 +8,7 @@ import Link from '../../../atoms/Link/Link';
 import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateNavigationProps {
-  prevStep?: string | ReactNode;
-  nextStep?: string | ReactNode;
+  prevStep: string | ReactNode;
 }
 
 const StyledLink = styled(Link)`
@@ -19,9 +18,6 @@ const StyledLink = styled(Link)`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-
   ${minMedia.desktop`
     ${css`
       position: absolute;
@@ -33,24 +29,16 @@ const Wrapper = styled.div`
   `}
 `;
 
-export function ProductTemplateNavigation({ prevStep, nextStep }: ProductTemplateNavigationProps) {
+export function ProductTemplateNavigation({ prevStep }: ProductTemplateNavigationProps) {
   return (
     <Wrapper className="my-4 l:mt-0" data-automation="ZA.ProductTemplateNavigation">
-      {prevStep && typeof prevStep === 'string' ? (
+      {typeof prevStep === 'string' ? (
         <StyledLink href={prevStep} aria-label="Back">
           <Icon variant={faChevronLeft} color="inherit" className="mr-2" />
           <Text>Back</Text>
         </StyledLink>
       ) : (
         prevStep
-      )}
-      {nextStep && typeof nextStep === 'string' ? (
-        <StyledLink href={nextStep} aria-label="Next" className="ml-auto">
-          <Text className="mr-2">Next</Text>
-          <Icon variant={faChevronRight} color="inherit" />
-        </StyledLink>
-      ) : (
-        nextStep
       )}
     </Wrapper>
   );

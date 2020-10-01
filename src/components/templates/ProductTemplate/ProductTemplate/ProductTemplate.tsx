@@ -10,14 +10,13 @@ export interface ProductTemplateProps {
   title: string;
   subtitle?: string;
   prevStep?: string | ReactNode;
-  nextStep?: string | ReactNode;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
 }
 
-function ProductTemplate({ title, subtitle, children, prevStep, nextStep, progress }: ProductTemplateProps) {
+function ProductTemplate({ title, subtitle, children, prevStep, progress }: ProductTemplateProps) {
   return (
     <ProductTemplateContainer data-automation="ZA.ProductTemplate">
-      <ProductTemplateHeader nextStep={nextStep} prevStep={prevStep} progress={progress} />
+      <ProductTemplateHeader prevStep={prevStep} progress={progress} />
       <ProductTemplateTitle title={title} subtitle={subtitle} />
       <ProductTemplateContent>{children}</ProductTemplateContent>
     </ProductTemplateContainer>

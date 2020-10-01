@@ -116,17 +116,6 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   align-items: center;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .c5 {
   max-width: 612px;
 }

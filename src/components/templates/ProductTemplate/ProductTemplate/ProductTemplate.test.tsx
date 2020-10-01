@@ -8,7 +8,6 @@ describe('<ProductTemplate />', () => {
       <ProductTemplate
         title="Product title"
         subtitle="Product subtitle"
-        nextStep="nextStep"
         prevStep="prevStep"
         progress={{ currentStep: 2, totalSteps: 4 }}
       >
