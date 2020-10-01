@@ -102,6 +102,17 @@ module.exports = {
           ],
         },
         {
+          name: 'Templates',
+          content: 'src/components/templates/README.md',
+          sections: [
+            {
+              name: 'Product',
+              content: 'src/components/templates/ProductTemplate/README.md',
+              components: 'src/components/templates/ProductTemplate/**/[A-Z]*.tsx',
+            },
+          ],
+        },
+        {
           name: 'Layout',
           content: 'src/components/layout/README.md',
           components: 'src/components/layout/*/*.tsx',
