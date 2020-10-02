@@ -7,5 +7,6 @@ Molecules are a collection of **atoms** to build customised pieces of UI at Zopa
 - [`<Modal />`](#/Components/Molecules/Modal)
 - [`<Progress />`](#/Components/Molecules/Progress)
 - [`<RadioField />`](#/Components/Molecules/RadioField)
+- [`<Tabs />`](#/Components/Molecules/Tabs)
 - [`<TextField />`](#/Components/Molecules/TextField)
 - [`<ZopaFooter />`](#/Components/Molecules/ZopaFooter)
