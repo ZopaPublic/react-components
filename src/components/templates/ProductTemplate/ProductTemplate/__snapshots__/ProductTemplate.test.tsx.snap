@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductTemplate /> renders with all props and content 1`] = `
-.c19 {
+.c21 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -18,27 +18,27 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   flex-direction: column;
 }
 
-.c19 > .c20 {
+.c21 > .c22 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c19 .c21 {
+.c21 .c23 {
   font-size: 15px;
 }
 
-.c19 .c22 {
+.c21 .c24 {
   font-size: 13px;
 }
 
-.c19 > .c23 {
+.c21 > .c25 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c16 {
+.c18 {
   font-size: 48px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -52,7 +52,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   font-weight: 800;
 }
 
-.c5 {
+.c7 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -66,7 +66,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: inherit;
 }
 
-.c17 {
+.c19 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -80,22 +80,22 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: center;
 }
 
-.c13 {
+.c15 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
   border-radius: 12px;
 }
 
-.c14 {
+.c16 {
   max-width: 612px;
   margin: 0 auto;
 }
 
-.c15 {
+.c17 {
   padding-bottom: 195px;
 }
 
-.c7 {
+.c9 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -103,7 +103,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   height: 4px;
 }
 
-.c12 {
+.c14 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -114,7 +114,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c12 > span {
+.c14 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -124,7 +124,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   color: #2C3236;
 }
 
-.c8 {
+.c10 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -138,7 +138,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c9 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 33.333333333333336%;
@@ -152,7 +152,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c10 {
+.c12 {
   position: absolute;
   top: 50%;
   left: 66.66666666666667%;
@@ -166,7 +166,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c11 {
+.c13 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -180,7 +180,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c3 {
+.c5 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -201,17 +201,60 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   border: none;
 }
 
-.c3:hover,
-.c3:active {
+.c5:hover,
+.c5:active {
   color: #21247F;
 }
 
-.c3:hover svg path,
-.c3:active svg path {
+.c5:hover svg path,
+.c5:active svg path {
   fill: #21247F;
 }
 
-.c4 {
+.c0 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
@@ -224,34 +267,54 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c8 {
   max-width: 612px;
 }
 
-.c1 {
+.c3 {
   position: relative;
   min-height: 30px;
 }
 
-.c18 {
+.c20 {
   max-width: 612px;
   margin: 0 auto;
 }
 
-.c0 {
-  position: relative;
-}
-
 @media (max-width:600px) {
-  .c19 {
+  .c21 {
     border-radius: 0;
     box-shadow: 0 0 1px 0 #D4D7D9,0 0 -1px 0 #EFEFEF;
     border: none;
   }
 }
 
+@media (min-width:576px) {
+  .c0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1300px) {
+  .c0 {
+    max-width: 1224px;
+  }
+}
+
 @media (min-width:1280px) {
-  .c2 {
+  .c4 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -261,103 +324,114 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 <div>
-  <section
+  <div
     class="c0 mb-10"
     data-automation="ZA.ProductTemplate"
   >
     <div
-      class="c1 mb-4"
-      data-automation="ZA.ProductTemplateHeader"
+      class="c1"
+      cols="12"
+      direction="row"
     >
       <div
-        class="c2 my-4 l:mt-0"
-        data-automation="ZA.ProductTemplateNavigation"
-      >
-        <a
-          aria-label="Back"
-          class="c3 c4"
-          color="#3B46C4"
-          href="prevStep"
-        >
-          <svg
-            aria-hidden="true"
-            class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
-            color="inherit"
-            data-icon="chevron-left"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            viewBox="0 0 320 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
-              fill="currentColor"
-            />
-          </svg>
-          <span
-            class="c5"
-          >
-            Back
-          </span>
-        </a>
-      </div>
-      <div
-        class="c6 mx-auto pt-1"
+        class="c2"
+        cols="12"
       >
         <div
-          class="c7"
+          class="c3 mb-4"
+          data-automation="ZA.ProductTemplateHeader"
         >
-          <span
-            class="c8"
-          />
-          <span
-            class="c9"
-          />
-          <span
-            class="c10"
-          />
-          <span
-            class="c11"
-          />
           <div
-            class="c12"
-          />
+            class="c4 my-4 l:mt-0"
+            data-automation="ZA.ProductTemplateNavigation"
+          >
+            <a
+              aria-label="Back"
+              class="c5 c6"
+              color="#3B46C4"
+              href="prevStep"
+            >
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
+                color="inherit"
+                data-icon="chevron-left"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                class="c7"
+              >
+                Back
+              </span>
+            </a>
+          </div>
+          <div
+            class="c8 mx-auto pt-1"
+          >
+            <div
+              class="c9"
+            >
+              <span
+                class="c10"
+              />
+              <span
+                class="c11"
+              />
+              <span
+                class="c12"
+              />
+              <span
+                class="c13"
+              />
+              <div
+                class="c14"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <header
-      class="c13"
-      data-automation="ZA.ProductTemplateTitle"
-    >
-      <div
-        class="c14 px-0 m:px-4"
-      >
-        <div
-          class="c15 pt-7 mx-6 m:mx-0"
+        <header
+          class="c15"
+          data-automation="ZA.ProductTemplateTitle"
         >
-          <h1
-            class="c16"
+          <div
+            class="c16 px-0 m:px-4"
           >
-            Product title
-          </h1>
-          <p
-            class="c17 mt-4"
+            <div
+              class="c17 pt-7 mx-6 m:mx-0"
+            >
+              <h1
+                class="c18"
+              >
+                Product title
+              </h1>
+              <p
+                class="c19 mt-4"
+              >
+                Product subtitle
+              </p>
+            </div>
+          </div>
+        </header>
+        <div
+          class="c20 px-0 m:px-4"
+        >
+          <div
+            class="c21 px-4 py-6 m:p-8"
           >
-            Product subtitle
-          </p>
+            This is the body of the card
+          </div>
         </div>
       </div>
-    </header>
-    <div
-      class="c18 px-0 m:px-4"
-    >
-      <div
-        class="c19 px-4 py-6 m:p-8"
-      >
-        This is the body of the card
-      </div>
     </div>
-  </section>
+  </div>
 </div>
 `;
