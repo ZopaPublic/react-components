@@ -2,7 +2,6 @@
 
 `<Tabs />` is a component
 
-
 So that styles are applied once and not every time the user navigates to a particular route.
 
 ### Tips 💄

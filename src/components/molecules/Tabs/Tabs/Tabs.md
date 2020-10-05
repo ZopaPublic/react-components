@@ -7,22 +7,20 @@
 ```tsx
 import { Tabs } from '@zopauk/react-components';
 
-function Example() {
+function TabsExample() {
+  const { setDefaultTab } = useTabsContext();
+  setDefaultTab('kiwi');
   return (
-    // <Tabs tabs={['🍍 Pinapple', '🥝 Kiwi', '🍉 Watermelon']}>
     <Tabs>
-      <Tabs.Tab title="🍍 Pinapple">
-        🍍
-      </Tabs.Tab>
-      <Tabs.Tab  title="🥝 Kiwi">
-        🥝
-      </Tabs.Tab>
-      <Tabs.Tab  title="🍉 Watermelon">
-        🍉
-      </Tabs.Tab>
+      <Tabs.Button tabId="pineapple" title="🍍 Pineapple" />
+      <Tabs.Button tabId="kiwi" title="🥝 Kiwi" />
+      <Tabs.Button tabId="watermelon" title="🍉 Watermelon" />
+      <Tabs.Content contentFor="pineapple">🍍</Tabs.Content>
+      <Tabs.Content contentFor="kiwi">🥝</Tabs.Content>
+      <Tabs.Content contentFor="watermelon">🍉</Tabs.Content>
     </Tabs>
   );
 }
 
-<Example />;
+<TabsExample />;
 ```

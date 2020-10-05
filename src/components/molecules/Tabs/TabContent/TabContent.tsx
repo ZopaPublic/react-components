@@ -1,9 +1,28 @@
 import React, { ReactNode } from 'react';
+import styled from 'styled-components';
+import { useTabsContext } from '../hooks/useTabsContext';
 
-interface TabContent {
+interface TabContentProps {
   children: ReactNode;
+  contentFor: string;
 }
 
-export default function TabContent({ children }: TabContent) {
-  return <>{children}</>;
+interface TabContentStyleProps {
+  activeTab: string;
+}
+const ContentContainer = styled.div<TabContentStyleProps>`
+  display: none;
+  &[id="${({ activeTab }) => activeTab}"]{
+    display: block;
+  };
+`;
+
+export default function TabContent({ children, contentFor }: TabContentProps) {
+  const { activeTab, getTabContentProps } = useTabsContext();
+  const contentProps = getTabContentProps(contentFor);
+  return (
+    <ContentContainer id={`${contentFor}-content`} activeTab={activeTab} {...contentProps}>
+      {children}
+    </ContentContainer>
+  );
 }

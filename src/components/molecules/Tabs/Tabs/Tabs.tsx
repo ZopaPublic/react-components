@@ -1,26 +1,15 @@
-import React from 'react';
-import Button from '../../../atoms/Button/Button';
+import React, { FC, HTMLAttributes } from 'react';
+import { useTabs, TabsContext } from '../hooks';
 
-interface Tab {
-  title: string;
-  active: boolean;
-}
+export interface TabsProps extends HTMLAttributes<HTMLDivElement> {}
 
-interface Tabs {
-  tabs: Tab[];
-}
-
-export default function TabsContainer({ tabs }: Tabs) {
+const TabsContainer: FC<TabsProps> = ({ children, ...rest }) => {
+  const context = useTabs();
   return (
-    <TabsContainer>
-      {tabs.map((tab: Tab) => {
-        return (
-          <>
-            <Button styling={tab.active ? 'secondary' : 'primary'}>{tab.title}</Button>
-            <div>{tab.content}</div>
-          </>
-        );
-      })}
-    </TabsContainer>
+    <TabsContext.Provider value={context}>
+      <div {...rest}>{children}</div>
+    </TabsContext.Provider>
   );
-}
+};
+
+export default TabsContainer;

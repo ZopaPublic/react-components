@@ -2,7 +2,7 @@
 // import React from 'react';
 // import { render } from '@testing-library/react';
 // import { getGlobalStyleTags } from '../../../helpers/test/styles';
-// import Tabs from './Tabs';
+// import Tabs from './TabButton';
 
 describe('<Tabs />', () => {
   it('renders the component with no a11y violations', async () => {

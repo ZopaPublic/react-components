@@ -1,17 +1,18 @@
 import React, { FC } from 'react';
 
-import AccordionComponent, { AccordionProps } from './Accordion/Accordion';
-import AccordionHeader from './AccordionHeader/AccordionHeader';
-import AccordionSection from './AccordionSection/AccordionSection';
+import TabsContainer, { TabsProps } from './Tabs/Tabs';
+import TabContent from './TabContent/TabContent';
+import TabButton from './TabButton/TabButton';
 
-interface AccordionStatic {
-  Header: typeof AccordionHeader;
-  Section: typeof AccordionSection;
+interface TabsStatic {
+  Content: typeof TabContent;
+  Button: typeof TabButton;
 }
 
-export const Accordion: AccordionStatic & FC<AccordionProps> = (props) => <AccordionComponent {...props} />;
+const Tabs: TabsStatic & FC<TabsProps> = (props) => <TabsContainer {...props} />;
 
-Accordion.Tabs = TabsContainer;
-Accordion.Section = TabContent;
+Tabs.Content = TabContent;
+Tabs.Button = TabButton;
 
-// export * from './hooks';
+export * from './hooks';
+export default Tabs;
