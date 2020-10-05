@@ -21,7 +21,7 @@ export default function TabContent({ children, contentFor }: TabContentProps) {
   const { activeTab, getTabContentProps } = useTabsContext();
   const contentProps = getTabContentProps(contentFor);
   return (
-    <ContentContainer id={`${contentFor}-content`} activeTab={activeTab} {...contentProps}>
+    <ContentContainer activeTab={activeTab} {...contentProps}>
       {children}
     </ContentContainer>
   );

@@ -10,8 +10,8 @@ import { Tabs } from '@zopauk/react-components';
 function TabsExample() {
   return (
     <Tabs>
-      <Tabs.Button tabId="pineapple" title="🍍 Pineapple" />
-      <Tabs.Button tabId="kiwi" title="🥝 Kiwi" isDefaultTab />
+      <Tabs.Button tabId="pineapple" title="🍍 Pineapple" isDefaultTab />
+      <Tabs.Button tabId="kiwi" title="🥝 Kiwi" />
       <Tabs.Button tabId="watermelon" title="🍉 Watermelon" />
       <Tabs.Content contentFor="pineapple">🍍</Tabs.Content>
       <Tabs.Content contentFor="kiwi">🥝</Tabs.Content>
