@@ -36,6 +36,7 @@ import { FormCheckboxGroupField, FormButton } from '@zopauk/react-components';
             label: 'Rock',
           },
         ]}
+        data-automation="test"
       />
     </div>
     <FormButton disabled={false}>Submit</FormButton>

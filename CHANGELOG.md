@@ -1,3 +1,19 @@
+### [4.23.3](https://github.com/zopaUK/react-components/compare/v4.23.2...v4.23.3) (2020-10-05)
+
+
+### Bug Fixes
+
+* **producttemplate:** add container to set the width of the content ([c588a9b](https://github.com/zopaUK/react-components/commit/c588a9bf886cd323f0097e0f9d4eb41bb0a18b31))
+* **producttemplate:** update snapshot ([89142d9](https://github.com/zopaUK/react-components/commit/89142d9e8da260e96562e693c2fc5a3899be977d))
+* **producttemplate:** use cols instead of px for content width ([8d08c36](https://github.com/zopaUK/react-components/commit/8d08c3663caa18e5c877a82d5074f6d1b19993e6))
+
+### [4.23.2](https://github.com/zopaUK/react-components/compare/v4.23.1...v4.23.2) (2020-10-05)
+
+
+### Bug Fixes
+
+* **input-groups:** set data-automation on Radio and Checkbox groups ([9ed184e](https://github.com/zopaUK/react-components/commit/9ed184ea5bc80c951c570cad29c8060edf495bae))
+
 ### [4.23.1](https://github.com/zopaUK/react-components/compare/v4.23.0...v4.23.1) (2020-10-01)
 
 
