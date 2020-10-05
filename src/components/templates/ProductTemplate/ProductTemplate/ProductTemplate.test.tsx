@@ -10,6 +10,7 @@ describe('<ProductTemplate />', () => {
         subtitle="Product subtitle"
         prevStep="prevStep"
         progress={{ currentStep: 2, totalSteps: 4 }}
+        contentWidth={10}
       >
         <ProductTemplate.Card>This is the body of the card</ProductTemplate.Card>
       </ProductTemplate>,

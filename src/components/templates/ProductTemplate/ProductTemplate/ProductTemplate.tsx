@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import styled from 'styled-components';
 
 import { ProgressProps } from '../../../molecules/Progress/Progress';
 import { ProductTemplateTitle } from '../ProductTemplateTitle/ProductTemplateTitle';
@@ -14,31 +13,25 @@ export interface ProductTemplateProps {
   subtitle?: string;
   prevStep?: string | ReactNode;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
-  wideContent?: boolean;
+  contentWidth?: number;
 }
 
-function ProductTemplate({ title, subtitle, children, prevStep, progress, wideContent = false }: ProductTemplateProps) {
+function ProductTemplate({ title, subtitle, children, prevStep, progress, contentWidth = 6 }: ProductTemplateProps) {
   return (
     <FlexContainer data-automation="ZA.ProductTemplate" className="mb-10">
       <FlexRow>
         <FlexCol>
           <ProductTemplateHeader prevStep={prevStep} progress={progress} />
           <ProductTemplateTitle title={title} subtitle={subtitle} />
-          <ProductTemplateContent wideContent={wideContent}>{children}</ProductTemplateContent>
+          <FlexRow justify="center">
+            <FlexCol m={10} xl={contentWidth}>
+              {children}
+            </FlexCol>
+          </FlexRow>
         </FlexCol>
       </FlexRow>
     </FlexContainer>
   );
 }
-
-interface ProductTemplateContentProps {
-  wideContent?: boolean;
-}
-const ProductTemplateContent = styled.div.attrs({
-  className: 'px-0 m:px-4',
-})<ProductTemplateContentProps>`
-  max-width: ${({ wideContent }) => (wideContent ? '1043' : '612')}px;
-  margin: 0 auto;
-`;
 
 export default ProductTemplate;
