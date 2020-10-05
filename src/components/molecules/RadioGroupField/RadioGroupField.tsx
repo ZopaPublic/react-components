@@ -31,6 +31,7 @@ export type RadioGroupFieldProps = {
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
   hideControl?: boolean;
+  'data-automation'?: string;
 };
 
 const RadioGroupField = ({
@@ -46,6 +47,7 @@ const RadioGroupField = ({
   flexRowProps = {},
   flexColProps = {},
   hideControl,
+  'data-automation': dataAutomation,
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -66,7 +68,7 @@ const RadioGroupField = ({
     <Fieldset className={className}>
       {label && <Legend>{label}</Legend>}
       <FlexRow {...flexRowProps}>
-        {items.map((item) => {
+        {items.map((item, index) => {
           const checked = isControlled ? value === item.value : innerValue === item.value;
           return (
             <FlexCol {...flexColProps} key={item.value}>
@@ -80,6 +82,7 @@ const RadioGroupField = ({
                   checked={checked}
                   isValid={checked && isValid}
                   hideControl={hideControl}
+                  data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
                 />
               </RadioWrapper>
             </FlexCol>

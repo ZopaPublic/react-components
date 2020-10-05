@@ -145,5 +145,6 @@ import { RadioGroupField } from '@zopauk/react-components';
   ]}
   onChange={(value) => console.log(value)}
   label="Radio group field label"
+  data-automation="testing"
 />;
 ```
