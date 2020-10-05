@@ -1,3 +1,10 @@
+### [4.23.2](https://github.com/zopaUK/react-components/compare/v4.23.1...v4.23.2) (2020-10-05)
+
+
+### Bug Fixes
+
+* **input-groups:** set data-automation on Radio and Checkbox groups ([9ed184e](https://github.com/zopaUK/react-components/commit/9ed184ea5bc80c951c570cad29c8060edf495bae))
+
 ### [4.23.1](https://github.com/zopaUK/react-components/compare/v4.23.0...v4.23.1) (2020-10-01)
 
 

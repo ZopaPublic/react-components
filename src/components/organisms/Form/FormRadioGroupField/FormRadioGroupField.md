@@ -36,6 +36,7 @@ import { FormRadioGroupField, FormButton } from '@zopauk/react-components';
             label: 'Unemployed',
           },
         ]}
+        data-automation="testing2"
       />
     </div>
     <FormButton disabled={false}>Submit</FormButton>
