@@ -6,6 +6,7 @@ import { Text } from '../../../..';
 import Icon from '../../../atoms/Icon/Icon';
 import Link from '../../../atoms/Link/Link';
 import { minMedia } from '../../../../helpers/responsiveness';
+import { colors } from '../../../../constants/colors';
 
 interface ProductTemplateNavigationProps {
   prevStep: string | ReactNode;
@@ -29,13 +30,17 @@ const Wrapper = styled.div`
   `}
 `;
 
+const BackText = styled(Text).attrs({ color: colors.greyDark })`
+  line-height: 0;
+`;
+
 export function ProductTemplateNavigation({ prevStep }: ProductTemplateNavigationProps) {
   return (
     <Wrapper className="my-4 l:mt-0" data-automation="ZA.ProductTemplateNavigation">
       {typeof prevStep === 'string' ? (
         <StyledLink href={prevStep} aria-label="Back">
-          <Icon variant={faChevronLeft} color="inherit" className="mr-2" />
-          <Text>Back</Text>
+          <Icon variant={faChevronLeft} color={colors.greyDark} size="xs" className="mr-2" />
+          <BackText>Back</BackText>
         </StyledLink>
       ) : (
         prevStep

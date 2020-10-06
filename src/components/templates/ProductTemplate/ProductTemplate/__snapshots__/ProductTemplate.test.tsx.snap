@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductTemplate /> renders with all props and content 1`] = `
-.c22 {
+.c23 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -18,27 +18,27 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   flex-direction: column;
 }
 
-.c22 > .c23 {
+.c23 > .c24 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c22 .c24 {
+.c23 .c25 {
   font-size: 15px;
 }
 
-.c22 .c25 {
+.c23 .c26 {
   font-size: 13px;
 }
 
-.c22 > .c26 {
+.c23 > .c27 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c18 {
+.c19 {
   font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -58,7 +58,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2C3236;
+  color: #4A545E;
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
@@ -66,7 +66,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: inherit;
 }
 
-.c19 {
+.c20 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -80,22 +80,22 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: center;
 }
 
-.c15 {
+.c16 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
   border-radius: 12px;
 }
 
-.c16 {
+.c17 {
   max-width: 612px;
   margin: 0 auto;
 }
 
-.c17 {
+.c18 {
   padding-bottom: 195px;
 }
 
-.c9 {
+.c10 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -103,7 +103,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   height: 4px;
 }
 
-.c14 {
+.c15 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -114,7 +114,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c14 > span {
+.c15 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -124,7 +124,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   color: #2C3236;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -138,7 +138,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c11 {
+.c12 {
   position: absolute;
   top: 50%;
   left: 33.333333333333336%;
@@ -152,7 +152,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c12 {
+.c13 {
   position: absolute;
   top: 50%;
   left: 66.66666666666667%;
@@ -166,7 +166,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -243,7 +243,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-items: flex-start;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -277,7 +277,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
-.c21 {
+.c22 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -302,6 +302,10 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c8 {
+  line-height: 0;
+}
+
+.c9 {
   max-width: 612px;
 }
 
@@ -311,7 +315,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (max-width:600px) {
-  .c22 {
+  .c23 {
     border-radius: 0;
     box-shadow: 0 0 1px 0 #D4D7D9,0 0 -1px 0 #EFEFEF;
     border: none;
@@ -343,7 +347,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -353,7 +357,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:1300px) {
-  .c21 {
+  .c22 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -374,7 +378,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 
 <div>
   <div
-    class="c0 mb-10"
+    class="c0 mb-10 mt-8"
     data-automation="ZA.ProductTemplate"
   >
     <div
@@ -402,8 +406,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
-                color="inherit"
+                class="svg-inline--fa fa-chevron-left fa-w-10 fa-xs mr-2"
+                color="#4A545E"
                 data-icon="chevron-left"
                 data-prefix="fas"
                 focusable="false"
@@ -417,21 +421,19 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
                 />
               </svg>
               <span
-                class="c7"
+                class="c7 c8"
+                color="#4A545E"
               >
                 Back
               </span>
             </a>
           </div>
           <div
-            class="c8 mx-auto pt-1"
+            class="c9 mx-auto pt-1"
           >
             <div
-              class="c9"
+              class="c10"
             >
-              <span
-                class="c10"
-              />
               <span
                 class="c11"
               />
@@ -441,29 +443,32 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
               <span
                 class="c13"
               />
-              <div
+              <span
                 class="c14"
+              />
+              <div
+                class="c15"
               />
             </div>
           </div>
         </div>
         <header
-          class="c15"
+          class="c16"
           data-automation="ZA.ProductTemplateTitle"
         >
           <div
-            class="c16 px-0 m:px-4"
+            class="c17 px-0 m:px-4"
           >
             <div
-              class="c17 pt-7 mx-6 m:mx-0"
+              class="c18 pt-9 mx-6 m:mx-0"
             >
               <h1
-                class="c18"
+                class="c19"
               >
                 Product title
               </h1>
               <p
-                class="c19 mt-4"
+                class="c20 mt-4"
               >
                 Product subtitle
               </p>
@@ -471,16 +476,16 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
           </div>
         </header>
         <div
-          class="c20"
+          class="c21"
           cols="12"
           direction="row"
         >
           <div
-            class="c21"
+            class="c22"
             cols="12"
           >
             <div
-              class="c22 px-4 py-6 m:p-8"
+              class="c23 px-4 py-6 m:p-8"
             >
               This is the body of the card
             </div>
