@@ -2,18 +2,18 @@ import React, { useEffect } from 'react';
 import Button from '../../../atoms/Button/Button';
 import { useTabsContext } from '../hooks/useTabsContext';
 
-interface TabButtonProps {
+export interface TabButtonProps {
   title: string;
   tabId: string;
   isDefaultTab?: boolean;
 }
 
-export default function TabButton({ title, tabId, isDefaultTab = false }: TabButtonProps) {
-  const { activeTab, getTabButtonProps, setDefaultTab } = useTabsContext();
-  const tabProps = getTabButtonProps(tabId);
+const TabButton = ({ title, tabId, isDefaultTab = false }: TabButtonProps) => {
+  const { activeTab, getTabButtonHTMLProps, setActiveTab } = useTabsContext();
+  const tabProps = getTabButtonHTMLProps(tabId);
 
   useEffect(() => {
-    isDefaultTab && setDefaultTab(tabId);
+    isDefaultTab && setActiveTab(tabId);
   }, []);
 
   return (
@@ -21,4 +21,6 @@ export default function TabButton({ title, tabId, isDefaultTab = false }: TabBut
       {title}
     </Button>
   );
-}
+};
+
+export default TabButton;

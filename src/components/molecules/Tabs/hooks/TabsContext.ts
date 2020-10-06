@@ -1,12 +1,12 @@
 import { createContext } from 'react';
 
-import { GetTabButtonProps, GetTabContentProps } from './useTabs';
+import { GetTabButtonHtmlProps, GetTabContentProps } from './useTabs';
 
 export interface TabsContext {
-  getTabButtonProps: GetTabButtonProps;
+  getTabButtonHTMLProps: GetTabButtonHtmlProps;
   getTabContentProps: GetTabContentProps;
   activeTab: string;
-  setDefaultTab: (tabId: string) => void;
+  setActiveTab: (tabId: string) => void;
 }
 
 export const TabsContext = createContext<TabsContext | undefined>(undefined);

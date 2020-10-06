@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export interface TabButtonProps {
+export interface TabButtonHtmlProps {
   'aria-controls': string;
   'aria-expanded': boolean;
   id: string;
@@ -8,7 +8,7 @@ export interface TabButtonProps {
   onClick: () => void;
 }
 
-export type GetTabButtonProps = (tabId: string) => TabButtonProps;
+export type GetTabButtonHtmlProps = (tabId: string) => TabButtonHtmlProps;
 
 export interface TabContentProps {
   'aria-hidden': boolean;
@@ -25,7 +25,7 @@ type ActiveTab = string | null;
 export const useTabs = () => {
   const [activeTab, setActiveTab] = useState<string>('');
 
-  const getTabButtonProps: GetTabButtonProps = (tabId: string) => ({
+  const getTabButtonHTMLProps: GetTabButtonHtmlProps = (tabId: string) => ({
     'aria-controls': `${tabId}-content`,
     'aria-expanded': tabId === activeTab,
     id: tabId,
@@ -42,9 +42,9 @@ export const useTabs = () => {
   });
 
   return {
-    setDefaultTab: (tabId: string) => setActiveTab(tabId),
+    setActiveTab: (tabId: string) => setActiveTab(tabId),
     getTabContentProps,
-    getTabButtonProps,
+    getTabButtonHTMLProps,
     activeTab,
   };
 };

@@ -1,6 +1,6 @@
 ### Summary
 
-`<Tabs />` is a wrapper that is supposed to be used with `<Tabs.Button />` and `<Tabs.Content />`. It provides its children with the `<TabsContext />`.
+`<Tabs />` is a wrapper that is supposed to be used with `<Tabs.Buttons />` and `<Tabs.Content />`. It provides its children with the `<TabsContext />`.
 
 ### Example
 
@@ -8,11 +8,14 @@
 import { Tabs } from '@zopauk/react-components';
 
 function TabsExample() {
+  const tabButtons = [
+    { tabId: 'pineapple', title: '🍍 Pineapple' },
+    { tabId: 'kiwi', title: '🥝 Kiwi' },
+    { tabId: 'watermelon', title: '🍉 Watermelon' },
+  ];
   return (
     <Tabs>
-      <Tabs.Button tabId="pineapple" title="🍍 Pineapple" isDefaultTab />
-      <Tabs.Button tabId="kiwi" title="🥝 Kiwi" />
-      <Tabs.Button tabId="watermelon" title="🍉 Watermelon" />
+      <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" />
       <Tabs.Content contentFor="pineapple">🍍</Tabs.Content>
       <Tabs.Content contentFor="kiwi">🥝</Tabs.Content>
       <Tabs.Content contentFor="watermelon">🍉</Tabs.Content>

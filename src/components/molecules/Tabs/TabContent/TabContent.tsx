@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import styled from 'styled-components';
 import { useTabsContext } from '../hooks/useTabsContext';
 
@@ -17,7 +17,7 @@ const ContentContainer = styled.div<TabContentStyleProps>`
   };
 `;
 
-export default function TabContent({ children, contentFor }: TabContentProps) {
+const TabContent: FC<TabContentProps> = ({ children, contentFor }) => {
   const { activeTab, getTabContentProps } = useTabsContext();
   const contentProps = getTabContentProps(contentFor);
   return (
@@ -25,4 +25,6 @@ export default function TabContent({ children, contentFor }: TabContentProps) {
       {children}
     </ContentContainer>
   );
-}
+};
+
+export default TabContent;

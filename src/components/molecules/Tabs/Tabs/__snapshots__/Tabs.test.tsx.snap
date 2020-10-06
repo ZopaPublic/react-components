@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> renders the component with no a11y violations 1`] = `
+<div>
+  <span>
+    🍍
+  </span>
+</div>
+`;
