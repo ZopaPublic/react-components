@@ -109,6 +109,7 @@ describe('<RadioGroupField />', () => {
           { value: 'one', label: 'label one' },
           { value: 'two', label: 'label two' },
         ]}
+        data-automation="ZA.test"
       />,
     );
     const results = await axe(container.innerHTML);
