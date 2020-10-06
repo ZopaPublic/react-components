@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import TabsContainer, { TabsProps } from './Tabs/Tabs';
+import TabsContainer, { TabsProps } from './TabsContainer/TabsContainer';
 import TabContent from './TabContent/TabContent';
 import TabButtons from './TabButtons/TabButtons';
 

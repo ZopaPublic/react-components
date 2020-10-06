@@ -4,3 +4,4 @@ Organisms are a collection of **atoms**, **molecules**, and it's own specific **
 - [`<Accordion />`](/#/Components/Organisms/Accordion)
 - [`<Form />`](/#/Components/Organisms/Form)
 - [`<Card />`](/#/Components/Organisms/Card)
+- [`<Tabs />`](/#/Components/Organisms/Tabs)

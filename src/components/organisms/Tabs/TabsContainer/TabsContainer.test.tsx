@@ -1,14 +1,14 @@
 import React from 'react';
 import { axe } from 'jest-axe';
 import { render } from '@testing-library/react';
-import Tabs from './Tabs';
+import TabsContainer from './TabsContainer';
 
 describe('<Tabs />', () => {
   it('renders the component with no a11y violations', async () => {
     const { container } = render(
-      <Tabs>
+      <TabsContainer>
         <span>🍍</span>
-      </Tabs>,
+      </TabsContainer>,
     );
     expect(container.firstChild).toMatchSnapshot();
     const results = await axe(container.innerHTML);
