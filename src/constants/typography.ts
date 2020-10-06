@@ -8,7 +8,7 @@ const typography = {
     },
     heading: {
       display: '68px',
-      h1: '48px',
+      h1: '46px',
       h2: '38px',
       h3: '28px',
       h4: '24px',
