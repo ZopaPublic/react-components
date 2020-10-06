@@ -1,3 +1,10 @@
+### [4.23.4](https://github.com/zopaUK/react-components/compare/v4.23.3...v4.23.4) (2020-10-06)
+
+
+### Bug Fixes
+
+* **h1:** fix sizing ([f2bb995](https://github.com/zopaUK/react-components/commit/f2bb99516f3364b1b0e70ef2964c2da45bc537d2))
+
 ### [4.23.3](https://github.com/zopaUK/react-components/compare/v4.23.2...v4.23.3) (2020-10-05)
 
 
