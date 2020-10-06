@@ -1,31 +1,3 @@
 ### Summary
 
-`<Tabs />` is a component
-
-So that styles are applied once and not every time the user navigates to a particular route.
-
-### Tips 💄
-
-- If you want the tooltip target to be a React component, you [need to wrap it with `forwardRef`](https://github.com/atomiks/tippy.js-react#component-children).
-- We don't allow to customise `theme`, `animation` and `flipOnUpdate` to make sure the tooltip UX stays the same.
-- By default you won't be able to pass JSX to the tooltip content. You can change that via `allowHTML={true}` prop.
-
-### Example
-
-```tsx
-import { forwardRef } from 'react';
-import { Tooltip, Button } from '@zopauk/react-components';
-
-function Example() {
-  return (
-    <>
-      <Tooltip.Styles />
-      <Tooltip content="I prefer 🍕 over 🍰 ...">
-        <span>💁🏻‍♂️</span>
-      </Tooltip>
-    </>
-  );
-}
-
-<Example />;
-```
+`<Tabs.Button />` is supposed to be a child of `<Tabs />` and contain the content of the tab. The prop `tabId` should have matching `<Tabs.Content />` in order to show the correct content.

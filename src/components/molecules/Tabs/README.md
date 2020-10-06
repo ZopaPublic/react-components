@@ -1,6 +1,6 @@
 ### Summary
 
-`<Tabs />` doesn't render anything: it's just a namespace for e `<Tab />` and `<TabContent />`.
+`<Tabs />` is a wrapper that is supposed to be used with `<Tabs.Button />` and `<Tabs.Content />`. It provides its children with the `<TabsContext />`.
 
 ### Example
 
