@@ -18,7 +18,7 @@ export interface ProductTemplateProps {
 
 function ProductTemplate({ title, subtitle, children, prevStep, progress, contentWidth = 6 }: ProductTemplateProps) {
   return (
-    <FlexContainer data-automation="ZA.ProductTemplate" className="mb-10">
+    <FlexContainer data-automation="ZA.ProductTemplate" className="mb-10 mt-8">
       <FlexRow>
         <FlexCol>
           <ProductTemplateHeader prevStep={prevStep} progress={progress} />

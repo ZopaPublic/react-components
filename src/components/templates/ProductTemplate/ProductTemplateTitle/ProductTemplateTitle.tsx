@@ -40,7 +40,7 @@ export function ProductTemplateTitle({
   return (
     <ProductTemplateTitleBackground data-automation={dataAutomation}>
       <ProductTemplateTitleContainer>
-        <ProductTemplateTitleInnerContainer className="pt-7 mx-6 m:mx-0">
+        <ProductTemplateTitleInnerContainer className="pt-9 mx-6 m:mx-0">
           {title && (
             <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center">
               {title}

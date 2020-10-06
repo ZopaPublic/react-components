@@ -7,7 +7,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2C3236;
+  color: #4A545E;
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
@@ -15,7 +15,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   text-align: inherit;
 }
 
-.c6 {
+.c7 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -23,7 +23,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   height: 4px;
 }
 
-.c9 {
+.c10 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -34,7 +34,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c9 > span {
+.c10 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -44,7 +44,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   color: #2C3236;
 }
 
-.c7 {
+.c8 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -58,7 +58,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -117,6 +117,10 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 }
 
 .c5 {
+  line-height: 0;
+}
+
+.c6 {
   max-width: 612px;
 }
 
@@ -152,8 +156,8 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
-          color="inherit"
+          class="svg-inline--fa fa-chevron-left fa-w-10 fa-xs mr-2"
+          color="#4A545E"
           data-icon="chevron-left"
           data-prefix="fas"
           focusable="false"
@@ -167,26 +171,27 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
           />
         </svg>
         <span
-          class="c4"
+          class="c4 c5"
+          color="#4A545E"
         >
           Back
         </span>
       </a>
     </div>
     <div
-      class="c5 mx-auto pt-1"
+      class="c6 mx-auto pt-1"
     >
       <div
-        class="c6"
+        class="c7"
       >
-        <span
-          class="c7"
-        />
         <span
           class="c8"
         />
-        <div
+        <span
           class="c9"
+        />
+        <div
+          class="c10"
         />
       </div>
     </div>

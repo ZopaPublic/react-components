@@ -28,7 +28,7 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #2C3236;
+  color: #4A545E;
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
@@ -80,6 +80,10 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
   align-items: center;
 }
 
+.c4 {
+  line-height: 0;
+}
+
 @media (min-width:1280px) {
   .c0 {
     position: absolute;
@@ -103,8 +107,8 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="svg-inline--fa fa-chevron-left fa-w-10 mr-2"
-        color="inherit"
+        class="svg-inline--fa fa-chevron-left fa-w-10 fa-xs mr-2"
+        color="#4A545E"
         data-icon="chevron-left"
         data-prefix="fas"
         focusable="false"
@@ -118,7 +122,8 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
         />
       </svg>
       <span
-        class="c3"
+        class="c3 c4"
+        color="#4A545E"
       >
         Back
       </span>
