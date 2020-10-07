@@ -1,4 +1,4 @@
-import React, { useEffect, FC, ChangeEvent } from 'react';
+import React, { useEffect, FC, ChangeEvent, useCallback } from 'react';
 import { useTabsContext } from '../hooks/useTabsContext';
 import { useViewport } from '../../../../hooks/useViewport';
 import Dropdown from '../../../atoms/Dropdown/Dropdown';
@@ -19,8 +19,11 @@ const ButtonsContainer = styled.div`
 
 const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomation }) => {
   const { width = 0 } = useViewport();
-
   const { setActiveTab, activeTab } = useTabsContext();
+  const handleOnChange = useCallback(
+    () => (event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value),
+    [],
+  );
 
   useEffect(() => {
     defaultTab && setActiveTab(defaultTab);
@@ -29,12 +32,8 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomatio
   return (
     <>
       {tabButtons.length > 2 && width <= grid.breakpoints.s ? (
-        <Dropdown
-          data-automation={dataAutomation}
-          defaultValue={activeTab ?? defaultTab}
-          onChange={(event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value)}
-        >
-          {tabButtons.map((tabButton: TabButtonProps) => (
+        <Dropdown data-automation={dataAutomation} defaultValue={activeTab ?? defaultTab} onChange={handleOnChange}>
+          {tabButtons.map((tabButton) => (
             <DropdownOption key={tabButton.tabId} value={tabButton.tabId}>
               {tabButton.title}
             </DropdownOption>
@@ -42,7 +41,7 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomatio
         </Dropdown>
       ) : (
         <ButtonsContainer className="p-2">
-          {tabButtons.map((tabButton: TabButtonProps) => (
+          {tabButtons.map((tabButton) => (
             <TabButton
               data-automation={dataAutomation}
               key={tabButton.tabId}

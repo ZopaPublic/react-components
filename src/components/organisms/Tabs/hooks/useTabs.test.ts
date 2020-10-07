@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook, act } from '@testing-library/react-hooks';
 
 import { useTabs } from './useTabs';
 
@@ -21,5 +21,27 @@ describe('useTabs', () => {
 
     expect(button.id).toEqual(content['aria-labelledby']);
     expect(button['aria-controls']).toEqual(content['id']);
+  });
+
+  it('should change the activeTab on click', () => {
+    const { result } = renderHook(useTabs);
+
+    const { onClick: firstTabButtonClick } = result.current.getTabButtonHTMLProps('one');
+
+    expect(result.current.activeTab).toEqual('');
+
+    act(() => {
+      firstTabButtonClick();
+    });
+
+    expect(result.current.activeTab).toEqual('one');
+    const { onClick: secondTabButtonClick } = result.current.getTabButtonHTMLProps('two');
+    expect(result.current.activeTab).toEqual('one');
+
+    act(() => {
+      secondTabButtonClick();
+    });
+
+    expect(result.current.activeTab).toEqual('two');
   });
 });

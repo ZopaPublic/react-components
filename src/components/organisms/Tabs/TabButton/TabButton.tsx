@@ -10,8 +10,8 @@ export interface TabButtonProps extends ButtonProps {
 }
 
 interface StyledButtonProps {
-  activeTab: string;
-  tabId: string;
+  activetab: string;
+  tabid: string;
 }
 
 const StyledButton = styled(Button)<StyledButtonProps>`
@@ -30,8 +30,8 @@ const StyledButton = styled(Button)<StyledButtonProps>`
     }
   }
 
-  ${({ activeTab, tabId }) =>
-    activeTab === tabId &&
+  ${({ activetab, tabid }) =>
+    activetab === tabid &&
     css`
       background: ${colors.white};
       box-shadow: none;
@@ -47,7 +47,7 @@ const TabButton = ({ title, tabId }: TabButtonProps) => {
   const tabProps = getTabButtonHTMLProps(tabId);
 
   return (
-    <StyledButton activeTab={activeTab} tabId={tabId} styling="link" {...tabProps}>
+    <StyledButton activetab={activeTab} tabid={tabId} styling="link" {...tabProps}>
       {title}
     </StyledButton>
   );

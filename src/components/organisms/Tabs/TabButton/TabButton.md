@@ -1,3 +1,3 @@
 ### Summary
 
-`<TabsButton />` is rendered on wider screens and smaller scrrens if there's up to two tabs.
+`<TabsButton />` is rendered on wider screens and smaller screens if there are < 2 tabs.
