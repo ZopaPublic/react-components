@@ -1,25 +1,55 @@
-import React, { useEffect } from 'react';
-import Button from '../../../atoms/Button/Button';
+import React from 'react';
+import Button, { ButtonProps } from '../../../atoms/Button/Button';
 import { useTabsContext } from '../hooks/useTabsContext';
+import styled, { css } from 'styled-components';
+import { colors } from '../../../../constants';
 
-export interface TabButtonProps {
+export interface TabButtonProps extends ButtonProps {
   title: string;
   tabId: string;
-  isDefaultTab?: boolean;
 }
 
-const TabButton = ({ title, tabId, isDefaultTab = false }: TabButtonProps) => {
-  const { activeTab, getTabButtonHTMLProps, setActiveTab } = useTabsContext();
+interface StyledButtonProps {
+  activeTab: string;
+  tabId: string;
+}
+
+const StyledButton = styled(Button)<StyledButtonProps>`
+  border-radius: 4px;
+  box-shadow: inset 0 12px ${colors.greyLightest}, inset 0 -12px ${colors.greyLightest}, inset 1px 0 ${colors.greyLight};
+
+  &:first-child {
+    box-shadow: none;
+  }
+
+  &:hover,
+  :focus {
+    box-shadow: none;
+    & + button {
+      box-shadow: none;
+    }
+  }
+
+  ${({ activeTab, tabId }) =>
+    activeTab === tabId &&
+    css`
+      background: ${colors.white};
+      box-shadow: none;
+
+      & + button {
+        box-shadow: none;
+      }
+    `}
+`;
+
+const TabButton = ({ title, tabId }: TabButtonProps) => {
+  const { activeTab, getTabButtonHTMLProps } = useTabsContext();
   const tabProps = getTabButtonHTMLProps(tabId);
 
-  useEffect(() => {
-    isDefaultTab && setActiveTab(tabId);
-  }, []);
-
   return (
-    <Button styling={activeTab === tabId ? 'secondary' : 'primary'} {...tabProps}>
+    <StyledButton activeTab={activeTab} tabId={tabId} styling="link" {...tabProps}>
       {title}
-    </Button>
+    </StyledButton>
   );
 };
 

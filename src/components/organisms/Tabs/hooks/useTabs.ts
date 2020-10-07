@@ -36,7 +36,7 @@ export const useTabs = () => {
   const getTabContentProps: GetTabContentProps = (tabId) => ({
     'aria-hidden': tabId !== activeTab,
     'aria-labelledby': tabId,
-    id: tabId,
+    id: `${tabId}-content`,
     key: tabId,
     role: 'region',
   });

@@ -1,9 +1,176 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Tabs /> renders the component with no a11y violations 1`] = `
+exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
+.c4 {
+  display: none;
+}
+
+.c4[id="pineapple-content"] {
+  display: block;
+}
+
+.c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c1:hover:not(:disabled) {
+  background: #EAEBFA;
+}
+
+.c1:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c1:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+.c2 {
+  border-radius: 4px;
+  box-shadow: inset 0 12px #F7F7F7,inset 0 -12px #F7F7F7,inset 1px 0 #D4D7D9;
+  background: #FFFFFF;
+  box-shadow: none;
+}
+
+.c2:first-child {
+  box-shadow: none;
+}
+
+.c2:hover,
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover + button,
+.c2:focus + button {
+  box-shadow: none;
+}
+
+.c2 + button {
+  box-shadow: none;
+}
+
+.c3 {
+  border-radius: 4px;
+  box-shadow: inset 0 12px #F7F7F7,inset 0 -12px #F7F7F7,inset 1px 0 #D4D7D9;
+}
+
+.c3:first-child {
+  box-shadow: none;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover + button,
+.c3:focus + button {
+  box-shadow: none;
+}
+
+.c0 {
+  background: #F7F7F7;
+}
+
 <div>
-  <span>
+  <div
+    class="c0 p-2"
+  >
+    <button
+      activetab="pineapple"
+      aria-controls="pineapple-content"
+      aria-expanded="true"
+      class="c1 c2"
+      id="pineapple"
+      styling="link"
+      tabid="pineapple"
+    >
+      🍍 Pineapple
+    </button>
+    <button
+      activetab="pineapple"
+      aria-controls="kiwi-content"
+      aria-expanded="false"
+      class="c1 c3"
+      id="kiwi"
+      styling="link"
+      tabid="kiwi"
+    >
+      🥝 Kiwi
+    </button>
+    <button
+      activetab="pineapple"
+      aria-controls="watermelon-content"
+      aria-expanded="false"
+      class="c1 c3"
+      id="watermelon"
+      styling="link"
+      tabid="watermelon"
+    >
+      🍉 Watermelon
+    </button>
+  </div>
+  <div
+    aria-hidden="false"
+    aria-labelledby="pineapple"
+    class="c4"
+    id="pineapple-content"
+    role="region"
+  >
     🍍
-  </span>
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="kiwi"
+    class="c4"
+    id="kiwi-content"
+    role="region"
+  >
+    🥝
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="watermelon"
+    class="c4"
+    id="watermelon-content"
+    role="region"
+  >
+    🍉
+  </div>
 </div>
 `;

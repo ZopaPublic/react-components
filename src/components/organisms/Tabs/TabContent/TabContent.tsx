@@ -12,7 +12,7 @@ interface TabContentStyleProps {
 }
 const ContentContainer = styled.div<TabContentStyleProps>`
   display: none;
-  &[id="${({ activeTab }) => activeTab}"]{
+  &[id="${({ activeTab }) => `${activeTab}-content`}"]{
     display: block;
   };
 `;

@@ -2,19 +2,25 @@ import React, { useEffect, FC, ChangeEvent } from 'react';
 import { useTabsContext } from '../hooks/useTabsContext';
 import { useViewport } from '../../../../hooks/useViewport';
 import Dropdown from '../../../atoms/Dropdown/Dropdown';
-import { grid } from '../../../../constants';
+import { grid, colors } from '../../../../constants';
 import TabButton, { TabButtonProps } from '../TabButton/TabButton';
 import { DropdownOption } from '../../../..';
+import styled from 'styled-components';
 
 interface TabButtonsProps {
   tabButtons: TabButtonProps[];
   defaultTab?: string;
+  dataAutomation?: string;
 }
 
-const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab }) => {
+const ButtonsContainer = styled.div`
+  background: ${colors.greyLightest};
+`;
+
+const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomation }) => {
   const { width = 0 } = useViewport();
 
-  const { setActiveTab } = useTabsContext();
+  const { setActiveTab, activeTab } = useTabsContext();
 
   useEffect(() => {
     defaultTab && setActiveTab(defaultTab);
@@ -24,7 +30,8 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab }) => {
     <>
       {tabButtons.length > 2 && width <= grid.breakpoints.s ? (
         <Dropdown
-          defaultValue={defaultTab}
+          data-automation={dataAutomation}
+          defaultValue={activeTab ?? defaultTab}
           onChange={(event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value)}
         >
           {tabButtons.map((tabButton: TabButtonProps) => (
@@ -34,9 +41,16 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab }) => {
           ))}
         </Dropdown>
       ) : (
-        tabButtons.map((tabButton: TabButtonProps) => (
-          <TabButton key={tabButton.tabId} tabId={tabButton.tabId} title={tabButton.title} />
-        ))
+        <ButtonsContainer className="p-2">
+          {tabButtons.map((tabButton: TabButtonProps) => (
+            <TabButton
+              data-automation={dataAutomation}
+              key={tabButton.tabId}
+              tabId={tabButton.tabId}
+              title={tabButton.title}
+            />
+          ))}
+        </ButtonsContainer>
       )}
     </>
   );

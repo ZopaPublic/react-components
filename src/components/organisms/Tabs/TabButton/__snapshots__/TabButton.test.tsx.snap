@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabButton /> renders the component with no a11y violations 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c0:hover:not(:disabled) {
+  background: #EAEBFA;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
+}
+
+.c0:active:not(:disabled) {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+.c1 {
+  border-radius: 4px;
+  box-shadow: inset 0 12px #F7F7F7,inset 0 -12px #F7F7F7,inset 1px 0 #D4D7D9;
+}
+
+.c1:first-child {
+  box-shadow: none;
+}
+
+.c1:hover,
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover + button,
+.c1:focus + button {
+  box-shadow: none;
+}
+
+<div>
+  <button
+    activetab=""
+    aria-controls="pineapple-content"
+    aria-expanded="false"
+    class="c0 c1"
+    id="pineapple"
+    styling="link"
+    tabid="pineapple"
+  >
+    🍍 Pineapple
+  </button>
+</div>
+`;

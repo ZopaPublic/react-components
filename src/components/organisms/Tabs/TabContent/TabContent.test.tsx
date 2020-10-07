@@ -1,24 +1,24 @@
-// import { axe } from 'jest-axe';
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import Tabs from './Tabs';
+import React from 'react';
+import { render } from '@testing-library/react';
+import { Tabs } from '../../../organisms/Tabs';
 
-describe('<Tabs />', () => {
-  it('renders the component with no a11y violations', async () => {
-    // const { container } = render(
-    //   <Tabs content="I prefer 🍕 over 🍰 ...">
-    //     <span>💁🏻‍♂️</span>
-    //   </Tabs>,
-    // );
-    // expect(container.firstChild).toMatchSnapshot();
-    // const results = await axe(container.innerHTML);
-    // expect(results).toHaveNoViolations();
+describe('<TabContent />', () => {
+  const tabButtons = [
+    { tabId: 'pineapple', title: '🍍 Pineapple' },
+    { tabId: 'kiwi', title: '🥝 Kiwi' },
+    { tabId: 'watermelon', title: '🍉 Watermelon' },
+  ];
+
+  it('renders the content of the active tab', () => {
+    const { getByText } = render(
+      <Tabs>
+        <Tabs.Buttons tabButtons={tabButtons} defaultTab="kiwi" />
+        <Tabs.Content contentFor="pineapple">🍍</Tabs.Content>
+        <Tabs.Content contentFor="kiwi">🥝</Tabs.Content>
+        <Tabs.Content contentFor="watermelon">🍉</Tabs.Content>
+      </Tabs>,
+    );
+
+    expect(getByText('🥝').getAttribute('aria-hidden')).toBe('false');
   });
-
-  // it('allows to set global styles', () => {
-  //   render(<Tabs.Styles />);
-
-  //   const [globalModalStyles] = getGlobalStyleTags();
-  //   expect(globalModalStyles).toMatchSnapshot();
-  // });
 });

@@ -1,25 +1,18 @@
-// import { axe } from 'jest-axe';
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import { getGlobalStyleTags } from '../../../helpers/test/styles';
-// import Tabs from './TabButton';
+import { axe } from 'jest-axe';
+import React from 'react';
+import { render } from '@testing-library/react';
+import TabButton from './TabButton';
+import { Tabs } from '../../../organisms/Tabs';
 
-describe('<Tabs />', () => {
+describe('<TabButton />', () => {
   it('renders the component with no a11y violations', async () => {
-    // const { container } = render(
-    //   <Tabs content="I prefer 🍕 over 🍰 ...">
-    //     <span>💁🏻‍♂️</span>
-    //   </Tabs>,
-    // );
-    // expect(container.firstChild).toMatchSnapshot();
-    // const results = await axe(container.innerHTML);
-    // expect(results).toHaveNoViolations();
+    const { container } = render(
+      <Tabs>
+        <TabButton tabId="pineapple" title="🍍 Pineapple" />
+      </Tabs>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
   });
-
-  // it('allows to set global styles', () => {
-  //   render(<Tabs.Styles />);
-
-  //   const [globalModalStyles] = getGlobalStyleTags();
-  //   expect(globalModalStyles).toMatchSnapshot();
-  // });
 });

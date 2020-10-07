@@ -1,25 +1,30 @@
-// import { axe } from 'jest-axe';
-// import React from 'react';
-// import { render } from '@testing-library/react';
-// import { getGlobalStyleTags } from '../../../helpers/test/styles';
-// import Tabs from './TabButton';
+import React from 'react';
+import { render } from '@testing-library/react';
+import { Tabs } from '../../../organisms/Tabs';
 
-describe('<Tabs />', () => {
-  it('renders the component with no a11y violations', async () => {
-    // const { container } = render(
-    //   <Tabs content="I prefer 🍕 over 🍰 ...">
-    //     <span>💁🏻‍♂️</span>
-    //   </Tabs>,
-    // );
-    // expect(container.firstChild).toMatchSnapshot();
-    // const results = await axe(container.innerHTML);
-    // expect(results).toHaveNoViolations();
+describe('<TabButtons />', () => {
+  const tabButtons = [
+    { tabId: 'pineapple', title: '🍍 Pineapple' },
+    { tabId: 'kiwi', title: '🥝 Kiwi' },
+    { tabId: 'watermelon', title: '🍉 Watermelon' },
+  ];
+
+  it('renders the buttons on big screens', async () => {
+    const { container } = render(
+      <Tabs>
+        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" />
+      </Tabs>,
+    );
+    expect(container).toMatchSnapshot();
   });
 
-  // it('allows to set global styles', () => {
-  //   render(<Tabs.Styles />);
-
-  //   const [globalModalStyles] = getGlobalStyleTags();
-  //   expect(globalModalStyles).toMatchSnapshot();
-  // });
+  it('renders the buttons on small screens', async () => {
+    Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 320 });
+    const { container } = render(
+      <Tabs>
+        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" />
+      </Tabs>,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });
