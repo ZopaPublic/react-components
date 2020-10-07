@@ -317,7 +317,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
     <>
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
         <Headroom
-          wrapperStyle={{ maxHeight: navbarClosedHeight }}
+          wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
           disable={open || !!(width && width >= breakpoints.desktop)}
         >
