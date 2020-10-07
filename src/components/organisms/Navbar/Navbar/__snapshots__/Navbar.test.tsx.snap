@@ -611,6 +611,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -1725,6 +1726,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -2832,6 +2834,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -3996,6 +3999,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
