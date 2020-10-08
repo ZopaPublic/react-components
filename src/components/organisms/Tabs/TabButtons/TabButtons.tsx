@@ -15,15 +15,14 @@ interface TabButtonsProps {
 
 const ButtonsContainer = styled.div`
   background: ${colors.greyLightest};
+  display: flex;
+  justify-content: space-evenly;
 `;
 
 const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomation }) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
-  const handleOnChange = useCallback(
-    () => (event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value),
-    [],
-  );
+  const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value), []);
 
   useEffect(() => {
     defaultTab && setActiveTab(defaultTab);
