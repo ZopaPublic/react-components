@@ -1,3 +1,11 @@
+### [4.23.6](https://github.com/zopaUK/react-components/compare/v4.23.5...v4.23.6) (2020-10-07)
+
+
+### Bug Fixes
+
+* **navbar:** force navbar to be no larger than 76px on desktop ([fcac253](https://github.com/zopaUK/react-components/commit/fcac2535495713c14642b08ad42850cb22956205))
+* **navbar:** set max height based on if they have scrolled or not ([1ab51a5](https://github.com/zopaUK/react-components/commit/1ab51a5d43b9263d8091263cefacf4efd86215d9))
+
 ### [4.23.5](https://github.com/zopaUK/react-components/compare/v4.23.4...v4.23.5) (2020-10-06)
 
 
