@@ -10,7 +10,7 @@ import styled from 'styled-components';
 interface TabButtonsProps {
   tabButtons: TabButtonProps[];
   defaultTab?: string;
-  dataAutomation?: string;
+  'data-automation'?: string;
 }
 
 const ButtonsContainer = styled.div`
@@ -19,7 +19,7 @@ const ButtonsContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, dataAutomation }) => {
+const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, 'data-automation': dataAutomation }) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
   const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value), []);
