@@ -1,11 +1,13 @@
 import React, { useEffect, FC, ChangeEvent, useCallback } from 'react';
-import { useTabsContext } from '../hooks/useTabsContext';
-import { useViewport } from '../../../../hooks/useViewport';
-import Dropdown from '../../../atoms/Dropdown/Dropdown';
-import { grid, colors } from '../../../../constants';
-import TabButton, { TabButtonProps } from '../TabButton/TabButton';
-import { DropdownOption } from '../../../..';
 import styled from 'styled-components';
+
+import { DropdownOption } from '../../../..';
+import { useViewport } from '../../../../hooks/useViewport';
+import { grid, colors } from '../../../../constants';
+import Dropdown from '../../../atoms/Dropdown/Dropdown';
+import FlexCol from '../../../layout/FlexCol/FlexCol';
+import { useTabsContext } from '../hooks/useTabsContext';
+import TabButton, { TabButtonProps } from '../TabButton/TabButton';
 
 interface TabButtonsProps {
   tabButtons: TabButtonProps[];
@@ -17,6 +19,10 @@ const ButtonsContainer = styled.div`
   background: ${colors.greyLightest};
   display: flex;
   justify-content: space-evenly;
+`;
+
+const StyledDropdown = styled(Dropdown)`
+  width: 100%;
 `;
 
 const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, 'data-automation': dataAutomation }) => {
@@ -31,22 +37,23 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, 'data-automat
   return (
     <>
       {tabButtons.length > 2 && width <= grid.breakpoints.s ? (
-        <Dropdown data-automation={dataAutomation} defaultValue={activeTab ?? defaultTab} onChange={handleOnChange}>
+        <StyledDropdown
+          data-automation={dataAutomation}
+          defaultValue={activeTab ?? defaultTab}
+          onChange={handleOnChange}
+        >
           {tabButtons.map((tabButton) => (
             <DropdownOption key={tabButton.tabId} value={tabButton.tabId}>
               {tabButton.title}
             </DropdownOption>
           ))}
-        </Dropdown>
+        </StyledDropdown>
       ) : (
         <ButtonsContainer className="p-2">
           {tabButtons.map((tabButton) => (
-            <TabButton
-              data-automation={dataAutomation}
-              key={tabButton.tabId}
-              tabId={tabButton.tabId}
-              title={tabButton.title}
-            />
+            <FlexCol m="fill" key={tabButton.tabId}>
+              <TabButton data-automation={dataAutomation} tabId={tabButton.tabId} title={tabButton.title} />
+            </FlexCol>
           ))}
         </ButtonsContainer>
       )}

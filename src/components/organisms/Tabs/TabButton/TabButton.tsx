@@ -1,8 +1,8 @@
 import React from 'react';
-import Button, { ButtonProps } from '../../../atoms/Button/Button';
-import { useTabsContext } from '../hooks/useTabsContext';
 import styled, { css } from 'styled-components';
 import { colors } from '../../../../constants';
+import Button, { ButtonProps } from '../../../atoms/Button/Button';
+import { useTabsContext } from '../hooks/useTabsContext';
 
 export interface TabButtonProps extends ButtonProps {
   title: string;
@@ -10,13 +10,14 @@ export interface TabButtonProps extends ButtonProps {
 }
 
 interface StyledButtonProps {
-  activetab: string;
-  tabid: string;
+  activeTab: string;
+  tabId: string;
 }
 
 const StyledButton = styled(Button)<StyledButtonProps>`
   box-shadow: inset 0 12px ${colors.greyLightest}, inset 0 -12px ${colors.greyLightest}, inset 1px 0 ${colors.greyLight};
   flex-grow: 1;
+  width: 100%;
 
   &:first-child {
     box-shadow: none;
@@ -30,8 +31,8 @@ const StyledButton = styled(Button)<StyledButtonProps>`
     }
   }
 
-  ${({ activetab, tabid }) =>
-    activetab === tabid &&
+  ${({ activeTab, tabId }) =>
+    activeTab === tabId &&
     css`
       background: ${colors.white};
       box-shadow: none;
@@ -47,7 +48,7 @@ const TabButton = ({ title, tabId }: TabButtonProps) => {
   const tabProps = getTabButtonHTMLProps(tabId);
 
   return (
-    <StyledButton activetab={activeTab} tabid={tabId} styling="link" {...tabProps}>
+    <StyledButton activeTab={activeTab} tabId={tabId} styling="link" {...tabProps}>
       {title}
     </StyledButton>
   );
