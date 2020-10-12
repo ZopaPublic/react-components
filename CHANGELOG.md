@@ -1,3 +1,12 @@
+### [4.24.1](https://github.com/zopaUK/react-components/compare/v4.24.0...v4.24.1) (2020-10-12)
+
+
+### Bug Fixes
+
+* **button:** supress unknown prop warnings ([9d3d43a](https://github.com/zopaUK/react-components/commit/9d3d43a31a4104472d908ae800de0a7b4c2a75f2))
+* **tabbutton:** fix tab button height ([3b223d0](https://github.com/zopaUK/react-components/commit/3b223d0f4d23a800647921c8f694b16869b04f5d))
+* **tabs:** allow HTMLDivElement props to be set ([b13de76](https://github.com/zopaUK/react-components/commit/b13de764024fb6883c2d2fd60860b0fa9e053d41))
+
 ## [4.24.0](https://github.com/zopaUK/react-components/compare/v4.23.6...v4.24.0) (2020-10-12)
 
 
