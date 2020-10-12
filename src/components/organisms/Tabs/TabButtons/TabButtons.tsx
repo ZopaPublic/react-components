@@ -1,5 +1,6 @@
 import React, { useEffect, FC, ChangeEvent, useCallback } from 'react';
 import styled from 'styled-components';
+import classnames from 'classnames';
 
 import { DropdownOption } from '../../../..';
 import { useViewport } from '../../../../hooks/useViewport';
@@ -9,7 +10,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { useTabsContext } from '../hooks/useTabsContext';
 import TabButton, { TabButtonProps } from '../TabButton/TabButton';
 
-interface TabButtonsProps {
+interface TabButtonsProps extends React.HTMLAttributes<HTMLDivElement> {
   tabButtons: TabButtonProps[];
   defaultTab?: string;
   'data-automation'?: string;
@@ -25,7 +26,13 @@ const StyledDropdown = styled(Dropdown)`
   width: 100%;
 `;
 
-const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, 'data-automation': dataAutomation }) => {
+const TabButtons: FC<TabButtonsProps> = ({
+  tabButtons,
+  defaultTab,
+  'data-automation': dataAutomation,
+  className,
+  ...rest
+}) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
   const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value), []);
@@ -37,19 +44,21 @@ const TabButtons: FC<TabButtonsProps> = ({ tabButtons, defaultTab, 'data-automat
   return (
     <>
       {tabButtons.length > 2 && width <= grid.breakpoints.s ? (
-        <StyledDropdown
-          data-automation={dataAutomation}
-          defaultValue={activeTab ?? defaultTab}
-          onChange={handleOnChange}
-        >
-          {tabButtons.map((tabButton) => (
-            <DropdownOption key={tabButton.tabId} value={tabButton.tabId}>
-              {tabButton.title}
-            </DropdownOption>
-          ))}
-        </StyledDropdown>
+        <div {...rest}>
+          <StyledDropdown
+            data-automation={dataAutomation}
+            defaultValue={activeTab ?? defaultTab}
+            onChange={handleOnChange}
+          >
+            {tabButtons.map((tabButton) => (
+              <DropdownOption key={tabButton.tabId} value={tabButton.tabId}>
+                {tabButton.title}
+              </DropdownOption>
+            ))}
+          </StyledDropdown>
+        </div>
       ) : (
-        <ButtonsContainer className="p-2">
+        <ButtonsContainer className={classnames('p-2', className || '')} {...rest}>
           {tabButtons.map((tabButton) => (
             <FlexCol m="fill" key={tabButton.tabId}>
               <TabButton data-automation={dataAutomation} tabId={tabButton.tabId} title={tabButton.title} />

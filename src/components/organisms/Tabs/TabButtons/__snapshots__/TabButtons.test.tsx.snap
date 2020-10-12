@@ -143,19 +143,16 @@ exports[`<TabButtons /> renders the buttons on big screens 1`] = `
 <div>
   <div>
     <div
-      class="c0 p-2"
+      class="c0 p-2 test-classname"
     >
       <div
         class="c1"
       >
         <button
-          activetab="pineapple"
           aria-controls="pineapple-content"
           aria-expanded="true"
-          class="c2 c3"
+          class="c2 c3 sc-cLQEGU c3"
           id="pineapple"
-          styling="link"
-          tabid="pineapple"
         >
           🍍 Pineapple
         </button>
@@ -164,13 +161,10 @@ exports[`<TabButtons /> renders the buttons on big screens 1`] = `
         class="c1"
       >
         <button
-          activetab="pineapple"
           aria-controls="kiwi-content"
           aria-expanded="false"
-          class="c2 c4"
+          class="c2 c4 sc-cLQEGU c4"
           id="kiwi"
-          styling="link"
-          tabid="kiwi"
         >
           🥝 Kiwi
         </button>
@@ -179,13 +173,10 @@ exports[`<TabButtons /> renders the buttons on big screens 1`] = `
         class="c1"
       >
         <button
-          activetab="pineapple"
           aria-controls="watermelon-content"
           aria-expanded="false"
-          class="c2 c4"
+          class="c2 c4 sc-cLQEGU c4"
           id="watermelon"
-          styling="link"
-          tabid="watermelon"
         >
           🍉 Watermelon
         </button>
@@ -243,28 +234,30 @@ exports[`<TabButtons /> renders the buttons on small screens 1`] = `
 
 <div>
   <div>
-    <select
-      class="c0 c1"
-    >
-      <option
-        class=""
-        value="pineapple"
+    <div>
+      <select
+        class="c0 c1"
       >
-        🍍 Pineapple
-      </option>
-      <option
-        class=""
-        value="kiwi"
-      >
-        🥝 Kiwi
-      </option>
-      <option
-        class=""
-        value="watermelon"
-      >
-        🍉 Watermelon
-      </option>
-    </select>
+        <option
+          class=""
+          value="pineapple"
+        >
+          🍍 Pineapple
+        </option>
+        <option
+          class=""
+          value="kiwi"
+        >
+          🥝 Kiwi
+        </option>
+        <option
+          class=""
+          value="watermelon"
+        >
+          🍉 Watermelon
+        </option>
+      </select>
+    </div>
   </div>
 </div>
 `;
