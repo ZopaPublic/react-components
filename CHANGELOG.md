@@ -1,3 +1,24 @@
+## [4.24.0](https://github.com/zopaUK/react-components/compare/v4.23.6...v4.24.0) (2020-10-12)
+
+
+### Features
+
+* **tabs:** add a tab component ([ab92a59](https://github.com/zopaUK/react-components/commit/ab92a59c26eac3623720734942701e5773ff8c2c))
+
+
+### Bug Fixes
+
+* **tabs:** add docs ([36a231d](https://github.com/zopaUK/react-components/commit/36a231d1ddde9c2450093e5f9e25173a7ed602cb))
+* **tabs:** add styles ([287590f](https://github.com/zopaUK/react-components/commit/287590f4119a7b049fea1c75d84685cc41065e3f))
+* **tabs:** change buttons to dropdown on small screens ([f507da9](https://github.com/zopaUK/react-components/commit/f507da9012d5a8cd6311bbe45c66bf1dae1bbd9f))
+* **tabs:** comment out tests ([23f957b](https://github.com/zopaUK/react-components/commit/23f957b32bd90f5dc0bb0d059a3f2dc317ee5a49))
+* **tabs:** fix comments ([5600081](https://github.com/zopaUK/react-components/commit/560008143429adc417497b7a39e38094cbeee838))
+* **tabs:** fix PR comment ([0dbe9c1](https://github.com/zopaUK/react-components/commit/0dbe9c1a21775908cd40dc4f49c038fbfb0e1e35))
+* **tabs:** make organism instead of molecule ([6bb1779](https://github.com/zopaUK/react-components/commit/6bb1779cb46bee537fc6c947ecc5a6a2dcbc7795))
+* **tabs:** make tab buttons full width ([05303cb](https://github.com/zopaUK/react-components/commit/05303cb8890a85f273caa67a2ed922bddc0f8df3))
+* **tabs:** update styling ([9056f09](https://github.com/zopaUK/react-components/commit/9056f09c8b5aa0997aff339d89def25fb06056ca))
+* **tabs:** update tests ([71913dc](https://github.com/zopaUK/react-components/commit/71913dcee6d740aa5c008391648e4d092c0f83e9))
+
 ### [4.23.6](https://github.com/zopaUK/react-components/compare/v4.23.5...v4.23.6) (2020-10-07)
 
 
