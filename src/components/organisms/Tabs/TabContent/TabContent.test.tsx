@@ -13,9 +13,15 @@ describe('<TabContent />', () => {
     const { getByText } = render(
       <Tabs>
         <Tabs.Buttons tabButtons={tabButtons} defaultTab="kiwi" />
-        <Tabs.Content contentFor="pineapple">🍍</Tabs.Content>
-        <Tabs.Content contentFor="kiwi">🥝</Tabs.Content>
-        <Tabs.Content contentFor="watermelon">🍉</Tabs.Content>
+        <Tabs.Content contentFor="pineapple" className="test-classname">
+          🍍
+        </Tabs.Content>
+        <Tabs.Content contentFor="kiwi" className="test-classname">
+          🥝
+        </Tabs.Content>
+        <Tabs.Content contentFor="watermelon" className="test-classname">
+          🍉
+        </Tabs.Content>
       </Tabs>,
     );
 

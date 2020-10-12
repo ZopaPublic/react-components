@@ -12,7 +12,7 @@ describe('<TabButtons />', () => {
   it('renders the buttons on big screens', async () => {
     const { container } = render(
       <Tabs>
-        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" />
+        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" className="test-classname" />
       </Tabs>,
     );
     expect(container).toMatchSnapshot();
@@ -22,7 +22,7 @@ describe('<TabButtons />', () => {
     Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 320 });
     const { container } = render(
       <Tabs>
-        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" />
+        <Tabs.Buttons tabButtons={tabButtons} defaultTab="pineapple" className="test-classname" />
       </Tabs>,
     );
     expect(container).toMatchSnapshot();

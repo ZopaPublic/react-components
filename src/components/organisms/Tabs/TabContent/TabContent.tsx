@@ -2,7 +2,7 @@ import React, { ReactNode, FC } from 'react';
 import styled from 'styled-components';
 import { useTabsContext } from '../hooks/useTabsContext';
 
-interface TabContentProps {
+interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   contentFor: string;
 }
@@ -17,11 +17,11 @@ const ContentContainer = styled.div<TabContentStyleProps>`
   };
 `;
 
-const TabContent: FC<TabContentProps> = ({ children, contentFor }) => {
+const TabContent: FC<TabContentProps> = ({ children, contentFor, ...rest }) => {
   const { activeTab, getTabContentProps } = useTabsContext();
   const contentProps = getTabContentProps(contentFor);
   return (
-    <ContentContainer activeTab={activeTab} {...contentProps}>
+    <ContentContainer activeTab={activeTab} {...contentProps} {...rest}>
       {children}
     </ContentContainer>
   );

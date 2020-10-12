@@ -14,7 +14,7 @@ interface StyledButtonProps {
   tabId: string;
 }
 
-const StyledButton = styled(Button)<StyledButtonProps>`
+const StyledButton = styled(Button).attrs({ className: 'py-2' })<StyledButtonProps>`
   box-shadow: inset 0 12px ${colors.greyLightest}, inset 0 -12px ${colors.greyLightest}, inset 1px 0 ${colors.greyLight};
   flex-grow: 1;
   width: 100%;
