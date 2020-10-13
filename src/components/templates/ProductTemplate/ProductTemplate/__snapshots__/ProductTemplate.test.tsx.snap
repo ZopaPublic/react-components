@@ -83,7 +83,6 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 .c16 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
-  border-radius: 12px;
 }
 
 .c17 {
@@ -214,8 +213,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 .c0 {
   width: 100%;
   max-width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -322,6 +321,12 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   }
 }
 
+@media (min-width:1280px) {
+  .c16 {
+    border-radius: 12px;
+  }
+}
+
 @media (min-width:576px) {
   .c0 {
     max-width: 540px;
@@ -378,7 +383,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 
 <div>
   <div
-    class="c0 mb-10 mt-8"
+    class="c0 mb-10 m:mt-8 mt-4"
     data-automation="ZA.ProductTemplate"
   >
     <div
@@ -391,7 +396,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
         cols="12"
       >
         <div
-          class="c3 mb-4"
+          class="c3 mx-4 mb-4 xl:mx-0"
           data-automation="ZA.ProductTemplateHeader"
         >
           <div
@@ -460,7 +465,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             class="c17 px-0 m:px-4"
           >
             <div
-              class="c18 pt-9 mx-6 m:mx-0"
+              class="c18 pt-7 m:pt-9 mx-6 m:mx-0"
             >
               <h1
                 class="c19"

@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import classnames from 'classnames';
 
 import { ProgressProps } from '../../../molecules/Progress/Progress';
 import { ProductTemplateTitle } from '../ProductTemplateTitle/ProductTemplateTitle';
@@ -17,8 +18,12 @@ export interface ProductTemplateProps {
 }
 
 function ProductTemplate({ title, subtitle, children, prevStep, progress, contentWidth = 6 }: ProductTemplateProps) {
+  const containerClassnames = classnames('mb-10 m:mt-8', {
+    'mt-6': !prevStep,
+    'mt-4': prevStep,
+  });
   return (
-    <FlexContainer data-automation="ZA.ProductTemplate" className="mb-10 mt-8">
+    <FlexContainer data-automation="ZA.ProductTemplate" className={containerClassnames} gutter={0}>
       <FlexRow>
         <FlexCol>
           <ProductTemplateHeader prevStep={prevStep} progress={progress} />
