@@ -393,11 +393,11 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
     style="width: 20px; height: 20px;"
   >
     <svg
-      height="260"
+      height="2"
       preserveAspectRatio="xMidYMid slice"
       style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-      viewBox="0 0 260 260"
-      width="260"
+      viewBox="0 0 2 2"
+      width="2"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
@@ -405,8 +405,8 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
           id="__lottie_element_20"
         >
           <rect
-            height="260"
-            width="260"
+            height="2"
+            width="2"
             x="0"
             y="0"
           />
@@ -426,7 +426,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
           clip-path="url(#__lottie_element_22)"
           opacity="1"
           style="display: block;"
-          transform="matrix(1,0,0,1,-17,-23)"
+          transform="matrix(0.007692307699471712,0,0,0.007692307699471712,-0.1307692527770996,-0.17692309617996216)"
         >
           <g
             opacity="1"
@@ -440,7 +440,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
               <path
                 d=" M90.5,0 C90.5,1.909000039100647 90.44100189208984,3.803999900817871 90.3239974975586,5.684000015258789"
                 fill-opacity="0"
-                stroke="rgb(0,217,197)"
+                stroke="rgb(59,70,196)"
                 stroke-linecap="round"
                 stroke-linejoin="miter"
                 stroke-miterlimit="10"
@@ -552,11 +552,11 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
     style="width: 20px; height: 20px;"
   >
     <svg
-      height="260"
+      height="2"
       preserveAspectRatio="xMidYMid slice"
       style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
-      viewBox="0 0 260 260"
-      width="260"
+      viewBox="0 0 2 2"
+      width="2"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
@@ -564,8 +564,8 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
           id="__lottie_element_38"
         >
           <rect
-            height="260"
-            width="260"
+            height="2"
+            width="2"
             x="0"
             y="0"
           />
@@ -585,7 +585,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
           clip-path="url(#__lottie_element_40)"
           opacity="1"
           style="display: block;"
-          transform="matrix(1,0,0,1,-17,-23)"
+          transform="matrix(0.007692307699471712,0,0,0.007692307699471712,-0.1307692527770996,-0.17692309617996216)"
         >
           <g
             opacity="1"
@@ -599,7 +599,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
               <path
                 d=" M90.5,0 C90.5,1.909000039100647 90.44100189208984,3.803999900817871 90.3239974975586,5.684000015258789"
                 fill-opacity="0"
-                stroke="rgb(0,217,197)"
+                stroke="rgb(59,70,196)"
                 stroke-linecap="round"
                 stroke-linejoin="miter"
                 stroke-miterlimit="10"

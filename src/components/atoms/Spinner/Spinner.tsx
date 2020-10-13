@@ -1,7 +1,10 @@
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
-import spinnerAnimation from './Spinner.json';
+import primarySpinnerAnimation from './SpinnerPrimary.json';
+import secondarySpinnerAnimation from './SpinnerSecondary.json';
 import negativeSpinnerAnimation from './SpinnerNegative.json';
+
+export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
 export interface SpinnerProps {
   /**
@@ -10,11 +13,17 @@ export interface SpinnerProps {
    */
   size?: 'standard' | 'small';
   /**
-   * Adjusts colour to display on top of dark background
-   * @default false
+   * Determines the styling of the spinner
+   * @default 'primary'
    */
-  negative?: boolean;
+  styling?: SpinnerStyling;
 }
+
+const animationData: Record<SpinnerStyling, object> = {
+  primary: primarySpinnerAnimation,
+  secondary: secondarySpinnerAnimation,
+  negative: negativeSpinnerAnimation,
+};
 
 const defaultOptions = {
   loop: true,
@@ -27,7 +36,7 @@ const defaultOptions = {
 const Spinner: React.FC<SpinnerProps> = (props) => {
   const spinnerOptions = {
     ...defaultOptions,
-    animationData: props.negative ? negativeSpinnerAnimation : spinnerAnimation,
+    animationData: animationData[props.styling || 'primary'],
   };
 
   const size = props.size === 'small' ? '20px' : '40px';
