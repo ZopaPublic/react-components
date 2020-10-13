@@ -1,6 +1,7 @@
 import React from 'react';
-import styled, { css, keyframes } from 'styled-components';
-import { colors } from '../../../constants';
+import { Lottie } from '@crello/react-lottie';
+import spinnerAnimation from './Spinner.json';
+import negativeSpinnerAnimation from './SpinnerNegative.json';
 
 export interface SpinnerProps {
   /**
@@ -15,28 +16,23 @@ export interface SpinnerProps {
   negative?: boolean;
 }
 
-const spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+};
 
-const StyledSpinner = styled.div<SpinnerProps>`
-  ${({ size = 'standard', negative = false }) => css`
-    min-width: ${size === 'small' ? 20 : 40}px;
-    min-height: ${size === 'small' ? 20 : 40}px;
-    width: ${size === 'small' ? 20 : 40}px;
-    height: ${size === 'small' ? 20 : 40}px;
-    border: ${size === 'small' ? 3 : 6}px solid ${negative ? colors.white : colors.brand}};
-  `}
-  border-radius: 50%;
-  border-top-color: transparent;
-  animation: ${spin} 1.2s linear infinite;
-`;
+const Spinner: React.FC<SpinnerProps> = (props) => {
+  const spinnerOptions = {
+    ...defaultOptions,
+    animationData: props.negative ? negativeSpinnerAnimation : spinnerAnimation,
+  };
 
-const Spinner: React.FC<SpinnerProps> = (props) => <StyledSpinner {...props} />;
+  const size = props.size === 'small' ? '20px' : '40px';
+
+  return <Lottie config={spinnerOptions} height={size} width={size} />;
+};
 
 export default Spinner;

@@ -177,22 +177,6 @@ exports[`<Button /> renders disabled 1`] = `
 `;
 
 exports[`<Button /> renders loading as "primary" 1`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -247,8 +231,105 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   disabled=""
 >
   <div
-    class="c1 c2"
-  />
+    style="width: 20px; height: 20px;"
+  >
+    <svg
+      height="260"
+      preserveAspectRatio="xMidYMid slice"
+      style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+      viewBox="0 0 260 260"
+      width="260"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clippath
+          id="__lottie_element_2"
+        >
+          <rect
+            height="260"
+            width="260"
+            x="0"
+            y="0"
+          />
+        </clippath>
+        <clippath
+          id="__lottie_element_4"
+        >
+          <path
+            d="M0,0 L300,0 L300,300 L0,300z"
+          />
+        </clippath>
+      </defs>
+      <g
+        clip-path="url(#__lottie_element_2)"
+      >
+        <g
+          clip-path="url(#__lottie_element_4)"
+          opacity="1"
+          style="display: block;"
+          transform="matrix(1,0,0,1,-17,-23)"
+        >
+          <g
+            opacity="1"
+            style="display: block;"
+            transform="matrix(0,-1,1,0,-8,302)"
+          >
+            <g
+              opacity="1"
+              transform="matrix(1,0,0,1,147,155)"
+            >
+              <path
+                d=" M90.5,0 C90.5,1.909000039100647 90.44100189208984,3.803999900817871 90.3239974975586,5.684000015258789"
+                fill-opacity="0"
+                stroke="rgb(255,255,255)"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-opacity="1"
+                stroke-width="32"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
    
     
   Loading
@@ -256,23 +337,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 1`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -326,8 +390,105 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   disabled=""
 >
   <div
-    class="c1 c2"
-  />
+    style="width: 20px; height: 20px;"
+  >
+    <svg
+      height="260"
+      preserveAspectRatio="xMidYMid slice"
+      style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+      viewBox="0 0 260 260"
+      width="260"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clippath
+          id="__lottie_element_20"
+        >
+          <rect
+            height="260"
+            width="260"
+            x="0"
+            y="0"
+          />
+        </clippath>
+        <clippath
+          id="__lottie_element_22"
+        >
+          <path
+            d="M0,0 L300,0 L300,300 L0,300z"
+          />
+        </clippath>
+      </defs>
+      <g
+        clip-path="url(#__lottie_element_20)"
+      >
+        <g
+          clip-path="url(#__lottie_element_22)"
+          opacity="1"
+          style="display: block;"
+          transform="matrix(1,0,0,1,-17,-23)"
+        >
+          <g
+            opacity="1"
+            style="display: block;"
+            transform="matrix(0,-1,1,0,-8,302)"
+          >
+            <g
+              opacity="1"
+              transform="matrix(1,0,0,1,147,155)"
+            >
+              <path
+                d=" M90.5,0 C90.5,1.909000039100647 90.44100189208984,3.803999900817871 90.3239974975586,5.684000015258789"
+                fill-opacity="0"
+                stroke="rgb(0,217,197)"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-opacity="1"
+                stroke-width="32"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
    
     
   Waiting
@@ -335,23 +496,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 2`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -405,8 +549,105 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   disabled=""
 >
   <div
-    class="c1 c2"
-  />
+    style="width: 20px; height: 20px;"
+  >
+    <svg
+      height="260"
+      preserveAspectRatio="xMidYMid slice"
+      style="width: 100%; height: 100%; transform: translate3d(0,0,0);"
+      viewBox="0 0 260 260"
+      width="260"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clippath
+          id="__lottie_element_38"
+        >
+          <rect
+            height="260"
+            width="260"
+            x="0"
+            y="0"
+          />
+        </clippath>
+        <clippath
+          id="__lottie_element_40"
+        >
+          <path
+            d="M0,0 L300,0 L300,300 L0,300z"
+          />
+        </clippath>
+      </defs>
+      <g
+        clip-path="url(#__lottie_element_38)"
+      >
+        <g
+          clip-path="url(#__lottie_element_40)"
+          opacity="1"
+          style="display: block;"
+          transform="matrix(1,0,0,1,-17,-23)"
+        >
+          <g
+            opacity="1"
+            style="display: block;"
+            transform="matrix(0,-1,1,0,-8,302)"
+          >
+            <g
+              opacity="1"
+              transform="matrix(1,0,0,1,147,155)"
+            >
+              <path
+                d=" M90.5,0 C90.5,1.909000039100647 90.44100189208984,3.803999900817871 90.3239974975586,5.684000015258789"
+                fill-opacity="0"
+                stroke="rgb(0,217,197)"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-opacity="1"
+                stroke-width="32"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+          <g
+            style="display: none;"
+          >
+            <g>
+              <path
+                fill-opacity="0"
+                stroke-linecap="round"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+              />
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
    
     
   Waiting
