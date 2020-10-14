@@ -1,3 +1,11 @@
+## [4.25.0](https://github.com/zopaUK/react-components/compare/v4.24.2...v4.25.0) (2020-10-14)
+
+
+### Features
+
+* **footer:** tests update ([4009c0d](https://github.com/zopaUK/react-components/commit/4009c0d4d251eb60349aad43e9d4265a3c254228))
+* **footer:** update footer link ([5c36aa7](https://github.com/zopaUK/react-components/commit/5c36aa757657963524359ee70bbe676663f8885e))
+
 ### [4.24.2](https://github.com/zopaUK/react-components/compare/v4.24.1...v4.24.2) (2020-10-14)
 
 
