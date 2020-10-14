@@ -129,7 +129,7 @@ const NumberText: React.FC<NumberTextProps> = ({
         numberFontSize={numberFontSize}
         semiBold={semiBold}
       >
-        {value !== undefined && value >= 0 ? numberFormatter(value) : fallback}
+        {value !== undefined ? numberFormatter(value) : fallback}
       </Value>
     </Container>
   );
