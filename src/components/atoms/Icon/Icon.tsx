@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
 interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
   variant: IconDefinition;
