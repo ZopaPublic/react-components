@@ -68,6 +68,12 @@ describe('<NumberText />', () => {
     expect(screen.getByText(value)).toHaveTextContent('0');
   });
 
+  it('renders the value when it is negative', () => {
+    const value = '-10';
+    render(<NumberText title="Overall Balance" value={-10} className="mb-6 m:mb-7" />);
+    expect(screen.getByText(value)).toHaveTextContent('-10');
+  });
+
   it('should render the number with semiBold', () => {
     const value = '100,000';
     renderComponent({ numberPosition: 'top', semiBold: true });
