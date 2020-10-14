@@ -144,6 +144,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
 .c7:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c7:disabled:not(:checked) + label {
@@ -412,6 +413,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
 .c7:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c7:disabled:not(:checked) + label {
@@ -489,6 +491,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
         >
           <input
             class="c7"
+            data-automation="ZA.test-0"
             id="radio-id-one"
             type="radio"
             value="one"
@@ -514,6 +517,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
         >
           <input
             class="c7"
+            data-automation="ZA.test-1"
             id="radio-id-two"
             type="radio"
             value="two"

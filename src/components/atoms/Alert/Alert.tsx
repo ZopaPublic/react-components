@@ -12,9 +12,10 @@ import { colors, typography } from '../../../constants';
 
 type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
-interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
   inline?: boolean;
+  hasRoundedCorners?: boolean;
   /**
    * if present it shows the "x" icon
    */
@@ -64,7 +65,7 @@ const MAP_BY_SEVERITY: AlertElementsBySeverity = {
   },
 };
 
-const Wrapper = styled.div<{ severity: Severity; inline: boolean }>`
+const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
   padding: 8px 16px 8px 16px;
@@ -74,6 +75,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean }>`
   line-height: 20px;
   font-family: ${typography.primary};
   font-weight: 400;
+  border-radius: ${({ hasRoundedCorners }) => (hasRoundedCorners ? 4 : 0)}px;
 
   a {
     color: ${({ severity }) => MAP_BY_SEVERITY[severity].text} !important;
@@ -104,11 +106,18 @@ const CrossIcon = styled(Icon)`
   top: 10px;
 `;
 
-const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, onRequestClose, children, ...rest }) => {
+const Alert: FC<AlertProps> = ({
+  severity = 'info',
+  inline = false,
+  onRequestClose,
+  children,
+  hasRoundedCorners = false,
+  ...rest
+}) => {
   const { component: Icon, text } = MAP_BY_SEVERITY[severity];
 
   return (
-    <Wrapper severity={severity} inline={inline} {...rest}>
+    <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest}>
       <IconWrapper severity={severity}>
         <Icon />
         {onRequestClose && (
@@ -116,7 +125,7 @@ const Alert: FC<AlertProps> = ({ severity = 'info', inline = false, onRequestClo
             onClick={onRequestClose}
             color={text}
             variant={faTimes}
-            data-testid="ZA.alert-cross-icon"
+            data-automation="ZA.alert-cross-icon"
             size="xs"
           />
         )}

@@ -52,6 +52,9 @@ import { Text } from '@zopauk/react-components';
   <Text weight="bold" as="p">
     Bold
   </Text>
+  <Text weight="semiBold" as="p">
+    SemiBold
+  </Text>
 </Fragment>;
 ```
 

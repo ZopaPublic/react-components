@@ -316,7 +316,11 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   return (
     <>
       <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
-        <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
+        <Headroom
+          wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
+          disableInlineStyles
+          disable={open || !!(width && width >= breakpoints.desktop)}
+        >
           <LargeDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
               <LogoContainer overlap={overThreshold || collapsed}>
@@ -332,7 +336,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           <SmallDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
               {links ? (
-                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
                   <Icon
                     variant={faBars}
                     color={open ? colors.brand : colors.white}

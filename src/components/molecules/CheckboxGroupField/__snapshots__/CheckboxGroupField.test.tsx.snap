@@ -137,6 +137,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
 .c6:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c6:disabled:not(:checked) + label {
@@ -372,6 +373,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
 .c6:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c6:disabled:not(:checked) + label {
@@ -448,6 +450,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
         >
           <input
             class="c6"
+            data-automation="ZA.test-0"
             id="checkbox-id-option"
             name="option"
             type="checkbox"

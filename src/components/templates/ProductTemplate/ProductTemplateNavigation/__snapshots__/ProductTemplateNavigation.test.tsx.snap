@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductTemplateNavigation /> renders with a component prevStep 1`] = `
+@media (min-width:1280px) {
+  .c0 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+<div>
+  <div
+    class="c0 my-4 l:mt-0"
+    data-automation="ZA.ProductTemplateNavigation"
+  >
+    A custom component
+  </div>
+</div>
+`;
+
+exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
+.c3 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #4A545E;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c1 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c1:hover,
+.c1:active {
+  color: #21247F;
+}
+
+.c1:hover svg path,
+.c1:active svg path {
+  fill: #21247F;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  line-height: 0;
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+<div>
+  <div
+    class="c0 my-4 l:mt-0"
+    data-automation="ZA.ProductTemplateNavigation"
+  >
+    <a
+      aria-label="Back"
+      class="c1 c2"
+      color="#3B46C4"
+      href="/prevStep"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-chevron-left fa-w-10 fa-xs mr-2"
+        color="#4A545E"
+        data-icon="chevron-left"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 320 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c3 c4"
+        color="#4A545E"
+      >
+        Back
+      </span>
+    </a>
+  </div>
+</div>
+`;

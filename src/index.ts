@@ -32,6 +32,7 @@ export { default as InputLabel } from './components/atoms/InputLabel/InputLabel'
 export { default as InputRange } from './components/atoms/InputRange/InputRange';
 export { default as InputText } from './components/atoms/InputText/InputText';
 export { default as Text } from './components/atoms/Text/Text';
+export { default as List } from './components/atoms/List';
 export { default as Heading } from './components/atoms/Heading/Heading';
 export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
 export { default as Legend } from './components/atoms/Legend/Legend';
@@ -41,7 +42,7 @@ export { default as Logo } from './components/atoms/Logo/Logo';
 export { default as Modal } from './components/molecules/Modal/Modal';
 export { default as ExpiryModal } from './components/molecules/ExpiryModal/ExpiryModal';
 export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFooter';
-export { default as Help } from './components/molecules/Help/Help';
+export { default as Help, HelpLine } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as CheckboxGroupField } from './components/molecules/CheckboxGroupField/CheckboxGroupField';
@@ -49,12 +50,18 @@ export { default as RadioField } from './components/molecules/RadioField/RadioFi
 export { default as RadioGroupField } from './components/molecules/RadioGroupField/RadioGroupField';
 export { default as TextField } from './components/molecules/TextField/TextField';
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
-
+export { default as Banner } from './components/molecules/Banner/Banner';
+export { default as Notification } from './components/molecules/Notification/Notification';
+export { default as NumberText } from './components/molecules/NumberText/NumberText';
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
 export { default as Navbar, navbarLinkStyles } from './components/organisms/Navbar/';
 export { default as Card } from './components/organisms/Card';
+export * from './components/organisms/Tabs';
+
+// Templates
+export { default as ProductTemplate } from './components/templates/ProductTemplate';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
