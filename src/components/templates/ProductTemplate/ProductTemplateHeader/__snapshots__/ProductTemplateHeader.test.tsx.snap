@@ -121,7 +121,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 }
 
 .c6 {
-  max-width: 612px;
+  max-width: 525px;
 }
 
 .c0 {
@@ -129,7 +129,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   min-height: 30px;
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c1 {
     position: absolute;
     top: 0;
@@ -139,13 +139,19 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   }
 }
 
+@media (min-width:992px) {
+  .c6 {
+    max-width: 612px;
+  }
+}
+
 <div>
   <div
     class="c0 mx-4 mb-6 m:mx-0"
     data-automation="ZA.ProductTemplateHeader"
   >
     <div
-      class="c1 my-4 l:mt-0"
+      class="c1 my-4 m:mt-0"
       data-automation="ZA.ProductTemplateNavigation"
     >
       <a
@@ -258,12 +264,18 @@ exports[`<ProductTemplateHeader /> renders with some props 1`] = `
 }
 
 .c1 {
-  max-width: 612px;
+  max-width: 525px;
 }
 
 .c0 {
   position: relative;
   min-height: 30px;
+}
+
+@media (min-width:992px) {
+  .c1 {
+    max-width: 612px;
+  }
 }
 
 <div>

@@ -18,7 +18,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Wrapper = styled.div`
-  @media (min-width: ${grid.breakpoints.l}px) {
+  @media (min-width: ${grid.breakpoints.m}px) {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -33,7 +33,7 @@ const BackText = styled(Text).attrs({ color: colors.greyDark })`
 
 export function ProductTemplateNavigation({ prevStep }: ProductTemplateNavigationProps) {
   return (
-    <Wrapper className="my-4 l:mt-0" data-automation="ZA.ProductTemplateNavigation">
+    <Wrapper className="my-4 m:mt-0" data-automation="ZA.ProductTemplateNavigation">
       {typeof prevStep === 'string' ? (
         <StyledLink href={prevStep} aria-label="Back">
           <Icon variant={faChevronLeft} color={colors.greyDark} size="xs" className="mr-2" />

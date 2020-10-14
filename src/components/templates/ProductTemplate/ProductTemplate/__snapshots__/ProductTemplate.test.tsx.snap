@@ -305,7 +305,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c9 {
-  max-width: 612px;
+  max-width: 525px;
 }
 
 .c3 {
@@ -371,13 +371,19 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   }
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
   .c4 {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+  }
+}
+
+@media (min-width:992px) {
+  .c9 {
+    max-width: 612px;
   }
 }
 
@@ -400,7 +406,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
           data-automation="ZA.ProductTemplateHeader"
         >
           <div
-            class="c4 my-4 l:mt-0"
+            class="c4 my-4 m:mt-0"
             data-automation="ZA.ProductTemplateNavigation"
           >
             <a

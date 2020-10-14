@@ -3,12 +3,18 @@ import styled from 'styled-components';
 
 import Progress, { ProgressProps } from '../../../molecules/Progress/Progress';
 
+import { grid } from '../../../../constants';
+
 interface ProductTemplateProgressProps {
   progress: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
 }
 
 const ProgressContainer = styled.div.attrs({ className: 'mx-auto pt-1' })`
-  max-width: 612px;
+  max-width: 525px;
+
+  @media (min-width: ${grid.breakpoints.l}px) {
+    max-width: 612px;
+  }
 `;
 
 export function ProductTemplateProgress({ progress }: ProductTemplateProgressProps) {
