@@ -1,3 +1,10 @@
+### [4.24.2](https://github.com/zopaUK/react-components/compare/v4.24.1...v4.24.2) (2020-10-14)
+
+
+### Bug Fixes
+
+* **number text:** handle negative numbers ([70b7dd0](https://github.com/zopaUK/react-components/commit/70b7dd042c5addbab24cc6fd0292c187e7d30bd1))
+
 ### [4.24.1](https://github.com/zopaUK/react-components/compare/v4.24.0...v4.24.1) (2020-10-12)
 
 
