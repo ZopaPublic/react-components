@@ -129,7 +129,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   min-height: 30px;
 }
 
-@media (min-width:1280px) {
+@media (min-width:992px) {
   .c1 {
     position: absolute;
     top: 0;
@@ -141,7 +141,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 
 <div>
   <div
-    class="c0 mx-4 mb-4 xl:mx-0"
+    class="c0 mx-4 mb-6 m:mx-0"
     data-automation="ZA.ProductTemplateHeader"
   >
     <div
@@ -268,7 +268,7 @@ exports[`<ProductTemplateHeader /> renders with some props 1`] = `
 
 <div>
   <div
-    class="c0 mx-4 mb-4 xl:mx-0"
+    class="c0 mx-4 mb-6 m:mx-0"
     data-automation="ZA.ProductTemplateHeader"
   >
     <div

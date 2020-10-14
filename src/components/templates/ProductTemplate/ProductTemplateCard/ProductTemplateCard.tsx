@@ -1,9 +1,8 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import classnames from 'classnames';
 
-import { maxMedia } from '../../../../helpers/responsiveness';
-import { colors } from '../../../../constants';
+import { colors, grid } from '../../../../constants';
 import Card from '../../../organisms/Card/Card/Card';
 
 interface ProductTemplateCardProps {
@@ -12,13 +11,11 @@ interface ProductTemplateCardProps {
 }
 
 const StyledCard = styled(Card)`
-  ${maxMedia.phone`
-    ${css`
-      border-radius: 0;
-      box-shadow: 0 0 1px 0 ${colors.greyLight}, 0 0 -1px 0 ${colors.greyLighter};
-      border: none;
-    `}
-  `}
+  @media (max-width: ${grid.breakpoints.m}px) {
+    border-radius: 0;
+    box-shadow: 0 0 1px 0 ${colors.greyLight}, 0 0 -1px 0 ${colors.greyLighter};
+    border: none;
+  }
 `;
 
 export function ProductTemplateCard({ children, className }: ProductTemplateCardProps) {

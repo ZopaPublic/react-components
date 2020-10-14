@@ -313,7 +313,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   min-height: 30px;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
   .c23 {
     border-radius: 0;
     box-shadow: 0 0 1px 0 #D4D7D9,0 0 -1px 0 #EFEFEF;
@@ -371,7 +371,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:992px) {
   .c4 {
     position: absolute;
     top: 0;
@@ -396,7 +396,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
         cols="12"
       >
         <div
-          class="c3 mx-4 mb-4 xl:mx-0"
+          class="c3 mx-4 mb-6 m:mx-0"
           data-automation="ZA.ProductTemplateHeader"
         >
           <div

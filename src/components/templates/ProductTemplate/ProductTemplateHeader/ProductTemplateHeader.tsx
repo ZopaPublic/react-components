@@ -17,7 +17,7 @@ const ProductTemplateHeaderContainer = styled.div`
 
 export function ProductTemplateHeader({ prevStep, progress }: ProductTemplateHeaderProps) {
   return (
-    <ProductTemplateHeaderContainer className="mx-4 mb-4 xl:mx-0" data-automation="ZA.ProductTemplateHeader">
+    <ProductTemplateHeaderContainer className="mx-4 mb-6 m:mx-0" data-automation="ZA.ProductTemplateHeader">
       {prevStep && <ProductTemplateNavigation prevStep={prevStep} />}
       {progress && <ProductTemplateProgress progress={progress} />}
     </ProductTemplateHeaderContainer>

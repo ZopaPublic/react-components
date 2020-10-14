@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductTemplateNavigation /> renders with a component prevStep 1`] = `
-@media (min-width:1280px) {
+@media (min-width:992px) {
   .c0 {
     position: absolute;
     top: 0;
@@ -84,7 +84,7 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
   line-height: 0;
 }
 
-@media (min-width:1280px) {
+@media (min-width:992px) {
   .c0 {
     position: absolute;
     top: 0;
