@@ -1,3 +1,10 @@
+## [4.26.0](https://github.com/zopaUK/react-components/compare/v4.25.0...v4.26.0) (2020-10-14)
+
+
+### Features
+
+* **icon:** fix icon typings ([cfea2d5](https://github.com/zopaUK/react-components/commit/cfea2d590ab3f0b37203f36458f4ec49c790b3e2))
+
 ## [4.25.0](https://github.com/zopaUK/react-components/compare/v4.24.2...v4.25.0) (2020-10-14)
 
 
