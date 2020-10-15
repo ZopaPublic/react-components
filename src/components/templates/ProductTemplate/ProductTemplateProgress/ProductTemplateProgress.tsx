@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Progress, { ProgressProps } from '../../../molecules/Progress/Progress';
-
 import { grid } from '../../../../constants';
 
 interface ProductTemplateProgressProps {
