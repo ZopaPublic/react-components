@@ -1,3 +1,10 @@
+### [4.26.2](https://github.com/zopaUK/react-components/compare/v4.26.1...v4.26.2) (2020-10-15)
+
+
+### Bug Fixes
+
+* **numbertext:** add titleClassName prop ([ff37e33](https://github.com/zopaUK/react-components/commit/ff37e33f7250e78e4abeeb280ad248fcf64f772c))
+
 ### [4.26.1](https://github.com/zopaUK/react-components/compare/v4.26.0...v4.26.1) (2020-10-15)
 
 
