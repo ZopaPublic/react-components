@@ -18,7 +18,6 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
 .c0 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
-  border-radius: 12px;
 }
 
 .c1 {
@@ -30,6 +29,12 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
   padding-bottom: 195px;
 }
 
+@media (min-width:1280px) {
+  .c0 {
+    border-radius: 12px;
+  }
+}
+
 <div>
   <header
     class="c0"
@@ -39,7 +44,7 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
       class="c1 px-0 m:px-4"
     >
       <div
-        class="c2 pt-9 mx-6 m:mx-0"
+        class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
           class="c3"
@@ -70,7 +75,6 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
 .c0 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
-  border-radius: 12px;
 }
 
 .c1 {
@@ -82,6 +86,12 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
   padding-bottom: 195px;
 }
 
+@media (min-width:1280px) {
+  .c0 {
+    border-radius: 12px;
+  }
+}
+
 <div>
   <header
     class="c0"
@@ -91,7 +101,7 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
       class="c1 px-0 m:px-4"
     >
       <div
-        class="c2 pt-9 mx-6 m:mx-0"
+        class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
           class="c3"
@@ -136,7 +146,6 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
 .c0 {
   background-color: #F7F7F7;
   margin-bottom: -160px;
-  border-radius: 12px;
 }
 
 .c1 {
@@ -148,6 +157,12 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
   padding-bottom: 195px;
 }
 
+@media (min-width:1280px) {
+  .c0 {
+    border-radius: 12px;
+  }
+}
+
 <div>
   <header
     class="c0"
@@ -157,7 +172,7 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
       class="c1 px-0 m:px-4"
     >
       <div
-        class="c2 pt-9 mx-6 m:mx-0"
+        class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
           class="c3"

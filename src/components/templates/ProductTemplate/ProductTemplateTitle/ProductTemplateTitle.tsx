@@ -1,11 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants/colors';
 import { useViewport } from '../../../../hooks/useViewport';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
+import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateTitleProps {
   title: string;
@@ -17,7 +18,11 @@ const ProductTemplateTitleBackground = styled.header`
   background-color: ${colors.greyLightest};
   /* Make the following element overlay the ProductTitle by 160px */
   margin-bottom: -160px;
-  border-radius: 12px;
+  ${minMedia.desktop`
+    ${css`
+      border-radius: 12px;
+    `}
+  `}
 `;
 
 const ProductTemplateTitleContainer = styled.div.attrs({
@@ -40,7 +45,7 @@ export function ProductTemplateTitle({
   return (
     <ProductTemplateTitleBackground data-automation={dataAutomation}>
       <ProductTemplateTitleContainer>
-        <ProductTemplateTitleInnerContainer className="pt-9 mx-6 m:mx-0">
+        <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
           {title && (
             <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center">
               {title}
