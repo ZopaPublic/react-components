@@ -316,8 +316,13 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 @media (max-width:768px) {
   .c23 {
     border-radius: 0;
-    box-shadow: 0 0 1px 0 #D4D7D9,0 0 -1px 0 #EFEFEF;
+    box-shadow: none;
     border: none;
+  }
+
+  .c23:last-of-type {
+    box-shadow: 0 0 1px 0 #D4D7D9;
+    border-bottom: 1px solid #EFEFEF;
   }
 }
 
