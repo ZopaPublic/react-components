@@ -27,11 +27,3 @@ import { Spinner } from '@zopauk/react-components';
 
 <Spinner styling="negative" />;
 ```
-
-Negative:
-
-```ts { "props": { "style": { "backgroundColor": "black", "border": "none" } } }
-import { Spinner } from '@zopauk/react-components';
-
-<Spinner negative />;
-```
