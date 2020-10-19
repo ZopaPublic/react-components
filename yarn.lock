@@ -5201,13 +5201,6 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
-deprecated-prop-type@^1.0.0:
-  version "1.0.0"
-  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/deprecated-prop-type/-/deprecated-prop-type-1.0.0.tgz#eb364a453e72179973548296f930a727568b26a8"
-  integrity sha1-6zZKRT5yF5lzVIKW+TCnJ1aLJqg=
-  dependencies:
-    warning "4.0.1"
-
 deprecation@^2.0.0, deprecation@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/deprecation/-/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
@@ -5429,6 +5422,11 @@ dot-case@^3.0.3:
   dependencies:
     no-case "^3.0.3"
     tslib "^1.10.0"
+
+dot-env@^0.0.1:
+  version "0.0.1"
+  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/dot-env/-/dot-env-0.0.1.tgz#e4434cb8c69143e445bc28a729437e4fabd88c80"
+  integrity sha1-5ENMuMaRQ+RFvCinKUN+T6vYjIA=
 
 dot-prop@^3.0.0:
   version "3.0.0"
@@ -15729,13 +15727,6 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
-
-warning@4.0.1:
-  version "4.0.1"
-  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/warning/-/warning-4.0.1.tgz#66ce376b7fbfe8a887c22bdf0e7349d73d397745"
-  integrity sha1-Zs43a3+/6KiHwivfDnNJ1z05d0U=
-  dependencies:
-    loose-envify "^1.0.0"
 
 warning@^4.0.3:
   version "4.0.3"
