@@ -19,7 +19,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    * @default 'span'
    */
-  as?: 'span' | 'p';
+  as?: 'span' | 'p' | 'figcaption';
   /**
    * Whether to render the text in all caps or not.
    * @default false
