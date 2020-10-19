@@ -5,7 +5,7 @@ import { TCardLayout, TCardStyling } from './Card';
 import Card from '..';
 
 const layouts: TCardLayout[] = ['vertical', 'horizontal'];
-const stylings: TCardStyling[] = ['primary', 'secondary'];
+const stylings: TCardStyling[] = ['primary', 'secondary', 'brand'];
 
 describe('<Card />', () => {
   layouts.forEach((layout) => {

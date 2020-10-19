@@ -31,6 +31,7 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
   hideControl?: boolean;
+  'data-automation'?: string;
 }
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
@@ -46,6 +47,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   flexRowProps = {},
   flexColProps = {},
   hideControl,
+  'data-automation': dataAutomation,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -81,7 +83,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
     <Fieldset className={className}>
       <Legend>{label}</Legend>
       <FlexRow {...flexRowProps}>
-        {items.map((item) => {
+        {items.map((item, index) => {
           const checked = value ? !!value[item.name] : !!innerValue[item.name];
           return (
             <FlexCol {...flexColProps} key={item.name.toString()}>
@@ -95,6 +97,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
                   checked={checked}
                   isValid={checked && isValid}
                   hideControl={hideControl}
+                  data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
                 />
               </CheckboxWrapper>
             </FlexCol>

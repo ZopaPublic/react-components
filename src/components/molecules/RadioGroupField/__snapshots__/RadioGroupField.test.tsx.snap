@@ -491,6 +491,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
         >
           <input
             class="c7"
+            data-automation="ZA.test-0"
             id="radio-id-one"
             type="radio"
             value="one"
@@ -516,6 +517,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
         >
           <input
             class="c7"
+            data-automation="ZA.test-1"
             id="radio-id-two"
             type="radio"
             value="two"

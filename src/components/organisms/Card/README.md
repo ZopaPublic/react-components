@@ -222,17 +222,83 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-com
     <FlexCol xs={4}>
       <Card>
         <Card.Content>
-          <Card.Heading>Primary card</Card.Heading>
+          <Card.Heading>Secondary card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
       </Card>
     </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Vertical brand card
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
+
+<FlexContainer>
+  <FlexRow>
     <FlexCol xs={4}>
-      <Card>
+      <Card styling="brand">
         <Card.Content>
-          <Card.Heading>Secondary card</Card.Heading>
+          <Card.Heading>Brand card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
         </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Horizontal action card with single line item
+
+`<Card.LineItem />` should be rendered outside of `<Card.Content />`
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
+import Icon from '../../atoms/Icon/Icon.tsx';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="action" layout="horizontal">
+        <Card.Content>
+          <Card.Heading>Card with line item</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+        <Card.LineItem>
+          <Icon variant={faChevronRight} color={colors.grey} />
+        </Card.LineItem>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
+- Horizontal action card with two line items
+
+`<Card.LineItem />` should be rendered outside of `<Card.Content />`
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-components';
+import Icon from '../../atoms/Icon/Icon.tsx';
+import { faPiggyBank, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={6}>
+      <Card styling="action" layout="horizontal">
+        <Card.LineItem>
+          <Icon variant={faPiggyBank} color={colors.brand} size="2x" className="ml-4" />
+        </Card.LineItem>
+        <Card.Content className="py-6 pl-1">
+          <Card.Heading className="mb-1">Card with additional line item</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramel piggy.</Card.Text>
+        </Card.Content>
+        <Card.LineItem>
+          <Icon variant={faChevronRight} color={colors.grey} />
+        </Card.LineItem>
       </Card>
     </FlexCol>
   </FlexRow>

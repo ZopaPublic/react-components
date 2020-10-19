@@ -167,8 +167,14 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 15px;
 }
 
+.c8 > .c19 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 .c9 {
-  background-color: white;
+  background-color: transparent;
   padding: 16px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -380,7 +386,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <p
                   class="c14 c15"
                 >
-                  Monday to Thursday (8am to 8pm), Friday (8am to 5pm)
+                  Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)
                 </p>
               </div>
             </div>

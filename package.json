@@ -28,19 +28,20 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit --types node,jest",
-    "deploy-web": "gh-pages -d styleguide -u \"Zopa Ltd. <frontend-opensource@zopa.com>\" -m \"[ci skip] - circleci\"",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippyjs/react": "^4.1.0",
+    "@types/classnames": "^2.2.10",
     "@types/react-headroom": "^2.2.1",
     "@types/react-modal": "^3.10.6",
     "@types/util-deprecate": "^1.0.0",
+    "classnames": "^2.2.6",
     "core-js": "^3.6.5",
     "downshift": "^5.4.7",
-    "formik": "^2.1.5",
+    "formik": "^2.2.0",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
@@ -87,7 +88,6 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.3",
-    "gh-pages": "2.2.0",
     "husky": "4.2.5",
     "jest-axe": "3.3.0",
     "jest-environment-jsdom-sixteen": "1.0.3",
@@ -107,7 +107,8 @@
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
     "typescript": "3.9.6",
-    "webpack": "4.42.0"
+    "webpack": "4.42.0",
+    "webpack-dev-server": "3.11.0"
   },
   "browserslist": [
     "cover 95% in GB",
@@ -146,6 +147,6 @@
   },
   "engines": {
     "node": ">=12.0.0",
-    "pnpm": ">=3"
+    "pnpm": ">=5"
   }
 }

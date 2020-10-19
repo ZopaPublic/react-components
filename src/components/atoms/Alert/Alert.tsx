@@ -75,7 +75,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorn
   line-height: 20px;
   font-family: ${typography.primary};
   font-weight: 400;
-  border-radius: ${({ hasRoundedCorners }) => (hasRoundedCorners ? 12 : 0)}px;
+  border-radius: ${({ hasRoundedCorners }) => (hasRoundedCorners ? 4 : 0)}px;
 
   a {
     color: ${({ severity }) => MAP_BY_SEVERITY[severity].text} !important;
