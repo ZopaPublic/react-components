@@ -1195,13 +1195,6 @@
   dependencies:
     find-up "^4.0.0"
 
-"@crello/react-lottie@^0.0.9":
-  version "0.0.9"
-  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/@crello/react-lottie/-/react-lottie-0.0.9.tgz#919567c8e06a7e0d12029f33b4fec2bdf2b7f6b4"
-  integrity sha1-kZVnyOBqfg0SAp8ztP7CvfK39rQ=
-  dependencies:
-    lottie-web "5.5.9"
-
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -5212,6 +5205,13 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+
+deprecated-prop-type@^1.0.0:
+  version "1.0.0"
+  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/deprecated-prop-type/-/deprecated-prop-type-1.0.0.tgz#eb364a453e72179973548296f930a727568b26a8"
+  integrity sha1-6zZKRT5yF5lzVIKW+TCnJ1aLJqg=
+  dependencies:
+    warning "4.0.1"
 
 deprecation@^2.0.0, deprecation@^2.3.1:
   version "2.3.1"
@@ -9708,11 +9708,6 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
-
-lottie-web@5.5.9:
-  version "5.5.9"
-  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/lottie-web/-/lottie-web-5.5.9.tgz#f8775e8c36dfada428f9acea826ab674750419a8"
-  integrity sha1-+HdejDbfraQo+azqgmq2dHUEGag=
 
 loud-rejection@^1.0.0:
   version "1.6.0"
@@ -15754,6 +15749,13 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+warning@4.0.1:
+  version "4.0.1"
+  resolved "http://packages.dns.ad.zopa.com:80/artifactory/api/npm/npm-virtual/warning/-/warning-4.0.1.tgz#66ce376b7fbfe8a887c22bdf0e7349d73d397745"
+  integrity sha1-Zs43a3+/6KiHwivfDnNJ1z05d0U=
+  dependencies:
+    loose-envify "^1.0.0"
 
 warning@^4.0.3:
   version "4.0.3"

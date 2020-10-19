@@ -31,7 +31,6 @@
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
-    "@crello/react-lottie": "^0.0.9",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippy.js/react": "^3.1.1",
@@ -41,9 +40,9 @@
     "@types/util-deprecate": "^1.0.0",
     "classnames": "^2.2.6",
     "core-js": "^3.3.5",
+    "deprecated-prop-type": "^1.0.0",
     "downshift": "^5.2.7",
     "formik": "^2.1.4",
-    "jest-canvas-mock": "^2.3.0",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
     "react-modal": "^3.8.1",

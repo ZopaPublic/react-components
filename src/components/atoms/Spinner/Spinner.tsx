@@ -1,8 +1,8 @@
 import React from 'react';
-import { Lottie } from '@crello/react-lottie';
-import primarySpinnerAnimation from './SpinnerPrimary.json';
-import secondarySpinnerAnimation from './SpinnerSecondary.json';
-import negativeSpinnerAnimation from './SpinnerNegative.json';
+import brandSpinner from './spinner-brand.gif';
+import negativeSpinner from './spinner-negative.gif';
+import actionSpinner from './spinner-action.gif';
+import deprecated from 'deprecated-prop-type';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
@@ -17,31 +17,26 @@ export interface SpinnerProps {
    * @default 'primary'
    */
   styling?: SpinnerStyling;
+  /**
+   * Adjusts colour to display on top of dark background
+   * @default false
+   */
+  negative?: boolean;
 }
 
-const animationData: Record<SpinnerStyling, object> = {
-  primary: primarySpinnerAnimation,
-  secondary: secondarySpinnerAnimation,
-  negative: negativeSpinnerAnimation,
-};
-
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice',
-  },
+const animationData: Record<SpinnerStyling, string> = {
+  primary: brandSpinner,
+  secondary: actionSpinner,
+  negative: negativeSpinner,
 };
 
 const Spinner: React.FC<SpinnerProps> = (props) => {
-  const spinnerOptions = {
-    ...defaultOptions,
-    animationData: animationData[props.styling || 'primary'],
-  };
+  const spinner = props.negative ? negativeSpinner : animationData[props.styling || 'primary'];
+  deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
   const size = props.size === 'small' ? '20px' : '40px';
 
-  return <Lottie config={spinnerOptions} height={size} width={size} />;
+  return <img src={spinner} height={size} width={size} aria-label="loading spinner" />;
 };
 
 export default Spinner;
