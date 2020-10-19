@@ -1,3 +1,10 @@
+## [4.27.0](https://github.com/zopaUK/react-components/compare/v4.26.2...v4.27.0) (2020-10-19)
+
+
+### Features
+
+* **text:** as includes figcaption ([fa8e511](https://github.com/zopaUK/react-components/commit/fa8e5119c55b8d1947da8cc825c0947adce3b2d9))
+
 ### [4.26.2](https://github.com/zopaUK/react-components/compare/v4.26.1...v4.26.2) (2020-10-15)
 
 
