@@ -59,7 +59,13 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
 }
 
 .c0 {
-  max-width: 612px;
+  max-width: 525px;
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 612px;
+  }
 }
 
 <div>

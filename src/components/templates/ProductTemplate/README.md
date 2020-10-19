@@ -4,7 +4,7 @@
 
 ### Example
 
-```tsx
+```tsx { "props": { "style": {  "padding": "0" } } }
 import { ProductTemplate, Text } from '@zopauk/react-components';
 
 const ProductTemplateExample = () => (
