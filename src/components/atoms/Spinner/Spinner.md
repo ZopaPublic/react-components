@@ -4,7 +4,7 @@ Use `<Spinner />` whenever we need to notify the user that something is loading.
 
 ### Examples
 
-Default:
+Default test:
 
 ```ts
 import { Spinner } from '@zopauk/react-components';
