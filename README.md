@@ -16,7 +16,7 @@ This repo contains 2 things at the same time:
 
 - Documentation for the components managed with [React-styleguidist](https://react-styleguidist.js.org)
 
-[Check the docs 💕](https://zopauk.github.io/react-components/)
+[Check the docs 💕](https://zrc.netlify.app/)
 
 ### Migrating from version 3
 

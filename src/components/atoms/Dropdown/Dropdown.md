@@ -2,7 +2,7 @@
 
 `<Dropdown />` is a component extending the native HTML `<select />` element.
 
-`<DropdownOption />` extemds the native HTML `<option />` element.
+`<DropdownOption />` extends the native HTML `<option />` element.
 
 ### Examples
 

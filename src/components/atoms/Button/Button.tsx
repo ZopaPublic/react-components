@@ -95,7 +95,9 @@ const StyledSpinner = styled(Spinner)<Pick<ButtonProps, 'styling'>>`
   border-top-color: transparent;
 `;
 
-const ButtonWrapper = styled(({ loading, fullWidth, ...rest }: ButtonProps) => <button {...rest} />)`
+const ButtonWrapper = styled.button.attrs(({ loading, fullWidth, ...rest }: ButtonProps) => ({
+  ...rest,
+}))`
   ${buttonStyle}
 `;
 

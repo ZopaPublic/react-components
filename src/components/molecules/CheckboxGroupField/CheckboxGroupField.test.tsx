@@ -110,7 +110,12 @@ describe('<CheckboxGroupField />', () => {
 
   it('renders the component with props with no a11y violations', async () => {
     const { container } = render(
-      <CheckboxGroupField label="label" onChange={jest.fn()} items={[{ label: 'option', name: 'option' }]} />,
+      <CheckboxGroupField
+        label="label"
+        onChange={jest.fn()}
+        items={[{ label: 'option', name: 'option' }]}
+        data-automation="ZA.test"
+      />,
     );
     const results = await axe(container.innerHTML);
 

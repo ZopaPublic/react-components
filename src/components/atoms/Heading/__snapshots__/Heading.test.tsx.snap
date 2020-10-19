@@ -2,7 +2,7 @@
 
 exports[`<Heading /> it can render with a different HTML tag: h1 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
   -moz-letter-spacing: -1.25px;
@@ -170,7 +170,7 @@ exports[`<Heading /> renders display size as h2 at mobile 1`] = `
 
 exports[`<Heading /> renders without  a11y violations 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
   -moz-letter-spacing: -1.25px;
