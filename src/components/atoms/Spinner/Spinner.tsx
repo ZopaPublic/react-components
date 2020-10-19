@@ -31,9 +31,9 @@ const animationData: Record<SpinnerStyling, string> = {
 };
 
 const Spinner: React.FC<SpinnerProps> = (props) => {
-  const spinner = props.negative ? negativeSpinner : animationData[props.styling || 'primary'];
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
+  const spinner = props.negative ? negativeSpinner : animationData[props.styling || 'primary'];
   const size = props.size === 'small' ? '20px' : '40px';
 
   return <img src={spinner} height={size} width={size} aria-label="loading spinner" />;
