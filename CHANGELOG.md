@@ -1,3 +1,10 @@
+### [4.27.3](https://github.com/zopaUK/react-components/compare/v4.27.2...v4.27.3) (2020-10-20)
+
+
+### Bug Fixes
+
+* **button:** use disabled prop instead of css attribute ([ae438f8](https://github.com/zopaUK/react-components/commit/ae438f83c86c12cc17a5a2b4d7dcf9153cec173d))
+
 ### [4.27.2](https://github.com/zopaUK/react-components/compare/v4.27.1...v4.27.2) (2020-10-20)
 
 
