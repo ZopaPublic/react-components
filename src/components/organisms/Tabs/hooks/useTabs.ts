@@ -20,8 +20,6 @@ export interface TabContentProps {
 
 export type GetTabContentProps = (tabId: string) => TabContentProps;
 
-type ActiveTab = string | null;
-
 export const useTabs = () => {
   const [activeTab, setActiveTab] = useState<string>('');
 

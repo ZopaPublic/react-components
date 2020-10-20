@@ -4,7 +4,7 @@ import Link, { LinkProps } from '../../../atoms/Link/Link';
 import { Icon } from './Icon';
 import { spacing } from '../../../../constants';
 
-interface SocialLink extends LinkProps {
+export interface SocialLink extends LinkProps {
   variant: string;
 }
 

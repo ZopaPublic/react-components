@@ -16,7 +16,7 @@ module.exports = {
   rules: {
     // -- TYPESCRIPT
     '@typescript-eslint/camelcase': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/naming-convention': [
       'error',
       { selector: 'variableLike', format: ['camelCase', 'UPPER_CASE', 'StrictPascalCase'] },

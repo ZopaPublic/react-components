@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../../constants';
+import { colors } from '../../../../constants/colors';
 import Button, { ButtonProps } from '../../../atoms/Button/Button';
 import { useTabsContext } from '../hooks/useTabsContext';
 

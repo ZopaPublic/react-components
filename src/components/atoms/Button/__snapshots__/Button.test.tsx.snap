@@ -185,8 +185,8 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   border: 3px solid #FFFFFF;
   border-radius: 50%;
   border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
+  -webkit-animation: fvtopB 1.2s linear infinite;
+  animation: fvtopB 1.2s linear infinite;
 }
 
 .c2 {
@@ -264,8 +264,8 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   border: 3px solid #00D9C5;
   border-radius: 50%;
   border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
+  -webkit-animation: fvtopB 1.2s linear infinite;
+  animation: fvtopB 1.2s linear infinite;
 }
 
 .c2 {
@@ -343,8 +343,8 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   border: 3px solid #00D9C5;
   border-radius: 50%;
   border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
+  -webkit-animation: fvtopB 1.2s linear infinite;
+  animation: fvtopB 1.2s linear infinite;
 }
 
 .c2 {

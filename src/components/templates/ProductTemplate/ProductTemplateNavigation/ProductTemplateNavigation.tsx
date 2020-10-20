@@ -2,10 +2,11 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-import { Text } from '../../../..';
+import Text from '../../../../components/atoms/Text/Text';
 import Icon from '../../../atoms/Icon/Icon';
 import Link from '../../../atoms/Link/Link';
-import { colors, grid } from '../../../../constants';
+import { colors } from '../../../../constants/colors';
+import grid from '../../../../constants/grid';
 
 interface ProductTemplateNavigationProps {
   prevStep: string | ReactNode;

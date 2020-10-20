@@ -18,21 +18,21 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   flex-direction: column;
 }
 
-.c23 > .c24 {
+.c23 > .sc-bdnylx {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c23 .c25 {
+.c23 .sc-dlnjPT {
   font-size: 15px;
 }
 
-.c23 .c26 {
+.c23 .sc-hKFyIo {
   font-size: 13px;
 }
 
-.c23 > .c27 {
+.c23 > .sc-eCApGN {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -92,6 +92,54 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 
 .c18 {
   padding-bottom: 195px;
+}
+
+.c5 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c5:hover,
+.c5:active {
+  color: #21247F;
+}
+
+.c5:hover svg path,
+.c5:active svg path {
+  fill: #21247F;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  line-height: 0;
 }
 
 .c10 {
@@ -179,35 +227,13 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c5 {
-  background-color: transparent;
-  font-size: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  line-height: inherit;
-  color: #3B46C4;
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  border: none;
+.c9 {
+  max-width: 525px;
 }
 
-.c5:hover,
-.c5:active {
-  color: #21247F;
-}
-
-.c5:hover svg path,
-.c5:active svg path {
-  fill: #21247F;
+.c3 {
+  position: relative;
+  min-height: 30px;
 }
 
 .c0 {
@@ -287,40 +313,14 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
-.c6 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  line-height: 0;
-}
-
-.c9 {
-  max-width: 525px;
-}
-
-.c3 {
-  position: relative;
-  min-height: 30px;
-}
-
 @media (max-width:768px) {
-  .c23 {
+  .c24 {
     border-radius: 0;
     box-shadow: none;
     border: none;
   }
 
-  .c23:last-of-type {
+  .c24:last-of-type {
     box-shadow: 0 0 1px 0 #D4D7D9;
     border-bottom: 1px solid #EFEFEF;
   }
@@ -329,6 +329,22 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 @media (min-width:1280px) {
   .c16 {
     border-radius: 12px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width:992px) {
+  .c9 {
+    max-width: 612px;
   }
 }
 
@@ -373,22 +389,6 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
     -ms-flex: 0 0 83.33333333333334%;
     flex: 0 0 83.33333333333334%;
     max-width: 83.33333333333334%;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
-
-@media (min-width:992px) {
-  .c9 {
-    max-width: 612px;
   }
 }
 
@@ -501,7 +501,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             cols="12"
           >
             <div
-              class="c23 px-4 py-6 m:p-8"
+              class="c23 c24 px-4 py-6 m:p-8"
             >
               This is the body of the card
             </div>

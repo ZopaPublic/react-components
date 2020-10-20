@@ -15,6 +15,54 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   text-align: inherit;
 }
 
+.c2 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c2:hover,
+.c2:active {
+  color: #21247F;
+}
+
+.c2:hover svg path,
+.c2:active svg path {
+  fill: #21247F;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  line-height: 0;
+}
+
 .c7 {
   position: relative;
   width: 100%;
@@ -70,54 +118,6 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-}
-
-.c2 {
-  background-color: transparent;
-  font-size: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  line-height: inherit;
-  color: #3B46C4;
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  border: none;
-}
-
-.c2:hover,
-.c2:active {
-  color: #21247F;
-}
-
-.c2:hover svg path,
-.c2:active svg path {
-  fill: #21247F;
-}
-
-.c3 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  line-height: 0;
 }
 
 .c6 {

@@ -291,7 +291,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   transform: translateY(0%);
 }
 
-.c24 {
+.c25 {
   height: 64px;
 }
 
@@ -343,10 +343,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
 }
 
 .c23 {
+  background-color: transparent;
+}
+
+.c24 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -392,6 +395,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c13 {
     width: 100%;
@@ -418,10 +425,18 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c16 {
     width: 100%;
   }
+}
+
+@media (min-width:1280px) {
+
 }
 
 @media (min-width:1280px) {
@@ -540,7 +555,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c24 {
+  .c25 {
     height: 120px;
   }
 }
@@ -818,7 +833,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 </a>
               </div>
               <button
-                class="c17 c18 sc-dnqmqq c18"
+                class="c17 c18 sc-pNWxx c18"
               >
                 <div
                   class="c19"
@@ -854,7 +869,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
             class="c2"
           >
             <span
-              class="c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
             >
               <svg
@@ -905,7 +920,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               />
             </div>
             <button
-              class="c17 c18 sc-dnqmqq c18"
+              class="c17 c18 sc-pNWxx c18"
             >
               <div
                 class="c19"
@@ -932,7 +947,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               </svg>
             </button>
             <aside
-              class="c23"
+              class="c24"
               height="768"
             >
               <div
@@ -1107,7 +1122,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     </div>
   </header>
   <div
-    class="c24"
+    class="c25"
   />
 </div>
 `;
@@ -1404,7 +1419,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c24 {
+.c25 {
   height: 64px;
 }
 
@@ -1456,10 +1471,13 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
 }
 
 .c23 {
+  background-color: transparent;
+}
+
+.c24 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -1505,6 +1523,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c13 {
     width: 100%;
@@ -1531,10 +1553,18 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c16 {
     width: 100%;
   }
+}
+
+@media (min-width:1280px) {
+
 }
 
 @media (min-width:1280px) {
@@ -1653,7 +1683,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c24 {
+  .c25 {
     height: 120px;
   }
 }
@@ -1928,7 +1958,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 </a>
               </div>
               <button
-                class="c17 c18 sc-dnqmqq c18"
+                class="c17 c18 sc-pNWxx c18"
               >
                 <div
                   class="c19"
@@ -1964,7 +1994,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
             class="c2"
           >
             <span
-              class="c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
             >
               <svg
@@ -2012,7 +2042,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18 sc-dnqmqq c18"
+              class="c17 c18 sc-pNWxx c18"
             >
               <div
                 class="c19"
@@ -2039,7 +2069,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </button>
             <aside
-              class="c23"
+              class="c24"
               height="768"
             >
               <div
@@ -2214,7 +2244,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
     </div>
   </header>
   <div
-    class="c24"
+    class="c25"
   />
 </div>
 `;
@@ -2510,7 +2540,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c24 {
+.c25 {
   height: 64px;
 }
 
@@ -2562,10 +2592,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: transparent;
 }
 
 .c23 {
+  background-color: transparent;
+}
+
+.c24 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -2611,6 +2644,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c13 {
     width: 100%;
@@ -2637,10 +2674,18 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c16 {
     width: 100%;
   }
+}
+
+@media (min-width:1280px) {
+
 }
 
 @media (min-width:1280px) {
@@ -2759,7 +2804,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c24 {
+  .c25 {
     height: 120px;
   }
 }
@@ -3034,7 +3079,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 </a>
               </div>
               <button
-                class="c17 c18 sc-dnqmqq c18"
+                class="c17 c18 sc-pNWxx c18"
               >
                 <div
                   class="c19"
@@ -3070,7 +3115,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
             class="c2"
           >
             <span
-              class="c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
             >
               <svg
@@ -3118,7 +3163,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18 sc-dnqmqq c18"
+              class="c17 c18 sc-pNWxx c18"
             >
               <div
                 class="c19"
@@ -3145,7 +3190,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </button>
             <aside
-              class="c23"
+              class="c24"
               height="768"
             >
               <div
@@ -3320,22 +3365,22 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     </div>
   </header>
   <div
-    class="c24"
+    class="c25"
   />
 </div>
 `;
 
 exports[`<Navbar /> should render the collapsed styled on large device navigation with default props and collapsed set to true 1`] = `
-.c24 {
-  -webkit-transition: fill 0.3s ease;
-  transition: fill 0.3s ease;
-  fill: #FFFFFF;
-}
-
 .c4 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   fill: #00D9C5;
+}
+
+.c25 {
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+  fill: #FFFFFF;
 }
 
 .c7 {
@@ -3623,7 +3668,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateY(0%);
 }
 
-.c26 {
+.c27 {
   height: 64px;
 }
 
@@ -3645,20 +3690,6 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
-.c23 {
-  position: relative;
-}
-
-.c23 > a,
-.c23 > button,
-.c23 > div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 .c3 {
   position: relative;
 }
@@ -3666,6 +3697,20 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c3 > a,
 .c3 > button,
 .c3 > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.c24 {
+  position: relative;
+}
+
+.c24 > a,
+.c24 > button,
+.c24 > div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3689,10 +3734,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c23 {
   background-color: transparent;
 }
 
-.c25 {
+.c26 {
   position: fixed;
   right: 0;
   top: 64px;
@@ -3738,6 +3786,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c13 {
     width: 100%;
@@ -3764,10 +3816,18 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   }
 }
 
+@media (min-width:1280px) {
+
+}
+
 @media (max-width:1279px) {
   .c16 {
     width: 100%;
   }
+}
+
+@media (min-width:1280px) {
+
 }
 
 @media (min-width:1280px) {
@@ -3887,7 +3947,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c26 {
+  .c27 {
     height: 76px;
   }
 }
@@ -3895,41 +3955,6 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 @media (min-width:1280px) {
   .c2 {
     box-shadow: none;
-  }
-}
-
-@media (min-width:1280px) {
-  .c23 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 490px;
-    -webkit-transition: 0.3s min-height ease;
-    transition: 0.3s min-height ease;
-    min-height: 120px;
-    padding-left: 64px;
-  }
-}
-
-@media (min-width:1280px) {
-  .c23:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease;
-    background-image: url(nav-curve.svg);
-    background-repeat: no-repeat;
-    opacity: 1;
-    content: '';
-    z-index: -1;
   }
 }
 
@@ -3963,6 +3988,41 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     background-image: url(nav-curve.svg);
     background-repeat: no-repeat;
     opacity: 0;
+    content: '';
+    z-index: -1;
+  }
+}
+
+@media (min-width:1280px) {
+  .c24 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 490px;
+    -webkit-transition: 0.3s min-height ease;
+    transition: 0.3s min-height ease;
+    min-height: 120px;
+    padding-left: 64px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c24:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    background-image: url(nav-curve.svg);
+    background-repeat: no-repeat;
+    opacity: 1;
     content: '';
     z-index: -1;
   }
@@ -4197,7 +4257,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </a>
               </div>
               <button
-                class="c17 c18 sc-dnqmqq c18"
+                class="c17 c18 sc-pNWxx c18"
               >
                 <div
                   class="c19"
@@ -4233,7 +4293,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             class="c2"
           >
             <span
-              class="c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
             >
               <svg
@@ -4256,7 +4316,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </span>
             <div
-              class="c23"
+              class="c24"
             >
               <svg
                 aria-label="zopa logo"
@@ -4274,14 +4334,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </title>
                 <g>
                   <path
-                    class="c24"
+                    class="c25"
                     d="M77 .3C88.8.3 97 8 97.4 19.2c0 5.3-2 10.1-5.7 13.6a20.8 20.8 0 01-14.5 5.5c-5.7 0-10.9-2-14.6-5.5A18.7 18.7 0 0157 19.2c0-5.3 2-10.1 5.6-13.6A21 21 0 0177.1.3zm57.7 1c4.5 0 8.2 1.2 10.7 3.5 2.4 2.4 3.8 5.8 3.8 10 0 8.6-5.4 14-14.1 14l-.4.1h-6.2v8.5h-10.8V1.2h17zm-98 0v1.2c0 6.9-7 13.6-12 18.5-1.8 1.7-3.4 3.3-4.4 4.6l-.2.3-.6.7h17v10.7H0V36c0-6.8 6.3-13 11.4-18 2.1-2 4-3.7 5-5.2v-.2l.5-.7H1.2V1.2h35.4zM194.1 1L208 37.2h-11.3l-2.2-5.8h-15l-2.3 5.8H166l13.8-36.1h14.4zM77 10.6a8.5 8.5 0 00-8.6 8.6 8.6 8.6 0 1017.2 0 8.6 8.6 0 00-8.6-8.6zM187 11.7L182.7 23h8.6L187 11.7zm-52.3-1.1h-6.2v9.3h6.2c2.7 0 4.5-2 4.5-4.8 0-2.7-1.8-4.5-4.5-4.5z"
                   />
                 </g>
               </svg>
             </div>
             <button
-              class="c17 c18 sc-dnqmqq c18"
+              class="c17 c18 sc-pNWxx c18"
             >
               <div
                 class="c19"
@@ -4308,7 +4368,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </button>
             <aside
-              class="c25"
+              class="c26"
               height="768"
             >
               <div
@@ -4483,7 +4543,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     </div>
   </header>
   <div
-    class="c26"
+    class="c27"
   />
 </div>
 `;
