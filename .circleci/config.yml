@@ -10,6 +10,9 @@ commands:
   install-deps:
     steps:
       - checkout
+      - run:
+          name: Install pnpm
+          command: npm install -g pnpm
       - restore_cache:
           name: Restore Pnpm Package Cache
           keys:
