@@ -12,7 +12,7 @@ commands:
       - checkout
       - run:
           name: Install pnpm
-          command: npm install -g pnpm
+          command: npm install --prefix=$HOME/.local -g  pnpm
       - restore_cache:
           name: Restore Pnpm Package Cache
           keys:
