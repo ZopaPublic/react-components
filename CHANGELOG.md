@@ -1,3 +1,26 @@
+## [4.27.0](https://github.com/zopaUK/react-components/compare/v4.26.2...v4.27.0) (2020-10-19)
+
+
+### Features
+
+* **text:** as includes figcaption ([fa8e511](https://github.com/zopaUK/react-components/commit/fa8e5119c55b8d1947da8cc825c0947adce3b2d9))
+
+### [4.26.2](https://github.com/zopaUK/react-components/compare/v4.26.1...v4.26.2) (2020-10-15)
+
+
+### Bug Fixes
+
+* **numbertext:** add titleClassName prop ([ff37e33](https://github.com/zopaUK/react-components/commit/ff37e33f7250e78e4abeeb280ad248fcf64f772c))
+
+### [4.26.1](https://github.com/zopaUK/react-components/compare/v4.26.0...v4.26.1) (2020-10-15)
+
+
+### Bug Fixes
+
+* **product-template:** adjust spacing and styles ([a7ed25d](https://github.com/zopaUK/react-components/commit/a7ed25db5adfee6601e86d0d71a24ddeaf54af9b))
+* **product-template:** fix styles ([67fc28a](https://github.com/zopaUK/react-components/commit/67fc28a2c77599af90224c478383fa8f7dbe8a18))
+* **product-template:** fix styles ([cfab275](https://github.com/zopaUK/react-components/commit/cfab2757a7e3e814ca4181bfa6ed516c37ca9e18))
+
 ## [4.26.0](https://github.com/zopaUK/react-components/compare/v4.25.0...v4.26.0) (2020-10-14)
 
 
