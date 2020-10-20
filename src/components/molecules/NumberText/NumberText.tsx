@@ -48,6 +48,7 @@ export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StylePr
   value?: number;
   fallback?: string;
   formatterOptions?: Intl.NumberFormatOptions;
+  titleClassName?: string;
 }
 
 const Container = styled.div<Required<ContainerProps>>`
@@ -100,6 +101,7 @@ const NumberText: React.FC<NumberTextProps> = ({
   formatterOptions = {},
   align = 'center',
   semiBold = false,
+  titleClassName,
   ...rest
 }) => {
   const numberFormatter = (value: number) => new Intl.NumberFormat('en-GB', formatterOptions).format(value);
@@ -118,7 +120,7 @@ const NumberText: React.FC<NumberTextProps> = ({
   return (
     <Container numberPosition={numberPosition} align={align} {...rest}>
       {title ? (
-        <Title numberPosition={numberPosition} size={labelFontSize}>
+        <Title numberPosition={numberPosition} size={labelFontSize} className={titleClassName}>
           {title}
         </Title>
       ) : null}
