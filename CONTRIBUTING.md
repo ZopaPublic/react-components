@@ -62,7 +62,7 @@ This repository follows the [**conventional commits specification**](https://www
 You can use the following command to ensure your commit message adheres to these standards:
 
 ```bash
-yarn commit
+pnpm commit
 ```
 
 ## Release process

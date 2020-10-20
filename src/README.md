@@ -5,7 +5,7 @@ This project aims to have all the common styled react components as a library/do
 Install it from NPM:
 
 ```bash
-yarn add '@zopauk/react-components'
+pnpm add '@zopauk/react-components'
 ```
 
 ## Global Styling
