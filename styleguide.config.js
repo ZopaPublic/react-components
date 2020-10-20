@@ -7,18 +7,18 @@ const webpackDevServerUtils = require('react-dev-utils/WebpackDevServerUtils');
 const printServerInstructions = (config) => {
   const urls = webpackDevServerUtils.prepareUrls('http', config.serverHost, config.serverPort);
   console.log(`${kleur.cyan().bold(`
-/££££££££                              
-|_____ ££                                      
-     /££/   /££££££   /££££££   /££££££ 
+/££££££££
+|_____ ££
+     /££/   /££££££   /££££££   /££££££
     /££/   /££__  ££ /££__  ££ |____  ££
    /££/   | ££  \\ ££| ££  \\ ££  /£££££££
   /££/    | ££  | ££| ££  | ££ /££__  ££
  /££££££££|  ££££££/| £££££££/|  £££££££
 |________/ \\______/ | ££____/  \\_______/
-                    | ££                
-                    | ££          React Components       
-                    |__/`)}     
-                    
+                    | ££
+                    | ££          React Components
+                    |__/`)}
+
 ${kleur.italic('You can now view your style guide in the browser')}
 
 ${kleur.bold('Local:')}            ${urls.localUrlForTerminal}
@@ -95,6 +95,22 @@ module.exports = {
               name: 'Card',
               content: 'src/components/organisms/Card/README.md',
               components: 'src/components/organisms/Card/**/[A-Z]*.tsx',
+            },
+            {
+              name: 'Tabs',
+              content: 'src/components/organisms/Tabs/README.md',
+              components: 'src/components/organisms/Tabs/**/[A-Z]*.tsx',
+            },
+          ],
+        },
+        {
+          name: 'Templates',
+          content: 'src/components/templates/README.md',
+          sections: [
+            {
+              name: 'Product',
+              content: 'src/components/templates/ProductTemplate/README.md',
+              components: 'src/components/templates/ProductTemplate/**/[A-Z]*.tsx',
             },
           ],
         },

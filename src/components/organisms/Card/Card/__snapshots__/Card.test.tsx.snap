@@ -32,6 +32,12 @@ exports[`<Card /> renders with brand styling 1`] = `
   font-size: 13px;
 }
 
+.c0 > .c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
   class="c0"
 />
@@ -67,6 +73,12 @@ exports[`<Card /> renders with horizontal layout 1`] = `
 
 .c0 .c3 {
   font-size: 13px;
+}
+
+.c0 > .c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <div
@@ -106,6 +118,12 @@ exports[`<Card /> renders with primary styling 1`] = `
   font-size: 15px;
 }
 
+.c0 > .c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
   class="c0"
 />
@@ -143,6 +161,12 @@ exports[`<Card /> renders with secondary styling 1`] = `
   font-size: 13px;
 }
 
+.c0 > .c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
   class="c0"
 />
@@ -178,6 +202,12 @@ exports[`<Card /> renders with vertical layout 1`] = `
 
 .c0 .c3 {
   font-size: 13px;
+}
+
+.c0 > .c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <div

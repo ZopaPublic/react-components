@@ -6,6 +6,7 @@ import CardContent from './CardContent/CardContent';
 import CardHeading from './CardHeading/CardHeading';
 import CardImage from './CardImage/CardImage';
 import CardText from './CardText/CardText';
+import CardLineItem from './CardLineItem/CardLineItem';
 
 type CardStatic = {
   Actions: typeof CardActions;
@@ -13,6 +14,7 @@ type CardStatic = {
   Heading: typeof CardHeading;
   Image: typeof CardImage;
   Text: typeof CardText;
+  LineItem: typeof CardLineItem;
 };
 
 const Card: CardStatic & FC<CardProps & HTMLAttributes<HTMLDivElement>> = (props) => <CardComponent {...props} />;
@@ -22,5 +24,6 @@ Card.Content = CardContent;
 Card.Heading = CardHeading;
 Card.Image = CardImage;
 Card.Text = CardText;
+Card.LineItem = CardLineItem;
 
 export default Card;

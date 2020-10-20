@@ -611,6 +611,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -817,8 +818,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 </a>
               </div>
               <button
-                class="c17 c18"
-                styling="link"
+                class="c17 c18 sc-dnqmqq c18"
               >
                 <div
                   class="c19"
@@ -905,8 +905,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               />
             </div>
             <button
-              class="c17 c18"
-              styling="link"
+              class="c17 c18 sc-dnqmqq c18"
             >
               <div
                 class="c19"
@@ -1725,6 +1724,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -1928,8 +1928,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 </a>
               </div>
               <button
-                class="c17 c18"
-                styling="primary"
+                class="c17 c18 sc-dnqmqq c18"
               >
                 <div
                   class="c19"
@@ -2013,8 +2012,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18"
-              styling="primary"
+              class="c17 c18 sc-dnqmqq c18"
             >
               <div
                 class="c19"
@@ -2832,6 +2830,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -3035,8 +3034,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 </a>
               </div>
               <button
-                class="c17 c18"
-                styling="link"
+                class="c17 c18 sc-dnqmqq c18"
               >
                 <div
                   class="c19"
@@ -3120,8 +3118,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18"
-              styling="link"
+              class="c17 c18 sc-dnqmqq c18"
             >
               <div
                 class="c19"
@@ -3996,6 +3993,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   >
     <div
       class="headroom-wrapper"
+      style="max-height: 120px;"
     >
       <div
         class="headroom headroom--unfixed"
@@ -4199,8 +4197,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </a>
               </div>
               <button
-                class="c17 c18"
-                styling="primary"
+                class="c17 c18 sc-dnqmqq c18"
               >
                 <div
                   class="c19"
@@ -4284,8 +4281,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </div>
             <button
-              class="c17 c18"
-              styling="primary"
+              class="c17 c18 sc-dnqmqq c18"
             >
               <div
                 class="c19"

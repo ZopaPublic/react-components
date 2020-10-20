@@ -42,6 +42,12 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   font-size: 13px;
 }
 
+.c0 > .c5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
   class="c0"
 >
