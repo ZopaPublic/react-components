@@ -17,6 +17,7 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
     "compile:code": "rollup --config ./etc/rollup/config.js",
@@ -94,6 +95,7 @@
     "jest-junit": "10.0.0",
     "jest-styled-components": "6.3.4",
     "lint-staged": "10.2.11",
+    "pnpm": "5",
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-docgen-typescript": "1.18.0",

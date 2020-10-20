@@ -53,6 +53,7 @@ devDependencies:
   jest-junit: 10.0.0
   jest-styled-components: 6.3.4_styled-components@4.4.1
   lint-staged: 10.2.11
+  pnpm: 5.9.3
   prettier: 2.0.5
   react: 16.13.1
   react-docgen-typescript: 1.18.0_typescript@3.9.6
@@ -11327,6 +11328,13 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
+  /pnpm/5.9.3:
+    dev: true
+    engines:
+      node: '>=10.16'
+    hasBin: true
+    resolution:
+      integrity: sha512-MyN/jR/WfM7SPnnrkaEoQ2+cOhoSAnhzJ2sDOF7yZKyjh0sYuvGcijeZYbyWJ0r5C0vtBPV5SRtiLaHvwYWZBg==
   /portfinder/1.0.28:
     dependencies:
       async: 2.6.3
@@ -15968,6 +15976,7 @@ specifiers:
   jest-styled-components: 6.3.4
   lint-staged: 10.2.11
   lodash.throttle: ^4.1.1
+  pnpm: '5'
   prettier: 2.0.5
   react: 16.13.1
   react-docgen-typescript: 1.18.0

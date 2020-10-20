@@ -1,0 +1,3 @@
+[build.environment]
+  # See https://community.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759
+  NPM_FLAGS="--prefix=/dev/null"
