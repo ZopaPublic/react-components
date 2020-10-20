@@ -1,3 +1,17 @@
+### [4.27.2](https://github.com/zopaUK/react-components/compare/v4.27.1...v4.27.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* **tooltip:** upgrade tippy.js library ([57235e1](https://github.com/zopaUK/react-components/commit/57235e13a5a837517c36d48cb2fdd5ec87c707e1))
+
+### [4.27.1](https://github.com/zopaUK/react-components/compare/v4.27.0...v4.27.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* **product-template:** minor design fixes ([aaa72de](https://github.com/zopaUK/react-components/commit/aaa72de944099a18244b20622c749d2be4c1b823))
+
 ## [4.27.0](https://github.com/zopaUK/react-components/compare/v4.26.2...v4.27.0) (2020-10-19)
 
 

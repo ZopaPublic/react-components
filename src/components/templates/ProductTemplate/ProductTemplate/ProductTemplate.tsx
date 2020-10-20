@@ -24,11 +24,11 @@ function ProductTemplate({ title, subtitle, children, prevStep, progress, conten
   });
   return (
     <FlexContainer data-automation="ZA.ProductTemplate" className={containerClassnames} gutter={0}>
-      <FlexRow>
+      <FlexRow gutter={0}>
         <FlexCol>
-          <ProductTemplateHeader prevStep={prevStep} progress={progress} />
+          {!!prevStep || !!progress ? <ProductTemplateHeader prevStep={prevStep} progress={progress} /> : null}
           <ProductTemplateTitle title={title} subtitle={subtitle} />
-          <FlexRow justify="center">
+          <FlexRow justify="center" gutter={0}>
             <FlexCol m={10} xl={contentWidth}>
               {children}
             </FlexCol>
