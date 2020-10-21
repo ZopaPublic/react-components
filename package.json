@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "4.27.0",
+  "version": "4.27.3",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -17,46 +17,50 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
-    "compile": "yarn compile:clean; yarn compile:types && yarn compile:code",
+    "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
     "compile:code": "rollup --config ./etc/rollup/config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
     "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
-    "format:fix": "yarn format --write",
+    "format:fix": "pnpm format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "yarn lint --fix",
-    "typecheck": "tsc --noEmit",
+    "lint:fix": "pnpm lint --fix",
+    "typecheck": "tsc --noEmit --types node,jest",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "@tippy.js/react": "^3.1.1",
+    "@tippyjs/react": "^4.1.0",
     "@types/classnames": "^2.2.10",
     "@types/react-headroom": "^2.2.1",
-    "@types/react-modal": "^3.10.2",
+    "@types/react-modal": "^3.10.6",
     "@types/util-deprecate": "^1.0.0",
     "classnames": "^2.2.6",
-    "core-js": "^3.3.5",
+    "core-js": "^3.6.5",
     "deprecated-prop-type": "^1.0.0",
-    "downshift": "^5.2.7",
-    "formik": "^2.1.4",
+    "downshift": "^5.4.7",
+    "formik": "^2.2.0",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
-    "react-modal": "^3.8.1",
-    "styled-normalize": "^8.0.6",
+    "react-modal": "^3.11.2",
+    "styled-normalize": "^8.0.7",
+    "tippy.js": "^6.2.6",
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@types/styled-components": "^5.1.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.4.0",
     "typescript": ">=3.x <4"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
     "@babel/runtime": "7.10.4",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
@@ -71,16 +75,18 @@
     "@testing-library/react": "10.4.5",
     "@testing-library/react-hooks": "3.3.0",
     "@types/jest": "^26.0.10",
-    "@types/jest-axe": "^3.2.1",
+    "@types/jest-axe": "^3.5.0",
     "@types/lodash.throttle": "4.1.6",
     "@types/node": "12.12.45",
     "@types/react": "16.9.35",
     "@types/react-dom": "16.9.8",
-    "@types/styled-components": "5.1.0",
+    "@types/styled-components": "^5.1.2",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
+    "babel-preset-react-app": "^9.1.2",
     "commitizen": "4.1.2",
     "cz-conventional-changelog": "3.2.0",
+    "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.3",
@@ -90,11 +96,12 @@
     "jest-junit": "10.0.0",
     "jest-styled-components": "6.3.4",
     "lint-staged": "10.2.11",
+    "pnpm": "5",
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-docgen-typescript": "1.18.0",
     "react-dom": "16.13.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.3",
     "react-styleguidist": "11.0.8",
     "react-test-renderer": "16.13.1",
     "rollup": "2.21.0",
@@ -102,7 +109,9 @@
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.1.1",
     "styled-components": "4.4.1",
-    "typescript": "3.9.6"
+    "typescript": "3.9.6",
+    "webpack": "4.42.0",
+    "webpack-dev-server": "3.11.0"
   },
   "browserslist": [
     "cover 95% in GB",
@@ -118,7 +127,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn typecheck && yarn lint && yarn test --watchAll=false",
+      "pre-push": "pnpm typecheck && pnpm lint && pnpm test -- --watchAll=false",
       "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
       "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
     }
@@ -140,6 +149,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=12.0.0",
+    "pnpm": ">=5"
   }
 }

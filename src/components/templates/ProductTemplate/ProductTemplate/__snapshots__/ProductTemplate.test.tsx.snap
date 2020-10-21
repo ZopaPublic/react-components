@@ -230,8 +230,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -0px;
+  margin-left: -0px;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -253,8 +253,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -0px;
+  margin-left: -0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -269,8 +269,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -280,8 +280,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
