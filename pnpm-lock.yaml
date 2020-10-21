@@ -8,6 +8,7 @@ dependencies:
   '@types/util-deprecate': 1.0.0
   classnames: 2.2.6
   core-js: 3.6.5
+  deprecated-prop-type: registry.npmjs.org/deprecated-prop-type/1.0.0
   downshift: 5.4.7_react@16.13.1
   formik: 2.2.0_react@16.13.1
   lodash.throttle: 4.1.1
@@ -15927,6 +15928,45 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
+  registry.npmjs.org/deprecated-prop-type/1.0.0:
+    dependencies:
+      warning: registry.npmjs.org/warning/4.0.1
+    dev: false
+    name: deprecated-prop-type
+    resolution:
+      integrity: sha512-Hp4VxvZN6IlbKvleZfbdrojOmnPXuRPjC9cQ82j6bdI3DRCwGR+7CEf367X59MHz/y8Ao/mxdP7YyR3KTb+EhQ==
+      registry: 'https://registry.yarnpkg.com/'
+      tarball: 'https://registry.npmjs.org/deprecated-prop-type/-/deprecated-prop-type-1.0.0.tgz'
+    version: 1.0.0
+  registry.npmjs.org/js-tokens/4.0.0:
+    dev: false
+    name: js-tokens
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+      registry: 'https://registry.yarnpkg.com/'
+      tarball: 'https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz'
+    version: 4.0.0
+  registry.npmjs.org/loose-envify/1.4.0:
+    dependencies:
+      js-tokens: registry.npmjs.org/js-tokens/4.0.0
+    dev: false
+    hasBin: true
+    name: loose-envify
+    resolution:
+      integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+      registry: 'https://registry.yarnpkg.com/'
+      tarball: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz'
+    version: 1.4.0
+  registry.npmjs.org/warning/4.0.1:
+    dependencies:
+      loose-envify: registry.npmjs.org/loose-envify/1.4.0
+    dev: false
+    name: warning
+    resolution:
+      integrity: sha512-rAVtTNZw+cQPjvGp1ox0XC5Q2IBFyqoqh+QII4J/oguyu83Bax1apbo2eqB8bHRS+fqYUBagys6lqUoVwKSmXQ==
+      registry: 'https://registry.yarnpkg.com/'
+      tarball: 'https://registry.npmjs.org/warning/-/warning-4.0.1.tgz'
+    version: 4.0.1
 specifiers:
   '@babel/core': ^7.11.1
   '@babel/runtime': 7.10.4
@@ -15963,6 +16003,7 @@ specifiers:
   commitizen: 4.1.2
   core-js: ^3.6.5
   cz-conventional-changelog: 3.2.0
+  deprecated-prop-type: ^1.0.0
   downshift: ^5.4.7
   eslint: 6.8.0
   eslint-config-prettier: 6.11.0

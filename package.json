@@ -41,6 +41,7 @@
     "@types/util-deprecate": "^1.0.0",
     "classnames": "^2.2.6",
     "core-js": "^3.6.5",
+    "deprecated-prop-type": "^1.0.0",
     "downshift": "^5.4.7",
     "formik": "^2.2.0",
     "lodash.throttle": "^4.1.1",

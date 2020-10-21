@@ -152,22 +152,6 @@ exports[`<Button /> renders disabled 1`] = `
 `;
 
 exports[`<Button /> renders loading as "primary" 1`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -208,8 +192,11 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   class="c0"
   disabled=""
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-negative.gif"
+    width="20px"
   />
    
     
@@ -218,23 +205,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 1`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -274,8 +244,11 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   class="c0"
   disabled=""
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-action.gif"
+    width="20px"
   />
    
     
@@ -284,23 +257,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 2`] = `
-.c1 {
-  min-width: 20px;
-  min-height: 20px;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: iVXCSc 1.2s linear infinite;
-  animation: iVXCSc 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -340,8 +296,11 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   class="c0"
   disabled=""
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-action.gif"
+    width="20px"
   />
    
     
