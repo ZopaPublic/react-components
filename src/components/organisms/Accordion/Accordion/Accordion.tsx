@@ -1,6 +1,6 @@
 import React, { FC, HTMLAttributes } from 'react';
 
-import { AccordionContext } from '../hooks';
+import { AccordionContext } from '../context';
 import { useExpander } from '../../../../hooks/useExpander';
 
 export interface AccordionProps extends HTMLAttributes<HTMLDivElement> {}
