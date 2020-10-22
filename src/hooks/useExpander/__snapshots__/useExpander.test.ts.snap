@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`useAccordion should render correct tab and section props 1`] = `
+exports[`useExpander should render correct tab and section props 1`] = `
 Object {
   "aria-controls": "id-section",
   "aria-disabled": false,
@@ -14,7 +14,7 @@ Object {
 }
 `;
 
-exports[`useAccordion should render correct tab and section props 2`] = `
+exports[`useExpander should render correct tab and section props 2`] = `
 Object {
   "aria-hidden": true,
   "aria-labelledby": "id",

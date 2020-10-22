@@ -1,10 +1,10 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 
-import { useAccordion } from './useAccordion';
+import { useExpander } from './useExpander';
 
-describe('useAccordion', () => {
+describe('useExpander', () => {
   it('should render correct tab and section props', () => {
-    const { result } = renderHook(useAccordion);
+    const { result } = renderHook(useExpander);
 
     const header = result.current.getHeaderProps('id', 1);
     const section = result.current.getSectionProps('id', 1);
@@ -14,7 +14,7 @@ describe('useAccordion', () => {
   });
 
   it('should open and close espective sections on header clicks', () => {
-    const { result } = renderHook(useAccordion);
+    const { result } = renderHook(useExpander);
 
     const { onClick: firstHeaderClick } = result.current.getHeaderProps('one', 1);
 
@@ -42,7 +42,7 @@ describe('useAccordion', () => {
   });
 
   it('should render matching header and section attributes', () => {
-    const { result } = renderHook(useAccordion);
+    const { result } = renderHook(useExpander);
 
     const section = result.current.getSectionProps('another-id', 3);
     const header = result.current.getHeaderProps('another-id', 3);
