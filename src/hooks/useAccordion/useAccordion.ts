@@ -2,7 +2,7 @@ import { useRef, useState, KeyboardEvent, RefObject } from 'react';
 import { isArrowDown, isArrowUp } from '../../helpers/keyboard-keys';
 import { mod } from '../../helpers/utils';
 
-export interface ExpanderHeaderProps {
+export interface AccordionHeaderProps {
   'aria-controls': string;
   'aria-disabled': boolean;
   'aria-expanded': boolean;
@@ -14,31 +14,31 @@ export interface ExpanderHeaderProps {
   ref: (node: HTMLButtonElement) => void;
 }
 
-export type GetExpanderHeaderProps = (id: string, index: number) => ExpanderHeaderProps;
+export type GetAccordionHeaderProps = (id: string, index: number) => AccordionHeaderProps;
 
-interface ExpanderSectionStyles {
+interface AccordionSectionStyles {
   overflow: string;
   transition: string;
   height: string;
 }
 
-export interface ExpanderSectionProps {
+export interface AccordionSectionProps {
   'aria-hidden': boolean;
   'aria-labelledby': string;
   id: string;
   key: string;
   ref: (node: HTMLDivElement) => void;
   role: string;
-  style: ExpanderSectionStyles;
+  style: AccordionSectionStyles;
 }
 
-export type GetExpanderSectionProps = (id: string, index: number) => ExpanderSectionProps;
+export type GetAccordionSectionProps = (id: string, index: number) => AccordionSectionProps;
 
-export type IsActiveExpanderSection = (index: number) => boolean;
+export type IsActiveAccordionSection = (index: number) => boolean;
 
 type ActiveSections = number[];
 
-export const useExpander = () => {
+export const useAccordion = () => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
@@ -60,7 +60,7 @@ export const useExpander = () => {
   };
 
   const [activeSections, updateActiveSections] = useState<ActiveSections>([]);
-  const isActiveSection: IsActiveExpanderSection = (index) => activeSections.includes(index);
+  const isActiveSection: IsActiveAccordionSection = (index) => activeSections.includes(index);
 
   const getSectionStyle = (index: number) => {
     const sectionRef = sectionsRefs[index];
@@ -74,7 +74,7 @@ export const useExpander = () => {
     return { ...baseStyle, height: `${sectionRef.clientHeight}px` };
   };
 
-  const toggleExpanderSection = (index: number) => {
+  const toggleAccordionSection = (index: number) => {
     updateActiveSections((prevSections) =>
       prevSections.includes(index) ? prevSections.filter((i) => i !== index) : prevSections.concat(index),
     );
@@ -84,7 +84,7 @@ export const useExpander = () => {
 
   const getOnClick = (index: number) => () => {
     updateCursorPosition(index);
-    toggleExpanderSection(index);
+    toggleAccordionSection(index);
   };
 
   const getOnFocus = (index: number) => () => updateCursorPosition(index);
@@ -113,7 +113,7 @@ export const useExpander = () => {
     }
   };
 
-  const getHeaderProps: GetExpanderHeaderProps = (id, index) => ({
+  const getHeaderProps: GetAccordionHeaderProps = (id, index) => ({
     'aria-controls': getLinkingId(id),
     'aria-disabled': isActiveSection(index),
     'aria-expanded': isActiveSection(index),
@@ -125,7 +125,7 @@ export const useExpander = () => {
     ref: getHeaderRef(index),
   });
 
-  const getSectionProps: GetExpanderSectionProps = (id, index) => ({
+  const getSectionProps: GetAccordionSectionProps = (id, index) => ({
     'aria-hidden': !isActiveSection(index),
     'aria-labelledby': id,
     id: getLinkingId(id),

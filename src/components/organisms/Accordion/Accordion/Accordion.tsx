@@ -1,12 +1,12 @@
 import React, { FC, HTMLAttributes } from 'react';
 
 import { AccordionContext } from '../context';
-import { useExpander } from '../../../../hooks/useExpander';
+import { useAccordion } from '../../../../hooks/useAccordion';
 
 export interface AccordionProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Accordion: FC<AccordionProps> = ({ children, ...rest }) => {
-  const context = useExpander();
+  const context = useAccordion();
   return (
     <AccordionContext.Provider value={context}>
       <div {...rest}>{children}</div>

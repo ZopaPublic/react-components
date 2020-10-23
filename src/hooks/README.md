@@ -1,2 +1,2 @@
 - [`useViewport`](#/Hooks?id=useviewport)
-- [`useExpander`](#/Hooks?id=useExpander)
+- [`useAccordion`](#/Hooks?id=useAccordion)
