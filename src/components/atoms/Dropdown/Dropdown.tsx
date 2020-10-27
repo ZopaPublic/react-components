@@ -21,6 +21,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
   min-width: 100px;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
