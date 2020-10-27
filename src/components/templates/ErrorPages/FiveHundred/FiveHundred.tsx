@@ -28,7 +28,7 @@ const FiveHundred: React.FC<ErrorTemplateProps> = ({ icon = faTools }) => {
           <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
         </FlexCol>
       </FlexRow>
-      <Heading as="h2" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">
+      <Heading as="h1" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">
         Sorry, there’s been a problem
       </Heading>
       <Text as="p" size={width <= breakpoints.desktop ? 'body' : 'lead'} align="center" className="mb-7">

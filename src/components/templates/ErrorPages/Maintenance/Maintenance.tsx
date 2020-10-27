@@ -33,7 +33,7 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
           <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
         </FlexCol>
       </FlexRow>
-      <Heading as="h2" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">
+      <Heading as="h1" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">
         We’ll be back soon!
       </Heading>
       <Text as="p" size={width <= breakpoints.desktop ? 'body' : 'lead'} align="center" className="mb-7">

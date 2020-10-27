@@ -46,7 +46,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   color: #2C3236;
   text-align: center;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .c5 {
@@ -222,11 +222,11 @@ exports[`<Four0Four /> renders with all the props 1`] = `
       </div>
     </div>
   </div>
-  <h2
+  <h1
     class="c4 mb-4"
   >
     Sorry, there’s been a problem
-  </h2>
+  </h1>
   <p
     class="c5 mb-7"
   >
