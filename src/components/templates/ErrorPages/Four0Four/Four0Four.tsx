@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { faTools } from '@fortawesome/free-solid-svg-icons';
+import { faInfo } from '@fortawesome/free-solid-svg-icons';
 
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
@@ -26,7 +26,7 @@ const ButtonLink = styled(Link)`
 const Four0Four: React.FC<Four0FourProps> = ({
   buttonLink = 'https://www.zopa.com',
   buttonText = 'Go to Zopa home',
-  icon = faTools,
+  icon = faInfo,
 }) => {
   const { width = 0 } = useViewport();
 
