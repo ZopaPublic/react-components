@@ -10,6 +10,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -64,6 +65,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -124,6 +126,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -185,6 +188,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
