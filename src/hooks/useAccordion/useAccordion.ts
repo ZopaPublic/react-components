@@ -38,7 +38,8 @@ export type IsActiveAccordionSection = (index: number) => boolean;
 
 type ActiveSections = number[];
 
-export const useAccordion = () => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const useAccordion = (props: {}) => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
