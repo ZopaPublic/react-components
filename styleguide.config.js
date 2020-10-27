@@ -115,6 +115,11 @@ module.exports = {
               content: 'src/components/templates/ProductTemplate/README.md',
               components: 'src/components/templates/ProductTemplate/**/[A-Z]*.tsx',
             },
+            {
+              name: 'Error',
+              content: 'src/components/templates/ErrorPages/README.md',
+              components: 'src/components/templates/ErrorPages/**/[A-Z]*.tsx',
+            },
           ],
         },
         {

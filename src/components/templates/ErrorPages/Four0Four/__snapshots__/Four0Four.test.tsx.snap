@@ -35,7 +35,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   align-self: auto;
 }
 
-.c3 {
+.c4 {
   font-size: 24px;
   line-height: 32px;
   -webkit-letter-spacing: -0.25px;
@@ -49,7 +49,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -63,7 +63,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -77,7 +77,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c5 {
+.c6 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -98,13 +98,13 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   border: none;
 }
 
-.c5:hover,
-.c5:active {
+.c6:hover,
+.c6:active {
   color: #21247F;
 }
 
-.c5:hover svg path,
-.c5:active svg path {
+.c6:hover svg path,
+.c6:active svg path {
   fill: #21247F;
 }
 
@@ -129,7 +129,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   padding: 24px;
 }
 
-.c6 {
+.c7 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -158,19 +158,24 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   background: #E9EAFA;
 }
 
-.c6:focus:not(:active) {
+.c7:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c6:hover {
+.c7:hover {
   background: #EEEFFB;
 }
 
-.c6:active {
+.c7:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
+}
+
+.c3 {
+  width: 80px;
+  height: 80px;
 }
 
 @media (min-width:0px) {
@@ -195,7 +200,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
       cols="12"
     >
       <div
-        class="c2"
+        class="c2 c3"
         color="#EFEFEF"
       >
         <svg
@@ -218,12 +223,12 @@ exports[`<Four0Four /> renders with all the props 1`] = `
     </div>
   </div>
   <h2
-    class="c3 mb-4"
+    class="c4 mb-4"
   >
     Sorry, there’s been a problem
   </h2>
   <p
-    class="c4 mb-7"
+    class="c5 mb-7"
   >
     Seems like the page you’re looking for doesn’t exist.
   </p>
@@ -237,7 +242,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
       cols="12"
     >
       <a
-        class="c5 c6 mb-10"
+        class="c6 c7 mb-10"
         color="#3B46C4"
         href="https://www.zopa.com"
       >
@@ -246,7 +251,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
     </div>
   </div>
   <p
-    class="c7"
+    class="c8"
   >
     Error code: 404
   </p>

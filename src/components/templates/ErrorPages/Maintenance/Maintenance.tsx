@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 import FlexRow from '../../../layout/FlexRow/FlexRow';
@@ -13,6 +14,11 @@ import { colors } from '../../../../constants';
 import { HelpLine } from '../../../molecules/Help/Help';
 import { ErrorTemplateProps } from '../Template/Template';
 
+const StyledIcon = styled(Icon)`
+  width: 80px;
+  height: 80px;
+`;
+
 interface FiveHundredPageTemplateProps extends ErrorTemplateProps {
   helpLine?: HelpLine;
 }
@@ -24,7 +30,7 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
     <>
       <FlexRow justify="center">
         <FlexCol xs="auto" className="mb-7">
-          <Icon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
+          <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
         </FlexCol>
       </FlexRow>
       <Heading as="h2" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">

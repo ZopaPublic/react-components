@@ -62,6 +62,7 @@ export * from './components/organisms/Tabs';
 
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
+export { default as ErrorPageTemplate } from './components/templates/ErrorPages';
 
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';

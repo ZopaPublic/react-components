@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 import FlexRow from '../../../layout/FlexRow/FlexRow';
@@ -12,6 +13,11 @@ import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
 import { ErrorTemplateProps } from '../Template/Template';
 
+const StyledIcon = styled(Icon)`
+  width: 80px;
+  height: 80px;
+`;
+
 const FiveHundred: React.FC<ErrorTemplateProps> = ({ icon = faTools }) => {
   const { width = 0 } = useViewport();
 
@@ -19,7 +25,7 @@ const FiveHundred: React.FC<ErrorTemplateProps> = ({ icon = faTools }) => {
     <>
       <FlexRow justify="center">
         <FlexCol xs="auto" className="mb-7">
-          <Icon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
+          <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
         </FlexCol>
       </FlexRow>
       <Heading as="h2" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">

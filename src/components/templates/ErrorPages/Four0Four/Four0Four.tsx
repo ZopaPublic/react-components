@@ -23,6 +23,11 @@ const ButtonLink = styled(Link)`
   ${buttonStyle}
 `;
 
+const StyledIcon = styled(Icon)`
+  width: 80px;
+  height: 80px;
+`;
+
 const Four0Four: React.FC<Four0FourProps> = ({
   buttonLink = 'https://www.zopa.com',
   buttonText = 'Go to Zopa home',
@@ -34,7 +39,7 @@ const Four0Four: React.FC<Four0FourProps> = ({
     <>
       <FlexRow justify="center">
         <FlexCol xs="auto" className="mb-7">
-          <Icon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
+          <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
         </FlexCol>
       </FlexRow>
       <Heading as="h2" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">
