@@ -43,7 +43,7 @@ export default {
     }),
     url({
       limit: 10 * 1024, // inline files < 10k, copy files > 10k
-      include: ['**/*.svg'], // defaults to .svg, .png, .jpg and .gif files
+      include: ['**/*.svg', '**/*.gif'], // defaults to .svg, .png, .jpg and .gif files
       emitFiles: true, // defaults to true
     }),
     terser(),
