@@ -1,3 +1,10 @@
+### [4.28.1](https://github.com/zopaUK/react-components/compare/v4.28.0...v4.28.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* **typings:** add gif to module typings ([b5b030f](https://github.com/zopaUK/react-components/commit/b5b030fbc06ea7adb71213d00805cfd0d99402da))
+
 ## [4.28.0](https://github.com/zopaUK/react-components/compare/v4.27.3...v4.28.0) (2020-10-28)
 
 
