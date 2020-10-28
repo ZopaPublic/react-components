@@ -1,3 +1,35 @@
+## [4.28.0](https://github.com/zopaUK/react-components/compare/v4.27.3...v4.28.0) (2020-10-28)
+
+
+### Features
+
+* **dropdown:** update line height ([9770f4d](https://github.com/zopaUK/react-components/commit/9770f4de39777080a5e4b35520af95e8ce6ed5f2))
+* **dropdown:** update snapshots ([58dcc22](https://github.com/zopaUK/react-components/commit/58dcc22b60cfdd83a7a4d70a06080d2dd789e650))
+* **spinner:** add secondary styling ([86e2197](https://github.com/zopaUK/react-components/commit/86e2197b5cafaad59affc6c599c3186fab30d089))
+* **spinner:** remove duplicate example from readme ([a4d1e3f](https://github.com/zopaUK/react-components/commit/a4d1e3f531f95d909c1ed63986a91dbeda1a7a14))
+* **spinner:** remove unused import ([650d618](https://github.com/zopaUK/react-components/commit/650d61840ff1d5be80ebecc6f4533e904a6345c2))
+* **spinner:** update packages ([2286cab](https://github.com/zopaUK/react-components/commit/2286cabfd841c0f05d4e72c11508ef03bd5e6441))
+* **spinner:** update to use lottie animation ([d773883](https://github.com/zopaUK/react-components/commit/d773883f514ca4f5b0159d5317021c9f1f3383f0))
+* **spinner:** update yarn.lock ([4488b7f](https://github.com/zopaUK/react-components/commit/4488b7fa3f9c77dca4d187b16c935f30be47b8f1))
+* **spinner:** update yarn.lock ([64acd7f](https://github.com/zopaUK/react-components/commit/64acd7fc90a776b92064451af5e3bb2f2058f5b2))
+* **spinner:** update yarn.lock ([e029ec0](https://github.com/zopaUK/react-components/commit/e029ec0eabd5b5b01f140cd4cb8f34c1da2b0634))
+* **spinner:** update yarn.lock ([9e1559c](https://github.com/zopaUK/react-components/commit/9e1559cc46b95e791613ecf1c307c5aaae0f6377))
+* **spinner:** update yarn.lock ([db7580b](https://github.com/zopaUK/react-components/commit/db7580bb931beed6bfe2d03966ac37111abe0f52))
+* **spinner:** update yarn.lock ([2be217d](https://github.com/zopaUK/react-components/commit/2be217db8d99c0039f2d3164f5522ba35a9041b9))
+* **spinner:** use gifs ([eedcfd4](https://github.com/zopaUK/react-components/commit/eedcfd457ee2d57a77ac96c08fcf54d3672ab5fe))
+* **useexpander:** extract the useAccordion hook ([d8e1ad9](https://github.com/zopaUK/react-components/commit/d8e1ad9645ab3730f67660142dd8904f9764c439))
+* **useexpander:** extract useAccordion to be its own hook ([b21cc34](https://github.com/zopaUK/react-components/commit/b21cc34d53f4c15db81c0f8c41d16b3bae86dcb4))
+
+
+### Bug Fixes
+
+* **deps:** fix lock file ([6a270ac](https://github.com/zopaUK/react-components/commit/6a270ac3761c50b66bb89c19b395979b89db8ede))
+* **rollup:** update rollup to accept gifs ([c993c17](https://github.com/zopaUK/react-components/commit/c993c172528ee8a8a19b66f9554f7a162ea1b6f2))
+* **useaccordion:** extract useAccordion ([b565145](https://github.com/zopaUK/react-components/commit/b565145ffaddaaa0968832d7004ee762812565bf))
+* **useaccordion:** make hook a component ([79e8506](https://github.com/zopaUK/react-components/commit/79e8506b42e95a85cac0d9436a5918ad91e7af9e))
+* **useaccordion:** make props optional ([7982249](https://github.com/zopaUK/react-components/commit/798224996aa6787a7e348491bdf737a8d5e451e8))
+* **useaccordion:** remove unused code ([4c16bf3](https://github.com/zopaUK/react-components/commit/4c16bf37c48f71c68573a014003871781f1106f9))
+
 ### [4.27.3](https://github.com/zopaUK/react-components/compare/v4.27.2...v4.27.3) (2020-10-20)
 
 
