@@ -1,6 +1,10 @@
 import { createContext } from 'react';
 
-import { GetAccordionHeaderProps, GetAccordionSectionProps, IsActiveAccordionSection } from './useAccordion';
+import {
+  GetAccordionHeaderProps,
+  GetAccordionSectionProps,
+  IsActiveAccordionSection,
+} from '../../../../hooks/useAccordion/useAccordion';
 
 export interface AccordionContext {
   getHeaderProps: GetAccordionHeaderProps;

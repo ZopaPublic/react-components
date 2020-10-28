@@ -1,6 +1,6 @@
 import { useRef, useState, KeyboardEvent, RefObject } from 'react';
-import { isArrowDown, isArrowUp } from '../../../../helpers/keyboard-keys';
-import { mod } from '../../../../helpers/utils';
+import { isArrowDown, isArrowUp } from '../../helpers/keyboard-keys';
+import { mod } from '../../helpers/utils';
 
 export interface AccordionHeaderProps {
   'aria-controls': string;
@@ -38,7 +38,8 @@ export type IsActiveAccordionSection = (index: number) => boolean;
 
 type ActiveSections = number[];
 
-export const useAccordion = () => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const useAccordion = (props?: {}) => {
   const headersRefs = useRef<RefObject<HTMLButtonElement>['current'][]>([]).current;
 
   const getHeaderRef = (index: number) => (node: HTMLButtonElement) => {
