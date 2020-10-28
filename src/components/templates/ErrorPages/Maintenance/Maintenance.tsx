@@ -27,7 +27,7 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
   const { width = 0 } = useViewport();
 
   return (
-    <>
+    <div data-automation="ZA.ErrorPage.Maintenance">
       <FlexRow justify="center">
         <FlexCol xs="auto" className="mb-7">
           <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
@@ -43,7 +43,7 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
         Please come back later or give us a call on <Link href={`tel:${helpLine}`}>{helpLine}</Link> and we’ll help you
         out.
       </Text>
-    </>
+    </div>
   );
 };
 

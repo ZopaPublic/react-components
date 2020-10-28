@@ -12,7 +12,7 @@ export interface ErrorTemplateProps {
 
 const ErrorTemplate: React.FC = ({ children }) => {
   return (
-    <FlexContainer data-automation="ZA.FiveHundredTemplate" gutter={0}>
+    <FlexContainer data-automation="ZA.ErrorPageTemplate" gutter={0}>
       <FlexRow justify="center" gutter={0}>
         <FlexCol xs={12} m={10} xl={6}>
           <ProductTemplateCard>

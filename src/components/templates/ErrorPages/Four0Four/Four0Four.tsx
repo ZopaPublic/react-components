@@ -36,7 +36,7 @@ const Four0Four: React.FC<Four0FourProps> = ({
   const { width = 0 } = useViewport();
 
   return (
-    <>
+    <div data-automation="ZA.ErrorPage.Four0Four">
       <FlexRow justify="center">
         <FlexCol xs="auto" className="mb-7">
           <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
@@ -58,7 +58,7 @@ const Four0Four: React.FC<Four0FourProps> = ({
       <Text as="p" size="small" align="center">
         Error code: 404
       </Text>
-    </>
+    </div>
   );
 };
 
