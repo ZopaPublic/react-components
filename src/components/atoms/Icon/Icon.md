@@ -33,7 +33,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 </>;
 ```
 
-You can also wrap an icon with in a circle by setting a `bgColor`
+You can also wrap an icon within a circle by setting a `bgColor`
 
 ```tsx
 import { Icon, colors } from '@zopauk/react-components';
