@@ -21,6 +21,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -115,6 +116,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c2:focus,
@@ -214,6 +216,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -289,6 +292,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -357,6 +361,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -425,6 +430,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -493,6 +499,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
