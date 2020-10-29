@@ -1,3 +1,10 @@
+### [4.28.2](https://github.com/zopaUK/react-components/compare/v4.28.1...v4.28.2) (2020-10-29)
+
+
+### Bug Fixes
+
+* **inputs:** bug with iphone safari ([8b167b4](https://github.com/zopaUK/react-components/commit/8b167b4950ab1e9a7883b85160be276c2936f421))
+
 ### [4.28.1](https://github.com/zopaUK/react-components/compare/v4.28.0...v4.28.1) (2020-10-28)
 
 
