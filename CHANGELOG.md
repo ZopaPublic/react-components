@@ -1,3 +1,18 @@
+## [4.29.0](https://github.com/zopaUK/react-components/compare/v4.28.2...v4.29.0) (2020-10-29)
+
+
+### Features
+
+* **errorpagetemplate:** add template for error pages ([ab80820](https://github.com/zopaUK/react-components/commit/ab80820f0b04a3e8a7e46e693bc87d442f050b0b))
+* **icon:** ad bgcolor prop to set circle bg ([ad2bebd](https://github.com/zopaUK/react-components/commit/ad2bebd7b4dd9781041b792d487b4a84c353b4b1))
+
+
+### Bug Fixes
+
+* **error-pages:** amend data-automation attributes ([19c6e20](https://github.com/zopaUK/react-components/commit/19c6e20c93d972d01ed0880b8bee8688aafed18b))
+* **errorpages:** fixed height and width for Icon ([77f0f22](https://github.com/zopaUK/react-components/commit/77f0f2270252ef473f07aabbb0ddff7be863b9e9))
+* **errorpages:** set heading to h1 ([4663a2d](https://github.com/zopaUK/react-components/commit/4663a2d29f8fc0fdfd763bffedd70b867819ebea))
+
 ### [4.28.2](https://github.com/zopaUK/react-components/compare/v4.28.1...v4.28.2) (2020-10-29)
 
 
