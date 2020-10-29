@@ -72,6 +72,7 @@ export { default as SizedContainer } from './components/layout/SizedContainer/Si
 
 // Hooks
 export * from './hooks/useViewport';
+export * from './hooks/useAccordion';
 
 // Helpers
 export * from './helpers/responsiveness';
