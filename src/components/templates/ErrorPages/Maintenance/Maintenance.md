@@ -1,6 +1,6 @@
 ### Summary
 
-`<ErrorPageTemplate.Maintenance />` renders the default content for an application at Zopa is in maintenance mode
+`<ErrorPageTemplate.Maintenance />` renders the default content for an application at Zopa in maintenance mode
 
 ### Example
 
