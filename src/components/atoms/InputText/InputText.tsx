@@ -52,6 +52,7 @@ const Input = styled.input<InputProps>`
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 
   &:focus,
   &:hover {

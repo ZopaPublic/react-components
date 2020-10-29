@@ -26,6 +26,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
@@ -81,6 +82,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
@@ -142,6 +144,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
@@ -204,6 +207,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
