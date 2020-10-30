@@ -1,3 +1,11 @@
+### [4.29.1](https://github.com/zopaUK/react-components/compare/v4.29.0...v4.29.1) (2020-10-30)
+
+
+### Bug Fixes
+
+* **rollup:** again ([32e83fe](https://github.com/zopaUK/react-components/commit/32e83fe8327d59fe2afad834fcb5b6c10966a882))
+* **rollup url plugin:** try new config ([805534d](https://github.com/zopaUK/react-components/commit/805534d93c74d5e40ab2d0dc98a02992fa8ff57e))
+
 ## [4.29.0](https://github.com/zopaUK/react-components/compare/v4.28.2...v4.29.0) (2020-10-29)
 
 
