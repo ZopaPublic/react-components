@@ -42,6 +42,8 @@ export default {
       include: /node_modules/,
     }),
     url({
+      fileName: '[dirname][hash][extname]',
+      sourceDir: path.join(__dirname, 'src'),
       limit: 10 * 1024, // inline files < 10k, copy files > 10k
       include: ['**/*.svg', '**/*.gif'], // defaults to .svg, .png, .jpg and .gif files
       emitFiles: true, // defaults to true
