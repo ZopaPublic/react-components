@@ -1,3 +1,10 @@
+### [4.29.2](https://github.com/zopaUK/react-components/compare/v4.29.1...v4.29.2) (2020-10-30)
+
+
+### Bug Fixes
+
+* **pnpm:** unforce pnpm ([9a8e301](https://github.com/zopaUK/react-components/commit/9a8e3018a7e115d7720535f5406542a572d85384))
+
 ### [4.29.1](https://github.com/zopaUK/react-components/compare/v4.29.0...v4.29.1) (2020-10-30)
 
 
