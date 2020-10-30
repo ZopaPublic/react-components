@@ -15,6 +15,7 @@
     "/src"
   ],
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
