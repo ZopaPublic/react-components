@@ -1,3 +1,10 @@
+### [4.29.3](https://github.com/zopaUK/react-components/compare/v4.29.2...v4.29.3) (2020-11-04)
+
+
+### Bug Fixes
+
+* **accordion:** add type='button' to header ([5ed09eb](https://github.com/zopaUK/react-components/commit/5ed09eb70d3fef821205a126126802a04899c543))
+
 ### [4.29.2](https://github.com/zopaUK/react-components/compare/v4.29.1...v4.29.2) (2020-10-30)
 
 
