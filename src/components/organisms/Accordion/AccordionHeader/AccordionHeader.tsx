@@ -70,7 +70,7 @@ const AccordionHeader: FC<AccordionHeader> = ({ children, id, index, textSize = 
   };
 
   return (
-    <StyledButton ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
+    <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
       <TitleContainer>
         <Title weight="bold" size={textSize}>
           {children}
