@@ -13,10 +13,10 @@ const TrustpilotWrapper = styled.div``;
 /**
  * @visibleName Trustpilot
  */
-const Trustpilot: TrustpilotStatic & FC<TrustPilotStarsProps> = ({ stars, className }) => (
+const Trustpilot: TrustpilotStatic & FC<TrustPilotStarsProps> = ({ rating, className }) => (
   <TrustpilotWrapper className={className}>
     <Logo className="mr-1" />
-    <Stars className="ml-1" stars={stars} />
+    <Stars className="ml-1" rating={rating} />
   </TrustpilotWrapper>
 );
 

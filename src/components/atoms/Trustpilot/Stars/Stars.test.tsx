@@ -5,7 +5,7 @@ import Stars from './Stars';
 import 'jest-styled-components';
 
 describe('<TrustpilotStars />', () => {
-  it('renders without a11y violations', async () => {
+  it('renders default 5 stars rating without a11y violations', async () => {
     const { container } = render(<Stars />);
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
@@ -13,14 +13,21 @@ describe('<TrustpilotStars />', () => {
   });
 
   it.each`
-    stars
+    rating
+    ${0}
     ${1}
+    ${1.5}
     ${2}
+    ${2.5}
     ${3}
+    ${3.5}
     ${4}
+    ${4.5}
     ${5}
-  `('renders the given number of stars: $stars', ({ stars }) => {
-    const { container } = render(<Stars stars={stars} />);
-    expect(container.querySelectorAll('path')).toHaveLength(stars * 2); // there's 2 paths for each star
+  `('renders without a11y violations the given rating: $rating', async ({ rating }) => {
+    const { container } = render(<Stars rating={rating} />);
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
+    expect(container).toMatchSnapshot();
   });
 });
