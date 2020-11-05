@@ -1,12 +1,12 @@
 import { axe } from 'jest-axe';
 import React from 'react';
 import { render } from '@testing-library/react';
-import Logo from './Logo';
+import Trustpilot from './Trustpilot';
 import 'jest-styled-components';
 
-describe('<TrustpilotLogo />', () => {
+describe('<Trustpilot />', () => {
   it('renders without a11y violations', async () => {
-    const { container } = render(<Logo />);
+    const { container } = render(<Trustpilot />);
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
     expect(container).toMatchSnapshot();

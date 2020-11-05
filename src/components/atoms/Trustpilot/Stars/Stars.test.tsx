@@ -5,7 +5,7 @@ import Stars from './Stars';
 import 'jest-styled-components';
 
 describe('<TrustpilotStars />', () => {
-  it('renders without  a11y violations', async () => {
+  it('renders without a11y violations', async () => {
     const { container } = render(<Stars />);
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();

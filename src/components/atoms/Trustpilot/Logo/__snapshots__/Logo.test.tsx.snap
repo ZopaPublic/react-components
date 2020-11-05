@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<TrustpilotLogo /> renders without  a11y violations 1`] = `
+exports[`<TrustpilotLogo /> renders without a11y violations 1`] = `
 <div>
   <svg
     aria-labelledby="trustpilot-logo-title trustpilot-logo-desc"
