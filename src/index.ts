@@ -37,6 +37,7 @@ export { default as Heading } from './components/atoms/Heading/Heading';
 export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
 export { default as Legend } from './components/atoms/Legend/Legend';
 export { default as Logo } from './components/atoms/Logo/Logo';
+export { default as Trustpilot } from './components/atoms/Trustpilot/Trustpilot';
 
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
