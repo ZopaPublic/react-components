@@ -1,7 +1,9 @@
 import React from 'react';
 
+export const THREE_HALF_STAR_ID = 'Trustpilot_ratings_ThreeHalfStar';
+
 export const ThreeHalfStar = () => (
-  <g id="Trustpilot_ratings_3halfstar-RGB" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+  <g id={THREE_HALF_STAR_ID} stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
     <g id="Trustpilot_ratings_3star-RGB-Copy-3" fillRule="nonzero">
       <rect id="Rectangle-path1" fill="#FFCE00" x="0" y="0" width="96" height="96"></rect>
       <rect id="Rectangle-path2" fill="#FFCE00" x="104" y="0" width="96" height="96"></rect>

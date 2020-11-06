@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
 import Logo from './Logo/Logo';
 import Stars, { TrustPilotStarsProps } from './Stars/Stars';
 
@@ -8,16 +7,14 @@ type TrustpilotStatic = {
   Stars: typeof Stars;
 };
 
-const TrustpilotWrapper = styled.div``;
-
 /**
  * @visibleName Trustpilot
  */
 const Trustpilot: TrustpilotStatic & FC<TrustPilotStarsProps> = ({ rating, className }) => (
-  <TrustpilotWrapper className={className}>
+  <div className={className}>
     <Logo className="mr-1" />
     <Stars className="ml-1" rating={rating} />
-  </TrustpilotWrapper>
+  </div>
 );
 
 Trustpilot.Logo = Logo;

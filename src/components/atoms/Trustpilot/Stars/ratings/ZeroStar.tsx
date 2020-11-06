@@ -1,8 +1,10 @@
 import React from 'react';
 
+export const ZERO_STAR_ID = 'Trustpilot_ratings_ZeroStar';
+
 export const ZeroStar = () => (
-  <g id="Trustpilot_ratings_0star_grey-RGB" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-    <g id="Trustpilot_ratings_0star_grey-RGB-Copy-4">
+  <g id={ZERO_STAR_ID} stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+    <g>
       <g>
         <rect id="Rectangle-path1" fill="#DCDCE6" fillRule="nonzero" x="0" y="0" width="96" height="96"></rect>
         <rect id="Rectangle-path2" fill="#DCDCE6" fillRule="nonzero" x="104" y="0" width="96" height="96"></rect>
