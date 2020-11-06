@@ -1,3 +1,11 @@
+## [4.30.0](https://github.com/zopaUK/react-components/compare/v4.29.3...v4.30.0) (2020-11-06)
+
+
+### Features
+
+* **trustpilot:** add the Trustpilot component: Logo and Stars ([30d0eb7](https://github.com/zopaUK/react-components/commit/30d0eb7c9eeb251516f49814c5a9ad42dead15a4))
+* **trustpilot:** coloured stars reatings ([8fd9812](https://github.com/zopaUK/react-components/commit/8fd9812755858922827fb19a72992131ad6b6289))
+
 ### [4.29.3](https://github.com/zopaUK/react-components/compare/v4.29.2...v4.29.3) (2020-11-04)
 
 
