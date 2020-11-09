@@ -104,6 +104,11 @@ module.exports = {
               content: 'src/components/organisms/Tabs/README.md',
               components: 'src/components/organisms/Tabs/**/[A-Z]*.tsx',
             },
+            {
+              name: 'Carousel',
+              content: 'src/components/organisms/Carousel/README.md',
+              components: 'src/components/organisms/Carousel/**/[A-Z]*.tsx',
+            },
           ],
         },
         {
