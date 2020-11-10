@@ -1,3 +1,11 @@
+## Summary
+
+Carousel component to be used together with `<Carousel.Slide />`, `<Carousel.SlideIcon />`, `<Carousel.SlideText />`.
+
+The Carousel starts up for widths which are smaller than `grid.breakpoints.m` (768px).
+
+**To test the following examples resize your window and refresh.**
+
 ## Example
 
 With 3 slides:
@@ -23,7 +31,7 @@ import { faCar, faHeart, faPoundSign } from '@fortawesome/free-solid-svg-icons';
 </Carousel>;
 ```
 
-With 4 slides and custom initial slide:
+With different number of slides and custom initial slide:
 
 ```tsx
 import { Carousel, Trustpilot } from '@zopauk/react-components';
@@ -46,6 +54,23 @@ import { faCar, faHeart, faPoundSign, faPiggyBank } from '@fortawesome/free-soli
   <Carousel.Slide>
     <Carousel.SlideIcon variant={faPiggyBank} />
     <Carousel.SlideText>Save up to £85,000</Carousel.SlideText>
+  </Carousel.Slide>
+</Carousel>;
+```
+
+```tsx
+import { Carousel, Trustpilot } from '@zopauk/react-components';
+import { faCar, faHeart, faPoundSign, faPiggyBank } from '@fortawesome/free-solid-svg-icons';
+
+<Carousel initialSlide={0}>
+  <Carousel.Slide>
+    <Carousel.SlideIcon variant={faHeart} />
+    <Carousel.SlideText>Rated excellent based on 14,899 reviews</Carousel.SlideText>
+    <Trustpilot className="mt-6" />
+  </Carousel.Slide>
+  <Carousel.Slide>
+    <Carousel.SlideIcon variant={faPoundSign} />
+    <Carousel.SlideText>No fees now or later. Even if you repay early.</Carousel.SlideText>
   </Carousel.Slide>
 </Carousel>;
 ```

@@ -5,8 +5,6 @@ import Icon, { IconProps } from '../../../atoms/Icon/Icon';
 
 const StyledIcon = styled(Icon).attrs<IconProps>({ className: 'm-4' })``;
 
-const SlideIcon: FC<IconProps> = (props) => {
-  return <StyledIcon color={colors.brand} size="lg" {...props} />;
-};
+const SlideIcon: FC<IconProps> = (props) => <StyledIcon color={colors.brand} size="lg" {...props} />;
 
 export default SlideIcon;

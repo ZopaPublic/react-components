@@ -1,32 +1,52 @@
-import React, { FC } from 'react';
-import styled from 'styled-components';
+import React, { createRef, FC, useEffect } from 'react';
+import styled, { css } from 'styled-components';
+import { grid } from '../../../../constants';
+import { useViewport } from '../../../../hooks/useViewport/useViewport';
 import FlexCol, { FlexColProps } from '../../../layout/FlexCol/FlexCol';
+import { useCarouselContext } from '../context/CarouselContext';
 
-const StyledFlexCol = styled(FlexCol)`
+const StyledFlexCol = styled(FlexCol)<FlexColProps & { hidden: boolean; sliderHeight: number }>`
   text-align: center;
-`;
-
-const SlideContent = styled.div<{ minHeight?: number }>`
-  ${({ minHeight }) => {
-    if (minHeight !== undefined) {
-      return `min-height: ${minHeight}px`;
+  position: relative;
+  opacity: 1;
+  min-height: ${({ sliderHeight }) => `${sliderHeight}px`};
+  ${({ hidden }) => {
+    if (hidden) {
+      return css`
+        position: absolute;
+        opacity: 0;
+      `;
     }
   }}
 `;
 
-export type SlideProps = FlexColProps & {
+export type SlideProps = {
   index?: number;
-  minHeight?: number;
-  slidesCount?: number;
-  activeSlide?: number;
 };
 
-const Slide: FC<SlideProps> = ({ index, minHeight = 150, slidesCount, activeSlide, children, ...rest }) => {
+const Slide: FC<SlideProps> = ({ index, children, ...rest }) => {
+  const { slidesCount, activeSlide, sliderHeight, setSliderHeight } = useCarouselContext();
+  const { width } = useViewport();
   const isActive = index === activeSlide;
+  const isSmall = width && width < grid.breakpoints.m;
+  const slideRef = createRef<HTMLDivElement>();
+
+  useEffect(() => {
+    const slideHeight = slideRef.current?.clientHeight || 0;
+    setSliderHeight((height) => Math.max(height, slideHeight));
+  }, [slideRef.current, activeSlide]);
 
   return (
-    <StyledFlexCol xs={isActive ? slidesCount : 'hidden'} m={1} align="flex-start" {...rest}>
-      <SlideContent minHeight={minHeight}>{children}</SlideContent>
+    <StyledFlexCol
+      hidden={!!isSmall && !isActive}
+      sliderHeight={sliderHeight}
+      xs={slidesCount}
+      s={slidesCount}
+      m={1}
+      align="flex-start"
+      {...rest}
+    >
+      <div ref={slideRef}>{children}</div>
     </StyledFlexCol>
   );
 };
