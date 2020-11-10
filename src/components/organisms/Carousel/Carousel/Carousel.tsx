@@ -32,7 +32,7 @@ const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide 
 
   return (
     <CarouselContext.Provider value={{ activeSlide, slidesCount, sliderHeight, setSliderHeight }}>
-      <FlexContainer>
+      <FlexContainer gutter={0}>
         <FlexRow>
           <FlexCol xs={1} s={1} m="hidden" align="center" style={{ textAlign: 'right' }}>
             <Link onClick={slideBackward}>
@@ -40,8 +40,8 @@ const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide 
             </Link>
           </FlexCol>
           <FlexCol xs={10} s={10} m={12} align="center">
-            <FlexContainer>
-              <FlexRow cols={slidesCount}>
+            <FlexContainer gutter={0}>
+              <FlexRow cols={slidesCount} justify="space-around">
                 {Children.toArray(children).map(
                   (child, index) => isValidElement(child) && cloneElement(child, { index }),
                 )}

@@ -9,6 +9,7 @@ const StyledFlexCol = styled(FlexCol)<FlexColProps & { hidden: boolean; sliderHe
   text-align: center;
   position: relative;
   opacity: 1;
+  max-width: 250px;
   min-height: ${({ sliderHeight }) => `${sliderHeight}px`};
   ${({ hidden }) => {
     if (hidden) {
