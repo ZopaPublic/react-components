@@ -2,9 +2,11 @@
 
 Carousel component to be used together with `<Carousel.Slide />`, `<Carousel.SlideIcon />`, `<Carousel.SlideText />`.
 
-The Carousel starts up for widths which are smaller than `grid.breakpoints.m` (768px).
+The Carousel kicks in for widths which are smaller than `grid.breakpoints.m` (768px).
 
-**To test the following examples resize your window and refresh.**
+**To test the following examples resize your window and refresh\*.**
+
+\*To prevent the page from jumping up and down when browsing through slides of different height each slide is given a minimum height equal to the height of the highest slide - hence the need to refresh after resizing.
 
 ## Example
 

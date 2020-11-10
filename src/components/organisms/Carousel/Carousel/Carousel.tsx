@@ -1,6 +1,11 @@
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import React, { Children, cloneElement, FC, isValidElement, useState } from 'react';
-import { colors, FlexCol, FlexContainer, FlexRow, Icon, Link } from '../../../..';
+import { colors } from '../../../../constants/colors';
+import Icon from '../../../atoms/Icon/Icon';
+import Link from '../../../atoms/Link/Link';
+import FlexCol from '../../../layout/FlexCol/FlexCol';
+import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
+import FlexRow from '../../../layout/FlexRow/FlexRow';
 import { CarouselContext } from '../context/CarouselContext';
 
 export interface CarouselComponentProps {

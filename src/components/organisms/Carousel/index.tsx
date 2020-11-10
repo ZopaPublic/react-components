@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import CarouselComponent, { CarouselComponentProps } from './CarouselComponent/CarouselComponent';
-import Slide from './Slide/Slide';
-import SlideText from './SlideText/SlideText';
-import SlideIcon from './SlideIcon/SlideIcon';
+import CarouselComponent, { CarouselComponentProps } from './Carousel/Carousel';
+import Slide from './CarouselSlide/CarouselSlide';
+import SlideIcon from './CarouselSlideIcon/CarouselSlideIcon';
+import SlideText from './CarouselSlideText/CarouselSlideText';
 
 interface CarouselStatic {
   Slide: typeof Slide;
