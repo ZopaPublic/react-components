@@ -19,7 +19,7 @@ export interface CarouselComponentProps {
 const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide }) => {
   const slidesCount = Children.count(children);
   const centralSlide = Math.ceil(slidesCount / 2) - 1;
-  const [activeSlide, setActiveSlide] = useState(initialSlide || centralSlide);
+  const [activeSlide, setActiveSlide] = useState(initialSlide !== undefined ? initialSlide : centralSlide);
   const [sliderHeight, setSliderHeight] = useState(0);
 
   const slideForward = () => {
@@ -35,7 +35,7 @@ const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide 
       <FlexContainer gutter={0}>
         <FlexRow>
           <FlexCol xs={1} s={1} m="hidden" align="center" style={{ textAlign: 'right' }}>
-            <Link onClick={slideBackward}>
+            <Link title="previous" onClick={slideBackward}>
               <Icon variant={faChevronLeft} color={colors.grey} />
             </Link>
           </FlexCol>
@@ -49,7 +49,7 @@ const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide 
             </FlexContainer>
           </FlexCol>
           <FlexCol xs={1} s={1} m="hidden" align="center">
-            <Link onClick={slideForward}>
+            <Link title="next" onClick={slideForward}>
               <Icon variant={faChevronRight} color={colors.grey} />
             </Link>
           </FlexCol>
