@@ -7,16 +7,31 @@ import { ProductTemplateHeader } from '../ProductTemplateHeader/ProductTemplateH
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
+import styled from 'styled-components';
+import grid from '../../../../constants/grid';
 
 export interface ProductTemplateProps {
   children: React.ReactNode;
-  title: string;
+  title?: string;
   subtitle?: string;
   prevStep?: ReactElement | string;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
   contentWidth?: number;
   onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }
+
+function overlayElementAbove(marginTop: number) {
+  return `
+    margin-top: -${marginTop - 24}px; 
+    @media (min-width: ${grid.breakpoints.m}px) {
+      margin-top: -${marginTop}px; 
+    }
+    `;
+}
+
+const StyledFlexRow = styled(FlexRow)<{ hasTitle: boolean }>(({ hasTitle }) =>
+  hasTitle ? 'margin-top: -160px' : overlayElementAbove(227),
+);
 
 function ProductTemplate({
   title,
@@ -37,16 +52,20 @@ function ProductTemplate({
   return (
     <FlexContainer data-automation="ZA.ProductTemplate" className={containerClassnames} gutter={0}>
       <FlexRow gutter={0}>
-        <FlexCol>
-          {showHeader ? (
+        {showHeader ? (
+          <FlexCol>
             <ProductTemplateHeader prevStep={prevStep} progress={progress} onBackPressed={onBackPressed} />
-          ) : null}
+          </FlexCol>
+        ) : null}
+        <FlexCol>
           <ProductTemplateTitle title={title} subtitle={subtitle} />
-          <FlexRow justify="center" gutter={0}>
+        </FlexCol>
+        <FlexCol>
+          <StyledFlexRow hasTitle={!!title || !!subtitle} justify="center" gutter={0}>
             <FlexCol m={10} xl={contentWidth}>
               {children}
             </FlexCol>
-          </FlexRow>
+          </StyledFlexRow>
         </FlexCol>
       </FlexRow>
     </FlexContainer>

@@ -64,6 +64,11 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 }
 
 .c7 {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.c8 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -71,7 +76,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   height: 4px;
 }
 
-.c10 {
+.c11 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -82,7 +87,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c10 > span {
+.c11 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -92,7 +97,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   color: #2C3236;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -106,7 +111,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c9 {
+.c10 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -190,15 +195,19 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
       <div
         class="c7"
       >
-        <span
-          class="c8"
-        />
-        <span
-          class="c9"
-        />
         <div
-          class="c10"
-        />
+          class="c8"
+        >
+          <span
+            class="c9"
+          />
+          <span
+            class="c10"
+          />
+          <div
+            class="c11"
+          />
+        </div>
       </div>
     </div>
   </div>

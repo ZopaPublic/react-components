@@ -17,7 +17,6 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
 
 .c0 {
   background-color: #F7F7F7;
-  margin-bottom: -160px;
 }
 
 .c1 {
@@ -74,7 +73,6 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
 
 .c0 {
   background-color: #F7F7F7;
-  margin-bottom: -160px;
 }
 
 .c1 {
@@ -145,7 +143,6 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
 
 .c0 {
   background-color: #F7F7F7;
-  margin-bottom: -160px;
 }
 
 .c1 {

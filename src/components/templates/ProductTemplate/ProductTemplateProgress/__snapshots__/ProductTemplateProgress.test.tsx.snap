@@ -2,6 +2,11 @@
 
 exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
 .c1 {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -9,7 +14,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   height: 4px;
 }
 
-.c4 {
+.c5 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -20,7 +25,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c4 > span {
+.c5 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -30,7 +35,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   color: #2C3236;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -44,7 +49,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -75,15 +80,19 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
     <div
       class="c1"
     >
-      <span
-        class="c2"
-      />
-      <span
-        class="c3"
-      />
       <div
-        class="c4"
-      />
+        class="c2"
+      >
+        <span
+          class="c3"
+        />
+        <span
+          class="c4"
+        />
+        <div
+          class="c5"
+        />
+      </div>
     </div>
   </div>
 </div>
