@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, UIEvent } from 'react';
 import styled from 'styled-components';
 
 import { ProgressProps } from '../../../molecules/Progress/Progress';
@@ -8,6 +8,7 @@ import { ProductTemplateProgress } from '../ProductTemplateProgress/ProductTempl
 interface ProductTemplateHeaderProps {
   prevStep?: string | ReactNode;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
+  onBackPressed?: (event: UIEvent) => void;
 }
 
 const ProductTemplateHeaderContainer = styled.div`
@@ -15,10 +16,12 @@ const ProductTemplateHeaderContainer = styled.div`
   min-height: 30px;
 `;
 
-export function ProductTemplateHeader({ prevStep, progress }: ProductTemplateHeaderProps) {
+export function ProductTemplateHeader({ prevStep, progress, onBackPressed }: ProductTemplateHeaderProps) {
   return (
     <ProductTemplateHeaderContainer className="mx-4 mb-6 m:mx-0" data-automation="ZA.ProductTemplateHeader">
-      {prevStep && <ProductTemplateNavigation prevStep={prevStep} />}
+      {(!!prevStep || !!onBackPressed) && (
+        <ProductTemplateNavigation prevStep={prevStep} onBackPressed={onBackPressed} />
+      )}
       {progress && <ProductTemplateProgress progress={progress} />}
     </ProductTemplateHeaderContainer>
   );

@@ -11,3 +11,4 @@ styleguide/*
 /types
 
 coverage
+/.idea/

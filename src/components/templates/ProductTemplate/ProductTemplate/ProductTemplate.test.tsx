@@ -9,6 +9,7 @@ describe('<ProductTemplate />', () => {
         title="Product title"
         subtitle="Product subtitle"
         prevStep="prevStep"
+        onBackPressed={jest.fn}
         progress={{ currentStep: 2, totalSteps: 4 }}
         contentWidth={10}
       >
