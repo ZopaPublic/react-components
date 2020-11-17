@@ -39,7 +39,7 @@ With different number of slides and custom initial slide:
 import { Carousel, Trustpilot } from '@zopauk/react-components';
 import { faCar, faHeart, faPoundSign, faPiggyBank } from '@fortawesome/free-solid-svg-icons';
 
-<Carousel initialSlide={2}>
+<Carousel initialSlideIndex={2}>
   <Carousel.Slide>
     <Carousel.SlideIcon variant={faCar} />
     <Carousel.SlideText>We check your car and dealership so you can buy with confidence</Carousel.SlideText>
@@ -64,7 +64,7 @@ import { faCar, faHeart, faPoundSign, faPiggyBank } from '@fortawesome/free-soli
 import { Carousel, Trustpilot } from '@zopauk/react-components';
 import { faCar, faHeart, faPoundSign, faPiggyBank } from '@fortawesome/free-solid-svg-icons';
 
-<Carousel initialSlide={0}>
+<Carousel initialSlideIndex={0}>
   <Carousel.Slide>
     <Carousel.SlideIcon variant={faHeart} />
     <Carousel.SlideText>Rated excellent based on 14,899 reviews</Carousel.SlideText>

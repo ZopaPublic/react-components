@@ -13,13 +13,15 @@ export interface CarouselComponentProps {
    * Used to specify which slide of the carousel should be initially visible.
    * @default Slide closest to the center: Math.ceil(totalNumberOfSlides / 2)
    */
-  initialSlide?: number;
+  initialSlideIndex?: number;
 }
 
-const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlide }) => {
+const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlideIndex }) => {
   const slidesCount = Children.count(children);
-  const centralSlide = Math.ceil(slidesCount / 2) - 1;
-  const [activeSlide, setActiveSlide] = useState(initialSlide !== undefined ? initialSlide : centralSlide);
+  const centralSlideIndex = Math.ceil(slidesCount / 2) - 1;
+  const [activeSlide, setActiveSlide] = useState(
+    initialSlideIndex !== undefined ? initialSlideIndex : centralSlideIndex,
+  );
   const [sliderHeight, setSliderHeight] = useState(0);
 
   const slideForward = () => {
