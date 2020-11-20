@@ -1,3 +1,18 @@
+## [4.31.0](https://github.com/zopaUK/react-components/compare/v4.30.0...v4.31.0) (2020-11-20)
+
+
+### Features
+
+* **carousel:** add carousel component ([544feec](https://github.com/zopaUK/react-components/commit/544feecc03520cf210920169ce61ad7dd030ebbd))
+
+
+### Bug Fixes
+
+* **carousel:** add max width ([104433c](https://github.com/zopaUK/react-components/commit/104433c235bce87df37ab666ed6821b4b11683cf))
+* **carousel:** dynamic minimum width ([f9dd90c](https://github.com/zopaUK/react-components/commit/f9dd90c9ab285d5d29635f75cf1acdd9caa75a87))
+* **carousel:** rename variables ([36d59b5](https://github.com/zopaUK/react-components/commit/36d59b56360d561b2fcb2499ed010da18fbee307))
+* **carousel:** reorganize folder structure ([7583268](https://github.com/zopaUK/react-components/commit/7583268b6f4535a0af9a51a2f6c152e278914457))
+
 ## [4.30.0](https://github.com/zopaUK/react-components/compare/v4.29.3...v4.30.0) (2020-11-06)
 
 
