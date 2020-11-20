@@ -6,7 +6,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { Colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
 
-interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
+export interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
   variant: IconDefinition;
   bgColor?: Colors[keyof Colors];
 }
