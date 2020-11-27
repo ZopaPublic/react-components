@@ -1,3 +1,10 @@
+## [4.32.0](https://github.com/zopaUK/react-components/compare/v4.31.0...v4.32.0) (2020-11-27)
+
+
+### Features
+
+* **producttemplate:** onBackPressed callback ([2e85d0f](https://github.com/zopaUK/react-components/commit/2e85d0f2866f8507e10229310518c35aa4ce3200))
+
 ## [4.31.0](https://github.com/zopaUK/react-components/compare/v4.30.0...v4.31.0) (2020-11-20)
 
 
