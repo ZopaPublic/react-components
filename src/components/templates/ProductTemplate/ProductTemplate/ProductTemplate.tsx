@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { MouseEventHandler, ReactElement } from 'react';
 import classnames from 'classnames';
 
 import { ProgressProps } from '../../../molecules/Progress/Progress';
@@ -12,21 +12,35 @@ export interface ProductTemplateProps {
   children: React.ReactNode;
   title: string;
   subtitle?: string;
-  prevStep?: string | ReactNode;
+  prevStep?: ReactElement | string;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
   contentWidth?: number;
+  onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }
 
-function ProductTemplate({ title, subtitle, children, prevStep, progress, contentWidth = 6 }: ProductTemplateProps) {
+function ProductTemplate({
+  title,
+  subtitle,
+  children,
+  prevStep,
+  progress,
+  onBackPressed,
+  contentWidth = 6,
+}: ProductTemplateProps) {
   const containerClassnames = classnames('mb-10 m:mt-8', {
     'mt-6': !prevStep,
     'mt-4': prevStep,
   });
+
+  const showHeader = !!prevStep || !!onBackPressed || !!progress;
+
   return (
     <FlexContainer data-automation="ZA.ProductTemplate" className={containerClassnames} gutter={0}>
       <FlexRow gutter={0}>
         <FlexCol>
-          {!!prevStep || !!progress ? <ProductTemplateHeader prevStep={prevStep} progress={progress} /> : null}
+          {showHeader ? (
+            <ProductTemplateHeader prevStep={prevStep} progress={progress} onBackPressed={onBackPressed} />
+          ) : null}
           <ProductTemplateTitle title={title} subtitle={subtitle} />
           <FlexRow justify="center" gutter={0}>
             <FlexCol m={10} xl={contentWidth}>

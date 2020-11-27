@@ -1,14 +1,14 @@
-import React, { ReactNode } from 'react';
+import React, { MouseEventHandler, ReactElement } from 'react';
 import styled from 'styled-components';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-
-import { Text } from '../../../..';
+import Text from '../../../atoms/Text/Text';
 import Icon from '../../../atoms/Icon/Icon';
 import Link from '../../../atoms/Link/Link';
 import { colors, grid } from '../../../../constants';
 
 interface ProductTemplateNavigationProps {
-  prevStep: string | ReactNode;
+  prevStep?: ReactElement | string;
+  onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 const StyledLink = styled(Link)`
@@ -31,11 +31,11 @@ const BackText = styled(Text).attrs({ color: colors.greyDark })`
   line-height: 0;
 `;
 
-export function ProductTemplateNavigation({ prevStep }: ProductTemplateNavigationProps) {
+export function ProductTemplateNavigation({ prevStep, onBackPressed }: ProductTemplateNavigationProps) {
   return (
     <Wrapper className="my-4 m:mt-0" data-automation="ZA.ProductTemplateNavigation">
-      {typeof prevStep === 'string' ? (
-        <StyledLink href={prevStep} aria-label="Back">
+      {!prevStep || typeof prevStep === 'string' ? (
+        <StyledLink href={prevStep} aria-label="Back" onClick={onBackPressed}>
           <Icon variant={faChevronLeft} color={colors.greyDark} size="xs" className="mr-2" />
           <BackText>Back</BackText>
         </StyledLink>
