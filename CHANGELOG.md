@@ -1,3 +1,10 @@
+## [4.33.0](https://github.com/zopaUK/react-components/compare/v4.32.0...v4.33.0) (2020-12-03)
+
+
+### Features
+
+* **product template:** render ProductTemplate without title ([2eee1a4](https://github.com/zopaUK/react-components/commit/2eee1a41c29501c6ab612af3946fad5f695a9296))
+
 ## [4.32.0](https://github.com/zopaUK/react-components/compare/v4.31.0...v4.32.0) (2020-11-27)
 
 
