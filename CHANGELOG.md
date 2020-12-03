@@ -1,3 +1,10 @@
+### [4.33.1](https://github.com/zopaUK/react-components/compare/v4.33.0...v4.33.1) (2020-12-03)
+
+
+### Bug Fixes
+
+* **card:** add missing semicolon to css ([1b2cb66](https://github.com/zopaUK/react-components/commit/1b2cb6690792105fc061ff6dc4731e32004a7a05))
+
 ## [4.33.0](https://github.com/zopaUK/react-components/compare/v4.32.0...v4.33.0) (2020-12-03)
 
 
