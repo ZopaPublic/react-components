@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductTemplate /> renders with all props and content 1`] = `
-.c23 {
+.c25 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -18,27 +18,27 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   flex-direction: column;
 }
 
-.c23 > .c24 {
+.c25 > .c26 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c23 .c25 {
+.c25 .c27 {
   font-size: 15px;
 }
 
-.c23 .c26 {
+.c25 .c28 {
   font-size: 13px;
 }
 
-.c23 > .c27 {
+.c25 > .c29 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c19 {
+.c20 {
   font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -66,7 +66,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: inherit;
 }
 
-.c20 {
+.c21 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -80,17 +80,16 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: center;
 }
 
-.c16 {
+.c17 {
   background-color: #F7F7F7;
-  margin-bottom: -160px;
 }
 
-.c17 {
+.c18 {
   max-width: 612px;
   margin: 0 auto;
 }
 
-.c18 {
+.c19 {
   padding-bottom: 195px;
 }
 
@@ -143,6 +142,11 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c10 {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.c11 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -150,7 +154,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   height: 4px;
 }
 
-.c15 {
+.c16 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -161,7 +165,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c15 > span {
+.c16 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -171,7 +175,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   color: #2C3236;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -185,7 +189,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c12 {
+.c13 {
   position: absolute;
   top: 50%;
   left: 33.333333333333336%;
@@ -199,7 +203,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 50%;
   left: 66.66666666666667%;
@@ -213,7 +217,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c14 {
+.c15 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -268,7 +272,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-items: flex-start;
 }
 
-.c21 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -302,7 +306,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
-.c22 {
+.c24 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -313,21 +317,25 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
+.c23 {
+  margin-top: -160px;
+}
+
 @media (max-width:768px) {
-  .c23 {
+  .c25 {
     border-radius: 0;
     box-shadow: none;
     border: none;
   }
 
-  .c23:last-of-type {
+  .c25:last-of-type {
     box-shadow: 0 0 1px 0 #D4D7D9;
     border-bottom: 1px solid #EFEFEF;
   }
 }
 
 @media (min-width:1280px) {
-  .c16 {
+  .c17 {
     border-radius: 12px;
   }
 }
@@ -373,7 +381,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c24 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -383,7 +391,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:1300px) {
-  .c22 {
+  .c24 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -450,58 +458,72 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             <div
               class="c10"
             >
-              <span
-                class="c11"
-              />
-              <span
-                class="c12"
-              />
-              <span
-                class="c13"
-              />
-              <span
-                class="c14"
-              />
               <div
-                class="c15"
-              />
+                class="c11"
+              >
+                <span
+                  class="c12"
+                />
+                <span
+                  class="c13"
+                />
+                <span
+                  class="c14"
+                />
+                <span
+                  class="c15"
+                />
+                <div
+                  class="c16"
+                />
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="c2"
+        cols="12"
+      >
         <header
-          class="c16"
+          class="c17"
           data-automation="ZA.ProductTemplateTitle"
         >
           <div
-            class="c17 px-0 m:px-4"
+            class="c18 px-0 m:px-4"
           >
             <div
-              class="c18 pt-7 m:pt-9 mx-6 m:mx-0"
+              class="c19 pt-7 m:pt-9 mx-6 m:mx-0"
             >
               <h1
-                class="c19"
+                class="c20"
               >
                 Product title
               </h1>
               <p
-                class="c20 mt-4"
+                class="c21 mt-4"
               >
                 Product subtitle
               </p>
             </div>
           </div>
         </header>
+      </div>
+      <div
+        class="c2"
+        cols="12"
+      >
         <div
-          class="c21"
+          class="c22 c23"
           cols="12"
           direction="row"
         >
           <div
-            class="c22"
+            class="c24"
             cols="12"
           >
             <div
-              class="c23 px-4 py-6 m:p-8"
+              class="c25 px-4 py-6 m:p-8"
             >
               This is the body of the card
             </div>

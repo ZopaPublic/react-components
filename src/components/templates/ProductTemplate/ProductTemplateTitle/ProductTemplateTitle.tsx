@@ -9,15 +9,13 @@ import Text from '../../../atoms/Text/Text';
 import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateTitleProps {
-  title: string;
+  title?: string;
   subtitle?: string;
   dataAutomation?: string;
 }
 
 const ProductTemplateTitleBackground = styled.header`
   background-color: ${colors.greyLightest};
-  /* Make the following element overlay the ProductTitle by 160px */
-  margin-bottom: -160px;
   ${minMedia.desktop`
     ${css`
       border-radius: 12px;

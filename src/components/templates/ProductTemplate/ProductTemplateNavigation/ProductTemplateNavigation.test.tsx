@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, screen, render } from '@testing-library/react';
 import { ProductTemplateNavigation } from './ProductTemplateNavigation';
 
 describe('<ProductTemplateNavigation />', () => {
@@ -15,8 +15,8 @@ describe('<ProductTemplateNavigation />', () => {
 
   it('invokes onBackPressed callback', () => {
     const mockOnBackPressed = jest.fn();
-    const { getByLabelText } = render(<ProductTemplateNavigation onBackPressed={mockOnBackPressed} />);
-    fireEvent.click(getByLabelText('Back'));
+    render(<ProductTemplateNavigation onBackPressed={mockOnBackPressed} />);
+    fireEvent.click(screen.getByLabelText('Back'));
     expect(mockOnBackPressed).toHaveBeenCalled();
   });
 });

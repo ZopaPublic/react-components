@@ -27,6 +27,12 @@ export interface ProgressionProps extends ProgressionStyleProps {
 export interface ProgressPointProps extends ProgressionStyleProps, ProgressionProps {
   completed: boolean;
 }
+const PROGRESS_POINT_RADIUS = 6;
+
+const ProgressWrapper = styled.div`
+  margin-left: ${PROGRESS_POINT_RADIUS}px;
+  margin-right: ${PROGRESS_POINT_RADIUS}px;
+`;
 
 const ProgressBar = styled.div`
   position: relative;
@@ -61,8 +67,8 @@ const ProgressPoint = styled.span<ProgressPointProps>`
   left: ${({ position }) => `${position}%`};
 
   display: block;
-  width: 12px;
-  height: 12px;
+  width: ${PROGRESS_POINT_RADIUS * 2}px;
+  height: ${PROGRESS_POINT_RADIUS * 2}px;
 
   background: ${({ completed, progressColor = colors.brand }) => (completed ? progressColor : colors.greyLighter)};
   border-radius: 100%;
@@ -95,16 +101,18 @@ const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep =
   };
 
   return (
-    <ProgressBar {...rest}>
-      {renderPoints()}
-      <Progression position={getStepPosition(totalSteps, currentStep - 0.5)} progressColor={progressColor}>
-        {withStep && (
-          <Text size="small">
-            Step {currentStep} of {totalSteps}
-          </Text>
-        )}
-      </Progression>
-    </ProgressBar>
+    <ProgressWrapper>
+      <ProgressBar {...rest}>
+        {renderPoints()}
+        <Progression position={getStepPosition(totalSteps, currentStep - 0.5)} progressColor={progressColor}>
+          {withStep && (
+            <Text size="small">
+              Step {currentStep} of {totalSteps}
+            </Text>
+          )}
+        </Progression>
+      </ProgressBar>
+    </ProgressWrapper>
   );
 };
 
