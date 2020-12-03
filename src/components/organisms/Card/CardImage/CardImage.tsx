@@ -27,7 +27,7 @@ export const CardImageContainer = styled.div`
 
 const Image = styled.div<Pick<CardImageProps, 'url'>>`
   height: 100%;
-  width: 100%
+  width: 100%;
   background-image: url(${({ url }) => url});
   background-size: cover;
   background-repeat: no-repeat;
