@@ -36,7 +36,8 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
       </Text>
       <Text as="p" size="small" align="center" className="mb-7">
         Please come back later or give us a call on{' '}
-        <Link href={`tel:${details[helpLine].telephone}`}>{details[helpLine].telephone}</Link> and we'll help you out.
+        <Link href={`tel:${details[helpLine].telephone.label}`}>{details[helpLine].telephone.label}</Link> and we'll
+        help you out.
       </Text>
     </div>
   );
