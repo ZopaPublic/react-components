@@ -25,13 +25,20 @@ const ButtonAsLink = styled.a`
 `;
 interface DetailsProps {
   [key: string]: {
-    telephone: string;
+    telephone: {
+      label: string;
+      tel: string;
+    };
     text: React.ReactNode;
   };
 }
+
 export const details: DetailsProps = {
   borrowers: {
-    telephone: '020 7580 6060',
+    telephone: {
+      label: '020 7580 6060',
+      tel: '+442075806060',
+    },
     text: (
       <>
         We can't take applications over the phone. <br />
@@ -40,7 +47,10 @@ export const details: DetailsProps = {
     ),
   },
   investors: {
-    telephone: '020 7291 8331',
+    telephone: {
+      label: '020 7291 8331',
+      tel: '+442072918331',
+    },
     text: (
       <>
         If you have any questions, our team are on hand to help. <br />
@@ -76,12 +86,12 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                   <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>{details[helpLine].telephone}</Card.Heading>
+                  <Card.Heading>{details[helpLine].telephone.label}</Card.Heading>
                   <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href={`tel:${details[helpLine].telephone}`}>
+                <ButtonAsLink styling="secondary" fullWidth href={`tel:${details[helpLine].telephone.tel}`}>
                   Call us
                 </ButtonAsLink>
               </Card.Actions>
