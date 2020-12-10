@@ -9,32 +9,51 @@ import Card from '../../organisms/Card';
 import { buttonStyle } from '../../atoms/Button/Button';
 import Icon from '../../atoms/Icon/Icon';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-
 const HelpWrap = styled.div`
   background: ${colors.white};
   box-sizing: border-box;
 `;
-
 const HelpContent = styled.div`
   margin: 0 auto;
   max-width: 700px;
 `;
-
 const FlexColCenter = styled(FlexCol)`
   text-align: center;
 `;
-
 const ButtonAsLink = styled.a`
   ${buttonStyle}
 `;
-
-export enum HelpLine {
-  borrowers = '020 7580 6060',
-  investors = '020 7291 8331',
+interface DetailsProps {
+  [key: string]: {
+    telephone: string;
+    text: React.ReactNode;
+  };
 }
-
+export const details: DetailsProps = {
+  borrowers: {
+    telephone: '020 7580 6060',
+    text: (
+      <>
+        We can't take applications over the phone. <br />
+        UK residents only. Calls may be monitored or recorded
+      </>
+    ),
+  },
+  investors: {
+    telephone: '020 7291 8331',
+    text: (
+      <>
+        If you have any questions, our team are on hand to help. <br />
+        UK residents only. Calls may be monitored or recorded.
+      </>
+    ),
+  },
+};
+export enum HelpLine {
+  borrowers = 'borrowers',
+  investors = 'investors',
+}
 type HelpProps = { helpLine?: HelpLine };
-
 const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
   <HelpWrap className="pt-4">
     <HelpContent>
@@ -44,8 +63,7 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
             We're here to help
           </Heading>
           <Text className="pb-8" color={colors.grey}>
-            We can't take applications over the phone. <br />
-            UK residents only. Calls may be monitored or recorded
+            {details[helpLine].text}
           </Text>
         </FlexColCenter>
       </FlexRow>
@@ -58,12 +76,12 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                   <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>{helpLine}</Card.Heading>
+                  <Card.Heading>{details[helpLine].telephone}</Card.Heading>
                   <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href={`tel:${helpLine}`}>
+                <ButtonAsLink styling="secondary" fullWidth href={`tel:${details[helpLine].telephone}`}>
                   Call us
                 </ButtonAsLink>
               </Card.Actions>
@@ -94,5 +112,4 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
     </HelpContent>
   </HelpWrap>
 );
-
 export default Help;
