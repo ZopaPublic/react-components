@@ -184,17 +184,18 @@ exports[`<Maintenance /> renders with all the props 1`] = `
     <h1
       class="c4 mb-4"
     >
-      We’ll be back soon!
+      We'll be back soon!
     </h1>
     <p
       class="c5 mb-7"
     >
-      Sorry for the inconvenience but we’re doing some essential work on our website right now.
+      Sorry for the inconvenience but we're doing some essential work on our website right now.
     </p>
     <p
       class="c6 mb-7"
     >
-      Please come back later or give us a call on 
+      Please come back later or give us a call on
+       
       <a
         class="c7"
         color="#3B46C4"
@@ -202,7 +203,7 @@ exports[`<Maintenance /> renders with all the props 1`] = `
       >
         020 7580 6060
       </a>
-       and we’ll help you out.
+       and we'll help you out.
     </p>
   </div>
 </div>
