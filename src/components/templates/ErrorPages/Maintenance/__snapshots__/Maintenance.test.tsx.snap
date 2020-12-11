@@ -195,15 +195,15 @@ exports[`<Maintenance /> renders with all the props 1`] = `
       class="c6 mb-7"
     >
       Please come back later or give us a call on
-       
       <a
         class="c7"
         color="#3B46C4"
-        href="tel:020 7580 6060"
+        href="tel:+442075806060"
       >
         020 7580 6060
       </a>
-       and we'll help you out.
+       
+      and we'll help you out.
     </p>
   </div>
 </div>
