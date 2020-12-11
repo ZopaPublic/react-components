@@ -9,20 +9,25 @@ import Card from '../../organisms/Card';
 import { buttonStyle } from '../../atoms/Button/Button';
 import Icon from '../../atoms/Icon/Icon';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+
 const HelpWrap = styled.div`
   background: ${colors.white};
   box-sizing: border-box;
 `;
+
 const HelpContent = styled.div`
   margin: 0 auto;
   max-width: 700px;
 `;
+
 const FlexColCenter = styled(FlexCol)`
   text-align: center;
 `;
+
 const ButtonAsLink = styled.a`
   ${buttonStyle}
 `;
+
 type DetailsProps = Record<
   HelpLine,
   {
@@ -60,10 +65,12 @@ export const details: DetailsProps = {
     ),
   },
 };
+
 export enum HelpLine {
   borrowers = 'borrowers',
   investors = 'investors',
 }
+
 type HelpProps = { helpLine?: HelpLine };
 const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
   <HelpWrap className="pt-4">
