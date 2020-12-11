@@ -28,13 +28,50 @@ const ButtonAsLink = styled.a`
   ${buttonStyle}
 `;
 
+type DetailsProps = Record<
+  HelpLine,
+  {
+    telephone: {
+      label: string;
+      tel: string;
+    };
+    text: React.ReactNode;
+  }
+>;
+
+export const HelpLineDetails: DetailsProps = {
+  borrowers: {
+    telephone: {
+      label: '020 7580 6060',
+      tel: '+442075806060',
+    },
+    text: (
+      <>
+        We can't take applications over the phone. <br />
+        UK residents only. Calls may be monitored or recorded
+      </>
+    ),
+  },
+  investors: {
+    telephone: {
+      label: '020 7291 8331',
+      tel: '+442072918331',
+    },
+    text: (
+      <>
+        If you have any questions, our team are on hand to help. <br />
+        UK residents only. Calls may be monitored or recorded.
+      </>
+    ),
+  },
+};
+
 export enum HelpLine {
-  borrowers = '020 7580 6060',
-  investors = '020 7291 8331',
+  borrowers = 'borrowers',
+  investors = 'investors',
 }
 
 type HelpProps = { helpLine?: HelpLine };
-
 const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
   <HelpWrap className="pt-4">
     <HelpContent>
@@ -44,8 +81,7 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
             We're here to help
           </Heading>
           <Text className="pb-8" color={colors.grey}>
-            We can't take applications over the phone. <br />
-            UK residents only. Calls may be monitored or recorded
+            {HelpLineDetails[helpLine].text}
           </Text>
         </FlexColCenter>
       </FlexRow>
@@ -58,12 +94,12 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                   <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>{helpLine}</Card.Heading>
+                  <Card.Heading>{HelpLineDetails[helpLine].telephone.label}</Card.Heading>
                   <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href={`tel:${helpLine}`}>
+                <ButtonAsLink styling="secondary" fullWidth href={`tel:${HelpLineDetails[helpLine].telephone.tel}`}>
                   Call us
                 </ButtonAsLink>
               </Card.Actions>
@@ -94,5 +130,4 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
     </HelpContent>
   </HelpWrap>
 );
-
 export default Help;

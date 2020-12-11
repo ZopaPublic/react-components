@@ -1,7 +1,6 @@
 /*
     Expose shared endpoints:
  */
-
 // Global (colors, fonts, ...)
 export {
   breakpoints,
@@ -14,7 +13,6 @@ export {
   mobileNavbarHeight,
 } from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
-
 // Atoms
 export { default as Alert } from './components/atoms/Alert/Alert';
 export { default as Badge } from './components/atoms/Badge/Badge';
@@ -38,12 +36,11 @@ export { default as Fieldset } from './components/atoms/Fieldset/Fieldset';
 export { default as Legend } from './components/atoms/Legend/Legend';
 export { default as Logo } from './components/atoms/Logo/Logo';
 export { default as Trustpilot } from './components/atoms/Trustpilot/Trustpilot';
-
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
 export { default as ExpiryModal } from './components/molecules/ExpiryModal/ExpiryModal';
 export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFooter';
-export { default as Help, HelpLine } from './components/molecules/Help/Help';
+export { default as Help, HelpLine, HelpLineDetails } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as CheckboxGroupField } from './components/molecules/CheckboxGroupField/CheckboxGroupField';
@@ -61,20 +58,16 @@ export { default as Navbar, navbarLinkStyles } from './components/organisms/Navb
 export { default as Card } from './components/organisms/Card';
 export * from './components/organisms/Tabs';
 export * from './components/organisms/Carousel';
-
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
 export { default as ErrorPageTemplate } from './components/templates/ErrorPages';
-
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
 export { default as FlexRow } from './components/layout/FlexRow/FlexRow';
 export { default as FlexCol } from './components/layout/FlexCol/FlexCol';
 export { default as SizedContainer } from './components/layout/SizedContainer/SizedContainer';
-
 // Hooks
 export * from './hooks/useViewport';
 export * from './hooks/useAccordion';
-
 // Helpers
 export * from './helpers/responsiveness';
