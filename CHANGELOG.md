@@ -1,3 +1,15 @@
+### [4.33.2](https://github.com/zopaUK/react-components/compare/v4.33.1...v4.33.2) (2020-12-11)
+
+
+### Bug Fixes
+
+* **help:** fixed indentation for DetailsProp ([67f75ba](https://github.com/zopaUK/react-components/commit/67f75ba38847cf5dd3395576ccceb0d61d984986))
+* **help:** helpLine shows correct information for investors/borrowers ([948c270](https://github.com/zopaUK/react-components/commit/948c27049a202dccf83b88f1e10923f4242b1a14))
+* **help:** tel formatting to not include whitespace ([7a2159a](https://github.com/zopaUK/react-components/commit/7a2159a189e8d76839d867b751e2a91bb6adec30))
+* **maintenance:** corrected conflicts ([cbc0459](https://github.com/zopaUK/react-components/commit/cbc0459357fe0fcae6dd01a9d72f0bbcbabedd56))
+* **maintenance:** updated to reflect changes in helpLine ([432e589](https://github.com/zopaUK/react-components/commit/432e589f5bb5a8388000659b340c5717912caea6))
+* **maintenance:** updated to reflect changes in HelpLine ([93c9ab6](https://github.com/zopaUK/react-components/commit/93c9ab65ed70071b7bf8468ffa6046f65c27cd93))
+
 ### [4.33.1](https://github.com/zopaUK/react-components/compare/v4.33.0...v4.33.1) (2020-12-03)
 
 
