@@ -23,13 +23,16 @@ const FlexColCenter = styled(FlexCol)`
 const ButtonAsLink = styled.a`
   ${buttonStyle}
 `;
-type DetailsProps = Record<HelpLine, {
+type DetailsProps = Record<
+  HelpLine,
+  {
     telephone: {
       label: string;
       tel: string;
     };
     text: React.ReactNode;
-  }>;
+  }
+>;
 
 export const details: DetailsProps = {
   borrowers: {
