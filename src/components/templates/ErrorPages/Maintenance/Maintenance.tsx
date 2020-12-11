@@ -10,7 +10,7 @@ import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport/useViewport';
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
-import { HelpLine, details } from '../../../molecules/Help/Help';
+import { HelpLine, HelpLineDetails } from '../../../molecules/Help/Help';
 import { ErrorTemplateProps } from '../Template/Template';
 const StyledIcon = styled(Icon)`
   width: 80px;
@@ -36,8 +36,10 @@ const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLi
       </Text>
       <Text as="p" size="small" align="center" className="mb-7">
         Please come back later or give us a call on{' '}
-        <Link href={`tel:${details[helpLine].telephone.label}`}>{details[helpLine].telephone.label}</Link> and we'll
-        help you out.
+        <Link href={`tel:${HelpLineDetails[helpLine].telephone.label}`}>
+          {HelpLineDetails[helpLine].telephone.label}
+        </Link>{' '}
+        and we'll help you out.
       </Text>
     </div>
   );

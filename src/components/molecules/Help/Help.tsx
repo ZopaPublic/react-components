@@ -39,7 +39,7 @@ type DetailsProps = Record<
   }
 >;
 
-export const details: DetailsProps = {
+export const HelpLineDetails: DetailsProps = {
   borrowers: {
     telephone: {
       label: '020 7580 6060',
@@ -81,7 +81,7 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
             We're here to help
           </Heading>
           <Text className="pb-8" color={colors.grey}>
-            {details[helpLine].text}
+            {HelpLineDetails[helpLine].text}
           </Text>
         </FlexColCenter>
       </FlexRow>
@@ -94,12 +94,12 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                   <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
-                  <Card.Heading>{details[helpLine].telephone.label}</Card.Heading>
+                  <Card.Heading>{HelpLineDetails[helpLine].telephone.label}</Card.Heading>
                   <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>
-                <ButtonAsLink styling="secondary" fullWidth href={`tel:${details[helpLine].telephone.tel}`}>
+                <ButtonAsLink styling="secondary" fullWidth href={`tel:${HelpLineDetails[helpLine].telephone.tel}`}>
                   Call us
                 </ButtonAsLink>
               </Card.Actions>
