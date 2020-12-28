@@ -57,7 +57,7 @@
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "styled-components": "^4.4.0",
-    "typescript": ">=3.x <4"
+    "typescript": ">=3.x"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
