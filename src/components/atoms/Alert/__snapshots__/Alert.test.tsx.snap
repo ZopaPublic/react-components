@@ -10,8 +10,8 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   padding: 8px 16px 8px 16px;
   background: #EFEFEF;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;
@@ -80,8 +80,8 @@ exports[`Alert renders with specific severity: alert 1`] = `
   padding: 8px 16px 8px 16px;
   background: #FFDAD8;
   color: #940700;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;
@@ -150,8 +150,8 @@ exports[`Alert renders with specific severity: info 1`] = `
   padding: 8px 16px 8px 16px;
   background: #EFEFEF;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;
@@ -220,8 +220,8 @@ exports[`Alert renders with specific severity: success 1`] = `
   padding: 8px 16px 8px 16px;
   background: #DDFDE5;
   color: #17592B;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;
@@ -290,8 +290,8 @@ exports[`Alert renders with specific severity: warning 1`] = `
   padding: 8px 16px 8px 16px;
   background: #FFECCE;
   color: #704300;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;

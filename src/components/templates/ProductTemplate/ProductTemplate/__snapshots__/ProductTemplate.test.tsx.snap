@@ -25,11 +25,11 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c25 .c27 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .c25 .c28 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .c25 > .c29 {
@@ -59,8 +59,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #4A545E;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -169,7 +169,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   color: #2C3236;

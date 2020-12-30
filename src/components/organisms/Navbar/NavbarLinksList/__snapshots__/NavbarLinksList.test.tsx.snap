@@ -131,7 +131,7 @@ Object {
   .c2 {
     width: 100%;
     color: #2C3236;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -315,7 +315,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-ifAKCX kjAaOj"
+        class="sc-bwzfXH haaJDm sc-ifAKCX gOIquV"
         color="#3B46C4"
         href="#"
         role="menuitem"

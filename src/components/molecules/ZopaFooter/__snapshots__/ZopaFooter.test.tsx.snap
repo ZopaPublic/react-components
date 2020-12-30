@@ -84,8 +84,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #4A545E;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -98,8 +98,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 .c4 {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   -webkit-letter-spacing: -0.01px;
   -moz-letter-spacing: -0.01px;
   -ms-letter-spacing: -0.01px;

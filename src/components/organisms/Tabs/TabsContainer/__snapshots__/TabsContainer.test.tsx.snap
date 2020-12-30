@@ -25,10 +25,10 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;

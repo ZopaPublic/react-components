@@ -12,7 +12,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #3EBC64;
@@ -93,7 +93,7 @@ exports[`<TextField /> renders the component with error 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #FF4539;
@@ -173,7 +173,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -196,7 +196,7 @@ exports[`<TextField /> renders the component with label 1`] = `
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 <label
@@ -219,7 +219,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -300,7 +300,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -371,7 +371,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 16px;
   color: #2C3236;
 }
 
@@ -413,7 +413,7 @@ exports[`<TextField /> renders the component with size 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;

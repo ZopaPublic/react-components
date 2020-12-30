@@ -113,7 +113,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
   outline: none;
@@ -192,10 +192,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -380,7 +380,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   .c8 {
     width: 100%;
     color: #2C3236;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -1219,7 +1219,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
   outline: none;
@@ -1298,10 +1298,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -1487,7 +1487,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   .c8 {
     width: 100%;
     color: #2C3236;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -2320,7 +2320,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
   outline: none;
@@ -2399,10 +2399,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -2587,7 +2587,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   .c8 {
     width: 100%;
     color: #2C3236;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -3426,7 +3426,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   color: #2C3236;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   border-top: 1px solid #D4D7D9;
   border-radius: 0px;
   outline: none;
@@ -3505,10 +3505,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -3708,7 +3708,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   .c8 {
     width: 100%;
     color: #2C3236;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
   }
