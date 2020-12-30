@@ -21,7 +21,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
   min-width: 100px;
   user-select: none;
-  line-height: 1.3;
+  line-height: ${typography.sizes.lineHeight.body};
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -35,7 +35,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  font-size: 16px;
+  font-size: ${typography.sizes.text.body};
 
   &:focus,
   &:hover {
