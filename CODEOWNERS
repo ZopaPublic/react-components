@@ -1,1 +1,3 @@
-*       @poteirard @JuliaHempel @steedems @moshie @katebeavis @raff-r @admmasters
+# Only one member of each team is allowed to be in code owners. That way we force cross-team collaboration
+
+*       @poteirard @steedems @moshie @katebeavis @raff-r @admmasters
