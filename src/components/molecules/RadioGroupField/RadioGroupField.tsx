@@ -83,6 +83,7 @@ const RadioGroupField = ({
                   isValid={checked && isValid}
                   hideControl={hideControl}
                   data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
+                  groupLabel={label}
                 />
               </RadioWrapper>
             </FlexCol>
