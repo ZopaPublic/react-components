@@ -1,3 +1,10 @@
+## [4.34.0](https://github.com/zopaUK/react-components/compare/v4.33.2...v4.34.0) (2021-01-05)
+
+
+### Features
+
+* **producttemplate:** add optional content to product template ([1a118cb](https://github.com/zopaUK/react-components/commit/1a118cbd796475903f17de420d222ce8eb025108))
+
 ### [4.33.2](https://github.com/zopaUK/react-components/compare/v4.33.1...v4.33.2) (2020-12-11)
 
 
