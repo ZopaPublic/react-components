@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProductTemplate /> renders with all props and content 1`] = `
-.c25 {
+.c26 {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -18,27 +18,27 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   flex-direction: column;
 }
 
-.c25 > .c26 {
+.c26 > .c27 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
-.c25 .c27 {
+.c26 .c28 {
   font-size: 15px;
 }
 
-.c25 .c28 {
+.c26 .c29 {
   font-size: 13px;
 }
 
-.c25 > .c29 {
+.c26 > .c30 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c20 {
+.c21 {
   font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -66,7 +66,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   text-align: inherit;
 }
 
-.c21 {
+.c22 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -85,12 +85,16 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c18 {
-  max-width: 612px;
   margin: 0 auto;
 }
 
 .c19 {
   padding-bottom: 195px;
+}
+
+.c20 {
+  margin: 0 auto;
+  max-width: 612px;
 }
 
 .c5 {
@@ -272,7 +276,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-items: flex-start;
 }
 
-.c22 {
+.c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -306,7 +310,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
-.c24 {
+.c25 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -317,18 +321,18 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: auto;
 }
 
-.c23 {
+.c24 {
   margin-top: -160px;
 }
 
 @media (max-width:768px) {
-  .c25 {
+  .c26 {
     border-radius: 0;
     box-shadow: none;
     border: none;
   }
 
-  .c25:last-of-type {
+  .c26:last-of-type {
     box-shadow: 0 0 1px 0 #D4D7D9;
     border-bottom: 1px solid #EFEFEF;
   }
@@ -381,7 +385,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -391,7 +395,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 @media (min-width:1300px) {
-  .c24 {
+  .c25 {
     display: block;
     -webkit-flex: 0 0 83.33333333333334%;
     -ms-flex: 0 0 83.33333333333334%;
@@ -495,16 +499,20 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             <div
               class="c19 pt-7 m:pt-9 mx-6 m:mx-0"
             >
-              <h1
+              <div
                 class="c20"
               >
-                Product title
-              </h1>
-              <p
-                class="c21 mt-4"
-              >
-                Product subtitle
-              </p>
+                <h1
+                  class="c21"
+                >
+                  Product title
+                </h1>
+                <p
+                  class="c22 mt-4"
+                >
+                  Product subtitle
+                </p>
+              </div>
             </div>
           </div>
         </header>
@@ -514,16 +522,16 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
         cols="12"
       >
         <div
-          class="c22 c23"
+          class="c23 c24"
           cols="12"
           direction="row"
         >
           <div
-            class="c24"
+            class="c25"
             cols="12"
           >
             <div
-              class="c25 px-4 py-6 m:p-8"
+              class="c26 px-4 py-6 m:p-8"
             >
               This is the body of the card
             </div>
