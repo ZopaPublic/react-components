@@ -1,3 +1,10 @@
+## [4.35.0](https://github.com/zopaUK/react-components/compare/v4.34.1...v4.35.0) (2021-01-07)
+
+
+### Features
+
+* **footer:** updated the footer to remove outdated link ([32d5a10](https://github.com/zopaUK/react-components/commit/32d5a10013ff28c4c3f4e446ebfcda3329f3212a))
+
 ### [4.34.1](https://github.com/zopaUK/react-components/compare/v4.34.0...v4.34.1) (2021-01-06)
 
 
