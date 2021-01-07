@@ -696,17 +696,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
-              href="https://helpcentre.zopa.com/"
-            >
-              Common Questions
-            </a>
-          </li>
-          <li
-            class="c6"
-          >
-            <a
-              class="c7 c8"
-              color="#3B46C4"
               href="https://www.zopa.com/sitemap"
             >
               Sitemap

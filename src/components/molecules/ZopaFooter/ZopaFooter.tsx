@@ -61,7 +61,6 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) 
           <Heading className="mb-4 s:mb-6">Navigation</Heading>
           <List>
             <ListLink href={`${baseUrl}/help`}>Help</ListLink>
-            <ListLink href="https://helpcentre.zopa.com/">Common Questions</ListLink>
             <ListLink href={`${baseUrl}/sitemap`}>Sitemap</ListLink>
           </List>
         </FlexCol>
