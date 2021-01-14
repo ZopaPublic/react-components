@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { colors, spacing } from '../../../../constants';
 import { minMedia } from '../../../../helpers/responsiveness';
 
-const SingleLink = styled.div`
+const SingleLink = styled.li`
   display: inline-block;
   border-bottom: 1px solid ${colors.greyLighter};
   margin-bottom: ${spacing[3]};
