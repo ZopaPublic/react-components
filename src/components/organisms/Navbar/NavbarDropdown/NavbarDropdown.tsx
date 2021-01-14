@@ -7,7 +7,7 @@ import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 import NavbarLink from '../NavbarLink/NavbarLink';
 
-const NavbarDropdownContainer = styled.div`
+const NavbarDropdownContainer = styled.li`
   position: relative;
   display: inline-block;
 `;
