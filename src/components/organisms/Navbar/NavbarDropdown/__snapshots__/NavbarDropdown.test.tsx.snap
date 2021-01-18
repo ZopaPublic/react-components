@@ -166,7 +166,7 @@ exports[`<NavbarDropdown /> should render component 1`] = `
     aria-haspopup="true"
     class="c1 c2"
     color="#3B46C4"
-    data-automation="navbar-item"
+    data-automation="ZA.navbar-item"
     href="#"
     tabindex="0"
   >
