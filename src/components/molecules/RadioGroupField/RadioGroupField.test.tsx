@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 import RadioGroupField from './RadioGroupField';
 
 describe('<RadioGroupField />', () => {

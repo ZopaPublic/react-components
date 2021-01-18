@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { act, fireEvent, render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 import CheckboxGroupField from './CheckboxGroupField';
 
 describe('<CheckboxGroupField />', () => {

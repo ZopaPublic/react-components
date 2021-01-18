@@ -1,4 +1,4 @@
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 import { render } from '@testing-library/react';
 import Notification from './Notification';
 import React from 'react';
