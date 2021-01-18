@@ -145,6 +145,7 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
         isDropdownHeading={isDropdownHeading}
         ref={ref}
         {...rest}
+        data-automation="navbar-item"
       >
         {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
         {withChevron && (

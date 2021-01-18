@@ -601,7 +601,6 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 <div>
   <header
     class="c0"
-    role="banner"
   >
     <div
       class="headroom-wrapper"
@@ -618,6 +617,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
           >
             <div
               class="c3"
+              role="banner"
             >
               <svg
                 aria-label="zopa logo"
@@ -643,10 +643,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 href="https://www.zopa.com"
               />
             </div>
-            <div
+            <ul
               class="c5"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -654,8 +654,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -686,131 +686,115 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
               <button
                 class="c17 c18 sc-htoDjs c18"
               >
@@ -838,7 +822,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   />
                 </svg>
               </button>
-            </div>
+            </ul>
           </nav>
         </div>
         <div
@@ -929,7 +913,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               class="c23"
               height="768"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -937,8 +921,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -969,131 +953,115 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
             </aside>
           </nav>
         </div>
@@ -1708,7 +1676,6 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 <div>
   <header
     class="c0"
-    role="banner"
   >
     <div
       class="headroom-wrapper"
@@ -1725,6 +1692,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
           >
             <div
               class="c3"
+              role="banner"
             >
               <svg
                 aria-label="zopa logo"
@@ -1747,10 +1715,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 </g>
               </svg>
             </div>
-            <div
+            <ul
               class="c5"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -1758,8 +1726,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -1790,131 +1758,115 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
               <button
                 class="c17 c18 sc-htoDjs c18"
               >
@@ -1942,7 +1894,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   />
                 </svg>
               </button>
-            </div>
+            </ul>
           </nav>
         </div>
         <div
@@ -2030,7 +1982,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               class="c23"
               height="768"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -2038,8 +1990,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -2070,131 +2022,115 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
             </aside>
           </nav>
         </div>
@@ -2808,7 +2744,6 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 <div>
   <header
     class="c0"
-    role="banner"
   >
     <div
       class="headroom-wrapper"
@@ -2825,6 +2760,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
           >
             <div
               class="c3"
+              role="banner"
             >
               <svg
                 aria-label="zopa logo"
@@ -2847,10 +2783,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 </g>
               </svg>
             </div>
-            <div
+            <ul
               class="c5"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -2858,8 +2794,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -2890,131 +2826,115 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
               <button
                 class="c17 c18 sc-htoDjs c18"
               >
@@ -3042,7 +2962,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   />
                 </svg>
               </button>
-            </div>
+            </ul>
           </nav>
         </div>
         <div
@@ -3130,7 +3050,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               class="c23"
               height="768"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -3138,8 +3058,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -3170,131 +3090,115 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
             </aside>
           </nav>
         </div>
@@ -3965,7 +3869,6 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 <div>
   <header
     class="c0"
-    role="banner"
   >
     <div
       class="headroom-wrapper"
@@ -3982,6 +3885,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
           >
             <div
               class="c3"
+              role="banner"
             >
               <svg
                 aria-label="zopa logo"
@@ -4004,10 +3908,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </g>
               </svg>
             </div>
-            <div
+            <ul
               class="c5"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -4015,8 +3919,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -4047,131 +3951,115 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
               <button
                 class="c17 c18 sc-htoDjs c18"
               >
@@ -4199,7 +4087,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   />
                 </svg>
               </button>
-            </div>
+            </ul>
           </nav>
         </div>
         <div
@@ -4287,7 +4175,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               class="c25"
               height="768"
             >
-              <div
+              <li
                 class="c6"
               >
                 <a
@@ -4295,8 +4183,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   aria-haspopup="true"
                   class="c7 c8"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="#"
-                  role="menuitem"
                   tabindex="0"
                 >
                   <span
@@ -4327,131 +4215,115 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                     </svg>
                   </span>
                 </a>
-                <div
+                <ul
                   class="c11"
                 >
                   <ul
                     aria-label="About"
                     class="c12"
-                    role="menu"
                   >
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         About Zopa
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/our-story"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our story
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/board"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our board
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c14"
                         color="#3B46C4"
-                        role="menuitem"
+                        data-automation="navbar-item"
                         tabindex="-1"
                       >
                         Subheading
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/leadership"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Our leadership team
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/awards"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Awards
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/careers"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Careers
                       </a>
                     </li>
-                    <li
-                      role="none"
-                    >
+                    <li>
                       <a
                         class="c7 c13"
                         color="#3B46C4"
+                        data-automation="navbar-item"
                         href="/about/press"
-                        role="menuitem"
                         tabindex="-1"
                       >
                         Press office
                       </a>
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div
+                </ul>
+              </li>
+              <li
                 class="c15"
               >
                 <a
                   class="c7 c16"
                   color="#3B46C4"
+                  data-automation="navbar-item"
                   href="/contact"
                 >
                   Support
                 </a>
-              </div>
+              </li>
             </aside>
           </nav>
         </div>

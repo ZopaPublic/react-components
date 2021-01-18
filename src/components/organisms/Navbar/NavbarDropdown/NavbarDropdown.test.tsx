@@ -28,8 +28,8 @@ describe('<NavbarDropdown />', () => {
 
   ['Enter', ' ', 'ArrowUp', 'ArrowDown'].forEach((key) => {
     it(`should open the dropdown on ${key} press`, () => {
-      const { getAllByRole } = renderComponent();
-      const [opener] = getAllByRole('menuitem');
+      const { getAllByTestId } = renderComponent();
+      const [opener] = getAllByTestId('navbar-item');
       expect(opener.getAttribute('aria-expanded')).toEqual('false');
       fireEvent.focus(opener);
       fireEvent.keyDown(opener, { key });
@@ -38,8 +38,8 @@ describe('<NavbarDropdown />', () => {
   });
 
   it(`should navigate through items with arrow up/down keys`, () => {
-    const { getAllByRole, getByText } = renderComponent();
-    const [opener] = getAllByRole('menuitem');
+    const { getAllByTestId, getByText } = renderComponent();
+    const [opener] = getAllByTestId('navbar-item');
     const itemOne = getByText('one');
     const itemTwo = getByText('two');
     fireEvent.focus(opener);
@@ -53,8 +53,8 @@ describe('<NavbarDropdown />', () => {
   });
 
   it(`should close the dropdown when focused on an element outside of dropdown`, () => {
-    const { getAllByRole, getByText } = renderComponent();
-    const [opener] = getAllByRole('menuitem');
+    const { getAllByTestId, getByText } = renderComponent();
+    const [opener] = getAllByTestId('navbar-item');
     const otherElement = getByText('button');
     fireEvent.focus(opener);
     fireEvent.keyDown(opener, { key: ' ' });
