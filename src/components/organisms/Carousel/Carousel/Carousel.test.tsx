@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import axe from '../../../../axe-helper';
+import axe from '../../../../../axe-helper';
 import React, { FC } from 'react';
 import { act } from 'react-dom/test-utils';
 import { Carousel } from '..';
