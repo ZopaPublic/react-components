@@ -3,7 +3,7 @@ import { configureAxe } from 'jest-axe';
 
 const axe = configureAxe({
   rules: {
-    // for demonstration only, don't disable rules that need fixing.
+    // Disabled because not all components need landmarks
     region: { enabled: false },
   },
 });
