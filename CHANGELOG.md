@@ -1,3 +1,17 @@
+### [4.35.1](https://github.com/zopaUK/react-components/compare/v4.35.0...v4.35.1) (2021-01-18)
+
+
+### Bug Fixes
+
+* **jestaxe:** more informative comment ([c8c24fc](https://github.com/zopaUK/react-components/commit/c8c24fc3240a6d9e989b0ee7717f34f2b8ada370)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** upadte jest, add config ([71cb997](https://github.com/zopaUK/react-components/commit/71cb9973081154d11291406b0c7c7ec42972724a)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** update imports to axe helper config ([4a9976c](https://github.com/zopaUK/react-components/commit/4a9976cf02612f8adb64406f772d47554429fd08)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** update old snapshots and imports ([49eafab](https://github.com/zopaUK/react-components/commit/49eafabdcfce8122e29517db68a6ef81e2257577)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** upgrade jestaxe, exclude regions ([c39042b](https://github.com/zopaUK/react-components/commit/c39042b80acd15da3c1170b08d84eba77fb31171)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **navbar:** items use semantic HTML ([e6ebbc7](https://github.com/zopaUK/react-components/commit/e6ebbc7e16f9a51e0cb038d4287d6f0f4677fb1c)), closes [#535](https://github.com/zopaUK/react-components/issues/535)
+* **navbar:** remove roles, use semantic elements ([2651d42](https://github.com/zopaUK/react-components/commit/2651d4239587b43ac90329b106064e3a2f543b81)), closes [#535](https://github.com/zopaUK/react-components/issues/535)
+* **navbarlink:** use company standard for automation tag ([486eca2](https://github.com/zopaUK/react-components/commit/486eca23a8bfc798f45177f4c4a852a3aea98810))
+
 ## [4.35.0](https://github.com/zopaUK/react-components/compare/v4.34.1...v4.35.0) (2021-01-07)
 
 
