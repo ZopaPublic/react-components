@@ -69,6 +69,7 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 <a
   class="c0 c1"
   color="#3B46C4"
+  data-automation="ZA.navbar-item"
 />
 `;
 
@@ -191,6 +192,7 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 <a
   class="c0 c1"
   color="#3B46C4"
+  data-automation="ZA.navbar-item"
 >
   <span
     class="c2"

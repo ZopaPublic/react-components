@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 import DropdownFiltered from './DropdownFiltered';
 
 const items = [{ value: 'apple' }, { value: 'pear' }, { value: 'orange' }, { value: 'grape' }, { value: 'banana' }];

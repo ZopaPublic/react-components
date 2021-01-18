@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../../axe-helper';
 import 'jest-styled-components';
 import React from 'react';
 import { FIVE_STAR_ID } from './ratings/FiveStar';

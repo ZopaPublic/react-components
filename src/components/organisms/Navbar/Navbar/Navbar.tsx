@@ -204,7 +204,7 @@ export const LogoContainer = styled.div<PageNavigationProps>`
   }
 `;
 
-const NavbarLinksListContainer = styled.div`
+const NavbarLinksListContainer = styled.ul`
   ${minMedia.desktop`
     ${css`
       margin-right: ${spacing[10]};
@@ -315,7 +315,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
+      <PageNavigation overlap={overThreshold} collapsed={collapsed}>
         <Headroom
           wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
@@ -323,7 +323,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
         >
           <LargeDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
-              <LogoContainer overlap={overThreshold || collapsed}>
+              <LogoContainer overlap={overThreshold || collapsed} role="banner">
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
               </LogoContainer>
