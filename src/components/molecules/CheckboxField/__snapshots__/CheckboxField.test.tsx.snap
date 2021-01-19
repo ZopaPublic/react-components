@@ -128,8 +128,8 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
 .c1:checked + label:after {
   background-size: contain;
   background-image: url(teal-check-mark.svg);
-  -webkit-animation: icNfUr 180ms ease-in-out;
-  animation: icNfUr 180ms ease-in-out;
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
 }
 
 .c1 + label:before,
@@ -297,7 +297,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
     type="checkbox"
   />
   <label
-    class="sc-AxhCb c2"
+    class="c2"
     for="checkbox-id-test1"
   >
     hello
