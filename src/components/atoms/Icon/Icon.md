@@ -32,3 +32,14 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   <Icon variant={faCoffee} rotation={180} />
 </>;
 ```
+
+You can also wrap an icon within a circle by setting a `bgColor`
+
+```tsx
+import { Icon, colors } from '@zopauk/react-components';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+<>
+  <Icon variant={faCoffee} bgColor={colors.grey} />
+</>;
+```

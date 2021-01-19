@@ -31,14 +31,16 @@ describe('<InputText />', () => {
 
   it('renders the component with an icon on the left', () => {
     const { container, queryByTestId } = render(
-      <InputText name="name" startIcon={<span data-testid="start-icon" />} />,
+      <InputText name="name" startIcon={<span data-automation="start-icon" />} />,
     );
     expect(queryByTestId('start-icon')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders the component with an icon on the right', () => {
-    const { container, queryByTestId } = render(<InputText name="name" endIcon={<span data-testid="end-icon" />} />);
+    const { container, queryByTestId } = render(
+      <InputText name="name" endIcon={<span data-automation="end-icon" />} />,
+    );
     expect(queryByTestId('end-icon')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
   });

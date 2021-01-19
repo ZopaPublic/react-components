@@ -21,6 +21,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   appearance: none;
   min-width: 100px;
   user-select: none;
+  line-height: 1.3;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -34,9 +35,11 @@ const StyledDropdown = styled.select<DropdownProps>`
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 
   &:focus,
   &:hover {
+    outline: none;
     outline-width: 0;
     border: 1px solid ${colors.brand};
     box-shadow: 0 0 4px 0 ${colors.brand};
@@ -45,7 +48,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   &:disabled {
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: transparent;
+    background-color: ${colors.greyLightest};
     cursor: not-allowed;
   }
 `;

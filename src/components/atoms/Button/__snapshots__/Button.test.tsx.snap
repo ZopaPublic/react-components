@@ -30,22 +30,16 @@ exports[`<Button /> renders as "link" 1`] = `
   background: transparent;
 }
 
-.c0:hover:not(:disabled) {
-  background: #EAEBFA;
-}
-
 .c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c0:hover {
+  background: #EAEBFA;
 }
 
-.c0:active:not(:disabled) {
+.c0:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -53,7 +47,6 @@ exports[`<Button /> renders as "link" 1`] = `
 
 <button
   class="c0"
-  styling="link"
 >
   Secondary
 </button>
@@ -89,22 +82,16 @@ exports[`<Button /> renders as "secondary" 1`] = `
   background: #E9EAFA;
 }
 
-.c0:hover:not(:disabled) {
-  background: #EEEFFB;
-}
-
 .c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c0:hover {
+  background: #EEEFFB;
 }
 
-.c0:active:not(:disabled) {
+.c0:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -112,7 +99,6 @@ exports[`<Button /> renders as "secondary" 1`] = `
 
 <button
   class="c0"
-  styling="secondary"
 >
   Secondary
 </button>
@@ -147,10 +133,9 @@ exports[`<Button /> renders disabled 1`] = `
   outline: 0;
   background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
-}
-
-.c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  cursor: not-allowed;
+  background: #F7F7F7;
+  color: #818F9B;
 }
 
 .c0:focus:not(:active) {
@@ -158,42 +143,15 @@ exports[`<Button /> renders disabled 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
-}
-
-.c0:active:not(:disabled) {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 <button
   class="c0"
   disabled=""
-  styling="primary"
 >
   Secondary
 </button>
 `;
 
 exports[`<Button /> renders loading as "primary" 1`] = `
-.c1 {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-.c2 {
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -222,10 +180,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   outline: 0;
   background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
-}
-
-.c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  cursor: not-allowed;
 }
 
 .c0:focus:not(:active) {
@@ -233,23 +188,15 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:active:not(:disabled) {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 <button
   class="c0"
   disabled=""
-  styling="primary"
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-negative.gif"
+    width="20px"
   />
    
     
@@ -258,21 +205,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 1`] = `
-.c1 {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -300,10 +232,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   border: 1px solid transparent;
   outline: 0;
   background: #E9EAFA;
-}
-
-.c0:hover:not(:disabled) {
-  background: #EEEFFB;
+  cursor: not-allowed;
 }
 
 .c0:focus:not(:active) {
@@ -311,23 +240,15 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:active:not(:disabled) {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 <button
   class="c0"
   disabled=""
-  styling="secondary"
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-action.gif"
+    width="20px"
   />
    
     
@@ -336,21 +257,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 `;
 
 exports[`<Button /> renders loading as "secondary" 2`] = `
-.c1 {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-.c2 {
-  border-color: #3B46C4;
-  border-top-color: transparent;
-}
-
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -378,10 +284,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   border: 1px solid transparent;
   outline: 0;
   background: #E9EAFA;
-}
-
-.c0:hover:not(:disabled) {
-  background: #EEEFFB;
+  cursor: not-allowed;
 }
 
 .c0:focus:not(:active) {
@@ -389,23 +292,15 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:active:not(:disabled) {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 <button
   class="c0"
   disabled=""
-  styling="secondary"
 >
-  <div
-    class="c1 c2"
+  <img
+    aria-label="loading spinner"
+    height="20px"
+    src="spinner-action.gif"
+    width="20px"
   />
    
     
@@ -445,22 +340,16 @@ exports[`<Button /> renders wide 1`] = `
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
-}
-
 .c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c0:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c0:active:not(:disabled) {
+.c0:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -468,7 +357,6 @@ exports[`<Button /> renders wide 1`] = `
 
 <button
   class="c0"
-  styling="primary"
 >
   Secondary
 </button>
@@ -505,22 +393,16 @@ exports[`<Button /> renders with no a11y violations 1`] = `
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c0:hover:not(:disabled) {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
-}
-
 .c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c0:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c0:active:not(:disabled) {
+.c0:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -528,7 +410,6 @@ exports[`<Button /> renders with no a11y violations 1`] = `
 
 <button
   class="c0"
-  styling="primary"
 >
   Primary
 </button>

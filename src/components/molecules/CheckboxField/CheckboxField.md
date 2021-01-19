@@ -21,6 +21,14 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField label="Do you love jazz?" name="check1" />;
 ```
 
+- Hide control
+
+```tsx
+import { CheckboxField } from '@zopauk/react-components';
+
+<CheckboxField label="Do you want to hide the icon?" name="hideControl" hideControl />;
+```
+
 - Default with multiline label
 
 ```tsx

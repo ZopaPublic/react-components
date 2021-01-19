@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import FlexRow, { FlexRowProps } from '../../layout/FlexRow/FlexRow';
+import FlexCol, { FlexColProps } from '../../layout/FlexCol/FlexCol';
 import CheckboxField from '../CheckboxField/CheckboxField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
-import Text from '../../atoms/Text/Text';
 
 const CheckboxWrapper = styled.div`
   padding: 4px 0;
@@ -27,6 +28,10 @@ export interface CheckboxGroupFieldProps<Val extends Record<string, boolean>> {
   value?: Val;
   errorMessage?: string;
   className?: string;
+  flexColProps?: FlexColProps;
+  flexRowProps?: FlexRowProps;
+  hideControl?: boolean;
+  'data-automation'?: string;
 }
 
 const CheckboxGroupField = <Val extends Record<string, boolean>>({
@@ -39,6 +44,10 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
   isValid = false,
   errorMessage,
   className,
+  flexRowProps = {},
+  flexColProps = {},
+  hideControl,
+  'data-automation': dataAutomation,
 }: CheckboxGroupFieldProps<Val>) => {
   const [innerValue, setInnerValue] = useState<Val>(
     items.reduce(
@@ -72,25 +81,29 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
 
   return (
     <Fieldset className={className}>
-      <Legend>
-        <Text weight="bold">{label}</Text>
-      </Legend>
-      {items.map((item) => {
-        const checked = value ? !!value[item.name] : !!innerValue[item.name];
-        return (
-          <CheckboxWrapper key={item.name.toString()}>
-            <CheckboxField
-              name={item.name.toString()}
-              disabled={disabled}
-              onChange={handleChange(item.name)}
-              onBlur={onBlur}
-              label={item.label}
-              checked={checked}
-              isValid={checked && isValid}
-            />
-          </CheckboxWrapper>
-        );
-      })}
+      <Legend>{label}</Legend>
+      <FlexRow {...flexRowProps}>
+        {items.map((item, index) => {
+          const checked = value ? !!value[item.name] : !!innerValue[item.name];
+          return (
+            <FlexCol {...flexColProps} key={item.name.toString()}>
+              <CheckboxWrapper>
+                <CheckboxField
+                  name={item.name.toString()}
+                  disabled={disabled}
+                  onChange={handleChange(item.name)}
+                  onBlur={onBlur}
+                  label={item.label}
+                  checked={checked}
+                  isValid={checked && isValid}
+                  hideControl={hideControl}
+                  data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
+                />
+              </CheckboxWrapper>
+            </FlexCol>
+          );
+        })}
+      </FlexRow>
       {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );

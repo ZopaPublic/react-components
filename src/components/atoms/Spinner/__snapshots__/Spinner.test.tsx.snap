@@ -1,49 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Spinner /> renders a spinner 1`] = `
-.c0 {
-  width: 40px;
-  height: 40px;
-  border: 6px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-<div
-  class="c0"
+<img
+  aria-label="loading spinner"
+  height="40px"
+  src="spinner-brand.gif"
+  width="40px"
 />
 `;
 
 exports[`<Spinner /> renders negative 1`] = `
-.c0 {
-  width: 40px;
-  height: 40px;
-  border: 6px solid #FFFFFF;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-<div
-  class="c0"
+<img
+  aria-label="loading spinner"
+  height="40px"
+  src="spinner-negative.gif"
+  width="40px"
 />
 `;
 
 exports[`<Spinner /> renders small 1`] = `
-.c0 {
-  width: 20px;
-  height: 20px;
-  border: 3px solid #00D9C5;
-  border-radius: 50%;
-  border-top-color: transparent;
-  -webkit-animation: fvtopB 1.2s linear infinite;
-  animation: fvtopB 1.2s linear infinite;
-}
-
-<div
-  class="c0"
+<img
+  aria-label="loading spinner"
+  height="20px"
+  src="spinner-brand.gif"
+  width="20px"
 />
 `;

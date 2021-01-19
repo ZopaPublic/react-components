@@ -25,7 +25,7 @@ exports[`<Card.Heading /> renders the component with no a11y violations 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-AxirZ {
+.c0 > .c3 {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
@@ -35,8 +35,14 @@ exports[`<Card.Heading /> renders the component with no a11y violations 1`] = `
   font-size: 15px;
 }
 
-.c0 .sc-AxhUy {
+.c0 .c4 {
   font-size: 13px;
+}
+
+.c0 > .c5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <div

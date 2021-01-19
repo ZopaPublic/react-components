@@ -30,22 +30,16 @@ exports[`<Navbar /> should render component with default props 1`] = `
   background: transparent;
 }
 
-.c0:hover:not(:disabled) {
-  background: #EAEBFA;
-}
-
 .c0:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c0:hover {
+  background: #EAEBFA;
 }
 
-.c0:active:not(:disabled) {
+.c0:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -86,8 +80,7 @@ exports[`<Navbar /> should render component with default props 1`] = `
 
 <div>
   <button
-    class="c0 c1"
-    styling="link"
+    class="c0 c1 sc-htoDjs c1"
   >
     <div
       class="c2"

@@ -62,40 +62,41 @@ export const buttonStyle = css<ButtonProps>`
     `;
   }}
 
-  &:hover:not(:disabled) {
-    background: ${({ styling = 'primary' }) => colorMap[styling].hover};
-  }
-
   &:focus:not(:active) {
     border: 1px solid ${colors.white};
     box-shadow: 0 0 4px ${colors.actionPlain};
   }
 
-  &:disabled {
-    cursor: not-allowed;
-    ${({ loading }) => {
-      if (!loading) {
-        return css`
-          background: ${colors.greyLightest};
-          color: ${colors.grey};
-        `;
+  ${({ disabled, styling = 'primary' }) => {
+    const disabledStyles = css<ButtonProps>`
+      cursor: not-allowed;
+      ${({ loading }) => {
+        if (!loading) {
+          return css`
+            background: ${colors.greyLightest};
+            color: ${colors.grey};
+          `;
+        }
+      }}
+    `;
+    const enabledStyles = css`
+      &:hover {
+        background: ${colorMap[styling].hover};
       }
-    }}
-  }
 
-  &:active:not(:disabled) {
-    border: 1px solid transparent;
-    box-shadow: unset;
-    opacity: 0.8;
-  }
+      &:active {
+        border: 1px solid transparent;
+        box-shadow: unset;
+        opacity: 0.8;
+      }
+    `;
+    return disabled ? disabledStyles : enabledStyles;
+  }}
 `;
 
-const StyledSpinner = styled(Spinner)<Pick<ButtonProps, 'styling'>>`
-  border-color: ${({ styling }) => styling === 'secondary' && colors.actionPlain};
-  border-top-color: transparent;
-`;
-
-const ButtonWrapper = styled(({ loading, fullWidth, ...rest }: ButtonProps) => <button {...rest} />)`
+const ButtonWrapper = styled.button.attrs(({ loading, fullWidth, ...rest }: ButtonProps) => ({
+  ...rest,
+}))`
   ${buttonStyle}
 `;
 
@@ -106,7 +107,7 @@ const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary',
     <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
-          <StyledSpinner styling={styling} negative={styling === 'primary'} size="small" /> {'\u00A0 '}
+          <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}

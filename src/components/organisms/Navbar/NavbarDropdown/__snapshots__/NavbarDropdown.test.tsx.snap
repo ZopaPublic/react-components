@@ -162,7 +162,7 @@ exports[`<NavbarDropdown /> should render component 1`] = `
   }
 }
 
-<div
+<li
   class="c0"
 >
   <a
@@ -170,8 +170,8 @@ exports[`<NavbarDropdown /> should render component 1`] = `
     aria-haspopup="true"
     class="c1 c2"
     color="#3B46C4"
+    data-automation="ZA.navbar-item"
     href="#"
-    role="menuitem"
     tabindex="0"
   >
     <span
@@ -202,37 +202,30 @@ exports[`<NavbarDropdown /> should render component 1`] = `
       </svg>
     </span>
   </a>
-  <div
+  <ul
     class="c5"
   >
     <ul
       aria-label="test"
       class="c6"
-      role="menu"
     >
-      <li
-        role="none"
-      >
+      <li>
         <a
           href="#"
-          role="menuitem"
           tabindex="-1"
         >
           one
         </a>
       </li>
-      <li
-        role="none"
-      >
+      <li>
         <a
           href="#"
-          role="menuitem"
           tabindex="-1"
         >
           two
         </a>
       </li>
     </ul>
-  </div>
-</div>
+  </ul>
+</li>
 `;

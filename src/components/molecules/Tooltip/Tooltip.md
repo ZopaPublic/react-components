@@ -1,6 +1,6 @@
 ### Summary
 
-This is just a wrapper around [`@tippy.js/react`](https://github.com/atomiks/tippy.js-react) with some style constraints applied.
+This is just a wrapper around [`@tippyjs/react`](https://github.com/atomiks/tippy.js-react) with some style constraints applied.
 
 For more information:
 
@@ -27,7 +27,7 @@ So that styles are applied once and not every time the user navigates to a parti
 
 ### Tips 💄
 
-- If you want the tooltip target to be a React component, you [need to wrap it with `forwardRef`](https://github.com/atomiks/tippy.js-react#component-children).
+- If you want the tooltip target to be a React component, you [need to wrap it with `forwardRef`](https://github.com/atomiks/tippyjs-react#component-children).
 - We don't allow to customise `theme`, `animation` and `flipOnUpdate` to make sure the tooltip UX stays the same.
 - By default you won't be able to pass JSX to the tooltip content. You can change that via `allowHTML={true}` prop.
 

@@ -13,5 +13,3 @@ export const Accordion: AccordionStatic & FC<AccordionProps> = (props) => <Accor
 
 Accordion.Header = AccordionHeader;
 Accordion.Section = AccordionSection;
-
-export * from './hooks';

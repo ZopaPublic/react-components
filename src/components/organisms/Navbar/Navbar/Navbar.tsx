@@ -204,7 +204,7 @@ export const LogoContainer = styled.div<PageNavigationProps>`
   }
 `;
 
-const NavbarLinksListContainer = styled.div`
+const NavbarLinksListContainer = styled.ul`
   ${minMedia.desktop`
     ${css`
       margin-right: ${spacing[10]};
@@ -315,11 +315,15 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
-        <Headroom disableInlineStyles disable={open || !!(width && width >= breakpoints.desktop)}>
+      <PageNavigation overlap={overThreshold} collapsed={collapsed}>
+        <Headroom
+          wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
+          disableInlineStyles
+          disable={open || !!(width && width >= breakpoints.desktop)}
+        >
           <LargeDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
-              <LogoContainer overlap={overThreshold || collapsed}>
+              <LogoContainer overlap={overThreshold || collapsed} role="banner">
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
               </LogoContainer>
@@ -332,7 +336,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           <SmallDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
               {links ? (
-                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-testid="hamburger-icon">
+                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
                   <Icon
                     variant={faBars}
                     color={open ? colors.brand : colors.white}

@@ -5,3 +5,4 @@ export { default as FormCheckboxGroupField } from './FormCheckboxGroupField/Form
 export { default as FormRadioGroupField } from './FormRadioGroupField/FormRadioGroupField';
 export { default as FormDropdownField } from './FormDropdownField/FormDropdownField';
 export { default as FormDropdownFilteredField } from './FormDropdownFilteredField/FormDropdownFilteredField';
+export { default as FormSection } from './FormSection/FormSection';

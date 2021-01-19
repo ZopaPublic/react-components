@@ -37,6 +37,22 @@ import { CheckboxGroupField } from '@zopauk/react-components';
 />;
 ```
 
+- Uncontrolled with hidden control
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  items={[
+    { name: 'three', label: 'label three' },
+    { name: 'four', label: 'label four', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
+  hideControl
+/>;
+```
+
 - Controlled
 
 ```js
@@ -107,5 +123,27 @@ import { CheckboxGroupField } from '@zopauk/react-components';
   onChange={(value) => console.log(value)}
   label="Checkbox group field label"
   errorMessage="You have to check at least one"
+/>;
+```
+
+- Responsive
+
+```jsx
+import { CheckboxGroupField } from '@zopauk/react-components';
+
+<CheckboxGroupField
+  flexColProps={{
+    xs: 12,
+    m: 6,
+    xl: 3,
+  }}
+  items={[
+    { name: 'twelve', label: 'label twelve' },
+    { name: 'thirteen', label: 'label thirteen' },
+    { name: 'fourteen', label: 'label fourteen' },
+    { name: 'fifteen', label: 'label fifteen' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Checkbox group field label"
 />;
 ```

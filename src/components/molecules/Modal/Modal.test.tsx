@@ -9,7 +9,7 @@ function renderModal(props: Omit<ModalProps, 'children'>) {
     <Modal {...props}>
       <Card.Content>
         <Card.Heading>Title</Card.Heading>
-        <Card.Text data-testid="check-card">text</Card.Text>
+        <Card.Text data-automation="check-card">text</Card.Text>
       </Card.Content>
     </Modal>,
   );

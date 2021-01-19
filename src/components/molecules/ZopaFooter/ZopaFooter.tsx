@@ -29,6 +29,8 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) 
             <ListLink href={`${baseUrl}/loans/wedding`}>Wedding loans</ListLink>
             <ListLink href={`${baseUrl}/invest`}>Peer-to-peer investments</ListLink>
             <ListLink href={`${baseUrl}/invest/isa`}>Innovative Finance ISA</ListLink>
+            <ListLink href={`${baseUrl}/credit-card`}>Credit cards</ListLink>
+            <ListLink href={`${baseUrl}/savings-accounts`}>Fixed Term Savings</ListLink>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
@@ -58,8 +60,7 @@ const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) 
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">Navigation</Heading>
           <List>
-            <ListLink href={`${baseUrl}/contact`}>Support</ListLink>
-            <ListLink href="https://helpcentre.zopa.com/">Common Questions</ListLink>
+            <ListLink href={`${baseUrl}/help`}>Help</ListLink>
             <ListLink href={`${baseUrl}/sitemap`}>Sitemap</ListLink>
           </List>
         </FlexCol>

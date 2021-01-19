@@ -47,12 +47,18 @@ exports[`<Card.Image /> renders the component with no a11y violations 1`] = `
   flex: 0 1  200px;
 }
 
-.c0 .sc-AxhCb {
+.c0 .c4 {
   font-size: 15px;
 }
 
-.c0 .sc-AxhUy {
+.c0 .c5 {
   font-size: 13px;
+}
+
+.c0 > .c6 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <div

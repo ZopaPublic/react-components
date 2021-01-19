@@ -6,6 +6,7 @@ exports[`<InputRange /> renders the component with no a11y violations 1`] = `
   width: 100%;
   height: 30px;
   cursor: pointer;
+  background: transparent;
 }
 
 .c1::-webkit-slider-runnable-track {

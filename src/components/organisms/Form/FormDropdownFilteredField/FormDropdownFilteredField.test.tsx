@@ -12,6 +12,7 @@ const testId = 'dropdown-filtered-field-form';
 const dropdownLabel = 'Nationality';
 const fieldName = 'nationality';
 const errorMessage = 'Please pick one';
+const dataAutomation = 'ZA.filteredDropdown';
 
 const validate = (values: Form) => {
   const errors: Partial<Form> = {};
@@ -28,12 +29,13 @@ const nationalities = [{ value: 'British' }, { value: 'Angolan' }];
 const renderComponent = () =>
   render(
     <Formik validateOnMount initialValues={{ nationality: '' }} validate={validate} onSubmit={onSubmit}>
-      <FormikForm data-testid={testId}>
+      <FormikForm data-automation={testId}>
         <FormDropdownFilteredField
           name={fieldName}
           placeholder="Select a nationality..."
           items={nationalities}
           label={dropdownLabel}
+          data-automation={dataAutomation}
         />
       </FormikForm>
     </Formik>,
@@ -41,8 +43,8 @@ const renderComponent = () =>
 
 describe('<FormDropdownFilteredField />', () => {
   it('handles value change', async () => {
-    const { getByTestId, getByText, getAllByLabelText } = renderComponent();
-    const dropdown = getAllByLabelText(dropdownLabel)[0];
+    const { getByTestId, getByText } = renderComponent();
+    const dropdown = getByTestId(dataAutomation);
     await act(async () => {
       await fireEvent.click(dropdown);
     });
@@ -60,8 +62,8 @@ describe('<FormDropdownFilteredField />', () => {
   });
 
   it('renders error message', async () => {
-    const { queryByText, getAllByLabelText } = renderComponent();
-    const dropdown = getAllByLabelText(dropdownLabel)[0];
+    const { queryByText, getByTestId } = renderComponent();
+    const dropdown = getByTestId(dataAutomation);
     await act(async () => {
       await fireEvent.click(dropdown);
     });

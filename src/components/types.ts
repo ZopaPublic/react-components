@@ -62,3 +62,10 @@ export interface FieldProps {
    */
   inputSize?: ContainerSizes;
 }
+
+export interface GroupingControlsProps {
+  /**
+   * hide/show the control
+   */
+  hideControl?: boolean;
+}

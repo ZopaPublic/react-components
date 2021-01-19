@@ -6,8 +6,18 @@ Its aim is to give the customer information about Zopa's customer service openin
 
 ### Example
 
+When no HelpLine is specified it defaults to the borrowers one.
+
 ```tsx
 import { Help } from '@zopauk/react-components';
 
-<Help email="savings@zopa.com" />;
+<Help />;
+```
+
+For investors helpline use `HelpLine.investors`
+
+```tsx
+import { Help, HelpLine } from '@zopauk/react-components';
+
+<Help helpLine={HelpLine.investors} />;
 ```
