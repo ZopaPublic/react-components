@@ -267,6 +267,14 @@ const SmallDeviceNavbar = styled.div`
   `}
 `;
 
+const NavItemsWrapper = styled.ul`
+  padding-left: 0;
+
+  > li {
+    display: block;
+  }
+`;
+
 export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...rest} {...props}>
     {label}
@@ -355,7 +363,9 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               {withCTA ? cta : <IconContainer />}
               {links && (
                 <HamburgerMenu open={open} height={height}>
-                  <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                  <NavItemsWrapper>
+                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                  </NavItemsWrapper>
                 </HamburgerMenu>
               )}
             </LayoutInner>

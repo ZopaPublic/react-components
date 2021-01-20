@@ -89,7 +89,7 @@ Object {
 }
 
 .c7 {
-  display: inline-block;
+  display: block;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 12px;
   padding-bottom: 8px;
@@ -394,7 +394,7 @@ Object {
       </ul>
     </li>
     <li
-      class="sc-dnqmqq dpUcYN"
+      class="sc-dnqmqq fJgVBz"
     >
       <a
         href="/contact"
