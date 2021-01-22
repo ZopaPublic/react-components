@@ -1,3 +1,11 @@
+### [4.35.2](https://github.com/zopaUK/react-components/compare/v4.35.1...v4.35.2) (2021-01-22)
+
+
+### Bug Fixes
+
+* **navbar:** add wrapping <ul> in mobile nav ([86adf16](https://github.com/zopaUK/react-components/commit/86adf16fb005d010c0bf09bd66de3ee0667af5fb))
+* **navbar:** revert accidental change to li ([15754cc](https://github.com/zopaUK/react-components/commit/15754cc75f46a1a9cafa924495d306c6f40fb667))
+
 ### [4.35.1](https://github.com/zopaUK/react-components/compare/v4.35.0...v4.35.1) (2021-01-18)
 
 
