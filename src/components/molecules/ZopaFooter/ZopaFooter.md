@@ -16,6 +16,10 @@ import { ZopaFooter } from '@zopauk/react-components';
 
 **Note:** It's important that if you intend on extending the footers link component that you apply the correct styling as well.
 
+Keep in mind `footerLinkStyle` is not the styles for the complete link and only for removing the initial underline.
+
+For the links style use `linkStyle` from the link component.
+
 ```tsx
 import { ZopaFooter, footerLinkStyle } from '@zopauk/react-components';
 import styled from 'styled-components';
