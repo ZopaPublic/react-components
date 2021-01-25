@@ -8,7 +8,7 @@ export interface TabButtonHtmlProps {
   onClick: () => void;
 }
 
-export type GetTabButtonHtmlProps = (tabId: string) => TabButtonHtmlProps;
+export type GetTabButtonHtmlProps = (tabId: string, afterOnClick?: () => void) => TabButtonHtmlProps;
 
 export interface TabContentProps {
   'aria-hidden': boolean;
@@ -20,18 +20,21 @@ export interface TabContentProps {
 
 export type GetTabContentProps = (tabId: string) => TabContentProps;
 
-type ActiveTab = string | null;
-
 export const useTabs = () => {
   const [activeTab, setActiveTab] = useState<string>('');
 
-  const getTabButtonHTMLProps: GetTabButtonHtmlProps = (tabId: string) => ({
-    'aria-controls': `${tabId}-content`,
-    'aria-expanded': tabId === activeTab,
-    id: tabId,
-    key: tabId,
-    onClick: () => setActiveTab(tabId),
-  });
+  const getTabButtonHTMLProps: GetTabButtonHtmlProps = (tabId: string, afterOnClick?: () => void) => {
+    return {
+      'aria-controls': `${tabId}-content`,
+      'aria-expanded': tabId === activeTab,
+      id: tabId,
+      key: tabId,
+      onClick: () => {
+        setActiveTab(tabId);
+        afterOnClick && afterOnClick();
+      },
+    };
+  };
 
   const getTabContentProps: GetTabContentProps = (tabId) => ({
     'aria-hidden': tabId !== activeTab,

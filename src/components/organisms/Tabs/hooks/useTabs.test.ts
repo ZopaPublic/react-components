@@ -44,4 +44,30 @@ describe('useTabs', () => {
 
     expect(result.current.activeTab).toEqual('two');
   });
+
+  it('should change the activeTab and call afterOnClick if present on click', () => {
+    const { result } = renderHook(useTabs);
+    const afterOnClick = jest.fn();
+
+    const { onClick: firstTabButtonClick } = result.current.getTabButtonHTMLProps('one', afterOnClick);
+
+    expect(result.current.activeTab).toEqual('');
+
+    act(() => {
+      firstTabButtonClick();
+    });
+
+    expect(result.current.activeTab).toEqual('one');
+
+    const { onClick: secondTabButtonClick } = result.current.getTabButtonHTMLProps('two', afterOnClick);
+    expect(result.current.activeTab).toEqual('one');
+    expect(afterOnClick).toHaveBeenCalledTimes(1);
+
+    act(() => {
+      secondTabButtonClick();
+    });
+
+    expect(result.current.activeTab).toEqual('two');
+    expect(afterOnClick).toHaveBeenCalledTimes(2);
+  });
 });
