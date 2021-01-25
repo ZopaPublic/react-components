@@ -30,7 +30,7 @@ const StyledLink = styled(Link)`
 
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
-  renderLink?: FC<Record<'href', string>>;
+  renderLink?: FC<Record<'href', string> & HTMLAttributes<HTMLAnchorElement>>;
 }
 
 const ZopaFooter = ({
