@@ -1,3 +1,13 @@
+## [4.36.0](https://github.com/zopaUK/react-components/compare/v4.35.2...v4.36.0) (2021-01-25)
+
+
+### Features
+
+* **footer:** allow custom link component ([6d16bfa](https://github.com/zopaUK/react-components/commit/6d16bfaa0416b0954f183ef1b9a00fcbf3df8c48))
+* **footer:** update documentation ([e1723b2](https://github.com/zopaUK/react-components/commit/e1723b2137e4960569ab102fc2ba2937840762b5))
+* **footer:** update testing snapshots ([bcce324](https://github.com/zopaUK/react-components/commit/bcce324dc808739f5f2e8fce26b867a554b79170))
+* **footer:** update types ([83bdbb4](https://github.com/zopaUK/react-components/commit/83bdbb465839d15796463ba4c7b98eeb26d4fde1))
+
 ### [4.35.2](https://github.com/zopaUK/react-components/compare/v4.35.1...v4.35.2) (2021-01-22)
 
 

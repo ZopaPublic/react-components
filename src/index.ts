@@ -39,7 +39,7 @@ export { default as Trustpilot } from './components/atoms/Trustpilot/Trustpilot'
 // Molecules
 export { default as Modal } from './components/molecules/Modal/Modal';
 export { default as ExpiryModal } from './components/molecules/ExpiryModal/ExpiryModal';
-export { default as ZopaFooter } from './components/molecules/ZopaFooter/ZopaFooter';
+export { default as ZopaFooter, footerLinkStyle } from './components/molecules/ZopaFooter/ZopaFooter';
 export { default as Help, HelpLine, HelpLineDetails } from './components/molecules/Help/Help';
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
