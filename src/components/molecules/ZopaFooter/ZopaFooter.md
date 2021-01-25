@@ -11,3 +11,22 @@ import { ZopaFooter } from '@zopauk/react-components';
 
 <ZopaFooter />;
 ```
+
+### Extending the Link component
+
+**Note:** It's important that if you intend on extending the footers link component that you apply the correct styling as well.
+
+```tsx
+import { ZopaFooter, footerLinkStyle } from '@zopauk/react-components';
+import styled from 'styled-components';
+
+const YourLink = (props) => <a {...props} />;
+
+const CustomLink = styled(YourLink)`
+  ${footerLinkStyle}
+`;
+
+const renderLink = ({ href, children }) => <CustomLink href={href}>{children}</CustomLink>;
+
+<ZopaFooter renderLink={renderLink} />;
+```
