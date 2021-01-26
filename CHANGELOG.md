@@ -1,3 +1,10 @@
+## [4.37.0](https://github.com/zopaUK/react-components/compare/v4.36.0...v4.37.0) (2021-01-26)
+
+
+### Features
+
+* **tabs:** add optional call after onClick ([99bd18a](https://github.com/zopaUK/react-components/commit/99bd18ad8846dce0100ad749b06e5b8693b1fe8a))
+
 ## [4.36.0](https://github.com/zopaUK/react-components/compare/v4.35.2...v4.36.0) (2021-01-25)
 
 
