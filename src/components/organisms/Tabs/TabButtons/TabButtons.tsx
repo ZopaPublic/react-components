@@ -35,7 +35,11 @@ const TabButtons: FC<TabButtonsProps> = ({
 }) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
-  const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => setActiveTab(event.target.value), []);
+  const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => {
+    setActiveTab(event.target.value);
+    const currentTab = tabButtons.find((button) => button.tabId === event.target.value);
+    currentTab?.afterOnClick && currentTab.afterOnClick();
+  }, []);
 
   useEffect(() => {
     defaultTab && setActiveTab(defaultTab);
@@ -61,7 +65,12 @@ const TabButtons: FC<TabButtonsProps> = ({
         <ButtonsContainer className={classnames('p-2', className || '')} {...rest}>
           {tabButtons.map((tabButton) => (
             <FlexCol m="fill" key={tabButton.tabId}>
-              <TabButton data-automation={dataAutomation} tabId={tabButton.tabId} title={tabButton.title} />
+              <TabButton
+                data-automation={dataAutomation}
+                tabId={tabButton.tabId}
+                title={tabButton.title}
+                afterOnClick={tabButton.afterOnClick}
+              />
             </FlexCol>
           ))}
         </ButtonsContainer>
