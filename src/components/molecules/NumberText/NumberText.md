@@ -12,6 +12,14 @@ import { NumberText } from '@zopauk/react-components';
 <NumberText title="Overall Balance" value={100000} />;
 ```
 
+Large/Bottom:
+
+```tsx
+import { NumberText } from '@zopauk/react-components';
+
+<NumberText title="I would like to borrow" value={100000} numberPosition="bottom" numberFontSize="large" />;
+```
+
 Small/Bottom:
 
 ```tsx
@@ -25,7 +33,7 @@ Lead/Right:
 ```tsx
 import { NumberText } from '@zopauk/react-components';
 
-<NumberText numberFontSize="lead" title="Overall Balance" value={100000} numberPosition="right" />;
+<NumberText title="Overall Balance" value={100000} numberPosition="right" numberFontSize="lead" />;
 ```
 
 Small/Left:
