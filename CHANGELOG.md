@@ -1,3 +1,16 @@
+## [4.38.0](https://github.com/zopaUK/react-components/compare/v4.37.0...v4.38.0) (2021-01-29)
+
+
+### Features
+
+* **number-text:** add 'large' type to prop numberFontStyles ([fac5d91](https://github.com/zopaUK/react-components/commit/fac5d9170f6b6d44ed03edd11c490fe9588530ad))
+* **number-text:** add 'large' type to prop numberFontStyles ([5558578](https://github.com/zopaUK/react-components/commit/5558578e182633d84472c47d0b19987671b21662))
+
+
+### Bug Fixes
+
+* **product-template-title:** move title out of wrapper with max-width ([54ba4cc](https://github.com/zopaUK/react-components/commit/54ba4cce643f2a12113fc5ffa821f93f2f0a9dde))
+
 ## [4.37.0](https://github.com/zopaUK/react-components/compare/v4.36.0...v4.37.0) (2021-01-26)
 
 
