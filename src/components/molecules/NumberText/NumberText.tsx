@@ -16,7 +16,7 @@ interface StyleProps {
    * font size styling for number
    * @default `main`
    */
-  numberFontSize?: 'small' | 'lead' | 'main';
+  numberFontSize?: 'main' | 'large' | 'lead' | 'small';
   /**
    * Position for the numerical value
    * @default `top`
@@ -38,9 +38,10 @@ type TitleProps = Pick<StyleProps, 'numberPosition'>;
 type NumberProps = Pick<StyleProps, 'numberFontSize' | 'numberPosition' | 'semiBold'>;
 
 const numberFontStyles = {
-  small: 'h5',
-  lead: 'h4',
   main: 'h1',
+  large: 'h2',
+  lead: 'h4',
+  small: 'h5',
 };
 
 export interface NumberTextProps extends HTMLAttributes<HTMLDivElement>, StyleProps {
