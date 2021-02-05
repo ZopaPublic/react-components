@@ -138,10 +138,6 @@ Object {
 }
 
 @media (min-width:1280px) {
-
-}
-
-@media (min-width:1280px) {
   .c4 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -299,24 +295,24 @@ Object {
   </body>,
   "container": <div>
     <li
-      class="sc-iBPRYJ hEzNBi"
+      class="sc-gzVnrw cSqmIF"
     >
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-gsTCUz fYhvLD sc-eCssSg vCHXX"
+        class="sc-bwzfXH haaJDm sc-ifAKCX kjAaOj"
         color="#3B46C4"
         data-automation="ZA.navbar-item"
         href="#"
         tabindex="0"
       >
         <span
-          class="sc-jSgupP hksjZQ"
+          class="sc-EHOje ccecCV"
         >
           About
         </span>
         <span
-          class="sc-gKsewC hxYTot"
+          class="sc-bZQynM DMXmU"
         >
           <svg
             aria-hidden="true"
@@ -339,11 +335,11 @@ Object {
         </span>
       </a>
       <ul
-        class="sc-fubCfw fDajGZ"
+        class="sc-htoDjs fyPki"
       >
         <ul
           aria-label="About"
-          class="sc-bdfBwQ cGtXHm"
+          class="sc-bdVaJa eIDiHs"
         >
           <li>
             <a
@@ -398,7 +394,7 @@ Object {
       </ul>
     </li>
     <li
-      class="sc-pFZIQ ivTlQh"
+      class="sc-dnqmqq dpUcYN"
     >
       <a
         href="/contact"

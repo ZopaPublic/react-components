@@ -35,6 +35,11 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   align-self: auto;
 }
 
+.c5 {
+  max-width: 100%;
+  width: 100%;
+}
+
 .c7 {
   display: block;
   margin: 0 0 10px;
@@ -46,14 +51,6 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 15px;
-}
-
-.c5 {
-  max-width: 100%;
-  width: 100%;
-}
-
-.c8 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,7 +76,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   margin-bottom: 0;
 }
 
-.c8:before {
+.c7:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -98,7 +95,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   display: block;
 }
 
-.c8:after {
+.c7:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -109,7 +106,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   top: 18px;
 }
 
-.c8:hover {
+.c7:hover {
   cursor: pointer;
 }
 
@@ -165,8 +162,8 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
 .c6:checked + label:after {
   background-size: contain;
   background-image: url(teal-check-mark.svg);
-  -webkit-animation: icNfUr 180ms ease-in-out;
-  animation: icNfUr 180ms ease-in-out;
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
 }
 
 .c6 + label:before,
@@ -227,7 +224,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
             type="checkbox"
           />
           <label
-            class="c7 c8"
+            class="c7"
             for="checkbox-id-option"
           >
             option
@@ -274,6 +271,11 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   align-self: auto;
 }
 
+.c5 {
+  max-width: 100%;
+  width: 100%;
+}
+
 .c7 {
   display: block;
   margin: 0 0 10px;
@@ -285,14 +287,6 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 15px;
-}
-
-.c5 {
-  max-width: 100%;
-  width: 100%;
-}
-
-.c8 {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -318,7 +312,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   margin-bottom: 0;
 }
 
-.c8:before {
+.c7:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -337,7 +331,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   display: block;
 }
 
-.c8:after {
+.c7:after {
   content: '';
   background-size: contain;
   background: transparent none no-repeat center;
@@ -348,7 +342,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   top: 18px;
 }
 
-.c8:hover {
+.c7:hover {
   cursor: pointer;
 }
 
@@ -404,8 +398,8 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
 .c6:checked + label:after {
   background-size: contain;
   background-image: url(teal-check-mark.svg);
-  -webkit-animation: icNfUr 180ms ease-in-out;
-  animation: icNfUr 180ms ease-in-out;
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
 }
 
 .c0 {
@@ -462,7 +456,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
             type="checkbox"
           />
           <label
-            class="c7 c8"
+            class="c7"
             for="checkbox-id-option"
           >
             option
