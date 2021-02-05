@@ -143,30 +143,30 @@ describe('<RadioGroupField />', () => {
 
       return (
         <>
-        <RadioGroupField
-          label="Group 1"
-          value={value1}
-          onChange={setValue1}
-          items={[
-            { value: 'one', label: 'label one' },
-            { value: 'two', label: 'label two' },
-          ]}
-          hideControl
-        />
-        <RadioGroupField
-          label="Group 2"
-          value={value2}
-          onChange={setValue2}
-          items={[
-            { value: 'one', label: 'label one' },
-            { value: 'two', label: 'label two' },
-          ]}
-          hideControl
-        />
-      </>
+          <RadioGroupField
+            label="Group 1"
+            value={value1}
+            onChange={setValue1}
+            items={[
+              { value: 'one', label: 'label one' },
+              { value: 'two', label: 'label two' },
+            ]}
+            hideControl
+          />
+          <RadioGroupField
+            label="Group 2"
+            value={value2}
+            onChange={setValue2}
+            items={[
+              { value: 'one', label: 'label one' },
+              { value: 'two', label: 'label two' },
+            ]}
+            hideControl
+          />
+        </>
       );
     };
-    const { container } = render(<ControlledRadioGroupField />);    
+    const { container } = render(<ControlledRadioGroupField />);
     const inputOne: any = container.querySelector('#radio-id-Group-2-one');
     const inputTwo: any = container.querySelector('#radio-id-Group-2-two');
 
@@ -176,7 +176,7 @@ describe('<RadioGroupField />', () => {
     expect(inputOne.checked).toEqual(true);
     expect(inputTwo.checked).toEqual(false);
     expect(inputThree.checked).toEqual(true);
-    expect(inputFour.checked).toEqual(false);    
+    expect(inputFour.checked).toEqual(false);
     act(() => {
       fireEvent.click(inputTwo);
     });
@@ -193,5 +193,5 @@ describe('<RadioGroupField />', () => {
     expect(inputTwo.checked).toEqual(true);
     expect(inputThree.checked).toEqual(false);
     expect(inputFour.checked).toEqual(true);
-  })
+  });
 });
