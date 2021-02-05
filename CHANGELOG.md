@@ -1,3 +1,14 @@
+### [4.38.1](https://github.com/zopaUK/react-components/compare/v4.38.0...v4.38.1) (2021-02-05)
+
+
+### Bug Fixes
+
+* **radiofield:** fix test snapshots ([90ef09b](https://github.com/zopaUK/react-components/commit/90ef09b974f3a2713e8b7ff75a632026245242c9))
+* **radiofield:** make id more unique ([c4ea44e](https://github.com/zopaUK/react-components/commit/c4ea44e762222a45879727e16182f70d51c1ef46))
+* **radiogroupfield:** added name prop ([ac45dfb](https://github.com/zopaUK/react-components/commit/ac45dfb28ab57290dc89c1253c4d20fcd8ede16f))
+* **radiogroupfield:** added name prop ([a913842](https://github.com/zopaUK/react-components/commit/a9138429d50ac8f98752fbf7d6657e7e90aa2419))
+* **radiogroupfield:** fix lint ([6e06336](https://github.com/zopaUK/react-components/commit/6e06336bef4a71be2e701d1b755e642cc5eeff1c))
+
 ## [4.38.0](https://github.com/zopaUK/react-components/compare/v4.37.0...v4.38.0) (2021-01-29)
 
 
