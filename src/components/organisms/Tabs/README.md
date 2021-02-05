@@ -11,7 +11,11 @@ function TabsExample() {
   const tabButtons = [
     { tabId: 'pineapple', title: '🍍 Pineapple' },
     { tabId: 'kiwi', title: '🥝 Kiwi' },
-    { tabId: 'watermelon', title: '🍉 Watermelon' },
+    {
+      tabId: 'watermelon',
+      title: '🍉 Watermelon',
+      afterOnClick: () => console.log('This tab has a function that is called after the default action in onClick'),
+    },
   ];
   return (
     <Tabs>

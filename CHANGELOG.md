@@ -1,3 +1,69 @@
+## [4.38.0](https://github.com/zopaUK/react-components/compare/v4.37.0...v4.38.0) (2021-01-29)
+
+
+### Features
+
+* **number-text:** add 'large' type to prop numberFontStyles ([fac5d91](https://github.com/zopaUK/react-components/commit/fac5d9170f6b6d44ed03edd11c490fe9588530ad))
+* **number-text:** add 'large' type to prop numberFontStyles ([5558578](https://github.com/zopaUK/react-components/commit/5558578e182633d84472c47d0b19987671b21662))
+
+
+### Bug Fixes
+
+* **product-template-title:** move title out of wrapper with max-width ([54ba4cc](https://github.com/zopaUK/react-components/commit/54ba4cce643f2a12113fc5ffa821f93f2f0a9dde))
+
+## [4.37.0](https://github.com/zopaUK/react-components/compare/v4.36.0...v4.37.0) (2021-01-26)
+
+
+### Features
+
+* **tabs:** add optional call after onClick ([99bd18a](https://github.com/zopaUK/react-components/commit/99bd18ad8846dce0100ad749b06e5b8693b1fe8a))
+
+## [4.36.0](https://github.com/zopaUK/react-components/compare/v4.35.2...v4.36.0) (2021-01-25)
+
+
+### Features
+
+* **footer:** allow custom link component ([6d16bfa](https://github.com/zopaUK/react-components/commit/6d16bfaa0416b0954f183ef1b9a00fcbf3df8c48))
+* **footer:** update documentation ([e1723b2](https://github.com/zopaUK/react-components/commit/e1723b2137e4960569ab102fc2ba2937840762b5))
+* **footer:** update testing snapshots ([bcce324](https://github.com/zopaUK/react-components/commit/bcce324dc808739f5f2e8fce26b867a554b79170))
+* **footer:** update types ([83bdbb4](https://github.com/zopaUK/react-components/commit/83bdbb465839d15796463ba4c7b98eeb26d4fde1))
+
+### [4.35.2](https://github.com/zopaUK/react-components/compare/v4.35.1...v4.35.2) (2021-01-22)
+
+
+### Bug Fixes
+
+* **navbar:** add wrapping <ul> in mobile nav ([86adf16](https://github.com/zopaUK/react-components/commit/86adf16fb005d010c0bf09bd66de3ee0667af5fb))
+* **navbar:** revert accidental change to li ([15754cc](https://github.com/zopaUK/react-components/commit/15754cc75f46a1a9cafa924495d306c6f40fb667))
+
+### [4.35.1](https://github.com/zopaUK/react-components/compare/v4.35.0...v4.35.1) (2021-01-18)
+
+
+### Bug Fixes
+
+* **jestaxe:** more informative comment ([c8c24fc](https://github.com/zopaUK/react-components/commit/c8c24fc3240a6d9e989b0ee7717f34f2b8ada370)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** upadte jest, add config ([71cb997](https://github.com/zopaUK/react-components/commit/71cb9973081154d11291406b0c7c7ec42972724a)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** update imports to axe helper config ([4a9976c](https://github.com/zopaUK/react-components/commit/4a9976cf02612f8adb64406f772d47554429fd08)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** update old snapshots and imports ([49eafab](https://github.com/zopaUK/react-components/commit/49eafabdcfce8122e29517db68a6ef81e2257577)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **jestaxe:** upgrade jestaxe, exclude regions ([c39042b](https://github.com/zopaUK/react-components/commit/c39042b80acd15da3c1170b08d84eba77fb31171)), closes [#12](https://github.com/zopaUK/react-components/issues/12)
+* **navbar:** items use semantic HTML ([e6ebbc7](https://github.com/zopaUK/react-components/commit/e6ebbc7e16f9a51e0cb038d4287d6f0f4677fb1c)), closes [#535](https://github.com/zopaUK/react-components/issues/535)
+* **navbar:** remove roles, use semantic elements ([2651d42](https://github.com/zopaUK/react-components/commit/2651d4239587b43ac90329b106064e3a2f543b81)), closes [#535](https://github.com/zopaUK/react-components/issues/535)
+* **navbarlink:** use company standard for automation tag ([486eca2](https://github.com/zopaUK/react-components/commit/486eca23a8bfc798f45177f4c4a852a3aea98810))
+
+## [4.35.0](https://github.com/zopaUK/react-components/compare/v4.34.1...v4.35.0) (2021-01-07)
+
+
+### Features
+
+* **footer:** updated the footer to remove outdated link ([32d5a10](https://github.com/zopaUK/react-components/commit/32d5a10013ff28c4c3f4e446ebfcda3329f3212a))
+
+### [4.34.1](https://github.com/zopaUK/react-components/compare/v4.34.0...v4.34.1) (2021-01-06)
+
+
+### Bug Fixes
+
+* **list:** update test snapshots ([66325c5](https://github.com/zopaUK/react-components/commit/66325c54964637b50794461ee7d52c98ca29a419))
+
 ## [4.34.0](https://github.com/zopaUK/react-components/compare/v4.33.2...v4.34.0) (2021-01-05)
 
 

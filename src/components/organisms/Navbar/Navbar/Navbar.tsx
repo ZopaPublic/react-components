@@ -204,7 +204,7 @@ export const LogoContainer = styled.div<PageNavigationProps>`
   }
 `;
 
-const NavbarLinksListContainer = styled.div`
+const NavbarLinksListContainer = styled.ul`
   ${minMedia.desktop`
     ${css`
       margin-right: ${spacing[10]};
@@ -267,6 +267,14 @@ const SmallDeviceNavbar = styled.div`
   `}
 `;
 
+const NavItemsWrapper = styled.ul`
+  padding-left: 0;
+
+  > li {
+    display: block;
+  }
+`;
+
 export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...rest} {...props}>
     {label}
@@ -315,7 +323,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <PageNavigation role="banner" overlap={overThreshold} collapsed={collapsed}>
+      <PageNavigation overlap={overThreshold} collapsed={collapsed}>
         <Headroom
           wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
@@ -323,7 +331,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
         >
           <LargeDeviceNavbar>
             <LayoutInner overlap={overThreshold}>
-              <LogoContainer overlap={overThreshold || collapsed}>
+              <LogoContainer overlap={overThreshold || collapsed} role="banner">
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
               </LogoContainer>
@@ -355,7 +363,9 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               {withCTA ? cta : <IconContainer />}
               {links && (
                 <HamburgerMenu open={open} height={height}>
-                  <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                  <NavItemsWrapper>
+                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                  </NavItemsWrapper>
                 </HamburgerMenu>
               )}
             </LayoutInner>

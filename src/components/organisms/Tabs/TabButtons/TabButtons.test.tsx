@@ -6,7 +6,7 @@ describe('<TabButtons />', () => {
   const tabButtons = [
     { tabId: 'pineapple', title: '🍍 Pineapple' },
     { tabId: 'kiwi', title: '🥝 Kiwi' },
-    { tabId: 'watermelon', title: '🍉 Watermelon' },
+    { tabId: 'watermelon', title: '🍉 Watermelon', afterOnClick: jest.fn() },
   ];
 
   it('renders the buttons on big screens', async () => {

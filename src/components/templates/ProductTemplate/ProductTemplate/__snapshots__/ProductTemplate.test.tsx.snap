@@ -38,7 +38,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   align-self: center;
 }
 
-.c21 {
+.c20 {
   font-size: 46px;
   line-height: 54px;
   -webkit-letter-spacing: -1.25px;
@@ -92,7 +92,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   padding-bottom: 195px;
 }
 
-.c20 {
+.c21 {
   margin: 0 auto;
   max-width: 612px;
 }
@@ -499,14 +499,14 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
             <div
               class="c19 pt-7 m:pt-9 mx-6 m:mx-0"
             >
-              <div
+              <h1
                 class="c20"
               >
-                <h1
-                  class="c21"
-                >
-                  Product title
-                </h1>
+                Product title
+              </h1>
+              <div
+                class="c21"
+              >
                 <p
                   class="c22 mt-4"
                 >

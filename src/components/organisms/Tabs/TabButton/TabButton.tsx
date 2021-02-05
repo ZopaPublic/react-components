@@ -7,6 +7,7 @@ import { useTabsContext } from '../hooks/useTabsContext';
 export interface TabButtonProps extends ButtonProps {
   title: string;
   tabId: string;
+  afterOnClick?: () => void;
 }
 
 interface StyledButtonProps {
@@ -43,9 +44,9 @@ const StyledButton = styled(Button).attrs({ className: 'py-2' })<StyledButtonPro
     `}
 `;
 
-const TabButton = ({ title, tabId }: TabButtonProps) => {
+const TabButton = ({ title, tabId, afterOnClick }: TabButtonProps) => {
   const { activeTab, getTabButtonHTMLProps } = useTabsContext();
-  const tabProps = getTabButtonHTMLProps(tabId);
+  const tabProps = getTabButtonHTMLProps(tabId, afterOnClick);
 
   return (
     <StyledButton activeTab={activeTab} tabId={tabId} styling="link" {...tabProps}>
