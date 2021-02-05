@@ -31,12 +31,14 @@ export type RadioGroupFieldProps = {
   flexColProps?: FlexColProps;
   flexRowProps?: FlexRowProps;
   hideControl?: boolean;
+  name?: string;
   'data-automation'?: string;
 };
 
 const RadioGroupField = ({
   items,
   label,
+  name,
   onChange,
   onBlur,
   value,
@@ -82,7 +84,9 @@ const RadioGroupField = ({
                   checked={checked}
                   isValid={checked && isValid}
                   hideControl={hideControl}
+                  name={name}
                   data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
+                  groupLabel={label}
                 />
               </RadioWrapper>
             </FlexCol>

@@ -18,7 +18,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'two', label: 'label two' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Uncontrolled"
 />;
 ```
 
@@ -33,7 +33,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'four', label: 'label four', defaultChecked: true },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Uncontrolled with one radio checked by default"
 />;
 ```
 
@@ -48,7 +48,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'four', label: 'label four', defaultChecked: true },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Uncontrolled with hidden control"
   hideControl
 />;
 ```
@@ -69,7 +69,7 @@ const ControlledRadioGroupField = () => {
       ]}
       value={value}
       onChange={setValue}
-      label="Radio group field label"
+      label="Controlled"
     />
   );
 };
@@ -88,7 +88,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'eight', label: 'label eight' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Disabled"
   disabled
 />;
 ```
@@ -104,7 +104,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'nine', label: 'label nine', defaultChecked: true },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Disabled and valid"
   isValid={true}
   disabled
 />;
@@ -121,7 +121,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'eleven', label: 'label eleven' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="With error"
   errorMessage="You have to pick one"
 />;
 ```
@@ -144,7 +144,8 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'seventeen', label: 'label seventeen' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Responsive"
+  name="Responsive"
   data-automation="testing"
 />;
 ```

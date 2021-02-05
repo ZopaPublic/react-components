@@ -138,9 +138,12 @@ const Input = styled.input<InputStatus & GroupingControlsProps>`
     `}
 `;
 
-export interface RadioField extends FieldProps, InputProps, GroupingControlsProps {}
+export interface RadioField extends FieldProps, InputProps, GroupingControlsProps {
+  groupLabel?: string;
+}
 
 const RadioField = ({
+  groupLabel = '',
   label,
   hasError,
   errorMessage,
@@ -152,11 +155,12 @@ const RadioField = ({
   ...rest
 }: RadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
+  const id = `radio-id-${groupLabel.replace(/\s/g, '-')}-${value}`;
 
   return (
     <FieldContainer className={className} size={inputSize}>
       <Input
-        id={`radio-id-${value}`}
+        id={id}
         hasError={hasError}
         isValid={isValid}
         value={value}
@@ -164,7 +168,7 @@ const RadioField = ({
         type="radio"
         {...rest}
       />
-      <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
+      <Label htmlFor={id} hasError={hasError} isValid={isValid}>
         {label}
       </Label>
     </FieldContainer>

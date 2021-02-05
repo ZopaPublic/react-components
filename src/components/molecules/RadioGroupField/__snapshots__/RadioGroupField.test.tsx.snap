@@ -227,13 +227,13 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
         >
           <input
             class="c7"
-            id="radio-id-one"
+            id="radio-id-label-one"
             type="radio"
             value="one"
           />
           <label
             class="c8"
-            for="radio-id-one"
+            for="radio-id-label-one"
           >
             label one
           </label>
@@ -252,13 +252,13 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
         >
           <input
             class="c7"
-            id="radio-id-two"
+            id="radio-id-label-two"
             type="radio"
             value="two"
           />
           <label
             class="c8"
-            for="radio-id-two"
+            for="radio-id-label-two"
           >
             label two
           </label>
@@ -492,13 +492,13 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
           <input
             class="c7"
             data-automation="ZA.test-0"
-            id="radio-id-one"
+            id="radio-id-label-one"
             type="radio"
             value="one"
           />
           <label
             class="c8"
-            for="radio-id-one"
+            for="radio-id-label-one"
           >
             label one
           </label>
@@ -518,13 +518,13 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
           <input
             class="c7"
             data-automation="ZA.test-1"
-            id="radio-id-two"
+            id="radio-id-label-two"
             type="radio"
             value="two"
           />
           <label
             class="c8"
-            for="radio-id-two"
+            for="radio-id-label-two"
           >
             label two
           </label>
