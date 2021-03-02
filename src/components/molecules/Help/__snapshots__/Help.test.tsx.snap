@@ -380,7 +380,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <p
                   class="c14 c15"
                 >
-                  Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)
+                  Monday - Friday 
+                  08:00 - 20:00
+                  , Saturday - Sunday 
+                  09:00 - 17:30
                 </p>
               </div>
             </div>
