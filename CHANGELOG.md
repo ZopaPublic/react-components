@@ -1,3 +1,10 @@
+### [4.38.2](https://github.com/zopaUK/react-components/compare/v4.38.1...v4.38.2) (2021-03-02)
+
+
+### Bug Fixes
+
+* **help:** update opening hours ([da790aa](https://github.com/zopaUK/react-components/commit/da790aa823c8f74d2ebab470f10bd104defe05d0))
+
 ### [4.38.1](https://github.com/zopaUK/react-components/compare/v4.38.0...v4.38.1) (2021-02-05)
 
 
