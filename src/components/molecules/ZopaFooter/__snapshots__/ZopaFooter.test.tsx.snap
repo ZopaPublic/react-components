@@ -733,6 +733,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c6 c13"
           color="#3B46C4"
           href="https://facebook.com/zopa"
+          rel="noopener"
+          target="_blank"
           title="Facebook"
         >
           <span
@@ -743,6 +745,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c6 c13"
           color="#3B46C4"
           href="https://twitter.com/zopa"
+          rel="noopener"
+          target="_blank"
           title="Twitter"
         >
           <span
@@ -753,6 +757,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c6 c13"
           color="#3B46C4"
           href="https://www.instagram.com/Zopamoney/"
+          rel="noopener"
+          target="_blank"
           title="Instagram"
         >
           <span
@@ -763,6 +769,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c6 c13"
           color="#3B46C4"
           href="https://www.linkedin.com/company/zopa/"
+          rel="noopener"
+          target="_blank"
           title="Linkedin"
         >
           <span
