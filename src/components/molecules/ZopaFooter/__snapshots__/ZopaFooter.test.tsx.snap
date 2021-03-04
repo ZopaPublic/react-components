@@ -762,7 +762,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           href="https://www.instagram.com/Zopamoney/"
           rel="noopener"
           target="_blank"
-          title="Instagram"
+          title="Instagram opens in a new tab"
         >
           <span
             class="c16"

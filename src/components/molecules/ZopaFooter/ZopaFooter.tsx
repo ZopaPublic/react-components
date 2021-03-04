@@ -116,7 +116,7 @@ const ZopaFooter = ({
           <SocialLink
             href="https://www.instagram.com/Zopamoney/"
             aria-label="Instagram"
-            title="Instagram"
+            title="Instagram opens in a new tab"
             variant={instagram}
           />
           <SocialLink
