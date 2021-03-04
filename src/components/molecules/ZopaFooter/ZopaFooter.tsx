@@ -101,10 +101,30 @@ const ZopaFooter = ({
           {renderLink({ href: baseUrl, title: 'Logo', children: <Logo width="165px" height="30px" /> })}
         </LogoBlock>
         <SocialBlock>
-          <SocialLink href="https://facebook.com/zopa" title="Facebook" variant={facebook} />
-          <SocialLink href="https://twitter.com/zopa" title="Twitter" variant={twitter} />
-          <SocialLink href="https://www.instagram.com/Zopamoney/" title="Instagram" variant={instagram} />
-          <SocialLink href="https://www.linkedin.com/company/zopa/" title="Linkedin" variant={linkedin} />
+          <SocialLink
+            href="https://facebook.com/zopa"
+            aria-label="Facebook"
+            title="Facebook opens in a new tab"
+            variant={facebook}
+          />
+          <SocialLink
+            href="https://twitter.com/zopa"
+            aria-label="Twitter"
+            title="Twitter opens in a new tab"
+            variant={twitter}
+          />
+          <SocialLink
+            href="https://www.instagram.com/Zopamoney/"
+            aria-label="Instagram"
+            title="Instagram"
+            variant={instagram}
+          />
+          <SocialLink
+            href="https://www.linkedin.com/company/zopa/"
+            aria-label="Linkedin"
+            title="Linkedin opens in a new tab"
+            variant={linkedin}
+          />
         </SocialBlock>
         <LegalBlock>
           <Text as="p" color={colors.greyDark} size="small" className="mb-4">
