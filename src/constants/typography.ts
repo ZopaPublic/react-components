@@ -3,7 +3,7 @@ const typography = {
   sizes: {
     text: {
       lead: '18px',
-      body: '15px',
+      body: '16px',
       small: '13px',
     },
     heading: {

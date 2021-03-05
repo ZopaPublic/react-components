@@ -2,7 +2,7 @@ import React, { FC, ReactElement } from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
 import { CardProps } from '../../organisms/Card/Card/Card';
@@ -26,7 +26,7 @@ const CrossIcon = styled(Icon)`
 
 const classNames = {
   afterOpen: 'zopa-modal--after-open',
-  base: 'zopa-modal',
+  base: 'zopa-modal mx-4',
   beforeClose: 'zopa-modal--before-close',
 };
 
@@ -48,8 +48,9 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     {showCloseButton && (
       <CrossIcon
         onClick={onRequestClose}
-        color={colors.greyLight}
-        variant={faTimesCircle}
+        color={colors.grey}
+        variant={faTimes}
+        size="lg"
         data-automation="ZA.modal-cross-icon"
       />
     )}

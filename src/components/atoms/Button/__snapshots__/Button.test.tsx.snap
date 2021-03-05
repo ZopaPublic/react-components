@@ -19,7 +19,7 @@ exports[`<Button /> renders as "link" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -71,7 +71,7 @@ exports[`<Button /> renders as "secondary" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -123,7 +123,7 @@ exports[`<Button /> renders disabled 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -170,7 +170,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -223,7 +223,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -275,7 +275,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -328,7 +328,7 @@ exports[`<Button /> renders wide 1`] = `
   width: 100%;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
@@ -381,7 +381,7 @@ exports[`<Button /> renders with no a11y violations 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
