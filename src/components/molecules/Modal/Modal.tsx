@@ -5,6 +5,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
+import { spacing } from '../../../constants/spacing';
 import { CardProps } from '../../organisms/Card/Card/Card';
 
 export interface ModalProps extends ReactModal.Props {
@@ -17,11 +18,14 @@ type ModalComponent = FC<ModalProps> & {
   setAppElement: typeof ReactModal.setAppElement;
 };
 
-const CrossIcon = styled(Icon)`
+const Button = styled.button`
+  border: 0;
+  background: transparent;
   position: absolute;
   cursor: pointer;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
+  padding: ${spacing[3]};
 `;
 
 const classNames = {
@@ -46,13 +50,16 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     {...rest}
   >
     {showCloseButton && (
-      <CrossIcon
-        onClick={onRequestClose}
-        color={colors.grey}
-        variant={faTimes}
-        size="lg"
-        data-automation="ZA.modal-cross-icon"
-      />
+      <Button type="button">
+        <span className="sr-only">Close Modal</span>
+        <Icon
+          onClick={onRequestClose}
+          color={colors.grey}
+          variant={faTimes}
+          size="lg"
+          data-automation="ZA.modal-cross-icon"
+        />
+      </Button>
     )}
     {children}
   </ReactModal>
