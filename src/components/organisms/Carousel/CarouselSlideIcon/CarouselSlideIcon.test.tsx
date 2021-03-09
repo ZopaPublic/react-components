@@ -1,6 +1,6 @@
 import { faCar } from '@fortawesome/free-solid-svg-icons';
 import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../../axe-helper';
 import React from 'react';
 import { Carousel } from '..';
 

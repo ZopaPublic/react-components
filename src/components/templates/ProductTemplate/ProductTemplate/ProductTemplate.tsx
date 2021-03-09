@@ -14,6 +14,7 @@ export interface ProductTemplateProps {
   children: React.ReactNode;
   title?: string;
   subtitle?: string;
+  content?: ReactElement;
   prevStep?: ReactElement | string;
   progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
   contentWidth?: number;
@@ -36,6 +37,7 @@ const StyledFlexRow = styled(FlexRow)<{ hasTitle: boolean }>(({ hasTitle }) =>
 function ProductTemplate({
   title,
   subtitle,
+  content,
   children,
   prevStep,
   progress,
@@ -58,7 +60,7 @@ function ProductTemplate({
           </FlexCol>
         ) : null}
         <FlexCol>
-          <ProductTemplateTitle title={title} subtitle={subtitle} />
+          <ProductTemplateTitle title={title} subtitle={subtitle} content={content} />
         </FlexCol>
         <FlexCol>
           <StyledFlexRow hasTitle={!!title || !!subtitle} justify="center" gutter={0}>

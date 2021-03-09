@@ -183,7 +183,7 @@ Object {
 
 <body>
     <div>
-      <div
+      <li
         class="c0"
       >
         <a
@@ -191,8 +191,8 @@ Object {
           aria-haspopup="true"
           class="c1 c2"
           color="#3B46C4"
+          data-automation="ZA.navbar-item"
           href="#"
-          role="menuitem"
           tabindex="0"
         >
           <span
@@ -223,71 +223,56 @@ Object {
             </svg>
           </span>
         </a>
-        <div
+        <ul
           class="c5"
         >
           <ul
             aria-label="About"
             class="c6"
-            role="menu"
           >
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about"
               >
                 About Zopa
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/our-story"
               >
                 Our story
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/board"
               >
                 Our board
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/leadership"
               >
                 Our leadership team
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/awards"
               >
                 Awards
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/careers"
               >
                 Careers
               </a>
             </li>
-            <li
-              role="none"
-            >
+            <li>
               <a
                 href="/about/press"
               >
@@ -295,9 +280,9 @@ Object {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div
+        </ul>
+      </li>
+      <li
         class="c7"
       >
         <a
@@ -305,11 +290,11 @@ Object {
         >
           Support
         </a>
-      </div>
+      </li>
     </div>
   </body>,
   "container": <div>
-    <div
+    <li
       class="sc-gzVnrw cSqmIF"
     >
       <a
@@ -317,8 +302,8 @@ Object {
         aria-haspopup="true"
         class="sc-bwzfXH haaJDm sc-ifAKCX gOIquV"
         color="#3B46C4"
+        data-automation="ZA.navbar-item"
         href="#"
-        role="menuitem"
         tabindex="0"
       >
         <span
@@ -349,71 +334,56 @@ Object {
           </svg>
         </span>
       </a>
-      <div
+      <ul
         class="sc-htoDjs fyPki"
       >
         <ul
           aria-label="About"
           class="sc-bdVaJa eIDiHs"
-          role="menu"
         >
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about"
             >
               About Zopa
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/our-story"
             >
               Our story
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/board"
             >
               Our board
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/leadership"
             >
               Our leadership team
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/awards"
             >
               Awards
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/careers"
             >
               Careers
             </a>
           </li>
-          <li
-            role="none"
-          >
+          <li>
             <a
               href="/about/press"
             >
@@ -421,9 +391,9 @@ Object {
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div
+      </ul>
+    </li>
+    <li
       class="sc-dnqmqq dpUcYN"
     >
       <a
@@ -431,7 +401,7 @@ Object {
       >
         Support
       </a>
-    </div>
+    </li>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

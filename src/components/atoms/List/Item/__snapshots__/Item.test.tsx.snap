@@ -9,7 +9,7 @@ exports[`<Item /> renders the component with default props 1`] = `
 }
 
 <li
-  class="c0 undefined"
+  class="c0"
 >
   I am a list item
 </li>

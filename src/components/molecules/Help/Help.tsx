@@ -71,8 +71,12 @@ export enum HelpLine {
   investors = 'investors',
 }
 
-type HelpProps = { helpLine?: HelpLine };
-const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
+type HelpProps = { helpLine?: HelpLine; weekdayOpeningHours?: string; weekendOpeningHours?: string };
+const Help: React.FC<HelpProps> = ({
+  helpLine = HelpLine.borrowers,
+  weekdayOpeningHours = '08:00 - 20:00',
+  weekendOpeningHours = '09:00 - 17:30',
+}) => (
   <HelpWrap className="pt-4">
     <HelpContent>
       <FlexRow>
@@ -95,7 +99,9 @@ const Help: React.FC<HelpProps> = ({ helpLine = HelpLine.borrowers }) => (
                 </FlexColCenter>
                 <FlexCol xs={9}>
                   <Card.Heading>{HelpLineDetails[helpLine].telephone.label}</Card.Heading>
-                  <Card.Text>Monday to Thursday (9am to 5:30pm), Friday (9am to 5pm)</Card.Text>
+                  <Card.Text>
+                    Monday - Friday {weekdayOpeningHours}, Saturday - Sunday {weekendOpeningHours}
+                  </Card.Text>
                 </FlexCol>
               </FlexRow>
               <Card.Actions>

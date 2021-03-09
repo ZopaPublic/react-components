@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import InputRange from './InputRange';
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 
 describe('<InputRange />', () => {
   it('renders and updates as expected', async () => {

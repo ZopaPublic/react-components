@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled, { css } from 'styled-components';
-
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants/colors';
+import { minMedia } from '../../../../helpers/responsiveness';
 import { useViewport } from '../../../../hooks/useViewport';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
-import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateTitleProps {
   title?: string;
   subtitle?: string;
+  content?: ReactElement;
   dataAutomation?: string;
 }
 
@@ -26,7 +26,6 @@ const ProductTemplateTitleBackground = styled.header`
 const ProductTemplateTitleContainer = styled.div.attrs({
   className: 'px-0 m:px-4',
 })`
-  max-width: 612px;
   margin: 0 auto;
 `;
 
@@ -34,9 +33,15 @@ const ProductTemplateTitleInnerContainer = styled.div`
   padding-bottom: 195px;
 `;
 
+const ProductTemplateTitleWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 612px;
+`;
+
 export function ProductTemplateTitle({
   title,
   subtitle,
+  content,
   dataAutomation = 'ZA.ProductTemplateTitle',
 }: ProductTemplateTitleProps) {
   const { width = 0 } = useViewport();
@@ -49,11 +54,14 @@ export function ProductTemplateTitle({
               {title}
             </Heading>
           )}
-          {subtitle && (
-            <Text as="p" size="lead" align="center" className="mt-4">
-              {subtitle}
-            </Text>
-          )}
+          <ProductTemplateTitleWrapper>
+            {subtitle && (
+              <Text as="p" size="lead" align="center" className="mt-4">
+                {subtitle}
+              </Text>
+            )}
+          </ProductTemplateTitleWrapper>
+          {content}
         </ProductTemplateTitleInnerContainer>
       </ProductTemplateTitleContainer>
     </ProductTemplateTitleBackground>

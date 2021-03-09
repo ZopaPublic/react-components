@@ -20,12 +20,16 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
 }
 
 .c1 {
-  max-width: 612px;
   margin: 0 auto;
 }
 
 .c2 {
   padding-bottom: 195px;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 612px;
 }
 
 @media (min-width:1280px) {
@@ -50,6 +54,9 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
         >
           ProductTemplateTitle title
         </h1>
+        <div
+          class="c4"
+        />
       </div>
     </div>
   </header>
@@ -76,12 +83,16 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
 }
 
 .c1 {
-  max-width: 612px;
   margin: 0 auto;
 }
 
 .c2 {
   padding-bottom: 195px;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 612px;
 }
 
 @media (min-width:1280px) {
@@ -106,6 +117,9 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
         >
           ProductTemplateTitle title
         </h1>
+        <div
+          class="c4"
+        />
       </div>
     </div>
   </header>
@@ -127,7 +141,7 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
   font-weight: 800;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -146,12 +160,16 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
 }
 
 .c1 {
-  max-width: 612px;
   margin: 0 auto;
 }
 
 .c2 {
   padding-bottom: 195px;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 612px;
 }
 
 @media (min-width:1280px) {
@@ -176,11 +194,15 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
         >
           ProductTemplateTitle title
         </h1>
-        <p
-          class="c4 mt-4"
+        <div
+          class="c4"
         >
-          ProductTemplateTitle subtitle
-        </p>
+          <p
+            class="c5 mt-4"
+          >
+            ProductTemplateTitle subtitle
+          </p>
+        </div>
       </div>
     </div>
   </header>

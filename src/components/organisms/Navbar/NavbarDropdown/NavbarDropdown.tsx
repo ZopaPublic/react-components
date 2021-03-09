@@ -7,7 +7,7 @@ import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 import NavbarLink from '../NavbarLink/NavbarLink';
 
-const NavbarDropdownContainer = styled.div`
+const NavbarDropdownContainer = styled.li`
   position: relative;
   display: inline-block;
 `;
@@ -18,7 +18,7 @@ export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDi
   open: boolean;
 }
 
-const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
+const NavbarDropdownListContainer = styled.ul<NavbarDropdownListContainer>`
   ${minMedia.desktop`
     position: absolute;
     left: 50%;
@@ -50,7 +50,6 @@ export interface OpenerProps {
   ref: React.RefObject<ButtonLinkElement>;
   onClick: React.EventHandler<React.MouseEvent>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
-  role: string;
   tabIndex: number;
 }
 
@@ -59,7 +58,6 @@ export type Item = any;
 export interface ItemProps {
   ref: React.RefObject<HTMLLIElement>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
-  role: string;
   tabIndex: number;
 }
 
@@ -99,7 +97,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     ),
   };
 
-  private readonly dropdownRef = React.createRef<HTMLDivElement>();
+  private readonly dropdownRef = React.createRef<HTMLLIElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
   private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
@@ -130,14 +128,12 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     onClick: this.handleOpenerClick,
     onKeyDown: this.handleOpenerKeyDown,
     ref: this.openerRef,
-    role: 'menuitem',
     tabIndex: 0,
   });
 
   public getItemProps = (index: number) => () => ({
     onKeyDown: this.handleItemKeyDown,
     ref: this.itemsRefs[index],
-    role: 'menuitem',
     tabIndex: -1,
   });
 
@@ -152,9 +148,9 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
           {label}
         </NavbarLink>
         <NavbarDropdownListContainer open={open}>
-          <NavbarDropdownList role="menu" aria-label={label}>
+          <NavbarDropdownList aria-label={label}>
             {items.map((item, index) => (
-              <li key={`${id}-${index}`} role="none">
+              <li key={`${id}-${index}`}>
                 {renderItem({
                   close,
                   getItemProps: this.getItemProps(index),

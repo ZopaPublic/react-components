@@ -14,7 +14,7 @@ const ItemComponent = styled.li`
 `;
 
 const Item: FC<ItemProps> = ({ icon, className = '', children, ...rest }) => (
-  <ItemComponent className={`${icon && 'has-icon '}${className}`} {...rest}>
+  <ItemComponent className={`${icon ? 'has-icon ' : ''}${className}`} {...rest}>
     {icon}
     {children}
   </ItemComponent>
