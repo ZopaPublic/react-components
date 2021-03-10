@@ -12,7 +12,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #818F9B;
   border: 1px solid #D4D7D9;
@@ -107,7 +107,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   height: 50px;
   padding: 0 16px;
   padding-left: 60px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -207,7 +207,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   height: 50px;
   padding: 0 16px;
   padding-right: 60px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -283,7 +283,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #FF4539;
@@ -352,7 +352,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -421,7 +421,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #3EBC64;
@@ -490,7 +490,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;

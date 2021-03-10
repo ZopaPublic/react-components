@@ -16,7 +16,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,7 +24,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   display: flex;
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   padding: 14px 16px;
   border: 1px solid #818F9B;
   -webkit-transition-property: border,box-shadow;
@@ -171,7 +171,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,7 +179,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: flex;
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   padding: 14px 16px;
   border: 1px solid #818F9B;
   -webkit-transition-property: border,box-shadow;

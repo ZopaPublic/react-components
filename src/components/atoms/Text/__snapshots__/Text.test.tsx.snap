@@ -8,7 +8,7 @@ exports[`<Text /> it can render as an HTML p tag 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -30,7 +30,7 @@ exports[`<Text /> it can render as an HTML span tag 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -52,7 +52,7 @@ exports[`<Text /> renders without  a11y violations 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;

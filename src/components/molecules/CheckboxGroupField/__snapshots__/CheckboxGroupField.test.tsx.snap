@@ -50,7 +50,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,7 +58,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   display: flex;
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   padding: 14px 16px;
   border: 1px solid #818F9B;
   -webkit-transition-property: border,box-shadow;
@@ -286,7 +286,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,7 +294,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   display: flex;
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   padding: 14px 16px;
   border: 1px solid #818F9B;
   -webkit-transition-property: border,box-shadow;

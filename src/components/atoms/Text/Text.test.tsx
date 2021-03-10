@@ -73,7 +73,7 @@ describe('<Text />', () => {
   it.each`
     size       | pixels
     ${'lead'}  | ${'18px'}
-    ${'body'}  | ${'16px'}
+    ${'body'}  | ${'15px'}
     ${'small'} | ${'13px'}
   `('can render at different sizes:  $size – $pixels', ({ size, pixels }) => {
     const { container } = render(<Text size={size}>Text</Text>);

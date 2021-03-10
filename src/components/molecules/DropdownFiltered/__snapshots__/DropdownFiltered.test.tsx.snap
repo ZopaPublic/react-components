@@ -11,7 +11,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .c0 {
@@ -54,7 +54,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   height: 50px;
   padding: 0 16px;
   padding-right: 60px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -216,7 +216,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   height: 50px;
   padding: 0 16px;
   padding-right: 60px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;

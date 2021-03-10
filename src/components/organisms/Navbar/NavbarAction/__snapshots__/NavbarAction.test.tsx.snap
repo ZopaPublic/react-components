@@ -19,7 +19,7 @@ exports[`<Navbar /> should render component with default props 1`] = `
   align-items: center;
   padding: 16px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.2;
   font-weight: 600;
   cursor: pointer;
