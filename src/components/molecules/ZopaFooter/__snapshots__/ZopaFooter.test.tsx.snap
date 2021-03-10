@@ -730,40 +730,52 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <a
+          aria-label="Facebook"
           class="c6 c13"
           color="#3B46C4"
           href="https://facebook.com/zopa"
-          title="Facebook"
+          rel="noopener"
+          target="_blank"
+          title="Facebook opens in a new tab"
         >
           <span
             class="c14"
           />
         </a>
         <a
+          aria-label="Twitter"
           class="c6 c13"
           color="#3B46C4"
           href="https://twitter.com/zopa"
-          title="Twitter"
+          rel="noopener"
+          target="_blank"
+          title="Twitter opens in a new tab"
         >
           <span
             class="c15"
           />
         </a>
         <a
+          aria-label="Instagram"
           class="c6 c13"
           color="#3B46C4"
           href="https://www.instagram.com/Zopamoney/"
-          title="Instagram"
+          rel="noopener"
+          target="_blank"
+          title="Instagram opens in a new tab"
         >
           <span
             class="c16"
           />
         </a>
         <a
+          aria-label="Linkedin"
           class="c6 c13"
           color="#3B46C4"
           href="https://www.linkedin.com/company/zopa/"
-          title="Linkedin"
+          rel="noopener"
+          target="_blank"
+          title="Linkedin opens in a new tab"
         >
           <span
             class="c17"

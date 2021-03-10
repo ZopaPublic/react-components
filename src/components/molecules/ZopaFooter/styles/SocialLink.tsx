@@ -13,7 +13,7 @@ const LinkWrapper = styled(Link)`
 `;
 
 export const SocialLink = ({ variant, ...otherProps }: SocialLink) => (
-  <LinkWrapper {...otherProps}>
+  <LinkWrapper target="_blank" rel="noopener" showTargetIcon={false} {...otherProps}>
     <Icon variant={variant} />
   </LinkWrapper>
 );

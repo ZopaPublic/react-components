@@ -1,3 +1,10 @@
+### [4.38.3](https://github.com/zopaUK/react-components/compare/v4.38.2...v4.38.3) (2021-03-04)
+
+
+### Bug Fixes
+
+* **footer:** update social links ([7529908](https://github.com/zopaUK/react-components/commit/7529908ed6ac9a89f3a9a3496147493dcffac2db))
+
 ### [4.38.2](https://github.com/zopaUK/react-components/compare/v4.38.1...v4.38.2) (2021-03-02)
 
 
