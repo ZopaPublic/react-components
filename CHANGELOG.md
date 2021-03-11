@@ -1,3 +1,12 @@
+## [4.39.0](https://github.com/zopaUK/react-components/compare/v4.38.3...v4.39.0) (2021-03-11)
+
+
+### Features
+
+* **design:** design updates ([e4cc8e8](https://github.com/zopaUK/react-components/commit/e4cc8e818c0df3635dc74cc4ed4a6d21c08607fa))
+* **modal:** a11y update modal close button ([2e99c9a](https://github.com/zopaUK/react-components/commit/2e99c9a4098d9904099956aa29db0964c1b09e11))
+* **modal:** update modal portal opacity ([2ff7527](https://github.com/zopaUK/react-components/commit/2ff752751fa818d56c351a224efdda35d4116498))
+
 ### [4.38.3](https://github.com/zopaUK/react-components/compare/v4.38.2...v4.38.3) (2021-03-04)
 
 
