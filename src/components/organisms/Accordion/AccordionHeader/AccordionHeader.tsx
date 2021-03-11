@@ -27,7 +27,8 @@ const TitleContainer = styled.div`
   background-color: ${colors.greyLightest};
   width: 100%;
   justify-content: space-between;
-  padding: ${spacing[4]};
+  position: relative;
+  padding: ${spacing[4]} 43px ${spacing[4]} ${spacing[4]};
 `;
 
 const Title = styled(Text)`
@@ -38,7 +39,9 @@ const Cross = styled.span<{ active: boolean }>`
   flex-shrink: 0;
   width: 11px;
   height: 11px;
-  position: relative;
+  position: absolute;
+  right: 16px;
+  top: 20px;
   &:after,
   &:before {
     content: '';

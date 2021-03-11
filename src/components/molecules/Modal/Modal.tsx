@@ -2,9 +2,10 @@ import React, { FC, ReactElement } from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
+import { spacing } from '../../../constants/spacing';
 import { CardProps } from '../../organisms/Card/Card/Card';
 
 export interface ModalProps extends ReactModal.Props {
@@ -17,16 +18,19 @@ type ModalComponent = FC<ModalProps> & {
   setAppElement: typeof ReactModal.setAppElement;
 };
 
-const CrossIcon = styled(Icon)`
+const Button = styled.button`
+  border: 0;
+  background: transparent;
   position: absolute;
   cursor: pointer;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
+  padding: ${spacing[3]};
 `;
 
 const classNames = {
   afterOpen: 'zopa-modal--after-open',
-  base: 'zopa-modal',
+  base: 'zopa-modal mx-4',
   beforeClose: 'zopa-modal--before-close',
 };
 
@@ -46,12 +50,16 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     {...rest}
   >
     {showCloseButton && (
-      <CrossIcon
-        onClick={onRequestClose}
-        color={colors.greyLight}
-        variant={faTimesCircle}
-        data-automation="ZA.modal-cross-icon"
-      />
+      <Button type="button">
+        <span className="sr-only">Close Modal</span>
+        <Icon
+          onClick={onRequestClose}
+          color={colors.grey}
+          variant={faTimes}
+          size="lg"
+          data-automation="ZA.modal-cross-icon"
+        />
+      </Button>
     )}
     {children}
   </ReactModal>

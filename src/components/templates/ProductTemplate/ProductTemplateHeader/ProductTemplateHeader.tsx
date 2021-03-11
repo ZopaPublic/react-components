@@ -18,7 +18,10 @@ const ProductTemplateHeaderContainer = styled.div`
 
 export function ProductTemplateHeader({ prevStep, progress, onBackPressed }: ProductTemplateHeaderProps) {
   return (
-    <ProductTemplateHeaderContainer className="mx-4 mb-6 m:mx-0" data-automation="ZA.ProductTemplateHeader">
+    <ProductTemplateHeaderContainer
+      className={`mx-4 m:mx-0 ${progress ? 'mb-6' : 'mb-3'}`}
+      data-automation="ZA.ProductTemplateHeader"
+    >
       {(!!prevStep || !!onBackPressed) && (
         <ProductTemplateNavigation prevStep={prevStep} onBackPressed={onBackPressed} />
       )}

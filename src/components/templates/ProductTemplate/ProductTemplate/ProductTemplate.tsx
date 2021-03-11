@@ -44,7 +44,7 @@ function ProductTemplate({
   onBackPressed,
   contentWidth = 6,
 }: ProductTemplateProps) {
-  const containerClassnames = classnames('mb-10 m:mt-8', {
+  const containerClassnames = classnames('mb-8 m:mb-9 m:mt-8', {
     'mt-6': !prevStep,
     'mt-4': prevStep,
   });
