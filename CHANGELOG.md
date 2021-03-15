@@ -1,3 +1,10 @@
+### [4.39.1](https://github.com/zopaUK/react-components/compare/v4.39.0...v4.39.1) (2021-03-12)
+
+
+### Bug Fixes
+
+* **modal:** add z-index, move onClick handler ([4fafe2e](https://github.com/zopaUK/react-components/commit/4fafe2edfccf7e1711e13ed975c25d95ad07fb46))
+
 ## [4.39.0](https://github.com/zopaUK/react-components/compare/v4.38.3...v4.39.0) (2021-03-11)
 
 

@@ -26,6 +26,7 @@ const Button = styled.button`
   right: 0;
   top: 0;
   padding: ${spacing[3]};
+  z-index: 3;
 `;
 
 const classNames = {
@@ -50,15 +51,9 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     {...rest}
   >
     {showCloseButton && (
-      <Button type="button">
+      <Button type="button" onClick={onRequestClose}>
         <span className="sr-only">Close Modal</span>
-        <Icon
-          onClick={onRequestClose}
-          color={colors.grey}
-          variant={faTimes}
-          size="lg"
-          data-automation="ZA.modal-cross-icon"
-        />
+        <Icon color={colors.grey} variant={faTimes} size="lg" data-automation="ZA.modal-cross-icon" />
       </Button>
     )}
     {children}
