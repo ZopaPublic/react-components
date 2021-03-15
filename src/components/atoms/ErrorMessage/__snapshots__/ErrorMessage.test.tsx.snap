@@ -8,8 +8,8 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -27,7 +27,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   padding: 8px 16px 8px 16px;
   color: #940700;
   background-color: #FFDAD8;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 4px;
@@ -35,7 +35,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
 }
 
 .c1 a {
-  font-size: 15px;
+  font-size: 16px;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

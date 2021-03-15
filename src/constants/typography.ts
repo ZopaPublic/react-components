@@ -3,8 +3,8 @@ const typography = {
   sizes: {
     text: {
       lead: '18px',
-      body: '15px',
-      small: '13px',
+      body: '16px',
+      small: '14px',
     },
     heading: {
       display: '68px',
@@ -13,7 +13,7 @@ const typography = {
       h3: '28px',
       h4: '24px',
       h5: '18px',
-      h6: '15px',
+      h6: '16px',
     },
     lineHeight: {
       display: '76px',
@@ -22,10 +22,10 @@ const typography = {
       h3: '36px',
       h4: '32px',
       h5: '26px',
-      h6: '20px',
+      h6: '24px',
       lead: '26px',
-      body: '22px',
-      small: '18px',
+      body: '24px',
+      small: '20px',
     },
   },
   weights: {

@@ -29,8 +29,8 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #4A545E;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;

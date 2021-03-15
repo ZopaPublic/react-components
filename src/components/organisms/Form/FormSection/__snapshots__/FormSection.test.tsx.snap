@@ -10,8 +10,8 @@ Object {
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -72,7 +72,7 @@ Object {
         Form Section
       </h5>
       <span
-        class="sc-bwzfXH bmkDcI mb-6"
+        class="sc-bwzfXH caRLuT mb-6"
       >
         Subtitle
       </span>

@@ -38,10 +38,10 @@ export const buttonStyle = css<ButtonProps>`
   justify-content: center;
   align-items: center;
   width: ${({ fullWidth = false }) => fullWidth && '100%'};
-  padding: ${spacing[4]} ${spacing[6]};
+  padding: ${spacing[3]} ${spacing[6]};
   font-family: ${typography.primary};
   font-size: ${typography.sizes.text.body};
-  line-height: 1.2;
+  line-height: ${typography.sizes.lineHeight.body};
   font-weight: ${typography.weights.semiBold};
   cursor: pointer;
   border-radius: 8px;
