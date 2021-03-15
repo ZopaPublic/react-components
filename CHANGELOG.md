@@ -1,3 +1,10 @@
+### [4.39.2](https://github.com/zopaUK/react-components/compare/v4.39.1...v4.39.2) (2021-03-15)
+
+
+### Bug Fixes
+
+* **font-sizes:** update body and small font size ([f92b77f](https://github.com/zopaUK/react-components/commit/f92b77f1df2d15b6b4b410300b9cf294a824b09a))
+
 ### [4.39.1](https://github.com/zopaUK/react-components/compare/v4.39.0...v4.39.1) (2021-03-12)
 
 
