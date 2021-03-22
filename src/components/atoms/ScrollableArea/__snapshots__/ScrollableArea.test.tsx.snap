@@ -4,6 +4,7 @@ exports[`<ScrollableArea /> renders the component with the required props 1`] = 
 .c0 {
   max-height: 400px;
   overflow-y: scroll;
+  padding-right: 16px;
 }
 
 .c0::-webkit-scrollbar {

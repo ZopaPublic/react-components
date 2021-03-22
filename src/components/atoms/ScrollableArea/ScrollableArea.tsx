@@ -11,6 +11,7 @@ interface ScrollableAreaProps {
 const ScrollableArea = styled.div<ScrollableAreaProps>`
   max-height: ${({ maxHeight = '400px' }) => maxHeight};
   overflow-y: ${({ overflowY = 'scroll' }) => overflowY};
+  padding-right: ${spacing[4]};
 
   // custom styles for scrollbar, Firefox doesn't support it (styles will default)
   &::-webkit-scrollbar {
