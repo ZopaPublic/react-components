@@ -1,3 +1,11 @@
+### [4.40.1](https://github.com/zopaUK/react-components/compare/v4.40.0...v4.40.1) (2021-03-22)
+
+
+### Bug Fixes
+
+* **scrollablearea:** export scrollablearea ([7fb3026](https://github.com/zopaUK/react-components/commit/7fb30267d02b5d9421b0348f5c1c7af0aa4ca7fb))
+* **tabbuttons:** tab buttons updated the snapshot for some reason ([850c5d0](https://github.com/zopaUK/react-components/commit/850c5d035e95d62ada36222033fdc9eacc3b2434))
+
 ## [4.40.0](https://github.com/zopaUK/react-components/compare/v4.39.2...v4.40.0) (2021-03-22)
 
 
