@@ -1,3 +1,12 @@
+## [4.40.0](https://github.com/zopaUK/react-components/compare/v4.39.2...v4.40.0) (2021-03-22)
+
+
+### Features
+
+* **scrollablearea:** add a new component for a scrollable area ([29c7eee](https://github.com/zopaUK/react-components/commit/29c7eee00469b4724afc4fd06e40a6cb5139cef2))
+* **scrollablearea:** add missing snapshot ([af89737](https://github.com/zopaUK/react-components/commit/af8973738dddbc549f19d0ae49a7ef421ca5a5a5))
+* **scrollablearea:** update the padding on the right ([0127e84](https://github.com/zopaUK/react-components/commit/0127e8497645fb7616061bb8a28e792e8649a7ce))
+
 ### [4.39.2](https://github.com/zopaUK/react-components/compare/v4.39.1...v4.39.2) (2021-03-15)
 
 
