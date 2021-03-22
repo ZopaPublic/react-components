@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScrollableArea /> renders the component with the required props 1`] = `
+.c0 {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.c0::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.c0::-webkit-scrollbar {
+  width: 8px;
+}
+
+.c0::-webkit-scrollbar-track {
+  background: #EFEFEF;
+  border-radius: 4px;
+}
+
+.c0::-webkit-scrollbar-track {
+  margin-bottom: 24px;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border: 2px solid #00D9C5;
+  background-color: #00D9C5;
+}
+
+<div
+  class="c0"
+>
+  This is an example
+</div>
+`;
