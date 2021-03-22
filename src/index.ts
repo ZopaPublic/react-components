@@ -16,6 +16,7 @@ export { default as GlobalStyles } from './components/styles/GlobalStyles';
 // Atoms
 export { default as Alert } from './components/atoms/Alert/Alert';
 export { default as Badge } from './components/atoms/Badge/Badge';
+export { default as ScrollableArea } from './components/atoms/ScrollableArea/ScrollableArea';
 export { default as Icon } from './components/atoms/Icon/Icon';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';
 export { default as Progress } from './components/molecules/Progress/Progress';
