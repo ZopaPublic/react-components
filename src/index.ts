@@ -14,6 +14,7 @@ export {
 } from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
 // Atoms
+export { default as ScrollableArea } from './components/atoms/ScrollableArea/ScrollableArea';
 export { default as Alert } from './components/atoms/Alert/Alert';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Icon } from './components/atoms/Icon/Icon';
