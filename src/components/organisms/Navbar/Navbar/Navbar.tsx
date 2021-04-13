@@ -22,7 +22,7 @@ import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 
 export interface NavigationItem {
-  label: string;
+  label: string | React.ReactNode;
   href?: string;
   'data-automation'?: string;
   onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
