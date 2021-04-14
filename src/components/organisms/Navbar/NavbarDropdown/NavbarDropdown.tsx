@@ -78,9 +78,10 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** unique id */
   id: string;
   /** dropdown label */
-  label: string;
+  label: string | React.ReactNode;
   /** array of data representing the dropdown items (e.g links) */
   items: Item[];
+  'aria-label'?: string;
 }
 
 export interface NavbarDropdownState {
@@ -139,7 +140,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
 
   public render() {
     const { getOpenerProps, close } = this;
-    const { renderItem, items, label, id } = this.props;
+    const { renderItem, items, label, id, 'aria-label': ariaLabel } = this.props;
     const { open } = this.state;
 
     return (
@@ -148,7 +149,9 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
           {label}
         </NavbarLink>
         <NavbarDropdownListContainer open={open}>
-          <NavbarDropdownList aria-label={label}>
+          {/* To avoid an undefined aria-label the fallback to label was added when aria-label property is not defined */}
+          {/* TODO remove fallback to label */}
+          <NavbarDropdownList aria-label={ariaLabel ? ariaLabel : typeof label === 'string' ? label : undefined}>
             {items.map((item, index) => (
               <li key={`${id}-${index}`}>
                 {renderItem({
