@@ -78,7 +78,7 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** unique id */
   id: string;
   /** dropdown label */
-  label: string | React.ReactNode;
+  label: React.ReactNode;
   /** array of data representing the dropdown items (e.g links) */
   items: Item[];
   'aria-label'?: string;
