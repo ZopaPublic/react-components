@@ -28,6 +28,7 @@ export interface NavigationItem {
   onClick?: (event?: React.MouseEvent<HTMLAnchorElement>) => void;
   isDropdownHeading?: boolean;
   children?: Exclude<NavigationItem, 'children'>[];
+  'aria-label'?: string;
 }
 export interface NavbarLinksListProps {
   /**
