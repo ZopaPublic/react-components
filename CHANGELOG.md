@@ -1,3 +1,10 @@
+### [4.40.2](https://github.com/zopaUK/react-components/compare/v4.40.1...v4.40.2) (2021-04-16)
+
+
+### Bug Fixes
+
+* updating the Blog url to /blog ([773a35c](https://github.com/zopaUK/react-components/commit/773a35c6453d0afd3e23b016a7c65fef56e3ad84))
+
 ### [4.40.1](https://github.com/zopaUK/react-components/compare/v4.40.0...v4.40.1) (2021-03-22)
 
 
