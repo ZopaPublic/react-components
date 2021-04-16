@@ -1,3 +1,11 @@
+### [4.41.1](https://github.com/zopaUK/react-components/compare/v4.41.0...v4.41.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* **navbar:** allows us to suppress user info in navbar with hotjar ([4f6323a](https://github.com/zopaUK/react-components/commit/4f6323a0a33c2832f919c0a500633484d500abeb))
+* **navbar:** react.ReactNode will accept string so no longer needed ([d01433e](https://github.com/zopaUK/react-components/commit/d01433e1c701108b0a6d53ab9b25802b04f5b90d))
+
 ## [4.41.0](https://github.com/zopaUK/react-components/compare/v4.40.2...v4.41.0) (2021-04-16)
 
 
