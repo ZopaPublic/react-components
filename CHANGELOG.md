@@ -1,3 +1,10 @@
+## [4.41.0](https://github.com/zopaUK/react-components/compare/v4.40.2...v4.41.0) (2021-04-16)
+
+
+### Features
+
+* **zopafooter.tsx:** adding Complaints button to ZopaFooter component ([15a207c](https://github.com/zopaUK/react-components/commit/15a207cbc50603b6f79ca3e6e2b92743e5a7cff3))
+
 ### [4.40.2](https://github.com/zopaUK/react-components/compare/v4.40.1...v4.40.2) (2021-04-16)
 
 
