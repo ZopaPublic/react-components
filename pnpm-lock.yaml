@@ -7,6 +7,7 @@ dependencies:
   '@types/react-modal': 3.10.6
   '@types/util-deprecate': 1.0.0
   classnames: 2.2.6
+  copy-to-clipboard: 3.3.1
   core-js: 3.6.5
   deprecated-prop-type: 1.0.0
   downshift: 5.4.7_react@16.13.1
@@ -5386,6 +5387,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
+  /copy-to-clipboard/3.3.1:
+    dependencies:
+      toggle-selection: 1.0.6
+    dev: false
+    resolution:
+      integrity: sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==
   /copy-webpack-plugin/5.1.2_webpack@4.42.0:
     dependencies:
       cacache: 12.0.4
@@ -15592,6 +15599,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==
+  /toggle-selection/1.0.6:
+    dev: false
+    resolution:
+      integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=
   /toidentifier/1.0.0:
     dev: true
     engines:
@@ -16778,6 +16789,7 @@ specifiers:
   babel-preset-react-app: ^9.1.2
   classnames: ^2.2.6
   commitizen: 4.1.2
+  copy-to-clipboard: ^3.3.1
   core-js: ^3.6.5
   cz-conventional-changelog: 3.2.0
   deprecated-prop-type: ^1.0.0

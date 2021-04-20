@@ -40,6 +40,7 @@
     "@types/react-modal": "^3.10.6",
     "@types/util-deprecate": "^1.0.0",
     "classnames": "^2.2.6",
+    "copy-to-clipboard": "^3.3.1",
     "core-js": "^3.6.5",
     "deprecated-prop-type": "^1.0.0",
     "downshift": "^5.4.7",

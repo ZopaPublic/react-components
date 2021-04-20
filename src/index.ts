@@ -52,6 +52,7 @@ export { default as DropdownField } from './components/molecules/DropdownField/D
 export { default as Banner } from './components/molecules/Banner/Banner';
 export { default as Notification } from './components/molecules/Notification/Notification';
 export { default as NumberText } from './components/molecules/NumberText/NumberText';
+export { default as BankDetails } from './components/molecules/BankDetails/BankDetails';
 // Organisms
 export * from './components/organisms/Form';
 export * from './components/organisms/Accordion';
@@ -70,5 +71,6 @@ export { default as SizedContainer } from './components/layout/SizedContainer/Si
 // Hooks
 export * from './hooks/useViewport';
 export * from './hooks/useAccordion';
+export * from './hooks/useCopyToClipboard';
 // Helpers
 export * from './helpers/responsiveness';
