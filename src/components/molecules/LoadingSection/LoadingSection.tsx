@@ -11,23 +11,29 @@ type LoadingSectionProps = {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  max-width: 400px;
   height: 100%;
   min-height: 400px;
+  margin: 0 auto;
+  text-align: center;
 `;
 
 function PrimaryText({ children }: LoadingSectionProps) {
   return (
-    <Text weight="bold" className="my-6">
+    <Text weight="bold" className="mt-6 mb-2">
       {children}
     </Text>
   );
 }
 
 function SecondaryText({ children }: LoadingSectionProps) {
-  return <Text color={colors.greyDark}>{children}</Text>;
+  return (
+    <Text color={colors.greyDark} className="px-4">
+      {children}
+    </Text>
+  );
 }
 
 function LoadingSection({ children }: LoadingSectionProps) {
