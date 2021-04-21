@@ -1,3 +1,16 @@
+## [4.42.0](https://github.com/zopaUK/react-components/compare/v4.41.1...v4.42.0) (2021-04-21)
+
+
+### Features
+
+* **loadingsection:** add new LoadingSection component ([bbe9c37](https://github.com/zopaUK/react-components/commit/bbe9c374be64b3e5934fa45129bb291be68eaf1f))
+
+
+### Bug Fixes
+
+* **loadingsection:** design changes ([3cc2b5c](https://github.com/zopaUK/react-components/commit/3cc2b5c08e1e19508e8dd9eee3f1201208721562))
+* **tabs:** re-write failing snapshots ([4e564dd](https://github.com/zopaUK/react-components/commit/4e564ddce53746087cb0f626ed41166b237b9a76))
+
 ### [4.41.1](https://github.com/zopaUK/react-components/compare/v4.41.0...v4.41.1) (2021-04-16)
 
 
