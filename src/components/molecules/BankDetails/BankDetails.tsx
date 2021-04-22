@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import useClipboard from 'react-use-clipboard';
 
 import { colors } from '../../../constants';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import Button from '../../atoms/Button/Button';
-import { useCopyToClipboard } from '../../../hooks/useCopyToClipboard';
 
 interface BankDetailsProps {
   /**Set to null to not render a copy Button */
@@ -28,7 +28,9 @@ const ItemWrapper = styled.div`
 `;
 
 const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText }) => {
-  const { isCopied, handleCopy } = useCopyToClipboard();
+  const [isCopied, setCopied] = useClipboard(copyText ?? '', {
+    successDuration: 2000,
+  });
 
   return (
     <ItemWrapper className="px-4 py-5">
@@ -36,7 +38,7 @@ const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText }) => {
         <FlexCol xs="fill">{children}</FlexCol>
         {copyText && (
           <FlexCol xs="auto">
-            <Button styling="link" disabled={isCopied} onClick={() => handleCopy(copyText)}>
+            <Button styling="link" disabled={isCopied} onClick={setCopied}>
               {isCopied ? 'Copied' : 'Copy'}
             </Button>
           </FlexCol>

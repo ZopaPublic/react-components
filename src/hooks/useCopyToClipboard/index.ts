@@ -1,1 +1,0 @@
-export { useCopyToClipboard } from './useCopyToClipboard';

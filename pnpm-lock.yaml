@@ -7,7 +7,6 @@ dependencies:
   '@types/react-modal': 3.10.6
   '@types/util-deprecate': 1.0.0
   classnames: 2.2.6
-  copy-to-clipboard: 3.3.1
   core-js: 3.6.5
   deprecated-prop-type: 1.0.0
   downshift: 5.4.7_react@16.13.1
@@ -15,6 +14,7 @@ dependencies:
   lodash.throttle: 4.1.1
   react-headroom: 3.0.0_react@16.13.1
   react-modal: 3.11.2_react-dom@16.13.1+react@16.13.1
+  react-use-clipboard: 1.0.7_react-dom@16.13.1+react@16.13.1
   styled-normalize: 8.0.7_styled-components@4.4.1
   tippy.js: 6.2.7
   util-deprecate: 1.0.2
@@ -13586,6 +13586,17 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-Sn2VRyOK2YJJldOqoh8Tn/lWQ+ZiKhyZTPtaO0Q6yNj+QDbmRkVFap6pZPy3YQk8DScRDfyqm/KxKYP9gCMRiQ==
+  /react-use-clipboard/1.0.7_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      copy-to-clipboard: 3.3.1
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.8.0 || ^17
+      react-dom: ^16.8.0 || ^17
+    resolution:
+      integrity: sha512-blIprqARyITp0uVw/2Rh87mcujqXdH6vZ5NrcuXEhI5EmjBGxcGnwt/79+vdN7rwM6OliGj481lOj6ZCcsiYEQ==
   /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -16789,7 +16800,6 @@ specifiers:
   babel-preset-react-app: ^9.1.2
   classnames: ^2.2.6
   commitizen: 4.1.2
-  copy-to-clipboard: ^3.3.1
   core-js: ^3.6.5
   cz-conventional-changelog: 3.2.0
   deprecated-prop-type: ^1.0.0
@@ -16816,6 +16826,7 @@ specifiers:
   react-scripts: ^3.4.3
   react-styleguidist: 11.0.8
   react-test-renderer: 16.13.1
+  react-use-clipboard: ^1.0.7
   rollup: 2.21.0
   rollup-plugin-postcss: 3.1.2
   rollup-plugin-terser: 6.1.0
