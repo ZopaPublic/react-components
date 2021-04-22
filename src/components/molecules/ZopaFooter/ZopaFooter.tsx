@@ -71,8 +71,9 @@ const ZopaFooter = ({
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
-            <li className="mb-4">{renderLink({ href: 'https://blog.zopa.com', children: 'Blog' })}</li>
-            <li>{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
@@ -101,10 +102,30 @@ const ZopaFooter = ({
           {renderLink({ href: baseUrl, title: 'Logo', children: <Logo width="165px" height="30px" /> })}
         </LogoBlock>
         <SocialBlock>
-          <SocialLink href="https://facebook.com/zopa" title="Facebook" variant={facebook} />
-          <SocialLink href="https://twitter.com/zopa" title="Twitter" variant={twitter} />
-          <SocialLink href="https://www.instagram.com/Zopamoney/" title="Instagram" variant={instagram} />
-          <SocialLink href="https://www.linkedin.com/company/zopa/" title="Linkedin" variant={linkedin} />
+          <SocialLink
+            href="https://facebook.com/zopa"
+            aria-label="Facebook"
+            title="Facebook opens in a new tab"
+            variant={facebook}
+          />
+          <SocialLink
+            href="https://twitter.com/zopa"
+            aria-label="Twitter"
+            title="Twitter opens in a new tab"
+            variant={twitter}
+          />
+          <SocialLink
+            href="https://www.instagram.com/Zopamoney/"
+            aria-label="Instagram"
+            title="Instagram opens in a new tab"
+            variant={instagram}
+          />
+          <SocialLink
+            href="https://www.linkedin.com/company/zopa/"
+            aria-label="Linkedin"
+            title="Linkedin opens in a new tab"
+            variant={linkedin}
+          />
         </SocialBlock>
         <LegalBlock>
           <Text as="p" color={colors.greyDark} size="small" className="mb-4">

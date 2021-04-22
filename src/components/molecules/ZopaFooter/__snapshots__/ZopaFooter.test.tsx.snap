@@ -84,8 +84,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #4A545E;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -98,8 +98,8 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 .c4 {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   -webkit-letter-spacing: -0.01px;
   -moz-letter-spacing: -0.01px;
   -ms-letter-spacing: -0.01px;
@@ -559,18 +559,29 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c6 c7"
               color="#3B46C4"
-              href="https://blog.zopa.com"
+              href="https://www.zopa.com/blog"
             >
               Blog
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c6 c7"
               color="#3B46C4"
               href="https://www.zopa.com/feelgood"
             >
               New products
+            </a>
+          </li>
+          <li>
+            <a
+              class="c6 c7"
+              color="#3B46C4"
+              href="https://www.zopa.com/contact/complaints"
+            >
+              Complaints
             </a>
           </li>
         </ul>
@@ -730,40 +741,52 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         cols="12"
       >
         <a
+          aria-label="Facebook"
           class="c6 c13"
           color="#3B46C4"
           href="https://facebook.com/zopa"
-          title="Facebook"
+          rel="noopener"
+          target="_blank"
+          title="Facebook opens in a new tab"
         >
           <span
             class="c14"
           />
         </a>
         <a
+          aria-label="Twitter"
           class="c6 c13"
           color="#3B46C4"
           href="https://twitter.com/zopa"
-          title="Twitter"
+          rel="noopener"
+          target="_blank"
+          title="Twitter opens in a new tab"
         >
           <span
             class="c15"
           />
         </a>
         <a
+          aria-label="Instagram"
           class="c6 c13"
           color="#3B46C4"
           href="https://www.instagram.com/Zopamoney/"
-          title="Instagram"
+          rel="noopener"
+          target="_blank"
+          title="Instagram opens in a new tab"
         >
           <span
             class="c16"
           />
         </a>
         <a
+          aria-label="Linkedin"
           class="c6 c13"
           color="#3B46C4"
           href="https://www.linkedin.com/company/zopa/"
-          title="Linkedin"
+          rel="noopener"
+          target="_blank"
+          title="Linkedin opens in a new tab"
         >
           <span
             class="c17"

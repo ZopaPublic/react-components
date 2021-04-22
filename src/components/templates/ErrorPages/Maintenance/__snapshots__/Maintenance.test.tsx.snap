@@ -56,8 +56,8 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: center;
@@ -70,8 +70,8 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #2C3236;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: center;

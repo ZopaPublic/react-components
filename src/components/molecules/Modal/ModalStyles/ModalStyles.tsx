@@ -26,7 +26,7 @@ const ModalStyles = createGlobalStyle<ModalStylesProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${colors.greyDarkest};
+    background-color: rgba(0,0,0,0.8);
     opacity: 0;
     transition: opacity 200ms ease-in-out;
     z-index: ${({ zIndex = 2 }) => zIndex};

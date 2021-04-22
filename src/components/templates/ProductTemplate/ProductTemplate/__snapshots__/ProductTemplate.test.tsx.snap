@@ -25,11 +25,11 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c26 .c28 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .c26 .c29 {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .c26 > .c30 {
@@ -59,8 +59,8 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #4A545E;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -173,7 +173,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   color: #2C3236;
@@ -406,7 +406,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 
 <div>
   <div
-    class="c0 mb-10 m:mt-8 mt-4"
+    class="c0 mb-8 m:mb-9 m:mt-8 mt-4"
     data-automation="ZA.ProductTemplate"
   >
     <div
@@ -419,7 +419,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
         cols="12"
       >
         <div
-          class="c3 mx-4 mb-6 m:mx-0"
+          class="c3 mx-4 m:mx-0 mb-6"
           data-automation="ZA.ProductTemplateHeader"
         >
           <div

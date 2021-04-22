@@ -29,7 +29,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   color: #2C3236;
@@ -164,7 +164,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   color: #2C3236;
@@ -297,7 +297,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   position: absolute;
   top: 10px;
   right: 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
   font-weight: 600;
   color: #2C3236;

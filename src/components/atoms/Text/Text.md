@@ -33,9 +33,9 @@ import { Text } from '@zopauk/react-components';
     Lead ( 18px )
   </Text>
   <Text className="mb-6" as="p">
-    Medium ( default: 15px )
+    Medium ( default: 16px )
   </Text>
-  <Text size="small">Small ( 13px )</Text>
+  <Text size="small">Small ( 14px )</Text>
 </Fragment>;
 ```
 

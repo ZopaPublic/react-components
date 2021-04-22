@@ -10,8 +10,8 @@ exports[`Notification renders the component with no props and no a11y violations
   padding: 8px 16px 8px 16px;
   background: #EFEFEF;
   color: #2C3236;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 4px;
