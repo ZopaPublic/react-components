@@ -14,6 +14,7 @@ dependencies:
   lodash.throttle: 4.1.1
   react-headroom: 3.0.0_react@16.13.1
   react-modal: 3.11.2_react-dom@16.13.1+react@16.13.1
+  react-use-clipboard: 1.0.7_react-dom@16.13.1+react@16.13.1
   styled-normalize: 8.0.7_styled-components@4.4.1
   tippy.js: 6.2.7
   util-deprecate: 1.0.2
@@ -5386,6 +5387,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
+  /copy-to-clipboard/3.3.1:
+    dependencies:
+      toggle-selection: 1.0.6
+    dev: false
+    resolution:
+      integrity: sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==
   /copy-webpack-plugin/5.1.2_webpack@4.42.0:
     dependencies:
       cacache: 12.0.4
@@ -13579,6 +13586,17 @@ packages:
       react: ^16.13.1
     resolution:
       integrity: sha512-Sn2VRyOK2YJJldOqoh8Tn/lWQ+ZiKhyZTPtaO0Q6yNj+QDbmRkVFap6pZPy3YQk8DScRDfyqm/KxKYP9gCMRiQ==
+  /react-use-clipboard/1.0.7_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      copy-to-clipboard: 3.3.1
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: ^16.8.0 || ^17
+      react-dom: ^16.8.0 || ^17
+    resolution:
+      integrity: sha512-blIprqARyITp0uVw/2Rh87mcujqXdH6vZ5NrcuXEhI5EmjBGxcGnwt/79+vdN7rwM6OliGj481lOj6ZCcsiYEQ==
   /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -15592,6 +15610,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==
+  /toggle-selection/1.0.6:
+    dev: false
+    resolution:
+      integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=
   /toidentifier/1.0.0:
     dev: true
     engines:
@@ -16804,6 +16826,7 @@ specifiers:
   react-scripts: ^3.4.3
   react-styleguidist: 11.0.8
   react-test-renderer: 16.13.1
+  react-use-clipboard: ^1.0.7
   rollup: 2.21.0
   rollup-plugin-postcss: 3.1.2
   rollup-plugin-terser: 6.1.0
