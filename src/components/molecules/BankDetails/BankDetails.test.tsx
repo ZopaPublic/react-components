@@ -40,8 +40,13 @@ describe('<BankDetails />', () => {
 
   it('renders the component with no props and no a11y violations', async () => {
     jest.useRealTimers();
-    const { container } = render(<BankDetails copyText="1234">12-34</BankDetails>);
+    const { container } = render(
+      <BankDetails copyText="1234" className="mb-4">
+        12-34
+      </BankDetails>,
+    );
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
+    expect(container).toMatchSnapshot();
   });
 });

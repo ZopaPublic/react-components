@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import useClipboard from 'react-use-clipboard';
+import classnames from 'classnames';
 
 import { colors } from '../../../constants';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import Button from '../../atoms/Button/Button';
 
-interface BankDetailsProps {
+interface BankDetailsProps extends HTMLAttributes<HTMLDivElement> {
   /**Set to null to not render a copy Button */
   copyText?: string;
 }
@@ -27,13 +28,13 @@ const ItemWrapper = styled.div`
   }
 `;
 
-const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText }) => {
+const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText, className, ...props }) => {
   const [isCopied, setCopied] = useClipboard(copyText ?? '', {
     successDuration: 2000,
   });
 
   return (
-    <ItemWrapper className="px-4 py-5">
+    <ItemWrapper {...props} className={classnames('px-4 py-5', className || '')}>
       <FlexRow justify="space-between" align="center">
         <FlexCol xs="fill">{children}</FlexCol>
         {copyText && (
