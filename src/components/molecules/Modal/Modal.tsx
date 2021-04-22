@@ -48,6 +48,7 @@ const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = tru
     className={classNames}
     overlayClassName={overlayClassNames}
     closeTimeoutMS={200}
+    onRequestClose={onRequestClose}
     {...rest}
   >
     {showCloseButton && (
