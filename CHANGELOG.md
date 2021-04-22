@@ -1,3 +1,17 @@
+## [4.43.0](https://github.com/zopaUK/react-components/compare/v4.42.0...v4.43.0) (2021-04-22)
+
+
+### Features
+
+* **bank-details:** bank details component and userCopyToClipboard hook ([0f24c5c](https://github.com/zopaUK/react-components/commit/0f24c5cf3e16ee770ade1ee8c778734f347069f5))
+
+
+### Bug Fixes
+
+* **bankdetails:** extend HTMLDivElement types ([cecaa54](https://github.com/zopaUK/react-components/commit/cecaa54ecfcc51e7d940bce467a64cc3aa45552d))
+* **bankdetails:** use react-use-clipboard instead of custom hook ([3a4840b](https://github.com/zopaUK/react-components/commit/3a4840b0367ec6d66ee6f1c7b14b79d7d43f7a96))
+* **usecopytoclipboard:** fix types ([dff09e0](https://github.com/zopaUK/react-components/commit/dff09e0bdcbaafb77b409050ca1fa98583c1a239))
+
 ## [4.42.0](https://github.com/zopaUK/react-components/compare/v4.41.1...v4.42.0) (2021-04-21)
 
 
