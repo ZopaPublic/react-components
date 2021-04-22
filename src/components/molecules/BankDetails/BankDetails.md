@@ -1,11 +1,11 @@
 # Summary
 
-`<BankDetails />` renders the bank detail with option to copy value to clipboard using [copy-to-clipboard](https://www.npmjs.com/package/copy-to-clipboard)
+`<BankDetails />` renders the bank detail with option to copy value to clipboard using [react-use-clipboard](https://www.npmjs.com/package/react-use-clipboard)
 
 ## Example
 
 ```tsx
-import { BankDetails, Text, useCopyToClipboard } from '@zopauk/react-components';
+import { BankDetails, Text } from '@zopauk/react-components';
 
 const items = [
   {
