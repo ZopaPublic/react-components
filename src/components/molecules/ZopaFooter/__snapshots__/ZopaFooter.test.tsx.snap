@@ -366,6 +366,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 
 <footer
   class="c0"
+  data-automation="ZA.footer"
 >
   <div
     class="c1"
