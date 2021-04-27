@@ -38,7 +38,7 @@ const ZopaFooter = ({
   renderLink = (props) => <StyledLink {...props} />,
   ...rest
 }: FooterProps) => (
-  <Footer {...rest}>
+  <Footer data-automation="ZA.footer" {...rest}>
     <FlexContainer gutter={16}>
       <FlexRow className="mb-6">
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
