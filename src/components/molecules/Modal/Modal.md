@@ -93,7 +93,7 @@ function ModalDemo() {
       <Button onClick={toggleModal} styling="link">
         Open Modal alert with icon
       </Button>
-      <Modal isOpen={isOpen} onRequestClose={toggleModal}>
+      <Modal isOpen={isOpen} onRequestClose={toggleModal} hideBackground>
         <Card>
           <Card.Content>
             <FlexRow className="py-2">

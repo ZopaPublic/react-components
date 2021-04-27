@@ -10,6 +10,7 @@ import { CardProps } from '../../organisms/Card/Card/Card';
 
 export interface ModalProps extends ReactModal.Props {
   showCloseButton?: boolean;
+  hideBackground?: boolean;
   children: ReactElement<CardProps>;
 }
 
@@ -35,18 +36,24 @@ const classNames = {
   beforeClose: 'zopa-modal--before-close',
 };
 
-const overlayClassNames = {
+const overlayClassNames = (hideBackground: boolean) => ({
   afterOpen: 'zopa-modal-overlay--after-open',
-  base: 'zopa-modal-overlay',
+  base: `zopa-modal-overlay${hideBackground ? '-full-opacity' : ''}`,
   beforeClose: 'zopa-modal-overlay--before-close',
-};
+});
 
-const Modal: ModalComponent = ({ children, onRequestClose, showCloseButton = true, ...rest }) => (
+const Modal: ModalComponent = ({
+  children,
+  onRequestClose,
+  showCloseButton = true,
+  hideBackground = false,
+  ...rest
+}) => (
   <ReactModal
     bodyOpenClassName="zopa-modal-body--open"
     portalClassName="zopa-modal-portal"
     className={classNames}
-    overlayClassName={overlayClassNames}
+    overlayClassName={overlayClassNames(hideBackground)}
     closeTimeoutMS={200}
     onRequestClose={onRequestClose}
     {...rest}

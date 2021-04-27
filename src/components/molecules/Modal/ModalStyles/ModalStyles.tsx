@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import { colors } from '../../../../constants';
 
 export interface ModalStylesProps {
@@ -7,6 +7,20 @@ export interface ModalStylesProps {
    */
   zIndex?: number;
 }
+
+const OverlayStyles = css<ModalStylesProps>`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  z-index: ${({ zIndex = 2 }) => zIndex};
+`;
 
 const ModalStyles = createGlobalStyle<ModalStylesProps>`
   .zopa-modal-body--open {
@@ -18,19 +32,15 @@ const ModalStyles = createGlobalStyle<ModalStylesProps>`
   }
 
   .zopa-modal-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    ${OverlayStyles}
     background-color: rgba(0,0,0,0.8);
-    opacity: 0;
-    transition: opacity 200ms ease-in-out;
-    z-index: ${({ zIndex = 2 }) => zIndex};
   }
+
+  .zopa-modal-overlay-full-opacity {
+    ${OverlayStyles}
+    background-color: ${colors.greyDarkest};
+  }
+
   .zopa-modal-overlay--after-open {
     opacity: 1;
   }

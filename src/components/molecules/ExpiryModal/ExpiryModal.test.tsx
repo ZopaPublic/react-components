@@ -29,6 +29,13 @@ describe('<ExpiryModal />', () => {
       getByText(explanation);
     });
 
+    it('renders with full opacity background', () => {
+      const { baseElement } = render(
+        <ExpiryModal isOpen={true} onEndSession={endSession} onKeepSession={keepSession} />,
+      );
+      expect(baseElement.getElementsByClassName('zopa-modal-overlay-full-opacity').length).toBe(1);
+    });
+
     it('offers the user two actions', () => {
       const { getByText } = render(<ExpiryModal isOpen={true} onEndSession={endSession} onKeepSession={keepSession} />);
 
