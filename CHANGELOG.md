@@ -1,3 +1,10 @@
+### [4.43.2](https://github.com/zopaUK/react-components/compare/v4.43.1...v4.43.2) (2021-04-27)
+
+
+### Bug Fixes
+
+* **zopafooter:** adding data-automation attribute to ZopaFooter ([90ce982](https://github.com/zopaUK/react-components/commit/90ce982c3171e4e5b2e2bbc70c0af48133ce7563))
+
 ### [4.43.1](https://github.com/zopaUK/react-components/compare/v4.43.0...v4.43.1) (2021-04-27)
 
 
