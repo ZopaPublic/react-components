@@ -1,3 +1,10 @@
+### [4.43.1](https://github.com/zopaUK/react-components/compare/v4.43.0...v4.43.1) (2021-04-27)
+
+
+### Bug Fixes
+
+* **expirymodal:** render overaly with full opacity ([b1927c7](https://github.com/zopaUK/react-components/commit/b1927c7b710f1694be819eaa16395b411acff9f5))
+
 ## [4.43.0](https://github.com/zopaUK/react-components/compare/v4.42.0...v4.43.0) (2021-04-22)
 
 
