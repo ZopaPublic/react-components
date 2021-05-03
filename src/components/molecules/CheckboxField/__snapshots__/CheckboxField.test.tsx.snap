@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
+exports[`<CheckboxField /> renders the component with no control icon and no a11y violations 1`] = `
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -16,7 +16,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,7 +24,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   display: flex;
   text-align: left;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   padding: 14px 16px;
   border: 1px solid #818F9B;
   -webkit-transition-property: border,box-shadow;
@@ -83,12 +83,46 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   position: absolute;
 }
 
+.c1:hover:not(:disabled) + label,
+.c1:focus + label {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:hover:not(:disabled) + label:before,
+.c1:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:hover:checked:not(:disabled) + label:after,
+.c1:focus:checked + label:after {
+  background-image: url(teal-check-mark.svg);
+}
+
+.c1:disabled + label {
+  cursor: not-allowed;
+  color: #818F9B;
+  background-color: #F7F7F7;
+}
+
+.c1:disabled:not(:checked) + label {
+  border-color: #D4D7D9;
+}
+
+.c1:disabled:not(:checked) + label:before {
+  border-color: #D4D7D9;
+}
+
 .c1:checked + label {
   border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
 }
 
 .c1:checked + label:before {
   border-color: #00D9C5;
+  box-shadow: none;
 }
 
 .c1:checked + label:after {
@@ -96,6 +130,112 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   background-image: url(teal-check-mark.svg);
   -webkit-animation: guYtTV 180ms ease-in-out;
   animation: guYtTV 180ms ease-in-out;
+}
+
+.c1 + label:before,
+.c1 + label:after {
+  display: none;
+}
+
+<div
+  class="c0"
+>
+  <input
+    class="c1"
+    id="checkbox-id-test1"
+    name="test1"
+    type="checkbox"
+  />
+  <label
+    class="c2"
+    for="checkbox-id-test1"
+  >
+    hello
+  </label>
+</div>
+`;
+
+exports[`<CheckboxField /> renders the component with props with no a11y violations 1`] = `
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c2 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 14px 16px;
+  border: 1px solid #818F9B;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
+  line-height: 1.4;
+  color: #2C3236;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+.c2:before {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 4px 0 transparent;
+  border: 1px #818F9B solid;
+  display: block;
+}
+
+.c2:after {
+  content: '';
+  background-size: contain;
+  background: transparent none no-repeat center;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c1 {
+  left: -100%;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
 }
 
 .c1:hover:not(:disabled) + label,
@@ -118,6 +258,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 .c1:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c1:disabled:not(:checked) + label {
@@ -126,6 +267,24 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c1:disabled:not(:checked) + label:before {
   border-color: #D4D7D9;
+}
+
+.c1:checked + label {
+  border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
+}
+
+.c1:checked + label:before {
+  border-color: #00D9C5;
+  box-shadow: none;
+}
+
+.c1:checked + label:after {
+  background-size: contain;
+  background-image: url(teal-check-mark.svg);
+  -webkit-animation: guYtTV 180ms ease-in-out;
+  animation: guYtTV 180ms ease-in-out;
 }
 
 <div

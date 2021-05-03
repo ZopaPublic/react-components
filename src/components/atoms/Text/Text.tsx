@@ -9,7 +9,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The weight of the rendered text.
    * @default 'regular'
    */
-  weight?: 'regular' | 'bold';
+  weight?: 'regular' | 'bold' | 'semiBold';
   /**
    * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
    * @default 'body'
@@ -19,7 +19,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    * @default 'span'
    */
-  as?: 'span' | 'p';
+  as?: 'span' | 'p' | 'figcaption';
   /**
    * Whether to render the text in all caps or not.
    * @default false
@@ -40,14 +40,13 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
     | Colors['greyDark']
     | Colors['greyDarkest']
     | Colors['success']
-    | Colors['alert'];
+    | Colors['alert']
+    | 'inherit';
 }
 
-const lineHeightMap = {
-  lead: '26px',
-  body: '22px',
-  small: '18px',
-};
+const {
+  sizes: { lineHeight: lineHeightMap },
+} = typography;
 
 const Text = styled.span<TextProps>`
   margin: 0;
@@ -56,8 +55,9 @@ const Text = styled.span<TextProps>`
 
   font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
   line-height: ${({ size = 'body' }) => lineHeightMap[size]};
-  font-weight: ${({ weight = 'regular', capitalize }) => typography.weights[capitalize ? 'bold' : weight]};
-
+  font-weight: ${({ weight = 'regular', capitalize }) => {
+    return typography.weights[capitalize ? 'bold' : weight];
+  }};
   font-family: ${typography.primary};
   text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};

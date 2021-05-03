@@ -1,80 +1,131 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, FC } from 'react';
+import styled, { css } from 'styled-components';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import Text from '../../atoms/Text/Text';
-import { Footer, Heading, LegalBlock, List, ListLink, LogoBlock, SocialBlock, SocialLink } from './styles';
+import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
 import { colors } from '../../../constants';
 import facebook from '../../../content/images/social/facebook.svg';
 import twitter from '../../../content/images/social/twitter.svg';
 import instagram from '../../../content/images/social/instagram.svg';
 import linkedin from '../../../content/images/social/linkedin.svg';
 import Logo from '../../atoms/Logo/Logo';
+import { typography } from '../../../constants';
 import Link from '../../atoms/Link/Link';
+
+export const footerLinkStyle = css`
+  font-weight: ${typography.weights.regular};
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  ${footerLinkStyle}
+`;
 
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
+  renderLink?: FC<Record<'href', string> & HTMLAttributes<HTMLAnchorElement>>;
 }
 
-const ZopaFooter = ({ baseUrl = 'https://www.zopa.com', ...rest }: FooterProps) => (
-  <Footer {...rest}>
+const ZopaFooter = ({
+  baseUrl = 'https://www.zopa.com',
+  renderLink = (props) => <StyledLink {...props} />,
+  ...rest
+}: FooterProps) => (
+  <Footer data-automation="ZA.footer" {...rest}>
     <FlexContainer gutter={16}>
       <FlexRow className="mb-6">
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">What we do</Heading>
           <List>
-            <ListLink href={`${baseUrl}/loans/car-loans`}>Car loans</ListLink>
-            <ListLink href={`${baseUrl}/loans/debt-consolidation`}>Debt consolidation loans</ListLink>
-            <ListLink href={`${baseUrl}/loans/home-improvement`}>Home improvement loans</ListLink>
-            <ListLink href={`${baseUrl}/loans/wedding`}>Wedding loans</ListLink>
-            <ListLink href={`${baseUrl}/invest`}>Peer-to-peer investments</ListLink>
-            <ListLink href={`${baseUrl}/invest/isa`}>Innovative Finance ISA</ListLink>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/car-loans`, children: 'Car loans' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/loans/debt-consolidation`, children: 'Debt consolidation loans' })}
+            </li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/loans/home-improvement`, children: 'Home improvement loans' })}
+            </li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/wedding`, children: 'Wedding loans' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/invest`, children: 'Peer-to-peer investments' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/invest/isa`, children: 'Innovative Finance ISA' })}
+            </li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/credit-card`, children: 'Credit cards' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/savings-accounts`, children: 'Fixed Term Savings' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">About Zopa</Heading>
           <List>
-            <ListLink href={`${baseUrl}/about`}>About Us</ListLink>
-            <ListLink href={`${baseUrl}/about/our-story`}>Our story</ListLink>
-            <ListLink href={`${baseUrl}/about/board`}>Meet the board</ListLink>
-            <ListLink href={`${baseUrl}/about/leadership`}>Meet the leadership team</ListLink>
-            <ListLink href={`${baseUrl}/about/awards`}>Awards</ListLink>
-            <ListLink href={`${baseUrl}/about/careers`}>Careers</ListLink>
-            <ListLink href="https://blog.zopa.com">Blog</ListLink>
-            <ListLink href={`${baseUrl}/feelgood`}>New products</ListLink>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About Us' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/our-story`, children: 'Our story' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/board`, children: 'Meet the board' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/about/leadership`, children: 'Meet the leadership team' })}
+            </li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">Legal</Heading>
           <List>
-            <ListLink href={`${baseUrl}/privacy-notice`}>Privacy notice</ListLink>
-            <ListLink href={`${baseUrl}/cookie-policy`}>Cookie policy</ListLink>
-            <ListLink href={`${baseUrl}/conflicts-policy`}>Conflicts policy</ListLink>
-            <ListLink href={`${baseUrl}/modern-slavery`}>Modern slavery</ListLink>
-            <ListLink href={`${baseUrl}/terms-of-use`}>Terms of use</ListLink>
-            <ListLink href={`${baseUrl}/investor-principles`}>Investor principles</ListLink>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/privacy-notice`, children: 'Privacy notice' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/cookie-policy`, children: 'Cookie policy' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/conflicts-policy`, children: 'Conflicts policy' })}
+            </li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/modern-slavery`, children: 'Modern slavery' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/terms-of-use`, children: 'Terms of use' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/investor-principles`, children: 'Investor principles' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">Navigation</Heading>
           <List>
-            <ListLink href={`${baseUrl}/contact`}>Support</ListLink>
-            <ListLink href="https://helpcentre.zopa.com/">Common Questions</ListLink>
-            <ListLink href={`${baseUrl}/sitemap`}>Sitemap</ListLink>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/help`, children: 'Help' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/sitemap`, children: 'Sitemap' })}</li>
           </List>
         </FlexCol>
       </FlexRow>
       <FlexRow>
         <LogoBlock>
-          <Link href={baseUrl} title="Logo">
-            <Logo width="165px" height="30px" />
-          </Link>
+          {renderLink({ href: baseUrl, title: 'Logo', children: <Logo width="165px" height="30px" /> })}
         </LogoBlock>
         <SocialBlock>
-          <SocialLink href="https://facebook.com/zopa" title="Facebook" variant={facebook} />
-          <SocialLink href="https://twitter.com/zopa" title="Twitter" variant={twitter} />
-          <SocialLink href="https://www.instagram.com/Zopamoney/" title="Instagram" variant={instagram} />
-          <SocialLink href="https://www.linkedin.com/company/zopa/" title="Linkedin" variant={linkedin} />
+          <SocialLink
+            href="https://facebook.com/zopa"
+            aria-label="Facebook"
+            title="Facebook opens in a new tab"
+            variant={facebook}
+          />
+          <SocialLink
+            href="https://twitter.com/zopa"
+            aria-label="Twitter"
+            title="Twitter opens in a new tab"
+            variant={twitter}
+          />
+          <SocialLink
+            href="https://www.instagram.com/Zopamoney/"
+            aria-label="Instagram"
+            title="Instagram opens in a new tab"
+            variant={instagram}
+          />
+          <SocialLink
+            href="https://www.linkedin.com/company/zopa/"
+            aria-label="Linkedin"
+            title="Linkedin opens in a new tab"
+            variant={linkedin}
+          />
         </SocialBlock>
         <LegalBlock>
           <Text as="p" color={colors.greyDark} size="small" className="mb-4">

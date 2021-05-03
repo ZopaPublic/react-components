@@ -1,8 +1,9 @@
-import { axe } from 'jest-axe';
+import axe from '../../../../axe-helper';
 import React from 'react';
 import { render } from '@testing-library/react';
 import Text from './Text';
 import { colors } from '../../../constants';
+import 'jest-styled-components';
 
 describe('<Text />', () => {
   it('renders without  a11y violations', async () => {
@@ -72,17 +73,18 @@ describe('<Text />', () => {
   it.each`
     size       | pixels
     ${'lead'}  | ${'18px'}
-    ${'body'}  | ${'15px'}
-    ${'small'} | ${'13px'}
+    ${'body'}  | ${'16px'}
+    ${'small'} | ${'14px'}
   `('can render at different sizes:  $size – $pixels', ({ size, pixels }) => {
     const { container } = render(<Text size={size}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('font-size', pixels);
   });
 
   it.each`
-    name         | weight
-    ${'regular'} | ${'400'}
-    ${'bold'}    | ${'700'}
+    name          | weight
+    ${'regular'}  | ${'400'}
+    ${'semiBold'} | ${'600'}
+    ${'bold'}     | ${'700'}
   `('can render at different weights:  $name', ({ name, weight }) => {
     const { container } = render(<Text weight={name}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('font-weight', weight);

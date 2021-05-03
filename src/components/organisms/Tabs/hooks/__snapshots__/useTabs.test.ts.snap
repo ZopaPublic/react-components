@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useTabs should render correct button and content props 1`] = `
+Object {
+  "aria-controls": "id-content",
+  "aria-expanded": false,
+  "id": "id",
+  "key": "id",
+  "onClick": [Function],
+}
+`;
+
+exports[`useTabs should render correct button and content props 2`] = `
+Object {
+  "aria-hidden": true,
+  "aria-labelledby": "id",
+  "id": "id-content",
+  "key": "id",
+  "role": "region",
+}
+`;

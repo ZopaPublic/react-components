@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
+.c5 {
+  display: none;
+}
+
+.c5[id="pineapple-content"] {
+  display: block;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #21247F;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c2:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c2:hover {
+  background: #EAEBFA;
+}
+
+.c2:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: px;
+  padding-left: px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c3 {
+  box-shadow: inset 0 12px #F7F7F7,inset 0 -12px #F7F7F7,inset 1px 0 #D4D7D9;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: none;
+}
+
+.c3:first-child {
+  box-shadow: none;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover + button,
+.c3:focus + button {
+  box-shadow: none;
+}
+
+.c3 + button {
+  box-shadow: none;
+}
+
+.c4 {
+  box-shadow: inset 0 12px #F7F7F7,inset 0 -12px #F7F7F7,inset 1px 0 #D4D7D9;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.c4:first-child {
+  box-shadow: none;
+}
+
+.c4:hover,
+.c4:focus {
+  box-shadow: none;
+}
+
+.c4:hover + button,
+.c4:focus + button {
+  box-shadow: none;
+}
+
+.c0 {
+  background: #F7F7F7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    display: block;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+<div>
+  <div
+    class="c0 p-2"
+  >
+    <div
+      class="c1"
+    >
+      <button
+        aria-controls="pineapple-content"
+        aria-expanded="true"
+        class="c2 c3 py-2 sc-bXGyLb c3 py-2"
+        id="pineapple"
+      >
+        🍍 Pineapple
+      </button>
+    </div>
+    <div
+      class="c1"
+    >
+      <button
+        aria-controls="kiwi-content"
+        aria-expanded="false"
+        class="c2 c4 py-2 sc-bXGyLb c4 py-2"
+        id="kiwi"
+      >
+        🥝 Kiwi
+      </button>
+    </div>
+    <div
+      class="c1"
+    >
+      <button
+        aria-controls="watermelon-content"
+        aria-expanded="false"
+        class="c2 c4 py-2 sc-bXGyLb c4 py-2"
+        id="watermelon"
+      >
+        🍉 Watermelon
+      </button>
+    </div>
+  </div>
+  <div
+    aria-hidden="false"
+    aria-labelledby="pineapple"
+    class="c5"
+    id="pineapple-content"
+    role="region"
+  >
+    🍍
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="kiwi"
+    class="c5"
+    id="kiwi-content"
+    role="region"
+  >
+    🥝
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="watermelon"
+    class="c5"
+    id="watermelon-content"
+    role="region"
+  >
+    🍉
+  </div>
+</div>
+`;

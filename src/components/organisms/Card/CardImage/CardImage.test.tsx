@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
+import axe from '../../../../../axe-helper';
 import Card from '..';
 
 describe('<Card.Image />', () => {
@@ -8,7 +8,7 @@ describe('<Card.Image />', () => {
     const testId = 'card-image-link';
     const { queryByTestId } = render(
       <Card>
-        <Card.Image overlayWith={<a href="http://www.zopa.com" data-testid={testId} />} url="" />
+        <Card.Image overlayWith={<a href="http://www.zopa.com" data-automation={testId} />} url="" />
       </Card>,
     );
     expect(queryByTestId(testId)).toBeTruthy();

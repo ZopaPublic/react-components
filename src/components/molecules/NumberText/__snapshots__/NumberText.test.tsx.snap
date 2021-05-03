@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NumberText /> renders without errors 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c3 {
+  font-size: 46px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
+  margin: 0;
+  color: #2C3236;
+  display: block;
+  text-align: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+<div>
+  <div
+    class="c0 mb-6 m:mb-7"
+  >
+    <span
+      class="c1 c2"
+    >
+      Overall Balance
+    </span>
+    <span
+      class="c3 mb-2"
+    >
+      £100,000.00
+    </span>
+  </div>
+</div>
+`;

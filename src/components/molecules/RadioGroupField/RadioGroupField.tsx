@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import FlexRow, { FlexRowProps } from '../../layout/FlexRow/FlexRow';
+import FlexCol, { FlexColProps } from '../../layout/FlexCol/FlexCol';
 import RadioField from '../RadioField/RadioField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
-import Text from '../../atoms/Text/Text';
 
 const RadioWrapper = styled.div`
   padding: 4px 0;
 `;
 
-interface RadioGroupFieldItem {
+type RadioGroupFieldItem = {
   value: string;
-  label: string;
+  label?: string | React.ReactNode;
   defaultChecked?: boolean;
   disabled?: boolean;
-}
+};
 
-export interface RadioGroupFieldProps {
-  label: string;
+export type RadioGroupFieldProps = {
+  label?: string;
   items: RadioGroupFieldItem[];
   onChange: (value: string) => void;
   onBlur?: () => void;
@@ -27,11 +28,17 @@ export interface RadioGroupFieldProps {
   isValid?: boolean;
   errorMessage?: string;
   className?: string;
-}
+  flexColProps?: FlexColProps;
+  flexRowProps?: FlexRowProps;
+  hideControl?: boolean;
+  name?: string;
+  'data-automation'?: string;
+};
 
 const RadioGroupField = ({
   items,
   label,
+  name,
   onChange,
   onBlur,
   value,
@@ -39,6 +46,10 @@ const RadioGroupField = ({
   isValid = false,
   errorMessage,
   className,
+  flexRowProps = {},
+  flexColProps = {},
+  hideControl,
+  'data-automation': dataAutomation,
 }: RadioGroupFieldProps) => {
   const { value: defaultValue } = items.find(({ defaultChecked }) => defaultChecked) || {};
 
@@ -57,25 +68,31 @@ const RadioGroupField = ({
 
   return (
     <Fieldset className={className}>
-      <Legend>
-        <Text weight="bold">{label}</Text>
-      </Legend>
-      {items.map((item) => {
-        const checked = isControlled ? value === item.value : innerValue === item.value;
-        return (
-          <RadioWrapper key={item.value}>
-            <RadioField
-              disabled={disabled}
-              value={item.value}
-              onChange={handleChange(item.value)}
-              onBlur={onBlur}
-              label={item.label}
-              checked={checked}
-              isValid={checked && isValid}
-            />
-          </RadioWrapper>
-        );
-      })}
+      {label && <Legend>{label}</Legend>}
+      <FlexRow {...flexRowProps}>
+        {items.map((item, index) => {
+          const checked = isControlled ? value === item.value : innerValue === item.value;
+          return (
+            <FlexCol {...flexColProps} key={item.value}>
+              <RadioWrapper>
+                <RadioField
+                  disabled={disabled}
+                  value={item.value}
+                  onChange={handleChange(item.value)}
+                  onBlur={onBlur}
+                  label={item.label}
+                  checked={checked}
+                  isValid={checked && isValid}
+                  hideControl={hideControl}
+                  name={name}
+                  data-automation={dataAutomation ? `${dataAutomation}-${index}` : undefined}
+                  groupLabel={label}
+                />
+              </RadioWrapper>
+            </FlexCol>
+          );
+        })}
+      </FlexRow>
       {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
     </Fieldset>
   );

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
+exports[`<RadioField /> renders the component with no control icon and no a11y violations 1`] = `
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -25,14 +25,14 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   line-height: 1.4;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #2C3236;
   padding: 14px 16px;
   border: 1px solid #818F9B;
@@ -41,7 +41,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   border-radius: 8px;
-  font-weight: 400;
   position: relative;
   margin-bottom: 0;
   text-align: left;
@@ -83,10 +82,6 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   cursor: pointer;
 }
 
-.c3:hover:before {
-  border-color: #D4D7D9;
-}
-
 .c2 {
   width: 1px;
   height: 1px;
@@ -95,40 +90,19 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   position: absolute;
 }
 
-.c2:hover + label {
-  border-color: #00D9C5;
-}
-
-.c2:hover + label:before {
-  border-color: #00D9C5;
-}
-
-.c2:checked + label {
-  border-color: #00D9C5;
-}
-
-.c2:checked + label:before {
-  border-color: #00D9C5;
-}
-
-.c2:checked + label:after {
-  background-color: #00D9C5;
-  height: 10px;
-  width: 10px;
-  -webkit-animation: ciAMHu 200ms ease-in-out;
-  animation: ciAMHu 200ms ease-in-out;
-}
-
+.c2:hover:not(:disabled) + label,
 .c2:focus + label {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
+.c2:hover:not(:disabled) + label:before,
 .c2:focus + label:before {
   border-color: #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
 }
 
+.c2:hover:checked:not(:disabled) + label:after,
 .c2:focus:checked + label:after {
   background-color: #00D9C5;
 }
@@ -136,6 +110,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 .c2:disabled + label {
   cursor: not-allowed;
   color: #818F9B;
+  background-color: #F7F7F7;
 }
 
 .c2:disabled:not(:checked) + label {
@@ -146,19 +121,202 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   border-color: #D4D7D9;
 }
 
+.c2:checked + label {
+  border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
+}
+
+.c2:checked + label:before {
+  border-color: #00D9C5;
+  box-shadow: none;
+}
+
+.c2:checked + label:after {
+  background-color: #00D9C5;
+  height: 10px;
+  width: 10px;
+  -webkit-animation: ciAMHu 200ms ease-in-out;
+  animation: ciAMHu 200ms ease-in-out;
+}
+
+.c2 + label:before,
+.c2 + label:after {
+  display: none;
+}
+
 <div
   class="c0 c1"
 >
   <input
     class="c2"
-    id="radio-id-1"
+    id="radio-id--1"
     name="test1"
     type="radio"
     value="1"
   />
   <label
     class="c3"
-    for="radio-id-1"
+    for="radio-id--1"
+  >
+    hello
+  </label>
+</div>
+`;
+
+exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
+.c0 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.c1:last-of-type {
+  margin-bottom: 0;
+}
+
+.c3 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2C3236;
+  padding: 14px 16px;
+  border: 1px solid #818F9B;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.c3:before {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px #818F9B solid;
+  box-shadow: 0 0 4px 0 transparent;
+  -webkit-transition-property: border,box-shadow;
+  transition-property: border,box-shadow;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.c3:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  left: 21px;
+  top: 19px;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c2 {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.c2:hover:not(:disabled) + label,
+.c2:focus + label {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:hover:not(:disabled) + label:before,
+.c2:focus + label:before {
+  border-color: #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:hover:checked:not(:disabled) + label:after,
+.c2:focus:checked + label:after {
+  background-color: #00D9C5;
+}
+
+.c2:disabled + label {
+  cursor: not-allowed;
+  color: #818F9B;
+  background-color: #F7F7F7;
+}
+
+.c2:disabled:not(:checked) + label {
+  border-color: #D4D7D9;
+}
+
+.c2:disabled:not(:checked) + label:before {
+  border-color: #D4D7D9;
+}
+
+.c2:checked + label {
+  border-color: #00D9C5;
+  background-color: #ECFCF9;
+  box-shadow: none;
+}
+
+.c2:checked + label:before {
+  border-color: #00D9C5;
+  box-shadow: none;
+}
+
+.c2:checked + label:after {
+  background-color: #00D9C5;
+  height: 10px;
+  width: 10px;
+  -webkit-animation: ciAMHu 200ms ease-in-out;
+  animation: ciAMHu 200ms ease-in-out;
+}
+
+<div
+  class="c0 c1"
+>
+  <input
+    class="c2"
+    id="radio-id--1"
+    name="test1"
+    type="radio"
+    value="1"
+  />
+  <label
+    class="c3"
+    for="radio-id--1"
   >
     hello
   </label>

@@ -8,8 +8,8 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   color: #818F9B;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: inherit;
@@ -164,11 +164,17 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 }
 
 .c8 .c14 {
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.c8 > .c19 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c9 {
-  background-color: white;
+  background-color: transparent;
   padding: 16px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -213,10 +219,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 16px 24px;
+  padding: 12px 24px;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
@@ -226,22 +232,16 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   background: #E9EAFA;
 }
 
-.c17:hover:not(:disabled) {
-  background: #EEEFFB;
-}
-
 .c17:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c17:disabled {
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
+.c17:hover {
+  background: #EEEFFB;
 }
 
-.c17:active:not(:disabled) {
+.c17:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -380,7 +380,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <p
                   class="c14 c15"
                 >
-                  Monday to Thursday (8am to 8pm), Friday (8am to 5pm)
+                  Monday - Friday 
+                  08:00 - 20:00
+                  , Saturday - Sunday 
+                  09:00 - 17:30
                 </p>
               </div>
             </div>
@@ -389,7 +392,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
             >
               <a
                 class="c17"
-                href="tel:020 7580 6060"
+                href="tel:+442075806060"
               >
                 Call us
               </a>
@@ -440,7 +443,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <h6
                   class="c12 c13"
                 >
-                  contact@zopa.com
+                  contactus@zopa.com
                 </h6>
                 <p
                   class="c14 c15"
@@ -454,7 +457,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
             >
               <a
                 class="c17"
-                href="mailto:contact@zopa.com"
+                href="mailto:contactus@zopa.com"
               >
                 Email us
               </a>

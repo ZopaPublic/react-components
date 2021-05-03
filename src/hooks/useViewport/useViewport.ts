@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState, useContext } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import throttle from 'lodash.throttle';
 import { ViewportContext } from './context';
 import { ViewportSize } from './types';
@@ -29,7 +29,7 @@ export function useViewport({ timeout = 300 }: UseViewportOptions = {}): Viewpor
   const [size, setSize] = useState({ width: 0, height: 0 } as ViewportSize);
   const onResize = throttle(() => setSize(readViewport()), timeout);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setSize(readViewport());
     window.addEventListener('resize', onResize);
 

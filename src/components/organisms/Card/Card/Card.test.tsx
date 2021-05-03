@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { axe } from 'jest-axe';
-import { TCardLayout, TCardStyling } from './Card';
+import axe from '../../../../../axe-helper';
+import { CardLayout, CardStyling } from './Card';
 import Card from '..';
 
-const layouts: TCardLayout[] = ['vertical', 'horizontal'];
-const stylings: TCardStyling[] = ['primary', 'secondary'];
+const layouts: CardLayout[] = ['vertical', 'horizontal'];
+const stylings: CardStyling[] = ['primary', 'secondary', 'brand'];
 
 describe('<Card />', () => {
   layouts.forEach((layout) => {

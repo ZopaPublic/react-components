@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Carousel.SlideText /> renders with no a11y violations 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #4A545E;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+<div>
+  <p
+    class="c0"
+    color="#4A545E"
+  >
+    We check your car and dealership so you can buy with confidence
+  </p>
+</div>
+`;

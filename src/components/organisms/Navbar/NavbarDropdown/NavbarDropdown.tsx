@@ -7,7 +7,7 @@ import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 import NavbarLink from '../NavbarLink/NavbarLink';
 
-const NavbarDropdownContainer = styled.div`
+const NavbarDropdownContainer = styled.li`
   position: relative;
   display: inline-block;
 `;
@@ -18,7 +18,7 @@ export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDi
   open: boolean;
 }
 
-const NavbarDropdownListContainer = styled.div<NavbarDropdownListContainer>`
+const NavbarDropdownListContainer = styled.ul<NavbarDropdownListContainer>`
   ${minMedia.desktop`
     position: absolute;
     left: 50%;
@@ -50,7 +50,6 @@ export interface OpenerProps {
   ref: React.RefObject<ButtonLinkElement>;
   onClick: React.EventHandler<React.MouseEvent>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
-  role: string;
   tabIndex: number;
 }
 
@@ -59,7 +58,6 @@ export type Item = any;
 export interface ItemProps {
   ref: React.RefObject<HTMLLIElement>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
-  role: string;
   tabIndex: number;
 }
 
@@ -80,9 +78,10 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** unique id */
   id: string;
   /** dropdown label */
-  label: string;
+  label: React.ReactNode;
   /** array of data representing the dropdown items (e.g links) */
   items: Item[];
+  'aria-label'?: string;
 }
 
 export interface NavbarDropdownState {
@@ -99,7 +98,7 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     ),
   };
 
-  private readonly dropdownRef = React.createRef<HTMLDivElement>();
+  private readonly dropdownRef = React.createRef<HTMLLIElement>();
   private readonly openerRef = React.createRef<HTMLAnchorElement | HTMLButtonElement>();
   private readonly itemsRefs: React.RefObject<HTMLLIElement>[] = [];
 
@@ -130,20 +129,18 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
     onClick: this.handleOpenerClick,
     onKeyDown: this.handleOpenerKeyDown,
     ref: this.openerRef,
-    role: 'menuitem',
     tabIndex: 0,
   });
 
   public getItemProps = (index: number) => () => ({
     onKeyDown: this.handleItemKeyDown,
     ref: this.itemsRefs[index],
-    role: 'menuitem',
     tabIndex: -1,
   });
 
   public render() {
     const { getOpenerProps, close } = this;
-    const { renderItem, items, label, id } = this.props;
+    const { renderItem, items, label, id, 'aria-label': ariaLabel } = this.props;
     const { open } = this.state;
 
     return (
@@ -152,9 +149,11 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
           {label}
         </NavbarLink>
         <NavbarDropdownListContainer open={open}>
-          <NavbarDropdownList role="menu" aria-label={label}>
+          {/* To avoid an undefined aria-label the fallback to label was added when aria-label property is not defined */}
+          {/* TODO remove fallback to label */}
+          <NavbarDropdownList aria-label={ariaLabel ? ariaLabel : typeof label === 'string' ? label : undefined}>
             {items.map((item, index) => (
-              <li key={`${id}-${index}`} role="none">
+              <li key={`${id}-${index}`}>
                 {renderItem({
                   close,
                   getItemProps: this.getItemProps(index),

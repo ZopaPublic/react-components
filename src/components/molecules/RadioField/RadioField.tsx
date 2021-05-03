@@ -1,10 +1,10 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
-import { FieldProps, InputStatus, InputProps } from '../../types';
+import { FieldProps, InputStatus, InputProps, GroupingControlsProps } from '../../types';
 import deprecate from 'util-deprecate';
 
 const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
@@ -78,24 +78,13 @@ const Label = styled(InputLabel)<InputStatus>`
   }
 `;
 
-const Input = styled.input<InputStatus>`
+const Input = styled.input<InputStatus & GroupingControlsProps>`
   width: 1px;
   height: 1px;
   opacity: 0;
   z-index: -1;
   position: absolute;
-  &:checked + label {
-    border-color: ${getCheckedColor};
-    &:before {
-      border-color: ${getCheckedColor};
-    }
-    &:after {
-      background-color: ${getCheckedColor};
-      height: 10px;
-      width: 10px;
-      animation: ${zoomIn} 200ms ease-in-out;
-    }
-  }
+
   &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${colors.brand};
@@ -114,6 +103,7 @@ const Input = styled.input<InputStatus>`
   &:disabled + label {
     cursor: not-allowed;
     color: ${colors.grey};
+    background-color: ${colors.greyLightest};
   }
   &:disabled:not(:checked) + label {
     border-color: ${colors.greyLight};
@@ -121,17 +111,64 @@ const Input = styled.input<InputStatus>`
       border-color: ${colors.greyLight};
     }
   }
+  &:checked + label {
+    border-color: ${getCheckedColor};
+    background-color: ${colors.brandLight};
+    box-shadow: none;
+    &:before {
+      border-color: ${getCheckedColor};
+      box-shadow: none;
+    }
+    &:after {
+      background-color: ${getCheckedColor};
+      height: 10px;
+      width: 10px;
+      animation: ${zoomIn} 200ms ease-in-out;
+    }
+  }
+  ${({ hideControl }) =>
+    hideControl &&
+    css`
+      & + label {
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    `}
 `;
 
-export interface RadioField extends FieldProps, InputProps {}
+export interface RadioField extends FieldProps, InputProps, GroupingControlsProps {
+  groupLabel?: string;
+}
 
-const RadioField = ({ label, hasError, errorMessage, isValid, value, inputSize, className, ...rest }: RadioField) => {
+const RadioField = ({
+  groupLabel = '',
+  label,
+  hasError,
+  errorMessage,
+  isValid,
+  value,
+  inputSize,
+  className,
+  hideControl,
+  ...rest
+}: RadioField) => {
   if (!value) throw Error('Value must be set in inputProps. Check the docs.');
+  const id = `radio-id-${groupLabel.replace(/\s/g, '-')}-${value}`;
 
   return (
     <FieldContainer className={className} size={inputSize}>
-      <Input id={`radio-id-${value}`} hasError={hasError} isValid={isValid} value={value} type="radio" {...rest} />
-      <Label htmlFor={`radio-id-${value}`} hasError={hasError} isValid={isValid}>
+      <Input
+        id={id}
+        hasError={hasError}
+        isValid={isValid}
+        value={value}
+        hideControl={hideControl}
+        type="radio"
+        {...rest}
+      />
+      <Label htmlFor={id} hasError={hasError} isValid={isValid}>
         {label}
       </Label>
     </FieldContainer>

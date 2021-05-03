@@ -1,0 +1,544 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductTemplate /> renders with all props and content 1`] = `
+.c26 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  border-radius: 12px;
+  box-shadow: 0 1px 0 0 #D4D7D9;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c26 > .c27 {
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+}
+
+.c26 .c28 {
+  font-size: 16px;
+}
+
+.c26 .c29 {
+  font-size: 14px;
+}
+
+.c26 > .c30 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c20 {
+  font-size: 46px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
+}
+
+.c7 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #4A545E;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c22 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: center;
+}
+
+.c17 {
+  background-color: #F7F7F7;
+}
+
+.c18 {
+  margin: 0 auto;
+}
+
+.c19 {
+  padding-bottom: 195px;
+}
+
+.c21 {
+  margin: 0 auto;
+  max-width: 612px;
+}
+
+.c5 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c5:hover,
+.c5:active {
+  color: #21247F;
+}
+
+.c5:hover svg path,
+.c5:active svg path {
+  fill: #21247F;
+}
+
+.c6 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  line-height: 0;
+}
+
+.c10 {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.c11 {
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #EFEFEF;
+  height: 4px;
+}
+
+.c16 {
+  width: 50%;
+  position: relative;
+  border-radius: 100px;
+  height: 4px;
+  display: block;
+  background: #00D9C5;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.c16 > span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #2C3236;
+}
+
+.c12 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c13 {
+  position: absolute;
+  top: 50%;
+  left: 33.333333333333336%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #00D9C5;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c14 {
+  position: absolute;
+  top: 50%;
+  left: 66.66666666666667%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c15 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #EFEFEF;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c9 {
+  max-width: 525px;
+}
+
+.c3 {
+  position: relative;
+  min-height: 30px;
+}
+
+.c0 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -0px;
+  margin-left: -0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -0px;
+  margin-left: -0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c25 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c24 {
+  margin-top: -160px;
+}
+
+@media (max-width:768px) {
+  .c26 {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .c26:last-of-type {
+    box-shadow: 0 0 1px 0 #D4D7D9;
+    border-bottom: 1px solid #EFEFEF;
+  }
+}
+
+@media (min-width:1280px) {
+  .c17 {
+    border-radius: 12px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width:992px) {
+  .c9 {
+    max-width: 612px;
+  }
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1300px) {
+  .c0 {
+    max-width: 1224px;
+  }
+}
+
+@media (min-width:768px) {
+  .c25 {
+    display: block;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media (min-width:1300px) {
+  .c25 {
+    display: block;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+<div>
+  <div
+    class="c0 mb-8 m:mb-9 m:mt-8 mt-4"
+    data-automation="ZA.ProductTemplate"
+  >
+    <div
+      class="c1"
+      cols="12"
+      direction="row"
+    >
+      <div
+        class="c2"
+        cols="12"
+      >
+        <div
+          class="c3 mx-4 m:mx-0 mb-6"
+          data-automation="ZA.ProductTemplateHeader"
+        >
+          <div
+            class="c4 my-4 m:mt-0"
+            data-automation="ZA.ProductTemplateNavigation"
+          >
+            <a
+              aria-label="Back"
+              class="c5 c6"
+              color="#3B46C4"
+              href="prevStep"
+            >
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-chevron-left fa-w-10 fa-xs mr-2"
+                color="#4A545E"
+                data-icon="chevron-left"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span
+                class="c7 c8"
+                color="#4A545E"
+              >
+                Back
+              </span>
+            </a>
+          </div>
+          <div
+            class="c9 mx-auto pt-1"
+          >
+            <div
+              class="c10"
+            >
+              <div
+                class="c11"
+              >
+                <span
+                  class="c12"
+                />
+                <span
+                  class="c13"
+                />
+                <span
+                  class="c14"
+                />
+                <span
+                  class="c15"
+                />
+                <div
+                  class="c16"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c2"
+        cols="12"
+      >
+        <header
+          class="c17"
+          data-automation="ZA.ProductTemplateTitle"
+        >
+          <div
+            class="c18 px-0 m:px-4"
+          >
+            <div
+              class="c19 pt-7 m:pt-9 mx-6 m:mx-0"
+            >
+              <h1
+                class="c20"
+              >
+                Product title
+              </h1>
+              <div
+                class="c21"
+              >
+                <p
+                  class="c22 mt-4"
+                >
+                  Product subtitle
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div
+        class="c2"
+        cols="12"
+      >
+        <div
+          class="c23 c24"
+          cols="12"
+          direction="row"
+        >
+          <div
+            class="c25"
+            cols="12"
+          >
+            <div
+              class="c26 px-4 py-6 m:p-8"
+            >
+              This is the body of the card
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

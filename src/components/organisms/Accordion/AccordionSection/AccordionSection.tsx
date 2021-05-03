@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { useAccordionContext } from '../hooks';
+import { useAccordionContext } from '../context';
 
 interface AccordionSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   id: string;

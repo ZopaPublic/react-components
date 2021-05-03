@@ -10,18 +10,18 @@ process.env.EXTEND_ESLINT = 'true';
 const printServerInstructions = (config) => {
   const urls = webpackDevServerUtils.prepareUrls('http', config.serverHost, config.serverPort);
   console.log(`${kleur.cyan().bold(`
-/££££££££                              
-|_____ ££                                      
-     /££/   /££££££   /££££££   /££££££ 
+/££££££££
+|_____ ££
+     /££/   /££££££   /££££££   /££££££
     /££/   /££__  ££ /££__  ££ |____  ££
    /££/   | ££  \\ ££| ££  \\ ££  /£££££££
   /££/    | ££  | ££| ££  | ££ /££__  ££
  /££££££££|  ££££££/| £££££££/|  £££££££
 |________/ \\______/ | ££____/  \\_______/
-                    | ££                
-                    | ££          React Components       
-                    |__/`)}     
-                    
+                    | ££
+                    | ££          React Components
+                    |__/`)}
+
 ${kleur.italic('You can now view your style guide in the browser')}
 
 ${kleur.bold('Local:')}            ${urls.localUrlForTerminal}
@@ -67,7 +67,8 @@ module.exports = {
         {
           name: 'Atoms',
           content: 'src/components/atoms/README.md',
-          components: 'src/components/atoms/*/*.tsx',
+          components: 'src/components/atoms/**/*.tsx',
+          ignore: 'src/components/atoms/**/{index,types,context}.tsx',
         },
         {
           name: 'Molecules',
@@ -97,6 +98,32 @@ module.exports = {
               name: 'Card',
               content: 'src/components/organisms/Card/README.md',
               components: 'src/components/organisms/Card/**/[A-Z]*.tsx',
+            },
+            {
+              name: 'Tabs',
+              content: 'src/components/organisms/Tabs/README.md',
+              components: 'src/components/organisms/Tabs/**/[A-Z]*.tsx',
+            },
+            {
+              name: 'Carousel',
+              content: 'src/components/organisms/Carousel/README.md',
+              components: 'src/components/organisms/Carousel/**/[A-Z]*.tsx',
+            },
+          ],
+        },
+        {
+          name: 'Templates',
+          content: 'src/components/templates/README.md',
+          sections: [
+            {
+              name: 'Product',
+              content: 'src/components/templates/ProductTemplate/README.md',
+              components: 'src/components/templates/ProductTemplate/**/[A-Z]*.tsx',
+            },
+            {
+              name: 'Error',
+              content: 'src/components/templates/ErrorPages/README.md',
+              components: 'src/components/templates/ErrorPages/**/[A-Z]*.tsx',
             },
           ],
         },

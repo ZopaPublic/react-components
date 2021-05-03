@@ -4,7 +4,13 @@ exports[`<Legend /> renders the component with no a11y violations 1`] = `
 .c0 {
   padding: 0;
   display: table;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 <legend

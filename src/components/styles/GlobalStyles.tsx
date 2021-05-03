@@ -21,7 +21,7 @@ const defaultFont = css`
   body {
     font-family: ${typography.primary};
     font-size: ${typography.sizes.text.body};
-    line-height: 1.4;
+    line-height: ${typography.sizes.lineHeight.body};
   }
 `;
 

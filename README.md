@@ -16,7 +16,7 @@ This repo contains 2 things at the same time:
 
 - Documentation for the components managed with [React-styleguidist](https://react-styleguidist.js.org)
 
-[Check the docs 💕](https://zopauk.github.io/react-components/)
+[Check the docs 💕](https://zrc.netlify.app/)
 
 ### Migrating from version 3
 
@@ -28,7 +28,7 @@ There are a number of breaking changes which will need to be addressed when upgr
 
 ```
 $ git clone https://github.com/zopaUK/react-components.git
-$ yarn
+$ pnpm i
 ```
 
 ### Running the project
@@ -36,7 +36,7 @@ $ yarn
 Execute the development environment:
 
 ```
-$ yarn dev
+$ pnpm dev
 ```
 
 The docs will run at [localhost:6060](http://localhost:6060).

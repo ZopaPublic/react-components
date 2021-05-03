@@ -16,7 +16,7 @@ interface ExpiryModalProps extends Omit<ModalProps, 'children'> {
 
 export default function ExpiryModal({ onEndSession, onKeepSession, ...rest }: ExpiryModalProps) {
   return (
-    <Modal showCloseButton={false} {...rest}>
+    <Modal showCloseButton={false} hideBackground {...rest}>
       <Card styling="primary">
         <Card.Content>
           <Card.Heading>Your session is about to expire</Card.Heading>

@@ -21,6 +21,14 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="Option" value="option" name="option" />;
 ```
 
+- Hide control
+
+```tsx
+import { RadioField } from '@zopauk/react-components';
+
+<RadioField label="Option" value="hideControl" name="hideControl" hideControl />;
+```
+
 - Default with multiline label
 
 ```tsx

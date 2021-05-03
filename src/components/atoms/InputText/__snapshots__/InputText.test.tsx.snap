@@ -12,7 +12,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #818F9B;
   border: 1px solid #D4D7D9;
@@ -21,6 +21,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -50,9 +51,11 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -104,7 +107,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   height: 50px;
   padding: 0 16px;
   padding-left: 60px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -113,6 +116,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c2:focus,
@@ -142,9 +146,11 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 }
 
 .c2:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -155,7 +161,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
     class="c1"
   >
     <span
-      data-testid="start-icon"
+      data-automation="start-icon"
     />
   </span>
   <input
@@ -201,7 +207,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   height: 50px;
   padding: 0 16px;
   padding-right: 60px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -210,6 +216,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -239,9 +246,11 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -256,7 +265,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
     class="c2"
   >
     <span
-      data-testid="end-icon"
+      data-automation="end-icon"
     />
   </span>
 </div>
@@ -274,7 +283,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #FF4539;
@@ -283,6 +292,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -312,9 +322,11 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -340,7 +352,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -349,6 +361,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -378,9 +391,11 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -406,7 +421,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #3EBC64;
@@ -415,6 +430,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -444,9 +460,11 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #3EBC64;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -472,7 +490,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   border-radius: 8px;
   height: 50px;
   padding: 0 16px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #4A545E;
   border: 1px solid #818F9B;
@@ -481,6 +499,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c1:focus,
@@ -510,9 +529,11 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c1:disabled {
+  -webkit-text-fill-color: #818F9B;
+  opacity: 1;
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 

@@ -9,13 +9,25 @@ function renderModal(props: Omit<ModalProps, 'children'>) {
     <Modal {...props}>
       <Card.Content>
         <Card.Heading>Title</Card.Heading>
-        <Card.Text data-testid="check-card">text</Card.Text>
+        <Card.Text data-automation="check-card">text</Card.Text>
       </Card.Content>
     </Modal>,
   );
 }
 
 describe('<Modal />', () => {
+  it('renders with semi opacity background', () => {
+    Modal.setAppElement('body');
+    const { baseElement } = renderModal({ isOpen: true });
+    expect(baseElement.getElementsByClassName('zopa-modal-overlay').length).toBe(1);
+  });
+
+  it('renders with full opacity background', () => {
+    Modal.setAppElement('body');
+    const { baseElement } = renderModal({ isOpen: true, hideBackground: true });
+    expect(baseElement.getElementsByClassName('zopa-modal-overlay-full-opacity').length).toBe(1);
+  });
+
   it('can render un-opened', async () => {
     Modal.setAppElement('body');
     const { queryByTestId } = renderModal({ isOpen: false });

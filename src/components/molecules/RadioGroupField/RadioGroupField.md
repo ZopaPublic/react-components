@@ -1,6 +1,6 @@
 ### Summary
 
-`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`s:
+`<RadioFieldGroup />` is a convenient wrapper that renders group of `<RadioField>`
 
 ⚠️ &nbsp;Note that the `value` for each item has to be unique as it determines the `id`
 and `htmlFor` prop fof each radio field.
@@ -18,7 +18,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'two', label: 'label two' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Uncontrolled"
 />;
 ```
 
@@ -33,7 +33,23 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'four', label: 'label four', defaultChecked: true },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Uncontrolled with one radio checked by default"
+/>;
+```
+
+- Uncontrolled with hidden control
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  items={[
+    { value: 'three', label: 'label three' },
+    { value: 'four', label: 'label four', defaultChecked: true },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Uncontrolled with hidden control"
+  hideControl
 />;
 ```
 
@@ -53,7 +69,7 @@ const ControlledRadioGroupField = () => {
       ]}
       value={value}
       onChange={setValue}
-      label="Radio group field label"
+      label="Controlled"
     />
   );
 };
@@ -72,7 +88,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'eight', label: 'label eight' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Disabled"
   disabled
 />;
 ```
@@ -88,7 +104,7 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'nine', label: 'label nine', defaultChecked: true },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="Disabled and valid"
   isValid={true}
   disabled
 />;
@@ -105,7 +121,31 @@ import { RadioGroupField } from '@zopauk/react-components';
     { value: 'eleven', label: 'label eleven' },
   ]}
   onChange={(value) => console.log(value)}
-  label="Radio group field label"
+  label="With error"
   errorMessage="You have to pick one"
+/>;
+```
+
+- Responsive
+
+```jsx
+import { RadioGroupField } from '@zopauk/react-components';
+
+<RadioGroupField
+  flexColProps={{
+    xs: 12,
+    m: 6,
+    xl: 3,
+  }}
+  items={[
+    { value: 'fourteen', label: 'label fourteen' },
+    { value: 'fifteen', label: 'label fifteen' },
+    { value: 'sixteen', label: 'label sixteen' },
+    { value: 'seventeen', label: 'label seventeen' },
+  ]}
+  onChange={(value) => console.log(value)}
+  label="Responsive"
+  name="Responsive"
+  data-automation="testing"
 />;
 ```

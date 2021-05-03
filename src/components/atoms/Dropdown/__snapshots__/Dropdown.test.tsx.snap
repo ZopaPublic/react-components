@@ -10,6 +10,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 24px;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -25,10 +26,12 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -37,7 +40,7 @@ exports[`<Dropdown /> renders the Dropdown with one option 1`] = `
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -63,6 +66,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 24px;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -78,10 +82,12 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -90,7 +96,7 @@ exports[`<Dropdown /> renders the Dropdown with options 1`] = `
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -122,6 +128,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 24px;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -137,10 +144,12 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -149,7 +158,7 @@ exports[`<Dropdown /> renders the Dropdown with options and a default selected v
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 
@@ -182,6 +191,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  line-height: 24px;
   background: transparent;
   padding-right: 32px;
   padding-left: 16px;
@@ -197,10 +207,12 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-size: 16px;
 }
 
 .c0:focus,
 .c0:hover {
+  outline: none;
   outline-width: 0;
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
@@ -209,7 +221,7 @@ exports[`<Dropdown /> renders the Dropdown with options passed through an array.
 .c0:disabled {
   border: 1px solid #818F9B;
   box-shadow: 0 0 4px 0 transparent;
-  background-color: transparent;
+  background-color: #F7F7F7;
   cursor: not-allowed;
 }
 

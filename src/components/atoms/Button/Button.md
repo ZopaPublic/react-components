@@ -120,3 +120,31 @@ const ButtonLink = styled(Link)`
   Custom Button
 </ButtonLink>;
 ```
+
+- Disabled anchor element with button style
+
+```tsx
+import { buttonStyle } from '@zopauk/react-components';
+import { FC, MouseEvent } from 'react';
+import styled from 'styled-components';
+
+const StyledA = styled.a`
+  ${buttonStyle}
+`;
+
+const ButtonLink = ({ href, styling, fullWidth, children, disabled }) => (
+  <StyledA
+    href={href}
+    styling={styling}
+    fullWidth={fullWidth}
+    disabled={disabled}
+    onClick={(e) => disabled && e.preventDefault()}
+  >
+    {children}
+  </StyledA>
+);
+
+<ButtonLink href="https://www.zopa.com" disabled>
+  Button Link
+</ButtonLink>;
+```
