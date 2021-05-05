@@ -44,7 +44,6 @@ export { default as Help, HelpLine, HelpLineDetails } from './components/molecul
 export { default as Tooltip } from './components/molecules/Tooltip/Tooltip';
 export { default as CheckboxField } from './components/molecules/CheckboxField/CheckboxField';
 export { default as CheckboxGroupField } from './components/molecules/CheckboxGroupField/CheckboxGroupField';
-export { default as RadioField } from './components/molecules/RadioField/RadioField';
 export { default as RadioGroupField } from './components/molecules/RadioGroupField/RadioGroupField';
 export { default as TextField } from './components/molecules/TextField/TextField';
 export { default as DropdownField } from './components/molecules/DropdownField/DropdownField';
