@@ -1,3 +1,22 @@
+### [4.43.3-beta.1](https://github.com/zopaUK/react-components/compare/v4.43.2...v4.43.3-beta.1) (2021-05-05)
+
+
+### Bug Fixes
+
+* **breakpoints:** follow bootstrap breakpoints ([b763e15](https://github.com/zopaUK/react-components/commit/b763e15c757190e67bd94c170fb0b9620e3c9b88))
+* **dependencies:** reinstall with pnpm ([cc153db](https://github.com/zopaUK/react-components/commit/cc153db7050896780ecc51ae21c161f7a7144504))
+* **deps:** update packages ([afd2447](https://github.com/zopaUK/react-components/commit/afd24472192f3e007dcac3e4cc49d3e88255ace8))
+* **expiry modal:** omit children type ([2543e72](https://github.com/zopaUK/react-components/commit/2543e72fe18c7ff4f6dc0b10ab27a7be23a1af30))
+* **input text:** fix css ([05400c9](https://github.com/zopaUK/react-components/commit/05400c94f3d4bfe47fba9a76545d693cac1d3347))
+* **pnpm config:** deleted yarn lock files, install via pnpm ([b4d8418](https://github.com/zopaUK/react-components/commit/b4d841858ac89d7b7f6e675288fb61b3377857ed))
+* **radiofield:** remove export radio field ([41df1cb](https://github.com/zopaUK/react-components/commit/41df1cbefe02f4d2de2f66313e51e2da0c02e519))
+* **sidekickcard:** removed deprecated component ([c16756b](https://github.com/zopaUK/react-components/commit/c16756bde5537c481703f750f9a316cd733664c7))
+* **styled components:** upgrade to v5 ([ef63b60](https://github.com/zopaUK/react-components/commit/ef63b601a69d6d4fbd68e180753a879fe23e37d4))
+* **styled-components:** merge master, fix conflicts ([e0e4a8c](https://github.com/zopaUK/react-components/commit/e0e4a8cf78dbb55aa30b84af00ea4cec0406f4f6))
+* **styled-components:** update snapshots ([4d3d1da](https://github.com/zopaUK/react-components/commit/4d3d1da49b11ff8cf68d7319733d87cfc53d31f3))
+* **tests:** rerun all tests after reinstalling dependencies ([a351fad](https://github.com/zopaUK/react-components/commit/a351fad3cb885b780f5e55022a29b41d149bc9fb))
+* **update tests:** update tests for all components ([09cc2b1](https://github.com/zopaUK/react-components/commit/09cc2b1cfb97bcb2478e9bcd60e19de7a21e168b))
+
 ### [4.35.1](https://github.com/zopaUK/react-components/compare/v4.35.0...v4.35.1) (2021-01-18)
 
 
