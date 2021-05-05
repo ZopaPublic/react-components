@@ -338,7 +338,7 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:992px) {
   .c17 {
     border-radius: 12px;
   }
