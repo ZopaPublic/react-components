@@ -13,10 +13,10 @@ interface Grid {
 const grid: Grid = {
   breakpoints: {
     xs: 0,
+    xl: breakpoints.largeDesktop,
     l: breakpoints.desktop,
     m: breakpoints.tablet,
     s: breakpoints.phone,
-    xl: breakpoints.largeDesktop,
   },
   cols: 12,
   gutter: 12,
