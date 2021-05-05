@@ -19,9 +19,9 @@ exports[`<ProductTemplate /> renders with all props and content 1`] = `
 }
 
 .c26 > .c27 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c26 .c28 {

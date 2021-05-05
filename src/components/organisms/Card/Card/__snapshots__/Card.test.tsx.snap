@@ -19,9 +19,9 @@ exports[`<Card /> renders with brand styling 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {
@@ -62,9 +62,9 @@ exports[`<Card /> renders with horizontal layout 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {
@@ -105,9 +105,9 @@ exports[`<Card /> renders with primary styling 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {
@@ -148,9 +148,9 @@ exports[`<Card /> renders with secondary styling 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {
@@ -191,9 +191,9 @@ exports[`<Card /> renders with vertical layout 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {

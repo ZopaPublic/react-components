@@ -154,9 +154,9 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
 }
 
 .c8 > .c18 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c8 .c12 {

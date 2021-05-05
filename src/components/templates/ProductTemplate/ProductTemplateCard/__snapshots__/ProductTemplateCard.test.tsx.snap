@@ -19,9 +19,9 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
 }
 
 .c0 > .c1 {
-  -webkit-flex: 0 1 200px;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
 }
 
 .c0 .c2 {
