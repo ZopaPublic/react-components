@@ -330,7 +330,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           disable={open || !!(width && width >= breakpoints.desktop)}
         >
           <LargeDeviceNavbar>
-            <LayoutInner overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold}>
               <LogoContainer overlap={overThreshold || collapsed} role="banner">
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
@@ -342,7 +342,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold}>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
                   <Icon
