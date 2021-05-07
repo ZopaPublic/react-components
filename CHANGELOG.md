@@ -1,3 +1,10 @@
+### [4.43.3](https://github.com/zopaUK/react-components/compare/v4.43.2...v4.43.3) (2021-05-07)
+
+
+### Bug Fixes
+
+* **navbar:** adding data-automation id to desktop and mobile nav ([6fad511](https://github.com/zopaUK/react-components/commit/6fad511cc669411a2b694632abf7c186404159c5))
+
 ### [4.43.2](https://github.com/zopaUK/react-components/compare/v4.43.1...v4.43.2) (2021-04-27)
 
 
