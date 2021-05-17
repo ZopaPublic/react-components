@@ -1,4 +1,5 @@
 import React from 'react';
+import axe from '../../../../../axe-helper';
 import { fireEvent, render } from '@testing-library/react';
 import NavbarDropdown from './NavbarDropdown';
 
@@ -16,14 +17,18 @@ describe('<NavbarDropdown />', () => {
   const renderComponent = () =>
     render(
       <>
-        <NavbarDropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
+        <ul>
+          <NavbarDropdown id="unique-dropdown-id" label="test" items={items} renderItem={renderItem} />
+        </ul>
         <button>button</button>
       </>,
     );
 
-  it('should render component', () => {
+  it.only('renders with no a11y violations', async () => {
     const { container } = renderComponent();
     expect(container.firstChild).toMatchSnapshot();
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
   });
 
   ['Enter', ' ', 'ArrowUp', 'ArrowDown'].forEach((key) => {
