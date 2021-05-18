@@ -1,6 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Navbar from '..';
+import axe from '../../../../../axe-helper';
 
 describe('<Navbar />', () => {
   beforeEach(() => {
@@ -60,27 +61,34 @@ describe('<Navbar />', () => {
     },
   ];
 
-  it('should render small device navigation with default props', () => {
-    const { container } = render(<Navbar links={NAV_ITEMS} />);
-    expect(container).toMatchSnapshot();
-  });
-
   it('should not render the hamburger icon when no content is added', () => {
-    render(<Navbar />);
-    const hamburgerIcon = screen.queryByTestId('hamburger-icon');
+    const { queryByTestId } = render(<Navbar />);
+
+    const hamburgerIcon = queryByTestId('hamburger-icon');
     expect(hamburgerIcon).not.toBeInTheDocument();
   });
 
-  it('should render component with all the props', () => {
+  it('should render small device navigation with default props with no a11y violations', async () => {
+    const { container } = render(<Navbar links={NAV_ITEMS} />);
+    expect(container).toMatchSnapshot();
+
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
+  });
+
+  it('should render component with all the props and no a11y violations', () => {
     const { container } = render(<Navbar overlayLogoWith={<a href="https://www.zopa.com"></a>} links={NAV_ITEMS} />);
     expect(container).toMatchSnapshot();
   });
 
-  it('should render large device navigation with default props', () => {
+  it('should render large device navigation with default props and no a11y violations', async () => {
     Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1280 });
 
     const { container } = render(<Navbar links={NAV_ITEMS} />);
     expect(container).toMatchSnapshot();
+
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
   });
 
   it('should render the collapsed styled on large device navigation with default props and collapsed set to true', () => {
