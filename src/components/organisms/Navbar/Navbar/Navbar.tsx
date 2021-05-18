@@ -225,7 +225,7 @@ const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background-color: ${({ open }) => (open ? colors.white : 'transparent')};
 `;
 
-const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
+const HamburgerMenu = styled.div<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
