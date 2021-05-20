@@ -622,6 +622,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -838,6 +839,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
             <span
               class="c22"
@@ -1709,6 +1711,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -1922,6 +1925,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
             <span
               class="c22"
@@ -2789,6 +2793,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -3002,6 +3007,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
             <span
               class="c22"
@@ -3926,6 +3932,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -4139,6 +4146,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
             <span
               class="c22"
