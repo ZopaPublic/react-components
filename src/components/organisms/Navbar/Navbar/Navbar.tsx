@@ -224,10 +224,9 @@ const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
-  background-color: ${({ open }) => (open ? colors.white : 'transparent')};
+  background: ${({ open }) => (open ? colors.white : 'transparent')};
   border-radius: ${({ open }) => (open ? 0 : '8px')};
   &:hover:not(:disabled) {
-    background-color: ${({ open }) => (open ? colors.white : 'transparent')};
     background: ${({ open }) => (open ? colors.white : 'transparent')};
   }
 `;
@@ -368,7 +367,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
-              {links && (
+              {links && open && (
                 <HamburgerMenu open={open} height={height}>
                   <NavItemsWrapper>
                     <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
