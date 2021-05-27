@@ -54,8 +54,8 @@ describe('<NavbarLinksList />', () => {
     ];
     const container = render(
       <NavbarLinksList
+        setOpen={(open) => open}
         links={NAV_ITEMS}
-        setOpen={() => true}
         renderLink={(item) => <a href={item.href}>{item.label}</a>}
       />,
     );
@@ -73,8 +73,8 @@ describe('<NavbarLinksList />', () => {
 
     render(
       <NavbarLinksList
+        setOpen={(open) => open}
         links={NAV_ITEMS}
-        setOpen={() => true}
         renderLink={(item) => <a href={item.href}>{item.label}</a>}
       />,
     );
