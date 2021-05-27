@@ -36,6 +36,7 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, se
               id={`navbar-dropdown-${index}`}
               label={item.label}
               items={item.children!}
+              data-automation={item['data-automation']}
               renderItem={({ item, getItemProps, close }: RenderItemProps) =>
                 renderLink &&
                 renderLink(item, index, {

@@ -47,7 +47,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
     color: ${colors.actionDark};
     opacity: ${({ active }) => (active ? 1 : 0.88)};
   }
-  
+
 
   ${maxEqualToMedia.desktop`
     width: 100%;
@@ -61,7 +61,7 @@ export const navbarLinkStyles = css<StyledNavbarLinkProps>`
         text-transform: uppercase;
       `}
   `}
-  
+
   ${minMedia.desktop`
     ${({ isDropdownLink, isDropdownHeading }: StyledNavbarLinkProps) =>
       isDropdownLink &&
@@ -144,8 +144,8 @@ const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, Navb
         isDropdownLink={isDropdownLink}
         isDropdownHeading={isDropdownHeading}
         ref={ref}
-        {...rest}
         data-automation="ZA.navbar-item"
+        {...rest}
       >
         {withChevron ? <LinkContainer>{children}</LinkContainer> : children}
         {withChevron && (
