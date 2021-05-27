@@ -20,6 +20,7 @@ import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
+import { Button } from '../../../..';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -212,7 +213,8 @@ const NavbarLinksListContainer = styled.ul`
   `}
 `;
 
-const IconContainer = styled.span`
+const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
+  background: transparent;
   display: flex;
   height: ${mobileNavbarHeight}px;
   width: ${mobileNavbarHeight}px;
@@ -222,10 +224,14 @@ const IconContainer = styled.span`
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
-  background-color: ${({ open }) => (open ? colors.white : 'transparent')};
+  background: ${({ open }) => (open ? colors.white : 'transparent')};
+  border-radius: ${({ open }) => (open ? 0 : '8px')};
+  &:hover:not(:disabled) {
+    background: ${({ open }) => (open ? colors.white : 'transparent')};
+  }
 `;
 
-const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
+const HamburgerMenu = styled.div<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -361,7 +367,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
-              {links && (
+              {links && open && (
                 <HamburgerMenu open={open} height={height}>
                   <NavItemsWrapper>
                     <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />

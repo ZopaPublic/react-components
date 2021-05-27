@@ -54,6 +54,7 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** array of data representing the dropdown items (e.g links) */
   items: Item[];
   'aria-label'?: string;
+  'data-automation'?: string;
 }
 
 export interface NavbarDropdownState {
@@ -63,8 +64,8 @@ export interface NavbarDropdownState {
 
 export default class NavbarDropdown extends React.Component<NavbarDropdownProps, NavbarDropdownState> {
   static defaultProps: DefaultNavbarDropdownProps = {
-    renderItem: ({ item: { label, href }, getItemProps }) => (
-      <NavbarLink href={href} {...getItemProps()} isDropdownLink>
+    renderItem: ({ item: { label, href, ['data-automation']: dataAutomation = 'ZA.navbar-item' }, getItemProps }) => (
+      <NavbarLink href={href} {...getItemProps()} isDropdownLink data-automation={dataAutomation}>
         {label}
       </NavbarLink>
     ),
@@ -117,7 +118,13 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
 
     return (
       <NavbarDropdownContainer ref={this.dropdownRef}>
-        <NavbarLink open={open} withChevron={true} href="#" {...getOpenerProps()}>
+        <NavbarLink
+          open={open}
+          withChevron={true}
+          href="#"
+          {...getOpenerProps()}
+          data-automation={this.props['data-automation'] ?? 'ZA.navbar-item'}
+        >
           {label}
         </NavbarLink>
         {/* To avoid an undefined aria-label the fallback to label was added when aria-label property is not defined */}
