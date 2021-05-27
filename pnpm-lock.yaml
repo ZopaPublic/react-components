@@ -3978,7 +3978,7 @@ packages:
   /autoprefixer/9.8.6:
     dependencies:
       browserslist: 4.14.5
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       colorette: 1.2.1
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -4445,7 +4445,7 @@ packages:
       integrity: sha512-Z942RysHXmJrhqk88FmKBVq/v5tqmSkDz7p54G/MGyjMnCFFnC79XWNbg+Vta8W6Wb2qtSZTSxIGkJrRpCFEiA==
   /browserslist/4.10.0:
     dependencies:
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       electron-to-chromium: 1.3.582
       node-releases: 1.1.64
       pkg-up: 3.1.0
@@ -4455,7 +4455,7 @@ packages:
       integrity: sha512-TpfK0TDgv71dzuTsEAlQiHeWQ/tiPqgNZVdv046fvNtBZrjbv2O3TsWCDU0AWGJJKCF/KsjNdLzR9hXOsh/CfA==
   /browserslist/4.14.5:
     dependencies:
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       electron-to-chromium: 1.3.582
       escalade: 3.1.1
       node-releases: 1.1.64
@@ -4467,7 +4467,7 @@ packages:
       integrity: sha512-Z+vsCZIvCBvqLoYkBFTwEYH3v5MCQbsAjp50ERycpOjnPmolg1Gjy4+KaWWpm8QOJt9GHkhdqAl14NpCX73CWA==
   /browserslist/4.7.0:
     dependencies:
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       electron-to-chromium: 1.3.582
       node-releases: 1.1.64
     dev: true
@@ -4681,16 +4681,16 @@ packages:
   /caniuse-api/3.0.0:
     dependencies:
       browserslist: 4.14.5
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
     resolution:
       integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==
-  /caniuse-lite/1.0.30001148:
+  /caniuse-lite/1.0.30001230:
     dev: true
     resolution:
-      integrity: sha512-E66qcd0KMKZHNJQt9hiLZGE3J4zuTqE1OnU53miEVtylFbwOEmeA5OsRu90noZful+XGSQOni1aT2tiqu/9yYw==
+      integrity: sha512-5yBd5nWCBS+jWKTcHOzXwo5xzcj4ePE/yjtkZyUV1BTUmrBaA9MRGC+e7mxnqXSA90CmCA8L3eKLaSUkt099IQ==
   /capture-exit/2.0.0:
     dependencies:
       rsvp: 4.8.5
@@ -12704,7 +12704,7 @@ packages:
     dependencies:
       autoprefixer: 9.8.6
       browserslist: 4.14.5
-      caniuse-lite: 1.0.30001148
+      caniuse-lite: 1.0.30001230
       css-blank-pseudo: 0.1.4
       css-has-pseudo: 0.10.0
       css-prefers-color-scheme: 3.1.1
