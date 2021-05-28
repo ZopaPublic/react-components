@@ -2,8 +2,7 @@ name: CI
 on: push
 
 jobs:
-  check:
-    name: Test and release
+  prepare:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,9 +30,17 @@ jobs:
           version: 6.0.2
           run_install: true
           
+  typecheck:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
       - name: Run typecheck
         run: pnpm typecheck
         
+  tests:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
       - name: Run tests
         uses: mattallty/jest-github-action@v1
         env:
@@ -42,15 +49,31 @@ jobs:
           test-command: 'pnpm test -- --watchAll=false --ci'
           coverage-comment: false
           
+  lint:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:       
       - name: Run linter
         uses: reviewdog/action-eslint@v1
         with:
           reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
           
+  compile:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:     
       - name: Compile the code
         run: pnpm compile
         
+  release:
+    runs-on: ubuntu-latest
+    needs: 
+      - prepare
+      - typecheck
+      - tests
+      - compile
+    steps:       
       - name: Release
         run: pnpm release
         env:
