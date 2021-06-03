@@ -5,7 +5,7 @@ import { grid } from '../../../constants';
 import { GridBreakpoints } from '../../../constants/grid';
 
 export interface AlignProps extends HTMLAttributes<HTMLDivElement> {
-  xs?: number;
+  xs?: string;
   s?: string;
   m?: string;
   l?: string;
