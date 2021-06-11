@@ -1,3 +1,10 @@
+### [4.43.6](https://github.com/zopaUK/react-components/compare/v4.43.5...v4.43.6) (2021-06-11)
+
+
+### Bug Fixes
+
+* **landmarks:** remove main landmark from product template ([d170523](https://github.com/zopaUK/react-components/commit/d170523f7965ded58c6a4917bf2ff0dc54a6d3a9))
+
 ### [4.43.5](https://github.com/zopaUK/react-components/compare/v4.43.4...v4.43.5) (2021-06-11)
 
 
