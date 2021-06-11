@@ -12,7 +12,9 @@ const AccordionSection: FC<AccordionSectionProps> = ({ children, id, index, ...r
   const { ref, ...sectionPropsRest } = getSectionProps(id, index);
   return (
     <div {...sectionPropsRest} {...rest}>
-      <div ref={ref}>{children}</div>
+      <div ref={ref} tabIndex={sectionPropsRest['aria-hidden'] ? -1 : undefined}>
+        {children}
+      </div>
     </div>
   );
 };

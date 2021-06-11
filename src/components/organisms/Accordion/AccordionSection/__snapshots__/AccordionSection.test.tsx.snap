@@ -9,7 +9,9 @@ exports[`<AccordionSection /> renders the component with no a11y violations 1`] 
   role="region"
   style="overflow: hidden; transition: height 200ms linear; height: 0px;"
 >
-  <div>
+  <div
+    tabindex="-1"
+  >
     Content
   </div>
 </div>
