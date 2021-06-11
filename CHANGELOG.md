@@ -1,3 +1,10 @@
+### [4.43.7](https://github.com/zopaUK/react-components/compare/v4.43.6...v4.43.7) (2021-06-11)
+
+
+### Bug Fixes
+
+* **a11y:** accordion needs tab index -1 when aria hidden ([5c507e2](https://github.com/zopaUK/react-components/commit/5c507e21e89502ed0fa2b633640a8e72c4efcebf))
+
 ### [4.43.6](https://github.com/zopaUK/react-components/compare/v4.43.5...v4.43.6) (2021-06-11)
 
 
