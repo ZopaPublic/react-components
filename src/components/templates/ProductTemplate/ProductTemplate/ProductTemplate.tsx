@@ -65,7 +65,7 @@ function ProductTemplate({
         <FlexCol>
           <StyledFlexRow hasTitle={!!title || !!subtitle} justify="center" gutter={0}>
             <FlexCol m={10} xl={contentWidth}>
-              <main>{children}</main>
+              {children}
             </FlexCol>
           </StyledFlexRow>
         </FlexCol>
