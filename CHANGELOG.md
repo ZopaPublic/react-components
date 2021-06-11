@@ -1,3 +1,17 @@
+### [4.43.4](https://github.com/zopaUK/react-components/compare/v4.43.3...v4.43.4) (2021-05-27)
+
+
+### Bug Fixes
+
+* **ci:** fix release ci ([a74ab75](https://github.com/zopaUK/react-components/commit/a74ab75b9ca7425feb34f13fc50a5c049b827e80))
+* **ci:** fix release ci ([d969485](https://github.com/zopaUK/react-components/commit/d969485002c5d56a4d7e4ca86d6b11b0f3a70e76))
+* **navbar:** fix tests ([e6c646c](https://github.com/zopaUK/react-components/commit/e6c646c0033bed5e3a0916f9ee0e38eab3cd6f64))
+* **navbar:** fix tests ([aaf98bd](https://github.com/zopaUK/react-components/commit/aaf98bde27790e51a834d2601eafd1dc58d58a9d))
+* **navbar:** make navbar have no a11y violations ([60cd3db](https://github.com/zopaUK/react-components/commit/60cd3db41f328dbdb9283dc1abc55522b436962a))
+* **navbar:** only render menu if open ([79be792](https://github.com/zopaUK/react-components/commit/79be792ad1eae2e5f3085e434d8e2ae31f1d9795))
+* **navbar:** remove landmark inside of landmark ([7bda7d8](https://github.com/zopaUK/react-components/commit/7bda7d82de09bc5294a13ec9132bf6403858c9be))
+* **navbar:** remove ul that's a direct child of a ul ([33d92a5](https://github.com/zopaUK/react-components/commit/33d92a531d60c56cba8f21ba1c94dea9d3c6c194))
+
 ### [4.43.3](https://github.com/zopaUK/react-components/compare/v4.43.2...v4.43.3) (2021-05-07)
 
 
