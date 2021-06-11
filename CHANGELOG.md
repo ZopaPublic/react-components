@@ -1,3 +1,12 @@
+### [4.43.5](https://github.com/zopaUK/react-components/compare/v4.43.4...v4.43.5) (2021-06-11)
+
+
+### Bug Fixes
+
+* **producttemplate:** add <main> landmark to the product template ([c658546](https://github.com/zopaUK/react-components/commit/c658546e99dd8ea6bec5cfd2f0ad8944441e47bd))
+* **producttemplate:** add section landmark ([cf26669](https://github.com/zopaUK/react-components/commit/cf266693ebb5cbd8361fc5fd8b29763a35befb0c)), closes [#685](https://github.com/zopaUK/react-components/issues/685)
+* **producttemplate:** fix snapshot test ([33d8197](https://github.com/zopaUK/react-components/commit/33d8197910d410a984e2b9e2aa8475065f92591d))
+
 ### [4.43.4](https://github.com/zopaUK/react-components/compare/v4.43.3...v4.43.4) (2021-05-27)
 
 
