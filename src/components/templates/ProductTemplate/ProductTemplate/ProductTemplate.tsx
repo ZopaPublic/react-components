@@ -23,9 +23,9 @@ export interface ProductTemplateProps {
 
 function overlayElementAbove(marginTop: number) {
   return `
-    margin-top: -${marginTop - 24}px; 
+    margin-top: -${marginTop - 24}px;
     @media (min-width: ${grid.breakpoints.m}px) {
-      margin-top: -${marginTop}px; 
+      margin-top: -${marginTop}px;
     }
     `;
 }
@@ -65,7 +65,7 @@ function ProductTemplate({
         <FlexCol>
           <StyledFlexRow hasTitle={!!title || !!subtitle} justify="center" gutter={0}>
             <FlexCol m={10} xl={contentWidth}>
-              {children}
+              <main>{children}</main>
             </FlexCol>
           </StyledFlexRow>
         </FlexCol>
