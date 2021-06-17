@@ -104,7 +104,7 @@ const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary',
   const isLoading = styling !== 'link' ? loading : undefined;
 
   return (
-    <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
+    <ButtonWrapper styling={styling} loading={isLoading.toString()} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
           <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
