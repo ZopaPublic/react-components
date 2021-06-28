@@ -1,3 +1,10 @@
+### [4.43.8](https://github.com/zopaUK/react-components/compare/v4.43.7...v4.43.8) (2021-06-28)
+
+
+### Bug Fixes
+
+* **navbar:** wrap cta into <li> when needed ([ec2ec1b](https://github.com/zopaUK/react-components/commit/ec2ec1b58c3abb3789e12708f17529e86899b624))
+
 ### [4.43.7](https://github.com/zopaUK/react-components/compare/v4.43.6...v4.43.7) (2021-06-11)
 
 
