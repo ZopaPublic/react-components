@@ -13,13 +13,9 @@ interface ProductTemplateCardProps {
 const StyledCard = styled(Card)`
   @media (max-width: ${grid.breakpoints.m}px) {
     border-radius: 0;
-    box-shadow: none;
     border: none;
-
-    &:last-of-type {
-      box-shadow: 0 0 1px 0 ${colors.greyLight};
-      border-bottom: 1px solid ${colors.greyLighter};
-    }
+    box-shadow: 0 0 1px 0 ${colors.greyLight};
+    border-bottom: 1px solid ${colors.greyLighter};
   }
 `;
 
