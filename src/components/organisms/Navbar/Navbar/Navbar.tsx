@@ -281,6 +281,11 @@ const NavItemsWrapper = styled.ul`
   }
 `;
 
+const ActionWrapper = styled.li`
+  list-style: none;
+  display: inline;
+`;
+
 export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...rest} {...props}>
     {label}
@@ -343,7 +348,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
               </LogoContainer>
               <NavbarLinksListContainer>
                 <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
-                {withCTA && cta}
+                {withCTA && <ActionWrapper>{cta}</ActionWrapper>}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
