@@ -11,7 +11,7 @@ interface ProductTemplateHeaderProps {
   onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }
 
-const ProductTemplateHeaderContainer = styled.div`
+const ProductTemplateHeaderContainer = styled.section`
   position: relative;
   min-height: 30px;
 `;

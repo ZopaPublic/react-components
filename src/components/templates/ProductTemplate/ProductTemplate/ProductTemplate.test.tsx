@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, screen, render } from '@testing-library/react';
 import ProductTemplate from '..';
+import axe from '../../../../../axe-helper';
 
 describe('<ProductTemplate />', () => {
   it('renders with all props and content', () => {
@@ -20,6 +21,24 @@ describe('<ProductTemplate />', () => {
     expect(container).toMatchSnapshot();
     fireEvent.click(screen.getByLabelText('Back'));
     expect(mockOnBackPressed).toHaveBeenCalled();
+  });
+
+  it.only('renders with no a11y violations', async () => {
+    const mockOnBackPressed = jest.fn();
+    const { container } = render(
+      <ProductTemplate
+        title="Product title"
+        subtitle="Product subtitle"
+        prevStep="prevStep"
+        onBackPressed={mockOnBackPressed}
+        progress={{ currentStep: 2, totalSteps: 4 }}
+        contentWidth={10}
+      >
+        <ProductTemplate.Card>This is the body of the card</ProductTemplate.Card>
+      </ProductTemplate>,
+    );
+    const results = await axe(container.innerHTML);
+    expect(results).toHaveNoViolations();
   });
 
   it('renders without ProductTemplateHeader if no prevStep, onBackPressed or progress props supplied', () => {

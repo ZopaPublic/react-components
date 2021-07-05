@@ -151,7 +151,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0 mx-4 m:mx-0 mb-6"
     data-automation="ZA.ProductTemplateHeader"
   >
@@ -210,6 +210,6 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

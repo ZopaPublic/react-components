@@ -1,3 +1,47 @@
+### [4.43.8](https://github.com/zopaUK/react-components/compare/v4.43.7...v4.43.8) (2021-06-28)
+
+
+### Bug Fixes
+
+* **navbar:** wrap cta into <li> when needed ([ec2ec1b](https://github.com/zopaUK/react-components/commit/ec2ec1b58c3abb3789e12708f17529e86899b624))
+
+### [4.43.7](https://github.com/zopaUK/react-components/compare/v4.43.6...v4.43.7) (2021-06-11)
+
+
+### Bug Fixes
+
+* **a11y:** accordion needs tab index -1 when aria hidden ([5c507e2](https://github.com/zopaUK/react-components/commit/5c507e21e89502ed0fa2b633640a8e72c4efcebf))
+
+### [4.43.6](https://github.com/zopaUK/react-components/compare/v4.43.5...v4.43.6) (2021-06-11)
+
+
+### Bug Fixes
+
+* **landmarks:** remove main landmark from product template ([d170523](https://github.com/zopaUK/react-components/commit/d170523f7965ded58c6a4917bf2ff0dc54a6d3a9))
+
+### [4.43.5](https://github.com/zopaUK/react-components/compare/v4.43.4...v4.43.5) (2021-06-11)
+
+
+### Bug Fixes
+
+* **producttemplate:** add <main> landmark to the product template ([c658546](https://github.com/zopaUK/react-components/commit/c658546e99dd8ea6bec5cfd2f0ad8944441e47bd))
+* **producttemplate:** add section landmark ([cf26669](https://github.com/zopaUK/react-components/commit/cf266693ebb5cbd8361fc5fd8b29763a35befb0c)), closes [#685](https://github.com/zopaUK/react-components/issues/685)
+* **producttemplate:** fix snapshot test ([33d8197](https://github.com/zopaUK/react-components/commit/33d8197910d410a984e2b9e2aa8475065f92591d))
+
+### [4.43.4](https://github.com/zopaUK/react-components/compare/v4.43.3...v4.43.4) (2021-05-27)
+
+
+### Bug Fixes
+
+* **ci:** fix release ci ([a74ab75](https://github.com/zopaUK/react-components/commit/a74ab75b9ca7425feb34f13fc50a5c049b827e80))
+* **ci:** fix release ci ([d969485](https://github.com/zopaUK/react-components/commit/d969485002c5d56a4d7e4ca86d6b11b0f3a70e76))
+* **navbar:** fix tests ([e6c646c](https://github.com/zopaUK/react-components/commit/e6c646c0033bed5e3a0916f9ee0e38eab3cd6f64))
+* **navbar:** fix tests ([aaf98bd](https://github.com/zopaUK/react-components/commit/aaf98bde27790e51a834d2601eafd1dc58d58a9d))
+* **navbar:** make navbar have no a11y violations ([60cd3db](https://github.com/zopaUK/react-components/commit/60cd3db41f328dbdb9283dc1abc55522b436962a))
+* **navbar:** only render menu if open ([79be792](https://github.com/zopaUK/react-components/commit/79be792ad1eae2e5f3085e434d8e2ae31f1d9795))
+* **navbar:** remove landmark inside of landmark ([7bda7d8](https://github.com/zopaUK/react-components/commit/7bda7d82de09bc5294a13ec9132bf6403858c9be))
+* **navbar:** remove ul that's a direct child of a ul ([33d92a5](https://github.com/zopaUK/react-components/commit/33d92a531d60c56cba8f21ba1c94dea9d3c6c194))
+
 ### [4.43.3](https://github.com/zopaUK/react-components/compare/v4.43.2...v4.43.3) (2021-05-07)
 
 

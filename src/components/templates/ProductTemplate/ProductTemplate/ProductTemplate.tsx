@@ -23,9 +23,9 @@ export interface ProductTemplateProps {
 
 function overlayElementAbove(marginTop: number) {
   return `
-    margin-top: -${marginTop - 24}px; 
+    margin-top: -${marginTop - 24}px;
     @media (min-width: ${grid.breakpoints.m}px) {
-      margin-top: -${marginTop}px; 
+      margin-top: -${marginTop}px;
     }
     `;
 }
