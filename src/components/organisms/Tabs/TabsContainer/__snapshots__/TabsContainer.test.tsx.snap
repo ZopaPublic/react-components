@@ -150,10 +150,13 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
       class="c1"
     >
       <button
+        activetab="pineapple"
         aria-controls="pineapple-content"
         aria-expanded="true"
-        class="c2 c3 py-2 sc-bXGyLb c3 py-2"
+        class="c2 c3 py-2"
         id="pineapple"
+        styling="link"
+        tabid="pineapple"
       >
         🍍 Pineapple
       </button>
@@ -162,10 +165,13 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
       class="c1"
     >
       <button
+        activetab="pineapple"
         aria-controls="kiwi-content"
         aria-expanded="false"
-        class="c2 c4 py-2 sc-bXGyLb c4 py-2"
+        class="c2 c4 py-2"
         id="kiwi"
+        styling="link"
+        tabid="kiwi"
       >
         🥝 Kiwi
       </button>
@@ -174,10 +180,13 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
       class="c1"
     >
       <button
+        activetab="pineapple"
         aria-controls="watermelon-content"
         aria-expanded="false"
-        class="c2 c4 py-2 sc-bXGyLb c4 py-2"
+        class="c2 c4 py-2"
         id="watermelon"
+        styling="link"
+        tabid="watermelon"
       >
         🍉 Watermelon
       </button>
