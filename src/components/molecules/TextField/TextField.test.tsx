@@ -6,6 +6,9 @@ import TextField from './TextField';
 describe('<TextField />', () => {
   it('renders the component with no a11y violations', async () => {
     const { container } = render(<TextField name="test1" />);
+    const { getComputedStyle } = window;
+    // Fix warning in console
+    window.getComputedStyle = (elt) => getComputedStyle(elt);
     const results = await axe(container.innerHTML);
 
     expect(container.firstChild).toMatchSnapshot();

@@ -145,6 +145,7 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
         <button
           class="c4"
           disabled=""
+          styling="link"
         >
           Copied
         </button>
