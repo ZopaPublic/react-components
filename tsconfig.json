@@ -4,7 +4,7 @@
     "module": "esnext",
     "target": "es5",
     "sourceMap": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "strict": true,
@@ -15,7 +15,8 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.test.*"]
