@@ -110,7 +110,7 @@
     "semantic-release": "17.2.3",
     "styled-components": "4.4.1",
     "typescript": "3.9.6",
-    "webpack": "4.42.0",
+    "webpack": "4.x",
     "webpack-dev-server": "3.11.0"
   },
   "browserslist": [
