@@ -1,3 +1,10 @@
+### [4.43.10](https://github.com/zopaUK/react-components/compare/v4.43.9...v4.43.10) (2021-07-07)
+
+
+### Bug Fixes
+
+* **warnings:** fix warnings in components ([5ba1992](https://github.com/zopaUK/react-components/commit/5ba1992737f907bf9bc7d7af5cf88fe85102859a))
+
 ### [4.43.9](https://github.com/zopaUK/react-components/compare/v4.43.8...v4.43.9) (2021-07-07)
 
 
