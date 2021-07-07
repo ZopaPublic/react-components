@@ -28,7 +28,7 @@
     "format:fix": "pnpm format --write",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "pnpm lint --fix",
-    "typecheck": "tsc --noEmit --types node,jest",
+    "typecheck": "tsc --noEmit",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {

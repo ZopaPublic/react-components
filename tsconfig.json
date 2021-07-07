@@ -16,7 +16,8 @@
     "noEmit": true,
     "isolatedModules": true,
     "downlevelIteration": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
