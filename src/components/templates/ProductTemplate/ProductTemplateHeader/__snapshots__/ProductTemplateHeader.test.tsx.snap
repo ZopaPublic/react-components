@@ -163,7 +163,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
         aria-label="Back"
         class="c2 c3"
         color="#3B46C4"
-        href="/prevStep"
+        href="/"
       >
         <svg
           aria-hidden="true"
