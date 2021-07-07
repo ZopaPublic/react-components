@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.11.1
-  '@babel/runtime': 7.10.4
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
   '@fortawesome/fontawesome-svg-core': ^1.2.30
@@ -96,7 +95,6 @@ dependencies:
 
 devDependencies:
   '@babel/core': 7.12.3
-  '@babel/runtime': 7.10.4
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
   '@fortawesome/free-solid-svg-icons': 5.13.1
