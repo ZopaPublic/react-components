@@ -47,7 +47,6 @@ exports[`<Button /> renders as "link" 1`] = `
 
 <button
   class="c0"
-  styling="link"
 >
   Secondary
 </button>
@@ -100,7 +99,6 @@ exports[`<Button /> renders as "secondary" 1`] = `
 
 <button
   class="c0"
-  styling="secondary"
 >
   Secondary
 </button>
@@ -148,7 +146,6 @@ exports[`<Button /> renders disabled 1`] = `
 <button
   class="c0"
   disabled=""
-  styling="primary"
 >
   Secondary
 </button>
@@ -194,7 +191,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 <button
   class="c0"
   disabled=""
-  styling="primary"
 >
   <img
     aria-label="loading spinner"
@@ -247,7 +243,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 <button
   class="c0"
   disabled=""
-  styling="secondary"
 >
   <img
     aria-label="loading spinner"
@@ -300,7 +295,6 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
 <button
   class="c0"
   disabled=""
-  styling="secondary"
 >
   <img
     aria-label="loading spinner"
@@ -363,7 +357,6 @@ exports[`<Button /> renders wide 1`] = `
 
 <button
   class="c0"
-  styling="primary"
 >
   Secondary
 </button>
@@ -417,7 +410,6 @@ exports[`<Button /> renders with no a11y violations 1`] = `
 
 <button
   class="c0"
-  styling="primary"
 >
   Primary
 </button>

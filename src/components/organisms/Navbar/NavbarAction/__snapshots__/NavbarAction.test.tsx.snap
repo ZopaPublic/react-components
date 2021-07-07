@@ -80,8 +80,7 @@ exports[`<Navbar /> should render component with default props 1`] = `
 
 <div>
   <button
-    class="c0 c1"
-    styling="link"
+    class="c0 c1 sc-htoDjs c1"
   >
     <div
       class="c2"
