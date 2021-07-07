@@ -1,12 +1,15 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
   ],
   parserOptions: {
+    project: ['tsconfig.json'],
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
@@ -27,15 +30,10 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      {
-        vars: 'all',
-        args: 'after-used',
-        ignoreRestSiblings: true, // to be able to omit some props when destructuring
-        varsIgnorePattern: 'component', // "component" is used for testing and it's used for testing
-      },
-    ],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars-experimental': 'error',
     // -- React
     'react/display-name': 'off',
     'react/no-unescaped-entities': 'off', // TODO: needs research

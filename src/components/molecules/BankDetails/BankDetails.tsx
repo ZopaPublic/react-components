@@ -24,12 +24,12 @@ const ItemWrapper = styled.div`
   &:last-of-type {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 0px 1px 0px 0px ${colors.greyLight};
+    box-shadow: 0 1px 0 0 ${colors.greyLight};
   }
 `;
 
-const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText, className, ...props }) => {
-  const [isCopied, setCopied] = useClipboard(copyText ?? '', {
+const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText = '', className, ...props }) => {
+  const [isCopied, setCopied] = useClipboard(copyText, {
     successDuration: 2000,
   });
 

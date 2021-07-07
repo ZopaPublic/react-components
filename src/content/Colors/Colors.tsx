@@ -67,15 +67,15 @@ export default function ColorsComponent({ variant }: ColorsProps) {
         const colorName = colorKey as ColorVariants;
         const actualColor = colorName === 'action' ? `#4F5AD8 to ${colors.actionPlain}` : colors[colorName];
         return (
-          <>
-            <Color key={colorKey} color={colors[colorName]} colorName={colorName}>
+          <React.Fragment key={colorKey}>
+            <Color color={colors[colorName]} colorName={colorName}>
               <p>
                 {colorName}
                 <br />
                 {actualColor}
               </p>
             </Color>
-          </>
+          </React.Fragment>
         );
       })}
     </ColorsWrapper>
