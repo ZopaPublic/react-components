@@ -7,8 +7,9 @@ import axe from '../../../../axe-helper';
 
 const mockFn = jest.fn();
 let mockIsCopied = false;
+
 jest.mock('react-use-clipboard', () => {
-  return jest.fn(() => [mockIsCopied, mockFn]);
+  return () => [mockIsCopied, mockFn];
 });
 
 describe('<BankDetails />', () => {
