@@ -65,7 +65,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   display: -ms-flexbox;
   display: flex;
   line-height: 1.4;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   color: #2C3236;
   padding: 14px 16px;
@@ -77,7 +77,10 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   border-radius: 8px;
   position: relative;
   margin-bottom: 0;
-  text-align: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c8:before {
@@ -346,7 +349,10 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   border-radius: 8px;
   position: relative;
   margin-bottom: 0;
-  text-align: left;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
 }
 
 .c8:before {
