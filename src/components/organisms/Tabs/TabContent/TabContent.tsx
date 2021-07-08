@@ -10,6 +10,7 @@ interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
 interface TabContentStyleProps {
   activeTab: string;
 }
+
 const ContentContainer = styled.div<TabContentStyleProps>`
   display: none;
   &[id="${({ activeTab }) => `${activeTab}-content`}"]{

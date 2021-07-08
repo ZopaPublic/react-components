@@ -1,5 +1,6 @@
 # NPM #
 /node_modules
+.pnpm-debug.log
 
 # Used to test the build process
 styleguide/*

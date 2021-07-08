@@ -1,3 +1,7 @@
+# Workarround netlify with pnpm
+# See: https://github.com/netlify/build/issues/1633
+
+[build]
+  command = "./etc/netlify/netlify.sh"
 [build.environment]
-  # See https://community.netlify.com/t/using-pnpm-and-pnpm-workspaces/2759
-  NPM_FLAGS="--prefix=/dev/null"
+  NPM_FLAGS="--prefix=./etc/netlify/empty-project/"
