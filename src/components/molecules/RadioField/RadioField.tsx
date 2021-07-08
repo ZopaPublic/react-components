@@ -38,7 +38,7 @@ const FieldContainer = styled(SizedContainer)`
 const Label = styled(InputLabel)<InputStatus>`
   display: flex;
   line-height: 1.4;
-  font-weight: ${typography.weights.regular};
+  font-weight: ${(props) => (props.hideControl ? typography.weights.bold : typography.weights.regular)};
   font-size: ${typography.sizes.text.body};
   color: ${colors.greyDarkest};
   padding: 14px 16px;
@@ -48,7 +48,7 @@ const Label = styled(InputLabel)<InputStatus>`
   border-radius: 8px;
   position: relative;
   margin-bottom: 0;
-  text-align: left;
+  justify-content: ${(props) => (props.hideControl ? `center` : `left`)};
   &:before {
     content: '';
     flex-shrink: 0;
@@ -168,7 +168,7 @@ const RadioField = ({
         type="radio"
         {...rest}
       />
-      <Label htmlFor={id} hasError={hasError} isValid={isValid}>
+      <Label htmlFor={id} hasError={hasError} isValid={isValid} hideControl={hideControl}>
         {label}
       </Label>
     </FieldContainer>
