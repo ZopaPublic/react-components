@@ -10,8 +10,8 @@ describe('useViewport', () => {
   const origHeight = global.innerHeight;
 
   beforeEach(() => {
-    global.innerWidth = origWidth;
-    global.innerHeight = origHeight;
+    global.innerWidth! = origWidth;
+    global.innerHeight! = origHeight;
   });
 
   it('returns the viewport size when called', () => {
@@ -35,8 +35,8 @@ describe('useViewport', () => {
     expect(result.current.height).toEqual(origHeight);
 
     act(() => {
-      global.innerWidth = expected.width;
-      global.innerHeight = expected.height;
+      global.innerWidth! = expected.width;
+      global.innerHeight! = expected.height;
 
       fireEvent(window, new Event('resize'));
     });
@@ -66,7 +66,7 @@ describe('useViewport', () => {
         </>,
       );
 
-      const resizeListeners = filterListeners(window.addEventListener.mock.calls);
+      const resizeListeners = filterListeners((window.addEventListener as jest.Mock).mock.calls);
 
       expect(resizeListeners.length).toEqual(2);
     });
@@ -79,17 +79,17 @@ describe('useViewport', () => {
         </ViewportProvider>,
       );
 
-      const resizeListeners = filterListeners(window.addEventListener.mock.calls);
+      const resizeListeners = filterListeners((window.addEventListener as jest.Mock).mock.calls);
 
       expect(resizeListeners.length).toEqual(1);
     });
 
-    function filterListeners(calls) {
+    function filterListeners(calls: any[]) {
       return calls.filter(([eventType]) => eventType === 'resize');
     }
 
     function Component() {
-      const { width } = useViewport();
+      const { width = 0 } = useViewport();
       return <Text size="lead">{width > 500 ? '🍅 Tomato' : '🥔 Potato'}</Text>;
     }
   });

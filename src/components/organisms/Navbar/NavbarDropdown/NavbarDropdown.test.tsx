@@ -8,7 +8,7 @@ describe('<NavbarDropdown />', () => {
     { label: 'one', href: '#' },
     { label: 'two', href: '#' },
   ];
-  const renderItem = ({ item: { label, href }, getItemProps }) => (
+  const renderItem = ({ item: { label, href }, getItemProps }: any) => (
     <a href={href} {...getItemProps()}>
       {label}
     </a>
