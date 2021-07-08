@@ -30,7 +30,7 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, se
     <>
       {links &&
         links.map((item: NavigationItem, index: number) =>
-          !!item.children ? (
+          item.children ? (
             <NavbarDropdown
               key={`dropdown-${index}`}
               id={`navbar-dropdown-${index}`}

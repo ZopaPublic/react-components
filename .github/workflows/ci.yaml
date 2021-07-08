@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        
+        with:
+          persist-credentials: false
       - name: Setup node
         uses: actions/setup-node@v2
         with:
@@ -27,19 +28,14 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.0.2
+          version: 6.9.1
           run_install: true
           
       - name: Run typecheck
         run: pnpm typecheck
-        
+
       - name: Run tests
-        uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          test-command: 'pnpm test -- --watchAll=false --ci'
-          coverage-comment: false
+        run: pnpm test
           
       - name: Run linter
         uses: reviewdog/action-eslint@v1
@@ -53,5 +49,6 @@ jobs:
       - name: Release
         run: pnpm release
         env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
