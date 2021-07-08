@@ -819,7 +819,8 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                 class="c16"
               >
                 <button
-                  class="c17 c18 sc-htoDjs c18"
+                  class="c17 c18"
+                  styling="link"
                 >
                   <div
                     class="c19"
@@ -858,8 +859,9 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
           >
             <button
               aria-label="Navigation"
-              class="c22 c23 sc-exAgwC sc-cQFLBn c23"
+              class="c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -909,7 +911,8 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
               />
             </div>
             <button
-              class="c17 c18 sc-htoDjs c18"
+              class="c17 c18"
+              styling="link"
             >
               <div
                 class="c19"
@@ -1718,7 +1721,8 @@ exports[`<Navbar /> should render large device navigation with default props and
                 class="c16"
               >
                 <button
-                  class="c17 c18 sc-htoDjs c18"
+                  class="c17 c18"
+                  styling="primary"
                 >
                   <div
                     class="c19"
@@ -1757,8 +1761,9 @@ exports[`<Navbar /> should render large device navigation with default props and
           >
             <button
               aria-label="Navigation"
-              class="c17 c22 sc-exAgwC sc-cQFLBn c22"
+              class="c17 c22"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -1805,7 +1810,8 @@ exports[`<Navbar /> should render large device navigation with default props and
               </svg>
             </div>
             <button
-              class="c17 c18 sc-htoDjs c18"
+              class="c17 c18"
+              styling="primary"
             >
               <div
                 class="c19"
@@ -2658,7 +2664,8 @@ exports[`<Navbar /> should render small device navigation with default props wit
                 class="c16"
               >
                 <button
-                  class="c17 c18 sc-htoDjs c18"
+                  class="c17 c18"
+                  styling="link"
                 >
                   <div
                     class="c19"
@@ -2697,8 +2704,9 @@ exports[`<Navbar /> should render small device navigation with default props wit
           >
             <button
               aria-label="Navigation"
-              class="c22 c23 sc-exAgwC sc-cQFLBn c23"
+              class="c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -2745,7 +2753,8 @@ exports[`<Navbar /> should render small device navigation with default props wit
               </svg>
             </div>
             <button
-              class="c17 c18 sc-htoDjs c18"
+              class="c17 c18"
+              styling="link"
             >
               <div
                 class="c19"
@@ -3610,7 +3619,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 class="c16"
               >
                 <button
-                  class="c17 c18 sc-htoDjs c18"
+                  class="c17 c18"
+                  styling="primary"
                 >
                   <div
                     class="c19"
@@ -3649,8 +3659,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
           >
             <button
               aria-label="Navigation"
-              class="c17 c22 sc-exAgwC sc-cQFLBn c22"
+              class="c17 c22"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -3697,7 +3708,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </div>
             <button
-              class="c17 c18 sc-htoDjs c18"
+              class="c17 c18"
+              styling="primary"
             >
               <div
                 class="c19"

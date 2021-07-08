@@ -15,7 +15,12 @@ interface StyledButtonProps {
   tabId: string;
 }
 
-const StyledButton = styled(Button).attrs({ className: 'py-2' })<StyledButtonProps>`
+// This wrapper is to prevent html attribute warnings. See: https://styled-components.com/docs/faqs#why-am-i-getting-html-attribute-warnings
+const ButtonWrapper = ({ activeTab, tabId, ...props }: StyledButtonProps & ButtonProps) => (
+  <Button className="py-2" {...props} />
+);
+
+const StyledButton = styled(ButtonWrapper)`
   box-shadow: inset 0 12px ${colors.greyLightest}, inset 0 -12px ${colors.greyLightest}, inset 1px 0 ${colors.greyLight};
   flex-grow: 1;
   width: 100%;
