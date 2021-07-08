@@ -1,3 +1,10 @@
+### [4.43.12](https://github.com/zopaUK/react-components/compare/v4.43.11...v4.43.12) (2021-07-08)
+
+
+### Bug Fixes
+
+* **producttemplate.card:** bottom border visible on all cards mobile ([241014d](https://github.com/zopaUK/react-components/commit/241014d6093ac822fbe0c174238c12ab9248ee4c))
+
 ### [4.43.11](https://github.com/zopaUK/react-components/compare/v4.43.10...v4.43.11) (2021-07-08)
 
 
