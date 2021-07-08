@@ -1,3 +1,10 @@
+### [4.43.11](https://github.com/zopaUK/react-components/compare/v4.43.10...v4.43.11) (2021-07-08)
+
+
+### Bug Fixes
+
+* **button:** fix loading prop warning ([165d67b](https://github.com/zopaUK/react-components/commit/165d67b1ef652d919c2dddccbaad0b7d3231a800))
+
 ### [4.43.10](https://github.com/zopaUK/react-components/compare/v4.43.9...v4.43.10) (2021-07-07)
 
 
