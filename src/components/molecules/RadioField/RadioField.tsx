@@ -35,7 +35,11 @@ const FieldContainer = styled(SizedContainer)`
   }
 `;
 
-const Label = styled(InputLabel)<InputStatus>`
+interface LabelProps extends InputStatus {
+  hideControl?: boolean;
+}
+
+const Label = styled(InputLabel)<LabelProps>`
   display: flex;
   line-height: 1.4;
   font-weight: ${(props) => (props.hideControl ? typography.weights.bold : typography.weights.regular)};
