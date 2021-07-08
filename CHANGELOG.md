@@ -1,3 +1,11 @@
+### [4.43.13](https://github.com/zopaUK/react-components/compare/v4.43.12...v4.43.13) (2021-07-08)
+
+
+### Bug Fixes
+
+* **radiofield:** center and bold text when hideControl ([a5fe130](https://github.com/zopaUK/react-components/commit/a5fe130848e9d173c518ab2b56389d5b735fd870))
+* **radiofiled:** fix types ([2a68d44](https://github.com/zopaUK/react-components/commit/2a68d4450a7935816da6a3297ca4484dd4c15327))
+
 ### [4.43.12](https://github.com/zopaUK/react-components/compare/v4.43.11...v4.43.12) (2021-07-08)
 
 
