@@ -1,3 +1,32 @@
+### [4.43.13](https://github.com/zopaUK/react-components/compare/v4.43.12...v4.43.13) (2021-07-08)
+
+
+### Bug Fixes
+
+* **radiofield:** center and bold text when hideControl ([a5fe130](https://github.com/zopaUK/react-components/commit/a5fe130848e9d173c518ab2b56389d5b735fd870))
+* **radiofiled:** fix types ([2a68d44](https://github.com/zopaUK/react-components/commit/2a68d4450a7935816da6a3297ca4484dd4c15327))
+
+### [4.43.12](https://github.com/zopaUK/react-components/compare/v4.43.11...v4.43.12) (2021-07-08)
+
+
+### Bug Fixes
+
+* **producttemplate.card:** bottom border visible on all cards mobile ([241014d](https://github.com/zopaUK/react-components/commit/241014d6093ac822fbe0c174238c12ab9248ee4c))
+
+### [4.43.11](https://github.com/zopaUK/react-components/compare/v4.43.10...v4.43.11) (2021-07-08)
+
+
+### Bug Fixes
+
+* **button:** fix loading prop warning ([165d67b](https://github.com/zopaUK/react-components/commit/165d67b1ef652d919c2dddccbaad0b7d3231a800))
+
+### [4.43.10](https://github.com/zopaUK/react-components/compare/v4.43.9...v4.43.10) (2021-07-07)
+
+
+### Bug Fixes
+
+* **warnings:** fix warnings in components ([5ba1992](https://github.com/zopaUK/react-components/commit/5ba1992737f907bf9bc7d7af5cf88fe85102859a))
+
 ### [4.43.9](https://github.com/zopaUK/react-components/compare/v4.43.8...v4.43.9) (2021-07-07)
 
 

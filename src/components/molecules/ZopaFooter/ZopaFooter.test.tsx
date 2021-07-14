@@ -2,12 +2,12 @@ import axe from '../../../../axe-helper';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import ZopaFooter from './ZopaFooter';
-import { mockDate, IMockDate } from '../../../helpers/test/date';
+import { mockDate, MockDate } from '../../../helpers/test/date';
 
 const fixedDate = new Date('2025-02-28T09:39:59');
 
 describe('<ZopaFooter />', () => {
-  let date: IMockDate;
+  let date: MockDate;
 
   beforeEach(() => {
     date = mockDate(new Date(fixedDate));

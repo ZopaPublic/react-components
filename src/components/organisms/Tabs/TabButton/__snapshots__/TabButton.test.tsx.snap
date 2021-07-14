@@ -70,13 +70,11 @@ exports[`<TabButton /> renders the component with no a11y violations 1`] = `
 
 <div>
   <button
-    activetab=""
     aria-controls="pineapple-content"
     aria-expanded="false"
-    class="c0 c1 py-2"
+    class="c0 c1"
     id="pineapple"
     styling="link"
-    tabid="pineapple"
   >
     🍍 Pineapple
   </button>
