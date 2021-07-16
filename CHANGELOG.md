@@ -1,3 +1,10 @@
+### [4.43.14](https://github.com/zopaUK/react-components/compare/v4.43.13...v4.43.14) (2021-07-16)
+
+
+### Bug Fixes
+
+* **babel:** add @babel/runtime again ([4af7437](https://github.com/zopaUK/react-components/commit/4af7437379f3a644d7c05cf6bd5639cf458f786f))
+
 ### [4.43.13](https://github.com/zopaUK/react-components/compare/v4.43.12...v4.43.13) (2021-07-08)
 
 
