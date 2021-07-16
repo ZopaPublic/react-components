@@ -32,6 +32,7 @@
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
+    "@babel/runtime": "^7.14.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippyjs/react": "^4.1.0",

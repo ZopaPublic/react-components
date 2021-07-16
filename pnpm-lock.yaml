@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.11.1
+  '@babel/runtime': ^7.14.6
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
   '@fortawesome/fontawesome-svg-core': ^1.2.30
@@ -73,6 +74,7 @@ specifiers:
   webpack-dev-server: 3.11.1
 
 dependencies:
+  '@babel/runtime': 7.14.6
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/react-fontawesome': 0.1.11_22b5ff5cd64cfd006c7aaa46b26f0405
   '@tippyjs/react': 4.2.0_react-dom@16.13.1+react@16.13.1
@@ -3364,7 +3366,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.7
-    dev: true
 
   /@babel/runtime/7.9.0:
     resolution: {integrity: sha512-cTIudHnzuWLS56ik4DnRnqqNf8MkdUzV4iFFI1h7Jo9xvrpQROYaAnaSd2mHLQAzzZAPfATynX5ord6YlNYNMA==}
