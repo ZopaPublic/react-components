@@ -1,3 +1,11 @@
+### [4.43.15](https://github.com/zopaUK/react-components/compare/v4.43.14...v4.43.15) (2021-07-27)
+
+
+### Bug Fixes
+
+* **accordionsection:** add transition ([a396613](https://github.com/zopaUK/react-components/commit/a39661311b99cb31e8a6b1fd16ad86739eeca7e9))
+* **accordionsection:** add visibility to content ([266f12b](https://github.com/zopaUK/react-components/commit/266f12b85202556e11f3b3cb5e9bbe4f5839c4ca))
+
 ### [4.43.14](https://github.com/zopaUK/react-components/compare/v4.43.13...v4.43.14) (2021-07-16)
 
 
