@@ -383,7 +383,8 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0px: background:transparent;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .c23:hover:not(:disabled) {
@@ -1287,7 +1288,8 @@ exports[`<Navbar /> should render large device navigation with default props and
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0px: background:transparent;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .c22:hover:not(:disabled) {
@@ -2229,7 +2231,8 @@ exports[`<Navbar /> should render small device navigation with default props wit
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0px: background:transparent;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .c23:hover:not(:disabled) {
@@ -3147,7 +3150,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 0px: background:transparent;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .c22:hover:not(:disabled) {
