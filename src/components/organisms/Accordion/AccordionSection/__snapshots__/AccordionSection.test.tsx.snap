@@ -3,6 +3,8 @@
 exports[`<AccordionSection /> renders the component with no a11y violations 1`] = `
 .c0 {
   visibility: hidden;
+  -webkit-transition: visibility 200ms;
+  transition: visibility 200ms;
 }
 
 <div

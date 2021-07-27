@@ -10,6 +10,7 @@ interface AccordionSectionProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const AccordionContent = styled.div<{ visible: boolean }>`
   visibility: ${({ visible }) => (visible ? 'hidden' : 'visible')};
+  transition: visibility 200ms;
 `;
 
 const AccordionSection: FC<AccordionSectionProps> = ({ children, id, index, ...rest }) => {
