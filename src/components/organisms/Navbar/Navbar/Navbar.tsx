@@ -221,7 +221,7 @@ const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
   font-size: 24px;
   justify-content: center;
   align-items: center;
-  border-radius: 0px:
+  border-radius: 0px;
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
