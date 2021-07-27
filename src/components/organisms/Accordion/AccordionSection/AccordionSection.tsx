@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import styled from 'styled-components';
 
 import { useAccordionContext } from '../context';
 
@@ -7,14 +8,23 @@ interface AccordionSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   index: number;
 }
 
+const AccordionContent = styled.div<{ visible: boolean }>`
+  visibility: ${({ visible }) => (visible ? 'hidden' : 'visible')};
+  transition: visibility 200ms;
+`;
+
 const AccordionSection: FC<AccordionSectionProps> = ({ children, id, index, ...rest }) => {
   const { getSectionProps } = useAccordionContext();
   const { ref, ...sectionPropsRest } = getSectionProps(id, index);
   return (
     <div {...sectionPropsRest} {...rest}>
-      <div ref={ref} tabIndex={sectionPropsRest['aria-hidden'] ? -1 : undefined}>
+      <AccordionContent
+        ref={ref}
+        tabIndex={sectionPropsRest['aria-hidden'] ? -1 : undefined}
+        visible={sectionPropsRest['aria-hidden']}
+      >
         {children}
-      </div>
+      </AccordionContent>
     </div>
   );
 };
