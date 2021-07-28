@@ -1,3 +1,11 @@
+### [4.43.16](https://github.com/zopaUK/react-components/compare/v4.43.15...v4.43.16) (2021-07-28)
+
+
+### Bug Fixes
+
+* **navbar:** hambureger icon has 8px border radius ([f4f09e9](https://github.com/zopaUK/react-components/commit/f4f09e970c4078b1d088dafce1f8343189a7e76d))
+* **navbar:** hamburger ([0e80e12](https://github.com/zopaUK/react-components/commit/0e80e125f2f6d5bd579d4670894cb0892a5d0aa7))
+
 ### [4.43.15](https://github.com/zopaUK/react-components/compare/v4.43.14...v4.43.15) (2021-07-27)
 
 
