@@ -221,11 +221,11 @@ const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  border-radius: 0;
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background: ${({ open }) => (open ? colors.white : 'transparent')};
-  border-radius: ${({ open }) => (open ? 0 : '8px')};
   &:hover:not(:disabled) {
     background: ${({ open }) => (open ? colors.white : 'transparent')};
   }

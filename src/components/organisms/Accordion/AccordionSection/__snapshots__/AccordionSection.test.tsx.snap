@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccordionSection /> renders the component with no a11y violations 1`] = `
+.c0 {
+  visibility: hidden;
+  -webkit-transition: visibility 200ms;
+  transition: visibility 200ms;
+}
+
 <div
   aria-hidden="true"
   aria-labelledby="one"
@@ -10,6 +16,7 @@ exports[`<AccordionSection /> renders the component with no a11y violations 1`] 
   style="overflow: hidden; transition: height 200ms linear; height: 0px;"
 >
   <div
+    class="c0"
     tabindex="-1"
   >
     Content
