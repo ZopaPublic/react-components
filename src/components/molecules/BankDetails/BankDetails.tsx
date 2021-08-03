@@ -28,20 +28,39 @@ const ItemWrapper = styled.div`
   }
 `;
 
+const CopyText = styled(Button)`
+  cursor: pointer;
+  padding: 8px;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: ${colors.actionDark};
+  }
+`;
+
 const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText = '', className, ...props }) => {
   const [isCopied, setCopied] = useClipboard(copyText, {
     successDuration: 2000,
   });
 
   return (
-    <ItemWrapper {...props} className={classnames('px-4 py-5', className || '')}>
+    <ItemWrapper {...props} className={classnames('pl-4 pr-2 py-5', className || '')}>
       <FlexRow justify="space-between" align="center">
         <FlexCol xs="fill">{children}</FlexCol>
         {copyText && (
           <FlexCol xs="auto">
-            <Button styling="link" disabled={isCopied} onClick={setCopied}>
+            <CopyText
+              styling="link"
+              onClick={() => {
+                if (isCopied) {
+                  return;
+                }
+                setCopied();
+              }}
+            >
               {isCopied ? 'Copied' : 'Copy'}
-            </Button>
+            </CopyText>
           </FlexCol>
         )}
       </FlexRow>
