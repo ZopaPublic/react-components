@@ -7,7 +7,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: #EFEFEF;
   color: #2C3236;
   font-size: 16px;
@@ -32,6 +32,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
 
 .c1 {
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: #818F9B;
 }
@@ -77,7 +78,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: #FFDAD8;
   color: #940700;
   font-size: 16px;
@@ -102,6 +103,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
 
 .c1 {
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: #FF4539;
 }
@@ -147,7 +149,7 @@ exports[`Alert renders with specific severity: info 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: #EFEFEF;
   color: #2C3236;
   font-size: 16px;
@@ -172,6 +174,7 @@ exports[`Alert renders with specific severity: info 1`] = `
 
 .c1 {
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: #818F9B;
 }
@@ -217,7 +220,7 @@ exports[`Alert renders with specific severity: success 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: #DDFDE5;
   color: #17592B;
   font-size: 16px;
@@ -242,6 +245,7 @@ exports[`Alert renders with specific severity: success 1`] = `
 
 .c1 {
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: #3EBC64;
 }
@@ -287,7 +291,7 @@ exports[`Alert renders with specific severity: warning 1`] = `
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: #FFECCE;
   color: #704300;
   font-size: 16px;
@@ -312,6 +316,7 @@ exports[`Alert renders with specific severity: warning 1`] = `
 
 .c1 {
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: #FF9F0A;
 }
