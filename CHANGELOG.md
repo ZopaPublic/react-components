@@ -1,3 +1,11 @@
+## [4.44.0](https://github.com/zopaUK/react-components/compare/v4.43.16...v4.44.0) (2021-08-05)
+
+
+### Features
+
+* **docs:** update wording ([116e8e1](https://github.com/zopaUK/react-components/commit/116e8e1fdf9b8c5993baa776e992d8594c677116))
+* **documentation:** add helpers for responsive functions ([de1aa47](https://github.com/zopaUK/react-components/commit/de1aa474157fd0694e50d01ba87f0ac14bcf5b8b)), closes [#726](https://github.com/zopaUK/react-components/issues/726)
+
 ### [4.43.16](https://github.com/zopaUK/react-components/compare/v4.43.15...v4.43.16) (2021-07-28)
 
 
