@@ -39,7 +39,7 @@ const Elem = styled.div`
     `}
 `;
 
-<Elem>I am blue at desktop and red at tablet</Elem>;
+<Elem>I am blue on desktop and red on tablet</Elem>;
 ```
 
 **MinMedia breakboint**
@@ -57,7 +57,7 @@ const Elem = styled.div`
     `}
 `;
 
-<Elem>I am blue at mobile and red at tablet and desktop</Elem>;
+<Elem>I am blue on mobile and red on tablet and desktop</Elem>;
 ```
 
 **MaxEqualToMedia breakboint**
@@ -75,5 +75,5 @@ const Elem = styled.div`
     `}
 `;
 
-<Elem>I am red to start with and blue at desktop and higher</Elem>;
+<Elem>I am red to start with and blue on desktop and higher</Elem>;
 ```
