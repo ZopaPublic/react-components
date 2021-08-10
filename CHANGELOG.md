@@ -1,3 +1,10 @@
+### [4.44.1](https://github.com/zopaUK/react-components/compare/v4.44.0...v4.44.1) (2021-08-10)
+
+
+### Bug Fixes
+
+* **footer:** update typo ([5fa2456](https://github.com/zopaUK/react-components/commit/5fa245641f9322fdd7f717dcab04e18b9871b87f))
+
 ## [4.44.0](https://github.com/zopaUK/react-components/compare/v4.43.16...v4.44.0) (2021-08-05)
 
 
