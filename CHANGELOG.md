@@ -1,3 +1,34 @@
+### [4.44.1](https://github.com/zopaUK/react-components/compare/v4.44.0...v4.44.1) (2021-08-10)
+
+
+### Bug Fixes
+
+* **footer:** update typo ([5fa2456](https://github.com/zopaUK/react-components/commit/5fa245641f9322fdd7f717dcab04e18b9871b87f))
+
+## [4.44.0](https://github.com/zopaUK/react-components/compare/v4.43.16...v4.44.0) (2021-08-05)
+
+
+### Features
+
+* **docs:** update wording ([116e8e1](https://github.com/zopaUK/react-components/commit/116e8e1fdf9b8c5993baa776e992d8594c677116))
+* **documentation:** add helpers for responsive functions ([de1aa47](https://github.com/zopaUK/react-components/commit/de1aa474157fd0694e50d01ba87f0ac14bcf5b8b)), closes [#726](https://github.com/zopaUK/react-components/issues/726)
+
+### [4.43.16](https://github.com/zopaUK/react-components/compare/v4.43.15...v4.43.16) (2021-07-28)
+
+
+### Bug Fixes
+
+* **navbar:** hambureger icon has 8px border radius ([f4f09e9](https://github.com/zopaUK/react-components/commit/f4f09e970c4078b1d088dafce1f8343189a7e76d))
+* **navbar:** hamburger ([0e80e12](https://github.com/zopaUK/react-components/commit/0e80e125f2f6d5bd579d4670894cb0892a5d0aa7))
+
+### [4.43.15](https://github.com/zopaUK/react-components/compare/v4.43.14...v4.43.15) (2021-07-27)
+
+
+### Bug Fixes
+
+* **accordionsection:** add transition ([a396613](https://github.com/zopaUK/react-components/commit/a39661311b99cb31e8a6b1fd16ad86739eeca7e9))
+* **accordionsection:** add visibility to content ([266f12b](https://github.com/zopaUK/react-components/commit/266f12b85202556e11f3b3cb5e9bbe4f5839c4ca))
+
 ### [4.43.14](https://github.com/zopaUK/react-components/compare/v4.43.13...v4.43.14) (2021-07-16)
 
 

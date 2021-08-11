@@ -68,7 +68,7 @@ const MAP_BY_SEVERITY: AlertElementsBySeverity = {
 const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 12px 8px 12px;
   background: ${({ severity }) => MAP_BY_SEVERITY[severity].background};
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].text};
   font-size: ${typography.sizes.text.body};
@@ -91,6 +91,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorn
 
 const IconWrapper = styled.div<{ severity: Severity }>`
   margin-right: 8px;
+  padding-top: 2px;
   font-size: 20px;
   color: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
 
