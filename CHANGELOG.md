@@ -1,3 +1,10 @@
+### [4.44.2](https://github.com/zopaUK/react-components/compare/v4.44.1...v4.44.2) (2021-08-11)
+
+
+### Bug Fixes
+
+* **zopafooter:** removing 'new products' from ZopaFooter as feelgood page no longer exists ([db1494d](https://github.com/zopaUK/react-components/commit/db1494d4449b5f95fa10362f4725300433bbca7f))
+
 ### [4.44.1](https://github.com/zopaUK/react-components/compare/v4.44.0...v4.44.1) (2021-08-10)
 
 
