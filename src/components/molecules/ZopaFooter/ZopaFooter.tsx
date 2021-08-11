@@ -72,7 +72,6 @@ const ZopaFooter = ({
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
             <li>{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
           </List>
         </FlexCol>
