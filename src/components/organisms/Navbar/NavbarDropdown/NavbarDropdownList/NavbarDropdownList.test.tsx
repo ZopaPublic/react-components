@@ -5,7 +5,11 @@ import NavbarDropdownList from './NavbarDropdownList';
 describe('NavbarDropdownList', () => {
   it('renders the component with props', () => {
     const ref = React.createRef<HTMLUListElement>();
-    const { container } = render(<NavbarDropdownList ref={ref}>list</NavbarDropdownList>);
+    const { container } = render(
+      <NavbarDropdownList ref={ref} open={true}>
+        list
+      </NavbarDropdownList>,
+    );
     expect(container.firstChild).toMatchSnapshot();
   });
 });

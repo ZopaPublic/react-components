@@ -1,18 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Carousel.Slide /> renders with no a11y violations 1`] = `
-.c0 {
+.c3 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #3B46C4;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.c3:hover,
+.c3:active {
+  color: #21247F;
+}
+
+.c3:hover svg path,
+.c3:active svg path {
+  fill: #21247F;
+}
+
+.c2 {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: px;
-  padding-left: px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 12px;
+  padding-left: 12px;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
+.c0 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: -12px;
+  margin-left: -12px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 {
   text-align: center;
   position: relative;
   opacity: 1;
@@ -20,7 +128,7 @@ exports[`<Carousel.Slide /> renders with no a11y violations 1`] = `
   min-height: 0px;
 }
 
-.c2 {
+.c8 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -35,60 +143,223 @@ exports[`<Carousel.Slide /> renders with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c0 {
+  .c2 {
     display: block;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+    max-width: 8.333333333333332%;
+  }
+}
+
+@media (min-width:576px) {
+  .c2 {
+    display: block;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+    max-width: 8.333333333333332%;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media (min-width:0px) {
+  .c4 {
+    display: block;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media (min-width:576px) {
+  .c4 {
+    display: block;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+    max-width: 83.33333333333334%;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:0px) {
+  .c6 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:576px) {
+  .c6 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
 @media (min-width:576px) {
   .c0 {
-    display: block;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: auto;
-    max-width: none;
+    max-width: 540px;
   }
 }
 
 @media (min-width:768px) {
   .c0 {
-    display: block;
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1300px) {
+  .c0 {
+    max-width: 1224px;
   }
 }
 
 <div>
   <div
-    class="c0 c1"
+    class="c0"
   >
-    <div>
-      <svg
-        aria-hidden="true"
-        class="svg-inline--fa fa-car fa-w-16 fa-lg sc-iBPRYJ m-4"
-        color="#00D9C5"
-        data-icon="car"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
-          fill="currentColor"
-        />
-      </svg>
-      <p
+    <div
+      class="c1"
+      cols="12"
+      direction="row"
+    >
+      <div
         class="c2"
-        color="#4A545E"
+        cols="12"
+        style="text-align: right;"
       >
-        We check your car and dealership so you can buy with confidence
-      </p>
+        <a
+          class="c3"
+          color="#3B46C4"
+          title="previous"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-left fa-w-10 "
+            color="#818F9B"
+            data-icon="chevron-left"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="c4"
+        cols="12"
+      >
+        <div
+          class="c0"
+        >
+          <div
+            class="c5"
+            cols="1"
+            direction="row"
+          >
+            <div
+              class="c6 c7"
+              cols="1"
+            >
+              <div>
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-car fa-w-16 fa-lg sc-iCoGMd m-4"
+                  color="#00D9C5"
+                  data-icon="car"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p
+                  class="c8"
+                  color="#4A545E"
+                >
+                  We check your car and dealership so you can buy with confidence
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c2"
+        cols="12"
+      >
+        <a
+          class="c3"
+          color="#3B46C4"
+          title="next"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-chevron-right fa-w-10 "
+            color="#818F9B"
+            data-icon="chevron-right"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </div>

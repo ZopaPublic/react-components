@@ -7,11 +7,12 @@ describe('<ProductTemplateHeader />', () => {
     const mockOnBackPressed = jest.fn();
     const { container } = render(
       <ProductTemplateHeader
-        prevStep="/prevStep"
+        prevStep="/"
         onBackPressed={mockOnBackPressed}
         progress={{ currentStep: 1, totalSteps: 2 }}
       />,
     );
+    expect(screen.getByText('Back').closest('a')).toHaveAttribute('href', '/');
     fireEvent.click(screen.getByLabelText('Back'));
     expect(mockOnBackPressed).toHaveBeenCalled();
     expect(container).toMatchSnapshot();

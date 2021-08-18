@@ -63,7 +63,7 @@ const ZopaFooter = ({
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">About Zopa</Heading>
           <List>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About Us' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About us' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/our-story`, children: 'Our story' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/board`, children: 'Meet the board' })}</li>
             <li className="mb-4">
@@ -72,7 +72,6 @@ const ZopaFooter = ({
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
             <li>{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
           </List>
         </FlexCol>

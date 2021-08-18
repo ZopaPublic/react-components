@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> should render component with all the props 1`] = `
+exports[`<Navbar /> should render component with all the props and no a11y violations 1`] = `
 .c4 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
@@ -66,7 +66,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   opacity: 0.88;
 }
 
-.c13 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -82,19 +82,19 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   padding: 12px 16px 16px;
 }
 
-.c13:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c13:active,
-.c13:hover {
+.c12:active,
+.c12:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14 {
+.c13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -120,23 +120,23 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   pointer-events: none;
 }
 
-.c14:focus {
+.c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c14:active,
-.c14:hover {
+.c13:active,
+.c13:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14:hover {
+.c13:hover {
   cursor: default;
 }
 
-.c16 {
+.c15 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -152,14 +152,14 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   padding: 12px 16px 16px;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c16:active,
-.c16:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -220,11 +220,56 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   opacity: 0.8;
 }
 
+.c22 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c22:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+.c22:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
 .c20 {
   display: block;
 }
 
-.c12 {
+.c11 {
   position: relative;
   z-index: 1;
   margin: 12px 0 12px;
@@ -238,14 +283,14 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: inline-block;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 12px;
   padding-bottom: 8px;
 }
 
-.c15:last-child {
+.c14:last-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -285,7 +330,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   transform: translateY(0%);
 }
 
-.c26 {
+.c25 {
   height: 64px;
 }
 
@@ -321,7 +366,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   right: 0;
 }
 
-.c22 {
+.c23 {
+  background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -337,38 +383,15 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c23 {
-  background-color: transparent;
+  border-radius: 0;
 }
 
 .c24 {
-  position: fixed;
-  right: 0;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 704px;
-  width: 100%;
-  padding: 40px 16px 64px;
-  background: #FFFFFF;
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  -webkit-transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  z-index: 2;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  background: transparent;
+}
+
+.c24:hover:not(:disabled) {
+  background: transparent;
 }
 
 .c1 {
@@ -379,12 +402,9 @@ exports[`<Navbar /> should render component with all the props 1`] = `
   display: block;
 }
 
-.c25 {
-  padding-left: 0;
-}
-
-.c25 > li {
-  display: block;
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -402,13 +422,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (max-width:1279px) {
-  .c13 {
+  .c12 {
     width: 100%;
   }
 }
 
 @media (min-width:1280px) {
-  .c13 {
+  .c12 {
     padding: 12px 8px;
     width: calc(100% - 16px);
     margin-left: 8px;
@@ -416,13 +436,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     border-radius: 8px;
   }
 
-  .c13:hover {
+  .c12:hover {
     background-color: #E9EAFA;
   }
 }
 
 @media (max-width:1279px) {
-  .c14 {
+  .c13 {
     width: 100%;
   }
 }
@@ -432,7 +452,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (max-width:1279px) {
-  .c16 {
+  .c15 {
     width: 100%;
   }
 }
@@ -491,7 +511,10 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c12 {
+  .c11 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -499,9 +522,17 @@ exports[`<Navbar /> should render component with all the props 1`] = `
     min-width: 240px;
     margin: 0;
     padding: 8px 0;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
   }
 
-  .c12:before {
+  .c11:before {
     content: '';
     top: 1px;
     left: 50%;
@@ -517,23 +548,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c11 {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
-    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%,-10%);
-    -ms-transform: translate(-50%,-10%);
-    transform: translate(-50%,-10%);
-  }
-}
-
-@media (min-width:1280px) {
-  .c15 {
+  .c14 {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -557,7 +572,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
 }
 
 @media (min-width:1280px) {
-  .c26 {
+  .c25 {
     height: 120px;
   }
 }
@@ -637,6 +652,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -710,107 +726,103 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   </span>
                 </a>
                 <ul
+                  aria-label="About"
                   class="c11"
                 >
-                  <ul
-                    aria-label="About"
-                    class="c12"
-                  >
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about"
-                        tabindex="-1"
-                      >
-                        About Zopa
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/our-story"
-                        tabindex="-1"
-                      >
-                        Our story
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/board"
-                        tabindex="-1"
-                      >
-                        Our board
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c14"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        tabindex="-1"
-                      >
-                        Subheading
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/leadership"
-                        tabindex="-1"
-                      >
-                        Our leadership team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/awards"
-                        tabindex="-1"
-                      >
-                        Awards
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/careers"
-                        tabindex="-1"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/press"
-                        tabindex="-1"
-                      >
-                        Press office
-                      </a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about"
+                      tabindex="-1"
+                    >
+                      About Zopa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/our-story"
+                      tabindex="-1"
+                    >
+                      Our story
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/board"
+                      tabindex="-1"
+                    >
+                      Our board
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c13"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      tabindex="-1"
+                    >
+                      Subheading
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/leadership"
+                      tabindex="-1"
+                    >
+                      Our leadership team
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/awards"
+                      tabindex="-1"
+                    >
+                      Awards
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/careers"
+                      tabindex="-1"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/press"
+                      tabindex="-1"
+                    >
+                      Press office
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li
-                class="c15"
+                class="c14"
               >
                 <a
-                  class="c7 c16"
+                  class="c7 c15"
                   color="#3B46C4"
                   data-automation="ZA.navbar-item"
                   href="/contact"
@@ -818,33 +830,38 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   Support
                 </a>
               </li>
-              <button
-                class="c17 c18 sc-fubCfw c18"
+              <li
+                class="c16"
               >
-                <div
-                  class="c19"
+                <button
+                  class="c17 c18"
+                  styling="link"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -853,10 +870,13 @@ exports[`<Navbar /> should render component with all the props 1`] = `
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
-            <span
-              class="c22 c23"
+            <button
+              aria-label="Navigation"
+              class="c22 c23 c24"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -876,7 +896,7 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                   fill="currentColor"
                 />
               </svg>
-            </span>
+            </button>
             <div
               class="c3"
             >
@@ -906,7 +926,8 @@ exports[`<Navbar /> should render component with all the props 1`] = `
               />
             </div>
             <button
-              class="c17 c18 sc-fubCfw c18"
+              class="c17 c18"
+              styling="link"
             >
               <div
                 class="c19"
@@ -932,176 +953,18 @@ exports[`<Navbar /> should render component with all the props 1`] = `
                 />
               </svg>
             </button>
-            <aside
-              class="c24"
-              height="768"
-            >
-              <ul
-                class="c25"
-              >
-                <li
-                  class="c6"
-                >
-                  <a
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="c7 c8"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="#"
-                    tabindex="0"
-                  >
-                    <span
-                      class="c9"
-                    >
-                      About
-                    </span>
-                    <span
-                      class="c10"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-chevron-down fa-w-14 "
-                        color="#818F9B"
-                        data-icon="chevron-down"
-                        data-prefix="fas"
-                        focusable="false"
-                        height="12px"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        width="12px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <ul
-                    class="c11"
-                  >
-                    <ul
-                      aria-label="About"
-                      class="c12"
-                    >
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about"
-                          tabindex="-1"
-                        >
-                          About Zopa
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/our-story"
-                          tabindex="-1"
-                        >
-                          Our story
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/board"
-                          tabindex="-1"
-                        >
-                          Our board
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c14"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          tabindex="-1"
-                        >
-                          Subheading
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/leadership"
-                          tabindex="-1"
-                        >
-                          Our leadership team
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/awards"
-                          tabindex="-1"
-                        >
-                          Awards
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/careers"
-                          tabindex="-1"
-                        >
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/press"
-                          tabindex="-1"
-                        >
-                          Press office
-                        </a>
-                      </li>
-                    </ul>
-                  </ul>
-                </li>
-                <li
-                  class="c15"
-                >
-                  <a
-                    class="c7 c16"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="/contact"
-                  >
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </aside>
           </nav>
         </div>
       </div>
     </div>
   </header>
   <div
-    class="c26"
+    class="c25"
   />
 </div>
 `;
 
-exports[`<Navbar /> should render large device navigation with default props 1`] = `
+exports[`<Navbar /> should render large device navigation with default props and no a11y violations 1`] = `
 .c4 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
@@ -1167,7 +1030,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   opacity: 0.88;
 }
 
-.c13 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1183,19 +1046,19 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c13:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c13:active,
-.c13:hover {
+.c12:active,
+.c12:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14 {
+.c13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1221,23 +1084,23 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   pointer-events: none;
 }
 
-.c14:focus {
+.c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c14:active,
-.c14:hover {
+.c13:active,
+.c13:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14:hover {
+.c13:hover {
   cursor: default;
 }
 
-.c16 {
+.c15 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1253,14 +1116,14 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c16:active,
-.c16:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -1326,7 +1189,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: block;
 }
 
-.c12 {
+.c11 {
   position: relative;
   z-index: 1;
   margin: 12px 0 12px;
@@ -1340,14 +1203,14 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: inline-block;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 12px;
   padding-bottom: 8px;
 }
 
-.c15:last-child {
+.c14:last-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1387,7 +1250,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c26 {
+.c24 {
   height: 64px;
 }
 
@@ -1424,6 +1287,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 .c22 {
+  background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1439,38 +1303,15 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
 }
 
 .c23 {
-  background-color: transparent;
+  background: transparent;
 }
 
-.c24 {
-  position: fixed;
-  right: 0;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 704px;
-  width: 100%;
-  padding: 40px 16px 64px;
-  background: #FFFFFF;
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  -webkit-transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  z-index: 2;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+.c23:hover:not(:disabled) {
+  background: transparent;
 }
 
 .c1 {
@@ -1481,12 +1322,9 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
   display: block;
 }
 
-.c25 {
-  padding-left: 0;
-}
-
-.c25 > li {
-  display: block;
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -1504,13 +1342,13 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c13 {
+  .c12 {
     width: 100%;
   }
 }
 
 @media (min-width:1280px) {
-  .c13 {
+  .c12 {
     padding: 12px 8px;
     width: calc(100% - 16px);
     margin-left: 8px;
@@ -1518,13 +1356,13 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
     border-radius: 8px;
   }
 
-  .c13:hover {
+  .c12:hover {
     background-color: #E9EAFA;
   }
 }
 
 @media (max-width:1279px) {
-  .c14 {
+  .c13 {
     width: 100%;
   }
 }
@@ -1534,7 +1372,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c16 {
+  .c15 {
     width: 100%;
   }
 }
@@ -1593,7 +1431,10 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c12 {
+  .c11 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -1601,9 +1442,17 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
     min-width: 240px;
     margin: 0;
     padding: 8px 0;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
   }
 
-  .c12:before {
+  .c11:before {
     content: '';
     top: 1px;
     left: 50%;
@@ -1619,23 +1468,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c11 {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
-    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%,-10%);
-    -ms-transform: translate(-50%,-10%);
-    transform: translate(-50%,-10%);
-  }
-}
-
-@media (min-width:1280px) {
-  .c15 {
+  .c14 {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -1659,7 +1492,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c26 {
+  .c24 {
     height: 120px;
   }
 }
@@ -1739,6 +1572,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -1809,107 +1643,103 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   </span>
                 </a>
                 <ul
+                  aria-label="About"
                   class="c11"
                 >
-                  <ul
-                    aria-label="About"
-                    class="c12"
-                  >
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about"
-                        tabindex="-1"
-                      >
-                        About Zopa
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/our-story"
-                        tabindex="-1"
-                      >
-                        Our story
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/board"
-                        tabindex="-1"
-                      >
-                        Our board
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c14"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        tabindex="-1"
-                      >
-                        Subheading
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/leadership"
-                        tabindex="-1"
-                      >
-                        Our leadership team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/awards"
-                        tabindex="-1"
-                      >
-                        Awards
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/careers"
-                        tabindex="-1"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/press"
-                        tabindex="-1"
-                      >
-                        Press office
-                      </a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about"
+                      tabindex="-1"
+                    >
+                      About Zopa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/our-story"
+                      tabindex="-1"
+                    >
+                      Our story
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/board"
+                      tabindex="-1"
+                    >
+                      Our board
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c13"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      tabindex="-1"
+                    >
+                      Subheading
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/leadership"
+                      tabindex="-1"
+                    >
+                      Our leadership team
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/awards"
+                      tabindex="-1"
+                    >
+                      Awards
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/careers"
+                      tabindex="-1"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/press"
+                      tabindex="-1"
+                    >
+                      Press office
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li
-                class="c15"
+                class="c14"
               >
                 <a
-                  class="c7 c16"
+                  class="c7 c15"
                   color="#3B46C4"
                   data-automation="ZA.navbar-item"
                   href="/contact"
@@ -1917,33 +1747,38 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   Support
                 </a>
               </li>
-              <button
-                class="c17 c18 sc-fubCfw c18"
+              <li
+                class="c16"
               >
-                <div
-                  class="c19"
+                <button
+                  class="c17 c18"
+                  styling="primary"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -1952,10 +1787,13 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
-            <span
-              class="c22 c23"
+            <button
+              aria-label="Navigation"
+              class="c17 c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -1975,7 +1813,7 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                   fill="currentColor"
                 />
               </svg>
-            </span>
+            </button>
             <div
               class="c3"
             >
@@ -2002,7 +1840,8 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18 sc-fubCfw c18"
+              class="c17 c18"
+              styling="primary"
             >
               <div
                 class="c19"
@@ -2028,176 +1867,18 @@ exports[`<Navbar /> should render large device navigation with default props 1`]
                 />
               </svg>
             </button>
-            <aside
-              class="c24"
-              height="768"
-            >
-              <ul
-                class="c25"
-              >
-                <li
-                  class="c6"
-                >
-                  <a
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="c7 c8"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="#"
-                    tabindex="0"
-                  >
-                    <span
-                      class="c9"
-                    >
-                      About
-                    </span>
-                    <span
-                      class="c10"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-chevron-down fa-w-14 "
-                        color="#818F9B"
-                        data-icon="chevron-down"
-                        data-prefix="fas"
-                        focusable="false"
-                        height="12px"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        width="12px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <ul
-                    class="c11"
-                  >
-                    <ul
-                      aria-label="About"
-                      class="c12"
-                    >
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about"
-                          tabindex="-1"
-                        >
-                          About Zopa
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/our-story"
-                          tabindex="-1"
-                        >
-                          Our story
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/board"
-                          tabindex="-1"
-                        >
-                          Our board
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c14"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          tabindex="-1"
-                        >
-                          Subheading
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/leadership"
-                          tabindex="-1"
-                        >
-                          Our leadership team
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/awards"
-                          tabindex="-1"
-                        >
-                          Awards
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/careers"
-                          tabindex="-1"
-                        >
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/press"
-                          tabindex="-1"
-                        >
-                          Press office
-                        </a>
-                      </li>
-                    </ul>
-                  </ul>
-                </li>
-                <li
-                  class="c15"
-                >
-                  <a
-                    class="c7 c16"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="/contact"
-                  >
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </aside>
           </nav>
         </div>
       </div>
     </div>
   </header>
   <div
-    class="c26"
+    class="c24"
   />
 </div>
 `;
 
-exports[`<Navbar /> should render small device navigation with default props 1`] = `
+exports[`<Navbar /> should render small device navigation with default props with no a11y violations 1`] = `
 .c4 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
@@ -2263,7 +1944,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   opacity: 0.88;
 }
 
-.c13 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2279,19 +1960,19 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c13:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c13:active,
-.c13:hover {
+.c12:active,
+.c12:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14 {
+.c13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2317,23 +1998,23 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   pointer-events: none;
 }
 
-.c14:focus {
+.c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c14:active,
-.c14:hover {
+.c13:active,
+.c13:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14:hover {
+.c13:hover {
   cursor: default;
 }
 
-.c16 {
+.c15 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2349,14 +2030,14 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   padding: 12px 16px 16px;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c16:active,
-.c16:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -2417,11 +2098,56 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   opacity: 0.8;
 }
 
+.c22 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  outline: 0;
+  background-color: #3B46C4;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c22:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+.c22:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
 .c20 {
   display: block;
 }
 
-.c12 {
+.c11 {
   position: relative;
   z-index: 1;
   margin: 12px 0 12px;
@@ -2435,14 +2161,14 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: inline-block;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 12px;
   padding-bottom: 8px;
 }
 
-.c15:last-child {
+.c14:last-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2482,7 +2208,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   transform: translateY(0%);
 }
 
-.c26 {
+.c25 {
   height: 64px;
 }
 
@@ -2518,7 +2244,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   right: 0;
 }
 
-.c22 {
+.c23 {
+  background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2534,38 +2261,15 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c23 {
-  background-color: transparent;
+  border-radius: 0;
 }
 
 .c24 {
-  position: fixed;
-  right: 0;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 704px;
-  width: 100%;
-  padding: 40px 16px 64px;
-  background: #FFFFFF;
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  -webkit-transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  z-index: 2;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  background: transparent;
+}
+
+.c24:hover:not(:disabled) {
+  background: transparent;
 }
 
 .c1 {
@@ -2576,12 +2280,9 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
   display: block;
 }
 
-.c25 {
-  padding-left: 0;
-}
-
-.c25 > li {
-  display: block;
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -2599,13 +2300,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c13 {
+  .c12 {
     width: 100%;
   }
 }
 
 @media (min-width:1280px) {
-  .c13 {
+  .c12 {
     padding: 12px 8px;
     width: calc(100% - 16px);
     margin-left: 8px;
@@ -2613,13 +2314,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     border-radius: 8px;
   }
 
-  .c13:hover {
+  .c12:hover {
     background-color: #E9EAFA;
   }
 }
 
 @media (max-width:1279px) {
-  .c14 {
+  .c13 {
     width: 100%;
   }
 }
@@ -2629,7 +2330,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (max-width:1279px) {
-  .c16 {
+  .c15 {
     width: 100%;
   }
 }
@@ -2688,7 +2389,10 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c12 {
+  .c11 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -2696,9 +2400,17 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
     min-width: 240px;
     margin: 0;
     padding: 8px 0;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
   }
 
-  .c12:before {
+  .c11:before {
     content: '';
     top: 1px;
     left: 50%;
@@ -2714,23 +2426,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c11 {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
-    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%,-10%);
-    -ms-transform: translate(-50%,-10%);
-    transform: translate(-50%,-10%);
-  }
-}
-
-@media (min-width:1280px) {
-  .c15 {
+  .c14 {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -2754,7 +2450,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
 }
 
 @media (min-width:1280px) {
-  .c26 {
+  .c25 {
     height: 120px;
   }
 }
@@ -2834,6 +2530,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -2904,107 +2601,103 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   </span>
                 </a>
                 <ul
+                  aria-label="About"
                   class="c11"
                 >
-                  <ul
-                    aria-label="About"
-                    class="c12"
-                  >
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about"
-                        tabindex="-1"
-                      >
-                        About Zopa
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/our-story"
-                        tabindex="-1"
-                      >
-                        Our story
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/board"
-                        tabindex="-1"
-                      >
-                        Our board
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c14"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        tabindex="-1"
-                      >
-                        Subheading
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/leadership"
-                        tabindex="-1"
-                      >
-                        Our leadership team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/awards"
-                        tabindex="-1"
-                      >
-                        Awards
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/careers"
-                        tabindex="-1"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/press"
-                        tabindex="-1"
-                      >
-                        Press office
-                      </a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about"
+                      tabindex="-1"
+                    >
+                      About Zopa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/our-story"
+                      tabindex="-1"
+                    >
+                      Our story
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/board"
+                      tabindex="-1"
+                    >
+                      Our board
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c13"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      tabindex="-1"
+                    >
+                      Subheading
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/leadership"
+                      tabindex="-1"
+                    >
+                      Our leadership team
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/awards"
+                      tabindex="-1"
+                    >
+                      Awards
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/careers"
+                      tabindex="-1"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/press"
+                      tabindex="-1"
+                    >
+                      Press office
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li
-                class="c15"
+                class="c14"
               >
                 <a
-                  class="c7 c16"
+                  class="c7 c15"
                   color="#3B46C4"
                   data-automation="ZA.navbar-item"
                   href="/contact"
@@ -3012,33 +2705,38 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   Support
                 </a>
               </li>
-              <button
-                class="c17 c18 sc-fubCfw c18"
+              <li
+                class="c16"
               >
-                <div
-                  class="c19"
+                <button
+                  class="c17 c18"
+                  styling="link"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -3047,10 +2745,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
-            <span
-              class="c22 c23"
+            <button
+              aria-label="Navigation"
+              class="c22 c23 c24"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -3070,7 +2771,7 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                   fill="currentColor"
                 />
               </svg>
-            </span>
+            </button>
             <div
               class="c3"
             >
@@ -3097,7 +2798,8 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
               </svg>
             </div>
             <button
-              class="c17 c18 sc-fubCfw c18"
+              class="c17 c18"
+              styling="link"
             >
               <div
                 class="c19"
@@ -3123,171 +2825,13 @@ exports[`<Navbar /> should render small device navigation with default props 1`]
                 />
               </svg>
             </button>
-            <aside
-              class="c24"
-              height="768"
-            >
-              <ul
-                class="c25"
-              >
-                <li
-                  class="c6"
-                >
-                  <a
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="c7 c8"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="#"
-                    tabindex="0"
-                  >
-                    <span
-                      class="c9"
-                    >
-                      About
-                    </span>
-                    <span
-                      class="c10"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-chevron-down fa-w-14 "
-                        color="#818F9B"
-                        data-icon="chevron-down"
-                        data-prefix="fas"
-                        focusable="false"
-                        height="12px"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        width="12px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <ul
-                    class="c11"
-                  >
-                    <ul
-                      aria-label="About"
-                      class="c12"
-                    >
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about"
-                          tabindex="-1"
-                        >
-                          About Zopa
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/our-story"
-                          tabindex="-1"
-                        >
-                          Our story
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/board"
-                          tabindex="-1"
-                        >
-                          Our board
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c14"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          tabindex="-1"
-                        >
-                          Subheading
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/leadership"
-                          tabindex="-1"
-                        >
-                          Our leadership team
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/awards"
-                          tabindex="-1"
-                        >
-                          Awards
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/careers"
-                          tabindex="-1"
-                        >
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/press"
-                          tabindex="-1"
-                        >
-                          Press office
-                        </a>
-                      </li>
-                    </ul>
-                  </ul>
-                </li>
-                <li
-                  class="c15"
-                >
-                  <a
-                    class="c7 c16"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="/contact"
-                  >
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </aside>
           </nav>
         </div>
       </div>
     </div>
   </header>
   <div
-    class="c26"
+    class="c25"
   />
 </div>
 `;
@@ -3364,7 +2908,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   opacity: 0.88;
 }
 
-.c13 {
+.c12 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3380,19 +2924,19 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   padding: 12px 16px 16px;
 }
 
-.c13:focus {
+.c12:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c13:active,
-.c13:hover {
+.c12:active,
+.c12:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14 {
+.c13 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3418,23 +2962,23 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   pointer-events: none;
 }
 
-.c14:focus {
+.c13:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c14:active,
-.c14:hover {
+.c13:active,
+.c13:hover {
   color: #21247F;
   opacity: 0.88;
 }
 
-.c14:hover {
+.c13:hover {
   cursor: default;
 }
 
-.c16 {
+.c15 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3450,14 +2994,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   padding: 12px 16px 16px;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
   box-shadow: 0px 0px 4px 0px #3B46C4;
   border-radius: 4px;
 }
 
-.c16:active,
-.c16:hover {
+.c15:active,
+.c15:hover {
   color: #21247F;
   opacity: 0.88;
 }
@@ -3523,7 +3067,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: block;
 }
 
-.c12 {
+.c11 {
   position: relative;
   z-index: 1;
   margin: 12px 0 12px;
@@ -3537,14 +3081,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: inline-block;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 12px;
   padding-bottom: 8px;
 }
 
-.c15:last-child {
+.c14:last-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -3584,7 +3128,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateY(0%);
 }
 
-.c28 {
+.c26 {
   height: 64px;
 }
 
@@ -3635,6 +3179,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 .c22 {
+  background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3650,38 +3195,15 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
 }
 
 .c23 {
-  background-color: transparent;
+  background: transparent;
 }
 
-.c26 {
-  position: fixed;
-  right: 0;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 704px;
-  width: 100%;
-  padding: 40px 16px 64px;
-  background: #FFFFFF;
-  -webkit-transition: -webkit-transform 0.25s ease-in-out;
-  -webkit-transition: transform 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-  z-index: 2;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+.c23:hover:not(:disabled) {
+  background: transparent;
 }
 
 .c1 {
@@ -3692,12 +3214,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: block;
 }
 
-.c27 {
-  padding-left: 0;
-}
-
-.c27 > li {
-  display: block;
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -3715,13 +3234,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (max-width:1279px) {
-  .c13 {
+  .c12 {
     width: 100%;
   }
 }
 
 @media (min-width:1280px) {
-  .c13 {
+  .c12 {
     padding: 12px 8px;
     width: calc(100% - 16px);
     margin-left: 8px;
@@ -3729,13 +3248,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     border-radius: 8px;
   }
 
-  .c13:hover {
+  .c12:hover {
     background-color: #E9EAFA;
   }
 }
 
 @media (max-width:1279px) {
-  .c14 {
+  .c13 {
     width: 100%;
   }
 }
@@ -3745,7 +3264,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (max-width:1279px) {
-  .c16 {
+  .c15 {
     width: 100%;
   }
 }
@@ -3804,7 +3323,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c12 {
+  .c11 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -3812,9 +3334,17 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     min-width: 240px;
     margin: 0;
     padding: 8px 0;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%,-10%);
+    -ms-transform: translate(-50%,-10%);
+    transform: translate(-50%,-10%);
   }
 
-  .c12:before {
+  .c11:before {
     content: '';
     top: 1px;
     left: 50%;
@@ -3830,23 +3360,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c11 {
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s 0.3s;
-    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    transition: opacity 0.3s,transform 0.3s,visibility 0.3s 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translate(-50%,-10%);
-    -ms-transform: translate(-50%,-10%);
-    transform: translate(-50%,-10%);
-  }
-}
-
-@media (min-width:1280px) {
-  .c15 {
+  .c14 {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -3871,7 +3385,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c28 {
+  .c26 {
     height: 76px;
   }
 }
@@ -3986,6 +3500,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-desktop"
           >
             <div
               class="c3"
@@ -4056,107 +3571,103 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   </span>
                 </a>
                 <ul
+                  aria-label="About"
                   class="c11"
                 >
-                  <ul
-                    aria-label="About"
-                    class="c12"
-                  >
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about"
-                        tabindex="-1"
-                      >
-                        About Zopa
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/our-story"
-                        tabindex="-1"
-                      >
-                        Our story
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/board"
-                        tabindex="-1"
-                      >
-                        Our board
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c14"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        tabindex="-1"
-                      >
-                        Subheading
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/leadership"
-                        tabindex="-1"
-                      >
-                        Our leadership team
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/awards"
-                        tabindex="-1"
-                      >
-                        Awards
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/careers"
-                        tabindex="-1"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="c7 c13"
-                        color="#3B46C4"
-                        data-automation="ZA.navbar-item"
-                        href="/about/press"
-                        tabindex="-1"
-                      >
-                        Press office
-                      </a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about"
+                      tabindex="-1"
+                    >
+                      About Zopa
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/our-story"
+                      tabindex="-1"
+                    >
+                      Our story
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/board"
+                      tabindex="-1"
+                    >
+                      Our board
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c13"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      tabindex="-1"
+                    >
+                      Subheading
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/leadership"
+                      tabindex="-1"
+                    >
+                      Our leadership team
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/awards"
+                      tabindex="-1"
+                    >
+                      Awards
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/careers"
+                      tabindex="-1"
+                    >
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="c7 c12"
+                      color="#3B46C4"
+                      data-automation="ZA.navbar-item"
+                      href="/about/press"
+                      tabindex="-1"
+                    >
+                      Press office
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li
-                class="c15"
+                class="c14"
               >
                 <a
-                  class="c7 c16"
+                  class="c7 c15"
                   color="#3B46C4"
                   data-automation="ZA.navbar-item"
                   href="/contact"
@@ -4164,33 +3675,38 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   Support
                 </a>
               </li>
-              <button
-                class="c17 c18 sc-fubCfw c18"
+              <li
+                class="c16"
               >
-                <div
-                  class="c19"
+                <button
+                  class="c17 c18"
+                  styling="primary"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -4199,10 +3715,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
         >
           <nav
             class="c2"
+            data-automation="ZA.navbar-mobile"
           >
-            <span
-              class="c22 c23"
+            <button
+              aria-label="Navigation"
+              class="c17 c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
             >
               <svg
                 aria-hidden="true"
@@ -4222,7 +3741,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   fill="currentColor"
                 />
               </svg>
-            </span>
+            </button>
             <div
               class="c24"
             >
@@ -4249,7 +3768,8 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </div>
             <button
-              class="c17 c18 sc-fubCfw c18"
+              class="c17 c18"
+              styling="primary"
             >
               <div
                 class="c19"
@@ -4275,171 +3795,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 />
               </svg>
             </button>
-            <aside
-              class="c26"
-              height="768"
-            >
-              <ul
-                class="c27"
-              >
-                <li
-                  class="c6"
-                >
-                  <a
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    class="c7 c8"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="#"
-                    tabindex="0"
-                  >
-                    <span
-                      class="c9"
-                    >
-                      About
-                    </span>
-                    <span
-                      class="c10"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="svg-inline--fa fa-chevron-down fa-w-14 "
-                        color="#818F9B"
-                        data-icon="chevron-down"
-                        data-prefix="fas"
-                        focusable="false"
-                        height="12px"
-                        role="img"
-                        viewBox="0 0 448 512"
-                        width="12px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                  <ul
-                    class="c11"
-                  >
-                    <ul
-                      aria-label="About"
-                      class="c12"
-                    >
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about"
-                          tabindex="-1"
-                        >
-                          About Zopa
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/our-story"
-                          tabindex="-1"
-                        >
-                          Our story
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/board"
-                          tabindex="-1"
-                        >
-                          Our board
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c14"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          tabindex="-1"
-                        >
-                          Subheading
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/leadership"
-                          tabindex="-1"
-                        >
-                          Our leadership team
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/awards"
-                          tabindex="-1"
-                        >
-                          Awards
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/careers"
-                          tabindex="-1"
-                        >
-                          Careers
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="c7 c13"
-                          color="#3B46C4"
-                          data-automation="ZA.navbar-item"
-                          href="/about/press"
-                          tabindex="-1"
-                        >
-                          Press office
-                        </a>
-                      </li>
-                    </ul>
-                  </ul>
-                </li>
-                <li
-                  class="c15"
-                >
-                  <a
-                    class="c7 c16"
-                    color="#3B46C4"
-                    data-automation="ZA.navbar-item"
-                    href="/contact"
-                  >
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </aside>
           </nav>
         </div>
       </div>
     </div>
   </header>
   <div
-    class="c28"
+    class="c26"
   />
 </div>
 `;

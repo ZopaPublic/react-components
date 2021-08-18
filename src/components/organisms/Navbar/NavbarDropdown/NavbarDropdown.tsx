@@ -1,9 +1,8 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
-import { minMedia } from '../../../../helpers/responsiveness';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
 import NavbarLink from '../NavbarLink/NavbarLink';
 
@@ -17,33 +16,6 @@ export type ButtonLinkElement = HTMLButtonElement | HTMLAnchorElement;
 export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDivElement> {
   open: boolean;
 }
-
-const NavbarDropdownListContainer = styled.ul<NavbarDropdownListContainer>`
-  ${minMedia.desktop`
-    position: absolute;
-    left: 50%;
-    top: 50px;
-    
-    ${({ open }: NavbarDropdownListContainer) => css`
-      ${
-        open
-          ? css`
-              transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-              opacity: 1;
-              visibility: visible;
-              transform: translate(-50%, 0%);
-            `
-          : css`
-              transition: opacity 0.3s, transform 0.3s, visibility 0.3s 0.3s;
-              opacity: 0;
-              visibility: hidden;
-              transform: translate(-50%, -10%);
-            `
-      }}
-    `}
-  `}
-`;
-
 export interface OpenerProps {
   'aria-expanded': boolean;
   'aria-haspopup': true;
@@ -82,6 +54,7 @@ export interface NavbarDropdownProps extends DefaultNavbarDropdownProps {
   /** array of data representing the dropdown items (e.g links) */
   items: Item[];
   'aria-label'?: string;
+  'data-automation'?: string;
 }
 
 export interface NavbarDropdownState {
@@ -91,8 +64,8 @@ export interface NavbarDropdownState {
 
 export default class NavbarDropdown extends React.Component<NavbarDropdownProps, NavbarDropdownState> {
   static defaultProps: DefaultNavbarDropdownProps = {
-    renderItem: ({ item: { label, href }, getItemProps }) => (
-      <NavbarLink href={href} {...getItemProps()} isDropdownLink>
+    renderItem: ({ item: { label, href, ['data-automation']: dataAutomation = 'ZA.navbar-item' }, getItemProps }) => (
+      <NavbarLink href={href} {...getItemProps()} isDropdownLink data-automation={dataAutomation}>
         {label}
       </NavbarLink>
     ),
@@ -145,24 +118,31 @@ export default class NavbarDropdown extends React.Component<NavbarDropdownProps,
 
     return (
       <NavbarDropdownContainer ref={this.dropdownRef}>
-        <NavbarLink open={open} withChevron={true} href="#" {...getOpenerProps()}>
+        <NavbarLink
+          open={open}
+          withChevron={true}
+          href="#"
+          {...getOpenerProps()}
+          data-automation={this.props['data-automation'] ?? 'ZA.navbar-item'}
+        >
           {label}
         </NavbarLink>
-        <NavbarDropdownListContainer open={open}>
-          {/* To avoid an undefined aria-label the fallback to label was added when aria-label property is not defined */}
-          {/* TODO remove fallback to label */}
-          <NavbarDropdownList aria-label={ariaLabel ? ariaLabel : typeof label === 'string' ? label : undefined}>
-            {items.map((item, index) => (
-              <li key={`${id}-${index}`}>
-                {renderItem({
-                  close,
-                  getItemProps: this.getItemProps(index),
-                  item,
-                })}
-              </li>
-            ))}
-          </NavbarDropdownList>
-        </NavbarDropdownListContainer>
+        {/* To avoid an undefined aria-label the fallback to label was added when aria-label property is not defined */}
+        {/* TODO remove fallback to label */}
+        <NavbarDropdownList
+          aria-label={ariaLabel ? ariaLabel : typeof label === 'string' ? label : undefined}
+          open={open}
+        >
+          {items.map((item, index) => (
+            <li key={`${id}-${index}`}>
+              {renderItem({
+                close,
+                getItemProps: this.getItemProps(index),
+                item,
+              })}
+            </li>
+          ))}
+        </NavbarDropdownList>
       </NavbarDropdownContainer>
     );
   }

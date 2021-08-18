@@ -94,9 +94,10 @@ export const buttonStyle = css<ButtonProps>`
   }}
 `;
 
-const ButtonWrapper = styled.button.attrs(({ loading, fullWidth, ...rest }: ButtonProps) => ({
-  ...rest,
-}))`
+// This wrapper is to prevent html attribute warnings. See: https://styled-components.com/docs/faqs#why-am-i-getting-html-attribute-warnings
+const ButtonWrapper = ({ loading, fullWidth, ...props }: ButtonProps) => <button {...props} />;
+
+const StyledWrapper = styled(ButtonWrapper)`
   ${buttonStyle}
 `;
 
@@ -104,14 +105,14 @@ const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary',
   const isLoading = styling !== 'link' ? loading : undefined;
 
   return (
-    <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
+    <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
           <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}
-    </ButtonWrapper>
+    </StyledWrapper>
   );
 };
 

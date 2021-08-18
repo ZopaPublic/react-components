@@ -12,6 +12,9 @@ exports[`NavbarDropdownList renders the component with props 1`] = `
 
 @media (min-width:1280px) {
   .c0 {
+    position: absolute;
+    left: 50%;
+    top: 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 0px 1px #D4D7D9;
     border: 1px solid #EFEFEF;
@@ -19,6 +22,14 @@ exports[`NavbarDropdownList renders the component with props 1`] = `
     min-width: 240px;
     margin: 0;
     padding: 8px 0;
+    -webkit-transition: opacity 0.3s,-webkit-transform 0.3s,visibility 0.3s;
+    -webkit-transition: opacity 0.3s,transform 0.3s,visibility 0.3s;
+    transition: opacity 0.3s,transform 0.3s,visibility 0.3s;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
   }
 
   .c0:before {
@@ -38,6 +49,7 @@ exports[`NavbarDropdownList renders the component with props 1`] = `
 
 <ul
   class="c0"
+  open=""
 >
   list
 </ul>

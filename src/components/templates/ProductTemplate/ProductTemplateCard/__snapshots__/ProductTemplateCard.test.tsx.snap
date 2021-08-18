@@ -18,21 +18,21 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-bdfBwQ {
+.c0 > .sc-bdnxRM {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-dlfnbm {
+.c0 .sc-dlnjwi {
   font-size: 16px;
 }
 
-.c0 .sc-hKgILt {
+.c0 .sc-hKFxyN {
   font-size: 14px;
 }
 
-.c0 > .sc-eCssSg {
+.c0 > .sc-eCApnc {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -41,12 +41,8 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
 @media (max-width:768px) {
   .c1 {
     border-radius: 0;
-    box-shadow: none;
-    border: none;
-  }
-
-  .c1:last-of-type {
     box-shadow: 0 0 1px 0 #D4D7D9;
+    border: none;
     border-bottom: 1px solid #EFEFEF;
   }
 }

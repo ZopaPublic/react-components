@@ -30,12 +30,13 @@ const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, se
     <>
       {links &&
         links.map((item: NavigationItem, index: number) =>
-          !!item.children ? (
+          item.children ? (
             <NavbarDropdown
               key={`dropdown-${index}`}
               id={`navbar-dropdown-${index}`}
               label={item.label}
               items={item.children!}
+              data-automation={item['data-automation']}
               renderItem={({ item, getItemProps, close }: RenderItemProps) =>
                 renderLink &&
                 renderLink(item, index, {

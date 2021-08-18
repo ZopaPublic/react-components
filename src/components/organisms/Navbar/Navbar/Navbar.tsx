@@ -20,6 +20,7 @@ import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
+import { Button } from '../../../..';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -212,20 +213,25 @@ const NavbarLinksListContainer = styled.ul`
   `}
 `;
 
-const IconContainer = styled.span`
+const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
+  background: transparent;
   display: flex;
   height: ${mobileNavbarHeight}px;
   width: ${mobileNavbarHeight}px;
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  border-radius: 0;
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
-  background-color: ${({ open }) => (open ? colors.white : 'transparent')};
+  background: ${({ open }) => (open ? colors.white : 'transparent')};
+  &:hover:not(:disabled) {
+    background: ${({ open }) => (open ? colors.white : 'transparent')};
+  }
 `;
 
-const HamburgerMenu = styled.aside<{ open: boolean; height: number }>`
+const HamburgerMenu = styled.div<{ open: boolean; height: number }>`
   position: fixed;
   right: 0;
   top: ${mobileNavbarHeight}px;
@@ -273,6 +279,11 @@ const NavItemsWrapper = styled.ul`
   > li {
     display: block;
   }
+`;
+
+const ActionWrapper = styled.li`
+  list-style: none;
+  display: inline;
 `;
 
 export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
@@ -330,19 +341,19 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
           disable={open || !!(width && width >= breakpoints.desktop)}
         >
           <LargeDeviceNavbar>
-            <LayoutInner overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold}>
               <LogoContainer overlap={overThreshold || collapsed} role="banner">
                 <Logo negative={!overThreshold && !collapsed} width="150px" />
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
                 <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
-                {withCTA && cta}
+                {withCTA && <ActionWrapper>{cta}</ActionWrapper>}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold}>
               {links ? (
                 <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
                   <Icon
@@ -361,7 +372,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer />}
-              {links && (
+              {links && open && (
                 <HamburgerMenu open={open} height={height}>
                   <NavItemsWrapper>
                     <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />

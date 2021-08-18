@@ -2,7 +2,9 @@ import { renderHook } from '@testing-library/react-hooks';
 import useScrollThreshold from './useScrollThreshold';
 
 describe('HOOK: useScrollThreshold', () => {
-  let origAddEventListener: () => void, origScrollY: number, origRAF: () => void;
+  let origAddEventListener: typeof global.document.addEventListener;
+  let origScrollY: number;
+  let origRAF: typeof global.requestAnimationFrame;
 
   beforeEach(() => {
     origAddEventListener = global.document.addEventListener;
@@ -10,20 +12,20 @@ describe('HOOK: useScrollThreshold', () => {
     origScrollY = global.scrollY;
 
     global.document.addEventListener = jest.fn();
-    global.requestAnimationFrame = (cb: () => void) => cb();
+    global.requestAnimationFrame = jest.fn();
   });
 
   afterEach(() => {
     global.document.addEventListener = origAddEventListener;
     global.requestAnimationFrame = origRAF;
-    global.scrollY = origScrollY;
+    global.scrollY! = origScrollY;
   });
 
   it('registers a scroll listener when called', () => {
     renderHook(useScrollThreshold);
 
     expect(global.document.addEventListener).toHaveBeenCalledTimes(1);
-    expect(global.document.addEventListener.mock.calls[0]).toMatchSnapshot();
+    expect((global.document.addEventListener as jest.Mock).mock.calls[0]).toMatchSnapshot();
   });
 
   it.each`
@@ -34,7 +36,7 @@ describe('HOOK: useScrollThreshold', () => {
   `(
     'user scrolled:  $scrollY, threshold was: $threshold, notifies above: $isAbove',
     ({ scrollY, threshold, isAbove }) => {
-      global.scrollY = scrollY;
+      global.scrollY! = scrollY;
 
       const {
         result: { current: isOverTheTreshold },
