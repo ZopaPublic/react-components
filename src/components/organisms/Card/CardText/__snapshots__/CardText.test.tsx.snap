@@ -28,13 +28,13 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-gsTCUz {
+.c0 > .sc-gtsrHT {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKgILt {
+.c0 .sc-hKFxyN {
   font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   font-size: 14px;
 }
 
-.c0 > .sc-jSgupP {
+.c0 > .sc-jSFjdj {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
