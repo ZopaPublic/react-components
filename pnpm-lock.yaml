@@ -3678,17 +3678,10 @@ packages:
       - supports-color
     dev: true
 
-  /@fortawesome/fontawesome-common-types/0.2.32:
-    resolution: {integrity: sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: true
-
   /@fortawesome/fontawesome-common-types/0.2.36:
     resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
     engines: {node: '>=6'}
     requiresBuild: true
-    dev: false
 
   /@fortawesome/fontawesome-svg-core/1.2.36:
     resolution: {integrity: sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==}
@@ -3702,7 +3695,7 @@ packages:
     resolution: {integrity: sha512-LQH/0L1p4+rqtoSHa9qFYR84hpuRZKqaQ41cfBQx8b68p21zoWSekTAeA54I/2x9VlCHDLFlG74Nmdg4iTPQOg==}
     engines: {node: '>=6'}
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 0.2.36
     dev: true
 
   /@fortawesome/react-fontawesome/0.1.15_5a561e8fe7655ae38e5325c0df2769df:
@@ -5415,7 +5408,7 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      debug: 4.2.0
+      debug: 4.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10204,7 +10197,7 @@ packages:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2
-      debug: 4.2.0
+      debug: 4.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -10264,7 +10257,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.2.0
+      debug: 4.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true

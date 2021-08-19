@@ -35,6 +35,7 @@ export default {
     babel({
       presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
       babelHelpers: 'runtime',
+      plugins: ["babel-plugin-styled-components"],
       extensions,
       exclude: 'node_modules',
     }),
