@@ -222,6 +222,16 @@ const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
   justify-content: center;
   align-items: center;
   border-radius: 0;
+  &:hover,
+  :focus,
+  :active,
+  :focus:not(:active) {
+    background: inherit;
+    border: none;
+    opacity: 1;
+    box-shadow: none;
+    cursor: default;
+  }
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
