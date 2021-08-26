@@ -102,7 +102,11 @@ const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep =
 
   return (
     <ProgressWrapper>
-      <ProgressBar {...rest}>
+      <ProgressBar
+        aria-label={withStep ? 'Progress Bar' : `Progress Bar showing step ${currentStep} of ${totalSteps}`}
+        tabIndex={-1}
+        {...rest}
+      >
         {renderPoints()}
         <Progression position={getStepPosition(totalSteps, currentStep - 0.5)} progressColor={progressColor}>
           {withStep && (
