@@ -212,8 +212,7 @@ const NavbarLinksListContainer = styled.ul`
     `}
   `}
 `;
-
-const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
+const iconContainerStyles = css`
   background: transparent;
   display: flex;
   height: ${mobileNavbarHeight}px;
@@ -222,19 +221,14 @@ const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  &:hover,
-  :focus,
-  :active,
-  :focus:not(:active) {
-    background: inherit;
-    border: none;
-    opacity: 1;
-    box-shadow: none;
-    cursor: default;
-  }
 `;
 
-const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
+const IconContainer = styled.div.attrs({ 'aria-label': 'Navigation' })`
+  ${iconContainerStyles}
+`;
+
+const HamburgerContainer = styled(Button)<HamburgerContainerProps>`
+  ${iconContainerStyles}
   background: ${({ open }) => (open ? colors.white : 'transparent')};
   &:hover:not(:disabled) {
     background: ${({ open }) => (open ? colors.white : 'transparent')};
