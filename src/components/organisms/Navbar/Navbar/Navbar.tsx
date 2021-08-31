@@ -212,6 +212,7 @@ const NavbarLinksListContainer = styled.ul`
     `}
   `}
 `;
+
 const iconContainerStyles = css`
   background: transparent;
   display: flex;
