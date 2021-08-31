@@ -83,7 +83,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
       <div
         aria-label="Progress Bar showing step 1 of 2"
         class="c2"
-        tabindex="-1"
+        role="progressbar"
       >
         <span
           class="c3"
