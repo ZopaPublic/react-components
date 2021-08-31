@@ -224,7 +224,7 @@ const iconContainerStyles = css`
   border-radius: 0;
 `;
 
-const IconContainer = styled.div`
+const IconContainer = styled.div.attrs({ 'aria-label': 'Navigation' })`
   ${iconContainerStyles}
 `;
 
