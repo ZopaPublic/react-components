@@ -858,7 +858,6 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
             data-automation="ZA.navbar-mobile"
           >
             <button
-              aria-label="Navigation"
               class="c22 c23"
               data-automation="hamburger-icon"
               styling="primary"
@@ -1760,7 +1759,6 @@ exports[`<Navbar /> should render large device navigation with default props and
             data-automation="ZA.navbar-mobile"
           >
             <button
-              aria-label="Navigation"
               class="c17 c22"
               data-automation="hamburger-icon"
               styling="primary"
@@ -2703,7 +2701,6 @@ exports[`<Navbar /> should render small device navigation with default props wit
             data-automation="ZA.navbar-mobile"
           >
             <button
-              aria-label="Navigation"
               class="c22 c23"
               data-automation="hamburger-icon"
               styling="primary"
@@ -3658,7 +3655,6 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             data-automation="ZA.navbar-mobile"
           >
             <button
-              aria-label="Navigation"
               class="c17 c22"
               data-automation="hamburger-icon"
               styling="primary"
