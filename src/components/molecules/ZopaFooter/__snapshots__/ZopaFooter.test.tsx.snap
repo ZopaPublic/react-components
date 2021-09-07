@@ -565,13 +565,24 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Blog
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c6 c7"
               color="#3B46C4"
               href="https://www.zopa.com/contact/complaints"
             >
               Complaints
+            </a>
+          </li>
+          <li>
+            <a
+              class="c6 c7"
+              color="#3B46C4"
+              href="https://www.zopa.com/about/press"
+            >
+              Press Office
             </a>
           </li>
         </ul>
