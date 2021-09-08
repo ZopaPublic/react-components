@@ -1,3 +1,10 @@
+### [4.45.2](https://github.com/zopaUK/react-components/compare/v4.45.1...v4.45.2) (2021-09-08)
+
+
+### Bug Fixes
+
+* **zopafooter:** copy change to press office button ([18414af](https://github.com/zopaUK/react-components/commit/18414afbc84be6ec1493cf31089f08b0ed6496c3))
+
 ### [4.45.1](https://github.com/zopaUK/react-components/compare/v4.45.0...v4.45.1) (2021-09-07)
 
 
