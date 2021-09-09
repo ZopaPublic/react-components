@@ -582,7 +582,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               color="#3B46C4"
               href="https://www.zopa.com/about/press"
             >
-              Press Office
+              Press office
             </a>
           </li>
         </ul>

@@ -1,3 +1,22 @@
+### [4.45.2](https://github.com/zopaUK/react-components/compare/v4.45.1...v4.45.2) (2021-09-08)
+
+
+### Bug Fixes
+
+* **zopafooter:** copy change to press office button ([18414af](https://github.com/zopaUK/react-components/commit/18414afbc84be6ec1493cf31089f08b0ed6496c3))
+
+### [4.45.1](https://github.com/zopaUK/react-components/compare/v4.45.0...v4.45.1) (2021-09-07)
+
+
+### Bug Fixes
+
+* **progress:** non visual alternative ([8b03370](https://github.com/zopaUK/react-components/commit/8b03370caa90790c7951891ee73782ee267837e9)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress:** non visual alternative to step text ([2eea70b](https://github.com/zopaUK/react-components/commit/2eea70b83e0e27e771238d6e86d0ab0c070874da)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** non visual alternative ([aa0bc38](https://github.com/zopaUK/react-components/commit/aa0bc38a4a4e1a36a523c0424a26921764b611d0)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** removed aria role ([2ccb326](https://github.com/zopaUK/react-components/commit/2ccb326917201c844057246fff98e9bd996d6846)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** rewrote snapshots ([16c24f5](https://github.com/zopaUK/react-components/commit/16c24f5828aa74f21de339b216031093b68b8ad8)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress-bar:** non visual alternative ([4dc5142](https://github.com/zopaUK/react-components/commit/4dc5142dc8d1d433c0de63235d4b548e7286bfd3)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+
 ## [4.45.0](https://github.com/zopaUK/react-components/compare/v4.44.2...v4.45.0) (2021-09-02)
 
 
