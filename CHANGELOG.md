@@ -1,3 +1,10 @@
+### [4.45.3](https://github.com/zopaUK/react-components/compare/v4.45.2...v4.45.3) (2021-10-05)
+
+
+### Bug Fixes
+
+* **zopafooter:** changed header to use text for a11y issues ([2a16186](https://github.com/zopaUK/react-components/commit/2a16186df00724657849de5b367400c4cdd26eb9))
+
 ### [4.45.2](https://github.com/zopaUK/react-components/compare/v4.45.1...v4.45.2) (2021-09-08)
 
 
