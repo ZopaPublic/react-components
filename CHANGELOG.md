@@ -1,3 +1,12 @@
+### [4.45.4](https://github.com/zopaUK/react-components/compare/v4.45.3...v4.45.4) (2021-10-06)
+
+
+### Bug Fixes
+
+* **progress:** add progress bar role back in to avoid a11y violations ([84536e2](https://github.com/zopaUK/react-components/commit/84536e2bb22cc8686f7808897901eb9d212985a2))
+* **progress:** add progress bar role back in to avoid a11y violations ([e6b59e5](https://github.com/zopaUK/react-components/commit/e6b59e5a821f90c0ca9fb833f9bceb2ce697753a))
+* **progress:** add progress bar role back in to avoid a11y violations ([76ad1e7](https://github.com/zopaUK/react-components/commit/76ad1e77c95ec4ff1323c827cc33c1eda32886a7))
+
 ### [4.45.3](https://github.com/zopaUK/react-components/compare/v4.45.2...v4.45.3) (2021-10-05)
 
 
