@@ -1,3 +1,10 @@
+## [4.45.0](https://github.com/zopaUK/react-components/compare/v4.44.2...v4.45.0) (2021-09-02)
+
+
+### Features
+
+* **zopafooter:** add Press Office to footer links ([003098e](https://github.com/zopaUK/react-components/commit/003098e14d4d58ae027243cdecd5b72be8cd23fd))
+
 ### [4.44.2](https://github.com/zopaUK/react-components/compare/v4.44.1...v4.44.2) (2021-08-11)
 
 
