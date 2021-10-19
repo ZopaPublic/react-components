@@ -81,6 +81,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
       class="c1"
     >
       <div
+        aria-label="Progress Bar showing step 1 of 2"
         class="c2"
       >
         <span
