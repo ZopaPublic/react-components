@@ -110,8 +110,11 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
     class="c0"
   >
     <div
-      aria-label="Progress Bar showing step 2 of 5"
+      aria-label="Static progress bar showing step 2 of 5"
+      aria-valuemax="5"
+      aria-valuenow="2"
       class="c1"
+      role="progressbar"
     >
       <span
         class="c2"
@@ -245,8 +248,11 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   class="c0"
 >
   <div
-    aria-label="Progress Bar showing step 0 of 5"
+    aria-label="Static progress bar showing step 0 of 5"
+    aria-valuemax="5"
+    aria-valuenow="0"
     class="c1"
+    role="progressbar"
   >
     <span
       class="c2"
@@ -379,8 +385,11 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   class="c0"
 >
   <div
-    aria-label="Progress Bar showing step 5 of 5"
+    aria-label="Static progress bar showing step 5 of 5"
+    aria-valuemax="5"
+    aria-valuenow="5"
     class="c1"
+    role="progressbar"
   >
     <span
       class="c2"
