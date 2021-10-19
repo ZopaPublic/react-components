@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors, typography, spacing } from '../../../constants';
 import Spinner from '../Spinner/Spinner';
 
-export type Styling = 'primary' | 'secondary' | 'link';
+export type Styling = 'primary' | 'secondary' | 'link' | 'transparent';
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   styling?: Styling;
@@ -28,6 +28,11 @@ const colorMap = {
     text: colors.actionDark,
     bg: 'transparent',
     hover: '#EAEBFA',
+  },
+  transparent: {
+    text: 'transparent',
+    bg: 'transparent',
+    hover: 'transparent',
   },
 };
 
@@ -66,7 +71,6 @@ export const buttonStyle = css<ButtonProps>`
     border: 1px solid ${colors.white};
     box-shadow: 0 0 4px ${colors.actionPlain};
   }
-
   ${({ disabled, styling = 'primary' }) => {
     const disabledStyles = css<ButtonProps>`
       cursor: not-allowed;

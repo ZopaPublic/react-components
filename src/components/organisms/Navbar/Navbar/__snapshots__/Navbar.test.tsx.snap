@@ -243,11 +243,10 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: transparent;
   border: 1px solid transparent;
   outline: 0;
-  background-color: #3B46C4;
-  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  background: transparent;
 }
 
 .c22:focus:not(:active) {
@@ -256,7 +255,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 .c22:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  background: transparent;
 }
 
 .c22:active {
@@ -861,7 +860,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
               aria-label="Navigation"
               class="c22 c23"
               data-automation="hamburger-icon"
-              styling="primary"
+              styling="transparent"
             >
               <svg
                 aria-hidden="true"
@@ -1125,6 +1124,50 @@ exports[`<Navbar /> should render large device navigation with default props and
   display: none;
 }
 
+.c22 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: transparent;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c22:hover {
+  background: transparent;
+}
+
+.c22:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
 .c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1235,7 +1278,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   transform: translateY(0%);
 }
 
-.c23 {
+.c24 {
   height: 64px;
 }
 
@@ -1271,7 +1314,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   right: 0;
 }
 
-.c22 {
+.c23 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1292,7 +1335,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   background: transparent;
 }
 
-.c22:hover:not(:disabled) {
+.c23:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -1462,7 +1505,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 @media (min-width:1280px) {
-  .c23 {
+  .c24 {
     height: 120px;
   }
 }
@@ -1761,9 +1804,9 @@ exports[`<Navbar /> should render large device navigation with default props and
           >
             <button
               aria-label="Navigation"
-              class="c17 c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
-              styling="primary"
+              styling="transparent"
             >
               <svg
                 aria-hidden="true"
@@ -1843,7 +1886,7 @@ exports[`<Navbar /> should render large device navigation with default props and
     </div>
   </header>
   <div
-    class="c23"
+    class="c24"
   />
 </div>
 `;
@@ -2091,11 +2134,10 @@ exports[`<Navbar /> should render small device navigation with default props wit
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: transparent;
   border: 1px solid transparent;
   outline: 0;
-  background-color: #3B46C4;
-  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  background: transparent;
 }
 
 .c22:focus:not(:active) {
@@ -2104,7 +2146,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 .c22:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  background: transparent;
 }
 
 .c22:active {
@@ -2706,7 +2748,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
               aria-label="Navigation"
               class="c22 c23"
               data-automation="hamburger-icon"
-              styling="primary"
+              styling="transparent"
             >
               <svg
                 aria-hidden="true"
@@ -2792,7 +2834,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 `;
 
 exports[`<Navbar /> should render the collapsed styled on large device navigation with default props and collapsed set to true 1`] = `
-.c24 {
+.c25 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   fill: #FFFFFF;
@@ -2973,6 +3015,50 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: none;
 }
 
+.c22 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  color: transparent;
+  border: 1px solid transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c22:hover {
+  background: transparent;
+}
+
+.c22:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
+}
+
 .c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3083,7 +3169,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateY(0%);
 }
 
-.c25 {
+.c26 {
   height: 64px;
 }
 
@@ -3105,13 +3191,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
-.c23 {
+.c24 {
   position: relative;
 }
 
-.c23 > a,
-.c23 > button,
-.c23 > div {
+.c24 > a,
+.c24 > button,
+.c24 > div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3133,7 +3219,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   right: 0;
 }
 
-.c22 {
+.c23 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3154,7 +3240,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   background: transparent;
 }
 
-.c22:hover:not(:disabled) {
+.c23:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -3325,7 +3411,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c25 {
+  .c26 {
     height: 76px;
   }
 }
@@ -3337,7 +3423,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c23 {
+  .c24 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3355,7 +3441,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c23:before {
+  .c24:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -3659,9 +3745,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
           >
             <button
               aria-label="Navigation"
-              class="c17 c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
-              styling="primary"
+              styling="transparent"
             >
               <svg
                 aria-hidden="true"
@@ -3683,7 +3769,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </button>
             <div
-              class="c23"
+              class="c24"
             >
               <svg
                 aria-label="zopa logo"
@@ -3701,7 +3787,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </title>
                 <g>
                   <path
-                    class="c24"
+                    class="c25"
                     d="M77 .3C88.8.3 97 8 97.4 19.2c0 5.3-2 10.1-5.7 13.6a20.8 20.8 0 01-14.5 5.5c-5.7 0-10.9-2-14.6-5.5A18.7 18.7 0 0157 19.2c0-5.3 2-10.1 5.6-13.6A21 21 0 0177.1.3zm57.7 1c4.5 0 8.2 1.2 10.7 3.5 2.4 2.4 3.8 5.8 3.8 10 0 8.6-5.4 14-14.1 14l-.4.1h-6.2v8.5h-10.8V1.2h17zm-98 0v1.2c0 6.9-7 13.6-12 18.5-1.8 1.7-3.4 3.3-4.4 4.6l-.2.3-.6.7h17v10.7H0V36c0-6.8 6.3-13 11.4-18 2.1-2 4-3.7 5-5.2v-.2l.5-.7H1.2V1.2h35.4zM194.1 1L208 37.2h-11.3l-2.2-5.8h-15l-2.3 5.8H166l13.8-36.1h14.4zM77 10.6a8.5 8.5 0 00-8.6 8.6 8.6 8.6 0 1017.2 0 8.6 8.6 0 00-8.6-8.6zM187 11.7L182.7 23h8.6L187 11.7zm-52.3-1.1h-6.2v9.3h6.2c2.7 0 4.5-2 4.5-4.8 0-2.7-1.8-4.5-4.5-4.5z"
                   />
                 </g>
@@ -3741,7 +3827,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     </div>
   </header>
   <div
-    class="c25"
+    class="c26"
   />
 </div>
 `;

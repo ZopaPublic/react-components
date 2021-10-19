@@ -224,11 +224,13 @@ const iconContainerStyles = css`
   border-radius: 0;
 `;
 
-const IconContainer = styled.div.attrs({ 'aria-label': 'Navigation' })`
+const IconContainer = styled.div`
   ${iconContainerStyles}
 `;
 
-const HamburgerContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })<HamburgerContainerProps>`
+const HamburgerContainer = styled(Button).attrs({ 'aria-label': 'Navigation', styling: 'transparent' })<
+  HamburgerContainerProps
+>`
   ${iconContainerStyles}
   background: ${({ open }) => (open ? colors.white : 'transparent')};
   &:hover:not(:disabled) {
