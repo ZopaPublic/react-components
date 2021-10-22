@@ -1,3 +1,10 @@
+### [4.45.5](https://github.com/zopaUK/react-components/compare/v4.45.4...v4.45.5) (2021-10-22)
+
+
+### Bug Fixes
+
+* **test:** Test release ([964c88b](https://github.com/zopaUK/react-components/commit/964c88be1cde8875b546b7cfba1843cfa52f55fa))
+
 ### [4.45.4](https://github.com/zopaUK/react-components/compare/v4.45.3...v4.45.4) (2021-10-06)
 
 
