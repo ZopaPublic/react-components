@@ -44,6 +44,7 @@ const ZopaFooter = ({
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">What we do</Heading>
           <List>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/car-finance`, children: 'Car hire purchase' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/car-loans`, children: 'Car loans' })}</li>
             <li className="mb-4">
               {renderLink({ href: `${baseUrl}/loans/debt-consolidation`, children: 'Debt consolidation loans' })}

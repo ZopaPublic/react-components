@@ -20,10 +20,10 @@ describe('<ZopaFooter />', () => {
   it('renders correct urls  with baseUrl prop', async () => {
     render(<ZopaFooter baseUrl="http://whatever.com" />);
 
-    const firstLink = screen.getByText('Car loans');
+    const firstLink = screen.getByText('Car hire purchase');
     const logoLink = screen.getByTitle('Logo');
 
-    expect(firstLink).toHaveAttribute('href', 'http://whatever.com/loans/car-loans');
+    expect(firstLink).toHaveAttribute('href', 'http://whatever.com/car-finance');
     expect(logoLink).toHaveAttribute('href', 'http://whatever.com');
   });
 
