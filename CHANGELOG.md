@@ -1,3 +1,10 @@
+## [4.46.0](https://github.com/zopaUK/react-components/compare/v4.45.5...v4.46.0) (2021-11-01)
+
+
+### Features
+
+* **zopafooter:** adding link for car hire purchase ([6105ebf](https://github.com/zopaUK/react-components/commit/6105ebf5b7e0467dff31b4ced44674150cf1a03c))
+
 ### [4.45.5](https://github.com/zopaUK/react-components/compare/v4.45.4...v4.45.5) (2021-10-22)
 
 
