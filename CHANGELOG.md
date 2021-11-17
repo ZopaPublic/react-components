@@ -1,3 +1,12 @@
+## [4.47.0](https://github.com/zopaUK/react-components/compare/v4.46.0...v4.47.0) (2021-11-17)
+
+
+### Features
+
+* **template-error-pages:** add link to homepage from 500 ([39b99ca](https://github.com/zopaUK/react-components/commit/39b99cadfbaa2040fc7b583918b22c6938b60948))
+* **templates-error-pages:** fix reverted commit ([816cedc](https://github.com/zopaUK/react-components/commit/816cedcfb09704f05dcb9183e15913ff59e5a01a))
+* **templates-error-pages:** fix reverted commit ([865af80](https://github.com/zopaUK/react-components/commit/865af80b66b927c847d54aee6b2195f0178f7fb1))
+
 ## [4.46.0](https://github.com/zopaUK/react-components/compare/v4.45.5...v4.46.0) (2021-11-01)
 
 
