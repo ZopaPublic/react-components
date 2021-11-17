@@ -1,8 +1,14 @@
 import React from 'react';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { ProductTemplateCard } from '../../ProductTemplate/ProductTemplateCard/ProductTemplateCard';
+
+export interface ErrorTemplateProps {
+  icon?: IconDefinition;
+}
 
 const ErrorTemplate: React.FC = ({ children }) => {
   return (

@@ -1,23 +1,25 @@
 import React from 'react';
+import styled from 'styled-components';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
-
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 import Link from '../../../atoms/Link/Link';
+import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport/useViewport';
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
 import { HelpLine, HelpLineDetails } from '../../../molecules/Help/Help';
-import { ErrorTemplateProps } from '../types';
-import { StyledIcon } from '../styles';
-
-interface MaintenanceFiveHundredErrorProps extends ErrorTemplateProps {
+import { ErrorTemplateProps } from '../Template/Template';
+const StyledIcon = styled(Icon)`
+  width: 80px;
+  height: 80px;
+`;
+interface FiveHundredPageTemplateProps extends ErrorTemplateProps {
   helpLine?: HelpLine;
 }
-
-const Maintenance: React.FC<MaintenanceFiveHundredErrorProps> = ({ helpLine = HelpLine.borrowers, icon = faTools }) => {
+const Maintenance: React.FC<FiveHundredPageTemplateProps> = ({ helpLine = HelpLine.borrowers, icon = faTools }) => {
   const { width = 0 } = useViewport();
   return (
     <div data-automation="ZA.ErrorPage.Maintenance">

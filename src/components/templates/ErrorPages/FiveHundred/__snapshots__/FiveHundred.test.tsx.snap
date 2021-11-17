@@ -134,50 +134,6 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   height: 80px;
 }
 
-.c8 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
-  background: #E9EAFA;
-}
-
-.c8:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
-.c8:hover {
-  background: #EEEFFB;
-}
-
-.c8:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 @media (min-width:0px) {
   .c1 {
     display: block;
@@ -236,7 +192,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
       We’re working to fix this problem and we’ll be up and running shortly.
     </p>
     <p
-      class="c6 mb-8"
+      class="c6 mb-10"
     >
       Keep seeing this page?
        
@@ -251,24 +207,6 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
        
       or come back later
     </p>
-    <div
-      class="c0"
-      cols="12"
-      direction="row"
-    >
-      <div
-        class="c1"
-        cols="12"
-      >
-        <a
-          class="c7 c8 mb-10"
-          color="#3B46C4"
-          href="https://www.zopa.com"
-        >
-          Go to Zopa home
-        </a>
-      </div>
-    </div>
     <p
       class="c6"
     >

@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 import FlexRow from '../../../layout/FlexRow/FlexRow';
@@ -6,22 +7,18 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 import Link from '../../../atoms/Link/Link';
+import Icon from '../../../atoms/Icon/Icon';
 import { useViewport } from '../../../../hooks/useViewport/useViewport';
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
-import { ErrorTemplateProps } from '../types';
-import { StyledIcon, StyledLink } from '../styles';
+import { ErrorTemplateProps } from '../Template/Template';
 
-interface FiveHundredErrorProps extends ErrorTemplateProps {
-  linkUrl?: string;
-  linkText?: string;
-}
+const StyledIcon = styled(Icon)`
+  width: 80px;
+  height: 80px;
+`;
 
-const FiveHundred: React.FC<FiveHundredErrorProps> = ({
-  icon = faTools,
-  linkUrl = 'https://www.zopa.com',
-  linkText = 'Go to Zopa home',
-}) => {
+const FiveHundred: React.FC<ErrorTemplateProps> = ({ icon = faTools }) => {
   const { width = 0 } = useViewport();
 
   return (
@@ -37,20 +34,13 @@ const FiveHundred: React.FC<FiveHundredErrorProps> = ({
       <Text as="p" size={width <= breakpoints.desktop ? 'body' : 'lead'} align="center" className="mb-7">
         We’re working to fix this problem and we’ll be up and running shortly.
       </Text>
-      <Text as="p" size="small" align="center" className="mb-8">
+      <Text as="p" size="small" align="center" className="mb-10">
         Keep seeing this page?{' '}
         <Link href="http://www.wikihow.com/Clear-Your-Browser%27s-Cookies" target="_blank" showTargetIcon={false}>
           Try clearing your browser cookies
         </Link>{' '}
         or come back later
       </Text>
-      <FlexRow justify="center">
-        <FlexCol xs="auto">
-          <StyledLink className="mb-10" href={linkUrl} styling="secondary">
-            {linkText}
-          </StyledLink>
-        </FlexCol>
-      </FlexRow>
       <Text as="p" size="small" align="center">
         Error code: 500
       </Text>
