@@ -1,3 +1,18 @@
+## [5.0.0](https://github.com/zopaUK/react-components/compare/v4.47.0...v5.0.0) (2021-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* props rename for 404 and 500 pages
+* **templates-error-pages:** Both renamed props  buttonLink => linkUrl, buttonText => linkText
+
+### Code Refactoring
+
+* **templates-error-pages:** props rename for 404 and 500 pages ([b30ff57](https://github.com/zopaUK/react-components/commit/b30ff57e4be2dafa51252645e13ba415c7acde6e))
+
+
+* Merge pull request #743 from zopaUK/template-error-page-props-rename ([ecf53a4](https://github.com/zopaUK/react-components/commit/ecf53a45467167e7b3ae86c43553e44d725f23c5)), closes [#743](https://github.com/zopaUK/react-components/issues/743)
+
 ## [4.47.0](https://github.com/zopaUK/react-components/compare/v4.46.0...v4.47.0) (2021-11-17)
 
 
