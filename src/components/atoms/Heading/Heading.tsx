@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors, grid, typography } from '../../../constants';
 import { Colors } from '../../../constants/colors';
 
-type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
+export type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
 export interface StyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   /**

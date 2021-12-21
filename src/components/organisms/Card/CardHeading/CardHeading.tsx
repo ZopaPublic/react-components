@@ -1,8 +1,12 @@
 import React, { FC } from 'react';
 import { colors } from '../../../../constants';
-import Heading, { StyledHeadingProps } from '../../../atoms/Heading/Heading';
+import Heading, { StyledHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
 
-const CardHeading: FC<StyledHeadingProps> = ({
+interface CardHeadingProps extends Omit<StyledHeadingProps, 'as'> {
+  as?: HeadingTags;
+}
+
+const CardHeading: FC<CardHeadingProps> = ({
   children,
   size = 'h6',
   as = 'h2',
