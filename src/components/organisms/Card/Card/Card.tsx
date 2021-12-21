@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
-import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
 import CardLineItem from '../CardLineItem/CardLineItem';
 
@@ -79,7 +78,7 @@ const Card = styled.div<CardProps>`
   & > ${CardImageContainer} {
     flex: 0 1 ${({ layout = 'vertical' }) => layoutImageStyles[layout]};
   }
-  & ${CardHeading} {
+  & .zrc__card-heading {
     font-size: ${({ styling = 'secondary' }) => headingSizes[styling]};
   }
   & ${CardText} {

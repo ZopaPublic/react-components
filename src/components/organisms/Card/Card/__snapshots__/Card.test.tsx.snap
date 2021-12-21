@@ -24,15 +24,15 @@ exports[`<Card /> renders with brand styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 14px;
 }
 
-.c0 > .c4 {
+.c0 > .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -67,15 +67,15 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 14px;
 }
 
-.c0 > .c4 {
+.c0 > .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -110,15 +110,15 @@ exports[`<Card /> renders with primary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 18px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 16px;
 }
 
-.c0 > .c4 {
+.c0 > .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -153,15 +153,15 @@ exports[`<Card /> renders with secondary styling 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 14px;
 }
 
-.c0 > .c4 {
+.c0 > .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -196,15 +196,15 @@ exports[`<Card /> renders with vertical layout 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 14px;
 }
 
-.c0 > .c4 {
+.c0 > .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
