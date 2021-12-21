@@ -2,7 +2,7 @@
 
 exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
 .c2 {
-  color: #818F9B;
+  color: #2C3236;
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -34,7 +34,7 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c4 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   font-size: 14px;
 }
 
-.c0 > .c5 {
+.c0 > .c4 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
