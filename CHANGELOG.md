@@ -1,3 +1,11 @@
+### [5.0.1](https://github.com/zopaUK/react-components/compare/v5.0.0...v5.0.1) (2021-12-21)
+
+
+### Bug Fixes
+
+* **card:** fix types ([e21c9cd](https://github.com/zopaUK/react-components/commit/e21c9cdb2f6be3db1df371d6d4d9dc5e50098f68))
+* **card:** make a11y changes to the card ([37607fc](https://github.com/zopaUK/react-components/commit/37607fc54a0df37afefac12f77619cedb179c900))
+
 ## [5.0.0](https://github.com/zopaUK/react-components/compare/v4.47.0...v5.0.0) (2021-11-17)
 
 
