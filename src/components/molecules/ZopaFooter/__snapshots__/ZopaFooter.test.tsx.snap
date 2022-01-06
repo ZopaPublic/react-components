@@ -669,13 +669,24 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Terms of use
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c7 c8"
               color="#3B46C4"
               href="https://www.zopa.com/investor-principles"
             >
               Investor principles
+            </a>
+          </li>
+          <li>
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/remuneration"
+            >
+              Remuneration
             </a>
           </li>
         </ul>
