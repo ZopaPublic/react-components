@@ -87,7 +87,10 @@ const ZopaFooter = ({
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/modern-slavery`, children: 'Modern slavery' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/terms-of-use`, children: 'Terms of use' })}</li>
-            <li>{renderLink({ href: `${baseUrl}/investor-principles`, children: 'Investor principles' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/investor-principles`, children: 'Investor principles' })}
+            </li>
+            <li>{renderLink({ href: `${baseUrl}/remuneration`, children: 'Remuneration' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
