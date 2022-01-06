@@ -1,3 +1,10 @@
+## [5.1.0](https://github.com/zopaUK/react-components/compare/v5.0.1...v5.1.0) (2022-01-06)
+
+
+### Features
+
+* **zopafooter:** adding remuneration link ([142d89f](https://github.com/zopaUK/react-components/commit/142d89f99d4c8e623f95f2b0f0a0c71db97d8aab))
+
 ### [5.0.1](https://github.com/zopaUK/react-components/compare/v5.0.0...v5.0.1) (2021-12-21)
 
 
