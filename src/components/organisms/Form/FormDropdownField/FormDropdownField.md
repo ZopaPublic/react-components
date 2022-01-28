@@ -18,12 +18,7 @@ const validate = (values) => {
   return errors;
 };
 
-<Formik
-  validateOnMount
-  initialValues={{ ref: 'newspaper' }}
-  validate={validate}
-  onSubmit={(values) => alert(JSON.stringify(values))}
->
+<Formik validateOnMount initialValues={{}} validate={validate} onSubmit={(values) => alert(JSON.stringify(values))}>
   <Form>
     <div className="mb-4">
       <FormDropdownField
@@ -31,6 +26,7 @@ const validate = (values) => {
           {
             label: 'Select an option',
             value: '',
+            disabled: true,
           },
           {
             label: 'Newspaper',

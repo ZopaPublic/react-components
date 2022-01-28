@@ -78,6 +78,7 @@ const FormExample = () => (
           {
             label: 'Select an option',
             value: '',
+            disabled: true,
           },
           {
             label: 'Newspaper',
