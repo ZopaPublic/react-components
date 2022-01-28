@@ -5,7 +5,7 @@ import DropdownField, { DropdownFieldProps } from '../../../molecules/DropdownFi
 type FormDropdownOption = {
   label: string;
   value: string;
-  isDefault?: boolean;
+  disabled?: boolean;
 };
 
 export type FormDropdownFieldProps = Pick<FieldHookConfig<string>, 'validate' | 'name'> &
@@ -28,7 +28,7 @@ const FormDropdownField = forwardRef<HTMLSelectElement, FormDropdownFieldProps>(
         {...rest}
       >
         {options.map((option) => (
-          <option key={option.value} value={option.value} disabled={option.isDefault}>
+          <option key={option.value} value={option.value} disabled={option.disabled}>
             {option.label}
           </option>
         ))}

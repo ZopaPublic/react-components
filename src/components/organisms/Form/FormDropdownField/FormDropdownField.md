@@ -26,7 +26,7 @@ const validate = (values) => {
           {
             label: 'Select an option',
             value: '',
-            isDefault: true,
+            disabled: true,
           },
           {
             label: 'Newspaper',
