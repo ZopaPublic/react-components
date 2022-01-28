@@ -1,3 +1,17 @@
+## [5.2.0](https://github.com/zopaUK/react-components/compare/v5.1.0...v5.2.0) (2022-01-28)
+
+
+### Features
+
+* **dropdown:** add default value ([819cafa](https://github.com/zopaUK/react-components/commit/819cafaf11ac2eb4ef0195a88f9ea4a13f58c900))
+
+
+### Bug Fixes
+
+* **dropdown:** rm selected prop ([b64c27f](https://github.com/zopaUK/react-components/commit/b64c27fad1bc9489d2c0ae5d7e85f99eaa69e212))
+* **dropdown:** update docs ([ea0aba9](https://github.com/zopaUK/react-components/commit/ea0aba9206cdc9d198c306b39380de86d3d440a9))
+* **select:** fix select ([5724c83](https://github.com/zopaUK/react-components/commit/5724c839f21969249d1f8558e3f7806d7b8a150d))
+
 ## [5.1.0](https://github.com/zopaUK/react-components/compare/v5.0.1...v5.1.0) (2022-01-06)
 
 
