@@ -453,28 +453,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
-              href="https://www.zopa.com/invest"
-            >
-              Peer-to-peer investments
-            </a>
-          </li>
-          <li
-            class="mb-4"
-          >
-            <a
-              class="c7 c8"
-              color="#3B46C4"
-              href="https://www.zopa.com/invest/isa"
-            >
-              Innovative Finance ISA
-            </a>
-          </li>
-          <li
-            class="mb-4"
-          >
-            <a
-              class="c7 c8"
-              color="#3B46C4"
               href="https://www.zopa.com/credit-card"
             >
               Credit cards
@@ -591,13 +569,24 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Complaints
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c7 c8"
               color="#3B46C4"
               href="https://www.zopa.com/about/press"
             >
               Press office
+            </a>
+          </li>
+          <li>
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/invest"
+            >
+              Peer-to-peer investments
             </a>
           </li>
         </ul>
