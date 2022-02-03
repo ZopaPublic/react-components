@@ -53,10 +53,6 @@ const ZopaFooter = ({
               {renderLink({ href: `${baseUrl}/loans/home-improvement`, children: 'Home improvement loans' })}
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/wedding`, children: 'Wedding loans' })}</li>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/invest`, children: 'Peer-to-peer investments' })}</li>
-            <li className="mb-4">
-              {renderLink({ href: `${baseUrl}/invest/isa`, children: 'Innovative Finance ISA' })}
-            </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/credit-card`, children: 'Credit cards' })}</li>
             <li>{renderLink({ href: `${baseUrl}/savings-accounts`, children: 'Fixed Term Savings' })}</li>
           </List>
@@ -74,7 +70,8 @@ const ZopaFooter = ({
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
-            <li>{renderLink({ href: `${baseUrl}/about/press`, children: 'Press office' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/press`, children: 'Press office' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/invest`, children: 'Peer-to-peer investments' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
