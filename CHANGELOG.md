@@ -1,3 +1,10 @@
+### [5.2.1](https://github.com/zopaUK/react-components/compare/v5.2.0...v5.2.1) (2022-02-03)
+
+
+### Bug Fixes
+
+* **zopafooter:** removing ISA link ([1791869](https://github.com/zopaUK/react-components/commit/17918696ece9e6c16d3ad364c793d03ea40150ae))
+
 ## [5.2.0](https://github.com/zopaUK/react-components/compare/v5.1.0...v5.2.0) (2022-01-28)
 
 
