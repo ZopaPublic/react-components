@@ -54,6 +54,7 @@ const ZopaFooter = ({
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/wedding`, children: 'Wedding loans' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/credit-card`, children: 'Credit cards' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/smart-saver`, children: 'Smart Saver' })}</li>
             <li>{renderLink({ href: `${baseUrl}/savings-accounts`, children: 'Fixed Term Savings' })}</li>
           </List>
         </FlexCol>
