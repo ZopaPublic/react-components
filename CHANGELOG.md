@@ -1,3 +1,10 @@
+## [5.3.0](https://github.com/zopaUK/react-components/compare/v5.2.1...v5.3.0) (2022-02-23)
+
+
+### Features
+
+* add smart saver to footer ([3e9ed60](https://github.com/zopaUK/react-components/commit/3e9ed602952a7ea7616c4d0c9f7ed76204ba548c))
+
 ### [5.2.1](https://github.com/zopaUK/react-components/compare/v5.2.0...v5.2.1) (2022-02-03)
 
 
