@@ -1,3 +1,10 @@
+### [5.3.1](https://github.com/zopaUK/react-components/compare/v5.3.0...v5.3.1) (2022-03-02)
+
+
+### Bug Fixes
+
+* **radiofield:** remove check for the value ([0f46fca](https://github.com/zopaUK/react-components/commit/0f46fca915a9654634c08564a3766aad581e32a9))
+
 ## [5.3.0](https://github.com/zopaUK/react-components/compare/v5.2.1...v5.3.0) (2022-02-23)
 
 
