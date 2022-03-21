@@ -75,3 +75,5 @@ export * from './hooks/useViewport';
 export * from './hooks/useAccordion';
 // Helpers
 export * from './helpers/responsiveness';
+// Types
+export type { Severity } from './components/atoms/Alert/Alert';

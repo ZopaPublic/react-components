@@ -10,7 +10,7 @@ import {
 import Icon from '../Icon/Icon';
 import { colors, typography } from '../../../constants';
 
-type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
+export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
