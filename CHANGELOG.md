@@ -1,3 +1,10 @@
+## [5.5.0](https://github.com/zopaUK/react-components/compare/v5.4.0...v5.5.0) (2022-03-22)
+
+
+### Features
+
+* round button component ([3a793a0](https://github.com/zopaUK/react-components/commit/3a793a02c3e38c59ad6da087a3396f085165e11a))
+
 ## [5.4.0](https://github.com/zopaUK/react-components/compare/v5.3.1...v5.4.0) (2022-03-21)
 
 
