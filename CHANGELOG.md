@@ -1,3 +1,10 @@
+## [5.4.0](https://github.com/zopaUK/react-components/compare/v5.3.1...v5.4.0) (2022-03-21)
+
+
+### Features
+
+* export severity type ([e4dbdb0](https://github.com/zopaUK/react-components/commit/e4dbdb01ad7cb71add6f01ad05db7b7b613cc087))
+
 ### [5.3.1](https://github.com/zopaUK/react-components/compare/v5.3.0...v5.3.1) (2022-03-02)
 
 
