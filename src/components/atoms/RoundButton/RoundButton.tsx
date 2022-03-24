@@ -40,7 +40,7 @@ export const roundButtonStyle = css<RoundButtonProps>`
   flex-direction: column;
   margin: 0 ${spacing[6]};
   justify-content: flex-start;
-  padding-top: ${spacing[4]};
+  padding-top: 17px;
   margin-bottom: ${({ label }) => label && `${spacing[7]}`};
   color: ${({ styling = 'primary' }) => colorMap[styling].text};
   background: ${({ styling = 'primary' }) => colorMap[styling].bg};
