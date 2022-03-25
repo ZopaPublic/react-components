@@ -1,3 +1,10 @@
+### [5.5.1](https://github.com/zopaUK/react-components/compare/v5.5.0...v5.5.1) (2022-03-25)
+
+
+### Bug Fixes
+
+* round button styling ([8e57c7d](https://github.com/zopaUK/react-components/commit/8e57c7dbb929c4a16d9ec6c4325dd80d37d359ae))
+
 ## [5.5.0](https://github.com/zopaUK/react-components/compare/v5.4.0...v5.5.0) (2022-03-22)
 
 
