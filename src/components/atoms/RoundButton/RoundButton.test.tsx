@@ -28,17 +28,17 @@ describe('<RoundButton />', () => {
   });
 
   it('renders loading as "primary"', () => {
-    const { container } = render(<RoundButton loading />);
+    const { container } = render(<RoundButton $loading />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders loading as "secondary"', () => {
-    const { container } = render(<RoundButton styling="secondary" loading />);
+    const { container } = render(<RoundButton styling="secondary" $loading />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders loading with disabled attribute', () => {
-    const { container } = render(<RoundButton loading />);
+    const { container } = render(<RoundButton $loading />);
     expect(container.firstChild).toHaveAttribute('disabled');
   });
 });
