@@ -1,3 +1,12 @@
+### [5.5.2](https://github.com/zopaUK/react-components/compare/v5.5.1...v5.5.2) (2022-03-29)
+
+
+### Bug Fixes
+
+* **button:** tests ([784d775](https://github.com/zopaUK/react-components/commit/784d77563240aca2beb3ebcb3d7891857f822031))
+* **button:** update button styling ([6964283](https://github.com/zopaUK/react-components/commit/6964283f1f4711697e6fdddd60e8f6a22c07ecbc))
+* **tests:** update snapshot ([39a1948](https://github.com/zopaUK/react-components/commit/39a1948325455493a90f612671f8eed3f7ceb995))
+
 ### [5.5.1](https://github.com/zopaUK/react-components/compare/v5.5.0...v5.5.1) (2022-03-25)
 
 
