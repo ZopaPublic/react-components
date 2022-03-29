@@ -1,3 +1,11 @@
+### [5.5.3](https://github.com/zopaUK/react-components/compare/v5.5.2...v5.5.3) (2022-03-29)
+
+
+### Bug Fixes
+
+* **button:** add optional ([11182b0](https://github.com/zopaUK/react-components/commit/11182b0f6dbd1f38937eee6f120eba1bdfec760d))
+* **button:** add ts prop as ([7292d10](https://github.com/zopaUK/react-components/commit/7292d105e2e89bd0c88b29e1f489f5188388c540))
+
 ### [5.5.2](https://github.com/zopaUK/react-components/compare/v5.5.1...v5.5.2) (2022-03-29)
 
 
