@@ -4,7 +4,16 @@ Use `<RoundButton />` as a call to action within the **Zopa interface**.
 
 It comes in a lot of variations to suit different needs.
 
+by **default** the button is a `<div />` you can use the `as` prop to change the wrapping tag to a button or anchor.
+
 ### Examples
+
+```tsx
+import { RoundButton } from '@zopauk/react-components';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+
+<RoundButton as="a" href="#test" styling="secondary" icon={faCog} />;
+```
 
 - Primary
 
@@ -42,10 +51,10 @@ import { RoundButton, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-comp
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={6}>
-      <RoundButton loading icon={faCog} />
+      <RoundButton $loading icon={faCog} />
     </FlexCol>
     <FlexCol xs={6}>
-      <RoundButton styling="secondary" loading icon={faCog} />
+      <RoundButton styling="secondary" $loading icon={faCog} />
     </FlexCol>
   </FlexRow>
 </FlexContainer>;
