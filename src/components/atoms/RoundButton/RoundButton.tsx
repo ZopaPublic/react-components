@@ -14,7 +14,7 @@ export interface RoundButtonProps extends HTMLAttributes<HTMLDivElement> {
   $loading?: boolean;
   disabled?: boolean;
   icon?: IconDefinition;
-  as: 'button' | 'div' | 'a';
+  as?: 'button' | 'div' | 'a';
 }
 
 const colorMap = {
