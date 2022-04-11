@@ -97,6 +97,7 @@ describe('<Text />', () => {
     ${colors.greyDarkest} | ${'Grey Darkest'}
     ${colors.success}     | ${'Success'}
     ${colors.alert}       | ${'Alert'}
+    ${colors.alertDark}   | ${'Alert Dark'}
   `('can render in different colors: $name – $hex', ({ hex }) => {
     const { container } = render(<Text color={hex}>Text</Text>);
     expect(container.firstChild).toHaveStyleRule('color', hex);

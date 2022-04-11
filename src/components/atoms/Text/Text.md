@@ -78,6 +78,7 @@ import { Text, colors } from '@zopauk/react-components';
     Success
   </Text>
   <Text color={colors.alert}>Alert</Text>
+  <Text color={colors.alertDark}>Alert Dark</Text>
 </Fragment>;
 ```
 

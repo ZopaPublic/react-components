@@ -41,6 +41,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
     | Colors['greyDarkest']
     | Colors['success']
     | Colors['alert']
+    | Colors['alertDark']
     | 'inherit';
 }
 
