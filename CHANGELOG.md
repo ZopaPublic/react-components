@@ -1,3 +1,15 @@
+## [5.6.0](https://github.com/zopaUK/react-components/compare/v5.5.3...v5.6.0) (2022-04-11)
+
+
+### Features
+
+* add grey darkeset to text ([e262092](https://github.com/zopaUK/react-components/commit/e2620920fcd1b38a09700c137997731a93074efd))
+
+
+### Bug Fixes
+
+* docs styling ([6ef7ed9](https://github.com/zopaUK/react-components/commit/6ef7ed932624a751137e1bf0bf17d9223cc832f0))
+
 ### [5.5.3](https://github.com/zopaUK/react-components/compare/v5.5.2...v5.5.3) (2022-03-29)
 
 
