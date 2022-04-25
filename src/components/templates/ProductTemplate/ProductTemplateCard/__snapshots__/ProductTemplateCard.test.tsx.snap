@@ -32,12 +32,6 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   font-size: 14px;
 }
 
-.c0 > .c3 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 @media (max-width:768px) {
   .c0 {
     border-radius: 0;
