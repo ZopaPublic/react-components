@@ -148,9 +148,5 @@
   "homepage": "https://github.com/zopaUK/react-components#readme",
   "publishConfig": {
     "access": "public"
-  },
-  "engines": {
-    "node": ">=12.17",
-    "pnpm": ">=6"
   }
 }
