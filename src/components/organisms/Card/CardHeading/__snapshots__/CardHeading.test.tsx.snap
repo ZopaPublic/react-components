@@ -32,12 +32,6 @@ exports[`<Card.Heading /> renders the component with no a11y violations 1`] = `
   font-size: 14px;
 }
 
-.c0 > .c4 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c1 {
   font-size: 16px;
   line-height: 24px;
