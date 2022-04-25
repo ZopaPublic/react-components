@@ -1,3 +1,11 @@
+## [5.7.0](https://github.com/zopaUK/react-components/compare/v5.6.0...v5.7.0) (2022-04-25)
+
+
+### Features
+
+* **cardlineitem:** new styling ([953e9a2](https://github.com/zopaUK/react-components/commit/953e9a23ef3a5d280002e3e72a1a9abc960501f2))
+* **new styling to card:** new 'info' style for Card ([6c41775](https://github.com/zopaUK/react-components/commit/6c4177564e76ed5fc080a0f85bf82996251c1a95))
+
 ## [5.6.0](https://github.com/zopaUK/react-components/compare/v5.5.3...v5.6.0) (2022-04-11)
 
 
