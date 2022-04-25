@@ -89,9 +89,6 @@ const Card = styled.div<CardProps>`
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
   }
-  & > ${CardLineItem} {
-    align-self: center;
-  }
   ${({ styling }) =>
     styling === 'action'
       ? `&:hover {
