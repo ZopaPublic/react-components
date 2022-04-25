@@ -5,7 +5,7 @@ import { CardLayout, CardStyling } from './Card';
 import Card from '..';
 
 const layouts: CardLayout[] = ['vertical', 'horizontal'];
-const stylings: CardStyling[] = ['primary', 'secondary', 'brand'];
+const stylings: CardStyling[] = ['primary', 'secondary', 'brand', 'info'];
 
 describe('<Card />', () => {
   layouts.forEach((layout) => {

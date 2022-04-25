@@ -174,12 +174,6 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-size: 16px;
 }
 
-.c8 > .c18 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c9 {
   background-color: transparent;
   padding: 16px;
