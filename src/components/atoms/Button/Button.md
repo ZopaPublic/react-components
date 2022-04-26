@@ -109,10 +109,8 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { buttonStyle } from '@zopauk/react-components';
 
-type ButtonLinkProps = ButtonProps<HTMLAttributes<HTMLAnchorElement>>;
-
 // could be a gatsby or react-router-dom <Link />
-const Link = ({ href, ...rest }: ButtonLinkProps) => <a href={href} {...rest} />;
+const Link = ({ href, ...rest }) => <a href={href} {...rest} />;
 
 const ButtonLink = styled(Link)`
   ${buttonStyle}
@@ -130,13 +128,11 @@ import { buttonStyle, ButtonProps } from '@zopauk/react-components';
 import { FC, MouseEvent } from 'react';
 import styled from 'styled-components';
 
-type ButtonLinkProps = ButtonProps<HTMLAttributes<HTMLAnchorElement>>;
-
 const StyledA = styled.a`
   ${buttonStyle}
 `;
 
-const ButtonLink = ({ href, styling, fullWidth, children, disabled }: ButtonLinkProps) => (
+const ButtonLink = ({ href, styling, fullWidth, children, disabled }) => (
   <StyledA
     href={href}
     styling={styling}
