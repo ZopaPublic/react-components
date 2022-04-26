@@ -1,17 +1,18 @@
-import React, { HTMLAttributes } from 'react';
+import Spinner from '../Spinner/Spinner';
+import React, { ButtonHTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
 import { colors, typography, spacing } from '../../../constants';
-import Spinner from '../Spinner/Spinner';
 
 export type Styling = 'primary' | 'secondary' | 'link';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+type BaseButtonProps = {
   styling?: Styling;
   disabled?: boolean;
   loading?: boolean;
   fullWidth?: boolean;
-  type?: 'button' | 'submit' | 'reset';
-}
+};
+
+export type ButtonProps<T = ButtonHTMLAttributes<HTMLButtonElement>> = BaseButtonProps & T;
 
 const colorMap = {
   primary: {
@@ -31,7 +32,7 @@ const colorMap = {
   },
 };
 
-export const buttonStyle = css<ButtonProps>`
+export const buttonStyle = css<BaseButtonProps>`
   text-decoration: none;
   box-sizing: border-box;
   display: inline-flex;
@@ -68,7 +69,7 @@ export const buttonStyle = css<ButtonProps>`
   }
 
   ${({ disabled, styling = 'primary' }) => {
-    const disabledStyles = css<ButtonProps>`
+    const disabledStyles = css<BaseButtonProps>`
       cursor: not-allowed;
       ${({ loading }) => {
         if (!loading) {
