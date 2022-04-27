@@ -1,3 +1,10 @@
+## [5.9.0](https://github.com/zopaUK/react-components/compare/v5.8.0...v5.9.0) (2022-04-27)
+
+
+### Features
+
+* **pnpm:** upgrade pnpm from v5 to v6 ([bc91317](https://github.com/zopaUK/react-components/commit/bc91317c2c4f68155875a312f4b5e0b6076074e0))
+
 ## [5.8.0](https://github.com/zopaUK/react-components/compare/v5.7.0...v5.8.0) (2022-04-26)
 
 
