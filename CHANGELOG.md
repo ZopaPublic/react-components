@@ -1,3 +1,15 @@
+## [5.8.0](https://github.com/zopaUK/react-components/compare/v5.7.0...v5.8.0) (2022-04-26)
+
+
+### Features
+
+* **button:** update types ([29009e2](https://github.com/zopaUK/react-components/commit/29009e27ce71f563187e89451f54de1c599b8a9e))
+
+
+### Bug Fixes
+
+* **button:** fix docs ([3c2a5f0](https://github.com/zopaUK/react-components/commit/3c2a5f057cc52c74776e7221240f20516f5ddcb0))
+
 ## [5.7.0](https://github.com/zopaUK/react-components/compare/v5.6.0...v5.7.0) (2022-04-25)
 
 
