@@ -692,7 +692,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 "
+                      class="svg-inline--fa fa-chevron-down "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
@@ -704,7 +704,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"
                         fill="currentColor"
                       />
                     </svg>
@@ -829,7 +829,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                   </div>
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    class="svg-inline--fa fa-user fa-lg c20"
                     color="#FFFFFF"
                     data-icon="user"
                     data-prefix="fas"
@@ -841,7 +841,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                       fill="currentColor"
                     />
                   </svg>
@@ -865,7 +865,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
+                class="svg-inline--fa fa-bars fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
@@ -877,7 +877,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
                   fill="currentColor"
                 />
               </svg>
@@ -921,7 +921,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                class="svg-inline--fa fa-user fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -933,7 +933,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                   fill="currentColor"
                 />
               </svg>
@@ -1594,7 +1594,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 "
+                      class="svg-inline--fa fa-chevron-down "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
@@ -1606,7 +1606,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"
                         fill="currentColor"
                       />
                     </svg>
@@ -1731,7 +1731,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                   </div>
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    class="svg-inline--fa fa-user fa-lg c20"
                     color="#FFFFFF"
                     data-icon="user"
                     data-prefix="fas"
@@ -1743,7 +1743,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                       fill="currentColor"
                     />
                   </svg>
@@ -1767,7 +1767,7 @@ exports[`<Navbar /> should render large device navigation with default props and
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
+                class="svg-inline--fa fa-bars fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
@@ -1779,7 +1779,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
                   fill="currentColor"
                 />
               </svg>
@@ -1820,7 +1820,7 @@ exports[`<Navbar /> should render large device navigation with default props and
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                class="svg-inline--fa fa-user fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -1832,7 +1832,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                   fill="currentColor"
                 />
               </svg>
@@ -2537,7 +2537,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 "
+                      class="svg-inline--fa fa-chevron-down "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
@@ -2549,7 +2549,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"
                         fill="currentColor"
                       />
                     </svg>
@@ -2674,7 +2674,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                   </div>
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    class="svg-inline--fa fa-user fa-lg c20"
                     color="#FFFFFF"
                     data-icon="user"
                     data-prefix="fas"
@@ -2686,7 +2686,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                       fill="currentColor"
                     />
                   </svg>
@@ -2710,7 +2710,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
+                class="svg-inline--fa fa-bars fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
@@ -2722,7 +2722,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
                   fill="currentColor"
                 />
               </svg>
@@ -2763,7 +2763,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                class="svg-inline--fa fa-user fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -2775,7 +2775,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                   fill="currentColor"
                 />
               </svg>
@@ -3492,7 +3492,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-chevron-down fa-w-14 "
+                      class="svg-inline--fa fa-chevron-down "
                       color="#818F9B"
                       data-icon="chevron-down"
                       data-prefix="fas"
@@ -3504,7 +3504,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"
                         fill="currentColor"
                       />
                     </svg>
@@ -3629,7 +3629,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   </div>
                   <svg
                     aria-hidden="true"
-                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    class="svg-inline--fa fa-user fa-lg c20"
                     color="#FFFFFF"
                     data-icon="user"
                     data-prefix="fas"
@@ -3641,7 +3641,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                       fill="currentColor"
                     />
                   </svg>
@@ -3665,7 +3665,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             >
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-bars fa-w-14 fa-1x "
+                class="svg-inline--fa fa-bars fa-1x "
                 color="#FFFFFF"
                 data-icon="bars"
                 data-prefix="fas"
@@ -3677,7 +3677,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
                   fill="currentColor"
                 />
               </svg>
@@ -3718,7 +3718,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                class="svg-inline--fa fa-user fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -3730,7 +3730,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                  d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"
                   fill="currentColor"
                 />
               </svg>
