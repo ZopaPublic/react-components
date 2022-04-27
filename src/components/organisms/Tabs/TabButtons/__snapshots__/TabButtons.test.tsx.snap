@@ -238,19 +238,19 @@ exports[`<TabButtons /> renders the buttons on small screens 1`] = `
         class="c0 c1"
       >
         <option
-          class="sc-bqGGPW"
+          class="sc-hAZoDl"
           value="pineapple"
         >
           🍍 Pineapple
         </option>
         <option
-          class="sc-bqGGPW"
+          class="sc-hAZoDl"
           value="kiwi"
         >
           🥝 Kiwi
         </option>
         <option
-          class="sc-bqGGPW"
+          class="sc-hAZoDl"
           value="watermelon"
         >
           🍉 Watermelon

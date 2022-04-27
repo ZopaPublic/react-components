@@ -19,6 +19,8 @@ export { default as Alert } from './components/atoms/Alert/Alert';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Icon } from './components/atoms/Icon/Icon';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';
+export type { ButtonProps } from './components/atoms/Button/Button';
+export { default as RoundButton } from './components/atoms/RoundButton/RoundButton';
 export { default as Progress } from './components/molecules/Progress/Progress';
 export { default as Link, linkStyle } from './components/atoms/Link/Link';
 export { default as Dropdown } from './components/atoms/Dropdown/Dropdown';
@@ -73,3 +75,5 @@ export * from './hooks/useViewport';
 export * from './hooks/useAccordion';
 // Helpers
 export * from './helpers/responsiveness';
+// Types
+export type { Severity } from './components/atoms/Alert/Alert';

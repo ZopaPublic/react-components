@@ -18,24 +18,18 @@ exports[`<Card /> renders with brand styling 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-gtsrHT {
+.c0 > .sc-gsnTZi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-hKMtZM {
   font-size: 14px;
-}
-
-.c0 > .sc-jSFjdj {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 <div
@@ -61,24 +55,55 @@ exports[`<Card /> renders with horizontal layout 1`] = `
   flex-direction: row;
 }
 
-.c0 > .sc-gtsrHT {
+.c0 > .sc-gsnTZi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-hKMtZM {
   font-size: 14px;
 }
 
-.c0 > .sc-jSFjdj {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+<div
+  class="c0"
+/>
+`;
+
+exports[`<Card /> renders with info styling 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  border-radius: 12px;
+  box-shadow: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .sc-gsnTZi {
+  -webkit-flex: 0 1  200px;
+  -ms-flex: 0 1  200px;
+  flex: 0 1  200px;
+}
+
+.c0 .zrc__card-heading {
+  font-size: 16px;
+}
+
+.c0 .sc-hKMtZM {
+  font-size: 14px;
 }
 
 <div
@@ -104,24 +129,18 @@ exports[`<Card /> renders with primary styling 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-gtsrHT {
+.c0 > .sc-gsnTZi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .zrc__card-heading {
   font-size: 18px;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-hKMtZM {
   font-size: 16px;
-}
-
-.c0 > .sc-jSFjdj {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 <div
@@ -147,24 +166,18 @@ exports[`<Card /> renders with secondary styling 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-gtsrHT {
+.c0 > .sc-gsnTZi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-hKMtZM {
   font-size: 14px;
-}
-
-.c0 > .sc-jSFjdj {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 <div
@@ -190,24 +203,18 @@ exports[`<Card /> renders with vertical layout 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-gtsrHT {
+.c0 > .sc-gsnTZi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .sc-eCApnc {
+.c0 .sc-hKMtZM {
   font-size: 14px;
-}
-
-.c0 > .sc-jSFjdj {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 <div

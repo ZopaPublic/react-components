@@ -1,11 +1,22 @@
-import styled from 'styled-components';
-import { colors, typography } from '../../../../constants';
+import React, { FC } from 'react';
+import { colors } from '../../../../constants';
+import Heading, { StyledHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
 
-const CardHeading = styled.h6`
-  color: ${colors.greyDark};
-  font-weight: ${typography.weights.bold};
-  padding: 0;
-  margin: 0 0 16px;
-`;
+interface CardHeadingProps extends Omit<StyledHeadingProps, 'as'> {
+  as?: HeadingTags;
+}
+
+const CardHeading: FC<CardHeadingProps> = ({
+  children,
+  size = 'h6',
+  as = 'h2',
+  color = colors.greyDarkest,
+  className,
+  ...rest
+}) => (
+  <Heading as={as} size={size} color={color} className={`zrc__card-heading ${className}`} {...rest}>
+    {children}
+  </Heading>
+);
 
 export default CardHeading;

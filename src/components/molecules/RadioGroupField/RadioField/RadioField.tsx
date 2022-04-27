@@ -158,7 +158,6 @@ const RadioField = ({
   hideControl,
   ...rest
 }: RadioField) => {
-  if (!value) throw Error('Value must be set in inputProps. Check the docs.');
   const id = `radio-id-${groupLabel.replace(/\s/g, '-')}-${value}`;
 
   return (

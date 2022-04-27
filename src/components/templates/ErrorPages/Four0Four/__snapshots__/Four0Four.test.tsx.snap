@@ -77,6 +77,27 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   text-align: center;
 }
 
+.c2 {
+  background-color: #EFEFEF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 24px;
+}
+
 .c6 {
   background-color: transparent;
   font-size: inherit;
@@ -108,25 +129,9 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   fill: #21247F;
 }
 
-.c2 {
-  background-color: #EFEFEF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 24px;
+.c3 {
+  width: 80px;
+  height: 80px;
 }
 
 .c7 {
@@ -171,11 +176,6 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
-}
-
-.c3 {
-  width: 80px;
-  height: 80px;
 }
 
 @media (min-width:0px) {
@@ -231,7 +231,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
       Sorry, there’s been a problem
     </h1>
     <p
-      class="c5 mb-7"
+      class="c5 mb-8"
     >
       Seems like the page you’re looking for doesn’t exist.
     </p>

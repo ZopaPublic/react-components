@@ -77,6 +77,21 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
+.c4 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+  display: block;
+}
+
 .c21 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -95,20 +110,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   background-color: #FFFFFF;
   padding-bottom: 56px;
   padding-top: 64px;
-}
-
-.c4 {
-  font-size: 16px;
-  line-height: 24px;
-  -webkit-letter-spacing: -0.01px;
-  -moz-letter-spacing: -0.01px;
-  -ms-letter-spacing: -0.01px;
-  letter-spacing: -0.01px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
 }
 
 .c5 {
@@ -383,14 +384,25 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         class="c3 mb-8 s:mb-9"
         cols="12"
       >
-        <h3
+        <span
           class="c4 c5 mb-4 s:mb-6"
         >
           What we do
-        </h3>
+        </span>
         <ul
           class="c6"
         >
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/car-finance"
+            >
+              Car hire purchase
+            </a>
+          </li>
           <li
             class="mb-4"
           >
@@ -441,31 +453,20 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
-              href="https://www.zopa.com/invest"
-            >
-              Peer-to-peer investments
-            </a>
-          </li>
-          <li
-            class="mb-4"
-          >
-            <a
-              class="c7 c8"
-              color="#3B46C4"
-              href="https://www.zopa.com/invest/isa"
-            >
-              Innovative Finance ISA
-            </a>
-          </li>
-          <li
-            class="mb-4"
-          >
-            <a
-              class="c7 c8"
-              color="#3B46C4"
               href="https://www.zopa.com/credit-card"
             >
               Credit cards
+            </a>
+          </li>
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/smart-saver"
+            >
+              Smart Saver
             </a>
           </li>
           <li>
@@ -483,11 +484,11 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         class="c3 mb-8 s:mb-9"
         cols="12"
       >
-        <h3
+        <span
           class="c4 c5 mb-4 s:mb-6"
         >
           About Zopa
-        </h3>
+        </span>
         <ul
           class="c6"
         >
@@ -568,7 +569,9 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Blog
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c7 c8"
               color="#3B46C4"
@@ -577,17 +580,37 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Complaints
             </a>
           </li>
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/about/press"
+            >
+              Press office
+            </a>
+          </li>
+          <li>
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/invest"
+            >
+              Peer-to-peer investments
+            </a>
+          </li>
         </ul>
       </div>
       <div
         class="c3 mb-8 s:mb-9"
         cols="12"
       >
-        <h3
+        <span
           class="c4 c5 mb-4 s:mb-6"
         >
           Legal
-        </h3>
+        </span>
         <ul
           class="c6"
         >
@@ -646,7 +669,9 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Terms of use
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c7 c8"
               color="#3B46C4"
@@ -655,17 +680,26 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Investor principles
             </a>
           </li>
+          <li>
+            <a
+              class="c7 c8"
+              color="#3B46C4"
+              href="https://www.zopa.com/remuneration"
+            >
+              Remuneration
+            </a>
+          </li>
         </ul>
       </div>
       <div
         class="c3 mb-8 s:mb-9"
         cols="12"
       >
-        <h3
+        <span
           class="c4 c5 mb-4 s:mb-6"
         >
           Navigation
-        </h3>
+        </span>
         <ul
           class="c6"
         >

@@ -18,24 +18,18 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   flex-direction: column;
 }
 
-.c0 > .sc-bdnxRM {
+.c0 > .sc-bczRLJ {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c0 .sc-dlnjwi {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .sc-hKFxyN {
+.c0 .sc-dkzDqf {
   font-size: 14px;
-}
-
-.c0 > .sc-eCApnc {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 @media (max-width:768px) {

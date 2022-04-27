@@ -30,6 +30,20 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   font-weight: 700;
 }
 
+.c12 {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-letter-spacing: -0.01px;
+  -moz-letter-spacing: -0.01px;
+  -ms-letter-spacing: -0.01px;
+  letter-spacing: -0.01px;
+  margin: 0;
+  color: #2C3236;
+  text-align: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
 .c3 {
   position: relative;
   width: 100%;
@@ -97,7 +111,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   align-items: flex-start;
 }
 
-.c16 {
+.c15 {
   margin-top: 24px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -109,25 +123,18 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   justify-content: flex-end;
 }
 
-.c16 > a,
-.c16 > button {
+.c15 > a,
+.c15 > button {
   margin-right: 16px;
 }
 
-.c16 > a:last-child,
-.c16 > button:last-child {
+.c15 > a:last-child,
+.c15 > button:last-child {
   margin-right: 0;
 }
 
-.c13 {
-  color: #4A545E;
-  font-weight: 700;
-  padding: 0;
-  margin: 0 0 16px;
-}
-
-.c15 {
-  color: #818F9B;
+.c14 {
+  color: #2C3236;
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -153,24 +160,18 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   flex-direction: column;
 }
 
-.c8 > .sc-jSFjdj {
+.c8 > .sc-jSMfEi {
   -webkit-flex: 0 1  200px;
   -ms-flex: 0 1  200px;
   flex: 0 1  200px;
 }
 
-.c8 .c12 {
+.c8 .zrc__card-heading {
   font-size: 18px;
 }
 
-.c8 .c14 {
+.c8 .c13 {
   font-size: 16px;
-}
-
-.c8 > .sc-pNWdM {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 .c9 {
@@ -202,7 +203,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   text-align: center;
 }
 
-.c17 {
+.c16 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -232,16 +233,16 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   background: #E9EAFA;
 }
 
-.c17:focus:not(:active) {
+.c16:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c17:hover {
+.c16:hover {
   background: #EEEFFB;
 }
 
-.c17:active {
+.c16:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
@@ -372,13 +373,14 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 class="c11"
                 cols="12"
               >
-                <h6
-                  class="c12 c13"
+                <h2
+                  class="c12 zrc__card-heading undefined"
+                  color="#2C3236"
                 >
                   020 7580 6060
-                </h6>
+                </h2>
                 <p
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   Monday - Friday 
                   08:00 - 20:00
@@ -388,10 +390,10 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
               </div>
             </div>
             <div
-              class="c16"
+              class="c15"
             >
               <a
-                class="c17"
+                class="c16"
                 href="tel:+442075806060"
               >
                 Call us
@@ -440,23 +442,24 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 class="c11"
                 cols="12"
               >
-                <h6
-                  class="c12 c13"
+                <h2
+                  class="c12 zrc__card-heading undefined"
+                  color="#2C3236"
                 >
                   contactus@zopa.com
-                </h6>
+                </h2>
                 <p
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   If your query is urgent, please contact our Team via phone.
                 </p>
               </div>
             </div>
             <div
-              class="c16"
+              class="c15"
             >
               <a
-                class="c17"
+                class="c16"
                 href="mailto:contactus@zopa.com"
               >
                 Email us

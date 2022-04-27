@@ -196,7 +196,11 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
         class="c7"
       >
         <div
+          aria-label="Static progress bar showing step 1 of 2"
+          aria-valuemax="2"
+          aria-valuenow="1"
           class="c8"
+          role="progressbar"
         >
           <span
             class="c9"

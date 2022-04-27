@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card.LineItem /> renders the component with no a11y violations 1`] = `
+.c0 {
+  padding: 16px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
 <div
-  class="sc-jSFjdj p-4"
+  class="c0"
 >
   £10.00
 </div>

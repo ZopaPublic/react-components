@@ -4,7 +4,7 @@ exports[`<Modal /> allows to set global styles 1`] = `"svg:not(:root).svg-inline
 
 exports[`<Modal /> can render opened 1`] = `
 .c0 {
-  color: #818F9B;
+  color: #2C3236;
   font-weight: 400;
   padding: 0;
   margin: 0;

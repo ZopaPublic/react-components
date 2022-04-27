@@ -290,24 +290,24 @@ Object {
   </body>,
   "container": <div>
     <li
-      class="sc-iCoGMd jbRsqf"
+      class="sc-iBkjds cxCeDY"
     >
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-gtsrHT eCbwkR sc-eCApnc NbcBE"
+        class="sc-gsnTZi kQlOdP sc-eCYdqJ ewQriv"
         color="#3B46C4"
         data-automation="ZA.navbar-item"
         href="#"
         tabindex="0"
       >
         <span
-          class="sc-jSFjdj dPFuJk"
+          class="sc-jSMfEi fKnRkU"
         >
           About
         </span>
         <span
-          class="sc-gKAaRy erhKTo"
+          class="sc-gKXOVf dNVBMZ"
         >
           <svg
             aria-hidden="true"
@@ -331,7 +331,7 @@ Object {
       </a>
       <ul
         aria-label="About"
-        class="sc-bdnxRM ddkdsT"
+        class="sc-bczRLJ dRBFYi"
       >
         <li>
           <a
@@ -385,7 +385,7 @@ Object {
       </ul>
     </li>
     <li
-      class="sc-fujyAs eJWmob"
+      class="sc-ftvSup bOAfcK"
     >
       <a
         href="/contact"
