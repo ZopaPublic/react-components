@@ -5,9 +5,9 @@ specifiers:
   '@babel/runtime': ^7.14.6
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
-  '@fortawesome/fontawesome-svg-core': ^1.2.32
-  '@fortawesome/free-solid-svg-icons': 5.13.1
-  '@fortawesome/react-fontawesome': ^0.1.11
+  '@fortawesome/fontawesome-svg-core': ^6.1.1
+  '@fortawesome/free-solid-svg-icons': 6.1.1
+  '@fortawesome/react-fontawesome': ^0.1.18
   '@rollup/plugin-babel': 5.0.4
   '@rollup/plugin-commonjs': 12.0.0
   '@rollup/plugin-node-resolve': 8.1.0
@@ -75,8 +75,8 @@ specifiers:
 
 dependencies:
   '@babel/runtime': 7.14.6
-  '@fortawesome/fontawesome-svg-core': 1.2.32
-  '@fortawesome/react-fontawesome': 0.1.11_22b5ff5cd64cfd006c7aaa46b26f0405
+  '@fortawesome/fontawesome-svg-core': 6.1.1
+  '@fortawesome/react-fontawesome': 0.1.18_1a175702ffca7429f139bc0ee502d26b
   '@tippyjs/react': 4.2.0_react-dom@16.13.1+react@16.13.1
   '@types/classnames': 2.2.10
   '@types/react-headroom': 2.2.1
@@ -100,7 +100,7 @@ devDependencies:
   '@babel/core': 7.12.3
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
-  '@fortawesome/free-solid-svg-icons': 5.13.1
+  '@fortawesome/free-solid-svg-icons': 6.1.1
   '@rollup/plugin-babel': 5.0.4_@babel+core@7.12.3+rollup@2.21.0
   '@rollup/plugin-commonjs': 12.0.0_rollup@2.21.0
   '@rollup/plugin-node-resolve': 8.1.0_rollup@2.21.0
@@ -3906,34 +3906,35 @@ packages:
       - supports-color
     dev: true
 
-  /@fortawesome/fontawesome-common-types/0.2.32:
-    resolution: {integrity: sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==}
+  /@fortawesome/fontawesome-common-types/6.1.1:
+    resolution: {integrity: sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==}
     engines: {node: '>=6'}
     requiresBuild: true
 
-  /@fortawesome/fontawesome-svg-core/1.2.32:
-    resolution: {integrity: sha512-XjqyeLCsR/c/usUpdWcOdVtWFVjPbDFBTQkn2fQRrWhhUoxriQohO2RWDxLyUM8XpD+Zzg5xwJ8gqTYGDLeGaQ==}
+  /@fortawesome/fontawesome-svg-core/6.1.1:
+    resolution: {integrity: sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 6.1.1
     dev: false
 
-  /@fortawesome/free-solid-svg-icons/5.13.1:
-    resolution: {integrity: sha512-LQH/0L1p4+rqtoSHa9qFYR84hpuRZKqaQ41cfBQx8b68p21zoWSekTAeA54I/2x9VlCHDLFlG74Nmdg4iTPQOg==}
+  /@fortawesome/free-solid-svg-icons/6.1.1:
+    resolution: {integrity: sha512-0/5exxavOhI/D4Ovm2r3vxNojGZioPwmFrKg0ZUH69Q68uFhFPs6+dhAToh6VEQBntxPRYPuT5Cg1tpNa9JUPg==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 6.1.1
     dev: true
 
-  /@fortawesome/react-fontawesome/0.1.11_22b5ff5cd64cfd006c7aaa46b26f0405:
-    resolution: {integrity: sha512-sClfojasRifQKI0OPqTy8Ln8iIhnxR/Pv/hukBhWnBz9kQRmqi6JSH3nghlhAY7SUeIIM7B5/D2G8WjX0iepVg==}
+  /@fortawesome/react-fontawesome/0.1.18_1a175702ffca7429f139bc0ee502d26b:
+    resolution: {integrity: sha512-RwLIB4TZw0M9gvy5u+TusAA0afbwM4JQIimNH/j3ygd6aIvYPQLqXMhC9ErY26J23rDPyDZldIfPq/HpTTJ/tQ==}
     peerDependencies:
-      '@fortawesome/fontawesome-svg-core': ^1.2.20
-      react: 16.x
+      '@fortawesome/fontawesome-svg-core': ~1 || ~6
+      react: '>=16.x'
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.32
-      prop-types: 15.7.2
+      '@fortawesome/fontawesome-svg-core': 6.1.1
+      prop-types: 15.8.1
       react: 16.13.1
     dev: false
 
@@ -9171,7 +9172,7 @@ packages:
       object.entries: 1.1.4
       object.fromentries: 2.0.4
       object.values: 1.1.4
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       resolve: 2.0.0-next.3
       string.prototype.matchall: 4.0.5
     dev: true
@@ -15310,7 +15311,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /proxy-addr/2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
