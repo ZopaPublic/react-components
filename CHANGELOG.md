@@ -1,3 +1,10 @@
+### [5.9.1](https://github.com/zopaUK/react-components/compare/v5.9.0...v5.9.1) (2022-04-28)
+
+
+### Bug Fixes
+
+* **button:** a11y fix ([33281fb](https://github.com/zopaUK/react-components/commit/33281fb01e65ed505db0db4d05a66c95b5f1de87))
+
 ## [5.9.0](https://github.com/zopaUK/react-components/compare/v5.8.0...v5.9.0) (2022-04-27)
 
 

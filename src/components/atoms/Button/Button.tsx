@@ -75,7 +75,7 @@ export const buttonStyle = css<BaseButtonProps>`
         if (!loading) {
           return css`
             background: ${colors.greyLightest};
-            color: ${colors.grey};
+            color: ${colors.greyDark};
           `;
         }
       }}
