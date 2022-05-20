@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "strict": true,
     "allowJs": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
@@ -17,6 +17,7 @@
     "isolatedModules": true,
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
+    "incremental": true,
     "types": ["node", "jest", "@testing-library/jest-dom"]
   },
   "include": ["src/**/*"],
