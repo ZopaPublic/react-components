@@ -60,17 +60,11 @@ export default {
           },
         })
       : babel({
-          presets: [
-            ['@babel/preset-env', { useBuiltIns: 'entry', corejs: 3 }],
-            '@babel/preset-typescript',
-            '@babel/preset-react',
-          ],
-          plugins: ['@babel/plugin-transform-runtime', { absoluteRuntime: false }],
+          presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
           babelHelpers: 'runtime',
           extensions,
           exclude: 'node_modules',
         }),
-
     url({
       fileName: '[hash][extname]',
       limit: 100000, // inline files
