@@ -65,7 +65,7 @@ export default {
             '@babel/preset-typescript',
             '@babel/preset-react',
           ],
-          plugins: ['@babel/plugin-transform-runtime'],
+          plugins: ['@babel/plugin-transform-runtime', { absoluteRuntime: false }],
           babelHelpers: 'runtime',
           extensions,
           exclude: 'node_modules',
