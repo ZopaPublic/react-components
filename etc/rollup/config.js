@@ -8,6 +8,7 @@ import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import esbuild from 'rollup-plugin-esbuild';
 
 const extensions = ['.ts', '.tsx', '.js', '.jsx', '.es6', '.es', '.mjs', '.json'];
 
@@ -44,17 +45,32 @@ export default {
       include: /node_modules/,
       extensions,
     }),
-    babel({
-      presets: [
-        ['@babel/preset-env', { useBuiltIns: 'entry', corejs: 3 }],
-        '@babel/preset-typescript',
-        '@babel/preset-react',
-      ],
-      plugins: ['@babel/plugin-transform-runtime'],
-      babelHelpers: 'runtime',
-      extensions,
-      exclude: 'node_modules',
-    }),
+
+    isDevelopment
+      ? esbuild({
+          include: /\.[jt]sx?$/,
+          sourceMap: false, // by default inferred from rollup's `output.sourcemap` option
+          minify: process.env.NODE_ENV === 'production',
+          jsxFactory: 'React.createElement',
+          jsxFragment: 'React.Fragment',
+          target: 'es2017',
+          loaders: {
+            // Enable JSX in .js files too
+            '.js': 'jsx',
+          },
+        })
+      : babel({
+          presets: [
+            ['@babel/preset-env', { useBuiltIns: 'entry', corejs: 3 }],
+            '@babel/preset-typescript',
+            '@babel/preset-react',
+          ],
+          plugins: ['@babel/plugin-transform-runtime'],
+          babelHelpers: 'runtime',
+          extensions,
+          exclude: 'node_modules',
+        }),
+
     url({
       fileName: '[hash][extname]',
       limit: 100000, // inline files
