@@ -23,6 +23,7 @@
     "compile:code": "rollup --config ./etc/rollup/config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
+    "local:link": "export NODE_ENV=development; pnpm compile:code -- -w & pnpm compile:types -- -w",
     "test": "react-scripts test",
     "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
     "format:fix": "pnpm format --write",
@@ -32,7 +33,7 @@
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.6",
+    "@babel/runtime": "^7.18.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippyjs/react": "^4.2.0",
@@ -63,12 +64,11 @@
     "typescript": ">=3.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.18.0",
     "@babel/preset-env": "^7.18.0",
     "@babel/preset-react": "^7.17.12",
     "@babel/preset-typescript": "^7.17.12",
     "@babel/plugin-transform-runtime": "^7.18.0",
-    "@babel/runtime": "^7.18.0",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
