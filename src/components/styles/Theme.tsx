@@ -60,13 +60,16 @@ export interface AppTheme {
   };
   typography: {
     primary: string;
-    sizes: {
-      text: {
+    text: {
+      color: string;
+      sizes: {
         lead: string;
         body: string;
         small: string;
       };
-      heading: {
+    };
+    heading: {
+      sizes: {
         display: string;
         h1: string;
         h2: string;
@@ -75,27 +78,27 @@ export interface AppTheme {
         h5: string;
         h6: string;
       };
-      lineHeight: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-        lead: string;
-        body: string;
-        small: string;
-      };
-      letterSpacingMap: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-      };
+    };
+    lineHeight: {
+      display: string;
+      h1: string;
+      h2: string;
+      h3: string;
+      h4: string;
+      h5: string;
+      h6: string;
+      lead: string;
+      body: string;
+      small: string;
+    };
+    letterSpacingMap: {
+      display: string;
+      h1: string;
+      h2: string;
+      h3: string;
+      h4: string;
+      h5: string;
+      h6: string;
     };
     weights: {
       regular: number;
@@ -217,13 +220,16 @@ export const zopaTheme: AppTheme = {
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
-    sizes: {
-      text: {
+    text: {
+      color: colors.greyDarkest,
+      sizes: {
         lead: '18px',
         body: '16px',
         small: '14px',
       },
-      heading: {
+    },
+    heading: {
+      sizes: {
         display: '68px',
         h1: '46px',
         h2: '38px',
@@ -232,27 +238,27 @@ export const zopaTheme: AppTheme = {
         h5: '18px',
         h6: '16px',
       },
-      lineHeight: {
-        display: '76px',
-        h1: '54px',
-        h2: '46px',
-        h3: '36px',
-        h4: '32px',
-        h5: '26px',
-        h6: '24px',
-        lead: '26px',
-        body: '24px',
-        small: '20px',
-      },
-      letterSpacingMap: {
-        display: '-2.86px',
-        h1: '-1.25px',
-        h2: '-0.85px',
-        h3: '-0.45px',
-        h4: '-0.25px',
-        h5: '-0.02px',
-        h6: '-0.01px',
-      },
+    },
+    lineHeight: {
+      display: '76px',
+      h1: '54px',
+      h2: '46px',
+      h3: '36px',
+      h4: '32px',
+      h5: '26px',
+      h6: '24px',
+      lead: '26px',
+      body: '24px',
+      small: '20px',
+    },
+    letterSpacingMap: {
+      display: '-2.86px',
+      h1: '-1.25px',
+      h2: '-0.85px',
+      h3: '-0.45px',
+      h4: '-0.25px',
+      h5: '-0.02px',
+      h6: '-0.01px',
     },
     weights: {
       regular: 400,
