@@ -11,7 +11,14 @@ interface ButtonTheme {
   hover: string;
 }
 
+interface ButtonsTheme {
+  primary: ButtonTheme;
+  secondary: ButtonTheme;
+  link: ButtonTheme;
+}
+
 export type AlertLevel = 'info' | 'alert' | 'warning' | 'success' | 'brand';
+
 interface CardInfo {
   headingSize: string;
   textSize: string;
@@ -20,78 +27,54 @@ interface CardInfo {
   backgroundStyle: string;
 }
 
-export interface AppTheme {
-  alert: Record<
-    AlertLevel,
-    {
-      icon: string;
-      background: string;
-      text: string;
-      component: FC;
-    }
-  >;
-  button: {
-    primary: ButtonTheme;
-    secondary: ButtonTheme;
-    link: ButtonTheme;
+type AlertTheme = Record<
+  AlertLevel,
+  {
+    icon: string;
+    background: string;
+    text: string;
+    component: FC;
+  }
+>;
+
+type CardTheme = Record<CardStyling, CardInfo>;
+
+interface ErrorMessageTheme {
+  textColor: string;
+  backgroundColor: string;
+}
+
+interface InputTheme {
+  color: string;
+  borderRadius: string;
+  hover: {
+    border: string;
+    boxShadow: string;
   };
-  card: Record<CardStyling, CardInfo>;
-  errorMessage: {
-    textColor: string;
+  disabled: {
+    color: string;
     backgroundColor: string;
   };
-  input: {
-    color: string;
-    borderRadius: string;
-    hover: {
-      border: string;
-      boxShadow: string;
-    };
-    disabled: {
-      color: string;
-      backgroundColor: string;
-    };
-    borderColorByStatus: {
-      error: string;
-      valid: string;
-      disabled: string;
-      default: string;
-    };
+  borderColorByStatus: {
+    error: string;
+    valid: string;
+    disabled: string;
+    default: string;
   };
-  typography: {
-    primary: string;
-    text: {
-      color: string;
-      sizes: {
-        lead: string;
-        body: string;
-        small: string;
-      };
-    };
-    heading: {
-      sizes: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-      };
-    };
-    lineHeight: {
-      display: string;
-      h1: string;
-      h2: string;
-      h3: string;
-      h4: string;
-      h5: string;
-      h6: string;
+}
+
+interface TypographyTheme {
+  primary: string;
+  text: {
+    color: string;
+    sizes: {
       lead: string;
       body: string;
       small: string;
     };
-    letterSpacingMap: {
+  };
+  heading: {
+    sizes: {
       display: string;
       h1: string;
       h2: string;
@@ -100,13 +83,43 @@ export interface AppTheme {
       h5: string;
       h6: string;
     };
-    weights: {
-      regular: number;
-      semiBold: number;
-      bold: number;
-      extraBold: number;
-    };
   };
+  lineHeight: {
+    display: string;
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+    lead: string;
+    body: string;
+    small: string;
+  };
+  letterSpacingMap: {
+    display: string;
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+  };
+  weights: {
+    regular: number;
+    semiBold: number;
+    bold: number;
+    extraBold: number;
+  };
+}
+
+export interface AppTheme {
+  alert: AlertTheme;
+  button: ButtonsTheme;
+  card: CardTheme;
+  errorMessage: ErrorMessageTheme;
+  input: InputTheme;
+  typography: TypographyTheme;
 }
 
 export const zopaTheme: AppTheme = {
