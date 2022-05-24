@@ -49,6 +49,27 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   font-weight: 800;
 }
 
+.c2 {
+  background-color: #EFEFEF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 24px;
+}
+
 .c5 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -106,27 +127,6 @@ exports[`<Maintenance /> renders with all the props 1`] = `
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
-}
-
-.c2 {
-  background-color: #EFEFEF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 24px;
 }
 
 .c3 {
