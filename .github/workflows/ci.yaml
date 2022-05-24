@@ -20,10 +20,9 @@ jobs:
           cache-name: cache-pnpm-modules
         with:
           path: ~/.pnpm-store
-          # package.json is not tracked so we can reuse pnpm global store
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}
+            ${{ runner.os }}-pnpm-store-
             
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
