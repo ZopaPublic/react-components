@@ -5,6 +5,7 @@ import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import Text from '../Text/Text';
 import Icon from '../Icon/Icon';
+import { useThemeContext } from '../../styles/Theme';
 
 const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
@@ -12,8 +13,8 @@ const StyledErrorMessage = styled(Text).attrs({
   display: inline-flex;
   align-items: center;
   padding: 8px 16px 8px 16px;
-  color: ${colors.alertDark};
-  background-color: ${colors.alertLight};
+  color: ${({ theme }) => theme.errorMessage.textColor};
+  background-color: ${({ theme }) => theme.errorMessage.backgroundColor};
   font-size: ${typography.sizes.text.body};
   font-family: ${typography.primary};
   font-weight: ${typography.weights.regular};
@@ -39,13 +40,16 @@ type ErrorMessageProps = {
   className?: string;
 };
 
-const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => (
-  <StyledErrorMessage className={className} {...rest}>
-    <IconWrapper>
-      <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
-    </IconWrapper>
-    {children}
-  </StyledErrorMessage>
-);
+const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => {
+  const theme = useThemeContext();
+  return (
+    <StyledErrorMessage className={className} {...rest} theme={theme}>
+      <IconWrapper>
+        <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
+      </IconWrapper>
+      {children}
+    </StyledErrorMessage>
+  );
+};
 
 export default ErrorMessage;

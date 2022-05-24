@@ -13,6 +13,7 @@ export {
   mobileNavbarHeight,
 } from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
+export { ThemeProvider } from './components/styles/Theme';
 // Atoms
 export { default as ScrollableArea } from './components/atoms/ScrollableArea/ScrollableArea';
 export { default as Alert } from './components/atoms/Alert/Alert';

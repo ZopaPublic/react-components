@@ -21,6 +21,7 @@
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
     "compile:code": "rollup --config ./etc/rollup/config.js",
+    "compile:code:dev": "rollup --config ./etc/rollup/dev-config.js",
     "compile:clean": "rm -rf es cjs types",
     "compile:types": "tsc --p ./tsconfig.types.json",
     "test": "react-scripts test",
