@@ -1,3 +1,10 @@
+## [5.10.0](https://github.com/zopaUK/react-components/compare/v5.9.3...v5.10.0) (2022-05-25)
+
+
+### Features
+
+* allow passing an undefined theme to ThemeProvider ([bbeef33](https://github.com/zopaUK/react-components/commit/bbeef3325821e96e5af185f98c349f83ddacee73))
+
 ### [5.9.3](https://github.com/zopaUK/react-components/compare/v5.9.2...v5.9.3) (2022-05-25)
 
 
