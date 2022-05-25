@@ -166,7 +166,7 @@ export const LogoContainer = styled.div<PageNavigationProps>`
     ${css`
       display: flex;
       align-items: center;
-      width: 460px;
+      width: 440px;
       transition: 0.3s min-height ease;
       min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
       padding-left: ${spacing[10]};
