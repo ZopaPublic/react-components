@@ -27,6 +27,7 @@ export interface OptionalHeadingProps extends HTMLAttributes<HTMLHeadingElement>
 interface HeadingPropsWithAs extends OptionalHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   * @default 'required if 'forwardedAs' is not provided.'
    */
   as: HeadingTags;
 }
@@ -34,7 +35,8 @@ interface HeadingPropsWithAs extends OptionalHeadingProps {
 interface HeadingPropsWithForwardedAs extends OptionalHeadingProps {
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
-   * to be used if Component has been wrapped in styled component in place of as.
+   * To be used if Component has been wrapped in styled components.
+   * @default 'required if 'as' is not provided.'
    */
   forwardedAs: HeadingTags;
 }
