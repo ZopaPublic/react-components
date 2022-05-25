@@ -6,11 +6,7 @@ import { useThemeContext, AppThemeProps, AppTheme } from '../../styles/Theme';
 
 export type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
-export interface StyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  /**
-   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
-   */
-  as: HeadingTags;
+export interface OptionalHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * Override the default size assigned to the rendered HTML tag.
    * @default `as`
@@ -28,14 +24,33 @@ export interface StyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   align?: 'inherit' | 'left' | 'right' | 'center';
 }
 
-const StyledHeading = styled.h1<StyledHeadingProps & AppThemeProps>`
+interface HeadingPropsWithAs extends OptionalHeadingProps {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   */
+  as: HeadingTags;
+}
+
+interface HeadingPropsWithForwardedAs extends OptionalHeadingProps {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   * to be used if Component has been wrapped in styled component in place of as.
+   */
+  forwardedAs: HeadingTags;
+}
+
+export type HeadingProps = HeadingPropsWithAs | HeadingPropsWithForwardedAs;
+
+const StyledHeading = styled.h1<HeadingPropsWithAs & AppThemeProps>`
   ${({ as, size, theme }) => {
-    const tag = size || (as === 'span' ? 'h4' : as);
-    return css`
-      font-size: ${theme.typography.heading.sizes[tag]};
-      line-height: ${theme.typography.lineHeight[tag]};
-      letter-spacing: ${theme.typography.letterSpacingMap[tag]};
-    `;
+    if (as) {
+      const tag = size || (as === 'span' ? 'h4' : as);
+      return css`
+        font-size: ${theme.typography.heading.sizes[tag]};
+        line-height: ${theme.typography.lineHeight[tag]};
+        letter-spacing: ${theme.typography.letterSpacingMap[tag]};
+      `;
+    }
   }};
 
   margin: 0;
@@ -58,9 +73,9 @@ const StyledHeading = styled.h1<StyledHeadingProps & AppThemeProps>`
     `}
 `;
 
-export const Heading: FC<StyledHeadingProps> = (props) => {
+export const Heading: FC<HeadingProps> = (props) => {
   const theme = useThemeContext();
-  return <StyledHeading {...props} theme={theme} />;
+  return <StyledHeading {...(props as HeadingPropsWithAs)} theme={theme} />;
 };
 
 export default Heading;
