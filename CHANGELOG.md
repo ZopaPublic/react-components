@@ -1,3 +1,10 @@
+### [5.9.3](https://github.com/zopaUK/react-components/compare/v5.9.2...v5.9.3) (2022-05-25)
+
+
+### Bug Fixes
+
+* **navbar:** allow more items ([7a03679](https://github.com/zopaUK/react-components/commit/7a03679fa4c2f9cef039da300be3a3d7eafb207e))
+
 ### [5.9.2](https://github.com/zopaUK/react-components/compare/v5.9.1...v5.9.2) (2022-05-25)
 
 
