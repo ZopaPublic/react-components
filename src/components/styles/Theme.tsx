@@ -285,16 +285,15 @@ export const zopaTheme: AppTheme = {
 const ThemeContext = React.createContext<AppTheme>(zopaTheme);
 ThemeContext.displayName = 'ThemeContext';
 
-export function useThemeContext() {
-  const context = React.useContext(ThemeContext);
-  if (!context) {
-    throw new Error('No theme provided');
-  }
+export const useThemeContext = () => React.useContext(ThemeContext);
 
-  return context;
-}
-
-export const ThemeProvider = ({ children, theme }: { children: React.ReactNode; theme: Partial<AppTheme> }) => {
-  const mergedTheme: AppTheme = { ...zopaTheme, ...theme };
+export const ThemeProvider = ({
+  children,
+  theme,
+}: {
+  children: React.ReactNode;
+  theme: Partial<AppTheme> | undefined;
+}) => {
+  const mergedTheme = { ...zopaTheme, ...(theme || {}) };
   return <ThemeContext.Provider value={mergedTheme}>{children}</ThemeContext.Provider>;
 };
