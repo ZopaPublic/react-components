@@ -134,7 +134,7 @@ export interface AppTheme {
   navbar: NavbarTheme;
   typography: TypographyTheme;
 }
-//
+
 export const zopaTheme: AppTheme = {
   alert: {
     brand: {
