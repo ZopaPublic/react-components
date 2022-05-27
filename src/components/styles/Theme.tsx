@@ -11,7 +11,14 @@ interface ButtonTheme {
   hover: string;
 }
 
+interface ButtonsTheme {
+  primary: ButtonTheme;
+  secondary: ButtonTheme;
+  link: ButtonTheme;
+}
+
 export type AlertLevel = 'info' | 'alert' | 'warning' | 'success' | 'brand';
+
 interface CardInfo {
   headingSize: string;
   textSize: string;
@@ -20,102 +27,112 @@ interface CardInfo {
   backgroundStyle: string;
 }
 
-export interface AppTheme {
-  alert: Record<
-    AlertLevel,
-    {
-      icon: string;
-      background: string;
-      text: string;
-      component: FC;
-    }
-  >;
-  button: {
-    primary: ButtonTheme;
-    secondary: ButtonTheme;
-    link: ButtonTheme;
+type AlertTheme = Record<
+  AlertLevel,
+  {
+    icon: string;
+    background: string;
+    text: string;
+    component: FC;
+  }
+>;
+
+type CardTheme = Record<CardStyling, CardInfo>;
+
+interface ErrorMessageTheme {
+  textColor: string;
+  backgroundColor: string;
+}
+
+interface InputTheme {
+  color: string;
+  borderRadius: string;
+  hover: {
+    border: string;
+    boxShadow: string;
   };
-  card: Record<CardStyling, CardInfo>;
-  errorMessage: {
-    textColor: string;
+  disabled: {
+    color: string;
     backgroundColor: string;
   };
-  input: {
+  borderColorByStatus: {
+    error: string;
+    valid: string;
+    disabled: string;
+    default: string;
+  };
+}
+
+interface NavbarTheme {
+  iconContainer: {
+    display: string;
+  };
+  logo: {
+    render: boolean;
+  };
+  mobile: {
+    minHeight: string;
+    bgColor: string;
+  };
+}
+interface TypographyTheme {
+  primary: string;
+  text: {
     color: string;
-    borderRadius: string;
-    hover: {
-      border: string;
-      boxShadow: string;
-    };
-    disabled: {
-      color: string;
-      backgroundColor: string;
-    };
-    borderColorByStatus: {
-      error: string;
-      valid: string;
-      disabled: string;
-      default: string;
-    };
-  };
-  navbar: {
-    iconContainer: {
-      display: string;
-    };
-    logo: {
-      render: boolean;
-    };
-    mobile: {
-      minHeight: string;
-      bgColor: string;
-    };
-  };
-  typography: {
-    primary: string;
     sizes: {
-      text: {
-        lead: string;
-        body: string;
-        small: string;
-      };
-      heading: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-      };
-      lineHeight: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-        lead: string;
-        body: string;
-        small: string;
-      };
-      letterSpacingMap: {
-        display: string;
-        h1: string;
-        h2: string;
-        h3: string;
-        h4: string;
-        h5: string;
-        h6: string;
-      };
-    };
-    weights: {
-      regular: number;
-      semiBold: number;
-      bold: number;
-      extraBold: number;
+      lead: string;
+      body: string;
+      small: string;
     };
   };
+  heading: {
+    sizes: {
+      display: string;
+      h1: string;
+      h2: string;
+      h3: string;
+      h4: string;
+      h5: string;
+      h6: string;
+    };
+  };
+  lineHeight: {
+    display: string;
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+    lead: string;
+    body: string;
+    small: string;
+  };
+  letterSpacingMap: {
+    display: string;
+    h1: string;
+    h2: string;
+    h3: string;
+    h4: string;
+    h5: string;
+    h6: string;
+  };
+  weights: {
+    regular: number;
+    semiBold: number;
+    bold: number;
+    extraBold: number;
+  };
+}
+
+export interface AppTheme {
+  alert: AlertTheme;
+  button: ButtonsTheme;
+  card: CardTheme;
+  errorMessage: ErrorMessageTheme;
+  input: InputTheme;
+  navbar: NavbarTheme;
+  typography: TypographyTheme;
 }
 
 export const zopaTheme: AppTheme = {
@@ -241,13 +258,16 @@ export const zopaTheme: AppTheme = {
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
-    sizes: {
-      text: {
+    text: {
+      color: colors.greyDarkest,
+      sizes: {
         lead: '18px',
         body: '16px',
         small: '14px',
       },
-      heading: {
+    },
+    heading: {
+      sizes: {
         display: '68px',
         h1: '46px',
         h2: '38px',
@@ -256,27 +276,27 @@ export const zopaTheme: AppTheme = {
         h5: '18px',
         h6: '16px',
       },
-      lineHeight: {
-        display: '76px',
-        h1: '54px',
-        h2: '46px',
-        h3: '36px',
-        h4: '32px',
-        h5: '26px',
-        h6: '24px',
-        lead: '26px',
-        body: '24px',
-        small: '20px',
-      },
-      letterSpacingMap: {
-        display: '-2.86px',
-        h1: '-1.25px',
-        h2: '-0.85px',
-        h3: '-0.45px',
-        h4: '-0.25px',
-        h5: '-0.02px',
-        h6: '-0.01px',
-      },
+    },
+    lineHeight: {
+      display: '76px',
+      h1: '54px',
+      h2: '46px',
+      h3: '36px',
+      h4: '32px',
+      h5: '26px',
+      h6: '24px',
+      lead: '26px',
+      body: '24px',
+      small: '20px',
+    },
+    letterSpacingMap: {
+      display: '-2.86px',
+      h1: '-1.25px',
+      h2: '-0.85px',
+      h3: '-0.45px',
+      h4: '-0.25px',
+      h5: '-0.02px',
+      h6: '-0.01px',
     },
     weights: {
       regular: 400,
@@ -290,16 +310,15 @@ export const zopaTheme: AppTheme = {
 const ThemeContext = React.createContext<AppTheme>(zopaTheme);
 ThemeContext.displayName = 'ThemeContext';
 
-export function useThemeContext() {
-  const context = React.useContext(ThemeContext);
-  if (!context) {
-    throw new Error('No theme provided');
-  }
+export const useThemeContext = () => React.useContext(ThemeContext);
 
-  return context;
-}
-
-export const ThemeProvider = ({ children, theme }: { children: React.ReactNode; theme: Partial<AppTheme> }) => {
-  const mergedTheme: AppTheme = { ...zopaTheme, ...theme };
+export const ThemeProvider = ({
+  children,
+  theme,
+}: {
+  children: React.ReactNode;
+  theme: Partial<AppTheme> | undefined;
+}) => {
+  const mergedTheme = { ...zopaTheme, ...(theme || {}) };
   return <ThemeContext.Provider value={mergedTheme}>{children}</ThemeContext.Provider>;
 };

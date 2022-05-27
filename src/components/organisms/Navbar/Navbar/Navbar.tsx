@@ -210,6 +210,7 @@ const NavbarLinksListContainer = styled.ul`
   ${minMedia.desktop`
     ${css`
       margin-right: ${spacing[10]};
+      padding-left: 0;
     `}
   `}
 `;
