@@ -354,6 +354,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -862,6 +863,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
               class="c22 c23"
               data-automation="hamburger-icon"
               styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -1259,6 +1261,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -1764,6 +1767,7 @@ exports[`<Navbar /> should render large device navigation with default props and
               class="c17 c22"
               data-automation="hamburger-icon"
               styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -2202,6 +2206,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -2707,6 +2712,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
               class="c22 c23"
               data-automation="hamburger-icon"
               styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -3107,6 +3113,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c23 {
   position: relative;
+  min-height: autopx;
 }
 
 .c23 > a,
@@ -3121,6 +3128,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -3662,6 +3670,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               class="c17 c22"
               data-automation="hamburger-icon"
               styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"

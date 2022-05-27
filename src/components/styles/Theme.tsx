@@ -58,6 +58,18 @@ export interface AppTheme {
       default: string;
     };
   };
+  navbar: {
+    iconContainer: {
+      display: string;
+    };
+    logo: {
+      render: boolean;
+    };
+    mobile: {
+      minHeight: string;
+      bgColor: string;
+    };
+  };
   typography: {
     primary: string;
     sizes: {
@@ -213,6 +225,18 @@ export const zopaTheme: AppTheme = {
       valid: colors.success,
       disabled: colors.greyLight,
       default: colors.grey,
+    },
+  },
+  navbar: {
+    iconContainer: {
+      display: 'flex',
+    },
+    logo: {
+      render: true,
+    },
+    mobile: {
+      minHeight: 'auto',
+      bgColor: colors.brand,
     },
   },
   typography: {
