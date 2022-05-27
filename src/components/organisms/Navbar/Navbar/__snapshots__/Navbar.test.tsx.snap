@@ -578,7 +578,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 440px;
+    width: 490px;
     -webkit-transition: 0.3s min-height ease;
     transition: 0.3s min-height ease;
     min-height: 120px;
@@ -606,6 +606,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -1483,7 +1484,7 @@ exports[`<Navbar /> should render large device navigation with default props and
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 440px;
+    width: 490px;
     -webkit-transition: 0.3s min-height ease;
     transition: 0.3s min-height ease;
     min-height: 120px;
@@ -1511,6 +1512,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -2426,7 +2428,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 440px;
+    width: 490px;
     -webkit-transition: 0.3s min-height ease;
     transition: 0.3s min-height ease;
     min-height: 120px;
@@ -2454,6 +2456,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -3346,7 +3349,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 440px;
+    width: 490px;
     -webkit-transition: 0.3s min-height ease;
     transition: 0.3s min-height ease;
     min-height: 120px;
@@ -3381,7 +3384,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 440px;
+    width: 490px;
     -webkit-transition: 0.3s min-height ease;
     transition: 0.3s min-height ease;
     min-height: 76px;
@@ -3409,6 +3412,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
