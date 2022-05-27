@@ -1,3 +1,11 @@
+### [5.10.1](https://github.com/zopaUK/react-components/compare/v5.10.0...v5.10.1) (2022-05-26)
+
+
+### Bug Fixes
+
+* **navbar:** fix navbar ([85a0823](https://github.com/zopaUK/react-components/commit/85a082325094c42ba01880a99a0cf7b281284601))
+* **navbar:** update tests ([7a5de28](https://github.com/zopaUK/react-components/commit/7a5de28b5d6488bc24f0e1c1c8c68245d25b3468))
+
 ## [5.10.0](https://github.com/zopaUK/react-components/compare/v5.9.3...v5.10.0) (2022-05-25)
 
 
