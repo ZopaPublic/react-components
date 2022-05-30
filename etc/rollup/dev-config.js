@@ -1,14 +1,11 @@
 // Simple copy and paste of the main config for managing local dependencies
-// DO NOT USE THIS TO BUNDLE
+// DO NOT USE THIS TO BUNDLE for production
 import path from 'path';
 import pkg from '../../package.json';
-
-// Plugins
-import resolve from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
-import babel from '@rollup/plugin-babel';
-import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
+import esbuild from 'rollup-plugin-esbuild';
+import resolve from '@rollup/plugin-node-resolve';
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -18,8 +15,10 @@ if (process.env.CI) {
   throw new Error('DO NOT USE THIS IN PRODUCTION OR CI!!!');
 }
 
-// TODO: we could experiment with swc or esbuild as this is only local dev
-export default {
+/**
+ * @type {import('rollup').RollupOptions}
+ */
+const config = {
   input: path.resolve('src/index.ts'),
   output: [
     {
@@ -31,12 +30,28 @@ export default {
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     resolve({ moduleDirectories: ['node_modules'], extensions }),
-    commonjs(),
-    babel({
-      presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
-      babelHelpers: 'runtime',
-      extensions,
-      include: ['src/**/*'],
+    esbuild({
+      // All options are optional
+      include: /\.[jt]sx?$/, // default, inferred from `loaders` option
+      exclude: /node_modules/, // default
+      sourceMap: false, // by default inferred from rollup's `output.sourcemap` option
+      target: 'esnext', // default, or 'es20XX', 'esnext'
+      jsx: 'transform', // default, or 'preserve'
+      jsxFactory: 'React.createElement',
+      jsxFragment: 'React.Fragment',
+      // Like @rollup/plugin-replace
+      define: {
+        __VERSION__: '"x.y.z"',
+      },
+      tsconfig: 'tsconfig.json', // default
+      // Add extra loaders
+      loaders: {
+        // Add .json files support
+        // require @rollup/plugin-commonjs
+        '.json': 'json',
+        // Enable JSX in .js files too
+        '.js': 'jsx',
+      },
     }),
     url({
       fileName: '[hash][extname]',
@@ -44,6 +59,8 @@ export default {
       include: ['**/*.svg', '**/*.gif'], // defaults to .svg, .png, .jpg and .gif files
       emitFiles: true, // defaults to true
     }),
-    postcss({ minimize: true }),
+    postcss({ minimize: false }),
   ],
 };
+
+export default config;
