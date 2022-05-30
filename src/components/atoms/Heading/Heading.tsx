@@ -77,7 +77,11 @@ const StyledHeading = styled.h1<HeadingPropsWithAs & AppThemeProps>`
 
 export const Heading: FC<HeadingProps> = (props) => {
   const theme = useThemeContext();
-  return <StyledHeading {...(props as HeadingPropsWithAs)} theme={theme} />;
+  const headingProps = props as HeadingPropsWithAs;
+  if (!headingProps?.as) {
+    console.warn('Heading component is missing the as prop');
+  }
+  return <StyledHeading {...headingProps} theme={theme} />;
 };
 
 export default Heading;
