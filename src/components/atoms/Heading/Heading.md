@@ -87,3 +87,20 @@ import { Heading } from '@zopauk/react-components';
   </Heading>
 </Fragment>;
 ```
+
+- Using forwardedAs:
+  If Heading is styled it should use the 'forwardedAs' prop in place of as.
+  If Heading is not styled the 'as' prop should be used.
+
+```jsx
+import { Fragment } from 'react';
+import styled from 'styled-components';
+import { Heading } from '@zopauk/react-components';
+
+const StyledHeading = styled(Heading)``;
+
+<Fragment>
+  <Heading as="h4">Heading uses as prop</Heading>
+  <StyledHeading forwardedAs="h4">Styled heading uses forwardedAs prop</StyledHeading>
+</Fragment>;
+```
