@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { colors } from '../../../../constants';
-import Heading, { StyledHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
+import Heading, { OptionalHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
 
-interface CardHeadingProps extends Omit<StyledHeadingProps, 'as'> {
+interface CardHeadingProps extends OptionalHeadingProps {
   as?: HeadingTags;
 }
 

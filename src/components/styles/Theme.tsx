@@ -63,6 +63,18 @@ interface InputTheme {
   };
 }
 
+interface NavbarTheme {
+  iconContainer: {
+    display: string;
+  };
+  logo: {
+    render: boolean;
+  };
+  mobile: {
+    minHeight: string;
+    bgColor: string;
+  };
+}
 interface TypographyTheme {
   primary: string;
   text: {
@@ -119,7 +131,12 @@ export interface AppTheme {
   card: CardTheme;
   errorMessage: ErrorMessageTheme;
   input: InputTheme;
+  navbar: NavbarTheme;
   typography: TypographyTheme;
+}
+
+export interface AppThemeProps {
+  theme: AppTheme;
 }
 
 export const zopaTheme: AppTheme = {
@@ -229,6 +246,18 @@ export const zopaTheme: AppTheme = {
       valid: colors.success,
       disabled: colors.greyLight,
       default: colors.grey,
+    },
+  },
+  navbar: {
+    iconContainer: {
+      display: 'flex',
+    },
+    logo: {
+      render: true,
+    },
+    mobile: {
+      minHeight: 'auto',
+      bgColor: colors.brand,
     },
   },
   typography: {
