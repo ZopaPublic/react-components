@@ -1,3 +1,29 @@
+## [5.12.0](https://github.com/zopaUK/react-components/compare/v5.11.0...v5.12.0) (2022-05-31)
+
+
+### Features
+
+* **adding theming to navbar:** adding theming to navbar ([5478ae9](https://github.com/zopaUK/react-components/commit/5478ae9f98a83d3980f49504af19d929156c7f79))
+* **navbar:** adding theming, updating snapshots ([041c15b](https://github.com/zopaUK/react-components/commit/041c15ba1f4271b2336bd07a429ffca5be4381ff))
+
+
+### Bug Fixes
+
+* **theme:** fixing merge conflicts ([b70ff6c](https://github.com/zopaUK/react-components/commit/b70ff6cae92b789add767e4bef92ed8ba6f23c90))
+
+## [5.11.0](https://github.com/zopaUK/react-components/compare/v5.10.1...v5.11.0) (2022-05-31)
+
+
+### Features
+
+* add console warning for if as prop is missing ([fef1369](https://github.com/zopaUK/react-components/commit/fef1369173764aff7dc780a39538263d91d9f8d6))
+* implement theme for heading ([60fcba5](https://github.com/zopaUK/react-components/commit/60fcba5d7ef3af4b09c5975e71288132bd5aa32b))
+
+
+### Bug Fixes
+
+* as ref forwarding ([5685efe](https://github.com/zopaUK/react-components/commit/5685efebd4bdff9cd004514025b47d579753c9a9))
+
 ### [5.10.1](https://github.com/zopaUK/react-components/compare/v5.10.0...v5.10.1) (2022-05-26)
 
 
