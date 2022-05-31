@@ -1,3 +1,16 @@
+## [5.11.0](https://github.com/zopaUK/react-components/compare/v5.10.1...v5.11.0) (2022-05-31)
+
+
+### Features
+
+* add console warning for if as prop is missing ([fef1369](https://github.com/zopaUK/react-components/commit/fef1369173764aff7dc780a39538263d91d9f8d6))
+* implement theme for heading ([60fcba5](https://github.com/zopaUK/react-components/commit/60fcba5d7ef3af4b09c5975e71288132bd5aa32b))
+
+
+### Bug Fixes
+
+* as ref forwarding ([5685efe](https://github.com/zopaUK/react-components/commit/5685efebd4bdff9cd004514025b47d579753c9a9))
+
 ### [5.10.1](https://github.com/zopaUK/react-components/compare/v5.10.0...v5.10.1) (2022-05-26)
 
 
