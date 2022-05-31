@@ -126,7 +126,7 @@ const NumberText: React.FC<NumberTextProps> = ({
         </Title>
       ) : null}
       <Value
-        as="span"
+        forwardedAs="span"
         className={valueClassNames}
         numberPosition={numberPosition}
         numberFontSize={numberFontSize}

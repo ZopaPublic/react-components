@@ -135,6 +135,10 @@ export interface AppTheme {
   typography: TypographyTheme;
 }
 
+export interface AppThemeProps {
+  theme: AppTheme;
+}
+
 export const zopaTheme: AppTheme = {
   alert: {
     brand: {
