@@ -35,20 +35,6 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   align-self: auto;
 }
 
-.c4 {
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: center;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 800;
-}
-
 .c2 {
   background-color: #EFEFEF;
   display: -webkit-box;
@@ -68,6 +54,20 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   width: -moz-fit-content;
   width: fit-content;
   padding: 24px;
+}
+
+.c4 {
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-letter-spacing: -0.25px;
+  -moz-letter-spacing: -0.25px;
+  -ms-letter-spacing: -0.25px;
+  letter-spacing: -0.25px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
 }
 
 .c5 {

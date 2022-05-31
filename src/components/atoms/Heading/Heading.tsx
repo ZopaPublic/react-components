@@ -1,25 +1,22 @@
-import React, { FC, HTMLAttributes } from 'react';
+import { grid } from '../../../constants';
 import styled, { css } from 'styled-components';
-import { colors, grid, typography } from '../../../constants';
+import React, { FC, HTMLAttributes } from 'react';
 import { Colors } from '../../../constants/colors';
+import { useThemeContext, AppThemeProps, AppTheme } from '../../styles/Theme';
 
 export type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
 
-export interface StyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
-  /**
-   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
-   */
-  as: HeadingTags;
+export interface OptionalHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * Override the default size assigned to the rendered HTML tag.
    * @default `as`
    */
-  size?: keyof typeof typography.sizes.heading;
+  size?: keyof AppTheme['typography']['heading']['sizes'];
   /**
-   * Accepts a subset of the Zopa brand colors. Same as the ones accepted by `<Text />`.
+   * Accepts a subset of the Zopa brand colors by default. Same as the ones accepted by `<Text />`.
    * @default `colors.greyDarkest`
    */
-  color?: Colors['white'] | Colors['grey'] | Colors['greyDarkest'];
+  color?: Colors['white'] | Colors['grey'] | Colors['greyDarkest'] | string;
   /**
    * Where the rendered text should be aligned to.
    * @default 'inherit'
@@ -27,51 +24,64 @@ export interface StyledHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   align?: 'inherit' | 'left' | 'right' | 'center';
 }
 
-const {
-  sizes: { heading: headingSizes, lineHeight: lineHeightMap },
-} = typography;
+interface HeadingPropsWithAs extends OptionalHeadingProps {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   * @default 'required if 'forwardedAs' is not provided.'
+   */
+  as: HeadingTags;
+}
 
-const letterSpacingMap = {
-  display: '-2.86px',
-  h1: '-1.25px',
-  h2: '-0.85px',
-  h3: '-0.45px',
-  h4: '-0.25px',
-  h5: '-0.02px',
-  h6: '-0.01px',
-};
+interface HeadingPropsWithForwardedAs extends OptionalHeadingProps {
+  /**
+   * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
+   * To be used if Component has been wrapped in styled components.
+   * @default 'required if 'as' is not provided.'
+   */
+  forwardedAs: HeadingTags;
+}
 
-const Heading = styled.h1<StyledHeadingProps>`
-  ${({ as, size }) => {
-    const tag = size || (as === 'span' ? 'h4' : as);
-    return css`
-      font-size: ${headingSizes[tag]};
-      line-height: ${lineHeightMap[tag]};
-      letter-spacing: ${letterSpacingMap[tag]};
-    `;
+export type HeadingProps = HeadingPropsWithAs | HeadingPropsWithForwardedAs;
+
+const StyledHeading = styled.h1<HeadingPropsWithAs & AppThemeProps>`
+  ${({ as, size, theme }) => {
+    if (as) {
+      const tag = size || (as === 'span' ? 'h4' : as);
+      return css`
+        font-size: ${theme.typography.heading.sizes[tag]};
+        line-height: ${theme.typography.lineHeight[tag]};
+        letter-spacing: ${theme.typography.letterSpacingMap[tag]};
+      `;
+    }
   }};
 
   margin: 0;
-  color: ${({ color = colors.greyDarkest }) => color};
+  color: ${({ color, theme }) => color || theme.typography.text.color};
   display: ${({ as }) => (as === 'span' ? 'block' : undefined)};
   text-align: ${({ align = 'inherit' }) => align};
-  font-family: ${typography.primary};
-  font-weight: ${({ as }) => typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
+  font-family: ${({ theme }) => theme.typography.primary};
+  font-weight: ${({ as, theme }) => theme.typography.weights[['h1', 'display'].includes(as) ? 'extraBold' : 'bold']};
 
-  ${({ as, size }) =>
+  ${({ as, size, theme }) =>
     as === 'h1' &&
     size === 'display' &&
     css`
       @media screen and (max-width: ${grid.breakpoints.l}px) {
-        font-size: ${headingSizes['h2']};
-        line-height: ${lineHeightMap['h2']};
-        letter-spacing: ${letterSpacingMap['h2']};
-        font-weight: ${typography.weights['bold']};
+        font-size: ${theme.typography.heading.sizes['h2']};
+        line-height: ${theme.typography.lineHeight['h2']};
+        letter-spacing: ${theme.typography.letterSpacingMap['h2']};
+        font-weight: ${theme.typography.weights['bold']};
       }
     `}
 `;
 
-// TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistHeading: FC<StyledHeadingProps> = (props) => <Heading {...props} />;
+export const Heading: FC<HeadingProps> = (props) => {
+  const theme = useThemeContext();
+  const headingProps = props as HeadingPropsWithAs;
+  if (!headingProps?.as) {
+    console.warn('Heading component is missing the as prop');
+  }
+  return <StyledHeading {...headingProps} theme={theme} />;
+};
 
 export default Heading;
