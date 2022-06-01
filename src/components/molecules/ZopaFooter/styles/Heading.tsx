@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import ZopaHeading from '../../../atoms/Heading/Heading';
+import Text from '../../../atoms/Text/Text';
 
-export const Heading = styled(ZopaHeading).attrs({ as: 'h3', size: 'h6' })`
+export const Heading = styled(Text).attrs({
+  weight: 'bold',
+})`
   text-transform: uppercase;
 `;

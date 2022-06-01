@@ -4,7 +4,7 @@
     "module": "esnext",
     "target": "es5",
     "sourceMap": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "strict": true,
@@ -15,8 +15,12 @@
     "resolveJsonModule": true,
     "noEmit": true,
     "isolatedModules": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "incremental": true,
+    "assumeChangesOnlyAffectDirectDependencies": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.*"]
+  "exclude": ["node_modules"]
 }

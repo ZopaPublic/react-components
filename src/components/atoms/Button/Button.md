@@ -124,7 +124,7 @@ const ButtonLink = styled(Link)`
 - Disabled anchor element with button style
 
 ```tsx
-import { buttonStyle } from '@zopauk/react-components';
+import { buttonStyle, ButtonProps } from '@zopauk/react-components';
 import { FC, MouseEvent } from 'react';
 import styled from 'styled-components';
 

@@ -1,3 +1,397 @@
+## [5.14.0](https://github.com/zopaUK/react-components/compare/v5.13.0...v5.14.0) (2022-06-01)
+
+
+### Features
+
+* **footer:** update footer legal copy ([6464343](https://github.com/zopaUK/react-components/commit/646434308801dd3b939fe01eb77df3215f7bc6ce))
+
+## [5.13.0](https://github.com/zopaUK/react-components/compare/v5.12.0...v5.13.0) (2022-06-01)
+
+
+### Features
+
+* **footer:** update footer legal copy ([d9141e4](https://github.com/zopaUK/react-components/commit/d9141e4a191c453aa1380fcd4cf9319d1fef5366))
+
+## [5.12.0](https://github.com/zopaUK/react-components/compare/v5.11.0...v5.12.0) (2022-05-31)
+
+
+### Features
+
+* **adding theming to navbar:** adding theming to navbar ([5478ae9](https://github.com/zopaUK/react-components/commit/5478ae9f98a83d3980f49504af19d929156c7f79))
+* **navbar:** adding theming, updating snapshots ([041c15b](https://github.com/zopaUK/react-components/commit/041c15ba1f4271b2336bd07a429ffca5be4381ff))
+
+
+### Bug Fixes
+
+* **theme:** fixing merge conflicts ([b70ff6c](https://github.com/zopaUK/react-components/commit/b70ff6cae92b789add767e4bef92ed8ba6f23c90))
+
+## [5.11.0](https://github.com/zopaUK/react-components/compare/v5.10.1...v5.11.0) (2022-05-31)
+
+
+### Features
+
+* add console warning for if as prop is missing ([fef1369](https://github.com/zopaUK/react-components/commit/fef1369173764aff7dc780a39538263d91d9f8d6))
+* implement theme for heading ([60fcba5](https://github.com/zopaUK/react-components/commit/60fcba5d7ef3af4b09c5975e71288132bd5aa32b))
+
+
+### Bug Fixes
+
+* as ref forwarding ([5685efe](https://github.com/zopaUK/react-components/commit/5685efebd4bdff9cd004514025b47d579753c9a9))
+
+### [5.10.1](https://github.com/zopaUK/react-components/compare/v5.10.0...v5.10.1) (2022-05-26)
+
+
+### Bug Fixes
+
+* **navbar:** fix navbar ([85a0823](https://github.com/zopaUK/react-components/commit/85a082325094c42ba01880a99a0cf7b281284601))
+* **navbar:** update tests ([7a5de28](https://github.com/zopaUK/react-components/commit/7a5de28b5d6488bc24f0e1c1c8c68245d25b3468))
+
+## [5.10.0](https://github.com/zopaUK/react-components/compare/v5.9.3...v5.10.0) (2022-05-25)
+
+
+### Features
+
+* allow passing an undefined theme to ThemeProvider ([bbeef33](https://github.com/zopaUK/react-components/commit/bbeef3325821e96e5af185f98c349f83ddacee73))
+
+### [5.9.3](https://github.com/zopaUK/react-components/compare/v5.9.2...v5.9.3) (2022-05-25)
+
+
+### Bug Fixes
+
+* **navbar:** allow more items ([7a03679](https://github.com/zopaUK/react-components/commit/7a03679fa4c2f9cef039da300be3a3d7eafb207e))
+
+### [5.9.2](https://github.com/zopaUK/react-components/compare/v5.9.1...v5.9.2) (2022-05-25)
+
+
+### Bug Fixes
+
+* **navbar:** allow more items ([2232516](https://github.com/zopaUK/react-components/commit/2232516b8f13fb38e2d8118e02487d8ec7c92d11))
+
+### [5.9.1](https://github.com/zopaUK/react-components/compare/v5.9.0...v5.9.1) (2022-04-28)
+
+
+### Bug Fixes
+
+* **button:** a11y fix ([33281fb](https://github.com/zopaUK/react-components/commit/33281fb01e65ed505db0db4d05a66c95b5f1de87))
+
+## [5.9.0](https://github.com/zopaUK/react-components/compare/v5.8.0...v5.9.0) (2022-04-27)
+
+
+### Features
+
+* **pnpm:** upgrade pnpm from v5 to v6 ([bc91317](https://github.com/zopaUK/react-components/commit/bc91317c2c4f68155875a312f4b5e0b6076074e0))
+
+## [5.8.0](https://github.com/zopaUK/react-components/compare/v5.7.0...v5.8.0) (2022-04-26)
+
+
+### Features
+
+* **button:** update types ([29009e2](https://github.com/zopaUK/react-components/commit/29009e27ce71f563187e89451f54de1c599b8a9e))
+
+
+### Bug Fixes
+
+* **button:** fix docs ([3c2a5f0](https://github.com/zopaUK/react-components/commit/3c2a5f057cc52c74776e7221240f20516f5ddcb0))
+
+## [5.7.0](https://github.com/zopaUK/react-components/compare/v5.6.0...v5.7.0) (2022-04-25)
+
+
+### Features
+
+* **cardlineitem:** new styling ([953e9a2](https://github.com/zopaUK/react-components/commit/953e9a23ef3a5d280002e3e72a1a9abc960501f2))
+* **new styling to card:** new 'info' style for Card ([6c41775](https://github.com/zopaUK/react-components/commit/6c4177564e76ed5fc080a0f85bf82996251c1a95))
+
+## [5.6.0](https://github.com/zopaUK/react-components/compare/v5.5.3...v5.6.0) (2022-04-11)
+
+
+### Features
+
+* add grey darkeset to text ([e262092](https://github.com/zopaUK/react-components/commit/e2620920fcd1b38a09700c137997731a93074efd))
+
+
+### Bug Fixes
+
+* docs styling ([6ef7ed9](https://github.com/zopaUK/react-components/commit/6ef7ed932624a751137e1bf0bf17d9223cc832f0))
+
+### [5.5.3](https://github.com/zopaUK/react-components/compare/v5.5.2...v5.5.3) (2022-03-29)
+
+
+### Bug Fixes
+
+* **button:** add optional ([11182b0](https://github.com/zopaUK/react-components/commit/11182b0f6dbd1f38937eee6f120eba1bdfec760d))
+* **button:** add ts prop as ([7292d10](https://github.com/zopaUK/react-components/commit/7292d105e2e89bd0c88b29e1f489f5188388c540))
+
+### [5.5.2](https://github.com/zopaUK/react-components/compare/v5.5.1...v5.5.2) (2022-03-29)
+
+
+### Bug Fixes
+
+* **button:** tests ([784d775](https://github.com/zopaUK/react-components/commit/784d77563240aca2beb3ebcb3d7891857f822031))
+* **button:** update button styling ([6964283](https://github.com/zopaUK/react-components/commit/6964283f1f4711697e6fdddd60e8f6a22c07ecbc))
+* **tests:** update snapshot ([39a1948](https://github.com/zopaUK/react-components/commit/39a1948325455493a90f612671f8eed3f7ceb995))
+
+### [5.5.1](https://github.com/zopaUK/react-components/compare/v5.5.0...v5.5.1) (2022-03-25)
+
+
+### Bug Fixes
+
+* round button styling ([8e57c7d](https://github.com/zopaUK/react-components/commit/8e57c7dbb929c4a16d9ec6c4325dd80d37d359ae))
+
+## [5.5.0](https://github.com/zopaUK/react-components/compare/v5.4.0...v5.5.0) (2022-03-22)
+
+
+### Features
+
+* round button component ([3a793a0](https://github.com/zopaUK/react-components/commit/3a793a02c3e38c59ad6da087a3396f085165e11a))
+
+## [5.4.0](https://github.com/zopaUK/react-components/compare/v5.3.1...v5.4.0) (2022-03-21)
+
+
+### Features
+
+* export severity type ([e4dbdb0](https://github.com/zopaUK/react-components/commit/e4dbdb01ad7cb71add6f01ad05db7b7b613cc087))
+
+### [5.3.1](https://github.com/zopaUK/react-components/compare/v5.3.0...v5.3.1) (2022-03-02)
+
+
+### Bug Fixes
+
+* **radiofield:** remove check for the value ([0f46fca](https://github.com/zopaUK/react-components/commit/0f46fca915a9654634c08564a3766aad581e32a9))
+
+## [5.3.0](https://github.com/zopaUK/react-components/compare/v5.2.1...v5.3.0) (2022-02-23)
+
+
+### Features
+
+* add smart saver to footer ([3e9ed60](https://github.com/zopaUK/react-components/commit/3e9ed602952a7ea7616c4d0c9f7ed76204ba548c))
+
+### [5.2.1](https://github.com/zopaUK/react-components/compare/v5.2.0...v5.2.1) (2022-02-03)
+
+
+### Bug Fixes
+
+* **zopafooter:** removing ISA link ([1791869](https://github.com/zopaUK/react-components/commit/17918696ece9e6c16d3ad364c793d03ea40150ae))
+
+## [5.2.0](https://github.com/zopaUK/react-components/compare/v5.1.0...v5.2.0) (2022-01-28)
+
+
+### Features
+
+* **dropdown:** add default value ([819cafa](https://github.com/zopaUK/react-components/commit/819cafaf11ac2eb4ef0195a88f9ea4a13f58c900))
+
+
+### Bug Fixes
+
+* **dropdown:** rm selected prop ([b64c27f](https://github.com/zopaUK/react-components/commit/b64c27fad1bc9489d2c0ae5d7e85f99eaa69e212))
+* **dropdown:** update docs ([ea0aba9](https://github.com/zopaUK/react-components/commit/ea0aba9206cdc9d198c306b39380de86d3d440a9))
+* **select:** fix select ([5724c83](https://github.com/zopaUK/react-components/commit/5724c839f21969249d1f8558e3f7806d7b8a150d))
+
+## [5.1.0](https://github.com/zopaUK/react-components/compare/v5.0.1...v5.1.0) (2022-01-06)
+
+
+### Features
+
+* **zopafooter:** adding remuneration link ([142d89f](https://github.com/zopaUK/react-components/commit/142d89f99d4c8e623f95f2b0f0a0c71db97d8aab))
+
+### [5.0.1](https://github.com/zopaUK/react-components/compare/v5.0.0...v5.0.1) (2021-12-21)
+
+
+### Bug Fixes
+
+* **card:** fix types ([e21c9cd](https://github.com/zopaUK/react-components/commit/e21c9cdb2f6be3db1df371d6d4d9dc5e50098f68))
+* **card:** make a11y changes to the card ([37607fc](https://github.com/zopaUK/react-components/commit/37607fc54a0df37afefac12f77619cedb179c900))
+
+## [5.0.0](https://github.com/zopaUK/react-components/compare/v4.47.0...v5.0.0) (2021-11-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* props rename for 404 and 500 pages
+* **templates-error-pages:** Both renamed props  buttonLink => linkUrl, buttonText => linkText
+
+### Code Refactoring
+
+* **templates-error-pages:** props rename for 404 and 500 pages ([b30ff57](https://github.com/zopaUK/react-components/commit/b30ff57e4be2dafa51252645e13ba415c7acde6e))
+
+
+* Merge pull request #743 from zopaUK/template-error-page-props-rename ([ecf53a4](https://github.com/zopaUK/react-components/commit/ecf53a45467167e7b3ae86c43553e44d725f23c5)), closes [#743](https://github.com/zopaUK/react-components/issues/743)
+
+## [4.47.0](https://github.com/zopaUK/react-components/compare/v4.46.0...v4.47.0) (2021-11-17)
+
+
+### Features
+
+* **template-error-pages:** add link to homepage from 500 ([39b99ca](https://github.com/zopaUK/react-components/commit/39b99cadfbaa2040fc7b583918b22c6938b60948))
+* **templates-error-pages:** fix reverted commit ([816cedc](https://github.com/zopaUK/react-components/commit/816cedcfb09704f05dcb9183e15913ff59e5a01a))
+* **templates-error-pages:** fix reverted commit ([865af80](https://github.com/zopaUK/react-components/commit/865af80b66b927c847d54aee6b2195f0178f7fb1))
+
+## [4.46.0](https://github.com/zopaUK/react-components/compare/v4.45.5...v4.46.0) (2021-11-01)
+
+
+### Features
+
+* **zopafooter:** adding link for car hire purchase ([6105ebf](https://github.com/zopaUK/react-components/commit/6105ebf5b7e0467dff31b4ced44674150cf1a03c))
+
+### [4.45.5](https://github.com/zopaUK/react-components/compare/v4.45.4...v4.45.5) (2021-10-22)
+
+
+### Bug Fixes
+
+* **test:** Test release ([964c88b](https://github.com/zopaUK/react-components/commit/964c88be1cde8875b546b7cfba1843cfa52f55fa))
+
+### [4.45.4](https://github.com/zopaUK/react-components/compare/v4.45.3...v4.45.4) (2021-10-06)
+
+
+### Bug Fixes
+
+* **progress:** add progress bar role back in to avoid a11y violations ([84536e2](https://github.com/zopaUK/react-components/commit/84536e2bb22cc8686f7808897901eb9d212985a2))
+* **progress:** add progress bar role back in to avoid a11y violations ([e6b59e5](https://github.com/zopaUK/react-components/commit/e6b59e5a821f90c0ca9fb833f9bceb2ce697753a))
+* **progress:** add progress bar role back in to avoid a11y violations ([76ad1e7](https://github.com/zopaUK/react-components/commit/76ad1e77c95ec4ff1323c827cc33c1eda32886a7))
+
+### [4.45.3](https://github.com/zopaUK/react-components/compare/v4.45.2...v4.45.3) (2021-10-05)
+
+
+### Bug Fixes
+
+* **zopafooter:** changed header to use text for a11y issues ([2a16186](https://github.com/zopaUK/react-components/commit/2a16186df00724657849de5b367400c4cdd26eb9))
+
+### [4.45.2](https://github.com/zopaUK/react-components/compare/v4.45.1...v4.45.2) (2021-09-08)
+
+
+### Bug Fixes
+
+* **zopafooter:** copy change to press office button ([18414af](https://github.com/zopaUK/react-components/commit/18414afbc84be6ec1493cf31089f08b0ed6496c3))
+
+### [4.45.1](https://github.com/zopaUK/react-components/compare/v4.45.0...v4.45.1) (2021-09-07)
+
+
+### Bug Fixes
+
+* **progress:** non visual alternative ([8b03370](https://github.com/zopaUK/react-components/commit/8b03370caa90790c7951891ee73782ee267837e9)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress:** non visual alternative to step text ([2eea70b](https://github.com/zopaUK/react-components/commit/2eea70b83e0e27e771238d6e86d0ab0c070874da)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** non visual alternative ([aa0bc38](https://github.com/zopaUK/react-components/commit/aa0bc38a4a4e1a36a523c0424a26921764b611d0)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** removed aria role ([2ccb326](https://github.com/zopaUK/react-components/commit/2ccb326917201c844057246fff98e9bd996d6846)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress bar:** rewrote snapshots ([16c24f5](https://github.com/zopaUK/react-components/commit/16c24f5828aa74f21de339b216031093b68b8ad8)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+* **progress-bar:** non visual alternative ([4dc5142](https://github.com/zopaUK/react-components/commit/4dc5142dc8d1d433c0de63235d4b548e7286bfd3)), closes [#721](https://github.com/zopaUK/react-components/issues/721)
+
+## [4.45.0](https://github.com/zopaUK/react-components/compare/v4.44.2...v4.45.0) (2021-09-02)
+
+
+### Features
+
+* **zopafooter:** add Press Office to footer links ([003098e](https://github.com/zopaUK/react-components/commit/003098e14d4d58ae027243cdecd5b72be8cd23fd))
+
+### [4.44.2](https://github.com/zopaUK/react-components/compare/v4.44.1...v4.44.2) (2021-08-11)
+
+
+### Bug Fixes
+
+* **zopafooter:** removing 'new products' from ZopaFooter as feelgood page no longer exists ([db1494d](https://github.com/zopaUK/react-components/commit/db1494d4449b5f95fa10362f4725300433bbca7f))
+
+### [4.44.1](https://github.com/zopaUK/react-components/compare/v4.44.0...v4.44.1) (2021-08-10)
+
+
+### Bug Fixes
+
+* **footer:** update typo ([5fa2456](https://github.com/zopaUK/react-components/commit/5fa245641f9322fdd7f717dcab04e18b9871b87f))
+
+## [4.44.0](https://github.com/zopaUK/react-components/compare/v4.43.16...v4.44.0) (2021-08-05)
+
+
+### Features
+
+* **docs:** update wording ([116e8e1](https://github.com/zopaUK/react-components/commit/116e8e1fdf9b8c5993baa776e992d8594c677116))
+* **documentation:** add helpers for responsive functions ([de1aa47](https://github.com/zopaUK/react-components/commit/de1aa474157fd0694e50d01ba87f0ac14bcf5b8b)), closes [#726](https://github.com/zopaUK/react-components/issues/726)
+
+### [4.43.16](https://github.com/zopaUK/react-components/compare/v4.43.15...v4.43.16) (2021-07-28)
+
+
+### Bug Fixes
+
+* **navbar:** hambureger icon has 8px border radius ([f4f09e9](https://github.com/zopaUK/react-components/commit/f4f09e970c4078b1d088dafce1f8343189a7e76d))
+* **navbar:** hamburger ([0e80e12](https://github.com/zopaUK/react-components/commit/0e80e125f2f6d5bd579d4670894cb0892a5d0aa7))
+
+### [4.43.15](https://github.com/zopaUK/react-components/compare/v4.43.14...v4.43.15) (2021-07-27)
+
+
+### Bug Fixes
+
+* **accordionsection:** add transition ([a396613](https://github.com/zopaUK/react-components/commit/a39661311b99cb31e8a6b1fd16ad86739eeca7e9))
+* **accordionsection:** add visibility to content ([266f12b](https://github.com/zopaUK/react-components/commit/266f12b85202556e11f3b3cb5e9bbe4f5839c4ca))
+
+### [4.43.14](https://github.com/zopaUK/react-components/compare/v4.43.13...v4.43.14) (2021-07-16)
+
+
+### Bug Fixes
+
+* **babel:** add @babel/runtime again ([4af7437](https://github.com/zopaUK/react-components/commit/4af7437379f3a644d7c05cf6bd5639cf458f786f))
+
+### [4.43.13](https://github.com/zopaUK/react-components/compare/v4.43.12...v4.43.13) (2021-07-08)
+
+
+### Bug Fixes
+
+* **radiofield:** center and bold text when hideControl ([a5fe130](https://github.com/zopaUK/react-components/commit/a5fe130848e9d173c518ab2b56389d5b735fd870))
+* **radiofiled:** fix types ([2a68d44](https://github.com/zopaUK/react-components/commit/2a68d4450a7935816da6a3297ca4484dd4c15327))
+
+### [4.43.12](https://github.com/zopaUK/react-components/compare/v4.43.11...v4.43.12) (2021-07-08)
+
+
+### Bug Fixes
+
+* **producttemplate.card:** bottom border visible on all cards mobile ([241014d](https://github.com/zopaUK/react-components/commit/241014d6093ac822fbe0c174238c12ab9248ee4c))
+
+### [4.43.11](https://github.com/zopaUK/react-components/compare/v4.43.10...v4.43.11) (2021-07-08)
+
+
+### Bug Fixes
+
+* **button:** fix loading prop warning ([165d67b](https://github.com/zopaUK/react-components/commit/165d67b1ef652d919c2dddccbaad0b7d3231a800))
+
+### [4.43.10](https://github.com/zopaUK/react-components/compare/v4.43.9...v4.43.10) (2021-07-07)
+
+
+### Bug Fixes
+
+* **warnings:** fix warnings in components ([5ba1992](https://github.com/zopaUK/react-components/commit/5ba1992737f907bf9bc7d7af5cf88fe85102859a))
+
+### [4.43.9](https://github.com/zopaUK/react-components/compare/v4.43.8...v4.43.9) (2021-07-07)
+
+
+### Bug Fixes
+
+* **button:** fix loading prop warning ([b79533e](https://github.com/zopaUK/react-components/commit/b79533e339253bb60613b54d4f1d6e3835b559b8))
+
+### [4.43.8](https://github.com/zopaUK/react-components/compare/v4.43.7...v4.43.8) (2021-06-28)
+
+
+### Bug Fixes
+
+* **navbar:** wrap cta into <li> when needed ([ec2ec1b](https://github.com/zopaUK/react-components/commit/ec2ec1b58c3abb3789e12708f17529e86899b624))
+
+### [4.43.7](https://github.com/zopaUK/react-components/compare/v4.43.6...v4.43.7) (2021-06-11)
+
+
+### Bug Fixes
+
+* **a11y:** accordion needs tab index -1 when aria hidden ([5c507e2](https://github.com/zopaUK/react-components/commit/5c507e21e89502ed0fa2b633640a8e72c4efcebf))
+
+### [4.43.6](https://github.com/zopaUK/react-components/compare/v4.43.5...v4.43.6) (2021-06-11)
+
+
+### Bug Fixes
+
+* **landmarks:** remove main landmark from product template ([d170523](https://github.com/zopaUK/react-components/commit/d170523f7965ded58c6a4917bf2ff0dc54a6d3a9))
+
+### [4.43.5](https://github.com/zopaUK/react-components/compare/v4.43.4...v4.43.5) (2021-06-11)
+
+
+### Bug Fixes
+
+* **producttemplate:** add <main> landmark to the product template ([c658546](https://github.com/zopaUK/react-components/commit/c658546e99dd8ea6bec5cfd2f0ad8944441e47bd))
+* **producttemplate:** add section landmark ([cf26669](https://github.com/zopaUK/react-components/commit/cf266693ebb5cbd8361fc5fd8b29763a35befb0c)), closes [#685](https://github.com/zopaUK/react-components/issues/685)
+* **producttemplate:** fix snapshot test ([33d8197](https://github.com/zopaUK/react-components/commit/33d8197910d410a984e2b9e2aa8475065f92591d))
+
 ### [4.43.4](https://github.com/zopaUK/react-components/compare/v4.43.3...v4.43.4) (2021-05-27)
 
 

@@ -1,8 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
-import { colors, typography } from '../../../constants';
-import { Colors } from '../../../constants/colors';
+import { useThemeContext, AppTheme } from '../../styles/Theme';
 
 export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   /**
@@ -14,7 +13,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
    * @default 'body'
    */
-  size?: keyof typeof typography.sizes.text;
+  size?: keyof AppTheme['typography']['text']['sizes'];
   /**
    * The HTML5 tag you want to render your text on, currently only `<span>` and `<p>` are supported.
    * @default 'span'
@@ -34,44 +33,35 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
    * Accepts a subset of the Zopa brand colors.
    * @default `colors.greyDarkest`
    */
-  color?:
-    | Colors['white']
-    | Colors['grey']
-    | Colors['greyDark']
-    | Colors['greyDarkest']
-    | Colors['success']
-    | Colors['alert']
-    | 'inherit';
+  color?: string;
 }
 
-const {
-  sizes: { lineHeight: lineHeightMap },
-} = typography;
-
-const Text = styled.span<TextProps>`
+const Text = styled.span<TextProps & { theme: AppTheme }>`
   margin: 0;
   letter-spacing: 0;
-  color: ${({ color = colors.greyDarkest }) => color};
 
-  font-size: ${({ size = 'body', capitalize }) => typography.sizes.text[capitalize ? 'small' : size]};
-  line-height: ${({ size = 'body' }) => lineHeightMap[size]};
-  font-weight: ${({ weight = 'regular', capitalize }) => {
-    return typography.weights[capitalize ? 'bold' : weight];
+  color: ${({ color, theme }) => color || theme.typography.text.color};
+  font-size: ${({ theme, size = 'body', capitalize }) => theme.typography.text.sizes[capitalize ? 'small' : size]};
+  line-height: ${({ theme, size = 'body' }) => theme.typography.lineHeight[size]};
+  font-weight: ${({ theme, weight = 'regular', capitalize }) => {
+    return theme.typography.weights[capitalize ? 'bold' : weight];
   }};
-  font-family: ${typography.primary};
+
+  font-family: ${({ theme }) => theme.typography.primary};
   text-align: ${({ align = 'inherit' }) => align};
   text-transform: ${({ capitalize }) => capitalize && 'uppercase'};
 
   ${({ className = '', as }) =>
     (!as || as === 'span') &&
-    className.split(' ').some((clss) => /[mp](\:[mp])?[tblrxy]?-\d+/.test(clss)) &&
+    className.split(' ').some((clss) => /[mp](:[mp])?[tblrxy]?-\d+/.test(clss)) &&
     `
     display: block
   `}
 `;
 
-const TextWrap: FC<TextProps> = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => (
-  <Text {...props} ref={ref} />
-));
+const TextWrap: FC<TextProps> = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => {
+  const theme = useThemeContext();
+  return <Text {...props} ref={ref} theme={theme} />;
+});
 
 export default TextWrap;

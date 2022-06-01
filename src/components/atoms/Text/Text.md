@@ -77,7 +77,10 @@ import { Text, colors } from '@zopauk/react-components';
   <Text color={colors.success} className="mb-6" as="p">
     Success
   </Text>
-  <Text color={colors.alert}>Alert</Text>
+  <Text color={colors.alert} className="mb-6" as="p">
+    Alert
+  </Text>
+  <Text color={colors.alertDark}>Alert Dark</Text>
 </Fragment>;
 ```
 

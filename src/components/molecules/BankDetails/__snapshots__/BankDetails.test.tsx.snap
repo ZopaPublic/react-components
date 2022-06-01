@@ -73,14 +73,21 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
   border: 1px solid transparent;
   outline: 0;
   background: transparent;
-  cursor: not-allowed;
-  background: #F7F7F7;
-  color: #818F9B;
 }
 
 .c4:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
+}
+
+.c4:hover {
+  background: #EAEBFA;
+}
+
+.c4:active {
+  border: 1px solid transparent;
+  box-shadow: unset;
+  opacity: 0.8;
 }
 
 .c0 {
@@ -95,7 +102,18 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
 .c0:last-of-type {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  box-shadow: 0px 1px 0px 0px #D4D7D9;
+  box-shadow: 0 1px 0 0 #D4D7D9;
+}
+
+.c5 {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.c5:hover,
+.c5:focus {
+  background: transparent;
+  color: #21247F;
 }
 
 @media (min-width:0px) {
@@ -125,7 +143,7 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
 
 <div>
   <div
-    class="c0 px-4 py-5 mb-4"
+    class="c0 pl-4 pr-2 py-5 mb-4"
   >
     <div
       class="c1"
@@ -143,8 +161,8 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
         cols="12"
       >
         <button
-          class="c4"
-          disabled=""
+          class="c4 c5"
+          styling="link"
         >
           Copied
         </button>

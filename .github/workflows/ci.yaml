@@ -20,27 +20,21 @@ jobs:
           cache-name: cache-pnpm-modules
         with:
           path: ~/.pnpm-store
-          # package.json is not tracked so we can reuse pnpm global store
-          key: ${{ runner.os }}-build-${{ env.cache-name }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}
+            ${{ runner.os }}-pnpm-store-
             
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.0.2
+          version: 6.9.1
           run_install: true
           
       - name: Run typecheck
         run: pnpm typecheck
-        
+
       - name: Run tests
-        uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          test-command: 'pnpm test -- --watchAll=false --ci'
-          coverage-comment: false
+        run: pnpm test
           
       - name: Run linter
         uses: reviewdog/action-eslint@v1

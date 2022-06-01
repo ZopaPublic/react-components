@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
-import CardHeading from '../CardHeading/CardHeading';
 import CardText from '../CardText/CardText';
 import CardLineItem from '../CardLineItem/CardLineItem';
 
 export type CardLayout = 'horizontal' | 'vertical';
-export type CardStyling = 'primary' | 'secondary' | 'brand' | 'action';
+export type CardStyling = 'primary' | 'secondary' | 'brand' | 'action' | 'info';
 
 export interface CardProps {
   /**
@@ -36,6 +35,7 @@ const headingSizes: Record<CardStyling, string> = {
   primary: typography.sizes.heading.h5,
   brand: typography.sizes.heading.h6,
   action: typography.sizes.heading.h6,
+  info: typography.sizes.heading.h6,
 };
 
 const textSizes: Record<CardStyling, string> = {
@@ -43,6 +43,7 @@ const textSizes: Record<CardStyling, string> = {
   primary: typography.sizes.text.body,
   brand: typography.sizes.text.small,
   action: typography.sizes.text.small,
+  info: typography.sizes.text.small,
 };
 
 const boxShadowStyle: Record<CardStyling, string> = {
@@ -50,6 +51,7 @@ const boxShadowStyle: Record<CardStyling, string> = {
   secondary: `0 1px 0 0 ${colors.greyLight}`,
   brand: `none`,
   action: `none`,
+  info: `none`,
 };
 
 const borderStyle: Record<CardStyling, string> = {
@@ -57,6 +59,7 @@ const borderStyle: Record<CardStyling, string> = {
   secondary: `1px solid ${colors.greyLighter}`,
   brand: `1px solid ${colors.brand}`,
   action: `1px solid ${colors.greyLighter}`,
+  info: `1px solid ${colors.greyLightest}`,
 };
 
 const backgroundStyle: Record<CardStyling, string> = {
@@ -64,6 +67,7 @@ const backgroundStyle: Record<CardStyling, string> = {
   secondary: `${colors.white};`,
   brand: `${colors.brandLight};`,
   action: `${colors.white};`,
+  info: `${colors.greyLightest}`,
 };
 
 const Card = styled.div<CardProps>`
@@ -79,14 +83,11 @@ const Card = styled.div<CardProps>`
   & > ${CardImageContainer} {
     flex: 0 1 ${({ layout = 'vertical' }) => layoutImageStyles[layout]};
   }
-  & ${CardHeading} {
+  & .zrc__card-heading {
     font-size: ${({ styling = 'secondary' }) => headingSizes[styling]};
   }
   & ${CardText} {
     font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
-  }
-  & > ${CardLineItem} {
-    align-self: center;
   }
   ${({ styling }) =>
     styling === 'action'

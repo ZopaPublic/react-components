@@ -44,6 +44,7 @@ const ZopaFooter = ({
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">What we do</Heading>
           <List>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/car-finance`, children: 'Car hire purchase' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/car-loans`, children: 'Car loans' })}</li>
             <li className="mb-4">
               {renderLink({ href: `${baseUrl}/loans/debt-consolidation`, children: 'Debt consolidation loans' })}
@@ -52,18 +53,15 @@ const ZopaFooter = ({
               {renderLink({ href: `${baseUrl}/loans/home-improvement`, children: 'Home improvement loans' })}
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/wedding`, children: 'Wedding loans' })}</li>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/invest`, children: 'Peer-to-peer investments' })}</li>
-            <li className="mb-4">
-              {renderLink({ href: `${baseUrl}/invest/isa`, children: 'Innovative Finance ISA' })}
-            </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/credit-card`, children: 'Credit cards' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/smart-saver`, children: 'Smart Saver' })}</li>
             <li>{renderLink({ href: `${baseUrl}/savings-accounts`, children: 'Fixed Term Savings' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
           <Heading className="mb-4 s:mb-6">About Zopa</Heading>
           <List>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About Us' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About us' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/our-story`, children: 'Our story' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/board`, children: 'Meet the board' })}</li>
             <li className="mb-4">
@@ -72,8 +70,9 @@ const ZopaFooter = ({
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/blog`, children: 'Blog' })}</li>
-            <li className="mb-4">{renderLink({ href: `${baseUrl}/feelgood`, children: 'New products' })}</li>
-            <li>{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/contact/complaints`, children: 'Complaints' })}</li>
+            <li className="mb-4">{renderLink({ href: `${baseUrl}/about/press`, children: 'Press office' })}</li>
+            <li>{renderLink({ href: `${baseUrl}/invest`, children: 'Peer-to-peer investments' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
@@ -86,7 +85,10 @@ const ZopaFooter = ({
             </li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/modern-slavery`, children: 'Modern slavery' })}</li>
             <li className="mb-4">{renderLink({ href: `${baseUrl}/terms-of-use`, children: 'Terms of use' })}</li>
-            <li>{renderLink({ href: `${baseUrl}/investor-principles`, children: 'Investor principles' })}</li>
+            <li className="mb-4">
+              {renderLink({ href: `${baseUrl}/investor-principles`, children: 'Investor principles' })}
+            </li>
+            <li>{renderLink({ href: `${baseUrl}/remuneration`, children: 'Remuneration' })}</li>
           </List>
         </FlexCol>
         <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
@@ -129,12 +131,10 @@ const ZopaFooter = ({
         </SocialBlock>
         <LegalBlock>
           <Text as="p" color={colors.greyDark} size="small" className="mb-4">
-            Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial
-            Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and
-            regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the
-            Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both
-            incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley
-            Street, London, SE1 2QG.
+            Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial
+            Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register
+            (800542). Zopa Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office
+            at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
           </Text>
           <Text as="p" color={colors.greyDark} size="small" className="mb-4">
             © Zopa Bank Limited {new Date().getFullYear()} All rights reserved. 'Zopa' is a trademark of Zopa Bank
@@ -142,7 +142,7 @@ const ZopaFooter = ({
           </Text>
           <Text as="p" color={colors.greyDark} size="small">
             Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office
-            of the Information Commissioner (ZA275984, Z8797078).
+            of the Information Commissioner (ZA275984).
           </Text>
         </LegalBlock>
       </FlexRow>

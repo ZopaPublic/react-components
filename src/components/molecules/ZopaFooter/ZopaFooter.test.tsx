@@ -2,12 +2,12 @@ import axe from '../../../../axe-helper';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import ZopaFooter from './ZopaFooter';
-import { mockDate, IMockDate } from '../../../helpers/test/date';
+import { mockDate, MockDate } from '../../../helpers/test/date';
 
 const fixedDate = new Date('2025-02-28T09:39:59');
 
 describe('<ZopaFooter />', () => {
-  let date: IMockDate;
+  let date: MockDate;
 
   beforeEach(() => {
     date = mockDate(new Date(fixedDate));
@@ -20,10 +20,10 @@ describe('<ZopaFooter />', () => {
   it('renders correct urls  with baseUrl prop', async () => {
     render(<ZopaFooter baseUrl="http://whatever.com" />);
 
-    const firstLink = screen.getByText('Car loans');
+    const firstLink = screen.getByText('Car hire purchase');
     const logoLink = screen.getByTitle('Logo');
 
-    expect(firstLink).toHaveAttribute('href', 'http://whatever.com/loans/car-loans');
+    expect(firstLink).toHaveAttribute('href', 'http://whatever.com/car-finance');
     expect(logoLink).toHaveAttribute('href', 'http://whatever.com');
   });
 

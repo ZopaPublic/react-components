@@ -24,29 +24,19 @@ exports[`<ProductTemplateCard /> renders with all the props 1`] = `
   flex: 0 1 200px;
 }
 
-.c0 .c2 {
+.c0 .zrc__card-heading {
   font-size: 16px;
 }
 
-.c0 .c3 {
+.c0 .c2 {
   font-size: 14px;
-}
-
-.c0 > .c4 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 @media (max-width:768px) {
   .c0 {
     border-radius: 0;
-    box-shadow: none;
-    border: none;
-  }
-
-  .c0:last-of-type {
     box-shadow: 0 0 1px 0 #D4D7D9;
+    border: none;
     border-bottom: 1px solid #EFEFEF;
   }
 }

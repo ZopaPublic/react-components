@@ -21,6 +21,7 @@ import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 import { Button } from '../../../..';
+import { useThemeContext } from '../../../styles/Theme';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -107,7 +108,7 @@ const PageNavigation = styled.header<PageNavigationProps>`
 
   .headroom {
     z-index: 1;
-    background-color: ${colors.brand};
+    background-color: ${({ theme }) => theme.navbar.mobile.bgColor};
     transition: transform 200ms ease-in-out;
 
     ${minMedia.desktop`
@@ -161,7 +162,7 @@ const LayoutInner = styled.nav<PageNavigationProps>`
 
 export const LogoContainer = styled.div<PageNavigationProps>`
   position: relative;
-
+  min-height: ${({ theme }) => theme.navbar.mobile.minHeight}px;
   ${minMedia.desktop`
     ${css`
       display: flex;
@@ -209,23 +210,24 @@ const NavbarLinksListContainer = styled.ul`
   ${minMedia.desktop`
     ${css`
       margin-right: ${spacing[10]};
+      padding-left: 0;
     `}
   `}
 `;
 
 const IconContainer = styled(Button).attrs({ 'aria-label': 'Navigation' })`
   background: transparent;
-  display: flex;
+  display: ${({ theme }) => theme.navbar.iconContainer.display};
   height: ${mobileNavbarHeight}px;
   width: ${mobileNavbarHeight}px;
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  border-radius: 0;
 `;
 
 const HamburgerContainer = styled(IconContainer)<HamburgerContainerProps>`
   background: ${({ open }) => (open ? colors.white : 'transparent')};
-  border-radius: ${({ open }) => (open ? 0 : '8px')};
   &:hover:not(:disabled) {
     background: ${({ open }) => (open ? colors.white : 'transparent')};
   }
@@ -281,6 +283,11 @@ const NavItemsWrapper = styled.ul`
   }
 `;
 
+const ActionWrapper = styled.li`
+  list-style: none;
+  display: inline;
+`;
+
 export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: NavbarLinksListLinkProps) => (
   <NavbarLink key={`navbar-link-${index}`} {...rest} {...props}>
     {label}
@@ -301,6 +308,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState(false);
   const [height, setHeight] = useState(0);
+  const theme = useThemeContext();
 
   useEffect(() => {
     if (open) {
@@ -329,7 +337,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <PageNavigation overlap={overThreshold} collapsed={collapsed}>
+      <PageNavigation overlap={overThreshold} collapsed={collapsed} theme={theme}>
         <Headroom
           wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
@@ -337,20 +345,25 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
         >
           <LargeDeviceNavbar>
             <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold}>
-              <LogoContainer overlap={overThreshold || collapsed} role="banner">
-                <Logo negative={!overThreshold && !collapsed} width="150px" />
+              <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
+                {theme.navbar.logo.render && <Logo negative={!overThreshold && !collapsed} width="150px" />}
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
                 <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
-                {withCTA && cta}
+                {withCTA && <ActionWrapper>{cta}</ActionWrapper>}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
             <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold}>
               {links ? (
-                <HamburgerContainer open={open} onClick={() => setOpen(!open)} data-automation="hamburger-icon">
+                <HamburgerContainer
+                  open={open}
+                  onClick={() => setOpen(!open)}
+                  data-automation="hamburger-icon"
+                  theme={theme}
+                >
                   <Icon
                     variant={faBars}
                     color={open ? colors.brand : colors.white}
@@ -360,13 +373,13 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
                   />
                 </HamburgerContainer>
               ) : (
-                <IconContainer />
+                <IconContainer theme={theme} />
               )}
-              <LogoContainer>
-                <Logo color={colors.brand} height="20px" negative />
+              <LogoContainer theme={theme}>
+                {theme.navbar.logo.render && <Logo color={colors.brand} height="20px" negative />}
                 {overlayLogoWith}
               </LogoContainer>
-              {withCTA ? cta : <IconContainer />}
+              {withCTA ? cta : <IconContainer theme={theme} />}
               {links && open && (
                 <HamburgerMenu open={open} height={height}>
                   <NavItemsWrapper>

@@ -1,17 +1,18 @@
-import React, { HTMLAttributes } from 'react';
+import Spinner from '../Spinner/Spinner';
+import React, { ButtonHTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
 import { colors, typography, spacing } from '../../../constants';
-import Spinner from '../Spinner/Spinner';
 
 export type Styling = 'primary' | 'secondary' | 'link';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+type BaseButtonProps = {
   styling?: Styling;
   disabled?: boolean;
   loading?: boolean;
   fullWidth?: boolean;
-  type?: 'button' | 'submit' | 'reset';
-}
+};
+
+export type ButtonProps<T = ButtonHTMLAttributes<HTMLButtonElement>> = BaseButtonProps & T;
 
 const colorMap = {
   primary: {
@@ -31,7 +32,7 @@ const colorMap = {
   },
 };
 
-export const buttonStyle = css<ButtonProps>`
+export const buttonStyle = css<BaseButtonProps>`
   text-decoration: none;
   box-sizing: border-box;
   display: inline-flex;
@@ -68,13 +69,13 @@ export const buttonStyle = css<ButtonProps>`
   }
 
   ${({ disabled, styling = 'primary' }) => {
-    const disabledStyles = css<ButtonProps>`
+    const disabledStyles = css<BaseButtonProps>`
       cursor: not-allowed;
       ${({ loading }) => {
         if (!loading) {
           return css`
             background: ${colors.greyLightest};
-            color: ${colors.grey};
+            color: ${colors.greyDark};
           `;
         }
       }}
@@ -94,9 +95,10 @@ export const buttonStyle = css<ButtonProps>`
   }}
 `;
 
-const ButtonWrapper = styled.button.attrs(({ loading, fullWidth, ...rest }: ButtonProps) => ({
-  ...rest,
-}))`
+// This wrapper is to prevent html attribute warnings. See: https://styled-components.com/docs/faqs#why-am-i-getting-html-attribute-warnings
+const ButtonWrapper = ({ loading, fullWidth, ...props }: ButtonProps) => <button {...props} />;
+
+const StyledWrapper = styled(ButtonWrapper)`
   ${buttonStyle}
 `;
 
@@ -104,14 +106,14 @@ const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary',
   const isLoading = styling !== 'link' ? loading : undefined;
 
   return (
-    <ButtonWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
+    <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
       {isLoading && (
         <>
           <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
         </>
       )}
       {children}
-    </ButtonWrapper>
+    </StyledWrapper>
   );
 };
 

@@ -10,6 +10,7 @@
 
 - `htmlFor` prop on the `<InputLabel />` component.
 - `id` prop on `<InputRadio />` so that is easily to query (.i.e automated tests).
+- `hideControl` prop for `<InputLabel />` component hides radio button, centers the text, increases text weight to bold - can be used as Option Button.
 
 ### Examples
 

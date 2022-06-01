@@ -176,7 +176,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   display: none;
 }
 
-.c16 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -205,22 +205,22 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   background: transparent;
 }
 
-.c16:focus:not(:active) {
+.c17:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c16:hover {
+.c17:hover {
   background: #EAEBFA;
 }
 
-.c16:active {
+.c17:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c21 {
+.c22 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -250,22 +250,22 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c21:focus:not(:active) {
+.c22:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c21:hover {
+.c22:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c21:active {
+.c22:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -330,7 +330,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   transform: translateY(0%);
 }
 
-.c23 {
+.c24 {
   height: 64px;
 }
 
@@ -354,6 +354,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -366,7 +367,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   right: 0;
 }
 
-.c22 {
+.c23 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -383,11 +384,11 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
   background: transparent;
-  border-radius: 8px;
 }
 
-.c22:hover:not(:disabled) {
+.c23:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -395,8 +396,13 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   display: none;
 }
 
-.c20 {
+.c21 {
   display: block;
+}
+
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -462,19 +468,19 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 @media (max-width:1279px) {
-  .c17:hover:not(:disabled) {
+  .c18:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c17 {
+  .c18 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c18 {
+  .c19 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -485,7 +491,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -552,7 +558,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 @media (min-width:1280px) {
-  .c23 {
+  .c24 {
     height: 120px;
   }
 }
@@ -601,6 +607,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -611,7 +618,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 @media (min-width:1280px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -810,38 +817,43 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                   Support
                 </a>
               </li>
-              <button
-                class="c16 c17 sc-htoDjs c17"
+              <li
+                class="c16"
               >
-                <div
-                  class="c18"
+                <button
+                  class="c17 c18"
+                  styling="link"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
         <div
-          class="c20"
+          class="c21"
         >
           <nav
             class="c2"
@@ -849,8 +861,10 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
           >
             <button
               aria-label="Navigation"
-              class="c21 c22 sc-cQFLBn sc-gojNiO c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -900,16 +914,17 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
               />
             </div>
             <button
-              class="c16 c17 sc-htoDjs c17"
+              class="c17 c18"
+              styling="link"
             >
               <div
-                class="c18"
+                class="c19"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -932,7 +947,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
     </div>
   </header>
   <div
-    class="c23"
+    class="c24"
   />
 </div>
 `;
@@ -1113,7 +1128,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   display: none;
 }
 
-.c16 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -1143,22 +1158,22 @@ exports[`<Navbar /> should render large device navigation with default props and
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c16:focus:not(:active) {
+.c17:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c16:hover {
+.c17:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c16:active {
+.c17:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -1223,7 +1238,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   transform: translateY(0%);
 }
 
-.c22 {
+.c23 {
   height: 64px;
 }
 
@@ -1247,6 +1262,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -1259,7 +1275,7 @@ exports[`<Navbar /> should render large device navigation with default props and
   right: 0;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1276,11 +1292,11 @@ exports[`<Navbar /> should render large device navigation with default props and
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
   background: transparent;
-  border-radius: 8px;
 }
 
-.c21:hover:not(:disabled) {
+.c22:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -1288,8 +1304,13 @@ exports[`<Navbar /> should render large device navigation with default props and
   display: none;
 }
 
-.c20 {
+.c21 {
   display: block;
+}
+
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -1355,19 +1376,19 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 @media (max-width:1279px) {
-  .c17:hover:not(:disabled) {
+  .c18:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c17 {
+  .c18 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c18 {
+  .c19 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -1378,7 +1399,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -1445,7 +1466,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 @media (min-width:1280px) {
-  .c22 {
+  .c23 {
     height: 120px;
   }
 }
@@ -1494,6 +1515,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -1504,7 +1526,7 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 @media (min-width:1280px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -1700,38 +1722,43 @@ exports[`<Navbar /> should render large device navigation with default props and
                   Support
                 </a>
               </li>
-              <button
-                class="c16 c17 sc-htoDjs c17"
+              <li
+                class="c16"
               >
-                <div
-                  class="c18"
+                <button
+                  class="c17 c18"
+                  styling="primary"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
         <div
-          class="c20"
+          class="c21"
         >
           <nav
             class="c2"
@@ -1739,8 +1766,10 @@ exports[`<Navbar /> should render large device navigation with default props and
           >
             <button
               aria-label="Navigation"
-              class="c16 c21 sc-cQFLBn sc-gojNiO c21"
+              class="c17 c22"
               data-automation="hamburger-icon"
+              styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -1787,16 +1816,17 @@ exports[`<Navbar /> should render large device navigation with default props and
               </svg>
             </div>
             <button
-              class="c16 c17 sc-htoDjs c17"
+              class="c17 c18"
+              styling="primary"
             >
               <div
-                class="c18"
+                class="c19"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -1819,7 +1849,7 @@ exports[`<Navbar /> should render large device navigation with default props and
     </div>
   </header>
   <div
-    class="c22"
+    class="c23"
   />
 </div>
 `;
@@ -2000,7 +2030,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
   display: none;
 }
 
-.c16 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -2029,22 +2059,22 @@ exports[`<Navbar /> should render small device navigation with default props wit
   background: transparent;
 }
 
-.c16:focus:not(:active) {
+.c17:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c16:hover {
+.c17:hover {
   background: #EAEBFA;
 }
 
-.c16:active {
+.c17:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c21 {
+.c22 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -2074,22 +2104,22 @@ exports[`<Navbar /> should render small device navigation with default props wit
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c21:focus:not(:active) {
+.c22:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c21:hover {
+.c22:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c21:active {
+.c22:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -2154,7 +2184,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
   transform: translateY(0%);
 }
 
-.c23 {
+.c24 {
   height: 64px;
 }
 
@@ -2178,6 +2208,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -2190,7 +2221,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
   right: 0;
 }
 
-.c22 {
+.c23 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2207,11 +2238,11 @@ exports[`<Navbar /> should render small device navigation with default props wit
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
   background: transparent;
-  border-radius: 8px;
 }
 
-.c22:hover:not(:disabled) {
+.c23:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -2219,8 +2250,13 @@ exports[`<Navbar /> should render small device navigation with default props wit
   display: none;
 }
 
-.c20 {
+.c21 {
   display: block;
+}
+
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -2286,19 +2322,19 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 @media (max-width:1279px) {
-  .c17:hover:not(:disabled) {
+  .c18:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c17 {
+  .c18 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c18 {
+  .c19 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -2309,7 +2345,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -2376,7 +2412,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 @media (min-width:1280px) {
-  .c23 {
+  .c24 {
     height: 120px;
   }
 }
@@ -2425,6 +2461,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -2435,7 +2472,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 @media (min-width:1280px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -2631,38 +2668,43 @@ exports[`<Navbar /> should render small device navigation with default props wit
                   Support
                 </a>
               </li>
-              <button
-                class="c16 c17 sc-htoDjs c17"
+              <li
+                class="c16"
               >
-                <div
-                  class="c18"
+                <button
+                  class="c17 c18"
+                  styling="link"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
         <div
-          class="c20"
+          class="c21"
         >
           <nav
             class="c2"
@@ -2670,8 +2712,10 @@ exports[`<Navbar /> should render small device navigation with default props wit
           >
             <button
               aria-label="Navigation"
-              class="c21 c22 sc-cQFLBn sc-gojNiO c22"
+              class="c22 c23"
               data-automation="hamburger-icon"
+              styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -2718,16 +2762,17 @@ exports[`<Navbar /> should render small device navigation with default props wit
               </svg>
             </div>
             <button
-              class="c16 c17 sc-htoDjs c17"
+              class="c17 c18"
+              styling="link"
             >
               <div
-                class="c18"
+                class="c19"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -2750,13 +2795,13 @@ exports[`<Navbar /> should render small device navigation with default props wit
     </div>
   </header>
   <div
-    class="c23"
+    class="c24"
   />
 </div>
 `;
 
 exports[`<Navbar /> should render the collapsed styled on large device navigation with default props and collapsed set to true 1`] = `
-.c23 {
+.c24 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   fill: #FFFFFF;
@@ -2937,7 +2982,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: none;
 }
 
-.c16 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -2967,22 +3012,22 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c16:focus:not(:active) {
+.c17:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c16:hover {
+.c17:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
-.c16:active {
+.c17:active {
   border: 1px solid transparent;
   box-shadow: unset;
   opacity: 0.8;
 }
 
-.c19 {
+.c20 {
   display: block;
 }
 
@@ -3047,7 +3092,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   transform: translateY(0%);
 }
 
-.c24 {
+.c25 {
   height: 64px;
 }
 
@@ -3069,13 +3114,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   box-shadow: rgba(0,0,0,0.2) 0 1px 2px;
 }
 
-.c22 {
+.c23 {
   position: relative;
+  min-height: autopx;
 }
 
-.c22 > a,
-.c22 > button,
-.c22 > div {
+.c23 > a,
+.c23 > button,
+.c23 > div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -3085,6 +3131,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 
 .c3 {
   position: relative;
+  min-height: autopx;
 }
 
 .c3 > a,
@@ -3097,7 +3144,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   right: 0;
 }
 
-.c21 {
+.c22 {
   background: transparent;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3114,11 +3161,11 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 0;
   background: transparent;
-  border-radius: 8px;
 }
 
-.c21:hover:not(:disabled) {
+.c22:hover:not(:disabled) {
   background: transparent;
 }
 
@@ -3126,8 +3173,13 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   display: none;
 }
 
-.c20 {
+.c21 {
   display: block;
+}
+
+.c16 {
+  list-style: none;
+  display: inline;
 }
 
 @media (max-width:1279px) {
@@ -3193,19 +3245,19 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (max-width:1279px) {
-  .c17:hover:not(:disabled) {
+  .c18:hover:not(:disabled) {
     background: none;
   }
 }
 
 @media (min-width:1280px) {
-  .c17 {
+  .c18 {
     margin-left: 8px;
   }
 }
 
 @media (max-width:1279px) {
-  .c18 {
+  .c19 {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -3216,7 +3268,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
@@ -3284,7 +3336,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c24 {
+  .c25 {
     height: 76px;
   }
 }
@@ -3296,7 +3348,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c22 {
+  .c23 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3314,7 +3366,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c22:before {
+  .c23:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -3368,6 +3420,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 @media (min-width:1280px) {
   .c5 {
     margin-right: 64px;
+    padding-left: 0;
   }
 }
 
@@ -3378,7 +3431,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 @media (min-width:1280px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -3574,38 +3627,43 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                   Support
                 </a>
               </li>
-              <button
-                class="c16 c17 sc-htoDjs c17"
+              <li
+                class="c16"
               >
-                <div
-                  class="c18"
+                <button
+                  class="c17 c18"
+                  styling="primary"
                 >
-                  Sign in
-                </div>
-                <svg
-                  aria-hidden="true"
-                  class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
-                  color="#FFFFFF"
-                  data-icon="user"
-                  data-prefix="fas"
-                  focusable="false"
-                  height="20px"
-                  role="img"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
+                  <div
+                    class="c19"
+                  >
+                    Sign in
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
+                    color="#FFFFFF"
+                    data-icon="user"
+                    data-prefix="fas"
+                    focusable="false"
+                    height="20px"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
         <div
-          class="c20"
+          class="c21"
         >
           <nav
             class="c2"
@@ -3613,8 +3671,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
           >
             <button
               aria-label="Navigation"
-              class="c16 c21 sc-cQFLBn sc-gojNiO c21"
+              class="c17 c22"
               data-automation="hamburger-icon"
+              styling="primary"
+              theme="[object Object]"
             >
               <svg
                 aria-hidden="true"
@@ -3636,7 +3696,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
               </svg>
             </button>
             <div
-              class="c22"
+              class="c23"
             >
               <svg
                 aria-label="zopa logo"
@@ -3654,23 +3714,24 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 </title>
                 <g>
                   <path
-                    class="c23"
+                    class="c24"
                     d="M77 .3C88.8.3 97 8 97.4 19.2c0 5.3-2 10.1-5.7 13.6a20.8 20.8 0 01-14.5 5.5c-5.7 0-10.9-2-14.6-5.5A18.7 18.7 0 0157 19.2c0-5.3 2-10.1 5.6-13.6A21 21 0 0177.1.3zm57.7 1c4.5 0 8.2 1.2 10.7 3.5 2.4 2.4 3.8 5.8 3.8 10 0 8.6-5.4 14-14.1 14l-.4.1h-6.2v8.5h-10.8V1.2h17zm-98 0v1.2c0 6.9-7 13.6-12 18.5-1.8 1.7-3.4 3.3-4.4 4.6l-.2.3-.6.7h17v10.7H0V36c0-6.8 6.3-13 11.4-18 2.1-2 4-3.7 5-5.2v-.2l.5-.7H1.2V1.2h35.4zM194.1 1L208 37.2h-11.3l-2.2-5.8h-15l-2.3 5.8H166l13.8-36.1h14.4zM77 10.6a8.5 8.5 0 00-8.6 8.6 8.6 8.6 0 1017.2 0 8.6 8.6 0 00-8.6-8.6zM187 11.7L182.7 23h8.6L187 11.7zm-52.3-1.1h-6.2v9.3h6.2c2.7 0 4.5-2 4.5-4.8 0-2.7-1.8-4.5-4.5-4.5z"
                   />
                 </g>
               </svg>
             </div>
             <button
-              class="c16 c17 sc-htoDjs c17"
+              class="c17 c18"
+              styling="primary"
             >
               <div
-                class="c18"
+                class="c19"
               >
                 Sign in
               </div>
               <svg
                 aria-hidden="true"
-                class="svg-inline--fa fa-user fa-w-14 fa-lg c19"
+                class="svg-inline--fa fa-user fa-w-14 fa-lg c20"
                 color="#FFFFFF"
                 data-icon="user"
                 data-prefix="fas"
@@ -3693,7 +3754,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
     </div>
   </header>
   <div
-    class="c24"
+    class="c25"
   />
 </div>
 `;

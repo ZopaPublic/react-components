@@ -250,6 +250,31 @@ import { Card, Button, FlexContainer, FlexRow, FlexCol } from '@zopauk/react-com
 </FlexContainer>;
 ```
 
+- Info card with icon, heading and text
+
+`<Card.LineItem />` should be rendered outside of `<Card.Content />`
+
+```tsx
+import { Card, Button, FlexContainer, FlexRow, FlexCol, Icon } from '@zopauk/react-components';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+
+<FlexContainer>
+  <FlexRow>
+    <FlexCol xs={4}>
+      <Card styling="info" layout="horizontal" className="py-2">
+        <Card.LineItem align="start">
+          <Icon variant={faCalendarAlt} color={colors.grey} size="lg" className="ml-2" />
+        </Card.LineItem>
+        <Card.Content className="pl-2">
+          <Card.Heading>Info card</Card.Heading>
+          <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
+        </Card.Content>
+      </Card>
+    </FlexCol>
+  </FlexRow>
+</FlexContainer>;
+```
+
 - Horizontal action card with single line item
 
 `<Card.LineItem />` should be rendered outside of `<Card.Content />`

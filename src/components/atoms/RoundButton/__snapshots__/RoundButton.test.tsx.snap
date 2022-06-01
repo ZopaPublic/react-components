@@ -1,0 +1,534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RoundButton /> renders as "primary" 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c0 .round-button-circle:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="round-button-circle"
+  />
+</div>
+`;
+
+exports[`<RoundButton /> renders as "secondary" 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #21247F;
+  background: #E9EAFA;
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c0 .round-button-circle:hover {
+  background: #EEEFFB;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="round-button-circle"
+  />
+</div>
+`;
+
+exports[`<RoundButton /> renders disabled 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  cursor: not-allowed;
+  color: #818F9B;
+  background: #F7F7F7;
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div
+  class="c0"
+  disabled=""
+>
+  <div
+    class="round-button-circle"
+  />
+</div>
+`;
+
+exports[`<RoundButton /> renders loading as "primary" 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  cursor: not-allowed;
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div
+  class="c0"
+  disabled=""
+>
+  <div
+    class="round-button-circle"
+  >
+    <img
+      aria-label="loading spinner"
+      height="20px"
+      src="spinner-negative.gif"
+      width="20px"
+    />
+  </div>
+</div>
+`;
+
+exports[`<RoundButton /> renders loading as "secondary" 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #21247F;
+  background: #E9EAFA;
+  cursor: not-allowed;
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div
+  class="c0"
+  disabled=""
+>
+  <div
+    class="round-button-circle"
+  >
+    <img
+      aria-label="loading spinner"
+      height="20px"
+      src="spinner-action.gif"
+      width="20px"
+    />
+  </div>
+</div>
+`;
+
+exports[`<RoundButton /> renders with no a11y violations 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.c0 .round-button-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0 .round-button-circle:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
+}
+
+.c0 .round-button-circle svg,
+.c0 .round-button-circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c0 .round-button-circle:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+}
+
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
+<div
+  class="c0"
+  label="Primary"
+>
+  <div
+    class="round-button-circle"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-cog fa-w-16 fa-lg "
+      data-icon="cog"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <span
+    class="c1 c2"
+  >
+    Primary
+  </span>
+</div>
+`;
