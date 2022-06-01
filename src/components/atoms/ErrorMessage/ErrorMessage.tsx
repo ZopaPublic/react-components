@@ -16,7 +16,7 @@ const StyledErrorMessage = styled(Text).attrs({
   color: ${({ theme }) => theme.errorMessage.textColor};
   background-color: ${({ theme }) => theme.errorMessage.backgroundColor};
   font-size: ${typography.sizes.text.body};
-  font-family: ${typography.primary};
+  font-family: ${({ theme }) => theme.typography.primary};
   font-weight: ${typography.weights.regular};
   border-radius: 4px;
   width: 100%;

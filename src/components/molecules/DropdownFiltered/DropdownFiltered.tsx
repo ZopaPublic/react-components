@@ -11,6 +11,7 @@ import { FieldProps, InputProps } from '../../types';
 import Option from './Option';
 import Options, { OptionsListProps } from './Options';
 import { SearchInputProps, SearchInput } from './SearchInput';
+import { useThemeContext } from '../../styles/Theme';
 
 export interface DropdownItem {
   value: string;
@@ -59,6 +60,8 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
   const searchMatch = (itemValue: string, inputValue: string) =>
     itemValue && itemValue.toLowerCase().includes(inputValue.toLowerCase());
 
+  const theme = useThemeContext();
+
   return (
     <SizedContainer size={inputSize}>
       <Downshift itemToString={(item) => (item ? item.value : '')} {...props}>
@@ -105,6 +108,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   hasError={showError}
                   isOpen={isOpen && !!filteredResults.length}
                   disabled={disabled}
+                  theme={theme}
                   endIcon={
                     <Icon
                       variant={faSort}
@@ -126,7 +130,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   }
                 />
                 {isOpen && !!filteredResults.length && (
-                  <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
+                  <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight} theme={theme}>
                     {filteredResults.map((item, index) => (
                       <Option
                         {...getItemProps({ index, item })}
@@ -134,6 +138,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                         highLighted={highlightedIndex === index}
                         selected={selectedItem === item}
                         disabled={disabled}
+                        theme={theme}
                       >
                         {item.value}
                       </Option>

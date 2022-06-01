@@ -84,6 +84,12 @@ interface InputTheme {
   };
   iconColor: string;
   iconBackgroundColor: string;
+  searchInput: {
+    boxShadow: string;
+    borderRadiusInput: string;
+    borderRadiusOptions: string;
+    borderColor: string;
+  };
 }
 
 interface NavbarTheme {
@@ -286,6 +292,12 @@ export const zopaTheme: AppTheme = {
     },
     iconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
+    searchInput: {
+      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      borderRadiusInput: `8px 8px 0 0`,
+      borderRadiusOptions: `0 0 8px 8px`,
+      borderColor: colors.brand,
+    },
   },
   navbar: {
     iconContainer: {
