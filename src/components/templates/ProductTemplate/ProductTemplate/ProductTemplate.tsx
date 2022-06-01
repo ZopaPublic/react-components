@@ -16,7 +16,7 @@ export interface ProductTemplateProps {
   subtitle?: string;
   content?: ReactElement;
   prevStep?: ReactElement | string;
-  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
+  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps' | 'progressColor'>;
   contentWidth?: number;
   onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }

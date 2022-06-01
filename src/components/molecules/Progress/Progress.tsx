@@ -10,7 +10,7 @@ export interface ProgressionStyleProps {
    * Progress bar colour
    * @default `colors.brand`
    */
-  progressColor?: Colors;
+  progressColor?: Colors | string;
 }
 
 export interface ProgressProps extends ProgressionStyleProps, HTMLAttributes<HTMLDivElement> {
