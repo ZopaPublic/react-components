@@ -1,3 +1,17 @@
+## [5.14.0](https://github.com/zopaUK/react-components/compare/v5.13.0...v5.14.0) (2022-06-01)
+
+
+### Features
+
+* **footer:** update footer legal copy ([6464343](https://github.com/zopaUK/react-components/commit/646434308801dd3b939fe01eb77df3215f7bc6ce))
+
+## [5.13.0](https://github.com/zopaUK/react-components/compare/v5.12.0...v5.13.0) (2022-06-01)
+
+
+### Features
+
+* **footer:** update footer legal copy ([d9141e4](https://github.com/zopaUK/react-components/commit/d9141e4a191c453aa1380fcd4cf9319d1fef5366))
+
 ## [5.12.0](https://github.com/zopaUK/react-components/compare/v5.11.0...v5.12.0) (2022-05-31)
 
 
