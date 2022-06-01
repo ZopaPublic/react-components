@@ -18,36 +18,46 @@ This repo contains 2 things at the same time:
 
 [Check the docs 💕](https://zrc.netlify.app/)
 
-### Migrating from version 3
+## Migrating from version 3
 
 There are a number of breaking changes which will need to be addressed when upgrading from Zopa React Components v3 to v4.
 
 [The migration guide](/etc/docs/migration-v4.md) will walk you through the major changes such as colours and typography.
 
-### Installation
+## Installation
 
-```
-$ git clone https://github.com/zopaUK/react-components.git
-$ pnpm i
+```bash
+git clone https://github.com/zopaUK/react-components.git
+pnpm i
 ```
 
-### Running the project
+## Running the project
 
 Execute the development environment:
 
-```
-$ pnpm dev
+```bash
+pnpm dev
 ```
 
 The docs will run at [localhost:6060](http://localhost:6060).
 
-### Motivation
+## Local development (working on a linked application)
+
+We start a watcher using [esbuild](https://esbuild.github.io/) and [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html) by running:
+
+```bash
+pnpm dev:code
+```
+
+Your locally running app will have its own way of linking to local dependencies but making changes in react-components codebase should now show in the application.
+
+## Motivation
 
 The aim of this project is to share with the frontend community how we code in Zopa.
 
 We think it might be useful for someone who wants to start a new react components library and want to re-use some of our code.
 
-### Types
+## Types
 
 You can access typings for specific components under `@zopauk/react-components/types`:
 
