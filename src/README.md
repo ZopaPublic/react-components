@@ -10,7 +10,7 @@ pnpm add '@zopauk/react-components'
 
 ## Global Styling
 
-⚠️ &nbsp;&nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
+⚠️ &nbsp;In order for the UI to render well, `<GlobalStyles />` needs to be imported and added to the top-most component of the project:
 
 ```ts static
 import { GlobalStyles } from '@zopauk/react-components';
@@ -22,6 +22,11 @@ const App = () => (
     // rest of your top-level components
   </>
 );
+```
+If you are using [SSR or SSR](https://blog.logrocket.com/ssg-vs-ssr-in-next-js/) like in NextJS or Gatsby you also need to import the fontawesome styles in the root of your application:
+
+```ts static
+import '@fortawesome/fontawesome-svg-core/styles.css'
 ```
 
 ## Typography
