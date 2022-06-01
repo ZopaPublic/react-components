@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "module": "esnext",
     "target": "es5",
     "sourceMap": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "strict": true,
@@ -20,18 +17,10 @@
     "isolatedModules": true,
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
-    "types": [
-      "node",
-      "jest",
-      "@testing-library/jest-dom"
-    ],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "incremental": true,
     "assumeChangesOnlyAffectDirectDependencies": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
