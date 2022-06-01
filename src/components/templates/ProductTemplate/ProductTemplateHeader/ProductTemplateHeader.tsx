@@ -7,7 +7,7 @@ import { ProductTemplateProgress } from '../ProductTemplateProgress/ProductTempl
 
 interface ProductTemplateHeaderProps {
   prevStep?: ReactElement | string;
-  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps' | 'progressColor'>;
+  progress?: Pick<ProgressProps, 'currentStep' | 'totalSteps'>;
   onBackPressed?: MouseEventHandler<HTMLAnchorElement>;
 }
 
