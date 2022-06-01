@@ -828,7 +828,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           class="c21 mb-4"
           color="#4A545E"
         >
-          Zopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register (718925). Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Limited (05197592) and Zopa Bank Limited (10627575) are both incorporated in England & Wales and have their registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
+          Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Bank Limited (10627575) is incorporated in England & Wales and has its registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
         </p>
         <p
           class="c21 mb-4"
