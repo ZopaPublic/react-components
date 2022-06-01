@@ -1,5 +1,5 @@
 import { InputProps } from '../components/types';
-import { colors } from '../constants';
+import { AppThemeProps } from '../components/styles/Theme';
 
 export const mod = (x: number, n: number) => ((x % n) + n) % n;
 
@@ -7,18 +7,20 @@ export const getBorderColorByStatus = ({
   hasError,
   isValid,
   disabled,
-}: Pick<InputProps, 'hasError' | 'isValid' | 'disabled'>) => {
+  theme,
+}: Pick<InputProps, 'hasError' | 'isValid' | 'disabled'> & AppThemeProps) => {
   if (hasError) {
-    return colors.alert;
+    return theme.input.borderColorByStatus.error;
   }
   if (isValid) {
-    return colors.success;
+    return theme.input.borderColorByStatus.valid;
   }
   if (disabled) {
-    return colors.greyLight;
+    return theme.input.borderColorByStatus.disabled;
   }
-  return colors.grey;
+  return theme.input.borderColorByStatus.default;
 };
 
-export const getInputTextColor = ({ disabled }: Pick<InputProps, 'disabled'>) =>
-  disabled ? colors.grey : colors.greyDark;
+export const getInputTextColor = ({ disabled, theme }: Pick<InputProps, 'disabled'> & AppThemeProps) => {
+  return disabled ? theme.input.disabled.color : theme.input.color;
+};

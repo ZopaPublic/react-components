@@ -44,9 +44,11 @@ const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) =
   const theme = useThemeContext();
   return (
     <StyledErrorMessage className={className} {...rest} theme={theme}>
-      <IconWrapper>
-        <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
-      </IconWrapper>
+      {theme.errorMessage.icon ? (
+        <IconWrapper>
+          <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
+        </IconWrapper>
+      ) : null}
       {children}
     </StyledErrorMessage>
   );

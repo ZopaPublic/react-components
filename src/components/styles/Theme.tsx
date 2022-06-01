@@ -54,13 +54,22 @@ type CardTheme = Record<CardStyling, CardInfo>;
 interface ErrorMessageTheme {
   textColor: string;
   backgroundColor: string;
+  icon: boolean;
 }
 
 interface InputTheme {
   color: string;
+  placeholderColor: string;
   borderRadius: string;
+  boxShadow: string;
   hover: {
     border: string;
+    error: string;
+    boxShadow: string;
+  };
+  focus: {
+    border: string;
+    error: string;
     boxShadow: string;
   };
   disabled: {
@@ -73,6 +82,8 @@ interface InputTheme {
     disabled: string;
     default: string;
   };
+  iconColor: string;
+  iconBackgroundColor: string;
 }
 
 interface NavbarTheme {
@@ -246,12 +257,21 @@ export const zopaTheme: AppTheme = {
   errorMessage: {
     textColor: `${colors.alertDark}`,
     backgroundColor: `${colors.alertLight}`,
+    icon: true,
   },
   input: {
     color: colors.grey,
+    placeholderColor: colors.greyLight,
     borderRadius: `8px`,
+    boxShadow: `0 0 4px 0 transparent`,
     hover: {
       border: colors.brand,
+      error: colors.brand,
+      boxShadow: `0 0 4px 0 ${colors.brand}`,
+    },
+    focus: {
+      border: colors.brand,
+      error: colors.brand,
       boxShadow: `0 0 4px 0 ${colors.brand}`,
     },
     disabled: {
@@ -264,6 +284,8 @@ export const zopaTheme: AppTheme = {
       disabled: colors.greyLight,
       default: colors.grey,
     },
+    iconColor: colors.grey,
+    iconBackgroundColor: colors.greyLighter,
   },
   navbar: {
     iconContainer: {
