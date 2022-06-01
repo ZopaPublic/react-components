@@ -17,6 +17,7 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
+    "dev:code": "concurrently --kill-others-on-fail \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
@@ -88,7 +89,9 @@
     "@typescript-eslint/parser": "2.34.0",
     "babel-preset-react-app": "^9.1.2",
     "commitizen": "4.1.2",
+    "concurrently": "^7.2.1",
     "cz-conventional-changelog": "3.2.0",
+    "esbuild": "^0.14.42",
     "eslint": "7.30.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.4",
@@ -106,6 +109,7 @@
     "react-styleguidist": "11.2.0",
     "react-test-renderer": "16.13.1",
     "rollup": "2.21.0",
+    "rollup-plugin-esbuild": "^4.9.1",
     "rollup-plugin-postcss": "3.1.2",
     "rollup-plugin-terser": "6.1.0",
     "semantic-release": "17.2.3",
@@ -128,7 +132,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "pnpm typecheck && pnpm lint && pnpm test -- --watchAll=false",
+      "pre-push": "concurrently --kill-others-on-fail \"pnpm:typecheck\" \"pnpm:lint\" \"pnpm:test -- --watchAll=false\"",
       "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
       "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
     }
