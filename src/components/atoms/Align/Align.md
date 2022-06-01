@@ -10,6 +10,6 @@
 import { Align } from '@zopauk/react-components';
 
 <Align xs="center" m="right">
-  You can save with us if you have tax residency in the UK only. <Link>Find out more</Link>
+  You can save with us if you have tax residency in the UK only. <a href="#">Find out more</a>
 </Align>;
 ```
