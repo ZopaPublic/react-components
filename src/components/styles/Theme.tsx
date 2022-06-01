@@ -54,6 +54,7 @@ type CardTheme = Record<CardStyling, CardInfo>;
 interface ErrorMessageTheme {
   textColor: string;
   backgroundColor: string;
+  padding: string;
   icon: boolean;
 }
 
@@ -263,6 +264,7 @@ export const zopaTheme: AppTheme = {
   errorMessage: {
     textColor: `${colors.alertDark}`,
     backgroundColor: `${colors.alertLight}`,
+    padding: '8px 16px',
     icon: true,
   },
   input: {

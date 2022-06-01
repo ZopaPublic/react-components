@@ -12,7 +12,7 @@ const StyledErrorMessage = styled(Text).attrs({
 })`
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px 8px 16px;
+  padding: ${({ theme }) => theme.errorMessage.padding};
   color: ${({ theme }) => theme.errorMessage.textColor};
   background-color: ${({ theme }) => theme.errorMessage.backgroundColor};
   font-size: ${typography.sizes.text.body};
