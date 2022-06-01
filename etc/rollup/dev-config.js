@@ -39,17 +39,9 @@ const config = {
       jsx: 'transform', // default, or 'preserve'
       jsxFactory: 'React.createElement',
       jsxFragment: 'React.Fragment',
-      // Like @rollup/plugin-replace
-      define: {
-        __VERSION__: '"x.y.z"',
-      },
       tsconfig: 'tsconfig.json', // default
-      // Add extra loaders
       loaders: {
-        // Add .json files support
-        // require @rollup/plugin-commonjs
         '.json': 'json',
-        // Enable JSX in .js files too
         '.js': 'jsx',
       },
     }),
