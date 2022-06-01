@@ -17,6 +17,7 @@ export { ThemeProvider } from './components/styles/Theme';
 // Atoms
 export { default as ScrollableArea } from './components/atoms/ScrollableArea/ScrollableArea';
 export { default as Alert } from './components/atoms/Alert/Alert';
+export { default as Align } from './components/atoms/Align/Align';
 export { default as Badge } from './components/atoms/Badge/Badge';
 export { default as Icon } from './components/atoms/Icon/Icon';
 export { default as Button, buttonStyle } from './components/atoms/Button/Button';

@@ -1,3 +1,11 @@
+## [5.15.0](https://github.com/zopaUK/react-components/compare/v5.14.0...v5.15.0) (2022-06-01)
+
+
+### Features
+
+* **align:** add an align feature for text ([077e08b](https://github.com/zopaUK/react-components/commit/077e08bb3d9a90d0157146196755fffe982cd37d))
+* **align:** update the type ([2780bf6](https://github.com/zopaUK/react-components/commit/2780bf6b502241c69c5d30ca9b500c12413fdeb8))
+
 ## [5.14.0](https://github.com/zopaUK/react-components/compare/v5.13.0...v5.14.0) (2022-06-01)
 
 
