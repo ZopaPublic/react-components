@@ -17,7 +17,7 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
-    "dev:code": "pnpm compile:code:dev -- -w & pnpm compile:types -- -w",
+    "dev:code": "concurrently \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
@@ -89,6 +89,7 @@
     "@typescript-eslint/parser": "2.34.0",
     "babel-preset-react-app": "^9.1.2",
     "commitizen": "4.1.2",
+    "concurrently": "^7.2.1",
     "cz-conventional-changelog": "3.2.0",
     "esbuild": "^0.14.42",
     "eslint": "7.30.0",
@@ -131,7 +132,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "pnpm typecheck && pnpm lint && pnpm test -- --watchAll=false",
+      "pre-push": "concurrently \"pnpm:typecheck\" \"pnpm:lint\" \"pnpm:test -- --watchAll=false\"",
       "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
       "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
     }
