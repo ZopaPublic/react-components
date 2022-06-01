@@ -142,7 +142,7 @@ const ZopaFooter = ({
           </Text>
           <Text as="p" color={colors.greyDark} size="small">
             Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office
-            of the Information Commissioner (ZA275984, Z8797078).
+            of the Information Commissioner (ZA275984).
           </Text>
         </LegalBlock>
       </FlexRow>
