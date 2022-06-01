@@ -17,7 +17,7 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
-    "dev:code": "concurrently \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\" -k",
+    "dev:code": "concurrently --kill-others \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
@@ -132,7 +132,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "concurrently \"pnpm:typecheck\" \"pnpm:lint\" \"pnpm:test -- --watchAll=false\" -k",
+      "pre-push": "concurrently --kill-others \"pnpm:typecheck\" \"pnpm:lint\" \"pnpm:test -- --watchAll=false\"",
       "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
       "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
     }
