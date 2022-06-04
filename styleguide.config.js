@@ -168,4 +168,44 @@ module.exports = {
   usageMode: 'expand',
 
   skipComponentsWithoutExample: true,
+
+  webpackConfig: {
+    module: {
+      rules: [
+        {
+          test: /\.(ts|js)x?$/i,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+          },
+        },
+        // Other loaders that are needed for your components
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+          type: 'asset',
+        },
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: require.resolve('@svgr/webpack'),
+            },
+            {
+              loader: require.resolve('file-loader'),
+              options: {
+                name: 'static/media/[name].[hash].[ext]',
+              },
+            },
+          ],
+          issuer: {
+            and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
+          },
+        },
+      ],
+    },
+  },
 };
