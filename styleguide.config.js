@@ -169,6 +169,9 @@ module.exports = {
 
   skipComponentsWithoutExample: true,
 
+  /*
+  Override these for Webpack5
+  */
   webpackConfig: {
     module: {
       rules: [
@@ -177,6 +180,17 @@ module.exports = {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
+              plugins: [
+                [
+                  '@babel/plugin-transform-runtime',
+                  {
+                    regenerator: true,
+                  },
+                ],
+              ],
+            },
           },
         },
         // Other loaders that are needed for your components
