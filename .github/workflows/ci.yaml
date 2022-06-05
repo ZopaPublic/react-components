@@ -27,7 +27,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.24.19
+          version: 6.32.19
           run_install: true
 
       - name: Run typecheck
