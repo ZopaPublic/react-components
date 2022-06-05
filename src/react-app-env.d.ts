@@ -63,12 +63,3 @@ declare module '*.module.sass' {
   const classes: { readonly [key: string]: string };
   export default classes;
 }
-
-// See: https://github.com/jaredpalmer/formik/issues/3546
-/*
- * Namespace 'React' has no exported member 'StatelessComponent'
- * in formik, react-mapbox-gl
- */
-declare namespace React {
-  type StatelessComponent<P> = React.FunctionComponent<P>;
-}
