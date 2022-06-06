@@ -20,7 +20,6 @@ interface ButtonTheme {
 interface ButtonsTheme {
   primary: ButtonTheme;
   secondary: ButtonTheme;
-  disabled: ButtonTheme;
   link: ButtonTheme;
   borderRadius?: string;
   text?: {
@@ -195,11 +194,6 @@ export const zopaTheme: AppTheme = {
       text: colors.actionDark,
       bg: colors.actionLight,
       hover: '#EEEFFB',
-    },
-    disabled: {
-      text: colors.grey,
-      bg: colors.greyLightest,
-      hover: colors.greyLightest,
     },
     link: {
       text: colors.actionDark,
