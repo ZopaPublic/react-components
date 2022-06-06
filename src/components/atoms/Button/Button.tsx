@@ -7,7 +7,6 @@ import { colors, spacing, typography } from '../../../constants';
 export type Styling = 'primary' | 'secondary' | 'link';
 
 type BaseButtonProps = {
-  theme: AppTheme;
   styling?: Styling;
   loading?: boolean;
   disabled?: boolean;
@@ -105,7 +104,7 @@ export const buttonStyle = css<BaseButtonProps>`
 `;
 
 // This wrapper is to prevent html attribute warnings. See: https://styled-components.com/docs/faqs#why-am-i-getting-html-attribute-warnings
-const ButtonWrapper = ({ loading, fullWidth, ...props }: ButtonProps) => <button {...props} />;
+const ButtonWrapper = ({ loading, fullWidth, ...props }: ButtonProps & { theme: AppTheme }) => <button {...props} />;
 
 const StyledWrapper = styled(ButtonWrapper)`
   ${buttonStyle}
