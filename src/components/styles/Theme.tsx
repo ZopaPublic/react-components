@@ -90,6 +90,7 @@ interface InputTheme {
     borderRadiusInput: string;
     borderRadiusOptions: string;
     borderColor: string;
+    customIcon: boolean;
   };
 }
 
@@ -299,6 +300,7 @@ export const zopaTheme: AppTheme = {
       borderRadiusInput: `8px 8px 0 0`,
       borderRadiusOptions: `0 0 8px 8px`,
       borderColor: colors.brand,
+      customIcon: false,
     },
   },
   navbar: {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Regular / Chevron Down</title>
+    <defs>
+        <polygon id="path-1" points="19.2594329 8 20 8.628594 12 17 4 8.628594 4.74056707 8 12 15.5964575"></polygon>
+    </defs>
+    <g id="------↳-⬛️-JL-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Regular-/-Chevron-Down">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill" fill="#000000" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

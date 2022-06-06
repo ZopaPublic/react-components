@@ -6,6 +6,7 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps, GroupingControlsProps } from '../../types';
 import deprecate from 'util-deprecate';
+import { AppTheme, useThemeContext } from '../../styles/Theme';
 
 const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
   if (isValid) {
@@ -39,7 +40,7 @@ interface LabelProps extends InputStatus {
   hideControl?: boolean;
 }
 
-const Label = styled(InputLabel)<LabelProps>`
+const Label = styled(InputLabel)<LabelProps & { theme: AppTheme }>`
   display: flex;
   line-height: 1.4;
   font-weight: ${(props) => (props.hideControl ? typography.weights.bold : typography.weights.regular)};
@@ -160,6 +161,8 @@ const RadioField = ({
 }: RadioField) => {
   const id = `radio-id-${groupLabel.replace(/\s/g, '-')}-${value}`;
 
+  const theme = useThemeContext();
+
   return (
     <FieldContainer className={className} size={inputSize}>
       <Input
@@ -171,7 +174,7 @@ const RadioField = ({
         type="radio"
         {...rest}
       />
-      <Label htmlFor={id} hasError={hasError} isValid={isValid} hideControl={hideControl}>
+      <Label htmlFor={id} hasError={hasError} isValid={isValid} hideControl={hideControl} theme={theme}>
         {label}
       </Label>
     </FieldContainer>
