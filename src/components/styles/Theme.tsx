@@ -269,7 +269,7 @@ export const zopaTheme: AppTheme = {
     icon: true,
   },
   input: {
-    color: colors.grey,
+    color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
     boxShadow: `0 0 4px 0 transparent`,
@@ -284,7 +284,7 @@ export const zopaTheme: AppTheme = {
       boxShadow: `0 0 4px 0 ${colors.brand}`,
     },
     disabled: {
-      color: colors.greyDark,
+      color: colors.grey,
       backgroundColor: colors.greyLightest,
     },
     borderColorByStatus: {
