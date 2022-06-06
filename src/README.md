@@ -23,10 +23,11 @@ const App = () => (
   </>
 );
 ```
+
 If you are using [SSR or SSR](https://blog.logrocket.com/ssg-vs-ssr-in-next-js/) like in NextJS or Gatsby you also need to import the fontawesome styles in the root of your application:
 
 ```ts static
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import '@fortawesome/fontawesome-svg-core/styles.css';
 ```
 
 ## Typography

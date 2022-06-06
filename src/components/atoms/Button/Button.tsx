@@ -1,14 +1,16 @@
 import Spinner from '../Spinner/Spinner';
-import React, { ButtonHTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
-import { colors, typography, spacing } from '../../../constants';
+import React, { ButtonHTMLAttributes } from 'react';
+import { AppTheme, useThemeContext } from '../../styles/Theme';
+import { colors, spacing, typography } from '../../../constants';
 
 export type Styling = 'primary' | 'secondary' | 'link';
 
 type BaseButtonProps = {
+  theme: AppTheme;
   styling?: Styling;
-  disabled?: boolean;
   loading?: boolean;
+  disabled?: boolean;
   fullWidth?: boolean;
 };
 
@@ -33,62 +35,69 @@ const colorMap = {
 };
 
 export const buttonStyle = css<BaseButtonProps>`
+  outline: 0;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
   text-decoration: none;
   box-sizing: border-box;
-  display: inline-flex;
   justify-content: center;
-  align-items: center;
-  width: ${({ fullWidth = false }) => fullWidth && '100%'};
   padding: ${spacing[3]} ${spacing[6]};
-  font-family: ${typography.primary};
-  font-size: ${typography.sizes.text.body};
-  line-height: ${typography.sizes.lineHeight.body};
-  font-weight: ${typography.weights.semiBold};
-  cursor: pointer;
-  border-radius: 8px;
-  color: ${({ styling = 'primary' }) => colorMap[styling].text};
-  border: 1px solid transparent;
-  outline: 0;
-
-  ${({ styling = 'primary' }) => {
-    const { bg } = colorMap[styling];
-    const isActionGradient = bg === colors.action;
-    const bgFallback = css`
-      background-color: ${colors.actionPlain};
-    `;
-
-    return css`
-      ${isActionGradient && bgFallback}
-      background: ${bg};
-    `;
-  }}
+  width: ${({ fullWidth = false }) => fullWidth && '100%'};
 
   &:focus:not(:active) {
     border: 1px solid ${colors.white};
     box-shadow: 0 0 4px ${colors.actionPlain};
   }
 
-  ${({ disabled, styling = 'primary' }) => {
+  ${({ styling = 'primary', theme }) => {
+    const { borderRadius, text } = theme?.button || {};
+    const { size, height, weight } = text || {};
+    const { primary } = theme?.typography || {};
+    const { text: textColor, border, bg: bgColor } = theme?.button?.[styling] || {};
+
+    const backGround = bgColor ?? colorMap[styling].bg;
+    const isActionGradient = backGround === colors.action;
+    const bgFallback = css`
+      background-color: ${colors.actionPlain};
+    `;
+
+    return css`
+      background: ${backGround};
+      border-radius: ${borderRadius ?? '8px'};
+      border: ${border ?? '1px solid transparent'};
+      font-family: ${primary ?? typography.primary};
+      color: ${textColor ?? colorMap[styling].text};
+      font-size: ${size ?? typography.sizes.text.body};
+      font-weight: ${weight ?? typography.weights.semiBold};
+      line-height: ${height ?? typography.sizes.lineHeight.body};
+      ${isActionGradient && bgFallback}
+    `;
+  }}
+
+  ${({ disabled, styling = 'primary', theme }) => {
+    const { hover } = theme?.button?.[styling] || {};
+    const { bg, text, border } = theme?.button?.[styling]?.disabled || {};
     const disabledStyles = css<BaseButtonProps>`
       cursor: not-allowed;
       ${({ loading }) => {
         if (!loading) {
           return css`
-            background: ${colors.greyLightest};
-            color: ${colors.greyDark};
+            color: ${text ?? colors.greyDark};
+            background: ${bg ?? colors.greyLightest};
+            border: ${border ?? '1px solid transparent'};
           `;
         }
       }}
     `;
     const enabledStyles = css`
-      &:hover {
-        background: ${colorMap[styling].hover};
-      }
-
       &:active {
-        border: 1px solid transparent;
-        box-shadow: unset;
         opacity: 0.8;
+        box-shadow: unset;
+        border: 1px solid transparent;
+      }
+      &:hover {
+        background: ${hover ?? colorMap[styling].hover};
       }
     `;
     return disabled ? disabledStyles : enabledStyles;
@@ -103,10 +112,11 @@ const StyledWrapper = styled(ButtonWrapper)`
 `;
 
 const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary', disabled, ...rest }) => {
+  const theme = useThemeContext();
   const isLoading = styling !== 'link' ? loading : undefined;
 
   return (
-    <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest}>
+    <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest} theme={theme}>
       {isLoading && (
         <>
           <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
