@@ -33,7 +33,7 @@ const zoomOut = keyframes`
   }
 `;
 
-const Label = styled(InputLabel)`
+const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isValid'>>`
   width: auto;
   display: flex;
   text-align: left;

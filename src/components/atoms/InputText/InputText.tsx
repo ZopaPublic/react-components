@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
 import { InputProps } from '../../types';
-import { useThemeContext, AppThemeProps, AppTheme } from '../../styles/Theme';
+import { useThemeContext, AppTheme } from '../../styles/Theme';
 
 type IconWrapperProps = {
   startIcon?: boolean;
@@ -84,26 +84,24 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, InputProps & AppThemeProps>(
-  ({ startIcon, endIcon, className, ...rest }, ref) => {
-    const theme = useThemeContext();
+const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
+  const theme = useThemeContext();
 
-    return (
-      <InputWrapper className={className}>
-        {startIcon && (
-          <IconWrapper startIcon theme={theme}>
-            {startIcon}
-          </IconWrapper>
-        )}
-        <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
-        {endIcon && (
-          <IconWrapper startIcon={false} theme={theme}>
-            {endIcon}
-          </IconWrapper>
-        )}
-      </InputWrapper>
-    );
-  },
-);
+  return (
+    <InputWrapper className={className}>
+      {startIcon && (
+        <IconWrapper startIcon theme={theme}>
+          {startIcon}
+        </IconWrapper>
+      )}
+      <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
+      {endIcon && (
+        <IconWrapper startIcon={false} theme={theme}>
+          {endIcon}
+        </IconWrapper>
+      )}
+    </InputWrapper>
+  );
+});
 
 export default InputText;
