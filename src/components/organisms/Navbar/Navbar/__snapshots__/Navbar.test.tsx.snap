@@ -177,32 +177,32 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 }
 
 .c17 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c17:focus:not(:active) {
@@ -210,44 +210,44 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   box-shadow: 0 0 4px #3B46C4;
 }
 
+.c17:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
+}
+
 .c17:hover {
   background: #EAEBFA;
 }
 
-.c17:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 .c22 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c22:focus:not(:active) {
@@ -255,14 +255,14 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c22:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c22:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c22:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c22:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 .c20 {
@@ -823,6 +823,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                 <button
                   class="c17 c18"
                   styling="link"
+                  theme="[object Object]"
                 >
                   <div
                     class="c19"
@@ -916,6 +917,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
             <button
               class="c17 c18"
               styling="link"
+              theme="[object Object]"
             >
               <div
                 class="c19"
@@ -1129,33 +1131,33 @@ exports[`<Navbar /> should render large device navigation with default props and
 }
 
 .c17 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c17:focus:not(:active) {
@@ -1163,14 +1165,14 @@ exports[`<Navbar /> should render large device navigation with default props and
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c17:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c17:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c17:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c17:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 .c20 {
@@ -1728,6 +1730,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                 <button
                   class="c17 c18"
                   styling="primary"
+                  theme="[object Object]"
                 >
                   <div
                     class="c19"
@@ -1818,6 +1821,7 @@ exports[`<Navbar /> should render large device navigation with default props and
             <button
               class="c17 c18"
               styling="primary"
+              theme="[object Object]"
             >
               <div
                 class="c19"
@@ -2031,32 +2035,32 @@ exports[`<Navbar /> should render small device navigation with default props wit
 }
 
 .c17 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c17:focus:not(:active) {
@@ -2064,44 +2068,44 @@ exports[`<Navbar /> should render small device navigation with default props wit
   box-shadow: 0 0 4px #3B46C4;
 }
 
+.c17:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
+}
+
 .c17:hover {
   background: #EAEBFA;
 }
 
-.c17:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
-}
-
 .c22 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c22:focus:not(:active) {
@@ -2109,14 +2113,14 @@ exports[`<Navbar /> should render small device navigation with default props wit
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c22:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c22:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c22:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c22:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 .c20 {
@@ -2674,6 +2678,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                 <button
                   class="c17 c18"
                   styling="link"
+                  theme="[object Object]"
                 >
                   <div
                     class="c19"
@@ -2764,6 +2769,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
             <button
               class="c17 c18"
               styling="link"
+              theme="[object Object]"
             >
               <div
                 class="c19"
@@ -2983,33 +2989,33 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 }
 
 .c17 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c17:focus:not(:active) {
@@ -3017,14 +3023,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c17:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c17:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c17:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c17:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 .c20 {
@@ -3633,6 +3639,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                 <button
                   class="c17 c18"
                   styling="primary"
+                  theme="[object Object]"
                 >
                   <div
                     class="c19"
@@ -3723,6 +3730,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
             <button
               class="c17 c18"
               styling="primary"
+              theme="[object Object]"
             >
               <div
                 class="c19"
