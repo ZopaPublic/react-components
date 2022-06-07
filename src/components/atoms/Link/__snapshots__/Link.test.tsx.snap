@@ -20,6 +20,9 @@ exports[`<Link /> doesnt render the link with a target icon 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c0:hover,
@@ -32,6 +35,14 @@ exports[`<Link /> doesnt render the link with a target icon 1`] = `
   fill: #21247F;
 }
 
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
+}
+
 <a
   class="c0"
   color="#3B46C4"
@@ -39,6 +50,82 @@ exports[`<Link /> doesnt render the link with a target icon 1`] = `
   target="_blank"
 >
   text
+</a>
+`;
+
+exports[`<Link /> renders for being displayed on top of dark backgrounds 1`] = `
+.c0 {
+  background-color: transparent;
+  font-size: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: #2C3236;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
+}
+
+.c0:hover,
+.c0:active {
+  color: black;
+}
+
+.c0:hover svg path,
+.c0:active svg path {
+  fill: black;
+}
+
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
+}
+
+.c1 {
+  margin-left: 6px;
+  top: 2px;
+  position: relative;
+}
+
+<a
+  class="c0"
+  color="#3B46C4"
+  href="http://duckduckgo.com"
+  target="_blank"
+>
+  text
+  <svg
+    class="c1"
+    height="15"
+    width="15"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="#3B46C4"
+    >
+      <path
+        d="M2.6 4H0v11h11v-2.6H2.6z"
+      />
+      <path
+        d="M4 0v11h11V0H4zm9.7 1.3v8.4L5.2 1.3h8.5z"
+      />
+    </g>
+  </svg>
 </a>
 `;
 
@@ -62,6 +149,9 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c0:hover,
@@ -72,6 +162,14 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
 .c0:hover svg path,
 .c0:active svg path {
   fill: #21247F;
+}
+
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
 }
 
 <a
@@ -103,6 +201,9 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c0:hover,
@@ -113,6 +214,14 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
 .c0:hover svg path,
 .c0:active svg path {
   fill: #21247F;
+}
+
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
 }
 
 .c1 {

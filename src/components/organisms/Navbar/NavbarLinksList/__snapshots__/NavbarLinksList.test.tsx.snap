@@ -31,6 +31,9 @@ Object {
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c1:hover,
@@ -41,6 +44,14 @@ Object {
 .c1:hover svg path,
 .c1:active svg path {
   fill: #21247F;
+}
+
+.c1:hover {
+  color: auto;
+}
+
+.c1:active {
+  color: auto;
 }
 
 .c2 {
@@ -291,7 +302,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-bwzfXH haaJDm sc-ifAKCX bIyiel"
+        class="sc-htpNat cRYLto sc-ifAKCX bIyiel"
         color="#3B46C4"
         data-automation="ZA.navbar-item"
         href="#"

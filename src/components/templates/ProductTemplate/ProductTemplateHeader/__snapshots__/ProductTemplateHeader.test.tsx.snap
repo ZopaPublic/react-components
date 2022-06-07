@@ -34,6 +34,9 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c2:hover,
@@ -44,6 +47,14 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
 .c2:hover svg path,
 .c2:active svg path {
   fill: #21247F;
+}
+
+.c2:hover {
+  color: auto;
+}
+
+.c2:active {
+  color: auto;
 }
 
 .c3 {
