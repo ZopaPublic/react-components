@@ -1,3 +1,23 @@
+## [5.18.0](https://github.com/zopaUK/react-components/compare/v5.17.0...v5.18.0) (2022-06-07)
+
+
+### Features
+
+* **adding theme to input:** adding theme to inputText, errormessage ([999634d](https://github.com/zopaUK/react-components/commit/999634d20a5722cba8609508fcc2d8047a50c0d2))
+* add custom icon to search input ([0fd5048](https://github.com/zopaUK/react-components/commit/0fd5048cad910ac715788c8daf0b6b50087a8e90))
+* add hover color for the option ([f91fa67](https://github.com/zopaUK/react-components/commit/f91fa67828e7b601f92e95240b61cbb82afe2b83))
+* add padding to ErrorMessage ([bb775e1](https://github.com/zopaUK/react-components/commit/bb775e1888c8d1c9e185da2dd6f4b19ed2b58e2b))
+* add theme SearchInput plus options ([9642168](https://github.com/zopaUK/react-components/commit/9642168ebdaadadbaa9f2918dd0b49fe48c98d34))
+* add theme to Input and error message ([3642114](https://github.com/zopaUK/react-components/commit/3642114545033fae35e996c8e93edcdc25981f48))
+* add theme to Label ([c504512](https://github.com/zopaUK/react-components/commit/c504512cf68cfa06357bcc3a0a486ec678d2bd85))
+* fix types for checkbox ([5f6cb32](https://github.com/zopaUK/react-components/commit/5f6cb323c516990dfe355b986d777e56bfd7c505))
+
+
+### Bug Fixes
+
+* input colors ([6291ec6](https://github.com/zopaUK/react-components/commit/6291ec67d21da8cf374ee15c3826f0eb439f9c80))
+* update snapshots ([f3c08b6](https://github.com/zopaUK/react-components/commit/f3c08b6825b0408e3ea72f49c8fdd02d8c16f4bc))
+
 ## [5.17.0](https://github.com/zopaUK/react-components/compare/v5.16.0...v5.17.0) (2022-06-07)
 
 
