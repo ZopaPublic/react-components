@@ -21,13 +21,18 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c2:focus,
 .c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
@@ -102,13 +107,18 @@ exports[`<TextField /> renders the component with error 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c2:focus,
 .c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
@@ -174,11 +184,14 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.c1 {
   margin-bottom: 0;
 }
 
 <label
-  class="c0"
+  class="c0 c1"
   for="text-id-test1"
 >
   yes!
@@ -200,7 +213,7 @@ exports[`<TextField /> renders the component with label 1`] = `
 }
 
 <label
-  class="c0"
+  class="c0 "
   for="text-id-test1"
 >
   Username
@@ -228,13 +241,18 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c2:focus,
 .c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
@@ -309,13 +327,18 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c3:focus,
 .c3:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c3:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c3::-webkit-input-placeholder {
@@ -422,13 +445,18 @@ exports[`<TextField /> renders the component with size 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c2:focus,
 .c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {

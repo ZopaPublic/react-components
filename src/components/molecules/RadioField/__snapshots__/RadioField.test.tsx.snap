@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioField /> renders the component with no control icon and no a11y violations 1`] = `
+.c3 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -15,17 +28,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   margin-bottom: 0;
 }
 
-.c3 {
-  display: block;
-  margin: 0 0 10px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -49,7 +52,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   justify-content: center;
 }
 
-.c3:before {
+.c4:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -68,7 +71,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   transition: 0.2s ease-in-out;
 }
 
-.c3:after {
+.c4:after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -81,7 +84,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   top: 19px;
 }
 
-.c3:hover {
+.c4:hover {
   cursor: pointer;
 }
 
@@ -159,7 +162,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
     value="1"
   />
   <label
-    class="c3"
+    class="c3 c4"
     for="radio-id--1"
   >
     hello
@@ -168,6 +171,19 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
 `;
 
 exports[`<RadioField /> renders the component with props with no a11y violations 1`] = `
+.c3 {
+  display: block;
+  margin: 0 0 10px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .c0 {
   max-width: 100%;
   width: 100%;
@@ -182,17 +198,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   margin-bottom: 0;
 }
 
-.c3 {
-  display: block;
-  margin: 0 0 10px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -216,7 +222,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   justify-content: left;
 }
 
-.c3:before {
+.c4:before {
   content: '';
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -235,7 +241,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   transition: 0.2s ease-in-out;
 }
 
-.c3:after {
+.c4:after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -248,7 +254,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   top: 19px;
 }
 
-.c3:hover {
+.c4:hover {
   cursor: pointer;
 }
 
@@ -321,7 +327,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
     value="1"
   />
   <label
-    class="c3"
+    class="c3 c4"
     for="radio-id--1"
   >
     hello
