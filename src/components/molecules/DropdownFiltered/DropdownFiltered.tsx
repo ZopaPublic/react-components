@@ -9,10 +9,10 @@ import Icon from '../../atoms/Icon/Icon';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 import jlChevron from '../../../content/images/jl-chevron.svg';
 import { FieldProps, InputProps } from '../../types';
+import { useThemeContext } from '../../styles/Theme';
 import Option from './Option';
 import Options, { OptionsListProps } from './Options';
 import { SearchInputProps, SearchInput } from './SearchInput';
-import { useThemeContext } from '../../styles/Theme';
 
 export interface DropdownItem {
   value: string;
