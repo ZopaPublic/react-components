@@ -2,32 +2,32 @@
 
 exports[`<Button /> renders as "link" 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c0:focus:not(:active) {
@@ -35,19 +35,20 @@ exports[`<Button /> renders as "link" 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:hover {
-  background: #EAEBFA;
+.c0:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c0:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c0:hover {
+  background: #EAEBFA;
 }
 
 <button
   class="c0"
   styling="link"
+  theme="[object Object]"
 >
   Secondary
 </button>
@@ -55,32 +56,32 @@ exports[`<Button /> renders as "link" 1`] = `
 
 exports[`<Button /> renders as "secondary" 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: #E9EAFA;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c0:focus:not(:active) {
@@ -88,19 +89,20 @@ exports[`<Button /> renders as "secondary" 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:hover {
-  background: #EEEFFB;
+.c0:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c0:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c0:hover {
+  background: #EEEFFB;
 }
 
 <button
   class="c0"
   styling="secondary"
+  theme="[object Object]"
 >
   Secondary
 </button>
@@ -108,36 +110,37 @@ exports[`<Button /> renders as "secondary" 1`] = `
 
 exports[`<Button /> renders disabled 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
   cursor: not-allowed;
-  background: #F7F7F7;
   color: #4A545E;
+  background: #F7F7F7;
+  border: 1px solid transparent;
 }
 
 .c0:focus:not(:active) {
@@ -149,6 +152,7 @@ exports[`<Button /> renders disabled 1`] = `
   class="c0"
   disabled=""
   styling="primary"
+  theme="[object Object]"
 >
   Secondary
 </button>
@@ -156,33 +160,33 @@ exports[`<Button /> renders disabled 1`] = `
 
 exports[`<Button /> renders loading as "primary" 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
   cursor: not-allowed;
 }
 
@@ -195,6 +199,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   class="c0"
   disabled=""
   styling="primary"
+  theme="[object Object]"
 >
   <img
     aria-label="loading spinner"
@@ -210,32 +215,32 @@ exports[`<Button /> renders loading as "primary" 1`] = `
 
 exports[`<Button /> renders loading as "secondary" 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: #E9EAFA;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
   cursor: not-allowed;
 }
 
@@ -248,6 +253,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   class="c0"
   disabled=""
   styling="secondary"
+  theme="[object Object]"
 >
   <img
     aria-label="loading spinner"
@@ -263,32 +269,32 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
 
 exports[`<Button /> renders loading as "secondary" 2`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: #E9EAFA;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
   cursor: not-allowed;
 }
 
@@ -301,6 +307,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   class="c0"
   disabled=""
   styling="secondary"
+  theme="[object Object]"
 >
   <img
     aria-label="loading spinner"
@@ -316,34 +323,34 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
 
 exports[`<Button /> renders wide 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
+  width: 100%;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c0:focus:not(:active) {
@@ -351,19 +358,20 @@ exports[`<Button /> renders wide 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c0:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c0:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c0:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 <button
   class="c0"
   styling="primary"
+  theme="[object Object]"
 >
   Secondary
 </button>
@@ -371,33 +379,33 @@ exports[`<Button /> renders wide 1`] = `
 
 exports[`<Button /> renders with no a11y violations 1`] = `
 .c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #FFFFFF;
-  border: 1px solid transparent;
-  outline: 0;
-  background-color: #3B46C4;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: #3B46C4;
 }
 
 .c0:focus:not(:active) {
@@ -405,19 +413,20 @@ exports[`<Button /> renders with no a11y violations 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c0:hover {
-  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+.c0:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c0:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c0:hover {
+  background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
 <button
   class="c0"
   styling="primary"
+  theme="[object Object]"
 >
   Primary
 </button>
