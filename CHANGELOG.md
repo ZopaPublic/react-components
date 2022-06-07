@@ -1,3 +1,28 @@
+## [5.17.0](https://github.com/zopaUK/react-components/compare/v5.16.0...v5.17.0) (2022-06-07)
+
+
+### Features
+
+* **producttemplate:** adding progressColor prop ([e3ee540](https://github.com/zopaUK/react-components/commit/e3ee540289b65d6e9ee684c66e7428c5d232b955))
+
+
+### Bug Fixes
+
+* **progressbar:** adding theming to progressbar ([ca2fd7f](https://github.com/zopaUK/react-components/commit/ca2fd7f789d522708224453a2426523a802d4b79))
+
+## [5.16.0](https://github.com/zopaUK/react-components/compare/v5.15.0...v5.16.0) (2022-06-07)
+
+
+### Features
+
+* add theming to button ([3cb6b53](https://github.com/zopaUK/react-components/commit/3cb6b53f07d382dcb310b578f48444c67e0c06bc))
+
+
+### Bug Fixes
+
+* button prop types ([7f516c4](https://github.com/zopaUK/react-components/commit/7f516c448436dc558e309a1748182893eacfb1c5))
+* types ([4d012a4](https://github.com/zopaUK/react-components/commit/4d012a4d9ed1296057fecf53fffbd26663846f16))
+
 ## [5.15.0](https://github.com/zopaUK/react-components/compare/v5.14.0...v5.15.0) (2022-06-01)
 
 
