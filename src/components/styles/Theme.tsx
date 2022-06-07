@@ -91,6 +91,10 @@ interface InputTheme {
     borderRadiusOptions: string;
     borderColor: string;
     customIcon: boolean;
+    optionHover: {
+      color: string;
+      backgroundColor: string;
+    };
   };
 }
 
@@ -301,6 +305,10 @@ export const zopaTheme: AppTheme = {
       borderRadiusOptions: `0 0 8px 8px`,
       borderColor: colors.brand,
       customIcon: false,
+      optionHover: {
+        color: colors.white,
+        backgroundColor: colors.brand,
+      },
     },
   },
   navbar: {

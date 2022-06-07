@@ -18,8 +18,8 @@ const Option = styled.div<OptionProps & { theme: AppTheme }>`
   ${({ selected, highLighted }) =>
     (selected || highLighted) &&
     css`
-      color: ${colors.white};
-      background-color: ${colors.brand};
+      color: ${({ theme }) => theme.input.searchInput.optionHover.color};
+      background-color: ${({ theme }) => theme.input.searchInput.optionHover.backgroundColor};
     `};
 `;
 
