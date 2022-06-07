@@ -1,3 +1,10 @@
+## [5.19.0](https://github.com/zopaUK/react-components/compare/v5.18.0...v5.19.0) (2022-06-07)
+
+
+### Features
+
+* **link:** add theming to link ([6353b4a](https://github.com/zopaUK/react-components/commit/6353b4a38965a498d9235a98f41cb0cb94b2417d))
+
 ## [5.18.0](https://github.com/zopaUK/react-components/compare/v5.17.0...v5.18.0) (2022-06-07)
 
 
