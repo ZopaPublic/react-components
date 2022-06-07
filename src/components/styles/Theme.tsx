@@ -87,6 +87,9 @@ interface NavbarTheme {
     bgColor: string;
   };
 }
+interface ProgressBarTheme {
+  color: string;
+}
 interface TypographyTheme {
   primary: string;
   text: {
@@ -143,6 +146,7 @@ export interface AppTheme {
   card: CardTheme;
   errorMessage: ErrorMessageTheme;
   input: InputTheme;
+  progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
   typography: TypographyTheme;
 }
@@ -272,6 +276,9 @@ export const zopaTheme: AppTheme = {
       minHeight: 'auto',
       bgColor: colors.brand,
     },
+  },
+  progressBar: {
+    color: colors.brand,
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,

@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { Colors } from '../../../constants/colors';
 import Text from '../../atoms/Text/Text';
+import { useThemeContext } from '../../styles/Theme';
 
 export interface ProgressionStyleProps {
   /**
    * Progress bar colour
    * @default `colors.brand`
    */
-  progressColor?: Colors;
+  progressColor?: Colors | string;
 }
 
 export interface ProgressProps extends ProgressionStyleProps, HTMLAttributes<HTMLDivElement> {
@@ -48,7 +49,7 @@ const Progression = styled.div<ProgressionProps>`
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: ${({ progressColor = colors.brand }) => progressColor};
+  background: ${({ progressColor, theme }) => (progressColor ? progressColor : theme.progressBar.color)};
   transition: width 0.5s ease-in-out;
   > span {
     position: absolute;
@@ -70,7 +71,8 @@ const ProgressPoint = styled.span<ProgressPointProps>`
   width: ${PROGRESS_POINT_RADIUS * 2}px;
   height: ${PROGRESS_POINT_RADIUS * 2}px;
 
-  background: ${({ completed, progressColor = colors.brand }) => (completed ? progressColor : colors.greyLighter)};
+  background: ${({ completed, progressColor, theme }) =>
+    completed ? (progressColor ? progressColor : theme.progressBar.color) : colors.greyLighter};
   border-radius: 100%;
   transform: translate(-50%, -50%);
 `;
@@ -87,6 +89,7 @@ const getStepPosition = (steps: number, stepIndex: number) => {
 };
 
 const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }) => {
+  const theme = useThemeContext();
   const renderPoints = () => {
     return [...Array(totalSteps).keys()].map((stepPoint) => {
       return (
@@ -95,6 +98,7 @@ const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep =
           completed={stepPoint < currentStep}
           key={`step-${stepPoint}`}
           progressColor={progressColor}
+          theme={theme}
         />
       );
     });
@@ -110,7 +114,11 @@ const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep =
         {...rest}
       >
         {renderPoints()}
-        <Progression position={getStepPosition(totalSteps, currentStep - 0.5)} progressColor={progressColor}>
+        <Progression
+          position={getStepPosition(totalSteps, currentStep - 0.5)}
+          progressColor={progressColor}
+          theme={theme}
+        >
           {withStep && (
             <Text size="small">
               Step {currentStep} of {totalSteps}
