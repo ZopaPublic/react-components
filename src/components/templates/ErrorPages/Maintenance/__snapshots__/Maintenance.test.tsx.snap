@@ -117,6 +117,9 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c7:hover,
@@ -127,6 +130,14 @@ exports[`<Maintenance /> renders with all the props 1`] = `
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
+}
+
+.c7:hover {
+  color: auto;
+}
+
+.c7:active {
+  color: auto;
 }
 
 .c3 {

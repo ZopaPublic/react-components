@@ -26,6 +26,9 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c7:hover,
@@ -36,6 +39,14 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
+}
+
+.c7:hover {
+  color: auto;
+}
+
+.c7:active {
+  color: auto;
 }
 
 .c8 {
@@ -980,6 +991,9 @@ exports[`<Navbar /> should render large device navigation with default props and
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c7:hover,
@@ -990,6 +1004,14 @@ exports[`<Navbar /> should render large device navigation with default props and
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
+}
+
+.c7:hover {
+  color: auto;
+}
+
+.c7:active {
+  color: auto;
 }
 
 .c8 {
@@ -1884,6 +1906,9 @@ exports[`<Navbar /> should render small device navigation with default props wit
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c7:hover,
@@ -1894,6 +1919,14 @@ exports[`<Navbar /> should render small device navigation with default props wit
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
+}
+
+.c7:hover {
+  color: auto;
+}
+
+.c7:active {
+  color: auto;
 }
 
 .c8 {
@@ -2838,6 +2871,9 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c7:hover,
@@ -2848,6 +2884,14 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
 .c7:hover svg path,
 .c7:active svg path {
   fill: #21247F;
+}
+
+.c7:hover {
+  color: auto;
+}
+
+.c7:active {
+  color: auto;
 }
 
 .c8 {

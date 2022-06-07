@@ -20,6 +20,9 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c0:hover,
@@ -30,6 +33,14 @@ exports[`<Navbar.Link /> should render component with default props 1`] = `
 .c0:hover svg path,
 .c0:active svg path {
   fill: #21247F;
+}
+
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
 }
 
 .c1 {
@@ -93,6 +104,9 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c0:hover,
@@ -103,6 +117,14 @@ exports[`<Navbar.Link /> should render component with specific props 1`] = `
 .c0:hover svg path,
 .c0:active svg path {
   fill: #21247F;
+}
+
+.c0:hover {
+  color: auto;
+}
+
+.c0:active {
+  color: auto;
 }
 
 .c1 {
