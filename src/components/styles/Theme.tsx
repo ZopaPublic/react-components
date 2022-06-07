@@ -54,13 +54,23 @@ type CardTheme = Record<CardStyling, CardInfo>;
 interface ErrorMessageTheme {
   textColor: string;
   backgroundColor: string;
+  padding: string;
+  icon: boolean;
 }
 
 interface InputTheme {
   color: string;
+  placeholderColor: string;
   borderRadius: string;
+  boxShadow: string;
   hover: {
     border: string;
+    error: string;
+    boxShadow: string;
+  };
+  focus: {
+    border: string;
+    error: string;
     boxShadow: string;
   };
   disabled: {
@@ -72,6 +82,19 @@ interface InputTheme {
     valid: string;
     disabled: string;
     default: string;
+  };
+  iconColor: string;
+  iconBackgroundColor: string;
+  searchInput: {
+    boxShadow: string;
+    borderRadiusInput: string;
+    borderRadiusOptions: string;
+    borderColor: string;
+    customIcon: boolean;
+    optionHover: {
+      color: string;
+      backgroundColor: string;
+    };
   };
 }
 
@@ -246,16 +269,26 @@ export const zopaTheme: AppTheme = {
   errorMessage: {
     textColor: `${colors.alertDark}`,
     backgroundColor: `${colors.alertLight}`,
+    padding: '8px 16px',
+    icon: true,
   },
   input: {
-    color: colors.grey,
+    color: colors.greyDark,
+    placeholderColor: colors.greyLight,
     borderRadius: `8px`,
+    boxShadow: `0 0 4px 0 transparent`,
     hover: {
       border: colors.brand,
+      error: colors.brand,
+      boxShadow: `0 0 4px 0 ${colors.brand}`,
+    },
+    focus: {
+      border: colors.brand,
+      error: colors.brand,
       boxShadow: `0 0 4px 0 ${colors.brand}`,
     },
     disabled: {
-      color: colors.greyDark,
+      color: colors.grey,
       backgroundColor: colors.greyLightest,
     },
     borderColorByStatus: {
@@ -263,6 +296,19 @@ export const zopaTheme: AppTheme = {
       valid: colors.success,
       disabled: colors.greyLight,
       default: colors.grey,
+    },
+    iconColor: colors.grey,
+    iconBackgroundColor: colors.greyLighter,
+    searchInput: {
+      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      borderRadiusInput: `8px 8px 0 0`,
+      borderRadiusOptions: `0 0 8px 8px`,
+      borderColor: colors.brand,
+      customIcon: false,
+      optionHover: {
+        color: colors.white,
+        backgroundColor: colors.brand,
+      },
     },
   },
   navbar: {

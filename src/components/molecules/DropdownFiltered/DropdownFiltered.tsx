@@ -7,7 +7,9 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import Icon from '../../atoms/Icon/Icon';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
+import jlChevron from '../../../content/images/jl-chevron.svg';
 import { FieldProps, InputProps } from '../../types';
+import { useThemeContext } from '../../styles/Theme';
 import Option from './Option';
 import Options, { OptionsListProps } from './Options';
 import { SearchInputProps, SearchInput } from './SearchInput';
@@ -40,6 +42,15 @@ export const SearchInputWrap = styled.div`
   position: relative;
 `;
 
+export const CustomIcon = styled.div<{ isOpen: boolean }>`
+  background: transparent url(${jlChevron}) no-repeat center;
+  background-size: 60%;
+  width: 100%;
+  height: 100%;
+  color: black;
+  transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : 'none')};
+`;
+
 const DropdownFiltered = (props: DropdownFilteredProps) => {
   const {
     errorMessage,
@@ -58,6 +69,8 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
 
   const searchMatch = (itemValue: string, inputValue: string) =>
     itemValue && itemValue.toLowerCase().includes(inputValue.toLowerCase());
+
+  const theme = useThemeContext();
 
   return (
     <SizedContainer size={inputSize}>
@@ -105,28 +118,47 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   hasError={showError}
                   isOpen={isOpen && !!filteredResults.length}
                   disabled={disabled}
+                  theme={theme}
                   endIcon={
-                    <Icon
-                      variant={faSort}
-                      rotation={isOpen ? 180 : undefined}
-                      color={colors.grey}
-                      onClick={() => {
-                        if (!disabled) {
-                          if (isOpen) {
-                            closeMenu();
-                          } else {
-                            clearSelection(() => {
-                              openMenu();
-                            });
+                    theme.input.searchInput.customIcon ? (
+                      <CustomIcon
+                        isOpen={isOpen}
+                        onClick={() => {
+                          if (!disabled) {
+                            if (isOpen) {
+                              closeMenu();
+                            } else {
+                              clearSelection(() => {
+                                openMenu();
+                              });
+                            }
                           }
-                        }
-                      }}
-                      aria-label={isOpen ? 'close.menu' : 'open.menu'}
-                    />
+                        }}
+                        aria-label={isOpen ? 'close.menu' : 'open.menu'}
+                      />
+                    ) : (
+                      <Icon
+                        variant={faSort}
+                        rotation={isOpen ? 180 : undefined}
+                        color={colors.grey}
+                        onClick={() => {
+                          if (!disabled) {
+                            if (isOpen) {
+                              closeMenu();
+                            } else {
+                              clearSelection(() => {
+                                openMenu();
+                              });
+                            }
+                          }
+                        }}
+                        aria-label={isOpen ? 'close.menu' : 'open.menu'}
+                      />
+                    )
                   }
                 />
                 {isOpen && !!filteredResults.length && (
-                  <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight}>
+                  <Options {...getMenuProps()} optionsListMaxHeight={optionsListMaxHeight} theme={theme}>
                     {filteredResults.map((item, index) => (
                       <Option
                         {...getItemProps({ index, item })}
@@ -134,6 +166,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                         highLighted={highlightedIndex === index}
                         selected={selectedItem === item}
                         disabled={disabled}
+                        theme={theme}
                       >
                         {item.value}
                       </Option>

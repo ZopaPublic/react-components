@@ -12,11 +12,11 @@ const StyledErrorMessage = styled(Text).attrs({
 })`
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px 8px 16px;
+  padding: ${({ theme }) => theme.errorMessage.padding};
   color: ${({ theme }) => theme.errorMessage.textColor};
   background-color: ${({ theme }) => theme.errorMessage.backgroundColor};
   font-size: ${typography.sizes.text.body};
-  font-family: ${typography.primary};
+  font-family: ${({ theme }) => theme.typography.primary};
   font-weight: ${typography.weights.regular};
   border-radius: 4px;
   width: 100%;
@@ -44,9 +44,11 @@ const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) =
   const theme = useThemeContext();
   return (
     <StyledErrorMessage className={className} {...rest} theme={theme}>
-      <IconWrapper>
-        <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
-      </IconWrapper>
+      {theme.errorMessage.icon ? (
+        <IconWrapper>
+          <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
+        </IconWrapper>
+      ) : null}
       {children}
     </StyledErrorMessage>
   );

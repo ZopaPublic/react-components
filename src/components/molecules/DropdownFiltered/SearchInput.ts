@@ -1,21 +1,21 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../../../constants';
 import InputText from '../../atoms/InputText/InputText';
 import { InputProps } from '../../types';
+import { AppTheme } from '../../styles/Theme';
 
 export interface SearchInputProps {
   isOpen?: boolean;
 }
 
-export const SearchInput = styled(InputText)<SearchInputProps & InputProps>`
+export const SearchInput = styled(InputText)<SearchInputProps & InputProps & { theme: AppTheme }>`
   input {
     ${({ hasError }) => !hasError && 'margin-bottom: 0'};
     ${({ isOpen }) =>
       isOpen &&
       css`
-        box-shadow: 0 0 4px 0 ${colors.brand};
-        border-radius: 8px 8px 0 0;
-        border-color: ${colors.brand};
+        box-shadow: ${({ theme }) => theme.input.searchInput.boxShadow};
+        border-radius: ${({ theme }) => theme.input.searchInput.borderRadiusInput};
+        border-color: ${({ theme }) => theme.input.searchInput.borderColor};
       `};
   }
   input + span {

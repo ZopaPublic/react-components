@@ -1,6 +1,7 @@
 import React, { HTMLAttributes, FC } from 'react';
 import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
+import { AppTheme, useThemeContext } from '../../styles/Theme';
 
 export interface InputLabelProps extends HTMLAttributes<HTMLLabelElement> {
   /**
@@ -9,17 +10,21 @@ export interface InputLabelProps extends HTMLAttributes<HTMLLabelElement> {
   htmlFor: string;
 }
 
-const InputLabel = styled.label<InputLabelProps>`
+const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
   display: block;
   margin: 0 0 10px;
   letter-spacing: 0;
   color: ${colors.greyDarkest};
-  font-family: ${typography.primary};
+  font-family: ${({ theme }) => theme.typography.primary};
   font-weight: ${typography.weights.semiBold};
   font-size: ${typography.sizes.text.body};
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistInputLabel: FC<InputLabelProps> = (props) => <InputLabel {...props} />;
+export const InputLabel: FC<InputLabelProps> = (props) => {
+  const theme = useThemeContext();
+
+  return <StyledInputLabel {...props} theme={theme} />;
+};
 
 export default InputLabel;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { getBorderColorByStatus, getInputTextColor } from '../../../helpers/utils';
 import chevronDown from '../../../content/images/sort-solid.svg';
+import { AppTheme, useThemeContext } from '../../styles/Theme';
 
 export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /**
@@ -17,7 +18,7 @@ export interface DropdownProps extends React.SelectHTMLAttributes<HTMLSelectElem
 
 export const Option = styled.option``;
 
-const StyledDropdown = styled.select<DropdownProps>`
+const StyledDropdown = styled.select<DropdownProps & { theme: AppTheme }>`
   appearance: none;
   min-width: 100px;
   user-select: none;
@@ -53,6 +54,10 @@ const StyledDropdown = styled.select<DropdownProps>`
   }
 `;
 
-const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>((props, ref) => <StyledDropdown ref={ref} {...props} />);
+const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>((props, ref) => {
+  const theme = useThemeContext();
+
+  return <StyledDropdown ref={ref} theme={theme} {...props} />;
+});
 
 export default Dropdown;
