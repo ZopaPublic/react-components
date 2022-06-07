@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { colors, typography } from '../../../constants';
-
+import { useThemeContext } from '../../styles/Theme';
 export interface LinkProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     React.RefAttributes<HTMLAnchorElement> {
@@ -36,7 +36,16 @@ export const linkStyle = css<LinkProps>`
 `;
 
 const StyledLink = styled.a<LinkProps>`
-  ${linkStyle}
+  ${linkStyle};
+  font-family: ${({ theme }) => theme.typography.primary};
+  font-weight: ${({ theme }) => theme.link.weight};
+  color: ${({ theme }) => theme.link.color};
+  &:hover {
+    color: ${({ theme }) => theme.link.hover.color};
+  }
+  &:active {
+    color: ${({ theme }) => theme.link.active.color};
+  }
 `;
 
 const TargetIconWrapper = styled.svg`
@@ -58,10 +67,12 @@ const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ children, color = colors.actionPlain, target, showTargetIcon = true, ...rest }, ref) => {
+    const theme = useThemeContext();
+
     return (
-      <StyledLink ref={ref} color={color} target={target} {...rest}>
+      <StyledLink ref={ref} color={color} target={target} {...rest} theme={theme}>
         {children}
-        {target === '_blank' && showTargetIcon && <TargetIcon color={color} />}
+        {target === '_blank' && showTargetIcon && !theme.link.disableTargetIcon && <TargetIcon color={color} />}
       </StyledLink>
     );
   },

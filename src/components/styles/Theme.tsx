@@ -63,6 +63,18 @@ interface InputTheme {
   };
 }
 
+interface LinkTheme {
+  color: string;
+  weight: number;
+  hover: {
+    color: string;
+  };
+  active: {
+    color: string;
+  };
+  disableTargetIcon: boolean;
+}
+
 interface NavbarTheme {
   iconContainer: {
     display: string;
@@ -131,6 +143,7 @@ export interface AppTheme {
   card: CardTheme;
   errorMessage: ErrorMessageTheme;
   input: InputTheme;
+  link: LinkTheme;
   navbar: NavbarTheme;
   typography: TypographyTheme;
 }
@@ -247,6 +260,17 @@ export const zopaTheme: AppTheme = {
       disabled: colors.greyLight,
       default: colors.grey,
     },
+  },
+  link: {
+    color: 'auto',
+    weight: typography.weights.semiBold,
+    hover: {
+      color: 'auto',
+    },
+    active: {
+      color: 'auto',
+    },
+    disableTargetIcon: false,
   },
   navbar: {
     iconContainer: {
