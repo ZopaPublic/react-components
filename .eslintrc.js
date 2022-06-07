@@ -4,9 +4,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
     'plugin:react/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     project: ['tsconfig.json'],
@@ -33,7 +33,6 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-unused-vars-experimental': 'error',
     // -- React
     'react/display-name': 'off',
     'react/no-unescaped-entities': 'off', // TODO: needs research
