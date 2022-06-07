@@ -9,12 +9,24 @@ interface ButtonTheme {
   text: string;
   bg: string;
   hover: string;
+  border?: string;
+  disabled?: {
+    text: string;
+    bg: string;
+    border: string;
+  };
 }
 
 interface ButtonsTheme {
   primary: ButtonTheme;
   secondary: ButtonTheme;
   link: ButtonTheme;
+  borderRadius?: string;
+  text?: {
+    size?: string;
+    height?: string;
+    weight?: number;
+  };
 }
 
 export type AlertLevel = 'info' | 'alert' | 'warning' | 'success' | 'brand';
@@ -87,6 +99,9 @@ interface NavbarTheme {
     bgColor: string;
   };
 }
+interface ProgressBarTheme {
+  color: string;
+}
 interface TypographyTheme {
   primary: string;
   text: {
@@ -144,6 +159,7 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   input: InputTheme;
   link: LinkTheme;
+  progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
   typography: TypographyTheme;
 }
@@ -201,6 +217,7 @@ export const zopaTheme: AppTheme = {
       bg: 'transparent',
       hover: '#EAEBFA',
     },
+    borderRadius: `8px`,
   },
   card: {
     primary: {
@@ -283,6 +300,9 @@ export const zopaTheme: AppTheme = {
       minHeight: 'auto',
       bgColor: colors.brand,
     },
+  },
+  progressBar: {
+    color: colors.brand,
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
