@@ -21,13 +21,18 @@ exports[`<InputText /> renders the component disabled 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
@@ -116,13 +121,18 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c2:focus,
 .c2:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c2:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c2::-webkit-input-placeholder {
@@ -216,13 +226,18 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
@@ -292,13 +307,18 @@ exports[`<InputText /> renders the component with error 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
@@ -361,13 +381,18 @@ exports[`<InputText /> renders the component with focus 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
@@ -430,13 +455,18 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {
@@ -499,13 +529,18 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
 }
 
-.c1:focus,
 .c1:hover {
   border: 1px solid #00D9C5;
   box-shadow: 0 0 4px 0 #00D9C5;
+}
+
+.c1:focus {
+  border: 1px solid #00D9C5;
+  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
 }
 
 .c1::-webkit-input-placeholder {

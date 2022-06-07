@@ -24,7 +24,7 @@ exports[`<ErrorMessage /> renders the component with props with no a11y violatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   color: #940700;
   background-color: #FFDAD8;
   font-size: 16px;
