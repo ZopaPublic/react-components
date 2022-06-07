@@ -20,6 +20,9 @@ exports[`<Carousel /> renders with no a11y violations 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c3:hover,
@@ -30,6 +33,14 @@ exports[`<Carousel /> renders with no a11y violations 1`] = `
 .c3:hover svg path,
 .c3:active svg path {
   fill: #21247F;
+}
+
+.c3:hover {
+  color: auto;
+}
+
+.c3:active {
+  color: auto;
 }
 
 .c2 {

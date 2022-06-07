@@ -29,6 +29,9 @@ exports[`<NavbarDropdown /> renders with no a11y violations 1`] = `
   appearance: none;
   padding: 0;
   border: none;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
+  color: auto;
 }
 
 .c1:hover,
@@ -39,6 +42,14 @@ exports[`<NavbarDropdown /> renders with no a11y violations 1`] = `
 .c1:hover svg path,
 .c1:active svg path {
   fill: #21247F;
+}
+
+.c1:hover {
+  color: auto;
+}
+
+.c1:active {
+  color: auto;
 }
 
 .c2 {

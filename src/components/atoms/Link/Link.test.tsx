@@ -40,6 +40,6 @@ describe('<Link />', () => {
       </Link>,
     );
 
-    expect(container.firstChild).toHaveStyleRule('color', colors.greyDarkest);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
