@@ -10,32 +10,32 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
 }
 
 .c2 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c2:focus:not(:active) {
@@ -43,14 +43,14 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c2:hover {
-  background: #EAEBFA;
+.c2:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c2:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c2:hover {
+  background: #EAEBFA;
 }
 
 .c1 {
@@ -155,6 +155,7 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
         class="c2 c3"
         id="pineapple"
         styling="link"
+        theme="[object Object]"
       >
         🍍 Pineapple
       </button>
@@ -168,6 +169,7 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
         class="c2 c4"
         id="kiwi"
         styling="link"
+        theme="[object Object]"
       >
         🥝 Kiwi
       </button>
@@ -181,6 +183,7 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
         class="c2 c4"
         id="watermelon"
         styling="link"
+        theme="[object Object]"
       >
         🍉 Watermelon
       </button>

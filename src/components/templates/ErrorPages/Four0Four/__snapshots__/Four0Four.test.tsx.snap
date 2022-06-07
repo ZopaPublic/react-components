@@ -135,32 +135,32 @@ exports[`<Four0Four /> renders with all the props 1`] = `
 }
 
 .c7 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  outline: 0;
+  cursor: pointer;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 12px 24px;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  color: #21247F;
-  border: 1px solid transparent;
-  outline: 0;
   background: #E9EAFA;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  color: #21247F;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .c7:focus:not(:active) {
@@ -168,14 +168,14 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c7:hover {
-  background: #EEEFFB;
+.c7:active {
+  opacity: 0.8;
+  box-shadow: unset;
+  border: 1px solid transparent;
 }
 
-.c7:active {
-  border: 1px solid transparent;
-  box-shadow: unset;
-  opacity: 0.8;
+.c7:hover {
+  background: #EEEFFB;
 }
 
 @media (min-width:0px) {

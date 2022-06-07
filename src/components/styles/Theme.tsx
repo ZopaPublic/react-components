@@ -9,12 +9,24 @@ interface ButtonTheme {
   text: string;
   bg: string;
   hover: string;
+  border?: string;
+  disabled?: {
+    text: string;
+    bg: string;
+    border: string;
+  };
 }
 
 interface ButtonsTheme {
   primary: ButtonTheme;
   secondary: ButtonTheme;
   link: ButtonTheme;
+  borderRadius?: string;
+  text?: {
+    size?: string;
+    height?: string;
+    weight?: number;
+  };
 }
 
 export type AlertLevel = 'info' | 'alert' | 'warning' | 'success' | 'brand';
@@ -188,6 +200,7 @@ export const zopaTheme: AppTheme = {
       bg: 'transparent',
       hover: '#EAEBFA',
     },
+    borderRadius: `8px`,
   },
   card: {
     primary: {
