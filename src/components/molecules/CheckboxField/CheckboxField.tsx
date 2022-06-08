@@ -3,26 +3,37 @@ import styled, { keyframes, css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greenCheckMark from '../../../content/images/green-check-mark.svg';
+import jlTick from '../../../content/images/jl-tick.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { FieldProps, InputProps, GroupingControlsProps } from '../../types';
-import { AppTheme, useThemeContext } from '../../styles/Theme';
+import { AppTheme, AppThemeProps, useThemeContext } from '../../styles/Theme';
 
 export interface CheckboxFieldProps
   extends FieldProps,
     GroupingControlsProps,
     Omit<InputProps, 'startIcon' | 'endIcon'> {}
 
-const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
+const getCheckedColor = ({ disabled, isValid, theme }: Pick<InputProps, 'disabled' | 'isValid'> & AppThemeProps) => {
   if (isValid) {
-    return colors.success;
+    return theme.input.borderColorByStatus.valid;
   }
   if (disabled) {
-    return colors.grey;
+    return theme.input.borderColorByStatus.disabled;
   }
-  return colors.brand;
+  return theme.input.borderColorByStatus.default;
+};
+
+const getTickIcon = ({ isValid, theme }: Pick<InputProps, 'disabled' | 'isValid'> & AppThemeProps) => {
+  if (theme.input.checkBox.customIcon) {
+    return jlTick;
+  }
+  if (isValid) {
+    return greenCheckMark;
+  }
+  return tealCheckMark;
 };
 
 const zoomOut = keyframes`
@@ -44,7 +55,7 @@ const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isV
   border: 1px solid ${getBorderColorByStatus};
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  border-radius: 8px;
+  border-radius: ${({ theme }) => theme.input.checkBox.borderRadiusLabel};
   line-height: 1.4;
   color: ${colors.greyDarkest};
   position: relative;
@@ -55,7 +66,7 @@ const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isV
     content: '';
     flex-shrink: 0;
     background-color: ${colors.white};
-    border-radius: 4px;
+    border-radius: ${({ theme }) => theme.input.checkBox.borderRadiusCheckbox};
     height: 20px;
     width: 20px;
     margin-right: 8px;
@@ -88,17 +99,18 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
 
   &:hover:not(:disabled) + label,
   &:focus + label {
-    border-color: ${colors.brand};
-    box-shadow: 0 0 4px 0 ${colors.brand};
+    border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
+    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
     &:before {
-      border-color: ${colors.brand};
-      box-shadow: 0 0 4px 0 ${colors.brand};
+      border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
+      box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
     }
   }
   &:hover:checked:not(:disabled) + label,
   &:focus:checked + label {
     &:after {
-      background-image: ${`url(${tealCheckMark})`};
+      background-image: ${({ theme }) =>
+        theme.input.checkBox.customIcon ? `url(${jlTick})` : `url(${tealCheckMark})`};
     }
   }
   &:disabled + label {
@@ -114,7 +126,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
   }
   &:checked + label {
     border-color: ${getCheckedColor};
-    background-color: ${colors.brandLight};
+    background-color: ${({ theme }) => theme.input.checkBox.backgroundColor};
     box-shadow: none;
     &:before {
       border-color: ${getCheckedColor};
@@ -122,7 +134,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
     }
     &:after {
       background-size: contain;
-      background-image: url(${({ isValid }) => (isValid ? greenCheckMark : tealCheckMark)});
+      background-image: url(${getTickIcon});
       animation: ${zoomOut} 180ms ease-in-out;
     }
   }
@@ -155,6 +167,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           name={name}
           hideControl={hideControl}
           {...rest}
+          theme={theme}
         />
         <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid} theme={theme}>
           {label}

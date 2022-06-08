@@ -96,6 +96,13 @@ interface InputTheme {
       backgroundColor: string;
     };
   };
+  checkBox: {
+    defaultColor: string;
+    backgroundColor: string;
+    borderRadiusLabel: string;
+    borderRadiusCheckbox: string;
+    customIcon: boolean;
+  };
 }
 
 interface LinkTheme {
@@ -322,6 +329,13 @@ export const zopaTheme: AppTheme = {
         color: colors.white,
         backgroundColor: colors.brand,
       },
+    },
+    checkBox: {
+      defaultColor: colors.brand,
+      backgroundColor: colors.brandLight,
+      borderRadiusLabel: '8px',
+      borderRadiusCheckbox: '4px',
+      customIcon: false,
     },
   },
   link: {
