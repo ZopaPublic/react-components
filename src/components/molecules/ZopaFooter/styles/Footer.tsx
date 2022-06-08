@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, grid, spacing } from '../../../../constants';
 
 export const Footer = styled.footer`
-  background-color: ${colors.white};
+  background-color: ${({ theme }) => theme.footer.bgColor};
   padding-bottom: ${spacing[9]};
   padding-top: ${spacing[10]};
 

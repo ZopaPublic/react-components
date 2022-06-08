@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { grid } from '../../../../constants';
 
-export const LegalBlock = styled(FlexCol).attrs({ xs: 12, l: 5 })`
+export const LegalBlock = styled(FlexCol)`
   order: 3;
 
   @media (min-width: ${grid.breakpoints.l}px) {
