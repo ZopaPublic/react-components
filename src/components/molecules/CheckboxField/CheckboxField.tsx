@@ -23,7 +23,7 @@ const getCheckedColor = ({ disabled, isValid, theme }: Pick<InputProps, 'disable
   if (disabled) {
     return theme.input.borderColorByStatus.disabled;
   }
-  return theme.input.borderColorByStatus.default;
+  return theme.input.checkBox.defaultColor;
 };
 
 const getTickIcon = ({ isValid, theme }: Pick<InputProps, 'disabled' | 'isValid'> & AppThemeProps) => {
