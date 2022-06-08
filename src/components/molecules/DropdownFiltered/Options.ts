@@ -14,7 +14,7 @@ const Options = styled.div<OptionsListProps & { theme: AppTheme }>`
   border-top: 0;
   position: absolute;
   overflow: auto;
-  border-radius: ${({ theme }) => theme.input.searchInput.borderRadiusOptions};
+  border-radius: ${({ theme }) => theme.input.searchInput.options.borderRadius};
   max-height: ${({ optionsListMaxHeight = 'initial' }) => optionsListMaxHeight};
   box-shadow: ${({ theme }) => theme.input.searchInput.boxShadow};
 `;
