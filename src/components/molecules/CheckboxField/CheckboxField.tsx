@@ -55,7 +55,7 @@ const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isV
   border: 1px solid ${getBorderColorByStatus};
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  border-radius: ${({ theme }) => theme.input.checkBox.borderRadiusLabel};
+  border-radius: ${({ theme }) => theme.input.checkBox.label.borderRadius};
   line-height: 1.4;
   color: ${colors.greyDarkest};
   position: relative;
@@ -66,7 +66,7 @@ const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isV
     content: '';
     flex-shrink: 0;
     background-color: ${colors.white};
-    border-radius: ${({ theme }) => theme.input.checkBox.borderRadiusCheckbox};
+    border-radius: ${({ theme }) => theme.input.checkBox.borderRadius};
     height: 20px;
     width: 20px;
     margin-right: 8px;
@@ -126,7 +126,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
   }
   &:checked + label {
     border-color: ${getCheckedColor};
-    background-color: ${({ theme }) => theme.input.checkBox.backgroundColor};
+    background-color: ${({ theme }) => theme.input.checkBox.label.backgroundColor};
     box-shadow: none;
     &:before {
       border-color: ${getCheckedColor};

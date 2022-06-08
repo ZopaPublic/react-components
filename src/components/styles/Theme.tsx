@@ -107,9 +107,11 @@ interface InputTheme {
   };
   checkBox: {
     defaultColor: string;
-    backgroundColor: string;
-    borderRadiusLabel: string;
-    borderRadiusCheckbox: string;
+    borderRadius: string;
+    label: {
+      borderRadius: string;
+      backgroundColor: string;
+    };
     customIcon: boolean;
   };
 }
@@ -350,9 +352,11 @@ export const zopaTheme: AppTheme = {
     },
     checkBox: {
       defaultColor: colors.brand,
-      backgroundColor: colors.brandLight,
-      borderRadiusLabel: '8px',
-      borderRadiusCheckbox: '4px',
+      borderRadius: '4px',
+      label: {
+        borderRadius: '8px',
+        backgroundColor: colors.brandLight,
+      },
       customIcon: false,
     },
   },
