@@ -850,7 +850,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
            All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
         </p>
         <p
-          class="c21"
+          class="c21 mb-4"
           color="#4A545E"
         >
           Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984).

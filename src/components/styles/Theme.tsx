@@ -58,6 +58,15 @@ interface ErrorMessageTheme {
   icon: boolean;
 }
 
+interface FooterTheme {
+  bgColor: string;
+  showFooterLinks: boolean;
+  showLogoBlock: boolean;
+  showSocialBlock: boolean;
+  showLegalBlock: boolean;
+  isLegalBlockFullWidth: boolean;
+}
+
 interface InputTheme {
   color: string;
   placeholderColor: string;
@@ -187,6 +196,7 @@ export interface AppTheme {
   button: ButtonsTheme;
   card: CardTheme;
   errorMessage: ErrorMessageTheme;
+  footer: FooterTheme;
   input: InputTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
@@ -291,6 +301,14 @@ export const zopaTheme: AppTheme = {
     backgroundColor: `${colors.alertLight}`,
     padding: '8px 16px',
     icon: true,
+  },
+  footer: {
+    bgColor: colors.white,
+    showFooterLinks: true,
+    showLogoBlock: true,
+    showSocialBlock: true,
+    showLegalBlock: true,
+    isLegalBlockFullWidth: false,
   },
   input: {
     color: colors.greyDark,

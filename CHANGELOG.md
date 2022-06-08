@@ -1,3 +1,10 @@
+## [5.20.0](https://github.com/zopaUK/react-components/compare/v5.19.1...v5.20.0) (2022-06-08)
+
+
+### Features
+
+* **zopafooter:** add theming to footer ([3202275](https://github.com/zopaUK/react-components/commit/3202275941a61ae8394ee37c0e834de7ab1fc405))
+
 ### [5.19.1](https://github.com/zopaUK/react-components/compare/v5.19.0...v5.19.1) (2022-06-08)
 
 

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+./node_modules/.bin/concurrently --kill-others-on-fail "pnpm:typecheck" "pnpm:lint" "pnpm:test -- --watchAll=false"
