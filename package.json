@@ -2,7 +2,7 @@
   "name": "@zopauk/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "5.17.0",
+  "version": "5.19.1",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -31,7 +31,8 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit",
-    "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci"
+    "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
@@ -48,7 +49,6 @@
     "deprecated-prop-type": "^1.0.0",
     "downshift": "^5.4.7",
     "formik": "^2.2.0",
-    "husky": "^4.3.8",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
@@ -104,6 +104,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "file-loader": "^6.2.0",
+    "husky": "^8.0.0",
     "jest-axe": "4.1.0",
     "jest-junit": "10.0.0",
     "jest-styled-components": "6.3.4",
@@ -137,13 +138,6 @@
     "collectCoverageFrom": [
       "src/components/**/*.{ts,tsx}"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "concurrently --kill-others-on-fail \"pnpm:typecheck\" \"pnpm:lint\" \"pnpm:test -- --watchAll=false\"",
-      "pre-commit": "lint-staged -c ./etc/lintstaged/config.json",
-      "commit-msg": "commitlint --config ./etc/commitlint/config.js -E HUSKY_GIT_PARAMS"
-    }
   },
   "config": {
     "commitizen": {

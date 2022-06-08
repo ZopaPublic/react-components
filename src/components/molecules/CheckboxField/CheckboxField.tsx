@@ -8,6 +8,7 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { getBorderColorByStatus } from '../../../helpers/utils';
 import { FieldProps, InputProps, GroupingControlsProps } from '../../types';
+import { AppTheme, useThemeContext } from '../../styles/Theme';
 
 export interface CheckboxFieldProps
   extends FieldProps,
@@ -33,7 +34,7 @@ const zoomOut = keyframes`
   }
 `;
 
-const Label = styled(InputLabel)`
+const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isValid'> & { theme: AppTheme }>`
   width: auto;
   display: flex;
   text-align: left;
@@ -139,6 +140,9 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
 
 const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, ref) => {
   const { label, errorMessage, className, inputSize, name, hasError, isValid, hideControl, ...rest } = props;
+
+  const theme = useThemeContext();
+
   return (
     <>
       <SizedContainer size={inputSize} className={className}>
@@ -152,7 +156,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           hideControl={hideControl}
           {...rest}
         />
-        <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid}>
+        <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid} theme={theme}>
           {label}
         </Label>
       </SizedContainer>
