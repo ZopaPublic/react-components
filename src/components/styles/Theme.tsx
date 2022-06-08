@@ -11,9 +11,9 @@ interface ButtonTheme {
   hover: string;
   border?: string;
   disabled?: {
-    text: string;
-    bg: string;
-    border: string;
+    text?: string;
+    bg?: string;
+    border?: string;
   };
 }
 

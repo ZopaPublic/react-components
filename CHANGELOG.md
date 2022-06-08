@@ -1,3 +1,10 @@
+### [5.19.1](https://github.com/zopaUK/react-components/compare/v5.19.0...v5.19.1) (2022-06-08)
+
+
+### Bug Fixes
+
+* button theme types ([989c9f6](https://github.com/zopaUK/react-components/commit/989c9f60bf23a827cc795f2dbe3ab6dca018db2a))
+
 ## [5.19.0](https://github.com/zopaUK/react-components/compare/v5.18.0...v5.19.0) (2022-06-07)
 
 
