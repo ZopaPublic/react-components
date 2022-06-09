@@ -15,6 +15,7 @@ exports[`Banner renders the component with no props and no a11y violations 1`] =
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 0px;
+  border: none;
 }
 
 .c0 a {

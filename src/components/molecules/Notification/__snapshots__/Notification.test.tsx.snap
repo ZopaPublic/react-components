@@ -15,6 +15,7 @@ exports[`Notification renders the component with no props and no a11y violations
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
   border-radius: 4px;
+  border: none;
 }
 
 .c0 a {
