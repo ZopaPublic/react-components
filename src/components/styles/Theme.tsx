@@ -4,7 +4,7 @@ import { colors } from '../../constants/colors';
 import { typography } from '../../constants/typography';
 import Icon from '../atoms/Icon/Icon';
 import { CardStyling } from '../organisms/Card/Card/Card';
-
+import { Severity } from '../atoms/Alert/Alert';
 interface ButtonTheme {
   text: string;
   bg: string;
@@ -29,7 +29,16 @@ interface ButtonsTheme {
   };
 }
 
-export type AlertLevel = 'info' | 'alert' | 'warning' | 'success' | 'brand';
+type AlertTheme = Record<
+  Severity,
+  {
+    icon: string;
+    background: string;
+    border: string;
+    text: string;
+    component: FC;
+  }
+>;
 
 interface CardInfo {
   headingSize: string;
@@ -38,16 +47,6 @@ interface CardInfo {
   borderStyle: string;
   backgroundStyle: string;
 }
-
-type AlertTheme = Record<
-  AlertLevel,
-  {
-    icon: string;
-    background: string;
-    text: string;
-    component: FC;
-  }
->;
 
 type CardTheme = Record<CardStyling, CardInfo>;
 
@@ -230,30 +229,35 @@ export const zopaTheme: AppTheme = {
     brand: {
       icon: colors.brand,
       background: colors.brandLight,
+      border: 'none',
       text: colors.greyDarkest,
       component: () => <Icon variant={faInfoCircle} />,
     },
     info: {
       icon: colors.grey,
       background: colors.greyLighter,
+      border: 'none',
       text: colors.greyDarkest,
       component: () => <Icon variant={faInfoCircle} />,
     },
     alert: {
       icon: colors.alert,
       background: colors.alertLight,
+      border: 'none',
       text: colors.alertDark,
       component: () => <Icon variant={faMinusCircle} />,
     },
     warning: {
       icon: colors.warning,
       background: colors.warningLight,
+      border: 'none',
       text: colors.warningDark,
       component: () => <Icon variant={faExclamationCircle} />,
     },
     success: {
       icon: colors.success,
       background: colors.successLight,
+      border: 'none',
       text: colors.successDark,
       component: () => <Icon variant={faCheckCircle} />,
     },

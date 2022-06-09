@@ -1,14 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import {
-  faCheckCircle,
-  faExclamationCircle,
-  faInfoCircle,
-  faMinusCircle,
-  faTimes,
-} from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../Icon/Icon';
-import { colors, typography } from '../../../constants';
+import { typography } from '../../../constants';
+import { useThemeContext } from '../../styles/Theme';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
@@ -22,63 +17,20 @@ export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   onRequestClose?(event: React.MouseEvent | React.KeyboardEvent): void;
 }
 
-type AlertElementsBySeverity = Record<
-  Severity,
-  {
-    icon: string;
-    background: string;
-    text: string;
-    component: FC;
-  }
->;
-
-const MAP_BY_SEVERITY: AlertElementsBySeverity = {
-  brand: {
-    icon: colors.brand,
-    background: colors.brandLight,
-    text: colors.greyDarkest,
-    component: () => <Icon variant={faInfoCircle} />,
-  },
-  info: {
-    icon: colors.grey,
-    background: colors.greyLighter,
-    text: colors.greyDarkest,
-    component: () => <Icon variant={faInfoCircle} />,
-  },
-  alert: {
-    icon: colors.alert,
-    background: colors.alertLight,
-    text: colors.alertDark,
-    component: () => <Icon variant={faMinusCircle} />,
-  },
-  warning: {
-    icon: colors.warning,
-    background: colors.warningLight,
-    text: colors.warningDark,
-    component: () => <Icon variant={faExclamationCircle} />,
-  },
-  success: {
-    icon: colors.success,
-    background: colors.successLight,
-    text: colors.successDark,
-    component: () => <Icon variant={faCheckCircle} />,
-  },
-};
-
 const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
   padding: 8px 12px 8px 12px;
-  background: ${({ severity }) => MAP_BY_SEVERITY[severity].background};
-  color: ${({ severity }) => MAP_BY_SEVERITY[severity].text};
+  background: ${({ severity, theme }) => theme.alert[severity].background};
+  color: ${({ severity, theme }) => theme.alert[severity].text};
   font-size: ${typography.sizes.text.body};
   line-height: ${typography.sizes.lineHeight.body};
   font-family: ${typography.primary};
   font-weight: 400;
   border-radius: ${({ hasRoundedCorners }) => (hasRoundedCorners ? 4 : 0)}px;
-
+  border: ${({ severity, theme }) => theme.alert[severity].border};
   a {
-    color: ${({ severity }) => MAP_BY_SEVERITY[severity].text} !important;
+    color: ${({ severity, theme }) => theme.alert[severity].text} !important;
     font-size: 15px;
     line-height: 20px;
     text-decoration: underline;
@@ -93,7 +45,7 @@ const IconWrapper = styled.div<{ severity: Severity }>`
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
-  color: ${({ severity }) => MAP_BY_SEVERITY[severity].icon};
+  color: ${({ severity, theme }) => theme.alert[severity].icon};
 
   svg {
     display: block;
@@ -115,11 +67,12 @@ const Alert: FC<AlertProps> = ({
   hasRoundedCorners = false,
   ...rest
 }) => {
-  const { component: Icon, text } = MAP_BY_SEVERITY[severity];
+  const theme = useThemeContext();
+  const { component: Icon, text } = theme.alert[severity];
 
   return (
-    <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest}>
-      <IconWrapper severity={severity}>
+    <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest} theme={theme}>
+      <IconWrapper severity={severity} theme={theme}>
         <Icon />
         {onRequestClose && (
           <CrossIcon
