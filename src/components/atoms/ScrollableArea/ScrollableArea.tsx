@@ -1,14 +1,15 @@
 import styled from 'styled-components';
-
+import React from 'react';
 import { colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
+import { useThemeContext, zopaTheme } from '../../styles/Theme';
 
-interface ScrollableAreaProps {
+interface ScrollableAreaProps extends React.HTMLAttributes<HTMLDivElement> {
   maxHeight?: string;
   overflowY?: 'visible' | 'hidden' | 'scroll' | 'auto' | 'initial' | 'inherit';
 }
 
-const ScrollableArea = styled.div<ScrollableAreaProps>`
+const ScrollableAreaStyles = styled.div<ScrollableAreaProps>`
   max-height: ${({ maxHeight = '400px' }) => maxHeight};
   overflow-y: ${({ overflowY = 'scroll' }) => overflowY};
   padding-right: ${spacing[4]};
@@ -23,8 +24,8 @@ const ScrollableArea = styled.div<ScrollableAreaProps>`
   }
 
   &::-webkit-scrollbar-track {
-    background: ${colors.greyLighter};
-    border-radius: 4px;
+    background: ${({ theme }) => theme.scrollableArea.scrollBarTrack.background};
+    border-radius: ${({ theme }) => theme.scrollableArea.scrollBarTrack.borderRadius};
   }
 
   &::-webkit-scrollbar-track {
@@ -32,10 +33,19 @@ const ScrollableArea = styled.div<ScrollableAreaProps>`
   }
 
   &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    border: 2px solid ${colors.brand};
-    background-color: ${colors.brand};
+    border-radius: ${({ theme }) => theme.scrollableArea.scrollBarThumb.borderRadius};
+    border: ${({ theme }) => theme.scrollableArea.scrollBarThumb.border};
+    background-color: ${({ theme }) => theme.scrollableArea.scrollBarThumb.bgColor};
   }
 `;
+
+const ScrollableArea: React.FC<ScrollableAreaProps> = ({ children, ...rest }) => {
+  const theme = useThemeContext();
+  return (
+    <ScrollableAreaStyles {...rest} theme={theme}>
+      {children}
+    </ScrollableAreaStyles>
+  );
+};
 
 export default ScrollableArea;
