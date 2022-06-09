@@ -1,3 +1,10 @@
+## [5.22.0](https://github.com/zopaUK/react-components/compare/v5.21.0...v5.22.0) (2022-06-09)
+
+
+### Features
+
+* **alert:** adding theming to alert ([5277ef0](https://github.com/zopaUK/react-components/commit/5277ef09b984ce85bd2002dbe361a41217d809da))
+
 ## [5.21.0](https://github.com/zopaUK/react-components/compare/v5.20.0...v5.21.0) (2022-06-09)
 
 
