@@ -96,14 +96,25 @@ interface InputTheme {
   iconBackgroundColor: string;
   searchInput: {
     boxShadow: string;
-    borderRadiusInput: string;
-    borderRadiusOptions: string;
+    borderRadius: string;
     borderColor: string;
     customIcon: boolean;
-    optionHover: {
-      color: string;
+    options: {
+      borderRadius: string;
+      hover: {
+        color: string;
+        backgroundColor: string;
+      };
+    };
+  };
+  checkBox: {
+    defaultColor: string;
+    borderRadius: string;
+    label: {
+      borderRadius: string;
       backgroundColor: string;
     };
+    customIcon: boolean;
   };
 }
 
@@ -345,14 +356,25 @@ export const zopaTheme: AppTheme = {
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
       boxShadow: `0 0 4px 0 ${colors.brand}`,
-      borderRadiusInput: `8px 8px 0 0`,
-      borderRadiusOptions: `0 0 8px 8px`,
+      borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
       customIcon: false,
-      optionHover: {
-        color: colors.white,
-        backgroundColor: colors.brand,
+      options: {
+        borderRadius: `0 0 8px 8px`,
+        hover: {
+          color: colors.white,
+          backgroundColor: colors.brand,
+        },
       },
+    },
+    checkBox: {
+      defaultColor: colors.brand,
+      borderRadius: '4px',
+      label: {
+        borderRadius: '8px',
+        backgroundColor: colors.brandLight,
+      },
+      customIcon: false,
     },
   },
   link: {
