@@ -1,3 +1,17 @@
+## [5.21.0](https://github.com/zopaUK/react-components/compare/v5.20.0...v5.21.0) (2022-06-09)
+
+
+### Features
+
+* add theme to CheckBoxField ([9fa260c](https://github.com/zopaUK/react-components/commit/9fa260cde95218c284640534a1764e5ee520fcd2))
+
+
+### Bug Fixes
+
+* change border color ([dc8ae17](https://github.com/zopaUK/react-components/commit/dc8ae17cc7476bb72b88278253ef035eccacc81f))
+* restructure checkbox theme ([87883a7](https://github.com/zopaUK/react-components/commit/87883a737419dc2036686f2c3bfd38291da8526b))
+* restructure searchInput theme ([ed7a3ac](https://github.com/zopaUK/react-components/commit/ed7a3ac738411dc953955459c20edd712466476f))
+
 ## [5.20.0](https://github.com/zopaUK/react-components/compare/v5.19.1...v5.20.0) (2022-06-08)
 
 
