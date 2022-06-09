@@ -1,3 +1,10 @@
+## [5.23.0](https://github.com/zopaUK/react-components/compare/v5.22.0...v5.23.0) (2022-06-09)
+
+
+### Features
+
+* **scrollablearea:** add theming ([d016e3d](https://github.com/zopaUK/react-components/commit/d016e3d633b047195202994d352b849265fbfb8e))
+
 ## [5.22.0](https://github.com/zopaUK/react-components/compare/v5.21.0...v5.22.0) (2022-06-09)
 
 
