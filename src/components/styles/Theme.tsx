@@ -144,6 +144,18 @@ interface NavbarTheme {
 interface ProgressBarTheme {
   color: string;
 }
+interface ScrollableAreaTheme {
+  scrollBarThumb: {
+    borderRadius: string;
+    border: string;
+    bgColor: string;
+  };
+  scrollBarTrack: {
+    background: string;
+    borderRadius: string;
+  };
+}
+
 interface TypographyTheme {
   primary: string;
   text: {
@@ -205,6 +217,7 @@ export interface AppTheme {
   progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
   typography: TypographyTheme;
+  scrollableArea: ScrollableAreaTheme;
 }
 
 export interface AppThemeProps {
@@ -393,6 +406,17 @@ export const zopaTheme: AppTheme = {
   },
   progressBar: {
     color: colors.brand,
+  },
+  scrollableArea: {
+    scrollBarThumb: {
+      borderRadius: '4px',
+      border: `2px solid ${colors.brand}`,
+      bgColor: `${colors.brand}`,
+    },
+    scrollBarTrack: {
+      background: `${colors.greyLighter}`,
+      borderRadius: '4px',
+    },
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
