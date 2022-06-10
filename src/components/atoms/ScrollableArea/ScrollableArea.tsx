@@ -39,13 +39,15 @@ const ScrollableAreaStyles = styled.div<ScrollableAreaProps>`
   }
 `;
 
-const ScrollableArea: React.FC<ScrollableAreaProps> = ({ children, ...rest }) => {
-  const theme = useThemeContext();
-  return (
-    <ScrollableAreaStyles {...rest} theme={theme}>
-      {children}
-    </ScrollableAreaStyles>
-  );
-};
+const ScrollableArea: React.FC<ScrollableAreaProps> = React.forwardRef<HTMLDivElement, ScrollableAreaProps>(
+  ({ children, ...rest }, ref) => {
+    const theme = useThemeContext();
+    return (
+      <ScrollableAreaStyles {...rest} theme={theme} ref={ref}>
+        {children}
+      </ScrollableAreaStyles>
+    );
+  },
+);
 
 export default ScrollableArea;
