@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, { RefObject } from 'react';
 import { colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
 import { useThemeContext, zopaTheme } from '../../styles/Theme';
@@ -39,15 +39,13 @@ const ScrollableAreaStyles = styled.div<ScrollableAreaProps>`
   }
 `;
 
-const ScrollableArea: React.FC<ScrollableAreaProps> = React.forwardRef<HTMLDivElement, ScrollableAreaProps>(
-  ({ children, ...rest }, ref) => {
-    const theme = useThemeContext();
-    return (
-      <ScrollableAreaStyles {...rest} theme={theme} ref={ref}>
-        {children}
-      </ScrollableAreaStyles>
-    );
-  },
-);
+const ScrollableArea = React.forwardRef<HTMLDivElement, ScrollableAreaProps>(({ children, ...rest }, ref) => {
+  const theme = useThemeContext();
+  return (
+    <ScrollableAreaStyles {...rest} theme={theme} ref={ref}>
+      {children}
+    </ScrollableAreaStyles>
+  );
+});
 
 export default ScrollableArea;
