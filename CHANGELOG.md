@@ -1,3 +1,10 @@
+### [5.23.1](https://github.com/zopaUK/react-components/compare/v5.23.0...v5.23.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **scrollablearea:** fix missing ref ([9c2ab5d](https://github.com/zopaUK/react-components/commit/9c2ab5dedb7c5639119d2d5c7a8c95a56287d7f5))
+
 ## [5.23.0](https://github.com/zopaUK/react-components/compare/v5.22.0...v5.23.0) (2022-06-09)
 
 
