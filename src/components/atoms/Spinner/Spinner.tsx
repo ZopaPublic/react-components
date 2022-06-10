@@ -3,6 +3,8 @@ import brandSpinner from './spinner-brand.gif';
 import negativeSpinner from './spinner-negative.gif';
 import actionSpinner from './spinner-action.gif';
 import deprecated from 'deprecated-prop-type';
+import { useThemeContext } from '../../styles/Theme';
+import jlSpinner from '../../../content/images/jl-spinner.gif';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
@@ -31,9 +33,17 @@ const animationData: Record<SpinnerStyling, string> = {
 };
 
 const Spinner: React.FC<SpinnerProps> = (props) => {
+  const theme = useThemeContext();
+
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
-  const spinner = props.negative ? negativeSpinner : animationData[props.styling || 'primary'];
+  const spinner =
+    theme.spinner.spinnerTheme === 'jl'
+      ? jlSpinner
+      : props.negative
+      ? negativeSpinner
+      : animationData[props.styling || 'primary'];
+
   const size = props.size === 'small' ? '20px' : '40px';
 
   return <img src={spinner} height={size} width={size} aria-label="loading spinner" />;
