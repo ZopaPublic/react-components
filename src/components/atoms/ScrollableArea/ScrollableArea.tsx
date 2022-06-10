@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
-import { colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
-import { useThemeContext, zopaTheme } from '../../styles/Theme';
+import { useThemeContext } from '../../styles/Theme';
 
 interface ScrollableAreaProps extends React.HTMLAttributes<HTMLDivElement> {
   maxHeight?: string;
@@ -39,15 +38,13 @@ const ScrollableAreaStyles = styled.div<ScrollableAreaProps>`
   }
 `;
 
-const ScrollableArea: React.FC<ScrollableAreaProps> = React.forwardRef<HTMLDivElement, ScrollableAreaProps>(
-  ({ children, ...rest }, ref) => {
-    const theme = useThemeContext();
-    return (
-      <ScrollableAreaStyles {...rest} theme={theme} ref={ref}>
-        {children}
-      </ScrollableAreaStyles>
-    );
-  },
-);
+const ScrollableArea = React.forwardRef<HTMLDivElement, ScrollableAreaProps>(({ children, ...rest }, ref) => {
+  const theme = useThemeContext();
+  return (
+    <ScrollableAreaStyles {...rest} theme={theme} ref={ref}>
+      {children}
+    </ScrollableAreaStyles>
+  );
+});
 
 export default ScrollableArea;
