@@ -1,3 +1,10 @@
+## [5.24.0](https://github.com/zopaUK/react-components/compare/v5.23.2...v5.24.0) (2022-06-10)
+
+
+### Features
+
+* **spinner:** add theming to spinner ([ae8d354](https://github.com/zopaUK/react-components/commit/ae8d354bc58528a0dd61a5ca564146db0b1db504))
+
 ### [5.23.2](https://github.com/zopaUK/react-components/compare/v5.23.1...v5.23.2) (2022-06-10)
 
 
