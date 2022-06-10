@@ -1,3 +1,10 @@
+### [5.23.2](https://github.com/zopaUK/react-components/compare/v5.23.1...v5.23.2) (2022-06-10)
+
+
+### Bug Fixes
+
+* **scrollablearea:** type fix ([9803401](https://github.com/zopaUK/react-components/commit/98034016d54e6d0a7daef6a81ceb59c8382fbfd6))
+
 ### [5.23.1](https://github.com/zopaUK/react-components/compare/v5.23.0...v5.23.1) (2022-06-10)
 
 
