@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import React, { RefObject } from 'react';
-import { colors } from '../../../constants/colors';
+import React from 'react';
 import { spacing } from '../../../constants/spacing';
-import { useThemeContext, zopaTheme } from '../../styles/Theme';
+import { useThemeContext } from '../../styles/Theme';
 
 interface ScrollableAreaProps extends React.HTMLAttributes<HTMLDivElement> {
   maxHeight?: string;
