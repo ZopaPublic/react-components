@@ -156,6 +156,10 @@ interface ScrollableAreaTheme {
   };
 }
 
+interface SpinnerTheme {
+  spinnerTheme: 'zopa' | 'jl';
+}
+
 interface TypographyTheme {
   primary: string;
   text: {
@@ -218,6 +222,7 @@ export interface AppTheme {
   navbar: NavbarTheme;
   typography: TypographyTheme;
   scrollableArea: ScrollableAreaTheme;
+  spinner: SpinnerTheme;
 }
 
 export interface AppThemeProps {
@@ -417,6 +422,9 @@ export const zopaTheme: AppTheme = {
       background: `${colors.greyLighter}`,
       borderRadius: '4px',
     },
+  },
+  spinner: {
+    spinnerTheme: 'zopa',
   },
   typography: {
     primary: `"Open Sans", Roboto, Helvetica, Arial, sans-serif`,
