@@ -1,3 +1,12 @@
+### [5.24.1](https://github.com/zopaUK/react-components/compare/v5.24.0...v5.24.1) (2022-06-13)
+
+
+### Bug Fixes
+
+* **zopafooter:** add lineHeight to Legablock theming ([efe40b6](https://github.com/zopaUK/react-components/commit/efe40b68c8f7a06c845ea65109c262fabe7c0173))
+* **zopafooter:** fix theming for footer ([1dfdc85](https://github.com/zopaUK/react-components/commit/1dfdc85d8b18ab8383ae52787cf7a27ef70c8148))
+* **zopafooter:** theming bug ([552fb04](https://github.com/zopaUK/react-components/commit/552fb04271b343b36642804ddbee24c12f354a7e))
+
 ## [5.24.0](https://github.com/zopaUK/react-components/compare/v5.23.2...v5.24.0) (2022-06-10)
 
 
