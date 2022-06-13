@@ -8,6 +8,7 @@ export const LegalBlock = styled(FlexCol)`
   p {
     font-size: ${({ theme }) => theme.footer.legalBlock.fontSize};
     color: ${({ theme }) => theme.footer.legalBlock.color};
+    line-height: ${({ theme }) => theme.footer.legalBlock.lineHeight};
   }
 
   @media (min-width: ${grid.breakpoints.l}px) {
