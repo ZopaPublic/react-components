@@ -67,8 +67,6 @@ interface FooterTheme {
   legalBlock: {
     isFullWidth: boolean;
     color: string;
-    fontSize: string;
-    lineHeight: string;
   };
 }
 
@@ -344,8 +342,6 @@ export const zopaTheme: AppTheme = {
     legalBlock: {
       isFullWidth: false,
       color: colors.greyDark,
-      fontSize: typography.sizes.text.small,
-      lineHeight: typography.sizes.lineHeight.small,
     },
   },
   input: {
