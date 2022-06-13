@@ -108,8 +108,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 
 .c0 {
   background-color: #FFFFFF;
-  padding-bottom: 56px;
-  padding-top: 64px;
 }
 
 .c5 {
@@ -351,12 +349,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c0 {
-    padding-top: 104px;
-  }
-}
-
-@media (min-width:992px) {
   .c20 {
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -380,7 +372,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 <footer
-  class="c0"
+  class="c0 pb-9 pt-10 l:pt-11"
   data-automation="ZA.footer"
 >
   <div

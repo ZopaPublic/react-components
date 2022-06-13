@@ -5,7 +5,6 @@ import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import Text from '../../atoms/Text/Text';
 import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
-import { colors } from '../../../constants';
 import facebook from '../../../content/images/social/facebook.svg';
 import twitter from '../../../content/images/social/twitter.svg';
 import instagram from '../../../content/images/social/instagram.svg';
@@ -42,8 +41,9 @@ const ZopaFooter = ({
   ...rest
 }: FooterProps) => {
   const theme = useThemeContext();
+
   return (
-    <Footer data-automation="ZA.footer" theme={theme} {...rest}>
+    <Footer data-automation="ZA.footer" theme={theme} {...rest} className={theme.footer.className}>
       <FlexContainer gutter={16}>
         {theme.footer.showFooterLinks && (
           <FlexRow className="mb-6">
@@ -149,18 +149,18 @@ const ZopaFooter = ({
             </SocialBlock>
           )}
           {theme.footer.showLegalBlock && (
-            <LegalBlock xs={12} l={theme.footer.isLegalBlockFullWidth ? 12 : 5}>
-              <Text as="p" color={colors.greyDark} size="small" className="mb-4">
+            <LegalBlock xs={12} l={theme.footer.legalBlock.isFullWidth ? 12 : 5} theme={theme}>
+              <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
                 Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial
                 Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services
                 Register (800542). Zopa Bank Limited (10627575) is incorporated in England &amp; Wales and has its
                 registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
               </Text>
-              <Text as="p" color={colors.greyDark} size="small" className="mb-4">
+              <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
                 © Zopa Bank Limited {new Date().getFullYear()} All rights reserved. 'Zopa' is a trademark of Zopa Bank
                 Limited.
               </Text>
-              <Text as="p" color={colors.greyDark} size="small" className={legalAmendment ? 'mb-4' : ''}>
+              <Text as="p" color={theme.footer.legalBlock.color} size="small" className={legalAmendment ? 'mb-4' : ''}>
                 Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the
                 Office of the Information Commissioner (ZA275984).
               </Text>

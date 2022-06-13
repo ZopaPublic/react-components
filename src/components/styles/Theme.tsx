@@ -59,11 +59,15 @@ interface ErrorMessageTheme {
 
 interface FooterTheme {
   bgColor: string;
+  className: string;
   showFooterLinks: boolean;
   showLogoBlock: boolean;
   showSocialBlock: boolean;
   showLegalBlock: boolean;
-  isLegalBlockFullWidth: boolean;
+  legalBlock: {
+    isFullWidth: boolean;
+    color: string;
+  };
 }
 
 interface InputTheme {
@@ -330,11 +334,15 @@ export const zopaTheme: AppTheme = {
   },
   footer: {
     bgColor: colors.white,
+    className: 'pb-9 pt-10 l:pt-11',
     showFooterLinks: true,
     showLogoBlock: true,
     showSocialBlock: true,
     showLegalBlock: true,
-    isLegalBlockFullWidth: false,
+    legalBlock: {
+      isFullWidth: false,
+      color: colors.greyDark,
+    },
   },
   input: {
     color: colors.greyDark,
