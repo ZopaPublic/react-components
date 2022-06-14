@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
-.c2 {
+.c1 {
   color: #2C3236;
   font-weight: 400;
   padding: 0;
@@ -28,7 +28,7 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   flex-direction: column;
 }
 
-.c0 > .c3 {
+.c0 > .c2 {
   -webkit-flex: 0 1 200px;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
@@ -38,15 +38,11 @@ exports[`<Card.Text /> renders the component with no a11y violations 1`] = `
   font-size: 16px;
 }
 
-.c0 .c1 {
-  font-size: 14px;
-}
-
 <div
   class="c0"
 >
   <p
-    class="c1 c2"
+    class="c1"
   >
     Text
   </p>

@@ -1,8 +1,10 @@
+import * as React from 'react';
 import styled from 'styled-components';
 import { colors, typography } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
 import CardText from '../CardText/CardText';
 import CardLineItem from '../CardLineItem/CardLineItem';
+import { AppTheme, useThemeContext } from '../../../styles/Theme';
 
 export type CardLayout = 'horizontal' | 'vertical';
 export type CardStyling = 'primary' | 'secondary' | 'brand' | 'action' | 'info';
@@ -70,24 +72,24 @@ const backgroundStyle: Record<CardStyling, string> = {
   info: `${colors.greyLightest}`,
 };
 
-const Card = styled.div<CardProps>`
+const StyledCard = styled.div<CardProps & { theme: AppTheme }>`
   height: 100%;
   width: 100%;
   display: flex;
   overflow: hidden;
-  background-color: ${({ styling = 'secondary' }) => backgroundStyle[styling]};
-  border: ${({ styling = 'secondary' }) => borderStyle[styling]};
-  border-radius: 12px;
-  box-shadow: ${({ styling = 'secondary' }) => boxShadowStyle[styling]};
+  background-color: ${({ theme, styling = 'secondary' }) => theme.card[styling].backgroundStyle};
+  border: ${({ theme, styling = 'secondary' }) => theme.card[styling].borderStyle};
+  border-radius: ${({ theme, styling = 'secondary' }) => theme.card[styling].borderRadius};
+  box-shadow: ${({ theme, styling = 'secondary' }) => theme.card[styling].boxShadowStyle};
   flex-direction: ${({ layout = 'vertical' }) => layoutDirections[layout]};
   & > ${CardImageContainer} {
     flex: 0 1 ${({ layout = 'vertical' }) => layoutImageStyles[layout]};
   }
   & .zrc__card-heading {
-    font-size: ${({ styling = 'secondary' }) => headingSizes[styling]};
+    font-size: ${({ theme, styling = 'secondary' }) => theme.card[styling].headingSize};
   }
   & ${CardText} {
-    font-size: ${({ styling = 'secondary' }) => textSizes[styling]};
+    font-size: ${({ theme, styling = 'secondary' }) => theme.card[styling].textSizes};
   }
   ${({ styling }) =>
     styling === 'action'
@@ -104,5 +106,14 @@ const Card = styled.div<CardProps>`
   }`
       : null}
 `;
+
+const Card: React.FC<CardProps & React.HTMLAttributes<HTMLDivElement>> = ({ children, ...props }) => {
+  const theme = useThemeContext();
+  return (
+    <StyledCard theme={theme} {...props}>
+      {children}
+    </StyledCard>
+  );
+};
 
 export default Card;
