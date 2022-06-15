@@ -1,3 +1,11 @@
+## [5.26.0](https://github.com/zopaUK/react-components/compare/v5.25.0...v5.26.0) (2022-06-15)
+
+
+### Features
+
+* support theming of Card component ([e000e12](https://github.com/zopaUK/react-components/commit/e000e126d8251f5e428ebb738462e0da5e0108f2))
+* support theming of Card component ([6ee6ad0](https://github.com/zopaUK/react-components/commit/6ee6ad0808208329ead30de5fbe0b69c12ae1a9c))
+
 ## [5.25.0](https://github.com/zopaUK/react-components/compare/v5.24.1...v5.25.0) (2022-06-15)
 
 
