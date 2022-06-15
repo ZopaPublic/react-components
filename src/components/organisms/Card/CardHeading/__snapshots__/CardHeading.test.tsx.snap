@@ -28,10 +28,6 @@ exports[`<Card.Heading /> renders the component with no a11y violations 1`] = `
   font-size: 16px;
 }
 
-.c0 .c3 {
-  font-size: 14px;
-}
-
 .c1 {
   font-size: 16px;
   line-height: 24px;

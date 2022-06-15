@@ -46,6 +46,7 @@ interface CardInfo {
   boxShadowStyle: string;
   borderStyle: string;
   backgroundStyle: string;
+  borderRadius: string;
 }
 
 type CardTheme = Record<CardStyling, CardInfo>;
@@ -303,6 +304,7 @@ export const zopaTheme: AppTheme = {
       boxShadowStyle: `0 1px 0 0 ${colors.greyLight}`,
       borderStyle: `1px solid ${colors.greyLighter}`,
       backgroundStyle: `${colors.white};`,
+      borderRadius: '12px',
     },
     secondary: {
       headingSize: typography.sizes.heading.h6,
@@ -310,6 +312,7 @@ export const zopaTheme: AppTheme = {
       boxShadowStyle: `0 1px 0 0 ${colors.greyLight}`,
       borderStyle: `1px solid ${colors.greyLighter}`,
       backgroundStyle: `${colors.white};`,
+      borderRadius: '12px',
     },
     brand: {
       headingSize: typography.sizes.heading.h6,
@@ -317,6 +320,7 @@ export const zopaTheme: AppTheme = {
       boxShadowStyle: 'none',
       borderStyle: `1px solid ${colors.brand}`,
       backgroundStyle: `${colors.brandLight};`,
+      borderRadius: '12px',
     },
     action: {
       headingSize: typography.sizes.heading.h6,
@@ -324,6 +328,7 @@ export const zopaTheme: AppTheme = {
       boxShadowStyle: 'none',
       borderStyle: `1px solid ${colors.greyLighter}`,
       backgroundStyle: `${colors.white};`,
+      borderRadius: '12px',
     },
     info: {
       headingSize: typography.sizes.heading.h6,
@@ -331,6 +336,7 @@ export const zopaTheme: AppTheme = {
       boxShadowStyle: 'none',
       borderStyle: `1px solid ${colors.greyLightest}`,
       backgroundStyle: `${colors.greyLightest}`,
+      borderRadius: '12px',
     },
   },
   errorMessage: {
