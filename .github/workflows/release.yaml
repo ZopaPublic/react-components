@@ -18,4 +18,4 @@ jobs:
           webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
           title: ${{ github.event.release.name }}
           body: ${{ steps.release_body.outputs.text }}
-          context: Homeday Blocks
+          context: Zopa React Components library
