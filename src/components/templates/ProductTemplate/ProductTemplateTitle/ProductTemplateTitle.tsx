@@ -1,11 +1,12 @@
 import React, { ReactElement } from 'react';
-import styled, { css } from 'styled-components';
-import { breakpoints } from '../../../../constants/breakpoints';
-import { colors } from '../../../../constants/colors';
-import { minMedia } from '../../../../helpers/responsiveness';
-import { useViewport } from '../../../../hooks/useViewport';
-import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
+import { colors } from '../../../../constants';
+import styled, { css } from 'styled-components';
+import { breakpoints } from '../../../../constants';
+import Heading from '../../../atoms/Heading/Heading';
+import { useThemeContext } from '../../../styles/Theme';
+import { useViewport } from '../../../../hooks/useViewport';
+import { minMedia } from '../../../../helpers/responsiveness';
 
 interface ProductTemplateTitleProps {
   title?: string;
@@ -15,7 +16,7 @@ interface ProductTemplateTitleProps {
 }
 
 const ProductTemplateTitleBackground = styled.header`
-  background-color: ${colors.greyLightest};
+  background-color: ${({ theme }) => theme?.productTemplate?.title?.backgroundColor ?? colors.greyLightest};
   ${minMedia.desktop`
     ${css`
       border-radius: 12px;
@@ -45,8 +46,9 @@ export function ProductTemplateTitle({
   dataAutomation = 'ZA.ProductTemplateTitle',
 }: ProductTemplateTitleProps) {
   const { width = 0 } = useViewport();
+  const theme = useThemeContext();
   return (
-    <ProductTemplateTitleBackground data-automation={dataAutomation}>
+    <ProductTemplateTitleBackground data-automation={dataAutomation} theme={theme}>
       <ProductTemplateTitleContainer>
         <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
           {title && (

@@ -127,20 +127,6 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
 `;
 
 exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
-.c3 {
-  font-size: 46px;
-  line-height: 54px;
-  -webkit-letter-spacing: -1.25px;
-  -moz-letter-spacing: -1.25px;
-  -ms-letter-spacing: -1.25px;
-  letter-spacing: -1.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: center;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 800;
-}
-
 .c5 {
   margin: 0;
   -webkit-letter-spacing: 0;
@@ -153,6 +139,20 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
   font-weight: 400;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
   text-align: center;
+}
+
+.c3 {
+  font-size: 46px;
+  line-height: 54px;
+  -webkit-letter-spacing: -1.25px;
+  -moz-letter-spacing: -1.25px;
+  -ms-letter-spacing: -1.25px;
+  letter-spacing: -1.25px;
+  margin: 0;
+  color: #2C3236;
+  text-align: center;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 800;
 }
 
 .c0 {
