@@ -107,7 +107,7 @@ const StyledCard = styled.div<CardProps & { theme: AppTheme }>`
       : null}
 `;
 
-const Card: React.FC<CardProps & React.HTMLAttributes<HTMLDivElement>> = ({ children, ...props }) => {
+const Card: React.FC<React.HTMLAttributes<HTMLDivElement> & CardProps> = ({ children, ...props }) => {
   const theme = useThemeContext();
   return (
     <StyledCard theme={theme} {...props}>
