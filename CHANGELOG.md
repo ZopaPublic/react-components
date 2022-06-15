@@ -1,3 +1,10 @@
+## [5.25.0](https://github.com/zopaUK/react-components/compare/v5.24.1...v5.25.0) (2022-06-15)
+
+
+### Features
+
+* add theme to product template title ([b37647a](https://github.com/zopaUK/react-components/commit/b37647ac88cb18f3b748dbe266400a00e85dca4e))
+
 ### [5.24.1](https://github.com/zopaUK/react-components/compare/v5.24.0...v5.24.1) (2022-06-13)
 
 

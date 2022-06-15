@@ -161,6 +161,12 @@ interface ScrollableAreaTheme {
   };
 }
 
+interface ProductTemplate {
+  title?: {
+    backgroundColor?: string;
+  };
+}
+
 interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'jl';
 }
@@ -228,6 +234,7 @@ export interface AppTheme {
   typography: TypographyTheme;
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
+  productTemplate?: ProductTemplate;
 }
 
 export interface AppThemeProps {
@@ -435,6 +442,11 @@ export const zopaTheme: AppTheme = {
     scrollBarTrack: {
       background: `${colors.greyLighter}`,
       borderRadius: '4px',
+    },
+  },
+  productTemplate: {
+    title: {
+      backgroundColor: `${colors.greyLightest}`,
     },
   },
   spinner: {
