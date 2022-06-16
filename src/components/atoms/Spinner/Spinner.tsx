@@ -46,7 +46,7 @@ const Spinner: React.FC<SpinnerProps> = (props) => {
 
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
-  const spinner = animationData[props.styling || 'primary'];
+  const spinner = props.negative ? negativeSpinner : animationData[props.styling || 'primary'];
 
   const size = props.size === 'small' ? '20px' : '40px';
 
