@@ -3,7 +3,7 @@ import styled, { keyframes, css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greenCheckMark from '../../../content/images/green-check-mark.svg';
-import jlTick from '../../../content/images/jl-tick.svg';
+import unbrandedTick from '../../../content/images/unbranded-tick.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -28,7 +28,7 @@ const getCheckedColor = ({ disabled, isValid, theme }: Pick<InputProps, 'disable
 
 const getTickIcon = ({ isValid, theme }: Pick<InputProps, 'disabled' | 'isValid'> & AppThemeProps) => {
   if (theme.input.checkBox.customIcon) {
-    return jlTick;
+    return unbrandedTick;
   }
   if (isValid) {
     return greenCheckMark;
@@ -110,7 +110,7 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
   &:focus:checked + label {
     &:after {
       background-image: ${({ theme }) =>
-        theme.input.checkBox.customIcon ? `url(${jlTick})` : `url(${tealCheckMark})`};
+        theme.input.checkBox.customIcon ? `url(${unbrandedTick})` : `url(${tealCheckMark})`};
     }
   }
   &:disabled + label {

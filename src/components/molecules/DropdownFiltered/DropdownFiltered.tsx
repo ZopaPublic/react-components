@@ -7,7 +7,7 @@ import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import Icon from '../../atoms/Icon/Icon';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
-import jlChevron from '../../../content/images/jl-chevron.svg';
+import unbrandedChevron from '../../../content/images/unbranded-chevron.svg';
 import { FieldProps, InputProps } from '../../types';
 import { useThemeContext } from '../../styles/Theme';
 import Option from './Option';
@@ -43,7 +43,7 @@ export const SearchInputWrap = styled.div`
 `;
 
 export const CustomIcon = styled.div<{ isOpen: boolean }>`
-  background: transparent url(${jlChevron}) no-repeat center;
+  background: transparent url(${unbrandedChevron}) no-repeat center;
   background-size: 60%;
   width: 100%;
   height: 100%;
