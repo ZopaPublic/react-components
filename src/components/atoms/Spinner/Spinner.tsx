@@ -5,7 +5,7 @@ import actionSpinner from './spinner-action.gif';
 import negativeSpinner from './spinner-negative.gif';
 import { useThemeContext } from '../../styles/Theme';
 import unbrandedSpinner from '../../../content/images/unbranded-spinner.gif';
-import unbrandedNegativeSpinner from '../../../content/images/unbranded-negative-spinner.gif';
+import unbrandedNegativeSpinner from '../../../content/images/unbranded-spinner-negative.gif';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
