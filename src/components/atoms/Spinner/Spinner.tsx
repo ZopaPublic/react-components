@@ -5,6 +5,7 @@ import actionSpinner from './spinner-action.gif';
 import deprecated from 'deprecated-prop-type';
 import { useThemeContext } from '../../styles/Theme';
 import jlSpinner from '../../../content/images/jl-spinner.gif';
+import jlSpinnerNegative from '../../../content/images/jl-spinner-negative.gif';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
@@ -26,23 +27,26 @@ export interface SpinnerProps {
   negative?: boolean;
 }
 
-const animationData: Record<SpinnerStyling, string> = {
+const animationDataDefault: Record<SpinnerStyling, string> = {
   primary: brandSpinner,
   secondary: actionSpinner,
   negative: negativeSpinner,
 };
 
+const animationDataJl: Record<SpinnerStyling, string> = {
+  primary: jlSpinner,
+  secondary: jlSpinner,
+  negative: jlSpinnerNegative,
+};
+
 const Spinner: React.FC<SpinnerProps> = (props) => {
   const theme = useThemeContext();
 
+  const animationData = theme?.spinner?.spinnerTheme === 'jl' ? animationDataJl : animationDataDefault;
+
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
-  const spinner =
-    theme.spinner.spinnerTheme === 'jl'
-      ? jlSpinner
-      : props.negative
-      ? negativeSpinner
-      : animationData[props.styling || 'primary'];
+  const spinner = animationData[props.styling || 'primary'];
 
   const size = props.size === 'small' ? '20px' : '40px';
 
