@@ -6,6 +6,7 @@ import { colors } from '../../../constants';
 
 type LoadingSectionProps = {
   children: React.ReactNode;
+  customSpinner?: React.ReactNode;
 };
 
 const Container = styled.div`
@@ -36,10 +37,10 @@ function SecondaryText({ children }: LoadingSectionProps) {
   );
 }
 
-function LoadingSection({ children }: LoadingSectionProps) {
+function LoadingSection({ children, customSpinner }: LoadingSectionProps) {
   return (
     <Container>
-      <Spinner />
+      {customSpinner ? customSpinner : <Spinner />}
       {children}
     </Container>
   );
