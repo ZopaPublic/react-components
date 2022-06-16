@@ -168,7 +168,7 @@ interface ProductTemplate {
 }
 
 interface SpinnerTheme {
-  spinnerTheme: 'zopa' | 'jl';
+  spinnerTheme: 'zopa' | 'unbranded';
 }
 
 interface TypographyTheme {

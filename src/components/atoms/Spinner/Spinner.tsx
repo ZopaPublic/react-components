@@ -1,11 +1,11 @@
 import React from 'react';
-import brandSpinner from './spinner-brand.gif';
-import negativeSpinner from './spinner-negative.gif';
-import actionSpinner from './spinner-action.gif';
 import deprecated from 'deprecated-prop-type';
+import brandSpinner from './spinner-brand.gif';
+import actionSpinner from './spinner-action.gif';
+import negativeSpinner from './spinner-negative.gif';
 import { useThemeContext } from '../../styles/Theme';
-import jlSpinner from '../../../content/images/jl-spinner.gif';
-import jlSpinnerNegative from '../../../content/images/jl-spinner-negative.gif';
+import unbrandedSpinner from '../../../content/images/unbranded-spinner.gif';
+import unbrandedNegativeSpinner from '../../../content/images/unbranded-negative-spinner.gif';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
@@ -33,16 +33,16 @@ const animationDataDefault: Record<SpinnerStyling, string> = {
   negative: negativeSpinner,
 };
 
-const animationDataJl: Record<SpinnerStyling, string> = {
-  primary: jlSpinner,
-  secondary: jlSpinner,
-  negative: jlSpinnerNegative,
+const animationDataUnbranded: Record<SpinnerStyling, string> = {
+  primary: unbrandedSpinner,
+  secondary: unbrandedSpinner,
+  negative: unbrandedNegativeSpinner,
 };
 
 const Spinner: React.FC<SpinnerProps> = (props) => {
   const theme = useThemeContext();
 
-  const animationData = theme?.spinner?.spinnerTheme === 'jl' ? animationDataJl : animationDataDefault;
+  const animationData = theme?.spinner?.spinnerTheme === 'unbranded' ? animationDataUnbranded : animationDataDefault;
 
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
