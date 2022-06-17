@@ -1,3 +1,10 @@
+## [5.28.0](https://github.com/zopaUK/react-components/compare/v5.27.0...v5.28.0) (2022-06-17)
+
+
+### Features
+
+* **loadingsection:** add custom spinner ([8de9554](https://github.com/zopaUK/react-components/commit/8de95543df7e9344a18f391428e2590650b34600))
+
 ## [5.27.0](https://github.com/zopaUK/react-components/compare/v5.26.0...v5.27.0) (2022-06-16)
 
 
