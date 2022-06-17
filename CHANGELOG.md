@@ -1,3 +1,11 @@
+## [5.27.0](https://github.com/zopaUK/react-components/compare/v5.26.0...v5.27.0) (2022-06-16)
+
+
+### Features
+
+* add negative jl spinner ([5cfd75e](https://github.com/zopaUK/react-components/commit/5cfd75e66fb0a5cebfe44cd89dbbc8ec64d4f941))
+* facilitate negative prop ([b1f0aa2](https://github.com/zopaUK/react-components/commit/b1f0aa2cf69cc403f45c0d8a3fe93c4e0aa61817))
+
 ## [5.26.0](https://github.com/zopaUK/react-components/compare/v5.25.0...v5.26.0) (2022-06-15)
 
 
