@@ -61,6 +61,7 @@ export { default as LoadingSection } from './components/molecules/LoadingSection
 
 // Organisms
 export * from './components/organisms/Form';
+export type { FormButtonProps } from './components/organisms/Form/FormButton/FormButton';
 export * from './components/organisms/Accordion';
 export { default as Navbar, navbarLinkStyles } from './components/organisms/Navbar/';
 export { default as Card } from './components/organisms/Card';
