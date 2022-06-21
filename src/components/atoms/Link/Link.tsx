@@ -42,9 +42,15 @@ const StyledLink = styled.a<LinkProps>`
   color: ${({ theme }) => theme.link.color};
   &:hover {
     color: ${({ theme }) => theme.link.hover.color};
+    svg path {
+      fill: ${({ negative, theme }) => (negative ? 'black' : theme.link.hover.color)};
+    }
   }
   &:active {
     color: ${({ theme }) => theme.link.active.color};
+    svg path {
+      fill: ${({ negative, theme }) => (negative ? 'black' : theme.link.active.color)};
+    }
   }
 `;
 

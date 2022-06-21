@@ -39,8 +39,16 @@ exports[`<Link /> doesnt render the link with a target icon 1`] = `
   color: auto;
 }
 
+.c0:hover svg path {
+  fill: auto;
+}
+
 .c0:active {
   color: auto;
+}
+
+.c0:active svg path {
+  fill: auto;
 }
 
 <a
@@ -92,8 +100,16 @@ exports[`<Link /> renders for being displayed on top of dark backgrounds 1`] = `
   color: auto;
 }
 
+.c0:hover svg path {
+  fill: black;
+}
+
 .c0:active {
   color: auto;
+}
+
+.c0:active svg path {
+  fill: black;
 }
 
 .c1 {
@@ -168,8 +184,16 @@ exports[`<Link /> renders the link with default values and the svg is hidden wit
   color: auto;
 }
 
+.c0:hover svg path {
+  fill: auto;
+}
+
 .c0:active {
   color: auto;
+}
+
+.c0:active svg path {
+  fill: auto;
 }
 
 <a
@@ -220,8 +244,16 @@ exports[`<Link /> renders the link with target _blank with the svg visible 1`] =
   color: auto;
 }
 
+.c0:hover svg path {
+  fill: auto;
+}
+
 .c0:active {
   color: auto;
+}
+
+.c0:active svg path {
+  fill: auto;
 }
 
 .c1 {
