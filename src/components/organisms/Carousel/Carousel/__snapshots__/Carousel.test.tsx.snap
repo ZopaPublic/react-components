@@ -39,8 +39,16 @@ exports[`<Carousel /> renders with no a11y violations 1`] = `
   color: auto;
 }
 
+.c3:hover svg path {
+  fill: auto;
+}
+
 .c3:active {
   color: auto;
+}
+
+.c3:active svg path {
+  fill: auto;
 }
 
 .c2 {

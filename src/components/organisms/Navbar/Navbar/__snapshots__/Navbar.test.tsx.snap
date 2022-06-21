@@ -45,8 +45,16 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   color: auto;
 }
 
+.c7:hover svg path {
+  fill: auto;
+}
+
 .c7:active {
   color: auto;
+}
+
+.c7:active svg path {
+  fill: auto;
 }
 
 .c8 {
@@ -1010,8 +1018,16 @@ exports[`<Navbar /> should render large device navigation with default props and
   color: auto;
 }
 
+.c7:hover svg path {
+  fill: auto;
+}
+
 .c7:active {
   color: auto;
+}
+
+.c7:active svg path {
+  fill: auto;
 }
 
 .c8 {
@@ -1925,8 +1941,16 @@ exports[`<Navbar /> should render small device navigation with default props wit
   color: auto;
 }
 
+.c7:hover svg path {
+  fill: auto;
+}
+
 .c7:active {
   color: auto;
+}
+
+.c7:active svg path {
+  fill: auto;
 }
 
 .c8 {
@@ -2890,8 +2914,16 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   color: auto;
 }
 
+.c7:hover svg path {
+  fill: auto;
+}
+
 .c7:active {
   color: auto;
+}
+
+.c7:active svg path {
+  fill: auto;
 }
 
 .c8 {

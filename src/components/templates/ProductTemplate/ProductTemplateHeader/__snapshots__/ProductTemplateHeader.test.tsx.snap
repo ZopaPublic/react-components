@@ -53,8 +53,16 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   color: auto;
 }
 
+.c2:hover svg path {
+  fill: auto;
+}
+
 .c2:active {
   color: auto;
+}
+
+.c2:active svg path {
+  fill: auto;
 }
 
 .c3 {
