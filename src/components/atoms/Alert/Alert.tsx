@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { IconLookup, IconDefinition, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Icon from '../Icon/Icon';
 import { typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
-
+import ExclamationIcon from '../../styles/icons/exclamation';
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -68,12 +69,33 @@ const Alert: FC<AlertProps> = ({
   ...rest
 }) => {
   const theme = useThemeContext();
-  const { component: Icon, text } = theme.alert[severity];
+  // eslint-disable-next-line
+  const { component: IconComponent, text, FAVariant, customVariant } = theme.alert[severity];
+  let iconDefinition, CustomIcon;
+
+  if (FAVariant) {
+    const iconLookup: IconLookup = { prefix: FAVariant.prefix, iconName: FAVariant.iconName };
+    iconDefinition = findIconDefinition(iconLookup);
+
+    if (!iconDefinition) {
+      throw new Error(`Icon ${FAVariant.prefix}-${FAVariant.iconName} not found`);
+    }
+  }
+
+  if (customVariant) {
+    if (customVariant.iconName === 'exclamation') {
+      CustomIcon = <ExclamationIcon color={customVariant.color} />;
+    } else {
+      throw new Error(`Unknown custom icon name: ${customVariant.iconName}`);
+    }
+  }
 
   return (
     <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest} theme={theme}>
       <IconWrapper severity={severity} theme={theme}>
-        <Icon />
+        {IconComponent && <IconComponent />}
+        {iconDefinition && <Icon variant={iconDefinition} />}
+        {customVariant && CustomIcon}
         {onRequestClose && (
           <CrossIcon
             onClick={onRequestClose}

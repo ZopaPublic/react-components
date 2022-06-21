@@ -1,10 +1,20 @@
-import { faCheckCircle, faExclamationCircle, faInfoCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCheckCircle,
+  faExclamationCircle,
+  faInfoCircle,
+  faMinusCircle,
+  fas,
+} from '@fortawesome/free-solid-svg-icons';
+import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
 import React, { FC } from 'react';
 import { colors } from '../../constants/colors';
 import { typography } from '../../constants/typography';
 import Icon from '../atoms/Icon/Icon';
 import { CardStyling } from '../organisms/Card/Card/Card';
 import { Severity } from '../atoms/Alert/Alert';
+
+export type CustomIconVariant = 'exclamation';
+
 interface ButtonTheme {
   text: string;
   bg: string;
@@ -36,7 +46,9 @@ type AlertTheme = Record<
     background: string;
     border: string;
     text: string;
-    component: FC;
+    component?: FC;
+    FAVariant?: { prefix: IconPrefix; iconName: IconName };
+    customVariant?: { iconName: CustomIconVariant; color: string };
   }
 >;
 
@@ -240,6 +252,9 @@ export interface AppTheme {
 export interface AppThemeProps {
   theme: AppTheme;
 }
+
+// NB: Font Awesome icon variants required in the theme require their prefixes to be added here in order to be usable
+library.add(fas);
 
 export const zopaTheme: AppTheme = {
   alert: {
