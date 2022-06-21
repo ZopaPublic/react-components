@@ -1,3 +1,10 @@
+### [5.28.1](https://github.com/zopaUK/react-components/compare/v5.28.0...v5.28.1) (2022-06-20)
+
+
+### Bug Fixes
+
+* **formbutton:** export FormButtonProps ([9ecdc86](https://github.com/zopaUK/react-components/commit/9ecdc865a979db0ee50e4468a53094f333f2ad8e))
+
 ## [5.28.0](https://github.com/zopaUK/react-components/compare/v5.27.0...v5.28.0) (2022-06-17)
 
 
