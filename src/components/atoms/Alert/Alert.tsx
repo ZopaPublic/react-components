@@ -6,8 +6,8 @@ import Icon from '../Icon/Icon';
 import { typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
 import ExclamationIcon from '../../styles/icons/exclamation';
-export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 
+export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
   inline?: boolean;
