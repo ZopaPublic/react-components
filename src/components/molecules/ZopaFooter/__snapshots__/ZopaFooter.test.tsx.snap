@@ -208,8 +208,16 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   color: auto;
 }
 
+.c7:hover svg path {
+  fill: auto;
+}
+
 .c7:active {
   color: auto;
+}
+
+.c7:active svg path {
+  fill: auto;
 }
 
 .c14 {
