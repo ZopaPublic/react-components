@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 interface ExclamationProps {
-  color?: string;
+  color: string;
 }
 const ExclamationIconWrapper = styled.div`
   width: 20px;
