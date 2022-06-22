@@ -69,16 +69,15 @@ const Alert: FC<AlertProps> = ({
   ...rest
 }) => {
   const theme = useThemeContext();
-  // eslint-disable-next-line
-  const { component: IconComponent, text, FAVariant, customVariant } = theme.alert[severity];
+  const { component: IconComponent, text, faVariant, customVariant } = theme.alert[severity];
   let iconDefinition, CustomIcon;
 
-  if (FAVariant) {
-    const iconLookup: IconLookup = { prefix: FAVariant.prefix, iconName: FAVariant.iconName };
+  if (faVariant) {
+    const iconLookup: IconLookup = { prefix: faVariant.prefix, iconName: faVariant.iconName };
     iconDefinition = findIconDefinition(iconLookup);
 
     if (!iconDefinition) {
-      throw new Error(`Icon ${FAVariant.prefix}-${FAVariant.iconName} not found`);
+      throw new Error(`Icon ${faVariant.prefix}-${faVariant.iconName} not found`);
     }
   }
 
@@ -93,9 +92,9 @@ const Alert: FC<AlertProps> = ({
   return (
     <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest} theme={theme}>
       <IconWrapper severity={severity} theme={theme}>
-        {IconComponent && <IconComponent />}
-        {iconDefinition && <Icon variant={iconDefinition} />}
-        {customVariant && CustomIcon}
+        {IconComponent ? <IconComponent /> : null}
+        {iconDefinition ? <Icon variant={iconDefinition} /> : null}
+        {customVariant ? CustomIcon : null}
         {onRequestClose && (
           <CrossIcon
             onClick={onRequestClose}

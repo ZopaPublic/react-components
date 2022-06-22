@@ -47,7 +47,7 @@ type AlertTheme = Record<
     border: string;
     text: string;
     component?: FC;
-    FAVariant?: { prefix: IconPrefix; iconName: IconName };
+    faVariant?: { prefix: IconPrefix; iconName: IconName };
     customVariant?: { iconName: CustomIconVariant; color: string };
   }
 >;
