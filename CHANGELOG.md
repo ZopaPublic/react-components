@@ -1,3 +1,13 @@
+## [5.29.0](https://github.com/zopaUK/react-components/compare/v5.28.2...v5.29.0) (2022-06-22)
+
+
+### Features
+
+* alternatives for passing Alert theme icon components ([f1c22ae](https://github.com/zopaUK/react-components/commit/f1c22aea26d1476046b8778b384c7f7f32dfeb63))
+* alternatives for passing Alert theme icon components ([09190f9](https://github.com/zopaUK/react-components/commit/09190f9c176633f7add9d3dc689060fac83ba125))
+* alternatives for passing Alert theme icon components ([d907bd4](https://github.com/zopaUK/react-components/commit/d907bd4e51c8e3dda13cc996e9f60941f44303e2))
+* alternatives for passing Alert theme icon components ([19f8b63](https://github.com/zopaUK/react-components/commit/19f8b6360b30021063e298baeadb7cbc53094cc3))
+
 ### [5.28.2](https://github.com/zopaUK/react-components/compare/v5.28.1...v5.28.2) (2022-06-21)
 
 
