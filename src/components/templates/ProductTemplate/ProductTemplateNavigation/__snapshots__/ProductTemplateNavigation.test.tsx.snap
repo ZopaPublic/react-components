@@ -74,8 +74,16 @@ exports[`<ProductTemplateNavigation /> renders with a string prevStep 1`] = `
   color: auto;
 }
 
+.c1:hover svg path {
+  fill: auto;
+}
+
 .c1:active {
   color: auto;
+}
+
+.c1:active svg path {
+  fill: auto;
 }
 
 .c2 {

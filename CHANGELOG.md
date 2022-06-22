@@ -1,3 +1,11 @@
+### [5.28.2](https://github.com/zopaUK/react-components/compare/v5.28.1...v5.28.2) (2022-06-21)
+
+
+### Bug Fixes
+
+* **bump-version:** empty commit to bump version ([e752961](https://github.com/zopaUK/react-components/commit/e75296141eacacb3c783a05c134cddca382b74db))
+* **link:** add theme for hover and active styles for svgs ([f059762](https://github.com/zopaUK/react-components/commit/f05976293b021a493424308559c6afc662beeec9))
+
 ### [5.28.1](https://github.com/zopaUK/react-components/compare/v5.28.0...v5.28.1) (2022-06-20)
 
 

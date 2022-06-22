@@ -50,8 +50,16 @@ Object {
   color: auto;
 }
 
+.c1:hover svg path {
+  fill: auto;
+}
+
 .c1:active {
   color: auto;
+}
+
+.c1:active svg path {
+  fill: auto;
 }
 
 .c2 {
@@ -302,7 +310,7 @@ Object {
       <a
         aria-expanded="false"
         aria-haspopup="true"
-        class="sc-htpNat cRYLto sc-ifAKCX bIyiel"
+        class="sc-htpNat Umdkr sc-ifAKCX bIyiel"
         color="#3B46C4"
         data-automation="ZA.navbar-item"
         href="#"
