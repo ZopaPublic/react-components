@@ -38,7 +38,7 @@ export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
 
 const Text = styled.span<TextProps & { theme: AppTheme }>`
   margin: 0;
-  letter-spacing: 0;
+  letter-spacing: ${({ theme }) => theme.typography.letterSpacingMap.text};
 
   color: ${({ color, theme }) => color || theme.typography.text.color};
   font-size: ${({ theme, size = 'body', capitalize }) => theme.typography.text.sizes[capitalize ? 'small' : size]};

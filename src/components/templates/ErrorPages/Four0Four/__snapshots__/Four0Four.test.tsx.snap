@@ -180,6 +180,10 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .c7:focus:not(:active) {

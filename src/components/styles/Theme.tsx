@@ -217,6 +217,8 @@ interface TypographyTheme {
     small: string;
   };
   letterSpacingMap: {
+    text: string | 0;
+    button: string | 0;
     display: string;
     h1: string;
     h2: string;
@@ -501,6 +503,8 @@ export const zopaTheme: AppTheme = {
       small: '20px',
     },
     letterSpacingMap: {
+      text: 0,
+      button: 0,
       display: '-2.86px',
       h1: '-1.25px',
       h2: '-0.85px',
