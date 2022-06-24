@@ -52,9 +52,8 @@ export const buttonStyle = css<BaseButtonProps>`
   ${({ styling = 'primary', theme }) => {
     const { borderRadius, text } = theme?.button || {};
     const { size, height, weight } = text || {};
-    const { primary } = theme?.typography || {};
+    const { primary, letterSpacingMap } = theme?.typography || {};
     const { text: textColor, border, bg: bgColor } = theme?.button?.[styling] || {};
-
     const backGround = bgColor ?? colorMap[styling].bg;
     const isActionGradient = backGround === colors.action;
     const bgFallback = css`
@@ -70,7 +69,8 @@ export const buttonStyle = css<BaseButtonProps>`
       font-size: ${size ?? typography.sizes.text.body};
       font-weight: ${weight ?? typography.weights.semiBold};
       line-height: ${height ?? typography.sizes.lineHeight.body};
-      ${isActionGradient && bgFallback}
+      letter-spacing: ${letterSpacingMap?.button ?? 0};
+      ${isActionGradient && bgFallback};
     `;
   }}
 

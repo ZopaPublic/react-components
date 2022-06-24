@@ -222,6 +222,10 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .c17:focus:not(:active) {
@@ -266,6 +270,10 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   background-color: #3B46C4;
 }
 
@@ -1195,6 +1203,10 @@ exports[`<Navbar /> should render large device navigation with default props and
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   background-color: #3B46C4;
 }
 
@@ -2118,6 +2130,10 @@ exports[`<Navbar /> should render small device navigation with default props wit
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
 }
 
 .c17:focus:not(:active) {
@@ -2162,6 +2178,10 @@ exports[`<Navbar /> should render small device navigation with default props wit
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   background-color: #3B46C4;
 }
 
@@ -3091,6 +3111,10 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
   background-color: #3B46C4;
 }
 
