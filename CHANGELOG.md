@@ -1,3 +1,10 @@
+### [5.29.1](https://github.com/zopaUK/react-components/compare/v5.29.0...v5.29.1) (2022-06-24)
+
+
+### Bug Fixes
+
+* **text:** add theming for letter spacing to text and button ([4462628](https://github.com/zopaUK/react-components/commit/4462628d60206d5a9e32dd5721e993a82b0fe2c5))
+
 ## [5.29.0](https://github.com/zopaUK/react-components/compare/v5.28.2...v5.29.0) (2022-06-22)
 
 
