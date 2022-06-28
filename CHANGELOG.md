@@ -1,3 +1,10 @@
+## [5.30.0](https://github.com/zopaUK/react-components/compare/v5.29.1...v5.30.0) (2022-06-28)
+
+
+### Features
+
+* **add label to theme:** add label to the theme ([a43e528](https://github.com/zopaUK/react-components/commit/a43e528e6860c70301b1fdc6c6a1c8b1a4f51c02))
+
 ### [5.29.1](https://github.com/zopaUK/react-components/compare/v5.29.0...v5.29.1) (2022-06-24)
 
 
