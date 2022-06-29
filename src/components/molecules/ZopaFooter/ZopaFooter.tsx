@@ -31,12 +31,14 @@ const StyledLink = styled(Link)`
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
   renderLink?: FC<Record<'href', string> & HTMLAttributes<HTMLAnchorElement>>;
+  lenderInfo?: ReactNode;
   legalAmendment?: ReactNode;
 }
 
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
   renderLink = (props) => <StyledLink {...props} />,
+  lenderInfo = <></>,
   legalAmendment = <></>,
   ...rest
 }: FooterProps) => {
@@ -164,6 +166,7 @@ const ZopaFooter = ({
                 Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the
                 Office of the Information Commissioner (ZA275984).
               </Text>
+              {lenderInfo}
               {legalAmendment}
             </LegalBlock>
           )}
