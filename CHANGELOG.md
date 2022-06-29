@@ -1,3 +1,10 @@
+### [5.30.1](https://github.com/zopaUK/react-components/compare/v5.30.0...v5.30.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **zopafooter:** add optional text block ([e5050b3](https://github.com/zopaUK/react-components/commit/e5050b30879b3d388a72e3df91e8c4cfca3d21f1))
+
 ## [5.30.0](https://github.com/zopaUK/react-components/compare/v5.29.1...v5.30.0) (2022-06-28)
 
 
