@@ -1,3 +1,10 @@
+## [5.31.0](https://github.com/zopaUK/react-components/compare/v5.30.1...v5.31.0) (2022-07-01)
+
+
+### Features
+
+* add partner info to footer ([52087ae](https://github.com/zopaUK/react-components/commit/52087ae13d3277489bf63f8b31753e845fac70fc))
+
 ### [5.30.1](https://github.com/zopaUK/react-components/compare/v5.30.0...v5.30.1) (2022-06-29)
 
 
