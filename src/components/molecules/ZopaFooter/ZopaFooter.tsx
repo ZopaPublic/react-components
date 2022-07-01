@@ -31,6 +31,7 @@ const StyledLink = styled(Link)`
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
   renderLink?: FC<Record<'href', string> & HTMLAttributes<HTMLAnchorElement>>;
+  partnerInfo?: ReactNode;
   lenderInfo?: ReactNode;
   legalAmendment?: ReactNode;
 }
@@ -39,6 +40,7 @@ const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
   renderLink = (props) => <StyledLink {...props} />,
   lenderInfo = <></>,
+  partnerInfo = <></>,
   legalAmendment = <></>,
   ...rest
 }: FooterProps) => {
@@ -167,6 +169,7 @@ const ZopaFooter = ({
                 Office of the Information Commissioner (ZA275984).
               </Text>
               {lenderInfo}
+              {partnerInfo}
               {legalAmendment}
             </LegalBlock>
           )}
