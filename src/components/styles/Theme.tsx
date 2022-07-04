@@ -84,6 +84,10 @@ interface FooterTheme {
   };
 }
 
+interface LabelTheme {
+  margin: string;
+}
+
 interface InputTheme {
   color: string;
   placeholderColor: string;
@@ -243,6 +247,7 @@ export interface AppTheme {
   card: CardTheme;
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
+  label: LabelTheme;
   input: InputTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
@@ -375,6 +380,9 @@ export const zopaTheme: AppTheme = {
       isFullWidth: false,
       color: colors.greyDark,
     },
+  },
+  label: {
+    margin: `0 0 10px`,
   },
   input: {
     color: colors.greyDark,

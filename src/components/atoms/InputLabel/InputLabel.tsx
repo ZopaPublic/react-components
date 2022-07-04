@@ -12,7 +12,7 @@ export interface InputLabelProps extends HTMLAttributes<HTMLLabelElement> {
 
 const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
   display: block;
-  margin: 0 0 10px;
+  margin: ${({ theme }) => theme.label.margin};
   letter-spacing: 0;
   color: ${colors.greyDarkest};
   font-family: ${({ theme }) => theme.typography.primary};
