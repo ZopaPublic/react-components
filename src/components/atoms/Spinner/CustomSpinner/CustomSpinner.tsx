@@ -12,7 +12,12 @@ export interface CustomSpinnerProps {
   speed?: number;
 }
 
-const CustomSpinnerContainer = styled.div<CustomSpinnerProps>`
+const CustomSpinnerContainer = styled.div<{ size: SpinnerProps['size'] }>`
+  width: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
+  height: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
+`;
+
+const Spinner = styled.div<CustomSpinnerProps>`
   box-sizing: border-box;
   display: inline-block;
   animation-name: anim-spinner;
@@ -77,8 +82,8 @@ const CustomSpinner: React.FC<CustomSpinnerProps> = ({ size, styling }) => {
   const theme = useThemeContext();
 
   return (
-    <div>
-      <CustomSpinnerContainer
+    <CustomSpinnerContainer size={size}>
+      <Spinner
         size={size}
         styling={styling}
         color={theme.spinner.customSpinner?.color}
@@ -93,8 +98,8 @@ const CustomSpinner: React.FC<CustomSpinnerProps> = ({ size, styling }) => {
         <div className="circle circle-2">
           <div className="circle-inner"></div>
         </div>
-      </CustomSpinnerContainer>
-    </div>
+      </Spinner>
+    </CustomSpinnerContainer>
   );
 };
 

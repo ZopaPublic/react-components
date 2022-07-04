@@ -4,8 +4,6 @@ import brandSpinner from './spinner-brand.gif';
 import actionSpinner from './spinner-action.gif';
 import negativeSpinner from './spinner-negative.gif';
 import { useThemeContext } from '../../styles/Theme';
-import unbrandedSpinner from '../../../content/images/unbranded-spinner.gif';
-import unbrandedNegativeSpinner from '../../../content/images/unbranded-spinner-negative.gif';
 import CustomSpinner from './CustomSpinner/CustomSpinner';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
@@ -28,22 +26,14 @@ export interface SpinnerProps {
   negative?: boolean;
 }
 
-const animationDataDefault: Record<SpinnerStyling, string> = {
+const animationData: Record<SpinnerStyling, string> = {
   primary: brandSpinner,
   secondary: actionSpinner,
   negative: negativeSpinner,
 };
 
-const animationDataUnbranded: Record<SpinnerStyling, string> = {
-  primary: unbrandedSpinner,
-  secondary: unbrandedSpinner,
-  negative: unbrandedNegativeSpinner,
-};
-
 const Spinner: React.FC<SpinnerProps> = (props) => {
   const theme = useThemeContext();
-
-  const animationData = theme?.spinner?.spinnerTheme === 'unbranded' ? animationDataUnbranded : animationDataDefault;
 
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
 
