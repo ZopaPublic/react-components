@@ -6,6 +6,7 @@ import negativeSpinner from './spinner-negative.gif';
 import { useThemeContext } from '../../styles/Theme';
 import unbrandedSpinner from '../../../content/images/unbranded-spinner.gif';
 import unbrandedNegativeSpinner from '../../../content/images/unbranded-spinner-negative.gif';
+import CustomSpinner from './CustomSpinner/CustomSpinner';
 
 export type SpinnerStyling = 'primary' | 'secondary' | 'negative';
 
@@ -50,7 +51,11 @@ const Spinner: React.FC<SpinnerProps> = (props) => {
 
   const size = props.size === 'small' ? '20px' : '40px';
 
-  return <img src={spinner} height={size} width={size} aria-label="loading spinner" />;
+  return theme?.spinner?.spinnerTheme === 'unbranded' ? (
+    <CustomSpinner size={props.size} styling={props.styling} />
+  ) : (
+    <img src={spinner} height={size} width={size} aria-label="loading spinner" />
+  );
 };
 
 export default Spinner;
