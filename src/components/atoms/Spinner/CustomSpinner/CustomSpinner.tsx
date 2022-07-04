@@ -78,7 +78,7 @@ const Spinner = styled.div<CustomSpinnerProps>`
   }
 `;
 
-const CustomSpinner: React.FC<CustomSpinnerProps> = ({ size, styling }) => {
+const CustomSpinner = ({ size, styling }: CustomSpinnerProps) => {
   const theme = useThemeContext();
 
   return (
