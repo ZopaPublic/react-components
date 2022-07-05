@@ -170,7 +170,13 @@ const ZopaFooter = ({
                 Office of the Information Commissioner (ZA275984).
               </Text>
               {additionalCopy.map((copy, i) => (
-                <Text as="p" color={theme.footer.legalBlock.color} size="small" key={i} className={'mb-4'}>
+                <Text
+                  as="p"
+                  color={theme.footer.legalBlock.color}
+                  size="small"
+                  key={i}
+                  className={i > additionalCopy.length ? 'mb-0' : 'mb-4'}
+                >
                   {copy}
                 </Text>
               ))}
