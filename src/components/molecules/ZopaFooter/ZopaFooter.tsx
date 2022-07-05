@@ -1,18 +1,18 @@
-import React, { HTMLAttributes, FC, ReactNode } from 'react';
+import Text from '../../atoms/Text/Text';
+import Logo from '../../atoms/Logo/Logo';
+import Link from '../../atoms/Link/Link';
+import { typography } from '../../../constants';
 import styled, { css } from 'styled-components';
-import FlexContainer from '../../layout/FlexContainer/FlexContainer';
+import React, { HTMLAttributes, FC } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
-import Text from '../../atoms/Text/Text';
-import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
-import facebook from '../../../content/images/social/facebook.svg';
-import twitter from '../../../content/images/social/twitter.svg';
-import instagram from '../../../content/images/social/instagram.svg';
-import linkedin from '../../../content/images/social/linkedin.svg';
-import Logo from '../../atoms/Logo/Logo';
-import { typography } from '../../../constants';
-import Link from '../../atoms/Link/Link';
 import { useThemeContext } from '../../styles/Theme';
+import twitter from '../../../content/images/social/twitter.svg';
+import facebook from '../../../content/images/social/facebook.svg';
+import linkedin from '../../../content/images/social/linkedin.svg';
+import instagram from '../../../content/images/social/instagram.svg';
+import FlexContainer from '../../layout/FlexContainer/FlexContainer';
+import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
 
 export const footerLinkStyle = css`
   font-weight: ${typography.weights.regular};
@@ -31,17 +31,13 @@ const StyledLink = styled(Link)`
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
   renderLink?: FC<Record<'href', string> & HTMLAttributes<HTMLAnchorElement>>;
-  partnerInfo?: ReactNode;
-  lenderInfo?: ReactNode;
-  legalAmendment?: ReactNode;
+  additionalCopy?: string[];
 }
 
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
   renderLink = (props) => <StyledLink {...props} />,
-  lenderInfo = <></>,
-  partnerInfo = <></>,
-  legalAmendment = <></>,
+  additionalCopy = [],
   ...rest
 }: FooterProps) => {
   const theme = useThemeContext();
@@ -164,13 +160,26 @@ const ZopaFooter = ({
                 © Zopa Bank Limited {new Date().getFullYear()} All rights reserved. 'Zopa' is a trademark of Zopa Bank
                 Limited.
               </Text>
-              <Text as="p" color={theme.footer.legalBlock.color} size="small" className={legalAmendment ? 'mb-4' : ''}>
+              <Text
+                as="p"
+                color={theme.footer.legalBlock.color}
+                size="small"
+                className={additionalCopy.length ? 'mb-4' : ''}
+              >
                 Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the
                 Office of the Information Commissioner (ZA275984).
               </Text>
-              {lenderInfo}
-              {partnerInfo}
-              {legalAmendment}
+              {additionalCopy.map((copy, i) => (
+                <Text
+                  as="p"
+                  color={theme.footer.legalBlock.color}
+                  size="small"
+                  key={i}
+                  className={i > additionalCopy.length ? 'mb-0' : 'mb-4'}
+                >
+                  {copy}
+                </Text>
+              ))}
             </LegalBlock>
           )}
         </FlexRow>
