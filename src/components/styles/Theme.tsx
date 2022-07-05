@@ -12,6 +12,7 @@ import { typography } from '../../constants/typography';
 import Icon from '../atoms/Icon/Icon';
 import { CardStyling } from '../organisms/Card/Card/Card';
 import { Severity } from '../atoms/Alert/Alert';
+import { CustomSpinnerProps } from '../atoms/Spinner/CustomSpinner/CustomSpinner';
 
 export type CustomIconVariant = 'exclamation';
 
@@ -185,6 +186,7 @@ interface ProductTemplate {
 
 interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
+  customSpinner?: CustomSpinnerProps;
 }
 
 interface TypographyTheme {
