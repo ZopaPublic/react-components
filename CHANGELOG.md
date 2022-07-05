@@ -1,3 +1,15 @@
+## [5.32.0](https://github.com/zopaUK/react-components/compare/v5.31.0...v5.32.0) (2022-07-05)
+
+
+### Features
+
+* **spinner:** adding custom spinner ([0e6ed88](https://github.com/zopaUK/react-components/commit/0e6ed888a3de574aeb0a38818ce6383dccb573e5))
+
+
+### Bug Fixes
+
+* **spinner:** deleting unbranded assets ([12cca60](https://github.com/zopaUK/react-components/commit/12cca6068068ea5f6661422c5554bc8deed59d0d))
+
 ## [5.31.0](https://github.com/zopaUK/react-components/compare/v5.30.1...v5.31.0) (2022-07-01)
 
 
