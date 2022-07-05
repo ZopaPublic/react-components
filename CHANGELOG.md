@@ -1,3 +1,10 @@
+### [5.32.1](https://github.com/zopaUK/react-components/compare/v5.32.0...v5.32.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* update footer copy handler for more consistency ([1101439](https://github.com/zopaUK/react-components/commit/11014391c6c4c75d0beb3d6bb85576d5fe3d8e36))
+
 ## [5.32.0](https://github.com/zopaUK/react-components/compare/v5.31.0...v5.32.0) (2022-07-05)
 
 
