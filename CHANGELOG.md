@@ -1,3 +1,10 @@
+### [5.32.2](https://github.com/zopaUK/react-components/compare/v5.32.1...v5.32.2) (2022-07-07)
+
+
+### Bug Fixes
+
+* **spinner:** custom spinner theming ([d952a8d](https://github.com/zopaUK/react-components/commit/d952a8d96aa677d510643905b211990509e2c67a))
+
 ### [5.32.1](https://github.com/zopaUK/react-components/compare/v5.32.0...v5.32.1) (2022-07-05)
 
 
