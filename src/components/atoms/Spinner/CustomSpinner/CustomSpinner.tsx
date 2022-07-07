@@ -1,27 +1,25 @@
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { useThemeContext } from '../../../styles/Theme';
 import { SpinnerProps } from '../Spinner';
 
-export interface CustomSpinnerProps {
-  size?: SpinnerProps['size'];
-  styling?: SpinnerProps['styling'];
-  color?: string;
-  negativeColor?: string;
-  fillWidth?: string;
-  speed?: number;
+export interface CustomSpinnerProps extends SpinnerProps {
+  color: string;
+  negativeColor: string;
+  fillWidth: string;
+  speed: number;
 }
 
-const CustomSpinnerContainer = styled.div<{ size: SpinnerProps['size'] }>`
+const AnimationContainer = styled.div<{ size: SpinnerProps['size'] }>`
   width: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
   height: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
 `;
 
-const Spinner = styled.div<CustomSpinnerProps>`
+const SpinnerAnimation = styled.div<CustomSpinnerProps>`
   box-sizing: border-box;
   display: inline-block;
   animation-name: anim-spinner;
-  animation-duration: ${({ speed }) => `${speed}s`};;
+  animation-duration: ${({ speed = 0.6 }) => `${speed}s`};;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   margin: 0;
@@ -34,7 +32,7 @@ const Spinner = styled.div<CustomSpinnerProps>`
     transform: rotate(45deg);
     border-radius: 50%;
     border-width: ${({ fillWidth }) => fillWidth}
-    border-color: ${({ color, negativeColor, styling }) => (styling === 'negative' ? negativeColor : color)}
+    border-color: ${({ color, negativeColor, styling = 'primary' }) => (styling === 'negative' ? negativeColor : color)}
     border-style: solid;
     border-right: 0.25em solid transparent;
     border-bottom: 0.25em solid transparent;
@@ -78,18 +76,20 @@ const Spinner = styled.div<CustomSpinnerProps>`
   }
 `;
 
-const CustomSpinner = ({ size, styling }: CustomSpinnerProps) => {
+const CustomSpinner = ({ size, styling }: SpinnerProps) => {
   const theme = useThemeContext();
-
+  if (!theme.spinner.customSpinner) {
+    throw Error("If spinner theme isn't Zopa themed props need to be defined");
+  }
   return (
-    <CustomSpinnerContainer size={size}>
-      <Spinner
+    <AnimationContainer size={size}>
+      <SpinnerAnimation
         size={size}
         styling={styling}
-        color={theme.spinner.customSpinner?.color}
-        negativeColor={theme.spinner.customSpinner?.negativeColor}
-        fillWidth={theme.spinner.customSpinner?.fillWidth}
-        speed={theme.spinner.customSpinner?.speed}
+        color={theme.spinner.customSpinner.color}
+        negativeColor={theme.spinner.customSpinner.negativeColor}
+        fillWidth={theme.spinner.customSpinner.fillWidth}
+        speed={theme.spinner.customSpinner.speed}
         aria-label="loading spinner"
       >
         <div className="circle circle-1">
@@ -98,8 +98,8 @@ const CustomSpinner = ({ size, styling }: CustomSpinnerProps) => {
         <div className="circle circle-2">
           <div className="circle-inner"></div>
         </div>
-      </Spinner>
-    </CustomSpinnerContainer>
+      </SpinnerAnimation>
+    </AnimationContainer>
   );
 };
 
