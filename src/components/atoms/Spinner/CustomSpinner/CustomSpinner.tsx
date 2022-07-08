@@ -3,13 +3,6 @@ import styled from 'styled-components';
 import { useThemeContext } from '../../../styles/Theme';
 import { SpinnerProps } from '../Spinner';
 
-export interface CustomSpinnerProps {
-  color: string;
-  negativeColor: string;
-  fillWidth: string;
-  speed: number;
-}
-
 const AnimationContainer = styled.div<{ size: SpinnerProps['size'] }>`
   width: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
   height: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
