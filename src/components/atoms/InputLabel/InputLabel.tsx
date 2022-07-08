@@ -4,6 +4,7 @@ import { colors, typography } from '../../../constants';
 import { AppTheme, useThemeContext } from '../../styles/Theme';
 
 export interface InputLabelProps extends HTMLAttributes<HTMLLabelElement> {
+  children?: React.ReactNode;
   /**
    * Define the associated input identifier
    */
@@ -21,7 +22,7 @@ const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const InputLabel: FC<InputLabelProps> = (props) => {
+export const InputLabel: InputLabelProps = (props) => {
   const theme = useThemeContext();
 
   return <StyledInputLabel {...props} theme={theme} />;

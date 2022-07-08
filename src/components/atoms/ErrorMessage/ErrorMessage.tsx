@@ -37,10 +37,11 @@ const IconWrapper = styled.span`
 `;
 
 type ErrorMessageProps = {
+  children?: React.ReactNode;
   className?: string;
 };
 
-const ErrorMessage: FC<ErrorMessageProps> = ({ children, className, ...rest }) => {
+const ErrorMessage: ErrorMessageProps = ({ children, className, ...rest }) => {
   const theme = useThemeContext();
   return (
     <StyledErrorMessage className={className} {...rest} theme={theme}>

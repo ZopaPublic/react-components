@@ -9,7 +9,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parserOptions: {
-    project: ['tsconfig.json'],
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
@@ -37,7 +36,24 @@ module.exports = {
     'react/display-name': 'off',
     'react/no-unescaped-entities': 'off', // TODO: needs research
     'react/prop-types': 'off',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          FC:
+            "Don't use React.FC because it is unsafe. See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/",
+          OldAPI: {
+            message: 'Use children?: React.ReactNode instead',
+          },
+
+          // un-ban a type that's banned by default
+          '{}': false,
+        },
+        extendDefaults: true,
+      },
+    ],
   },
+
   settings: {
     react: {
       version: 'detect',

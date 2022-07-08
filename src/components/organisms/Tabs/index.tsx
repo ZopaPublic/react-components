@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 import TabsContainer, { TabsProps } from './TabsContainer/TabsContainer';
 import TabContent from './TabContent/TabContent';
@@ -9,7 +9,7 @@ interface TabsStatic {
   Buttons: typeof TabButtons;
 }
 
-export const Tabs: TabsStatic & FC<TabsProps> = (props) => <TabsContainer {...props} />;
+export const Tabs: TabsStatic & TabsProps = (props) => <TabsContainer {...props} />;
 
 Tabs.Content = TabContent;
 Tabs.Buttons = TabButtons;

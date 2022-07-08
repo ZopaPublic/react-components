@@ -5,6 +5,7 @@ import Text from '../../../atoms/Text/Text';
 import { useAccordionContext } from '../context';
 
 export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
+  children?: React.ReactNode;
   id: string;
   index: number;
   textSize?: 'body' | 'small';
@@ -63,7 +64,7 @@ const Cross = styled.span<{ active: boolean }>`
   }
 `;
 
-const AccordionHeader: FC<AccordionHeader> = ({ children, id, index, textSize = 'body', onClick, ...rest }) => {
+const AccordionHeader = ({ children, id, index, textSize = 'body', onClick, ...rest }: AccordionHeader) => {
   const { getHeaderProps, isActiveSection } = useAccordionContext();
   const { ref, onClick: contextOnClick, ...headerPropsRest } = getHeaderProps(id, index);
 

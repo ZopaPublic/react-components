@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { colors } from '../../../../constants';
 import styled from 'styled-components';
 
@@ -42,9 +42,10 @@ const ListComponent = styled.ul<ListProps>`
 `;
 
 export interface ListProps extends HTMLAttributes<HTMLUListElement | HTMLOListElement> {
+  children?: React.ReactNode;
   as?: 'ul' | 'ol';
 }
 
-const List: FC<ListProps> = ({ ...props }) => <ListComponent {...props} />;
+const List: ListProps = ({ ...props }) => <ListComponent {...props} />;
 
 export default List;

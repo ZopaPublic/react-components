@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -124,7 +124,7 @@ const ChevronContainer = styled.span<ChevronContainerProps>`
   `}
 `;
 
-const NavbarLink: FC<NavbarLinkProps> = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
+const NavbarLink: NavbarLinkProps = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
   (
     {
       active = false,

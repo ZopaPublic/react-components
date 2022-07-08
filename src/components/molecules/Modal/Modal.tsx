@@ -14,7 +14,7 @@ export interface ModalProps extends ReactModal.Props {
   children: ReactElement<CardProps>;
 }
 
-type ModalComponent = FC<ModalProps> & {
+type ModalComponent = ModalProps & {
   Styles: typeof ModalStyles;
   setAppElement: typeof ReactModal.setAppElement;
 };

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Logo from './Logo/Logo';
 import Stars, { TrustPilotStarsProps } from './Stars/Stars';
 
@@ -10,7 +10,7 @@ type TrustpilotStatic = {
 /**
  * @visibleName Trustpilot
  */
-const Trustpilot: TrustpilotStatic & FC<TrustPilotStarsProps> = ({ rating, className }) => (
+const Trustpilot: TrustpilotStatic & TrustPilotStarsProps = ({ rating, className }) => (
   <div className={className}>
     <Logo className="mr-1" />
     <Stars className="ml-1" rating={rating} />

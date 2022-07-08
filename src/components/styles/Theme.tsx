@@ -6,7 +6,7 @@ import {
   fas,
 } from '@fortawesome/free-solid-svg-icons';
 import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
-import React, { FC } from 'react';
+import React from 'react';
 import { colors } from '../../constants/colors';
 import { typography } from '../../constants/typography';
 import Icon from '../atoms/Icon/Icon';
@@ -47,7 +47,7 @@ type AlertTheme = Record<
     background: string;
     border: string;
     text: string;
-    component?: FC;
+    component?: React.ReactNode;
     faVariant?: { prefix: IconPrefix; iconName: IconName };
     customVariant?: { iconName: CustomIconVariant; color: string };
   }

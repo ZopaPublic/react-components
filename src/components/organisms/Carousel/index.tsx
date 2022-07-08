@@ -10,7 +10,7 @@ interface CarouselStatic {
   SlideText: typeof SlideText;
 }
 
-export const Carousel: CarouselStatic & FC<CarouselComponentProps> = (props) => <CarouselComponent {...props} />;
+export const Carousel: CarouselStatic & CarouselComponentProps = (props) => <CarouselComponent {...props} />;
 
 Carousel.Slide = Slide;
 Carousel.SlideIcon = SlideIcon;

@@ -1,19 +1,20 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { colors } from '../../../../constants';
 import Heading, { OptionalHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
 
 interface CardHeadingProps extends OptionalHeadingProps {
+  children?: React.ReactNode;
   as?: HeadingTags;
 }
 
-const CardHeading: FC<CardHeadingProps> = ({
+const CardHeading = ({
   children,
   size = 'h6',
   as = 'h2',
   color = colors.greyDarkest,
   className,
   ...rest
-}) => (
+}: CardHeadingProps) => (
   <Heading as={as} size={size} color={color} className={`zrc__card-heading ${className}`} {...rest}>
     {children}
   </Heading>

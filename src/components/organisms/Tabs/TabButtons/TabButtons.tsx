@@ -1,4 +1,4 @@
-import React, { useEffect, FC, ChangeEvent, useCallback } from 'react';
+import React, { useEffect, ChangeEvent, useCallback } from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
@@ -26,7 +26,7 @@ const StyledDropdown = styled(Dropdown)`
   width: 100%;
 `;
 
-const TabButtons: FC<TabButtonsProps> = ({
+const TabButtons: TabButtonsProps = ({
   tabButtons,
   defaultTab,
   'data-automation': dataAutomation,

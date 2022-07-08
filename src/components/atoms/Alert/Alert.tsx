@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { IconLookup, IconDefinition, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
@@ -9,6 +9,7 @@ import ExclamationIcon from '../../styles/icons/exclamation';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
+  children?: React.ReactNode;
   severity?: Severity;
   inline?: boolean;
   hasRoundedCorners?: boolean;
@@ -60,14 +61,14 @@ const CrossIcon = styled(Icon)`
   top: 10px;
 `;
 
-const Alert: FC<AlertProps> = ({
+const Alert = ({
   severity = 'info',
   inline = false,
   onRequestClose,
   children,
   hasRoundedCorners = false,
   ...rest
-}) => {
+}: AlertProps) => {
   const theme = useThemeContext();
   const { component: IconComponent, text, faVariant, customVariant } = theme.alert[severity];
   let iconDefinition, CustomIcon;
