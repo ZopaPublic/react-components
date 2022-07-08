@@ -56,6 +56,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-react: ^7.30.0
+  eslint-plugin-unused-imports: ^2.0.0
   file-loader: ^6.2.0
   formik: ^2.2.0
   husky: ^8.0.0
@@ -150,6 +151,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.19.0
   eslint-plugin-prettier: 4.0.0_6fmdqecfckhuhsnjtk3xo3sp7y
   eslint-plugin-react: 7.30.0_eslint@8.19.0
+  eslint-plugin-unused-imports: 2.0.0_2qnhihxljl7h6kuwc6oxojgpui
   file-loader: 6.2.0_webpack@5.73.0
   husky: 8.0.1
   jest-axe: 4.1.0
@@ -7378,6 +7380,26 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: true
+
+  /eslint-plugin-unused-imports/2.0.0_2qnhihxljl7h6kuwc6oxojgpui:
+    resolution: {integrity: sha512-3APeS/tQlTrFa167ThtP0Zm0vctjr4M44HMpeg1P4bK6wItarumq0Ma82xorMKdFsWpphQBlRPzw/pxiVELX1A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.0.0
+      eslint: ^8.0.0
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.27.0_6sd2nwij5sl4csrpomv722ecee
+      eslint: 8.19.0
+      eslint-rule-composer: 0.3.0
+    dev: true
+
+  /eslint-rule-composer/0.3.0:
+    resolution: {integrity: sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==}
+    engines: {node: '>=4.0.0'}
     dev: true
 
   /eslint-scope/5.1.1:

@@ -1,5 +1,5 @@
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import React, { Children, cloneElement, FC, isValidElement, useState } from 'react';
+import React, { Children, cloneElement, isValidElement, useState } from 'react';
 import { colors } from '../../../../constants/colors';
 import Icon from '../../../atoms/Icon/Icon';
 import Link from '../../../atoms/Link/Link';

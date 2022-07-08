@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import ReactModal, { setAppElement } from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
@@ -6,7 +6,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
 import { spacing } from '../../../constants/spacing';
-import { CardProps } from '../../organisms/Card/Card/Card';
 
 export interface ModalProps extends ReactModal.Props {
   showCloseButton?: boolean;

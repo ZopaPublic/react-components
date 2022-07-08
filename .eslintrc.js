@@ -46,8 +46,9 @@ module.exports = {
         extendDefaults: true,
       },
     ],
+    'unused-imports/no-unused-imports': 'error',
   },
-
+  plugins: ['unused-imports'],
   settings: {
     react: {
       version: 'detect',

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { IconLookup, IconDefinition, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { IconLookup, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Icon from '../Icon/Icon';
 import { typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';

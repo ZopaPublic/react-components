@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
-import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
+import NavbarLink from '../NavbarLink/NavbarLink';
 
 const NavbarDropdownContainer = styled.li`
   position: relative;

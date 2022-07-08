@@ -3,7 +3,7 @@ import Logo from '../../atoms/Logo/Logo';
 import Link, { LinkProps } from '../../atoms/Link/Link';
 import { typography } from '../../../constants';
 import styled, { css } from 'styled-components';
-import React, { HTMLAttributes, FC } from 'react';
+import React, { HTMLAttributes } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import { useThemeContext } from '../../styles/Theme';

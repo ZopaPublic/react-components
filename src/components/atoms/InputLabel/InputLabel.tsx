@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, FC } from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { AppTheme, useThemeContext } from '../../styles/Theme';

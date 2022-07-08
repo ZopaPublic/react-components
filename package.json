@@ -104,6 +104,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "file-loader": "^6.2.0",
     "husky": "^8.0.0",
     "jest-axe": "4.1.0",

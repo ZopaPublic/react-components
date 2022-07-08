@@ -1,4 +1,3 @@
-import React from 'react';
 import CarouselComponent from './Carousel/Carousel';
 import Slide from './CarouselSlide/CarouselSlide';
 import SlideIcon from './CarouselSlideIcon/CarouselSlideIcon';
