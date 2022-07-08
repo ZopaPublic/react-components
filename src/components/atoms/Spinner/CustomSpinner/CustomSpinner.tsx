@@ -1,9 +1,9 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { useThemeContext } from '../../../styles/Theme';
 import { SpinnerProps } from '../Spinner';
 
-export interface CustomSpinnerProps extends SpinnerProps {
+export interface CustomSpinnerProps {
   color: string;
   negativeColor: string;
   fillWidth: string;
@@ -15,11 +15,11 @@ const AnimationContainer = styled.div<{ size: SpinnerProps['size'] }>`
   height: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
 `;
 
-const SpinnerAnimation = styled.div<CustomSpinnerProps>`
+const SpinnerAnimation = styled.div<SpinnerProps>`
   box-sizing: border-box;
   display: inline-block;
   animation-name: anim-spinner;
-  animation-duration: ${({ speed = 0.6 }) => `${speed}s`};;
+  animation-duration: ${({ theme }) => `${theme.spinner.customSpinner.speed}s`};;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   margin: 0;
@@ -31,8 +31,9 @@ const SpinnerAnimation = styled.div<CustomSpinnerProps>`
   .circle-inner {
     transform: rotate(45deg);
     border-radius: 50%;
-    border-width: ${({ fillWidth }) => fillWidth}
-    border-color: ${({ color, negativeColor, styling = 'primary' }) => (styling === 'negative' ? negativeColor : color)}
+    border-width: ${({ theme }) => theme.spinner.customSpinner.fillWidth}
+    border-color: ${({ theme, styling = 'primary' }) =>
+      styling === 'negative' ? theme.spinner.customSpinner.negativeColor : theme.spinner.customSpinner.color}
     border-style: solid;
     border-right: 0.25em solid transparent;
     border-bottom: 0.25em solid transparent;
@@ -78,20 +79,9 @@ const SpinnerAnimation = styled.div<CustomSpinnerProps>`
 
 const CustomSpinner = ({ size, styling }: SpinnerProps) => {
   const theme = useThemeContext();
-  if (!theme.spinner.customSpinner) {
-    throw Error("If spinner theme isn't Zopa themed props need to be defined");
-  }
   return (
     <AnimationContainer size={size}>
-      <SpinnerAnimation
-        size={size}
-        styling={styling}
-        color={theme.spinner.customSpinner.color}
-        negativeColor={theme.spinner.customSpinner.negativeColor}
-        fillWidth={theme.spinner.customSpinner.fillWidth}
-        speed={theme.spinner.customSpinner.speed}
-        aria-label="loading spinner"
-      >
+      <SpinnerAnimation size={size} styling={styling} aria-label="loading spinner" theme={theme}>
         <div className="circle circle-1">
           <div className="circle-inner"></div>
         </div>
