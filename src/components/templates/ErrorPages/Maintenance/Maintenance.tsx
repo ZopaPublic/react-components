@@ -13,7 +13,7 @@ import { HelpLine, HelpLineDetails } from '../../../molecules/Help/Help';
 import { ErrorTemplateProps } from '../types';
 import { StyledIcon } from '../styles';
 
-interface MaintenanceFiveHundredErrorProps extends ErrorTemplateProps {
+export interface MaintenanceFiveHundredErrorProps extends ErrorTemplateProps {
   helpLine?: HelpLine;
 }
 

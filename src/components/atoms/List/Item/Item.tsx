@@ -2,7 +2,7 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import styled from 'styled-components';
 import Icon from '../../Icon/Icon';
 
-interface ItemProps extends HTMLAttributes<HTMLLIElement> {
+export interface ItemProps extends HTMLAttributes<HTMLLIElement> {
   children?: React.ReactNode;
   icon?: typeof Icon | ReactNode;
 }

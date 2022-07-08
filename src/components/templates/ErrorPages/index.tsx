@@ -5,17 +5,14 @@ import Four0FourTemplate from './Four0Four/Four0Four';
 import FiveHundredTemplate from './FiveHundred/FiveHundred';
 import MaintenanceTemplate from './Maintenance/Maintenance';
 
-interface ErrorTemplateStatic {
+interface ErrorTemplateProps {
   children: React.ReactNode;
-  Four0Four: typeof Four0FourTemplate;
-  FiveHundred: typeof FiveHundredTemplate;
-  Maintenance: typeof MaintenanceTemplate;
 }
 
-const ErrorTemplate = ({ children }: ErrorTemplateStatic) => <ErrorPageTemplate>{children}</ErrorPageTemplate>;
+const ErrorTemplate = ({ children }: ErrorTemplateProps) => <ErrorPageTemplate>{children}</ErrorPageTemplate>;
 
-ErrorTemplate.Four0Four = Four0FourTemplate;
-ErrorTemplate.FiveHundred = FiveHundredTemplate;
-ErrorTemplate.Maintenance = MaintenanceTemplate;
-
-export default ErrorTemplate;
+export default Object.assign(ErrorTemplate, {
+  Four0Four: Four0FourTemplate,
+  FiveHundred: FiveHundredTemplate,
+  Maintenance: MaintenanceTemplate,
+});

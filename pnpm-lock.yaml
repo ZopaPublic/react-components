@@ -63,10 +63,12 @@ specifiers:
   jest-axe: 4.1.0
   jest-junit: 10.0.0
   jest-styled-components: 6.3.4
+  kleur: ^4.1.5
   lint-staged: 10.2.11
   lodash.throttle: ^4.1.1
   prettier: 2.0.5
   react: ^17
+  react-dev-utils: ^12.0.1
   react-docgen-typescript: ^2.2.2
   react-dom: ^17
   react-headroom: ^3.0.0
@@ -157,9 +159,11 @@ devDependencies:
   jest-axe: 4.1.0
   jest-junit: 10.0.0
   jest-styled-components: 6.3.4_styled-components@4.4.1
+  kleur: 4.1.5
   lint-staged: 10.2.11
   prettier: 2.0.5
   react: 17.0.2
+  react-dev-utils: 12.0.1_f5q2563lacwpetuipiywk3pjhq
   react-docgen-typescript: 2.2.2_typescript@4.7.2
   react-dom: 17.0.2_react@17.0.2
   react-scripts: 5.0.1_nwvx2mabmhnuayd4efmuzrgyby
@@ -8496,7 +8500,7 @@ packages:
     dev: true
 
   /global-prefix/1.0.2:
-    resolution: {integrity: sha1-2/dDxsFJklk8ZVVoy2btMsASLr4=}
+    resolution: {integrity: sha512-5lsx1NUDHtSjfg0eHlmYvZKv8/nVqX4ckFbM+FrGcQ+04KWcWFo9P5MxPZYSzUvyzmdTbI7Eix8Q4IbELDqzKg==}
     engines: {node: '>=0.10.0'}
     dependencies:
       expand-tilde: 2.0.2
@@ -10537,6 +10541,11 @@ packages:
 
   /kleur/3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+    dev: true
+
+  /kleur/4.1.5:
+    resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
     dev: true
 

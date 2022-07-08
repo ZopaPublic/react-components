@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { useTabsContext } from '../hooks/useTabsContext';
 
-interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   contentFor: string;
 }

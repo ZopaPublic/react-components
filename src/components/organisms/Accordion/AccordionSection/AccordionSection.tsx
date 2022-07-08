@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { useAccordionContext } from '../context';
 
-interface AccordionSectionProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AccordionSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   id: string;
   index: number;
 }

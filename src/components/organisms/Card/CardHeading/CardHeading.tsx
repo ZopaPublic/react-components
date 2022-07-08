@@ -2,7 +2,7 @@ import React from 'react';
 import { colors } from '../../../../constants';
 import Heading, { OptionalHeadingProps, HeadingTags } from '../../../atoms/Heading/Heading';
 
-interface CardHeadingProps extends OptionalHeadingProps {
+export interface CardHeadingProps extends OptionalHeadingProps {
   children?: React.ReactNode;
   as?: HeadingTags;
 }

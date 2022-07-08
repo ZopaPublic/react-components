@@ -10,7 +10,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { useTabsContext } from '../hooks/useTabsContext';
 import TabButton, { TabButtonProps } from '../TabButton/TabButton';
 
-interface TabButtonsProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface TabButtonsProps extends React.HTMLAttributes<HTMLDivElement> {
   tabButtons: TabButtonProps[];
   defaultTab?: string;
   'data-automation'?: string;

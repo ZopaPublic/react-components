@@ -12,7 +12,7 @@ import { colors } from '../../../../constants';
 import { ErrorTemplateProps } from '../types';
 import { StyledIcon, StyledLink } from '../styles';
 
-interface FiveHundredErrorProps extends ErrorTemplateProps {
+export interface FiveHundredErrorProps extends ErrorTemplateProps {
   linkUrl?: string;
   linkText?: string;
 }
