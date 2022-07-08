@@ -17,7 +17,7 @@ interface MaintenanceFiveHundredErrorProps extends ErrorTemplateProps {
   helpLine?: HelpLine;
 }
 
-const Maintenance: React.FC<MaintenanceFiveHundredErrorProps> = ({ helpLine = HelpLine.borrowers, icon = faTools }) => {
+const Maintenance = ({ helpLine = HelpLine.borrowers, icon = faTools }: MaintenanceFiveHundredErrorProps) => {
   const { width = 0 } = useViewport();
   return (
     <div data-automation="ZA.ErrorPage.Maintenance">

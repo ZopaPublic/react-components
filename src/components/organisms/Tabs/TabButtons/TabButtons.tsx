@@ -26,13 +26,13 @@ const StyledDropdown = styled(Dropdown)`
   width: 100%;
 `;
 
-const TabButtons: TabButtonsProps = ({
+const TabButtons = ({
   tabButtons,
   defaultTab,
   'data-automation': dataAutomation,
   className,
   ...rest
-}) => {
+}: TabButtonsProps) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
   const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => {

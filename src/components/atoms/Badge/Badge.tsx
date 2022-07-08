@@ -52,7 +52,7 @@ const StyledBadge = styled(Text).attrs({
   border-radius: 12px;
 `;
 
-const Badge: React.FC<BadgeProps> = ({ children, styling, ...rest }) => {
+const Badge = ({ children, styling, ...rest }: BadgeProps) => {
   return (
     <StyledBadge styling={styling} {...rest}>
       {children}

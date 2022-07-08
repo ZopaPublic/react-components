@@ -3,13 +3,8 @@ import React from 'react';
 import Navbar, { NavbarProps } from './Navbar/Navbar';
 import NavbarAction from './NavbarAction/NavbarAction';
 
-interface NavbarStatic {
-  Action: typeof NavbarAction;
-}
+const NavbarWrapper = (props: NavbarProps) => <Navbar {...props} />;
 
-const NavbarWrapper: NavbarStatic & NavbarProps = (props) => <Navbar {...props} />;
+export default Object.assign(NavbarWrapper, { Action: NavbarAction });
 
-NavbarWrapper.Action = NavbarAction;
-
-export default NavbarWrapper;
 export { navbarLinkStyles } from './NavbarLink/NavbarLink';

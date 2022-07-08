@@ -17,11 +17,11 @@ interface FiveHundredErrorProps extends ErrorTemplateProps {
   linkText?: string;
 }
 
-const FiveHundred: React.FC<FiveHundredErrorProps> = ({
+const FiveHundred = ({
   icon = faTools,
   linkUrl = 'https://www.zopa.com',
   linkText = 'Go to Zopa home',
-}) => {
+}: FiveHundredErrorProps) => {
   const { width = 0 } = useViewport();
 
   return (

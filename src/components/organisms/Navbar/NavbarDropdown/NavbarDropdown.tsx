@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { isArrowDown, isArrowUp, isEnter, isEscape, isSpace } from '../../../../helpers/keyboard-keys';
 import { mod } from '../../../../helpers/utils';
 import NavbarDropdownList from './NavbarDropdownList/NavbarDropdownList';
-import NavbarLink from '../NavbarLink/NavbarLink';
+import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 
 const NavbarDropdownContainer = styled.li`
   position: relative;
@@ -19,7 +19,7 @@ export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDi
 export interface OpenerProps {
   'aria-expanded': boolean;
   'aria-haspopup': true;
-  ref: React.RefObject<ButtonLinkElement>;
+  ref: React.RefObject<any>;
   onClick: React.EventHandler<React.MouseEvent>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   tabIndex: number;
@@ -28,7 +28,7 @@ export interface OpenerProps {
 export type Item = any;
 
 export interface ItemProps {
-  ref: React.RefObject<HTMLLIElement>;
+  ref?: any;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   tabIndex: number;
 }

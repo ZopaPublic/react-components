@@ -22,7 +22,7 @@ const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const InputLabel: InputLabelProps = (props) => {
+export const InputLabel = (props: InputLabelProps) => {
   const theme = useThemeContext();
 
   return <StyledInputLabel {...props} theme={theme} />;

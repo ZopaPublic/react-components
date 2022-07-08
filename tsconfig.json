@@ -17,8 +17,8 @@
     "isolatedModules": true,
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["node", "jest"],
-    "incremental": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "incremental": false,
     "assumeChangesOnlyAffectDirectDependencies": true
   },
   "include": ["src/**/*"],

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { faMinusCircle } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
@@ -41,7 +41,7 @@ type ErrorMessageProps = {
   className?: string;
 };
 
-const ErrorMessage: ErrorMessageProps = ({ children, className, ...rest }) => {
+const ErrorMessage = ({ children, className, ...rest }: ErrorMessageProps) => {
   const theme = useThemeContext();
   return (
     <StyledErrorMessage className={className} {...rest} theme={theme}>

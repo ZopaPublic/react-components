@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors, spacing } from '../../../../constants';
 import Text from '../../../atoms/Text/Text';

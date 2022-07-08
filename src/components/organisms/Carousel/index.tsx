@@ -1,17 +1,11 @@
-import React, { FC } from 'react';
-import CarouselComponent, { CarouselComponentProps } from './Carousel/Carousel';
+import React from 'react';
+import CarouselComponent from './Carousel/Carousel';
 import Slide from './CarouselSlide/CarouselSlide';
 import SlideIcon from './CarouselSlideIcon/CarouselSlideIcon';
 import SlideText from './CarouselSlideText/CarouselSlideText';
 
-interface CarouselStatic {
-  Slide: typeof Slide;
-  SlideIcon: typeof SlideIcon;
-  SlideText: typeof SlideText;
-}
-
-export const Carousel: CarouselStatic & CarouselComponentProps = (props) => <CarouselComponent {...props} />;
-
-Carousel.Slide = Slide;
-Carousel.SlideIcon = SlideIcon;
-Carousel.SlideText = SlideText;
+export const Carousel = Object.assign(CarouselComponent, {
+  Slide: Slide,
+  SlideIcon: SlideIcon,
+  SlideText: SlideText,
+});

@@ -88,7 +88,7 @@ const getStepPosition = (steps: number, stepIndex: number) => {
   return position;
 };
 
-const Progress: React.FC<ProgressProps> = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }) => {
+const Progress = ({ totalSteps, currentStep, withStep = false, progressColor, ...rest }: ProgressProps) => {
   const theme = useThemeContext();
   const renderPoints = () => {
     return [...Array(totalSteps).keys()].map((stepPoint) => {

@@ -39,7 +39,7 @@ const CopyText = styled(Button)`
   }
 `;
 
-const BankDetails: React.FC<BankDetailsProps> = ({ children, copyText = '', className, ...props }) => {
+const BankDetails = ({ children, copyText = '', className, ...props }: BankDetailsProps) => {
   const [isCopied, setCopied] = useClipboard(copyText, {
     successDuration: 2000,
   });

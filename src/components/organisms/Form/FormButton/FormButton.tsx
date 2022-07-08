@@ -7,7 +7,7 @@ export interface FormButtonProps extends ButtonProps {
   disabled?: boolean;
 }
 
-const FormButton: FormButtonProps = ({ disabled, ...rest }) => {
+const FormButton = ({ disabled, ...rest }: FormButtonProps) => {
   const { isValid } = useFormikContext();
   return <Button type="submit" disabled={!isValid || disabled} {...rest} />;
 };

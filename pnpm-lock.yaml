@@ -37,6 +37,7 @@ specifiers:
   '@types/react-headroom': ^2.2.1
   '@types/react-modal': ^3.10.6
   '@types/styled-components': ^5.1.25
+  '@types/testing-library__jest-dom': ^5.14.5
   '@types/util-deprecate': ^1.0.0
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
@@ -136,6 +137,7 @@ devDependencies:
   '@types/react': 17.0.45
   '@types/react-dom': 17.0.17
   '@types/styled-components': 5.1.25
+  '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.27.0_6sd2nwij5sl4csrpomv722ecee
   '@typescript-eslint/parser': 5.27.0_zpzacc62woteiyw3qqs3jt347e
   babel-loader: 8.2.5_dzrarqmejens5o5lr5bdn3kdtu
@@ -3121,7 +3123,7 @@ packages:
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.18.3
-      '@types/testing-library__jest-dom': 5.14.0
+      '@types/testing-library__jest-dom': 5.14.5
       aria-query: 4.2.2
       chalk: 3.0.0
       css: 3.0.0
@@ -3563,8 +3565,8 @@ packages:
     resolution: {integrity: sha512-ipixuVrh2OdNmauvtT51o3d8z12p6LtFW9in7U79der/kwejjdNchQC5UMn5u/KxNoM7VHHOs/l8KS8uHxhODQ==}
     dev: true
 
-  /@types/testing-library__jest-dom/5.14.0:
-    resolution: {integrity: sha512-l2P2GO+hFF4Liye+fAajT1qBqvZOiL79YMpEvgGs1xTK7hECxBI8Wz4J7ntACJNiJ9r0vXQqYovroXRLPDja6A==}
+  /@types/testing-library__jest-dom/5.14.5:
+    resolution: {integrity: sha512-SBwbxYoyPIvxHbeHxTZX2Pe/74F/tX2/D3mMvzabdeJ25bBojfW0TyB8BHrbq/9zaaKICJZjLP+8r6AeZMFCuQ==}
     dependencies:
       '@types/jest': 26.0.24
     dev: true
@@ -10391,7 +10393,7 @@ packages:
   /jsonfile/4.0.0:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}
     optionalDependencies:
-      graceful-fs: 4.2.6
+      graceful-fs: 4.2.10
     dev: true
 
   /jsonfile/6.0.1:
@@ -10399,7 +10401,7 @@ packages:
     dependencies:
       universalify: 1.0.0
     optionalDependencies:
-      graceful-fs: 4.2.4
+      graceful-fs: 4.2.10
     dev: true
 
   /jsonfile/6.1.0:

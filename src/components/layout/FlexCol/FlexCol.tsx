@@ -89,10 +89,6 @@ const StyledFlexCol = styled.div<FlexCol>`
       })}
 `;
 
-const FlexCol: FlexCol = (props) => <StyledFlexCol {...props} />;
-
-FlexCol.defaultProps = {
-  align: 'auto',
-};
+const FlexCol = ({ align = 'auto', ...rest }: FlexCol) => <StyledFlexCol {...rest} align={align} />;
 
 export default FlexCol;

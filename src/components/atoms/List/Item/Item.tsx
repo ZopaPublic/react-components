@@ -14,7 +14,7 @@ const ItemComponent = styled.li`
   padding: 0;
 `;
 
-const Item: ItemProps = ({ icon, className = '', children, ...rest }) => (
+const Item = ({ icon, className = '', children, ...rest }: ItemProps) => (
   <ItemComponent className={`${icon ? 'has-icon ' : ''}${className}`} {...rest}>
     {icon}
     {children}

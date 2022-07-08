@@ -110,7 +110,7 @@ const StyledWrapper = styled(ButtonWrapper)`
   ${buttonStyle}
 `;
 
-const Button: React.FC<ButtonProps> = ({ children, loading, styling = 'primary', disabled, ...rest }) => {
+const Button = ({ children, loading, styling = 'primary', disabled, ...rest }: ButtonProps) => {
   const theme = useThemeContext();
   const isLoading = styling !== 'link' ? loading : undefined;
 

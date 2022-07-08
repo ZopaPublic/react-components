@@ -40,14 +40,8 @@ module.exports = {
       'error',
       {
         types: {
-          FC:
-            "Don't use React.FC because it is unsafe. See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/",
-          OldAPI: {
-            message: 'Use children?: React.ReactNode instead',
-          },
-
-          // un-ban a type that's banned by default
-          '{}': false,
+          FC: 'See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/',
+          'React.FC': 'See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/',
         },
         extendDefaults: true,
       },

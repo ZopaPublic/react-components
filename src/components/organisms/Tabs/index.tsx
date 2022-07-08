@@ -3,15 +3,10 @@ import React from 'react';
 import TabsContainer, { TabsProps } from './TabsContainer/TabsContainer';
 import TabContent from './TabContent/TabContent';
 import TabButtons from './TabButtons/TabButtons';
+import { ProductTemplateCard } from '../../templates/ProductTemplate/ProductTemplateCard/ProductTemplateCard';
 
-interface TabsStatic {
-  Content: typeof TabContent;
-  Buttons: typeof TabButtons;
-}
+const TabsMain = (props: TabsProps) => <TabsContainer {...props} />;
 
-export const Tabs: TabsStatic & TabsProps = (props) => <TabsContainer {...props} />;
-
-Tabs.Content = TabContent;
-Tabs.Buttons = TabButtons;
+export const Tabs = Object.assign(TabsMain, { Content: TabContent, Buttons: TabButtons });
 
 export * from './hooks';

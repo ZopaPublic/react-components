@@ -6,14 +6,13 @@ import FiveHundredTemplate from './FiveHundred/FiveHundred';
 import MaintenanceTemplate from './Maintenance/Maintenance';
 
 interface ErrorTemplateStatic {
+  children: React.ReactNode;
   Four0Four: typeof Four0FourTemplate;
   FiveHundred: typeof FiveHundredTemplate;
   Maintenance: typeof MaintenanceTemplate;
 }
 
-const ErrorTemplate: ErrorTemplateStatic & React.FC = ({ children }) => (
-  <ErrorPageTemplate>{children}</ErrorPageTemplate>
-);
+const ErrorTemplate = ({ children }: ErrorTemplateStatic) => <ErrorPageTemplate>{children}</ErrorPageTemplate>;
 
 ErrorTemplate.Four0Four = Four0FourTemplate;
 ErrorTemplate.FiveHundred = FiveHundredTemplate;

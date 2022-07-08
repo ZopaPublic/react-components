@@ -5,7 +5,11 @@ import FlexRow from '../../../layout/FlexRow/FlexRow';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { ProductTemplateCard } from '../../ProductTemplate/ProductTemplateCard/ProductTemplateCard';
 
-const ErrorTemplate: React.FC = ({ children }) => {
+interface ErrorTemplateProps {
+  children: React.ReactNode;
+}
+
+const ErrorTemplate = ({ children }: ErrorTemplateProps) => {
   return (
     <FlexContainer data-automation="ZA.ErrorPageTemplate" gutter={0}>
       <FlexRow justify="center" gutter={0}>

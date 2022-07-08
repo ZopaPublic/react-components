@@ -124,7 +124,7 @@ const ChevronContainer = styled.span<ChevronContainerProps>`
   `}
 `;
 
-const NavbarLink: NavbarLinkProps = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
+const NavbarLink = React.forwardRef<HTMLAnchorElement, NavbarLinkProps>(
   (
     {
       active = false,

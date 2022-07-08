@@ -8,7 +8,7 @@ export interface FormSectionProps {
   subtitle?: string;
 }
 
-const FormSection: FormSectionProps = ({ title, subtitle, children }) => {
+const FormSection = ({ title, subtitle, children }: FormSectionProps) => {
   const childrenLength = Children.count(children);
   return (
     <div className="py-6">

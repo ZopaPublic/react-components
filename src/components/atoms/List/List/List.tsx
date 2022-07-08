@@ -46,6 +46,6 @@ export interface ListProps extends HTMLAttributes<HTMLUListElement | HTMLOListEl
   as?: 'ul' | 'ol';
 }
 
-const List: ListProps = ({ ...props }) => <ListComponent {...props} />;
+const List = ({ ...props }: ListProps) => <ListComponent {...props} />;
 
 export default List;

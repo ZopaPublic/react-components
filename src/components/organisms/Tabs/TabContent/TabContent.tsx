@@ -18,7 +18,7 @@ const ContentContainer = styled.div<TabContentStyleProps>`
   };
 `;
 
-const TabContent: TabContentProps = ({ children, contentFor, ...rest }) => {
+const TabContent = ({ children, contentFor, ...rest }: TabContentProps) => {
   const { activeTab, getTabContentProps } = useTabsContext();
   const contentProps = getTabContentProps(contentFor);
   return (

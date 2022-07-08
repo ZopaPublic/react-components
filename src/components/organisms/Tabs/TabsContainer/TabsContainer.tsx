@@ -3,7 +3,7 @@ import { useTabs, TabsContext } from '../hooks';
 
 export interface TabsProps extends HTMLAttributes<HTMLDivElement> {}
 
-const TabsContainer: TabsProps = ({ children, ...rest }) => {
+const TabsContainer = ({ children, ...rest }: TabsProps) => {
   const context = useTabs();
 
   return (

@@ -25,7 +25,7 @@ const SingleLink = styled.li`
   }
 `;
 
-const NavbarLinksList: React.FC<NavbarLinksListProps> = ({ links, renderLink, setOpen }) => {
+const NavbarLinksList = ({ links, renderLink, setOpen }: NavbarLinksListProps) => {
   return (
     <>
       {links &&

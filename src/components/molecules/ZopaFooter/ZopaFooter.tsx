@@ -1,6 +1,6 @@
 import Text from '../../atoms/Text/Text';
 import Logo from '../../atoms/Logo/Logo';
-import Link from '../../atoms/Link/Link';
+import Link, { LinkProps } from '../../atoms/Link/Link';
 import { typography } from '../../../constants';
 import styled, { css } from 'styled-components';
 import React, { HTMLAttributes, FC } from 'react';
@@ -30,13 +30,13 @@ const StyledLink = styled(Link)`
 
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
-  renderLink?: Record<'href', string> & HTMLAttributes<HTMLAnchorElement>;
+  renderLink?: (props: LinkProps) => React.ReactNode;
   additionalCopy?: string[];
 }
 
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
-  renderLink = (props) => <StyledLink {...props} />,
+  renderLink = (props: LinkProps) => <StyledLink {...props} />,
   additionalCopy = [],
   ...rest
 }: FooterProps) => {

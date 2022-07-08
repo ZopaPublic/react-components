@@ -32,7 +32,7 @@ const animationData: Record<SpinnerStyling, string> = {
   negative: negativeSpinner,
 };
 
-const Spinner: React.FC<SpinnerProps> = (props) => {
+const Spinner = (props: SpinnerProps) => {
   const theme = useThemeContext();
 
   deprecated(props.negative, 'negative prop is deprecated, use styling="negative" instead');
