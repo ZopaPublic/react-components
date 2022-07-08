@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactModal, { setAppElement } from 'react-modal';
+import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -57,6 +57,6 @@ const Modal = ({ children, onRequestClose, showCloseButton = true, hideBackgroun
 );
 
 export default Object.assign(Modal, {
+  setAppElement: ReactModal.setAppElement,
   Styles: ModalStyles,
-  setAppElement: setAppElement,
 });

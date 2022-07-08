@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'clsx';
 import Styled from 'rsg-components/Styled';
 
@@ -40,11 +39,5 @@ function HeadingRenderer({ classes, level, children, ...props }) {
     </Tag>
   );
 }
-
-HeadingRenderer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-  children: PropTypes.node,
-};
 
 export default Styled(styles)(HeadingRenderer);
