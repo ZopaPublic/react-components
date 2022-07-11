@@ -1,3 +1,10 @@
+### [5.32.3](https://github.com/zopaUK/react-components/compare/v5.32.2...v5.32.3) (2022-07-11)
+
+
+### Bug Fixes
+
+* **spinner:** passing theme directly into customspinner ([53afa6c](https://github.com/zopaUK/react-components/commit/53afa6cf0a1e81160225475701a3546f31a9dde5))
+
 ### [5.32.2](https://github.com/zopaUK/react-components/compare/v5.32.1...v5.32.2) (2022-07-07)
 
 
