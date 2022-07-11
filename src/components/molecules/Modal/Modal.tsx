@@ -6,11 +6,12 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { colors } from '../../../constants/colors';
 import styled from 'styled-components';
 import { spacing } from '../../../constants/spacing';
+import { CardProps } from '../../organisms/Card/Card/Card';
 
 export interface ModalProps extends ReactModal.Props {
   showCloseButton?: boolean;
   hideBackground?: boolean;
-  children: React.ReactNode;
+  children: React.ReactElement<CardProps>;
 }
 
 const Button = styled.button`
