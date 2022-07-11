@@ -1,3 +1,10 @@
+### [5.32.4](https://github.com/zopaUK/react-components/compare/v5.32.3...v5.32.4) (2022-07-11)
+
+
+### Bug Fixes
+
+* **spinner:** fixing typos in customspinner ([d039604](https://github.com/zopaUK/react-components/commit/d03960488113b92b5234fe0c9a11a20babcb5417))
+
 ### [5.32.3](https://github.com/zopaUK/react-components/compare/v5.32.2...v5.32.3) (2022-07-11)
 
 
