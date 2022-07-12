@@ -12,7 +12,7 @@ const SpinnerAnimation = styled.div<SpinnerProps>`
   box-sizing: border-box;
   display: inline-block;
   animation-name: anim-spinner;
-  animation-duration: ${({ theme }) => `${theme.spinner.customSpinner.speed}s`};;
+  animation-duration: ${({ theme }) => `${theme.spinner.customSpinner.speed}s`};
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   margin: 0;
@@ -24,16 +24,16 @@ const SpinnerAnimation = styled.div<SpinnerProps>`
   .circle-inner {
     transform: rotate(45deg);
     border-radius: 50%;
-    border-width: ${({ theme }) => theme.spinner.customSpinner.fillWidth}
+    border-width: ${({ theme }) => theme.spinner.customSpinner.fillWidth};
     border-color: ${({ theme, styling = 'primary' }) =>
-      styling === 'negative' ? theme.spinner.customSpinner.negativeColor : theme.spinner.customSpinner.color}
+      styling === 'negative' ? theme.spinner.customSpinner.negativeColor : theme.spinner.customSpinner.color};
     border-style: solid;
     border-right: 0.25em solid transparent;
     border-bottom: 0.25em solid transparent;
     width: 100%;
     height: 200%;
     animation-name: anim-circle-1;
-    animation-duration: 0.7s
+    animation-duration: 0.7s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.5, 1);
@@ -44,7 +44,7 @@ const SpinnerAnimation = styled.div<SpinnerProps>`
   .circle-2 .circle-inner {
     animation-name: anim-circle-2;
   }
- @keyframes anim-circle-1 {
+  @keyframes anim-circle-1 {
     from {
       transform: rotate(60deg);
     }
@@ -59,7 +59,7 @@ const SpinnerAnimation = styled.div<SpinnerProps>`
     to {
       transform: rotate(-115deg);
     }
-  } 
+  }
   @keyframes anim-spinner {
     from {
       transform: rotate(0deg);
