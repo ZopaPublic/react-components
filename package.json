@@ -38,6 +38,7 @@
     "@babel/runtime": "^7.18.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "@semantic-release/npm": "^9.0.1",
     "@tippyjs/react": "^4.2.0",
     "@types/classnames": "^2.2.10",
     "@types/react-headroom": "^2.2.1",
