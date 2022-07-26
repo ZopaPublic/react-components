@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React from 'react';
 import ReactModal from 'react-modal';
 import ModalStyles from './ModalStyles/ModalStyles';
 import Icon from '../../atoms/Icon/Icon';
@@ -11,13 +11,8 @@ import { CardProps } from '../../organisms/Card/Card/Card';
 export interface ModalProps extends ReactModal.Props {
   showCloseButton?: boolean;
   hideBackground?: boolean;
-  children: ReactElement<CardProps>;
+  children: React.ReactElement<CardProps>;
 }
-
-type ModalComponent = FC<ModalProps> & {
-  Styles: typeof ModalStyles;
-  setAppElement: typeof ReactModal.setAppElement;
-};
 
 const Button = styled.button`
   border: 0;
@@ -42,13 +37,7 @@ const overlayClassNames = (hideBackground: boolean) => ({
   beforeClose: 'zopa-modal-overlay--before-close',
 });
 
-const Modal: ModalComponent = ({
-  children,
-  onRequestClose,
-  showCloseButton = true,
-  hideBackground = false,
-  ...rest
-}) => (
+const Modal = ({ children, onRequestClose, showCloseButton = true, hideBackground = false, ...rest }: ModalProps) => (
   <ReactModal
     bodyOpenClassName="zopa-modal-body--open"
     portalClassName="zopa-modal-portal"
@@ -68,7 +57,7 @@ const Modal: ModalComponent = ({
   </ReactModal>
 );
 
-Modal.Styles = ModalStyles;
-Modal.setAppElement = ReactModal.setAppElement;
-
-export default Modal;
+export default Object.assign(Modal, {
+  setAppElement: ReactModal.setAppElement,
+  Styles: ModalStyles,
+});

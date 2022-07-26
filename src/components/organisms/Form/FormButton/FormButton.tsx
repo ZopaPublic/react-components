@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { useFormikContext } from 'formik';
 import Button, { ButtonProps } from '../../../atoms/Button/Button';
 
@@ -7,7 +7,7 @@ export interface FormButtonProps extends ButtonProps {
   disabled?: boolean;
 }
 
-const FormButton: FC<FormButtonProps> = ({ disabled, ...rest }) => {
+const FormButton = ({ disabled, ...rest }: FormButtonProps) => {
   const { isValid } = useFormikContext();
   return <Button type="submit" disabled={!isValid || disabled} {...rest} />;
 };

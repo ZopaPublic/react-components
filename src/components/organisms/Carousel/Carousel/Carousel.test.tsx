@@ -1,12 +1,12 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import axe from '../../../../../axe-helper';
-import React, { FC } from 'react';
+import React from 'react';
 import { act } from 'react-dom/test-utils';
 import { Carousel } from '..';
 import { SlideProps } from '../CarouselSlide/CarouselSlide';
 import { useCarouselContext } from '../context/CarouselContext';
 
-const TestSlide: FC<SlideProps> = ({ index }) => {
+const TestSlide = ({ index }: SlideProps) => {
   const { activeSlide } = useCarouselContext();
   return <div data-automation={String(index)}>{activeSlide === index ? 'ACTIVE' : 'INACTIVE'}</div>;
 };

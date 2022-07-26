@@ -18,7 +18,7 @@
     "downlevelIteration": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["node", "jest", "@testing-library/jest-dom"],
-    "incremental": true,
+    "incremental": false,
     "assumeChangesOnlyAffectDirectDependencies": true
   },
   "include": ["src/**/*"],

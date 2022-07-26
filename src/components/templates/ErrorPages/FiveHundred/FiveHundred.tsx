@@ -12,16 +12,16 @@ import { colors } from '../../../../constants';
 import { ErrorTemplateProps } from '../types';
 import { StyledIcon, StyledLink } from '../styles';
 
-interface FiveHundredErrorProps extends ErrorTemplateProps {
+export interface FiveHundredErrorProps extends ErrorTemplateProps {
   linkUrl?: string;
   linkText?: string;
 }
 
-const FiveHundred: React.FC<FiveHundredErrorProps> = ({
+const FiveHundred = ({
   icon = faTools,
   linkUrl = 'https://www.zopa.com',
   linkText = 'Go to Zopa home',
-}) => {
+}: FiveHundredErrorProps) => {
   const { width = 0 } = useViewport();
 
   return (

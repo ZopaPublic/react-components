@@ -1,17 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
 
 import TabsContainer, { TabsProps } from './TabsContainer/TabsContainer';
 import TabContent from './TabContent/TabContent';
 import TabButtons from './TabButtons/TabButtons';
 
-interface TabsStatic {
-  Content: typeof TabContent;
-  Buttons: typeof TabButtons;
-}
+const TabsMain = (props: TabsProps) => <TabsContainer {...props} />;
 
-export const Tabs: TabsStatic & FC<TabsProps> = (props) => <TabsContainer {...props} />;
-
-Tabs.Content = TabContent;
-Tabs.Buttons = TabButtons;
+export const Tabs = Object.assign(TabsMain, { Content: TabContent, Buttons: TabButtons });
 
 export * from './hooks';

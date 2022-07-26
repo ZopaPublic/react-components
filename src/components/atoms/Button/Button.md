@@ -105,7 +105,7 @@ import { faArrowCircleRight, faArrowCircleLeft, faCoffee } from '@fortawesome/fr
 - Button as a custom component
 
 ```tsx
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { buttonStyle } from '@zopauk/react-components';
 
@@ -125,7 +125,7 @@ const ButtonLink = styled(Link)`
 
 ```tsx
 import { buttonStyle, ButtonProps } from '@zopauk/react-components';
-import { FC, MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 import styled from 'styled-components';
 
 const StyledA = styled.a`

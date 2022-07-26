@@ -1,4 +1,4 @@
-import React, { useEffect, FC, ChangeEvent, useCallback } from 'react';
+import React, { useEffect, ChangeEvent, useCallback } from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
@@ -10,7 +10,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { useTabsContext } from '../hooks/useTabsContext';
 import TabButton, { TabButtonProps } from '../TabButton/TabButton';
 
-interface TabButtonsProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface TabButtonsProps extends React.HTMLAttributes<HTMLDivElement> {
   tabButtons: TabButtonProps[];
   defaultTab?: string;
   'data-automation'?: string;
@@ -26,13 +26,13 @@ const StyledDropdown = styled(Dropdown)`
   width: 100%;
 `;
 
-const TabButtons: FC<TabButtonsProps> = ({
+const TabButtons = ({
   tabButtons,
   defaultTab,
   'data-automation': dataAutomation,
   className,
   ...rest
-}) => {
+}: TabButtonsProps) => {
   const { width = 0 } = useViewport();
   const { setActiveTab, activeTab } = useTabsContext();
   const handleOnChange = useCallback((event: ChangeEvent<HTMLSelectElement>) => {

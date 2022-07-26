@@ -4,7 +4,7 @@ import Spinner from '../Spinner/Spinner';
 import React, { HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
 import { colors, spacing } from '../../../constants';
-import { IconDefinition } from '@fortawesome/fontawesome-common-types';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export type Styling = 'primary' | 'secondary';
 
@@ -97,7 +97,7 @@ const StyledLabel = styled(Text)`
   color: ${colors.greyDarkest};
 `;
 
-const RoundButton: React.FC<RoundButtonProps> = ({ $loading, styling = 'primary', disabled, label, icon, ...rest }) => (
+const RoundButton = ({ $loading, styling = 'primary', disabled, label, icon, ...rest }: RoundButtonProps) => (
   <Wrapper styling={styling} $loading={$loading} disabled={$loading || disabled} {...rest} label={label}>
     <div className="round-button-circle">
       {$loading ? (

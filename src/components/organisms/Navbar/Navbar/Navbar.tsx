@@ -294,7 +294,7 @@ export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: 
   </NavbarLink>
 );
 
-const NavbarWrapper: React.FC<NavbarProps> = ({
+const NavbarWrapper = ({
   links,
   renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
@@ -303,7 +303,7 @@ const NavbarWrapper: React.FC<NavbarProps> = ({
   withCTA = true,
   cta = <NavbarAction />,
   collapsed = false,
-}) => {
+}: NavbarProps) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState(false);

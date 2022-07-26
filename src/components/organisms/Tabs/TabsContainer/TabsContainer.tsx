@@ -1,9 +1,9 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { useTabs, TabsContext } from '../hooks';
 
 export interface TabsProps extends HTMLAttributes<HTMLDivElement> {}
 
-const TabsContainer: FC<TabsProps> = ({ children, ...rest }) => {
+const TabsContainer = ({ children, ...rest }: TabsProps) => {
   const context = useTabs();
 
   return (

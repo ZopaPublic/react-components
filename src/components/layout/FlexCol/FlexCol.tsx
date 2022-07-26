@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { grid } from '../../../constants';
 import { GridBreakpoints } from '../../../constants/grid';
@@ -89,10 +89,6 @@ const StyledFlexCol = styled.div<FlexCol>`
       })}
 `;
 
-const FlexCol: FC<FlexCol> = (props) => <StyledFlexCol {...props} />;
-
-FlexCol.defaultProps = {
-  align: 'auto',
-};
+const FlexCol = ({ align = 'auto', ...rest }: FlexCol) => <StyledFlexCol {...rest} align={align} />;
 
 export default FlexCol;

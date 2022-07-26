@@ -92,7 +92,7 @@ const Value = styled(Heading).attrs(({ numberFontSize = 'main' }: NumberProps) =
   ${({ semiBold }) => (semiBold ? 'font-weight: 600' : null)}
 `;
 
-const NumberText: React.FC<NumberTextProps> = ({
+const NumberText = ({
   title,
   value,
   fallback,
@@ -104,7 +104,7 @@ const NumberText: React.FC<NumberTextProps> = ({
   semiBold = false,
   titleClassName,
   ...rest
-}) => {
+}: NumberTextProps) => {
   const numberFormatter = (value: number) => new Intl.NumberFormat('en-GB', formatterOptions).format(value);
 
   const valueClassNames = classnames({

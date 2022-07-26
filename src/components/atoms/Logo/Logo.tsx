@@ -13,7 +13,7 @@ const LogoSvg = styled.path<LogoProps>`
   fill: ${({ negative }) => (negative ? colors.white : colors.brand)};
 `;
 
-const Logo: React.FC<LogoProps> = ({ negative, ...rest }) => (
+const Logo = ({ negative, ...rest }: LogoProps) => (
   <svg
     viewBox="0 0 208 38"
     version="1.1"

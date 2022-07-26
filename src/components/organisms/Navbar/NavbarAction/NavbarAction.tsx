@@ -40,11 +40,11 @@ const StyledIcon = styled(Icon)`
   `}
 `;
 
-const NavbarAction: React.FC<React.HTMLAttributes<HTMLButtonElement>> = ({
+const NavbarAction = ({
   children = 'Sign in',
   onClick = () => window.location.assign('https://home.zopa.com/'),
   ...rest
-}) => {
+}: React.HTMLAttributes<HTMLButtonElement>) => {
   const { width } = useViewport();
 
   return (

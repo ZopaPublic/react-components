@@ -1,5 +1,5 @@
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import React, { Children, cloneElement, FC, isValidElement, useState } from 'react';
+import React, { Children, cloneElement, isValidElement, useState } from 'react';
 import { colors } from '../../../../constants/colors';
 import Icon from '../../../atoms/Icon/Icon';
 import Link from '../../../atoms/Link/Link';
@@ -9,6 +9,7 @@ import FlexRow from '../../../layout/FlexRow/FlexRow';
 import { CarouselContext } from '../context/CarouselContext';
 
 export interface CarouselComponentProps {
+  children?: React.ReactNode;
   /**
    * Used to specify which slide of the carousel should be initially visible.
    * @default Slide closest to the center: Math.ceil(totalNumberOfSlides / 2)
@@ -16,7 +17,7 @@ export interface CarouselComponentProps {
   initialSlideIndex?: number;
 }
 
-const CarouselComponent: FC<CarouselComponentProps> = ({ children, initialSlideIndex }) => {
+const CarouselComponent = ({ children, initialSlideIndex }: CarouselComponentProps) => {
   const slidesCount = Children.count(children);
   const centralSlideIndex = Math.ceil(slidesCount / 2) - 1;
   const [activeSlide, setActiveSlide] = useState(

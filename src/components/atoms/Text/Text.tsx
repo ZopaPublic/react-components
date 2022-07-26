@@ -1,9 +1,9 @@
 import React, { HTMLAttributes } from 'react';
-import { FC } from 'react';
 import styled from 'styled-components';
 import { useThemeContext, AppTheme } from '../../styles/Theme';
 
 export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
+  children?: React.ReactNode;
   /**
    * The weight of the rendered text.
    * @default 'regular'
@@ -59,7 +59,7 @@ const Text = styled.span<TextProps & { theme: AppTheme }>`
   `}
 `;
 
-const TextWrap: FC<TextProps> = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => {
+const TextWrap = React.forwardRef<HTMLSpanElement, TextProps>((props, ref) => {
   const theme = useThemeContext();
   return <Text {...props} ref={ref} theme={theme} />;
 });

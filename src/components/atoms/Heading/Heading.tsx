@@ -1,6 +1,6 @@
 import { grid } from '../../../constants';
 import styled, { css } from 'styled-components';
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import { Colors } from '../../../constants/colors';
 import { useThemeContext, AppThemeProps, AppTheme } from '../../styles/Theme';
 
@@ -25,6 +25,7 @@ export interface OptionalHeadingProps extends HTMLAttributes<HTMLHeadingElement>
 }
 
 interface HeadingPropsWithAs extends OptionalHeadingProps {
+  children?: React.ReactNode;
   /**
    * The HTML5 tag you want to render your heading, it's used to determine the size of the heading as well.
    * @default 'required if 'forwardedAs' is not provided.'
@@ -75,7 +76,7 @@ const StyledHeading = styled.h1<HeadingPropsWithAs & AppThemeProps>`
     `}
 `;
 
-export const Heading: FC<HeadingProps> = (props) => {
+export const Heading = (props: HeadingProps) => {
   const theme = useThemeContext();
   const headingProps = props as HeadingPropsWithAs;
   if (!headingProps?.as) {

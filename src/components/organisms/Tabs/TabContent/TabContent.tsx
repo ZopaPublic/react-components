@@ -1,8 +1,8 @@
-import React, { ReactNode, FC } from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { useTabsContext } from '../hooks/useTabsContext';
 
-interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface TabContentProps extends React.HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
   contentFor: string;
 }
@@ -18,7 +18,7 @@ const ContentContainer = styled.div<TabContentStyleProps>`
   };
 `;
 
-const TabContent: FC<TabContentProps> = ({ children, contentFor, ...rest }) => {
+const TabContent = ({ children, contentFor, ...rest }: TabContentProps) => {
   const { activeTab, getTabContentProps } = useTabsContext();
   const contentProps = getTabContentProps(contentFor);
   return (

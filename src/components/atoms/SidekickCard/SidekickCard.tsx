@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../../constants';
 import alert from '../../../content/images/alert-icon.svg';
@@ -10,6 +10,7 @@ import deprecate from 'util-deprecate';
 export type SidekickCardTypes = 'triumph' | 'verified' | 'alert';
 
 export interface SidekickCardProps {
+  children?: React.ReactNode;
   /** Type of SidekickCard to render */
   type: SidekickCardTypes;
 }
@@ -40,7 +41,7 @@ const SidekickCard = styled.div<SidekickCardProps>`
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
-export const StyleguidistSidekickCard: FC<SidekickCardProps> = (props) => <SidekickCard {...props} />;
+export const StyleguidistSidekickCard = (props: SidekickCardProps) => <SidekickCard {...props} />;
 
 /**
  * @deprecated *SidekickCard* it's being deprecated and will be removed on the next release. Use the *Alert* component instead.

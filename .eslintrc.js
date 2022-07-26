@@ -9,7 +9,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parserOptions: {
-    project: ['tsconfig.json'],
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
@@ -37,7 +36,19 @@ module.exports = {
     'react/display-name': 'off',
     'react/no-unescaped-entities': 'off', // TODO: needs research
     'react/prop-types': 'off',
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          FC: 'See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/',
+          'React.FC': 'See: https://fettblog.eu/typescript-react-why-i-dont-use-react-fc/',
+        },
+        extendDefaults: true,
+      },
+    ],
+    'unused-imports/no-unused-imports': 'error',
   },
+  plugins: ['unused-imports'],
   settings: {
     react: {
       version: 'detect',

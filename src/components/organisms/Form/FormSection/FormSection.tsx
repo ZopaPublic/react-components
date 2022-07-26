@@ -1,13 +1,14 @@
-import React, { FC, Children } from 'react';
+import React, { Children } from 'react';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 
 export interface FormSectionProps {
+  children?: React.ReactNode;
   title?: string;
   subtitle?: string;
 }
 
-const FormSection: FC<FormSectionProps> = ({ title, subtitle, children }) => {
+const FormSection = ({ title, subtitle, children }: FormSectionProps) => {
   const childrenLength = Children.count(children);
   return (
     <div className="py-6">

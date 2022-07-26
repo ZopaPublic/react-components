@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
-import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
 import { Colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
   variant: IconDefinition;

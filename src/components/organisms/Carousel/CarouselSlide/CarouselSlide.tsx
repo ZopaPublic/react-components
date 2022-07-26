@@ -1,4 +1,4 @@
-import React, { createRef, FC, useEffect } from 'react';
+import React, { createRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { grid } from '../../../../constants';
 import { useViewport } from '../../../../hooks/useViewport/useViewport';
@@ -22,10 +22,11 @@ const StyledFlexCol = styled(FlexCol)<FlexColProps & { hidden: boolean; sliderHe
 `;
 
 export type SlideProps = {
+  children?: React.ReactNode;
   index?: number;
 };
 
-const Slide: FC<SlideProps> = ({ index, children, ...rest }) => {
+const Slide = ({ index, children, ...rest }: SlideProps) => {
   const { slidesCount, activeSlide, sliderHeight, setSliderHeight } = useCarouselContext();
   const { width } = useViewport();
   const isActive = index === activeSlide;

@@ -19,7 +19,7 @@ export interface NavbarDropdownListContainer extends React.HTMLAttributes<HTMLDi
 export interface OpenerProps {
   'aria-expanded': boolean;
   'aria-haspopup': true;
-  ref: React.RefObject<ButtonLinkElement>;
+  ref: React.RefObject<any>;
   onClick: React.EventHandler<React.MouseEvent>;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   tabIndex: number;
@@ -28,7 +28,7 @@ export interface OpenerProps {
 export type Item = any;
 
 export interface ItemProps {
-  ref: React.RefObject<HTMLLIElement>;
+  ref?: any;
   onKeyDown: React.EventHandler<React.KeyboardEvent>;
   tabIndex: number;
 }

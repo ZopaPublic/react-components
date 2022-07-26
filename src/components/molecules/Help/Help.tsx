@@ -72,11 +72,11 @@ export enum HelpLine {
 }
 
 type HelpProps = { helpLine?: HelpLine; weekdayOpeningHours?: string; weekendOpeningHours?: string };
-const Help: React.FC<HelpProps> = ({
+const Help = ({
   helpLine = HelpLine.borrowers,
   weekdayOpeningHours = '08:00 - 20:00',
   weekendOpeningHours = '09:00 - 17:30',
-}) => (
+}: HelpProps) => (
   <HelpWrap className="pt-4">
     <HelpContent>
       <FlexRow>

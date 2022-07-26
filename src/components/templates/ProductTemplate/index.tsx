@@ -3,14 +3,8 @@ import React from 'react';
 import { ProductTemplateCard } from './ProductTemplateCard/ProductTemplateCard';
 import ProductTemplateComponent, { ProductTemplateProps } from './ProductTemplate/ProductTemplate';
 
-interface ProductTemplateStatic {
-  Card: typeof ProductTemplateCard;
-}
-
-const ProductTemplate: ProductTemplateStatic & React.FC<ProductTemplateProps> = (props) => (
-  <ProductTemplateComponent {...props} />
+const ProductTemplate = ({ children, ...rest }: ProductTemplateProps) => (
+  <ProductTemplateComponent {...rest}>{children}</ProductTemplateComponent>
 );
 
-ProductTemplate.Card = ProductTemplateCard;
-
-export default ProductTemplate;
+export default Object.assign(ProductTemplate, { Card: ProductTemplateCard });

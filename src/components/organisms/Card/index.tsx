@@ -1,4 +1,4 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 
 import CardActions from './CardActions/CardActions';
 import CardComponent, { CardProps } from './Card/Card';
@@ -8,22 +8,13 @@ import CardImage from './CardImage/CardImage';
 import CardText from './CardText/CardText';
 import CardLineItem from './CardLineItem/CardLineItem';
 
-type CardStatic = {
-  Actions: typeof CardActions;
-  Content: typeof CardContent;
-  Heading: typeof CardHeading;
-  Image: typeof CardImage;
-  Text: typeof CardText;
-  LineItem: typeof CardLineItem;
-};
+const Card = (props: CardProps & HTMLAttributes<HTMLDivElement>) => <CardComponent {...props} />;
 
-const Card: CardStatic & FC<CardProps & HTMLAttributes<HTMLDivElement>> = (props) => <CardComponent {...props} />;
-
-Card.Actions = CardActions;
-Card.Content = CardContent;
-Card.Heading = CardHeading;
-Card.Image = CardImage;
-Card.Text = CardText;
-Card.LineItem = CardLineItem;
-
-export default Card;
+export default Object.assign(Card, {
+  Actions: CardActions,
+  Content: CardContent,
+  Heading: CardHeading,
+  Image: CardImage,
+  Text: CardText,
+  LineItem: CardLineItem,
+});

@@ -1,10 +1,11 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 import { grid } from '../../../constants';
 import { GridBreakpoints } from '../../../constants/grid';
 
 export interface AlignProps extends HTMLAttributes<HTMLDivElement> {
+  children?: React.ReactNode;
   xs?: string;
   s?: string;
   m?: string;
@@ -26,6 +27,6 @@ const Alignment = styled.div<AlignProps>`
       )}
 `;
 
-const Align: FC<AlignProps> = (props) => <Alignment {...props} />;
+const Align = (props: AlignProps) => <Alignment {...props} />;
 
 export default Align;

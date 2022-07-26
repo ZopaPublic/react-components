@@ -1,7 +1,6 @@
 import axe from '../../../../axe-helper';
 import React from 'react';
 import { render } from '@testing-library/react';
-import { colors } from '../../../constants';
 import Link from './Link';
 
 describe('<Link />', () => {

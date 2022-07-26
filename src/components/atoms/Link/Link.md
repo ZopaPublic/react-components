@@ -61,7 +61,7 @@ import { Text, Link } from '@zopauk/react-components';
 - Link as a custom component
 
 ```tsx
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { linkStyle } from '@zopauk/react-components';
 
