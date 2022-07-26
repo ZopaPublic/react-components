@@ -553,6 +553,17 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c7 c8"
               color="#3B46C4"
+              href="https://www.zopa.com/investor-information"
+            >
+              Annual Reports and Pillar 3
+            </a>
+          </li>
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c7 c8"
+              color="#3B46C4"
               href="https://www.zopa.com/about/awards"
             >
               Awards
