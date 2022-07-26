@@ -48,7 +48,7 @@ jobs:
       - name: Release
         run: pnpm release
         env:
-          CI: true
+          HUSKY_SKIP_HOOKS: 1
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
