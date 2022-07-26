@@ -1,3 +1,11 @@
+### [5.32.5](https://github.com/zopaUK/react-components/compare/v5.32.4...v5.32.5) (2022-07-26)
+
+
+### Bug Fixes
+
+* **zopafooter:** adding new link ([a605074](https://github.com/zopaUK/react-components/commit/a605074614134db4f87b65ccf74d1e7ac0409171))
+* **zopafooter:** typo fix ([6028377](https://github.com/zopaUK/react-components/commit/6028377d776065927409e52c8bb52977768d3c40))
+
 ### [5.32.4](https://github.com/zopaUK/react-components/compare/v5.32.3...v5.32.4) (2022-07-11)
 
 
