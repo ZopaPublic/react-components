@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          
+
       - name: Cache pnpm modules
         uses: actions/cache@v2
         env:
@@ -23,31 +23,32 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-            
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.9.1
           run_install: true
-          
+
       - name: Run typecheck
         run: pnpm typecheck
 
       - name: Run tests
         run: pnpm test
-          
+
       - name: Run linter
         uses: reviewdog/action-eslint@v1
         with:
           reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
-          
+
       - name: Compile the code
         run: pnpm compile
-        
+
       - name: Release
         run: pnpm release
         env:
+          CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
