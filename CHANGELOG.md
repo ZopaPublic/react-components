@@ -1,3 +1,21 @@
+## [5.33.0](https://github.com/zopaUK/react-components/compare/v5.32.5...v5.33.0) (2022-07-26)
+
+
+### Features
+
+* **docs:** trigger release ([fa10d48](https://github.com/zopaUK/react-components/commit/fa10d485f96207e3e5a6f2c319e8dd2f270fc9df))
+
+
+### Bug Fixes
+
+* **ci:** add missing dep ([3b2085f](https://github.com/zopaUK/react-components/commit/3b2085fda487a453d3fc4cb44de14c4631fd63bc))
+* **ci:** fix ci ([325ec25](https://github.com/zopaUK/react-components/commit/325ec25c8d36ae411c2e2fa4bf2adefdab447009))
+* **ci:** fix ci ([3442571](https://github.com/zopaUK/react-components/commit/3442571fa790ddc4b1c96c2c2d822abd0a65fd4d))
+* **ci:** fix husky running on semantic release ([92de69b](https://github.com/zopaUK/react-components/commit/92de69b3817070935066b847402e35aca813ec27))
+* **ci:** fix issues ([f46bc79](https://github.com/zopaUK/react-components/commit/f46bc79bcfb31896f33c00dd53fada61bb496118))
+* **ci:** skip husky checks ([ced6d42](https://github.com/zopaUK/react-components/commit/ced6d42948056bb6205ef99bc7561221f4069b2f))
+* **types:** fix svg types ([761968e](https://github.com/zopaUK/react-components/commit/761968e5ed6c3b08742c233d59d4848cd8ee58b8))
+
 ### [5.32.5](https://github.com/zopaUK/react-components/compare/v5.32.4...v5.32.5) (2022-07-26)
 
 
