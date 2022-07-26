@@ -47,4 +47,4 @@ This library assumes **Open Sans** is already available, so make sure you link i
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 ```
 
-You're free to use this technique or add the dependency manually to your base HTML `<head />`
+You're free to use this technique or add the dependency manually to your base HTML `<head />`.
