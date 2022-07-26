@@ -76,7 +76,7 @@ const ZopaFooter = ({
                   {renderLink({ href: `${baseUrl}/about/leadership`, children: 'Meet the leadership team' })}
                 </li>
                 <li className="mb-4">
-                  {renderLink({ href: `${baseUrl}/investor-information`, children: 'Annual reports and Pillar 3' })}
+                  {renderLink({ href: `${baseUrl}/investor-information`, children: 'Annual Reports and Pillar 3' })}
                 </li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
