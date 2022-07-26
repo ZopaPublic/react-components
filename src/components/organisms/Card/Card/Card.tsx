@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { colors, typography } from '../../../../constants';
+import { colors } from '../../../../constants';
 import { CardImageContainer } from '../CardImage/CardImage';
 import CardText from '../CardText/CardText';
 import CardLineItem from '../CardLineItem/CardLineItem';
