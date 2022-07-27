@@ -1,3 +1,10 @@
+### [5.33.1](https://github.com/zopaUK/react-components/compare/v5.33.0...v5.33.1) (2022-07-27)
+
+
+### Bug Fixes
+
+* **types:** fix icon types ([f460e9b](https://github.com/zopaUK/react-components/commit/f460e9b57a2e21a9bf6627ee5cdba285ee863aa5))
+
 ## [5.33.0](https://github.com/zopaUK/react-components/compare/v5.32.5...v5.33.0) (2022-07-26)
 
 
