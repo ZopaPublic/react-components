@@ -4,7 +4,7 @@ import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontaw
 
 import { Colors } from '../../../constants/colors';
 import { spacing } from '../../../constants/spacing';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
 export interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
   variant: IconDefinition;
