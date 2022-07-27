@@ -74,7 +74,7 @@ In case you want to contribute to this library, please have a look at our [contr
 
 ## Contributors
 
-<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors, /-semantic-release-bot -start -->
 <!-- readme: collaborators,contributors -end -->
 
 ## License
