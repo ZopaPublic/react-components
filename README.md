@@ -72,6 +72,11 @@ To inspect the folder structure within `@zopauk/react-components/types` you can 
 
 In case you want to contribute to this library, please have a look at our [contributing guidelines](./CONTRIBUTING.md) 🙌🏼
 
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
+
 ## License
 
 This repository is [MIT-licensed](./LICENSE).
