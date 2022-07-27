@@ -13,6 +13,7 @@ specifiers:
   '@babel/runtime': ^7.18.3
   '@commitlint/cli': 8.3.5
   '@commitlint/config-conventional': 8.3.4
+  '@fortawesome/fontawesome-common-types': 0.2.36
   '@fortawesome/fontawesome-svg-core': ^1.2.32
   '@fortawesome/free-solid-svg-icons': 5.13.1
   '@fortawesome/react-fontawesome': ^0.1.11
@@ -98,6 +99,7 @@ specifiers:
 
 dependencies:
   '@babel/runtime': 7.18.3
+  '@fortawesome/fontawesome-common-types': 0.2.36
   '@fortawesome/fontawesome-svg-core': 1.2.32
   '@fortawesome/react-fontawesome': 0.1.11_ce3luyzlvn2aa7ogsowx6k646a
   '@semantic-release/npm': 9.0.1_semantic-release@17.2.3
@@ -1985,8 +1987,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fortawesome/fontawesome-common-types/0.2.32:
-    resolution: {integrity: sha512-ux2EDjKMpcdHBVLi/eWZynnPxs0BtFVXJkgHIxXRl+9ZFaHPvYamAfCzeeQFqHRjuJtX90wVnMRaMQAAlctz3w==}
+  /@fortawesome/fontawesome-common-types/0.2.36:
+    resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
     engines: {node: '>=6'}
     requiresBuild: true
 
@@ -1995,14 +1997,14 @@ packages:
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 0.2.36
     dev: false
 
   /@fortawesome/free-solid-svg-icons/5.13.1:
     resolution: {integrity: sha512-LQH/0L1p4+rqtoSHa9qFYR84hpuRZKqaQ41cfBQx8b68p21zoWSekTAeA54I/2x9VlCHDLFlG74Nmdg4iTPQOg==}
     engines: {node: '>=6'}
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.32
+      '@fortawesome/fontawesome-common-types': 0.2.36
     dev: true
 
   /@fortawesome/react-fontawesome/0.1.11_ce3luyzlvn2aa7ogsowx6k646a:
