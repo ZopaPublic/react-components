@@ -12,6 +12,9 @@ jobs:
     name: Update contributors in the readme
     steps:
       - name: Contribute List
+        # https://github.com/akhilmhdh/contributors-readme-action
         uses: akhilmhdh/contributors-readme-action@v2.3.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: 'docs(contributor): contrib-readme-action has updated readme [skip ci]'
