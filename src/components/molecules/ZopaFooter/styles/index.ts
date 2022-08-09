@@ -1,5 +1,5 @@
 export { Footer } from './Footer';
-export { Heading } from './Heading';
+export { FooterHeading as Heading } from './Heading';
 export { Icon } from './Icon';
 export { LegalBlock } from './LegalBlock';
 export { List } from './List';
