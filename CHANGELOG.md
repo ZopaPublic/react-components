@@ -1,3 +1,10 @@
+### [5.33.2](https://github.com/zopaUK/react-components/compare/v5.33.1...v5.33.2) (2022-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update semantic release ([2e43fd7](https://github.com/zopaUK/react-components/commit/2e43fd71e9dc3833b0d138843fac4b4864023ed6))
+
 ### [5.33.1](https://github.com/zopaUK/react-components/compare/v5.33.0...v5.33.1) (2022-07-27)
 
 
