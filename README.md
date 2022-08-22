@@ -24,6 +24,10 @@ There are a number of breaking changes which will need to be addressed when upgr
 
 [The migration guide](/etc/docs/migration-v4.md) will walk you through the major changes such as colours and typography.
 
+## Accesss
+
+[Request access to Github.com](https://jira.zopa/servicedesk/customer/portal/4/create/201) from Workplace Tech.
+
 ## Installation
 
 ```bash
