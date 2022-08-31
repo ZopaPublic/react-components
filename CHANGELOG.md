@@ -1,3 +1,15 @@
+## [5.34.0](https://github.com/zopaUK/react-components/compare/v5.33.2...v5.34.0) (2022-08-31)
+
+
+### Features
+
+* add documentation for ThemeProvider component ([fa97891](https://github.com/zopaUK/react-components/commit/fa97891e5392b2b20e0e9d14f781c4c24d88569d))
+
+
+### Bug Fixes
+
+* exports ([ca22912](https://github.com/zopaUK/react-components/commit/ca22912d2ebb8ca6ccaba36894d96d128283e507))
+
 ### [5.33.2](https://github.com/zopaUK/react-components/compare/v5.33.1...v5.33.2) (2022-08-22)
 
 
