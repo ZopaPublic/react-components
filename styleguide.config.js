@@ -105,6 +105,11 @@ module.exports = {
           content: 'src/components/layout/README.md',
           components: 'src/components/layout/*/*.tsx',
         },
+        {
+          name: 'Styles',
+          content: 'src/components/styles/Theme/Theme.md',
+          components: 'src/components/styles/Theme/ThemeProvider.tsx',
+        },
       ],
     },
   ],
