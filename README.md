@@ -74,8 +74,182 @@ In case you want to contribute to this library, please have a look at our [contr
 
 ## Contributors
 
-<!-- readme: collaborators,contributors, /-semantic-release-bot -start -->
-<!-- readme: collaborators,contributors -end -->
+<!-- readme: collaborators,contributors,semantic-release-bot/-,renovate-bot/- -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/poteirard">
+            <img src="https://avatars.githubusercontent.com/u/7198934?v=4" width="50;" alt="poteirard"/>
+            <br />
+            <sub><b>poteirard</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/thegrinder">
+            <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
+            <br />
+            <sub><b>thegrinder</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/moshie">
+            <img src="https://avatars.githubusercontent.com/u/3974301?v=4" width="50;" alt="moshie"/>
+            <br />
+            <sub><b>moshie</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/raff-r">
+            <img src="https://avatars.githubusercontent.com/u/1081070?v=4" width="50;" alt="raff-r"/>
+            <br />
+            <sub><b>raff-r</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/lluia">
+            <img src="https://avatars.githubusercontent.com/u/5938217?v=4" width="50;" alt="lluia"/>
+            <br />
+            <sub><b>lluia</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/dfvalero">
+            <img src="https://avatars.githubusercontent.com/u/337955?v=4" width="50;" alt="dfvalero"/>
+            <br />
+            <sub><b>dfvalero</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Gabss405">
+            <img src="https://avatars.githubusercontent.com/u/67011746?v=4" width="50;" alt="Gabss405"/>
+            <br />
+            <sub><b>Gabss405</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/JuliaHempel">
+            <img src="https://avatars.githubusercontent.com/u/9414476?v=4" width="50;" alt="JuliaHempel"/>
+            <br />
+            <sub><b>JuliaHempel</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/admmasters">
+            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
+            <br />
+            <sub><b>admmasters</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/katebeavis">
+            <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
+            <br />
+            <sub><b>katebeavis</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/OlenaKashuba">
+            <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
+            <br />
+            <sub><b>OlenaKashuba</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/calvin-fung-zopa">
+            <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
+            <br />
+            <sub><b>calvin-fung-zopa</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/gbkr">
+            <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
+            <br />
+            <sub><b>gbkr</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/endymion1818">
+            <img src="https://avatars.githubusercontent.com/u/2216344?v=4" width="50;" alt="endymion1818"/>
+            <br />
+            <sub><b>endymion1818</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/emilfjellstrom">
+            <img src="https://avatars.githubusercontent.com/u/11654513?v=4" width="50;" alt="emilfjellstrom"/>
+            <br />
+            <sub><b>emilfjellstrom</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MillieClare">
+            <img src="https://avatars.githubusercontent.com/u/40922831?v=4" width="50;" alt="MillieClare"/>
+            <br />
+            <sub><b>MillieClare</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/steedems">
+            <img src="https://avatars.githubusercontent.com/u/7896422?v=4" width="50;" alt="steedems"/>
+            <br />
+            <sub><b>steedems</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tlaak">
+            <img src="https://avatars.githubusercontent.com/u/1674055?v=4" width="50;" alt="tlaak"/>
+            <br />
+            <sub><b>tlaak</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/t-phamm">
+            <img src="https://avatars.githubusercontent.com/u/86316479?v=4" width="50;" alt="t-phamm"/>
+            <br />
+            <sub><b>t-phamm</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/TomGroombridge">
+            <img src="https://avatars.githubusercontent.com/u/5918265?v=4" width="50;" alt="TomGroombridge"/>
+            <br />
+            <sub><b>TomGroombridge</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/rominamoya">
+            <img src="https://avatars.githubusercontent.com/u/1150925?v=4" width="50;" alt="rominamoya"/>
+            <br />
+            <sub><b>rominamoya</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Blimeys">
+            <img src="https://avatars.githubusercontent.com/u/13405542?v=4" width="50;" alt="Blimeys"/>
+            <br />
+            <sub><b>Blimeys</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/rorydpayne">
+            <img src="https://avatars.githubusercontent.com/u/7081561?v=4" width="50;" alt="rorydpayne"/>
+            <br />
+            <sub><b>rorydpayne</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/grabbeh">
+            <img src="https://avatars.githubusercontent.com/u/641299?v=4" width="50;" alt="grabbeh"/>
+            <br />
+            <sub><b>grabbeh</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: collaborators,contributors,semantic-release-bot/-,renovate-bot/- -end -->
 
 ## License
 

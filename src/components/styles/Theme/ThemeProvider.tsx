@@ -7,11 +7,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
 import React, { ReactElement } from 'react';
-import { colors } from '../../constants/colors';
-import { typography } from '../../constants/typography';
-import Icon from '../atoms/Icon/Icon';
-import { CardStyling } from '../organisms/Card/Card/Card';
-import { Severity } from '../atoms/Alert/Alert';
+import { colors } from '../../../constants/colors';
+import { typography } from '../../../constants/typography';
+import Icon from '../../atoms/Icon/Icon';
+import { CardStyling } from '../../organisms/Card/Card/Card';
+import { Severity } from '../../atoms/Alert/Alert';
 
 export type CustomIconVariant = 'exclamation';
 
