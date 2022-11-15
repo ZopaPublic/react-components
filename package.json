@@ -18,7 +18,6 @@
     "commit": "git-cz",
     "dev": "NODE_ENV=development styleguidist server",
     "dev:code": "concurrently --kill-others-on-fail \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "NODE_ENV=production styleguidist build",
     "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
     "compile:code": "rollup --config ./etc/rollup/config.js",
@@ -168,5 +167,6 @@
   "resolutions": {
     "@types/react": "^17",
     "@types/react-dom": "^17"
-  }
+  },
+  "packageManager": "pnpm@7.15.0"
 }
