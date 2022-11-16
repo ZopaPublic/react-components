@@ -123,7 +123,7 @@
     "react-docgen-typescript": "^2.2.2",
     "react-dom": "^17",
     "react-scripts": "^5.0.1",
-    "react-styleguidist": "^11.2.0",
+    "react-styleguidist": "^13.0.0",
     "react-test-renderer": "^17",
     "rollup": "2.21.0",
     "rollup-plugin-esbuild": "^4.9.1",
