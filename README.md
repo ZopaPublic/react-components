@@ -128,17 +128,17 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/JuliaHempel">
-            <img src="https://avatars.githubusercontent.com/u/9414476?v=4" width="50;" alt="JuliaHempel"/>
-            <br />
-            <sub><b>JuliaHempel</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/admmasters">
             <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
             <br />
             <sub><b>admmasters</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/JuliaHempel">
+            <img src="https://avatars.githubusercontent.com/u/9414476?v=4" width="50;" alt="JuliaHempel"/>
+            <br />
+            <sub><b>JuliaHempel</b></sub>
         </a>
     </td>
     <td align="center">

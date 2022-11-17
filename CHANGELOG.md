@@ -1,3 +1,10 @@
+## [5.35.0](https://github.com/zopaUK/react-components/compare/v5.34.0...v5.35.0) (2022-09-21)
+
+
+### Features
+
+* **zopafooter:** add pledge2025 to footer links ([e83c67d](https://github.com/zopaUK/react-components/commit/e83c67d1afb14513f954a9a19a2532b7a11810e5))
+
 ## [5.34.0](https://github.com/zopaUK/react-components/compare/v5.33.2...v5.34.0) (2022-08-31)
 
 
