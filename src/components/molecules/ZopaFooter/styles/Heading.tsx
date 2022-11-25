@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import Text from '../../../atoms/Text/Text';
+import Heading from '../../../atoms/Heading/Heading';
 
-export const Heading = styled(Text).attrs({
-  weight: 'bold',
-})`
+export const FooterHeading = styled(Heading)`
   text-transform: uppercase;
 `;

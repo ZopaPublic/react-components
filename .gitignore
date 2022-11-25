@@ -13,3 +13,4 @@ styleguide/*
 
 coverage
 *.tsbuildinfo
+*.iml

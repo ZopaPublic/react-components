@@ -1,7 +1,2 @@
-# Workarround netlify with pnpm
-# See: https://github.com/netlify/build/issues/1633
-
 [build]
-  command = "./etc/netlify/netlify.sh"
-[build.environment]
-  NPM_FLAGS="--prefix=./etc/netlify/empty-project/"
+  command = "pnpm run build"
