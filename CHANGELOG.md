@@ -1,3 +1,10 @@
+## [5.36.0](https://github.com/zopaUK/react-components/compare/v5.35.1...v5.36.0) (2022-11-25)
+
+
+### Features
+
+* **error-pages:** add theme provider ([2d06e9d](https://github.com/zopaUK/react-components/commit/2d06e9d0b5319437b7a53d74892b446a697df087))
+
 ### [5.35.1](https://github.com/zopaUK/react-components/compare/v5.35.0...v5.35.1) (2022-11-18)
 
 
