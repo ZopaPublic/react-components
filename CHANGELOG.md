@@ -1,3 +1,20 @@
+## [5.36.0](https://github.com/zopaUK/react-components/compare/v5.35.1...v5.36.0) (2022-11-25)
+
+
+### Features
+
+* **error-pages:** add theme provider ([2d06e9d](https://github.com/zopaUK/react-components/commit/2d06e9d0b5319437b7a53d74892b446a697df087))
+
+### [5.35.1](https://github.com/zopaUK/react-components/compare/v5.35.0...v5.35.1) (2022-11-18)
+
+
+### Bug Fixes
+
+* **zoopafooter:** updated snapshot ([3b6f45e](https://github.com/zopaUK/react-components/commit/3b6f45e216892b963de5fb6fed3a9c50ee64a909))
+* **zopafooter:** addressed comments ([f8a9492](https://github.com/zopaUK/react-components/commit/f8a949223710cca4826c27ca9896ff5d8f262eec))
+* **zopafooter:** merged master into ZUI-77 ([f5d3e49](https://github.com/zopaUK/react-components/commit/f5d3e49301b81416d539c16da4718f21b19877fe))
+* **zopafooter:** moved heading from span to h4 ([2296fbc](https://github.com/zopaUK/react-components/commit/2296fbca8b0f74b9c65d3ecb8802f1761a48a424))
+
 ## [5.35.0](https://github.com/zopaUK/react-components/compare/v5.34.0...v5.35.0) (2022-09-21)
 
 
