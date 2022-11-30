@@ -1,3 +1,10 @@
+## [5.36.2](https://github.com/zopaUK/react-components/compare/v5.36.1...v5.36.2) (2022-11-30)
+
+
+### Bug Fixes
+
+* **ci:** fix ([e910d82](https://github.com/zopaUK/react-components/commit/e910d8265b3d74a43b65472ba848ef49df4a2d44))
+
 ## [5.36.1](https://github.com/zopaUK/react-components/compare/v5.36.0...v5.36.1) (2022-11-30)
 
 
