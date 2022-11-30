@@ -1,3 +1,10 @@
+## [5.36.1](https://github.com/zopaUK/react-components/compare/v5.36.0...v5.36.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* **build:** trigger new build upgrades ([87eb33d](https://github.com/zopaUK/react-components/commit/87eb33d1e3c0f16e466cffa3fe5232cd220865e5))
+
 ## [5.36.0](https://github.com/zopaUK/react-components/compare/v5.35.1...v5.36.0) (2022-11-25)
 
 
