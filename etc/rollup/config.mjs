@@ -1,6 +1,7 @@
 import path from 'path';
-import pkg from '../../package.json';
-
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pkg = require('../../package.json');
 // Plugins
 import customResolveOptions from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
@@ -21,14 +22,15 @@ export default {
       format: 'cjs', // Universal Module Definition, works as amd, cjs and iife all in one
       sourcemap: true,
       exports: 'named',
+      preserveModules: true,
     },
     {
       dir: 'es',
       format: 'es',
       sourcemap: true,
+      preserveModules: true,
     },
   ],
-  preserveModules: true,
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     customResolveOptions({ extensions }),
