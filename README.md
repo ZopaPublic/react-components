@@ -270,3 +270,4 @@ No permission is granted to use the trade names, trade marks, service marks, or 
 ## Fonts
 
 Zopa uses Open Sans in its sites and applications. If you want to make use of this font outside of Zopa, you will need to license it directly from [Google Fonts](https://fonts.google.com/).
+
