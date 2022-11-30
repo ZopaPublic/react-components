@@ -1,7 +1,9 @@
 // Simple copy and paste of the main config for managing local dependencies
 // DO NOT USE THIS TO BUNDLE for production
 import path from 'path';
-import pkg from '../../package.json';
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pkg = require('../../package.json');
 import url from '@rollup/plugin-url';
 import postcss from 'rollup-plugin-postcss';
 import esbuild from 'rollup-plugin-esbuild';
@@ -24,9 +26,9 @@ const config = {
     {
       dir: 'es',
       format: 'esm',
+      preserveModules: true,
     },
   ],
-  preserveModules: true,
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     resolve({ moduleDirectories: ['node_modules'], extensions }),
