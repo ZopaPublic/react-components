@@ -20,7 +20,7 @@ import useScrollThreshold from '../useScrollThreshold/useScrollThreshold';
 import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
-import { Button } from '../../../..';
+import Button from '../../../atoms/Button/Button';
 import { useThemeContext } from '../../../styles/Theme';
 
 export interface NavigationItem {

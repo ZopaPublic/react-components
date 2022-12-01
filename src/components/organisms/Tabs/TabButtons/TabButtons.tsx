@@ -2,10 +2,9 @@ import React, { useEffect, ChangeEvent, useCallback } from 'react';
 import styled from 'styled-components';
 import classnames from 'classnames';
 
-import { DropdownOption } from '../../../..';
 import { useViewport } from '../../../../hooks/useViewport';
 import { grid, colors } from '../../../../constants';
-import Dropdown from '../../../atoms/Dropdown/Dropdown';
+import Dropdown, { Option as DropdownOption } from '../../../atoms/Dropdown/Dropdown';
 import FlexCol from '../../../layout/FlexCol/FlexCol';
 import { useTabsContext } from '../hooks/useTabsContext';
 import TabButton, { TabButtonProps } from '../TabButton/TabButton';
