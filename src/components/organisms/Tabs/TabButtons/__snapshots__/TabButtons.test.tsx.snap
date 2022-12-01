@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TabButtons /> renders the buttons on big screens 1`] = `
+.c1 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: px;
+  padding-left: px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
 .c2 {
   outline: 0;
   cursor: pointer;
@@ -47,17 +58,6 @@ exports[`<TabButtons /> renders the buttons on big screens 1`] = `
 
 .c2:hover {
   background: #EAEBFA;
-}
-
-.c1 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: px;
-  padding-left: px;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
 }
 
 .c3 {
