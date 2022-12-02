@@ -1,3 +1,12 @@
+## [5.36.3](https://github.com/zopaUK/react-components/compare/v5.36.2...v5.36.3) (2022-12-02)
+
+
+### Bug Fixes
+
+* **navbar and tab:** removed circular reference ([86b068f](https://github.com/zopaUK/react-components/commit/86b068f5dfe7fca54d1de427863029c4cc067377))
+* **Navbar and Tabs:** imported directly from files ([5613c33](https://github.com/zopaUK/react-components/commit/5613c33cfd9cdeaef3c279d98335f09f3b5a93ca))
+* **tabs:** updated snapshots ([762d67c](https://github.com/zopaUK/react-components/commit/762d67cfbc3213af663653e42e770c730b20bfb4))
+
 ## [5.36.2](https://github.com/zopaUK/react-components/compare/v5.36.1...v5.36.2) (2022-11-30)
 
 
