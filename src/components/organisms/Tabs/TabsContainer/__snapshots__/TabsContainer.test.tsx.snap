@@ -9,6 +9,17 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
   display: block;
 }
 
+.c1 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: px;
+  padding-left: px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
 .c2 {
   outline: 0;
   cursor: pointer;
@@ -55,17 +66,6 @@ exports[`<TabContainer /> renders the component with no a11y violations 1`] = `
 
 .c2:hover {
   background: #EAEBFA;
-}
-
-.c1 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: px;
-  padding-left: px;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-  align-self: auto;
 }
 
 .c3 {
