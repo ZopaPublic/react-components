@@ -207,6 +207,13 @@ In case you want to contribute to this library, please have a look at our [contr
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/khumbon">
+            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
+            <br />
+            <sub><b>khumbon</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/t-phamm">
             <img src="https://avatars.githubusercontent.com/u/86316479?v=4" width="50;" alt="t-phamm"/>
             <br />
@@ -232,13 +239,6 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/13405542?v=4" width="50;" alt="Blimeys"/>
             <br />
             <sub><b>Blimeys</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/khumbon">
-            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
-            <br />
-            <sub><b>khumbon</b></sub>
         </a>
     </td>
     <td align="center">
