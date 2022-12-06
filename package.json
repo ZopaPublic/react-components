@@ -54,7 +54,6 @@
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
     "react-use-clipboard": "^1.0.7",
-    "rollup-plugin-swc": "^0.2.1",
     "rollup-plugin-swc3": "^0.7.0",
     "styled-normalize": "^8.0.7",
     "tippy.js": "^6.2.7",
@@ -69,15 +68,9 @@
     "typescript": ">=3.x"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.2",
-    "@babel/plugin-transform-runtime": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
-    "@babel/preset-react": "^7.17.12",
-    "@babel/preset-typescript": "^7.17.12",
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
-    "@rollup/plugin-babel": "6.0.3",
     "@rollup/plugin-commonjs": "23.0.3",
     "@rollup/plugin-node-resolve": "15.0.1",
     "@rollup/plugin-url": "8.0.1",
