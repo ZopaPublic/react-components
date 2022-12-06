@@ -94,6 +94,7 @@ const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon
           {startIcon}
         </IconWrapper>
       )}
+      <p>CHARS BRANCH</p>
       <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
       {endIcon && (
         <IconWrapper startIcon={false} theme={theme}>
