@@ -97,21 +97,19 @@ const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon
   const theme = useThemeContext();
 
   return (
-    <>
-      <InputWrapper className={className}>
-        {startIcon && (
-          <IconWrapper startIcon theme={theme}>
-            {startIcon}
-          </IconWrapper>
-        )}
-        <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
-        {endIcon && (
-          <IconWrapper startIcon={false} theme={theme}>
-            {endIcon}
-          </IconWrapper>
-        )}
-      </InputWrapper>
-    </>
+    <InputWrapper className={className}>
+      {startIcon ? (
+        <IconWrapper startIcon theme={theme}>
+          {startIcon}
+        </IconWrapper>
+      ) : null}
+      <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
+      {endIcon ? (
+        <IconWrapper startIcon={false} theme={theme}>
+          {endIcon}
+        </IconWrapper>
+      ) : null}
+    </InputWrapper>
   );
 });
 
