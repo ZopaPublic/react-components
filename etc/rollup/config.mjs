@@ -23,12 +23,14 @@ export default {
       sourcemap: true,
       exports: 'named',
       preserveModules: true,
+      interop: 'auto'
     },
     {
       dir: 'es',
       format: 'es',
       sourcemap: true,
       preserveModules: true,
+      interop: 'auto'
     },
   ],
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
