@@ -5,11 +5,9 @@ const pkg = require('../../package.json');
 // Plugins
 import customResolveOptions from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
-// import babel from '@rollup/plugin-babel';
 import { swc, minify } from 'rollup-plugin-swc3';
-import commonjs from '@rollup/plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import commonjs from "@rollup/plugin-commonjs";
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
@@ -53,6 +51,9 @@ export default {
         target: 'es2018',
       },
       sourceMaps: true
+    }),
+    commonjs({
+      include: /node_modules/
     }),
     url({
       fileName: '[hash][extname]',
