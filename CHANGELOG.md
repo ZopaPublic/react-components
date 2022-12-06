@@ -1,3 +1,10 @@
+## [5.36.4](https://github.com/zopaUK/react-components/compare/v5.36.3...v5.36.4) (2022-12-06)
+
+
+### Bug Fixes
+
+* **rollup:** trigger release ([4bae600](https://github.com/zopaUK/react-components/commit/4bae600e20867290c5f96e88c9d413b65bc2218e))
+
 ## [5.36.3](https://github.com/zopaUK/react-components/compare/v5.36.2...v5.36.3) (2022-12-02)
 
 
