@@ -1,12 +1,22 @@
 import React, { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
-import { colors, typography } from '../../../constants';
+import { colors } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
 import { InputProps } from '../../types';
 import { useThemeContext, AppTheme } from '../../styles/Theme';
 
 type IconWrapperProps = {
   startIcon?: boolean;
+  /**
+   * The weight of the rendered text.
+   * @default 'regular'
+   */
+  weight?: keyof AppTheme['typography']['weights'];
+  /**
+   * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
+   * @default 'body'
+   */
+  size?: keyof AppTheme['typography']['text']['sizes'];
 };
 
 const InputWrapper = styled.div`
@@ -46,15 +56,14 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   padding: 0 16px;
   padding-left: ${({ startIcon }) => !!startIcon && '60px'};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
-  font-size: ${typography.sizes.text.body};
-  font-weight: ${typography.weights.regular};
+  font-size: ${({ theme, size = 'body' }) => theme.typography.text.sizes[size]};
+  font-weight: ${({ theme, weight = 'regular' }) => theme.typography.weights[weight]};
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
   font-family: ${({ theme }) => theme.typography.primary};
-  font-size: 16px;
 
   &:hover {
     border: 1px solid ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
@@ -88,19 +97,21 @@ const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon
   const theme = useThemeContext();
 
   return (
-    <InputWrapper className={className}>
-      {startIcon && (
-        <IconWrapper startIcon theme={theme}>
-          {startIcon}
-        </IconWrapper>
-      )}
-      <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
-      {endIcon && (
-        <IconWrapper startIcon={false} theme={theme}>
-          {endIcon}
-        </IconWrapper>
-      )}
-    </InputWrapper>
+    <>
+      <InputWrapper className={className}>
+        {startIcon && (
+          <IconWrapper startIcon theme={theme}>
+            {startIcon}
+          </IconWrapper>
+        )}
+        <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
+        {endIcon && (
+          <IconWrapper startIcon={false} theme={theme}>
+            {endIcon}
+          </IconWrapper>
+        )}
+      </InputWrapper>
+    </>
   );
 });
 
