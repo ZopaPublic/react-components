@@ -1,3 +1,15 @@
+## [5.37.0](https://github.com/zopaUK/react-components/compare/v5.36.4...v5.37.0) (2022-12-07)
+
+
+### Features
+
+* added weight and font size into input text ([e7d17bd](https://github.com/zopaUK/react-components/commit/e7d17bdab9543d131b197e515c776fbffa00cfa0))
+* response to comments on PR ([2c4389b](https://github.com/zopaUK/react-components/commit/2c4389b1617f39cbd45dd829c111a3444634da58))
+* response to comments to remove undefined as option for weight in component types ([eda93eb](https://github.com/zopaUK/react-components/commit/eda93ebe053d4a5b96e7cbe4c69fc2092aaf93f0))
+* weight added to inputprops ([14a001b](https://github.com/zopaUK/react-components/commit/14a001b4ebd57a85539a03aac89ccd2ae8e7f521))
+* weight and font for input text ([2423022](https://github.com/zopaUK/react-components/commit/242302235481da9a2b60af96d42e1aea97f09e29))
+* will be adding font weight and size into inputtext atom ([f11f519](https://github.com/zopaUK/react-components/commit/f11f5194897368513390355052a72e7a4b03b8aa))
+
 ## [5.36.4](https://github.com/zopaUK/react-components/compare/v5.36.3...v5.36.4) (2022-12-06)
 
 
