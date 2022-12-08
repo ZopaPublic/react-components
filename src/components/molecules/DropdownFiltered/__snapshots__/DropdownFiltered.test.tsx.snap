@@ -64,7 +64,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
 }
 
 .c5:hover {
@@ -231,7 +230,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
 }
 
 .c4:hover {

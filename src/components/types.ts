@@ -31,6 +31,8 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    * Slot for an icon on the right
    */
   endIcon?: ReactNode;
+
+  weight?: number;
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
