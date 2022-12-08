@@ -39,7 +39,7 @@ interface ButtonsTheme {
   };
 }
 
-type AlertTheme = Record<
+export type AlertTheme = Record<
   Severity,
   {
     icon: string;
