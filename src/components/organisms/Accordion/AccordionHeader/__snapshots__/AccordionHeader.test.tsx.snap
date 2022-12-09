@@ -2,17 +2,17 @@
 
 exports[`<AccordionHeader /> renders the component with no a11y violations 1`] = `
 .c2 {
-  margin: 0;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  color: #2C3236;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-letter-spacing: -0.01px;
+  -moz-letter-spacing: -0.01px;
+  -ms-letter-spacing: -0.01px;
+  letter-spacing: -0.01px;
+  margin: 0;
+  color: #2C3236;
   text-align: inherit;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 700;
 }
 
 .c0 {
@@ -48,10 +48,6 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
 }
 
 .c3 {
-  color: #2C3236;
-}
-
-.c4 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -62,8 +58,8 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   top: 20px;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   content: '';
   position: absolute;
   top: 0;
@@ -74,12 +70,12 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   background-color: #818F9B;
 }
 
-.c4:before {
+.c3:before {
   width: 100%;
   height: 3px;
 }
 
-.c4:after {
+.c3:after {
   height: 100%;
   width: 3px;
 }
@@ -96,13 +92,14 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   <div
     class="c1"
   >
-    <span
-      class="c2 c3"
+    <h3
+      class="c2 my-0"
+      color="#2C3236"
     >
       Header
-    </span>
+    </h3>
     <span
-      class="c4"
+      class="c3"
     />
   </div>
 </button>
