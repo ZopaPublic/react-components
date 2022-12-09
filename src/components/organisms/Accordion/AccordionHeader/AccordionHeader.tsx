@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors, spacing } from '../../../../constants';
-import Text from '../../../atoms/Text/Text';
+import Heading from '../../../atoms/Heading/Heading';
 import { useAccordionContext } from '../context';
 
 export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
@@ -30,10 +30,6 @@ const TitleContainer = styled.div`
   justify-content: space-between;
   position: relative;
   padding: ${spacing[4]} 43px ${spacing[4]} ${spacing[4]};
-`;
-
-const Title = styled(Text)`
-  color: ${colors.greyDarkest};
 `;
 
 const Cross = styled.span<{ active: boolean }>`
@@ -76,9 +72,9 @@ const AccordionHeader = ({ children, id, index, textSize = 'body', onClick, ...r
   return (
     <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
       <TitleContainer>
-        <Title weight="bold" size={textSize}>
+        <Heading as="h3" className="my-0" color={colors.greyDarkest} size="h6">
           {children}
-        </Title>
+        </Heading>
         <Cross active={isActiveSection(index)} />
       </TitleContainer>
     </StyledButton>
