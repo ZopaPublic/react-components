@@ -1,83 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccordionHeader /> renders the component with no a11y violations 1`] = `
-.c2 {
-  font-size: 16px;
-  line-height: 24px;
-  -webkit-letter-spacing: -0.01px;
-  -moz-letter-spacing: -0.01px;
-  -ms-letter-spacing: -0.01px;
-  letter-spacing: -0.01px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
 .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: #2C3236;
+  font-weight: 700;
   border: none;
   background: none;
   cursor: pointer;
   padding: 0;
   width: 100%;
   margin-bottom: 4px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-align: left;
-  background-color: #F7F7F7;
-  width: 100%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative;
-  padding: 16px 43px 16px 16px;
-}
-
-.c3 {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  right: 16px;
-  top: 20px;
-}
-
-.c3:after,
-.c3:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: #818F9B;
-}
-
-.c3:before {
-  width: 100%;
-  height: 3px;
-}
-
-.c3:after {
-  height: 100%;
-  width: 3px;
 }
 
 <button
@@ -89,18 +25,6 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   id="one"
   type="button"
 >
-  <div
-    class="c1"
-  >
-    <h3
-      class="c2 my-0"
-      color="#2C3236"
-    >
-      Header
-    </h3>
-    <span
-      class="c3"
-    />
-  </div>
+  Header
 </button>
 `;
