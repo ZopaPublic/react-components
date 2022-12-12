@@ -1,3 +1,15 @@
+## [5.38.0](https://github.com/zopaUK/react-components/compare/v5.37.0...v5.38.0) (2022-12-08)
+
+
+### Features
+
+* **bundle:** switch babel out for swc ([60b0579](https://github.com/zopaUK/react-components/commit/60b057961853abd5bbf43091fba5ce90243ca6f3))
+
+
+### Bug Fixes
+
+* **commonjs:** use the commonjs plugin again ([c8ca979](https://github.com/zopaUK/react-components/commit/c8ca97921b1b47c19de140f01c621168f4f18f4f))
+
 ## [5.37.0](https://github.com/zopaUK/react-components/compare/v5.36.4...v5.37.0) (2022-12-07)
 
 
