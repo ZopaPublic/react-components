@@ -5,14 +5,14 @@ const pkg = require('../../package.json');
 // Plugins
 import customResolveOptions from '@rollup/plugin-node-resolve';
 import url from '@rollup/plugin-url';
-import babel from '@rollup/plugin-babel';
-import commonjs from '@rollup/plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
+import { swc, minify } from 'rollup-plugin-swc3';
 import postcss from 'rollup-plugin-postcss';
+import commonjs from "@rollup/plugin-commonjs";
 
 const extensions = ['.ts', '.tsx', '.js', '.json'];
 
 process.env.NODE_ENV = 'production';
+
 
 export default {
   input: path.resolve('src/index.ts'),
@@ -36,14 +36,24 @@ export default {
   external: [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     customResolveOptions({ extensions }),
-    babel({
-      presets: [['react-app', { flow: false, typescript: true, absoluteRuntime: false }]],
-      babelHelpers: 'runtime',
-      extensions,
-      exclude: 'node_modules',
+    swc({
+      // All options are optional
+      include: /\.[mc]?[jt]sx?$/, // default
+      exclude: /node_modules/, // default
+      tsconfig: 'tsconfig.json', // default
+      // tsconfig: false, // You can also prevent `rollup-plugin-swc` from reading tsconfig.json, see below
+      // And add your swc configuration here!
+      // "filename" will be ignored since it is handled by rollup
+      jsc: {
+        parser: {
+          syntax: 'typescript',
+        },
+        target: 'es2018',
+      },
+      sourceMaps: true
     }),
     commonjs({
-      include: /node_modules/,
+      include: /node_modules/
     }),
     url({
       fileName: '[hash][extname]',
@@ -51,7 +61,9 @@ export default {
       include: ['**/*.svg', '**/*.gif'], // defaults to .svg, .png, .jpg and .gif files
       emitFiles: true, // defaults to true
     }),
-    terser(),
+    minify({
+      sourceMap: true
+    }),
     postcss({ minimize: true }),
   ],
 };
