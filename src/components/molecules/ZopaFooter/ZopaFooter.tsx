@@ -14,6 +14,22 @@ import instagram from '../../../content/images/social/instagram.svg';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
 import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
 
+/**
+ * Use this component to render a Zopa Footer
+ *
+ * @param baseUrl {string} the url the links will use as a base
+ * @param renderLink {(props: LinkProps) => React.ReactNode} a callback function allowing an application to render the Logo component
+ * @param mainCustomLegalCopy {string} if you need to pass some specific main legal copy from another partner use this
+ * @param additionalCopy {string[]} if you need to pass additional copy after the legal copy
+ */
+
+export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
+  baseUrl?: string;
+  renderLink?: (props: LinkProps) => React.ReactNode;
+  mainCustomLegalCopy?: string;
+  additionalCopy?: string[];
+}
+
 export const footerLinkStyle = css`
   font-weight: ${typography.weights.regular};
   text-decoration: none;
@@ -27,13 +43,6 @@ export const footerLinkStyle = css`
 const StyledLink = styled(Link)`
   ${footerLinkStyle}
 `;
-
-export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
-  baseUrl?: string;
-  renderLink?: (props: LinkProps) => React.ReactNode;
-  mainCustomLegalCopy?: string;
-  additionalCopy?: string[];
-}
 
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
