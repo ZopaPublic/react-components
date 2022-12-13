@@ -6,6 +6,9 @@ import { InputHTMLAttributes, ReactNode } from 'react';
 
 export type ContainerSizes = 'short' | 'medium' | 'long' | 'fullLength';
 
+export type FontWeights = 400 | 600 | 700 | 800;
+export type FontSizes = '18px' | '16px' | '14px';
+
 export interface InputStatus {
   /**
    * If set to true the border color would be green unless there's an error.
@@ -32,8 +35,9 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    */
   endIcon?: ReactNode;
 
-  fontWeight?: number;
-  fontSize?: string;
+  fontWeight?: FontWeights;
+
+  fontSize?: FontSizes;
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
