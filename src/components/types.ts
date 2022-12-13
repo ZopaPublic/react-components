@@ -1,13 +1,10 @@
 import { InputHTMLAttributes, ReactNode } from 'react';
-
+import { AppTheme } from './styles/Theme';
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
  */
 
 export type ContainerSizes = 'short' | 'medium' | 'long' | 'fullLength';
-
-export type FontWeights = 400 | 600 | 700 | 800;
-export type FontSizes = '18px' | '16px' | '14px';
 
 export interface InputStatus {
   /**
@@ -35,9 +32,9 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    */
   endIcon?: ReactNode;
 
-  fontWeight?: FontWeights;
+  fontWeight?: keyof AppTheme['typography']['weights'];
 
-  fontSize?: FontSizes;
+  fontSize?: keyof AppTheme['typography']['text']['sizes'];
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
