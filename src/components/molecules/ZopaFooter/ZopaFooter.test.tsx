@@ -28,9 +28,20 @@ describe('<ZopaFooter />', () => {
   });
 
   it('renders the component with no a11y violations', async () => {
-    const { container } = render(<ZopaFooter />);
+    const { container, unmount } = render(<ZopaFooter />);
     expect(container.firstChild).toMatchSnapshot();
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
+    unmount();
+  });
+
+  it('allows a user to render a custom main legal block', () => {
+    render(<ZopaFooter mainCustomLegalCopy="Hello main legal copy" />);
+    const expectedText = screen.getByText('Hello main legal copy');
+    const unexpectedText = screen.queryAllByText(
+      /Zopa Bank Limited is authorised by the Prudential Regulation Authority/,
+    );
+    expect(expectedText).toBeDefined();
+    expect(unexpectedText.length).toBe(0);
   });
 });
