@@ -44,6 +44,27 @@ const StyledLink = styled(Link)`
   ${footerLinkStyle}
 `;
 
+const MainZopaLegalCopy = () => {
+  const theme = useThemeContext();
+  return (
+    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
+      Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct
+      Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa
+      Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office at: 1st Floor,
+      Cottons Centre, Tooley Street, London, SE1 2QG.
+    </Text>
+  );
+};
+
+const MainCustomLegalCopy = ({ copy }: Record<'copy', string>) => {
+  const theme = useThemeContext();
+  return (
+    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
+      {copy}
+    </Text>
+  );
+};
+
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
   renderLink = (props: LinkProps) => <StyledLink {...props} />,
@@ -207,26 +228,5 @@ const ZopaFooter = ({
     </Footer>
   );
 };
-
-const MainZopaLegalCopy = () => {
-  const theme = useThemeContext();
-  return (
-    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
-      Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct
-      Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa
-      Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office at: 1st Floor,
-      Cottons Centre, Tooley Street, London, SE1 2QG.
-    </Text>
-  );
-}
-
-const MainCustomLegalCopy = ({ copy }: Record<'copy', string>) => {
-  const theme = useThemeContext();
-  return (
-    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
-      {copy}
-    </Text>
-  );
-}
 
 export default ZopaFooter;
