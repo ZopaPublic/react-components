@@ -208,7 +208,7 @@ const ZopaFooter = ({
   );
 };
 
-function MainZopaLegalCopy() {
+const MainZopaLegalCopy = () => {
   const theme = useThemeContext();
   return (
     <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
