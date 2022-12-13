@@ -220,7 +220,7 @@ function MainZopaLegalCopy() {
   );
 }
 
-function MainCustomLegalCopy({ copy }: { copy: string }) {
+const MainCustomLegalCopy = ({ copy }: Record<'copy', string>) => {
   const theme = useThemeContext();
   return (
     <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
