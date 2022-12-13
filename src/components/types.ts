@@ -32,7 +32,8 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    */
   endIcon?: ReactNode;
 
-  weight?: number;
+  fontWeight?: number;
+  fontSize?: string;
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
