@@ -19,14 +19,14 @@ import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink }
  *
  * @param baseUrl {string} the url the links will use as a base
  * @param renderLink {(props: LinkProps) => React.ReactNode} a callback function allowing an application to render the Logo component
- * @param mainCustomLegalCopy {string} if you need to pass some specific main legal copy from another partner use this
+ * @param mainCustomLegalCopy {string|string[]} if you need to pass some specific main legal copy from another partner use this
  * @param additionalCopy {string[]} if you need to pass additional copy after the legal copy
  */
 
 export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   baseUrl?: string;
   renderLink?: (props: LinkProps) => React.ReactNode;
-  mainCustomLegalCopy?: string;
+  mainCustomLegalCopy?: string | string[];
   additionalCopy?: string[];
 }
 
@@ -56,12 +56,25 @@ const MainZopaLegalCopy = () => {
   );
 };
 
-const MainCustomLegalCopy = ({ copy }: Record<'copy', string>) => {
+const MainCustomLegalCopy = ({ copy }: { copy: FooterProps['mainCustomLegalCopy'] }) => {
   const theme = useThemeContext();
+  const copyArray = Array.isArray(copy) ? copy : [copy];
   return (
-    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
-      {copy}
-    </Text>
+    <>
+      {copyArray.map((copy, i) => {
+        return (
+          <Text
+            as="p"
+            color={theme.footer.legalBlock.color}
+            size="small"
+            key={i}
+            className={i > copyArray.length ? '' : 'mb-4'}
+          >
+            {copy}
+          </Text>
+        );
+      })}
+    </>
   );
 };
 
