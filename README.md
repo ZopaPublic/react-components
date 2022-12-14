@@ -242,13 +242,20 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/charlielizzy">
+            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
+            <br />
+            <sub><b>charlielizzy</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/rorydpayne">
             <img src="https://avatars.githubusercontent.com/u/7081561?v=4" width="50;" alt="rorydpayne"/>
             <br />
             <sub><b>rorydpayne</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/grabbeh">
             <img src="https://avatars.githubusercontent.com/u/641299?v=4" width="50;" alt="grabbeh"/>
