@@ -1,3 +1,10 @@
+## [5.40.0](https://github.com/zopaUK/react-components/compare/v5.39.0...v5.40.0) (2022-12-14)
+
+
+### Features
+
+* **zopafooter:** allow us to have multiline legal copy in the footer ([f64cb91](https://github.com/zopaUK/react-components/commit/f64cb91c142ff549dcebe8a4bedeadbb6dc90169))
+
 ## [5.39.0](https://github.com/zopaUK/react-components/compare/v5.38.0...v5.39.0) (2022-12-13)
 
 
