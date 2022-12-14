@@ -1,3 +1,40 @@
+## [5.39.0](https://github.com/zopaUK/react-components/compare/v5.38.0...v5.39.0) (2022-12-13)
+
+
+### Features
+
+* **footer:** allow passing main copy to the footer ([f9490eb](https://github.com/zopaUK/react-components/commit/f9490ebdcb4e3118dc0b47c7a2e25406ee61b501))
+
+
+### Bug Fixes
+
+* fixed linting issues ([6bcac55](https://github.com/zopaUK/react-components/commit/6bcac5502ccbb643252bbc06d7a6923e55c0f26b))
+* fontsize and fontweight props ([37440d6](https://github.com/zopaUK/react-components/commit/37440d69de97d25390c7b764cb7698909f4405c5))
+
+## [5.38.0](https://github.com/zopaUK/react-components/compare/v5.37.0...v5.38.0) (2022-12-08)
+
+
+### Features
+
+* **bundle:** switch babel out for swc ([60b0579](https://github.com/zopaUK/react-components/commit/60b057961853abd5bbf43091fba5ce90243ca6f3))
+
+
+### Bug Fixes
+
+* **commonjs:** use the commonjs plugin again ([c8ca979](https://github.com/zopaUK/react-components/commit/c8ca97921b1b47c19de140f01c621168f4f18f4f))
+
+## [5.37.0](https://github.com/zopaUK/react-components/compare/v5.36.4...v5.37.0) (2022-12-07)
+
+
+### Features
+
+* added weight and font size into input text ([e7d17bd](https://github.com/zopaUK/react-components/commit/e7d17bdab9543d131b197e515c776fbffa00cfa0))
+* response to comments on PR ([2c4389b](https://github.com/zopaUK/react-components/commit/2c4389b1617f39cbd45dd829c111a3444634da58))
+* response to comments to remove undefined as option for weight in component types ([eda93eb](https://github.com/zopaUK/react-components/commit/eda93ebe053d4a5b96e7cbe4c69fc2092aaf93f0))
+* weight added to inputprops ([14a001b](https://github.com/zopaUK/react-components/commit/14a001b4ebd57a85539a03aac89ccd2ae8e7f521))
+* weight and font for input text ([2423022](https://github.com/zopaUK/react-components/commit/242302235481da9a2b60af96d42e1aea97f09e29))
+* will be adding font weight and size into inputtext atom ([f11f519](https://github.com/zopaUK/react-components/commit/f11f5194897368513390355052a72e7a4b03b8aa))
+
 ## [5.36.4](https://github.com/zopaUK/react-components/compare/v5.36.3...v5.36.4) (2022-12-06)
 
 

@@ -1,4 +1,5 @@
 import { InputHTMLAttributes, ReactNode } from 'react';
+import { AppTheme } from './styles/Theme';
 
 /**
  * GLOBAL TYPES ACROSS COMPONENTS
@@ -32,7 +33,9 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
    */
   endIcon?: ReactNode;
 
-  weight?: number;
+  fontWeight?: keyof AppTheme['typography']['weights'];
+
+  fontSize?: keyof AppTheme['typography']['text']['sizes'];
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {

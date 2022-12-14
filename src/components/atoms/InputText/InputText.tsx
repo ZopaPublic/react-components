@@ -56,8 +56,8 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   padding: 0 16px;
   padding-left: ${({ startIcon }) => !!startIcon && '60px'};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
-  font-size: ${({ theme, size = 'body' }) => theme.typography.text.sizes[size]};
-  font-weight: ${({ theme, weight = 'regular' }) => theme.typography.weights[weight]};
+  font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
+  font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;

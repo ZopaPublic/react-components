@@ -14,6 +14,22 @@ import instagram from '../../../content/images/social/instagram.svg';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
 import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
 
+/**
+ * Use this component to render a Zopa Footer
+ *
+ * @param baseUrl {string} the url the links will use as a base
+ * @param renderLink {(props: LinkProps) => React.ReactNode} a callback function allowing an application to render the Logo component
+ * @param mainCustomLegalCopy {string} if you need to pass some specific main legal copy from another partner use this
+ * @param additionalCopy {string[]} if you need to pass additional copy after the legal copy
+ */
+
+export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
+  baseUrl?: string;
+  renderLink?: (props: LinkProps) => React.ReactNode;
+  mainCustomLegalCopy?: string;
+  additionalCopy?: string[];
+}
+
 export const footerLinkStyle = css`
   font-weight: ${typography.weights.regular};
   text-decoration: none;
@@ -28,16 +44,32 @@ const StyledLink = styled(Link)`
   ${footerLinkStyle}
 `;
 
-export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
-  baseUrl?: string;
-  renderLink?: (props: LinkProps) => React.ReactNode;
-  additionalCopy?: string[];
-}
+const MainZopaLegalCopy = () => {
+  const theme = useThemeContext();
+  return (
+    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
+      Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct
+      Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa
+      Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office at: 1st Floor,
+      Cottons Centre, Tooley Street, London, SE1 2QG.
+    </Text>
+  );
+};
+
+const MainCustomLegalCopy = ({ copy }: Record<'copy', string>) => {
+  const theme = useThemeContext();
+  return (
+    <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
+      {copy}
+    </Text>
+  );
+};
 
 const ZopaFooter = ({
   baseUrl = 'https://www.zopa.com',
   renderLink = (props: LinkProps) => <StyledLink {...props} />,
   additionalCopy = [],
+  mainCustomLegalCopy,
   ...rest
 }: FooterProps) => {
   const theme = useThemeContext();
@@ -162,14 +194,9 @@ const ZopaFooter = ({
               />
             </SocialBlock>
           )}
-          {theme.footer.showLegalBlock && (
+          {theme.footer.showLegalBlock ? (
             <LegalBlock xs={12} l={theme.footer.legalBlock.isFullWidth ? 12 : 5} theme={theme}>
-              <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
-                Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial
-                Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services
-                Register (800542). Zopa Bank Limited (10627575) is incorporated in England &amp; Wales and has its
-                registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
-              </Text>
+              {mainCustomLegalCopy ? <MainCustomLegalCopy copy={mainCustomLegalCopy} /> : <MainZopaLegalCopy />}
               <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
                 © Zopa Bank Limited {new Date().getFullYear()} All rights reserved. 'Zopa' is a trademark of Zopa Bank
                 Limited.
@@ -195,7 +222,7 @@ const ZopaFooter = ({
                 </Text>
               ))}
             </LegalBlock>
-          )}
+          ) : null}
         </FlexRow>
       </FlexContainer>
     </Footer>

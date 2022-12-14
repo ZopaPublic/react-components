@@ -1,6 +1,6 @@
+import * as React from 'react';
 import axe from '../../../../axe-helper';
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import ZopaFooter from './ZopaFooter';
 import { mockDate, MockDate } from '../../../helpers/test/date';
 
@@ -15,6 +15,7 @@ describe('<ZopaFooter />', () => {
   });
   afterEach(() => {
     date.finishMocking();
+    cleanup();
   });
 
   it('renders correct urls  with baseUrl prop', async () => {
@@ -25,6 +26,21 @@ describe('<ZopaFooter />', () => {
 
     expect(firstLink).toHaveAttribute('href', 'http://whatever.com/car-finance');
     expect(logoLink).toHaveAttribute('href', 'http://whatever.com');
+  });
+
+  // This has to go before the next test, because react-testing-library isn't smart enough to clean up after itself by default
+  // unmounting or cleanup has no effect
+  // see: https://github.com/testing-library/react-testing-library/issues/716#issuecomment-688120431
+  // none of the solutions other than swapping the order of the tests seems to work here
+
+  it('allows a user to render a custom main legal block', () => {
+    render(<ZopaFooter mainCustomLegalCopy="Hello main legal copy" />);
+    const expectedText = screen.getByText('Hello main legal copy');
+    const unexpectedText = screen.queryAllByText(
+      /Zopa Bank Limited is authorised by the Prudential Regulation Authority/,
+    );
+    expect(expectedText).toBeDefined();
+    expect(unexpectedText.length).toBe(0);
   });
 
   it('renders the component with no a11y violations', async () => {
