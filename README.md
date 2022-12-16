@@ -39,7 +39,6 @@ Execute the development environment:
 pnpm dev
 ```
 
-Test
 The docs will run at [localhost:6060](http://localhost:6060).
 
 ## Local development (working on a linked application)
