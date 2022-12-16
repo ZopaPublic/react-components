@@ -1,3 +1,11 @@
+## [5.40.2](https://github.com/zopaUK/react-components/compare/v5.40.1...v5.40.2) (2022-12-16)
+
+
+### Bug Fixes
+
+* change text to heading for accordian headings for ally ([9a225e6](https://github.com/zopaUK/react-components/commit/9a225e6486945fa1cc81ea7b03296ac59cb7765c))
+* changed text to header inside accordian heading for a11y ([7c1169d](https://github.com/zopaUK/react-components/commit/7c1169d1746be77d6edd0e20c6dc6218ce489682))
+
 ## [5.40.1](https://github.com/zopaUK/react-components/compare/v5.40.0...v5.40.1) (2022-12-16)
 
 
