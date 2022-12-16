@@ -44,7 +44,7 @@ exports[`<Trustpilot /> renders without a11y violations 1`] = `
       <title
         id="trust-pilot-rating-title"
       >
-        Trustpilot Stars Logo
+        Trustpilot Five stars rating
       </title>
       <desc
         id="trust-pilot-rating-desc"
