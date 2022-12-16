@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { colors, spacing } from '../../../../constants';
-import Text from '../../../atoms/Text/Text';
+import Heading from '../../../atoms/Heading/Heading';
 import { useAccordionContext } from '../context';
 
 export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>, 'onClick'> {
@@ -13,12 +13,15 @@ export interface AccordionHeader extends Omit<HTMLAttributes<HTMLButtonElement>,
 }
 const StyledButton = styled.button`
   appearance: none;
+  color: ${colors.greyDarkest};
+  font-weight: 700;
   border: none;
   background: none;
   cursor: pointer;
   padding: 0;
   width: 100%;
   margin-bottom: ${spacing[1]};
+  text-align: left;
 `;
 
 const TitleContainer = styled.div`
@@ -30,10 +33,6 @@ const TitleContainer = styled.div`
   justify-content: space-between;
   position: relative;
   padding: ${spacing[4]} 43px ${spacing[4]} ${spacing[4]};
-`;
-
-const Title = styled(Text)`
-  color: ${colors.greyDarkest};
 `;
 
 const Cross = styled.span<{ active: boolean }>`
@@ -74,14 +73,14 @@ const AccordionHeader = ({ children, id, index, textSize = 'body', onClick, ...r
   };
 
   return (
-    <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
-      <TitleContainer>
-        <Title weight="bold" size={textSize}>
+    <TitleContainer>
+      <Heading as="h3" size="h6">
+        <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
           {children}
-        </Title>
-        <Cross active={isActiveSection(index)} />
-      </TitleContainer>
-    </StyledButton>
+        </StyledButton>
+      </Heading>
+      <Cross active={isActiveSection(index)} />
+    </TitleContainer>
   );
 };
 
