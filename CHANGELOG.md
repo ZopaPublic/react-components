@@ -1,3 +1,10 @@
+## [5.40.1](https://github.com/zopaUK/react-components/compare/v5.40.0...v5.40.1) (2022-12-16)
+
+
+### Bug Fixes
+
+* **added dynamically set trustpilot title:** trustpilot logo title to include star rating ([4d4f0e2](https://github.com/zopaUK/react-components/commit/4d4f0e2ca904b4d2492f8430b781f81483cee875))
+
 ## [5.40.0](https://github.com/zopaUK/react-components/compare/v5.39.0...v5.40.0) (2022-12-14)
 
 
