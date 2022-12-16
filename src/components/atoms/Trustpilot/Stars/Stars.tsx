@@ -14,6 +14,19 @@ export type TrustPilotStarsProps = SVGProps<SVGSVGElement> & {
   rating?: 0 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5;
 };
 
+const trustPilotStarsLogoTitle = {
+  0: 'Trustpilot Zero stars rating',
+  1: 'Trustpilot One star',
+  1.5: 'Trustpilot One and a half stars rating',
+  2: 'Trustpilot Two stars rating',
+  2.5: 'Trustpilot Two and a half stars rating',
+  3: 'Trustpilot Three stars rating',
+  3.5: 'Trustpilot Three and a half stars rating',
+  4: 'Trustpilot Four stars rating',
+  4.5: 'Trustpilot Four and a half stars rating',
+  5: 'Trustpilot Five stars rating',
+} as const;
+
 const TrustPilotStars = ({ rating = 5, ...props }: TrustPilotStarsProps) => (
   <svg
     viewBox="0 0 512 96"
@@ -24,7 +37,7 @@ const TrustPilotStars = ({ rating = 5, ...props }: TrustPilotStarsProps) => (
     role="img"
     {...props}
   >
-    <title id="trust-pilot-rating-title">Trustpilot Stars Logo</title>
+    <title id="trust-pilot-rating-title">{trustPilotStarsLogoTitle[rating]}</title>
     <desc id="trust-pilot-rating-desc">An illustration of the Trustpilot Stars Logo</desc>
     {rating === 0 && <ZeroStar />}
     {rating === 1 && <OneStar />}

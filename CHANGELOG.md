@@ -1,3 +1,23 @@
+## [5.40.0](https://github.com/zopaUK/react-components/compare/v5.39.0...v5.40.0) (2022-12-14)
+
+
+### Features
+
+* **zopafooter:** allow us to have multiline legal copy in the footer ([f64cb91](https://github.com/zopaUK/react-components/commit/f64cb91c142ff549dcebe8a4bedeadbb6dc90169))
+
+## [5.39.0](https://github.com/zopaUK/react-components/compare/v5.38.0...v5.39.0) (2022-12-13)
+
+
+### Features
+
+* **footer:** allow passing main copy to the footer ([f9490eb](https://github.com/zopaUK/react-components/commit/f9490ebdcb4e3118dc0b47c7a2e25406ee61b501))
+
+
+### Bug Fixes
+
+* fixed linting issues ([6bcac55](https://github.com/zopaUK/react-components/commit/6bcac5502ccbb643252bbc06d7a6923e55c0f26b))
+* fontsize and fontweight props ([37440d6](https://github.com/zopaUK/react-components/commit/37440d69de97d25390c7b764cb7698909f4405c5))
+
 ## [5.38.0](https://github.com/zopaUK/react-components/compare/v5.37.0...v5.38.0) (2022-12-08)
 
 

@@ -13,7 +13,7 @@ exports[`<TrustpilotStars /> renders default 5 stars rating without a11y violati
     <title
       id="trust-pilot-rating-title"
     >
-      Trustpilot Stars Logo
+      Trustpilot Five stars rating
     </title>
     <desc
       id="trust-pilot-rating-desc"

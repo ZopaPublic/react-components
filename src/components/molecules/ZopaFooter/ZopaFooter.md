@@ -34,3 +34,15 @@ const renderLink = ({ href, children }) => <CustomLink href={href}>{children}</C
 
 <ZopaFooter renderLink={renderLink} />;
 ```
+
+### Adding custom legal copy
+
+Its possible partners will want to customise the copy contained within the Footer. This can be done by passing in a `mainCustomLegalCopy` prop.
+
+To enable line breaks we allow passing a string array. This will render each string as a separate paragraph.
+
+```tsx
+import { ZopaFooter } from '@zopauk/react-components';
+
+<ZopaFooter mainCustomLegalCopy={['This is my first line of legal copy', 'This is my second line of legal copy']} />;
+```

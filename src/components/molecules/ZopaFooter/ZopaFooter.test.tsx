@@ -43,6 +43,14 @@ describe('<ZopaFooter />', () => {
     expect(unexpectedText.length).toBe(0);
   });
 
+  it('allows a user to render a multiline custom main legal block', () => {
+    render(<ZopaFooter mainCustomLegalCopy={['Hello Line1', 'Hello Line2']} />);
+    const expectedText1 = screen.getByText('Hello Line1');
+    const expectedText2 = screen.getByText('Hello Line2');
+    expect(expectedText1).toBeDefined();
+    expect(expectedText2).toBeDefined();
+  });
+
   it('renders the component with no a11y violations', async () => {
     const { container } = render(<ZopaFooter />);
     expect(container.firstChild).toMatchSnapshot();
