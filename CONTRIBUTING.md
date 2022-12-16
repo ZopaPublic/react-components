@@ -118,24 +118,24 @@ To release a new major prerelease:
 
 ```bash
 git checkout -b milestone/2.0.0 # Create a new branch for the next major version assuming you are in v2.x
-yarn compile
-yarn version --premajor # This will create 2.0.0-0
+pnpm compile
+pnpm version premajor # This will create 2.0.0-0
 git push origin milestone/4.0.0
-yarn publish --tag next # Publish to https://www.npmjs.com/package/@zopauk/react-components
+pnpm publish --tag next # Publish to https://www.npmjs.com/package/@zopauk/react-components
 ```
 
 To release another iteration of the prerelease:
 
 ```bash
-yarn compile
-yarn version --prerelease # This will create 2.0.0-1 assuming you are in 2.0.0-0
+pnpm compile
+pnpm version prerelease # This will create 2.0.0-1 assuming you are in 2.0.0-0
 ```
 
 Get the new prerelease version on your app:
 
 ```bash
-yarn add @zopauk/react-components@next
+pnpm add @zopauk/react-components@next
 ```
 
-Docs: [Semantic versioning](https://semver.org/) | [`yarn version`](https://classic.yarnpkg.com/en/docs/cli/version) |
-[`yarn publish`](https://classic.yarnpkg.com/en/docs/cli/publish) | [`yarn publish --tag`](https://classic.yarnpkg.com/en/docs/cli/publish#toc-yarn-publish-tag)
+Docs: [Semantic versioning](https://semver.org/) | [`pnpm version`](https://classic.yarnpkg.com/en/docs/cli/version) |
+[`pnpm publish`](https://pnpm.io/cli/publish) | [`pnpm publish --tag`](https://pnpm.io/cli/publish#--tag-tag)
