@@ -20,7 +20,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   border-radius: 100px;
   height: 4px;
   display: block;
-  background: #00D9C5;
+  background: #009E8E;
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
@@ -42,7 +42,7 @@ exports[`<ProductTemplateProgress /> renders with all the props 1`] = `
   display: block;
   width: 12px;
   height: 12px;
-  background: #00D9C5;
+  background: #009E8E;
   border-radius: 100%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);

@@ -67,13 +67,13 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c5:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c5::-webkit-input-placeholder {
@@ -233,13 +233,13 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c4:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c4:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c4::-webkit-input-placeholder {
