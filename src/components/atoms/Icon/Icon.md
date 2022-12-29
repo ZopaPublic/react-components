@@ -26,7 +26,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 <>
   <Icon variant={faCoffee} className="mr-6" />
-  <Icon variant={faCoffee} color={colors.brand} className="mr-6" />
+  <Icon variant={faCoffee} color={colors.brandDecorative} className="mr-6" />
   <Icon variant={faCoffee} pulse className="mr-6" />
   <Icon variant={faCoffee} spin className="mr-6" />
   <Icon variant={faCoffee} rotation={180} />

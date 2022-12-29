@@ -1,7 +1,8 @@
 const brandColors = {
-  brand: '#00D9C5',
+  brand: '#009E8E',
   brandDark: '#063737',
   brandLight: '#ECFCF9',
+  brandDecorative: '#00D9C5',
 } as const;
 
 const actionColors = {

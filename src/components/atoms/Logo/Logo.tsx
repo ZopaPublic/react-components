@@ -10,7 +10,7 @@ export interface LogoProps extends React.SVGProps<SVGSVGElement> {
 
 const LogoSvg = styled.path<LogoProps>`
   transition: fill 0.3s ease;
-  fill: ${({ negative }) => (negative ? colors.white : colors.brand)};
+  fill: ${({ negative }) => (negative ? colors.white : colors.brandDecorative)};
 `;
 
 const Logo = ({ negative, ...rest }: LogoProps) => (

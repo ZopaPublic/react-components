@@ -366,7 +366,7 @@ const NavbarWrapper = ({
                 >
                   <Icon
                     variant={faBars}
-                    color={open ? colors.brand : colors.white}
+                    color={open ? colors.brandDecorative : colors.white}
                     width="20px"
                     height="20px"
                     size="1x"
@@ -376,7 +376,7 @@ const NavbarWrapper = ({
                 <IconContainer theme={theme} />
               )}
               <LogoContainer theme={theme}>
-                {theme.navbar.logo.render && <Logo color={colors.brand} height="20px" negative />}
+                {theme.navbar.logo.render && <Logo color={colors.brandDecorative} height="20px" negative />}
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer theme={theme} />}

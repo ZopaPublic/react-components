@@ -6,7 +6,7 @@ Use this component to render a HTML unordered or ordered list of elements with o
 
 ```tsx static
 <List>
-  <List.Item icon={<Icon variant={faCoffee} color={colors.brand} />}>
+  <List.Item icon={<Icon variant={faCoffee} color={colors.brandDecorative} />}>
     <Text as="p">Item One</Text>
   </List.Item>
 </List>
@@ -24,7 +24,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 <>
   <List>
-    <List.Item icon={<Icon variant={faCoffee} color={colors.brand} />}>
+    <List.Item icon={<Icon variant={faCoffee} color={colors.brandDecorative} />}>
       <Text as="p" color={colors.greyDark}>
         Item
       </Text>

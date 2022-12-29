@@ -272,7 +272,7 @@ library.add(fas);
 export const zopaTheme: AppTheme = {
   alert: {
     brand: {
-      icon: colors.brand,
+      icon: colors.brandDecorative,
       background: colors.brandLight,
       border: 'none',
       text: colors.greyDarkest,
@@ -346,7 +346,7 @@ export const zopaTheme: AppTheme = {
       headingSize: typography.sizes.heading.h6,
       textSize: typography.sizes.text.small,
       boxShadowStyle: 'none',
-      borderStyle: `1px solid ${colors.brand}`,
+      borderStyle: `1px solid ${colors.brandDecorative}`,
       backgroundStyle: `${colors.brandLight};`,
       borderRadius: '12px',
     },
@@ -458,7 +458,7 @@ export const zopaTheme: AppTheme = {
     },
     mobile: {
       minHeight: 'auto',
-      bgColor: colors.brand,
+      bgColor: colors.brandDecorative,
     },
   },
   progressBar: {
