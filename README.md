@@ -228,6 +228,13 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/charlielizzy">
+            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
+            <br />
+            <sub><b>charlielizzy</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/rominamoya">
             <img src="https://avatars.githubusercontent.com/u/1150925?v=4" width="50;" alt="rominamoya"/>
             <br />
@@ -235,17 +242,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Blimeys">
-            <img src="https://avatars.githubusercontent.com/u/13405542?v=4" width="50;" alt="Blimeys"/>
+        <a href="https://github.com/stephanie-senoner">
+            <img src="https://avatars.githubusercontent.com/u/118994357?v=4" width="50;" alt="stephanie-senoner"/>
             <br />
-            <sub><b>Blimeys</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/charlielizzy">
-            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
-            <br />
-            <sub><b>charlielizzy</b></sub>
+            <sub><b>stephanie-senoner</b></sub>
         </a>
     </td></tr>
 <tr>
@@ -254,6 +254,20 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/7081561?v=4" width="50;" alt="rorydpayne"/>
             <br />
             <sub><b>rorydpayne</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MichelleXBai">
+            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
+            <br />
+            <sub><b>MichelleXBai</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Blimeys">
+            <img src="https://avatars.githubusercontent.com/u/13405542?v=4" width="50;" alt="Blimeys"/>
+            <br />
+            <sub><b>Blimeys</b></sub>
         </a>
     </td>
     <td align="center">
