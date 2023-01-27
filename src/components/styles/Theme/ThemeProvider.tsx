@@ -272,7 +272,7 @@ library.add(fas);
 export const zopaTheme: AppTheme = {
   alert: {
     brand: {
-      icon: colors.brandDecorative,
+      icon: colors.brand,
       background: colors.brandLight,
       border: 'none',
       text: colors.greyDarkest,
@@ -346,7 +346,7 @@ export const zopaTheme: AppTheme = {
       headingSize: typography.sizes.heading.h6,
       textSize: typography.sizes.text.small,
       boxShadowStyle: 'none',
-      borderStyle: `1px solid ${colors.brandDecorative}`,
+      borderStyle: `1px solid ${colors.brand}`,
       backgroundStyle: `${colors.brandLight};`,
       borderRadius: '12px',
     },

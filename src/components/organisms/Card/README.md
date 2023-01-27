@@ -315,7 +315,7 @@ import { faPiggyBank, faChevronRight } from '@fortawesome/free-solid-svg-icons';
     <FlexCol xs={6}>
       <Card styling="action" layout="horizontal">
         <Card.LineItem>
-          <Icon variant={faPiggyBank} color={colors.brandDecorative} size="2x" className="ml-4" />
+          <Icon variant={faPiggyBank} color={colors.brand} size="2x" className="ml-4" />
         </Card.LineItem>
         <Card.Content className="py-6 pl-1">
           <Card.Heading className="mb-1">Card with additional line item</Card.Heading>

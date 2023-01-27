@@ -95,7 +95,7 @@ const Help = ({
             <Card.Content>
               <FlexRow>
                 <FlexColCenter xs={3} align="center">
-                  <Icon variant={faPhone} color={colors.brandDecorative} size="3x" />
+                  <Icon variant={faPhone} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
                   <Card.Heading>{HelpLineDetails[helpLine].telephone.label}</Card.Heading>
@@ -117,7 +117,7 @@ const Help = ({
             <Card.Content>
               <FlexRow>
                 <FlexColCenter xs={3} align="center">
-                  <Icon variant={faEnvelope} color={colors.brandDecorative} size="3x" />
+                  <Icon variant={faEnvelope} color={colors.brand} size="3x" />
                 </FlexColCenter>
                 <FlexCol xs={9}>
                   <Card.Heading>contactus@zopa.com</Card.Heading>
