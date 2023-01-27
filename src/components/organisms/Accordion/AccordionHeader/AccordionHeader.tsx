@@ -41,7 +41,7 @@ const Cross = styled.span<{ active: boolean }>`
   height: 11px;
   position: absolute;
   right: 16px;
-  top: 20px;
+  top: 40%;
   &:after,
   &:before {
     content: '';
