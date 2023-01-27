@@ -355,7 +355,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-phone fa-w-16 fa-3x "
-                  color="#00D9C5"
+                  color="#009E8E"
                   data-icon="phone"
                   data-prefix="fas"
                   focusable="false"
@@ -424,7 +424,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
                 <svg
                   aria-hidden="true"
                   class="svg-inline--fa fa-envelope fa-w-16 fa-3x "
-                  color="#00D9C5"
+                  color="#009E8E"
                   data-icon="envelope"
                   data-prefix="fas"
                   focusable="false"
