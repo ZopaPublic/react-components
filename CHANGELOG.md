@@ -1,3 +1,12 @@
+## [5.41.0](https://github.com/zopaUK/react-components/compare/v5.40.2...v5.41.0) (2023-02-01)
+
+
+### Features
+
+* **accessible teal colour:** add accessible teal colour ([d7a3788](https://github.com/zopaUK/react-components/commit/d7a3788b58d6f5e77b2e401614299e556063f8e3))
+* add spinner in a new colour ([7d8c685](https://github.com/zopaUK/react-components/commit/7d8c685b080da8f53e494e97115ee764d4e7b4b6))
+* **icons to use accessible teal:** all icons to use accessible teal ([fbbee19](https://github.com/zopaUK/react-components/commit/fbbee19c1af317bb7b98a1f8ae3cf8ebfedf23eb))
+
 ## [5.40.2](https://github.com/zopaUK/react-components/compare/v5.40.1...v5.40.2) (2022-12-16)
 
 
