@@ -25,13 +25,13 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {
@@ -124,13 +124,13 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c2:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c2::-webkit-input-placeholder {
@@ -228,13 +228,13 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {
@@ -308,13 +308,13 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {
@@ -381,13 +381,13 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {
@@ -454,13 +454,13 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {
@@ -527,13 +527,13 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c1:hover {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c1:focus {
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E #009E8E;
 }
 
 .c1::-webkit-input-placeholder {

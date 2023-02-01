@@ -98,19 +98,19 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
 
 .c2:hover:not(:disabled) + label,
 .c2:focus + label {
-  border-color: #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c2:hover:not(:disabled) + label:before,
 .c2:focus + label:before {
-  border-color: #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c2:hover:checked:not(:disabled) + label:after,
 .c2:focus:checked + label:after {
-  background-color: #00D9C5;
+  background-color: #009E8E;
 }
 
 .c2:disabled + label {
@@ -128,18 +128,18 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
 }
 
 .c2:checked + label {
-  border-color: #00D9C5;
+  border-color: #009E8E;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
 .c2:checked + label:before {
-  border-color: #00D9C5;
+  border-color: #009E8E;
   box-shadow: none;
 }
 
 .c2:checked + label:after {
-  background-color: #00D9C5;
+  background-color: #009E8E;
   height: 10px;
   width: 10px;
   -webkit-animation: ciAMHu 200ms ease-in-out;
@@ -268,19 +268,19 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c2:hover:not(:disabled) + label,
 .c2:focus + label {
-  border-color: #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c2:hover:not(:disabled) + label:before,
 .c2:focus + label:before {
-  border-color: #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c2:hover:checked:not(:disabled) + label:after,
 .c2:focus:checked + label:after {
-  background-color: #00D9C5;
+  background-color: #009E8E;
 }
 
 .c2:disabled + label {
@@ -298,18 +298,18 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 }
 
 .c2:checked + label {
-  border-color: #00D9C5;
+  border-color: #009E8E;
   background-color: #ECFCF9;
   box-shadow: none;
 }
 
 .c2:checked + label:before {
-  border-color: #00D9C5;
+  border-color: #009E8E;
   box-shadow: none;
 }
 
 .c2:checked + label:after {
-  background-color: #00D9C5;
+  background-color: #009E8E;
   height: 10px;
   width: 10px;
   -webkit-animation: ciAMHu 200ms ease-in-out;

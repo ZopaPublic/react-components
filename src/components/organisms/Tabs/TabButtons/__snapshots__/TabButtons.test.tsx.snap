@@ -223,8 +223,8 @@ exports[`<TabButtons /> renders the buttons on small screens 1`] = `
 .c0:hover {
   outline: none;
   outline-width: 0;
-  border: 1px solid #00D9C5;
-  box-shadow: 0 0 4px 0 #00D9C5;
+  border: 1px solid #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
 }
 
 .c0:disabled {

@@ -458,7 +458,7 @@ export const zopaTheme: AppTheme = {
     },
     mobile: {
       minHeight: 'auto',
-      bgColor: colors.brand,
+      bgColor: colors.brandDecorative,
     },
   },
   progressBar: {

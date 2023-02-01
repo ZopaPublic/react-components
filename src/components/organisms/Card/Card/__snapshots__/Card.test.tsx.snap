@@ -10,7 +10,7 @@ exports[`<Card /> renders with brand styling 1`] = `
   display: flex;
   overflow: hidden;
   background-color: #ECFCF9;
-  border: 1px solid #00D9C5;
+  border: 1px solid #009E8E;
   border-radius: 12px;
   box-shadow: none;
   -webkit-flex-direction: column;

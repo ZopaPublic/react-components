@@ -26,8 +26,8 @@ exports[`<ScrollableArea /> renders the component with the required props 1`] = 
 
 .c0::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  border: 2px solid #00D9C5;
-  background-color: #00D9C5;
+  border: 2px solid #009E8E;
+  background-color: #009E8E;
 }
 
 <div
