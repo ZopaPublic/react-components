@@ -1,3 +1,10 @@
+## [5.42.1](https://github.com/zopaUK/react-components/compare/v5.42.0...v5.42.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* **display:** fix display class ([c8973c2](https://github.com/zopaUK/react-components/commit/c8973c278451d29f8c7bb8e10893cdee0432857f))
+
 ## [5.42.0](https://github.com/zopaUK/react-components/compare/v5.41.0...v5.42.0) (2023-02-09)
 
 
