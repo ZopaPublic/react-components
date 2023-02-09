@@ -3,6 +3,7 @@ import { normalize } from 'styled-normalize';
 import { typography } from '../../constants';
 import { maxEqualToMedia } from '../../helpers/responsiveness';
 import { spacing } from './Spacing';
+import { display } from './Display';
 
 // Universal box sizing with Inheritance. More info: https://css-tricks.com/box-sizing/#article-header-id-6
 const boxSizing = css`
@@ -54,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
   ${imagery}
   ${navMenu}
   body {
+    ${display}
     ${spacing}
   }
 `;
