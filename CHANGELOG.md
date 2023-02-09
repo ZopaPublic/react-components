@@ -1,3 +1,17 @@
+## [5.42.0](https://github.com/zopaUK/react-components/compare/v5.41.0...v5.42.0) (2023-02-09)
+
+
+### Features
+
+* **display:** add display atomic classes ([7beafbb](https://github.com/zopaUK/react-components/commit/7beafbb578ba014d2537f955d96d3f415fafafa7))
+
+
+### Bug Fixes
+
+* **display:** docs update ([a4962f2](https://github.com/zopaUK/react-components/commit/a4962f20b10a0e194cf36be503f62a497b684e83))
+* **display:** remove duped class ([513013f](https://github.com/zopaUK/react-components/commit/513013f85ca81b5cc67026aaa3f421cf2c719233))
+* **tests:** update tests ([f76cc11](https://github.com/zopaUK/react-components/commit/f76cc114244ac0e3f109d8b89cd2bca309e54a65))
+
 ## [5.41.0](https://github.com/zopaUK/react-components/compare/v5.40.2...v5.41.0) (2023-02-01)
 
 
