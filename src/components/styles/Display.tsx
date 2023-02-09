@@ -52,7 +52,7 @@ const createResponsiveDisplay = () =>
           ...displayProperties.reduce(
             (acc, property) => ({
               ...acc,
-              [`${breakpoint}\\:${property === 'none' ? 'hidden' : property}`]: { display: property },
+              [`.${breakpoint}\\:${property === 'none' ? 'hidden' : property}`]: { display: property },
             }),
             {},
           ),
