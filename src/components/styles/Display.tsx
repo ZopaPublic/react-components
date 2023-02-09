@@ -62,9 +62,6 @@ const createResponsiveDisplay = () =>
     );
 
 export const display = css`
-  .hidden {
-    display: none;
-  }
   ${css(createTopLevelDisplay())}
   ${css(createResponsiveDisplay())}
 `;
