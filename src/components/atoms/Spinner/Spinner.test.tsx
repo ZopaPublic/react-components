@@ -26,7 +26,7 @@ describe('<Spinner />', () => {
 describe('<ThreeDotsSpinner />', () => {
   it('renders three dots spinner', async () => {
     const { container } = render(<ThreeDotsSpinner />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
     const results = await axe(container.innerHTML);
     expect(results).toHaveNoViolations();
   });

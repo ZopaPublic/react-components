@@ -8,7 +8,7 @@ const animateDots = keyframes`
       box-shadow: 0 2.5em 0 -1.3em;
   }
     40% {
-      box-shadow: 0 2.5em 0 0;qq
+      box-shadow: 0 2.5em 0 0;
   }
 `;
 
