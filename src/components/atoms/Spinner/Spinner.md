@@ -27,3 +27,11 @@ import { Spinner } from '@zopauk/react-components';
 
 <Spinner styling="negative" />;
 ```
+
+ThreeDotsSpinner:
+
+```ts
+import { ThreeDotsSpinner } from '@zopauk/react-components';
+
+<ThreeDotsSpinner />;
+```
