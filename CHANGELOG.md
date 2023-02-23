@@ -1,3 +1,19 @@
+## [5.43.0](https://github.com/zopaUK/react-components/compare/v5.42.1...v5.43.0) (2023-02-23)
+
+
+### Features
+
+* added three dots spinner ([579c8af](https://github.com/zopaUK/react-components/commit/579c8af5f5a46d4cbd72ed75df49f43fc44caee0))
+* **added three dots spinner from quopa:** added three pulsing dots spinner from quopa into zrc ([75b605c](https://github.com/zopaUK/react-components/commit/75b605c0f7d7fc698281e60e6a2dac6454cc2ddf))
+* changed px to em ([d9a0eff](https://github.com/zopaUK/react-components/commit/d9a0eff0ded709be220ba72aa67d6c010630e14b))
+* moved three dots spinner into own atom ([c9ebb37](https://github.com/zopaUK/react-components/commit/c9ebb376648e95c237e62bf4a79bdfca538581a3))
+* update snapshots ([5178f9c](https://github.com/zopaUK/react-components/commit/5178f9c75c35c8f13e9774fb604bd7cc6b050ac8))
+
+
+### Bug Fixes
+
+* **typo:** typo three dots spinner ([7de9633](https://github.com/zopaUK/react-components/commit/7de963332148631a9172affaa2246cde6861ba98))
+
 ## [5.42.1](https://github.com/zopaUK/react-components/compare/v5.42.0...v5.42.1) (2023-02-09)
 
 
