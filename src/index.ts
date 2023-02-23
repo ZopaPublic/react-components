@@ -30,7 +30,7 @@ export { default as Dropdown } from './components/atoms/Dropdown/Dropdown';
 export { Option as DropdownOption } from './components/atoms/Dropdown/Dropdown';
 export { default as DropdownFiltered } from './components/molecules/DropdownFiltered/DropdownFiltered';
 export { default as Spinner } from './components/atoms/Spinner/Spinner';
-export { default as ThreeDotsSpinner } from './components/atoms/Spinner/ThreeDotsSpinner';
+export { default as ThreeDotsSpinner } from './components/atoms/ThreeDotsSpinner/ThreeDotsSpinner';
 export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMessage';
 export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
 export { default as InputRange } from './components/atoms/InputRange/InputRange';
