@@ -3,8 +3,8 @@
 exports[`<ThreeDotsSpinner /> renders three dots spinner 1`] = `
 .c0 {
   color: #009E8E;
-  font-size: 6px;
-  margin: 36px auto;
+  font-size: 0.375em;
+  margin: 2.25em auto;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
