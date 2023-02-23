@@ -14,8 +14,8 @@ const animateDots = keyframes`
 
 const ThreeDotsSpinner = styled.div`
   color: ${colors.brand};
-  font-size: 6px;
-  margin: 36px auto;
+  font-size: 0.375em;
+  margin: 2.25em auto;
   position: relative;
   text-indent: -9999em;
   transform: translateZ(0);
