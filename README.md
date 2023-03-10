@@ -142,17 +142,17 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/katebeavis">
-            <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
-            <br />
-            <sub><b>katebeavis</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/OlenaKashuba">
             <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
             <br />
             <sub><b>OlenaKashuba</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/katebeavis">
+            <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
+            <br />
+            <sub><b>katebeavis</b></sub>
         </a>
     </td>
     <td align="center">
