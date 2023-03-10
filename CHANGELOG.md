@@ -1,3 +1,11 @@
+## [5.43.1](https://github.com/zopaUK/react-components/compare/v5.43.0...v5.43.1) (2023-03-10)
+
+
+### Bug Fixes
+
+* **accordion:** make whole accordion header clickable ([72afca7](https://github.com/zopaUK/react-components/commit/72afca7fe5d7db9753d10d2bbd3c2e21df469351))
+* **make whole accordion header clickable:** fix accordion header ([ae14823](https://github.com/zopaUK/react-components/commit/ae14823a9d91af91d5fad8fe3b411aa3c35c9985))
+
 ## [5.43.0](https://github.com/zopaUK/react-components/compare/v5.42.1...v5.43.0) (2023-02-23)
 
 
