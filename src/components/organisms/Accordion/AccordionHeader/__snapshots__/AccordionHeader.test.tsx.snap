@@ -16,6 +16,39 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   text-align: left;
 }
 
+.c1 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  right: 16px;
+  top: 40%;
+}
+
+.c1:after,
+.c1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #818F9B;
+}
+
+.c1:before {
+  width: 100%;
+  height: 3px;
+}
+
+.c1:after {
+  height: 100%;
+  width: 3px;
+}
+
 <button
   aria-controls="one-section"
   aria-disabled="false"
@@ -26,5 +59,8 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   type="button"
 >
   Header
+  <span
+    class="c1"
+  />
 </button>
 `;
