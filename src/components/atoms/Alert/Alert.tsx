@@ -6,6 +6,7 @@ import Icon from '../Icon/Icon';
 import { typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
 import ExclamationIcon from '../../styles/icons/exclamation';
+import Button from '../Button/Button';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -54,11 +55,13 @@ const IconWrapper = styled.div<{ severity: Severity }>`
   }
 `;
 
-const CrossIcon = styled(Icon)`
+const CrossButton = styled(Button)`
   position: absolute;
-  cursor: pointer;
-  right: 10px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
+  &:hover {
+    background: transparent;
+  }
 `;
 
 const Alert = ({
@@ -97,13 +100,9 @@ const Alert = ({
         {iconDefinition ? <Icon variant={iconDefinition} /> : null}
         {customVariant ? CustomIcon : null}
         {onRequestClose && (
-          <CrossIcon
-            onClick={onRequestClose}
-            color={text}
-            variant={faTimes}
-            data-automation="ZA.alert-cross-icon"
-            size="xs"
-          />
+          <CrossButton onClick={onRequestClose} styling="link" aria-label="Close alert banner">
+            <Icon color={text} variant={faTimes} data-automation="ZA.alert-cross-icon" size="xs" />
+          </CrossButton>
         )}
       </IconWrapper>
       <div className={onRequestClose ? 'pr-4' : ''}>{children}</div>
