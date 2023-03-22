@@ -3,7 +3,6 @@
 exports[`useAccordion should render correct tab and section props 1`] = `
 Object {
   "aria-controls": "id-section",
-  "aria-disabled": false,
   "aria-expanded": false,
   "id": "id",
   "key": "id",
