@@ -1,3 +1,10 @@
+## [5.43.2](https://github.com/zopaUK/react-components/compare/v5.43.1...v5.43.2) (2023-03-23)
+
+
+### Bug Fixes
+
+* **accordion:** remove aria-disabled ([73cdfe3](https://github.com/zopaUK/react-components/commit/73cdfe343f5fa90153ec24f6b0c0547ed183cb27))
+
 ## [5.43.1](https://github.com/zopaUK/react-components/compare/v5.43.0...v5.43.1) (2023-03-10)
 
 
