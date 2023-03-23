@@ -1,3 +1,10 @@
+## [5.43.3](https://github.com/zopaUK/react-components/compare/v5.43.2...v5.43.3) (2023-03-23)
+
+
+### Bug Fixes
+
+* **alert:** wrapped cross icon in button ([e3a9a30](https://github.com/zopaUK/react-components/commit/e3a9a30f55af3bf21de1d83a12cf86ba195b18d5))
+
 ## [5.43.2](https://github.com/zopaUK/react-components/compare/v5.43.1...v5.43.2) (2023-03-23)
 
 
