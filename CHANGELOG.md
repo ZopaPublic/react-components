@@ -1,3 +1,10 @@
+## [5.43.4](https://github.com/zopaUK/react-components/compare/v5.43.3...v5.43.4) (2023-03-31)
+
+
+### Bug Fixes
+
+* **help:** colour change for regular text in Help ([cf93204](https://github.com/zopaUK/react-components/commit/cf9320461abf98fe962982a72982c572838a8353))
+
 ## [5.43.3](https://github.com/zopaUK/react-components/compare/v5.43.2...v5.43.3) (2023-03-23)
 
 
