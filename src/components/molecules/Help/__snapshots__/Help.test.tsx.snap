@@ -7,7 +7,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   -moz-letter-spacing: 0;
   -ms-letter-spacing: 0;
   letter-spacing: 0;
-  color: #818F9B;
+  color: #2C3236;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -320,7 +320,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
         </h3>
         <span
           class="c6 pb-8"
-          color="#818F9B"
+          color="#2C3236"
         >
           We can't take applications over the phone. 
           <br />
