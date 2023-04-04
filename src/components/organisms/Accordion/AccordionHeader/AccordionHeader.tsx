@@ -73,14 +73,14 @@ const AccordionHeader = ({ children, id, index, textSize = 'body', onClick, ...r
   };
 
   return (
-    <TitleContainer>
-      <Heading as="h3" size="h6">
-        <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
+    <Heading as="h3" size="h6">
+      <StyledButton type="button" ref={ref} onClick={handleClick} {...headerPropsRest} {...rest}>
+        <TitleContainer>
           {children}
-        </StyledButton>
-      </Heading>
-      <Cross active={isActiveSection(index)} />
-    </TitleContainer>
+          <Cross active={isActiveSection(index)} />
+        </TitleContainer>
+      </StyledButton>
+    </Heading>
   );
 };
 

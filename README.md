@@ -142,17 +142,17 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/katebeavis">
-            <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
-            <br />
-            <sub><b>katebeavis</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/OlenaKashuba">
             <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
             <br />
             <sub><b>OlenaKashuba</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/katebeavis">
+            <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
+            <br />
+            <sub><b>katebeavis</b></sub>
         </a>
     </td>
     <td align="center">
@@ -192,20 +192,27 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/charlielizzy">
+            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
+            <br />
+            <sub><b>charlielizzy</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/steedems">
             <img src="https://avatars.githubusercontent.com/u/7896422?v=4" width="50;" alt="steedems"/>
             <br />
             <sub><b>steedems</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/tlaak">
             <img src="https://avatars.githubusercontent.com/u/1674055?v=4" width="50;" alt="tlaak"/>
             <br />
             <sub><b>tlaak</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/khumbon">
             <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
@@ -225,13 +232,6 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/5918265?v=4" width="50;" alt="TomGroombridge"/>
             <br />
             <sub><b>TomGroombridge</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/charlielizzy">
-            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
-            <br />
-            <sub><b>charlielizzy</b></sub>
         </a>
     </td>
     <td align="center">

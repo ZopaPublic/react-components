@@ -14,6 +14,7 @@ Atoms are usually made with only one single HTML element.
 - [`<Link />`](#/Components/Atoms/Link)
 - [`<SidekickCard />`](#/Components/Atoms/SidekickCard)
 - [`<Spinner />`](#/Components/Atoms/Spinner)
+- [`<ThreeDotsSpinner />`](#/Components/Atoms/ThreeDotsSpinner)
 - [`<Text />`](#/Components/Atoms/Text)
 
 ### Tips

@@ -84,7 +84,7 @@ const Help = ({
           <Heading as="h3" className="pb-6">
             We're here to help
           </Heading>
-          <Text className="pb-8" color={colors.grey}>
+          <Text className="pb-8" color={colors.greyDarkest}>
             {HelpLineDetails[helpLine].text}
           </Text>
         </FlexColCenter>

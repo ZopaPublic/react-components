@@ -4,7 +4,6 @@ import { mod } from '../../helpers/utils';
 
 export interface AccordionHeaderProps {
   'aria-controls': string;
-  'aria-disabled': boolean;
   'aria-expanded': boolean;
   id: string;
   key: string;
@@ -116,7 +115,6 @@ export const useAccordion = (props?: {}) => {
 
   const getHeaderProps: GetAccordionHeaderProps = (id, index) => ({
     'aria-controls': getLinkingId(id),
-    'aria-disabled': isActiveSection(index),
     'aria-expanded': isActiveSection(index),
     id,
     key: id,
