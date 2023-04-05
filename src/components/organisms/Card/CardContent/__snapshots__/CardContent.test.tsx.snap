@@ -14,6 +14,7 @@ exports[`<Card.Content /> renders the component with no a11y violations 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow-wrap: break-word;
 }
 
 <div
