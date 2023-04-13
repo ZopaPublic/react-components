@@ -171,6 +171,13 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/charlielizzy">
+            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
+            <br />
+            <sub><b>charlielizzy</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/endymion1818">
             <img src="https://avatars.githubusercontent.com/u/2216344?v=4" width="50;" alt="endymion1818"/>
             <br />
@@ -192,13 +199,6 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/charlielizzy">
-            <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
-            <br />
-            <sub><b>charlielizzy</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/steedems">
             <img src="https://avatars.githubusercontent.com/u/7896422?v=4" width="50;" alt="steedems"/>
             <br />
@@ -207,17 +207,17 @@ In case you want to contribute to this library, please have a look at our [contr
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/tlaak">
-            <img src="https://avatars.githubusercontent.com/u/1674055?v=4" width="50;" alt="tlaak"/>
-            <br />
-            <sub><b>tlaak</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/khumbon">
             <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
             <br />
             <sub><b>khumbon</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tlaak">
+            <img src="https://avatars.githubusercontent.com/u/1674055?v=4" width="50;" alt="tlaak"/>
+            <br />
+            <sub><b>tlaak</b></sub>
         </a>
     </td>
     <td align="center">
@@ -242,25 +242,25 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/MichelleXBai">
+            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
+            <br />
+            <sub><b>MichelleXBai</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/stephanie-senoner">
             <img src="https://avatars.githubusercontent.com/u/118994357?v=4" width="50;" alt="stephanie-senoner"/>
             <br />
             <sub><b>stephanie-senoner</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/rorydpayne">
             <img src="https://avatars.githubusercontent.com/u/7081561?v=4" width="50;" alt="rorydpayne"/>
             <br />
             <sub><b>rorydpayne</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/MichelleXBai">
-            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
-            <br />
-            <sub><b>MichelleXBai</b></sub>
         </a>
     </td>
     <td align="center">
