@@ -251,7 +251,7 @@ exports[`Alert renders with specific severity: success 1`] = `
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
-  color: #3EBC64;
+  color: #36A156;
 }
 
 .c1 svg {

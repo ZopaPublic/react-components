@@ -29,7 +29,7 @@ const notificationColors = {
   warning: '#FF9F0A',
   warningDark: '#704300',
   warningLight: '#FFECCE',
-  success: '#3EBC64',
+  success: '#36A156',
   successDark: '#17592B',
   successLight: '#DDFDE5',
 } as const;
