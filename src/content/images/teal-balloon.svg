@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="406px" height="512px" viewBox="0 0 406 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>02. Atoms ⚛️/Icons/Other/Balloon</title>
+    <g id="----------Release-5---Stockfeed-entry" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tech_problem-Copy" transform="translate(-931.000000, -548.000000)" fill="#009E8E">
+            <g id="02.-Atoms-⚛️/Icons/Other/Balloon" transform="translate(931.000000, 548.000000)">
+                <path d="M406 202.982C406 90.878 315.114 0 203 0S0 90.878 0 202.982c0 94.72 63.186 206.03 149.568 240.077a6.4 6.4 0 0 1 2.97 9.523l-9.217 13.799A29.361 29.361 0 0 0 167.746 512H238.254a29.361 29.361 0 0 0 24.425-45.62l-9.217-13.798a6.4 6.4 0 0 1 2.97-9.523C342.814 409.011 406 297.754 406 202.982ZM203 79.975c-35.464-.07-67.999 19.68-84.319 51.183a15.983 15.983 0 0 1-27.858 1.387 16.003 16.003 0 0 1-.49-16.166C112.137 74.28 155.612 47.89 203 47.985c8.829 0 15.986 7.161 15.986 15.995 0 8.833-7.157 15.995-15.986 15.995Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
