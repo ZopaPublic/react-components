@@ -1,3 +1,10 @@
+## [5.44.0](https://github.com/zopaUK/react-components/compare/v5.43.5...v5.44.0) (2023-04-13)
+
+
+### Features
+
+* **icon:** add new teal balloon icon ([a988335](https://github.com/zopaUK/react-components/commit/a9883356b5144b8b5757686ae1d6a982b068b924))
+
 ## [5.43.5](https://github.com/zopaUK/react-components/compare/v5.43.4...v5.43.5) (2023-04-05)
 
 
