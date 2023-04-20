@@ -50,6 +50,12 @@ jobs:
 
       - name: Compile the code
         run: pnpm compile
+        
+      - name: Generate preview release comment on PR
+        run: pnpm dlx semantic-release-github-pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Release
         run: pnpm release
