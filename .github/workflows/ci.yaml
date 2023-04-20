@@ -35,26 +35,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        
-      - name: Generate release notes preview
-        id: build-release-notes
-        uses: guilhermetod/semantic-release-notes-preview@v1.0.0
-        
-      - name: Comment release notes preview
-        if: steps.build-release-notes.outputs.releaseNotes
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-          issue-number: ${{ github.event.number }}
-          body: |
-            ## 👋 Hey there!
-            Thank you for you contribution. Below is a preview of the release notes if your PR gets merged.
-            Please, make sure it includes all your significant changes with descriptive messages.
-            Keep in mind that release notes are automatically generated from the commit messages according to [conventional commits](https://www.conventionalcommits.org/).
-            If you feel like you need to change anything, please take a look into [this guide](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#addressing-review-feedback) to learn how you can fixup your commits.
-
-            ---
-
-            ${{ steps.build-release-notes.outputs.releaseNotes }}
 
       - name: Run typecheck
         run: pnpm typecheck

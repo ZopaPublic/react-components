@@ -1,0 +1,74 @@
+name: Generate preview release notes
+on: pull_request
+
+jobs:
+  preview_release_notes:
+    runs-on: ubuntu-latest
+    name: Preview release notes
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.17.1
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+        
+      - name: Generate release notes preview
+        id: build-release-notes
+        uses: guilhermetod/semantic-release-notes-preview@v1.0.0
+        
+      - name: Comment release notes preview
+        if: steps.build-release-notes.outputs.releaseNotes
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## 👋 Hey there!
+            Thank you for you contribution. Below is a preview of the release notes if your PR gets merged.
+            Please, make sure it includes all your significant changes with descriptive messages.
+            Keep in mind that release notes are automatically generated from the commit messages.
+            More info in the [contribution section](https://github.com/zopaUK/react-components/blob/master/CONTRIBUTING.md#commit-messages).
+
+            ---
+
+            ${{ steps.build-release-notes.outputs.releaseNotes }}
+          reactions: 'rocket'
+            
+      - name: Comment empty release notes preview
+        if: ${{ !steps.build-release-notes.outputs.releaseNotes }}
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## 👋 Hey there!
+            Thank you for you contribution.
+            
+            ⚠️ Be aware that this PR is not going to trigger a release. ⚠️
+            
+            Releases and its notes are automatically generated from the commit messages.
+            If you are expecting a release you will need to modify your commits as stated in the [contribution section](https://github.com/zopaUK/react-components/blob/master/CONTRIBUTING.md#commit-messages).
+          reactions: 'warning'

@@ -139,6 +139,9 @@
     "not ios <11",
     "not dead"
   ],
+  "release": { 
+    "branches": "master"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/components/**/*.{ts,tsx}"
