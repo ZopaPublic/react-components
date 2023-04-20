@@ -71,4 +71,4 @@ jobs:
             
             Releases and its notes are automatically generated from the commit messages.
             If you are expecting a release you will need to modify your commits as stated in the [contribution section](https://github.com/zopaUK/react-components/blob/master/CONTRIBUTING.md#commit-messages).
-          reactions: 'warning'
+          reactions: 'confused'
