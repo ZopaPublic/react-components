@@ -1,5 +1,4 @@
 module.exports = {
-  branches: 'master',
   dryRun: false,
   preset: 'conventionalcommits',
   plugins: [
