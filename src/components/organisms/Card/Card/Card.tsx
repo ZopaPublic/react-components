@@ -17,6 +17,8 @@ export interface CardProps {
   layout?: CardLayout;
   /**
    * Determines the styling of the card
+   *
+   * If styling="action", Card should be used wrapped with an interactive component, such as a link or a button
    * @default `secondary`
    */
   styling?: CardStyling;
