@@ -1,3 +1,10 @@
+## [5.44.1](https://github.com/zopaUK/react-components/compare/v5.44.0...v5.44.1) (2023-05-10)
+
+
+### Bug Fixes
+
+* **release previews:** fix the emoji reaction in the release just to test the release previews ([d0f7b2f](https://github.com/zopaUK/react-components/commit/d0f7b2f6ce8fb954b12bba73ba1d81b1dd3f814d))
+
 ## [5.44.0](https://github.com/zopaUK/react-components/compare/v5.43.5...v5.44.0) (2023-04-13)
 
 
