@@ -444,7 +444,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #3EBC64;
+  border: 1px solid #36A156;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -486,7 +486,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c1:disabled {
   -webkit-text-fill-color: #818F9B;
   opacity: 1;
-  border: 1px solid #3EBC64;
+  border: 1px solid #36A156;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;

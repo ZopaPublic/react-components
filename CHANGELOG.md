@@ -1,3 +1,18 @@
+## [5.44.0](https://github.com/zopaUK/react-components/compare/v5.43.5...v5.44.0) (2023-04-13)
+
+
+### Features
+
+* **icon:** add new teal balloon icon ([a988335](https://github.com/zopaUK/react-components/commit/a9883356b5144b8b5757686ae1d6a982b068b924))
+
+## [5.43.5](https://github.com/zopaUK/react-components/compare/v5.43.4...v5.43.5) (2023-04-05)
+
+
+### Bug Fixes
+
+* add overflow to card content (for card/help) ([fbc48f5](https://github.com/zopaUK/react-components/commit/fbc48f582bf0c4974ca9dc61c52449fdedab3de2))
+* update snapshots ([1fc6115](https://github.com/zopaUK/react-components/commit/1fc6115212923fb01cd4ddfa08bb004c93f815ad))
+
 ## [5.43.4](https://github.com/zopaUK/react-components/compare/v5.43.3...v5.43.4) (2023-03-31)
 
 
