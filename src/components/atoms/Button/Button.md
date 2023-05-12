@@ -88,7 +88,7 @@ import { faArrowCircleRight, faArrowCircleLeft, faCoffee } from '@fortawesome/fr
     </FlexCol>
     <FlexCol xs={4}>
       <Button>
-        Have some {'\u00A0'}
+        Have some coffee {'\u00A0'}
         <FontAwesomeIcon icon={faCoffee} />
       </Button>
     </FlexCol>
