@@ -157,7 +157,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         >
           <svg
             aria-hidden="true"
-            aria-label="open.menu"
             class="svg-inline--fa fa-sort fa-w-10 "
             color="#818F9B"
             data-icon="sort"
@@ -316,7 +315,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         >
           <svg
             aria-hidden="true"
-            aria-label="open.menu"
             class="svg-inline--fa fa-sort fa-w-10 "
             color="#818F9B"
             data-icon="sort"
