@@ -1,3 +1,11 @@
+## [5.45.0](https://github.com/zopaUK/react-components/compare/v5.44.1...v5.45.0) (2023-05-14)
+
+
+### Features
+
+* **added aria-label to icon:** added aria-label to icon ([8632f2e](https://github.com/zopaUK/react-components/commit/8632f2e17ab7c3063ab4404544b61ad02054dae1))
+* **updated tests for aria-label:** updated tests for aria-label ([051b57e](https://github.com/zopaUK/react-components/commit/051b57efbff71b24e5f5c52d4caed03420ee76f4))
+
 ## [5.44.1](https://github.com/zopaUK/react-components/compare/v5.44.0...v5.44.1) (2023-05-10)
 
 
