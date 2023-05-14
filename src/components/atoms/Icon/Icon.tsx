@@ -9,6 +9,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 export interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'> {
   variant: IconDefinition;
   bgColor?: Colors[keyof Colors];
+  ariaLabel?: string;
 }
 
 export const RoundBadge = styled.div<{ color: Colors[keyof Colors] }>`
@@ -21,8 +22,16 @@ export const RoundBadge = styled.div<{ color: Colors[keyof Colors] }>`
   padding: ${spacing[6]};
 `;
 
-export default function Icon({ variant, bgColor, className, ...rest }: IconProps) {
-  const renderIcon = (className?: string) => <FontAwesomeIcon {...rest} icon={variant} className={className} />;
+export default function Icon({ variant, bgColor, ariaLabel, className, ...rest }: IconProps) {
+  const renderIcon = (className?: string) => (
+    <FontAwesomeIcon
+      {...rest}
+      icon={variant}
+      className={className}
+      aria-label={ariaLabel}
+      aria-hidden={ariaLabel ? false : true}
+    />
+  );
 
   return bgColor ? (
     <RoundBadge className={className} color={bgColor}>

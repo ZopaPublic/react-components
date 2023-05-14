@@ -2,6 +2,8 @@
 
 Use `<Icon />` whenever you want to render an icon in your application.
 
+An `<Icon />` should be used for decorative purposes only. In the rare case where it is used to convey information, an 'ariaLabel' is required.
+
 This library ( _and the design-system behind_ ) have a strict dependency on the **font-awesome** icon library.
 
 This component is just a wrapper around `<FontAwesomeIcon />` from `'@fortawesome/react-fontawesome'` with just the component name and the `icon` prop renamed for convenience:
@@ -40,6 +42,6 @@ import { Icon, colors } from '@zopauk/react-components';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 <>
-  <Icon variant={faCoffee} bgColor={colors.grey} />
+  <Icon variant={faCoffee} bgColor={colors.grey} ariaLabel={'coffee cup'} />
 </>;
 ```
