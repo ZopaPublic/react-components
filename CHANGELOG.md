@@ -1,3 +1,16 @@
+## [5.46.0](https://github.com/zopaUK/react-components/compare/v5.45.0...v5.46.0) (2023-05-15)
+
+
+### Features
+
+* **footer:** update footer links ([526015e](https://github.com/zopaUK/react-components/commit/526015e71183af5ffcdf550e3f9b28e1620dc4d1))
+
+
+### Bug Fixes
+
+* **footer:** update footer test ([ea1f005](https://github.com/zopaUK/react-components/commit/ea1f005ed46d1bc708efdde0292ac832cf12b3f4))
+* **footer:** update text ([1ff8dad](https://github.com/zopaUK/react-components/commit/1ff8dad0e050b1bde0bdb73248ca0d002a2be8da))
+
 ## [5.45.0](https://github.com/zopaUK/react-components/compare/v5.44.1...v5.45.0) (2023-05-14)
 
 
