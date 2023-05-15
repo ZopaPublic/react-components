@@ -396,7 +396,29 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               color="#3B46C4"
               href="https://www.zopa.com/car-finance"
             >
-              Car hire purchase
+              Car finance
+            </a>
+          </li>
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c6 c7"
+              color="#3B46C4"
+              href="https://www.zopa.com/car-finance/hp"
+            >
+              Hire purchase (HP)
+            </a>
+          </li>
+          <li
+            class="mb-4"
+          >
+            <a
+              class="c6 c7"
+              color="#3B46C4"
+              href="https://www.zopa.com/car-finance/pcp"
+            >
+              Personal contract purchase (PCP)
             </a>
           </li>
           <li
