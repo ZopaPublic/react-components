@@ -97,11 +97,9 @@ const ZopaFooter = ({
                 What we do
               </Heading>
               <List>
+                <li className="mb-4">{renderLink({ href: `${baseUrl}/car-finance`, children: 'Car finance' })}</li>
                 <li className="mb-4">
-                  {renderLink({ href: `${baseUrl}/car-finance`, children: 'Car hire purchase' })}
-                </li>
-                <li className="mb-4">
-                  {renderLink({ href: `${baseUrl}/car-finance/hp`, children: 'Hire Purchase (HP)' })}
+                  {renderLink({ href: `${baseUrl}/car-finance/hp`, children: 'Hire purchase (HP)' })}
                 </li>
                 <li className="mb-4">
                   {renderLink({ href: `${baseUrl}/car-finance/pcp`, children: 'Personal contract purchase (PCP)' })}

@@ -396,7 +396,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               color="#3B46C4"
               href="https://www.zopa.com/car-finance"
             >
-              Car hire purchase
+              Car finance
             </a>
           </li>
           <li
@@ -407,7 +407,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               color="#3B46C4"
               href="https://www.zopa.com/car-finance/hp"
             >
-              Hire Purchase (HP)
+              Hire purchase (HP)
             </a>
           </li>
           <li
