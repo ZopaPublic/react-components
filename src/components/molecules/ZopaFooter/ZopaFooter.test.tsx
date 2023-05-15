@@ -21,7 +21,7 @@ describe('<ZopaFooter />', () => {
   it('renders correct urls  with baseUrl prop', async () => {
     render(<ZopaFooter baseUrl="http://whatever.com" />);
 
-    const firstLink = screen.getByText('Car hire purchase');
+    const firstLink = screen.getByText('Car finance');
     const logoLink = screen.getByTitle('Logo');
 
     expect(firstLink).toHaveAttribute('href', 'http://whatever.com/car-finance');
