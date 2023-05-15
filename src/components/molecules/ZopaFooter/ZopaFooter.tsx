@@ -100,6 +100,12 @@ const ZopaFooter = ({
                 <li className="mb-4">
                   {renderLink({ href: `${baseUrl}/car-finance`, children: 'Car hire purchase' })}
                 </li>
+                <li className="mb-4">
+                  {renderLink({ href: `${baseUrl}/car-finance/hp`, children: 'Hire Purchase (HP)' })}
+                </li>
+                <li className="mb-4">
+                  {renderLink({ href: `${baseUrl}/car-finance/pcp`, children: 'Personal contract purchase (PCP)' })}
+                </li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/loans/car-loans`, children: 'Car loans' })}</li>
                 <li className="mb-4">
                   {renderLink({ href: `${baseUrl}/loans/debt-consolidation`, children: 'Debt consolidation loans' })}
