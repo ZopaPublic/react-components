@@ -36,7 +36,7 @@ import { TextField } from '@zopauk/react-components';
 ```tsx
 import { TextField } from '@zopauk/react-components';
 
-<TextField label="First name" name="text3" />;
+<TextField label="First name" name="text3" autoComplete="given-name" />;
 ```
 
 - With an icon

@@ -10,6 +10,11 @@ import { FieldProps, InputProps } from '../../types';
 
 export interface TextFieldProps extends FieldProps, InputProps {
   prefix?: string;
+
+  /**
+   * Suggested values for autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
+   */
+  autoComplete?: string;
 }
 
 export interface PrefixProps {
