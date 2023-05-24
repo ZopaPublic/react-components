@@ -14,7 +14,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
-  color: #818F9B;
+  color: #7D8B98;
   border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
@@ -55,7 +55,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
   border: 1px solid #D4D7D9;
   box-shadow: 0 0 4px 0 transparent;
@@ -96,7 +96,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 48px;
-  color: #818F9B;
+  color: #7D8B98;
   left: 1px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -114,7 +114,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -154,9 +154,9 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 }
 
 .c2:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -201,7 +201,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 48px;
-  color: #818F9B;
+  color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -218,7 +218,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -258,9 +258,9 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -338,7 +338,7 @@ exports[`<InputText /> renders the component with error 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
@@ -371,7 +371,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -411,9 +411,9 @@ exports[`<InputText /> renders the component with focus 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -484,7 +484,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
   border: 1px solid #36A156;
   box-shadow: 0 0 4px 0 transparent;
@@ -517,7 +517,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -557,9 +557,9 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 }
 
 .c1:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;

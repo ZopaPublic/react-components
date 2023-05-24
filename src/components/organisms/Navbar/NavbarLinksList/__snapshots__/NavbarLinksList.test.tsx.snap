@@ -220,7 +220,7 @@ Object {
             <svg
               aria-hidden="true"
               class="svg-inline--fa fa-chevron-down fa-w-14 "
-              color="#818F9B"
+              color="#7D8B98"
               data-icon="chevron-down"
               data-prefix="fas"
               focusable="false"
@@ -327,7 +327,7 @@ Object {
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-chevron-down fa-w-14 "
-            color="#818F9B"
+            color="#7D8B98"
             data-icon="chevron-down"
             data-prefix="fas"
             focusable="false"

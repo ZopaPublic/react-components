@@ -38,7 +38,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   font-size: 16px;
   color: #2C3236;
   padding: 14px 16px;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
@@ -63,7 +63,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
   width: 20px;
   display: inline-block;
   margin-right: 8px;
-  border: 1px #818F9B solid;
+  border: 1px #7D8B98 solid;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -115,7 +115,7 @@ exports[`<RadioField /> renders the component with no control icon and no a11y v
 
 .c2:disabled + label {
   cursor: not-allowed;
-  color: #818F9B;
+  color: #7D8B98;
   background-color: #F7F7F7;
 }
 
@@ -208,7 +208,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   font-size: 16px;
   color: #2C3236;
   padding: 14px 16px;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
@@ -233,7 +233,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
   width: 20px;
   display: inline-block;
   margin-right: 8px;
-  border: 1px #818F9B solid;
+  border: 1px #7D8B98 solid;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -285,7 +285,7 @@ exports[`<RadioField /> renders the component with props with no a11y violations
 
 .c2:disabled + label {
   cursor: not-allowed;
-  color: #818F9B;
+  color: #7D8B98;
   background-color: #F7F7F7;
 }
 

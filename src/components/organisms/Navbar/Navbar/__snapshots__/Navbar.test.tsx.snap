@@ -722,7 +722,7 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
                     <svg
                       aria-hidden="true"
                       class="svg-inline--fa fa-chevron-down fa-w-14 "
-                      color="#818F9B"
+                      color="#7D8B98"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
@@ -1652,7 +1652,7 @@ exports[`<Navbar /> should render large device navigation with default props and
                     <svg
                       aria-hidden="true"
                       class="svg-inline--fa fa-chevron-down fa-w-14 "
-                      color="#818F9B"
+                      color="#7D8B98"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
@@ -2627,7 +2627,7 @@ exports[`<Navbar /> should render small device navigation with default props wit
                     <svg
                       aria-hidden="true"
                       class="svg-inline--fa fa-chevron-down fa-w-14 "
-                      color="#818F9B"
+                      color="#7D8B98"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"
@@ -3611,7 +3611,7 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
                     <svg
                       aria-hidden="true"
                       class="svg-inline--fa fa-chevron-down fa-w-14 "
-                      color="#818F9B"
+                      color="#7D8B98"
                       data-icon="chevron-down"
                       data-prefix="fas"
                       focusable="false"

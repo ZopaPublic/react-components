@@ -17,7 +17,7 @@ const neutralColors = {
   greyLightest: '#F7F7F7',
   greyLighter: '#EFEFEF',
   greyLight: '#D4D7D9',
-  grey: '#818F9B',
+  grey: '#7D8B98',
   greyDark: '#4A545E',
   greyDarkest: '#2C3236',
 } as const;
