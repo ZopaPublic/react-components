@@ -145,6 +145,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="error-dropdown-filtered-test"
           aria-labelledby="downshift-0-label"
           autocomplete="off"
           class="c5"
@@ -303,6 +304,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
       >
         <input
           aria-autocomplete="list"
+          aria-describedby="error-dropdown-filtered-test"
           aria-labelledby="downshift-1-label"
           autocomplete="off"
           class="c4"
