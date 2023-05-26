@@ -40,7 +40,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -ms-flex-pack: center;
   justify-content: center;
   width: 48px;
-  color: #818F9B;
+  color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -57,7 +57,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -97,9 +97,9 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -158,7 +158,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-sort fa-w-10 "
-            color="#818F9B"
+            color="#7D8B98"
             data-icon="sort"
             data-prefix="fas"
             focusable="false"
@@ -205,7 +205,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   -ms-flex-pack: center;
   justify-content: center;
   width: 48px;
-  color: #818F9B;
+  color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -222,7 +222,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -262,9 +262,9 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c4:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -316,7 +316,7 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-sort fa-w-10 "
-            color="#818F9B"
+            color="#7D8B98"
             data-icon="sort"
             data-prefix="fas"
             focusable="false"

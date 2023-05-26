@@ -55,7 +55,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 }
 
 .c2:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
   border: 1px solid #36A156;
   box-shadow: 0 0 4px 0 transparent;
@@ -140,7 +140,7 @@ exports[`<TextField /> renders the component with error 1`] = `
 }
 
 .c2:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
   border: 1px solid #FF4539;
   box-shadow: 0 0 4px 0 transparent;
@@ -233,7 +233,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -273,9 +273,9 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 }
 
 .c2:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -318,7 +318,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -358,9 +358,9 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 }
 
 .c3:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;
@@ -435,7 +435,7 @@ exports[`<TextField /> renders the component with size 1`] = `
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -475,9 +475,9 @@ exports[`<TextField /> renders the component with size 1`] = `
 }
 
 .c2:disabled {
-  -webkit-text-fill-color: #818F9B;
+  -webkit-text-fill-color: #7D8B98;
   opacity: 1;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   background-color: #F7F7F7;
   cursor: not-allowed;

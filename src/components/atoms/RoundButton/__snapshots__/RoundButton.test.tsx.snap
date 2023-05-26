@@ -211,7 +211,7 @@ exports[`<RoundButton /> renders disabled 1`] = `
   color: #FFFFFF;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
   cursor: not-allowed;
-  color: #818F9B;
+  color: #7D8B98;
   background: #F7F7F7;
 }
 

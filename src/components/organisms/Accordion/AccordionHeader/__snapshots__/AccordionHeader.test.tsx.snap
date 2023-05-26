@@ -56,7 +56,7 @@ exports[`<AccordionHeader /> renders the component with no a11y violations 1`] =
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #818F9B;
+  background-color: #7D8B98;
 }
 
 .c2:before {

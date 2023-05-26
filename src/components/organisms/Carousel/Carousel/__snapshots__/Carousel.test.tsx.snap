@@ -230,7 +230,7 @@ exports[`<Carousel /> renders with no a11y violations 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-chevron-left fa-w-10 "
-            color="#818F9B"
+            color="#7D8B98"
             data-icon="chevron-left"
             data-prefix="fas"
             focusable="false"
@@ -287,7 +287,7 @@ exports[`<Carousel /> renders with no a11y violations 1`] = `
           <svg
             aria-hidden="true"
             class="svg-inline--fa fa-chevron-right fa-w-10 "
-            color="#818F9B"
+            color="#7D8B98"
             data-icon="chevron-right"
             data-prefix="fas"
             focusable="false"

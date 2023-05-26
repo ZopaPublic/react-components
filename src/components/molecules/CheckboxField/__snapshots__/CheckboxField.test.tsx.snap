@@ -29,7 +29,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   font-weight: 400;
   font-size: 16px;
   padding: 14px 16px;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
@@ -60,7 +60,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   box-shadow: 0 0 4px 0 transparent;
-  border: 1px #818F9B solid;
+  border: 1px #7D8B98 solid;
   display: block;
 }
 
@@ -105,7 +105,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
 
 .c1:disabled + label {
   cursor: not-allowed;
-  color: #818F9B;
+  color: #7D8B98;
   background-color: #F7F7F7;
 }
 
@@ -187,7 +187,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   font-weight: 400;
   font-size: 16px;
   padding: 14px 16px;
-  border: 1px solid #818F9B;
+  border: 1px solid #7D8B98;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
   -webkit-transition: 0.2s ease-in-out;
@@ -218,7 +218,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   box-shadow: 0 0 4px 0 transparent;
-  border: 1px #818F9B solid;
+  border: 1px #7D8B98 solid;
   display: block;
 }
 
@@ -263,7 +263,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 
 .c1:disabled + label {
   cursor: not-allowed;
-  color: #818F9B;
+  color: #7D8B98;
   background-color: #F7F7F7;
 }
 
