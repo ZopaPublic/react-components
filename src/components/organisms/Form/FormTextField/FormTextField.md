@@ -27,7 +27,7 @@ const validate = (values) => {
 >
   <Form>
     <div className="mb-4">
-      <FormTextField startIcon={<Icon variant={faCoffee} />} label="First name" name="name" />
+      <FormTextField startIcon={<Icon variant={faCoffee} />} label="First name" name="name" autoComplete="given-name" />
     </div>
     <FormButton>Submit</FormButton>
   </Form>
