@@ -36,11 +36,6 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
   fontWeight?: keyof AppTheme['typography']['weights'];
 
   fontSize?: keyof AppTheme['typography']['text']['sizes'];
-
-  /**
-   * Suggested values for autocomplete: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete
-   */
-  autoComplete?: string;
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {

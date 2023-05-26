@@ -4,6 +4,8 @@ Use `<TextInput />` to render a native HTML `<input />`.
 
 For a richer input see [`<TextField />`](/#/Components/Molecules/TextField).
 
+If you are using autocomplete, check out suggested values https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete.
+
 ### Example
 
 - Default
