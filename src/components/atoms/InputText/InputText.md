@@ -22,6 +22,14 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="placeholder" placeholder="With a placeholder" />;
 ```
 
+- With autocomplete
+
+```tsx
+import { InputText } from '@zopauk/react-components';
+
+<InputText name="first-name" placeholder="Your first name" autoComplete="given-name" />;
+```
+
 - Valid state
 
 ```tsx
