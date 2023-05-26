@@ -1,3 +1,10 @@
+## [5.47.0](https://github.com/zopaUK/react-components/compare/v5.46.0...v5.47.0) (2023-05-26)
+
+
+### Features
+
+* added autocomplete to input fields ([830b873](https://github.com/zopaUK/react-components/commit/830b87391fab924c443e11014777476109a2a343))
+
 ## [5.46.0](https://github.com/zopaUK/react-components/compare/v5.45.0...v5.46.0) (2023-05-15)
 
 
