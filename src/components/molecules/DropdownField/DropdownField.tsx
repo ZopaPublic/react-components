@@ -48,10 +48,15 @@ const DropdownField = forwardRef<HTMLSelectElement, DropdownFieldProps>(
           aria-label={label ? undefined : name}
           size={htmlSelectSize}
           ref={ref}
+          aria-describedby={`error-dropdown-${name}`}
           {...rest}
         />
       </SizedContainer>
-      {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
+      {errorMessage && (
+        <FieldError id={`error-dropdown-${name}`} data-automation={`ZA.error-${name}`}>
+          {errorMessage}
+        </FieldError>
+      )}
     </>
   ),
 );
