@@ -1,3 +1,10 @@
+## [5.48.0](https://github.com/zopaUK/react-components/compare/v5.47.0...v5.48.0) (2023-05-26)
+
+
+### Features
+
+* updated info grey for icon to be accessible ([69d2871](https://github.com/zopaUK/react-components/commit/69d2871a48a67884c6433a9799618e7ba6890b36))
+
 ## [5.47.0](https://github.com/zopaUK/react-components/compare/v5.46.0...v5.47.0) (2023-05-26)
 
 
