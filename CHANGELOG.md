@@ -1,3 +1,10 @@
+## [5.48.1](https://github.com/zopaUK/react-components/compare/v5.48.0...v5.48.1) (2023-05-26)
+
+
+### Bug Fixes
+
+* **input:** remove autocomplete prop ([ff1d893](https://github.com/zopaUK/react-components/commit/ff1d893b1ab22a20b10334cd3f251e67c049339f))
+
 ## [5.48.0](https://github.com/zopaUK/react-components/compare/v5.47.0...v5.48.0) (2023-05-26)
 
 
