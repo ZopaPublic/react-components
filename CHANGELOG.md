@@ -1,3 +1,10 @@
+## [5.48.2](https://github.com/zopaUK/react-components/compare/v5.48.1...v5.48.2) (2023-06-09)
+
+
+### Bug Fixes
+
+* **input, radio, checkbox:** assosiate fields with error messages ([8d1012d](https://github.com/zopaUK/react-components/commit/8d1012dde1011fbdc1e9baca12195b26f766c908))
+
 ## [5.48.1](https://github.com/zopaUK/react-components/compare/v5.48.0...v5.48.1) (2023-05-26)
 
 
