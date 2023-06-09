@@ -221,6 +221,7 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
           class="c5"
         >
           <input
+            aria-describedby="error-group-checkbox-label"
             class="c6"
             id="checkbox-id-option"
             name="option"
@@ -455,6 +456,7 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
           class="c5"
         >
           <input
+            aria-describedby="error-group-checkbox-label"
             class="c6"
             data-automation="ZA.test-0"
             id="checkbox-id-option"

@@ -114,6 +114,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   })}
                   name={name}
                   id={`text-id-${name}`}
+                  aria-describedby={`error-dropdown-filtered-${name}`}
                   isValid={isValid}
                   hasError={showError}
                   isOpen={isOpen && !!filteredResults.length}
@@ -174,7 +175,11 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   </Options>
                 )}
               </SearchInputWrap>
-              {showError && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
+              {showError && (
+                <FieldError id={`error-dropdown-filtered-${name}`} data-automation={`ZA.error-${name}`}>
+                  {errorMessage}
+                </FieldError>
+              )}
             </div>
           );
         }}
