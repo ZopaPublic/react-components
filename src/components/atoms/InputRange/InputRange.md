@@ -2,6 +2,8 @@
 
 Use `<InputRange />` to render a **controlled** native HTML `<input type="range" />`.
 
+Make sure you add role="status" for the element which contains the value of the input range for accessibility purposes.
+
 ### Examples
 
 Store value of `<InputRange />`:
@@ -15,7 +17,9 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
+      <Text mb role="status">
+        Value: {value}
+      </Text>
       <InputRange value={value} onChange={setValue} />
     </Fragment>
   );
@@ -35,7 +39,9 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
+      <Text mb role="status">
+        Value: {value}
+      </Text>
       <InputRange value={value} min={100} max={200} onChange={setValue} />
     </Fragment>
   );
@@ -55,7 +61,9 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
+      <Text mb role="status">
+        Value: {value}
+      </Text>
       <InputRange value={value} step={10} onChange={setValue} />
     </Fragment>
   );
@@ -75,7 +83,9 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
+      <Text mb role="status">
+        Value: {value}
+      </Text>
       <InputRange value={value} min={100} max={500} step={50} onChange={setValue} />
     </Fragment>
   );
@@ -95,7 +105,9 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
+      <Text mb role="status">
+        Value: {value}
+      </Text>
       <InputRange value={value} controls onChange={setValue} />
     </Fragment>
   );
