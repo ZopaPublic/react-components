@@ -74,6 +74,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
         aria-label={label ? undefined : name}
         ref={ref}
         name={name}
+        aria-describedby={`error-text-field-${name}`}
         {...rest}
       />
     );
@@ -87,7 +88,11 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
         )}
         {helpText && <HelpText size="small">{helpText}</HelpText>}
         <SizedContainer size={inputSize}>{prefix ? <Prefix prefix={prefix}>{input}</Prefix> : input}</SizedContainer>
-        {errorMessage && <FieldError data-automation={`ZA.error-${name}`}>{errorMessage}</FieldError>}
+        {errorMessage && (
+          <FieldError id={`error-text-field-${name}`} data-automation={`ZA.error-${name}`}>
+            {errorMessage}
+          </FieldError>
+        )}
       </>
     );
   },

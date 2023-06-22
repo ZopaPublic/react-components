@@ -90,6 +90,7 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
               <CheckboxWrapper>
                 <CheckboxField
                   name={item.name.toString()}
+                  aria-describedby={`error-group-checkbox-${label}`}
                   disabled={disabled}
                   onChange={handleChange(item.name)}
                   onBlur={onBlur}
@@ -104,7 +105,11 @@ const CheckboxGroupField = <Val extends Record<string, boolean>>({
           );
         })}
       </FlexRow>
-      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
+      {errorMessage && (
+        <ErrorMessage id={`error-group-checkbox-${label}`} className="mt-1">
+          {errorMessage}
+        </ErrorMessage>
+      )}
     </Fieldset>
   );
 };
