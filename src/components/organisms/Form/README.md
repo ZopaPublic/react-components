@@ -61,14 +61,15 @@ const nationalities = [
 const FormExample = () => (
   <Formik validateOnMount initialValues={initialValues} onSubmit={onSubmit} validate={validate}>
     <Form>
-      <FormTextField label="First name" name="firstName" className="mb-4" />
-      <FormTextField label="Last name" name="lastName" className="mb-4" />
+      <FormTextField label="First name" name="firstName" className="mb-4" required />
+      <FormTextField label="Last name" name="lastName" className="mb-4" required />
       <FormDropdownFilteredField
         name="nationality"
         className="mb-4"
         inputProps={{ placeholder: 'Select a nationality...' }}
         items={nationalities}
         label="Nationality"
+        required
       />
       <FormDropdownField
         label="How did you hear about us?"
@@ -124,7 +125,7 @@ const FormExample = () => (
           },
         ]}
       />
-      <FormCheckboxField label="I accept terms and condtions" name="terms" className="mb-4" />
+      <FormCheckboxField label="I accept terms and condtions" name="terms" className="mb-4" required />
       <FormButton>Submit</FormButton>
     </Form>
   </Formik>
