@@ -19,11 +19,23 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   width: 100%;
 }
 
+.c6 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c3 {
   position: relative;
 }
 
-.c6 {
+.c7 {
   position: absolute;
   top: 1px;
   bottom: 1px;
@@ -155,6 +167,9 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
         />
         <span
           class="c6"
+        />
+        <span
+          class="c7"
         >
           <svg
             aria-hidden="true"
@@ -185,11 +200,23 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   width: 100%;
 }
 
+.c5 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c2 {
   position: relative;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 1px;
   bottom: 1px;
@@ -314,6 +341,9 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
         />
         <span
           class="c5"
+        />
+        <span
+          class="c6"
         >
           <svg
             aria-hidden="true"
