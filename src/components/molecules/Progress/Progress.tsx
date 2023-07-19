@@ -77,6 +77,16 @@ const ProgressPoint = styled.span<ProgressPointProps>`
   transform: translate(-50%, -50%);
 `;
 
+const HiddenText = styled.span`
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`;
+
 const getStepPosition = (steps: number, stepIndex: number) => {
   const position = (100 / (steps - 1)) * stepIndex;
   if (position < 0) {
@@ -106,11 +116,13 @@ const Progress = ({ totalSteps, currentStep, withStep = false, progressColor, ..
 
   return (
     <ProgressWrapper>
+      <HiddenText id="in-progress">In progress</HiddenText>
       <ProgressBar
         role="progressbar"
         aria-valuemax={totalSteps}
         aria-valuenow={currentStep}
         aria-valuetext={`Static progress bar showing step ${currentStep} of ${totalSteps}`}
+        aria-labelledby="in-progress"
         {...rest}
       >
         {renderPoints()}

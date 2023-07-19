@@ -87,7 +87,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   margin-right: 6px;
 }
 
-.c8 {
+.c9 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -95,7 +95,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   height: 4px;
 }
 
-.c11 {
+.c12 {
   width: 50%;
   position: relative;
   border-radius: 100px;
@@ -106,7 +106,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c11 > span {
+.c12 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -116,7 +116,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   color: #2C3236;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -130,7 +130,7 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c10 {
+.c11 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -142,6 +142,18 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+
+.c8 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c6 {
@@ -214,21 +226,28 @@ exports[`<ProductTemplateHeader /> renders with all the props 1`] = `
       <div
         class="c7"
       >
+        <span
+          class="c8"
+          id="in-progress"
+        >
+          In progress
+        </span>
         <div
-          aria-label="Static progress bar showing step 1 of 2"
+          aria-labelledby="in-progress"
           aria-valuemax="2"
           aria-valuenow="1"
-          class="c8"
+          aria-valuetext="Static progress bar showing step 1 of 2"
+          class="c9"
           role="progressbar"
         >
           <span
-            class="c9"
-          />
-          <span
             class="c10"
           />
-          <div
+          <span
             class="c11"
+          />
+          <div
+            class="c12"
           />
         </div>
       </div>
