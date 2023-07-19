@@ -110,7 +110,7 @@ const Progress = ({ totalSteps, currentStep, withStep = false, progressColor, ..
         role="progressbar"
         aria-valuemax={totalSteps}
         aria-valuenow={currentStep}
-        aria-label={`Static progress bar showing step ${currentStep} of ${totalSteps}`}
+        aria-valuetext={`Static progress bar showing step ${currentStep} of ${totalSteps}`}
         {...rest}
       >
         {renderPoints()}
