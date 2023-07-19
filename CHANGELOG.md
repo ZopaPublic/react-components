@@ -1,3 +1,10 @@
+## [5.48.3](https://github.com/zopaUK/react-components/compare/v5.48.2...v5.48.3) (2023-07-11)
+
+
+### Bug Fixes
+
+* **inputrange:** add id to input range ([0ddfbbd](https://github.com/zopaUK/react-components/commit/0ddfbbd798ea5c24b0ee6accddce1b551b34eefb))
+
 ## [5.48.2](https://github.com/zopaUK/react-components/compare/v5.48.1...v5.48.2) (2023-06-09)
 
 
