@@ -1800,7 +1800,7 @@ packages:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_jkmbny6fnk7jgvowxnfq4vmgg4
+      ts-node: 10.9.1_yt6t44a5fi24o2rzdq6exykql4
       typescript: 4.9.3
     transitivePeerDependencies:
       - '@swc/core'
@@ -4253,14 +4253,9 @@ packages:
     hasBin: true
     dev: true
 
-  /ansi-regex/4.1.0:
-    resolution: {integrity: sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==}
+  /ansi-regex/4.1.1:
+    resolution: {integrity: sha512-ILlv4k/3f6vfQ4OoP2AGvirOktlQ98ZEL1k9FaQjxa3L1abBgbuTDAdPOpvbGncC0BTVQrl+OM8xZGK6tWXt7g==}
     engines: {node: '>=6'}
-    dev: true
-
-  /ansi-regex/5.0.0:
-    resolution: {integrity: sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==}
-    engines: {node: '>=8'}
     dev: true
 
   /ansi-regex/5.0.1:
@@ -5517,7 +5512,7 @@ packages:
     dependencies:
       '@types/node': 14.18.33
       cosmiconfig: 7.1.0
-      ts-node: 10.9.1_jkmbny6fnk7jgvowxnfq4vmgg4
+      ts-node: 10.9.1_yt6t44a5fi24o2rzdq6exykql4
       typescript: 4.9.3
     dev: true
 
@@ -12097,7 +12092,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       '@jest/types': 24.9.0
-      ansi-regex: 4.1.0
+      ansi-regex: 4.1.1
       ansi-styles: 3.2.1
       react-is: 16.13.1
     dev: true
@@ -12107,7 +12102,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       '@jest/types': 26.6.2
-      ansi-regex: 5.0.0
+      ansi-regex: 5.0.1
       ansi-styles: 4.3.0
       react-is: 17.0.2
     dev: true
@@ -13848,7 +13843,7 @@ packages:
     resolution: {integrity: sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==}
     engines: {node: '>=6'}
     dependencies:
-      ansi-regex: 4.1.0
+      ansi-regex: 4.1.1
     dev: true
 
   /strip-ansi/6.0.1:
@@ -14361,6 +14356,38 @@ packages:
       diff: 4.0.2
       make-error: 1.3.6
       typescript: 4.7.2
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    dev: true
+
+  /ts-node/10.9.1_yt6t44a5fi24o2rzdq6exykql4:
+    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@swc/core': 1.3.21
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.3
+      '@types/node': 14.18.33
+      acorn: 8.8.1
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.9.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     dev: true
