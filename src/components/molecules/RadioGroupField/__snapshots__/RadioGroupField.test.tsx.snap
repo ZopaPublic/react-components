@@ -232,6 +232,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
           class="c5 c6"
         >
           <input
+            aria-describedby="error-radio-group-label"
             class="c7"
             id="radio-id-label-one"
             type="radio"
@@ -257,6 +258,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
           class="c5 c6"
         >
           <input
+            aria-describedby="error-radio-group-label"
             class="c7"
             id="radio-id-label-two"
             type="radio"
@@ -502,6 +504,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
           class="c5 c6"
         >
           <input
+            aria-describedby="error-radio-group-label"
             class="c7"
             data-automation="ZA.test-0"
             id="radio-id-label-one"
@@ -528,6 +531,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
           class="c5 c6"
         >
           <input
+            aria-describedby="error-radio-group-label"
             class="c7"
             data-automation="ZA.test-1"
             id="radio-id-label-two"

@@ -144,6 +144,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   class="c0"
 >
   <input
+    aria-describedby="checkbox-field-error-test1"
     class="c1"
     id="checkbox-id-test1"
     name="test1"
@@ -297,6 +298,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   class="c0"
 >
   <input
+    aria-describedby="checkbox-field-error-test1"
     class="c1"
     id="checkbox-id-test1"
     name="test1"
