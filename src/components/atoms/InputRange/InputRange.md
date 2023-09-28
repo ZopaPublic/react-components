@@ -1,6 +1,7 @@
 ### Summary
 
 Use `<InputRange />` to render a **controlled** native HTML `<input type="range" />`.
+<InputRange /> should have an id and a corresponding label connected to it via id.
 
 ### Examples
 
@@ -15,8 +16,10 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
-      <InputRange value={value} onChange={setValue} />
+      <label mb for="123">
+        Value: {value}
+      </label>
+      <InputRange value={value} onChange={setValue} id="123" />
     </Fragment>
   );
 };
@@ -35,8 +38,10 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
-      <InputRange value={value} min={100} max={200} onChange={setValue} />
+      <label mb for="124">
+        Value: {value}
+      </label>
+      <InputRange value={value} min={100} max={200} onChange={setValue} id="124" />
     </Fragment>
   );
 };
@@ -55,8 +60,10 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
-      <InputRange value={value} step={10} onChange={setValue} />
+      <label mb for="125">
+        Value: {value}
+      </label>
+      <InputRange value={value} step={10} onChange={setValue} id="125" />
     </Fragment>
   );
 };
@@ -75,8 +82,10 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
-      <InputRange value={value} min={100} max={500} step={50} onChange={setValue} />
+      <label mb for="126">
+        Value: {value}
+      </label>
+      <InputRange value={value} min={100} max={500} step={50} onChange={setValue} id="126" />
     </Fragment>
   );
 };
@@ -95,8 +104,10 @@ const ControlledInputRange = () => {
 
   return (
     <Fragment>
-      <Text mb>Value: {value}</Text>
-      <InputRange value={value} controls onChange={setValue} />
+      <label mb for="127">
+        Value: {value}
+      </label>
+      <InputRange value={value} controls onChange={setValue} id="127" />
     </Fragment>
   );
 };
