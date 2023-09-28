@@ -7,6 +7,7 @@ It comes in a lot of variations to suit different needs.
 ### Example
 
 - Full example of responsive cards
+- Make sure that all links have descriptive name, if not (e.g. in case of image used as link), use aria-label
 
 ```tsx
 import {
@@ -24,7 +25,10 @@ import {
   <FlexRow>
     <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
-        <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
+        <Card.Image
+          overlayWith={<a href="http://zopa.com" target="_blank" aria-label="cat image with link to zopa home" />}
+          url="http://placekitten.com/500/300"
+        />
         <Card.Content>
           <Card.Heading>Macaroon bear claw powder</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
@@ -38,7 +42,10 @@ import {
     </FlexCol>
     <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
-        <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
+        <Card.Image
+          overlayWith={<a href="http://zopa.com" target="_blank" aria-label="cat image with link to zopa home" />}
+          url="http://placekitten.com/500/300"
+        />
         <Card.Content>
           <Card.Heading>Macaroon bear claw powder</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
@@ -52,7 +59,10 @@ import {
     </FlexCol>
     <FlexCol xs={12} l={4} className="mb-4">
       <Card layout={useViewport().width > grid.breakpoints.l ? 'vertical' : 'horizontal'}>
-        <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
+        <Card.Image
+          overlayWith={<a href="http://zopa.com" target="_blank" aria-label="cat image with link to zopa home" />}
+          url="http://placekitten.com/500/300"
+        />
         <Card.Content>
           <Card.Heading>Macaroon bear claw powder</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
@@ -69,6 +79,7 @@ import {
 ```
 
 - Vertical card with an image, heading, text, and a full width button
+- Make sure that all links have descriptive name, if not (e.g. in case of image used as link), use aria-label
 
 ```tsx
 import { Card, Button, FlexContainer, FlexCol, FlexRow } from '@zopauk/react-components';
@@ -77,7 +88,10 @@ import { Card, Button, FlexContainer, FlexCol, FlexRow } from '@zopauk/react-com
   <FlexRow>
     <FlexCol xs={4}>
       <Card styling="primary">
-        <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
+        <Card.Image
+          overlayWith={<a href="http://zopa.com" target="_blank" aria-label="cat image with link to zopa home" />}
+          url="http://placekitten.com/500/300"
+        />
         <Card.Content>
           <Card.Heading>Primary card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
@@ -91,7 +105,10 @@ import { Card, Button, FlexContainer, FlexCol, FlexRow } from '@zopauk/react-com
     </FlexCol>
     <FlexCol xs={4}>
       <Card>
-        <Card.Image overlayWith={<a href="http://zopa.com" target="_blank" />} url="http://placekitten.com/500/300" />
+        <Card.Image
+          overlayWith={<a href="http://zopa.com" target="_blank" aria-label="cat image with link to zopa home" />}
+          url="http://placekitten.com/500/300"
+        />
         <Card.Content>
           <Card.Heading>Secondary card</Card.Heading>
           <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
@@ -279,6 +296,8 @@ import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 `<Card.LineItem />` should be rendered outside of `<Card.Content />`
 
+- If card is a link and card title or content is not self-explanatory, add aria-label
+
 ```tsx
 import { Card, Button, FlexContainer, FlexRow, FlexCol, Link } from '@zopauk/react-components';
 import Icon from '../../atoms/Icon/Icon.tsx';
@@ -292,10 +311,10 @@ const StyledLink = styled(Link)`
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={4}>
-      <StyledLink href="#">
+      <StyledLink href="http://zopa.com">
         <Card styling="action" layout="horizontal">
           <Card.Content>
-            <Card.Heading>Card with line item</Card.Heading>
+            <Card.Heading>View sweets</Card.Heading>
             <Card.Text>Ice cream marzipan marshmallow caramels sweet. Bonbon croissant lemon drops marzipan.</Card.Text>
           </Card.Content>
           <Card.LineItem>
@@ -311,6 +330,8 @@ const StyledLink = styled(Link)`
 - Horizontal action card with two line items
 
 `<Card.LineItem />` should be rendered outside of `<Card.Content />`
+
+- If card is a link and card title or content is not self-explanatory, add aria-label
 
 ```tsx
 import { Card, Button, FlexContainer, FlexRow, FlexCol, Link } from '@zopauk/react-components';
@@ -329,13 +350,13 @@ const StyledLink = styled(Link)`
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={6}>
-      <StyledLink href="#" className="has-icon">
+      <StyledLink href="http://zopa.com" className="has-icon">
         <Card styling="action" layout="horizontal">
           <Card.LineItem>
             <Icon variant={faPiggyBank} color={colors.brand} size="2x" className="ml-4" />
           </Card.LineItem>
           <Card.Content className="py-6 pl-1">
-            <Card.Heading className="mb-1">Card with additional line item</Card.Heading>
+            <Card.Heading className="mb-1">View sweets</Card.Heading>
             <Card.Text>Ice cream marzipan marshmallow caramel piggy.</Card.Text>
           </Card.Content>
           <Card.LineItem>

@@ -39,12 +39,13 @@ const IconWrapper = styled.span`
 type ErrorMessageProps = {
   children?: React.ReactNode;
   className?: string;
+  id?: string;
 };
 
-const ErrorMessage = ({ children, className, ...rest }: ErrorMessageProps) => {
+const ErrorMessage = ({ children, className, id, ...rest }: ErrorMessageProps) => {
   const theme = useThemeContext();
   return (
-    <StyledErrorMessage className={className} {...rest} theme={theme}>
+    <StyledErrorMessage className={className} {...rest} theme={theme} id={id}>
       {theme.errorMessage.icon ? (
         <IconWrapper>
           <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
