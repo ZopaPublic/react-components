@@ -1,3 +1,22 @@
+## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
+
+
+### Features
+
+* add required attribute to examples ([325d9c1](https://github.com/zopaUK/react-components/commit/325d9c19862bf5d083e226cadb018f8e271d6ae0))
+
+
+### Bug Fixes
+
+* **inputrange:** add id to input range ([fdeb39c](https://github.com/zopaUK/react-components/commit/fdeb39c6063b35118f758ce5b0547f59aa6ab570))
+
+## [5.48.3](https://github.com/zopaUK/react-components/compare/v5.48.2...v5.48.3) (2023-07-11)
+
+
+### Bug Fixes
+
+* **inputrange:** add id to input range ([0ddfbbd](https://github.com/zopaUK/react-components/commit/0ddfbbd798ea5c24b0ee6accddce1b551b34eefb))
+
 ## [5.48.2](https://github.com/zopaUK/react-components/compare/v5.48.1...v5.48.2) (2023-06-09)
 
 
