@@ -6,6 +6,7 @@ import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
   onChange: (value: number) => void;
+  id?: string;
   min?: number;
   max?: number;
   step?: number;
@@ -13,7 +14,7 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
 }
 
 const InputRange = forwardRef<HTMLInputElement, InputRange>(
-  ({ min = 0, max = 100, step = 1, controls = false, value, onChange, ...otherProps }, ref) => {
+  ({ min = 0, max = 100, step = 1, controls = false, value, onChange, id, ...otherProps }, ref) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
       onChange(Number(e.target.value));
     };
@@ -27,6 +28,10 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
       e.preventDefault();
       onChange(value + step);
     };
+
+    if (!id) {
+      console.warn('Id is a required prop of the inputRange component');
+    }
 
     return (
       <Wrapper>

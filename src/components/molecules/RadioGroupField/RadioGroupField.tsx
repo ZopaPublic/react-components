@@ -77,6 +77,7 @@ const RadioGroupField = ({
               <RadioWrapper>
                 <RadioField
                   disabled={disabled}
+                  aria-describedby={`error-radio-group-${label}`}
                   value={item.value}
                   onChange={handleChange(item.value)}
                   onBlur={onBlur}
@@ -93,7 +94,11 @@ const RadioGroupField = ({
           );
         })}
       </FlexRow>
-      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
+      {errorMessage && (
+        <ErrorMessage id={`error-radio-group-${label}`} className="mt-1">
+          {errorMessage}
+        </ErrorMessage>
+      )}
     </Fieldset>
   );
 };

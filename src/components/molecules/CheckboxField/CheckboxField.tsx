@@ -168,12 +168,17 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
           hideControl={hideControl}
           {...rest}
           theme={theme}
+          aria-describedby={props['aria-describedby'] ? props['aria-describedby'] : `checkbox-field-error-${name}`}
         />
         <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid} theme={theme}>
           {label}
         </Label>
       </SizedContainer>
-      {errorMessage && <ErrorMessage className="mt-1">{errorMessage}</ErrorMessage>}
+      {errorMessage && (
+        <ErrorMessage className="mt-1" id={`checkbox-field-error-${name}`}>
+          {errorMessage}
+        </ErrorMessage>
+      )}
     </>
   );
 });
