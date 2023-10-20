@@ -34,7 +34,7 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorn
   border: ${({ severity, theme }) => theme.alert[severity].border};
   a {
     color: ${({ severity, theme }) => theme.alert[severity].text} !important;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     text-decoration: underline;
 
