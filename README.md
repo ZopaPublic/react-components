@@ -185,6 +185,13 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/khumbon">
+            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
+            <br />
+            <sub><b>khumbon</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/emilfjellstrom">
             <img src="https://avatars.githubusercontent.com/u/11654513?v=4" width="50;" alt="emilfjellstrom"/>
             <br />
@@ -197,20 +204,13 @@ In case you want to contribute to this library, please have a look at our [contr
             <br />
             <sub><b>MillieClare</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/steedems">
             <img src="https://avatars.githubusercontent.com/u/7896422?v=4" width="50;" alt="steedems"/>
             <br />
             <sub><b>steedems</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/khumbon">
-            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
-            <br />
-            <sub><b>khumbon</b></sub>
         </a>
     </td>
     <td align="center">
