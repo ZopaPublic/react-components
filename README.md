@@ -164,17 +164,17 @@ In case you want to contribute to this library, please have a look at our [contr
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/gbkr">
-            <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
-            <br />
-            <sub><b>gbkr</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/charlielizzy">
             <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
             <br />
             <sub><b>charlielizzy</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/gbkr">
+            <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
+            <br />
+            <sub><b>gbkr</b></sub>
         </a>
     </td>
     <td align="center">
