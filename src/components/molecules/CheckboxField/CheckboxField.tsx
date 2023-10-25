@@ -174,7 +174,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>((props, r
         <Label htmlFor={`checkbox-id-${name}`} hasError={hasError} isValid={isValid} theme={theme}>
           {label}
         </Label>
-        <HiddenText>{isValid ? `${label} field is valid` : hasError ? `${label} field has error` : ''}</HiddenText>
+        <HiddenText>{isValid ? `${label} field is valid` : hasError && !errorMessage ? `${label} field has error` : ''}</HiddenText>
       </SizedContainer>
       {errorMessage && (
         <ErrorMessage className="mt-1" id={`checkbox-field-error-${name}`}>
