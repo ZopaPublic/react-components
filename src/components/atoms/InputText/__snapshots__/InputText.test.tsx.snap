@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<InputText /> renders the component disabled 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -83,25 +71,10 @@ exports[`<InputText /> renders the component disabled 1`] = `
     disabled=""
     name="name"
   />
-  <span
-    class="c2"
-  />
 </div>
 `;
 
 exports[`<InputText /> renders the component with an icon on the left 1`] = `
-.c3 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -203,30 +176,15 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
     class="c2"
     name="name"
   />
-  <span
-    class="c3"
-  />
 </div>
 `;
 
 exports[`<InputText /> renders the component with an icon on the right 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   top: 1px;
   bottom: 1px;
@@ -317,9 +275,6 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   />
   <span
     class="c2"
-  />
-  <span
-    class="c3"
   >
     <span
       data-automation="end-icon"
@@ -329,18 +284,6 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 `;
 
 exports[`<InputText /> renders the component with error 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -410,27 +353,10 @@ exports[`<InputText /> renders the component with error 1`] = `
     class="c1"
     name="name"
   />
-  <span
-    class="c2"
-  >
-    field has error
-  </span>
 </div>
 `;
 
 exports[`<InputText /> renders the component with focus 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -499,26 +425,11 @@ exports[`<InputText /> renders the component with focus 1`] = `
   <input
     class="c1"
     name="name"
-  />
-  <span
-    class="c2"
   />
 </div>
 `;
 
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -588,27 +499,10 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
     class="c1"
     name="name"
   />
-  <span
-    class="c2"
-  >
-    field is valid
-  </span>
 </div>
 `;
 
 exports[`<InputText /> renders the component with the required props 1`] = `
-.c2 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 .c0 {
   position: relative;
 }
@@ -677,9 +571,6 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   <input
     class="c1"
     name="name"
-  />
-  <span
-    class="c2"
   />
 </div>
 `;
