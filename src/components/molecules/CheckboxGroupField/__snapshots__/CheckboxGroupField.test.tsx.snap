@@ -53,6 +53,18 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   width: 100%;
 }
 
+.c9 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c8 {
   width: auto;
   display: -webkit-box;
@@ -233,6 +245,9 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
           >
             option
           </label>
+          <span
+            class="c9"
+          />
         </div>
       </div>
     </div>
@@ -291,6 +306,18 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
 .c5 {
   max-width: 100%;
   width: 100%;
+}
+
+.c9 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c8 {
@@ -469,6 +496,9 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
           >
             option
           </label>
+          <span
+            class="c9"
+          />
         </div>
       </div>
     </div>
