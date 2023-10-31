@@ -5,6 +5,7 @@ import { colors, typography } from '../../../constants';
 import { Colors } from '../../../constants/colors';
 import Text from '../../atoms/Text/Text';
 import { useThemeContext } from '../../styles/Theme';
+import HiddenText from '../../atoms/HiddenText/HiddenText';
 
 export interface ProgressionStyleProps {
   /**
@@ -75,16 +76,6 @@ const ProgressPoint = styled.span<ProgressPointProps>`
     completed ? (progressColor ? progressColor : theme.progressBar.color) : colors.greyLighter};
   border-radius: 100%;
   transform: translate(-50%, -50%);
-`;
-
-const HiddenText = styled.span`
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 `;
 
 const getStepPosition = (steps: number, stepIndex: number) => {

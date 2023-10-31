@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Progress /> Accessibility renders the component with props with no a11y violations 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
@@ -105,18 +117,6 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transform: translate(-50%,-50%);
 }
 
-.c1 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 <div>
   <div
     class="c0"
@@ -159,6 +159,18 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
 `;
 
 exports[`<Progress /> Props renders empty progress bar 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
@@ -263,18 +275,6 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c1 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
 <div
   class="c0"
 >
@@ -315,6 +315,18 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
 `;
 
 exports[`<Progress /> Props renders full progress bar 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
@@ -417,18 +429,6 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-}
-
-.c1 {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 <div
