@@ -46,6 +46,7 @@ const CarouselComponent = ({ children, initialSlideIndex }: CarouselComponentPro
             <FlexContainer gutter={0}>
               <FlexRow cols={slidesCount} justify="space-around">
                 {Children.toArray(children).map(
+                  //@ts-expect-error TODO: refactor legacy cloneElement
                   (child, index) => isValidElement(child) && cloneElement(child, { index }),
                 )}
               </FlexRow>
