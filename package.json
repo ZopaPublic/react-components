@@ -164,5 +164,5 @@
     "@types/react": "^17",
     "@types/react-dom": "^17"
   },
-  "packageManager": "pnpm@7.15.0"
+  "packageManager": "pnpm@8.10.5"
 }
