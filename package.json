@@ -54,7 +54,7 @@
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
     "react-use-clipboard": "^1.0.7",
-    "rollup-plugin-swc3": "^0.7.0",
+    "rollup-plugin-swc3": "^0.10.4",
     "styled-normalize": "^8.0.7",
     "tippy.js": "^6.2.7",
     "util-deprecate": "^1.0.2"
@@ -164,5 +164,5 @@
     "@types/react": "^17",
     "@types/react-dom": "^17"
   },
-  "packageManager": "pnpm@7.15.0"
+  "packageManager": "pnpm@8.10.5"
 }
