@@ -36,8 +36,8 @@
   "dependencies": {
     "@babel/runtime": "^7.18.3",
     "@fortawesome/fontawesome-common-types": "0.2.36",
-    "@fortawesome/fontawesome-svg-core": "1.2.32",
-    "@fortawesome/react-fontawesome": "0.1.11",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@swc/core": "^1.3.21",
     "@tippyjs/react": "^4.2.0",
     "@types/classnames": "^2.2.10",
@@ -60,7 +60,7 @@
     "util-deprecate": "^1.0.2"
   },
   "peerDependencies": {
-    "@fortawesome/free-solid-svg-icons": "5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@types/styled-components": ">=5.1.25",
     "react": ">=16.8.1",
     "react-dom": ">=16.8.1",
@@ -119,7 +119,7 @@
     "react-docgen-typescript": "^2.2.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1",
-    "react-styleguidist": "13.0.0",
+    "react-styleguidist": "^13.0.0",
     "react-test-renderer": "^17.0.2",
     "rollup": "3.5.0",
     "rollup-plugin-esbuild": "^5.0.0",
@@ -151,7 +151,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZopaPublic/react-components.git"
+    "url": "git+https://github.com/zopaUK/react-components.git"
   },
   "bugs": {
     "url": "https://github.com/zopaUK/react-components/issues"
