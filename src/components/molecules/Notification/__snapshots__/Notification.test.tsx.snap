@@ -66,6 +66,7 @@ exports[`Notification renders the component with no props and no a11y violations
   </div>
   <div
     class=""
+    role="status"
   >
     Notification Content
   </div>
