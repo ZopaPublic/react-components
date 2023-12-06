@@ -105,7 +105,9 @@ const Alert = ({
           </CrossButton>
         )}
       </IconWrapper>
-      <div className={onRequestClose ? 'pr-4' : ''}>{children}</div>
+      <div role="status" className={onRequestClose ? 'pr-4' : ''}>
+        {children}
+      </div>
     </Wrapper>
   );
 };
