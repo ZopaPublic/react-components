@@ -55,6 +55,8 @@ jobs:
         uses: changesets/action@v1
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          commit: 'chore: update versions'
+          title: 'chore: update versions'
           publish: pnpm ci:prerelease
         env:
           HUSKY_SKIP_HOOKS: 1
