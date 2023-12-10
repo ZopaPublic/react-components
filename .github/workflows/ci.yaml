@@ -19,7 +19,7 @@ jobs:
         with:
           version: 8.10.5
           run_install: false
-          
+
       - name: Get pnpm store directory
         id: pnpm-cache
         shell: bash
@@ -51,10 +51,13 @@ jobs:
       - name: Compile the code
         run: pnpm compile
 
-      - name: Release
-        run: pnpm release
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: pnpm ci:prerelease
         env:
           HUSKY_SKIP_HOOKS: 1
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
