@@ -4,5 +4,5 @@
   "initialVersions": {
     "@adm-public/react-components": "5.49.1-next.0"
   },
-  "changesets": []
+  "changesets": ["wicked-forks-press"]
 }
