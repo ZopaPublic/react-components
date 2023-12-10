@@ -1,8 +1,8 @@
 {
-  "name": "@zopauk/react-components",
+  "name": "@adm-public/react-components",
   "sideEffects": false,
   "description": "Shared react styled components for all the Zopa projects.",
-  "version": "5.49.0",
+  "version": "5.49.1-next.0",
   "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
   "main": "cjs/src/index.js",
@@ -30,7 +30,7 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit",
-    "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci",
+    "ci:publish": "pnpm compile && pnpm changeset publish",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -68,6 +68,7 @@
     "typescript": ">=3.x"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
