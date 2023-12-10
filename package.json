@@ -30,6 +30,7 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit",
+    "ci:prerelease": "changesets publish",
     "release": "semantic-release -e ./etc/semantic-release/config.js --no-ci",
     "prepare": "husky install"
   },
