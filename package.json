@@ -68,6 +68,7 @@
     "typescript": ">=3.x"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@fortawesome/free-solid-svg-icons": "5.13.1",
