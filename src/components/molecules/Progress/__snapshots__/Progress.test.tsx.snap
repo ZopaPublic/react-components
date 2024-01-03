@@ -1,12 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Progress /> Accessibility renders the component with props with no a11y violations 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
 }
 
-.c1 {
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -14,7 +26,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   height: 4px;
 }
 
-.c7 {
+.c8 {
   width: 37.5%;
   position: relative;
   border-radius: 100px;
@@ -25,7 +37,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transition: width 0.5s ease-in-out;
 }
 
-.c7 > span {
+.c8 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -35,7 +47,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   color: #2C3236;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -49,7 +61,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transform: translate(-50%,-50%);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 50%;
   left: 25%;
@@ -63,7 +75,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transform: translate(-50%,-50%);
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,7 +89,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transform: translate(-50%,-50%);
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 50%;
   left: 75%;
@@ -91,7 +103,7 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   transform: translate(-50%,-50%);
 }
 
-.c6 {
+.c7 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -109,16 +121,20 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
   <div
     class="c0"
   >
+    <span
+      class="c1"
+      id="in-progress"
+    >
+      In progress
+    </span>
     <div
-      aria-label="Static progress bar showing step 2 of 5"
+      aria-labelledby="in-progress"
       aria-valuemax="5"
       aria-valuenow="2"
-      class="c1"
+      aria-valuetext="Static progress bar showing step 2 of 5"
+      class="c2"
       role="progressbar"
     >
-      <span
-        class="c2"
-      />
       <span
         class="c3"
       />
@@ -131,8 +147,11 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
       <span
         class="c6"
       />
-      <div
+      <span
         class="c7"
+      />
+      <div
+        class="c8"
       />
     </div>
   </div>
@@ -140,12 +159,24 @@ exports[`<Progress /> Accessibility renders the component with props with no a11
 `;
 
 exports[`<Progress /> Props renders empty progress bar 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
 }
 
-.c1 {
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -153,7 +184,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   height: 4px;
 }
 
-.c7 {
+.c8 {
   width: 0%;
   position: relative;
   border-radius: 100px;
@@ -164,7 +195,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c7 > span {
+.c8 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -174,7 +205,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   color: #2C3236;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -188,7 +219,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 50%;
   left: 75%;
@@ -202,7 +233,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c6 {
+.c7 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -216,7 +247,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c2 {
+.c3 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -230,7 +261,7 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 50%;
   left: 25%;
@@ -247,16 +278,20 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
 <div
   class="c0"
 >
+  <span
+    class="c1"
+    id="in-progress"
+  >
+    In progress
+  </span>
   <div
-    aria-label="Static progress bar showing step 0 of 5"
+    aria-labelledby="in-progress"
     aria-valuemax="5"
     aria-valuenow="0"
-    class="c1"
+    aria-valuetext="Static progress bar showing step 0 of 5"
+    class="c2"
     role="progressbar"
   >
-    <span
-      class="c2"
-    />
     <span
       class="c3"
     />
@@ -269,20 +304,35 @@ exports[`<Progress /> Props renders empty progress bar 1`] = `
     <span
       class="c6"
     />
-    <div
+    <span
       class="c7"
+    />
+    <div
+      class="c8"
     />
   </div>
 </div>
 `;
 
 exports[`<Progress /> Props renders full progress bar 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   margin-left: 6px;
   margin-right: 6px;
 }
 
-.c1 {
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 100px;
@@ -290,7 +340,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   height: 4px;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   position: relative;
   border-radius: 100px;
@@ -301,7 +351,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   transition: width 0.5s ease-in-out;
 }
 
-.c7 > span {
+.c8 > span {
   position: absolute;
   top: 10px;
   right: 0;
@@ -311,7 +361,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   color: #2C3236;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -325,7 +375,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 50%;
   left: 25%;
@@ -339,7 +389,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c4 {
+.c5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -353,7 +403,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 50%;
   left: 75%;
@@ -367,7 +417,7 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
   transform: translate(-50%,-50%);
 }
 
-.c6 {
+.c7 {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -384,16 +434,20 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
 <div
   class="c0"
 >
+  <span
+    class="c1"
+    id="in-progress"
+  >
+    In progress
+  </span>
   <div
-    aria-label="Static progress bar showing step 5 of 5"
+    aria-labelledby="in-progress"
     aria-valuemax="5"
     aria-valuenow="5"
-    class="c1"
+    aria-valuetext="Static progress bar showing step 5 of 5"
+    class="c2"
     role="progressbar"
   >
-    <span
-      class="c2"
-    />
     <span
       class="c3"
     />
@@ -406,8 +460,11 @@ exports[`<Progress /> Props renders full progress bar 1`] = `
     <span
       class="c6"
     />
-    <div
+    <span
       class="c7"
+    />
+    <div
+      class="c8"
     />
   </div>
 </div>
