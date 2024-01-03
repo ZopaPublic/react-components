@@ -34,7 +34,7 @@ const AccordionExample = () => {
   };
 
   return (
-    <Accordion aria-label="accordion example">
+    <Accordion>
       {items.map(({ id, header, section, size }, index) => (
         <div key={id}>
           <Accordion.Header id={id} index={index} textSize={size} onClick={onClick}>

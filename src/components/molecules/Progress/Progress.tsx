@@ -5,6 +5,7 @@ import { colors, typography } from '../../../constants';
 import { Colors } from '../../../constants/colors';
 import Text from '../../atoms/Text/Text';
 import { useThemeContext } from '../../styles/Theme';
+import HiddenText from '../../atoms/HiddenText/HiddenText';
 
 export interface ProgressionStyleProps {
   /**
@@ -106,11 +107,13 @@ const Progress = ({ totalSteps, currentStep, withStep = false, progressColor, ..
 
   return (
     <ProgressWrapper>
+      <HiddenText id="in-progress">In progress</HiddenText>
       <ProgressBar
         role="progressbar"
         aria-valuemax={totalSteps}
         aria-valuenow={currentStep}
-        aria-label={`Static progress bar showing step ${currentStep} of ${totalSteps}`}
+        aria-valuetext={`Static progress bar showing step ${currentStep} of ${totalSteps}`}
+        aria-labelledby="in-progress"
         {...rest}
       >
         {renderPoints()}
