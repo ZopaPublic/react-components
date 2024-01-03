@@ -62,6 +62,7 @@ exports[`<RoundButton /> renders as "primary" 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-bottom: 8px;
   color: #FFFFFF;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
@@ -93,13 +94,16 @@ exports[`<RoundButton /> renders as "primary" 1`] = `
 
 <div
   class="c0"
+  label="round button"
 >
   <div
     class="round-button-circle"
   />
   <span
     class="c1 c2"
-  />
+  >
+    round button
+  </span>
 </div>
 `;
 
@@ -165,6 +169,7 @@ exports[`<RoundButton /> renders as "secondary" 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-bottom: 8px;
   color: #21247F;
   background: #E9EAFA;
 }
@@ -196,13 +201,16 @@ exports[`<RoundButton /> renders as "secondary" 1`] = `
 
 <div
   class="c0"
+  label="round button"
 >
   <div
     class="round-button-circle"
   />
   <span
     class="c1 c2"
-  />
+  >
+    round button
+  </span>
 </div>
 `;
 
@@ -268,6 +276,7 @@ exports[`<RoundButton /> renders disabled 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-bottom: 8px;
   color: #FFFFFF;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
   cursor: not-allowed;
@@ -299,13 +308,16 @@ exports[`<RoundButton /> renders disabled 1`] = `
 <div
   class="c0"
   disabled=""
+  label="round button"
 >
   <div
     class="round-button-circle"
   />
   <span
     class="c1 c2"
-  />
+  >
+    round button
+  </span>
 </div>
 `;
 
@@ -371,6 +383,7 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-bottom: 8px;
   color: #FFFFFF;
   background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
   cursor: not-allowed;
@@ -400,6 +413,7 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
 <div
   class="c0"
   disabled=""
+  label="round button"
 >
   <div
     class="round-button-circle"
@@ -413,7 +427,9 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
   </div>
   <span
     class="c1 c2"
-  />
+  >
+    round button
+  </span>
 </div>
 `;
 
@@ -479,6 +495,7 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin-bottom: 8px;
   color: #21247F;
   background: #E9EAFA;
   cursor: not-allowed;
@@ -508,6 +525,7 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
 <div
   class="c0"
   disabled=""
+  label="round button"
 >
   <div
     class="round-button-circle"
@@ -521,7 +539,9 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
   </div>
   <span
     class="c1 c2"
-  />
+  >
+    round button
+  </span>
 </div>
 `;
 
