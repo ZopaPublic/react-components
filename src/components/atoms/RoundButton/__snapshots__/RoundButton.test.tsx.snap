@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RoundButton /> renders as "primary" 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -71,16 +85,39 @@ exports[`<RoundButton /> renders as "primary" 1`] = `
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
 }
 
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
 <div
   class="c0"
 >
   <div
     class="round-button-circle"
   />
+  <span
+    class="c1 c2"
+  />
 </div>
 `;
 
 exports[`<RoundButton /> renders as "secondary" 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -151,16 +188,39 @@ exports[`<RoundButton /> renders as "secondary" 1`] = `
   background: #EEEFFB;
 }
 
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
 <div
   class="c0"
 >
   <div
     class="round-button-circle"
   />
+  <span
+    class="c1 c2"
+  />
 </div>
 `;
 
 exports[`<RoundButton /> renders disabled 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -230,6 +290,12 @@ exports[`<RoundButton /> renders disabled 1`] = `
   transform: translate(-50%,-50%);
 }
 
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
 <div
   class="c0"
   disabled=""
@@ -237,10 +303,27 @@ exports[`<RoundButton /> renders disabled 1`] = `
   <div
     class="round-button-circle"
   />
+  <span
+    class="c1 c2"
+  />
 </div>
 `;
 
 exports[`<RoundButton /> renders loading as "primary" 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -308,6 +391,12 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
   transform: translate(-50%,-50%);
 }
 
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
 <div
   class="c0"
   disabled=""
@@ -322,10 +411,27 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
       width="20px"
     />
   </div>
+  <span
+    class="c1 c2"
+  />
 </div>
 `;
 
 exports[`<RoundButton /> renders loading as "secondary" 1`] = `
+.c1 {
+  margin: 0;
+  -webkit-letter-spacing: 0;
+  -moz-letter-spacing: 0;
+  -ms-letter-spacing: 0;
+  letter-spacing: 0;
+  color: #2C3236;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  text-align: inherit;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -393,6 +499,12 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
   transform: translate(-50%,-50%);
 }
 
+.c2 {
+  font-size: 14px;
+  display: block;
+  color: #2C3236;
+}
+
 <div
   class="c0"
   disabled=""
@@ -407,6 +519,9 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
       width="20px"
     />
   </div>
+  <span
+    class="c1 c2"
+  />
 </div>
 `;
 
