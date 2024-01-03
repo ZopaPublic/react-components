@@ -52,7 +52,7 @@ export function ProductTemplateTitle({
       <ProductTemplateTitleContainer>
         <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
           {title && (
-            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center">
+            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center" className="px-8">
               {title}
             </Heading>
           )}
