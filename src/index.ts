@@ -35,6 +35,7 @@ export { default as ErrorMessage } from './components/atoms/ErrorMessage/ErrorMe
 export { default as InputLabel } from './components/atoms/InputLabel/InputLabel';
 export { default as InputRange } from './components/atoms/InputRange/InputRange';
 export { default as InputText } from './components/atoms/InputText/InputText';
+export { default as HiddenText } from './components/atoms/HiddenText/HiddenText';
 export { default as Text } from './components/atoms/Text/Text';
 export { default as List } from './components/atoms/List';
 export { default as Heading } from './components/atoms/Heading/Heading';

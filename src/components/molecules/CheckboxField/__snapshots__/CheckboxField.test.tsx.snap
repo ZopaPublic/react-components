@@ -19,6 +19,18 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   width: 100%;
 }
 
+.c4 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c3 {
   width: auto;
   display: -webkit-box;
@@ -156,6 +168,9 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   >
     hello
   </label>
+  <span
+    class="c4"
+  />
 </div>
 `;
 
@@ -176,6 +191,18 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 .c0 {
   max-width: 100%;
   width: 100%;
+}
+
+.c4 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c3 {
@@ -310,5 +337,8 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   >
     hello
   </label>
+  <span
+    class="c4"
+  />
 </div>
 `;
