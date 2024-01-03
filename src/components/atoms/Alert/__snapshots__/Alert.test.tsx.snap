@@ -66,6 +66,7 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   </div>
   <div
     class=""
+    role="status"
   >
     Alert Content
   </div>
@@ -138,6 +139,7 @@ exports[`Alert renders with specific severity: alert 1`] = `
   </div>
   <div
     class=""
+    role="status"
   >
     Alert Content
   </div>
@@ -210,6 +212,7 @@ exports[`Alert renders with specific severity: info 1`] = `
   </div>
   <div
     class=""
+    role="status"
   >
     Alert Content
   </div>
@@ -282,6 +285,7 @@ exports[`Alert renders with specific severity: success 1`] = `
   </div>
   <div
     class=""
+    role="status"
   >
     Alert Content
   </div>
@@ -354,6 +358,7 @@ exports[`Alert renders with specific severity: warning 1`] = `
   </div>
   <div
     class=""
+    role="status"
   >
     Alert Content
   </div>

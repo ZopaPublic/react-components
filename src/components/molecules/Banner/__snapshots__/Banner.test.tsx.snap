@@ -66,6 +66,7 @@ exports[`Banner renders the component with no props and no a11y violations 1`] =
   </div>
   <div
     class=""
+    role="status"
   >
     Banner Content
   </div>
