@@ -106,10 +106,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/lluia">
-            <img src="https://avatars.githubusercontent.com/u/5938217?v=4" width="50;" alt="lluia"/>
+        <a href="https://github.com/ubbe-xyz">
+            <img src="https://avatars.githubusercontent.com/u/5938217?v=4" width="50;" alt="ubbe-xyz"/>
             <br />
-            <sub><b>lluia</b></sub>
+            <sub><b>ubbe-xyz</b></sub>
         </a>
     </td>
     <td align="center">
@@ -121,13 +121,6 @@ In case you want to contribute to this library, please have a look at our [contr
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/Gabss405">
-            <img src="https://avatars.githubusercontent.com/u/67011746?v=4" width="50;" alt="Gabss405"/>
-            <br />
-            <sub><b>Gabss405</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/admmasters">
             <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
             <br />
@@ -135,10 +128,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/JuliaHempel">
-            <img src="https://avatars.githubusercontent.com/u/9414476?v=4" width="50;" alt="JuliaHempel"/>
+        <a href="https://github.com/Gabss405">
+            <img src="https://avatars.githubusercontent.com/u/67011746?v=4" width="50;" alt="Gabss405"/>
             <br />
-            <sub><b>JuliaHempel</b></sub>
+            <sub><b>Gabss405</b></sub>
         </a>
     </td>
     <td align="center">
@@ -149,6 +142,13 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/JuliaHempel">
+            <img src="https://avatars.githubusercontent.com/u/9414476?v=4" width="50;" alt="JuliaHempel"/>
+            <br />
+            <sub><b>JuliaHempel</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/katebeavis">
             <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
             <br />
@@ -156,10 +156,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/calvin-fung-zopa">
-            <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
+        <a href="https://github.com/khumbon">
+            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
             <br />
-            <sub><b>calvin-fung-zopa</b></sub>
+            <sub><b>khumbon</b></sub>
         </a>
     </td></tr>
 <tr>
@@ -171,17 +171,17 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/calvin-fung-zopa">
+            <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
+            <br />
+            <sub><b>calvin-fung-zopa</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/gbkr">
             <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
             <br />
             <sub><b>gbkr</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/khumbon">
-            <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
-            <br />
-            <sub><b>khumbon</b></sub>
         </a>
     </td>
     <td align="center">
