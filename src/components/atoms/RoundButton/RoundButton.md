@@ -8,20 +8,13 @@ by **default** the button is a `<div />` you can use the `as` prop to change the
 
 ### Examples
 
-```tsx
-import { RoundButton } from '@zopauk/react-components';
-import { faCog } from '@fortawesome/free-solid-svg-icons';
-
-<RoundButton as="a" href="#test" styling="secondary" icon={faCog} />;
-```
-
 - Primary
 
 ```tsx
 import { RoundButton } from '@zopauk/react-components';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 
-<RoundButton icon={faCog} />;
+<RoundButton icon={faCog} label="Primary" />;
 ```
 
 - Secondary ( _standard button for most actions_ )
@@ -30,7 +23,7 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { RoundButton } from '@zopauk/react-components';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 
-<RoundButton styling="secondary" icon={faCog} />;
+<RoundButton styling="secondary" icon={faCog} label="Secondary" />;
 ```
 
 - Disabled state ( _for use when actions are disabled, both primary and secondary_ )
@@ -39,7 +32,7 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { RoundButton } from '@zopauk/react-components';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 
-<RoundButton disabled icon={faCog} />;
+<RoundButton disabled icon={faCog} label="Disabled" />;
 ```
 
 - Loading state ( _for use when actions are loading, both primary and secondary_ )
@@ -51,38 +44,16 @@ import { RoundButton, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-comp
 <FlexContainer>
   <FlexRow>
     <FlexCol xs={6}>
-      <RoundButton $loading icon={faCog} />
+      <RoundButton $loading icon={faCog} label="Loading" />
     </FlexCol>
     <FlexCol xs={6}>
-      <RoundButton styling="secondary" $loading icon={faCog} />
+      <RoundButton styling="secondary" $loading icon={faCog} label="Loading secondary" />
     </FlexCol>
   </FlexRow>
 </FlexContainer>;
 ```
 
 - With varying icons
-
-```tsx
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { RoundButton, FlexRow, FlexCol, FlexContainer } from '@zopauk/react-components';
-import { faArrowCircleRight, faCreditCard, faCog } from '@fortawesome/free-solid-svg-icons';
-
-<FlexContainer>
-  <FlexRow>
-    <FlexCol xs={4}>
-      <RoundButton icon={faCreditCard} styling="secondary" />
-    </FlexCol>
-    <FlexCol xs={4}>
-      <RoundButton icon={faCog} styling="secondary" />
-    </FlexCol>
-    <FlexCol xs={4}>
-      <RoundButton icon={faArrowCircleRight} styling="secondary" />
-    </FlexCol>
-  </FlexRow>
-</FlexContainer>;
-```
-
-- With label
 
 ```tsx
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

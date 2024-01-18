@@ -50,7 +50,7 @@ exports[`<ProductTemplateTitle /> renders correct sized title on desktop 1`] = `
         class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
-          class="c3"
+          class="c3 px-8"
         >
           ProductTemplateTitle title
         </h1>
@@ -113,7 +113,7 @@ exports[`<ProductTemplateTitle /> renders correct sized title on small screens 1
         class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
-          class="c3"
+          class="c3 px-8"
         >
           ProductTemplateTitle title
         </h1>
@@ -190,7 +190,7 @@ exports[`<ProductTemplateTitle /> renders with all the props 1`] = `
         class="c2 pt-7 m:pt-9 mx-6 m:mx-0"
       >
         <h1
-          class="c3"
+          class="c3 px-8"
         >
           ProductTemplateTitle title
         </h1>

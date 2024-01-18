@@ -9,7 +9,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 export type Styling = 'primary' | 'secondary';
 
 export interface RoundButtonProps extends HTMLAttributes<HTMLDivElement> {
-  label?: string;
+  label: string;
   styling?: Styling;
   $loading?: boolean;
   disabled?: boolean;
@@ -106,7 +106,7 @@ const RoundButton = ({ $loading, styling = 'primary', disabled, label, icon, ...
         icon && <Icon variant={icon} size="lg" />
       )}
     </div>
-    {label && <StyledLabel>{label}</StyledLabel>}
+    <StyledLabel>{label}</StyledLabel>
   </Wrapper>
 );
 

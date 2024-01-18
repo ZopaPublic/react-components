@@ -13,32 +13,32 @@ describe('<RoundButton />', () => {
   });
 
   it('renders as "primary"', () => {
-    const { container } = render(<RoundButton />);
+    const { container } = render(<RoundButton label="round button" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders as "secondary"', () => {
-    const { container } = render(<RoundButton styling="secondary" />);
+    const { container } = render(<RoundButton styling="secondary" label="round button" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders disabled', () => {
-    const { container } = render(<RoundButton disabled />);
+    const { container } = render(<RoundButton disabled label="round button" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders loading as "primary"', () => {
-    const { container } = render(<RoundButton $loading />);
+    const { container } = render(<RoundButton $loading label="round button" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders loading as "secondary"', () => {
-    const { container } = render(<RoundButton styling="secondary" $loading />);
+    const { container } = render(<RoundButton styling="secondary" $loading label="round button" />);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it('renders loading with disabled attribute', () => {
-    const { container } = render(<RoundButton $loading />);
+    const { container } = render(<RoundButton $loading label="round button" />);
     expect(container.firstChild).toHaveAttribute('disabled');
   });
 });
