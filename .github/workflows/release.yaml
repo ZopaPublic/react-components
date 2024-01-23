@@ -1,9 +1,6 @@
 name: Release react-components library
 
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
   release:
