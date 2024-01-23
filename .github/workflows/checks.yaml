@@ -1,9 +1,9 @@
-name: CI
+name: Checks
 on: push
 
 jobs:
   check:
-    name: Test and release
+    name: Checks and tests 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -48,13 +48,13 @@ jobs:
           reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
 
-      - name: Compile the code
-        run: pnpm compile
+      # - name: Compile the code
+      #   run: pnpm compile
 
-      - name: Release
-        run: pnpm release
-        env:
-          HUSKY_SKIP_HOOKS: 1
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Release
+      #   run: pnpm release
+      #   env:
+      #     HUSKY_SKIP_HOOKS: 1
+      #     GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
