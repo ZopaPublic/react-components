@@ -1,9 +1,9 @@
-name: Checks
+name: CI
 on: push
 
 jobs:
   check:
-    name: Checks and tests 
+    name: Test and release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
         with:
           version: 8.10.5
           run_install: false
-          
+
       - name: Get pnpm store directory
         id: pnpm-cache
         shell: bash
@@ -47,14 +47,3 @@ jobs:
         with:
           reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
-
-      # - name: Compile the code
-      #   run: pnpm compile
-
-      # - name: Release
-      #   run: pnpm release
-      #   env:
-      #     HUSKY_SKIP_HOOKS: 1
-      #     GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
