@@ -2,7 +2,7 @@ name: Announce the release on Slack
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   slack:
