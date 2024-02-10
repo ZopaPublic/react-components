@@ -1,12 +1,13 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 
 import { useTabsContext } from './useTabsContext';
 
 describe('useTabsContext', () => {
   it('should throw if no context present', () => {
-    const { result } = renderHook(() => {
-      useTabsContext();
-    });
-    expect(() => result.current).toThrow('useTabsContext must be used within Tabs');
+    expect(() =>
+      renderHook(() => {
+        useTabsContext();
+      }),
+    ).toThrow('useTabsContext must be used within Tabs');
   });
 });

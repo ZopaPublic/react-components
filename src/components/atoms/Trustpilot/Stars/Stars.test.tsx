@@ -23,7 +23,6 @@ describe('<TrustpilotStars />', () => {
   });
 
   describe('Ratings', () => {
-    const { container, rerender } = render(<Stars />);
     it.each`
       rating | ID
       ${0}   | ${ZERO_STAR_ID}
@@ -37,7 +36,7 @@ describe('<TrustpilotStars />', () => {
       ${4.5} | ${FOUR_HALF_STAR_ID}
       ${5}   | ${FIVE_STAR_ID}
     `('renders the given rating: $rating', async ({ rating, ID }) => {
-      rerender(<Stars rating={rating} />);
+      const { container, rerender } = render(<Stars rating={rating} />);
       expect(container.querySelector(`#${ID}`)).toBeTruthy();
     });
   });

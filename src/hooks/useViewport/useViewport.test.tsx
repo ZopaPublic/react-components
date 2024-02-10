@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook, act } from '@testing-library/react';
 import { fireEvent, render } from '@testing-library/react';
 import { useViewport } from './useViewport';
 import { ViewportProvider } from './ViewportProvider';

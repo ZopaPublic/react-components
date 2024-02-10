@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks';
+import { renderHook } from '@testing-library/react';
 import useScrollThreshold from './useScrollThreshold';
 
 describe('HOOK: useScrollThreshold', () => {
@@ -24,7 +24,8 @@ describe('HOOK: useScrollThreshold', () => {
   it('registers a scroll listener when called', () => {
     renderHook(useScrollThreshold);
 
-    expect(global.document.addEventListener).toHaveBeenCalledTimes(1);
+    // React.useEffect gets called twice, once for the initial render and once for the cleanup
+    expect(global.document.addEventListener).toHaveBeenCalledTimes(2);
     expect((global.document.addEventListener as jest.Mock).mock.calls[0]).toMatchSnapshot();
   });
 
