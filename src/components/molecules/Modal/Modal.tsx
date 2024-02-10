@@ -38,6 +38,7 @@ const overlayClassNames = (hideBackground: boolean) => ({
 });
 
 const Modal = ({ children, onRequestClose, showCloseButton = true, hideBackground = false, ...rest }: ModalProps) => (
+  // @ts-expect-error react-modal types are a mess
   <ReactModal
     bodyOpenClassName="zopa-modal-body--open"
     portalClassName="zopa-modal-portal"
@@ -47,12 +48,12 @@ const Modal = ({ children, onRequestClose, showCloseButton = true, hideBackgroun
     onRequestClose={onRequestClose}
     {...rest}
   >
-    {showCloseButton && (
+    {showCloseButton ? (
       <Button type="button" onClick={onRequestClose}>
         <span className="sr-only">Close Modal</span>
         <Icon color={colors.grey} variant={faTimes} size="lg" data-automation="ZA.modal-cross-icon" />
       </Button>
-    )}
+    ) : null}
     {children}
   </ReactModal>
 );

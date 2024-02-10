@@ -2,7 +2,8 @@
 
 exports[`HOOK: useScrollThreshold registers a scroll listener when called 1`] = `
 Array [
-  "scroll",
+  "selectionchange",
   [Function],
+  false,
 ]
 `;

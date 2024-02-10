@@ -1,10 +1,13 @@
-import { renderHook, act } from '@testing-library/react-hooks';
+import * as React from 'react';
+import { renderHook, act } from '@testing-library/react';
 
 import { useAccordion } from './useAccordion';
+import { Accordion } from '../../components/organisms/Accordion';
 
 describe('useAccordion', () => {
   it('should render correct tab and section props', () => {
-    const { result } = renderHook(useAccordion);
+    const wrapper = ({ children }: React.PropsWithChildren) => <Accordion>{children}</Accordion>;
+    const { result } = renderHook(useAccordion, { wrapper });
 
     const header = result.current.getHeaderProps('id', 1);
     const section = result.current.getSectionProps('id', 1);
