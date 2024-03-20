@@ -144,9 +144,9 @@ const ZopaFooter = ({
         {theme.footer.showFooterLinks && (
           <FlexRow className="mb-6">
             <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
-              <Heading as="h4" className="mb-4 s:mb-6 mt-0">
+              <FooterHeading as="h4" className="mb-4 s:mb-6 mt-0">
                 What we do
-              </Heading>
+              </FooterHeading>
               <List>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/car-finance`, children: 'Car finance' })}</li>
                 <li className="mb-4">
@@ -169,9 +169,9 @@ const ZopaFooter = ({
               </List>
             </FlexCol>
             <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
-              <Heading as="h4" className="mb-4 s:mb-6 mt-0">
+              <FooterHeading as="h4" className="mb-4 s:mb-6 mt-0">
                 About Zopa
-              </Heading>
+              </FooterHeading>
               <List>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about`, children: 'About us' })}</li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about/our-story`, children: 'Our story' })}</li>
@@ -196,9 +196,9 @@ const ZopaFooter = ({
               </List>
             </FlexCol>
             <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
-              <Heading as="h4" className="mb-4 s:mb-6 mt-0">
+              <FooterHeading as="h4" className="mb-4 s:mb-6 mt-0">
                 Legal
-              </Heading>
+              </FooterHeading>
               <List>
                 <li className="mb-4">
                   {renderLink({ href: `${baseUrl}/privacy-notice`, children: 'Privacy notice' })}
@@ -218,9 +218,9 @@ const ZopaFooter = ({
               </List>
             </FlexCol>
             <FlexCol xs={12} s={6} l={3} className="mb-8 s:mb-9">
-              <Heading as="h4" className="mb-4 s:mb-6 mt-0">
+              <FooterHeading as="h4" className="mb-4 s:mb-6 mt-0">
                 Navigation
-              </Heading>
+              </FooterHeading>
               <List>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/help`, children: 'Help' })}</li>
                 <li>{renderLink({ href: `${baseUrl}/sitemap`, children: 'Sitemap' })}</li>

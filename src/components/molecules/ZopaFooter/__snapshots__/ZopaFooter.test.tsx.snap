@@ -147,26 +147,16 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   margin-right: auto;
 }
 
-.c4 {
-  font-size: 24px;
-  line-height: 32px;
-  -webkit-letter-spacing: -0.25px;
-  -moz-letter-spacing: -0.25px;
-  -ms-letter-spacing: -0.25px;
-  letter-spacing: -0.25px;
-  margin: 0;
-  color: #2C3236;
-  text-align: inherit;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-}
-
 .c13 {
   margin: 0 8px;
 }
 
 .c0 {
   background-color: #FFFFFF;
+}
+
+.c4 {
+  text-transform: uppercase;
 }
 
 .c19 {
