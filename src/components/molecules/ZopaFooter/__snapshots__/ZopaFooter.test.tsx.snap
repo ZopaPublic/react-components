@@ -147,12 +147,22 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   margin-right: auto;
 }
 
+.c13 {
+  margin: 0 8px;
+}
+
 .c0 {
   background-color: #FFFFFF;
 }
 
 .c4 {
   text-transform: uppercase;
+}
+
+.c19 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .c14 {
@@ -183,12 +193,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   background: url(linkedin.svg) no-repeat;
 }
 
-.c19 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
 .c5 {
   margin: 0;
   padding: 0;
@@ -209,10 +213,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
-}
-
-.c13 {
-  margin: 0 8px;
 }
 
 .c7 {
