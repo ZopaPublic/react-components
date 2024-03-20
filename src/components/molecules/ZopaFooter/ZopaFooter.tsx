@@ -1,7 +1,7 @@
 import Text from '../../atoms/Text/Text';
 import Logo from '../../atoms/Logo/Logo';
 import Link, { LinkProps } from '../../atoms/Link/Link';
-import { typography } from '../../../constants';
+import { typography, grid, spacing, colors } from '../../../constants';
 import styled, { css } from 'styled-components';
 import React, { HTMLAttributes } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
@@ -12,7 +12,58 @@ import facebook from '../../../content/images/social/facebook.svg';
 import linkedin from '../../../content/images/social/linkedin.svg';
 import instagram from '../../../content/images/social/instagram.svg';
 import FlexContainer from '../../layout/FlexContainer/FlexContainer';
-import { Footer, Heading, LegalBlock, List, LogoBlock, SocialBlock, SocialLink } from './styles';
+import Heading from '../../atoms/Heading/Heading';
+import { SocialLink } from './styles/SocialLink';
+
+const Footer = styled.footer`
+  background-color: ${({ theme }) => theme.footer.bgColor || colors.white};
+`;
+
+export const FooterHeading = styled(Heading)`
+  text-transform: uppercase;
+`;
+
+const LegalBlock = styled(FlexCol)`
+  order: 3;
+
+  @media (min-width: ${grid.breakpoints.l}px) {
+    order: 2;
+  }
+`;
+
+export const Icon = styled.span<{ variant: string }>`
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(${({ variant }) => variant}) no-repeat;
+`;
+
+const List = styled.ul`
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+`;
+
+const LogoBlock = styled(FlexCol).attrs({ xs: 12, l: 3 })`
+  margin-bottom: ${spacing[8]};
+  text-align: center;
+  order: 1;
+
+  @media (min-width: ${grid.breakpoints.l}px) {
+    text-align: left;
+  }
+`;
+
+const SocialBlock = styled(FlexCol).attrs({ xs: 12, l: 4 })`
+  margin-bottom: ${spacing[7]};
+  text-align: center;
+  order: 2;
+
+  @media (min-width: ${grid.breakpoints.l}px) {
+    text-align: right;
+    order: 3;
+  }
+`;
 
 /**
  * Use this component to render a Zopa Footer
