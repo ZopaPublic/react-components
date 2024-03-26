@@ -41,6 +41,7 @@ import { RadioField } from '@zopauk/react-components';
 ```
 
 - With an error
+  Make sure you always use error message to describe error state of the field
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
@@ -56,7 +57,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="I'm checked by default" value="radio4" name="radio4" defaultChecked={true} />;
 ```
 
-- Valid and checked
+- Valid and checked (valid state to be removed soon)
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';
@@ -72,7 +73,7 @@ import { RadioField } from '@zopauk/react-components';
 <RadioField label="I'm disabled and checked" value="radio5" name="radio5" disabled={true} />;
 ```
 
-- Disabled, valid and checked
+- Disabled, valid and checked (valid state to be removed soon)
 
 ```tsx
 import { RadioField } from '@zopauk/react-components';

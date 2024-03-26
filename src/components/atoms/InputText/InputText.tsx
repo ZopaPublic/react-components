@@ -93,26 +93,24 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   }
 `;
 
-const InputText = forwardRef<HTMLInputElement, InputProps>(
-  ({ startIcon, endIcon, className, isValid, hasError, ...rest }, ref) => {
-    const theme = useThemeContext();
+const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
+  const theme = useThemeContext();
 
-    return (
-      <InputWrapper className={className}>
-        {startIcon ? (
-          <IconWrapper startIcon theme={theme}>
-            {startIcon}
-          </IconWrapper>
-        ) : null}
-        <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
-        {endIcon ? (
-          <IconWrapper startIcon={false} theme={theme}>
-            {endIcon}
-          </IconWrapper>
-        ) : null}
-      </InputWrapper>
-    );
-  },
-);
+  return (
+    <InputWrapper className={className}>
+      {startIcon ? (
+        <IconWrapper startIcon theme={theme}>
+          {startIcon}
+        </IconWrapper>
+      ) : null}
+      <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
+      {endIcon ? (
+        <IconWrapper startIcon={false} theme={theme}>
+          {endIcon}
+        </IconWrapper>
+      ) : null}
+    </InputWrapper>
+  );
+});
 
 export default InputText;

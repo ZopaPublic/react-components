@@ -55,7 +55,7 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField label="Do you love rap?" name="check4" defaultChecked={true} />;
 ```
 
-- Checked and valid
+- Checked and valid (valid state to be removed soon)
 
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
@@ -71,7 +71,7 @@ import { CheckboxField } from '@zopauk/react-components';
 <CheckboxField label="Do you love rap?" name="check6" disabled={true} />;
 ```
 
-- Disabled, valid and checked
+- Disabled, valid and checked (valid state to be removed soon)
 
 ```tsx
 import { CheckboxField } from '@zopauk/react-components';
