@@ -32,7 +32,7 @@ import { InputText } from '@zopauk/react-components';
 <InputText name="first-name" placeholder="Your first name" autoComplete="given-name" />;
 ```
 
-- Valid state
+- Valid state (to be removed soon)
 
 ```tsx
 import { InputText } from '@zopauk/react-components';
@@ -43,9 +43,12 @@ import { InputText } from '@zopauk/react-components';
 - With error
 
 ```tsx
-import { InputText } from '@zopauk/react-components';
+import { InputText, ErrorMessage } from '@zopauk/react-components';
 
-<InputText name="error" hasError={true} />;
+<>
+  <InputText name="error" hasError={true} className="mb-2" />
+  <ErrorMessage>This field can't be empty</ErrorMessage>
+</>;
 ```
 
 - Disabled
@@ -74,7 +77,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 <InputText name="icon-end" endIcon={<Icon variant={faCoffee} />} defaultValue="Example of input" />;
 ```
 
-- Valid with an icon
+- Valid with an icon (to be removed soon)
 
 ```tsx
 import { InputText, Icon, colors } from '@zopauk/react-components';
@@ -88,18 +91,23 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 />;
 ```
 
-- Inalid with an icon
+- Invalid with an icon
+  Make sure you always use error message to describe error state of the field
 
 ```tsx
-import { InputText, Icon, colors } from '@zopauk/react-components';
+import { InputText, Icon, colors, ErrorMessage } from '@zopauk/react-components';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-<InputText
-  name="icon-start-valid"
-  hasError={true}
-  startIcon={<Icon variant={faCoffee} />}
-  defaultValue="Example of input"
-/>;
+<>
+  <InputText
+    name="icon-start-valid"
+    hasError={true}
+    startIcon={<Icon variant={faCoffee} />}
+    defaultValue="Example of input"
+    className="mb-2"
+  />
+  <ErrorMessage>This field can't be empty</ErrorMessage>
+</>;
 ```
 
 - Disabled with an icon

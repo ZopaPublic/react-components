@@ -93,7 +93,7 @@ import { RadioGroupField } from '@zopauk/react-components';
 />;
 ```
 
-- Disabled and valid
+- Disabled and valid (valid state to be removed soon)
 
 ```jsx
 import { RadioGroupField } from '@zopauk/react-components';
