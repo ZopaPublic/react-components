@@ -78,13 +78,6 @@ In case you want to contribute to this library, please have a look at our [contr
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/poteirard">
-            <img src="https://avatars.githubusercontent.com/u/7198934?v=4" width="50;" alt="poteirard"/>
-            <br />
-            <sub><b>poteirard</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/thegrinder">
             <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
             <br />
@@ -106,10 +99,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/lluia">
-            <img src="https://avatars.githubusercontent.com/u/5938217?v=4" width="50;" alt="lluia"/>
+        <a href="https://github.com/ubbe-xyz">
+            <img src="https://avatars.githubusercontent.com/u/5938217?v=4" width="50;" alt="ubbe-xyz"/>
             <br />
-            <sub><b>lluia</b></sub>
+            <sub><b>ubbe-xyz</b></sub>
         </a>
     </td>
     <td align="center">
@@ -117,6 +110,13 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/337955?v=4" width="50;" alt="dfvalero"/>
             <br />
             <sub><b>dfvalero</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/admmasters">
+            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
+            <br />
+            <sub><b>admmasters</b></sub>
         </a>
     </td></tr>
 <tr>
@@ -128,10 +128,10 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/admmasters">
-            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
+        <a href="https://github.com/OlenaKashuba">
+            <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
             <br />
-            <sub><b>admmasters</b></sub>
+            <sub><b>OlenaKashuba</b></sub>
         </a>
     </td>
     <td align="center">
@@ -142,27 +142,12 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/OlenaKashuba">
-            <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
-            <br />
-            <sub><b>OlenaKashuba</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/katebeavis">
             <img src="https://avatars.githubusercontent.com/u/10133018?v=4" width="50;" alt="katebeavis"/>
             <br />
             <sub><b>katebeavis</b></sub>
         </a>
     </td>
-    <td align="center">
-        <a href="https://github.com/calvin-fung-zopa">
-            <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
-            <br />
-            <sub><b>calvin-fung-zopa</b></sub>
-        </a>
-    </td></tr>
-<tr>
     <td align="center">
         <a href="https://github.com/charlielizzy">
             <img src="https://avatars.githubusercontent.com/u/93588638?v=4" width="50;" alt="charlielizzy"/>
@@ -171,17 +156,32 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/gbkr">
-            <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
-            <br />
-            <sub><b>gbkr</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/khumbon">
             <img src="https://avatars.githubusercontent.com/u/44274000?v=4" width="50;" alt="khumbon"/>
             <br />
             <sub><b>khumbon</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/calvin-fung-zopa">
+            <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
+            <br />
+            <sub><b>calvin-fung-zopa</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/poteirard">
+            <img src="https://avatars.githubusercontent.com/u/7198934?v=4" width="50;" alt="poteirard"/>
+            <br />
+            <sub><b>poteirard</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/gbkr">
+            <img src="https://avatars.githubusercontent.com/u/1077355?v=4" width="50;" alt="gbkr"/>
+            <br />
+            <sub><b>gbkr</b></sub>
         </a>
     </td>
     <td align="center">
@@ -250,10 +250,10 @@ In case you want to contribute to this library, please have a look at our [contr
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/stephanie-senoner">
-            <img src="https://avatars.githubusercontent.com/u/118994357?v=4" width="50;" alt="stephanie-senoner"/>
+        <a href="https://github.com/zopa-stephanie-senoner">
+            <img src="https://avatars.githubusercontent.com/u/118994357?v=4" width="50;" alt="zopa-stephanie-senoner"/>
             <br />
-            <sub><b>stephanie-senoner</b></sub>
+            <sub><b>zopa-stephanie-senoner</b></sub>
         </a>
     </td>
     <td align="center">
@@ -275,6 +275,13 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/641299?v=4" width="50;" alt="grabbeh"/>
             <br />
             <sub><b>grabbeh</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/rory-payne">
+            <img src="https://avatars.githubusercontent.com/u/160851359?v=4" width="50;" alt="rory-payne"/>
+            <br />
+            <sub><b>rory-payne</b></sub>
         </a>
     </td></tr>
 </table>
