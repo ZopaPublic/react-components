@@ -7,6 +7,7 @@ import { typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
 import ExclamationIcon from '../../styles/icons/exclamation';
 import Button from '../Button/Button';
+import HiddenText from '../HiddenText/HiddenText';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -93,8 +94,16 @@ const Alert = ({
     }
   }
 
+  let hiddenText;
+  if (!severity || severity == 'brand' || severity == 'info') {
+    hiddenText = 'information';
+  } else {
+    hiddenText = severity;
+  }
+
   return (
     <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest} theme={theme}>
+      <HiddenText>{hiddenText}</HiddenText>
       <IconWrapper severity={severity} theme={theme}>
         {IconComponent ? <IconComponent /> : null}
         {iconDefinition ? <Icon variant={iconDefinition} /> : null}
