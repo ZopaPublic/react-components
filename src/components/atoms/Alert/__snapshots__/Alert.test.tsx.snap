@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert renders the component with no props and no a11y violations 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -31,22 +43,27 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
   text-decoration: none;
 }
 
-.c1 {
+.c2 {
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
   color: #7D8B98;
 }
 
-.c1 svg {
+.c2 svg {
   display: block;
 }
 
 <div
   class="c0"
 >
-  <div
+  <span
     class="c1"
+  >
+    information
+  </span>
+  <div
+    class="c2"
   >
     <svg
       aria-hidden="true"
@@ -74,6 +91,18 @@ exports[`Alert renders the component with no props and no a11y violations 1`] = 
 `;
 
 exports[`Alert renders with specific severity: alert 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -104,22 +133,27 @@ exports[`Alert renders with specific severity: alert 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c2 {
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
   color: #FF4539;
 }
 
-.c1 svg {
+.c2 svg {
   display: block;
 }
 
 <div
   class="c0"
 >
-  <div
+  <span
     class="c1"
+  >
+    alert
+  </span>
+  <div
+    class="c2"
   >
     <svg
       aria-hidden="true"
@@ -147,6 +181,18 @@ exports[`Alert renders with specific severity: alert 1`] = `
 `;
 
 exports[`Alert renders with specific severity: info 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -177,22 +223,27 @@ exports[`Alert renders with specific severity: info 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c2 {
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
   color: #7D8B98;
 }
 
-.c1 svg {
+.c2 svg {
   display: block;
 }
 
 <div
   class="c0"
 >
-  <div
+  <span
     class="c1"
+  >
+    information
+  </span>
+  <div
+    class="c2"
   >
     <svg
       aria-hidden="true"
@@ -220,6 +271,18 @@ exports[`Alert renders with specific severity: info 1`] = `
 `;
 
 exports[`Alert renders with specific severity: success 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -250,22 +313,27 @@ exports[`Alert renders with specific severity: success 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c2 {
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
   color: #36A156;
 }
 
-.c1 svg {
+.c2 svg {
   display: block;
 }
 
 <div
   class="c0"
 >
-  <div
+  <span
     class="c1"
+  >
+    success
+  </span>
+  <div
+    class="c2"
   >
     <svg
       aria-hidden="true"
@@ -293,6 +361,18 @@ exports[`Alert renders with specific severity: success 1`] = `
 `;
 
 exports[`Alert renders with specific severity: warning 1`] = `
+.c1 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -323,22 +403,27 @@ exports[`Alert renders with specific severity: warning 1`] = `
   text-decoration: none;
 }
 
-.c1 {
+.c2 {
   margin-right: 8px;
   padding-top: 2px;
   font-size: 20px;
   color: #FF9F0A;
 }
 
-.c1 svg {
+.c2 svg {
   display: block;
 }
 
 <div
   class="c0"
 >
-  <div
+  <span
     class="c1"
+  >
+    warning
+  </span>
+  <div
+    class="c2"
   >
     <svg
       aria-hidden="true"
