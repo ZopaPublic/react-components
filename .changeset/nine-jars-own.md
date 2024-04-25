@@ -2,4 +2,4 @@
 '@zopauk/react-components': minor
 ---
 
-Informative icons text alternative
+Add text alternative to icons
