@@ -13,7 +13,7 @@ const LogoSvg = styled.path<LogoProps>`
   fill: ${({ negative }) => (negative ? colors.white : colors.brandDecorative)};
 `;
 
-const Logo = ({ negative, ...rest }: LogoProps) => (
+const Logo = ({ negative = false, height = '100%', width = '100%', ...rest }: LogoProps) => (
   <svg
     viewBox="0 0 208 38"
     version="1.1"
@@ -21,6 +21,8 @@ const Logo = ({ negative, ...rest }: LogoProps) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     role="img"
     aria-label="zopa logo"
+    height={height}
+    width={width}
     {...rest}
   >
     <title>Zopa Logo</title>
@@ -32,11 +34,5 @@ const Logo = ({ negative, ...rest }: LogoProps) => (
     </g>
   </svg>
 );
-
-Logo.defaultProps = {
-  negative: false,
-  height: '100%',
-  width: '100%',
-};
 
 export default Logo;

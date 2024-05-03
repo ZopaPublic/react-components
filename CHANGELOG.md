@@ -1,5 +1,21 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.52.1
+
+### Patch Changes
+
+- c1de15b: bump fort awesome
+
+## 5.52.0
+
+### Minor Changes
+
+- 623f24e: update to pnpm 9 and remove default props
+
+### Patch Changes
+
+- ba432dd: update flex row
+
 ## 5.51.1
 
 ### Patch Changes

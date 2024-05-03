@@ -8,10 +8,6 @@ export interface FlexContainerGutter {
 
 export interface FlexContainerProps extends React.HTMLAttributes<HTMLDivElement>, FlexContainerGutter {}
 
-const defaultProps: Partial<FlexContainerProps> = {
-  gutter: grid.gutter,
-};
-
 const StyledFlexContainer = styled.div<FlexContainerProps>`
   width: 100%;
   max-width: 100%;
@@ -33,7 +29,8 @@ const StyledFlexContainer = styled.div<FlexContainerProps>`
   }
 `;
 
-const FlexContainer = (props: FlexContainerProps) => <StyledFlexContainer {...props} />;
-FlexContainer.defaultProps = defaultProps;
+const FlexContainer = ({ gutter = grid.gutter, ...rest }: FlexContainerProps) => (
+  <StyledFlexContainer gutter={gutter} {...rest} />
+);
 
 export default FlexContainer;

@@ -52,16 +52,12 @@ const StyledBadge = styled(Text).attrs({
   border-radius: 12px;
 `;
 
-const Badge = ({ children, styling, ...rest }: BadgeProps) => {
+const Badge = ({ children, styling = 'default', ...rest }: BadgeProps) => {
   return (
     <StyledBadge styling={styling} {...rest}>
       {children}
     </StyledBadge>
   );
-};
-
-Badge.defaultProps = {
-  styling: 'default',
 };
 
 export default Badge;
