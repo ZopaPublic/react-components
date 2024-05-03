@@ -47,7 +47,11 @@ const FlexRow: React.FunctionComponent<FlexRow> = ({
   const childrenWithProps = React.Children.toArray(children)
     .filter((child) => !!child)
     .map((child) => React.cloneElement(child as any, { gutter: gutter, cols: cols }));
-  return <StyledFlexRow {...props}>{childrenWithProps}</StyledFlexRow>;
+  return (
+    <StyledFlexRow align={align} cols={cols} gutter={gutter} justify={justify} direction={direction} {...props}>
+      {childrenWithProps}
+    </StyledFlexRow>
+  );
 };
 
 export default FlexRow;
