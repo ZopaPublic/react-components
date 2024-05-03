@@ -84,8 +84,4 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   },
 );
 
-Link.defaultProps = {
-  color: colors.actionPlain,
-};
-
 export default Link;

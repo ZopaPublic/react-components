@@ -25,14 +25,6 @@ export interface FlexRowProps {
 
 export interface FlexRow extends React.HTMLAttributes<HTMLDivElement>, FlexRowProps {}
 
-const defaultProps: Partial<FlexRow> = {
-  align: 'flex-start',
-  cols: grid.cols,
-  gutter: grid.gutter,
-  justify: 'flex-start',
-  direction: 'row',
-};
-
 const StyledFlexRow = styled.div<FlexRow>`
   display: flex;
   flex-wrap: wrap;
@@ -43,13 +35,19 @@ const StyledFlexRow = styled.div<FlexRow>`
   align-items: ${(props) => props.align};
 `;
 
-const FlexRow: React.FunctionComponent<FlexRow> = ({ children, ...props }) => {
+const FlexRow: React.FunctionComponent<FlexRow> = ({
+  children,
+  align = 'flex-start',
+  cols = grid.cols,
+  gutter = grid.gutter,
+  justify = 'flex-start',
+  direction = 'row',
+  ...props
+}) => {
   const childrenWithProps = React.Children.toArray(children)
     .filter((child) => !!child)
-    .map((child) => React.cloneElement(child as any, { gutter: props.gutter, cols: props.cols }));
+    .map((child) => React.cloneElement(child as any, { gutter: gutter, cols: cols }));
   return <StyledFlexRow {...props}>{childrenWithProps}</StyledFlexRow>;
 };
-
-FlexRow.defaultProps = defaultProps;
 
 export default FlexRow;
