@@ -56,7 +56,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   padding: 24px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   line-height: 32px;
   -webkit-letter-spacing: -0.25px;
@@ -70,7 +70,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   font-weight: 800;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -84,7 +84,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -98,7 +98,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c8 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -122,30 +122,42 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   color: auto;
 }
 
-.c7:hover,
-.c7:active {
+.c8:hover,
+.c8:active {
   color: #21247F;
 }
 
-.c7:hover svg path,
-.c7:active svg path {
+.c8:hover svg path,
+.c8:active svg path {
   fill: #21247F;
 }
 
-.c7:hover {
+.c8:hover {
   color: auto;
 }
 
-.c7:hover svg path {
+.c8:hover svg path {
   fill: auto;
 }
 
-.c7:active {
+.c8:active {
   color: auto;
 }
 
-.c7:active svg path {
+.c8:active svg path {
   fill: auto;
+}
+
+.c4 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c3 {
@@ -153,7 +165,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   height: 80px;
 }
 
-.c8 {
+.c9 {
   outline: 0;
   cursor: pointer;
   -webkit-align-items: center;
@@ -186,18 +198,18 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   letter-spacing: 0;
 }
 
-.c8:focus:not(:active) {
+.c9:focus:not(:active) {
   border: 1px solid #FFFFFF;
   box-shadow: 0 0 4px #3B46C4;
 }
 
-.c8:active {
+.c9:active {
   opacity: 0.8;
   box-shadow: unset;
   border: 1px solid transparent;
 }
 
-.c8:hover {
+.c9:hover {
   background: #EEEFFB;
 }
 
@@ -246,25 +258,30 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
             />
           </svg>
         </div>
+        <span
+          class="c4"
+        >
+           Error 
+        </span>
       </div>
     </div>
     <h1
-      class="c4 mb-4"
+      class="c5 mb-4"
     >
       Sorry, there’s been a problem
     </h1>
     <p
-      class="c5 mb-7"
+      class="c6 mb-7"
     >
       We’re working to fix this problem and we’ll be up and running shortly.
     </p>
     <p
-      class="c6 mb-8"
+      class="c7 mb-8"
     >
       Keep seeing this page?
        
       <a
-        class="c7"
+        class="c8"
         color="#3B46C4"
         href="http://www.wikihow.com/Clear-Your-Browser%27s-Cookies"
         target="_blank"
@@ -284,7 +301,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
         cols="12"
       >
         <a
-          class="c7 c8 mb-10"
+          class="c8 c9 mb-10"
           color="#3B46C4"
           href="https://www.zopa.com"
         >
@@ -293,7 +310,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
       </div>
     </div>
     <p
-      class="c6"
+      class="c7"
     >
       Error code: 500
     </p>

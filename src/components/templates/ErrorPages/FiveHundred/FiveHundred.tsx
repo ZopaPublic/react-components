@@ -6,6 +6,7 @@ import FlexCol from '../../../layout/FlexCol/FlexCol';
 import Heading from '../../../atoms/Heading/Heading';
 import Text from '../../../atoms/Text/Text';
 import Link from '../../../atoms/Link/Link';
+import HiddenText from '../../../atoms/HiddenText/HiddenText';
 import { useViewport } from '../../../../hooks/useViewport/useViewport';
 import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
@@ -32,6 +33,7 @@ const FiveHundred = ({
         <FlexRow justify="center">
           <FlexCol xs="auto" className="mb-7">
             <StyledIcon bgColor={colors.greyLighter} variant={icon} size="3x" color={colors.greyDark} />
+            <HiddenText> Error </HiddenText>
           </FlexCol>
         </FlexRow>
         <Heading as="h1" size={width <= breakpoints.desktop ? 'h4' : 'h3'} align="center" className="mb-4">

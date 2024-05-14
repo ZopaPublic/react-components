@@ -56,7 +56,7 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   padding: 24px;
 }
 
-.c4 {
+.c5 {
   font-size: 24px;
   line-height: 32px;
   -webkit-letter-spacing: -0.25px;
@@ -70,7 +70,7 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   font-weight: 800;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -84,7 +84,7 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -98,7 +98,7 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c8 {
   background-color: transparent;
   font-size: inherit;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
@@ -122,30 +122,42 @@ exports[`<Maintenance /> renders with all the props 1`] = `
   color: auto;
 }
 
-.c7:hover,
-.c7:active {
+.c8:hover,
+.c8:active {
   color: #21247F;
 }
 
-.c7:hover svg path,
-.c7:active svg path {
+.c8:hover svg path,
+.c8:active svg path {
   fill: #21247F;
 }
 
-.c7:hover {
+.c8:hover {
   color: auto;
 }
 
-.c7:hover svg path {
+.c8:hover svg path {
   fill: auto;
 }
 
-.c7:active {
+.c8:active {
   color: auto;
 }
 
-.c7:active svg path {
+.c8:active svg path {
   fill: auto;
+}
+
+.c4 {
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .c3 {
@@ -198,24 +210,29 @@ exports[`<Maintenance /> renders with all the props 1`] = `
             />
           </svg>
         </div>
+        <span
+          class="c4"
+        >
+           Error 
+        </span>
       </div>
     </div>
     <h1
-      class="c4 mb-4"
+      class="c5 mb-4"
     >
       We'll be back soon!
     </h1>
     <p
-      class="c5 mb-7"
+      class="c6 mb-7"
     >
       Sorry for the inconvenience but we're doing some essential work on our website right now.
     </p>
     <p
-      class="c6 mb-7"
+      class="c7 mb-7"
     >
       Please come back later or give us a call on
       <a
-        class="c7"
+        class="c8"
         color="#3B46C4"
         href="tel:+442075806060"
       >
