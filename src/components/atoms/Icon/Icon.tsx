@@ -22,12 +22,12 @@ export const RoundBadge = styled.div<{ color: Colors[keyof Colors] }>`
   padding: ${spacing[6]};
 `;
 
-export default function Icon({ variant, bgColor, ariaLabel, className, ...rest }: IconProps) {
+export default function Icon({ variant, bgColor, ariaLabel, className = '', ...rest }: IconProps) {
   const renderIcon = (className?: string) => (
     <FontAwesomeIcon
       {...rest}
       icon={variant}
-      className={className}
+      className={className || ''}
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? false : true}
     />
