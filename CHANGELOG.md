@@ -1,5 +1,15 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.53.0
+
+### Minor Changes
+
+- a5ebef4: Add text alternative to icons in Alert
+
+### Patch Changes
+
+- f4de3e8: fix icon component passing undefined classname to font awesome
+
 ## 5.52.1
 
 ### Patch Changes
