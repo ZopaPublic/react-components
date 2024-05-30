@@ -2,7 +2,7 @@
 
 exports[`<Spinner /> renders a spinner 1`] = `
 <img
-  aria-label="loading spinner"
+  alt="loading spinner"
   height="40px"
   src="spinner-brand.gif"
   width="40px"
@@ -11,7 +11,7 @@ exports[`<Spinner /> renders a spinner 1`] = `
 
 exports[`<Spinner /> renders negative 1`] = `
 <img
-  aria-label="loading spinner"
+  alt="loading spinner"
   height="40px"
   src="spinner-negative.gif"
   width="40px"
@@ -20,7 +20,7 @@ exports[`<Spinner /> renders negative 1`] = `
 
 exports[`<Spinner /> renders small 1`] = `
 <img
-  aria-label="loading spinner"
+  alt="loading spinner"
   height="20px"
   src="spinner-brand.gif"
   width="20px"

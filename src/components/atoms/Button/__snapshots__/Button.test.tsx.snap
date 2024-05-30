@@ -218,7 +218,7 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   theme="[object Object]"
 >
   <img
-    aria-label="loading spinner"
+    alt="loading spinner"
     height="20px"
     src="spinner-negative.gif"
     width="20px"
@@ -276,7 +276,7 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   theme="[object Object]"
 >
   <img
-    aria-label="loading spinner"
+    alt="loading spinner"
     height="20px"
     src="spinner-action.gif"
     width="20px"
@@ -334,7 +334,7 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   theme="[object Object]"
 >
   <img
-    aria-label="loading spinner"
+    alt="loading spinner"
     height="20px"
     src="spinner-action.gif"
     width="20px"
