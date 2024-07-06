@@ -150,7 +150,7 @@ interface LinkTheme {
   disableTargetIcon: boolean;
 }
 
-interface NavbarTheme {
+export interface NavbarTheme {
   iconContainer: {
     display: string;
   };
@@ -161,7 +161,14 @@ interface NavbarTheme {
     minHeight: string;
     bgColor: string;
   };
+  logoContainer?: {
+    width?: string;
+    height?: string;
+    paddingLeft?: string;
+    justifyContent?: string;
+  };
 }
+
 interface ProgressBarTheme {
   color: string;
 }

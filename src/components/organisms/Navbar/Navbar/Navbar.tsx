@@ -21,7 +21,7 @@ import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 import Button from '../../../atoms/Button/Button';
-import { useThemeContext } from '../../../styles/Theme';
+import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -162,36 +162,40 @@ const LayoutInner = styled.nav<PageNavigationProps>`
 
 export const LogoContainer = styled.div<PageNavigationProps>`
   position: relative;
-  min-height: ${({ theme }) => theme.navbar.mobile.minHeight}px;
+  min-height: ${({ theme }: AppThemeProps) => theme.navbar.mobile.minHeight}px;
   ${minMedia.desktop`
-    ${css`
+    ${css<PageNavigationProps>`
       display: flex;
       align-items: center;
-      width: 490px;
       transition: 0.3s min-height ease;
       min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
-      padding-left: ${spacing[10]};
+      width: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.width ?? '490px'};
+      height: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.height ?? 'auto'};
+      padding-left: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.paddingLeft ?? spacing[10]};
+      justify-content: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.justifyContent ?? 'flex-start'};
     `}
   `}
 
   &:before {
     ${minMedia.desktop`
-    ${css`
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    ${({ theme }: AppThemeProps) =>
+      theme.navbar.logo.render ??
+      css`
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-      transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
 
-      background-image: ${`url(${navCurve})`};
-      background-repeat: no-repeat;
-      opacity: ${({ overlap }: PageNavigationProps) => (overlap ? 0 : 1)};
+        background-image: ${`url(${navCurve})`};
+        background-repeat: no-repeat;
+        opacity: ${({ overlap }: PageNavigationProps) => (overlap ? 0 : 1)};
 
-      content: '';
-      z-index: -1;
-    `}
+        content: '';
+        z-index: -1;
+      `}
   `}
   }
 
@@ -295,7 +299,7 @@ export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: 
 );
 
 const NavbarWrapper = ({
-  links,
+  links = [],
   renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
   ),
@@ -303,7 +307,7 @@ const NavbarWrapper = ({
   withCTA = true,
   cta = <NavbarAction />,
   collapsed = false,
-}: NavbarProps) => {
+}: React.PropsWithChildren<NavbarProps>) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
   const [open, setOpen] = useState(false);
@@ -335,6 +339,7 @@ const NavbarWrapper = ({
     };
   }, []);
 
+  console.log('theme', theme);
   return (
     <>
       <PageNavigation overlap={overThreshold} collapsed={collapsed} theme={theme}>
@@ -350,8 +355,8 @@ const NavbarWrapper = ({
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
-                <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
-                {withCTA && <ActionWrapper>{cta}</ActionWrapper>}
+                {links?.length > 0 ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} /> : null}
+                {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
