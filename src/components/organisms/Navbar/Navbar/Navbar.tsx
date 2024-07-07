@@ -320,12 +320,12 @@ const NavbarWrapper = ({
 }: React.PropsWithChildren<NavbarProps>) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
   const theme = useThemeContext();
 
   useEffect(() => {
-    if (open) {
+    if (isOpen) {
       document.body.style.top = `-${window.scrollY}px`;
       document.documentElement.classList.add('nav-open');
     } else {
@@ -334,7 +334,7 @@ const NavbarWrapper = ({
       document.documentElement.classList.remove('nav-open');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
-  }, [open]);
+  }, [isOpen]);
 
   const onResize = () => {
     setHeight(window.innerHeight);
@@ -355,16 +355,16 @@ const NavbarWrapper = ({
         <Headroom
           wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
-          disable={open || !!(width && width >= breakpoints.desktop)}
+          disable={isOpen || !!(width && width >= breakpoints.desktop)}
         >
           <LargeDeviceNavbar>
             <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold} theme={theme}>
               <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
-                {theme.navbar.logo.render && <Logo negative={!overThreshold && !collapsed} width="150px" />}
+                {theme.navbar.logo.render ? <Logo negative={!overThreshold && !collapsed} width="150px" /> : null}
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
-                {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} /> : null}
+                {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} /> : null}
                 {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
               </NavbarLinksListContainer>
             </LayoutInner>
@@ -373,14 +373,14 @@ const NavbarWrapper = ({
             <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold} theme={theme}>
               {links ? (
                 <HamburgerContainer
-                  open={open}
-                  onClick={() => setOpen(!open)}
+                  open={isOpen}
+                  onClick={() => setIsOpen(!isOpen)}
                   data-automation="hamburger-icon"
                   theme={theme}
                 >
                   <Icon
                     variant={faBars}
-                    color={open ? colors.brandDecorative : colors.white}
+                    color={isOpen ? colors.brandDecorative : colors.white}
                     width="20px"
                     height="20px"
                     size="1x"
@@ -390,17 +390,17 @@ const NavbarWrapper = ({
                 <IconContainer className="icon-container" theme={theme} />
               )}
               <LogoContainer theme={theme}>
-                {theme.navbar.logo.render && <Logo color={colors.brandDecorative} height="20px" negative />}
+                {theme.navbar.logo.render ? <Logo color={colors.brandDecorative} height="20px" negative /> : null}
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer theme={theme} />}
-              {links && open && (
-                <HamburgerMenu open={open} height={height}>
+              {links && isOpen ? (
+                <HamburgerMenu open={isOpen} height={height}>
                   <NavItemsWrapper>
-                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} />
                   </NavItemsWrapper>
                 </HamburgerMenu>
-              )}
+              ) : null}
             </LayoutInner>
           </SmallDeviceNavbar>
         </Headroom>
