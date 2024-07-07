@@ -31,6 +31,28 @@ git clone https://github.com/zopaUK/react-components.git
 pnpm i
 ```
 
+## Local linking
+
+Local linking with Next.js applications can be particularly challenging due to the way Next.js handles module resolution and its own optimization processes. When attempting to link local packages, such as `react-components`, with a Next.js application, developers might encounter issues related to module resolution, duplicate React instances, or unexpected behavior in hot module reloading (HMR).
+
+To mitigate these issues, you can use `pnpm sync:zrc`.
+
+Follow these steps:
+
+1. In the `react-components` directory, run the following command to start the watcher:
+
+```bash
+pnpm sync:zrc
+```
+
+2. In the application directory, run the following command to link the `react-components` library (if it exists):
+
+```bash
+pnpm sync:zrc
+```
+
+Now, any changes made in the `react-components` codebase will be reflected in the linked application after a delay (~500ms).
+
 ## Running the project
 
 Execute the development environment:
@@ -48,6 +70,8 @@ We start a watcher using [esbuild](https://esbuild.github.io/) and [tsc](https:/
 ```bash
 pnpm dev:code
 ```
+
+##
 
 Your locally running app will have its own way of linking to local dependencies but making changes in react-components codebase should now show in the application.
 
