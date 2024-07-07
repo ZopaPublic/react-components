@@ -209,7 +209,7 @@ interface SpinnerTheme {
   };
 }
 
-interface TypographyTheme {
+export interface TypographyTheme {
   primary: string;
   text: {
     color: string;
@@ -258,6 +258,12 @@ interface TypographyTheme {
     semiBold: number;
     bold: number;
     extraBold: number;
+
+    // Extra weights to align with partner naming conventions
+    // @MichelleXBai @OlenaKashuba @charlizzy we should discuss this again
+    medium?: number;
+    ultraBold?: number;
+    extraExtraBold?: number;
   };
 }
 
