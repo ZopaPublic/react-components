@@ -138,7 +138,7 @@ export interface InputTheme {
   };
 }
 
-interface LinkTheme {
+export interface LinkTheme {
   color: string;
   weight: number;
   hover: {
