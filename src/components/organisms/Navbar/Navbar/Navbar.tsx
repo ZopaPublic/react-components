@@ -11,7 +11,7 @@ import {
   breakpoints,
   spacing,
 } from '../../../../constants';
-import { minMedia } from '../../../../helpers/responsiveness';
+import { maxMedia, minMedia } from '../../../../helpers/responsiveness';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
@@ -66,7 +66,7 @@ export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanEl
   open: boolean;
 }
 
-export interface PageNavigationProps {
+export interface PageNavigationProps extends AppThemeProps {
   overlap?: boolean;
   collapsed?: boolean;
 }
@@ -142,7 +142,7 @@ const Spacer = styled.div<PageNavigationProps>`
 const LayoutInner = styled.nav<PageNavigationProps>`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${({ theme }: PageNavigationProps) => theme.navbar.layoutInner?.justifyContent ?? 'space-between'};
   height: 100%;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
@@ -160,42 +160,52 @@ const LayoutInner = styled.nav<PageNavigationProps>`
   `}
 `;
 
+// TODO: We have to manually type the theme, I suspect this is because we're using outdated typings
+// The generic passed does not actually get passed and the generic theme from styled-components is used instead
+// This should be fixed in the future
 export const LogoContainer = styled.div<PageNavigationProps>`
   position: relative;
-  min-height: ${({ theme }: AppThemeProps) => theme.navbar.mobile.minHeight}px;
+  min-height: ${({ theme }) => theme.navbar.mobile.minHeight}px;
   ${minMedia.desktop`
-    ${css<PageNavigationProps>`
+    ${css`
       display: flex;
       align-items: center;
+      width: 490px;
       transition: 0.3s min-height ease;
       min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
-      width: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.width ?? '490px'};
-      height: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.height ?? 'auto'};
-      padding-left: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.paddingLeft ?? spacing[10]};
-      justify-content: ${({ theme }: AppThemeProps) => theme.navbar.logoContainer?.justifyContent ?? 'flex-start'};
+      padding-left: ${({ theme }: PageNavigationProps) =>
+        theme.navbar.logoContainer?.desktop.paddingLeft ?? spacing[10]};
+      height: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.height};
+      width: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.width};
+      justify-content: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.justifyContent};
+    `}
+  `}
+
+  ${maxMedia.desktop`
+    ${css`
+      display: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.display};
+      align-items: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.alignItems};
     `}
   `}
 
   &:before {
     ${minMedia.desktop`
-    ${({ theme }: AppThemeProps) =>
-      theme.navbar.logo.render ??
-      css`
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    ${css`
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
 
-        transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
 
-        background-image: ${`url(${navCurve})`};
-        background-repeat: no-repeat;
-        opacity: ${({ overlap }: PageNavigationProps) => (overlap ? 0 : 1)};
+      background-image: ${`url(${navCurve})`};
+      background-repeat: no-repeat;
+      opacity: ${({ overlap }: PageNavigationProps) => (overlap ? 0 : 1)};
 
-        content: '';
-        z-index: -1;
-      `}
+      content: '';
+      z-index: -1;
+    `}
   `}
   }
 
@@ -299,7 +309,7 @@ export const NavbarLinksListLink = ({ item: { label, ...rest }, index, props }: 
 );
 
 const NavbarWrapper = ({
-  links = [],
+  links,
   renderLink = (item: NavigationItem, index: number, props) => (
     <NavbarLinksListLink item={item} index={index} props={props} />
   ),
@@ -339,7 +349,6 @@ const NavbarWrapper = ({
     };
   }, []);
 
-  console.log('theme', theme);
   return (
     <>
       <PageNavigation overlap={overThreshold} collapsed={collapsed} theme={theme}>
@@ -349,19 +358,19 @@ const NavbarWrapper = ({
           disable={open || !!(width && width >= breakpoints.desktop)}
         >
           <LargeDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold} theme={theme}>
               <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
                 {theme.navbar.logo.render && <Logo negative={!overThreshold && !collapsed} width="150px" />}
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
-                {links?.length > 0 ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} /> : null}
+                {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} /> : null}
                 {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold} theme={theme}>
               {links ? (
                 <HamburgerContainer
                   open={open}
@@ -378,7 +387,7 @@ const NavbarWrapper = ({
                   />
                 </HamburgerContainer>
               ) : (
-                <IconContainer theme={theme} />
+                <IconContainer className="icon-container" theme={theme} />
               )}
               <LogoContainer theme={theme}>
                 {theme.navbar.logo.render && <Logo color={colors.brandDecorative} height="20px" negative />}

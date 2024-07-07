@@ -162,9 +162,18 @@ export interface NavbarTheme {
     bgColor: string;
   };
   logoContainer?: {
-    width?: string;
-    height?: string;
-    paddingLeft?: string;
+    desktop: {
+      width?: string;
+      height?: string;
+      paddingLeft?: string;
+      justifyContent?: string;
+    };
+    medium: {
+      display?: string;
+      alignItems?: string;
+    };
+  };
+  layoutInner?: {
     justifyContent?: string;
   };
 }
