@@ -260,10 +260,9 @@ export interface TypographyTheme {
     extraBold: number;
 
     // Extra weights to align with partner naming conventions
-    // @MichelleXBai @OlenaKashuba @charlizzy we should discuss this again
+    // to discuss with the design/dev team
     medium?: number;
     ultraBold?: number;
-    extraExtraBold?: number;
   };
 }
 
