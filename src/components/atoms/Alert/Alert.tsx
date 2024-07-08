@@ -8,7 +8,6 @@ import { useThemeContext } from '../../styles/Theme';
 import ExclamationIcon from '../../styles/icons/exclamation';
 import Button from '../Button/Button';
 import HiddenText from '../HiddenText/HiddenText';
-import InfoCircleIcon from '../../styles/icons/infoCircle';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -16,14 +15,13 @@ export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
   severity?: Severity;
   inline?: boolean;
   hasRoundedCorners?: boolean;
-  borderRadius?: string;
   /**
    * if present it shows the "x" icon
    */
   onRequestClose?(event: React.MouseEvent | React.KeyboardEvent): void;
 }
 
-const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean; borderRadius?: string }>`
+const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
   padding: 8px 12px 8px 12px;
@@ -33,10 +31,8 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorn
   line-height: ${typography.sizes.lineHeight.body};
   font-family: ${typography.primary};
   font-weight: 400;
-  border-radius: ${({ borderRadius, hasRoundedCorners }) =>
-    borderRadius ? borderRadius : hasRoundedCorners ? '4px' : '0px'};
+  border-radius: ${({ hasRoundedCorners }) => (hasRoundedCorners ? 4 : 0)}px;
   border: ${({ severity, theme }) => theme.alert[severity].border};
-  border-left: ${({ severity, theme }) => theme.alert[severity].borderLeft};
   a {
     color: ${({ severity, theme }) => theme.alert[severity].text} !important;
     font-size: 16px;
@@ -75,7 +71,6 @@ const Alert = ({
   onRequestClose,
   children,
   hasRoundedCorners = false,
-  borderRadius,
   ...rest
 }: AlertProps) => {
   const theme = useThemeContext();
@@ -94,8 +89,6 @@ const Alert = ({
   if (customVariant) {
     if (customVariant.iconName === 'exclamation') {
       CustomIcon = <ExclamationIcon color={customVariant.color} />;
-    } else if (customVariant.iconName === 'info-circle') {
-      CustomIcon = <InfoCircleIcon color={customVariant.color} />;
     } else {
       throw new Error(`Unknown custom icon name: ${customVariant.iconName}`);
     }
@@ -109,14 +102,7 @@ const Alert = ({
   }
 
   return (
-    <Wrapper
-      severity={severity}
-      inline={inline}
-      hasRoundedCorners={hasRoundedCorners}
-      borderRadius={borderRadius}
-      {...rest}
-      theme={theme}
-    >
+    <Wrapper severity={severity} inline={inline} hasRoundedCorners={hasRoundedCorners} {...rest} theme={theme}>
       <HiddenText>{hiddenText}</HiddenText>
       <IconWrapper severity={severity} theme={theme}>
         {IconComponent ? <IconComponent /> : null}
