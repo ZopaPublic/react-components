@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es2018", "dom"],
+    "lib": ["es2018", "ES2019", "dom"],
     "module": "esnext",
     "target": "es5",
     "sourceMap": true,
