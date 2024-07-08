@@ -11,7 +11,6 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   outline: none;
   border-radius: 8px;
   height: 50px;
-  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -25,7 +24,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid #009E8E;
+  border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
 }
 
@@ -97,7 +96,6 @@ exports[`<TextField /> renders the component with error 1`] = `
   outline: none;
   border-radius: 8px;
   height: 50px;
-  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -111,7 +109,7 @@ exports[`<TextField /> renders the component with error 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid #009E8E;
+  border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
 }
 
@@ -231,7 +229,6 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   outline: none;
   border-radius: 8px;
   height: 50px;
-  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -245,7 +242,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid #009E8E;
+  border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
 }
 
@@ -317,7 +314,6 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   outline: none;
   border-radius: 8px;
   height: 50px;
-  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -331,7 +327,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 }
 
 .c3:hover {
-  border: 1px solid #009E8E;
+  border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
 }
 
@@ -435,7 +431,6 @@ exports[`<TextField /> renders the component with size 1`] = `
   outline: none;
   border-radius: 8px;
   height: 50px;
-  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -449,7 +444,7 @@ exports[`<TextField /> renders the component with size 1`] = `
 }
 
 .c2:hover {
-  border: 1px solid #009E8E;
+  border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
 }
 

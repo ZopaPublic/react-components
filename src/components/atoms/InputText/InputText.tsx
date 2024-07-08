@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
 import { InputProps } from '../../types';
-import { useThemeContext, AppTheme } from '../../styles/Theme';
+import { useThemeContext, AppTheme, AppThemeProps } from '../../styles/Theme';
 
 type IconWrapperProps = {
   startIcon?: boolean;
@@ -19,23 +19,32 @@ type IconWrapperProps = {
   size?: keyof AppTheme['typography']['text']['sizes'];
 };
 
+interface InputThemeProps extends AppThemeProps {}
+interface StartIconThemeProps extends AppThemeProps {
+  startIcon?: any; //TODO: change this as its either a function (icon) or a string
+}
+
 const InputWrapper = styled.div`
   position: relative;
+  :focus-visible {
+    outline: 4px solid #359cd4;
+    outline-offset: 4px;
+  }
 `;
 
 const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
-  position: absolute;
+ position: absolute;
   top: 1px;
   bottom: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  color: ${({ theme }) => theme.input.iconColor};
+  width: ${({ startIcon }) => (typeof startIcon == 'function' ? '48px' : '16px')};  
+  color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
   ${({ startIcon }) =>
     startIcon
       ? css`
-          left: 1px;
+          left: ${({ startIcon }: StartIconThemeProps) => (typeof startIcon == 'function' ? '1px' : '8px')};
           border-top-left-radius: 8px;
           border-bottom-left-radius: 8px;
         `
@@ -50,11 +59,10 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
 const Input = styled.input<InputProps & { theme: AppTheme }>`
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: ${({ theme }) => theme.input.borderRadius};
   height: 50px;
   padding: ${({ theme }) => theme.input.padding};
-  padding-left: ${({ startIcon }) => !!startIcon && '60px'};
+  padding-left: ${({ startIcon }) => (typeof startIcon == 'function' ? '60px' : '24px')};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
@@ -70,6 +78,11 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
       ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
     box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
     background-color: ${({ theme }) => theme.input.hover.backgroundColor};
+  }
+
+  :focus-visible {
+    outline: 4px solid #359cd4;
+    outline-offset: 4px;
   }
 
   &:focus {
@@ -97,7 +110,8 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
   const theme = useThemeContext();
-
+  console.log('startIcon', startIcon);
+  console.log('typeof startIcon', typeof startIcon);
   return (
     <InputWrapper className={className}>
       {startIcon ? (
