@@ -162,13 +162,13 @@ export interface NavbarTheme {
     bgColor: string;
   };
   logoContainer?: {
-    desktop: {
+    desktopMinMedia: {
       width?: string;
       height?: string;
       paddingLeft?: string;
       justifyContent?: string;
     };
-    medium: {
+    desktopMaxMedia: {
       display?: string;
       alignItems?: string;
     };

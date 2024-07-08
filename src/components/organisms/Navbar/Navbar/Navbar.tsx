@@ -174,17 +174,18 @@ export const LogoContainer = styled.div<PageNavigationProps>`
       transition: 0.3s min-height ease;
       min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
       padding-left: ${({ theme }: PageNavigationProps) =>
-        theme.navbar.logoContainer?.desktop.paddingLeft ?? spacing[10]};
-      height: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.height};
-      width: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.width};
-      justify-content: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.justifyContent};
+        theme.navbar.logoContainer?.desktopMinMedia.paddingLeft ?? spacing[10]};
+      height: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktopMinMedia.height};
+      width: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktopMinMedia.width};
+      justify-content: ${({ theme }: PageNavigationProps) =>
+        theme.navbar.logoContainer?.desktopMinMedia.justifyContent};
     `}
   `}
 
   ${maxMedia.desktop`
     ${css`
-      display: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.display};
-      align-items: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.alignItems};
+      display: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktopMaxMedia.display};
+      align-items: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktopMaxMedia.alignItems};
     `}
   `}
 
