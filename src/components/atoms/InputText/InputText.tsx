@@ -53,7 +53,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   outline: none;
   border-radius: ${({ theme }) => theme.input.borderRadius};
   height: 50px;
-  padding: 0 16px;
+  padding: ${({ theme }) => theme.input.padding};
   padding-left: ${({ startIcon }) => !!startIcon && '60px'};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
@@ -66,8 +66,10 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   font-family: ${({ theme }) => theme.typography.primary};
 
   &:hover {
-    border: 1px solid ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
+    border: ${({ theme }) => theme.input.hover.borderWeight} solid
+      ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
     box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
+    background-color: ${({ theme }) => theme.input.hover.backgroundColor};
   }
 
   &:focus {
@@ -88,7 +90,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
     opacity: 1;
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: ${colors.greyLightest};
+    background-color: ${({ theme }) => theme.input.disabled.backgroundColor};
     cursor: not-allowed;
   }
 `;
