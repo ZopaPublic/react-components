@@ -22,8 +22,8 @@ importers:
         specifier: ^1.2.32
         version: 1.2.32
       '@fortawesome/react-fontawesome':
-        specifier: ^0.2.0
-        version: 0.2.0(@fortawesome/fontawesome-svg-core@1.2.32)(react@17.0.2)
+        specifier: 0.2.1
+        version: 0.2.1(@fortawesome/fontawesome-svg-core@1.2.32)(react@17.0.2)
       '@swc/core':
         specifier: ^1.3.21
         version: 1.3.21
@@ -240,7 +240,7 @@ importers:
         version: 17.0.2(react@17.0.2)
       react-scripts:
         specifier: ^5.0.1
-        version: 5.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(@swc/core@1.3.21)(@types/babel__core@7.1.15)(esbuild@0.14.42)(eslint@8.19.0)(react@17.0.2)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))(type-fest@1.4.0)(typescript@4.7.2)
+        version: 5.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(@swc/core@1.3.21)(@types/babel__core@7.1.15)(esbuild@0.14.42)(eslint@8.19.0)(react@17.0.2)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))(type-fest@1.4.0)(typescript@4.7.2)
       react-styleguidist:
         specifier: ^13.0.0
         version: 13.0.0(@swc/core@1.3.21)(esbuild@0.14.42)(eslint@8.19.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@4.7.2)(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
@@ -255,7 +255,7 @@ importers:
         version: 5.0.0(esbuild@0.14.42)(rollup@3.5.0)
       rollup-plugin-postcss:
         specifier: 4.0.2
-        version: 4.0.2(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+        version: 4.0.2(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       rollup-plugin-terser:
         specifier: 7.0.2
         version: 7.0.2(rollup@3.5.0)
@@ -1250,8 +1250,8 @@ packages:
     resolution: {integrity: sha512-LQH/0L1p4+rqtoSHa9qFYR84hpuRZKqaQ41cfBQx8b68p21zoWSekTAeA54I/2x9VlCHDLFlG74Nmdg4iTPQOg==}
     engines: {node: '>=6'}
 
-  '@fortawesome/react-fontawesome@0.2.0':
-    resolution: {integrity: sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==}
+  '@fortawesome/react-fontawesome@0.2.1':
+    resolution: {integrity: sha512-ldr5QO2MneAX5W5WBCYB2pZp/PiHDD1hy9YEBLcXUyJb0qnO86oP8RU+CgmYVSH/R4Dbe2ernhcWOrcgaKD9NQ==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       react: '>=16.3'
@@ -9475,7 +9475,7 @@ snapshots:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)
+      ts-node: 10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)
       typescript: 4.9.3
     transitivePeerDependencies:
       - '@swc/core'
@@ -9633,7 +9633,7 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.36
 
-  '@fortawesome/react-fontawesome@0.2.0(@fortawesome/fontawesome-svg-core@1.2.32)(react@17.0.2)':
+  '@fortawesome/react-fontawesome@0.2.1(@fortawesome/fontawesome-svg-core@1.2.32)(react@17.0.2)':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.32
       prop-types: 15.8.1
@@ -9677,7 +9677,7 @@ snapshots:
       jest-util: 28.1.0
       slash: 3.0.0
 
-  '@jest/core@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))':
+  '@jest/core@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))':
     dependencies:
       '@jest/console': 27.5.1
       '@jest/reporters': 27.5.1
@@ -9691,7 +9691,7 @@ snapshots:
       exit: 0.1.2
       graceful-fs: 4.2.10
       jest-changed-files: 27.5.1
-      jest-config: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest-config: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       jest-haste-map: 27.5.1
       jest-message-util: 27.5.1
       jest-regex-util: 27.5.1
@@ -11836,7 +11836,7 @@ snapshots:
     dependencies:
       '@types/node': 14.18.33
       cosmiconfig: 7.1.0
-      ts-node: 10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)
+      ts-node: 10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)
       typescript: 4.9.3
 
   cosmiconfig@6.0.0:
@@ -12543,7 +12543,7 @@ snapshots:
     dependencies:
       eslint: 8.19.0
 
-  eslint-config-react-app@7.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)))(typescript@4.7.2):
+  eslint-config-react-app@7.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)))(typescript@4.7.2):
     dependencies:
       '@babel/core': 7.18.2
       '@babel/eslint-parser': 7.18.2(@babel/core@7.18.2)(eslint@8.19.0)
@@ -12555,7 +12555,7 @@ snapshots:
       eslint: 8.19.0
       eslint-plugin-flowtype: 8.0.3(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(eslint@8.19.0)
       eslint-plugin-import: 2.26.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)
-      eslint-plugin-jest: 25.7.0(@typescript-eslint/eslint-plugin@5.27.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)))(typescript@4.7.2)
+      eslint-plugin-jest: 25.7.0(@typescript-eslint/eslint-plugin@5.27.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)))(typescript@4.7.2)
       eslint-plugin-jsx-a11y: 6.5.1(eslint@8.19.0)
       eslint-plugin-react: 7.30.0(eslint@8.19.0)
       eslint-plugin-react-hooks: 4.5.0(eslint@8.19.0)
@@ -12618,13 +12618,13 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.27.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)))(typescript@4.7.2):
+  eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.27.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)))(typescript@4.7.2):
     dependencies:
       '@typescript-eslint/experimental-utils': 5.27.0(eslint@8.19.0)(typescript@4.7.2)
       eslint: 8.19.0
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 5.27.0(@typescript-eslint/parser@5.27.0(eslint@8.19.0)(typescript@4.7.2))(eslint@8.19.0)(typescript@4.7.2)
-      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -13804,16 +13804,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-cli@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  jest-cli@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
-      '@jest/core': 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      '@jest/core': 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.10
       import-local: 3.0.2
-      jest-config: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest-config: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       jest-util: 27.5.1
       jest-validate: 27.5.1
       prompts: 2.4.2
@@ -13825,7 +13825,7 @@ snapshots:
       - ts-node
       - utf-8-validate
 
-  jest-config@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  jest-config@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
       '@babel/core': 7.18.2
       '@jest/test-sequencer': 27.5.1
@@ -14168,11 +14168,11 @@ snapshots:
       leven: 3.1.0
       pretty-format: 27.5.1
 
-  jest-watch-typeahead@1.1.0(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))):
+  jest-watch-typeahead@1.1.0(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))):
     dependencies:
       ansi-escapes: 4.3.2
       chalk: 4.1.2
-      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       jest-regex-util: 28.0.2
       jest-watcher: 28.1.0
       slash: 4.0.0
@@ -14212,11 +14212,11 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
-      '@jest/core': 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      '@jest/core': 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       import-local: 3.0.2
-      jest-cli: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest-cli: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -15255,7 +15255,7 @@ snapshots:
       postcss: 8.4.14
       postcss-value-parser: 4.2.0
 
-  postcss-load-config@3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  postcss-load-config@3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
       lilconfig: 2.0.6
       yaml: 1.10.2
@@ -15873,7 +15873,7 @@ snapshots:
 
   react-refresh@0.11.0: {}
 
-  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(@swc/core@1.3.21)(@types/babel__core@7.1.15)(esbuild@0.14.42)(eslint@8.19.0)(react@17.0.2)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))(type-fest@1.4.0)(typescript@4.7.2):
+  react-scripts@5.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(@swc/core@1.3.21)(@types/babel__core@7.1.15)(esbuild@0.14.42)(eslint@8.19.0)(react@17.0.2)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))(type-fest@1.4.0)(typescript@4.7.2):
     dependencies:
       '@babel/core': 7.18.2
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.7(react-refresh@0.11.0)(type-fest@1.4.0)(webpack-dev-server@4.9.1(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42)))(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
@@ -15891,15 +15891,15 @@ snapshots:
       dotenv: 10.0.0
       dotenv-expand: 5.1.0
       eslint: 8.19.0
-      eslint-config-react-app: 7.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)))(typescript@4.7.2)
+      eslint-config-react-app: 7.0.1(@babel/plugin-syntax-flow@7.18.6(@babel/core@7.18.2))(@babel/plugin-transform-react-jsx@7.19.0(@babel/core@7.18.2))(eslint@8.19.0)(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)))(typescript@4.7.2)
       eslint-webpack-plugin: 3.1.1(eslint@8.19.0)(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       file-loader: 6.2.0(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       fs-extra: 10.1.0
       html-webpack-plugin: 5.5.0(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       identity-obj-proxy: 3.0.0
-      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      jest: 27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       jest-resolve: 27.5.1
-      jest-watch-typeahead: 1.1.0(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)))
+      jest-watch-typeahead: 1.1.0(jest@27.5.1(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)))
       mini-css-extract-plugin: 2.6.0(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       postcss: 8.4.14
       postcss-flexbugs-fixes: 5.0.2(postcss@8.4.14)
@@ -15917,7 +15917,7 @@ snapshots:
       semver: 7.3.7
       source-map-loader: 3.0.1(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       style-loader: 3.3.1(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
-      tailwindcss: 3.0.24(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      tailwindcss: 3.0.24(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       terser-webpack-plugin: 5.3.3(@swc/core@1.3.21)(esbuild@0.14.42)(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
       webpack: 5.73.0(@swc/core@1.3.21)(esbuild@0.14.42)
       webpack-dev-server: 4.9.1(webpack@5.73.0(@swc/core@1.3.21)(esbuild@0.14.42))
@@ -15963,7 +15963,7 @@ snapshots:
     dependencies:
       object-assign: 4.1.1
       react: 17.0.2
-      react-is: 17.0.2
+      react-is: 18.1.0
 
   react-simple-code-editor@0.13.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
     dependencies:
@@ -16310,7 +16310,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  rollup-plugin-postcss@4.0.2(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  rollup-plugin-postcss@4.0.2(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
       chalk: 4.1.2
       concat-with-sourcemaps: 1.1.0
@@ -16319,7 +16319,7 @@ snapshots:
       p-queue: 6.6.2
       pify: 5.0.0
       postcss: 8.4.14
-      postcss-load-config: 3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      postcss-load-config: 3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       postcss-modules: 4.3.1(postcss@8.4.14)
       promise.series: 0.2.0
       resolve: 1.22.1
@@ -16949,7 +16949,7 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  tailwindcss@3.0.24(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3)):
+  tailwindcss@3.0.24(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2)):
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
@@ -16966,7 +16966,7 @@ snapshots:
       picocolors: 1.0.0
       postcss: 8.4.14
       postcss-js: 4.0.0(postcss@8.4.14)
-      postcss-load-config: 3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3))
+      postcss-load-config: 3.1.4(postcss@8.4.14)(ts-node@10.9.1(@swc/core@1.3.21)(@types/node@12.12.45)(typescript@4.7.2))
       postcss-nested: 5.0.6(postcss@8.4.14)
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
@@ -17126,6 +17126,27 @@ snapshots:
       diff: 4.0.2
       make-error: 1.3.6
       typescript: 4.7.2
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
+    optionalDependencies:
+      '@swc/core': 1.3.21
+    optional: true
+
+  ts-node@10.9.1(@swc/core@1.3.21)(@types/node@14.18.33)(typescript@4.9.3):
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.3
+      '@types/node': 14.18.33
+      acorn: 8.8.1
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 4.9.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     optionalDependencies:
