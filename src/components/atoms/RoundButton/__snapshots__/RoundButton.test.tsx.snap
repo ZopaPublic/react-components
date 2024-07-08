@@ -419,7 +419,7 @@ exports[`<RoundButton /> renders loading as "primary" 1`] = `
     class="round-button-circle"
   >
     <img
-      aria-label="loading spinner"
+      alt="loading spinner"
       height="20px"
       src="spinner-negative.gif"
       width="20px"
@@ -531,7 +531,7 @@ exports[`<RoundButton /> renders loading as "secondary" 1`] = `
     class="round-button-circle"
   >
     <img
-      aria-label="loading spinner"
+      alt="loading spinner"
       height="20px"
       src="spinner-action.gif"
       width="20px"

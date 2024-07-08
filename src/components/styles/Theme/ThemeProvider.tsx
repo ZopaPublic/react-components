@@ -15,7 +15,7 @@ import { Severity } from '../../atoms/Alert/Alert';
 
 export type CustomIconVariant = 'exclamation';
 
-interface ButtonTheme {
+export interface ButtonTheme {
   text: string;
   bg: string;
   hover: string;
@@ -27,7 +27,7 @@ interface ButtonTheme {
   };
 }
 
-interface ButtonsTheme {
+export interface ButtonsTheme {
   primary: ButtonTheme;
   secondary: ButtonTheme;
   link: ButtonTheme;
@@ -52,7 +52,7 @@ export type AlertTheme = Record<
   }
 >;
 
-interface CardInfo {
+export interface CardInfo {
   headingSize: string;
   textSize: string;
   boxShadowStyle: string;
@@ -61,16 +61,16 @@ interface CardInfo {
   borderRadius: string;
 }
 
-type CardTheme = Record<CardStyling, CardInfo>;
+export type CardTheme = Record<CardStyling, CardInfo>;
 
-interface ErrorMessageTheme {
+export interface ErrorMessageTheme {
   textColor: string;
   backgroundColor: string;
   padding: string;
   icon: boolean;
 }
 
-interface FooterTheme {
+export interface FooterTheme {
   bgColor: string;
   className: string;
   showFooterLinks: boolean;
@@ -83,11 +83,11 @@ interface FooterTheme {
   };
 }
 
-interface LabelTheme {
+export interface LabelTheme {
   margin: string;
 }
 
-interface InputTheme {
+export interface InputTheme {
   color: string;
   placeholderColor: string;
   borderRadius: string;
@@ -138,7 +138,7 @@ interface InputTheme {
   };
 }
 
-interface LinkTheme {
+export interface LinkTheme {
   color: string;
   weight: number;
   hover: {
@@ -150,7 +150,7 @@ interface LinkTheme {
   disableTargetIcon: boolean;
 }
 
-interface NavbarTheme {
+export interface NavbarTheme {
   iconContainer: {
     display: string;
   };
@@ -161,11 +161,27 @@ interface NavbarTheme {
     minHeight: string;
     bgColor: string;
   };
+  logoContainer?: {
+    desktop: {
+      width?: string;
+      height?: string;
+      paddingLeft?: string;
+      justifyContent?: string;
+    };
+    medium: {
+      display?: string;
+      alignItems?: string;
+    };
+  };
+  layoutInner?: {
+    justifyContent?: string;
+  };
 }
-interface ProgressBarTheme {
+
+export interface ProgressBarTheme {
   color: string;
 }
-interface ScrollableAreaTheme {
+export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
     border: string;
@@ -177,13 +193,13 @@ interface ScrollableAreaTheme {
   };
 }
 
-interface ProductTemplate {
+export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
   };
 }
 
-interface SpinnerTheme {
+export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
   customSpinner?: {
     color: string;
@@ -193,7 +209,7 @@ interface SpinnerTheme {
   };
 }
 
-interface TypographyTheme {
+export interface TypographyTheme {
   primary: string;
   text: {
     color: string;
@@ -242,6 +258,11 @@ interface TypographyTheme {
     semiBold: number;
     bold: number;
     extraBold: number;
+
+    // Extra weights to align with partner naming conventions
+    // to discuss with the design/dev team
+    medium?: number;
+    ultraBold?: number;
   };
 }
 

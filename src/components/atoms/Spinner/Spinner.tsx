@@ -44,7 +44,7 @@ const Spinner = (props: SpinnerProps) => {
   return theme.spinner.spinnerTheme !== 'zopa' && theme.spinner.customSpinner ? (
     <CustomSpinner size={props.size} styling={props.styling} />
   ) : (
-    <img src={spinner} height={size} width={size} aria-label="loading spinner" />
+    <img src={spinner} height={size} width={size} alt="loading spinner" />
   );
 };
 
