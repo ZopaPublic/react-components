@@ -11,7 +11,7 @@ import {
   breakpoints,
   spacing,
 } from '../../../../constants';
-import { minMedia } from '../../../../helpers/responsiveness';
+import { maxMedia, minMedia } from '../../../../helpers/responsiveness';
 import { useViewport } from '../../../../hooks/useViewport';
 import navCurve from '../../../../content/images/nav-curve.svg';
 import Logo from '../../../atoms/Logo/Logo';
@@ -21,7 +21,7 @@ import NavbarLink, { NavbarLinkProps } from '../NavbarLink/NavbarLink';
 import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 import Button from '../../../atoms/Button/Button';
-import { useThemeContext } from '../../../styles/Theme';
+import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -66,7 +66,7 @@ export interface HamburgerContainerProps extends React.HTMLAttributes<HTMLSpanEl
   open: boolean;
 }
 
-export interface PageNavigationProps {
+export interface PageNavigationProps extends AppThemeProps {
   overlap?: boolean;
   collapsed?: boolean;
 }
@@ -142,7 +142,7 @@ const Spacer = styled.div<PageNavigationProps>`
 const LayoutInner = styled.nav<PageNavigationProps>`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${({ theme }: PageNavigationProps) => theme.navbar.layoutInner?.justifyContent ?? 'space-between'};
   height: 100%;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
@@ -160,6 +160,9 @@ const LayoutInner = styled.nav<PageNavigationProps>`
   `}
 `;
 
+// TODO: We have to manually type the theme, I suspect this is because we're using outdated typings
+// The generic passed does not actually get passed and the generic theme from styled-components is used instead
+// This should be fixed in the future
 export const LogoContainer = styled.div<PageNavigationProps>`
   position: relative;
   min-height: ${({ theme }) => theme.navbar.mobile.minHeight}px;
@@ -170,7 +173,18 @@ export const LogoContainer = styled.div<PageNavigationProps>`
       width: 490px;
       transition: 0.3s min-height ease;
       min-height: ${({ overlap }: PageNavigationProps) => (overlap ? navbarClosedHeight : navbarOpenHeight)}px;
-      padding-left: ${spacing[10]};
+      padding-left: ${({ theme }: PageNavigationProps) =>
+        theme.navbar.logoContainer?.desktop.paddingLeft ?? spacing[10]};
+      height: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.height};
+      width: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.width};
+      justify-content: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.desktop.justifyContent};
+    `}
+  `}
+
+  ${maxMedia.desktop`
+    ${css`
+      display: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.display};
+      align-items: ${({ theme }: PageNavigationProps) => theme.navbar.logoContainer?.medium.alignItems};
     `}
   `}
 
@@ -303,15 +317,15 @@ const NavbarWrapper = ({
   withCTA = true,
   cta = <NavbarAction />,
   collapsed = false,
-}: NavbarProps) => {
+}: React.PropsWithChildren<NavbarProps>) => {
   const { width } = useViewport();
   const overThreshold = useScrollThreshold(20);
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
   const theme = useThemeContext();
 
   useEffect(() => {
-    if (open) {
+    if (isOpen) {
       document.body.style.top = `-${window.scrollY}px`;
       document.documentElement.classList.add('nav-open');
     } else {
@@ -320,7 +334,7 @@ const NavbarWrapper = ({
       document.documentElement.classList.remove('nav-open');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
-  }, [open]);
+  }, [isOpen]);
 
   const onResize = () => {
     setHeight(window.innerHeight);
@@ -341,52 +355,52 @@ const NavbarWrapper = ({
         <Headroom
           wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
           disableInlineStyles
-          disable={open || !!(width && width >= breakpoints.desktop)}
+          disable={isOpen || !!(width && width >= breakpoints.desktop)}
         >
           <LargeDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold} theme={theme}>
               <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
-                {theme.navbar.logo.render && <Logo negative={!overThreshold && !collapsed} width="150px" />}
+                {theme.navbar.logo.render ? <Logo negative={!overThreshold && !collapsed} width="150px" /> : null}
                 {overlayLogoWith}
               </LogoContainer>
               <NavbarLinksListContainer>
-                <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
-                {withCTA && <ActionWrapper>{cta}</ActionWrapper>}
+                {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} /> : null}
+                {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
               </NavbarLinksListContainer>
             </LayoutInner>
           </LargeDeviceNavbar>
           <SmallDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold}>
+            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold} theme={theme}>
               {links ? (
                 <HamburgerContainer
-                  open={open}
-                  onClick={() => setOpen(!open)}
+                  open={isOpen}
+                  onClick={() => setIsOpen(!isOpen)}
                   data-automation="hamburger-icon"
                   theme={theme}
                 >
                   <Icon
                     variant={faBars}
-                    color={open ? colors.brandDecorative : colors.white}
+                    color={isOpen ? colors.brandDecorative : colors.white}
                     width="20px"
                     height="20px"
                     size="1x"
                   />
                 </HamburgerContainer>
               ) : (
-                <IconContainer theme={theme} />
+                <IconContainer className="icon-container" theme={theme} />
               )}
               <LogoContainer theme={theme}>
-                {theme.navbar.logo.render && <Logo color={colors.brandDecorative} height="20px" negative />}
+                {theme.navbar.logo.render ? <Logo color={colors.brandDecorative} height="20px" negative /> : null}
                 {overlayLogoWith}
               </LogoContainer>
               {withCTA ? cta : <IconContainer theme={theme} />}
-              {links && open && (
-                <HamburgerMenu open={open} height={height}>
+              {links && isOpen ? (
+                <HamburgerMenu open={isOpen} height={height}>
                   <NavItemsWrapper>
-                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setOpen} />
+                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} />
                   </NavItemsWrapper>
                 </HamburgerMenu>
-              )}
+              ) : null}
             </LayoutInner>
           </SmallDeviceNavbar>
         </Headroom>
