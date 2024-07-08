@@ -5,12 +5,17 @@ exports[`<InputText /> renders the component disabled 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #7D8B98;
@@ -26,6 +31,11 @@ exports[`<InputText /> renders the component disabled 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -78,6 +88,11 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   position: absolute;
   top: 1px;
@@ -94,9 +109,9 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 48px;
+  width: 16px;
   color: #7D8B98;
-  left: 1px;
+  left: 8px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: #EFEFEF;
@@ -105,10 +120,9 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
-  padding-left: 60px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -124,6 +138,11 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c2:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c2:focus {
@@ -182,6 +201,11 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c2 {
   position: absolute;
   top: 1px;
@@ -198,7 +222,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 48px;
+  width: 16px;
   color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
@@ -208,9 +232,9 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   padding-right: 60px;
   font-size: 16px;
   font-weight: 400;
@@ -227,6 +251,11 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -285,12 +314,17 @@ exports[`<InputText /> renders the component with error 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -306,6 +340,11 @@ exports[`<InputText /> renders the component with error 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -357,12 +396,17 @@ exports[`<InputText /> renders the component with focus 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -378,6 +422,11 @@ exports[`<InputText /> renders the component with focus 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -429,12 +478,17 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -450,6 +504,11 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -501,12 +560,17 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   position: relative;
 }
 
+.c0:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
+}
+
 .c1 {
   width: 100%;
   -webkit-appearance: none;
-  outline: none;
   border-radius: 8px;
   height: 50px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -522,6 +586,11 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:focus-visible {
+  outline: 4px solid #359cd4;
+  outline-offset: 4px;
 }
 
 .c1:focus {
