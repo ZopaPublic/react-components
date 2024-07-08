@@ -1,5 +1,12 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.54.0
+
+### Minor Changes
+
+- 162c4e8: Spinner swap aria label for alt
+- 0b2a12f: add theming of navbar (desktop)
+
 ## 5.53.0
 
 ### Minor Changes
