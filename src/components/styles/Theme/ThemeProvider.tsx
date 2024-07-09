@@ -13,7 +13,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 
-export type CustomIconVariant = 'exclamation';
+export type CustomIconVariant = 'exclamation' | 'info-circle';
 
 export interface ButtonTheme {
   text: string;
