@@ -25,20 +25,20 @@ export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
 const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
-  align-items: center;
+  align-items: ${({ severity, theme }) => theme.alert[severity].alignItems};
   padding: ${({ severity, theme }) => theme.alert[severity].padding ?? '8px 12px 8px 12px'};
   background: ${({ severity, theme }) => theme.alert[severity].background};
   color: ${({ severity, theme }) => theme.alert[severity].text};
-  font-family: ${({ theme }) => theme.typography.primary ?? typography.primary};
   font-size: ${({ theme }) => theme.typography.text.sizes.body ?? typography.sizes.text.body};
-  line-height: ${({ theme }) => theme.typography.lineHeight.small ?? typography.sizes.lineHeight.body};
+  line-height: ${({ theme }) => (theme.typography.lineHeight.small ? typography.sizes.lineHeight.body : '24px')};
+  font-family: ${({ theme }) => theme.typography.primary ?? typography.primary};
   font-weight: ${({ theme }) => theme.typography.weights.ultraBold ?? '400'};
   border-radius: ${({ severity, theme, hasRoundedCorners }) =>
     theme.alert[severity].borderRadius ? theme.alert[severity].borderRadius : hasRoundedCorners ? '4px' : '0px'};
   border: ${({ severity, theme }) => theme.alert[severity].border};
   border-left: ${({ severity, theme }) => theme.alert[severity].borderLeft};
-  width: ${({ severity, theme }) => theme.alert[severity].width ?? '518px'};
-  height: ${({ severity, theme }) => theme.alert[severity].height ?? '42px'};
+  width: ${({ severity, theme }) => theme.alert[severity].width};
+  height: ${({ severity, theme }) => theme.alert[severity].height};
   a {
     color: ${({ severity, theme }) => theme.alert[severity].text} !important;
     font-size: 16px;
