@@ -3,11 +3,7 @@
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -15,6 +11,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -31,11 +28,6 @@ exports[`<InputText /> renders the component disabled 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -86,11 +78,7 @@ exports[`<InputText /> renders the component disabled 1`] = `
 exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -122,6 +110,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -138,11 +127,6 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c2:focus {
@@ -199,11 +183,7 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 exports[`<InputText /> renders the component with an icon on the right 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c2 {
@@ -234,6 +214,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   padding-right: 60px;
   font-size: 16px;
@@ -251,11 +232,6 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -312,11 +288,7 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -324,6 +296,7 @@ exports[`<InputText /> renders the component with error 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -340,11 +313,6 @@ exports[`<InputText /> renders the component with error 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -394,11 +362,7 @@ exports[`<InputText /> renders the component with error 1`] = `
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -406,6 +370,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -422,11 +387,6 @@ exports[`<InputText /> renders the component with focus 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -476,11 +436,7 @@ exports[`<InputText /> renders the component with focus 1`] = `
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -488,6 +444,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -504,11 +461,6 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {
@@ -558,11 +510,7 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
   position: relative;
-}
-
-.c0:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c1 {
@@ -570,6 +518,7 @@ exports[`<InputText /> renders the component with the required props 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -586,11 +535,6 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 .c1:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c1:focus {

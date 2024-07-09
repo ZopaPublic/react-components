@@ -3,11 +3,7 @@
 exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c1 {
   position: relative;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c2 {
@@ -15,6 +11,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -31,11 +28,6 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c2:focus {
@@ -98,11 +90,7 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 exports[`<TextField /> renders the component with error 1`] = `
 .c1 {
   position: relative;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c2 {
@@ -110,6 +98,7 @@ exports[`<TextField /> renders the component with error 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -126,11 +115,6 @@ exports[`<TextField /> renders the component with error 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c2:focus {
@@ -239,11 +223,7 @@ exports[`<TextField /> renders the component with label 1`] = `
 exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c1 {
   position: relative;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c2 {
@@ -251,6 +231,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -267,11 +248,6 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c2:focus {
@@ -334,11 +310,7 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 exports[`<TextField /> renders the component with prefix 1`] = `
 .c2 {
   position: relative;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c3 {
@@ -346,6 +318,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -362,11 +335,6 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 .c3:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c3:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c3:focus {
@@ -461,11 +429,7 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 exports[`<TextField /> renders the component with size 1`] = `
 .c1 {
   position: relative;
-}
-
-.c1:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
+  outline: none;
 }
 
 .c2 {
@@ -473,6 +437,7 @@ exports[`<TextField /> renders the component with size 1`] = `
   -webkit-appearance: none;
   border-radius: 8px;
   height: 50px;
+  outline: none;
   padding-left: 24px;
   font-size: 16px;
   font-weight: 400;
@@ -489,11 +454,6 @@ exports[`<TextField /> renders the component with size 1`] = `
 .c2:hover {
   border: solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c2:focus-visible {
-  outline: 4px solid #359cd4;
-  outline-offset: 4px;
 }
 
 .c2:focus {
