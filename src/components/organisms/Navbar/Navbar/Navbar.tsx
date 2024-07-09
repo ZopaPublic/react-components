@@ -22,6 +22,7 @@ import NavbarAction from '../NavbarAction/NavbarAction';
 import NavbarLinksList from '../NavbarLinksList/NavbarLinksList';
 import Button from '../../../atoms/Button/Button';
 import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
+import { ConditionalWrapper } from '../../../atoms/ConditionalWrapper/ConditionalWrapper';
 
 export interface NavigationItem {
   label: React.ReactNode;
@@ -353,58 +354,63 @@ const NavbarWrapper = ({
   return (
     <>
       <PageNavigation overlap={overThreshold} collapsed={collapsed} theme={theme}>
-        <Headroom
-          wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
-          disableInlineStyles
-          disable={isOpen || !!(width && width >= breakpoints.desktop)}
+        <ConditionalWrapper
+          condition={typeof theme.navbar.href !== 'undefined'}
+          wrapper={(children) => <a href={theme?.navbar?.href}>{children}</a>}
         >
-          <LargeDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold} theme={theme}>
-              <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
-                {theme.navbar.logo.render ? <Logo negative={!overThreshold && !collapsed} width="150px" /> : null}
-                {overlayLogoWith}
-              </LogoContainer>
-              <NavbarLinksListContainer>
-                {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} /> : null}
-                {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
-              </NavbarLinksListContainer>
-            </LayoutInner>
-          </LargeDeviceNavbar>
-          <SmallDeviceNavbar>
-            <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold} theme={theme}>
-              {links ? (
-                <HamburgerContainer
-                  open={isOpen}
-                  onClick={() => setIsOpen(!isOpen)}
-                  data-automation="hamburger-icon"
-                  theme={theme}
-                >
-                  <Icon
-                    variant={faBars}
-                    color={isOpen ? colors.brandDecorative : colors.white}
-                    width="20px"
-                    height="20px"
-                    size="1x"
-                  />
-                </HamburgerContainer>
-              ) : (
-                <IconContainer className="icon-container" theme={theme} />
-              )}
-              <LogoContainer theme={theme}>
-                {theme.navbar.logo.render ? <Logo color={colors.brandDecorative} height="20px" negative /> : null}
-                {overlayLogoWith}
-              </LogoContainer>
-              {withCTA ? cta : <IconContainer theme={theme} />}
-              {links && isOpen ? (
-                <HamburgerMenu open={isOpen} height={height}>
-                  <NavItemsWrapper>
-                    <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} />
-                  </NavItemsWrapper>
-                </HamburgerMenu>
-              ) : null}
-            </LayoutInner>
-          </SmallDeviceNavbar>
-        </Headroom>
+          <Headroom
+            wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
+            disableInlineStyles
+            disable={isOpen || !!(width && width >= breakpoints.desktop)}
+          >
+            <LargeDeviceNavbar>
+              <LayoutInner data-automation="ZA.navbar-desktop" overlap={overThreshold} theme={theme}>
+                <LogoContainer overlap={overThreshold || collapsed} role="banner" theme={theme}>
+                  {theme.navbar.logo.render ? <Logo negative={!overThreshold && !collapsed} width="150px" /> : null}
+                  {overlayLogoWith}
+                </LogoContainer>
+                <NavbarLinksListContainer>
+                  {links ? <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} /> : null}
+                  {withCTA ? <ActionWrapper>{cta}</ActionWrapper> : null}
+                </NavbarLinksListContainer>
+              </LayoutInner>
+            </LargeDeviceNavbar>
+            <SmallDeviceNavbar>
+              <LayoutInner data-automation="ZA.navbar-mobile" overlap={overThreshold} theme={theme}>
+                {links ? (
+                  <HamburgerContainer
+                    open={isOpen}
+                    onClick={() => setIsOpen(!isOpen)}
+                    data-automation="hamburger-icon"
+                    theme={theme}
+                  >
+                    <Icon
+                      variant={faBars}
+                      color={isOpen ? colors.brandDecorative : colors.white}
+                      width="20px"
+                      height="20px"
+                      size="1x"
+                    />
+                  </HamburgerContainer>
+                ) : (
+                  <IconContainer className="icon-container" theme={theme} />
+                )}
+                <LogoContainer theme={theme}>
+                  {theme.navbar.logo.render ? <Logo color={colors.brandDecorative} height="20px" negative /> : null}
+                  {overlayLogoWith}
+                </LogoContainer>
+                {withCTA ? cta : <IconContainer theme={theme} />}
+                {links && isOpen ? (
+                  <HamburgerMenu open={isOpen} height={height}>
+                    <NavItemsWrapper>
+                      <NavbarLinksList links={links} renderLink={renderLink} setOpen={setIsOpen} />
+                    </NavItemsWrapper>
+                  </HamburgerMenu>
+                ) : null}
+              </LayoutInner>
+            </SmallDeviceNavbar>
+          </Headroom>
+        </ConditionalWrapper>
       </PageNavigation>
       <Spacer collapsed={collapsed} />
     </>

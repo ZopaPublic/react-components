@@ -176,6 +176,8 @@ export interface NavbarTheme {
   layoutInner?: {
     justifyContent?: string;
   };
+  // For theme that use a single link
+  href?: string;
 }
 
 export interface ProgressBarTheme {
