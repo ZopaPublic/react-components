@@ -162,13 +162,13 @@ export interface NavbarTheme {
     bgColor: string;
   };
   logoContainer?: {
-    desktop: {
+    desktopMinMedia: {
       width?: string;
       height?: string;
       paddingLeft?: string;
       justifyContent?: string;
     };
-    medium: {
+    desktopMaxMedia: {
       display?: string;
       alignItems?: string;
     };
@@ -176,6 +176,8 @@ export interface NavbarTheme {
   layoutInner?: {
     justifyContent?: string;
   };
+  // For theme that use a single link
+  href?: string;
 }
 
 export interface ProgressBarTheme {
