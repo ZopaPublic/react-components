@@ -30,9 +30,9 @@ const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorn
   background: ${({ severity, theme }) => theme.alert[severity].background};
   color: ${({ severity, theme }) => theme.alert[severity].text};
   font-size: ${({ theme }) => theme.typography.text.sizes.body ?? typography.sizes.text.body};
-  line-height: ${({ theme }) => (theme.typography.lineHeight.small ? typography.sizes.lineHeight.body : '24px')};
+  line-height: ${({ theme }) => theme.typography.lineHeight.small ?? typography.sizes.lineHeight.body};
   font-family: ${({ theme }) => theme.typography.primary ?? typography.primary};
-  font-weight: ${({ theme }) => theme.typography.weights.ultraBold ?? '400'};
+  font-weight: ${({ severity, theme }) => theme.alert[severity].fontWeight ?? '400'};
   border-radius: ${({ severity, theme, hasRoundedCorners }) =>
     theme.alert[severity].borderRadius ? theme.alert[severity].borderRadius : hasRoundedCorners ? '4px' : '0px'};
   border: ${({ severity, theme }) => theme.alert[severity].border};
