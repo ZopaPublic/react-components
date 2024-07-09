@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.54.2
+
+### Patch Changes
+
+- f0903b6: release navbar changes
+
 ## 5.54.1
 
 ### Patch Changes
