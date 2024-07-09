@@ -132,25 +132,25 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/admmasters">
+            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
+            <br />
+            <sub><b>admmasters</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/dfvalero">
             <img src="https://avatars.githubusercontent.com/u/337955?v=4" width="50;" alt="dfvalero"/>
             <br />
             <sub><b>dfvalero</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/OlenaKashuba">
             <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
             <br />
             <sub><b>OlenaKashuba</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/admmasters">
-            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
-            <br />
-            <sub><b>admmasters</b></sub>
         </a>
     </td>
     <td align="center">
