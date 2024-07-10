@@ -104,17 +104,17 @@ In case you want to contribute to this library, please have a look at our [contr
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/thegrinder">
-            <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
-            <br />
-            <sub><b>thegrinder</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/moshie">
             <img src="https://avatars.githubusercontent.com/u/3974301?v=4" width="50;" alt="moshie"/>
             <br />
             <sub><b>moshie</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/thegrinder">
+            <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
+            <br />
+            <sub><b>thegrinder</b></sub>
         </a>
     </td>
     <td align="center">
@@ -197,6 +197,13 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/MichelleXBai">
+            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
+            <br />
+            <sub><b>MichelleXBai</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/poteirard">
             <img src="https://avatars.githubusercontent.com/u/7198934?v=4" width="50;" alt="poteirard"/>
             <br />
@@ -223,15 +230,15 @@ In case you want to contribute to this library, please have a look at our [contr
             <br />
             <sub><b>emilfjellstrom</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/MillieClare">
             <img src="https://avatars.githubusercontent.com/u/40922831?v=4" width="50;" alt="MillieClare"/>
             <br />
             <sub><b>MillieClare</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/steedems">
             <img src="https://avatars.githubusercontent.com/u/7896422?v=4" width="50;" alt="steedems"/>
@@ -244,13 +251,6 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/1674055?v=4" width="50;" alt="tlaak"/>
             <br />
             <sub><b>tlaak</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/MichelleXBai">
-            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
-            <br />
-            <sub><b>MichelleXBai</b></sub>
         </a>
     </td>
     <td align="center">
