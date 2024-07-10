@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.55.0
+
+### Minor Changes
+
+- e7d5162: Alert component
+
 ## 5.54.1
 
 ### Patch Changes
@@ -14,6 +20,7 @@
 - 0b2a12f: add theming of navbar (desktop)
 
 - 737d830: Bump minor
+
 ## 5.53.0
 
 ### Minor Changes
