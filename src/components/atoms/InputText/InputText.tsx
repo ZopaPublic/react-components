@@ -56,10 +56,10 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
 const Input = styled.input<InputProps & { theme: AppTheme }>`
   width: 100%;
   -webkit-appearance: none;
-  border-radius: ${({ theme }) => theme.input.borderRadius};
-  height: 50px;
   outline: none;
-  padding: ${({ theme }) => theme.input.padding};
+  border-radius: ${({ theme }: InputThemeProps) => theme.input.borderRadius};
+  height: 50px;
+  padding: ${({ theme }: InputThemeProps) => theme.input.padding};
   padding-left: ${({ startIcon }) => (typeof startIcon == 'function' ? '60px' : '24px')};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
@@ -69,13 +69,13 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  font-family: ${({ theme }) => theme.typography.primary};
+  font-family: ${({ theme }: InputThemeProps) => theme.typography.primary};
 
   &:hover {
-    border: ${({ theme }) => theme.input.hover.borderWeight} solid
+    border: ${({ theme }: InputThemeProps) => theme.input.hover.borderWeight} solid
       ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
-    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
-    background-color: ${({ theme }) => theme.input.hover.backgroundColor};
+    box-shadow: ${({ theme }: InputThemeProps) => theme.input.hover.boxShadow};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.hover.backgroundColor};
   }
 
   &:focus {
@@ -96,7 +96,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
     opacity: 1;
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: ${({ theme }) => theme.input.disabled.backgroundColor};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.disabled.backgroundColor};
     cursor: not-allowed;
   }
 `;

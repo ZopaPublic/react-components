@@ -89,6 +89,8 @@ export interface LabelTheme {
 
 export interface InputTheme {
   color: string;
+  padding: string;
+  labelFontWeight: number;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;
@@ -96,6 +98,8 @@ export interface InputTheme {
     border: string;
     error: string;
     boxShadow: string;
+    backgroundColor: string;
+    borderWeight: string;
   };
   focus: {
     border: string;
@@ -412,14 +416,18 @@ export const zopaTheme: AppTheme = {
     margin: `0 0 10px`,
   },
   input: {
+    padding: '0 16px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
     boxShadow: `0 0 4px 0 transparent`,
+    labelFontWeight: typography.weights.semiBold,
     hover: {
       border: colors.brand,
       error: colors.brand,
       boxShadow: `0 0 4px 0 ${colors.brand}`,
+      backgroundColor: colors.white,
+      borderWeight: '1px',
     },
     focus: {
       border: colors.brand,
