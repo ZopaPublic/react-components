@@ -10,6 +10,7 @@ exports[`<InputLabel /> renders the component with props 1`] = `
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 

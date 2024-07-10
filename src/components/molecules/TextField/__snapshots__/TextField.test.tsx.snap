@@ -9,10 +9,10 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -26,8 +26,9 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
 }
 
 .c2:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c2:focus {
@@ -96,10 +97,10 @@ exports[`<TextField /> renders the component with error 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -113,8 +114,9 @@ exports[`<TextField /> renders the component with error 1`] = `
 }
 
 .c2:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c2:focus {
@@ -184,6 +186,7 @@ exports[`<TextField /> renders the component with error and label and size 1`] =
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -209,6 +212,7 @@ exports[`<TextField /> renders the component with label 1`] = `
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -229,10 +233,10 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -246,8 +250,9 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
 }
 
 .c2:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c2:focus {
@@ -316,10 +321,10 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 .c3 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -333,8 +338,9 @@ exports[`<TextField /> renders the component with prefix 1`] = `
 }
 
 .c3:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c3:focus {
@@ -435,10 +441,10 @@ exports[`<TextField /> renders the component with size 1`] = `
 .c2 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   font-size: 16px;
   font-weight: 400;
   color: #4A545E;
@@ -452,8 +458,9 @@ exports[`<TextField /> renders the component with size 1`] = `
 }
 
 .c2:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c2:focus {

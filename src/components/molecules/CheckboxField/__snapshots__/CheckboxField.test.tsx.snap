@@ -10,6 +10,7 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -183,6 +184,7 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 

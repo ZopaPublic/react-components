@@ -10,6 +10,7 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   letter-spacing: 0;
   color: #2C3236;
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -39,7 +40,6 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 16px;
   color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
@@ -49,10 +49,10 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 .c5 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   padding-right: 60px;
   font-size: 16px;
   font-weight: 400;
@@ -67,8 +67,9 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
 }
 
 .c5:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c5:focus {
@@ -206,7 +207,6 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 16px;
   color: #7D8B98;
   right: 1px;
   border-top-right-radius: 8px;
@@ -216,10 +216,10 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 .c4 {
   width: 100%;
   -webkit-appearance: none;
+  outline: none;
   border-radius: 8px;
   height: 50px;
-  outline: none;
-  padding-left: 24px;
+  padding: 0 16px;
   padding-right: 60px;
   font-size: 16px;
   font-weight: 400;
@@ -234,8 +234,9 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
 }
 
 .c4:hover {
-  border: solid #009E8E;
+  border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: #FFFFFF;
 }
 
 .c4:focus {
