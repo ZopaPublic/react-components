@@ -20,14 +20,29 @@ const colorMap = {
   primary: {
     text: colors.white,
     bg: colors.action,
+    hover: {
+      bg: `linear-gradient(90deg, #3B46C4 0%, #2732B0 100%)`,
+      text: colors.white,
+      border: `1px solid ${colors.action}`,
+    },
   },
   secondary: {
     text: colors.actionDark,
     bg: colors.actionLight,
+    hover: {
+      bg: '#EEEFFB',
+      text: colors.actionDark,
+      border: '1px solid #EEEFFB',
+    },
   },
   link: {
     text: colors.actionDark,
     bg: 'transparent',
+    hover: {
+      bg: '#EAEBFA',
+      text: colors.actionDark,
+      border: '1px solid #EAEBFA',
+    },
   },
 };
 
@@ -95,13 +110,13 @@ export const buttonStyle = css<BaseButtonProps>`
         background: ${activeBg ?? colorMap[styling].bg};
       }
       &:hover {
-        background: ${hoverBg};
-        color: ${hoverText};
-        border: ${hoverBorder};
+        background: ${hoverBg ?? colorMap[styling].hover.bg};
+        color: ${hoverText ?? colorMap[styling].hover.text};
+        border: ${hoverBorder ?? colorMap[styling].hover.border};
       }
       &:focus:not(:active) {
-        border: ${focusBorder};
-        box-shadow: ${focusBoxShadow};
+        border: ${focusBorder ?? `1px solid ${colors.white}`};
+        box-shadow: ${focusBoxShadow ?? `0 0 4px ${colors.actionPlain}`};
       }
     `;
     return disabled ? disabledStyles : enabledStyles;

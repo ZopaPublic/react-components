@@ -228,19 +228,23 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   letter-spacing: 0;
 }
 
-.c17:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c17:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #21247F;
   border: 1px solid transparent;
+  background: transparent;
 }
 
 .c17:hover {
   background: #EAEBFA;
+  color: #21247F;
+  border: 1px solid #EAEBFA;
+}
+
+.c17:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c22 {
@@ -277,19 +281,23 @@ exports[`<Navbar /> should render component with all the props and no a11y viola
   background-color: #3B46C4;
 }
 
-.c22:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c22:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c22:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c20 {
@@ -1210,19 +1218,23 @@ exports[`<Navbar /> should render large device navigation with default props and
   background-color: #3B46C4;
 }
 
-.c17:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c17:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c17:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c17:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c20 {
@@ -2136,19 +2148,23 @@ exports[`<Navbar /> should render small device navigation with default props wit
   letter-spacing: 0;
 }
 
-.c17:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c17:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #21247F;
   border: 1px solid transparent;
+  background: transparent;
 }
 
 .c17:hover {
   background: #EAEBFA;
+  color: #21247F;
+  border: 1px solid #EAEBFA;
+}
+
+.c17:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c22 {
@@ -2185,19 +2201,23 @@ exports[`<Navbar /> should render small device navigation with default props wit
   background-color: #3B46C4;
 }
 
-.c22:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c22:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c22:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c22:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c20 {
@@ -3118,19 +3138,23 @@ exports[`<Navbar /> should render the collapsed styled on large device navigatio
   background-color: #3B46C4;
 }
 
-.c17:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c17:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
 .c17:hover {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c17:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c20 {
