@@ -36,12 +36,13 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${({ startIcon }) => (typeof startIcon == 'function' ? '48px' : '16px')};  
+  width: ${({ startIcon }) => (typeof startIcon == 'string' ? '16px' : typeof startIcon == 'object' ? '48px' : null)};  
   color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
   ${({ startIcon }) =>
     startIcon
       ? css`
-          left: ${({ startIcon }: StartIconThemeProps) => (typeof startIcon == 'function' ? '1px' : '8px')};
+          left: ${({ startIcon }: StartIconThemeProps) =>
+            typeof startIcon == 'string' ? '8px' : typeof startIcon == 'object' ? '16px' : null};
           border-top-left-radius: 8px;
           border-bottom-left-radius: 8px;
         `
@@ -60,7 +61,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   border-radius: ${({ theme }: InputThemeProps) => theme.input.borderRadius};
   height: 50px;
   padding: ${({ theme }: InputThemeProps) => theme.input.padding};
-  padding-left: ${({ startIcon }) => (typeof startIcon == 'function' ? '60px' : '24px')};
+  padding-left: ${({ startIcon, theme }) => (theme.input.startIcon ? '24px' : startIcon ? '60px' : null)};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
@@ -102,6 +103,8 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
 `;
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
+  console.log('startIcon', startIcon);
+  console.log('typeof startIcon', typeof startIcon);
   const theme = useThemeContext();
   return (
     <InputWrapper className={className}>
