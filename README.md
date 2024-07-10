@@ -31,6 +31,30 @@ git clone https://github.com/zopaUK/react-components.git
 pnpm i
 ```
 
+## Local linking
+
+Local linking with Next.js applications can be particularly challenging due to the way Next.js handles module resolution and its own optimization processes. When attempting to link local packages, such as `react-components`, with a Next.js application, developers might encounter issues related to module resolution, duplicate React instances, or unexpected behavior in hot module reloading (HMR).
+
+To mitigate these issues, you can use `pnpm dev:zrc`.
+
+Follow these steps:
+
+1. In the `react-components` directory, run the following command to start the watcher:
+
+```bash
+pnpm dev:zrc
+```
+
+2. In the application directory, run the following command to link the `react-components` library (if it exists):
+
+```bash
+pnpm dev:zrc
+```
+
+Now, any changes made in the `react-components` codebase will be reflected in the linked application after a delay (~500ms).
+
+NOTE: It is named "zrc" (specifically) to allow the developer to run the same command on both projects.
+
 ## Running the project
 
 Execute the development environment:
@@ -48,6 +72,8 @@ We start a watcher using [esbuild](https://esbuild.github.io/) and [tsc](https:/
 ```bash
 pnpm dev:code
 ```
+
+##
 
 Your locally running app will have its own way of linking to local dependencies but making changes in react-components codebase should now show in the application.
 
@@ -106,25 +132,25 @@ In case you want to contribute to this library, please have a look at our [contr
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/admmasters">
+            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
+            <br />
+            <sub><b>admmasters</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/dfvalero">
             <img src="https://avatars.githubusercontent.com/u/337955?v=4" width="50;" alt="dfvalero"/>
             <br />
             <sub><b>dfvalero</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/OlenaKashuba">
             <img src="https://avatars.githubusercontent.com/u/27281884?v=4" width="50;" alt="OlenaKashuba"/>
             <br />
             <sub><b>OlenaKashuba</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/admmasters">
-            <img src="https://avatars.githubusercontent.com/u/335607?v=4" width="50;" alt="admmasters"/>
-            <br />
-            <sub><b>admmasters</b></sub>
         </a>
     </td>
     <td align="center">
