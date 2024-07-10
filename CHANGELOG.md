@@ -13,10 +13,7 @@
 - 162c4e8: Spinner swap aria label for alt
 - 0b2a12f: add theming of navbar (desktop)
 
-### Patch Changes
-
 - 737d830: Bump minor
-
 ## 5.53.0
 
 ### Minor Changes
