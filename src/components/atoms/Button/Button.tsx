@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import React, { ButtonHTMLAttributes } from 'react';
 import { AppTheme, useThemeContext } from '../../styles/Theme';
 import { colors, spacing, typography } from '../../../constants';
+import CustomSpinner from '../Spinner/CustomSpinner/CustomSpinner';
 
 export type Styling = 'primary' | 'secondary' | 'link';
 
@@ -19,17 +20,14 @@ const colorMap = {
   primary: {
     text: colors.white,
     bg: colors.action,
-    hover: `linear-gradient(90deg, #3B46C4 0%, #2732B0 100%)`,
   },
   secondary: {
     text: colors.actionDark,
     bg: colors.actionLight,
-    hover: '#EEEFFB',
   },
   link: {
     text: colors.actionDark,
     bg: 'transparent',
-    hover: '#EAEBFA',
   },
 };
 
@@ -41,13 +39,8 @@ export const buttonStyle = css<BaseButtonProps>`
   text-decoration: none;
   box-sizing: border-box;
   justify-content: center;
-  padding: ${spacing[3]} ${spacing[6]};
+  padding: ${({ theme }) => (theme?.button?.padding ? theme.button.padding : `${spacing[3]} ${spacing[6]}`)};
   width: ${({ fullWidth = false }) => fullWidth && '100%'};
-
-  &:focus:not(:active) {
-    border: 1px solid ${colors.white};
-    box-shadow: 0 0 4px ${colors.actionPlain};
-  }
 
   ${({ styling = 'primary', theme }) => {
     const { borderRadius, text } = theme?.button || {};
@@ -75,28 +68,40 @@ export const buttonStyle = css<BaseButtonProps>`
   }}
 
   ${({ disabled, styling = 'primary', theme }) => {
-    const { hover } = theme?.button?.[styling] || {};
-    const { bg, text, border } = theme?.button?.[styling]?.disabled || {};
+    const { text: hoverText, bg: hoverBg, border: hoverBorder } = theme?.button?.[styling].hover || {};
+    const { text: disabledText, bg: disabledBg, border: disabledBorder } = theme?.button?.[styling]?.disabled || {};
+    const { text: activeText, bg: activeBg, border: activeBorder, opacity: activeOpacity } =
+      theme?.button?.[styling]?.active || {};
+    const { border: focusBorder, boxShadow: focusBoxShadow } = theme?.button?.[styling]?.focus || {};
+    theme?.button?.[styling]?.active || {};
     const disabledStyles = css<BaseButtonProps>`
       cursor: not-allowed;
       ${({ loading }) => {
         if (!loading) {
           return css`
-            color: ${text ?? colors.greyDark};
-            background: ${bg ?? colors.greyLightest};
-            border: ${border ?? '1px solid transparent'};
+            color: ${disabledText ?? colors.greyDark};
+            background: ${disabledBg ?? colors.greyLightest};
+            border: ${disabledBorder ?? '1px solid transparent'};
           `;
         }
       }}
     `;
     const enabledStyles = css`
       &:active {
-        opacity: 0.8;
+        opacity: ${activeOpacity ?? 0.8};
         box-shadow: unset;
-        border: 1px solid transparent;
+        color: ${activeText ?? colorMap[styling].text};
+        border: ${activeBorder ?? '1px solid transparent'};
+        background: ${activeBg ?? colorMap[styling].bg};
       }
       &:hover {
-        background: ${hover ?? colorMap[styling].hover};
+        background: ${hoverBg};
+        color: ${hoverText};
+        border: ${hoverBorder};
+      }
+      &:focus:not(:active) {
+        border: ${focusBorder};
+        box-shadow: ${focusBoxShadow};
       }
     `;
     return disabled ? disabledStyles : enabledStyles;
@@ -116,11 +121,14 @@ const Button = ({ children, loading, styling = 'primary', disabled, ...rest }: B
 
   return (
     <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest} theme={theme}>
-      {isLoading && (
+      {isLoading && theme.spinner.customSpinner ? (
+        <CustomSpinner size="small" styling={styling === 'primary' ? 'negative' : 'secondary'} />
+      ) : null}
+      {isLoading && theme.spinner.spinnerTheme === 'zopa' ? (
         <>
           <Spinner styling={styling === 'primary' ? 'negative' : 'secondary'} size="small" /> {'\u00A0 '}
         </>
-      )}
+      ) : null}
       {children}
     </StyledWrapper>
   );

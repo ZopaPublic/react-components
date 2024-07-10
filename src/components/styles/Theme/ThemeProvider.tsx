@@ -12,14 +12,29 @@ import { typography } from '../../../constants/typography';
 import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
+import { spacing } from '../../../constants';
 
 export type CustomIconVariant = 'exclamation';
 
 interface ButtonTheme {
   text: string;
   bg: string;
-  hover: string;
   border?: string;
+  hover: {
+    text: string;
+    bg: string;
+    border: string;
+  };
+  focus: {
+    border: string;
+    boxShadow: string;
+  };
+  active?: {
+    bg?: string;
+    border?: string;
+    opacity?: string;
+    text?: string;
+  };
   disabled?: {
     text?: string;
     bg?: string;
@@ -32,6 +47,7 @@ interface ButtonsTheme {
   secondary: ButtonTheme;
   link: ButtonTheme;
   borderRadius?: string;
+  padding?: string;
   text?: {
     size?: string;
     height?: string;
@@ -311,19 +327,44 @@ export const zopaTheme: AppTheme = {
     primary: {
       text: colors.white,
       bg: colors.action,
-      hover: `linear-gradient(90deg, #3B46C4 0%, #2732B0 100%)`,
+      hover: {
+        bg: `linear-gradient(90deg, #3B46C4 0%, #2732B0 100%)`,
+        text: colors.white,
+        border: `1px solid ${colors.action}`,
+      },
+      focus: {
+        border: `1px solid ${colors.white}`,
+        boxShadow: `0 0 4px ${colors.actionPlain}`,
+      },
     },
     secondary: {
       text: colors.actionDark,
       bg: colors.actionLight,
-      hover: '#EEEFFB',
+      hover: {
+        bg: '#EEEFFB',
+        text: colors.actionDark,
+        border: '1px solid #EEEFFB',
+      },
+      focus: {
+        border: `1px solid ${colors.white}`,
+        boxShadow: `0 0 4px ${colors.actionPlain}`,
+      },
     },
     link: {
       text: colors.actionDark,
       bg: 'transparent',
-      hover: '#EAEBFA',
+      hover: {
+        bg: '#EAEBFA',
+        text: colors.actionDark,
+        border: '1px solid #EAEBFA',
+      },
+      focus: {
+        border: `1px solid ${colors.white}`,
+        boxShadow: `0 0 4px ${colors.actionPlain}`,
+      },
     },
     borderRadius: `8px`,
+    padding: `${spacing[3]} ${spacing[6]}`,
   },
   card: {
     primary: {
