@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { IconLookup, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Icon from '../Icon/Icon';
-import { typography } from '../../../constants';
+import { colors, typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
 import ExclamationIcon from '../../styles/icons/exclamation';
 import Button from '../Button/Button';
@@ -25,20 +25,17 @@ export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
 const Wrapper = styled.div<{ severity: Severity; inline: boolean; hasRoundedCorners: boolean }>`
   display: ${({ inline }) => (inline ? 'inline-flex' : 'flex')};
   position: relative;
-  align-items: ${({ severity, theme }) => theme.alert[severity].alignItems};
   padding: ${({ severity, theme }) => theme.alert[severity].padding ?? '8px 12px 8px 12px'};
-  background: ${({ severity, theme }) => theme.alert[severity].background};
-  color: ${({ severity, theme }) => theme.alert[severity].text};
+  background: ${({ severity, theme }) => theme.alert[severity].background || colors.greyLighter};
+  color: ${({ severity, theme }) => theme.alert[severity].text || colors.greyDarkest};
   font-size: ${({ theme }) => theme.typography.text.sizes.body ?? typography.sizes.text.body};
-  line-height: ${({ theme }) => theme.typography.lineHeight.body};
+  line-height: ${({ theme }) => theme.typography.lineHeight.body ?? typography.sizes.lineHeight.body};
   font-family: ${({ theme }) => theme.typography.primary ?? typography.primary};
   font-weight: ${({ severity, theme }) => theme.alert[severity].fontWeight ?? '400'};
   border-radius: ${({ severity, theme, hasRoundedCorners }) =>
     theme.alert[severity].borderRadius ? theme.alert[severity].borderRadius : hasRoundedCorners ? '4px' : '0px'};
-  border: ${({ severity, theme }) => theme.alert[severity].border};
+  border: ${({ severity, theme }) => theme.alert[severity].border || 'none'};
   border-left: ${({ severity, theme }) => theme.alert[severity].borderLeft};
-  width: ${({ severity, theme }) => theme.alert[severity].width};
-  height: ${({ severity, theme }) => theme.alert[severity].height};
   a {
     color: ${({ severity, theme }) => theme.alert[severity].text} !important;
     font-size: 16px;
