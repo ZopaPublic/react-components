@@ -104,17 +104,17 @@ In case you want to contribute to this library, please have a look at our [contr
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/thegrinder">
-            <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
-            <br />
-            <sub><b>thegrinder</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/moshie">
             <img src="https://avatars.githubusercontent.com/u/3974301?v=4" width="50;" alt="moshie"/>
             <br />
             <sub><b>moshie</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/thegrinder">
+            <img src="https://avatars.githubusercontent.com/u/14250944?v=4" width="50;" alt="thegrinder"/>
+            <br />
+            <sub><b>thegrinder</b></sub>
         </a>
     </td>
     <td align="center">
@@ -194,6 +194,13 @@ In case you want to contribute to this library, please have a look at our [contr
             <img src="https://avatars.githubusercontent.com/u/91553062?v=4" width="50;" alt="calvin-fung-zopa"/>
             <br />
             <sub><b>calvin-fung-zopa</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MichelleXBai">
+            <img src="https://avatars.githubusercontent.com/u/92802325?v=4" width="50;" alt="MichelleXBai"/>
+            <br />
+            <sub><b>MichelleXBai</b></sub>
         </a>
     </td>
     <td align="center">
