@@ -34,19 +34,23 @@ exports[`<Navbar /> should render component with default props 1`] = `
   letter-spacing: 0;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c0:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #21247F;
   border: 1px solid transparent;
+  background: transparent;
 }
 
 .c0:hover {
   background: #EAEBFA;
+  color: #21247F;
+  border: 1px solid #EAEBFA;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 .c3 {

@@ -16,4 +16,4 @@ coverage
 *.iml
 
 .DS_Store
-
+*.idea
