@@ -242,7 +242,7 @@ exports[`<Help /> renders the default Help component with no a11y violations 1`]
   background: #E9EAFA;
 }
 
-.c15:hover {
+.c15:hover:not(:active) {
   background: #EEEFFB;
   color: #21247F;
   border: 1px solid #EEEFFB;

@@ -206,7 +206,7 @@ exports[`<FiveHundred /> renders with all the props 1`] = `
   background: #E9EAFA;
 }
 
-.c9:hover {
+.c9:hover:not(:active) {
   background: #EEEFFB;
   color: #21247F;
   border: 1px solid #EEEFFB;

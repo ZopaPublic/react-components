@@ -53,7 +53,7 @@ exports[`<TabButtons /> renders the buttons on big screens 1`] = `
   background: transparent;
 }
 
-.c2:hover {
+.c2:hover:not(:active) {
   background: #EAEBFA;
   color: #21247F;
   border: 1px solid #EAEBFA;
