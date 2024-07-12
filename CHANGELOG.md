@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.56.1
+
+### Patch Changes
+
+- bb6e801: make focus no longer required
+
 ## 5.56.0
 
 ### Minor Changes
