@@ -113,7 +113,7 @@ export interface InputTheme {
     error: string;
     boxShadow: string;
   };
-  focus: {
+  focus?: {
     border: string;
     error: string;
     boxShadow: string;
