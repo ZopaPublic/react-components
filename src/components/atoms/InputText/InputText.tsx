@@ -6,7 +6,7 @@ import { InputProps } from '../../types';
 import { useThemeContext, AppTheme, AppThemeProps } from '../../styles/Theme';
 
 type IconWrapperProps = {
-  startIcon?: boolean;
+  startIcon?: boolean; //TODO: change this if its string or object?
   /**
    * The weight of the rendered text.
    * @default 'regular'
@@ -23,6 +23,9 @@ interface InputThemeProps extends AppThemeProps {}
 interface StartIconThemeProps extends AppThemeProps {
   startIcon?: ReactNode | string;
 }
+interface EndIconThemeProps extends AppThemeProps {
+  endIcon?: ReactNode;
+}
 
 const InputWrapper = styled.div`
   position: relative;
@@ -36,18 +39,17 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${({ startIcon }) => (typeof startIcon == 'string' ? '16px' : typeof startIcon == 'object' ? '48px' : null)};  
+  width: 48px;
   color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
   ${({ startIcon }) =>
     startIcon
       ? css`
-          left: ${({ startIcon }: StartIconThemeProps) =>
-            typeof startIcon == 'string' ? '8px' : typeof startIcon == 'object' ? '16px' : null};
+          left: 1px;
           border-top-left-radius: 8px;
           border-bottom-left-radius: 8px;
         `
       : css`
-          right: 1px;
+          right: ${({ endIcon }: EndIconThemeProps) => (endIcon !== null ? '-8px' : '1px')};
           border-top-right-radius: 8px;
           border-bottom-right-radius: 8px;
         `}
@@ -61,7 +63,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   border-radius: ${({ theme }: InputThemeProps) => theme.input.borderRadius};
   height: 50px;
   padding: ${({ theme }: InputThemeProps) => theme.input.padding};
-  padding-left: ${({ startIcon, theme }) => (theme.input.startIcon ? '24px' : startIcon ? '60px' : null)};
+  padding-left: ${({ startIcon }) => !!startIcon && '60px'};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
@@ -103,8 +105,6 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
 `;
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
-  console.log('startIcon', startIcon);
-  console.log('typeof startIcon', typeof startIcon);
   const theme = useThemeContext();
   return (
     <InputWrapper className={className}>
