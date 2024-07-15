@@ -109,7 +109,7 @@ export const buttonStyle = css<BaseButtonProps>`
         border: ${activeBorder ?? '1px solid transparent'};
         background: ${activeBg ?? colorMap[styling].bg};
       }
-      &:hover {
+      &:hover:not(:active) {
         background: ${hoverBg ?? colorMap[styling].hover.bg};
         color: ${hoverText ?? colorMap[styling].hover.text};
         border: ${hoverBorder ?? colorMap[styling].hover.border};
