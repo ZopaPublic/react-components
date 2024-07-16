@@ -98,7 +98,9 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 48px;
   color: #7D8B98;
+  left: 1px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: #EFEFEF;
@@ -203,8 +205,9 @@ exports[`<InputText /> renders the component with an icon on the right 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 48px;
   color: #7D8B98;
-  right: 1px;
+  right: -8px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
