@@ -13,6 +13,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
+import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -217,6 +218,8 @@ export interface ProductTemplate {
   };
 }
 
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
+
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
   customSpinner?: {
@@ -299,6 +302,7 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  productTemplateV2?: ProductTemplateV2;
 }
 
 export interface AppThemeProps {
