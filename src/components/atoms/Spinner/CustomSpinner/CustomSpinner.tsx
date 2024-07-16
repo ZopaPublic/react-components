@@ -6,6 +6,7 @@ import { SpinnerProps } from '../Spinner';
 const AnimationContainer = styled.div<{ size: SpinnerProps['size'] }>`
   width: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
   height: ${({ size = 'standard' }) => (size === 'standard' ? '40px' : '20px')};
+  margin: 0 10px 0 0;
 `;
 
 const SpinnerAnimation = styled.div<SpinnerProps>`

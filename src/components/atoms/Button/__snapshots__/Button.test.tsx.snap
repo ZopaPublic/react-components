@@ -34,19 +34,23 @@ exports[`<Button /> renders as "link" 1`] = `
   letter-spacing: 0;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c0:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #21247F;
   border: 1px solid transparent;
+  background: transparent;
 }
 
-.c0:hover {
+.c0:hover:not(:active) {
   background: #EAEBFA;
+  color: #21247F;
+  border: 1px solid #EAEBFA;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button
@@ -92,19 +96,23 @@ exports[`<Button /> renders as "secondary" 1`] = `
   letter-spacing: 0;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c0:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #21247F;
   border: 1px solid transparent;
+  background: #E9EAFA;
 }
 
-.c0:hover {
+.c0:hover:not(:active) {
   background: #EEEFFB;
+  color: #21247F;
+  border: 1px solid #EEEFFB;
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button
@@ -155,11 +163,6 @@ exports[`<Button /> renders disabled 1`] = `
   border: 1px solid transparent;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 <button
   class="c0"
   disabled=""
@@ -204,11 +207,6 @@ exports[`<Button /> renders loading as "primary" 1`] = `
   letter-spacing: 0;
   background-color: #3B46C4;
   cursor: not-allowed;
-}
-
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button
@@ -264,11 +262,6 @@ exports[`<Button /> renders loading as "secondary" 1`] = `
   cursor: not-allowed;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 <button
   class="c0"
   disabled=""
@@ -320,11 +313,6 @@ exports[`<Button /> renders loading as "secondary" 2`] = `
   -ms-letter-spacing: 0;
   letter-spacing: 0;
   cursor: not-allowed;
-}
-
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button
@@ -381,19 +369,23 @@ exports[`<Button /> renders wide 1`] = `
   background-color: #3B46C4;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c0:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c0:hover {
+.c0:hover:not(:active) {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button
@@ -440,19 +432,23 @@ exports[`<Button /> renders with no a11y violations 1`] = `
   background-color: #3B46C4;
 }
 
-.c0:focus:not(:active) {
-  border: 1px solid #FFFFFF;
-  box-shadow: 0 0 4px #3B46C4;
-}
-
 .c0:active {
   opacity: 0.8;
   box-shadow: unset;
+  color: #FFFFFF;
   border: 1px solid transparent;
+  background: linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
 }
 
-.c0:hover {
+.c0:hover:not(:active) {
   background: linear-gradient(90deg,#3B46C4 0%,#2732B0 100%);
+  color: #FFFFFF;
+  border: 1px solid linear-gradient(90deg,#4F5AD8 0%,#3B46C4 100%);
+}
+
+.c0:focus:not(:active) {
+  border: 1px solid #FFFFFF;
+  box-shadow: 0 0 4px #3B46C4;
 }
 
 <button

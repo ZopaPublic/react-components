@@ -1,5 +1,23 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.57.0
+
+### Minor Changes
+
+- 81fb8f0: Fix the pressed state styling
+
+## 5.56.0
+
+### Minor Changes
+
+- 1d3d344: Button theming v2
+
+## 5.55.2
+
+### Patch Changes
+
+- 6eedf83: Alert V2 - more refactoring
+
 ## 5.55.1
 
 ### Patch Changes
