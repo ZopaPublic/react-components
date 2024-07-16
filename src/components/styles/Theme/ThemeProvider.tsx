@@ -3,6 +3,7 @@ import {
   faExclamationCircle,
   faInfoCircle,
   faMinusCircle,
+  faPoundSign,
   fas,
 } from '@fortawesome/free-solid-svg-icons';
 import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
@@ -105,6 +106,9 @@ export interface LabelTheme {
 
 export interface InputTheme {
   color: string;
+  startIcon: any; //TODO: fix type
+  iconWidth: string;
+  startIconPaddingLeft?: string;
   padding: string;
   labelFontWeight: number;
   placeholderColor: string;
@@ -458,6 +462,9 @@ export const zopaTheme: AppTheme = {
   },
   input: {
     padding: '0 16px',
+    startIcon: <Icon variant={faPoundSign} />,
+    iconWidth: '48px',
+    startIconPaddingLeft: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,

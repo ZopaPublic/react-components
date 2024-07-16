@@ -39,7 +39,7 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
+  width: ${({ theme }: InputThemeProps) => theme.input.iconWidth};
   color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
   ${({ startIcon }) =>
     startIcon
@@ -63,7 +63,8 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   border-radius: ${({ theme }: InputThemeProps) => theme.input.borderRadius};
   height: 50px;
   padding: ${({ theme }: InputThemeProps) => theme.input.padding};
-  padding-left: ${({ startIcon }) => !!startIcon && '60px'};
+  padding-left: ${({ startIcon, theme }) =>
+    startIcon && theme.input.startIcon ? theme.input.startIconPaddingLeft : null};
   padding-right: ${({ endIcon }) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
@@ -106,13 +107,21 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
   const theme = useThemeContext();
+  console.log('theme', theme);
+  console.log('theme.input.startIcon', theme.input.startIcon);
+  console.log('startIcon', startIcon);
   return (
     <InputWrapper className={className}>
-      {startIcon ? (
+      {startIcon && theme.input.startIcon ? (
+        <IconWrapper startIcon theme={theme}>
+          {theme.input.startIcon}
+        </IconWrapper>
+      ) : startIcon ? (
         <IconWrapper startIcon theme={theme}>
           {startIcon}
         </IconWrapper>
       ) : null}
+
       <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
       {endIcon ? (
         <IconWrapper startIcon={false} theme={theme}>
