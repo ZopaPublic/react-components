@@ -106,6 +106,8 @@ export const buttonStyle = css<BaseButtonProps>`
 // This wrapper is to prevent html attribute warnings. See: https://styled-components.com/docs/faqs#why-am-i-getting-html-attribute-warnings
 const ButtonWrapper = ({ loading, fullWidth, ...props }: ButtonProps & { theme: AppTheme }) => <button {...props} />;
 
+//ADDING COMMENT TO TEST I CAN PUSH TO GITHUB
+
 const StyledWrapper = styled(ButtonWrapper)`
   ${buttonStyle}
 `;
