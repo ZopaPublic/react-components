@@ -22,7 +22,7 @@ type MaybeHeaderProps = {
 };
 
 const MaybeHeader = ({ title, subtitle, progressBar }: MaybeHeaderProps) => (
-  <header className="maybe-header">
+  <header className="zrc:header">
     {title}
     {progressBar}
     {subtitle}
@@ -42,23 +42,23 @@ const Content = styled.section`
   position: relative;
 `;
 
+const HeaderContainer = styled.div`
+  background-color: #eeeae4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 function ProductTemplate({ header, children, contentWidth = 6 }: ProductTemplateProps) {
   return (
-    <Content>
-      <div
-        className="product-template-header-container"
-        style={{ backgroundColor: '#EEEAE4', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-      >
+    <Content className="mb-8">
+      <HeaderContainer className="product-template-header-container">
         <MaybeHeader {...header} />
-      </div>
+      </HeaderContainer>
       <FlexContainer data-automation="ZA.ProductTemplate" gutter={0}>
-        <FlexRow className="product-template-row" gutter={0}>
-          <FlexCol>
-            <FlexRow justify="center" gutter={0}>
-              <FlexCol m={10} xl={contentWidth}>
-                {children}
-              </FlexCol>
-            </FlexRow>
+        <FlexRow className="product-template-row" gutter={0} justify="center">
+          <FlexCol m={10} xl={contentWidth}>
+            {children}
           </FlexCol>
         </FlexRow>
       </FlexContainer>
