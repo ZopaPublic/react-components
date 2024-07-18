@@ -3,7 +3,6 @@
 exports[`<InputText /> renders the component disabled 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -28,7 +27,6 @@ exports[`<InputText /> renders the component disabled 1`] = `
 .c1:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c1:focus {
@@ -79,7 +77,6 @@ exports[`<InputText /> renders the component disabled 1`] = `
 exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -129,7 +126,6 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 .c2:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c2:focus {
@@ -183,116 +179,9 @@ exports[`<InputText /> renders the component with an icon on the left 1`] = `
 </div>
 `;
 
-exports[`<InputText /> renders the component with an icon on the right 1`] = `
-.c0 {
-  position: relative;
-  outline: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 1px;
-  bottom: 1px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 48px;
-  color: #7D8B98;
-  right: -8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.c1 {
-  width: 100%;
-  -webkit-appearance: none;
-  outline: none;
-  border-radius: 8px;
-  height: 50px;
-  padding: 0 16px;
-  padding-right: 60px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #4A545E;
-  border: 1px solid #7D8B98;
-  box-shadow: 0 0 4px 0 transparent;
-  -webkit-transition-property: border,box-shadow;
-  transition-property: border,box-shadow;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
-}
-
-.c1:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
-}
-
-.c1:focus {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1::-moz-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1:-ms-input-placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1::placeholder {
-  color: #D4D7D9;
-  opacity: 1;
-}
-
-.c1:disabled {
-  -webkit-text-fill-color: #7D8B98;
-  opacity: 1;
-  border: 1px solid #7D8B98;
-  box-shadow: 0 0 4px 0 transparent;
-  background-color: #F7F7F7;
-  cursor: not-allowed;
-}
-
-<div
-  class="c0"
->
-  <input
-    class="c1"
-    name="name"
-  />
-  <span
-    class="c2"
-  >
-    <span
-      data-automation="end-icon"
-    />
-  </span>
-</div>
-`;
-
 exports[`<InputText /> renders the component with error 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -317,7 +206,6 @@ exports[`<InputText /> renders the component with error 1`] = `
 .c1:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c1:focus {
@@ -367,7 +255,6 @@ exports[`<InputText /> renders the component with error 1`] = `
 exports[`<InputText /> renders the component with focus 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -392,7 +279,6 @@ exports[`<InputText /> renders the component with focus 1`] = `
 .c1:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c1:focus {
@@ -442,7 +328,6 @@ exports[`<InputText /> renders the component with focus 1`] = `
 exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -467,7 +352,6 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 .c1:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c1:focus {
@@ -517,7 +401,6 @@ exports[`<InputText /> renders the component with isValid set as true 1`] = `
 exports[`<InputText /> renders the component with the required props 1`] = `
 .c0 {
   position: relative;
-  outline: none;
 }
 
 .c1 {
@@ -542,7 +425,6 @@ exports[`<InputText /> renders the component with the required props 1`] = `
 .c1:hover {
   border: 1px solid #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
-  background-color: #FFFFFF;
 }
 
 .c1:focus {
