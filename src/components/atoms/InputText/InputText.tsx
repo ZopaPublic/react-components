@@ -20,9 +20,7 @@ type IconWrapperProps = {
 };
 
 interface InputThemeProps extends AppThemeProps {}
-interface StartIconThemeProps extends AppThemeProps {
-  startIcon?: ReactNode | string;
-}
+
 interface EndIconThemeProps extends AppThemeProps {
   endIcon?: ReactNode;
 }
@@ -107,12 +105,9 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
   const theme = useThemeContext();
-  console.log('theme', theme);
-  console.log('theme.input.startIcon', theme.input.startIcon);
-  console.log('startIcon', startIcon);
   return (
     <InputWrapper className={className}>
-      {startIcon && theme.input.startIcon ? (
+      {startIcon ? (
         <IconWrapper startIcon theme={theme}>
           {theme.input.startIcon}
         </IconWrapper>
