@@ -1,4 +1,4 @@
-import React, { forwardRef, ReactNode } from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
 import { colors } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
@@ -21,13 +21,8 @@ type IconWrapperProps = {
 
 interface InputThemeProps extends AppThemeProps {}
 
-interface EndIconThemeProps extends AppThemeProps {
-  endIcon?: ReactNode;
-}
-
 const InputWrapper = styled.div`
   position: relative;
-  outline: none;
 `;
 
 const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
@@ -37,20 +32,20 @@ const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: ${({ theme }: InputThemeProps) => theme.input.iconWidth};
+  width: ${({ theme }: InputThemeProps) => (theme?.input?.iconWidth ? theme.input.iconWidth : '48px')};
   color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
-  ${({ startIcon }) =>
-    startIcon
-      ? css`
-          left: 1px;
-          border-top-left-radius: 8px;
-          border-bottom-left-radius: 8px;
-        `
-      : css`
-          right: ${({ endIcon }: EndIconThemeProps) => (endIcon !== null ? '-8px' : '1px')};
-          border-top-right-radius: 8px;
-          border-bottom-right-radius: 8px;
-        `}
+${({ startIcon }) =>
+  startIcon
+    ? css`
+        left: 1px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      `
+    : css`
+        right: 1px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      `}
   background-color: ${({ startIcon, theme }) => startIcon && theme.input.iconBackgroundColor};
 `;
 
@@ -74,10 +69,8 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
   font-family: ${({ theme }: InputThemeProps) => theme.typography.primary};
 
   &:hover {
-    border: ${({ theme }: InputThemeProps) => theme.input.hover.borderWeight} solid
-      ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
-    box-shadow: ${({ theme }: InputThemeProps) => theme.input.hover.boxShadow};
-    background-color: ${({ theme }: InputThemeProps) => theme.input.hover.backgroundColor};
+    border: 1px solid ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
+    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
   }
 
   &:focus {
@@ -98,25 +91,21 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
     opacity: 1;
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: ${({ theme }: InputThemeProps) => theme.input.disabled.backgroundColor};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.disabled.backgroundColor ?? colors.greyLightest};
     cursor: not-allowed;
   }
 `;
 
 const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon, className, ...rest }, ref) => {
   const theme = useThemeContext();
+
   return (
     <InputWrapper className={className}>
       {startIcon ? (
         <IconWrapper startIcon theme={theme}>
-          {theme.input.startIcon}
-        </IconWrapper>
-      ) : startIcon ? (
-        <IconWrapper startIcon theme={theme}>
           {startIcon}
         </IconWrapper>
       ) : null}
-
       <Input startIcon={startIcon} endIcon={endIcon} {...rest} ref={ref} theme={theme} />
       {endIcon ? (
         <IconWrapper startIcon={false} theme={theme}>

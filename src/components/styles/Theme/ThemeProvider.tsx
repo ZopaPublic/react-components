@@ -118,7 +118,7 @@ export interface InputTheme {
     border: string;
     error: string;
     boxShadow: string;
-    backgroundColor: string;
+    backgroundColor?: string;
     borderWeight: string;
   };
   focus: {
@@ -474,7 +474,6 @@ export const zopaTheme: AppTheme = {
       border: colors.brand,
       error: colors.brand,
       boxShadow: `0 0 4px 0 ${colors.brand}`,
-      backgroundColor: colors.white,
       borderWeight: '1px',
     },
     focus: {
