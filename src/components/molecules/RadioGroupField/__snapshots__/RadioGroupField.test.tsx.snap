@@ -97,7 +97,7 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   width: 20px;
   display: inline-block;
   margin-right: 8px;
-  border: 1px #7D8B98 solid;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -128,23 +128,6 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   opacity: 0;
   z-index: -1;
   position: absolute;
-}
-
-.c7:hover:not(:disabled) + label,
-.c7:focus + label {
-  border-color: #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c7:hover:not(:disabled) + label:before,
-.c7:focus + label:before {
-  border-color: #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c7:hover:checked:not(:disabled) + label:after,
-.c7:focus:checked + label:after {
-  background-color: #009E8E;
 }
 
 .c7:disabled + label {
@@ -178,6 +161,24 @@ exports[`<RadioGroupField /> renders the component with no control icon and no a
   width: 10px;
   -webkit-animation: ciAMHu 200ms ease-in-out;
   animation: ciAMHu 200ms ease-in-out;
+}
+
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
+}
+
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
+  background-color: #009E8E;
 }
 
 .c7 + label:before,
@@ -374,7 +375,7 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   width: 20px;
   display: inline-block;
   margin-right: 8px;
-  border: 1px #7D8B98 solid;
+  border: 1px solid #7D8B98;
   box-shadow: 0 0 4px 0 transparent;
   -webkit-transition-property: border,box-shadow;
   transition-property: border,box-shadow;
@@ -405,23 +406,6 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   opacity: 0;
   z-index: -1;
   position: absolute;
-}
-
-.c7:hover:not(:disabled) + label,
-.c7:focus + label {
-  border-color: #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c7:hover:not(:disabled) + label:before,
-.c7:focus + label:before {
-  border-color: #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
-.c7:hover:checked:not(:disabled) + label:after,
-.c7:focus:checked + label:after {
-  background-color: #009E8E;
 }
 
 .c7:disabled + label {
@@ -455,6 +439,24 @@ exports[`<RadioGroupField /> renders the component with props with no a11y viola
   width: 10px;
   -webkit-animation: ciAMHu 200ms ease-in-out;
   animation: ciAMHu 200ms ease-in-out;
+}
+
+.c7:hover:not(:disabled) + label,
+.c7:focus + label {
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
+}
+
+.c7:hover:not(:disabled) + label:before,
+.c7:focus + label:before {
+  border-color: #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c7:hover:checked:not(:disabled) + label:after,
+.c7:focus:checked + label:after {
+  background-color: #009E8E;
 }
 
 .c0 {
