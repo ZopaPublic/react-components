@@ -106,7 +106,7 @@ export interface LabelTheme {
 
 export interface InputTheme {
   color: string;
-  startIcon: any; //TODO: fix type
+  startIcon: React.ReactNode;
   iconWidth: string;
   startIconPaddingLeft?: string;
   padding: string;
