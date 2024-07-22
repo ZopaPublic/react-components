@@ -87,7 +87,7 @@ exports[`<BankDetails /> renders the component with no props and no a11y violati
   background: transparent;
 }
 
-.c4:hover {
+.c4:hover:not(:active) {
   background: #EAEBFA;
   color: #21247F;
   border: 1px solid #EAEBFA;

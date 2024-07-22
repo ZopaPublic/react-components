@@ -17,14 +17,13 @@ const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
   letter-spacing: 0;
   color: ${colors.greyDarkest};
   font-family: ${({ theme }) => theme.typography.primary};
-  font-weight: ${typography.weights.semiBold};
+  font-weight: ${({ theme }) => (theme ? theme.input.labelFontWeight : typography.weights.semiBold)};
   font-size: ${typography.sizes.text.body};
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
 export const InputLabel = (props: InputLabelProps) => {
   const theme = useThemeContext();
-
   return <StyledInputLabel {...props} theme={theme} />;
 };
 

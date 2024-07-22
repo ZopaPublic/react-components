@@ -206,7 +206,7 @@ exports[`<Four0Four /> renders with all the props 1`] = `
   background: #E9EAFA;
 }
 
-.c8:hover {
+.c8:hover:not(:active) {
   background: #EEEFFB;
   color: #21247F;
   border: 1px solid #EEEFFB;
