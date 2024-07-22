@@ -44,10 +44,9 @@ export const SearchInputWrap = styled.div`
 
 export const CustomIcon = styled.div<{ isOpen: boolean }>`
   background: transparent url(${unbrandedChevron}) no-repeat center;
-  background-size: 60%;
+  background-size: 120%;
   width: 100%;
   height: 100%;
-  color: black;
   transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : 'none')};
 `;
 
@@ -123,6 +122,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   endIcon={
                     theme.input.searchInput.customIcon ? (
                       <CustomIcon
+                        color={theme.input.searchInput.customIconColor}
                         isOpen={isOpen}
                         onClick={() => {
                           if (!disabled) {

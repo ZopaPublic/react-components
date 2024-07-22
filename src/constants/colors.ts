@@ -20,6 +20,7 @@ const neutralColors = {
   grey: '#7D8B98',
   greyDark: '#4A545E',
   greyDarkest: '#2C3236',
+  black: '#000000',
 } as const;
 
 const notificationColors = {
