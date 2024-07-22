@@ -66,14 +66,11 @@ exports[`<DropdownFiltered /> renders the Dropdown with options with no a11y vio
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c5:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c5:hover,
 .c5:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c5::-webkit-input-placeholder {
@@ -232,14 +229,11 @@ exports[`<DropdownFiltered /> renders the DropdownFiltered with options and a de
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c4:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c4:hover,
 .c4:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c4::-webkit-input-placeholder {

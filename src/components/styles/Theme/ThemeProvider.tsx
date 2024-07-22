@@ -481,7 +481,6 @@ export const zopaTheme: AppTheme = {
   label: {
     margin: `0 0 10px`,
   },
-  //Input2
   input: {
     padding: '0 16px',
     startIcon: <Icon variant={faPoundSign} />,
@@ -495,7 +494,7 @@ export const zopaTheme: AppTheme = {
     hover: {
       border: colors.brand,
       error: colors.brand,
-      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      boxShadow: `0 0 4px 0`,
       backgroundColor: 'transparent',
     },
     disabled: {
