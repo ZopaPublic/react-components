@@ -24,14 +24,11 @@ exports[`<TextField /> renders the component and isValid set to true 1`] = `
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c2:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c2:hover,
 .c2:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c2::-webkit-input-placeholder {
@@ -110,14 +107,11 @@ exports[`<TextField /> renders the component with error 1`] = `
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c2:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c2:hover,
 .c2:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c2::-webkit-input-placeholder {
@@ -244,14 +238,11 @@ exports[`<TextField /> renders the component with no a11y violations 1`] = `
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c2:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c2:hover,
 .c2:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c2::-webkit-input-placeholder {
@@ -330,14 +321,11 @@ exports[`<TextField /> renders the component with prefix 1`] = `
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c3:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c3:hover,
 .c3:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c3::-webkit-input-placeholder {
@@ -448,14 +436,11 @@ exports[`<TextField /> renders the component with size 1`] = `
   font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
 }
 
-.c2:hover {
-  border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E;
-}
-
+.c2:hover,
 .c2:focus {
   border: 1px solid #009E8E;
-  box-shadow: 0 0 4px 0 #009E8E #009E8E;
+  box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c2::-webkit-input-placeholder {

@@ -101,10 +101,10 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
   &:hover:not(:disabled) + label,
   &:focus + label {
     border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
-    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
+    box-shadow: ${({ theme }) => `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
     &:before {
       border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
-      box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
+      box-shadow: ${({ theme }) => `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
     }
   }
   &:hover:checked:not(:disabled) + label,
