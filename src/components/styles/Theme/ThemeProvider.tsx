@@ -292,6 +292,32 @@ export interface TypographyTheme {
   };
 }
 
+export interface RadioTheme {
+  fieldBorderRadius: string;
+  colorByStatus: {
+    default: string;
+    disabled: string;
+    error: string;
+    valid: string;
+  };
+  hover: {
+    borderColor: string;
+    boxShadow: string;
+    bgColor: string;
+  };
+  checked: {
+    colorByStatus: {
+      default: string;
+      disabled: string;
+      error: string;
+      valid: string;
+    };
+    bgColor: string;
+    radioBgColor: string;
+    boxShadow: string;
+  };
+}
+
 export interface AppTheme {
   alert: AlertTheme;
   button: ButtonsTheme;
@@ -307,6 +333,7 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  radio: RadioTheme;
 }
 
 export interface AppThemeProps {
@@ -610,6 +637,31 @@ export const zopaTheme: AppTheme = {
       semiBold: 600,
       bold: 700,
       extraBold: 800,
+    },
+  },
+  radio: {
+    fieldBorderRadius: '8px',
+    colorByStatus: {
+      error: `${colors.alert}`,
+      valid: `${colors.success}`,
+      disabled: `${colors.greyLight}`,
+      default: `${colors.grey}`,
+    },
+    hover: {
+      borderColor: `${colors.brand}`,
+      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      bgColor: 'transparent',
+    },
+    checked: {
+      colorByStatus: {
+        default: `${colors.brand}`,
+        disabled: `${colors.grey}`,
+        error: `${colors.brand}`,
+        valid: `${colors.success}`,
+      },
+      bgColor: `${colors.brandLight}`,
+      radioBgColor: `${colors.brand}`,
+      boxShadow: `none`,
     },
   },
 };
