@@ -118,13 +118,7 @@ export interface InputTheme {
     border: string;
     error: string;
     boxShadow: string;
-    backgroundColor?: string;
-    borderWeight: string;
-  };
-  focus: {
-    border: string;
-    error: string;
-    boxShadow: string;
+    backgroundColor: string;
   };
   disabled: {
     color: string;
@@ -460,6 +454,7 @@ export const zopaTheme: AppTheme = {
   label: {
     margin: `0 0 10px`,
   },
+  //Input2
   input: {
     padding: '0 16px',
     startIcon: <Icon variant={faPoundSign} />,
@@ -474,12 +469,7 @@ export const zopaTheme: AppTheme = {
       border: colors.brand,
       error: colors.brand,
       boxShadow: `0 0 4px 0 ${colors.brand}`,
-      borderWeight: '1px',
-    },
-    focus: {
-      border: colors.brand,
-      error: colors.brand,
-      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      backgroundColor: 'transparent',
     },
     disabled: {
       color: colors.grey,

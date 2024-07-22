@@ -54,17 +54,15 @@ const Input = styled.input<InputThemeProps>`
   transition: 0.2s ease-in-out;
   font-family: ${({ theme }: InputThemeProps) => theme.typography.primary};
 
-  &:hover {
-    border: 1px solid
-      ${({ hasError, theme }: InputThemeProps) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
-    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
-  }
-
+  &:hover,
   &:focus {
     border: 1px solid
-      ${({ hasError, theme }: InputThemeProps) => (hasError ? theme.input.focus.error : theme.input.focus.border)};
-    box-shadow: ${({ hasError, theme }: InputThemeProps) =>
-      `${theme.input.focus.boxShadow} ${hasError ? theme.input.focus.error : theme.input.focus.border}`};
+      ${({ hasError, theme }: InputThemeProps) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
+    box-shadow: ${({ hasError, theme }) =>
+      hasError
+        ? `${theme.input.hover.boxShadow} ${theme.input.hover.error}`
+        : `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.hover.backgroundColor};
   }
 
   &::placeholder {
