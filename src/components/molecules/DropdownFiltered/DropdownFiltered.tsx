@@ -122,7 +122,7 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   endIcon={
                     theme.input.searchInput.customIcon ? (
                       <CustomIcon
-                        color={theme.input.searchInput.customIconColor}
+                        style={{ color: theme.input.searchInput.customIconColor }}
                         isOpen={isOpen}
                         onClick={() => {
                           if (!disabled) {
