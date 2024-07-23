@@ -7,6 +7,7 @@ import Heading from '../../../atoms/Heading/Heading';
 import { useThemeContext } from '../../../styles/Theme';
 import { useViewport } from '../../../../hooks/useViewport';
 import { minMedia } from '../../../../helpers/responsiveness';
+import classnames from 'classnames';
 
 interface ProductTemplateTitleProps {
   title?: string;
@@ -49,6 +50,7 @@ export function ProductTemplateTitle({
   const theme = useThemeContext();
 
   const titleClass = theme.productTemplate?.title?.className;
+  const finalClassName = classnames('px-8', titleClass);
 
   console.log('theme', theme);
 
@@ -57,12 +59,7 @@ export function ProductTemplateTitle({
       <ProductTemplateTitleContainer>
         <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
           {title ? (
-            <Heading
-              as="h1"
-              size={width > breakpoints.phone ? 'h1' : 'h2'}
-              align="center"
-              className={`px-8 ${titleClass}`}
-            >
+            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center" className={finalClassName}>
               {title}
             </Heading>
           ) : null}
