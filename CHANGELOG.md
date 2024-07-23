@@ -1,5 +1,17 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.58.1
+
+### Patch Changes
+
+- 04dd518: input text
+
+## 5.58.0
+
+### Minor Changes
+
+- b5dd93b: Radio themed
+
 ## 5.57.0
 
 ### Minor Changes

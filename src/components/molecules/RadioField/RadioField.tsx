@@ -1,21 +1,46 @@
 import React from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { colors, typography } from '../../../constants';
-import { getBorderColorByStatus } from '../../../helpers/utils';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
 import { FieldProps, InputStatus, InputProps, GroupingControlsProps } from '../../types';
 import deprecate from 'util-deprecate';
-import { AppTheme, useThemeContext } from '../../styles/Theme';
+import { AppTheme, AppThemeProps, useThemeContext } from '../../styles/Theme';
 
-const getCheckedColor = ({ disabled, isValid }: Pick<InputProps, 'disabled' | 'isValid'>) => {
+const getCheckedColor = ({
+  disabled,
+  hasError,
+  isValid,
+  theme,
+}: Pick<InputProps, 'disabled' | 'isValid' | 'hasError'> & AppThemeProps) => {
   if (isValid) {
-    return colors.success;
+    return theme.radio.checked.colorByStatus.valid;
+  }
+  if (hasError) {
+    return theme.radio.checked.colorByStatus.error;
   }
   if (disabled) {
-    return colors.grey;
+    return theme.radio.checked.colorByStatus.disabled;
   }
-  return colors.brand;
+  return theme.radio.checked.colorByStatus.default;
+};
+
+const getColorByStatus = ({
+  hasError,
+  isValid,
+  disabled,
+  theme,
+}: Pick<InputProps, 'disabled' | 'isValid' | 'hasError'> & AppThemeProps) => {
+  if (hasError) {
+    return theme.radio.colorByStatus.error;
+  }
+  if (isValid) {
+    return theme.radio.colorByStatus.valid;
+  }
+  if (disabled) {
+    return theme.radio.colorByStatus.disabled;
+  }
+  return theme.radio.colorByStatus.default;
 };
 
 const zoomIn = keyframes`
@@ -47,10 +72,10 @@ const Label = styled(InputLabel)<LabelProps & { theme: AppTheme }>`
   font-size: ${typography.sizes.text.body};
   color: ${colors.greyDarkest};
   padding: 14px 16px;
-  border: 1px solid ${getBorderColorByStatus};
+  border: 1px solid ${getColorByStatus};
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  border-radius: 8px;
+  border-radius: ${({ theme }) => theme.radio.fieldBorderRadius};
   position: relative;
   margin-bottom: 0;
   justify-content: ${(props) => (props.hideControl ? `center` : `left`)};
@@ -63,7 +88,7 @@ const Label = styled(InputLabel)<LabelProps & { theme: AppTheme }>`
     width: 20px;
     display: inline-block;
     margin-right: 8px;
-    border: 1px ${getBorderColorByStatus} solid;
+    border: 1px solid ${getColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
     transition-property: border, box-shadow;
     transition: 0.2s ease-in-out;
@@ -90,21 +115,6 @@ const Input = styled.input<InputStatus & GroupingControlsProps>`
   z-index: -1;
   position: absolute;
 
-  &:hover:not(:disabled) + label,
-  &:focus + label {
-    border-color: ${colors.brand};
-    box-shadow: 0 0 4px 0 ${colors.brand};
-    &:before {
-      border-color: ${colors.brand};
-      box-shadow: 0 0 4px 0 ${colors.brand};
-    }
-  }
-  &:hover:checked:not(:disabled) + label,
-  &:focus:checked + label {
-    &:after {
-      background-color: ${colors.brand};
-    }
-  }
   &:disabled + label {
     cursor: not-allowed;
     color: ${colors.grey};
@@ -118,17 +128,33 @@ const Input = styled.input<InputStatus & GroupingControlsProps>`
   }
   &:checked + label {
     border-color: ${getCheckedColor};
-    background-color: ${colors.brandLight};
-    box-shadow: none;
+    background-color: ${({ theme }) => theme.radio.checked.bgColor};
+    box-shadow: ${({ theme }) => theme.radio.checked.boxShadow};
     &:before {
       border-color: ${getCheckedColor};
-      box-shadow: none;
+      box-shadow: ${({ theme }) => theme.radio.checked.boxShadow};
     }
     &:after {
       background-color: ${getCheckedColor};
       height: 10px;
       width: 10px;
       animation: ${zoomIn} 200ms ease-in-out;
+    }
+  }
+  &:hover:not(:disabled) + label,
+  &:focus + label {
+    border-color: ${({ theme }) => theme.radio.hover.borderColor};
+    box-shadow: ${({ theme }) => theme.radio.hover.boxShadow};
+    background-color: ${({ theme }) => theme.radio.hover.bgColor};
+    &:before {
+      border-color: ${({ theme }) => theme.radio.hover.borderColor};
+      box-shadow: ${({ theme }) => theme.radio.hover.boxShadow};
+    }
+  }
+  &:hover:checked:not(:disabled) + label,
+  &:focus:checked + label {
+    &:after {
+      background-color: ${({ theme }) => theme.radio.checked.radioBgColor};
     }
   }
   ${({ hideControl }) =>
@@ -172,6 +198,7 @@ const RadioField = ({
         value={value}
         hideControl={hideControl}
         type="radio"
+        theme={theme}
         {...rest}
       />
       <Label htmlFor={id} hasError={hasError} isValid={isValid} hideControl={hideControl} theme={theme}>
