@@ -279,14 +279,10 @@ export interface TypographyTheme {
   };
   weights: {
     regular: number;
-    semiBold: number;
-    bold: number;
-    extraBold: number;
-
-    // Extra weights to align with partner naming conventions
-    // to discuss with the design/dev team
     medium?: number;
-    ultraBold?: number;
+    bold?: number;
+    semiBold: number;
+    extraBold: number;
   };
 }
 
