@@ -216,6 +216,7 @@ export interface ScrollableAreaTheme {
 export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
+    className?: string;
   };
 }
 

@@ -47,21 +47,31 @@ export function ProductTemplateTitle({
 }: ProductTemplateTitleProps) {
   const { width = 0 } = useViewport();
   const theme = useThemeContext();
+
+  const titleClass = theme.productTemplate?.title?.className;
+
+  console.log('theme', theme);
+
   return (
     <ProductTemplateTitleBackground data-automation={dataAutomation} theme={theme}>
       <ProductTemplateTitleContainer>
         <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
-          {title && (
-            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center" className="px-8">
+          {title ? (
+            <Heading
+              as="h1"
+              size={width > breakpoints.phone ? 'h1' : 'h2'}
+              align="center"
+              className={`px-8 ${titleClass}`}
+            >
               {title}
             </Heading>
-          )}
+          ) : null}
           <ProductTemplateTitleWrapper>
-            {subtitle && (
+            {subtitle ? (
               <Text as="p" size="lead" align="center" className="mt-4">
                 {subtitle}
               </Text>
-            )}
+            ) : null}
           </ProductTemplateTitleWrapper>
           {content}
         </ProductTemplateTitleInnerContainer>
