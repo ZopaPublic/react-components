@@ -82,7 +82,8 @@ export const Heading = (props: HeadingProps) => {
   if (!headingProps?.as) {
     console.warn('Heading component is missing the as prop');
   }
-  return <StyledHeading {...headingProps} theme={theme} />;
+
+  return <StyledHeading {...headingProps} theme={theme} className={props.className} />;
 };
 
 export default Heading;

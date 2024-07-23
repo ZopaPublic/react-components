@@ -218,6 +218,9 @@ export interface ProductTemplate {
     backgroundColor?: string;
     className?: string;
   };
+  sectionHeader?: {
+    className?: string;
+  };
 }
 
 export interface SpinnerTheme {
