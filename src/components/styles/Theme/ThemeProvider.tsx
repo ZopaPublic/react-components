@@ -139,7 +139,7 @@ export interface InputTheme {
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
-    customIconColor: string;
+    customIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -519,7 +519,6 @@ export const zopaTheme: AppTheme = {
       borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
       customIcon: false,
-      customIconColor: colors.black,
       options: {
         borderRadius: `0 0 8px 8px`,
         hover: {
