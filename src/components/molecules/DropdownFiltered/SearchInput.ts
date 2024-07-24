@@ -13,6 +13,7 @@ export const SearchInput = styled(InputText)<SearchInputProps & InputProps & { t
     ${({ isOpen }) =>
       isOpen &&
       css`
+        border: ${({ theme }) => theme.input.searchInput.border};
         box-shadow: ${({ theme }) => theme.input.searchInput.boxShadow};
         border-radius: ${({ theme }) => theme.input.searchInput.borderRadiusInput};
         border-color: ${({ theme }) => theme.input.searchInput.borderColor};
