@@ -108,7 +108,8 @@ export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
   iconWidth: string;
-  startIconPaddingLeft?: string;
+  startIconPaddingLeft: string;
+  endIconPaddingRight: string;
   padding: string;
   labelFontWeight: number;
   placeholderColor: string;
@@ -133,10 +134,12 @@ export interface InputTheme {
   iconColor: string;
   iconBackgroundColor: string;
   searchInput: {
+    border: string;
     boxShadow: string;
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
+    customIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -486,6 +489,7 @@ export const zopaTheme: AppTheme = {
     startIcon: <Icon variant={faPoundSign} />,
     iconWidth: '48px',
     startIconPaddingLeft: '60px',
+    endIconPaddingRight: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
@@ -510,6 +514,7 @@ export const zopaTheme: AppTheme = {
     iconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
+      border: '1px',
       boxShadow: `0 0 4px 0 ${colors.brand}`,
       borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
