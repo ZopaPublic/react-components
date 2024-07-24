@@ -109,7 +109,7 @@ export interface InputTheme {
   startIcon: React.ReactNode;
   iconWidth: string;
   startIconPaddingLeft: string;
-  startIconPaddingRight: string;
+  endIconPaddingRight: string;
   padding: string;
   labelFontWeight: number;
   placeholderColor: string;
@@ -489,7 +489,7 @@ export const zopaTheme: AppTheme = {
     startIcon: <Icon variant={faPoundSign} />,
     iconWidth: '48px',
     startIconPaddingLeft: '60px',
-    startIconPaddingRight: '60px',
+    endIconPaddingRight: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
