@@ -6,6 +6,8 @@ import RadioField from '../RadioField/RadioField';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import Fieldset from '../../atoms/Fieldset/Fieldset';
 import Legend from '../../atoms/Legend/Legend';
+import { useThemeContext } from '../../styles/Theme';
+import classNames from 'classnames';
 
 const RadioWrapper = styled.div`
   padding: 4px 0;
@@ -57,6 +59,8 @@ const RadioGroupField = ({
 
   const isControlled = !!value;
 
+  const theme = useThemeContext();
+
   const handleChange = (value: string) => () => {
     if (!disabled) {
       if (!isControlled) {
@@ -65,10 +69,12 @@ const RadioGroupField = ({
       onChange(value);
     }
   };
-
+  console.log('theme:', theme);
   return (
     <Fieldset className={className}>
-      {label && <Legend>{label}</Legend>}
+      {label && (
+        <Legend className={classNames(theme?.legend?.className, theme?.legend?.lineHeightClassName)}>{label}</Legend>
+      )}
       <FlexRow {...flexRowProps}>
         {items.map((item, index) => {
           const checked = isControlled ? value === item.value : innerValue === item.value;

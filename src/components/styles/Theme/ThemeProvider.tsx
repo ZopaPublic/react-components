@@ -104,6 +104,11 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface LegendTheme {
+  className?: string;
+  lineHeightClassName?: string;
+}
+
 export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
@@ -319,6 +324,7 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
   label: LabelTheme;
+  legend?: LegendTheme;
   input: InputTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
