@@ -71,6 +71,8 @@ export * from './components/organisms/Tabs';
 export * from './components/organisms/Carousel';
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
+export { ProductTemplate as ProductTemplateV2 } from './components/templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
+
 export { default as ErrorPageTemplate } from './components/templates/ErrorPages';
 // Layout
 export { default as FlexContainer } from './components/layout/FlexContainer/FlexContainer';
