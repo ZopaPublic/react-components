@@ -115,6 +115,7 @@ export interface InputTheme {
   iconWidth: string;
   startIconPaddingLeft?: string;
   padding: string;
+  LabelLineHeight?: string;
   labelFontWeight: number;
   placeholderColor: string;
   borderRadius: string;
