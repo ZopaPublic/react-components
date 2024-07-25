@@ -117,6 +117,7 @@ export interface InputTheme {
   padding: string;
   labelLineHeight?: string;
   labelFontWeight: number;
+  fontLineHeight?: string;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;

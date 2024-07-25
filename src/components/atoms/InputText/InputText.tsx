@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
-import { colors } from '../../../constants';
+import { colors, typography } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
 import { InputProps } from '../../types';
 import { useThemeContext, AppThemeProps } from '../../styles/Theme';
@@ -47,6 +47,8 @@ const Input = styled.input<InputThemeProps>`
   padding-right: ${({ endIcon }: InputThemeProps) => !!endIcon && '60px'};
   font-size: ${({ theme, fontSize = 'body' }: InputThemeProps) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }: InputThemeProps) => theme.typography.weights[fontWeight]};
+  line-height: ${({ theme, fontLineHeight = 'body' }: InputThemeProps) =>
+    theme.typography.lineHeight[fontLineHeight] || typography.sizes.lineHeight.body};
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
