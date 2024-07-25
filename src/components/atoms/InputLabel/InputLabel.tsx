@@ -19,7 +19,7 @@ const StyledInputLabel = styled.label<InputLabelProps & { theme: AppTheme }>`
   font-family: ${({ theme }) => theme.typography.primary};
   font-weight: ${({ theme }) => theme.input.labelFontWeight};
   font-size: ${typography.sizes.text.body};
-  line-height: ${({ theme }) => theme.input?.LabelLineHeight};
+  line-height: ${({ theme }) => theme.input?.labelLineHeight};
 `;
 
 // TODO: Styleguidist to be able to locate styled components. See #147.
