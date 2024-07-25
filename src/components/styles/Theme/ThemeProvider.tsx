@@ -14,6 +14,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
+import { buttonStyle } from '../../atoms/Button/Button';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -157,6 +158,11 @@ export interface InputTheme {
     };
     customIcon: boolean;
   };
+}
+
+export interface InputRangeTheme {
+  buttonStyle: any; //TODO: define type
+  borderRadius: string;
 }
 
 export interface LinkTheme {
@@ -323,6 +329,7 @@ export interface AppTheme {
   footer: FooterTheme;
   label: LabelTheme;
   input: InputTheme;
+  inputRange: InputRangeTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
@@ -536,6 +543,10 @@ export const zopaTheme: AppTheme = {
       },
       customIcon: false,
     },
+  },
+  inputRange: {
+    buttonStyle,
+    borderRadius: '50%',
   },
   link: {
     color: 'auto',
