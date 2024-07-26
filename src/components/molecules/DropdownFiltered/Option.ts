@@ -1,24 +1,25 @@
 import { colors, typography } from '../../../constants';
 import styled, { css } from 'styled-components';
-import { AppTheme } from '../../styles/Theme';
+import { AppThemeProps } from '../../styles/Theme';
 
 interface OptionProps extends React.HTMLAttributes<HTMLDivElement> {
   highLighted?: boolean;
   selected?: boolean;
 }
+interface OptionThemeProps extends AppThemeProps, OptionProps {}
 
-const Option = styled.div<OptionProps & { theme: AppTheme }>`
+const Option = styled.div<OptionThemeProps>`
   cursor: pointer;
   padding: 8px;
-  line-height: 32px;
-  font-family: ${({ theme }) => theme.typography.primary};
+  line-height: ${({ theme }: OptionThemeProps) => theme.typography.lineHeight.body ?? '32px'};
+  font-family: ${({ theme }: OptionThemeProps) => theme.typography.primary};
   font-size: ${typography.sizes.text.body};
-  font-weight: 600;
+  font-weight: ${({ theme }: OptionThemeProps) => theme.typography.weights.regular ?? '600'};
   color: ${colors.greyDarkest};
   ${({ selected, highLighted }) =>
     (selected || highLighted) &&
     css`
-      color: ${({ theme }) => theme.input.searchInput.options.hover.color};
+      color: ${({ theme }: OptionThemeProps) => theme.input.searchInput.options.hover.color};
       background-color: ${({ theme }) => theme.input.searchInput.options.hover.backgroundColor};
     `};
 `;

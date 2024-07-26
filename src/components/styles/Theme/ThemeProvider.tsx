@@ -104,6 +104,10 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface OptionTheme {
+  margin: string;
+}
+
 export interface LegendTheme {
   className?: string;
   lineHeightClassName?: string;
@@ -208,6 +212,7 @@ export interface NavbarTheme {
 export interface ProgressBarTheme {
   color: string;
 }
+
 export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
@@ -336,6 +341,7 @@ export interface AppTheme {
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
   radio: RadioTheme;
+  option?: OptionTheme;
 }
 
 export interface AppThemeProps {
