@@ -69,12 +69,12 @@ const RadioGroupField = ({
       onChange(value);
     }
   };
-  console.log('theme:', theme);
+
   return (
     <Fieldset className={className}>
-      {label && (
+      {label ? (
         <Legend className={classNames(theme?.legend?.className, theme?.legend?.lineHeightClassName)}>{label}</Legend>
-      )}
+      ) : null}
       <FlexRow {...flexRowProps}>
         {items.map((item, index) => {
           const checked = isControlled ? value === item.value : innerValue === item.value;

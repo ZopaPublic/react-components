@@ -5,7 +5,7 @@ import { useThemeContext } from '../../styles/Theme';
 
 interface LegendProps {
   className?: string;
-  children?: React.ReactNode; // Add children prop
+  children?: React.ReactNode;
 }
 
 const StyledLegend = styled.legend`
@@ -18,9 +18,8 @@ const StyledLegend = styled.legend`
 `;
 
 const Legend = ({ className, children }: LegendProps) => {
-  // Destructure props including children
   const theme = useThemeContext();
-  console.log('theme:', theme);
+
   return (
     <StyledLegend className={className} theme={theme}>
       {children}
