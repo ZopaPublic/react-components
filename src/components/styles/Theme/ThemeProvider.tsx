@@ -14,6 +14,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
+import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -117,7 +118,8 @@ export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
   iconWidth: string;
-  startIconPaddingLeft?: string;
+  startIconPaddingLeft: string;
+  endIconPaddingRight: string;
   padding: string;
   labelLineHeight?: string;
   labelFontWeight: number;
@@ -144,10 +146,12 @@ export interface InputTheme {
   iconColor: string;
   iconBackgroundColor: string;
   searchInput: {
+    border: string;
     boxShadow: string;
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
+    customIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -234,6 +238,8 @@ export interface ProductTemplate {
     className?: string;
   };
 }
+
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
@@ -340,6 +346,7 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
   option?: OptionTheme;
 }
@@ -500,6 +507,7 @@ export const zopaTheme: AppTheme = {
     startIcon: <Icon variant={faPoundSign} />,
     iconWidth: '48px',
     startIconPaddingLeft: '60px',
+    endIconPaddingRight: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
@@ -524,6 +532,7 @@ export const zopaTheme: AppTheme = {
     iconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
+      border: '1px',
       boxShadow: `0 0 4px 0 ${colors.brand}`,
       borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
