@@ -13,7 +13,7 @@ export {
   mobileNavbarHeight,
 } from './constants';
 export { default as GlobalStyles } from './components/styles/GlobalStyles';
-export { ThemeProvider } from './components/styles/Theme';
+export { ThemeProvider, zopaTheme } from './components/styles/Theme';
 // Atoms
 export { default as ScrollableArea } from './components/atoms/ScrollableArea/ScrollableArea';
 export { default as Alert } from './components/atoms/Alert/Alert';
@@ -71,7 +71,10 @@ export * from './components/organisms/Tabs';
 export * from './components/organisms/Carousel';
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
-export { ProductTemplate as ProductTemplateV2 } from './components/templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
+export {
+  ProductTemplate as ProductTemplateV2,
+  PreLabel,
+} from './components/templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export { default as ErrorPageTemplate } from './components/templates/ErrorPages';
 // Layout

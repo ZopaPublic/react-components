@@ -7,12 +7,16 @@ import FlexRow from '../../../layout/FlexRow/FlexRow';
 import { ReactElement } from 'react';
 import { navbarOpenHeight } from '../../../../constants';
 import styled from 'styled-components';
+import { useThemeContext } from '../../../styles/Theme';
+import { Text } from '../../../..';
 
 export interface ProductTemplateV2 {
-  backgroundColor: string;
-  header: {
-    backgroundColor: string;
-    height: string;
+  titleClassName: string;
+  subtitleClassName: string;
+  form: {
+    subheadingPostion: 'before' | 'after';
+    headingClassName: string;
+    subheadingClassName: string;
   };
 }
 type MaybeHeaderProps = {
@@ -66,4 +70,22 @@ function ProductTemplate({ header, children, contentWidth = 6 }: ProductTemplate
   );
 }
 
-export { ProductTemplate };
+type PreLabelProps = {
+  title: string;
+  subtitle: string;
+};
+
+const PreLabel = ({ title, subtitle }: PreLabelProps) => {
+  const theme = useThemeContext();
+  return (
+    <>
+      <Text size="body" className={`mb-2 ${theme?.productTemplateV2?.form.headingClassName}`} as="p">
+        {title}
+      </Text>
+      <Text size="small" className={`mb-4 ${theme?.productTemplateV2?.form.subheadingClassName}`}>
+        {subtitle}
+      </Text>
+    </>
+  );
+};
+export { ProductTemplate, PreLabel };
