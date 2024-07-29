@@ -251,7 +251,8 @@ export interface SpinnerTheme {
   };
 }
 
-export interface TypographyTheme {
+export interface TypographyTheme<Font = any> {
+  font?: Font;
   primary: string;
   text: {
     color: string;
