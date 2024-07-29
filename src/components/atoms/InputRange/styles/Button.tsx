@@ -17,7 +17,7 @@ const StyledButton = styled.button<InputRangeThemeProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: ${({ theme }: InputRangeThemeProps) => theme.inputRange.borderRadius};
+  border-radius: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.borderRadius};
   width: 32px;
   height: 32px;
   padding: 0;
