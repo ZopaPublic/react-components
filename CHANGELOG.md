@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.61.0
+
+### Minor Changes
+
+- 4296890: Fonts alignment
+
 ## 5.60.1
 
 ### Patch Changes
