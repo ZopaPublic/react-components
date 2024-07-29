@@ -11,10 +11,10 @@ interface OptionThemeProps extends AppThemeProps, OptionProps {}
 const Option = styled.div<OptionThemeProps>`
   cursor: pointer;
   padding: 8px;
-  line-height: ${({ theme }: OptionThemeProps) => theme.typography.lineHeight.body ?? '32px'};
+  line-height: ${({ theme }: OptionThemeProps) => theme.typography.lineHeight.body};
   font-family: ${({ theme }: OptionThemeProps) => theme.typography.primary};
   font-size: ${typography.sizes.text.body};
-  font-weight: ${({ theme }: OptionThemeProps) => theme.typography.weights.regular ?? '600'};
+  font-weight: ${({ theme }: OptionThemeProps) => theme.typography.weights.regular};
   color: ${colors.greyDarkest};
   ${({ selected, highLighted }) =>
     (selected || highLighted) &&
