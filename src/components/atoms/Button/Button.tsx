@@ -133,7 +133,6 @@ const StyledWrapper = styled(ButtonWrapper)`
 const Button = ({ children, loading, styling = 'primary', disabled, ...rest }: ButtonProps) => {
   const theme = useThemeContext();
   const isLoading = styling !== 'link' ? loading : undefined;
-  console.log('buttonStyle', buttonStyle);
   return (
     <StyledWrapper styling={styling} loading={isLoading} disabled={isLoading || disabled} {...rest} theme={theme}>
       {isLoading && theme.spinner.customSpinner ? (

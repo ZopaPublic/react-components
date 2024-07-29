@@ -173,8 +173,21 @@ export interface InputTheme {
 }
 
 export interface InputRangeTheme {
-  buttonStyle: any; //TODO: define type
-  borderRadius: string;
+  button: {
+    buttonStyle: any;
+    borderRadius: string;
+  };
+  slider: {
+    lowerColor: string;
+    upperColor: string;
+  };
+  thumb: {
+    thumbDiameterMobile: string;
+    thumbDiameter: string;
+    thumbIcon: boolean;
+    thumbColor: string;
+    marginTop: number;
+  };
 }
 
 export interface LinkTheme {
@@ -567,8 +580,21 @@ export const zopaTheme: AppTheme = {
     },
   },
   inputRange: {
-    buttonStyle,
-    borderRadius: '50%',
+    button: {
+      buttonStyle,
+      borderRadius: '50%',
+    },
+    slider: {
+      lowerColor: colors.actionPlain,
+      upperColor: colors.greyLighter,
+    },
+    thumb: {
+      thumbDiameterMobile: '30px',
+      thumbDiameter: '50px',
+      thumbIcon: true,
+      thumbColor: colors.actionPlain,
+      marginTop: 0.5,
+    },
   },
   link: {
     color: 'auto',

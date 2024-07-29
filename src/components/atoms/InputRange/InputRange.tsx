@@ -2,6 +2,7 @@ import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 
 import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { useThemeContext } from '../../styles/Theme';
 
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
@@ -33,6 +34,8 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
       console.warn('Id is a required prop of the inputRange component');
     }
 
+    const theme = useThemeContext();
+
     return (
       <Wrapper>
         {controls && (
@@ -52,6 +55,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
           type="range"
           title="range"
           ref={ref}
+          theme={theme}
         />
         {controls && (
           <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
