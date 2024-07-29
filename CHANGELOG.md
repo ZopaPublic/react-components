@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.60.1
+
+### Patch Changes
+
+- 936e6d4: update dropdown optionv2
+
 ## 5.60.0
 
 ### Minor Changes
