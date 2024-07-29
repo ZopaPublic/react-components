@@ -105,6 +105,15 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface OptionTheme {
+  margin: string;
+}
+
+export interface LegendTheme {
+  className?: string;
+  lineHeightClassName?: string;
+}
+
 export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
@@ -112,7 +121,9 @@ export interface InputTheme {
   startIconPaddingLeft: string;
   endIconPaddingRight: string;
   padding: string;
+  labelLineHeight?: string;
   labelFontWeight: number;
+  fontLineHeight?: string;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;
@@ -205,6 +216,7 @@ export interface NavbarTheme {
 export interface ProgressBarTheme {
   color: string;
 }
+
 export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
@@ -220,6 +232,10 @@ export interface ScrollableAreaTheme {
 export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
+    className?: string;
+  };
+  sectionHeader?: {
+    className?: string;
   };
 }
 
@@ -282,14 +298,10 @@ export interface TypographyTheme<Font = any> {
   };
   weights: {
     regular: number;
-    semiBold: number;
+    medium: number;
     bold: number;
+    semiBold: number;
     extraBold: number;
-
-    // Extra weights to align with partner naming conventions
-    // to discuss with the design/dev team
-    medium?: number;
-    ultraBold?: number;
   };
 }
 
@@ -326,6 +338,7 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
   label: LabelTheme;
+  legend?: LegendTheme;
   input: InputTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
@@ -336,6 +349,7 @@ export interface AppTheme {
   productTemplate?: ProductTemplate;
   productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
+  option?: OptionTheme;
 }
 
 export interface AppThemeProps {
@@ -633,6 +647,7 @@ export const zopaTheme: AppTheme = {
     },
     weights: {
       regular: 400,
+      medium: 500,
       semiBold: 600,
       bold: 700,
       extraBold: 800,
