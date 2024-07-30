@@ -242,6 +242,8 @@ export interface ProductTemplate {
   };
 }
 
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
+
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
   customSpinner?: {
