@@ -580,6 +580,18 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             class="mb-4"
           >
             <a
+              href="https://www.datocms-assets.com/23873/1721888769-zopa-tax-strategy-2024_final.pdf"
+              rel="noreferrer"
+              style="text-decoration: none;"
+              target="_blank"
+            >
+              Tax Strategy
+            </a>
+          </li>
+          <li
+            class="mb-4"
+          >
+            <a
               class="c6 c7"
               color="#3B46C4"
               href="https://www.zopa.com/about/awards"
