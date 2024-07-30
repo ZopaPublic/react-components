@@ -7,9 +7,10 @@ import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
 interface InputRangeThemeProps extends AppThemeProps {}
 
 const ButtonWrapper = styled.div`
-  padding: 12px;
+  padding: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.paddingMobile};
+
   @media (min-width: ${grid.breakpoints.m}px) {
-    padding: 16px;
+    padding: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.padding};
   }
 `;
 
@@ -21,6 +22,9 @@ const StyledButton = styled.button<InputRangeThemeProps>`
   width: 32px;
   height: 32px;
   padding: 0;
+
+  ${({ theme }) => theme.inputRange?.button.buttonStyle}
+
 
   @media (min-width: ${grid.breakpoints.m}px) {
     width: 50px;

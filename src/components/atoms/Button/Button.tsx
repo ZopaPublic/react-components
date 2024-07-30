@@ -5,7 +5,7 @@ import { AppTheme, useThemeContext } from '../../styles/Theme';
 import { colors, spacing, typography } from '../../../constants';
 import CustomSpinner from '../Spinner/CustomSpinner/CustomSpinner';
 
-export type Styling = 'primary' | 'secondary' | 'link';
+export type Styling = 'primary' | 'secondary' | 'icon' | 'link';
 
 type BaseButtonProps = {
   styling?: Styling;
@@ -27,6 +27,15 @@ const colorMap = {
     },
   },
   secondary: {
+    text: colors.actionDark,
+    bg: colors.actionLight,
+    hover: {
+      bg: '#EEEFFB',
+      text: colors.actionDark,
+      border: '1px solid #EEEFFB',
+    },
+  },
+  icon: {
     text: colors.actionDark,
     bg: colors.actionLight,
     hover: {

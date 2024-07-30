@@ -176,14 +176,16 @@ export interface InputRangeTheme {
   button: {
     buttonStyle: any;
     borderRadius: string;
+    paddingMobile: string;
+    padding: string;
   };
   slider: {
     lowerColor: string;
     upperColor: string;
   };
   thumb: {
-    thumbDiameterMobile: string;
-    thumbDiameter: string;
+    thumbDiameterMobile: number;
+    thumbDiameter: number;
     thumbIcon: boolean;
     thumbColor: string;
     marginTop: number;
@@ -583,14 +585,16 @@ export const zopaTheme: AppTheme = {
     button: {
       buttonStyle,
       borderRadius: '50%',
+      paddingMobile: '12px',
+      padding: '16px',
     },
     slider: {
       lowerColor: colors.actionPlain,
       upperColor: colors.greyLighter,
     },
     thumb: {
-      thumbDiameterMobile: '30px',
-      thumbDiameter: '50px',
+      thumbDiameterMobile: 30,
+      thumbDiameter: 50,
       thumbIcon: true,
       thumbColor: colors.actionPlain,
       marginTop: 0.5,

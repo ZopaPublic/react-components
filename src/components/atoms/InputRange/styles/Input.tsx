@@ -9,8 +9,6 @@ import { AppThemeProps } from '../../../styles/Theme';
 interface InputRangeThemeProps extends AppThemeProps {}
 
 const trackHeight = 8;
-const thumbDiameter = 50;
-const thumbDiameterMobile = 30;
 
 const TrackStyles = css`
   box-sizing: border-box;
@@ -24,13 +22,13 @@ const ThumbStyles = css<InputRangeThemeProps>`
   box-sizing: border-box;
   border: none;
   border-radius: 50%;
-  width: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbDiameterMobile};
-  height: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbDiameterMobile};
+  width: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
+  height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
   background: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbColor};
 
   @media (min-width: ${grid.breakpoints.m}px) {
-    width: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbDiameter};
-    height: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbDiameter};
+    width: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
+    height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
     background: ${({ theme }: InputRangeThemeProps) =>
       theme.inputRange?.thumb.thumbIcon
         ? `url(${arrowsAltH}) no-repeat ${colors.actionPlain}`
@@ -49,12 +47,12 @@ export const Input = styled.input<
 >`
   -webkit-appearance: none;
   width: 100%;
-  height: ${thumbDiameterMobile}px;
+  height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
   cursor: pointer;
   background: transparent;
 
   @media (min-width: ${grid.breakpoints.m}px) {
-    height: ${thumbDiameter}px;
+  height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
   }
 
   &::-webkit-slider-runnable-track {
@@ -66,13 +64,13 @@ export const Input = styled.input<
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-      margin-top: ${(trackHeight - thumbDiameterMobile) * 0.5}px;
+    margin-top: ${({ theme }) => (trackHeight - theme.inputRange?.thumb.thumbDiameterMobile) * 0.5}px;
 
     ${ThumbStyles}
 
     @media (min-width: ${grid.breakpoints.m}px) {
       margin-top: ${({ theme }: InputRangeThemeProps) =>
-        `(${trackHeight - thumbDiameterMobile}) * ${theme.inputRange?.thumb.marginTop}px`};
+        `(${trackHeight - theme.inputRange?.thumb.thumbDiameterMobile}) * ${theme.inputRange?.thumb.marginTop}px`};
   }
   }
   &::-moz-range-thumb {
