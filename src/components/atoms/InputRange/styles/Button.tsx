@@ -23,7 +23,7 @@ const StyledButton = styled.button<InputRangeThemeProps>`
   height: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.mobileHeight};
   padding: 0;
 
-  ${({ theme }) => theme.inputRange?.button.buttonStyle}
+  ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.buttonStyle}
 
 
   @media (min-width: ${grid.breakpoints.m}px) {

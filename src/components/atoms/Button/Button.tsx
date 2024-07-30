@@ -92,7 +92,7 @@ export const buttonStyle = css<BaseButtonProps>`
   }}
 
   ${({ disabled, styling = 'primary', theme }) => {
-    const { text: hoverText, bg: hoverBg, border: hoverBorder } = theme?.button?.[styling].hover || {};
+    const { text: hoverText, bg: hoverBg, border: hoverBorder } = theme?.button?.[styling]?.hover || {};
     const { text: disabledText, bg: disabledBg, border: disabledBorder } = theme?.button?.[styling]?.disabled || {};
     const { text: activeText, bg: activeBg, border: activeBorder, opacity: activeOpacity } =
       theme?.button?.[styling]?.active || {};

@@ -42,7 +42,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
     }
 
     const theme = useThemeContext();
-
+    console.log('theme', theme);
     return (
       <StyledWrapper>
         {controls ? (
