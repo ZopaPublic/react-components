@@ -178,6 +178,10 @@ export interface InputRangeTheme {
     borderRadius: string;
     paddingMobile: string;
     padding: string;
+    width: string;
+    height: string;
+    mobileWidth: string;
+    mobileHeight: string;
   };
   slider: {
     lowerColor: string;
@@ -587,6 +591,10 @@ export const zopaTheme: AppTheme = {
       borderRadius: '50%',
       paddingMobile: '12px',
       padding: '16px',
+      width: '50px',
+      height: '50px',
+      mobileWidth: '32px',
+      mobileHeight: '32px',
     },
     slider: {
       lowerColor: colors.actionPlain,

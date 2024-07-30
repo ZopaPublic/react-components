@@ -19,16 +19,16 @@ const StyledButton = styled.button<InputRangeThemeProps>`
   justify-content: center;
   align-items: center;
   border-radius: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.borderRadius};
-  width: 32px;
-  height: 32px;
+  width: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.mobileWidth};
+  height: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.mobileHeight};
   padding: 0;
 
   ${({ theme }) => theme.inputRange?.button.buttonStyle}
 
 
   @media (min-width: ${grid.breakpoints.m}px) {
-    width: 50px;
-    height: 50px;
+    width: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.width};
+    height: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.button.height};
   }
 `;
 
