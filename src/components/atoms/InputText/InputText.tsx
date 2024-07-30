@@ -47,6 +47,8 @@ const Input = styled.input<InputThemeProps>`
   padding-right: ${({ endIcon, theme }: InputThemeProps) => endIcon && theme.input.endIconPaddingRight};
   font-size: ${({ theme, fontSize = 'body' }: InputThemeProps) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }: InputThemeProps) => theme.typography.weights[fontWeight]};
+  line-height: ${({ theme }: InputThemeProps) => theme.input.fontLineHeight};
+
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;

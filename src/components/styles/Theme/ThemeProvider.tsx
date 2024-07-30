@@ -15,6 +15,7 @@ import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
 import { buttonStyle } from '../../atoms/Button/Button';
+import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -105,6 +106,15 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface OptionTheme {
+  margin: string;
+}
+
+export interface LegendTheme {
+  className?: string;
+  lineHeightClassName?: string;
+}
+
 export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
@@ -112,7 +122,9 @@ export interface InputTheme {
   startIconPaddingLeft: string;
   endIconPaddingRight: string;
   padding: string;
+  labelLineHeight?: string;
   labelFontWeight: number;
+  fontLineHeight?: string;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;
@@ -210,6 +222,7 @@ export interface NavbarTheme {
 export interface ProgressBarTheme {
   color: string;
 }
+
 export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
@@ -225,8 +238,17 @@ export interface ScrollableAreaTheme {
 export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
+    className?: string;
+  };
+  sectionHeader?: {
+    className?: string;
+  };
+  subHeading?: {
+    className?: string;
   };
 }
+
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
@@ -238,7 +260,8 @@ export interface SpinnerTheme {
   };
 }
 
-export interface TypographyTheme {
+export interface TypographyTheme<Font = any> {
+  font?: Font;
   primary: string;
   text: {
     color: string;
@@ -284,14 +307,10 @@ export interface TypographyTheme {
   };
   weights: {
     regular: number;
-    semiBold: number;
+    medium: number;
     bold: number;
+    semiBold: number;
     extraBold: number;
-
-    // Extra weights to align with partner naming conventions
-    // to discuss with the design/dev team
-    medium?: number;
-    ultraBold?: number;
   };
 }
 
@@ -328,6 +347,7 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
   label: LabelTheme;
+  legend?: LegendTheme;
   input: InputTheme;
   inputRange: InputRangeTheme;
   link: LinkTheme;
@@ -337,7 +357,9 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
+  option?: OptionTheme;
 }
 
 export interface AppThemeProps {
@@ -639,6 +661,7 @@ export const zopaTheme: AppTheme = {
     },
     weights: {
       regular: 400,
+      medium: 500,
       semiBold: 600,
       bold: 700,
       extraBold: 800,

@@ -36,6 +36,8 @@ export interface InputProps extends InputStatus, InputHTMLAttributes<HTMLInputEl
   fontWeight?: keyof AppTheme['typography']['weights'];
 
   fontSize?: keyof AppTheme['typography']['text']['sizes'];
+
+  fontLineHeight?: keyof AppTheme['typography']['lineHeight'];
 }
 
 export interface SelectProps extends InputStatus, InputHTMLAttributes<HTMLSelectElement> {
