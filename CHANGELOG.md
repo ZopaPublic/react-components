@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.62.0
+
+### Minor Changes
+
+- c7ae8ac: Fonts
+
 ## 5.61.0
 
 ### Minor Changes
