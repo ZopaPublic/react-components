@@ -2,7 +2,7 @@ import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 
 import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { useThemeContext } from '../../styles/Theme';
+import { AppThemeProps, useThemeContext } from '../../styles/Theme';
 import styled from 'styled-components';
 
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
@@ -14,8 +14,11 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   step?: number;
   controls?: boolean;
 }
-const StyledWrapper = styled(Wrapper)`
-  justify-content: space-between;
+
+interface InputRangeThemeProps extends AppThemeProps {}
+
+const StyledWrapper = styled(Wrapper)<InputRangeThemeProps>`
+  justify-content: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.justifyContent};
 `;
 
 const InputRange = forwardRef<HTMLInputElement, InputRange>(

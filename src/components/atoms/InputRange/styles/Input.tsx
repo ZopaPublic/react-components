@@ -64,7 +64,8 @@ export const Input = styled.input<
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    margin-top: ${({ theme }) => (trackHeight - theme.inputRange?.thumb.thumbDiameterMobile) * 0.5}px;
+    margin-top: ${({ theme }: InputRangeThemeProps) =>
+      (trackHeight - theme.inputRange?.thumb.thumbDiameterMobile) * 0.5}px;
 
     ${ThumbStyles}
 
