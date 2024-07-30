@@ -44,9 +44,11 @@ const Input = styled.input<InputThemeProps>`
   padding: ${({ theme }: InputThemeProps) => theme.input.padding};
   padding-left: ${({ startIcon, theme }: InputThemeProps) =>
     startIcon && theme.input.startIcon ? theme.input.startIconPaddingLeft : null};
-  padding-right: ${({ endIcon }: InputThemeProps) => !!endIcon && '60px'};
+  padding-right: ${({ endIcon, theme }: InputThemeProps) => endIcon && theme.input.endIconPaddingRight};
   font-size: ${({ theme, fontSize = 'body' }: InputThemeProps) => theme.typography.text.sizes[fontSize]};
   font-weight: ${({ theme, fontWeight = 'regular' }: InputThemeProps) => theme.typography.weights[fontWeight]};
+  line-height: ${({ theme }: InputThemeProps) => theme.input.fontLineHeight};
+
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
