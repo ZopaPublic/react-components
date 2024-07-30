@@ -3,6 +3,7 @@ import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useThemeContext } from '../../styles/Theme';
+import styled from 'styled-components';
 
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
@@ -13,6 +14,9 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   step?: number;
   controls?: boolean;
 }
+const StyledWrapper = styled(Wrapper)`
+  justify-content: space-between;
+`;
 
 const InputRange = forwardRef<HTMLInputElement, InputRange>(
   ({ min = 0, max = 100, step = 1, controls = false, value, onChange, id, ...otherProps }, ref) => {
@@ -37,12 +41,12 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
     const theme = useThemeContext();
 
     return (
-      <Wrapper>
-        {controls && (
+      <StyledWrapper>
+        {controls ? (
           <Button title="decrement" styling="icon" disabled={value <= min} onClick={decrement}>
             <Icon variant={faMinus} width="12px" height="12px" />
           </Button>
-        )}
+        ) : null}
         <Input
           {...otherProps}
           role="slider"
@@ -57,12 +61,12 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
           ref={ref}
           theme={theme}
         />
-        {controls && (
+        {controls ? (
           <Button title="increment" styling="icon" disabled={value >= max} onClick={increment}>
             <Icon variant={faPlus} width="12px" height="12px" />
           </Button>
-        )}
-      </Wrapper>
+        ) : null}
+      </StyledWrapper>
     );
   },
 );
