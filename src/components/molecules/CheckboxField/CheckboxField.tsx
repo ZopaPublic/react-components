@@ -4,6 +4,7 @@ import { colors, typography } from '../../../constants';
 import tealCheckMark from '../../../content/images/teal-check-mark.svg';
 import greenCheckMark from '../../../content/images/green-check-mark.svg';
 import unbrandedTick from '../../../content/images/unbranded-tick.svg';
+import unbrandedTickWhite from '../../../content/images/unbranded-tick-white.svg';
 import ErrorMessage from '../../atoms/ErrorMessage/ErrorMessage';
 import InputLabel from '../../atoms/InputLabel/InputLabel';
 import SizedContainer from '../../layout/SizedContainer/SizedContainer';
@@ -35,6 +36,24 @@ const getTickIcon = ({ isValid, theme }: Pick<InputProps, 'disabled' | 'isValid'
     return greenCheckMark;
   }
   return tealCheckMark;
+};
+
+const getCheckboxBorderColorByStatus = ({
+  hasError,
+  isValid,
+  disabled,
+  theme,
+}: Pick<InputProps, 'disabled' | 'isValid' | 'hasError'> & AppThemeProps) => {
+  if (hasError) {
+    return theme.input.checkBox.borderColorByStatus.error;
+  }
+  if (isValid) {
+    return theme.input.checkBox.borderColorByStatus.valid;
+  }
+  if (disabled) {
+    return theme.input.checkBox.borderColorByStatus.disabled;
+  }
+  return theme.input.checkBox.borderColorByStatus.default;
 };
 
 const zoomOut = keyframes`
@@ -74,7 +93,7 @@ const Label = styled(InputLabel)<Pick<InputProps, 'disabled' | 'hasError' | 'isV
     transition-property: border, box-shadow;
     transition: 0.2s ease-in-out;
     box-shadow: 0 0 4px 0 transparent;
-    border: 1px ${getBorderColorByStatus} solid;
+    border: 1px ${getCheckboxBorderColorByStatus} solid;
     display: block;
   }
   &:after {
@@ -100,24 +119,31 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
 
   &:hover:not(:disabled) + label,
   &:focus + label {
-    border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
-    box-shadow: ${({ theme }) => `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
+    border-color: ${({ theme, hasError }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
+    box-shadow: ${({ hasError, theme }) =>
+      hasError
+        ? `${theme.input.hover.boxShadow} ${theme.input.hover.error}`
+        : `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
     &:before {
-      border-color: ${({ theme }) => theme.input.checkBox.defaultColor};
+      border-color: ${({ theme }) => theme.input.hover.border};
       box-shadow: ${({ theme }) => `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
     }
+    background-color: ${({ theme }) => theme.input.hover.backgroundColor};
   }
   &:hover:checked:not(:disabled) + label,
   &:focus:checked + label {
+    &:before {
+      background-color: ${({ theme }) => theme.input.checkBox.checkboxBackgroundColor.hover};
+    }
     &:after {
       background-image: ${({ theme }) =>
-        theme.input.checkBox.customIcon ? `url(${unbrandedTick})` : `url(${tealCheckMark})`};
+        theme.input.checkBox.customIcon ? `url(${unbrandedTickWhite})` : `url(${tealCheckMark})`};
     }
   }
   &:disabled + label {
     cursor: not-allowed;
-    color: ${colors.grey};
-    background-color: ${colors.greyLightest};
+    color: ${({ theme }) => theme.input.disabled.color};
+    background-color: ${({ theme }) => theme.input.disabled.backgroundColor};
   }
   &:disabled:not(:checked) + label {
     border-color: ${colors.greyLight};
@@ -125,11 +151,17 @@ const Input = styled.input<InputProps & GroupingControlsProps>`
       border-color: ${colors.greyLight};
     }
   }
+  &:disabled {
+    &:before {
+      background-color: ${({ theme }) => theme.input.checkBox.checkboxBackgroundColor.disabled};
+    }
+  }
   &:checked + label {
     border-color: ${getCheckedColor};
     background-color: ${({ theme }) => theme.input.checkBox.label.backgroundColor};
-    box-shadow: none;
+    box-shadow: ${({ theme }) => `${theme.input.checkBox.checked.boxShadow} ${theme.input.hover.border}`};
     &:before {
+      background-color: ${({ theme }) => theme.input.checkBox.checkboxBackgroundColor.checked};
       border-color: ${getCheckedColor};
       box-shadow: none;
     }
