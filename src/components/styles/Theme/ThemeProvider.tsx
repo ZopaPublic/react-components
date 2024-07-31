@@ -348,6 +348,10 @@ export interface RadioTheme {
   };
 }
 
+export interface FlexContainerTheme {
+  className: string;
+}
+
 export interface AppTheme {
   alert: AlertTheme;
   button: ButtonsTheme;
@@ -366,6 +370,7 @@ export interface AppTheme {
   productTemplate?: ProductTemplate;
   productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
+  flexContainer?: FlexContainerTheme;
   option?: OptionTheme;
 }
 
