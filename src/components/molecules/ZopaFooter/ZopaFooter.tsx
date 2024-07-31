@@ -186,14 +186,13 @@ const ZopaFooter = ({
                   {renderLink({ href: `${baseUrl}/investor-information`, children: 'Annual Reports and Pillar 3' })}
                 </li>
                 <li className="mb-4">
-                  <a
-                    style={{ textDecoration: 'none' }}
+                  <StyledLink
                     target="_blank"
                     rel="noreferrer"
                     href="https://www.datocms-assets.com/23873/1721888769-zopa-tax-strategy-2024_final.pdf"
                   >
                     Tax Strategy
-                  </a>
+                  </StyledLink>
                 </li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about/awards`, children: 'Awards' })}</li>
                 <li className="mb-4">{renderLink({ href: `${baseUrl}/about/careers`, children: 'Careers' })}</li>
