@@ -14,6 +14,7 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
+import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -104,13 +105,25 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface OptionTheme {
+  margin: string;
+}
+
+export interface LegendTheme {
+  className?: string;
+  lineHeightClassName?: string;
+}
+
 export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
   iconWidth: string;
-  startIconPaddingLeft?: string;
+  startIconPaddingLeft: string;
+  endIconPaddingRight: string;
   padding: string;
+  labelLineHeight?: string;
   labelFontWeight: number;
+  fontLineHeight?: string;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;
@@ -133,10 +146,12 @@ export interface InputTheme {
   iconColor: string;
   iconBackgroundColor: string;
   searchInput: {
+    border: string;
     boxShadow: string;
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
+    customIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -201,6 +216,7 @@ export interface NavbarTheme {
 export interface ProgressBarTheme {
   color: string;
 }
+
 export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
@@ -216,8 +232,17 @@ export interface ScrollableAreaTheme {
 export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
+    className?: string;
+  };
+  sectionHeader?: {
+    className?: string;
+  };
+  subHeading?: {
+    className?: string;
   };
 }
+
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
@@ -229,7 +254,8 @@ export interface SpinnerTheme {
   };
 }
 
-export interface TypographyTheme {
+export interface TypographyTheme<Font = any> {
+  font?: Font;
   primary: string;
   text: {
     color: string;
@@ -275,14 +301,10 @@ export interface TypographyTheme {
   };
   weights: {
     regular: number;
-    semiBold: number;
+    medium: number;
     bold: number;
+    semiBold: number;
     extraBold: number;
-
-    // Extra weights to align with partner naming conventions
-    // to discuss with the design/dev team
-    medium?: number;
-    ultraBold?: number;
   };
 }
 
@@ -319,6 +341,7 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
   label: LabelTheme;
+  legend?: LegendTheme;
   input: InputTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
@@ -327,7 +350,9 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
+  option?: OptionTheme;
 }
 
 export interface AppThemeProps {
@@ -486,6 +511,7 @@ export const zopaTheme: AppTheme = {
     startIcon: <Icon variant={faPoundSign} />,
     iconWidth: '48px',
     startIconPaddingLeft: '60px',
+    endIconPaddingRight: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
@@ -510,6 +536,7 @@ export const zopaTheme: AppTheme = {
     iconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
+      border: '1px',
       boxShadow: `0 0 4px 0 ${colors.brand}`,
       borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
@@ -623,6 +650,7 @@ export const zopaTheme: AppTheme = {
     },
     weights: {
       regular: 400,
+      medium: 500,
       semiBold: 600,
       bold: 700,
       extraBold: 800,
