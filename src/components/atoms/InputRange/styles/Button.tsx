@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import classnames from 'classnames';
 import { grid } from '../../../../constants';
-import { ButtonProps } from '../../Button/Button';
+import { ButtonProps, buttonStyle } from '../../Button/Button';
 import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
 
 interface InputRangeThemeProps extends AppThemeProps {}
@@ -14,7 +15,7 @@ const ButtonWrapper = styled.div<InputRangeThemeProps>`
 `;
 
 const StyledButton = styled.button<InputRangeThemeProps>`
-  ${({ theme }) => theme.inputRange?.button.buttonStyle};
+  ${buttonStyle};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +34,7 @@ export const Button = (props: ButtonProps) => {
   const theme = useThemeContext();
   return (
     <ButtonWrapper>
-      <StyledButton {...props} theme={theme} />
+      <StyledButton {...props} className={classnames(theme.inputRange?.button?.className)} theme={theme} />
     </ButtonWrapper>
   );
 };

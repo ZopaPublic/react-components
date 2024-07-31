@@ -175,7 +175,7 @@ export interface InputTheme {
 export interface InputRangeTheme {
   justifyContent: string;
   button: {
-    // buttonStyle: any; //TODO: type this
+    className?: any; //TODO: type this
     borderRadius: string;
     paddingMobile: string;
     padding: string;
@@ -594,7 +594,6 @@ export const zopaTheme: AppTheme = {
   inputRange: {
     justifyContent: 'flex-start',
     button: {
-      // buttonStyle, //TODO: type this
       borderRadius: '50%',
       paddingMobile: '12px',
       padding: '16px',

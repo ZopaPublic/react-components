@@ -1,8 +1,9 @@
 import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 'react';
+import styled from 'styled-components';
+import classnames from 'classnames';
 import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
 import { AppThemeProps, useThemeContext } from '../../styles/Theme';
 
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
@@ -47,7 +48,13 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
       <StyledWrapper>
         {controls ? (
           // styling="icon"
-          <Button title="decrement" styling="secondary" disabled={value <= min} onClick={decrement}>
+          <Button
+            title="decrement"
+            styling="secondary"
+            disabled={value <= min}
+            onClick={decrement}
+            className={classnames(theme.inputRange?.button?.className)}
+          >
             <Icon variant={faMinus} width="12px" height="12px" />
           </Button>
         ) : null}
@@ -66,7 +73,13 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
           theme={theme}
         />
         {controls ? (
-          <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
+          <Button
+            title="increment"
+            styling="secondary"
+            disabled={value >= max}
+            onClick={increment}
+            className={classnames(theme.inputRange?.button?.className)}
+          >
             <Icon variant={faPlus} width="12px" height="12px" />
           </Button>
         ) : null}
