@@ -1,6 +1,5 @@
 // THEME ME ProductTemplate component
 import * as React from 'react';
-import FlexCol from '../../../layout/FlexCol/FlexCol';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
 
@@ -59,11 +58,9 @@ function ProductTemplate({ header, children, contentWidth = 6 }: ProductTemplate
       <HeaderContainer className="product-template-header-container">
         <MaybeHeader {...header} />
       </HeaderContainer>
-      <FlexContainer data-automation="ZA.ProductTemplate" gutter={0}>
-        <FlexRow className="product-template-row" gutter={0} justify="center">
-          <FlexCol m={10} xl={contentWidth}>
-            {children}
-          </FlexCol>
+      <FlexContainer data-automation="ZA.ProductTemplateV2.Container" gutter={0}>
+        <FlexRow className="product-template-row px-6 m:px-0" gutter={0} justify="center">
+          <div>{children}</div>
         </FlexRow>
       </FlexContainer>
     </Content>
