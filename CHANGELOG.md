@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.64.0
+
+### Minor Changes
+
+- 7655c09: Add the ability to use flexContainer to target styles
+
 ## 5.63.1
 
 ### Patch Changes
