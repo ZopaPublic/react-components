@@ -1,19 +1,40 @@
 {
+  "name": "@zopauk/react-components",
+  "sideEffects": false,
+  "description": "Shared react styled components for all the Zopa projects.",
+  "version": "5.64.0",
+  "license": "MIT",
   "author": "Zopa Ltd <frontend-opensource@zopa.com> (https://zopa.com)",
-  "browserslist": [
-    "cover 95% in GB",
-    "not ie <=11",
-    "not safari <11",
-    "not ios <11",
-    "not dead"
+  "main": "cjs/src/index.js",
+  "module": "es/src/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "/es",
+    "/cjs",
+    "/types",
+    "/src"
   ],
-  "bugs": {
-    "url": "https://github.com/zopaUK/react-components/issues"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+  "scripts": {
+    "commit": "git-cz",
+    "dev": "NODE_ENV=development styleguidist server",
+    "dev:code": "concurrently --kill-others-on-fail \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
+    "build": "NODE_ENV=production styleguidist build",
+    "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
+    "compile:code": "rollup --config etc/rollup/config.mjs",
+    "compile:code:dev": "pnpm compile:code --watch",
+    "compile:types:dev": "pnpm compile:types --watch",
+    "sync": "concurrently pnpm:compile:code:dev pnpm:compile:types:dev",
+    "compile:clean": "rm -rf es cjs types",
+    "compile:types": "tsc --p ./tsconfig.types.json --incremental false",
+    "dev:zrc": "concurrently pnpm:compile:code:dev pnpm:compile:types:dev",
+    "test": "react-scripts test",
+    "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
+    "format:fix": "pnpm format --write",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "pnpm lint --fix",
+    "typecheck": "tsc --noEmit",
+    "release": "changeset publish",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
@@ -40,7 +61,14 @@
     "tippy.js": "^6.2.7",
     "util-deprecate": "^1.0.2"
   },
-  "description": "Shared react styled components for all the Zopa projects.",
+  "peerDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@types/styled-components": ">=5.1.25",
+    "react": ">=16.8.1",
+    "react-dom": ">=16.8.1",
+    "styled-components": ">=4.4.0",
+    "typescript": ">=3.x"
+  },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "17.3.0",
@@ -108,65 +136,37 @@
     "webpack": "^5.73.0",
     "webpack-dev-server": "^4.9.1"
   },
-  "files": [
-    "/es",
-    "/cjs",
-    "/types",
-    "/src"
+  "browserslist": [
+    "cover 95% in GB",
+    "not ie <=11",
+    "not safari <11",
+    "not ios <11",
+    "not dead"
   ],
-  "homepage": "https://github.com/zopaUK/react-components#readme",
   "jest": {
     "collectCoverageFrom": [
       "src/components/**/*.{ts,tsx}"
     ]
   },
-  "license": "MIT",
-  "main": "cjs/src/index.js",
-  "module": "es/src/index.js",
-  "name": "@zopauk/react-components",
-  "packageManager": "pnpm@9.1.4",
-  "peerDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.6.0",
-    "@types/styled-components": ">=5.1.25",
-    "react": ">=16.8.1",
-    "react-dom": ">=16.8.1",
-    "styled-components": ">=4.4.0",
-    "typescript": ">=3.x"
-  },
-  "publishConfig": {
-    "access": "public"
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZopaPublic/react-components.git"
   },
+  "bugs": {
+    "url": "https://github.com/zopaUK/react-components/issues"
+  },
+  "homepage": "https://github.com/zopaUK/react-components#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "resolutions": {
     "@types/react": "^17",
     "@types/react-dom": "^17"
   },
-  "scripts": {
-    "build": "NODE_ENV=production styleguidist build",
-    "commit": "git-cz",
-    "compile": "pnpm compile:clean; pnpm compile:types && pnpm compile:code",
-    "compile:clean": "rm -rf es cjs types",
-    "compile:code": "rollup --config etc/rollup/config.mjs",
-    "compile:code:dev": "pnpm compile:code --watch",
-    "compile:types": "tsc --p ./tsconfig.types.json --incremental false",
-    "compile:types:dev": "pnpm compile:types --watch",
-    "dev": "NODE_ENV=development styleguidist server",
-    "dev:code": "concurrently --kill-others-on-fail \"pnpm:compile:code:dev -- -w \" \"pnpm compile:types -- -w\"",
-    "dev:zrc": "concurrently pnpm:compile:code:dev pnpm:compile:types:dev",
-    "format": "prettier -l --write \"**/*.{ts,tsx,js,jsx,json,less,css,md}\"",
-    "format:fix": "pnpm format --write",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:fix": "pnpm lint --fix",
-    "prepare": "husky install",
-    "release": "changeset publish",
-    "sync": "concurrently pnpm:compile:code:dev pnpm:compile:types:dev",
-    "test": "react-scripts test",
-    "typecheck": "tsc --noEmit"
-  },
-  "sideEffects": false,
-  "types": "types/index.d.ts",
-  "version": "5.61.0"
+  "packageManager": "pnpm@9.1.4"
 }
