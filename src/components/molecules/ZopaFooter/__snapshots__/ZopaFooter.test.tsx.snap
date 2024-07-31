@@ -579,14 +579,14 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
           <li
             class="mb-4"
           >
-            <a
+            <StyledLink
               href="https://www.datocms-assets.com/23873/1721888769-zopa-tax-strategy-2024_final.pdf"
               rel="noreferrer"
               style="text-decoration: none;"
               target="_blank"
             >
               Tax Strategy
-            </a>
+            </StyledLink>
           </li>
           <li
             class="mb-4"
