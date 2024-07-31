@@ -15,6 +15,7 @@ import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
 import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
+// import { buttonStyle } from '../../atoms/Button/Button';
 
 export type CustomIconVariant = 'exclamation' | 'info-circle';
 
@@ -168,6 +169,31 @@ export interface InputTheme {
       backgroundColor: string;
     };
     customIcon: boolean;
+  };
+}
+
+export interface InputRangeTheme {
+  justifyContent: string;
+  button: {
+    // buttonStyle: any; //TODO: type this
+    borderRadius: string;
+    paddingMobile: string;
+    padding: string;
+    width: string;
+    height: string;
+    mobileWidth: string;
+    mobileHeight: string;
+  };
+  slider: {
+    lowerColor: string;
+    upperColor: string;
+  };
+  thumb: {
+    thumbDiameterMobile: number;
+    thumbDiameter: number;
+    thumbIcon: boolean;
+    thumbColor: string;
+    marginTop: number;
   };
 }
 
@@ -343,6 +369,7 @@ export interface AppTheme {
   label: LabelTheme;
   legend?: LegendTheme;
   input: InputTheme;
+  inputRange: InputRangeTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
@@ -557,6 +584,30 @@ export const zopaTheme: AppTheme = {
         backgroundColor: colors.brandLight,
       },
       customIcon: false,
+    },
+  },
+  inputRange: {
+    justifyContent: 'flex-start',
+    button: {
+      // buttonStyle, //TODO: type this
+      borderRadius: '50%',
+      paddingMobile: '12px',
+      padding: '16px',
+      width: '50px',
+      height: '50px',
+      mobileWidth: '32px',
+      mobileHeight: '32px',
+    },
+    slider: {
+      lowerColor: colors.actionPlain,
+      upperColor: colors.greyLighter,
+    },
+    thumb: {
+      thumbDiameterMobile: 30,
+      thumbDiameter: 50,
+      thumbIcon: true,
+      thumbColor: colors.actionPlain,
+      marginTop: 0.5,
     },
   },
   link: {
