@@ -17,7 +17,7 @@ import { spacing } from '../../../constants';
 import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 // import { buttonStyle } from '../../atoms/Button/Button';
 
-export type CustomIconVariant = 'exclamation' | 'info-circle';
+export type CustomIconVariant = 'circle-exclamation' | 'info-circle' | 'triangle-exclamation';
 
 export interface ButtonTheme {
   text: string;
@@ -169,6 +169,20 @@ export interface InputTheme {
       backgroundColor: string;
     };
     customIcon: boolean;
+    checked: {
+      boxShadow: string;
+    };
+    borderColorByStatus: {
+      error: string;
+      valid: string;
+      disabled: string;
+      default: string;
+    };
+    checkboxBackgroundColor: {
+      checked: string;
+      hover: string;
+      disabled: string;
+    };
   };
 }
 
@@ -589,6 +603,20 @@ export const zopaTheme: AppTheme = {
         backgroundColor: colors.brandLight,
       },
       customIcon: false,
+      checked: {
+        boxShadow: 'none',
+      },
+      borderColorByStatus: {
+        error: colors.alert,
+        valid: colors.success,
+        disabled: colors.greyLight,
+        default: colors.grey,
+      },
+      checkboxBackgroundColor: {
+        checked: colors.white,
+        hover: colors.white,
+        disabled: colors.white,
+      },
     },
   },
   inputRange: {

@@ -1,10 +1,26 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.66.0
+
+### Minor Changes
+
+- 9bc485d: Alerts
+
+## 5.65.0
+
+### Minor Changes
+
+- a07762a: AlertsV2
+
+- a2503e7: checkbox
+
 ## 5.64.0
 
 ### Minor Changes
 
 - 7655c09: Add the ability to use flexContainer to target styles
+
+## 5.63.1
 
 ### Patch Changes
 
