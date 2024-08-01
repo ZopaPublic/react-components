@@ -6,6 +6,8 @@
 
 - a07762a: AlertsV2
 
+- a2503e7: checkbox
+
 ## 5.64.0
 
 ### Minor Changes

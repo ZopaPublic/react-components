@@ -102,12 +102,18 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
 .c1:focus + label {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c1:hover:not(:disabled) + label:before,
 .c1:focus + label:before {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:hover:checked:not(:disabled) + label:before,
+.c1:focus:checked + label:before {
+  background-color: #FFFFFF;
 }
 
 .c1:hover:checked:not(:disabled) + label:after,
@@ -129,13 +135,18 @@ exports[`<CheckboxField /> renders the component with no control icon and no a11
   border-color: #D4D7D9;
 }
 
+.c1:disabled:before {
+  background-color: #FFFFFF;
+}
+
 .c1:checked + label {
   border-color: #009E8E;
   background-color: #ECFCF9;
-  box-shadow: none;
+  box-shadow: none #009E8E;
 }
 
 .c1:checked + label:before {
+  background-color: #FFFFFF;
   border-color: #009E8E;
   box-shadow: none;
 }
@@ -276,12 +287,18 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
 .c1:focus + label {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c1:hover:not(:disabled) + label:before,
 .c1:focus + label:before {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c1:hover:checked:not(:disabled) + label:before,
+.c1:focus:checked + label:before {
+  background-color: #FFFFFF;
 }
 
 .c1:hover:checked:not(:disabled) + label:after,
@@ -303,13 +320,18 @@ exports[`<CheckboxField /> renders the component with props with no a11y violati
   border-color: #D4D7D9;
 }
 
+.c1:disabled:before {
+  background-color: #FFFFFF;
+}
+
 .c1:checked + label {
   border-color: #009E8E;
   background-color: #ECFCF9;
-  box-shadow: none;
+  box-shadow: none #009E8E;
 }
 
 .c1:checked + label:before {
+  background-color: #FFFFFF;
   border-color: #009E8E;
   box-shadow: none;
 }
