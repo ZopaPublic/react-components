@@ -16,7 +16,7 @@ import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
 import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
-export type CustomIconVariant = 'exclamation' | 'info-circle';
+export type CustomIconVariant = 'circle-exclamation' | 'info-circle' | 'triangle-exclamation';
 
 export interface ButtonTheme {
   text: string;
