@@ -47,7 +47,6 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
     return (
       <StyledWrapper>
         {controls ? (
-          // styling="icon"
           <Button
             title="decrement"
             styling="secondary"
