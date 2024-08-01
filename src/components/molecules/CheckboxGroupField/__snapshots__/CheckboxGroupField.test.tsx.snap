@@ -136,12 +136,18 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
 .c6:focus + label {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c6:hover:not(:disabled) + label:before,
 .c6:focus + label:before {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c6:hover:checked:not(:disabled) + label:before,
+.c6:focus:checked + label:before {
+  background-color: #FFFFFF;
 }
 
 .c6:hover:checked:not(:disabled) + label:after,
@@ -163,13 +169,18 @@ exports[`<CheckboxGroupField /> renders the component with no control icon and n
   border-color: #D4D7D9;
 }
 
+.c6:disabled:before {
+  background-color: #FFFFFF;
+}
+
 .c6:checked + label {
   border-color: #009E8E;
   background-color: #ECFCF9;
-  box-shadow: none;
+  box-shadow: none #009E8E;
 }
 
 .c6:checked + label:before {
+  background-color: #FFFFFF;
   border-color: #009E8E;
   box-shadow: none;
 }
@@ -391,12 +402,18 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
 .c6:focus + label {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+  background-color: transparent;
 }
 
 .c6:hover:not(:disabled) + label:before,
 .c6:focus + label:before {
   border-color: #009E8E;
   box-shadow: 0 0 4px 0 #009E8E;
+}
+
+.c6:hover:checked:not(:disabled) + label:before,
+.c6:focus:checked + label:before {
+  background-color: #FFFFFF;
 }
 
 .c6:hover:checked:not(:disabled) + label:after,
@@ -418,13 +435,18 @@ exports[`<CheckboxGroupField /> renders the component with props with no a11y vi
   border-color: #D4D7D9;
 }
 
+.c6:disabled:before {
+  background-color: #FFFFFF;
+}
+
 .c6:checked + label {
   border-color: #009E8E;
   background-color: #ECFCF9;
-  box-shadow: none;
+  box-shadow: none #009E8E;
 }
 
 .c6:checked + label:before {
+  background-color: #FFFFFF;
   border-color: #009E8E;
   box-shadow: none;
 }

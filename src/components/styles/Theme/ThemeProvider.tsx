@@ -168,6 +168,20 @@ export interface InputTheme {
       backgroundColor: string;
     };
     customIcon: boolean;
+    checked: {
+      boxShadow: string;
+    };
+    borderColorByStatus: {
+      error: string;
+      valid: string;
+      disabled: string;
+      default: string;
+    };
+    checkboxBackgroundColor: {
+      checked: string;
+      hover: string;
+      disabled: string;
+    };
   };
 }
 
@@ -562,6 +576,20 @@ export const zopaTheme: AppTheme = {
         backgroundColor: colors.brandLight,
       },
       customIcon: false,
+      checked: {
+        boxShadow: 'none',
+      },
+      borderColorByStatus: {
+        error: colors.alert,
+        valid: colors.success,
+        disabled: colors.greyLight,
+        default: colors.grey,
+      },
+      checkboxBackgroundColor: {
+        checked: colors.white,
+        hover: colors.white,
+        disabled: colors.white,
+      },
     },
   },
   link: {
