@@ -5,10 +5,11 @@ import { IconLookup, findIconDefinition } from '@fortawesome/fontawesome-svg-cor
 import Icon from '../Icon/Icon';
 import { colors, typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
-import ExclamationIcon from '../../styles/icons/exclamation';
+import CircleExclamationIcon from '../../styles/icons/circleExclamation';
 import Button from '../Button/Button';
 import HiddenText from '../HiddenText/HiddenText';
 import InfoCircleIcon from '../../styles/icons/infoCircle';
+import TriangleExclamationIcon from '../../styles/icons/triangleExclamation';
 
 export type Severity = 'info' | 'alert' | 'warning' | 'success' | 'brand';
 export interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -88,11 +89,16 @@ const Alert = ({
     }
   }
 
+  const iconMap = {
+    'circle-exclamation': CircleExclamationIcon,
+    'triangle-exclamation': TriangleExclamationIcon,
+    'info-circle': InfoCircleIcon,
+  };
+
   if (customVariant) {
-    if (customVariant.iconName === 'exclamation') {
-      CustomIcon = <ExclamationIcon color={customVariant.color} />;
-    } else if (customVariant.iconName === 'info-circle') {
-      CustomIcon = <InfoCircleIcon color={customVariant.color} />;
+    const IconComponent = iconMap[customVariant.iconName];
+    if (IconComponent) {
+      CustomIcon = <IconComponent color={customVariant.color} />;
     } else {
       throw new Error(`Unknown custom icon name: ${customVariant.iconName}`);
     }
