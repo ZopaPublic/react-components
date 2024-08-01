@@ -7,7 +7,7 @@ import CustomSpinner from '../Spinner/CustomSpinner/CustomSpinner';
 
 export type Styling = 'primary' | 'secondary' | 'link';
 
-type BaseButtonProps = {
+export type BaseButtonProps = {
   styling?: Styling;
   loading?: boolean;
   disabled?: boolean;
