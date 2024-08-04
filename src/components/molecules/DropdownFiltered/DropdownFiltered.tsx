@@ -15,7 +15,7 @@ import Options, { OptionsListProps } from './Options';
 import { SearchInputProps, SearchInput } from './SearchInput';
 
 export interface DropdownItem {
-  value: string | number;
+  value: string;
 }
 
 export interface DropdownFilteredProps
