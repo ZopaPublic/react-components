@@ -19,7 +19,7 @@ const IconWrapper = styled.span<InputThemeProps>`
   align-items: center;
   justify-content: center;
   width: ${({ theme }: InputThemeProps) => theme.input.iconWidth};
-  color: ${({ theme }: InputThemeProps) => theme.input.iconColor};
+  color: ${({ theme }: InputThemeProps) => theme.input.startIconColor};
 ${({ startIcon }) =>
   startIcon
     ? css`

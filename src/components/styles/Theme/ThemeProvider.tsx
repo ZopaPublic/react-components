@@ -145,7 +145,7 @@ export interface InputTheme {
     disabled: string;
     default: string;
   };
-  iconColor: string;
+  startIconColor: string;
   iconBackgroundColor: string;
   searchInput: {
     border: string;
@@ -153,7 +153,7 @@ export interface InputTheme {
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
-    customIconColor?: string;
+    endIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -580,7 +580,7 @@ export const zopaTheme: AppTheme = {
       disabled: colors.greyLight,
       default: colors.grey,
     },
-    iconColor: colors.grey,
+    startIconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
       border: '1px',

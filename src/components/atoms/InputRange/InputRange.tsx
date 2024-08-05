@@ -12,6 +12,8 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   id?: string;
   min?: number;
   max?: number;
+  customPlusIcon?: Element;
+  customMinusIcon?: Element;
   step?: number;
   controls?: boolean;
 }
@@ -23,7 +25,21 @@ const StyledWrapper = styled(Wrapper)<InputRangeThemeProps>`
 `;
 
 const InputRange = forwardRef<HTMLInputElement, InputRange>(
-  ({ min = 0, max = 100, step = 1, controls = false, value, onChange, id, ...otherProps }, ref) => {
+  (
+    {
+      min = 0,
+      max = 100,
+      step = 1,
+      controls = false,
+      value,
+      onChange,
+      id,
+      customPlusIcon,
+      customMinusIcon,
+      ...otherProps
+    },
+    ref,
+  ) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
       onChange(Number(e.target.value));
     };
@@ -54,7 +70,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
             onClick={decrement}
             className={classnames(theme.inputRange?.button?.className)}
           >
-            <Icon variant={faMinus} width="12px" height="12px" />
+            {customMinusIcon ? customMinusIcon : <Icon variant={faMinus} width="12px" height="12px" />}
           </Button>
         ) : null}
         <Input
@@ -79,7 +95,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
             onClick={increment}
             className={classnames(theme.inputRange?.button?.className)}
           >
-            <Icon variant={faPlus} width="12px" height="12px" />
+            {customPlusIcon ? customPlusIcon : <Icon variant={faPlus} width="12px" height="12px" />}
           </Button>
         ) : null}
       </StyledWrapper>
