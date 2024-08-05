@@ -1,6 +1,5 @@
 import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 'react';
 import styled from 'styled-components';
-import classnames from 'classnames';
 import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -63,13 +62,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
     return (
       <StyledWrapper>
         {controls ? (
-          <Button
-            title="decrement"
-            styling="secondary"
-            disabled={value <= min}
-            onClick={decrement}
-            className={classnames(theme.inputRange?.button?.className)}
-          >
+          <Button title="decrement" styling="secondary" disabled={value <= min} onClick={decrement}>
             {customMinusIcon ? customMinusIcon : <Icon variant={faMinus} width="12px" height="12px" />}
           </Button>
         ) : null}
@@ -88,13 +81,7 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
           theme={theme}
         />
         {controls ? (
-          <Button
-            title="increment"
-            styling="secondary"
-            disabled={value >= max}
-            onClick={increment}
-            className={classnames(theme.inputRange?.button?.className)}
-          >
+          <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
             {customPlusIcon ? customPlusIcon : <Icon variant={faPlus} width="12px" height="12px" />}
           </Button>
         ) : null}

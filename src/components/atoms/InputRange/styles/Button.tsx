@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import classnames from 'classnames';
 import { grid } from '../../../../constants';
 import { ButtonProps, buttonStyle } from '../../Button/Button';
 import { AppThemeProps, useThemeContext } from '../../../styles/Theme';
@@ -34,7 +33,7 @@ export const Button = (props: ButtonProps) => {
   const theme = useThemeContext();
   return (
     <ButtonWrapper>
-      <StyledButton {...props} className={classnames(theme.inputRange?.button?.className)} theme={theme} />
+      <StyledButton {...props} theme={theme} />
     </ButtonWrapper>
   );
 };
