@@ -1,7 +1,9 @@
 import React, { InputHTMLAttributes, ChangeEvent, MouseEvent, forwardRef } from 'react';
+import styled from 'styled-components';
 import { calculateTrackPosition } from './helpers';
 import { Button, Icon, Input, Wrapper } from './styles';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { AppThemeProps, useThemeContext } from '../../styles/Theme';
 
 export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 'defaultValue' | 'onChange'> {
   value: number;
@@ -9,12 +11,34 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   id?: string;
   min?: number;
   max?: number;
+  customPlusIcon?: React.ReactNode;
+  customMinusIcon?: React.ReactNode;
   step?: number;
   controls?: boolean;
 }
 
+interface InputRangeThemeProps extends AppThemeProps {}
+
+const StyledWrapper = styled(Wrapper)<InputRangeThemeProps>`
+  justify-content: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.justifyContent};
+`;
+
 const InputRange = forwardRef<HTMLInputElement, InputRange>(
-  ({ min = 0, max = 100, step = 1, controls = false, value, onChange, id, ...otherProps }, ref) => {
+  (
+    {
+      min = 0,
+      max = 100,
+      step = 1,
+      controls = false,
+      value,
+      onChange,
+      id,
+      customPlusIcon,
+      customMinusIcon,
+      ...otherProps
+    },
+    ref,
+  ) => {
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
       onChange(Number(e.target.value));
     };
@@ -33,13 +57,15 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
       console.warn('Id is a required prop of the inputRange component');
     }
 
+    const theme = useThemeContext();
+
     return (
-      <Wrapper>
-        {controls && (
+      <StyledWrapper>
+        {controls ? (
           <Button title="decrement" styling="secondary" disabled={value <= min} onClick={decrement}>
-            <Icon variant={faMinus} width="12px" height="12px" />
+            {customMinusIcon ? customMinusIcon : <Icon variant={faMinus} width="12px" height="12px" />}
           </Button>
-        )}
+        ) : null}
         <Input
           {...otherProps}
           role="slider"
@@ -52,13 +78,14 @@ const InputRange = forwardRef<HTMLInputElement, InputRange>(
           type="range"
           title="range"
           ref={ref}
+          theme={theme}
         />
-        {controls && (
+        {controls ? (
           <Button title="increment" styling="secondary" disabled={value >= max} onClick={increment}>
-            <Icon variant={faPlus} width="12px" height="12px" />
+            {customPlusIcon ? customPlusIcon : <Icon variant={faPlus} width="12px" height="12px" />}
           </Button>
-        )}
-      </Wrapper>
+        ) : null}
+      </StyledWrapper>
     );
   },
 );

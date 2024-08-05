@@ -2,11 +2,13 @@ import { ChangeEvent } from 'react';
 import styled, { css } from 'styled-components';
 import { colors, grid } from '../../../../constants';
 import arrowsAltH from '../../../../content/images/arrows-alt-h.svg';
+
 import { InputRange } from '../InputRange';
+import { AppThemeProps } from '../../../styles/Theme';
+
+interface InputRangeThemeProps extends AppThemeProps {}
 
 const trackHeight = 8;
-const thumbDiameter = 50;
-const thumbDiameterMobile = 30;
 
 const TrackStyles = css`
   box-sizing: border-box;
@@ -16,25 +18,28 @@ const TrackStyles = css`
   background: ${colors.greyLighter};
 `;
 
-const ThumbStyles = css`
+const ThumbStyles = css<InputRangeThemeProps>`
   box-sizing: border-box;
   border: none;
   border-radius: 50%;
-  width: ${thumbDiameterMobile}px;
-  height: ${thumbDiameterMobile}px;
-  background: ${colors.actionPlain};
+  width: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
+  height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
+  background: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.thumb.thumbColor};
 
   @media (min-width: ${grid.breakpoints.m}px) {
-    width: ${thumbDiameter}px;
-    height: ${thumbDiameter}px;
-    background: url(${arrowsAltH}) no-repeat ${colors.actionPlain};
+    width: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
+    height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
+    background: ${({ theme }: InputRangeThemeProps) =>
+      theme.inputRange?.thumb.thumbIcon
+        ? `url(${arrowsAltH}) no-repeat ${colors.actionPlain}`
+        : `${theme.inputRange?.thumb.thumbColor}`};
     background-position: center center;
     background-size: 20px 20px;
   }
 `;
 
-const ThumbStylesFocus = css`
-  box-shadow: 0 0 4px ${colors.actionPlain};
+const ThumbStylesFocus = css<InputRangeThemeProps>`
+  box-shadow: ${({ theme }: InputRangeThemeProps) => `0 0 4px ${theme.inputRange?.thumb.thumbColor}`};
 `;
 
 export const Input = styled.input<
@@ -42,12 +47,12 @@ export const Input = styled.input<
 >`
   -webkit-appearance: none;
   width: 100%;
-  height: ${thumbDiameterMobile}px;
+  height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameterMobile}px`};
   cursor: pointer;
   background: transparent;
 
   @media (min-width: ${grid.breakpoints.m}px) {
-    height: ${thumbDiameter}px;
+    height: ${({ theme }: InputRangeThemeProps) => `${theme.inputRange?.thumb.thumbDiameter}px`};
   }
 
   &::-webkit-slider-runnable-track {
@@ -59,12 +64,13 @@ export const Input = styled.input<
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    margin-top: ${(trackHeight - thumbDiameterMobile) * 0.5}px;
-    ${ThumbStyles}
+    margin-top: ${({ theme }: InputRangeThemeProps) =>
+      (trackHeight - theme.inputRange?.thumb.thumbDiameterMobile) * 0.5}px;
+     ${ThumbStyles}
 
     @media (min-width: ${grid.breakpoints.m}px) {
-       margin-top: ${(trackHeight - thumbDiameter) * 0.5}px;
-    }
+    margin-top: ${({ theme }: InputRangeThemeProps) =>
+      (trackHeight - theme.inputRange?.thumb.thumbDiameter) * 0.5}px;    }
   }
   &::-moz-range-thumb {
     ${ThumbStyles}
@@ -75,15 +81,16 @@ export const Input = styled.input<
       linear,
       0% 0%,
       100% 0%,
-      color-stop(${({ trackPosition }) => trackPosition}, ${colors.actionPlain}),
-      color-stop(${({ trackPosition }) => trackPosition}, ${colors.greyLighter})
+      color-stop(${({ trackPosition }) => trackPosition}, ${({ theme }: InputRangeThemeProps) =>
+  theme.inputRange?.slider.lowerColor}),
+      color-stop(${({ trackPosition }) => trackPosition}, ${({ theme }: InputRangeThemeProps) =>
+  theme.inputRange?.slider.upperColor})
     );
   }
   &::-moz-range-progress {
     border-radius: ${trackHeight / 2}px;
     height: ${trackHeight}px;
-    background: ${colors.actionPlain};
-  }
+    background: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.slider.lowerColor};  }
 
   &:active {
     &::-webkit-slider-thumb {
@@ -125,8 +132,7 @@ export const Input = styled.input<
     ${TrackStyles}
     box-sizing: content-box;
     border: 0px solid transparent;
-    background: ${colors.actionPlain};
-  }
+    background: ${({ theme }: InputRangeThemeProps) => theme.inputRange?.slider.lowerColor};  }
 
   &::-ms-fill-upper {
     ${TrackStyles}
