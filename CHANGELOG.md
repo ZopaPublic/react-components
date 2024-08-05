@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.67.0
+
+### Minor Changes
+
+- 0abcf30: inputrange slider theming
+
 ## 5.66.0
 
 ### Minor Changes
