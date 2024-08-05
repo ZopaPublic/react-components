@@ -12,8 +12,8 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   id?: string;
   min?: number;
   max?: number;
-  customPlusIcon?: Element;
-  customMinusIcon?: Element;
+  customPlusIcon?: JSX.Element;
+  customMinusIcon?: JSX.Element;
   step?: number;
   controls?: boolean;
 }
