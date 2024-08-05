@@ -14,7 +14,7 @@ export type BaseButtonProps = {
   fullWidth?: boolean;
 };
 
-export type ButtonProps<T = ButtonHTMLAttributes<HTMLButtonElement>> = BaseButtonProps & T;
+type ButtonProps<T = ButtonHTMLAttributes<HTMLButtonElement>> = BaseButtonProps & T;
 
 const colorMap = {
   primary: {

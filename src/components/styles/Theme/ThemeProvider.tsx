@@ -15,8 +15,6 @@ import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
 import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
-import { FlattenInterpolation, ThemedStyledProps } from 'styled-components';
-import { BaseButtonProps } from '../../atoms/Button/Button';
 
 export type CustomIconVariant = 'circle-exclamation' | 'info-circle' | 'triangle-exclamation';
 
@@ -190,7 +188,6 @@ export interface InputTheme {
 export interface InputRangeTheme {
   justifyContent: string;
   button: {
-    className?: FlattenInterpolation<ThemedStyledProps<BaseButtonProps, any>>;
     borderRadius?: string;
     paddingMobile: string;
     padding: string;
