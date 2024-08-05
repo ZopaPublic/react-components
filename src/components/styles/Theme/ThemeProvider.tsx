@@ -143,7 +143,7 @@ export interface InputTheme {
     disabled: string;
     default: string;
   };
-  iconColor: string;
+  startIconColor: string;
   iconBackgroundColor: string;
   searchInput: {
     border: string;
@@ -151,7 +151,7 @@ export interface InputTheme {
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
-    customIconColor?: string;
+    endIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -182,6 +182,30 @@ export interface InputTheme {
       hover: string;
       disabled: string;
     };
+  };
+}
+
+export interface InputRangeTheme {
+  justifyContent: string;
+  button: {
+    borderRadius?: string;
+    paddingMobile: string;
+    padding: string;
+    width: string;
+    height: string;
+    mobileWidth: string;
+    mobileHeight: string;
+  };
+  slider: {
+    lowerColor: string;
+    upperColor: string;
+  };
+  thumb: {
+    thumbDiameterMobile: number;
+    thumbDiameter: number;
+    thumbIcon: boolean;
+    thumbColor: string;
+    marginTop: number;
   };
 }
 
@@ -361,6 +385,7 @@ export interface AppTheme {
   label: LabelTheme;
   legend?: LegendTheme;
   input: InputTheme;
+  inputRange: InputRangeTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
@@ -552,7 +577,7 @@ export const zopaTheme: AppTheme = {
       disabled: colors.greyLight,
       default: colors.grey,
     },
-    iconColor: colors.grey,
+    startIconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
       border: '1px',
@@ -590,6 +615,29 @@ export const zopaTheme: AppTheme = {
         hover: colors.white,
         disabled: colors.white,
       },
+    },
+  },
+  inputRange: {
+    justifyContent: 'flex-start',
+    button: {
+      borderRadius: '50%',
+      paddingMobile: '12px',
+      padding: '16px',
+      width: '50px',
+      height: '50px',
+      mobileWidth: '32px',
+      mobileHeight: '32px',
+    },
+    slider: {
+      lowerColor: colors.actionPlain,
+      upperColor: colors.greyLighter,
+    },
+    thumb: {
+      thumbDiameterMobile: 30,
+      thumbDiameter: 50,
+      thumbIcon: true,
+      thumbColor: colors.actionPlain,
+      marginTop: 0.5,
     },
   },
   link: {

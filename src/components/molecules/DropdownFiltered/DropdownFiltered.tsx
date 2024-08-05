@@ -66,14 +66,13 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
     ...rest
   } = props;
 
-  const searchMatch = (itemValue: string, inputValue: string) =>
-    itemValue && itemValue.toLowerCase().includes(inputValue.toLowerCase());
+  const searchMatch = (itemValue: string | number, inputValue: string) =>
+    itemValue && itemValue.toString().toLowerCase().includes(inputValue.toLowerCase());
 
   const theme = useThemeContext();
-
   return (
     <SizedContainer size={inputSize}>
-      <Downshift itemToString={(item) => (item ? item.value : '')} {...props}>
+      <Downshift itemToString={(item) => (item ? String(item.value) : '')} {...props}>
         {({
           clearSelection,
           getInputProps,
@@ -122,7 +121,6 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
                   endIcon={
                     theme.input.searchInput.customIcon ? (
                       <CustomIcon
-                        style={{ color: theme.input.searchInput.customIconColor }}
                         isOpen={isOpen}
                         onClick={() => {
                           if (!disabled) {
