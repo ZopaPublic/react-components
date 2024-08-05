@@ -42,7 +42,7 @@ function ProductTemplate({
   prevStep,
   progress,
   onBackPressed,
-  contentWidth = 6,
+  contentWidth,
 }: ProductTemplateProps) {
   const containerClassnames = classnames('mb-8 m:mb-9 m:mt-8', {
     'mt-6': !prevStep,
@@ -64,7 +64,7 @@ function ProductTemplate({
         </FlexCol>
         <FlexCol>
           <StyledFlexRow hasTitle={!!title || !!subtitle} justify="center" gutter={0}>
-            <FlexCol m={10} xl={contentWidth}>
+            <FlexCol m={10} xl={contentWidth || 6}>
               {children}
             </FlexCol>
           </StyledFlexRow>
