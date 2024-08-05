@@ -12,8 +12,8 @@ export interface InputRange extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   id?: string;
   min?: number;
   max?: number;
-  customPlusIcon?: JSX.Element;
-  customMinusIcon?: JSX.Element;
+  customPlusIcon?: React.SVGProps<SVGSVGElement>; //todo: type
+  customMinusIcon?: React.SVGProps<SVGSVGElement>; //todo: type
   step?: number;
   controls?: boolean;
 }
