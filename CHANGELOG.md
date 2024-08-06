@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.68.2
+
+### Patch Changes
+
+- 6085dd7: Make the product template container more flexible, add flex-direction column
+
 ## 5.68.1
 
 ### Patch Changes
