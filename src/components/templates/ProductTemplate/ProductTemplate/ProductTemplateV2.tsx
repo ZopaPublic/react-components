@@ -1,4 +1,3 @@
-// THEME ME ProductTemplate component
 import * as React from 'react';
 import FlexContainer from '../../../layout/FlexContainer/FlexContainer';
 import FlexRow from '../../../layout/FlexRow/FlexRow';
@@ -29,11 +28,11 @@ type HeaderProps = {
 };
 
 const Header = ({ title, subtitle, progressBar }: HeaderProps) => (
-  <header className="zrc:header">
+  <>
     {title}
     {progressBar}
     {subtitle}
-  </header>
+  </>
 );
 
 type ProductTemplateProps = React.PropsWithChildren<{
@@ -54,6 +53,7 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 function ProductTemplate({ header, children }: ProductTemplateProps) {
