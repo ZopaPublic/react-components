@@ -8,6 +8,7 @@ import { navbarOpenHeight } from '../../../../constants';
 import styled from 'styled-components';
 import { useThemeContext } from '../../../styles/Theme';
 import { Text } from '../../../..';
+import classnames from 'classnames';
 
 export interface ProductTemplateV2 {
   titleClassName: string;
@@ -17,14 +18,17 @@ export interface ProductTemplateV2 {
     headingClassName: string;
     subheadingClassName: string;
   };
+  row?: {
+    className: string;
+  };
 }
-type MaybeHeaderProps = {
+type HeaderProps = {
   title?: React.ReactNode;
   subtitle?: React.ReactNode;
   progressBar?: React.ReactNode;
 };
 
-const MaybeHeader = ({ title, subtitle, progressBar }: MaybeHeaderProps) => (
+const Header = ({ title, subtitle, progressBar }: HeaderProps) => (
   <header className="zrc:header">
     {title}
     {progressBar}
@@ -33,7 +37,7 @@ const MaybeHeader = ({ title, subtitle, progressBar }: MaybeHeaderProps) => (
 );
 
 type ProductTemplateProps = React.PropsWithChildren<{
-  header?: MaybeHeaderProps;
+  header?: HeaderProps;
   className?: string;
   contentWidth?: 6 | 8 | 10;
   prevStep?: ReactElement | string;
@@ -52,14 +56,22 @@ const HeaderContainer = styled.div`
   align-items: center;
 `;
 
-function ProductTemplate({ header, children, contentWidth = 6 }: ProductTemplateProps) {
+function ProductTemplate({ header, children }: ProductTemplateProps) {
+  const theme = useThemeContext();
+
+  const templateClassName = theme?.productTemplateV2?.row?.className;
+
   return (
     <Content className="mb-8">
       <HeaderContainer className="product-template-header-container">
-        <MaybeHeader {...header} />
+        <Header {...header} />
       </HeaderContainer>
       <FlexContainer data-automation="ZA.ProductTemplateV2.Container" gutter={0}>
-        <FlexRow className="product-template-row px-6 m:px-0" gutter={0} justify="center">
+        <FlexRow
+          className={classnames(templateClassName || 'px-6 m:px-0', 'product-template-row')}
+          gutter={0}
+          justify="center"
+        >
           <div>{children}</div>
         </FlexRow>
       </FlexContainer>
