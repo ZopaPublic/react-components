@@ -114,6 +114,11 @@ export interface LegendTheme {
   lineHeightClassName?: string;
 }
 
+export interface SitTightTheme {
+  primaryTextClassName: string;
+  secondaryTextClassName: string;
+}
+
 export interface InputTheme {
   color: string;
   startIcon: React.ReactNode;
@@ -397,6 +402,7 @@ export interface AppTheme {
   radio: RadioTheme;
   flexContainer?: FlexContainerTheme;
   option?: OptionTheme;
+  sitTight?: SitTightTheme;
 }
 
 export interface AppThemeProps {
