@@ -18,14 +18,43 @@ describe('<ZopaFooter />', () => {
     cleanup();
   });
 
-  it('renders correct urls  with baseUrl prop', async () => {
+  it('renders correct logo with baseUrl prop', async () => {
     render(<ZopaFooter baseUrl="http://whatever.com" />);
-
-    const firstLink = screen.getByText('Car finance');
     const logoLink = screen.getByTitle('Logo');
-
-    expect(firstLink).toHaveAttribute('href', 'http://whatever.com/car-finance');
     expect(logoLink).toHaveAttribute('href', 'http://whatever.com');
+  });
+
+  it('renders correct Zopa footer links', async () => {
+    render(<ZopaFooter />);
+    const firstLink = screen.getByText('Car finance');
+    expect(firstLink).toHaveAttribute('href', 'https://www.zopa.com/car-finance');
+  });
+
+  it('renders correct Zopa social links', async () => {
+    render(<ZopaFooter />);
+    const firstLink = screen.getByLabelText('Facebook');
+    expect(firstLink).toHaveAttribute('href', 'https://facebook.com/zopa');
+  });
+
+  it('renders custom footer links correctly', () => {
+    const customFooterLinks = [
+      {
+        heading: 'Custom Section',
+        links: [
+          { href: 'https://custom-link1.com', text: 'Custom Link 1' },
+          { href: 'https://custom-link2.com', text: 'Custom Link 2' },
+        ],
+      },
+    ];
+
+    render(<ZopaFooter customFooterLinks={customFooterLinks} />);
+    // Check that the section heading is rendered
+    expect(screen.getByText('Custom Section')).toBeInTheDocument();
+    // Check that each link is rendered with the correct href and text
+    const link1 = screen.getByText('Custom Link 1');
+    expect(link1).toHaveAttribute('href', 'https://custom-link1.com');
+    const link2 = screen.getByText('Custom Link 2');
+    expect(link2).toHaveAttribute('href', 'https://custom-link2.com');
   });
 
   // This has to go before the next test, because react-testing-library isn't smart enough to clean up after itself by default

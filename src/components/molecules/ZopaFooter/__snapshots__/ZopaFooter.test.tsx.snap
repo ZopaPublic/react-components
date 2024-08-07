@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
-.c21 {
+.c13 {
   margin: 0;
   -webkit-letter-spacing: 0;
   -moz-letter-spacing: 0;
@@ -15,7 +15,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   text-align: inherit;
 }
 
-.c11 {
+.c10 {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
   fill: #00D9C5;
@@ -71,12 +71,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   fill: auto;
 }
 
-.c8 {
-  margin-left: 6px;
-  top: 2px;
-  position: relative;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -111,7 +105,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c9 {
+.c8 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -122,7 +116,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c12 {
+.c11 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -133,12 +127,12 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   align-self: auto;
 }
 
-.c19 {
+.c14 {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: px;
+  padding-left: px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
@@ -153,7 +147,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   margin-right: auto;
 }
 
-.c14 {
+.c16 {
   margin: 0 8px;
 }
 
@@ -165,34 +159,34 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   text-transform: uppercase;
 }
 
-.c20 {
+.c12 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.c15 {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: url(facebook.svg) no-repeat;
-}
-
-.c16 {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: url(twitter.svg) no-repeat;
 }
 
 .c17 {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background: url(instagram.svg) no-repeat;
+  background: url(facebook.svg) no-repeat;
 }
 
 .c18 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(twitter.svg) no-repeat;
+}
+
+.c19 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(instagram.svg) no-repeat;
+}
+
+.c20 {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -205,7 +199,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   list-style-type: none;
 }
 
-.c10 {
+.c9 {
   margin-bottom: 40px;
   text-align: center;
   -webkit-order: 1;
@@ -213,7 +207,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
   order: 1;
 }
 
-.c13 {
+.c15 {
   margin-bottom: 32px;
   text-align: center;
   -webkit-order: 2;
@@ -264,7 +258,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c9 {
+  .c8 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -274,7 +268,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c9 {
+  .c8 {
     display: block;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -284,7 +278,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c12 {
+  .c11 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -294,7 +288,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c12 {
+  .c11 {
     display: block;
     -webkit-flex: 0 0 33.33333333333333%;
     -ms-flex: 0 0 33.33333333333333%;
@@ -304,7 +298,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:0px) {
-  .c19 {
+  .c14 {
     display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -314,12 +308,12 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c19 {
+  .c14 {
     display: block;
-    -webkit-flex: 0 0 41.66666666666667%;
-    -ms-flex: 0 0 41.66666666666667%;
-    flex: 0 0 41.66666666666667%;
-    max-width: 41.66666666666667%;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+    max-width: 33.33333333333333%;
   }
 }
 
@@ -348,7 +342,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c20 {
+  .c12 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -356,13 +350,13 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
 }
 
 @media (min-width:992px) {
-  .c10 {
+  .c9 {
     text-align: left;
   }
 }
 
 @media (min-width:992px) {
-  .c13 {
+  .c15 {
     text-align: right;
     -webkit-order: 3;
     -ms-flex-order: 3;
@@ -588,36 +582,6 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c6 c7"
               color="#3B46C4"
-              href="https://www.datocms-assets.com/23873/1721888769-zopa-tax-strategy-2024_final.pdf"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Tax Strategy
-              <svg
-                class="c8"
-                height="15"
-                width="15"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g
-                  fill="#3B46C4"
-                >
-                  <path
-                    d="M2.6 4H0v11h11v-2.6H2.6z"
-                  />
-                  <path
-                    d="M4 0v11h11V0H4zm9.7 1.3v8.4L5.2 1.3h8.5z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li
-            class="mb-4"
-          >
-            <a
-              class="c6 c7"
-              color="#3B46C4"
               href="https://www.zopa.com/about/awards"
             >
               Awards
@@ -808,11 +772,11 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
       direction="row"
     >
       <div
-        class="c9 c10"
+        class="c8 c9"
         cols="12"
       >
         <a
-          class="c6 c7"
+          class="c6 c7 mb-4"
           color="#3B46C4"
           href="https://www.zopa.com"
           title="Logo"
@@ -832,7 +796,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             </title>
             <g>
               <path
-                class="c11"
+                class="c10"
                 d="M77 .3C88.8.3 97 8 97.4 19.2c0 5.3-2 10.1-5.7 13.6a20.8 20.8 0 01-14.5 5.5c-5.7 0-10.9-2-14.6-5.5A18.7 18.7 0 0157 19.2c0-5.3 2-10.1 5.6-13.6A21 21 0 0177.1.3zm57.7 1c4.5 0 8.2 1.2 10.7 3.5 2.4 2.4 3.8 5.8 3.8 10 0 8.6-5.4 14-14.1 14l-.4.1h-6.2v8.5h-10.8V1.2h17zm-98 0v1.2c0 6.9-7 13.6-12 18.5-1.8 1.7-3.4 3.3-4.4 4.6l-.2.3-.6.7h17v10.7H0V36c0-6.8 6.3-13 11.4-18 2.1-2 4-3.7 5-5.2v-.2l.5-.7H1.2V1.2h35.4zM194.1 1L208 37.2h-11.3l-2.2-5.8h-15l-2.3 5.8H166l13.8-36.1h14.4zM77 10.6a8.5 8.5 0 00-8.6 8.6 8.6 8.6 0 1017.2 0 8.6 8.6 0 00-8.6-8.6zM187 11.7L182.7 23h8.6L187 11.7zm-52.3-1.1h-6.2v9.3h6.2c2.7 0 4.5-2 4.5-4.8 0-2.7-1.8-4.5-4.5-4.5z"
               />
             </g>
@@ -840,74 +804,17 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
         </a>
       </div>
       <div
-        class="c12 c13"
-        cols="12"
-      >
-        <a
-          aria-label="Facebook"
-          class="c6 c14"
-          color="#3B46C4"
-          href="https://facebook.com/zopa"
-          rel="noopener"
-          target="_blank"
-          title="Facebook opens in a new tab"
-        >
-          <span
-            class="c15"
-          />
-        </a>
-        <a
-          aria-label="Twitter"
-          class="c6 c14"
-          color="#3B46C4"
-          href="https://twitter.com/zopa"
-          rel="noopener"
-          target="_blank"
-          title="Twitter opens in a new tab"
-        >
-          <span
-            class="c16"
-          />
-        </a>
-        <a
-          aria-label="Instagram"
-          class="c6 c14"
-          color="#3B46C4"
-          href="https://www.instagram.com/Zopamoney/"
-          rel="noopener"
-          target="_blank"
-          title="Instagram opens in a new tab"
-        >
-          <span
-            class="c17"
-          />
-        </a>
-        <a
-          aria-label="Linkedin"
-          class="c6 c14"
-          color="#3B46C4"
-          href="https://www.linkedin.com/company/zopa/"
-          rel="noopener"
-          target="_blank"
-          title="Linkedin opens in a new tab"
-        >
-          <span
-            class="c18"
-          />
-        </a>
-      </div>
-      <div
-        class="c19 c20"
+        class="c11 c12"
         cols="12"
       >
         <p
-          class="c21 mb-4"
+          class="c13 mb-4"
           color="#4A545E"
         >
           Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa Bank Limited (10627575) is incorporated in England & Wales and has its registered office at: 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG.
         </p>
         <p
-          class="c21 mb-4"
+          class="c13 mb-4"
           color="#4A545E"
         >
           © Zopa Bank Limited 
@@ -915,11 +822,68 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
            All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
         </p>
         <p
-          class="c21"
+          class="c13 mb-4"
           color="#4A545E"
         >
           Zopa is a member of Cifas – the UK’s leading anti-fraud association, and we are registered with the Office of the Information Commissioner (ZA275984).
         </p>
+      </div>
+      <div
+        class="c14 c15"
+        cols="12"
+      >
+        <a
+          aria-label="Facebook"
+          class="c6 c16"
+          color="#3B46C4"
+          href="https://facebook.com/zopa"
+          rel="noopener"
+          target="_blank"
+          title="Facebook opens in a new tab"
+        >
+          <span
+            class="c17"
+          />
+        </a>
+        <a
+          aria-label="Twitter"
+          class="c6 c16"
+          color="#3B46C4"
+          href="https://twitter.com/zopa"
+          rel="noopener"
+          target="_blank"
+          title="Twitter opens in a new tab"
+        >
+          <span
+            class="c18"
+          />
+        </a>
+        <a
+          aria-label="Instagram"
+          class="c6 c16"
+          color="#3B46C4"
+          href="https://www.instagram.com/Zopamoney/"
+          rel="noopener"
+          target="_blank"
+          title="Instagram opens in a new tab"
+        >
+          <span
+            class="c19"
+          />
+        </a>
+        <a
+          aria-label="Linkedin"
+          class="c6 c16"
+          color="#3B46C4"
+          href="https://www.linkedin.com/company/zopa/"
+          rel="noopener"
+          target="_blank"
+          title="Linkedin opens in a new tab"
+        >
+          <span
+            class="c20"
+          />
+        </a>
       </div>
     </div>
   </div>
