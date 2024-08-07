@@ -1,5 +1,98 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.68.2
+
+### Patch Changes
+
+- 6085dd7: Make the product template container more flexible, add flex-direction column
+- a03529c: A different more flexible layout for the template
+
+## 5.68.1
+
+### Patch Changes
+
+- a5c36cf: Add the ability to control the template styling
+
+## 5.68.0
+
+### Minor Changes
+
+- f39da1f: themed loading section
+
+## 5.67.0
+
+### Minor Changes
+
+- 0abcf30: inputrange slider theming
+
+## 5.66.0
+
+### Minor Changes
+
+- 9bc485d: Alerts
+
+## 5.65.0
+
+### Minor Changes
+
+- a07762a: AlertsV2
+
+- a2503e7: checkbox
+
+## 5.64.0
+
+### Minor Changes
+
+- 7655c09: Add the ability to use flexContainer to target styles
+
+## 5.63.1
+
+### Patch Changes
+
+- 42e6438: Fix footer styling
+
+## 5.63.0
+
+### Minor Changes
+
+- 6888bb3: Add tax strategy to footer
+
+## 5.62.0
+
+### Minor Changes
+
+- d412521: Added tax strategy to ZopaFooter
+
+## 5.61.0
+
+### Minor Changes
+
+- 4296890: Fonts alignment
+
+## 5.60.1
+
+### Patch Changes
+
+- 936e6d4: update dropdown optionv2
+
+## 5.60.0
+
+### Minor Changes
+
+- 716f434: product template theming
+
+## 5.59.0
+
+### Minor Changes
+
+- 957b31e: add theming for dropdown
+
+## 5.58.1
+
+### Patch Changes
+
+- 04dd518: input text
+
 ## 5.58.0
 
 ### Minor Changes

@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 import Text from '../../../atoms/Text/Text';
-import { colors } from '../../../../constants';
 import styled, { css } from 'styled-components';
-import { breakpoints } from '../../../../constants';
+import { breakpoints, colors } from '../../../../constants';
 import Heading from '../../../atoms/Heading/Heading';
 import { useThemeContext } from '../../../styles/Theme';
 import { useViewport } from '../../../../hooks/useViewport';
 import { minMedia } from '../../../../helpers/responsiveness';
+import classnames from 'classnames';
 
 interface ProductTemplateTitleProps {
   title?: string;
@@ -51,17 +51,22 @@ export function ProductTemplateTitle({
     <ProductTemplateTitleBackground data-automation={dataAutomation} theme={theme}>
       <ProductTemplateTitleContainer>
         <ProductTemplateTitleInnerContainer className="pt-7 m:pt-9 mx-6 m:mx-0">
-          {title && (
-            <Heading as="h1" size={width > breakpoints.phone ? 'h1' : 'h2'} align="center" className="px-8">
+          {title ? (
+            <Heading
+              as="h1"
+              size={width > breakpoints.phone ? 'h1' : 'h2'}
+              align="center"
+              className={classnames('px-8', theme.productTemplate?.title?.className)}
+            >
               {title}
             </Heading>
-          )}
+          ) : null}
           <ProductTemplateTitleWrapper>
-            {subtitle && (
+            {subtitle ? (
               <Text as="p" size="lead" align="center" className="mt-4">
                 {subtitle}
               </Text>
-            )}
+            ) : null}
           </ProductTemplateTitleWrapper>
           {content}
         </ProductTemplateTitleInnerContainer>

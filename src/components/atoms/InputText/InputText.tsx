@@ -3,77 +3,68 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../../constants';
 import { getInputTextColor, getBorderColorByStatus } from '../../../helpers/utils';
 import { InputProps } from '../../types';
-import { useThemeContext, AppTheme } from '../../styles/Theme';
+import { useThemeContext, AppThemeProps } from '../../styles/Theme';
 
-type IconWrapperProps = {
-  startIcon?: boolean;
-  /**
-   * The weight of the rendered text.
-   * @default 'regular'
-   */
-  weight?: keyof AppTheme['typography']['weights'];
-  /**
-   * The size you want to render your text at, currently only `13px` | `15px` and `18px` supported.
-   * @default 'body'
-   */
-  size?: keyof AppTheme['typography']['text']['sizes'];
-};
+interface InputThemeProps extends AppThemeProps, InputProps {}
 
 const InputWrapper = styled.div`
   position: relative;
 `;
 
-const IconWrapper = styled.span<IconWrapperProps & { theme: AppTheme }>`
+const IconWrapper = styled.span<InputThemeProps>`
   position: absolute;
   top: 1px;
   bottom: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  color: ${({ theme }) => theme.input.iconColor};
-  ${({ startIcon }) =>
-    startIcon
-      ? css`
-          left: 1px;
-          border-top-left-radius: 8px;
-          border-bottom-left-radius: 8px;
-        `
-      : css`
-          right: 1px;
-          border-top-right-radius: 8px;
-          border-bottom-right-radius: 8px;
-        `}
+  width: ${({ theme }: InputThemeProps) => theme.input.iconWidth};
+  color: ${({ theme }: InputThemeProps) => theme.input.startIconColor};
+${({ startIcon }) =>
+  startIcon
+    ? css`
+        left: 1px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      `
+    : css`
+        right: 1px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      `}
   background-color: ${({ startIcon, theme }) => startIcon && theme.input.iconBackgroundColor};
 `;
 
-const Input = styled.input<InputProps & { theme: AppTheme }>`
+const Input = styled.input<InputThemeProps>`
   width: 100%;
   -webkit-appearance: none;
   outline: none;
-  border-radius: ${({ theme }) => theme.input.borderRadius};
+  border-radius: ${({ theme }: InputThemeProps) => theme.input.borderRadius};
   height: 50px;
-  padding: 0 16px;
-  padding-left: ${({ startIcon }) => !!startIcon && '60px'};
-  padding-right: ${({ endIcon }) => !!endIcon && '60px'};
-  font-size: ${({ theme, fontSize = 'body' }) => theme.typography.text.sizes[fontSize]};
-  font-weight: ${({ theme, fontWeight = 'regular' }) => theme.typography.weights[fontWeight]};
+  padding: ${({ theme }: InputThemeProps) => theme.input.padding};
+  padding-left: ${({ startIcon, theme }: InputThemeProps) =>
+    startIcon && theme.input.startIcon ? theme.input.startIconPaddingLeft : null};
+  padding-right: ${({ endIcon, theme }: InputThemeProps) => endIcon && theme.input.endIconPaddingRight};
+  font-size: ${({ theme, fontSize = 'body' }: InputThemeProps) => theme.typography.text.sizes[fontSize]};
+  font-weight: ${({ theme, fontWeight = 'regular' }: InputThemeProps) => theme.typography.weights[fontWeight]};
+  line-height: ${({ theme }: InputThemeProps) => theme.input.fontLineHeight};
+
   color: ${getInputTextColor};
   border: 1px solid ${getBorderColorByStatus};
   box-shadow: 0 0 4px 0 transparent;
   transition-property: border, box-shadow;
   transition: 0.2s ease-in-out;
-  font-family: ${({ theme }) => theme.typography.primary};
+  font-family: ${({ theme }: InputThemeProps) => theme.typography.primary};
 
-  &:hover {
-    border: 1px solid ${({ hasError, theme }) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
-    box-shadow: ${({ theme }) => theme.input.hover.boxShadow};
-  }
-
+  &:hover,
   &:focus {
-    border: 1px solid ${({ hasError, theme }) => (hasError ? theme.input.focus.error : theme.input.focus.border)};
+    border: 1px solid
+      ${({ hasError, theme }: InputThemeProps) => (hasError ? theme.input.hover.error : theme.input.hover.border)};
     box-shadow: ${({ hasError, theme }) =>
-      `${theme.input.focus.boxShadow} ${hasError ? theme.input.focus.error : theme.input.focus.border}`};
+      hasError
+        ? `${theme.input.hover.boxShadow} ${theme.input.hover.error}`
+        : `${theme.input.hover.boxShadow} ${theme.input.hover.border}`};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.hover.backgroundColor};
   }
 
   &::placeholder {
@@ -88,7 +79,7 @@ const Input = styled.input<InputProps & { theme: AppTheme }>`
     opacity: 1;
     border: 1px solid ${getBorderColorByStatus};
     box-shadow: 0 0 4px 0 transparent;
-    background-color: ${colors.greyLightest};
+    background-color: ${({ theme }: InputThemeProps) => theme.input.disabled.backgroundColor ?? colors.greyLightest};
     cursor: not-allowed;
   }
 `;
@@ -99,7 +90,7 @@ const InputText = forwardRef<HTMLInputElement, InputProps>(({ startIcon, endIcon
   return (
     <InputWrapper className={className}>
       {startIcon ? (
-        <IconWrapper startIcon theme={theme}>
+        <IconWrapper startIcon={startIcon} theme={theme}>
           {startIcon}
         </IconWrapper>
       ) : null}

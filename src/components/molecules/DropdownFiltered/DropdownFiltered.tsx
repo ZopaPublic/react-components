@@ -44,10 +44,9 @@ export const SearchInputWrap = styled.div`
 
 export const CustomIcon = styled.div<{ isOpen: boolean }>`
   background: transparent url(${unbrandedChevron}) no-repeat center;
-  background-size: 60%;
+  background-size: 120%;
   width: 100%;
   height: 100%;
-  color: black;
   transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : 'none')};
 `;
 
@@ -67,14 +66,13 @@ const DropdownFiltered = (props: DropdownFilteredProps) => {
     ...rest
   } = props;
 
-  const searchMatch = (itemValue: string, inputValue: string) =>
-    itemValue && itemValue.toLowerCase().includes(inputValue.toLowerCase());
+  const searchMatch = (itemValue: string | number, inputValue: string) =>
+    itemValue && itemValue.toString().toLowerCase().includes(inputValue.toLowerCase());
 
   const theme = useThemeContext();
-
   return (
     <SizedContainer size={inputSize}>
-      <Downshift itemToString={(item) => (item ? item.value : '')} {...props}>
+      <Downshift itemToString={(item) => (item ? String(item.value) : '')} {...props}>
         {({
           clearSelection,
           getInputProps,

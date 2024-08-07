@@ -3,6 +3,7 @@ import {
   faExclamationCircle,
   faInfoCircle,
   faMinusCircle,
+  faPoundSign,
   fas,
 } from '@fortawesome/free-solid-svg-icons';
 import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
@@ -13,8 +14,9 @@ import Icon from '../../atoms/Icon/Icon';
 import { CardStyling } from '../../organisms/Card/Card/Card';
 import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
+import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
-export type CustomIconVariant = 'exclamation' | 'info-circle';
+export type CustomIconVariant = 'circle-exclamation' | 'info-circle' | 'triangle-exclamation';
 
 export interface ButtonTheme {
   text: string;
@@ -114,8 +116,30 @@ export interface LabelTheme {
   margin: string;
 }
 
+export interface OptionTheme {
+  margin: string;
+}
+
+export interface LegendTheme {
+  className?: string;
+  lineHeightClassName?: string;
+}
+
+export interface SitTightTheme {
+  primaryTextClassName: string;
+  secondaryTextClassName: string;
+}
+
 export interface InputTheme {
   color: string;
+  startIcon: React.ReactNode;
+  iconWidth: string;
+  startIconPaddingLeft: string;
+  endIconPaddingRight: string;
+  padding: string;
+  labelLineHeight?: string;
+  labelFontWeight: number;
+  fontLineHeight?: string;
   placeholderColor: string;
   borderRadius: string;
   boxShadow: string;
@@ -123,11 +147,7 @@ export interface InputTheme {
     border: string;
     error: string;
     boxShadow: string;
-  };
-  focus: {
-    border: string;
-    error: string;
-    boxShadow: string;
+    backgroundColor: string;
   };
   disabled: {
     color: string;
@@ -139,13 +159,15 @@ export interface InputTheme {
     disabled: string;
     default: string;
   };
-  iconColor: string;
+  startIconColor: string;
   iconBackgroundColor: string;
   searchInput: {
+    border: string;
     boxShadow: string;
     borderRadius: string;
     borderColor: string;
     customIcon: boolean;
+    endIconColor?: string;
     options: {
       borderRadius: string;
       hover: {
@@ -162,6 +184,44 @@ export interface InputTheme {
       backgroundColor: string;
     };
     customIcon: boolean;
+    checked: {
+      boxShadow: string;
+    };
+    borderColorByStatus: {
+      error: string;
+      valid: string;
+      disabled: string;
+      default: string;
+    };
+    checkboxBackgroundColor: {
+      checked: string;
+      hover: string;
+      disabled: string;
+    };
+  };
+}
+
+export interface InputRangeTheme {
+  justifyContent: string;
+  button: {
+    borderRadius?: string;
+    paddingMobile: string;
+    padding: string;
+    width: string;
+    height: string;
+    mobileWidth: string;
+    mobileHeight: string;
+  };
+  slider: {
+    lowerColor: string;
+    upperColor: string;
+  };
+  thumb: {
+    thumbDiameterMobile: number;
+    thumbDiameter: number;
+    thumbIcon: boolean;
+    thumbColor: string;
+    marginTop: number;
   };
 }
 
@@ -210,6 +270,7 @@ export interface NavbarTheme {
 export interface ProgressBarTheme {
   color: string;
 }
+
 export interface ScrollableAreaTheme {
   scrollBarThumb: {
     borderRadius: string;
@@ -225,8 +286,17 @@ export interface ScrollableAreaTheme {
 export interface ProductTemplate {
   title?: {
     backgroundColor?: string;
+    className?: string;
+  };
+  sectionHeader?: {
+    className?: string;
+  };
+  subHeading?: {
+    className?: string;
   };
 }
+
+export type { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
 export interface SpinnerTheme {
   spinnerTheme: 'zopa' | 'unbranded';
@@ -238,7 +308,8 @@ export interface SpinnerTheme {
   };
 }
 
-export interface TypographyTheme {
+export interface TypographyTheme<Font = any> {
+  font?: Font;
   primary: string;
   text: {
     color: string;
@@ -284,14 +355,10 @@ export interface TypographyTheme {
   };
   weights: {
     regular: number;
-    semiBold: number;
+    medium: number;
     bold: number;
+    semiBold: number;
     extraBold: number;
-
-    // Extra weights to align with partner naming conventions
-    // to discuss with the design/dev team
-    medium?: number;
-    ultraBold?: number;
   };
 }
 
@@ -321,6 +388,10 @@ export interface RadioTheme {
   };
 }
 
+export interface FlexContainerTheme {
+  className: string;
+}
+
 export interface AppTheme {
   alert: AlertTheme;
   button: ButtonsTheme;
@@ -328,7 +399,9 @@ export interface AppTheme {
   errorMessage: ErrorMessageTheme;
   footer: FooterTheme;
   label: LabelTheme;
+  legend?: LegendTheme;
   input: InputTheme;
+  inputRange: InputRangeTheme;
   link: LinkTheme;
   progressBar: ProgressBarTheme;
   navbar: NavbarTheme;
@@ -336,7 +409,11 @@ export interface AppTheme {
   scrollableArea: ScrollableAreaTheme;
   spinner: SpinnerTheme;
   productTemplate?: ProductTemplate;
+  productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
+  flexContainer?: FlexContainerTheme;
+  option?: OptionTheme;
+  sitTight?: SitTightTheme;
 }
 
 export interface AppThemeProps {
@@ -492,19 +569,21 @@ export const zopaTheme: AppTheme = {
     margin: `0 0 10px`,
   },
   input: {
+    padding: '0 16px',
+    startIcon: <Icon variant={faPoundSign} />,
+    iconWidth: '48px',
+    startIconPaddingLeft: '60px',
+    endIconPaddingRight: '60px',
     color: colors.greyDark,
     placeholderColor: colors.greyLight,
     borderRadius: `8px`,
     boxShadow: `0 0 4px 0 transparent`,
+    labelFontWeight: typography.weights.semiBold,
     hover: {
       border: colors.brand,
       error: colors.brand,
-      boxShadow: `0 0 4px 0 ${colors.brand}`,
-    },
-    focus: {
-      border: colors.brand,
-      error: colors.brand,
-      boxShadow: `0 0 4px 0 ${colors.brand}`,
+      boxShadow: `0 0 4px 0`,
+      backgroundColor: 'transparent',
     },
     disabled: {
       color: colors.grey,
@@ -516,9 +595,10 @@ export const zopaTheme: AppTheme = {
       disabled: colors.greyLight,
       default: colors.grey,
     },
-    iconColor: colors.grey,
+    startIconColor: colors.grey,
     iconBackgroundColor: colors.greyLighter,
     searchInput: {
+      border: '1px',
       boxShadow: `0 0 4px 0 ${colors.brand}`,
       borderRadius: `8px 8px 0 0`,
       borderColor: colors.brand,
@@ -539,6 +619,43 @@ export const zopaTheme: AppTheme = {
         backgroundColor: colors.brandLight,
       },
       customIcon: false,
+      checked: {
+        boxShadow: 'none',
+      },
+      borderColorByStatus: {
+        error: colors.alert,
+        valid: colors.success,
+        disabled: colors.greyLight,
+        default: colors.grey,
+      },
+      checkboxBackgroundColor: {
+        checked: colors.white,
+        hover: colors.white,
+        disabled: colors.white,
+      },
+    },
+  },
+  inputRange: {
+    justifyContent: 'flex-start',
+    button: {
+      borderRadius: '50%',
+      paddingMobile: '12px',
+      padding: '16px',
+      width: '50px',
+      height: '50px',
+      mobileWidth: '32px',
+      mobileHeight: '32px',
+    },
+    slider: {
+      lowerColor: colors.actionPlain,
+      upperColor: colors.greyLighter,
+    },
+    thumb: {
+      thumbDiameterMobile: 30,
+      thumbDiameter: 50,
+      thumbIcon: true,
+      thumbColor: colors.actionPlain,
+      marginTop: 0.5,
     },
   },
   link: {
@@ -632,6 +749,7 @@ export const zopaTheme: AppTheme = {
     },
     weights: {
       regular: 400,
+      medium: 500,
       semiBold: 600,
       bold: 700,
       extraBold: 800,
