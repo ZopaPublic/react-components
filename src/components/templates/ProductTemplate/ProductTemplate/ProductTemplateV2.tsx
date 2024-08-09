@@ -20,6 +20,8 @@ export interface ProductTemplateV2 {
   row?: {
     className: string;
   };
+  /* What is the width of the content for the form */
+  flexContainerClassName?: string;
 }
 type HeaderProps = {
   title?: React.ReactNode;
@@ -59,16 +61,18 @@ const HeaderContainer = styled.div`
 function ProductTemplate({ header, children }: ProductTemplateProps) {
   const theme = useThemeContext();
 
-  const templateClassName = theme?.productTemplateV2?.row?.className;
-
   return (
     <Content className="mb-8">
       <HeaderContainer className="product-template-header-container">
         <Header {...header} />
       </HeaderContainer>
-      <FlexContainer data-automation="ZA.ProductTemplateV2.Container" gutter={0}>
+      <FlexContainer
+        data-automation="ZA.ProductTemplateV2.Container"
+        className={classnames(theme?.productTemplateV2?.flexContainerClassName)}
+        gutter={0}
+      >
         <FlexRow
-          className={classnames(templateClassName || 'px-6 m:px-0', 'product-template-row')}
+          className={classnames(theme?.productTemplateV2?.row?.className || 'px-6 m:px-0', 'product-template-row')}
           gutter={0}
           justify="center"
         >

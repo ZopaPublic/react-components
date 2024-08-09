@@ -1,8 +1,6 @@
-import classnames from 'classnames';
 import React from 'react';
 import styled from 'styled-components';
 import { grid } from '../../../constants';
-import { useThemeContext } from '../../styles/Theme';
 
 export interface FlexContainerGutter {
   gutter?: number;
@@ -32,10 +30,7 @@ const StyledFlexContainer = styled.div<FlexContainerProps>`
 `;
 
 const FlexContainer = ({ gutter = grid.gutter, ...rest }: FlexContainerProps) => {
-  const themeContext = useThemeContext();
-  return (
-    <StyledFlexContainer gutter={gutter} className={classnames(themeContext.flexContainer?.className)} {...rest} />
-  );
+  return <StyledFlexContainer gutter={gutter} {...rest} />;
 };
 
 export default FlexContainer;
