@@ -7,7 +7,7 @@ import {
   fas,
 } from '@fortawesome/free-solid-svg-icons';
 import { IconPrefix, IconName, library } from '@fortawesome/fontawesome-svg-core';
-import React, { ReactElement } from 'react';
+import React, { ComponentType, ReactElement } from 'react';
 import { colors } from '../../../constants/colors';
 import { typography } from '../../../constants/typography';
 import Icon from '../../atoms/Icon/Icon';
@@ -95,10 +95,21 @@ export interface FooterTheme {
   showLogoBlock: boolean;
   showSocialBlock: boolean;
   showLegalBlock: boolean;
+  showDivider?: boolean;
   legalBlock: {
     isFullWidth: boolean;
     color: string;
   };
+  dividerColor?: string;
+  customLinksColor?: string;
+  customLinksHoverColor?: string;
+  customSocialBlock?: {
+    href: string;
+    ariaLabel: string;
+    title: string;
+    icon: ComponentType;
+    hoverColor?: string;
+  }[];
 }
 
 export interface LabelTheme {
@@ -548,6 +559,7 @@ export const zopaTheme: AppTheme = {
     showLogoBlock: true,
     showSocialBlock: true,
     showLegalBlock: true,
+    showDivider: false,
     legalBlock: {
       isFullWidth: false,
       color: colors.greyDark,
