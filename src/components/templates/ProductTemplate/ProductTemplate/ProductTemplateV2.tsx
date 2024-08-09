@@ -66,7 +66,7 @@ function ProductTemplate({ header, children }: ProductTemplateProps) {
       <HeaderContainer className="product-template-header-container">
         <Header {...header} />
       </HeaderContainer>
-      <FlexContainer data-automation="ZA.ProductTemplateV2.Container" gutter={0}>
+      <FlexContainer data-automation="ZA.ProductTemplateV2.Container" shouldApplyClassName gutter={0}>
         <FlexRow
           className={classnames(templateClassName || 'px-6 m:px-0', 'product-template-row')}
           gutter={0}
