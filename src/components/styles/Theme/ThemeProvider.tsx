@@ -411,7 +411,6 @@ export interface AppTheme {
   productTemplate?: ProductTemplate;
   productTemplateV2?: ProductTemplateV2;
   radio: RadioTheme;
-  flexContainer?: FlexContainerTheme;
   option?: OptionTheme;
   sitTight?: SitTightTheme;
 }
