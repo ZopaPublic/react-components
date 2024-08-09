@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.70.0
+
+### Minor Changes
+
+- d212033: Updated flexContainer behaviour
+
 ## 5.69.0
 
 ### Minor Changes
