@@ -6,6 +6,7 @@ import { useThemeContext } from '../../styles/Theme';
 
 export interface FlexContainerGutter {
   gutter?: number;
+  enableClassname?: boolean;
 }
 
 export interface FlexContainerProps extends React.HTMLAttributes<HTMLDivElement>, FlexContainerGutter {}
@@ -31,10 +32,14 @@ const StyledFlexContainer = styled.div<FlexContainerProps>`
   }
 `;
 
-const FlexContainer = ({ gutter = grid.gutter, ...rest }: FlexContainerProps) => {
+const FlexContainer = ({ gutter = grid.gutter, enableClassname = false, ...rest }: FlexContainerProps) => {
   const themeContext = useThemeContext();
   return (
-    <StyledFlexContainer gutter={gutter} className={classnames(themeContext.flexContainer?.className)} {...rest} />
+    <StyledFlexContainer
+      gutter={gutter}
+      className={enableClassname ? classnames(themeContext.flexContainer?.className) : undefined}
+      {...rest}
+    />
   );
 };
 
