@@ -2,9 +2,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { colors, typography } from '../../../constants';
 import { useThemeContext } from '../../styles/Theme';
-export interface LinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
-    React.RefAttributes<HTMLAnchorElement> {
+
+// See: https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forward_and_create_ref/
+export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   target?: '_blank';
   negative?: boolean;
   as?: 'a' | 'button';
@@ -71,7 +71,7 @@ const TargetIcon = (props: React.SVGProps<SVGSVGElement>) => {
   );
 };
 
-const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+const Link = React.forwardRef<HTMLAnchorElement, React.PropsWithChildren<LinkProps>>(
   ({ children, color = colors.actionPlain, target, showTargetIcon = true, ...rest }, ref) => {
     const theme = useThemeContext();
 

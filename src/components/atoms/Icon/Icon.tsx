@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
@@ -10,6 +10,7 @@ export interface IconProps extends Omit<FontAwesomeIconProps, 'icon' | 'border'>
   variant: IconDefinition;
   bgColor?: Colors[keyof Colors];
   ariaLabel?: string;
+  ref?: ((instance: SVGSVGElement | null) => void) | RefObject<SVGSVGElement> | null;
 }
 
 export const RoundBadge = styled.div<{ color: Colors[keyof Colors] }>`
