@@ -69,7 +69,6 @@ export { default as Navbar, navbarLinkStyles } from './components/organisms/Navb
 export { default as Card } from './components/organisms/Card';
 export * from './components/organisms/Tabs';
 export * from './components/organisms/Carousel';
-
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
 export {
