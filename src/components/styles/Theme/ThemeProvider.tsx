@@ -241,6 +241,7 @@ export interface NavbarTheme {
   iconContainer: {
     display: string;
   };
+  /* @deprecated */
   logo: {
     render: boolean;
   };
@@ -248,6 +249,7 @@ export interface NavbarTheme {
     minHeight: string;
     bgColor: string;
   };
+  containerClassName?: string;
   logoContainer?: {
     desktopMinMedia: {
       width?: string;
