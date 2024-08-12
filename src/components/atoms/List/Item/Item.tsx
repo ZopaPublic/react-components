@@ -16,8 +16,10 @@ const ItemComponent = styled.li`
 
 const Item = ({ icon, className = '', children, ...rest }: ItemProps) => (
   <ItemComponent className={`${icon ? 'has-icon ' : ''}${className}`} {...rest}>
-    {icon}
-    {children}
+    <>
+      {icon}
+      {children}
+    </>
   </ItemComponent>
 );
 

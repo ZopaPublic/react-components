@@ -38,6 +38,7 @@ const overlayClassNames = (hideBackground: boolean) => ({
 });
 
 const Modal = ({ children, onRequestClose, showCloseButton = true, hideBackground = false, ...rest }: ModalProps) => (
+  // @ts-expect-error - ReactModal has not updated its types - it still works as intended
   <ReactModal
     bodyOpenClassName="zopa-modal-body--open"
     portalClassName="zopa-modal-portal"

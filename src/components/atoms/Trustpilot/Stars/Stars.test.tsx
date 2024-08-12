@@ -23,7 +23,7 @@ describe('<TrustpilotStars />', () => {
   });
 
   describe('Ratings', () => {
-    const { container, rerender } = render(<Stars />);
+    const { container, rerender } = render(<Stars />, { legacyRoot: true });
     it.each`
       rating | ID
       ${0}   | ${ZERO_STAR_ID}

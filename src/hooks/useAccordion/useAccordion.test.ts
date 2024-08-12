@@ -13,8 +13,8 @@ describe('useAccordion', () => {
     expect(section).toMatchSnapshot();
   });
 
-  it('should open and close espective sections on header clicks', () => {
-    const { result } = renderHook(useAccordion);
+  it('should open and close respective sections on header clicks', () => {
+    const { result } = renderHook(() => useAccordion());
 
     const { onClick: firstHeaderClick } = result.current.getHeaderProps('one', 1);
 
@@ -42,7 +42,7 @@ describe('useAccordion', () => {
   });
 
   it('should render matching header and section attributes', () => {
-    const { result } = renderHook(useAccordion);
+    const { result } = renderHook(() => useAccordion());
 
     const section = result.current.getSectionProps('another-id', 3);
     const header = result.current.getHeaderProps('another-id', 3);
