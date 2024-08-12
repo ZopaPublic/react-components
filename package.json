@@ -51,7 +51,6 @@
     "core-js": "^3.6.5",
     "deprecated-prop-type": "^1.0.0",
     "downshift": "^5.4.7",
-    "formik": "^2.4.6",
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
@@ -63,8 +62,9 @@
   },
   "peerDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "react": ">=17",
-    "react-dom": ">=17",
+    "formik": "^2.4.6",
+    "react": ">=18",
+    "react-dom": ">=18",
     "styled-components": ">=5"
   },
   "devDependencies": {
