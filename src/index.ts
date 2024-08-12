@@ -70,7 +70,6 @@ export { default as NavbarLite } from './components/organisms/NavbarLite/NavbarL
 export { default as Card } from './components/organisms/Card';
 export * from './components/organisms/Tabs';
 export * from './components/organisms/Carousel';
-
 // Templates
 export { default as ProductTemplate } from './components/templates/ProductTemplate';
 export {
