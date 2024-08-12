@@ -16,6 +16,7 @@ export interface ProductTemplateV2 {
     subheadingPostion: 'before' | 'after';
     headingClassName: string;
     subheadingClassName: string;
+    containerClassName: string;
   };
   row?: {
     className: string;
