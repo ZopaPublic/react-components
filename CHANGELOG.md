@@ -10,6 +10,12 @@
 
 - 14d097e: Cobranded navigation
 
+## 5.70.1
+
+### Patch Changes
+
+- 14d097e: Cobranded navigation
+
 ## 5.70.0
 
 ### Minor Changes
