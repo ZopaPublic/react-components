@@ -6,6 +6,9 @@ import { typography } from '../../../constants/typography';
 import Text from '../Text/Text';
 import Icon from '../Icon/Icon';
 import { useThemeContext } from '../../styles/Theme';
+import TriangleExclamationIcon from '../../styles/icons/triangleExclamation';
+import CircleExclamationIcon from '../../styles/icons/circleExclamation';
+import InfoCircleIcon from '../../styles/icons/infoCircle';
 
 const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
@@ -44,11 +47,31 @@ type ErrorMessageProps = {
 
 const ErrorMessage = ({ children, className, id, ...rest }: ErrorMessageProps) => {
   const theme = useThemeContext();
+
+  let CustomIcon;
+
+  if (theme.errorMessage.iconVariant) {
+    const iconMap = {
+      'circle-exclamation': CircleExclamationIcon,
+      'triangle-exclamation': TriangleExclamationIcon,
+      'info-circle': InfoCircleIcon,
+    };
+
+    const iconVariant = theme.errorMessage.iconVariant;
+
+    const IconComponent = iconMap[iconVariant.name];
+    if (IconComponent) {
+      CustomIcon = <IconComponent color={iconVariant.color} />;
+    } else {
+      throw new Error(`Unknown custom icon name: ${iconVariant.name}`);
+    }
+  }
+
   return (
     <StyledErrorMessage className={className} {...rest} theme={theme} id={id}>
       {theme.errorMessage.icon ? (
         <IconWrapper>
-          <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />
+          {CustomIcon ? CustomIcon : <Icon color={colors.alert} className="pr-2" variant={faMinusCircle} />}
         </IconWrapper>
       ) : null}
       {children}
