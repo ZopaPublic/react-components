@@ -86,7 +86,7 @@ export interface ErrorMessageTheme {
   backgroundColor: string;
   padding: string;
   icon: boolean;
-  iconVariant?: { name: CustomIconVariant; color: string };
+  iconVariant?: { name: Extract<CustomIconVariant, 'circle-exclamation2'>; color: string };
 }
 
 export interface FooterTheme {
