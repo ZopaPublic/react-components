@@ -9,6 +9,7 @@ import { useThemeContext } from '../../styles/Theme';
 import TriangleExclamationIcon from '../../styles/icons/triangleExclamation';
 import CircleExclamationIcon from '../../styles/icons/circleExclamation';
 import InfoCircleIcon from '../../styles/icons/infoCircle';
+import CircleExclamation2Icon from '../../styles/icons/circleExclamation2';
 
 const StyledErrorMessage = styled(Text).attrs({
   role: 'alert',
@@ -53,6 +54,7 @@ const ErrorMessage = ({ children, className, id, ...rest }: ErrorMessageProps) =
   if (theme.errorMessage.iconVariant) {
     const iconMap = {
       'circle-exclamation': CircleExclamationIcon,
+      'circle-exclamation2': CircleExclamation2Icon,
       'triangle-exclamation': TriangleExclamationIcon,
       'info-circle': InfoCircleIcon,
     };
