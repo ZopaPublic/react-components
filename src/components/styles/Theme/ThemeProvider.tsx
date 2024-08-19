@@ -66,7 +66,7 @@ export type AlertTheme = Record<
     text: string;
     component?: () => ReactElement;
     faVariant?: { prefix: IconPrefix; iconName: IconName };
-    customVariant?: { iconName: CustomIconVariant; color: string };
+    customVariant?: { iconName: Exclude<CustomIconVariant, 'circle-exclamation2'>; color: string };
   }
 >;
 
