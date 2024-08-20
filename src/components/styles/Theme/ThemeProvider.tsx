@@ -16,7 +16,7 @@ import { Severity } from '../../atoms/Alert/Alert';
 import { spacing } from '../../../constants';
 import { ProductTemplateV2 } from '../../templates/ProductTemplate/ProductTemplate/ProductTemplateV2';
 
-export type CustomIconVariant = 'circle-exclamation' | 'info-circle' | 'triangle-exclamation';
+export type CustomIconVariant = 'circle-exclamation' | 'circle-exclamation2' | 'info-circle' | 'triangle-exclamation';
 
 export interface ButtonTheme {
   text: string;
@@ -66,7 +66,7 @@ export type AlertTheme = Record<
     text: string;
     component?: () => ReactElement;
     faVariant?: { prefix: IconPrefix; iconName: IconName };
-    customVariant?: { iconName: CustomIconVariant; color: string };
+    customVariant?: { iconName: Exclude<CustomIconVariant, 'circle-exclamation2'>; color: string };
   }
 >;
 
@@ -86,7 +86,7 @@ export interface ErrorMessageTheme {
   backgroundColor: string;
   padding: string;
   icon: boolean;
-  iconVariant?: { name: CustomIconVariant; color: string };
+  iconVariant?: { name: Extract<CustomIconVariant, 'circle-exclamation2'>; color: string };
 }
 
 export interface FooterTheme {
