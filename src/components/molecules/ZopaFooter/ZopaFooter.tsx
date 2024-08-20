@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 import React, { HTMLAttributes } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
-import { useThemeContext } from '../../styles/Theme';
+import { useThemeContext, zopaTheme } from '../../styles/Theme';
 import twitter from '../../../content/images/social/twitter.svg';
 import facebook from '../../../content/images/social/facebook.svg';
 import linkedin from '../../../content/images/social/linkedin.svg';
@@ -92,7 +92,7 @@ const FullWidthWrapper = styled.div`
 export const footerLinkStyle = css`
   font-weight: ${typography.weights.regular};
   text-decoration: none;
-
+  color: ${colors.actionPlain};
   &:hover,
   &:active {
     text-decoration: underline;
@@ -394,6 +394,8 @@ export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   mainCustomLegalCopy?: string | string[];
   additionalCopy?: string[];
   customFooterLinks?: CustomFooterLink[];
+  isCobranded?: boolean;
+  MainCobrandedLegalCopy?: any; //TODO: add type
 }
 
 const ZopaFooter = ({
@@ -402,9 +404,17 @@ const ZopaFooter = ({
   additionalCopy = [],
   mainCustomLegalCopy,
   customFooterLinks,
+  isCobranded,
+  MainCobrandedLegalCopy,
   ...rest
 }: FooterProps) => {
-  const theme = useThemeContext();
+  const themeContext = useThemeContext();
+  let theme;
+  if (isCobranded) {
+    theme = zopaTheme;
+  } else {
+    theme = themeContext;
+  }
 
   return (
     <Footer data-automation="ZA.footer" theme={theme} {...rest} className={theme.footer.className}>
@@ -421,7 +431,13 @@ const ZopaFooter = ({
           )}
           {theme.footer.showLegalBlock ? (
             <LegalBlock xs={12} l={theme.footer.legalBlock.isFullWidth ? 12 : 4} theme={theme}>
-              {mainCustomLegalCopy ? <MainCustomLegalCopy copy={mainCustomLegalCopy} /> : <MainZopaLegalCopy />}
+              {mainCustomLegalCopy ? (
+                <MainCustomLegalCopy copy={mainCustomLegalCopy} />
+              ) : isCobranded ? (
+                <MainCobrandedLegalCopy />
+              ) : (
+                <MainZopaLegalCopy />
+              )}
               {additionalCopy.map((copy, i) => (
                 <Text
                   as="p"
