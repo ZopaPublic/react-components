@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 import React, { HTMLAttributes } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
-import { useThemeContext, zopaTheme } from '../../styles/Theme';
+import { AppTheme, useThemeContext, zopaTheme } from '../../styles/Theme';
 import twitter from '../../../content/images/social/twitter.svg';
 import facebook from '../../../content/images/social/facebook.svg';
 import linkedin from '../../../content/images/social/linkedin.svg';
@@ -395,7 +395,7 @@ export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   additionalCopy?: string[];
   customFooterLinks?: CustomFooterLink[];
   isCobranded?: boolean;
-  MainCobrandedLegalCopy?: any; //TODO: add type
+  mainCobrandedLegalCopy?: React.JSX.Element;
 }
 
 const ZopaFooter = ({
@@ -405,16 +405,18 @@ const ZopaFooter = ({
   mainCustomLegalCopy,
   customFooterLinks,
   isCobranded,
-  MainCobrandedLegalCopy,
+  mainCobrandedLegalCopy,
   ...rest
 }: FooterProps) => {
   const themeContext = useThemeContext();
-  let theme;
+  let theme: AppTheme;
   if (isCobranded) {
     theme = zopaTheme;
   } else {
     theme = themeContext;
   }
+
+  console.log('mainCobrandedLegalCopy', mainCobrandedLegalCopy);
 
   return (
     <Footer data-automation="ZA.footer" theme={theme} {...rest} className={theme.footer.className}>
@@ -433,8 +435,11 @@ const ZopaFooter = ({
             <LegalBlock xs={12} l={theme.footer.legalBlock.isFullWidth ? 12 : 4} theme={theme}>
               {mainCustomLegalCopy ? (
                 <MainCustomLegalCopy copy={mainCustomLegalCopy} />
-              ) : isCobranded ? (
-                <MainCobrandedLegalCopy />
+              ) : mainCobrandedLegalCopy ? (
+                <div>
+                  <div>TEST</div>
+                  {mainCobrandedLegalCopy}
+                </div>
               ) : (
                 <MainZopaLegalCopy />
               )}
