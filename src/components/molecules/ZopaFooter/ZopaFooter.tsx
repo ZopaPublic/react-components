@@ -3,7 +3,7 @@ import Logo from '../../atoms/Logo/Logo';
 import Link, { LinkProps } from '../../atoms/Link/Link';
 import { typography, grid, spacing, colors } from '../../../constants';
 import styled, { css } from 'styled-components';
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import FlexRow from '../../layout/FlexRow/FlexRow';
 import FlexCol from '../../layout/FlexCol/FlexCol';
 import { AppTheme, useThemeContext, zopaTheme } from '../../styles/Theme';
@@ -395,7 +395,7 @@ export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   additionalCopy?: string[];
   customFooterLinks?: CustomFooterLink[];
   isCobranded?: boolean;
-  mainCobrandedLegalCopy?: Element;
+  mainCobrandedLegalCopy?: ReactNode;
 }
 
 const ZopaFooter = ({
@@ -433,27 +433,26 @@ const ZopaFooter = ({
           )}
           {theme.footer.showLegalBlock ? (
             <LegalBlock xs={12} l={theme.footer.legalBlock.isFullWidth ? 12 : 4} theme={theme}>
-              {mainCustomLegalCopy ? (
-                <MainCustomLegalCopy copy={mainCustomLegalCopy} />
-              ) : mainCobrandedLegalCopy ? (
-                <div>
-                  <div>TEST</div>
-                  {mainCobrandedLegalCopy}
-                </div>
-              ) : (
-                <MainZopaLegalCopy />
-              )}
-              {additionalCopy.map((copy, i) => (
-                <Text
-                  as="p"
-                  color={theme.footer.legalBlock.color}
-                  size="small"
-                  key={i}
-                  className={i > additionalCopy.length ? 'mb-0' : 'mb-4'}
-                >
-                  {copy}
-                </Text>
-              ))}
+              <>
+                {mainCustomLegalCopy ? (
+                  <MainCustomLegalCopy copy={mainCustomLegalCopy} />
+                ) : mainCobrandedLegalCopy ? (
+                  mainCobrandedLegalCopy
+                ) : (
+                  <MainZopaLegalCopy />
+                )}
+                {additionalCopy.map((copy, i) => (
+                  <Text
+                    as="p"
+                    color={theme.footer.legalBlock.color}
+                    size="small"
+                    key={i}
+                    className={i > additionalCopy.length ? 'mb-0' : 'mb-4'}
+                  >
+                    {copy}
+                  </Text>
+                ))}
+              </>
             </LegalBlock>
           ) : null}
           {theme.footer.showSocialBlock ? theme.footer.customSocialBlock ? <CustomSocial /> : <ZopaSocial /> : null}
