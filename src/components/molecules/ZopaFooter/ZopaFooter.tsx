@@ -395,7 +395,7 @@ export interface FooterProps extends HTMLAttributes<HTMLDivElement> {
   additionalCopy?: string[];
   customFooterLinks?: CustomFooterLink[];
   isCobranded?: boolean;
-  mainCobrandedLegalCopy?: React.JSX.Element;
+  mainCobrandedLegalCopy?: Element;
 }
 
 const ZopaFooter = ({
