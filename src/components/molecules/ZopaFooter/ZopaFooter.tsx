@@ -416,8 +416,6 @@ const ZopaFooter = ({
     theme = themeContext;
   }
 
-  console.log('mainCobrandedLegalCopy', mainCobrandedLegalCopy);
-
   return (
     <Footer data-automation="ZA.footer" theme={theme} {...rest} className={theme.footer.className}>
       <FlexContainer gutter={16}>
