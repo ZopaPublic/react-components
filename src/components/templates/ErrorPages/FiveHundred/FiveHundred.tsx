@@ -28,8 +28,6 @@ const FiveHundred = ({
 }: FiveHundredErrorProps) => {
   const { width = 0 } = useViewport();
 
-  console.log('isCobranded', isCobranded);
-
   const themeContext = useThemeContext();
   let theme: AppTheme;
   if (isCobranded) {
