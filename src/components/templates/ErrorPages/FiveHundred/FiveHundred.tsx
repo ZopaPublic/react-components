@@ -12,20 +12,29 @@ import { breakpoints } from '../../../../constants/breakpoints';
 import { colors } from '../../../../constants';
 import { ErrorTemplateProps } from '../types';
 import { StyledIcon, StyledLink } from '../styles';
-import { ThemeProvider, useThemeContext } from '../../../styles/Theme';
+import { ThemeProvider, useThemeContext, AppTheme, zopaTheme } from '../../../styles/Theme';
 
 export interface FiveHundredErrorProps extends ErrorTemplateProps {
   linkUrl?: string;
   linkText?: string;
+  isCobranded?: boolean;
 }
 
 const FiveHundred = ({
   icon = faTools,
   linkUrl = 'https://www.zopa.com',
   linkText = 'Go to Zopa home',
+  isCobranded,
 }: FiveHundredErrorProps) => {
   const { width = 0 } = useViewport();
-  const theme = useThemeContext();
+
+  const themeContext = useThemeContext();
+  let theme: AppTheme;
+  if (isCobranded) {
+    theme = zopaTheme;
+  } else {
+    theme = themeContext;
+  }
 
   return (
     <div data-automation="ZA.ErrorPage.FiveHundred">
