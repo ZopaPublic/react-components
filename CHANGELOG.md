@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.71.6
+
+### Patch Changes
+
+- 7089b76: Make theme navbar link open in a new tab
+
 ## 5.71.5
 
 ### Patch Changes
