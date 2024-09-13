@@ -206,7 +206,11 @@ const NavbarLiteWrapper = ({ children, isCobranded }: React.PropsWithChildren<Na
       <PageNavigation overlap={overThreshold} collapsed theme={theme}>
         <ConditionalWrapper
           condition={typeof theme.navbar.href !== 'undefined'}
-          wrapper={(children) => <a href={theme?.navbar?.href}>{children}</a>}
+          wrapper={(children) => (
+            <a href={theme?.navbar?.href} target="_blank" title="Link opens in a new tab" rel="noreferrer">
+              {children}
+            </a>
+          )}
         >
           <Headroom
             wrapperStyle={{ maxHeight: overThreshold ? `${navbarClosedHeight}px` : `${navbarOpenHeight}px` }}
