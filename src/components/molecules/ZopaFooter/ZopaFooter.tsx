@@ -259,11 +259,14 @@ const ZopaFooterLinks = () => {
           <li className="mb-4">
             <StyledLink href="https://www.zopa.com/terms-of-use">Terms of use</StyledLink>
           </li>
-          <li className="mb-4">
+          <li>
             <StyledLink href="https://www.zopa.com/investor-principles">Investor principles</StyledLink>
           </li>
-          <li>
+          <li className="mb-4">
             <StyledLink href="https://www.zopa.com/remuneration">Remuneration</StyledLink>
+          </li>
+          <li>
+            <StyledLink href="https://www.zopa.com/open-banking-developer">Info for TPPS</StyledLink>
           </li>
         </List>
       </FlexCol>
