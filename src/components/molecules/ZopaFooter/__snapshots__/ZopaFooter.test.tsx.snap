@@ -710,9 +710,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Terms of use
             </a>
           </li>
-          <li
-            class="mb-4"
-          >
+          <li>
             <a
               class="c6 c7"
               color="#3B46C4"
@@ -721,13 +719,24 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
               Investor principles
             </a>
           </li>
-          <li>
+          <li
+            class="mb-4"
+          >
             <a
               class="c6 c7"
               color="#3B46C4"
               href="https://www.zopa.com/remuneration"
             >
               Remuneration
+            </a>
+          </li>
+          <li>
+            <a
+              class="c6 c7"
+              color="#3B46C4"
+              href="https://www.zopa.com/open-banking-developer"
+            >
+              Info for TPPS
             </a>
           </li>
         </ul>
