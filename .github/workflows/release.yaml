@@ -15,7 +15,7 @@ jobs:
           node-version: lts/*
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@eae0cfeb286e66ffb5155f1a79b90583a127a68b
         with:
           version: 9
           run_install: false
@@ -42,7 +42,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@aba318e9165b45b7948c60273e0b72fce0a64eb9
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: pnpm release

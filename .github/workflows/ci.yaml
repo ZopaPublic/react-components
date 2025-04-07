@@ -15,7 +15,7 @@ jobs:
           node-version: '18'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@eae0cfeb286e66ffb5155f1a79b90583a127a68b
         with:
           version: 9
           run_install: false
@@ -43,7 +43,7 @@ jobs:
         run: pnpm test
 
       - name: Run linter
-        uses: reviewdog/action-eslint@v1
+        uses: reviewdog/action-eslint@2fee6dd72a5419ff4113f694e2068d2a03bb35dd
         with:
           reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
