@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Slackify the release body
         id: release_body
-        uses: LoveToKnow/slackify-markdown-action@v1.0.0
+        uses: LoveToKnow/slackify-markdown-action@444d1c5cb9c46a046c29bb88cc032e9c27d31f38
         with:
           text: ${{ github.event.release.body }}
       - uses: homeday-de/slack-release-bot-action@main

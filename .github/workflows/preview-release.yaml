@@ -16,7 +16,7 @@ jobs:
           node-version: '18'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@c3b53f6a16e57305370b4ae5a540c2077a1d50dd
         with:
           version: 9
           run_install: false
@@ -39,11 +39,11 @@ jobs:
 
       - name: Generate release notes preview
         id: build-release-notes
-        uses: guilhermetod/semantic-release-notes-preview@v1.0.0
+        uses: guilhermetod/semantic-release-notes-preview@015a2c1849e7703ee43e0350b04970ae3a76b49d
 
       - name: Comment release notes preview
         if: steps.build-release-notes.outputs.releaseNotes
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -60,7 +60,7 @@ jobs:
 
       - name: Comment empty release notes preview
         if: ${{ !steps.build-release-notes.outputs.releaseNotes }}
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
