@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.71.8
+
+### Patch Changes
+
+- d95983b: Update Zopa's registered office on footer
+
 ## 5.71.7
 
 ### Patch Changes
