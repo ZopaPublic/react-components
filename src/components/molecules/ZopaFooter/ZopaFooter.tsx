@@ -115,8 +115,8 @@ const MainZopaLegalCopy = () => {
       <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
         Zopa Bank Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct
         Authority and the Prudential Regulation Authority, and entered on the Financial Services Register (800542). Zopa
-        Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office at: 1st Floor,
-        Cottons Centre, Tooley Street, London, SE1 2QG.
+        Bank Limited (10627575) is incorporated in England &amp; Wales and has its registered office at: Zopa Bank,
+        Level 12, 20 Water Street, Canary Wharf, London E14 5GX.
       </Text>
       <Text as="p" color={theme.footer.legalBlock.color} size="small" className="mb-4">
         © Zopa Bank Limited {new Date().getFullYear()} All rights reserved. 'Zopa' is a trademark of Zopa Bank Limited.
