@@ -1,5 +1,13 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.71.9
+
+### Patch Changes
+
+- f85bf68: update dependency
+- b78230c: release
+- cc84ed9: fix:dependency update
+
 ## 5.71.8
 
 ### Patch Changes
