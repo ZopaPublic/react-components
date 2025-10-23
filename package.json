@@ -54,7 +54,7 @@
     "lodash.throttle": "^4.1.1",
     "react-headroom": "^3.0.0",
     "react-modal": "^3.11.2",
-    "react-use-clipboard": "^1.0.7",
+    "react-use-clipboard": "^1.0.9",
     "rollup-plugin-swc3": "^0.10.4",
     "styled-normalize": "^8.0.7",
     "tippy.js": "^6.2.7",
