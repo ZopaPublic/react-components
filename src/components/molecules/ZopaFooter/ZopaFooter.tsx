@@ -189,7 +189,7 @@ const ZopaFooterLinks = () => {
             <StyledLink href="https://www.zopa.com/credit-card">Credit cards</StyledLink>
           </li>
           <li className="mb-4">
-            <StyledLink href="https://www.zopa.com/smart-saver">Smart Saver</StyledLink>
+            <StyledLink href="https://www.zopa.com/savings">Smart Saver</StyledLink>
           </li>
           <li>
             <StyledLink href="https://www.zopa.com/savings-accounts">Fixed Term Savings</StyledLink>

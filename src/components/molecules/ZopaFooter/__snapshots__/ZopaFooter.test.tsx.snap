@@ -483,7 +483,7 @@ exports[`<ZopaFooter /> renders the component with no a11y violations 1`] = `
             <a
               class="c6 c7"
               color="#3B46C4"
-              href="https://www.zopa.com/smart-saver"
+              href="https://www.zopa.com/savings"
             >
               Smart Saver
             </a>
