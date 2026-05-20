@@ -189,6 +189,7 @@ const ZopaFooterLinks = () => {
             <StyledLink href="https://www.zopa.com/credit-card">Credit cards</StyledLink>
           </li>
           <li className="mb-4">
+            {/* This is to fix redundant redirects https://jira.zopa/browse/WEBE-19292 */}
             <StyledLink href="https://www.zopa.com/savings">Smart Saver</StyledLink>
           </li>
           <li>
