@@ -1,5 +1,11 @@
 ## [5.49.0](https://github.com/zopaUK/react-components/compare/v5.48.3...v5.49.0) (2023-08-17)
 
+## 5.71.10
+
+### Patch Changes
+
+- 8176778: Comment why the smart saver link url was changed
+
 ## 5.71.9
 
 ### Patch Changes
